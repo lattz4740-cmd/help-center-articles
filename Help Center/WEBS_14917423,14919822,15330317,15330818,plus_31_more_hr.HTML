@@ -1,0 +1,1087 @@
+<html>
+<head>
+<style type="text/css">
+.gkms-gtt-answer-header, .gkms-gtt-message-header {
+  color: black !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 2em;
+  padding: 4px;
+}.gkms-gtt-answer-header {
+  background-color: #E5ECF9;
+  border-top: 1px solid #36C;
+}
+.gkms-gtt-message-header {
+  background-color: #F8F8F8;
+  border-top: 1px solid #CCC;
+}
+.gkms-gtt-hide {
+  visibility: hidden;
+}
+.form_field_data .temporary_signal_wrapper {
+  display: inline;
+}
+</style>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+</head>
+<body lang="hr">
+<br/><div class="gkms id notranslate" sourceGlobalRevision="116" sourceLocale="hr">WEB:14917423</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Kako funkcionira Outline</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1723;a">&nbsp;</p>
+
+<p data-aura-rendered-by="12:1723;a"><strong>Instalacija poslužitelja</strong><br />
+  <br />
+  Iako se instalacija Outlinea može činiti jednostavnom, za instalaciju poslužitelja zapravo je potrebno slijediti niz složenih uputa. Svaki put kada se Outline instalira, pokreće se skripta za instalaciju i poduzima sljedeće korake:</p>
+
+<ul data-aura-rendered-by="12:1723;a">
+  <li>Stabilna verzija slike Shadowbox dohvaća se i uvozi putem Dockera. Slika se hosta na web-lokaciji <a href="https://quay.io/" target="_blank">Quay.io</a>, na adresi <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank">https://quay.io/repository/outline/shadowbox?tab=tags</a>. Ta slika sadrži Outline poslužitelj i Management API koji aplikacija Outline Server Management kasnije upotrebljava za izradu i uklanjanje pristupnih ključeva, uključivanje/isključivanje izvješćivanja o anonimnim mjernim podacima itd.</li>
+  <li><a href="https://github.com/v2tec/watchtower" target="_blank">Watchtower</a> se instalira i konfigurira radi traženja ažuriranja slike svakih sat vremena, čime se osigurava da je svaki Outline poslužitelj kontinuirano ažuran te da ima najnovije značajke i sigurnosna poboljšanja.</li>
+  <li>Web-poslužitelj koji se upotrebljava za pristupanje Managament API-ju pokreće se na nasumičnom priključku na tajnoj i nasumičnoj putanji.</li>
+  <li>Izrađuje se <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank">samopotpisani SSL certifikat</a> tako da se upravljanje Outline poslužiteljem može šifrirati pomoću TLS-a bez naziva domene. U aplikaciji Upravitelj Outlinea generira se i sprema jedinstveni otisak prsta tog certifikata. To pomaže u sprječavanju MITM napada.</li>
+</ul>
+
+<p data-aura-rendered-by="12:1723;a">Instalacija aplikacije Outline ne zahtijeva naknadnu instalaciju konfiguracije.<br />
+  <br />
+  <strong>Sigurnost poslužitelja</strong><br />
+  <br />
+  Outline je softver otvorenog izvornog koda. To znači da bilo tko može vidjeti kôd i poboljšati ga ako se otkriju nedostaci. Naš se kôd hostira na <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank">GitHubu</a>.<br />
+  <br />
+  Nadalje, svi instalirani Outline poslužitelji automatski se ažuriraju nakon svake objave nove verzije tako da nijedan Outline poslužitelj nema zastarjelu verziju softvera.<br />
+  <br />
+  Radi upravljanja pristupnim ključevima na poslužitelju aplikacija Upravitelj Outlinea komunicira s uslugom za upravljanje na Outline poslužitelju. Usluga za upravljanje pokreće se na nasumičnom priključku te na tajnoj i jedinstvenoj putanji. Ta je usluga otporna na utvrđivanje dostupnosti jer ne odgovara na upite ako se ne navede odgovarajuća tajna putanja. Konačno, sva komunikacija s uslugom za upravljanje šifrirana je <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank">samopotpisanim SSL certifikatom</a>.<br />
+  <br />
+  Također, Outline poslužitelj ne sprema zapisnike, što znači da se korisnički podaci ne otkrivaju čak ni ako je ugrožen. Više možete saznati <a href="https://support.getoutline.org/s/article/Security-and-privacy" target="_blank">ovdje</a>. <a href="https://radicallyopensecurity.com/" target="_blank">Radically Open Security</a> i <a href="https://cure53.de/" target="_blank">Cure53</a> provele su reviziju Outlinea 2018. Izvješća potražite <a href="https://support.getoutline.org/s/article/Security-and-privacy" target="_blank">ovdje</a>.<br />
+  <br />
+  <strong>Rukovanje UDP prometom</strong><br />
+  <br />
+  Outline funkcionira kao VPN za cijeli sustav, što znači da se cijeli UDP promet kanalizira putem Outline poslužitelja.<br />
+  <br />
+  <strong>DNS promet</strong></p>
+
+<p data-aura-rendered-by="12:1723;a"><br />
+  Outline sva pretraživanja DNS-a izvršava putem Outline poslužitelja i štiti ih istim šifriranjem koje se upotrebljava za sve druge mrežne aktivnosti. Upiti DNS-a proći će kroz Outline poslužitelj do Dyn Internet Guidea, OpenDNS-a, Cloudflare DNS-a ili Quad9 DNS-a. Outline nikada ne bilježi vaša mapiranja alfa-numeričkih naziva u IP adresu.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="232" sourceLocale="hr">WEB:14919822</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Sigurnost i privatnost tijekom upotrebe Outlinea</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:258;a">Sigurnost i privatnost tijekom upotrebe Outlinea</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Kako Outline štiti online komunikaciju</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Internetski promet obično je najizloženiji dok podaci putuju lokalnom ili nacionalnom mrežom.</p>
+
+<p data-aura-rendered-by="12:258;a">Outline će zadržati privatnost komunikacija kriptiranjem internetskog prometa dok putuje nacionalnom mrežom. Promet ostaje kriptiran dok ne stigne do Outline poslužitelja. Ako je promet šifriran pomoću Outlinea, promatrači na mreži ne mogu vidjeti koje web-lokacije posjećujete ili podatke koje prenosite.</p>
+
+<p data-aura-rendered-by="12:258;a">Outline vam može pomoći i da vratite pristup alatima za komunikaciju između krajnjih točaka kojima se inače možda ne može pristupiti u vašoj državi.</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Standardi šifriranja</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Outline šifrira komunikaciju između vašeg uređaja i Outline poslužitelja pomoću 256-bitne šifre AEAD Chacha2020 IETF Poly 1305. AEAD šifre pružaju povjerljivost, integritet i autentičnost te imaju odlične rezultate na modernom hardveru.</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Sigurnosna ispitivanja</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Dvije neovisne sigurnosne organizacije, Radically Open Security i Cure53, koje ocjenjuju softver na temelju najnovijih sigurnosnih standarda izvršile su reviziju Outlinea 2018. Radically Open Security proveo je dodatno ispitivanje 2022., a Cure53 je proveo ispitivanje Outline SDK-a 2024. Izvješća možete pročitati ovdje:</p>
+
+<ul data-aura-rendered-by="12:258;a">
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf" target="_blank">Izvješće organizacije Radically Open Security o testu prodiranja (ožujak 2018.)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf" target="_blank">Izvješće organizacije Cure53 o reviziji i testu prodiranja za Outline tvrtke Jigsaw (prosinac 2018.)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf" target="_blank">Izvješće organizacije Radically Open Security o testu prodiranja (prosinac 2022.)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf" target="_blank">Izvješće organizacije Cure53 o testu prodiranja za Outline VPN SDK tvrtke Jigsaw (siječanj 2024.)</a></li>
+</ul>
+
+<p data-aura-rendered-by="12:258;a"><strong>Anonimni mjerni podaci i zapisnici</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Outline prati upotrijebljenu propusnost kao "prenesene bajtove" za svaki pristupni ključ. Te informacije omogućuju administratorima poslužitelja da prema potrebi prilagode pretplate na propusnost kod davatelja usluga oblaka, no ne omogućuju im da vide stvarne podatke koji su prošli kroz Outline poslužitelj.</p>
+
+<p data-aura-rendered-by="12:258;a">Saznajte više o tome kako Outline <a href="/outline-faq/answer/15331222" rel="noopener" target="_blank">prikuplja podatke i informacije</a>.</p>
+
+<hr data-aura-rendered-by="12:258;a" />
+<p data-aura-rendered-by="12:258;a"><strong>Česta pitanja o sigurnosti i privatnosti</strong>&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Može li mi Outline omogućiti anonimnost online?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Ne, Outline nije alat za anonimnost. Outline štiti vašu privatnost od mogućih mrežnih promatrača.</p>
+
+<p data-aura-rendered-by="12:258;a">Outline vam ne nudi potpunu anonimnost na web-lokacijama koje posjećujete jer vas i dalje mogu identificirati kada se prijavite. Ponekad upotrebljavaju i razne tehnike za identifikaciju, na primjer otisak preglednika. Što se tiče mobilnih aplikacija, većina modernih pametnih telefona ima API-je koji instaliranim aplikacijama omogućuju da dohvate vašu lokaciju neovisno o proxyju jer to čine pomoću ugrađenog GPS-a.</p>
+
+<p data-aura-rendered-by="12:258;a">VPN-ovi općenito omogućuju važnu zaštitu, posebno od internetskog nadzora, no uvijek postoje rizici pri radu online. Čak i ako imate VPN, ako ISP već zna vaš identitet i promatra vaš mrežni promet, može saznati IP adresu vašeg Outline poslužitelja. Te se informacije mogu upotrijebiti za blokiranje pristupa Outline poslužitelju ili određivanje uzoraka upotrebe, na primjer kada ste obično online i koja je vaša približna lokacija.</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Može li netko saznati da upotrebljavam Outline?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Moguće je. Platforme i usluge kojima pristupate najvjerojatnije će znati da ste se povezali putem poslužitelja u oblaku. Ponekad će moći zaključiti da upotrebljavate VPN, ali neće moći vidjeti sadržaj vašeg internetskog prometa.</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Štiti li me Outline od mogućih cyber prijetnji?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Ne. Nijedan vas alat ne može zaštititi od mogućih cyber prijetnji. Outline omogućuje da pristupate otvorenom internetu i štiti vašu privatnost šifriranjem prometa, ali preporučujemo da primijenite dodatne mjere opreza kako biste se zaštitili od drugih vrsta napada, na primjer zlonamjernog softvera i krađe identiteta.</p>
+
+<p data-aura-rendered-by="12:258;a">Kako biste poboljšali online zaštitu, razmislite o suradnji sa stručnjakom za cyber sigurnost u svojoj organizaciji. Osim toga, možete dobiti personalizirane savjete od vodećih stručnjaka za sigurnost na web-lokaciji <a href="https://securityplanner.org/" target="_blank">Security Planner</a> koja je osmišljena da vam pruži jasne upute o odabiru alata za cyber sigurnost koji vam najviše odgovaraju.</p>
+
+<p data-aura-rendered-by="12:258;a">Pogledajte i druge proizvode za cyber sigurnost tvrtke <a href="https://jigsaw.google.com/" target="_blank">Jigsaw</a>, kao što su <a href="https://getintra.org/" target="_blank">Intra</a>, <a href="https://g.co/shield" target="_blank">Project Shield</a> i <a href="https://chrome.google.com/webstore/detail/password-alert/noondiphcddnnabmjcihcjfbhfklnnep?" rel="noopener" target="_blank">Password Alert</a>.</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Je li upotreba VPN-a legalna?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Prije pokretanja Outlinea ili upotrebe aplikacije pročitajte lokalne zakone, uredbe, kao i uvjete pružanja usluge odabranog davatelja usluga u oblaku.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="89" sourceLocale="hr">WEB:15330317</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Zašto ne mogu pristupiti internetu, a uspostavljena je veza s Outline poslužiteljem?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:32933;a">Ako ste na mobilnom telefonu, pokušajte prijeći s mobilnih podataka na Wi-Fi ili obrnuto. Ponekad jedna veza funkcionira, a druga ne. Ako ste na računalu, pokušajte prekinuti vezu sa širokopojasnim internetom i ponovo je uspostaviti.</p>
+
+<p data-aura-rendered-by="12:32933;a">Ako i dalje nailazite na poteškoće, vjerojatno se radi o problemu na vašem Outline poslužitelju. Obratite se <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">upravitelju usluge</a> i zatražite novi pristupni ključ za zamjenski poslužitelj. Upravitelj možda može i povećati podatkovno ograničenje za vaš<a href="https://google-jigsaw--jigsawuat.sandbox.my.site.com/outline/s/article/Terminology" target="_blank"> </a><a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">pristupni ključ</a> ako je premašena kvota za ključ.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="296" sourceLocale="hr">WEB:15330818</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Koji su zahtjevi sustava za pokretanje Outline Klijenta?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:24676;a">Outline možete isprobati na bilo kojem operativnom sustavu. U nastavku su navedene najniže potrebne verzije operativnih sustava:</p>
+
+<table class="borders" data-aura-rendered-by="12:24676;a" width="312">
+  <tbody>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top"><b>Operativni sustav</b></td>
+      <td colspan="1" rowspan="1" valign="top"><b>Najniža potrebna verzija</b></td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Android</td>
+      <td colspan="1" rowspan="1" valign="top">10</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">iOS</td>
+      <td colspan="1" rowspan="1" valign="top">15.5</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">macOS</td>
+      <td colspan="1" rowspan="1" valign="top">12.0</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Windows</td>
+      <td colspan="1" rowspan="1" valign="top">10</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Linux</td>
+      <td colspan="1" rowspan="1" valign="top">Ubuntu&nbsp;20.04</td>
+    </tr>
+  </tbody>
+</table>
+
+<p data-aura-rendered-by="12:24676;a"><br />
+  Želite li nam pomoći da Outline Klijent omogućimo za više operativnih sustava? <a href="https://github.com/Jigsaw-Code/outline-client#platform-specific-development" target="_blank">Uključite se u popunjavanje naše baze koda</a> na GitHubu!</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="107" sourceLocale="hr">WEB:15330824</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Kako mogu ažurirati svoj Outline poslužiteljski softver?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:10378;a">Outline poslužitelji automatski se ažuriraju pomoću najnovijih sigurnosnih poboljšanja tako da ćete uvijek imati najnoviju tehnologiju aplikacije Outline. Automatizirano ažuriranje omogućuje <a href="https://github.com/v2tec/watchtower" target="_blank">Watchtower</a>, biblioteka otvorenog izvornog koda koja redovito provjerava i ažurira Docker sliku koja sadrži softver Outlinea.</p>
+
+<p data-aura-rendered-by="12:10378;a">Nadalje, kada instalirate Outline pomoću Upravitelja Outlinea, postavljamo kronološki zadatak za automatsko ažuriranje softvera na poslužitelju pomoću značajke <a href="https://wiki.debian.org/UnattendedUpgrades" target="_blank">Unattended Upgrades</a> (Ubuntu) i njegovo ponovno pokretanje kad je to potrebno. Do toga ne dolazi u naprednom načinu kako bi se sačuvala postojeća konfiguracija, uz pretpostavku da host osim za Outline služi i za druge namjene.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="102" sourceLocale="hr">WEB:15330825</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Kako mogu preuzeti Upravitelj Outlinea ako veza za preuzimanje ne funkcionira?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Pomoću <a href="https://getoutline.org/get-started/#step-1" target="_blank">ove veze</a> ili <a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">ove veze</a> mogu se izravno preuzeti aplikacije za mnoge operativne sustave.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="129" sourceLocale="hr">WEB:15330920</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Terminologija</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:23504;a"><strong>Što je VPN?</strong><br />
+  Virtualna privatna mreža (VPN) privatna je veza između vaših uređaja i poslužitelja koji hosta sadržaj. Dok upotrebljavate VPN, vaš je promet skriven od davatelja internetskih usluga. Upotreba VPN-a preporučuje se u sljedećim situacijama:</p>
+
+<ul data-aura-rendered-by="12:23504;a">
+  <li>radi zaštite podataka tijekom upotrebe javnog Wi-Fija</li>
+  <li>radi sprječavanja otkrivanja podataka o pregledavanju davatelju internetskih usluga i državnim tijelima</li>
+  <li>radi pristupa necenzuriranom sadržaju iz raznih izvora širom svijeta.</li>
+</ul>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Što Outline razlikuje od tradicionalnih VPN-ova?</strong><br />
+  Davatelji internetskih usluga mogu jednostavno otkriti i blokirati tradicionalne VPN-ove putem prepoznavanja uobičajenih sigurnosnih protokola i/ili obrazaca količine prometa. Outline je robusniji od tradicionalnih VPN-ova jer je razvijen pomoću protokola koji je osmišljen tako da se teško otkriva, što znači da se teže i blokira. Outline je otporan na sofisticirane oblike cenzure, uključujući blokiranje na temelju mreže i blokiranje IP adresa.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Što je Outline poslužitelj?</strong><br />
+  Na Outline poslužitelju nalazi se VPN s kojim se mogu povezati odobreni korisnici. Ako izrađujete novu mrežu, kao Outline poslužitelj možete upotrijebiti vlastiti poslužitelj ako ga imate, a možete upotrijebiti i davatelja usluga u oblaku poput sljedećih:</p>
+
+<ul data-aura-rendered-by="12:23504;a">
+  <li>DigitalOcean</li>
+  <li>Google Cloud Platform (GCP)</li>
+  <li>Amazon Web Services (AWS).</li>
+</ul>
+
+<p data-aura-rendered-by="12:23504;a"><a id="One" target="_blank"></a>Poslužitelj možete postaviti u Upravitelju Outlinea.<br />
+  <br />
+  <strong><a id="servicemanager" name="servicemanager"></a>Što je upravitelj usluga?</strong><br />
+  Upravitelj usluga osoba je odgovorna za postavljanje Outline poslužitelja i dodjelu pristupnih ključeva korisnicima. Upravitelj usluga u načelu je odgovoran za troškove upotrebe poslužitelja. <br />
+  <br />
+  <strong><a id="accesskey" name="accesskey"></a>Što je pristupni ključ?</strong><br />
+  Pristupni ključ služi za pristup postojećem Outline poslužitelju i povezivanje s VPN-om. <a href="#servicemanager" rel="noopener">Upravitelj usluga</a> dat će vam pristupni ključ, a možete i sami <a href="/outline-faq/answer/15331530" rel="noopener" target="_blank">postaviti Outline poslužitelj</a>. U nastavku se nalazi primjer pristupnog ključa (to je ogledni ključ koji ne funkcionira):<br />
+  <br />
+  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1<br />
+  <br />
+  <strong>Što je Upravitelj Outlinea?</strong><br />
+  Upravitelj Outlinea aplikacija je za računalo koja upravitelju usluga omogućuje postavljanje Outline poslužitelja, generiranje <a href="#accesskey" rel="noopener">pristupnih ključeva</a> i postavljanje podatkovnih ograničenja upotrebe za svaki ključ. Najnoviju verziju Upravitelja Outlinea možete preuzeti <a href="https://getoutline.org/get-started/#step-3" target="_blank">ovdje</a> ili <a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">ovdje</a>.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Što je Outline Klijent?</strong><br />
+  Outline Klijent aplikacija je za računala i mobilne uređaje koja omogućuje povezivanje s Outline poslužiteljem i pristupanje VPN-u pomoću pristupnog ključa. Najnoviju verziju Outline Klijenta možete preuzeti <a href="https://getoutline.org/get-started/#step-3" target="_blank">ovdje</a> ili <a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">ovdje</a>.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Što su ograničenja podatkovnog prometa?</strong><br />
+  Upravitelj Outlinea omogućuje upraviteljima usluga da postave promjenjivo 30-dnevno ograničenje podatkovnog prometa za pristupne ključeve kako bi spriječili prekomjernu upotrebu i povećali predvidljivost troškova. Upravitelji usluga mogu postaviti zadano ograničenje koje se primjenjuje na svaki ključ ili drukčije ograničenje za pojedine ključeve koje nadjačava zadano ograničenje. Postavljeno ograničenje stupa na snagu odmah i primjenjuje se svakih sat vremena.</p>
+
+<p data-aura-rendered-by="12:23504;a">Ako upravitelji usluga uključe dijeljenje mjernih podataka s Jigsawom, trebaju u <a href="/outline-faq/answer/15331222" rel="noopener" target="_blank">pravilima o prikupljanju podataka</a> potražiti pojedinosti o tome kako se prijavljuje upotreba ograničenja podatkovnog prometa.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="110" sourceLocale="hr">WEB:15331121</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Podržavate li web-lokaciju getoutline.me i Telegram kanal @OutlineVpnOfficial?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Tim za Outline primio je brojne upite o web-lokaciji <a href="http://getoutline.me/" target="_blank">getoutline.me</a> i Telegram kanalu @OutlineVpnOfficial koji je povezan s njom. Te usluge nisu povezane s timom za Outline i ne možemo pomoći korisnicima koji su naišli na probleme s pristupnim ključevima dobivenim od tih usluga.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="hr">WEB:15331122</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Dostupni jezici</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Outline je dostupan na sljedećim jezicima:</p>
+
+<ul>
+  <li aria-level="1">afrikaans</li>
+  <li aria-level="1">albanski</li>
+  <li aria-level="1">amharski</li>
+  <li aria-level="1">arapski</li>
+  <li aria-level="1">armenski</li>
+  <li aria-level="1">azerbajdžanski</li>
+  <li aria-level="1">bengalski</li>
+  <li aria-level="1">bosanski</li>
+  <li aria-level="1">bugarski</li>
+  <li aria-level="1">burmanski</li>
+  <li aria-level="1">katalonski</li>
+  <li aria-level="1">kineski (pojednostavljeni)</li>
+  <li aria-level="1">kineski (tradicionalni)</li>
+  <li aria-level="1">hrvatski</li>
+  <li aria-level="1">češki</li>
+  <li aria-level="1">danski</li>
+  <li aria-level="1">nizozemski</li>
+  <li aria-level="1">engleski (američki)</li>
+  <li aria-level="1">engleski (britanski)</li>
+  <li aria-level="1">estonski</li>
+  <li aria-level="1">filipinski</li>
+  <li aria-level="1">finski</li>
+  <li aria-level="1">francuski</li>
+  <li aria-level="1">gruzijski</li>
+  <li aria-level="1">njemački</li>
+  <li aria-level="1">grčki</li>
+  <li aria-level="1">hebrejski</li>
+  <li aria-level="1">hindski</li>
+  <li aria-level="1">madžarski</li>
+  <li aria-level="1">islandski</li>
+  <li aria-level="1">indonezijski</li>
+  <li aria-level="1">talijanski</li>
+  <li aria-level="1">japanski</li>
+  <li aria-level="1">kazaški</li>
+  <li aria-level="1">kmerski</li>
+  <li aria-level="1">korejski</li>
+  <li aria-level="1">laoski</li>
+  <li aria-level="1">letonski</li>
+  <li aria-level="1">litavski</li>
+  <li aria-level="1">makedonski</li>
+  <li aria-level="1">malajski</li>
+  <li aria-level="1">marathski</li>
+  <li aria-level="1">mongolski</li>
+  <li aria-level="1">nepalski</li>
+  <li aria-level="1">norveški</li>
+  <li aria-level="1">perzijski</li>
+  <li aria-level="1">poljski</li>
+  <li aria-level="1">portugalski (brazilski)</li>
+  <li aria-level="1">portugalski (europski)</li>
+  <li aria-level="1">rumunjski</li>
+  <li aria-level="1">ruski</li>
+  <li aria-level="1">srpski (ćirilica)</li>
+  <li aria-level="1">srpski (latinica)</li>
+  <li aria-level="1">sinhalski</li>
+  <li aria-level="1">slovački</li>
+  <li aria-level="1">slovenski</li>
+  <li aria-level="1">španjolski (europski)</li>
+  <li aria-level="1">španjolski (latinoamerički)</li>
+  <li aria-level="1">svahili</li>
+  <li aria-level="1">švedski</li>
+  <li aria-level="1">tamilski</li>
+  <li aria-level="1">tajlandski</li>
+  <li aria-level="1">turski</li>
+  <li aria-level="1">ukrajinski</li>
+  <li aria-level="1">urdu</li>
+  <li aria-level="1">vijetnamski.</li>
+</ul>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="110" sourceLocale="hr">WEB:15331125</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Zašto ne mogu instalirati Outline Klijent na Windowsu?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:31254;a">Može vam se prikazati sljedeća poruka o pogrešci: "Nažalost, izgleda da Outline nije ispravno instaliran. Pokušajte ga ponovo instalirati. Ako to ne funkcionira, <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">pošaljite povratne informacije</a>."</p>
+
+<p data-aura-rendered-by="12:31254;a">Ako Outline upotrebljavate na Windows uređaju, povremeno može doći do neočekivane pogreške. U većini slučajeva potrebno je izbrisati Outlineov TAP adapter (upravljački program) i ponovo instalirati Outline.</p>
+
+<p data-aura-rendered-by="12:31254;a">Koraci se mogu razlikovati ovisno o verziji operativnog sustava Windows, ali u nastavku su navedeni općeniti koraci za deinstalaciju TAP adaptera i Outlinea te za ponovnu instalaciju Outlinea.</p>
+
+<ol data-aura-rendered-by="12:31254;a">
+  <li>Deinstaliranje TAP adaptera za Outline Klijent
+    <ul>
+      <li>Otvorite <strong>Device Managers</strong> (Upravitelji uređaja), a zatim <strong>Network Adapters</strong> (Mrežni adapteri).</li>
+      <li>Pronađite datoteku <strong>TAP-Windows Adapter V9</strong> ili TAP adapter povezan s Outlineom.</li>
+      <li>Deinstalirajte ili izbrišite taj adapter. Ne zaboravite da to može utjecati na druge VPN aplikacije koje ste instalirali.</li>
+    </ul>
+  </li>
+  <li>Deinstaliranje Outline Klijenta
+    <ul>
+      <li>Otvorite <strong>Programs &amp; Features</strong> (Programi i značajke), a zatim <strong>Uninstall Program</strong> (Deinstaliranje programa).</li>
+      <li>Pronađite aplikaciju Outline Klijent i deinstalirajte je.</li>
+      <li><a href="https://getoutline.org/get-started/#step-3" target="_blank">Preuzmite najnoviju verziju Outline Klijenta</a> i ponovo ga instalirajte na svoj Windows uređaj. U novoj instalaciji trebao bi se automatski instalirati novi TAP adapter.</li>
+    </ul>
+  </li>
+</ol>
+
+<p data-aura-rendered-by="12:31254;a">Ako i dalje nailazite na poteškoće, <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">obratite se korisničkoj podršci</a>.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="109" sourceLocale="hr">WEB:15331126</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Zašto se ne mogu povezati s uslugom Outline?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Do nemogućnosti povezivanja s uslugom Outline može dovesti nekoliko razloga:</p>
+
+<ul>
+  <li aria-level="1"><strong>Vaš uređaj</strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#One" rel="noopener"><strong> </strong></a><a href="#Internetissues" rel="noopener"><strong>nije povezan s internetom</strong></a><a href="#Internetissues" rel="noopener"> </a><strong>. </strong>Na uređaju ponekad može doći do prekida mrežne veze. Ažuriranje mrežnih ikona može potrajati nekoliko trenutaka. Moguće je i da je vaš uređaj povezan s lokalnom mrežom, ali internet ne radi.</li>
+  <li aria-level="1"><strong>Vaš</strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#Two"><strong> </strong></a><a href="#FirewallIssues" rel="noopener"><strong>mrežni vatrozid blokira pristup</strong></a><a href="#FirewallIssues" rel="noopener"> </a><strong><a href="#FirewallIssues" rel="noopener"></a> Outline poslužitelju. </strong>To se često događa na javnim mrežama, poput školskih, poslovnih ili besplatnih bežičnih mreža.</li>
+  <li aria-level="1"><strong>Vaš uređaj ima</strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#Three"><strong> </strong></a><a href="#SoftwareIssues" rel="noopener"><strong>vatrozid ili antivirusni softver</strong></a><a href="#SoftwareIssues" rel="noopener"> </a><strong>koja blokira pristup vašem Outline poslužitelju.</strong></li>
+  <li aria-level="1"><strong>Vaše</strong><a href="#DeviceSettings" rel="noopener"><strong> </strong><strong>postavke uređaja</strong></a><strong> možda se trebaju izmijeniti.</strong></li>
+  <li aria-level="1"><strong>Vaš je upravitelj usluge možda</strong><a href="#ServerIssues" rel="noopener"><strong> </strong><strong>uništio poslužitelj ili vaš ISP blokira vaš zahtjev</strong></a> .</li>
+</ul>
+
+<p><a id="Internetissues" name="Internetissues"><strong>Problemi s internetskom vezom:</strong></a></p>
+
+<p><strong>Postupak testiranja:</strong></p>
+
+<p>Isključite Outline i provjerite je li veza s internetom ponovno uspostavljena.</p>
+
+<ul>
+  <li aria-level="1">Ako jest, pogledajte još prijedloga za rješavanje problema u nastavku.</li>
+  <li aria-level="1">Ako nije, pričekajte nekoliko trenutaka da biste vidjeli hoće li se postavke veze same ažurirati.</li>
+</ul>
+
+<p><strong>Što treba popraviti:</strong></p>
+
+<p>Ponovo povežite uređaj s internetom:</p>
+
+<ol>
+  <li aria-level="1">Provjerite može li se drugi uređaj povezati s istom mrežom. Ako se drugi uređaji ne mogu povezati s internetom, mreža je možda nedostupna te ćete za rješavanje problema morati pričekati da ponovno bude dostupna.</li>
+  <li aria-level="1">Ako se drugi uređaji mogu povezati s istom mrežom, možete isprobati neki od sljedećih prijedloga da se ponovo povežete s internetom:
+    <ol>
+      <li aria-level="2">Uključite način rada u zrakoplovu (na mobilnom uređaju)</li>
+      <li aria-level="2">Ponovo pokrenite uređaj</li>
+      <li aria-level="2">Isključite uređaj, pričekajte dvije minute i ponovo uključite uređaj</li>
+    </ol>
+  </li>
+</ol>
+
+<p><a id="FirewallIssues" name="FirewallIssues"><strong>Problemi s mrežnim vatrozidom:</strong></a></p>
+
+<p><strong>Postupak testiranja:</strong></p>
+
+<ol>
+  <li aria-level="1">Prekinite vezu s trenutačnom Wi-Fi ili žičanom mrežom.</li>
+  <li aria-level="1">Povežite se s drugom mrežom, na primjer mobilnom.</li>
+  <li aria-level="1">Pokušajte ponovo uspostaviti vezu s Outline poslužiteljem</li>
+</ol>
+
+<p>Ako se uspijete povezati s poslužiteljem dok upotrebljavate drugu mrežu, pronašli ste problem.</p>
+
+<p><strong>Što treba popraviti:</strong></p>
+
+<p>Zatražite od upravitelja usluge da omogući pristup vašem Outline poslužitelju ili nastavite upotrebljavati drugu mrežu.</p>
+
+<p><a id="SoftwareIssues" name="SoftwareIssues"><img alt="Ta slika nije dostupna iz sljedećih razloga: nemate ovlasti za njezin pregled ili je uklonjena iz sustava" height="1" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeoHNM7TWEsg0z4iydaS2xKOPga0zOjhOTqvGpA-JLd-Fwnydby6EBZziz3vqgRUJwssreEqP6lmjv_-13QXdzqh3yx9tZiR81BvxcXShi3kJ-XDKnqt951uRRPSO8BUhXaiijJLF8PixV_ezhGJ02Y3QPFbw?key=pJIeaVZQOqqoBTmDWZd2hw" width="1" /><strong>Problemi s vatrozidom ili antivirusnim softverom:</strong></a><br />
+  <br />
+  <strong>Postupak testiranja:</strong><br />
+  <br />
+  Pokušajte ponovo uspostaviti vezu s Outlineom s drugog uređaja.</p>
+
+<p>Napomena: ne zaboravite da za upotrebu Outlinea na drugom uređaju trebate imati pristupni ključ i aplikaciju Outline.</p>
+
+<p><strong>Što treba popraviti:</strong></p>
+
+<p>Provjerite postavke vatrozida ili antivirusnog softvera i uredite ih tako da dopuštaju promet preko VPN-a i Outlinea.</p>
+
+<p><a id="DeviceSettings" name="DeviceSettings"><strong>Postavke uređaja:</strong></a></p>
+
+<p><strong>Što treba provjeriti:</strong></p>
+
+<p>Android:</p>
+
+<ol>
+  <li aria-level="1">Otvorite aplikaciju Postavke.</li>
+  <li aria-level="1">Potražite <strong>postavke VPN-a</strong> na svojem uređaju (u postavkama VPN-a prikazuju se sve VPN aplikacije koje trenutačno imaju pristup na telefonu).</li>
+  <li aria-level="1">Ako u postavkama VPN-a ne vidite Outline, deinstalirajte Outline i ponovo ga instalirajte. Uređaj bi nakon instalacije automatski trebao dati pristup Outlineu.</li>
+</ol>
+
+<p>Na Android uređaju ne smije biti instalirana aplikacija za preklapanje na zaslonu jer ona možda potiskuje prozor s dopuštenjima za Outlook u pozadinu, zbog čega nije vidljiv u prednjem planu.<br />
+  <br />
+  Na Android uređaju otvorite Postavke &gt; Aplikacije &gt; Poseban pristup za aplikacije. Dodirnite Prikaz iznad drugih aplikacija. Možete ukloniti pristup aplikacijama koje dopuštaju to ponašanje.<br />
+  <br />
+  iOS: pročitajte <a href="https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web" rel="noopener" target="_blank">ovaj članak pomoći</a>.</p>
+
+<p><a id="ServerIssues" name="ServerIssues"><strong>Problemi s poslužiteljem:</strong></a></p>
+
+<p><strong>Postupak testiranja:</strong></p>
+
+<p>Ako možete pristupiti više poslužitelja, pokušajte se povezati s drugim poslužiteljem.</p>
+
+<p><strong>Što treba popraviti:</strong></p>
+
+<p>Obratite se upravitelju usluge i provjerite nije li poslužitelj uništen. Ako jest, zatražite <a href="/outline-faq/answer/15330920" rel="noopener">pristupni ključ</a> za drugi poslužitelj.</p>
+
+<p>Ako ste vi postavili poslužitelj, pokušajte se povezati s njim putem Upravitelja Outlinea ili na neki drugi način, na primjer putem <a href="https://en.wikipedia.org/wiki/Secure_Shell">SSH-a</a>. Ako to ne riješi problem, možete provjeriti konzolu davatelja usluga u oblaku (ako postoji) da biste saznali je li poslužitelj i dalje online.</p>
+
+<p data-aura-rendered-by="12:32047;a">&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="hr">WEB:15331127</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Kako mogu preuzeti klijentsku aplikaciju ako veza za preuzimanje ne funkcionira?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Pomoću <a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">ove veze</a> mogu se izravno preuzeti aplikacije za mnoge operativne sustave.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="131" sourceLocale="hr">WEB:15331222</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Prikupljanje podataka i informacija</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:271;a">Outline ne prikuplja osobne podatke, osim u slučaju kada uključite tu opciju. Outline ne prikuplja podatke o vašim komunikacijama ili o web-lokacijama koje posjećujete.<br />
+  <br />
+  Ako izrađujete račun ili se prijavljujete na račun pomoću davatelja usluga u oblaku treće strane putem Upravitelja Outlinea, ne prikupljamo podatke koje šaljete davatelju usluga u oblaku treće strane, kao što su vaša e-adresa, ime te podaci za naplatu i plaćanje.<br />
+  <br />
+  <strong><strong>Podaci koje automatski prikupljamo</strong></strong><br />
+  <br />
+  Automatski prikupljamo dvije vrste podataka.<br />
+  1. IP poslužitelja<br />
+  <a href="http://quay.io/" target="_blank">Quay.io</a> prikuplja podatke o IP-u Outline poslužitelja i prosljeđuje nam ih kad se na poslužitelju automatski primijene ažuriranja sigurnosti i poboljšanja značajki. IP poslužitelja može identificirati davatelja usluga u oblaku i grad u kojem je Outline poslužitelj postavljen, ali nisu dostupni podaci o tome tko pokreće poslužitelj ili tko mu pristupa.<br />
+  <br />
+  2. Tehnički podaci koji ne otkrivaju osobni identitet<br />
+  Ako se Outline sruši ili dođe do fatalne iznimke odnosno ako ručno šaljete povratne informacije putem aplikacije Outline, poslat će se izvješće s podacima navedenim u nastavku. Ti se podaci upotrebljavaju samo za utvrđivanje i rješavanje problema sa stabilnošću ili izvedbom.</p>
+
+<ul data-aura-rendered-by="12:271;a">
+  <li>Država</li>
+  <li>Jezik</li>
+  <li>Datum i vrijeme rušenja / iznimke i do 100 prethodnih događaja, na primjer kada korisnik otvori odjeljak “Više o”</li>
+  <li>Statistički sastavljene poruke o iznimci</li>
+  <li>Naziv i verzija OS-a</li>
+  <li>Model telefona (ako se primjenjuje)</li>
+  <li>Vrijeme početka aplikacije</li>
+  <li>Preglednik</li>
+  <li>Arhitektura</li>
+  <li>Verzija i broj međuverzije aplikacije Outline</li>
+</ul>
+
+<p data-aura-rendered-by="12:271;a"><br />
+  Ti se podaci pomoću HTTPS-a prenose u Sentry (<a href="http://sentry.io/" target="_blank">sentry.io</a>), davatelj treće strane za usluge praćenja pogrešaka otvorenog izvornog koda. Sentry upotrebljava razne usluge i tehnologije koje su standard djelatnosti da bi zaštitio vaše podatke od neovlaštenog pristupa, otkrivanja, upotrebe i gubitka. Ako imate pitanja o pravilima Sentryja, posjetite <a href="https://sentry.io/security/" target="_blank">https://sentry.io/security/</a> i <a href="https://sentry.io/privacy/" target="_blank">https://sentry.io/privacy/</a> ili pošaljite e-poruku na adresu <a href="mailto:security@sentry.io" target="_blank">security@sentry.io</a>. Pristup svim podacima aplikacije Outline koje Sentry pohranjuje ograničen je, što znači da im mogu pristupiti samo članovi tima za Outline.<br />
+  <br />
+  <strong><strong>Podaci koje dobivamo samo nakon uključivanja određenih značajki</strong></strong><br />
+  <br />
+  Outline šalje izvješća sa sljedećim informacijama timu za Outline nakon uključivanja.<br />
+  1. Mjerni podaci o upotrebi<br />
+  Svaki Outline poslužitelj automatski prikuplja broj prenesenih bajtova, vrijeme tijekom kojeg je korisnik bio povezan s poslužiteljem, države i autonomne sustave porijekla upotrijebljenih vjerodajnica te jesu li značajke omogućene ili onemogućene. Ti se podaci prikupljaju za posljednji sat i za svaki pristupni ključ. Ne bilježi se sadržaj komunikacije ni metapodaci koji mogu otkriti osobni identitet (npr. prijave, e-poruke, ID-jevi uređaja itd.). Svi mjerni podaci povezani su s ID-jem poslužitelja. Upute za promjenu ID-a poslužitelja mogu se pronaći <a href="/outline-faq/answer/15548974" rel="noopener" target="_blank">ovdje</a>.<br />
+  <br />
+  Prema zadanim postavkama Outline poslužitelji ne dijele te mjerne podatke s timom za Outline. Ako administrator poslužitelja izričito uključi dijeljenje mjernih podataka o upotrebi, ti se podaci na siguran način šalju timu za Outline svakih sat vremena. Nakon 60 dana zbrojit će se mjerni podaci o upotrebi na razini zemlje. Administratori poslužitelja mogu promijeniti postavku za dijeljenje mjernih podataka o upotrebi na izborniku Postavke u Upravitelju Outlinea.<br />
+  <br />
+  Bit ćemo vam zahvalni ako s nama podijelite anonimne podatke o upotrebi poslužitelja jer ćemo pomoću njih izmjeriti trendove upotrebe i poboljšati proizvod.<br />
+  <br />
+  Na primjer, ako administrator poslužitelja uključi dijeljenje mjernih podataka o upotrebi, mogli bismo primiti podatke koji označavaju da je poslužitelj s ID-jem 12345 jučer upotrebljavan tri sata i da je prenio ukupno 500&nbsp;MB podataka putem tri ključa od kojih je svaki upotrijebljen u SAD-u i Kanadi s omogućenom značajkom ograničenja podatkovnog prometa.<br />
+  <br />
+  2. Vaši komentari i e-pošta ako pošaljete povratne informacije<br />
+  Upravitelj Outlinea i Outline aplikacije omogućuju vam da pošaljete povratne informacije timu. Preporučujemo da ne navodite podatke koji otkrivaju identitet, ali za slučaj da želite primiti odgovor tima, dostupno vam je polje za e-adresu. Automatski prikupljamo i neke osnovne podatke da bismo bolje razumjeli vaše povratne informacije. Da biste saznali koje podatke prikupljamo, pročitajte 2. odjeljak, Podaci koje automatski prikupljamo. Više o praksama Outlinea u vezi sa sigurnošću i privatnošću možete saznati <a href="/outline-faq/answer/14919822" rel="noopener" target="_blank">ovdje</a>.<br />
+  <br />
+  Ako upotrebljavate beta verziju aplikacije Outline na Androidu, možemo pomoću Googleove usluge <a href="https://firebase.google.com/" target="_blank">Firebase</a> prikupiti informacije za otklanjanje pogrešaka koje će nam pomoći da prepoznamo probleme i poboljšamo Outline. Više o pravilima o privatnosti i sigurnosti Firebasea možete saznati na web-lokaciji <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a>. Ako ne želite da Outline te podatke šalje putem Firebasea, upotrijebite produkcijsku verziju aplikacije.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="88" sourceLocale="hr">WEB:15331223</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Što ako moj pristupni ključ ne funkcionira?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:30472;a">Ako vam se prikaže poruka o pogrešci "Čini se da vaš pristupni ključ nije važeći. Ako se to ponovi, obratite se upravitelju usluge.", slijedite upute u nastavku da biste riješili problem:</p>
+
+<ol data-aura-rendered-by="12:30472;a">
+  <li>Provjerite jeste li unijeli cijeli pristupni ključ, uključujući prvih pet znakova "ss://" koji se možda nisu automatski kopirali u međuspremnik. Ovo je primjer cijelog pristupnog ključa (to je samo primjer koji ne funkcionira):</li>
+</ol>
+
+<pre data-aura-rendered-by="12:30472;a">
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@145.230.4.1:39485/?outline=1&nbsp;
+</pre>
+
+<ol data-aura-rendered-by="12:30472;a" start="2">
+  <li>Ako uopće ne možete kopirati pristupni ključ u međuspremnik, razlog tome možda je vaša aplikacija za slanje poruka ili platforma. To se najčešće događa ako primite poruku od nekoga tko nije na vašem popisu kontakata. Ako kopirate kôd iz poruke, provjerite je li pošiljatelj među vašim kontaktima, a zatim pokušajte ponovo otvoriti vezu.</li>
+  <li>Ako vam se poruka o pogrešci prikazuje i nakon što ste izvršili 1. i 2. korak, poslužitelj je vjerojatno blokiran ili pristupni ključ više nije važeći. Ako ste upravitelj usluge, pokušajte generirati novi ključ za sebe. Ako niste, zatražite novi ključ od upravitelja usluge.</li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="96" sourceLocale="hr">WEB:15331322</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Koliko košta pokretanje Outlinea?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Softver Outline besplatan je za svakoga, bez obzira na to jeste li administrator poslužitelja koji upravlja VPN-om ili korisnik Outlinea koji želi pristupiti otvorenom internetu.<br />
+  <br />
+  No za pokretanje Outlinea potreban je pristup poslužitelju u oblaku. Administratori poslužitelja koji već imaju pristup poslužitelju mogu instalirati Outline bez dodatnih troškova. Korisnici koji nemaju pristup poslužitelju mogu kupiti pristup od davatelja usluga u oblaku kao što su <a href="http://www.digitalocean.com/" rel="noopener" target="_blank">DigitalOcean</a> ili Amazon Web Services za približno 5&nbsp;USD mjesečno za 1&nbsp;TB prijenosa podataka, a to je dovoljno za stotine korisnika na jednom poslužitelju.<br />
+  <br />
+  Primjer izračuna troška za pokretanje Outlinea na odabranom davatelju usluga u oblaku:</p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td colspan="1" rowspan="1">
+      <p><em>Uz pretpostavku prosječne mjesečne upotrebe od 5 GB za prijenos podataka po korisniku, paket u vrijednosti od 5 USD mjesečno omogućio bi korištenje za 200 istovremenih korisnika, pri čemu trošak po korisniku iznosi samo 2,5 centa mjesečno. Količina prenesenih podataka po korisniku tijekom mjeseca uvelike će ovisiti o tome sudjeluju li korisnici u aktivnostima koje uključuju prijenos veće ili manje količine podataka, ali većina davatelja usluga u oblaku prilagodit će se povećanjima prometa.</em></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br />
+  Zapravo, upotreba Outlinea potpuno je anonimna za Jigsaw i Google. Ne pratimo vaš identitet ni promet te ne postoji plan za unovčavanje. Umjesto toga surađujemo s našom zajednicom otvorenog izvornog kôda da bismo osigurali da naši korisnici mogu besplatno upotrebljavati naš softver. <a href="/outline-faq/answer/15331222" rel="noopener" target="_blank">Ovdje</a> možete saznati više o podacima koje prikupljamo.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="386" sourceLocale="hr">WEB:15331326</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Kako postaviti ograničenje podatkovnog prometa za pristupne ključeve</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:15859;a">Možete postaviti ograničenje podatkovnog prometa koje će se primjenjivati na sve pristupne ključeve. Da biste postavili ograničenje, otvorite Upravitelj Outlinea i idite na postavke. U postavkama ćete vidjeti prekidač Ograničenje podatkovnog prometa koji možete omogućiti radi postavljanja ograničenja.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787036"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">Nakon što postavite ograničenje, na stranici s pristupnim ključem možete vidjeti koliko se svaki korisnik približio ograničenju. Trakasti grafikon prikazuje potrošnju podatkovnog prometa tijekom posljednjih 30 dana.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787037"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">Osim što možete postaviti ograničenje za sve svoje pristupne ključeve, možete postaviti ograničenje podatkovnog prometa zasebno za svaki ključ. Ta će postavka nadjačati sva zadana ograničenja podatkovnog prometa koja ste postavili, ali ako niste postavili zadano ograničenje podatkovnog prometa, i dalje možete postaviti ograničenje podatkovnog prometa za svaki ključ.<br />
+  <br />
+  Da biste postavili ograničenje prijenosa podataka za ključ, otvorite Upravitelj Outlinea, prijeđite na karticu Veze koja sadrži ključ koji želite postaviti i kliknite izbornik desno od retka ključa. Zatim kliknite Ograničenje podatkovnog prometa. Da biste promijenili ograničenje podatkovnog prometa u odjeljku Moj pristupni ključ, kliknite ikonu ograničenja podatkovnog prometa <img alt="Ta slika nije dostupna iz sljedećih razloga: nemate ovlasti za njezin pregled ili je uklonjena iz sustava" height="19" src="https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw" width="19" />.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787423"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">Odaberite Postavi prilagođeno ograničenje podatkovnog prometa. Nakon što potvrdite taj potvrdni okvir, prikazat će se polje u kojem možete postaviti prilagođeno ograničenje podatkovnog prometa za taj ključ. Kliknite gumb SPREMI kada završite da biste spremili ograničenje podatkovnog prometa.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15788959"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">Nakon što spremite ograničenje prijenosa podataka za odabrani ključ, ograničenje će se prikazivati na glavnom zaslonu uz potrošnju podatkovnog prometa (tijekom prethodnih 30 dana) za svaki ključ.</p>
+
+<p data-aura-rendered-by="12:15859;a">Da biste uklonili ograničenje podatkovnog prometa s pristupnog ključa, otvorite dijaloški okvir ograničenja podatkovnog prometa za ključ kao i prije, uklonite kvačicu iz okvira s oznakom Postavi prilagođeno ograničenje podatkovnog prometa i kliknite gumb SPREMI.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15788414"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a"><b><strong>Česta pitanja o ograničenju podatkovnog prometa</strong></b><br />
+  <br />
+  <strong><b>Što je 30-dnevno promjenjivo ograničenje podatkovnog prometa?</b></strong><br />
+  <br />
+  Promjenjivo ograničenje podatkovnog prometa za 30 dana zbrojit će upotrebu svakog ključa u proteklih 30 dana i zadržati je ispod ograničenja tijekom tog razdoblja. To znači da ključ ne može prekoračiti ograničenje tijekom bilo kojeg 30-dnevnog razdoblja, uključujući kalendarske mjesece koji imaju 30 dana ili manje. To zapravo znači da će se dostupan podatkovni promet svakog korisnika povećavati svaki dan na temelju količine podataka koju je potrošio prije 31 dan.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Zašto Outline upotrebljava promjenjiva ograničenja?</strong><br />
+  <br />
+  Promjenjiva ograničenja pružaju jamstvo za svako 30-dnevno razdoblje. To znači da ih je jednostavnije konfigurirati od ponavljajućih ograničenja (kao što je prilagodba dana u mjesecu), iako pružaju slična jamstva. Također su prikladna za postojeći prikaz upotrebe podataka Outlinea te za standardne alate, kao što su analitičke usluge i statistika poslužitelja.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Koji se podaci ubrajaju u ograničenje podatkovnog prometa?</strong><br />
+  <br />
+  U izračun je uključen svaki izlazak pristupnog ključa iz poslužitelja. Strogo uzevši, to se odnosi na podatke koji su poslani iz poslužitelja u ime ključa, kao i na podatke koji su poslani natrag klijentu. To bi praktički trebalo biti usko usklađeno s prometom koji se šalje s ključa na poslužitelj i natrag. Stoga se nadamo da će biti u skladu s izračunom vaših klijenata. Odabrali smo izlaz jer ga naplaćuju davatelji usluga u oblaku koje smo anketirali.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Hoće li se korisnici obavijestiti ako prijeđu ograničenje podatkovnog prometa?</strong><br />
+  <br />
+  Trenutačno ne. Mnogi davatelji usluga u oblaku nude ograničenje od 1 TB za cijeli mjesec koje se odnosi na 10 korisnika i potrošnju od 100 GB po korisniku ili 100 korisnika i potrošnju od 10 GB po korisniku. To su prilično velike brojke i ne očekujemo da će ih mnogi korisnici dosegnuti. Nadamo se da će se korisnici javiti upraviteljima poslužitelja kada dosegnu ograničenje. No željeli bismo čuti vaše mišljenje o tome kako bi obavijesti mogle pomoći u vašoj upotrebi. Možete nam se javiti <a href="https://support.getoutline.org/s/contactsupport" target="_blank">ovdje</a>.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Hoće li se korisnici obavijestiti ako se približe ograničenju podatkovnog prometa?</strong><br />
+  <br />
+  Količina novih podataka koje će korisnik koji se približava ograničenju primiti razlikuje se ovisno o danu jer se temelji na upotrebi od prije 30 dana. Smatramo da će upozorenje vjerojatno zbuniti krajnje korisnike, umjesto da im pomogne. Rado bismo čuli vaše povratne informacije o tom ponašanju <a href="https://support.getoutline.org/s/contactsupport" rel="noopener" target="_blank">ovdje</a>.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Mogu li ponovno postaviti potrošnju podatkovnog prometa za korisnika?</strong><br />
+  <br />
+  Ne, ograničenje korisnika uvijek uključuje prethodnih 30 dana potrošnje podataka. Međutim, možete povećati ograničenje podatkovnog prometa za ključ ili izraditi novi ključ za korisnika.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Zašto su neki od mojih korisnika izgubili pristup odmah nakon omogućavanja ograničenja podatkovnog prometa?</strong><br />
+  <br />
+  Ograničenja podatkovnog prometa temelje se na prethodnih 30 dana prijenosa podataka korisnika koji se bilježe bez obzira na to jesu li ograničenja podatkovnog prometa omogućena. Moguće je da su ti korisnici već prekoračili ograničenje prije nego što je postavljeno. Osim toga, sva su ograničenja podatkovnog prometa implementirana, čak i pri promjeni ograničenja podatkovnog prometa za jedan ključ.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Mogu li postaviti ograničenje za cijeli poslužitelj, na primjer 1 TB u 30 dana?</strong><br />
+  <br />
+  Trenutačno ne. Htjeli bismo čuti više o vašoj upotrebi <a href="https://support.getoutline.org/s/contactsupport" rel="noopener" target="_blank">ovdje</a>.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Ako postoji zadano ograničenje podatkovnog prometa i ograničenje podatkovnog prometa za određeni ključ, koje će se ograničenje implementirati?</strong><br />
+  <br />
+  Ograničenje podatkovnog prometa za određeni ključ nadjačat će sva zadana ograničenja podatkovnog prometa koja (i ako) ste postavili.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Mogu li postaviti ograničenje podatkovnog prometa za određeni ključ bez postavljanja zadanog ograničenja podatkovnog prometa?</strong><br />
+  <br />
+  Da. Ne trebate definirati zadano ograničenje da biste postavili ograničenje podatkovnog prometa za jedan ključ. Mogli biste primjerice postaviti ograničenje za jedan ključ za koji smatrate da bi se mogao uvelike dijeliti da biste se zaštitili od prekomjernog prijenosa podataka za taj ključ.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="hr">WEB:15331327</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Kako mogu poništiti ID poslužitelja?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:23999;a">ID poslužitelja jest ID na strani poslužitelja koji se nasumično generira pri izradi Outline poslužitelja. Možete ga pronaći ako na sučelju Postavke uključite dijeljenje anonimnih mjernih podataka. ID poslužitelja možete pronaći ovako: Postavke =&gt; pomaknite se na dno =&gt; označite "dijeljenje anonimnih mjernih podataka".</p>
+
+<p data-aura-rendered-by="12:23999;a">ID poslužitelja povezuje anonimnu statistiku upotrebe koja se prijavljuje tijekom vremena. Ako želite poništiti ID poslužitelja i dobiti novi, postojeći Outline poslužitelj trebate zamijeniti novim.</p>
+
+<p data-aura-rendered-by="12:23999;a">Ako je vaš davatelj usluga u oblaku DigitalOcean, svoj poslužitelj možete poništiti tako da otvorite Postavke i odaberete Uništi poslužitelj. Ta se radnja ne može poništiti i njome se brišu vaše vjerodajnice. Odmah nakon toga prikazat će se uputa da izradite novi poslužitelj na lokaciji koju odaberete i generirat će se novi ID poslužitelja.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="103" sourceLocale="hr">WEB:15331328</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Kako promijeniti lokaciju Outline poslužitelja</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:24761;a">Nakon što postavite lokaciju poslužitelja, ne možete je mijenjati. Ako želite da poslužitelj radi na drugoj lokaciji, trebate izbrisati Outline poslužitelj i izraditi novi.</p>
+
+<p data-aura-rendered-by="12:24761;a"><br />
+  Možete promijeniti i lokaciju VPN-a pomoću <a href="https://developers.google.com/outline/docs/guides/service-providers/dynamic-access-keys" target="_blank">dinamičnih ključeva</a> koji omogućuju mijenjanje poslužitelja uz zadržavanje istih ključeva. Lokacija poslužitelja pritom se ne mijenja.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="102" sourceLocale="hr">WEB:15331423</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Kako poslati povratne informacije ili prijedloge</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:22486;a">Hvala vam što ste nam pomogli da poboljšamo Outline! Postoji nekoliko načina za slanje povratnih informacija. Pošaljite nam ih anonimno ili putem e-pošte ako želite odgovor:</p>
+
+<ul data-aura-rendered-by="12:22486;a">
+  <li><strong>Za razvojne programere</strong>: Outline je softver otvorenog izvornog koda, a sve kodove hostamo na <a href="https://github.com/jigsaw-Code/?q=outline" target="_blank">GitHubu</a>. Svoje ideje možete podijeliti na GitHubu ili u našoj zajednici na <a href="https://www.reddit.com/r/outlinevpn/" target="_blank">Redditu</a>.</li>
+  <li><strong>Za korisnike</strong>: povratne informacije možete poslati putem aplikacija Outline ili Upravitelj Outlinea. Recite nam na što se vaše povratne informacije odnose i ako želite odgovor, navedite svoju e-adresu. Prikupljamo i neke metapodatke o vašem okruženju kako bismo vam mogli pomoći u rješavanju problema. To mogu biti podaci o vašem pregledniku, operativnom sustavu i verziji softvera koju upotrebljavate.</li>
+  <li><strong>Putem ove web-lokacije</strong>: možete kliknuti vezu za stupanje u kontakt s nama bilo gdje na web-lokaciji.</li>
+  <li><strong>Ozbiljni problemi</strong>: ako želite prijaviti ozbiljan sigurnosni problem, pošaljite nam e-poruku s pojedinostima na adresu <a href="https://getoutline.org/" rel="noopener" target="_blank">security@getoutline.org</a>.</li>
+</ul>
+
+<p data-aura-rendered-by="12:22486;a">Još jednom vam zahvaljujemo što ste odvojili vrijeme da podijelite svoje misli s nama.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="146" sourceLocale="hr">WEB:15331424</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Upravljanje pristupom poslužitelju za Outline (putem pristupnih ključeva)</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:25527;a">Nakon što instalirate poslužitelj za Outline, možete početi s dijeljenjem pristupa poslužitelju i upravljanjem njime. Osobe koje prime vašu pozivnicu moći će preuzeti aplikaciju Outline i upotrijebiti je za zaštitu svojeg internetskog prometa.</p>
+
+<p data-aura-rendered-by="12:25527;a"><strong>Dijeljenje pristupa poslužitelju za Outline</strong><br />
+  Nakon što instalirate poslužitelj za Outline, bit ćete preusmjereni na stranicu s pojedinostima poslužitelja u Upravitelju Outlinea. Ondje možete izraditi pristupne ključeve. <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">Saznajte više o pristupnim ključevima</a>.</p>
+
+<ul data-aura-rendered-by="12:25527;a">
+  <li>Izrada ključeva: kliknite malu ikonu + pri dnu stranice da biste izradili nove ključeve.</li>
+  <li>Dijeljenje ključeva: na desnoj strani svakog ključa nalazi se ikona dijeljenja koju možete kliknuti da biste dobili pozivnicu. Tu pozivnicu kopirajte i zalijepite u željeni sustav za slanje poruka.</li>
+</ul>
+
+<p data-aura-rendered-by="12:25527;a"><strong>Zahtjev za značajku: dijeljenje pristupa iz aplikacije Upravitelj Outlinea</strong><br />
+  Mnogi administratori poslužitelja zamolili su nas da pojednostavimo postupak slanja pozivnica i omogućimo im da unesu e-adresu određenog korisnika izravno u Upravitelj Outlinea.</p>
+
+<p data-aura-rendered-by="12:25527;a">Nažalost, tu funkciju vjerojatno nećemo ugraditi u Upravitelj Outlinea. Jedno od naših glavnih načela jest podržavati privatnost i sigurnost naših korisnika, a to znači da nećemo uvoditi opciju za unos e-adrese ili podataka za kontakt.</p>
+
+<p data-aura-rendered-by="12:25527;a">Zbog toga naši administratori poslužitelja prilikom slanja pozivnice krajnjem korisniku trebaju upotrebljavati sigurnu platformu za slanje poruka, na primjer e-poštu ili sigurni chat.<br />
+  <br />
+  <strong>Što korisnik treba učiniti nakon što s njim podijelite pristupni ključ</strong></p>
+
+<ol data-aura-rendered-by="12:25527;a">
+  <li>Korisnik će na svojem uređaju kliknuti vezu za instalaciju.</li>
+  <li>Od njega će se zatražiti da instalira aplikaciju Outline ako to već nije učinio.</li>
+  <li>Korisnik će uspostaviti početnu vezu s poslužiteljem za Outline putem jedinstvenog ključa ugrađenog u pozivnicu.</li>
+  <li>Sada može upotrijebiti gumb za povezivanje/prekid veze radi upravljanja pristupom internetu putem poslužitelja za Outline.</li>
+</ol>
+
+<p data-aura-rendered-by="12:25527;a"><strong>Uklanjanje pristupa poslužitelju za Outline</strong><br />
+  Na stranici s pojedinostima poslužitelja u Upravitelju Outlinea, na desnoj strani svakog ključa na poslužitelju prikazivat će se izbornik s opcijom brisanja ključa. Ako izbrišete ključ, uklonit će se njegov pristup poslužitelju.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="92" sourceLocale="hr">WEB:15331524</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Kako mogu pristupiti resursima za Outline ako je web-lokacija getoutline.org blokirana?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><a href="https://s3.amazonaws.com/outline-vpn/index.html" target="_blank">Spremite ovu zrcalnu web-lokaciju u oznake</a> i upotrijebite je ako ne možete pristupiti web-lokaciji <a href="http://getoutline.org/" target="_blank">getoutline.org</a>.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="321" sourceLocale="hr">WEB:15331527</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Instaliranje Outline Clienta na Linuxu</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Od verzije Outline Clienta 1.15 sve buduće verzije izdavat će se kao Debian paketi za operativne sustave Linux. Više informacija o tome koje operativne sustave podržavamo potražite u našim <a href="/outline/answer/15330818" rel="noopener" target="_blank"><u>minimalnim preduvjetima sustava</u></a>.</p>
+&nbsp;
+
+<p><strong>Instaliranje Outline Clienta za Debian distribucije Linuxa (preporučeno)</strong></p>
+&nbsp;
+
+<p>Pokrenite sljedeće naredbe:</p>
+
+<ol>
+  <li aria-level="1">Instalirajte ključ spremišta za Outline i dodajte spremište.
+    <div class="code">
+      <div class="no-margin">
+        <p>wget -qO- https://us-apt.pkg.dev/doc/repo-signing-key.gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/gcloud-artifact-registry-us.gpg</p>
+
+        <p>echo "deb [arch=amd64] https://us-apt.pkg.dev/projects/jigsaw-outline-apps outline-client main" | sudo tee /etc/apt/sources.list.d/outline-client.list</p>
+      </div>
+    </div>
+  </li>
+</ol>
+
+<p>2. Ažurirajte popis apt paketa i instalirajte najnoviju verziju Outline Clienta.</p>
+
+<div class="code">
+  <div class="no-margin">
+    <p>sudo apt update</p>
+
+    <p>sudo apt install outline-client</p>
+  </div>
+</div>
+
+<p>Da biste provjerili jesu li dostupna buduća ažuriranja ili ih instalirali, ponovo pokrenite naredbe u 2. koraku. Automatsko ažuriranje u aplikaciji onemogućeno je za Outline Client na Linuxu od verzije 1.15.</p>
+
+<p>Da biste deinstalirali Outline Client, pokrenite sljedeću naredbu:</p>
+
+<div class="code">
+  <div class="no-margin">sudo apt purge outline-client</div>
+</div>
+
+<p><strong>Alternativna opcija</strong></p>
+
+<ol>
+  <li aria-level="1">Preuzmite najnoviji Debian paket Outline Clienta s web-lokacije <a href="https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb" rel="noopener" target="_blank">https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb</a></li>
+  <li aria-level="1">Pokrenite sljedeće naredbe u naredbenom retku da biste instalirali paket</li>
+</ol>
+
+<div class="code">
+  <div class="no-margin">
+    <p>wget-O./outline-client.deb https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb</p>
+
+    <p>sudo apt install ./outline-client.deb</p>
+  </div>
+</div>
+
+<p>3. Ručno potražite ažuriranja jer je automatsko ažuriranje u aplikaciji onemogućeno za Outline Client na Linuxu od verzije 1.15.</p>
+
+<p>4. Da biste deinstalirali Outline Client, u naredbenom retku pokrenite sljedeću naredbu:</p>
+
+<div class="code">
+  <div class="no-margin">sudo apt purge outline-client</div>
+</div>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="206" sourceLocale="hr">WEB:15331528</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Može li se pristupni ključ upotrijebiti više puta</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1895;a">Da. <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">Pristupni ključ</a> možete upotrijebiti na više uređaja, ali ne preporučujemo da ga dijelite s drugim osobama. Ako netko ima vaš pristupni ključ, može pregledati vaš cjelokupni internetski promet ako mu može pristupiti, što znači da više nećete moći upotrebljavati internet na siguran ili privatan način.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="104" sourceLocale="hr">WEB:15331529</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Povezivanje uređaja s Outline poslužiteljem</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1399;a">&nbsp;</p>
+
+<p data-aura-rendered-by="12:1399;a"><strong>Povezivanje uređaja s Outline poslužiteljem</strong></p>
+
+<p data-aura-rendered-by="12:1399;a">Da biste svoj uređaj povezali s Outline poslužiteljem, administrator poslužitelja treba vam poslati pozivnicu za povezivanje s njegovim poslužiteljem pomoću jedinstvenog <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">pristupnog ključa</a>. Ta će pozivnica:</p>
+
+<ul data-aura-rendered-by="12:1399;a">
+  <li>Prikazati uputu da preuzmete i instalirate Outline na uređaj ako ga još nemate.</li>
+  <li>Upotrijebite pristupni ključ za sigurno povezivanje s Outline poslužiteljem.</li>
+</ul>
+
+<p data-aura-rendered-by="12:1399;a">Nakon što uspostavite vezu s poslužiteljem, možete kliknuti gumb za povezivanje ili za prekid veze da biste upotrijebili Outline.</p>
+
+<p data-aura-rendered-by="12:1399;a"><em>Važno:</em> Outline ne funkcionira bez pristupnog ključa i Outline poslužitelja. Ako preuzmete i instalirate aplikaciju Outline bez ključa, nećete zaštititi svoj internetski promet.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="100" sourceLocale="hr">WEB:15331530</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Kako mogu postaviti poslužitelj za Outline?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:27063;a">Postavljanje poslužitelja za Outline prvi je korak prema upotrebi Outlinea. Da biste se mogli povezati s otvorenim internetom putem Outlinea, morate postaviti poslužitelj ili to za vas mora učiniti osoba kojoj vjerujete.<br />
+  <br />
+  <strong>Prije nego što započnete</strong><br />
+  Prije nego što počnete s postavljanjem poslužitelja za Outline, trebate imati sljedeće:</p>
+
+<ol data-aura-rendered-by="12:27063;a">
+  <li>Pristup vlastitim poslužiteljima ili davatelju usluga u oblaku kao što je DigitalOcean, Amazon Web Services (AWS) ili Google Cloud Platform (GCP).<br />
+    Ako još nemate pristup poslužitelju u oblaku, možete jednostavno postaviti račun na bilo kojem davatelju usluga, uključujući prethodno navedene. Za registraciju će vam vjerojatno trebati kreditna kartica.</li>
+  <li>Stolno računalo sa sustavom macOS 10.9+, Windows 7.0+ ili Linux.</li>
+  <li>Aplikaciju Upravitelj Outlinea.</li>
+</ol>
+
+<p data-aura-rendered-by="12:27063;a"><strong>Postavljanje na DigitalOceanu</strong><br />
+  <br />
+  Svaki korisnik može jednostavno instalirati Outline na DigitalOceanu u nekoliko klikova. Nakon što preuzmete i instalirate Upravitelj Outlinea na računalu, možete odabrati opciju postavljanja na DigitalOceanu. Prikazat će se nekoliko jednostavnih zaslona s uputama za konfiguraciju te će se poslužitelj za Outline instalirati.<br />
+  <br />
+  <strong>Postavljanje s drugim davateljem usluga u oblaku</strong><br />
+  <br />
+  Nakon što preuzmete i instalirate Upravitelj Outlinea, možete odabrati instalaciju poslužitelja za Outline na virtualnom uređaju s AWS-om, GCP-om, DigitalOceanom ili drugim davateljem usluga. Budući da je svako okruženje drugačije, Upravitelj Outlinea sadrži upute za postavljanje na većini najčešćih davatelja usluga u oblaku. U uputama možete saznati i kako konfigurirati postavke na virtualnom uređaju prije nego što pokrenete skriptu za instaliranje Outlinea na poslužitelju.<br />
+  <br />
+  <strong><em>Treba li vam dodatna pomoć?</em></strong><br />
+  <br />
+  Pročitajte <a href="/outline-faq/answer/15331728" rel="noopener" target="_blank">česta pitanja o postavljanju poslužitelja za Outline</a>.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="95" sourceLocale="hr">WEB:15331625</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Smijem li upotrebljavati ili replicirati robnu marku Outline?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Outline je softver otvorenog izvornog koda i besplatan je, no naša je robna marka vlasnički softver Jigsawa i ne smije se zloupotrijebiti. Pridržavajte se <a href="https://github.com/Jigsaw-Code/outline-brand/blob/main/outline_brand_user_guide.pdf" target="_blank">korisničkog priručnika</a> kako biste izbjegli potencijalno zavaravajuće izjave ili pogrešno karakteriziranje vašeg odnosa s Outlineom ili Jigsawom te osigurali pravilnu upotrebu odobrenih elemenata robne marke.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="191" sourceLocale="hr">WEB:15331628</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Kako mogu dobiti pristupni ključ?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:3258;a">Outline nije VPN usluga kojoj možete pristupiti uz plaćanje: to je <a href="https://getoutline.org/#:~:text=Two%20Products%20that%20Work%20Together" target="_blank">alat</a> koji vam omogućuje da pokrenete svoj privatni VPN poslužitelj i podijelite pristup tom poslužitelju. <a href="/outline/answer/15330920#servicemanager" rel="noopener" target="_blank">Upravitelj usluge</a> jedina je osoba koja može dati pristupni ključ. Tim za Outline ne distribuira besplatne pristupne ključeve ni one uz plaćanje. Nemamo službene partnere Outlinea za pristupni ključ, osim Paskoocheh na farskom.<br />
+  <br />
+  U nastavku su navedene tri mogućnosti za dobivanje pristupnog ključa:</p>
+
+<ul data-aura-rendered-by="12:3258;a">
+  <li>Zamolite nekoga da vas pozove na svoj poslužitelj: ako poznajete nekoga s poslužiteljem za Outline, obratite se toj osobi i zatražite pristupni ključ.</li>
+  <li><a href="/outline/answer/15331530" rel="noopener" target="_blank">Sami izradite poslužitelj:</a> na Windows, Mac ili Linux računalu preuzmite <a href="https://getoutline.org/get-started/#step-1" target="_blank">Upravitelj Outlinea</a> i postavite vlastiti privatni <a href="/outline/answer/15330920" rel="noopener" target="_blank">Outline poslužitelj</a>. Taj smo postupak olakšali za sve, naročito putem davatelja usluga DigitalOcean u oblaku.</li>
+  <li>Upotrijebite uslugu Outline ili <a href="https://en.wikipedia.org/wiki/Shadowsocks#:~:text=Shadowsocks%20is%20a%20free%20and,have%20been%20made%20available%20since." target="_blank">Shadowsocks</a>: Outline Klijent može se upotrijebiti s uslugama treće strane koje upotrebljavaju protokol Outlinea ili Shadowsocksa. Primjer:
+    <ul>
+      <li><a href="http://nthlink.com/" target="_blank">nthLink</a> ima besplatnu uslugu koja se temelji na Outlineu, uz prilagođenu verziju Outline Klijenta.</li>
+      <li><a href="https://www.reddit.com/r/outlinevpn/comments/nwu1se/the_outline_distribution_system_is_here_to_help/" target="_blank">ASL19</a> ima prilagođenu verziju Outlinea pod nazivom <a href="https://beepassvpn.com/" target="_blank">BeePass</a>, kao i <a href="https://t.me/paskoochehbot" target="_blank">Telegramov bot</a> koji pruža besplatne pristupne ključeve poslužiteljima BeePass.</li>
+      <li>Korisnici koji govore farsi mogu zatražiti i Outlineov pristupni ključ od <a href="https://outline.paskoocheh.com/" target="_blank">Paskoocheha koji omogućuje ASL19</a>.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Nakon preuzimanja klijentske aplikacije Outline kopirajte <a href="/outline/answer/15330920#accesskey" rel="noopener" target="_blank">pristupni ključ</a> i zalijepite ga u klijentsku aplikaciju Outline radi povezivanja s Outline poslužiteljem.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="133" sourceLocale="hr">WEB:15331630</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Kako mogu izbrisati svoj Outline poslužitelj?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:14046;a">Većina davatelja usluga u oblaku omogućuje jednostavno uklanjanje određenog virtualnog uređaja koji upotrebljavate.</p>
+
+<p data-aura-rendered-by="12:14046;a">Ako je vaš davatelj usluga u oblaku DigitalOcean, svoj postojeći virtualni uređaj možete izbrisati tako da kliknete na gumb zupčanika i odaberete Uništi poslužitelj. Odmah nakon toga prikazat će se uputa da izradite novi virtualni uređaj na lokaciji koju odaberete.</p>
+
+<p data-aura-rendered-by="12:14046;a">Ako uklonite Outline poslužitelj, trajno će se izbrisati, a nijedan pristupni ključ više neće funkcionirati. Ako želite spriječiti prekide u pristupu korisnika putem Outlinea, prije brisanja starog poslužitelja trebate <a href="/outline-faq/answer/15331530" rel="noopener" target="_blank">postaviti novi Outline poslužitelj</a> i podijeliti pristup za njega.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="99" sourceLocale="hr">WEB:15331631</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Kako postaviti više poslužitelja za Outline</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:27908;a">Da biste postavili dodatne poslužitelje za Outline, na navigacijskoj ploči koja se nalazi na lijevoj strani aplikacije Upravitelj Outlinea kliknite na ikonu +. Upute za dodavanje novog poslužitelja iste su kao za instalaciju prvog poslužitelja.</p>
+
+<ul data-aura-rendered-by="12:27908;a">
+  <li>Ne postoji ograničenje broja poslužitelja za Outline koje možete izraditi.</li>
+  <li>Za svaki poslužitelj za Outline koji izradite trebat će vam odgovarajući virtualni uređaj.</li>
+  <li>Ako izradite dodatne uređaje ili virtualne uređaje, davatelj usluga u oblaku može povećati naknadu koju plaćate. Provjerite svoj tarifni plan kod davatelja usluga u oblaku tako da znate što možete očekivati.</li>
+</ul>
+
+<p data-aura-rendered-by="12:27908;a"><strong>Izrada dodatnog poslužitelja za Outline na DigitalOceanu</strong></p>
+
+<p data-aura-rendered-by="12:27908;a">Nakon što kliknete ikonu + i odaberete instalaciju na DigitalOceanu, pratit ćete iste upute koje ste pratili za postavljanje prvog poslužitelja. Osim toga, budući da je Upravitelj Outlinea integriran s DigitalOceanom, možemo izraditi virtualni uređaj odmah u aplikaciji Upravitelj Outlinea.</p>
+
+<p data-aura-rendered-by="12:27908;a">Upravitelj Outlinea odjednom može podržati samo jedan DigitalOcean račun. Ako želite dodati ili izraditi druge poslužitelje za Outline s drugih DigitalOcean računa, možete ih dodati kao naprednu konfiguraciju.</p>
+
+<p data-aura-rendered-by="12:27908;a"><strong>Izrada dodatnog poslužitelja za Outline na GCP-u, AWS-u ili drugom davatelju usluga u oblaku</strong></p>
+
+<p data-aura-rendered-by="12:27908;a">Počnite s izradom novog virtualnog uređaja na odabranom davatelju usluga u oblaku. Zatim otvorite Upravitelj Outlinea i slijedite upute za naprednu instalaciju, kao i prvi put.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="96" sourceLocale="hr">WEB:15331632</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Zašto ne mogu instalirati Upravitelj Outlinea na Windows uređaju?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:34680;a">Može vam se prikazati sljedeća poruka o pogrešci: "Nažalost, izgleda da Outline nije ispravno instaliran. Pokušajte ga ponovo instalirati. Ako to ne funkcionira, <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">pošaljite povratne informacije</a>."</p>
+
+<p data-aura-rendered-by="12:34680;a">Ako koristite Outline na Windows uređaju, povremeno može doći do neočekivane pogreške. U većini slučajeva potrebno je izbrisati Outlineov TAP adapter (upravljački program) i ponovo instalirati Outline.</p>
+
+<p data-aura-rendered-by="12:34680;a">Koraci se mogu razlikovati ovisno o verziji operativnog sustava Windows, ali u nastavku su navedeni općeniti koraci za deinstalaciju TAP adaptera i Upravitelja Outlinea te za ponovnu instalaciju Upravitelja Outlinea.</p>
+
+<ol data-aura-rendered-by="12:34680;a">
+  <li>Deinstaliranje TAP adaptera za Upravitelja Outlinea
+    <ol>
+      <li>Otvorite Device Managers (Upravitelji uređaja), a zatim Network Adapters (Mrežni adapteri)</li>
+      <li>Pronađite datoteku TAP-Windows Adapter V9 ili TAP adapter povezan s Outlineom</li>
+      <li>Deinstalirajte ili izbrišite taj adapter. Ne zaboravite da to može utjecati na druge VPN aplikacije koje ste instalirali.</li>
+    </ol>
+  </li>
+  <li>Deinstaliranje Upravitelja Outlinea
+    <ol>
+      <li>Otvorite Programs &amp; Features (Programi i značajke), a zatim Uninstall Program (Deinstaliranje programa)</li>
+      <li>Pronađite aplikaciju Upravitelj Outlinea i deinstalirajte je</li>
+      <li><a href="https://getoutline.org/get-started/#step-1" target="_blank">Preuzmite najnoviju verziju Upravitelja Outlinea</a> i ponovo je instalirajte na svoj Windows uređaj. U novoj instalaciji trebao bi se automatski instalirati novi TAP adapter.</li>
+    </ol>
+  </li>
+</ol>
+
+<p data-aura-rendered-by="12:34680;a">Ako i dalje nailazite na poteškoće, <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">obratite se korisničkoj podršci</a>.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="94" sourceLocale="hr">WEB:15331727</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Automatsko postavljanje Google Clouda</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:26310;a"><strong>Pregled</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Upravitelj Outlinea sadrži značajku koja vam omogućuje da automatski konfigurirate poslužitelj Outlinea na poslužitelju koji se pokreće na Google Cloudu. Ako odlučite upotrebljavati tu značajku, Upravitelj Outlinea tražit će da se prijavite svojim Google računom. Na taj će se način dodijeliti određena dopuštenja za <a href="https://developers.google.com/identity/protocols/oauth2" target="_blank"> OAuth</a> u vašoj lokalnoj instalaciji Upravitelja Outlinea radi konfiguracije Google Cloud računa.<br />
+  Ako ne želite dati ta dopuštenja, možete slijediti upute za napredno postavljanje u Upravitelju Outlinea da biste pokrenuli Outline na Google Cloud Platformi.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Dodijeljena dopuštenja</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Upravitelj Outlinea zahtijeva sljedeća dopuštenja na vašem Google računu radi omogućavanja automatskog postavljanja.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Google Cloud Platform</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>Prikaz resursa za Google Compute Engine i upravljanje njima</li>
+  <li>Uvid u vaše podatke na uslugama Google Clouda i e-adresu vašeg Google računa</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Osnovni podaci o računu</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>Pregled primarne e-adrese vašeg Google računa</li>
+  <li>Vaše povezivanje s vašim osobnim podacima na Googleu</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Dodatni pristup</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>Upravljanje projektima na Cloud Platformu</li>
+  <li>Prikaz računa za naplatu za Google Cloud Platform i upravljanje njima</li>
+  <li>Upravljanje konfiguracijom usluga Google API-ja</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a">Ta nam dopuštenja omogućuju podršku za napredne funkcije za upravljanje poslužiteljima Outlinea, uključujući:</p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>mogućnost da odaberete odgovarajući račun za naplatu</li>
+  <li>izradu novog projekta radi organiziranja poslužitelja Outlinea</li>
+  <li>popis dostupnih podatkovnih centara</li>
+  <li>izradu novih virtualnih uređaja za pokretanje Outlinea</li>
+  <li>konfiguraciju novog virtualnog računala s Outlineom</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Opozivanje dopuštenja</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Pristup Google Cloud Platformu za Upravitelj Outlinea možete opozvati u odjeljku <a href="https://myaccount.google.com/permissions" target="_blank"> Moj račun</a>. Ako opozovete pristup, svi poslužitelji koje ste izradili uz automatsko postavljanje i dalje će se pokretati, ali više se neće prikazivati u Upravitelju Outlinea. Da biste vratili pristup, jednostavno se ponovno povežite s Google Cloud Platformom pokretanjem automatskog postavljanja.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Organizacija projekta Outlinea</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Za automatsko postavljanje na Google Cloudu upotrebljava se jedan <a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects" target="_blank"> projekt Google Clouda</a> za organizaciju poslužitelja Outlinea. Projekt se izrađuje tijekom prve upotrebe automatskog postavljanja uz predloženi ID projekta koji počinje riječju Outline- i nizom nasumičnih znakova. Ako želite, pri izradi možete odabrati drugi ID projekta. Naziv projekta bit će Poslužitelji Outlinea.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Račun za naplatu</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Za projekte na Google Cloudu potreban je povezani račun za naplatu na kojem su definirani podaci o plaćanju. Kada prvi put upotrijebite automatsko postavljanje Google Clouda, morat ćete navesti račun za naplatu koji ćete povezati sa svojim poslužiteljima Outlinea. Ponekad će poslužitelj prestati raditi jer postoji problem s računom za naplatu. U tom se slučaju trebate prijaviti na<a href="https://console.cloud.google.com/getting-started" target="_blank"> Google Cloud Console</a>, pronaći projekt Google Clouda povezan s Outlineom (naziva Poslužitelji Outlinea) i ažurirati postavke naplate.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Uništavanje poslužitelja</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Ako želite uništiti poslužitelje izrađene pomoću automatskog postavljanja, najjednostavnije je da to učinite putem Upravitelja Outlinea. Međutim, ako želite sami uništiti poslužitelje, možete se prijaviti na <a href="https://console.cloud.google.com/getting-started" target="_blank"> Google Cloud Console</a>, pronaći projekt koji ste izradili tijekom početnog postavljanja (naziva Poslužitelji Outlinea) i izbrisati resurse ili isključiti projekt.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="99" sourceLocale="hr">WEB:15331728</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Česta pitanja o postavljanju poslužitelja za Outline</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:28806;a"><strong>Mogu li upotrebljavati Outline bez poslužitelja?</strong><br />
+  <br />
+  Nažalost, ne. Softver Outlinea zahtijeva pristup poslužitelju, bez obzira na to upravljate li njime vi, vaša organizacija ili pouzdana treća strana.</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>Koliko dugo traje postavljanje poslužitelja za Outline?</strong></p>
+
+<p data-aura-rendered-by="12:28806;a">U većini slučajeva manje od pet minuta. Outline možete instalirati na bilo kojem poslužitelju u oblaku, ali surađujemo s DigitalOceanom da bismo vam ponudili vođenu instalaciju prilagođenu korisnicima koja omogućuje postavljanje poslužitelja u nekoliko klikova bez skripti.</p>
+
+<p data-aura-rendered-by="12:28806;a">Ako odaberete AWS, GCP ili napredno postavljanje, pojednostavili smo postupak instalacije koji sadrži jednu skriptu za većinu okruženja.</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>Gdje mogu postaviti poslužitelj za Outline?</strong></p>
+
+<p data-aura-rendered-by="12:28806;a">Outline poslužitelj možete postaviti na većini davatelja usluga u oblaku bez obzira na to gdje se nalaze.</p>
+
+<p data-aura-rendered-by="12:28806;a">Najlakše je postaviti poslužitelj na DigitalOceanu jer se njegovi poslužitelji nalaze na više lokacija, na primjer u Amsterdamu, Torontu, San Franciscu i Singapuru. Ako poslužitelj želite instalirati na drugom davatelju usluga u oblaku ili na vlastitoj infrastrukturi, možete odabrati Napredni način u aplikaciji Upravitelj Outlinea i slijediti upute za instalaciju pomoću skripte za instalaciju.</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>Gdje je najbolje postaviti poslužitelj za Outline?</strong></p>
+
+<ol data-aura-rendered-by="12:28806;a">
+  <li>Pri odabiru lokacije za Outline poslužitelj u obzir biste trebali uzeti sljedeće:</li>
+  <li>Lokacija poslužitelja za Outline utječe na to kako korisnici doživljavaju internet. Ako se poslužitelj primjerice nalazi u Amsterdamu, korisnik koji pristupa poslužitelju doživjet će internet kao da se fizički nalazi u Nizozemskoj. Neke se web-lokacije mogu prikazivati na nizozemskom. Obično možete nadjačati lokalni jezik promjenom jezika u izborniku na web-lokaciji.</li>
+  <li>Udaljenost između korisnika i poslužitelja za Outline može utjecati na brzinu. Općenito, fizički razmak između korisnika poslužitelja za Outline i samog poslužitelja može utjecati na brzinu interneta. U većini slučajeva možete odabrati lokaciju poslužitelja koja je najbliže mjestu na kojem se nalaze vaši očekivani korisnici, ali možete pogledati <a href="https://www.submarinecablemap.com/" rel="noopener" target="_blank">kartu podmorskih kabela</a> da biste saznali koji se internetski kabeli povezuju s vašom zemljom ili regijom.</li>
+  <li>Lokacija VPN poslužitelja može utjecati na zakone i propise. Softver Outline ne bilježi vaš promet. Saznajte više o <a href="/outline-faq/answer/14919822" rel="noopener" target="_blank">sigurnosti i privatnosti tijekom upotrebe Outlinea</a>.</li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="hr">WEB:15331758</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Razvojni sam programer. Gdje mogu pronaći podršku za integraciju Outline SDK-a u svoju aplikaciju?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Ova web-lokacija za korisničku podršku namijenjena je korisnicima Upravitelja Outlinea i klijenata. Razvojni programeri podršku mogu pronaći na GitHubu. Da biste postavili pitanje, objavite ga na <a href="https://github.com/Jigsaw-Code/outline-sdk/discussions" target="_blank">ploči za raspravu</a> o SDK-u. Odjeljak Ploča za raspravu odlično je mjesto za postavljanje pitanja, dijeljenje ideja, povezivanje s pokaznim verzijama i pružanje podrške drugim razvojnim programerima programera koji upotrebljavaju Outline SDK. Za zahtjeve za značajke ili izvješća o programskim pogreškama otvorite odjeljak <a href="https://github.com/Jigsaw-Code/outline-sdk/issues/new" target="_blank">Problem</a>.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="74" sourceLocale="hr">WEB:15448041</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Dostupni jezici</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Outline je dostupan na sljedećim jezicima:</p>
+
+<ul>
+  <li aria-level="1">afrikaans</li>
+  <li aria-level="1">albanski</li>
+  <li aria-level="1">amharski</li>
+  <li aria-level="1">arapski</li>
+  <li aria-level="1">armenski</li>
+  <li aria-level="1">azerbajdžanski</li>
+  <li aria-level="1">bengalski</li>
+  <li aria-level="1">bosanski</li>
+  <li aria-level="1">bugarski</li>
+  <li aria-level="1">burmanski</li>
+  <li aria-level="1">katalonski</li>
+  <li aria-level="1">kineski (pojednostavljeni)</li>
+  <li aria-level="1">kineski (tradicionalni)</li>
+  <li aria-level="1">hrvatski</li>
+  <li aria-level="1">češki</li>
+  <li aria-level="1">danski</li>
+  <li aria-level="1">nizozemski</li>
+  <li aria-level="1">engleski (američki)</li>
+  <li aria-level="1">engleski (britanski)</li>
+  <li aria-level="1">estonski</li>
+  <li aria-level="1">filipinski</li>
+  <li aria-level="1">finski</li>
+  <li aria-level="1">francuski</li>
+  <li aria-level="1">gruzijski</li>
+  <li aria-level="1">njemački</li>
+  <li aria-level="1">grčki</li>
+  <li aria-level="1">hebrejski</li>
+  <li aria-level="1">hindski</li>
+  <li aria-level="1">madžarski</li>
+  <li aria-level="1">islandski</li>
+  <li aria-level="1">indonezijski</li>
+  <li aria-level="1">talijanski</li>
+  <li aria-level="1">japanski</li>
+  <li aria-level="1">kazaški</li>
+  <li aria-level="1">kmerski</li>
+  <li aria-level="1">korejski</li>
+  <li aria-level="1">laoski</li>
+  <li aria-level="1">letonski</li>
+  <li aria-level="1">litavski</li>
+  <li aria-level="1">makedonski</li>
+  <li aria-level="1">malajski</li>
+  <li aria-level="1">marathski</li>
+  <li aria-level="1">mongolski</li>
+  <li aria-level="1">nepalski</li>
+  <li aria-level="1">norveški</li>
+  <li aria-level="1">perzijski</li>
+  <li aria-level="1">poljski</li>
+  <li aria-level="1">portugalski (brazilski)</li>
+  <li aria-level="1">portugalski (europski)</li>
+  <li aria-level="1">rumunjski</li>
+  <li aria-level="1">ruski</li>
+  <li aria-level="1">srpski (ćirilica)</li>
+  <li aria-level="1">srpski (latinica)</li>
+  <li aria-level="1">sinhalski</li>
+  <li aria-level="1">slovački</li>
+  <li aria-level="1">slovenski</li>
+  <li aria-level="1">španjolski (europski)</li>
+  <li aria-level="1">španjolski (latinoamerički)</li>
+  <li aria-level="1">svahili</li>
+  <li aria-level="1">švedski</li>
+  <li aria-level="1">tamilski</li>
+  <li aria-level="1">tajlandski</li>
+  <li aria-level="1">turski</li>
+  <li aria-level="1">ukrajinski</li>
+  <li aria-level="1">urdu</li>
+  <li aria-level="1">vijetnamski</li>
+</ul>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="79" sourceLocale="hr">WEB:15528599</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Pogreške vatrozida</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:268;a">Postoje tri vrste problema s vatrozidom na koje možete naići:</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>Možda vas blokira mrežni vatrozid.</strong></p>
+
+<p data-aura-rendered-by="12:268;a">Ako pokušavate instalirati Outline dok ste povezani s mrežom koja ima vatrozidnu zaštitu, na primjer u školi ili na radnom mjestu, instalirajte ga na drugoj mreži.</p>
+
+<p data-aura-rendered-by="12:268;a">Ako time ne riješite problem, obratite se administratoru mreže i zatražite da omogući povezivanje mreže s vatrozidnom zaštitom i vašeg Outline poslužitelja. Morate znati IP adresu Outline poslužitelja i priključke na kojima se Outline pokreće. Navedeni su na kraju instalacijske skripte.</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>Možda vas blokira vatrozid na uređaju</strong>.</p>
+
+<p data-aura-rendered-by="12:268;a">Ako vaš uređaj sadrži softver koji blokira odlazna povezivanja na nestandardnim priključcima ili nepoznatom softveru (kao što je CheckPointov ZoneAlarm), u dokumentaciji uređaja ili softvera potražite upute za izradu iznimke za Outline.</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>Možda vas blokira vatrozid na poslužitelju.</strong></p>
+
+<p data-aura-rendered-by="12:268;a">Davatelj usluga oblaka kojeg ste odabrali može od vas zatražiti da ručno stvorite iznimke za vatrozid poslužitelja kako bi se priključci na kojima se Outline pokreće otvorili. Nakon što ste pokrenuli instalacijsku skriptu, trebali ste vidjeti dva slučajno odabrana priključka na kojima se Outline pokreće na vašem poslužitelju. Otvaranje ta dva priključka trebalo bi biti dovoljno.<br />
+  <br />
+  Da biste stvorili iznimke za vatrozid na poslužitelju, preporučujemo da potražite ufw i iptables u dokumentaciji.</p>
+
+<ul data-aura-rendered-by="12:268;a">
+  <li>UFW: <a href="https://help.ubuntu.com/community/UFW" rel="noopener" target="_blank">https://help.ubuntu.com/community/UFW</a></li>
+  <li>Iptables: <a href="https://help.ubuntu.com/community/IptablesHowTo" rel="noopener" target="_blank">https://help.ubuntu.com/community/IptablesHowTo</a></li>
+</ul>
+</div>
+</body>
+</html>

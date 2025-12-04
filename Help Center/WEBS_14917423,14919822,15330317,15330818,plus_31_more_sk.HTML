@@ -1,0 +1,1086 @@
+<html>
+<head>
+<style type="text/css">
+.gkms-gtt-answer-header, .gkms-gtt-message-header {
+  color: black !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 2em;
+  padding: 4px;
+}.gkms-gtt-answer-header {
+  background-color: #E5ECF9;
+  border-top: 1px solid #36C;
+}
+.gkms-gtt-message-header {
+  background-color: #F8F8F8;
+  border-top: 1px solid #CCC;
+}
+.gkms-gtt-hide {
+  visibility: hidden;
+}
+.form_field_data .temporary_signal_wrapper {
+  display: inline;
+}
+</style>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+</head>
+<body lang="sk">
+<br/><div class="gkms id notranslate" sourceGlobalRevision="116" sourceLocale="sk">WEB:14917423</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Ako Outline funguje</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1723;a">&nbsp;</p>
+
+<p data-aura-rendered-by="12:1723;a"><strong>Inštalácia servera</strong><br />
+  <br />
+  Aj keď inštalácia servera Outline môže pôsobiť jednoducho, spočíva v komplexnej skupine krokov, pomocou ktorých sa server inštaluje. Keď sa Outline inštaluje, inštalačný skript spustí tieto kroky:</p>
+
+<ul data-aura-rendered-by="12:1723;a">
+  <li>Pomocou služby Docker sa načíta a importuje stabilná verzia obrazu služby Shadowbox. Obraz je hostený na <a href="https://quay.io/" target="_blank">Quay.io</a> (<a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank">https://quay.io/repository/outline/shadowbox?tab=tags</a>). Tento obraz obsahuje server Outline a rozhranie Management API, ktoré neskôr používa aplikácia na správu servera Outline na vytváranie a odstraňovanie prístupových kľúčov, prihlasovanie a odhlasovanie sa z reportovania anonymných metrík atď.</li>
+  <li>Nainštaluje sa nástroj <a href="https://github.com/v2tec/watchtower" target="_blank">Watchtower</a> a nakonfiguruje sa tak, aby každú hodinu kontroloval dostupnosť aktualizácií obrazu, čo pomáha zabezpečiť, že každý server Outline je vždy aktuálny a má najnovšie funkcie a zlepšenia zabezpečenia.</li>
+  <li>Webový server používaný na prístup k rozhraniu Management API sa spustí na náhodnom porte na tajnej a náhodnej ceste.</li>
+  <li>Vytvorí sa <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank">certifikát SSL s vlastným podpisom</a>, aby bolo možné správu servera Outline šifrovať pomocou protokolu TLS, hoci nemá názov domény. Vygeneruje sa aj jedinečný digitálny odtlačok tohto certifikátu, ktorý sa uloží v aplikácii Správca Outline, čo pomáha brániť útokom MITM.</li>
+</ul>
+
+<p data-aura-rendered-by="12:1723;a">Outline po inštalácii netreba konfigurovať.<br />
+  <br />
+  <strong>Zabezpečenie servera</strong><br />
+  <br />
+  Softvér Outline má licenciu open source. Znamená to, že ktokoľvek si môže pozrieť jeho kód a zlepšiť ho, ak objaví akékoľvek nedostatky zabezpečenia. Náš kód je hostený na <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank">GitHub</a>.<br />
+  <br />
+  Všetky nainštalované servery Outline sú navyše automaticky aktualizované vždy, keď je vydaná nová verzia, čím sa zabezpečuje, že žiadny server Outline ďalej nepoužíva staré verzie softvéru.<br />
+  <br />
+  Aplikácia Správca Outline interaguje so službou správy na serveri Outline, čo umožňuje spravovať prístupové kľúče na serveri. Služba správy sa prevádzkuje na náhodnom porte na tajnej a jedinečnej ceste Samotná služba správy je odolná proti preskúmaniu, keďže neodpovedá na dopyty, pokiaľ nie je uvedená príslušná tajná cesta. Všetka komunikácia so službou správy je navyše šifrovaná <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank">certifikátom SSL s vlastným podpisom</a>.<br />
+  <br />
+  Server Outline neukladá žiadne denníky, takže ani v prípade jeho napadnutia nedôjde k zverejneniu žiadnych údajov používateľov. <a href="https://support.getoutline.org/s/article/Security-and-privacy" target="_blank">Ďalšie informácie</a> V roku 2018 prešiel Outline auditom organizácií <a href="https://radicallyopensecurity.com/" target="_blank">Radically Open Security</a> a <a href="https://cure53.de/" target="_blank">Cure53</a>. Reporty <a href="https://support.getoutline.org/s/article/Security-and-privacy" target="_blank">nájdete tu</a>.<br />
+  <br />
+  <strong>Riešenie premávky UDP</strong><br />
+  <br />
+  Outline dokáže fungovať ako VPN pre celý systém. Znamená to, že všetka premávka UDP bude tunelovaná cez server Outline.<br />
+  <br />
+  <strong>Premávka DNS</strong></p>
+
+<p data-aura-rendered-by="12:1723;a"><br />
+  Outline vykonáva všetky vyhľadávania DNS cez server Outline a&nbsp;chráni ich rovnakým šifrovaním, aké sa používa na všetku ostatnú aktivitu siete. Vaše dopyty DNS budú prechádzať cez server Outline do služby Dyn Internet Guide, OpenDNS, Cloudflare&nbsp;DNS alebo Quad9&nbsp;DNS. Outline vaše vyhľadávania DNS nikdy nezaznamenáva.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="232" sourceLocale="sk">WEB:14919822</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Zabezpečenie a ochrana súkromia pri používaní služby Outline</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:258;a">Zabezpečenie a ochrana súkromia pri používaní služby Outline</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Ako Outline chráni vašu online komunikáciu</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Internetová premávka je najviac vystavená riziku monitorovania, keď prechádza miestnou alebo národnou sieťou.</p>
+
+<p data-aura-rendered-by="12:258;a">Outline pomáha zachovať súkromie vašej komunikácie tým, že internetovú premávku počas prenosu v národnej sieti šifruje, až kým sa nedostane na server služby Outline. Pri šifrovaní premávky cez Outline sledovatelia siete nemôžu kontrolovať weby, ktoré navštevujete, ani informácie, ktoré prenášate.</p>
+
+<p data-aura-rendered-by="12:258;a">Outline vám tiež pomôže získať prístup k&nbsp;nástrojom na bezpečnú komunikáciu end-to-end, ktoré vo vašej krajine inak nemusia byť dostupné.</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Šifrovacie štandardy</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Outline šifruje komunikáciu medzi vaším zariadením a&nbsp;serverom Outline pomocou 256‑bitovej šifry AEAD Chacha2020 IETF Poly&nbsp;1305. Šifry AEAD poskytujú dôvernosť, integritu a&nbsp;overenie pravosti a&nbsp;pri použití na modernom hardvéri dosahujú skvelý výkon.</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Audity zabezpečenia</strong></p>
+
+<p data-aura-rendered-by="12:258;a">V roku 2018 prešla služba Outline auditom dvoch nezávislých organizácií Radically Open Security a Cure53 zameraných na digitálnu bezpečnosť, ktoré kontrolujú, či softvér spĺňa najnovšie bezpečnostné normy. Organizácia Radically Open Security vykonala ďalší audit v roku 2022 a firma Cure53 vykonala audit súpravy Outline SDK v roku 2024. Reporty si môžete pozrieť v týchto zdrojoch:</p>
+
+<ul data-aura-rendered-by="12:258;a">
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf" target="_blank">Radically Open Security Penetration Test Report (Správa o prienikovom teste zostavená firmou Radically Open Security), marec 2018</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf" target="_blank">Cure53 Pentest &amp; Audit Report Jigsaw Outline (Správa o prienikovom teste a audite softvéru Jigsaw Outline zostavená firmou Cure53), december 2018</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf" target="_blank">Radically Open Security Penetration Test Report (Report o penetračnom teste od firmy Radically Open Security) (december 2022)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf" target="_blank">Cure53 Pentest Report Jigsaw Outline VPN SDK (Správa firmy Cure53 o prienikovom teste softvéru Jigsaw Outline VPN SDK, január 2024)</a></li>
+</ul>
+
+<p data-aura-rendered-by="12:258;a"><strong>Anonymné metriky a denníky</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Outline sleduje použitú rýchlosť pripojenia, a to vo forme prenesených bajtov pre jednotlivé prístupové kľúče. Tieto informácie umožňujú správcom servera upraviť u poskytovateľov cloudového servera odoberanú rýchlosť pripojenia podľa potreby, no neumožňujú im zobraziť si konkrétne informácie, ktoré prešli cez server služby Outline.</p>
+
+<p data-aura-rendered-by="12:258;a">Prečítajte si viac o tom, ako Outline <a href="/outline-faq/answer/15331222" rel="noopener" target="_blank">zhromažďuje údaje a informácie</a>.</p>
+
+<hr data-aura-rendered-by="12:258;a" />
+<p data-aura-rendered-by="12:258;a"><strong>Časté otázky o zabezpečení a ochrane súkromia</strong>&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Zabezpečí mi Outline anonymitu na internete?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Nie, Outline nie je nástroj na anonymizáciu. Chráni vaše súkromie pred potenciálnymi sledovateľmi siete.</p>
+
+<p data-aura-rendered-by="12:258;a">Outline vám na weboch, ktoré navštevujete, nezabezpečuje úplnú anonymitu, pretože tie vás aj tak môžu identifikovať, keď sa prihlásite, prípadne pomocou techník, ako sú digitálne stopy v prehliadači. V prípade mobilných aplikácií disponuje väčšina moderných smartfónov rozhraniami API, ktoré umožňujú inštalovaným aplikáciám získavať polohu nezávisle od vášho proxy servera, pretože môžu využiť integrované GPS.</p>
+
+<p data-aura-rendered-by="12:258;a">Siete VPN vo všeobecnosti ponúkajú dôležité nástroje na ochranu, najmä pred monitorovaním internetu, no to neznamená, že vám online nič nehrozí. Ak poskytovateľ internetu pozná vašu totožnosť a&nbsp;môže sledovať vašu sieťovú premávku, dokáže určiť adresu IP vášho servera Outline, dokonca aj keď používate VPN. Tieto informácie sa dajú použiť na blokovanie prístupu k&nbsp;serveru Outline alebo na identifikovanie vzorcov používania, napríklad kedy ste zvyčajne online, a&nbsp;teoreticky aj vašej približnej polohy.</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Dá sa zistiť, či používam Outline?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Teoreticky áno. Platformy a&nbsp;služby, ku ktorým pristupujete, pravdepodobne budú vedieť rozpoznať, že vaše pripojenie pochádza z&nbsp;cloudového servera. Občas vedia vydedukovať, že používate VPN, no ani vtedy nevidia obsah vašej internetovej premávky.</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Chráni ma Outline pred všetkými možnými kybernetickými hrozbami?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Nie. Pred všetkými možnými kybernetickými hrozbami vás neochráni žiaden nástroj. Outline vám umožňuje prístup k otvorenému internetu a šifrovaním sieťovej premávky zlepšuje ochranu vášho súkromia. Aj napriek tomu vám odporúčame chrániť sa proti iným typom útokov, napríklad malvéru alebo phishingu, aj ďalšími spôsobmi.</p>
+
+<p data-aura-rendered-by="12:258;a">Skúste sa obrátiť na odborníka na kybernetickú bezpečnosť vo svojej organizácii, ktorý vám pomôže chrániť sa online lepšie. Prípadne môžete využiť prispôsobené rady od popredných odborníkov na zabezpečenie na webe <a href="https://securityplanner.org/" target="_blank">Security Planner</a>. Ide o web, ktorý vám poskytne jasné pokyny na výber nástrojov kybernetickej bezpečnosti zodpovedajúcich vašim potrebám.</p>
+
+<p data-aura-rendered-by="12:258;a">Môžete si pozrieť aj ďalšie služby kybernetickej bezpečnosti od firmy <a href="https://jigsaw.google.com/" target="_blank">Jigsaw</a>, ako sú <a href="https://getintra.org/" target="_blank">Intra</a>, <a href="https://g.co/shield" target="_blank">Project Shield</a> a&nbsp;<a href="https://chrome.google.com/webstore/detail/password-alert/noondiphcddnnabmjcihcjfbhfklnnep?" rel="noopener" target="_blank">Ochrana hesla</a>.</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Je legálne používať VPN?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Než začnete prevádzkovať Outline alebo používať aplikáciu, pozrite si miestne zákony a nariadenia a tiež zmluvné podmienky poskytovateľa cloudu, ktorého plánujete využívať.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="89" sourceLocale="sk">WEB:15330317</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Prečo nemám prístup k internetu, aj keď mám aktívne pripojenie k serveru Outline?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:32933;a">Ak používate mobilný telefón, skúste prepnúť medzi mobilnými dátami a pripojením Wi‑Fi. Niekedy jeden typ pripojenia funguje, keď druhý nefunguje. Ak používate počítač, skúste odpojiť širokopásmové pripojenie a znova ho pripojiť.</p>
+
+<p data-aura-rendered-by="12:32933;a">Ak budete mať naďalej ťažkosti, problém je pravdepodobne vo vašom serveri Outline. Kontaktujte svojho <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">správcu služieb</a> a&nbsp;požiadajte ho o&nbsp;nový prístupový kľúč k&nbsp;alternatívnemu serveru. Okrem toho možno bude môcť zvýšiť dátový limit<a href="https://google-jigsaw--jigsawuat.sandbox.my.site.com/outline/s/article/Terminology" target="_blank"> </a><a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">prístupového kľúča</a>, ak ste prekročili jeho kvótu.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="296" sourceLocale="sk">WEB:15330818</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Aké sú systémové požiadavky na spustenie klienta Outline?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:24676;a">Outline môžete vyskúšať v akomkoľvek operačnom systéme. Tu sú minimálne požadované operačné systémy:</p>
+
+<table class="borders" data-aura-rendered-by="12:24676;a" width="312">
+  <tbody>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top"><b>Operačný systém</b></td>
+      <td colspan="1" rowspan="1" valign="top"><b>Minimálna verzia</b></td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Android</td>
+      <td colspan="1" rowspan="1" valign="top">10</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">iOS</td>
+      <td colspan="1" rowspan="1" valign="top">15.5</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">macOS</td>
+      <td colspan="1" rowspan="1" valign="top">12.0</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Windows</td>
+      <td colspan="1" rowspan="1" valign="top">10</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Linux</td>
+      <td colspan="1" rowspan="1" valign="top">Ubuntu&nbsp;20.04</td>
+    </tr>
+  </tbody>
+</table>
+
+<p data-aura-rendered-by="12:24676;a"><br />
+  Chcete pomôcť, aby aplikácia Outline Client fungovala v&nbsp;ďalších operačných systémoch? <a href="https://github.com/Jigsaw-Code/outline-client#platform-specific-development" target="_blank">Prispejte do našej základne kódov</a> v&nbsp;službe GitHub.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="107" sourceLocale="sk">WEB:15330824</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Ako aktualizujem softvér na serveri Outline?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:10378;a">Servery Outline sa automaticky aktualizujú využitím najnovších zlepšení zabezpečenia, vďaka čomu vždy používate najnovšiu technológiu služby Outline. Tento automatický aktualizačný proces aktivuje knižnica open source s názvom <a href="https://github.com/v2tec/watchtower" target="_blank">Watchtower</a>, ktorá pravidelne kontroluje a aktualizuje obraz Docker obsahujúci softvér Outline.</p>
+
+<p data-aura-rendered-by="12:10378;a">Keď si nainštalujete Outline pomocou Správcu Outline, nastavíme aj úlohu softvéru Cron, ktorá automaticky inovuje softvér na serveri pomocou funkcie <a href="https://wiki.debian.org/UnattendedUpgrades" target="_blank">Unattended Upgrades</a> (Ubuntu) a v prípade potreby ho reštartuje. Upozorňujeme, že k tomu nedochádza v rozšírenom režime, aby sa zachovala existujúca konfigurácia, keďže sa predpokladá, že hostiteľ sa používa aj na iné účely, než iba spúšťanie služby Outline.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="102" sourceLocale="sk">WEB:15330825</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Ako stiahnem Správcu Outline, keď odkaz na jeho stiahnutie nefunguje?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Stiahnite si aplikácie pre mnohé operačné systémy priamo pomocou <a href="https://getoutline.org/get-started/#step-1" target="_blank">tohto prvého odkazu</a> alebo <a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">druhého odkazu</a>.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="129" sourceLocale="sk">WEB:15330920</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Terminológia</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:23504;a"><strong>Čo je VPN?</strong><br />
+  Virtuálna súkromná sieť (VPN) je súkromné pripojenie vašich zariadení k hostiteľskému serveru. Keď používate VPN, vaša návštevnosť je pred poskytovateľom internetu skrytá. VPN odporúčame používať, keď chcete:</p>
+
+<ul data-aura-rendered-by="12:23504;a">
+  <li>chrániť svoje údaje pri používaní verejnej siete Wi‑Fi;</li>
+  <li>uchovávať svoje dáta prehliadania v súkromí, aby ich nevidel poskytovateľ internetu ani orgány verejnej správy;</li>
+  <li>získavať prístup k necenzurovanému obsahu z rôznych zdrojov po celom svete.</li>
+</ul>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Čím sa Outline líši od tradičných sietí VPN?</strong><br />
+  Poskytovatelia internetu môžu ľahko zaznamenávať a blokovať tradičné siete VPN rozpoznávaním bežných bezpečnostných protokolov a vzorov objemu návštevnosti. Služba Outline je odolnejšia než tradičné siete VPN, pretože bola vytvorená pomocou protokolu navrhnutého tak, aby ho bolo náročné rozpoznať, a teda ťažšie blokovať. Služba Outline je odolná voči sofistikovaným formám cenzúry vrátane blokovania na základe siete a blokovania adresy IP.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Čo je server Outline?</strong><br />
+  Server Outline prevádzkuje sieť VPN, ku ktorej sa budú pripájať povolení používatelia. Ak vytvárate novú sieť, môžete ako server Outline použiť vlastný zabezpečený server (ak nejaký máte), prípadne môžete použiť poskytovateľa cloudových služieb, ako sú:</p>
+
+<ul data-aura-rendered-by="12:23504;a">
+  <li>DigitalOcean,</li>
+  <li>Google Cloud Platform (GCP),</li>
+  <li>Amazon Web Services (AWS).</li>
+</ul>
+
+<p data-aura-rendered-by="12:23504;a"><a id="One" target="_blank"></a>Server nastavíte v&nbsp;Správcovi Outline.<br />
+  <br />
+  <strong><a id="servicemanager" name="servicemanager"></a>Čo je správca služby?</strong><br />
+  Správca služby je osoba zodpovedná za nastavenie servera Outline a&nbsp;zdieľanie prístupových kľúčov s&nbsp;používateľmi. Obvykle zodpovedá za náklady na používanie servera.&nbsp;<br />
+  <br />
+  <strong><a id="accesskey" name="accesskey"></a>Čo je prístupový kľúč?</strong><br />
+  Prístupový kľúč slúži na prístup k&nbsp;existujúcemu serveru Outline a&nbsp;pripojenie k&nbsp;sieti VPN. Poskytne vám ho <a href="#servicemanager" rel="noopener">správca služby</a> alebo môžete <a href="/outline-faq/answer/15331530" rel="noopener" target="_blank">nastaviť server Outline</a> svojpomocne. Prístupový kľúč vyzerá napríklad takto (ide o&nbsp;nefunkčnú ukážku): <br />
+  <br />
+  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1<br />
+  <br />
+  <strong>Čo je Správca Outline?</strong><br />
+  Správca Outline je aplikácia pre počítače, ktorá správcovi služby umožňuje nastaviť server Outline, vygenerovať <a href="#accesskey" rel="noopener">prístupové kľúče</a> a&nbsp;nakonfigurovať pre každý z&nbsp;nich dátový limit používania. Najnovšiu verziu Správcu Outline si môžete <a href="https://getoutline.org/get-started/#step-3" target="_blank">stiahnuť tu</a> alebo na <a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">tejto stránke</a>.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Čo je to Outline Client?</strong><br />
+  Outline Client je aplikácia dostupná pre počítače a mobilné zariadenia, ktorá vám umožňuje pripojiť sa k serveru Outline a získať prístup k sieti VPN pomocou prístupového kľúča. Najnovšiu verziu aplikácie Outline Client si môžete <a href="https://getoutline.org/get-started/#step-3" target="_blank">stiahnuť tu</a> alebo na <a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">tejto stránke</a>.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Čo sú dátové limity?</strong><br />
+  Správca Outline umožňuje správcom služieb nastaviť v prípade prístupových kľúčov kĺzavý 30-dňový dátový limit, ktorý zabráni nadmernému používaniu a pomôže predvídať náklady. Správcovia služieb môžu nastaviť jednotný predvolený limit na všetky kľúče alebo rôzne limity pre jednotlivé kľúče, ktoré predvolený limit prepíšu. Keď nastavíte limit, začne platiť okamžite a bude sa uplatňovať každú hodinu.</p>
+
+<p data-aura-rendered-by="12:23504;a">Ak sa správcovia služieb prihlásia na zdieľanie metrík so službou Jigsaw, mali by si prečítať <a href="/outline-faq/answer/15331222" rel="noopener" target="_blank">pravidlá zhromažďovania údajov</a>. Nájdu v nich podrobnosti o tom, ako bude reportované používanie dátových limitov.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="110" sourceLocale="sk">WEB:15331121</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Podporujete web getoutline.me a kanál na platforme Telegram s názvom @OutlineVpnOfficial?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Tím Outline dostal viacero dopytov týkajúcich sa webu <a href="http://getoutline.me/" target="_blank">getoutline.me</a> a jeho spojeného kanála na platforme Telegram s názvom @OutlineVpnOfficial. Tieto služby nie sú spriaznené s tímom Outline a nemôžeme pomáhať používateľom, ktorí majú problémy s prístupovými kľúčmi z týchto služieb.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="sk">WEB:15331122</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Dostupné jazyky</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Outline je k dispozícii v týchto jazykoch:</p>
+
+<ul>
+  <li aria-level="1">afrikánčine,</li>
+  <li aria-level="1">albánčine,</li>
+  <li aria-level="1">amharčine,</li>
+  <li aria-level="1">arabčine,</li>
+  <li aria-level="1">arménčine,</li>
+  <li aria-level="1">azerbajdžančine,</li>
+  <li aria-level="1">bengálčine,</li>
+  <li aria-level="1">bosniančine,</li>
+  <li aria-level="1">bulharčine,</li>
+  <li aria-level="1">barmčine,</li>
+  <li aria-level="1">katalánčine,</li>
+  <li aria-level="1">čínštine (zjednodušenej),</li>
+  <li aria-level="1">čínštine (tradičnej),</li>
+  <li aria-level="1">chorvátčine,</li>
+  <li aria-level="1">češtine,</li>
+  <li aria-level="1">dánčine,</li>
+  <li aria-level="1">holandčine,</li>
+  <li aria-level="1">angličtine (americkej),</li>
+  <li aria-level="1">angličtine (britskej),</li>
+  <li aria-level="1">estónčine,</li>
+  <li aria-level="1">filipínčine,</li>
+  <li aria-level="1">fínčine,</li>
+  <li aria-level="1">francúzštine,</li>
+  <li aria-level="1">gruzínčine,</li>
+  <li aria-level="1">nemčine,</li>
+  <li aria-level="1">gréčtine,</li>
+  <li aria-level="1">hebrejčine,</li>
+  <li aria-level="1">hindčine,</li>
+  <li aria-level="1">maďarčine,</li>
+  <li aria-level="1">islandčine,</li>
+  <li aria-level="1">indonézštine,</li>
+  <li aria-level="1">taliančine,</li>
+  <li aria-level="1">japončine,</li>
+  <li aria-level="1">kazaštine,</li>
+  <li aria-level="1">kmérčine,</li>
+  <li aria-level="1">kórejčine,</li>
+  <li aria-level="1">laoštine,</li>
+  <li aria-level="1">lotyštine,</li>
+  <li aria-level="1">litovčine,</li>
+  <li aria-level="1">macedónčine,</li>
+  <li aria-level="1">malajčine,</li>
+  <li aria-level="1">maráthčine,</li>
+  <li aria-level="1">mongolčine,</li>
+  <li aria-level="1">nepálčine,</li>
+  <li aria-level="1">nórčine,</li>
+  <li aria-level="1">perzštine,</li>
+  <li aria-level="1">poľštine,</li>
+  <li aria-level="1">portugalčine (brazílskej),</li>
+  <li aria-level="1">portugalčine (európskej),</li>
+  <li aria-level="1">rumunčine,</li>
+  <li aria-level="1">ruštine,</li>
+  <li aria-level="1">srbčine (cyrilike),</li>
+  <li aria-level="1">srbčine (latinke),</li>
+  <li aria-level="1">sinhálčine,</li>
+  <li aria-level="1">slovenčine,</li>
+  <li aria-level="1">slovinčine,</li>
+  <li aria-level="1">španielčine (európskej),</li>
+  <li aria-level="1">španielčine (latinskoamerickej),</li>
+  <li aria-level="1">swahilčine,</li>
+  <li aria-level="1">švédčine,</li>
+  <li aria-level="1">tamilčine,</li>
+  <li aria-level="1">thajčine,</li>
+  <li aria-level="1">turečtine,</li>
+  <li aria-level="1">ukrajinčine,</li>
+  <li aria-level="1">urdčine,</li>
+  <li aria-level="1">vietnamčine.</li>
+</ul>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="110" sourceLocale="sk">WEB:15331125</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Prečo si nemôžem nainštalovať aplikáciu Outline Client v systéme Windows?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:31254;a">Môže sa vám zobraziť toto chybové hlásenie: „Ľutujeme, zdá sa, že aplikácia Outline nie je správne nainštalovaná. Skúste ju nainštalovať znova. Ak to nepomôže, <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">odošlite spätnú väzbu</a>.“</p>
+
+<p data-aura-rendered-by="12:31254;a">Ak používate Outline v systéme Windows, občas sa môže vyskytnúť nečakaná chyba. Vo väčšine prípadov je potrebné odstrániť adaptér (ovládač) TAP služby Outline a Outline preinštalovať.</p>
+
+<p data-aura-rendered-by="12:31254;a">Postup sa môže líšiť v závislosti od verzie operačného systému Windows, ale nižšie je uvedený všeobecný postup, ako odinštalovať adaptér TAP aj Outline a potom Outline preinštalovať.</p>
+
+<ol data-aura-rendered-by="12:31254;a">
+  <li>Odinštalovanie adaptéra TAP pre aplikáciu Outline Client
+    <ul>
+      <li>Prejdite do sekcie <strong>Správca zariadenia</strong> a&nbsp;potom do sekcie <strong>Sieťové adaptéry</strong></li>
+      <li>Vyhľadajte súbor <strong>TAP-Windows Adapter V9</strong> alebo adaptér TAP spojený so službou Outline.</li>
+      <li>Tento adaptér odinštalujte alebo odstráňte. Pamätajte, že to môže ovplyvniť aj iné aplikácie VPN, ktoré ste nainštalovali.</li>
+    </ul>
+  </li>
+  <li>Odinštalovanie aplikácie Outline Client
+    <ul>
+      <li>Prejdite do sekcie <strong>Programy a&nbsp;funkcie</strong> a&nbsp;potom do sekcie <strong>Odinštalovanie programu</strong></li>
+      <li>Vyhľadajte aplikáciu Outline Client a&nbsp;odinštalujte ju.</li>
+      <li><a href="https://getoutline.org/get-started/#step-3" target="_blank">Stiahnite si najnovšiu verziu aplikácie Outline Client</a> a&nbsp;preinštalujte ju vo svojom zariadení so systémom Windows. V&nbsp;rámci novej inštalácie by sa mal automaticky nainštalovať nový adaptér TAP.</li>
+    </ul>
+  </li>
+</ol>
+
+<p data-aura-rendered-by="12:31254;a">Ak problémy pretrvávajú, <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">kontaktujte podporu</a>.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="109" sourceLocale="sk">WEB:15331126</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Prečo sa nemôžem pripojiť k službe Outline?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Existuje niekoľko možných dôvodov, prečo sa nemôžete pripojiť k&nbsp;službe Outline:</p>
+
+<ul>
+  <li aria-level="1"><strong>Vaše zariadenie</strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#One" rel="noopener"><strong> </strong></a><a href="#Internetissues" rel="noopener"><strong>nie je pripojené k internetu</strong></a><a href="#Internetissues" rel="noopener"> </a><strong>. </strong>Niekedy môže vo vašom zariadení dôjsť k prerušeniu pripojenia k sieti a aktualizácia ikon siete môže chvíľu trvať. Je tiež možné, že vaše zariadenie je pripojené k miestnej sieti, no internet nefunguje.</li>
+  <li aria-level="1"><strong>Vaša</strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#Two"><strong> </strong></a><a href="#FirewallIssues" rel="noopener"><strong>brána firewall siete blokuje</strong></a><a href="#FirewallIssues" rel="noopener"> </a><strong><a href="#FirewallIssues" rel="noopener">prístup</a> k vášmu serveru Outline. </strong>Ide o bežný problém, keď používate verejnú sieť, napríklad školskú, pracovnú alebo bezplatnú bezdrôtovú sieť.</li>
+  <li aria-level="1"><strong>Vaše zariadenie má</strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#Three"><strong> </strong></a><a href="#SoftwareIssues" rel="noopener"><strong>bránu firewall alebo antivírusový softvér</strong></a>,<a href="#SoftwareIssues" rel="noopener"> </a><strong>ktorý blokuje prístup k vášmu serveru Outline.</strong></li>
+  <li aria-level="1"><strong>Vaše</strong><a href="#DeviceSettings" rel="noopener"><strong> </strong><strong>nastavenia telefónneho zariadenia</strong></a><strong> možno bude potrebné zmeniť.</strong></li>
+  <li aria-level="1"><strong>Váš správca služby možno</strong><a href="#ServerIssues" rel="noopener"><strong> </strong><strong>zničil príslušný server alebo váš poskytovateľ internetu možno blokuje vašu požiadavku</strong></a> .</li>
+</ul>
+
+<p><a id="Internetissues" name="Internetissues"><strong>Problémy s internetovým pripojením:</strong></a></p>
+
+<p><strong>Ako otestovať:</strong></p>
+
+<p>Vypnite Outline a skontrolujte, či sa obnoví vaše pripojenie na internet.</p>
+
+<ul>
+  <li aria-level="1">Ak áno, prečítajte si ďalšie možnosti riešenia problémov nižšie.</li>
+  <li aria-level="1">Ak nie, chvíľu počkajte a zistite, či sa nastavenia pripojenia aktualizujú.</li>
+</ul>
+
+<p><strong>Čo treba opraviť:</strong></p>
+
+<p>Znova pripojte svoje zariadenie na internet:</p>
+
+<ol>
+  <li aria-level="1">Skontrolujte, či sa na rovnakú sieť dokáže pripojiť iné zariadenie. Ak sa iné zariadenia nedokážu pripojiť, sieť môže mať výpadok. Možno bude potrebné, aby ste počkali, než bude znova fungovať, alebo vyriešili problém so sieťou.</li>
+  <li aria-level="1">Ak sa k rovnakej sieti môžu pripojiť iné zariadenia, vyskúšajte jeden alebo viacero nasledujúcich krokov na opätovné spustenie internetu:
+    <ol>
+      <li aria-level="2">Prepnite zariadenie do režimu v lietadle (mobilné zariadenie).</li>
+      <li aria-level="2">Reštartujte zariadenie.</li>
+      <li aria-level="2">Vypnite zariadenie, počkajte 2 minúty a znova ho zapnite.</li>
+    </ol>
+  </li>
+</ol>
+
+<p><a id="FirewallIssues" name="FirewallIssues"><strong>Problémy s bránou firewall siete:</strong></a></p>
+
+<p><strong>Ako otestovať:</strong></p>
+
+<ol>
+  <li aria-level="1">Odpojte sa od aktuálne používanej siete Wi‑Fi alebo káblovej siete.</li>
+  <li aria-level="1">Pripojte sa k inej sieti, napríklad k mobilnej.</li>
+  <li aria-level="1">Skúste sa znova pripojiť k serveru Outline.</li>
+</ol>
+
+<p>Ak sa dokážete pripojiť z inej siete, ide o problém na vašej strane.</p>
+
+<p><strong>Čo treba opraviť:</strong></p>
+
+<p>Kontaktujte správcu služieb a požiadajte ho, aby povolil prístup k vášmu serveru Outline, alebo namiesto toho používajte ďalej túto inú sieť.</p>
+
+<p><a id="SoftwareIssues" name="SoftwareIssues"><img alt="Tento obrázok nie je k&nbsp;dispozícii, pretože: nemáte oprávnenia na jeho zobrazenie alebo bol zo systému odstránený" height="1" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeoHNM7TWEsg0z4iydaS2xKOPga0zOjhOTqvGpA-JLd-Fwnydby6EBZziz3vqgRUJwssreEqP6lmjv_-13QXdzqh3yx9tZiR81BvxcXShi3kJ-XDKnqt951uRRPSO8BUhXaiijJLF8PixV_ezhGJ02Y3QPFbw?key=pJIeaVZQOqqoBTmDWZd2hw" width="1" /><strong>Problémy s&nbsp;bránou firewall alebo antivírusovým softvérom:</strong></a><br />
+  <br />
+  <strong>Ako otestovať:</strong><br />
+  <br />
+  Skúste sa pripojiť k&nbsp;službe Outline v&nbsp;inom zariadení.</p>
+
+<p>Poznámka: Pamätajte, že ak chcete používať Outline v inom zariadení, budete potrebovať prístupový kľúč a aplikáciu Outline.</p>
+
+<p><strong>Čo treba opraviť:</strong></p>
+
+<p>Skontrolujte si nastavenia firewallu alebo antivírusového softvéru a ubezpečte sa, že povoľujú návštevnosť cez VPN a Outline.</p>
+
+<p><a id="DeviceSettings" name="DeviceSettings"><strong>Nastavenia zariadenia:</strong></a></p>
+
+<p><strong>Čo treba skontrolovať:</strong></p>
+
+<p>Postup pre Android:</p>
+
+<ol>
+  <li aria-level="1">Otvorte aplikáciu Nastavenia.</li>
+  <li aria-level="1">Vyhľadajte vo svojom zariadení <strong>nastavenia siete VPN</strong>. (V&nbsp;nastaveniach siete VPN uvidíte všetky aplikácie VPN, ktoré majú momentálne prístup vo vašom telefóne).</li>
+  <li aria-level="1">Ak Outline v nastaveniach siete VPN nevidíte, odinštalujte službu Outline a preinštalujte ju. Zariadenie by malo službe Outline po inštalácii automaticky udeliť prístup.</li>
+</ol>
+
+<p>Uistite sa, že vo svojom zariadení s Androidom nemáte nainštalovanú žiadnu aplikáciu s prekrývajúcimi prvkami, pretože môže okno s povoleniami pre službu Outline odosielať do pozadia, takže nebude viditeľné na popredí.<br />
+  <br />
+  Prejdite vo svojom zariadení s Androidom do sekcie Nastavenia &gt; Aplikácie &gt; Špeciálny prístup aplikácií. Potom klepnite na Zobrazovať cez iné aplikácie. Môžete odstrániť prístup všetkých aplikácií, ktoré toto správanie povoľujú.<br />
+  <br />
+  Postup pre iOS: prečítajte si <a href="https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web" rel="noopener" target="_blank">tento článok podpory</a>.</p>
+
+<p><a id="ServerIssues" name="ServerIssues"><strong>Problémy so serverom:</strong></a></p>
+
+<p><strong>Ako otestovať:</strong></p>
+
+<p>Ak máte prístup k&nbsp;viac než jednému serveru, skúste sa pripojiť k&nbsp;inému.</p>
+
+<p><strong>Čo treba opraviť:</strong></p>
+
+<p>Kontaktujte svojho správcu služieb a zistite, či bol server zničený. Ak áno, požiadajte ho o <a href="/outline-faq/answer/15330920" rel="noopener">prístupový kľúč</a> k inému serveru.</p>
+
+<p>Ak ste server nastavili, skúste sa k nemu pripojiť cez Správcu Outline alebo iným spôsobom, napríklad pomocou <a href="https://en.wikipedia.org/wiki/Secure_Shell">protokolu SSH</a>. Ak to nebude fungovať, skúste skontrolovať v konzole poskytovateľa cloudu (ak existuje), či je daný server stále online.</p>
+
+<p data-aura-rendered-by="12:32047;a">&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="sk">WEB:15331127</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Ako stiahnem klientsku aplikáciu, keď odkaz na jej stiahnutie nefunguje?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Aplikácie pre mnohé operačné systémy si môžete stiahnuť priamo pomocou <a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">tohto odkazu</a>.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="131" sourceLocale="sk">WEB:15331222</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Zhromažďovanie údajov a informácií</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:271;a">Outline nezhromažďuje osobné údaje, kým s&nbsp;tým nevyjadríte súhlas. Nezhromažďuje ani informácie o&nbsp;weboch, ktoré navštívite, ani s&nbsp;kým a&nbsp;o&nbsp;čom komunikujete.<br />
+  <br />
+  Ak cez Správcu Outline vytvárate účet u&nbsp;poskytovateľa cloudu tretej strany alebo sa doň prihlasujete, nezískame žiadne informácie, ktoré mu poskytnete, napríklad vašu e‑mailovú adresu, meno, fakturačné údaje ani platobné údaje.<br />
+  <br />
+  <strong><strong>Informácie, ktoré získavame automaticky</strong></strong><br />
+  <br />
+  Automaticky zhromažďujeme dva typy informácií.<br />
+  1. Adresu IP servera<br />
+  Adresa IP servera Outline sa získava cez <a href="http://quay.io/" target="_blank">Quay.io</a> a&nbsp;je nám sprístupnená, keď sa server automaticky aktualizuje využitím najnovších zlepšení zabezpečenia a&nbsp;funkcií. Adresa IP servera môže identifikovať poskytovateľa cloudového servera a&nbsp;mesto, v&nbsp;ktorom bol server Outline nastavený, no neposkytuje informácie o&nbsp;tom, kto server prevádzkuje alebo k&nbsp;nemu má prístup.<br />
+  <br />
+  2. Technické údaje neumožňujúce zistenie totožnosti<br />
+  V&nbsp;prípade spadnutia služby Outline, výskytu závažnej výnimky alebo manuálneho odoslania spätnej väzby cez aplikáciu Outline budú nahlásené informácie uvedené nižšie. Tieto informácie sa použijú iba na pomoc pri identifikovaní a&nbsp;riešení problémov so stabilitou alebo výkonom.</p>
+
+<ul data-aura-rendered-by="12:271;a">
+  <li>Krajina</li>
+  <li>Miestne nastavenie</li>
+  <li>Dátum a čas zlyhania alebo výnimky a najviac 100 predchádzajúcich udalostí, ako napríklad otvorenie sekcie Informácie používateľom</li>
+  <li>Staticky kompilované správy o výnimkách</li>
+  <li>Názov a verzia operačného systému</li>
+  <li>Model telefónu (ak je to relevantné)</li>
+  <li>Čas spustenia aplikácie</li>
+  <li>Prehliadač</li>
+  <li>Architektúra</li>
+  <li>Číslo verzie a zostavy aplikácie Outline</li>
+</ul>
+
+<p data-aura-rendered-by="12:271;a"><br />
+  Tieto informácie sa prenášajú pomocou protokolu HTTPS do služby Sentry (<a href="http://sentry.io/" target="_blank">sentry.io</a>), čo je&nbsp;open source služba tretej strany na sledovanie chýb. Sentry na zabezpečenie vašich údajov pred neautorizovaným prístupom, zverejnením, použitím a&nbsp;stratou používa rôzne technológie a&nbsp;služby zodpovedajúce odvetvovým normám. Ak máte akékoľvek otázky týkajúce sa pravidiel služby Sentry, prejdite na <a href="https://sentry.io/security/" target="_blank">https://sentry.io/security/</a> a&nbsp;<a href="https://sentry.io/privacy/" target="_blank">https://sentry.io/privacy/</a>, prípadne kontaktujte podporu na <a href="mailto:security@sentry.io" target="_blank">security@sentry.io</a>. Všetky údaje služby Outline ukladané službou Sentry sú obmedzené tak, že k&nbsp;nim majú prístup iba členovia tímu služby Outline.<br />
+  <br />
+  <strong><strong>Informácie, ktoré získavame iba po vyjadrení súhlasu</strong></strong><br />
+  <br />
+  Outline po vyjadrení súhlasu nahlasuje tímu Outline nasledujúce informácie.<br />
+  1. Metriky používania<br />
+  Každý server Outline automaticky zhromažďuje počet prenesených bajtov za poslednú hodinu na základe prístupového kľúča, čas, počas ktorého bol používateľ pripojený k&nbsp;serveru, krajiny a&nbsp;autonómne systémy pôvodu použitých prihlasovacích údajov a&nbsp;informácie o&nbsp;tom, či boli nejaké funkcie zapnuté alebo vypnuté. Obsah komunikácie ani metadáta umožňujúce zistenie totožnosti (napr. prihlasovacie údaje, e‑mailové adresy, identifikátory zariadení atď.) sa nezaznamenávajú. Všetky metriky sú prepojené s&nbsp;identifikátorom servera. Pokyny na zmenu identifikátora servera <a href="/outline-faq/answer/15548974" rel="noopener" target="_blank">nájdete tu</a>.<br />
+  <br />
+  Servery Outline tieto metriky predvolene nezdieľajú s&nbsp;tímom Outline. Ak správca servera explicitne vyjadrí súhlas so zdieľaním metrík používania, tieto informácie budú bezpečne odosielané tímu Outline každú hodinu. Po 60&nbsp;dňoch budú metriky používania agregované na úrovni krajiny. Správcovia servera môžu svoje predvoľby zdieľania metrík používania kedykoľvek zmeniť v&nbsp;ponuke Nastavenia v&nbsp;Správcovi Outline.<br />
+  <br />
+  Oceňujeme, že s&nbsp;nami anonymné metriky o&nbsp;používaní servera zdieľate, keďže ich používame na meranie trendov používania a&nbsp;zlepšovanie služby.<br />
+  <br />
+  Ak napríklad správca servera aktivuje zdieľanie metrík používania, budeme môcť získať informácie uvádzajúce, že server s&nbsp;identifikátorom 12345 sa včera používal 3&nbsp;hodiny a&nbsp;celkovo došlo k&nbsp;prenosu 500&nbsp;megabajtov dát z&nbsp;troch kľúčov, ktoré sa používali v&nbsp;USA a&nbsp;Kanade, pričom bola aktivovaná funkcia dátových limitov.<br />
+  <br />
+  2. Vaše komentáre a&nbsp;e‑mailová adresa, ak odošlete spätnú väzbu<br />
+  Aplikácie Správca Outline a&nbsp;Outline umožňujú odoslať tímu spätnú väzbu. Odporúčame neuvádzať údaje umožňujúce zistenie totožnosti, no pole e‑mailovej adresy je k&nbsp;dispozícii, ak chcete od tímu dostať odpoveď. Automaticky tiež zbierame niektoré základné informácie, ktoré nám pomôžu vašu spätnú väzbu lepšie pochopiť. Pozrite si 2.&nbsp;bod v&nbsp;časti Informácie, ktoré získavame automaticky, kde nájdete, ktoré údaje zhromažďujeme. Prečítajte si viac <a href="/outline-faq/answer/14919822" rel="noopener" target="_blank">o&nbsp;zabezpečení a&nbsp;spôsoboch ochrany súkromia služby Outline</a>.<br />
+  <br />
+  Ak používate beta verziu aplikácie Outline v&nbsp;Androide, môžeme použiť platformu <a href="https://firebase.google.com/" target="_blank">Firebase od Googlu</a> na zhromažďovanie informácií pre ladenie, ktoré nám pomôžu detegovať problémy a&nbsp;zlepšovať Outline. Viac o&nbsp;pravidlách ochrany súkromia a&nbsp;zabezpečenia platformy Firebase sa dozviete na jej webe: <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a>. Ak nechcete, aby aplikácia Outline tieto informácie prostredníctvom služby Firebase odosielala, používajte jej finálnu verziu.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="88" sourceLocale="sk">WEB:15331223</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Čo mám urobiť, keď môj prístupový kľúč nefunguje?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:30472;a">Ak sa zobrazí chybové hlásenie „Zdá sa, že váš prístupový kľúč nie je platný. Ak sa to stane znova, kontaktujte svojho správcu služieb“, problém odstránite podľa tohto postupu:</p>
+
+<ol data-aura-rendered-by="12:30472;a">
+  <li>Uistite sa, že ste zadali celý prístupový kľúč vrátane prvých piatich znakov „ss://“, ktoré sa nemusia do schránky automaticky skopírovať. Tu je príklad, ako celý prístupový kľúč vyzerá (slúži iba ako ukážka a nebude fungovať):</li>
+</ol>
+
+<pre data-aura-rendered-by="12:30472;a">ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@145.230.4.1:39485/?outline=1
+</pre>
+
+<ol data-aura-rendered-by="12:30472;a" start="2">
+  <li>Ak sa prístupový kľúč vôbec do schránky neskopíruje, možno tomu zabránil váš komunikátor alebo platforma. S&nbsp;najväčšou pravdepodobnosťou sa to stane, keď dostanete správu od osoby, ktorú nemáte v&nbsp;zozname kontaktov. Ak kopírujete daný kód zo správy, uistite sa, že odosielateľ bol pridaný do vašich kontaktov a&nbsp;potom skúste odkaz znova použiť.</li>
+  <li>Ak ste dokončili prvý aj druhý krok a stále sa vám zobrazuje chybové hlásenie, server je pravdepodobne zablokovaný alebo prístupový kľúč už nie je platný. Ak ste správca služieb, skúste si vygenerovať nový kľúč. V opačnom prípade kontaktujte svojho správu služieb a požiadajte ho o nový kľúč.</li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="96" sourceLocale="sk">WEB:15331322</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Koľko stojí prevádzkovanie služby Outline?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Softvér Outline je pre všetkých zadarmo: pre správcov servera spravujúcich VPN aj pre ľudí, ktorí ho používajú na prístup k&nbsp;otvorenému internetu.<br />
+  <br />
+  Na jeho fungovanie je však potrebný prístup ku cloudovému serveru. Správcovia servera, ktorí už k&nbsp;nejakému serveru prístup majú, na ňom môžu Outline inštalovať bez ďalších nákladov. Ostatní môžu prístup získať u&nbsp;poskytovateľa cloudových služieb, ako je <a href="http://www.digitalocean.com/" rel="noopener" target="_blank">DigitalOcean</a> alebo Amazon Web Services, za približne 5&nbsp;USD mesačne s&nbsp;limitom prenosu údajov 1&nbsp;terabajt, čo postačuje na podporu stoviek používateľov na jedinom serveri.<br />
+  <br />
+  Takto môžete vypočítať, koľko by vás stálo prevádzkovanie softvéru Outline u&nbsp;vybratého poskytovateľa cloudu:</p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td colspan="1" rowspan="1">
+      <p><em>Pri predpokladanom priemernom mesačnom využití 5 gigabajtov dátových prenosov na používateľa by tarifa 5 USD mesačne umožnila využívanie až 200 používateľom naraz, čo predstavuje náklady iba 2,5 centa na používateľa mesačne. Upozorňujeme, že dátové prenosy využité mesačne používateľom sa budú výrazne líšiť podľa toho, či používatelia vykonávajú aktivity vyžadujúce si nízku alebo vysokú rýchlosť pripojenia. Väčšina poskytovateľov cloudu sa však prispôsobí tomu, aby pokryli nárast návštevnosti.</em></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br />
+  Služba Outline je pre Jigsaw a&nbsp;Google úplne anonymná. Nesledujeme vašu totožnosť ani návštevnosť a&nbsp;nemáme vypracovaný ani monetizačný plán. Namiesto toho spolupracujeme s&nbsp;open source komunitou, aby sme mohli poskytovať softvér, ktorý našich používateľov nič nestojí. Viac o&nbsp;údajoch, ktoré zhromažďujeme, sa <a href="/outline-faq/answer/15331222" rel="noopener" target="_blank">dozviete tu</a>.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="386" sourceLocale="sk">WEB:15331326</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Ako nastavím dátové limity pre prístupové kľúče?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:15859;a">Môžete nastaviť dátový limit, ktorý bude platiť pre všetky prístupové kľúče. Ak ho chcete nastaviť, otvorte Outline Manager a prejdite do Nastavení. Uvidíte v nich prepínač Dátové limity, ktorý vám po povolení umožňuje nastaviť limit.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787036"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">Po nastavení limitu budete na stránke prístupového kľúča vidieť, ako blízko sa nachádzajú jednotliví používatelia k jeho dosiahnutiu. Pruhový graf zobrazuje spotrebu dát za posledných 30 dní.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787037"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">Okrem možnosti nastaviť limit pre všetky prístupové kľúče môžete teraz každému kľúču prideliť vlastný dátový limit. Toto nastavenie prepíše predvolený dátový limit, ktorý ste nastavili, ale ak ste žiadny nenastavili, môžete ho stále nakonfigurovať pre ktorýkoľvek kľúč.<br />
+  <br />
+  Ak chcete nastaviť limit dátových prenosov kľúča, otvorte Outline Manager a&nbsp;prejdite na kartu Pripojenia s&nbsp;tým kľúčom, ktorý chcete nastaviť. Kliknite na ponuku napravo od riadka kľúča. Kliknite v&nbsp;nej na Dátový limit. Ak chcete zmeniť dátový limit kľúča v&nbsp;sekcii Môj prístupový kľúč, kliknite na ikonu Dátové limity&nbsp;<img alt="Tento obrázok nie je k dispozícii, pretože: nemáte oprávnenia na jeho zobrazenie alebo bol zo systému odstránený" height="19" src="https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw" width="19" />.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787423"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">Vyberte Nastaviť vlastný dátový limit. Keď ste začiarkli toto políčko, zobrazí sa pole, v ktorom budete môcť nastaviť vlastný dátový limit daného kľúča. Po dokončení nastavenia dátového limitu kliknite na tlačidlo ULOŽIŤ.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15788959"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">Po uložení sa bude limit dátových prenosov vybraného kľúča zobrazovať na hlavnej obrazovke spolu so spotrebou dát (za posledných 30 dní).</p>
+
+<p data-aura-rendered-by="12:15859;a">Ak chcete dátový limit odstrániť z prístupového kľúča, prejdite na jeho dialógové okno Dátový limit tak, ako predtým, zrušte začiarknutie políčka Nastaviť vlastný dátový limit a kliknite na tlačidlo ULOŽIŤ.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15788414"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a"><b><strong>Časté otázky o dátovom limite</strong></b><br />
+  <br />
+  <strong><b>Čo je to 30‑dňový kĺzavý dátový limit?</b></strong><br />
+  <br />
+  30‑dňový kĺzavý dátový limit spočíta používanie každého kľúča za posledných 30 dní a na dané obdobie obmedzí používanie kľúča tak, aby tento limit neprekročil. Výsledkom je, že kľúč nemôže presiahnuť limit počas ľubovoľného 30‑dňového obdobia vrátane kalendárnych mesiacov s najviac 30 dňami. V praxi to znamená, že dostupné dáta každého používateľa sa každý deň zvýšia o množstvo dát, ktoré daný používateľ použil pred 31 dňami.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Prečo Outline využíva kĺzavé limity?</strong><br />
+  <br />
+  Kĺzavé limity poskytujú záruku na každé 30‑dňové obdobie. Znamená to, že sa konfigurujú jednoduchšie než opakovaný limit (napríklad prispôsobiteľný deň mesiaca), no zároveň poskytujú podobnú záruku. Okrem toho zodpovedajú existujúcemu zobrazeniu používania dát v službe Outline, ale aj bežným nástrojom, ako sú analytické služby a štatistiky servera.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Aké dáta sa započítavajú do dátového limitu?</strong><br />
+  <br />
+  Zahŕňajú sa dáta každého prístupového kľúča odchádzajúce zo servera. V presnom slova zmysle ide o dáta odoslané v mene kľúča zo servera, ako aj späť ku klientovi. V praxi by mali tieto dáta relatívne presne zodpovedať prenosu dát z kľúča na server a naspäť. Dúfame preto, že tento údaj bude zodpovedať záznamom vašich používateľov. Vybrali sme odchádzajúce dáta, pretože ide o parameter, ktorý účtujú nami oslovení poskytovatelia cloudu.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Dostanú používatelia upozornenie, keď prekročia dátový limit?</strong><br />
+  <br />
+  Momentálne nie. Mnoho cloudových poskytovateľov zahŕňa limit napríklad 1 TB na celý mesiac, čo postačuje pre 10 používateľov po 100 GB alebo 100 používateľov po 10 GB. Ide o relatívne vysoké čísla, preto neočakávame, že limit dosiahne veľa používateľov. Dúfame, že používatelia po dosiahnutí limitu kontaktujú správcov servera. Oceníme však vaše poznatky o tom, ako môžu upozornenia pomôcť vo vašom prípade použitia. Môžete nás<a href="https://support.getoutline.org/s/contactsupport" target="_blank"> kontaktovať tu</a>.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Dostanú používatelia upozornenie, keď sa priblížia k dátovému limitu?</strong><br />
+  <br />
+  Množstvo nových dát, ktoré používateľ blížiaci sa k limitu dostane, sa bude denne líšiť, pretože sa zakladá na jeho používaní spred 30 dní. Myslíme si, že upozornenie koncových používateľov skôr mätie, než im pomáha. Radi si prečítame vašu spätnú väzbu k tomuto správaniu, keď ju odošlete na <a href="https://support.getoutline.org/s/contactsupport" rel="noopener" target="_blank">tejto stránke</a>.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Môžem resetovať spotrebu dát používateľa?</strong><br />
+  <br />
+  Nie, limit používateľa vždy zahŕňa posledných 30 dní spotreby dát. Môžete však zvýšiť dátový limit jeho kľúča alebo pre neho vytvoriť nový kľúč.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Prečo niektorí moji používatelia prišli po aktivácii dátových limitov o&nbsp;prístup?</strong><br />
+  <br />
+  Dátové limity sa zakladajú na používateľových posledných 30&nbsp;dňoch dátových prenosov, ktoré sú zaznamenané bez ohľadu na to, či boli dátové limity aktivované. Je možné, že dotyční používatelia už prekročili daný limit skôr, ako bol zavedený. Okrem toho pripomíname, že sú presadzované všetky dátové limity, aj keď meníte dátový limit jediného kľúča.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Môžem nastaviť limit na úrovni servera, napríklad 1 TB na 30 dní?</strong><br />
+  <br />
+  Momentálne nie. Radi sa dozvieme viac o vašom prípade použitia na <a href="https://support.getoutline.org/s/contactsupport" rel="noopener" target="_blank">tejto stránke</a>.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Ak je nastavený predvolený dátový limit aj dátový limit konkrétneho kľúča, ktorý bude presadzovaný?</strong><br />
+  <br />
+  Dátový limit príslušného kľúča prepíše akýkoľvek predvolený dátový limit (ak existuje), ktorý ste nastavili.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Môžem nastaviť dátový limit konkrétneho kľúča bez konfigurácie predvoleného dátového limitu?</strong><br />
+  <br />
+  Áno. Ak chcete nastaviť dátový limit jedného kľúča, nemusíte definovať predvolený. Môžete napríklad nastaviť limit jedného kľúča, o&nbsp;ktorom si myslíte, že môže byť široko zdieľaný, aby ste sa chránili pred nadmerným dátovým prenosom prostredníctvom daného kľúča.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="sk">WEB:15331327</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Ako resetujem identifikátor servera?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:23999;a">Identifikátor servera je serverový identifikátor, ktorý je náhodne vygenerovaný, keď vytvárate server Outline. Nájdete ho v rozhraní nastavení, keď sa prihlasujete na zdieľanie anonymných metrík. Identifikátor servera nájdete prejdením do Nastavení =&gt; posunutím sa dole =&gt; začiarknutím políčka Zdieľať anonymné metriky.</p>
+
+<p data-aura-rendered-by="12:23999;a">Identifikátor servera spája anonymné štatistiky používania nahlasované v priebehu času. Ak ho chcete resetovať a získať nový, musíte svoj existujúci server Outline nahradiť novým.</p>
+
+<p data-aura-rendered-by="12:23999;a">Ak používate poskytovateľa cloudu DigitalOcean, môžete server resetovať tak, že prejdete do Nastavení a vyberiete Zničiť server. Táto akcia je nezvratná a vymažete ňou všetky poverenia. Po tejto akcii sa ihneď zobrazí výzva, aby ste vytvorili nový server v umiestnení podľa vlastného výberu, a vygeneruje sa nový identifikátor servera.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="103" sourceLocale="sk">WEB:15331328</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Ako zmením umiestnenie servera Outline?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:24761;a">Umiestnenie servera sa po nastavení nedá zmeniť. Ak chcete server spúšťať z iného umiestnenia, musíte server Outline odstrániť a vytvoriť nový.</p>
+
+<p data-aura-rendered-by="12:24761;a"><br />
+  V opačnom prípade môžete zmeniť umiestnenie svojej siete VPN pomocou <a href="https://developers.google.com/outline/docs/guides/service-providers/dynamic-access-keys" target="_blank">dynamických kľúčov</a>, ktoré vám umožňujú striedať servery a ponechať si pritom rovnaké kľúče. Umiestnenie príslušných serverov sa nezmení.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="102" sourceLocale="sk">WEB:15331423</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Odoslanie spätnej väzby alebo návrhov</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:22486;a">Ďakujeme vám, že pomáhate Outline zlepšovať. Spätnú väzbu nám môžete odoslať niekoľkými spôsobmi, a to buď anonymne, alebo zanechajte aj e‑mail (ak vyžadujete odpoveď):</p>
+
+<ul data-aura-rendered-by="12:22486;a">
+  <li><strong>Pre vývojárov</strong>: Outline je softvér s&nbsp;licenciou open source a&nbsp;všetok kód hostíme v&nbsp;službe <a href="https://github.com/jigsaw-Code/?q=outline" target="_blank">GitHub</a>. O&nbsp;svoje nápady sa môžete podeliť v&nbsp;službe GitHub alebo v&nbsp;našej komunite v&nbsp;službe <a href="https://www.reddit.com/r/outlinevpn/" target="_blank">Reddit</a>.</li>
+  <li><strong>Pre používateľov</strong>: spätnú väzbu nám môžete odoslať v aplikáciách Outline alebo Správca Outline. Uveďte, čoho sa týka, a prípadne nechajte aj e‑mail, aby sme vám v súvislosti s ňou mohli napísať. Zhromažďujeme aj niektoré metadáta o vašom prostredí, napríklad o prehliadači, operačnom systéme či používanej verzii softvéru, aby sme vám mohli pomôcť odstrániť prípadné problémy.</li>
+  <li><strong>Cez tento web</strong>: môžete nás kontaktovať aj kliknutím na príslušný odkaz, ktorý nájdete na tomto webe.</li>
+  <li><strong>Vážne problémy</strong>: ak chcete nahlásiť vážny problém so zabezpečením, oceníme, ak nám pošlete správu s podrobnosťami na <a href="https://getoutline.org/" rel="noopener" target="_blank">security@getoutline.org</a>.</li>
+</ul>
+
+<p data-aura-rendered-by="12:22486;a">Ešte raz vám ďakujeme, že ste si našli čas a podelili sa o svoje nápady.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="146" sourceLocale="sk">WEB:15331424</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Správa prístupu k serveru softvéru Outline (pomocou prístupových kľúčov)</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:25527;a">Po dokončení inštalácie servera softvéru Outline môžete začať zdieľať prístup k nemu s inými osobami a tento ich prístup spravovať. Ľudia, ktorí od vás dostanú pozvánku, si budú môcť stiahnuť aplikáciu Outline a pomocou softvéru Outline chrániť svoju internetovú premávku.</p>
+
+<p data-aura-rendered-by="12:25527;a"><strong>Zdieľanie prístupu k serveru softvéru Outline</strong><br />
+Po dokončení inštalácie servera softvéru Outline vás presmerujeme na stránku s informáciami o serveri v Správcovi Outline, kde môžete vytvoriť prístupové kľúče. <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">Ďalšie informácie o prístupových kľúčoch</a></p>
+
+<ul data-aura-rendered-by="12:25527;a">
+  <li>Vytvorenie kľúčov: nové kľúče vytvoríte kliknutím na malú ikonu + naspodku stránky.</li>
+  <li>Zdieľanie kľúčov: napravo od každého kľúča je ikona Zdieľať. Kliknutím na ňu získate pozvánku. Tú následne skopírujte a prilepte do správy v ľubovoľnom systéme na výmenu správ.</li>
+</ul>
+
+<p data-aura-rendered-by="12:25527;a"><strong>Žiadosť o funkciu: zdieľanie prístupu cez aplikáciu Správca Outline</strong><br />
+Mnohí správcovia servera nás žiadajú, aby sme zjednodušili pozývanie a umožnili zadávanie e‑mailovej adresy konkrétnej osoby priamo v Správcovi Outline.</p>
+
+<p data-aura-rendered-by="12:25527;a">Túto funkciu, žiaľ, do Správcu Outline pravdepodobne nepridáme. Jednou z našich základných zásad je zaistiť zabezpečenie a ochranu súkromia používateľov, preto sme nenavrhli žiadne miesto, kde by sa dali vkladať e‑mailové adresy či kontaktné údaje.</p>
+
+<p data-aura-rendered-by="12:25527;a">Správcov servera preto žiadame, aby pozvánky koncovým používateľom posielali cez zabezpečenú platformu na výmenu správ, napríklad e‑mailom alebo cez zabezpečený čet.<br />
+  <br />
+  <strong>Čo čaká používateľa po tom, ako mu poskytnete prístupový kľúč</strong></p>
+
+<ol data-aura-rendered-by="12:25527;a">
+  <li>Používateľ vo svojom zariadení klikne na odkaz na inštaláciu.</li>
+  <li>Ak ešte nemá aplikáciu Outline, zobrazí sa mu výzva na jej inštaláciu.</li>
+  <li>Pomocou jedinečného kľúča vloženého do pozvánky vytvorí úvodné pripojenie k serveru softvéru Outline.</li>
+  <li>Teraz môže pomocou tlačidla na pripojenie alebo odpojenie spravovať svoj prístup na internet cez server softvéru Outline.</li>
+</ol>
+
+<p data-aura-rendered-by="12:25527;a"><strong>Odstránenie prístupu k serveru softvéru Outline</strong><br />
+Na stránke s informáciami o serveri v Správcovi Outline uvidíte napravo od každého kľúča na serveri ponuku s možnosťou jeho odstránenia. Odstránením kľúča používateľovi odoberiete prístup k vášmu serveru.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="92" sourceLocale="sk">WEB:15331524</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Ako získam prístup k zdrojom Outline, keď je web getoutline.org zablokovaný?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><a href="https://s3.amazonaws.com/outline-vpn/index.html" target="_blank">Uložte si tento zrkadlový web ako záložku,</a> aby ste ho mohli použiť, keď nebudete mať prístup k webu <a href="http://getoutline.org/" target="_blank">getoutline.org</a>.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="321" sourceLocale="sk">WEB:15331527</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Inštalácia aplikácie Outline Client v systéme Linux</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Od verzie aplikácie Outline Client 1.15 budú všetky budúce verzie vydávané ako balíky Debian pre operačné systémy Linux. Viac o tom, ktoré operačné systémy podporujeme, sa dozviete v <a href="/outline/answer/15330818" rel="noopener" target="_blank"><u>minimálnych systémových požiadavkách</u></a>.</p>
+&nbsp;
+
+<p><strong>Inštalácia aplikácie Outline Client pre distribúcie systému Linux založené na systéme Debian (odporúčané)</strong></p>
+&nbsp;
+
+<p>Spustite nasledujúce príkazy:</p>
+
+<ol>
+  <li aria-level="1">Nainštalujte kľúč odkladacieho priestoru služby Outline a pridajte odkladací priestor.
+    <div class="code">
+      <div class="no-margin">
+        <p>wget -qO- https://us-apt.pkg.dev/doc/repo-signing-key.gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/gcloud-artifact-registry-us.gpg</p>
+
+        <p>echo "deb [arch=amd64] https://us-apt.pkg.dev/projects/jigsaw-outline-apps outline-client main" | sudo tee /etc/apt/sources.list.d/outline-client.list</p>
+      </div>
+    </div>
+  </li>
+</ol>
+
+<p>&nbsp; 2.&nbsp;&nbsp;Aktualizujte zoznam balíčkov apt a&nbsp;nainštalujte najnovšiu verziu aplikácie Outline Client.</p>
+
+<div class="code">
+  <div class="no-margin">
+    <p>&nbsp; &nbsp;sudo apt update</p>
+
+    <p>&nbsp; &nbsp;sudo apt install outline-client</p>
+  </div>
+</div>
+
+<p>Ak chcete skontrolovať alebo nainštalovať budúce aktualizácie, znova spustite príkazy v druhom kroku. Upozorňujeme, že automatická aktualizácia v aplikácii je v prípade aplikácie Outline Client v systéme Linux zakázaná od verzie 1.15.</p>
+
+<p>Ak chcete aplikáciu Outline Client odinštalovať, spustite nasledujúci príkaz:</p>
+
+<div class="code">
+  <div class="no-margin">sudo apt purge outline-client</div>
+</div>
+
+<p><strong>Alternatívna možnosť</strong></p>
+
+<ol>
+  <li aria-level="1">Stiahnite si najnovší balík Debian aplikácie Outline Client z webu <a href="https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb" rel="noopener" target="_blank">https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb</a>.</li>
+  <li aria-level="1">Ak chcete nainštalovať balík, spustite v príkazovom riadku nasledujúce príkazy.</li>
+</ol>
+
+<div class="code">
+  <div class="no-margin">
+    <p>wget -O ./outline-client.deb https://s3.amazonaws.com/outline-&nbsp; &nbsp; &nbsp; releases/client/linux/stable/outline-client_amd64.deb</p>
+
+    <p>sudo apt install ./outline-client.deb</p>
+  </div>
+</div>
+
+<p>&nbsp; 3.&nbsp;&nbsp;Aktualizácie kontrolujte manuálne, pretože automatické aktualizácie v&nbsp;aplikácii sú v&nbsp;prípade aplikácie Outline Client v&nbsp;systéme Linux zakázané od verzie&nbsp;1.15.</p>
+
+<p>&nbsp; 4.&nbsp; Ak chcete aplikáciu Outline Client odinštalovať, spustite v&nbsp;príkazovom riadku tento príkaz:</p>
+
+<div class="code">
+  <div class="no-margin">sudo apt purge outline-client</div>
+</div>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="206" sourceLocale="sk">WEB:15331528</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Môžem prístupový kľúč použiť viackrát?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1895;a">Áno. <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">Prístupový kľúč</a> môžete používať v&nbsp;ľubovoľnom počte zariadení, no neodporúčame zdieľať ho s&nbsp;niekým iným. Ak má niekto váš prístupový kľúč, môže potenciálne kontrolovať všetku vašu internetovú premávku, ak má k&nbsp;nej prístup, takže vaše používanie internetu už nebude zabezpečené ani súkromné.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="104" sourceLocale="sk">WEB:15331529</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Pripojenie zariadenia k serveru služby Outline</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1399;a">&nbsp;</p>
+
+<p data-aura-rendered-by="12:1399;a"><strong>Pripojenie zariadenia k serveru služby Outline</strong></p>
+
+<p data-aura-rendered-by="12:1399;a">Ak chcete svoje zariadenie pripojiť k&nbsp;serveru služby Outline, správca servera vám musí poslať pozvánku na pripojenie k&nbsp;serveru spolu s&nbsp;jedinečným <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">prístupovým kľúčom</a>. Táto pozvánka:</p>
+
+<ul data-aura-rendered-by="12:1399;a">
+  <li>vás vyzve na stiahnutie a inštaláciu aplikácie Outline vo vašom zariadení (ak ju ešte nemáte),</li>
+  <li>pomocou prístupového kľúča vytvorí zabezpečené pripojenie medzi vami a serverom služby Outline.</li>
+</ul>
+
+<p data-aura-rendered-by="12:1399;a">Po pripojení k serveru môžete Outline používať kliknutím na tlačidlo na pripojenie alebo odpojenie.</p>
+
+<p data-aura-rendered-by="12:1399;a"><em>Dôležité:</em> Outline bez prístupového kľúča a&nbsp;servera služby Outline nefunguje. Keď si aplikáciu Outline stiahnete a&nbsp;inštalujete bez kľúča, internetovú premávku chránenú mať nebudete.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="100" sourceLocale="sk">WEB:15331530</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Ako nastavím server Outline?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:27063;a">Ak chcete používať službu Outline, najprv je potrebné nastaviť si server Outline. Môžete to spraviť vy alebo niekto, komu dôverujete. Až potom sa budete môcť cez Outline pripojiť k otvorenému internetu.<br />
+  <br />
+  <strong>Skôr než začnete</strong><br />
+  Pred nastavením servera Outline:</p>
+
+<ol data-aura-rendered-by="12:27063;a">
+  <li>Potrebujete prístup k vlastným serverom alebo poskytovateľovi cloudových služieb, ako je DigitalOcean, Amazon Web Services (AWS) alebo Google Cloud Platform (GCP).<br />
+    Ak nemáte priamy prístup ku cloudovému serveru, môžete si jednoducho vytvoriť účet u ktoréhokoľvek poskytovateľa vrátane tých uvedených vyššie. Na registráciu budete zrejme potrebovať kreditnú kartu.</li>
+  <li>Potrebujete počítač so systémom macOS 10.9 alebo novším, Windows 7.0 alebo novším alebo Linux.</li>
+  <li>Potrebujete aplikáciu Správca Outline.</li>
+</ol>
+
+<p data-aura-rendered-by="12:27063;a"><strong>Nastavenie u&nbsp;poskytovateľa DigitalOcean</strong><br />
+  <br />
+  Outline si v&nbsp;službe DigitalOcean niekoľkými kliknutiami bez problémov inštaluje ktokoľvek. Po stiahnutí a&nbsp;inštalácii Správcu Outline v&nbsp;počítači si môžete vybrať možnosť nastavenia v&nbsp;službe DigitalOcean, kde na niekoľkých jednoduchých obrazovkách konfigurujete a&nbsp;inštalujete server Outline.<br />
+  <br />
+  <strong>Nastavenie u&nbsp;iného poskytovateľa cloudu</strong><br />
+  <br />
+  Po stiahnutí a&nbsp;inštalácii Správcu Outline môžete server Outline inštalovať vo virtuálnom počítači u&nbsp;poskytovateľa AWS, GCP, DigitalOcean, prípadne iného. Každé prostredie je iné, takže sme do postupu nastavenia Správcu Outline zahrnuli pokyny platné pri najčastejších poskytovateľoch cloudu. Zahŕňajú tiež návod na konfiguráciu nastavení vo virtuálnom počítači pred tým, ako spustíte inštalačný skript na inštaláciu služby Outline na serveri.<br />
+  <br />
+  <strong><em>Potrebujete ďalšiu pomoc?</em></strong><br />
+  <br />
+  Pozrite si <a href="/outline-faq/answer/15331728" rel="noopener" target="_blank">časté otázky o&nbsp;nastavení servera Outline</a>.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="95" sourceLocale="sk">WEB:15331625</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Môžem používať alebo replikovať značku Outline?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Aj keď služba Outline funguje na princípe open source a je bezplatná, naša značka je vo vlastníctve platformy Jigsaw a nesmie sa zneužívať. <a href="https://github.com/Jigsaw-Code/outline-brand/blob/main/outline_brand_user_guide.pdf" target="_blank">Sprievodca používateľa</a> vám pomôže vyhnúť sa potenciálne zavádzajúcim tvrdeniam alebo nesprávnemu prezentovaniu vášho vzťahu k službe Outline či platforme Jigsaw, ale aj so správnym používaním schválených prvkov značky.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="191" sourceLocale="sk">WEB:15331628</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Ako získam prístupový kľúč?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:3258;a">Outline nie je ako služby VPN, do ktorých si kupujete prístup. Ide o&nbsp;<a href="https://getoutline.org/#:~:text=Two%20Products%20that%20Work%20Together" target="_blank">nástroj</a>, ktorý vám umožňuje prevádzkovať súkromný server služieb VPN a&nbsp;zdieľať k&nbsp;nemu prístup. <a href="/outline/answer/15330920#servicemanager" rel="noopener" target="_blank">Správca služieb</a> je jediná osoba, ktorá môže poskytnúť prístupový kľúč. Tím Outline nedistribuuje bezplatné ani platené prístupové kľúče. Okrem trhoviska Paskoocheh v&nbsp;perzštine nemáme oficiálnych partnerov pre prístupové kľúče Outline.<br />
+  <br />
+  Tu sú tri možnosti, ako získať prístupový kľúč:</p>
+
+<ul data-aura-rendered-by="12:3258;a">
+  <li>Požiadajte niekoho, aby vás pozval na svoj server: ak poznáte osobu so serverom Outline, kontaktujte ju so žiadosťou o prístupový kľúč.</li>
+  <li><a href="/outline/answer/15331530" rel="noopener" target="_blank">Vytvorte si server:</a> v počítači so systémom Windows alebo Linux, prípadne v Macu, si stiahnite <a href="https://getoutline.org/get-started/#step-1" target="_blank">Správcu Outline</a> a nastavte vlastný súkromný <a href="/outline/answer/15330920" rel="noopener" target="_blank">server Outline</a>. Tento proces sme vytvorili tak, aby bol ľahký pre všetkých. Predovšetkým pre tých, ktorí využívajú poskytovateľa cloudových služieb DigitalOcean.</li>
+  <li>Použite službu Outline alebo <a href="https://en.wikipedia.org/wiki/Shadowsocks#:~:text=Shadowsocks%20is%20a%20free%20and,have%20been%20made%20available%20since." target="_blank">Shadowsocks</a>: klient Outline môžete používať aj so službami tretích strán využívajúcich protokol Outline alebo Shadowsocks. Príklad:
+    <ul>
+      <li><a href="http://nthlink.com/" target="_blank">nthLink</a> prevádzkuje bezplatnú službu založenú na softvéri Outline s upravenou verziou klienta Outline.</li>
+      <li><a href="https://www.reddit.com/r/outlinevpn/comments/nwu1se/the_outline_distribution_system_is_here_to_help/" target="_blank">ASL19</a> prevádzkuje upravenú verziu softvéru Outline s názvom <a href="https://beepassvpn.com/" target="_blank">BeePass</a>, ale aj <a href="https://t.me/paskoochehbot" target="_blank">robota Telegram</a>, ktorý poskytuje bezplatné prístupové kľúče serverom BeePass.</li>
+      <li>Používatelia ovládajúci perzštinu môžu požiadať o prístupový kľúč Outline z trhoviska <a href="https://outline.paskoocheh.com/" target="_blank">Paskoocheh od skupiny ASL19</a>.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Po stiahnutí aplikácie Outline Client skopírujte svoj <a href="/outline/answer/15330920#accesskey" rel="noopener" target="_blank">prístupový kľúč</a> a&nbsp;prilepte ho do aplikácie Outline Client, aby ste sa pripojili k&nbsp;serveru Outline.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="133" sourceLocale="sk">WEB:15331630</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Ako odstránim server Outline?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:14046;a">V prípade väčšiny poskytovateľov cloudu je pomerne jednoduché odstrániť konkrétny virtuálny počítač, ktorý používate.</p>
+
+<p data-aura-rendered-by="12:14046;a">Ak používate poskytovateľa cloudu DigitalOcean, môžete svoj existujúci virtuálny počítač odstrániť tak, že kliknete na tlačidlo ozubeného kolieska a vyberiete Zničiť server. Okamžite po tom sa zobrazí výzva, aby ste vytvorili nový virtuálny počítač v umiestnení podľa vlastného výberu.</p>
+
+<p data-aura-rendered-by="12:14046;a">Ak odstránite server Outline, bude odstránený natrvalo a&nbsp;jeho prístupové kľúče už nebudú fungovať. Ak nechcete, aby bol prístup ľudí prostredníctvom služby Outline prerušený, budete musieť <a href="/outline-faq/answer/15331530" rel="noopener" target="_blank">vytvoriť nový server Outline</a> a&nbsp;zdieľať prístup k&nbsp;nemu ešte pred odstránením starého.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="99" sourceLocale="sk">WEB:15331631</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Nastavenie viacerých serverov služby Outline</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:27908;a">Ak chcete nastaviť ďalšie servery služby Outline, na navigačnom paneli na ľavej strane aplikácie Správca Outline kliknite na ikonu +. Pokyny na pridanie nového servera sú rovnaké, ako boli pri inštalácii toho prvého.</p>
+
+<ul data-aura-rendered-by="12:27908;a">
+  <li>Vytvoriť môžete neobmedzený počet serverov služby Outline.</li>
+  <li>Ku každému vytvorenému serveru služby Outline potrebujete zodpovedajúci virtuálny počítač.</li>
+  <li>Po vytvorení ďalších počítačov alebo virtuálnych serverov vám môžu stúpnuť poplatky u poskytovateľa cloudu. Skontrolujte si, aký cenový balíček uňho máte, aby ste vedeli, čo očakávať.</li>
+</ul>
+
+<p data-aura-rendered-by="12:27908;a"><strong>Vytvorenie ďalšieho servera služby Outline u poskytovateľa DigitalOcean</strong></p>
+
+<p data-aura-rendered-by="12:27908;a">Po kliknutí na ikonu + a výbere inštalácie v službe DigitalOcean budete postupovať rovnako ako pri nastavovaní prvého servera. Keďže Správca Outline je integrovaný so službou DigitalOcean, budeme vám môcť virtuálny server vytvoriť priamo v aplikácii Správca Outline.</p>
+
+<p data-aura-rendered-by="12:27908;a">Upozorňujeme, že Správca Outline podporuje iba jeden účet DigitalOcean naraz. Ak chcete pridať alebo vytvoriť ďalšie servery služby Outline z iných účtov DigitalOcean, môžete ich pridať ako rozšírenú konfiguráciu.</p>
+
+<p data-aura-rendered-by="12:27908;a"><strong>Vytvorenie ďalšieho servera Outline u poskytovateľa cloudovej služby GCP, AWS alebo iného</strong></p>
+
+<p data-aura-rendered-by="12:27908;a">Začnite vytvorením nového virtuálneho počítača u vybratého poskytovateľa cloudu. Potom otvorte Správcu Outline a podľa pokynov dokončite rozšírenú inštaláciu, akú ste pravdepodobne vykonali aj prvýkrát.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="96" sourceLocale="sk">WEB:15331632</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Prečo si nemôžem nainštalovať Správcu Outline v systéme Windows?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:34680;a">Môže sa vám zobraziť toto chybové hlásenie: „Ľutujeme, zdá sa, že služba Outline nie je správne nainštalovaná. Skúste ju nainštalovať znova. Ak to nepomôže, <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">odošlite spätnú väzbu</a>.“</p>
+
+<p data-aura-rendered-by="12:34680;a">Ak používate Outline v&nbsp;systéme Windows, občas sa môže vyskytnúť nečakaná chyba. Vo väčšine prípadov je potrebné odstrániť adaptér (ovládač) TAP služby Outline a&nbsp;Outline preinštalovať.</p>
+
+<p data-aura-rendered-by="12:34680;a">Postup sa môže líšiť v závislosti od verzie operačného systému Windows, ale nižšie je uvedený všeobecný postup, ako odinštalovať adaptér TAP aj Správcu Outline a potom Správcu Outline preinštalovať.</p>
+
+<ol data-aura-rendered-by="12:34680;a">
+  <li>Odinštalovanie adaptéra TAP pre Správcu Outline
+    <ol>
+      <li>Prejdite do Správcu zariadení a&nbsp;potom do sekcie Sieťové adaptéry.</li>
+      <li>Vyhľadajte súbor TAP-Windows Adapter V9 alebo adaptér TAP spojený so službou Outline.</li>
+      <li>Tento adaptér odinštalujte alebo odstráňte. Pamätajte, že to môže ovplyvniť aj iné aplikácie VPN, ktoré ste nainštalovali.</li>
+    </ol>
+  </li>
+  <li>Odinštalovanie Správcu Outline
+    <ol>
+      <li>Prejdite do sekcie Programy a&nbsp;funkcie a&nbsp;potom do sekcie Odinštalovanie programu.</li>
+      <li>Vyhľadajte aplikáciu Správca Outline a&nbsp;odinštalujte Správcu Outline.</li>
+      <li><a href="https://getoutline.org/get-started/#step-1" target="_blank">Stiahnite si najnovšiu verziu Správcu Outline</a> a&nbsp;preinštalujte ho vo svojom zariadení so systémom Windows. V&nbsp;rámci novej inštalácie by sa mal automaticky nainštalovať nový adaptér TAP.</li>
+    </ol>
+  </li>
+</ol>
+
+<p data-aura-rendered-by="12:34680;a">Ak problémy pretrvávajú, <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">kontaktujte podporu</a>.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="94" sourceLocale="sk">WEB:15331727</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Automatické nastavenie služby Google Cloud</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:26310;a"><strong>Prehľad</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Správca Outline zahŕňa funkciu, ktorá vám umožňuje automaticky konfigurovať server služby Outline na serveri spustenom v&nbsp;službe Google Cloud. Ak sa túto funkciu rozhodnete používať, Správca Outline vás požiada o&nbsp;prihlásenie pomocou účtu Google, ktorý vašej lokálnej inštalácii Správcu Outline udelí určité<a href="https://developers.google.com/identity/protocols/oauth2" target="_blank"> povolenia OAuth</a>, aby vám bolo možné konfigurovať účet Google Cloud.<br />
+  Ak tieto povolenia nechcete poskytnúť, môžete v&nbsp;Správcovi Outline postupovať podľa pokynov na rozšírené nastavenie, ktoré umožní spustiť Outline v&nbsp;službe Google Cloud Platform.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Povolenia udelené</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Na zaistenie automatického nastavenia Správca Outline od vášho účtu vyžaduje nasledujúce povolenia.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Google Cloud Platform</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>Zobrazovanie a správa vašich zdrojov Google Compute Engine</li>
+  <li>Čítanie vašich údajov v službách Google Cloud a zobrazenie e‑mailovej adresy vášho účtu Google</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Základné informácie o účte</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>Čítanie primárnej e‑mailovej adresy vášho účtu Google</li>
+  <li>Možnosť spojiť vás s vašimi osobnými údajmi na Googli</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Ďalší prístup</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>Správa vašich projektov Cloud Platform</li>
+  <li>Zobrazovanie a správa vašich fakturačných účtov v službe Google Cloud Platform</li>
+  <li>Správa vašej konfigurácie služby s rozhraním Google API</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a">Vďaka týmto povoleniam môžeme poskytovať rozšírené funkcie na správu vašich serverov služby Outline vrátane týchto:</p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>Možnosť vybrať si správny fakturačný účet</li>
+  <li>Vytvorenie nového projektu na usporiadanie serverov služby Outline</li>
+  <li>Uvedenie dostupných dátových centier</li>
+  <li>Vytváranie nových virtuálnych počítačov na spúšťanie služby Outline</li>
+  <li>Konfigurácia nového virtuálneho počítača pomocou služby Outline</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Zrušenie povolení</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Prístup k službe Google Cloud Platform, ktorý ste udelili Správcovi Outline, môžete zrušiť na stránke<a href="https://myaccount.google.com/permissions" target="_blank"> Môj účet</a>. Ak zrušíte prístup, všetky servery, ktoré ste vytvorili pomocou automatického nastavenia, zostanú spustené, no už sa nebudú zobrazovať v Správcovi Outline. Ak prístup k nim budete chcieť obnoviť, jednoducho sa znova pripojte k službe Google Cloud Platform spustením procesu automatického nastavenia.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Usporiadanie projektov Outline</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Automatické nastavenie služby Google Cloud používa na usporiadanie serverov služby Outline jeden<a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects" target="_blank"> projekt Google Cloud</a>. Projekt sa vytvorí pri prvom použití automatického nastavenia. Bude označený navrhovaným identifikátorom projektu začínajúcim sa reťazcom Outline-, za ktorým nasleduje reťazec náhodných znakov. Ak chcete, pri vytváraní môžete vybrať iný identifikátor projektu. Projekt bude mať názov Outline servers (Servery služby Outline).</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Fakturačný účet</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Projekty Google Cloud si vyžadujú pripojený fakturačný účet, ktorý definuje platobné údaje. Pri prvom použití automatického nastavenia služby Google Cloud sa vám zobrazí výzva na zadanie fakturačného účtu, ktorý sa má spojiť s vašimi servermi služby Outline. Niekedy sa server zastaví pre problém s fakturačným účtom. V tom prípade by ste sa mali prihlásiť do služby<a href="https://console.cloud.google.com/getting-started" target="_blank"> Google Cloud Console</a>, vyhľadať projekt Google Cloud spojený so službou Outline (s názvom Outline servers (Servery služby Outline)) a aktualizovať nastavenia fakturácie.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Zničenie serverov</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Ak chcete zničiť servery vytvorené pomocou automatického nastavenia, najjednoduchšie je použiť Správcu Outline. Ak však chcete servery zničiť svojpomocne, môžete sa prihlásiť do služby<a href="https://console.cloud.google.com/getting-started" target="_blank"> Google Cloud Console</a>, vyhľadať projekt vytvorený pri úvodnom nastavení (s názvom Outline servers (Servery služby Outline)) a buď odstrániť zdroje v rámci neho, alebo ho celý zastaviť.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="99" sourceLocale="sk">WEB:15331728</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Časté otázky o nastavení servera Outline</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:28806;a"><strong>Môžem Outline používať bez servera?</strong><br />
+  <br />
+  Nie. Softvér Outline si vyžaduje prístup na server, ktorý môže byť spravovaný vami, vašou organizáciou alebo spoľahlivou treťou stranou.</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>Koľko trvá nastavenia servera Outline?</strong></p>
+
+<p data-aura-rendered-by="12:28806;a">Väčšinou menej ako päť minút. Outline môžete inštalovať na ktoromkoľvek cloudovom serveri. S poskytovateľom DigitalOcean sme však vytvorili pohodlnejší komentovaný postup inštalácie, počas ktorého server nastavíte bez skriptov niekoľkými kliknutiami.</p>
+
+<p data-aura-rendered-by="12:28806;a">Ak sa rozhodnete pre poskytovateľa AWS, GCP alebo rozšírené nastavenie, proces inštalácie servera sme zjednodušili na jeden skript, ktorý funguje vo väčšine prostredí.</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>Kde môžem nastaviť server Outline?</strong></p>
+
+<p data-aura-rendered-by="12:28806;a">Server služby Outline môžete nastaviť u väčšiny poskytovateľov cloudu všade, kde svoje služby ponúkajú.</p>
+
+<p data-aura-rendered-by="12:28806;a">Najjednoduchšou možnosťou je nastavenie u&nbsp;poskytovateľa DigitalOcean, ktorý má servery na viacerých miestach, napríklad v&nbsp;Amsterdame, Toronte, San Franciscu alebo Singapure. Ak vám viac vyhovuje inštalácia u&nbsp;iného poskytovateľa cloudu alebo vo vlastnej infraštruktúre, v&nbsp;aplikácii Správca Outline si môžete vybrať Rozšírený režim a&nbsp;postupovať podľa inštalačných pokynov pomocou nastavovacieho skriptu.</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>Kde si mám nastaviť server Outline?</strong></p>
+
+<ol data-aura-rendered-by="12:28806;a">
+  <li>Pri výbere umiestnenia servera služby Outline by ste mali zvážiť niekoľko vecí:</li>
+  <li>Umiestnenie servera služby Outline ovplyvňuje prostredie internetu používateľov. Ak sa server nachádza napríklad v Amsterdame, používateľ, ktorý sa naň dostane, bude mať internet prispôsobený, akoby bol fyzicky v Holandsku. Niektoré weby sa dokonca môžu zobraziť v holandčine. Miestny jazyk sa zvyčajne dá zmeniť pomocou nástroja na výber jazyka na príslušnom webe.</li>
+  <li>Vzdialenosť medzi používateľmi a serverom Outline môže ovplyvniť rýchlosť. Vo všeobecnosti platí, že fyzická vzdialenosť medzi používateľmi služby Outline a serverom môže ovplyvniť rýchlosť internetu používateľov. Vo väčšine prípadov si môžete vybrať umiestnenie servera čo najbližšie k oblasti, kde by sa mali nachádzať používatelia. Na <a href="https://www.submarinecablemap.com/" rel="noopener" target="_blank">mape podmorských káblov</a> si môžete pozrieť, ktoré internetové káble zaisťujú pripojenie vašej krajiny alebo oblasti.</li>
+  <li>Umiestnenie servera služieb VPN môže ovplyvniť právny rámec. Upozorňujeme, že softvér Outline nezaznamenáva vašu premávku. <a href="/outline-faq/answer/14919822" rel="noopener" target="_blank">Ďalšie informácie o zabezpečení a ochrane súkromia pri používaní služby Outline</a></li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="sk">WEB:15331758</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Som vývojár(ka). Kde nájdem podporu pri integrácii súpravy Outline SDK do mojej aplikácie?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Tento web podpory je určený pre používateľov aplikácie Správca Outline a&nbsp;klientskej aplikácie. Podporu pre vývojárov získate pomocou služby GitHub. Ak máte otázku, uverejnite ju na <a href="https://github.com/Jigsaw-Code/outline-sdk/discussions" target="_blank">Diskusnom fóre</a> SDK. Sekcia Diskusné fórum je skvelým miestom, kde môžete klásť otázky, zdieľať nápady, pripojiť sa k&nbsp;demám a&nbsp;poskytovať podporu ostatným vývojárom používajúcim súpravu Outline SDK. Ak chcete požiadať o&nbsp;funkciu alebo nahlásiť chybu, otvorte <a href="https://github.com/Jigsaw-Code/outline-sdk/issues/new" target="_blank">Problém</a>.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="74" sourceLocale="sk">WEB:15448041</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Dostupné jazyky</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Outline je k dispozícii v:</p>
+
+<ul>
+  <li aria-level="1">afrikánčine,</li>
+  <li aria-level="1">albánčine,</li>
+  <li aria-level="1">amharčine,</li>
+  <li aria-level="1">arabčine,</li>
+  <li aria-level="1">arménčine,</li>
+  <li aria-level="1">azerbajdžančine,</li>
+  <li aria-level="1">bengálčine,</li>
+  <li aria-level="1">bosniančine,</li>
+  <li aria-level="1">bulharčine,</li>
+  <li aria-level="1">barmčine,</li>
+  <li aria-level="1">katalánčine,</li>
+  <li aria-level="1">čínštine (zjednodušenej),</li>
+  <li aria-level="1">čínštine (tradičnej),</li>
+  <li aria-level="1">chorvátčine,</li>
+  <li aria-level="1">češtine,</li>
+  <li aria-level="1">dánčine,</li>
+  <li aria-level="1">holandčine,</li>
+  <li aria-level="1">angličtine (americkej),</li>
+  <li aria-level="1">angličtine (britskej),</li>
+  <li aria-level="1">estónčine,</li>
+  <li aria-level="1">filipínčine,</li>
+  <li aria-level="1">fínčine,</li>
+  <li aria-level="1">francúzštine,</li>
+  <li aria-level="1">gruzínčine,</li>
+  <li aria-level="1">nemčine,</li>
+  <li aria-level="1">gréčtine,</li>
+  <li aria-level="1">hebrejčine,</li>
+  <li aria-level="1">hindčine,</li>
+  <li aria-level="1">maďarčine,</li>
+  <li aria-level="1">islandčine,</li>
+  <li aria-level="1">indonézštine,</li>
+  <li aria-level="1">taliančine,</li>
+  <li aria-level="1">japončine,</li>
+  <li aria-level="1">kazaštine,</li>
+  <li aria-level="1">kmérčine,</li>
+  <li aria-level="1">kórejčine,</li>
+  <li aria-level="1">laoštine,</li>
+  <li aria-level="1">lotyštine,</li>
+  <li aria-level="1">litovčine,</li>
+  <li aria-level="1">macedónčine,</li>
+  <li aria-level="1">malajčine,</li>
+  <li aria-level="1">maráthčine,</li>
+  <li aria-level="1">mongolčine,</li>
+  <li aria-level="1">nepálčine,</li>
+  <li aria-level="1">nórčine,</li>
+  <li aria-level="1">perzštine,</li>
+  <li aria-level="1">poľštine,</li>
+  <li aria-level="1">portugalčine (brazílskej),</li>
+  <li aria-level="1">portugalčine (európskej),</li>
+  <li aria-level="1">rumunčine,</li>
+  <li aria-level="1">ruštine,</li>
+  <li aria-level="1">srbčine (cyrilike),</li>
+  <li aria-level="1">srbčine (latinke),</li>
+  <li aria-level="1">sinhálčine,</li>
+  <li aria-level="1">slovenčine,</li>
+  <li aria-level="1">slovinčine,</li>
+  <li aria-level="1">španielčine (európskej),</li>
+  <li aria-level="1">španielčine (latinskoamerickej),</li>
+  <li aria-level="1">swahilčine,</li>
+  <li aria-level="1">švédčine,</li>
+  <li aria-level="1">tamilčine,</li>
+  <li aria-level="1">thajčine,</li>
+  <li aria-level="1">turečtine,</li>
+  <li aria-level="1">ukrajinčine,</li>
+  <li aria-level="1">urdčine,</li>
+  <li aria-level="1">vietnamčine.</li>
+</ul>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="79" sourceLocale="sk">WEB:15528599</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Chyby súvisiace s firewallom</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:268;a">Môžete sa stretnúť s tromi typmi problémov s firewallom:</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>Možno vás blokuje sieťový firewall</strong></p>
+
+<p data-aura-rendered-by="12:268;a">Ak sa snažíte inštalovať Outline pri pripojení k sieti chránenej firewallom, napríklad v škole alebo v práci, skúste počas inštalácie použiť inú sieť.</p>
+
+<p data-aura-rendered-by="12:268;a">Ak to nepomôže, požiadajte správcu siete, aby povolil pripojenia medzi sieťou chránenou firewallom a vaším serverom Outline. Budete potrebovať adresu IP servera Outline a porty, na ktorých je služba Outline spustená. Tie nájdete na konci inštalačného skriptu.</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>Možno vás blokuje firewall zariadenia</strong></p>
+
+<p data-aura-rendered-by="12:268;a">Ak máte v zariadení softvér, ktorý blokuje odchádzajúce pripojenia na neštandardných portoch alebo nerozpoznaný softvér (napríklad ZoneAlarm od firmy CheckPoint), pozrite si v dokumentácii k zariadeniu alebo softvéru, ako pre Outline vytvoriť výnimku.</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>Možno vás blokuje firewall servera</strong></p>
+
+<p data-aura-rendered-by="12:268;a">Vami zvolený poskytovateľ cloudu niekedy môže vyžadovať, aby ste manuálne vytvorili výnimky pre firewall servera na otvorenie portov, na ktorých je služba Outline spustená. Po spustení inštalačného skriptu by ste mali mať k dispozícii dva náhodne vybraté porty, na ktorých je služba Outline spustená vo vašom serveri. Otvorenie týchto dvoch portov by malo stačiť.<br />
+  <br />
+  Ak chcete vytvoriť výnimky pre firewall svojho servera, informácie odporúčame vyhľadať v dokumentácii pre nástroje ufw a iptables:</p>
+
+<ul data-aura-rendered-by="12:268;a">
+  <li>UFW: <a href="https://help.ubuntu.com/community/UFW" rel="noopener" target="_blank">https://help.ubuntu.com/community/UFW</a></li>
+  <li>Iptables: <a href="https://help.ubuntu.com/community/IptablesHowTo" rel="noopener" target="_blank">https://help.ubuntu.com/community/IptablesHowTo</a></li>
+</ul>
+</div>
+</body>
+</html>

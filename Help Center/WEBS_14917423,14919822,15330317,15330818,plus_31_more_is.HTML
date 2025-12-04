@@ -1,0 +1,1086 @@
+<html>
+<head>
+<style type="text/css">
+.gkms-gtt-answer-header, .gkms-gtt-message-header {
+  color: black !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 2em;
+  padding: 4px;
+}.gkms-gtt-answer-header {
+  background-color: #E5ECF9;
+  border-top: 1px solid #36C;
+}
+.gkms-gtt-message-header {
+  background-color: #F8F8F8;
+  border-top: 1px solid #CCC;
+}
+.gkms-gtt-hide {
+  visibility: hidden;
+}
+.form_field_data .temporary_signal_wrapper {
+  display: inline;
+}
+</style>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+</head>
+<body lang="is">
+<br/><div class="gkms id notranslate" sourceGlobalRevision="116" sourceLocale="is">WEB:14917423</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Svona virkar Outline</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1723;a">&nbsp;</p>
+
+<p data-aura-rendered-by="12:1723;a"><strong>Uppsetning þjóns</strong><br />
+  <br />
+  ​Jafnvel þótt uppsetning Outline virðist einföld fer flókið ferli fram bakvið tjöldin til að ljúka uppsetningu þjónsins. Þegar Outline er sett upp keyrir uppsetningarskrifta eftirfarandi skref:</p>
+
+<ul data-aura-rendered-by="12:1723;a">
+  <li>Stöðug útgáfa Shadowbox-myndar er sótt og flutt inn með Docker. Myndin er hýst á <a href="https://quay.io/" target="_blank">Quay.io</a>, á <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank">https://quay.io/repository/outline/shadowbox?tab=tags</a>. Þessi mynd inniheldur Outline-þjóninn og forritaskil stjórnunar sem þjónsstjórnunarforrit Outline notar síðan til að búa til og fjarlægja aðgangslykla, samþykkja/hafna skráningu nafnlausra mæligilda o.s.frv.</li>
+  <li><a href="https://github.com/v2tec/watchtower" target="_blank">Watchtower</a> er sett upp og stillt á að athuga með myndauppfærslur á klukkustundarfresti í því skyni að tryggja að hver einasti Outline-þjónn sé alltaf uppfærður með nýjustu eiginleikunum og öryggisúrbótunum.</li>
+  <li>Vefþjónn, sem er notaður til að fá aðgang að forritaskilum stjórnunar, er ræstur á handahófsvalinni gátt á leynilegri og handahófsvalinni slóð.</li>
+  <li><a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank">Sjálfundirritað SSL-vottorð</a> er búið til svo að hægt sé að dulkóða stjórnun Outline-þjónsins með TLS þrátt fyrir að ekkert lénsheiti sé fyrir hendi. Einkvæmt fingrafar þessa vottorðs er einnig búið til og vistað í Outline Manager-forritinu í því skyni að koma í veg fyrir MITM-árásir.</li>
+</ul>
+
+<p data-aura-rendered-by="12:1723;a">Uppsetning Outline krefst engra grunnstillinga eftir uppsetningu.<br />
+  <br />
+  <strong>Öryggi þjóns</strong><br />
+  <br />
+  Hugbúnaður Outline er með opinn kóða. Það þýðir að hver sem er getur skoðað kóðann og gert endurbætur á honum ef veikleikar uppgötvast. Kóðinn okkar er hýstur á <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank">GitHub</a>.<br />
+  <br />
+  Enn fremur skal þess getið að allir uppsettir Outline-þjónar eru uppfærðir um leið og ný útgáfa býðst. Þannig er tryggt að enginn Outline-þjónn keyri gamlar útgáfur hugbúnaðarins.<br />
+  <br />
+  Til að stjórna aðgangslyklum á þjóninum á Outline Manager-forritið í samskiptum við stjórnunarþjónustu á Outline-þjóninum. Stjórnunarþjónustan keyrir á handahófsvalinni gátt og á leynilegri og einkvæmri slóð. Ekki er hægt að eiga við stjórnunarþjónustuna sjálfa þar sem hún svarar ekki fyrirspurnum nema viðeigandi leynileg slóð sé tilgreind. Að lokum skal þess getið að öll samskipti við stjórnunarþjónustuna eru dulkóðuð með <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank">sjálfundirrituðu SSL-vottorði</a>.<br />
+  <br />
+  Auk þess vistar Outline-þjónninn enga annála, svo jafnvel þótt árás yrði gerð á hann myndu engin notkunargögn verða gefin upp. Nánar <a href="https://support.getoutline.org/s/article/Security-and-privacy" target="_blank">hér</a>. Árið 2018 gekkst Outline undir endurskoðanir <a href="https://radicallyopensecurity.com/" target="_blank">Radically Open Security</a> og <a href="https://cure53.de/" target="_blank">Cure53</a>. Skýrslurnar má finna <a href="https://support.getoutline.org/s/article/Security-and-privacy" target="_blank">hér</a>.<br />
+  <br />
+  <strong>Meðhöndlun UDP-umferðar</strong><br />
+  <br />
+  Outline getur keyrt sem VPN í öllu kerfinu sem þýðir að allri UDP-umferð er beint um göng í gegnum Outline-þjóninn<br />
+  <br />
+  <strong>DNS-umferð</strong></p>
+
+<p data-aura-rendered-by="12:1723;a"><br />
+  Outline framkvæmir allar DNS-uppflettingar í gegnum Outline-þjóninn og ver þær með sömu dulkóðun og er notuð fyrir alla aðra netvirkni. DNS-fyrirspurnir fara í gegnum Outline-þjóninn yfir í Dyn Internet Guide, OpenDNS, Cloudflare DNS eða Quad9 DNS. Outline skráir aldrei DNS-uppflettingar.&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="232" sourceLocale="is">WEB:14919822</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Öryggi og persónuvernd við notkun Outline</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:258;a">Öryggi og persónuvernd við notkun Outline</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Svona verndar Outline samskipti þín á netinu</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Mesta hættan á eftirliti með netumferð er þegar hún fer í gegnum staðar- eða landsnet.</p>
+
+<p data-aura-rendered-by="12:258;a">Outline hjálpar til við að halda samskiptunum þínum lokuðum með því að dulkóða netumferðina þína á meðan hún ferðast innan landsnetsins og heldur henni dulkóðaðri þar til hún nær til Outline-þjónsins. Þegar Outline dulkóðar umferð geta netvaktarar ekki séð vefsvæðin sem þú opnar eða upplýsingarnar sem þú flytur.</p>
+
+<p data-aura-rendered-by="12:258;a">Outline kann einnig að gera þér kleift að endurheimta aðgang að öruggum samskiptaverkfærum sem virka frá upphafi til enda sem gætu annars verið ótiltæk í þínu landi.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Dulkóðunarstaðlar</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Outline dulkóðar samskipti á milli tækisins þíns og Outline-þjónsins með dulritunaraðferðinni AEAD 256-bita Chacha2020 IETF Poly 1305. AEAD-dulritunaraðferðir bjóða upp á trúnað, heilleika og áreiðanleika og skila frábærum afköstum á nútímavélbúnaði.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Öryggisendurskoðun</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Árið 2018 gekkst Outline undir endurskoðanir Radically Open Security og Cure53, tveggja óháðra fyrirtækja á sviði stafræns öryggis sem fara yfir hugbúnað til að athuga hvort hann standist nýjustu öryggisstaðla. Radically Open Security framkvæmdi viðbótarendurskoðun árið 2022 og Cure53 framkvæmdi endurskoðun á forritunarverkfærum Outline árið 2024. Hér geturðu lesið skýrslurnar:</p>
+
+<ul data-aura-rendered-by="12:258;a">
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf" target="_blank">Smokurprófunarskýrsla Radically Open Security (mars 2018)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf" target="_blank">Smokurprófunar- og endurskoðunarskýrsla Cure53 á Jigsaw Outline (desember 2018)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf" target="_blank">Smokurprófunarskýrsla Radically Open Security (desember 2022)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf" target="_blank">Smokurprófunarskýrsla Cure53 á VPN-forritunarverkfærum Jigsaw Outline (janúar 2024)</a></li>
+</ul>
+
+<p data-aura-rendered-by="12:258;a"><strong>Nafnlaus mæligildi og annálar</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Outline skráir bandvíddarnotkun sem „flutt bæti“ fyrir hvern aðgangslykil. Þessar upplýsingar gera stjórnendum þjóna kleift að breyta bandvíddaráskriftum hjá skýjaþjónustum eftir þörfum en gerir þeim ekki kleift að sjá upplýsingarnar sjálfar sem fóru í gegnum Outline-þjóninn.</p>
+
+<p data-aura-rendered-by="12:258;a">Nánar um <a href="/outline-faq/answer/15331222" rel="noopener" target="_blank">gagna- og upplýsingasöfnun</a> Outline.</p>
+
+<hr data-aura-rendered-by="12:258;a" />
+<p data-aura-rendered-by="12:258;a"><strong>Algengar spurningar um öryggi og persónuvernd</strong>&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Getur Outline gert mig nafnlausa(n) á netinu?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Nei, Outline er ekki nafnleysingarverkfæri. Outline gætir persónuverndar þinnar gagnvart aðilum sem kunna að vakta netkerfið.</p>
+
+<p data-aura-rendered-by="12:258;a">Outline býður ekki upp á fullt nafnleysi á vefsvæðunum sem þú opnar vegna þess að kerfið getur áfram borið kennsl á þig þegar þú skráir þig inn og stundum í gegnum tækni á borð við skráningu vafrafingrafars. Hvað varðar snjallforrit eru flestir nýlegir snjallsímar með forritaskil sem gera uppsettum forritum kleift að sækja staðsetningu þína óháð staðgengilsþjóni þar sem þau geta reitt sig á innbyggt GPS.</p>
+
+<p data-aura-rendered-by="12:258;a">VPN-net bjóða almennt upp á mikilvæga vernd, einkum gegn netvöktun, en netnotkun fylgir alltaf ákveðin áhætta. Ef netþjónusta hefur þegar borið kennsl á þig og getur fylgst með netnotkun þinni er hugsanlegt að hún geti fundið IP-tölu Outline-þjónsins þíns jafnvel þótt VPN sé notað. Slíkar upplýsingar er hægt að nota til að loka á aðgang að Outline-þjóninum eða bera kennsl á notkunarmynstur, t.d. um hvenær þú ert yfirleitt á netinu og hugsanlega til að áætla staðsetningu þína gróflega.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Geta aðrir séð hvort ég nota Outline?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Hugsanlega. Kerfin og þjónusturnar sem þú notar geta líklega séð að tengingin þín sé í gegnum skýjaþjónustu. Stundum geta þau ályktað að þú notir VPN en þau geta ekki séð innihald netumferðar þinnar.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Verndar Outline mig gegn öllum hugsanlegum netógnum?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Nei. Ekkert eitt verkfæri getur verndað þig gegn öllum hugsanlegum netógnum. Outline veitir þér aðgang að opna internetinu og eflir persónuvernd þína með því að dulkóða umferðina þína en við mælum með að grípa til frekari varúðarráðstafana til varnar annars konar árásum, s.s. spilliforritum og vefveiðum.</p>
+
+<p data-aura-rendered-by="12:258;a">Skoðaðu að vinna með netöryggissérfræðingi fyrirtækisins þíns eða stofnunarinnar til að efla netvarnirnar. Að öðrum kosti geturðu fengið sérsniðnar ráðleggingar frá leiðandi öryggissérfræðingum hjá <a href="https://securityplanner.org/" target="_blank">Security Planner</a> en það er vefsvæði sem er gert til að veita skýrar leiðbeiningar varðandi val á netöryggisverkfærum sem henta hverju sinni.</p>
+
+<p data-aura-rendered-by="12:258;a">Þú getur einnig skoðað aðrar netöryggisvörur frá <a href="https://jigsaw.google.com/" target="_blank">Jigsaw</a>, svo sem <a href="https://getintra.org/" target="_blank">Intra</a>, <a href="https://g.co/shield" target="_blank">Project Shield</a> og <a href="https://chrome.google.com/webstore/detail/password-alert/noondiphcddnnabmjcihcjfbhfklnnep?" rel="noopener" target="_blank">Password Alert</a>.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Er löglegt að nota VPN?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Vertu viss um að kynna þér staðbundin lög og reglugerðir og þjónustuskilmála skýjaþjónustunnar sem þú ætlar að nota áður en þú byrjar að nota Outline eða forritið.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="89" sourceLocale="is">WEB:15330317</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hvers vegna kemst ég ekki á netið þótt ég sé með tengingu við Outline-þjóninn?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:32933;a">Ef þú ert að nota snjallsíma skaltu prófa að skipta á milli farsímagagna og WiFi-tengingar. Stundum virkar ein tegund tengingar þegar önnur virkar ekki. Ef þú ert í tölvu skaltu prófa að aftengjast breiðbandinu og tengjast aftur.</p>
+
+<p data-aura-rendered-by="12:32933;a">Ef þú heldur áfram að lenda í vandræðum er vandamálið líklega tengt Outline-þjóninum. Hafðu samband við <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">þjónustustjórann</a>&nbsp;til að fá nýjan aðgangslykil fyrir annan þjón. Viðkomandi getur hugsanlega einnig aukið gagnamörk<a href="https://google-jigsaw--jigsawuat.sandbox.my.site.com/outline/s/article/Terminology" target="_blank"> </a><a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">aðgangslykilsins</a>&nbsp;ef lykillinn er kominn yfir kvótann.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="296" sourceLocale="is">WEB:15330818</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hverjar eru kerfiskröfurnar til að keyra Outline Client?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:24676;a">Þú getur prófað Outline í hvaða stýrikerfi sem er. Eftirfarandi eru lágmarkskröfur fyrir stýrikerfi:</p>
+
+<table class="borders" data-aura-rendered-by="12:24676;a" width="312">
+  <tbody>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top"><b>Stýrikerfi</b></td>
+      <td colspan="1" rowspan="1" valign="top"><b>Lágmarksútgáfa</b></td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Android</td>
+      <td colspan="1" rowspan="1" valign="top">10</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">iOS</td>
+      <td colspan="1" rowspan="1" valign="top">15.5</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">macOS</td>
+      <td colspan="1" rowspan="1" valign="top">12.0</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Windows</td>
+      <td colspan="1" rowspan="1" valign="top">10</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Linux</td>
+      <td colspan="1" rowspan="1" valign="top">Ubuntu&nbsp;20.04</td>
+    </tr>
+  </tbody>
+</table>
+
+<p data-aura-rendered-by="12:24676;a"><br />
+  Viltu hjálpa okkur að fá Outline Client til að virka í fleiri stýrikerfum?&nbsp;<a href="https://github.com/Jigsaw-Code/outline-client#platform-specific-development" target="_blank">Leggðu þitt af mörkum til kóðagrunnsins</a>&nbsp;á GitHub!</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="107" sourceLocale="is">WEB:15330824</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hvernig uppfæri ég Outline-netþjónahugbúnaðinn?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:10378;a">Outline-þjónar uppfærast sjálfkrafa með nýjustu öryggisúrbótunum svo þú keyrir alltaf nýjustu tækni Outline. Sjálfvirka uppfærsluferlið er virkjað með <a href="https://github.com/v2tec/watchtower" target="_blank">Watchtower</a> sem er safn með opinn kóða sem athugar og uppfærir docker-myndina sem inniheldur Outline-hugbúnaðinn reglulega.</p>
+
+<p data-aura-rendered-by="12:10378;a">Þegar þú setur upp Outline með Outline Manager setjum við auk þess upp cron-verk til að uppfæra hugbúnaðinn sjálfkrafa á þjóninum með <a href="https://wiki.debian.org/UnattendedUpgrades" target="_blank">eftirlitslausum uppfærslum</a> (Ubuntu) og endurræsa hann þegar þess þarf. Athugaðu að þetta gerist ekki í ítarlegri stillingu til að varðveita núverandi stillingu að því gefnu að hýsillinn sé einnig notaður í öðrum tilgangi en að keyra Outline.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="102" sourceLocale="is">WEB:15330825</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hvernig get ég sótt Outline Manager ef niðurhalstengillinn virkar ekki?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Notaðu <a href="https://getoutline.org/get-started/#step-1" target="_blank">þennan tengil</a> eða <a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">þennan tengil</a> til að sækja forritin beint fyrir mörg stýrikerfi.&nbsp;</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="129" sourceLocale="is">WEB:15330920</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hugtök</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:23504;a"><strong>Hvað er VPN?</strong><br />
+  Sýndarnet (VPN) er lokuð tenging á milli tækis/tækja og hýsilþjóns. Þegar þú notar VPN getur netþjónustan þín ekki séð netvirknina þína. Þú kannt að vilja nota VPN í eftirfarandi tilfellum:</p>
+
+<ul data-aura-rendered-by="12:23504;a">
+  <li>Til að vernda gögnin þín þegar þú notar opið WiFi-net</li>
+  <li>Til að fela vefskoðunargögnin þín fyrir netþjónustu og ríkisstofnunum</li>
+  <li>Til að fá aðgang að óritskoðuðu efni frá ýmsum upplýsingaveitum um allan heim</li>
+</ul>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Hvernig er Outline frábrugðin hefðbundnum VPN-þjónustum?</strong><br />
+  Netþjónustur geta auðveldlega greint og lokað á hefðbundin VPN-net með því að bera kennsl á algengar öryggissamskiptareglur og/eða umfangsmynstur umferðar. Outline er öflugra en hefðbundin VPN vegna þess að það var þróað með samskiptareglu sem var hönnuð til að erfiðara væri að greina hana og þar með loka á hana. Outline stenst háþróaða ritskoðun á borð við netkerfislokun og IP-lokun.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Hvað er Outline-þjónn?</strong><br />
+  Outline-þjónn keyrir VPN-netið sem notendur með heimild munu tengjast. Ef þú er að búa til nýtt netkerfi geturðu notað eigin öruggan þjón sem Outline-þjón ef þú ert með slíkan eða þú getur notað skýjaþjónustuaðila á borð við:</p>
+
+<ul data-aura-rendered-by="12:23504;a">
+  <li>DigitalOcean</li>
+  <li>Google Cloud Platform (GCP)</li>
+  <li>Amazon Web Services (AWS)</li>
+</ul>
+
+<p data-aura-rendered-by="12:23504;a"><a id="One" target="_blank"></a>Þú setur þjóninn upp í Outline Manager.<br />
+  <br />
+  <strong><a id="servicemanager" name="servicemanager"></a>Hvað er þjónustustjóri?</strong><br />
+  Þjónustustjóri er aðilinn sem ber ábyrgð á uppsetningu Outline-þjónsins og sér um að deila aðgangslyklum með notendum. Þjónustustjórinn er almennt ábyrgur fyrir kostnaðinum sem fellur til við notkun þjónsins.&nbsp;<br />
+  <br />
+  <strong><a id="accesskey" name="accesskey"></a>Hvað er aðgangslykill?</strong><br />
+  Aðgangslykill er notaður til að fá aðgang að fyrirliggjandi Outline-þjóni og tengjast VPN-netinu. Þú getur fengið aðgangslykil hjá <a href="#servicemanager" rel="noopener">þjónustustjóra</a>&nbsp;eða <a href="/outline-faq/answer/15331530" rel="noopener" target="_blank"> sett upp Outline-þjón</a> upp á eigin spýtur.&nbsp;Svona gæti aðgangslykill litið út (þetta er aðeins dæmi, lykillinn virkar ekki):&nbsp;<br />
+  <br />
+  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1<br />
+  <br />
+  <strong>Hvað er Outline Manager?</strong><br />
+  Outline Manager er tölvuforrit sem gerir þjónustustjóra kleift að setja upp Outline-þjón, búa til <a href="#accesskey" rel="noopener">aðgangslykla</a> og stilla gagnamörk fyrir notkun hvers lykils. Þú getur sótt nýjustu útgáfu Outline Manager<a href="https://getoutline.org/get-started/#step-3" target="_blank"> hér</a> eða<a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank"> hér</a>.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Hvað er Outline Client?</strong><br />
+  Outline Client er forrit, í boði fyrir tölvur og snjalltæki, sem gerir þér kleift að tengjast Outline-þjóni og fá aðgang að VPN-neti með aðgangslykli. Þú getur sótt nýjustu útgáfu Outline Client<a href="https://getoutline.org/get-started/#step-3" target="_blank"> hér</a> eða<a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank"> hér</a>.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Hvað eru gagnamörk?</strong><br />
+  Outline Manager gerir þjónustustjórum kleift að stilla gagnamarkaferil fyrir aðgangslykla í 30 daga til að koma í veg fyrir ofnotkun og halda kostnaði innan marka. Þjónustustjórar geta stillt sjálfgefin mörk sem gilda fyrir alla lykla, en einnig er hægt að stilla mismunandi mörk fyrir staka lykla sem hnekkja sjálfgefnu mörkunum. Gagnamörk taka gildi um leið og þau eru stillt og er framfylgt á klukkutíma fresti.</p>
+
+<p data-aura-rendered-by="12:23504;a">Ef þjónustustjórar samþykkja að deila mæligildum með Jigsaw ættu þeir að skoða<a href="/outline-faq/answer/15331222" rel="noopener" target="_blank"> reglur um gagnasöfnun</a> til að fá upplýsingar um hvernig notkun gagnamarka verður skráð.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="110" sourceLocale="is">WEB:15331121</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Styðjið þið „getoutline.me“ og Telegram-rásina „@OutlineVpnOfficial“?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Starfsfólki Outline hefur borist fjöldi fyrirspurna varðandi vefsvæðið „<a href="http://getoutline.me/" target="_blank">getoutline.me</a>“ og tengdu Telegram-rásina „@OutlineVpnOfficial“. Starfsfólk Outline sér ekki um þessar þjónustur og við getum ekki aðstoðað notendur við vandamál tengd aðgangslyklum frá viðkomandi þjónustum.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="is">WEB:15331122</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Tiltæk tungumál</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Outline er í boði á eftirfarandi tungumálum:</p>
+
+<ul>
+  <li aria-level="1">Afríkönsku</li>
+  <li aria-level="1">Albönsku</li>
+  <li aria-level="1">Amharísku</li>
+  <li aria-level="1">Arabísku</li>
+  <li aria-level="1">Armensku</li>
+  <li aria-level="1">Asersku</li>
+  <li aria-level="1">Bengölsku</li>
+  <li aria-level="1">Bosnísku</li>
+  <li aria-level="1">Búlgörsku</li>
+  <li aria-level="1">Búrmönsku</li>
+  <li aria-level="1">Katalónsku</li>
+  <li aria-level="1">Kínversku (einfaldaðri)</li>
+  <li aria-level="1">Kínversku (hefðbundinni)</li>
+  <li aria-level="1">Króatísku</li>
+  <li aria-level="1">Tékknesku</li>
+  <li aria-level="1">Dönsku</li>
+  <li aria-level="1">Hollensku</li>
+  <li aria-level="1">Ensku (bandarískri)</li>
+  <li aria-level="1">Ensku (breskri)</li>
+  <li aria-level="1">Eistnesku</li>
+  <li aria-level="1">Filippseysku</li>
+  <li aria-level="1">Finnsku</li>
+  <li aria-level="1">Frönsku</li>
+  <li aria-level="1">Georgísku</li>
+  <li aria-level="1">Þýsku</li>
+  <li aria-level="1">Grísku</li>
+  <li aria-level="1">Hebresku</li>
+  <li aria-level="1">Hindí</li>
+  <li aria-level="1">Ungversku</li>
+  <li aria-level="1">Íslensku</li>
+  <li aria-level="1">Indónesísku</li>
+  <li aria-level="1">Ítölsku</li>
+  <li aria-level="1">Japönsku</li>
+  <li aria-level="1">Kasöksku</li>
+  <li aria-level="1">Khmer</li>
+  <li aria-level="1">Kóresku</li>
+  <li aria-level="1">Laó</li>
+  <li aria-level="1">Lettnesku</li>
+  <li aria-level="1">Litháísku</li>
+  <li aria-level="1">Makedónsku</li>
+  <li aria-level="1">Malajísku</li>
+  <li aria-level="1">Maratí</li>
+  <li aria-level="1">Mongólsku</li>
+  <li aria-level="1">Nepölsku</li>
+  <li aria-level="1">Norsku</li>
+  <li aria-level="1">Persnesku</li>
+  <li aria-level="1">Pólsku</li>
+  <li aria-level="1">Portúgölsku (brasilískri)</li>
+  <li aria-level="1">Portúgölsku (evrópskri)</li>
+  <li aria-level="1">Rúmensku</li>
+  <li aria-level="1">Rússnesku</li>
+  <li aria-level="1">Serbnesku (kyrillískri)</li>
+  <li aria-level="1">Serbnesku (latneskri)</li>
+  <li aria-level="1">Singalísku</li>
+  <li aria-level="1">Slóvakísku</li>
+  <li aria-level="1">Slóvensku</li>
+  <li aria-level="1">Spænsku (evrópskri)</li>
+  <li aria-level="1">Spænsku (rómönsk-amerísku)</li>
+  <li aria-level="1">Svahílí</li>
+  <li aria-level="1">Sænsku</li>
+  <li aria-level="1">Tamíl</li>
+  <li aria-level="1">Taílensku</li>
+  <li aria-level="1">Tyrknesku</li>
+  <li aria-level="1">Úkraínsku</li>
+  <li aria-level="1">Úrdú</li>
+  <li aria-level="1">Víetnömsku</li>
+</ul>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="110" sourceLocale="is">WEB:15331125</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hvers vegna get ég ekki sett Outline Client upp í Windows?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:31254;a">Þú gætir séð þessi villuboð: „Því miður lítur út fyrir að Outline sé ekki sett rétt upp. Prófaðu að setja það upp aftur. Ef það virkar ekki skaltu <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">senda inn ábendingu</a>.“</p>
+
+<p data-aura-rendered-by="12:31254;a">Ef þú notar Outline í Windows gæti óvænt villa komið upp við og við. Í flestum tilfellum þarf að eyða TAP-tengi (TAP adapter) (rekli) Outline og setja Outline svo upp aftur.</p>
+
+<p data-aura-rendered-by="12:31254;a">Skrefin kunna að vera mismunandi eftir stýrikerfisútgáfu Windows en hér fyrir neðan eru almennar leiðbeiningar um að fjarlægja TAP-tengið og Outline og setja svo Outline upp aftur.</p>
+
+<ol data-aura-rendered-by="12:31254;a">
+  <li>Fjarlægja TAP-tengi fyrir Outline Client
+    <ul>
+      <li>Opnaðu&nbsp;<strong>„Tækjastjórnun“</strong> og síðan&nbsp;<strong>„Nettengi“</strong></li>
+      <li>Finndu skrána&nbsp;<strong>„TAP-Windows Adapter V9“</strong>&nbsp;eða TAP-tengið sem tengist Outline</li>
+      <li>Fjarlægðu tengið eða eyddu því. Hafðu í huga að þetta gæti haft áhrif á önnur VPN-forrit sem þú hefur sett upp.&nbsp;</li>
+    </ul>
+  </li>
+  <li>Fjarlægja Outline Client
+    <ul>
+      <li>Farðu í&nbsp;<strong>„Forrit og eiginleikar“</strong> og síðan&nbsp;<strong>„Fjarlægja forrit“</strong></li>
+      <li>Finndu Outline Client-forritið og fjarlægðu það</li>
+      <li><a href="https://getoutline.org/get-started/#step-3" target="_blank">Sæktu nýjustu útgáfu af Outline Client</a>&nbsp;og settu forritið aftur upp í Windows-tækinu. Nýja uppsetningin ætti að setja upp nýtt TAP-tengi sjálfkrafa.</li>
+    </ul>
+  </li>
+</ol>
+
+<p data-aura-rendered-by="12:31254;a">Ef þú ert enn í vandræðum skaltu&nbsp;<a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">hafa samband við þjónustudeildina</a>.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="109" sourceLocale="is">WEB:15331126</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hvers vegna get ég ekki tengst Outline-þjóni?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Nokkrar ástæður gætu valdið því að þú getur ekki tengst Outline-þjóni:&nbsp;</p>
+
+<ul>
+  <li aria-level="1"><strong>Tækið þitt </strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#One" rel="noopener"><strong> </strong></a><a href="#Internetissues" rel="noopener"><strong>aftengdist netinu</strong></a><a href="#Internetissues" rel="noopener"> </a><strong>. </strong>Stundum rofnar nettenging tækisins og smástund getur liðið áður en netkerfistáknin uppfærast. Einnig er mögulegt að tækið þitt sé tengt staðarnetinu en að netið liggi niðri.</li>
+  <li aria-level="1"><strong>Mögulega</strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#Two"><strong> </strong></a><a href="#FirewallIssues" rel="noopener"><strong>lokar eldveggur netkerfisins á aðgang</strong></a><a href="#FirewallIssues" rel="noopener"> </a><strong><a href="#FirewallIssues" rel="noopener">a</a>ð Outline-þjóninum. </strong>Þetta er algengt ef þú tengist skóla- eða vinnuneti eða gjaldfrjálsu, þráðlausu neti.</li>
+  <li aria-level="1"><strong>Tækið þitt er með</strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#Three"><strong> </strong></a><a href="#SoftwareIssues" rel="noopener"><strong>eldvegg eða vírusvarnarhugbúnað</strong></a><a href="#SoftwareIssues" rel="noopener"> </a><strong>sem loka á aðgang að Outline-þjóninum.</strong></li>
+  <li aria-level="1"><strong>Það gæti</strong><a href="#DeviceSettings" rel="noopener"><strong> </strong><strong>þurft að breyta stillingum</strong></a><strong> símtækisins þíns.</strong></li>
+  <li aria-level="1"><strong>Þjónustustjórinn gæti hafa</strong><a href="#ServerIssues" rel="noopener"><strong> </strong><strong>eyðilagt þjóninn eða hugsanlega lokar netþjónustan þín á beiðnina</strong></a> .</li>
+</ul>
+
+<p><a id="Internetissues" name="Internetissues"><strong>Vandamál varðandi nettengingu:</strong></a></p>
+
+<p><strong>Svona er prófun gerð:</strong></p>
+
+<p>Slökktu á Outline og athugaðu hvort netið tengist á ný.</p>
+
+<ul>
+  <li aria-level="1">Ef svo er má finna fleiri úrræðaleitarkosti hér að neðan.</li>
+  <li aria-level="1">Ef svo er ekki skaltu hinkra í augnablik til að sjá hvort tengingarstillingarnar uppfærist sjálfkrafa.</li>
+</ul>
+
+<p><strong>Atriði sem þarf að laga:</strong></p>
+
+<p>Tengdu tækið aftur við netið:</p>
+
+<ol>
+  <li aria-level="1">Athugaðu hvort annað tæki getur tengst sama neti. Ef önnur tæki geta ekki tengst netinu er hugsanlegt að netið liggi niðri og þú þurfir að bíða þar til tenging kemst aftur á eða leita frekari úrræða.</li>
+  <li aria-level="1">Ef önnur tæki geta tengst sama neti geturðu reynt eitt eða fleiri eftirfarandi ráða til að tengjast netinu á ný:
+    <ol>
+      <li aria-level="2">Sett tækið í flugstillingu (snjalltæki)</li>
+      <li aria-level="2">Endurræst tækið</li>
+      <li aria-level="2">Slökkt á tækinu, beðið í 2 mínútur og kveikt svo aftur á því</li>
+    </ol>
+  </li>
+</ol>
+
+<p><a id="FirewallIssues" name="FirewallIssues"><strong>Vandamál varðandi eldvegg netkerfis:</strong></a></p>
+
+<p><strong>Svona er prófun gerð:</strong></p>
+
+<ol>
+  <li aria-level="1">Aftengstu núverandi WiFi-neti eða netinu sem þú tengist með snúru.</li>
+  <li aria-level="1">Tengstu öðru neti, t.d. farsímaneti</li>
+  <li aria-level="1">Prófaðu að tengjast Outline-þjóninum aftur</li>
+</ol>
+
+<p>Þetta er vandamálið ef þú getur tengst á öðru neti.</p>
+
+<p><strong>Atriði sem þarf að laga:</strong></p>
+
+<p>Hafðu samband við þjónustustjórann og biddu hann um að leyfa aðgang að Outline-þjóninum þínum eða haltu áfram að nota annað net.</p>
+
+<p><a id="SoftwareIssues" name="SoftwareIssues"><img alt="Þessi mynd er ekki í boði vegna þess að: Þú hefur ekki réttindi til að sjá hana, eða hún hefur verið fjarlægð úr kerfinu" height="1" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeoHNM7TWEsg0z4iydaS2xKOPga0zOjhOTqvGpA-JLd-Fwnydby6EBZziz3vqgRUJwssreEqP6lmjv_-13QXdzqh3yx9tZiR81BvxcXShi3kJ-XDKnqt951uRRPSO8BUhXaiijJLF8PixV_ezhGJ02Y3QPFbw?key=pJIeaVZQOqqoBTmDWZd2hw" width="1" /><strong>Vandamál varðandi eldvegg eða vírusvarnarhugbúnað:</strong></a><br />
+  <br />
+  <strong>Svona er prófun gerð:</strong><br />
+  <br />
+  Prófaðu að tengjast Outline í öðru tæki.&nbsp;</p>
+
+<p>Athugaðu: Mundu að þú þarft aðgangslykil og Outline-forritið til að nota Outline í öðru tæki.</p>
+
+<p><strong>Atriði sem þarf að laga:</strong></p>
+
+<p>Athugaðu stillingar eldveggsins eða vírusvarnarhugbúnaðarins til að ganga úr skugga að þær séu stilltar þannig að VPN- og Outline-umferð sé hleypt í gegn.</p>
+
+<p><a id="DeviceSettings" name="DeviceSettings"><strong>Tækjastillingar:</strong></a></p>
+
+<p><strong>Atriði til að athuga:</strong></p>
+
+<p>Í Android:</p>
+
+<ol>
+  <li aria-level="1">Opnaðu stillingaforritið.</li>
+  <li aria-level="1">Finndu <strong>VPN-stillingar</strong> í tækinu (VPN-stillingarnar sýna öll VPN-forrit sem eru með aðgang að símanum eins og stendur.)&nbsp;</li>
+  <li aria-level="1">Ef þú finnur ekki Outline í VPN-stillingunum skaltu fjarlægja Outline og setja það upp aftur. Tækið ætti að veita Outline aðgang sjálfkrafa þegar það er uppsett.</li>
+</ol>
+
+<p>Gakktu úr skugga um að engin forrit fyrir skjáyfirlögn séu uppsett í Android-tækinu þar sem það kann að senda Outline-heimildagluggann í bakgrunninn og koma í veg fyrir að hann sjáist í forgrunninum.<br />
+  <br />
+  Opnaðu „Stillingar &gt; Forrit &gt; Sérstakur aðgangur forrits“ í Android-tækinu. Ýttu síðan á „Sýna yfir öðrum forritum“. Þú getur fjarlægt aðgang að öllum forritum sem leyfa slíka virkni.<br />
+  <br />
+  Fyrir iOS: Lestu<a href="https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web" rel="noopener" target="_blank"> þessa hjálpargrein</a>.</p>
+
+<p><a id="ServerIssues" name="ServerIssues"><strong>Vandamál varðandi þjón:</strong></a></p>
+
+<p><strong>Svona er prófun gerð:</strong></p>
+
+<p>Ef þú ert með aðgang að fleiri en einum þjóni skaltu prófa að tengjast hinum þjóninum.&nbsp;</p>
+
+<p><strong>Atriði sem þarf að laga:</strong></p>
+
+<p>Hafðu samband við þjónustustjóra til að athuga hvort þjóninn hafi verið eyðilagður. Ef svo er skaltu biðja viðkomandi um <a href="/outline-faq/answer/15330920" rel="noopener">aðgangslykil</a> að öðrum þjóni.</p>
+
+<p>Ef þú settir þjóninn upp skaltu prófa að tengja hann í gegnum Outline Manager eða með öðrum hætti, t.d. með <a href="https://en.wikipedia.org/wiki/Secure_Shell">SSH</a>. Ef það virkar ekki geturðu prófað að skoða stjórnborð skýjaþjónustunnar, ef það er til staðar, til að athuga hvort þjónninn sé ennþá á netinu.</p>
+
+<p data-aura-rendered-by="12:32047;a">&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="is">WEB:15331127</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hvernig get ég sótt biðlaraforritið ef niðurhalstengillinn virkar ekki?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Notaðu&nbsp;<a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">þennan tengil</a>&nbsp;til að sækja forritin beint fyrir mörg stýrikerfi.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="131" sourceLocale="is">WEB:15331222</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Gagna- og upplýsingasöfnun</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:271;a">Outline safnar ekki persónuupplýsingum nema þú samþykkir að gefa þær upp. Outline safnar heldur ekki upplýsingum um vefsvæðin sem þú opnar eða við hverja eða hvað þú hefur samskipti.<br />
+  <br />
+  Ef þú ert að stofna eða skrá þig inn á reikning hjá skýjaþjónustu þriðja aðila í gegnum Outline Manager, fáum við engar upplýsingar sem þú veitir skýjaþjónustu þriðja aðila á borð við netfang, nafn, reiknings- eða greiðsluupplýsingar.<br />
+  <br />
+  <strong><strong>Upplýsingar sem við fáum sjálfkrafa</strong></strong><br />
+  <br />
+  Við söfnum tvenns konar upplýsingum sjálfkrafa.<br />
+  1. IP-tala<br />
+  Outline-þjóns er skráð hjá&nbsp;<a href="http://quay.io/" target="_blank">Quay.io</a> og við fáum aðgang að henni þegar þjóninn uppfærist sjálfkrafa með nýjustu öryggis- og eiginleikaúrbótunum. IP-tala þjónsins kann að auðkenna skýjaþjónustuna sem er notuð og borgina þar sem Outline-þjóninn er uppsettur en engar upplýsingar eru veittar um það hver rekur þjóninn eða hvaða aðilar hafa aðgang að honum.<br />
+  <br />
+  2. Ópersónugreinanlegar tækniupplýsingar<br />
+  Ef Outline hrynur, ef feigðarbrigði á sér stað eða ef þú sendir ábendingu handvirkt í gegnum Outline-forritið verða neðangreindar upplýsingar tilkynntar. Þessar upplýsingar verða eingöngu notaðar til að bera kennsl á og lagfæra vandamál sem tengjast afköstum og stöðugleika.</p>
+
+<ul data-aura-rendered-by="12:271;a">
+  <li>Land</li>
+  <li>Tungumálskóði</li>
+  <li>Dagsetning og tími hruns/undantekningar og allt að 100 tilvik fram að því, til dæmis um tilvik þar sem notandi opnar hlutann „Um“</li>
+  <li>Undantekningarskilaboð sem er safnað saman á stöðufræðilegan hátt</li>
+  <li>Heiti og útgáfa stýrikerfis</li>
+  <li>Gerð síma (ef það á við)</li>
+  <li>Ræsingartími forrits</li>
+  <li>Vafri</li>
+  <li>Uppbygging</li>
+  <li>Útgáfa Outline og útgáfunúmer smíðar</li>
+</ul>
+
+<p data-aura-rendered-by="12:271;a"><br />
+  Þessar upplýsingar eru fluttar með HTTPS til Sentry (<a href="http://sentry.io/" target="_blank">sentry.io</a>) sem er villuskráningarþjónusta þriðja aðila með opinn kóða. Sentry notar ýmsa tækni og þjónustu sem stenst staðla atvinnugreinarinnar til að gæta öryggis gagnanna þinna til að koma í veg fyrir óheimila notkun þeirra, uppljóstrun, notkun og tap. Ef þú ert með spurningar um reglur Sentry skaltu skoða&nbsp;<a href="https://sentry.io/security/" target="_blank">https://sentry.io/security/</a>&nbsp;og&nbsp;<a href="https://sentry.io/privacy/" target="_blank">https://sentry.io/privacy/</a> eða hafa samband við&nbsp;<a href="mailto:security@sentry.io" target="_blank">security@sentry.io</a>. Öll Outline-gögn sem Sentry geymir eru lokuð óviðkomandi aðilum svo aðeins starfsfólk Outline hafi aðgang að þeim.<br />
+  <br />
+  <strong><strong>Upplýsingar sem við fáum aðeins þegar samþykki liggur fyrir</strong></strong><br />
+  <br />
+  Outline tilkynnir starfsfólki Outline um eftirfarandi upplýsingar þegar samþykki liggur fyrir.<br />
+  1. Notkunarmælingar<br />
+  Hver Outline-þjónn safnar sjálfkrafa upplýsingum um fjölda bæta sem er fluttur, tímann sem notandi var tengdur við þjónninn, löndin og sjálfstýringarkerfin&nbsp;þaðan sem notkun auðkennanna&nbsp;á uppruna sinn og um það hvort kveikt eða slökkt hafi verið á einhverjum eiginleikum. Þessi upplýsingasöfnun nær til undanfarinnar klukkustundar og til hvers og eins aðgangslykils. Hvorki innihald samskiptanna né persónugreinanleg lýsigögn (t.d. innskráningar, netföng, auðkenni tækja o.s.frv.) eru skráð. Öll mæligildi tengjast auðkenni þjóns. Leiðbeiningar um breytingu á auðkenni þjónsins má finna&nbsp;<a href="/outline-faq/answer/15548974" rel="noopener" target="_blank">hér</a>.<br />
+  <br />
+  Sjálfgefið er að Outline-þjónar deili þessum upplýsingum ekki með starfsfólki Outline. Ef stjórnandi þjónsins samþykkir með skýrum hætti að þessum notkunarmælingum sé deilt verða upplýsingarnar sendar starfsfólki Outline á öruggan hátt á klukkustundarfresti. Eftir 60 daga verður notkunarmælingunum safnað saman á landsgrunni. Stjórnendur þjóna geta breytt deilingarstillingum notkunarmælinga hvenær sem er á valmyndinni „Stillingar“ í Outline Manager.<br />
+  <br />
+  Við kunnum að meta að þú deilir nafnlausum mæligildum um notkun þjónsins með okkur þar sem við notum slíkar upplýsingar til að mæla þróun notkunar og til að bæta vöruna.<br />
+  <br />
+  Sem dæmi má nefna að ef stjórnandi þjóns samþykkir að deila notkunarmælingum með okkur kunnum við að móttaka upplýsingar um að þjónn með auðkennið 12345 hafi verið notaður í 3 klukkustundir í gær, hafi flutt alls 500 megabæti af gögnum frá þremur lyklum í Bandaríkjunum og þremur lyklum í Kanada og að kveikt hafi verið á gagnamarkaeiginleikanum.<br />
+  <br />
+  2. Ummælin þín og netfangið ef þú sendir inn ábendingu<br />
+  Forritin Outline Manager og Outline gera þér kleift að senda starfsfólkinu ábendingar. Við mælum gegn því að taka fram persónugreinanlegar upplýsingar en netfangsreitur er í boði sem valfrjáls kostur ef þú vilt fá svar frá starfsfólkinu. Við söfnum einnig sjálfkrafa tilteknum grunnupplýsingum til að geta skilið ábendinguna frá þér. Skoðaðu atriði 2 hér að ofan undir „Upplýsingar sem við fáum sjálfkrafa“ til að sjá hvaða gögnum við söfnum.&nbsp;Frekari upplýsingar um vinnureglur Outline hvað varðar öryggi og persónuvernd má finna&nbsp;<a href="/outline-faq/answer/14919822" rel="noopener" target="_blank">hér</a>.<br />
+  <br />
+  Ef þú notar betaútgáfu Outline-forritsins í Android kunnum við að nota&nbsp;<a href="https://firebase.google.com/" target="_blank">Firebase-þjónust</a>&nbsp;Google til að safna villuleitarupplýsingum sem hjálpa okkur að greina vandamál og bæta Outline. Frekari upplýsingar um öryggisreglur og persónuverndarstefnu Firebase má finna á vefsvæði þeirra:&nbsp;<a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a>. Ef þú vilt ekki að Outline sendi þessar upplýsingar í gegnum Firebase skaltu nota söluútgáfu forritsins.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="88" sourceLocale="is">WEB:15331223</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hvað geri ég ef aðgangslykillinn minn virkar ekki?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:30472;a">Ef þú færð villuboðin:&nbsp;„Svo virðist sem aðgangslykillinn þinn sé ógildur. Ef þetta gerist aftur skaltu hafa samband við þjónustustjóra“. Fylgdu skrefunum hér fyrir neðan til að reyna að leysa vandamálið:&nbsp;</p>
+
+<ol data-aura-rendered-by="12:30472;a">
+  <li>Vertu viss um að slá inn aðgangslykilinn í heild sinni, þ.m.t. fyrstu fimm stafina „ss://“ sem afritast hugsanlega ekki sjálfkrafa á klippiborðið. Hér er dæmi um hvernig aðgangslykil í heild sinni lítur út (aðeins sýnidæmi, lykillinn virkar ekki):</li>
+</ol>
+
+<pre data-aura-rendered-by="12:30472;a">ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@145.230.4.1:39485/?outline=1&nbsp;
+</pre>
+
+<ol data-aura-rendered-by="12:30472;a" start="2">
+  <li>Ef aðgangslykillinn afritast alls ekki á klippiborðið gæti það verið vegna skilaboðaforritsins eða verkvangsins sem þú notar. Þetta getur gerst ef þú færð skilaboð frá einhverjum sem er ekki á tengiliðalistanum. Ef þú ert að afrita kóðann úr skilaboðum skaltu ganga úr skugga um að þú hafir bætt sendandanum við sem tengilið og reyndu síðan að opna tengilinn aftur.&nbsp;</li>
+  <li>Ef þú laukst 1. og 2. skrefi og færð enn villuboð er líklegt að lokað hafi verið fyrir þjóninn eða að aðgangslykillinn sé ekki gildur lengur. Ef þú ert þjónustustjóri skaltu prófa að búa til nýjan lykil fyrir þig. Að öðrum kosti skaltu hafa samband við þjónustustjóra til að fá nýjan lykil.</li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="96" sourceLocale="is">WEB:15331322</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hvað kostar að keyra Outline?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Hugbúnaður Outline er gjaldfrjáls fyrir alla, hvort sem um er að ræða stjórnanda þjóns sem stjórnar VPN-neti eða einhvern sem notar Outline til að fá aðgang að opna internetinu.<br />
+  <br />
+  Til að hægt sé að keyra Outline þarf þó aðgang að skýjaþjónustu. Stjórnendur þjóna sem eru þegar með aðgang að þjóni geta sett upp Outline á viðkomandi þjóni án viðbótarkostnaðar. Aðilar sem eru ekki með aðgang að þjóni geta fengið aðgang í gegnum skýjaþjónustu á borð við&nbsp;<a href="http://www.digitalocean.com/" rel="noopener" target="_blank">DigitalOcean</a>&nbsp;eða Amazon Web Services fyrir um 5 USD á mánuði fyrir 1 TB gagnaflutningskvóta — sem nægir til að styðja hundruð notenda á einum þjóni.<br />
+  <br />
+  Hér er dæmi um hvernig hægt er reikna út áætlaðan kostnað við að keyra Outline í gegnum skýjaþjónustu að eigin vali:</p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td colspan="1" rowspan="1">
+      <p><em>Ef gert er ráð fyrir að mánaðarleg gagnaflutningsnotkun hvers notanda sé 5 gígabæti myndi áskrift sem kostar 5 USD á mánuði duga fyrir um 200 notendur samtímis. Þannig yrði kostnaðurinn á hvern notanda aðeins um 2,5 sent á mánuði. Hafðu í huga að gagnaflutningsnotkun hvers notanda á mánuði getur verið mjög misjöfn í takt við það hvort notkunin krefst lítillar eða mikillar bandvíddar. Flestar skýjaþjónustur eru þó sveigjanlegar til að gera ráð fyrir umferðaraukningu.</em></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br />
+  Raunin er sú að notkun Outline er algerlega nafnlaus í augum Jigsaw og Google. Við rekjum ekki auðkenni þitt eða umferð og engin tekjuöflunaráætlun er til staðar. Þess í stað vinnum við með samfélagi opna kóðans til að tryggja að við getum útvegað hugbúnaðinn án þess að notendur þurfi að greiða fyrir hann. Frekari upplýsingar um gögnin sem við söfnum má finna&nbsp;<a href="/outline-faq/answer/15331222" rel="noopener" target="_blank">hér</a>.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="386" sourceLocale="is">WEB:15331326</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hvernig stilli ég gagnamörk fyrir aðgangslykla?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:15859;a">Hægt er að stilla gagnamörk sem gilda um alla aðgangslykla. Til að stilla gagnamörk skaltu opna Outline Manager og fara í stillingarnar. Þar finnurðu rofann „Gagnamörk“ sem gerir þér kleift að stilla mörk ef kveikt er á honum.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787036"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">Þegar þú hefur stillt mörk geturðu séð hversu nálægt hver notandi er mörkunum á síðu aðgangslykla, þar sem þú finnur súlurit yfir gagnanotkun síðustu 30 daga.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787037"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">Hægt er að stilla gagnamörk sem gilda um alla aðgangslykla eða stilla mörk fyrir hvern lykil fyrir sig. Ef það er gert verður fyrirliggjandi sjálfgefnum gagnamörkum hnekkt en þó er hægt að stilla gagnamörk fyrir staka lykla þrátt fyrir að sjálfgefin gagnamörk hafi ekki verið stillt.&nbsp;<br />
+  <br />
+  Til að stilla gagnaflutningsmörk fyrir lykil skaltu opna Outline Manager, fara á flipann „Tengingar“, finna lykilinn sem þú vilt stilla mörk fyrir og smella á valmyndina hægra megin við línu lykilsins. Smelltu á „Gagnamörk“ á valmyndinni. Smelltu á tákn gagnamarka&nbsp;<img alt="Þessi mynd er ekki tiltæk vegna þess að þú ert ekki með heimild til að sjá hana eða vegna þess að hún var fjarlægð úr kerfinu" height="19" src="https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw" width="19" /> til að breyta gagnamörkum sem gilda um aðgangslykilinn þinn.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787423"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">Veldu „Stilla sérsniðin gagnamörk“. Þegar þú hefur merkt við þennan gátreit birtist reitur þar sem þú getur stillt sérsniðin gagnamörk fyrir lykilinn. Þegar þú hefur lokið við að stilla gagnamörkin skaltu smella á hnappinn „VISTA“ til að vista þau.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15788959"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">Þegar þú hefur vistað gagnaflutningsmörk fyrir valinn lykil birtast þau á aðalsíðunni ásamt gagnanotkun hvers lykils (síðustu 30 daga).</p>
+
+<p data-aura-rendered-by="12:15859;a">Til að eyða gagnamörkum aðgangslykils skaltu opna gluggann sem sýnir gagnamörk lykilsins eins og áður, afmerkja reitinn „Stilla sérsniðin gagnamörk“ og smella á hnappinn „VISTA“.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15788414"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a"><b><strong>Algengar spurningar um gagnamörk</strong></b><br />
+  <br />
+  <strong><b>Hvað er 30 daga gagnarakning?</b></strong><br />
+  <br />
+  30 daga gagnarakning reiknar út heildarnotkun hvers lykils síðustu 30 dagana og heldur notkun lykils undir mörkum á því tímabili. Þetta sér til þess að lykill geti ekki farið umfram mörkin á hvaða 30 daga tímabili sem er, þ.m.t. í mánuðum ársins sem telja 30 daga eða færri. Þar af leiðandi eykst gagnamagn sem notandi hefur aðgang að með hverjum degi um það magn sem hann notaði fyrir 31 degi.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Hvers vegna notar Outline gagnarakningu?</strong><br />
+  <br />
+  Gagnarakningin tryggir að ekki sé farið umfram gagnamörk á 30 daga tímabili, sem sér til þess að einfaldara er stilla þau en endurtekin mörk (svo sem mörk sem gilda á ákveðnum mánaðardegi) á sama tíma og þau veita svipaða tryggingu. Hún samsvarar einnig núverandi birtingu gagnanotkunar í Outline sem og í algengum verkfærum á borð við greiningarþjónustur og tölfræðiþjóna.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Hvaða gögn telja að gagnamörkum?</strong><br />
+  <br />
+  Hvert skipti sem aðgangslykill er sendur út af þjóni er talið með. Nánar tiltekið á þetta við um gögnin sem send eru út af þjóninum og aftur til biðlarans í tengslum við lykilinn. Þetta ætti að samsvara umferðinni frá lyklinum til þjónsins og til baka og koma heim og saman við gagnanotkun notenda þinna. Við teljum skipti sem lyklar eru sendir út vegna þess að það er það sem flestar skýjaþjónustur rukka fyrir.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Fá notendur tilkynningu ef þeir fara yfir gagnamörk?</strong><br />
+  <br />
+  Ekki eins og stendur. Margar skýjaþjónustur stilla mörk á borð við 1 TB á mánuði, sem veitir 10 notendum aðgang að 100 GB eða 100 notendum aðgang að 10 GB. Þetta er nokkuð mikið gagnamagn og við búumst ekki við að margir notendur þurfi á því að halda. Ætlast er til að notendur hafi samband við stjórnendur þjóna ef farið er umfram gagnamörk. Okkur þætti þó vænt um að heyra hvernig tilkynningar gætu gagnast þér. Þú getur haft samband við okkur <a href="https://support.getoutline.org/s/contactsupport" target="_blank">hér</a>.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Fá notendur tilkynningu ef þeir nálgast gagnamörk?</strong><br />
+  <br />
+  Gagnamagnið sem notandi sem nálgast mörk hefur aðgang að er breytilegt frá degi til dags vegna þess að það veltur á notkun hans fyrir 30 dögum. Við teljum að viðvaranir geti ruglað notendur fremur enn að gagnast þeim. Við viljum gjarnan heyra álit þitt á þessu <a href="https://support.getoutline.org/s/contactsupport" rel="noopener" target="_blank">hér</a>.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Er hægt að endurstilla gagnanotkun notanda?</strong><br />
+  <br />
+  Nei, gagnamörk notenda byggjast alltaf á gagnanotkun síðustu 30 daga. Þú getur hins vegar hækkað gagnamörkin sem gilda um lykil notanda eða búið til nýjan lykil fyrir hann.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Hvers vegna misstu sumir notenda minna aðgang um leið og ég stillti gagnamörk?</strong><br />
+  <br />
+  Gagnamörk byggjast á gagnaflutningi notanda síðustu 30 daga, sem er skráður hvort sem gagnamörk hafa verið stillt eða ekki. Hugsanlega höfðu þessir notendur þegar farið umfram mörkin áður en þau voru stillt.&nbsp; Hafðu einnig í huga að öllum gagnamörkum er framfylgt, jafnvel þegar gagnamörkum staks lykils er breytt.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Er hægt að stilla mörk sem gilda um þjóninn í heild sinni, til dæmis „1 TB á hverja 30 daga“?</strong><br />
+  <br />
+  Ekki eins og stendur. Við viljum gjarnan heyra álit þitt á þessu <a href="https://support.getoutline.org/s/contactsupport" rel="noopener" target="_blank">hér</a>.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Hvorum gagnamörkunum er framfylgt ef bæði sjálfgefin gagnamörk og sérsniðin gagnamörk lykils eru stillt?</strong><br />
+  <br />
+  Sérsniðin gagnamörk lykils hnekkja sjálfgefnum gagnamörkum sem þú hefur stillt (ef við á).</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Er hægt að stilla sérsniðin gagnamörk lykils ef sjálfgefin gagnamörk hafa ekki verið stillt?</strong><br />
+  <br />
+  Já.&nbsp; Ekki er þörf á að skilgreina sjálfgefin gagnamörk til að geta stillt gagnamörk fyrir tiltekinn lykil.&nbsp; Þú getur til dæmis stillt mörk fyrir lykil sem þú telur að verði deilt víða til að koma í veg fyrir óhóflegan gagnaflutning um lykilinn.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="is">WEB:15331327</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hvernig endurstilli ég auðkenni þjóns?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:23999;a">Auðkenni þjóns er auðkenni sem búið er til af handahófi þjónsmegin þegar þú býrð til Outline-þjón. Þú getur séð það þegar þú samþykkir deilingu nafnlausra mæligilda í stillingaviðmótinu. Þú getur fundið auðkenni þjóns með því að fara í stillingar =&gt; fletta neðst =&gt; merkja við „Deila nafnlausum mæligildum“.</p>
+
+<p data-aura-rendered-by="12:23999;a">Auðkenni þjóns tengir saman nafnlausar notkunarupplýsingar sem eru skráðar yfir tiltekið tímabil. Ef þú vilt endurstilla auðkenni þjóns og fá nýtt þarftu að skipta núverandi Outline-þjóni út fyrir nýjan.</p>
+
+<p data-aura-rendered-by="12:23999;a">Ef þú notar DigitalOcean sem skýjaþjónustu geturðu endurstillt þjóninn þinn með því að fara í stillingarnar og velja „Eyða þjóni“. Ekki er hægt að afturkalla þessa aðgerð og hún mun eyða öllum auðkennum. Í beinu framhaldi af aðgerðinni færðu beiðni um að búa til nýjan þjón á staðsetningu að eigin vali og nýtt auðkenni þjóns verður búið til.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="103" sourceLocale="is">WEB:15331328</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hvernig breyti ég staðsetningu Outline-þjóns?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:24761;a">Ekki er hægt að breyta staðsetningu þjóns þegar búið er að setja hann upp. Til að keyra þjóninn frá annarri staðsetningu þarftu að eyða núverandi Outline-þjóni og búa til nýjan.</p>
+
+<p data-aura-rendered-by="12:24761;a"><br />
+  Að öðrum kosti geturðu breytt staðsetningu VPN-netsins með <a href="https://developers.google.com/outline/docs/guides/service-providers/dynamic-access-keys" target="_blank">breytilegum lyklum</a> sem gera þér kleift að skipta um þjóna en halda sömu lyklum. Staðsetning þjónanna sjálfra breytist ekki.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="102" sourceLocale="is">WEB:15331423</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Svona sendirðu ábendingar og tillögur</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:22486;a">Takk fyrir að hjálpa okkur að bæta Outline! Nokkrar leiðir eru færar til að senda okkur ábendingar, ýmist nafnlaust eða með netfanginu þínu ef þú þarft að fá svar:</p>
+
+<ul data-aura-rendered-by="12:22486;a">
+  <li><strong>Fyrir forritara</strong>:&nbsp;Outline er hugbúnaður með opinn kóða og kóðinn er hýstur í heild sinni á&nbsp;<a href="https://github.com/jigsaw-Code/?q=outline" target="_blank">GitHub</a>. Þú getur deilt hugmyndum þínum á GitHub eða í samfélaginu okkar á&nbsp;<a href="https://www.reddit.com/r/outlinevpn/" target="_blank">Reddit</a>.&nbsp;</li>
+  <li><strong>Fyrir notendur</strong>: Þú getur sent okkur ábendingar í gegnum forritin Outline eða Outline Manager. Segðu okkur hvað ábendingin þín snýst um og ef þú vilt geturðu skilið eftir netfangið þitt svo við getum svarað þér. Við söfnum einnig tilteknum lýsigögnum um umhverfið þitt til að geta aðstoðað við úrræðaleit, s.s. um vafrann, stýrikerfið og hugbúnaðarútgáfuna sem þú notar.</li>
+  <li><strong>Í gegnum þetta vefsvæði</strong>: Þú getur smellt á tengilinn „Hafa samband“ hvar sem þú sérð hann á þessu vefsvæði.</li>
+  <li><strong>Alvarleg vandamál</strong>: Ef þú vilt tilkynna alvarlegt öryggisvandamál viljum við gjarnan fá tölvupóst með upplýsingum um það á security [at] <a href="https://getoutline.org/" rel="noopener" target="_blank">getoutline.org</a>.</li>
+</ul>
+
+<p data-aura-rendered-by="12:22486;a">Takk enn og aftur fyrir að gefa þér tíma til að deila hugleiðingum þínum með okkur.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="146" sourceLocale="is">WEB:15331424</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Stjórna aðgangi að Outline-þjóni (með aðgangslyklum)</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:25527;a">Þegar þú hefur lokið við að setja upp Outline-þjón geturðu byrjað að deila honum og stjórna aðgangi fólks að honum. Fólk sem fær boð frá þér getur sótt Outline-forritið og notað Outline til að vernda netumferð sína.</p>
+
+<p data-aura-rendered-by="12:25527;a"><strong>Deila aðgangi að Outline-þjóninum þínum</strong><br />
+  Eftir að uppsetningu Outline-þjónsins lýkur verður þér beint á upplýsingasíðu þjónsins í Outline Manager og þar geturðu búið til aðgangslykla. Nánar um <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">aðgangslykla</a>.</p>
+
+<ul data-aura-rendered-by="12:25527;a">
+  <li>Búa til lykla: Smelltu á litla „+“-táknið neðst á síðunni til að búa til nýja lykla.</li>
+  <li>Deila lyklum: Hægra megin við hvern lykil er deilingartákn sem þú getur smellt á til að fá boð. Afritaðu og límdu þetta boð í skilaboðakerfi að eigin vali.</li>
+</ul>
+
+<p data-aura-rendered-by="12:25527;a"><strong>Eiginleikabeiðni: Aðgangi deilt í gegnum Outline Manager-forritið</strong><br />
+  Margir stjórnendur þjóna biðja okkur um að einfalda boðsferlið með því að gera þeim kleift að slá netfang einhvers beint inn í Outline Manager.</p>
+
+<p data-aura-rendered-by="12:25527;a">Því miður er ólíklegt að við bætum slíkum eiginleika við Outline Manager. Eitt grunngilda okkar er að gæta að persónuvernd og öryggi notenda sem þýðir að við hönnuðum hvergi stað þar sem hægt er að slá inn netföng eða samskiptaupplýsingar.</p>
+
+<p data-aura-rendered-by="12:25527;a">Þess vegna biðjum við stjórnendur þjóna um að nota öruggt skilaboðakerfi, s.s. tölvupóst eða öruggt spjall, til að senda notendum boð.<br />
+  <br />
+  <strong>Upplifun notanda eftir að þú deilir aðgangslykli með viðkomandi</strong></p>
+
+<ol data-aura-rendered-by="12:25527;a">
+  <li>Notandinn smellir á uppsetningartengilinn í tækinu sínu</li>
+  <li>Notandinn fær beiðni um að setja upp Outline-forritið ef viðkomandi hefur ekki gert það þegar</li>
+  <li>Notandinn kemur á fyrstu tengingu við Outline-þjóninn í gegnum einkvæma lykilinn sem fylgir með boðinu</li>
+  <li>Notandinn getur nú notað hnappinn til að tengja/aftengja til að stjórna aðgangi sínum að netinu í gegnum Outline-þjóninn</li>
+</ol>
+
+<p data-aura-rendered-by="12:25527;a"><strong>Fjarlægja aðgang að Outline-þjóninum þínum</strong><br />
+  Hægra megin við hvern lykil á þjóninum á upplýsingasíðu þjónsins í Outline Manager má sjá valmynd með valkosti til að eyða lykli. Þegar lykli er eytt lokar það fyrir aðgang viðkomandi lykils að þjóninum.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="92" sourceLocale="is">WEB:15331524</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hvernig nálgast ég Outline-tilföng ef lokað er á getoutline.org?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><a href="https://s3.amazonaws.com/outline-vpn/index.html" target="_blank">Settu þessa spegluðu síðu í bókamerki</a> til að nálgast hana ef þú getur ekki opnað <a href="http://getoutline.org/" target="_blank">getoutline.org</a>.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="321" sourceLocale="is">WEB:15331527</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Uppsetning Outline Client í Linux</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Við byrjum með Outline Client, útgáfu 1.15, en allar framtíðarútgáfur verða gefnar út sem Debian-pakkar fyrir Linux-stýrikerfi. Skoðaðu <a href="/outline/answer/15330818" rel="noopener" target="_blank"><u>lágmarkskerfiskröfur</u></a> okkar til að fá nánari upplýsingar um hvaða stýrikerfi við styðjum.</p>
+&nbsp;
+
+<p><strong>Setja upp Outline Client fyrir Linux-dreifingu sem byggist á Debian (mælt með)</strong></p>
+&nbsp;
+
+<p>Keyrðu eftirfarandi skipanir:</p>
+
+<ol>
+  <li aria-level="1">Settu upp geymslulykil Outline og bættu geymslunni við.
+    <div class="code">
+      <div class="no-margin">
+        <p>wget -qO- https://us-apt.pkg.dev/doc/repo-signing-key.gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/gcloud-artifact-registry-us.gpg</p>
+
+        <p>echo "deb [arch=amd64] https://us-apt.pkg.dev/projects/jigsaw-outline-apps outline-client main" | sudo tee /etc/apt/sources.list.d/outline-client.list</p>
+      </div>
+    </div>
+  </li>
+</ol>
+
+<p>&nbsp; 2.&nbsp;&nbsp;Uppfærðu apt-pakkaskráninguna og settu upp nýjustu útgáfuna af Outline Client.</p>
+
+<div class="code">
+  <div class="no-margin">
+    <p>&nbsp; &nbsp;sudo apt update</p>
+
+    <p>&nbsp; &nbsp;sudo apt install outline-client</p>
+  </div>
+</div>
+
+<p>Til að athuga með eða setja upp seinni tíma uppfærslur skaltu keyra skipanirnar í skrefi 2 aftur. Athugaðu að slökkt er á sjálfvirkri uppfærslu sem fylgir forritinu fyrir Outline Client í Linux frá og með útgáfu 1.15.</p>
+
+<p>Til að fjarlægja Outline Client skaltu keyra eftirfarandi skipun:</p>
+
+<div class="code">
+  <div class="no-margin">sudo apt purge outline-client</div>
+</div>
+
+<p><strong>Annar valkostur</strong></p>
+
+<ol>
+  <li aria-level="1">Sæktu nýjasta Outline Client Debian-pakkann af <a href="https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb" rel="noopener" target="_blank">https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb</a></li>
+  <li aria-level="1">Keyrðu eftirfarandi skipanir í skipanalínunni til að setja pakkann upp</li>
+</ol>
+
+<div class="code">
+  <div class="no-margin">
+    <p>wget -O ./outline-client.deb https://s3.amazonaws.com/outline-&nbsp; &nbsp; &nbsp; releases/client/linux/stable/outline-client_amd64.deb</p>
+
+    <p>sudo apt install ./outline-client.deb</p>
+  </div>
+</div>
+
+<p>&nbsp; 3.&nbsp;&nbsp;Athuga verður handvirkt með uppfærslur þar sem slökkt er á sjálfvirkri uppfærslu sem fylgir forritinu fyrir Outline Client í Linux frá og með útgáfu 1.15.</p>
+
+<p>&nbsp; 4.&nbsp; Til að fjarlægja Outline Client skaltu keyra eftirfarandi skipun í skipanalínunni:</p>
+
+<div class="code">
+  <div class="no-margin">sudo apt purge outline-client</div>
+</div>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="206" sourceLocale="is">WEB:15331528</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Get ég notað aðgangslykil oftar en einu sinni?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1895;a">Já. Þú getur notað <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">aðgangslykilinn</a>&nbsp;í eins mörgum tækjum og þú vilt en við mælum ekki með að þú deilir honum með öðrum einstaklingi. Aðili sem er með aðgangslykilinn þinn gæti hugsanlega skoðað alla netumferðina þína ef hann hefur aðgang að henni, og því yrði netnotkun þín ekki lengur lokuð eða örugg.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="104" sourceLocale="is">WEB:15331529</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Tækið tengt við Outline-þjón</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1399;a">&nbsp;</p>
+
+<p data-aura-rendered-by="12:1399;a"><strong>Tækið tengt við Outline-þjón</strong></p>
+
+<p data-aura-rendered-by="12:1399;a">Til að geta tengt tækið þitt við Outline-þjón þarf stjórnandi þjóns að senda þér boð um að tengjast þjóni viðkomandi með einkvæmum&nbsp;<a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">aðgangslykli</a>. Þetta boð:</p>
+
+<ul data-aura-rendered-by="12:1399;a">
+  <li>Biður þig um að sækja og setja upp Outline í tækinu þínu ef þú ert ekki með það nú þegar</li>
+  <li>Notar aðgangslykilinn til að búa til örugga tengingu á milli þín og Outline-þjónsins</li>
+</ul>
+
+<p data-aura-rendered-by="12:1399;a">Þegar tenging við þjóninn er komin á geturðu smellt á „tengja“ eða „aftengja“ til að nota Outline.</p>
+
+<p data-aura-rendered-by="12:1399;a"><em>Mikilvægt:</em>&nbsp;Outline virkar ekki án aðgangslykils og Outline-þjóns. Þegar Outline-forritið er sótt og sett upp án lykils er netumferðin þín ekki varin.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="100" sourceLocale="is">WEB:15331530</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hvernig set ég upp Outline-þjón?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:27063;a">Uppsetning Outline-þjóns er fyrsta skrefið til að geta notað Outline. Annað hvort þarft þú eða einhver sem þú treystir að setja upp þjón fyrir þig til að þú getir tengst opna netinu í gegnum Outline.<br />
+  <br />
+  <strong>Áður en þú hefst handa</strong><br />
+  Áður en þú hefst handa við að setja upp þinn eigin Outline-þjón þurfa nokkur atriði að vera til staðar:</p>
+
+<ol data-aura-rendered-by="12:27063;a">
+  <li>Aðgangur að þínum eigin þjónum eða skýjaþjónustu á borð við DigitalOcean, Amazon Web Services (AWS) eða Google Cloud Platform (GCP).<br />
+    Ef þú ert ekki þegar með aðgang að skýjaþjóni er lítið mál að stofna reikning hjá hvaða þjónustuaðila sem er, til dæmis einhverjum ofangreindra. Þú þarft sennilega kreditkort til að skrá þig.</li>
+  <li>Tölva sem keyrir macOS 10.9+, Windows 7.0+ eða Linux.</li>
+  <li>Outline Manager-forritið.</li>
+</ol>
+
+<p data-aura-rendered-by="12:27063;a"><strong>Uppsetning með DigitalOcean</strong><br />
+  <br />
+  Við sáum til þess að allir geti sett upp Outline á DigitalOcean á einfaldan hátt í aðeins nokkrum smellum. Þegar búið er að sækja og setja upp Outline Manager í tölvunni er hægt að velja DigitalOcean-uppsetningarkostinn sem mun birta leiðbeiningar á nokkrum skjámyndum um að stilla og setja upp Outline-þjón.<br />
+  <br />
+  <strong>Uppsetning með annarri skýjaþjónustu</strong><br />
+  <br />
+  Þegar búið er að sækja og setja upp Outline Manager er hægt að setja upp Outline-þjón í sýndarvél með AWS, GCP, DigitalOcean eða annarri þjónustu. Ekkert umhverfanna er eins svo uppsetningarferli Outline Manager inniheldur leiðbeiningar fyrir helstu skýjaþjónusturnar, þar á meðal um að velja stillingar í sýndarvélinni áður en uppsetningarskriftan er keyrð til að setja upp Outline á þjóni.<br />
+  <br />
+  <strong><em>Þarftu frekari aðstoð?</em></strong><br />
+  <br />
+  Skoðaðu&nbsp;<a href="/outline-faq/answer/15331728" rel="noopener" target="_blank">algengar spurningar um uppsetningu Outline-þjóns</a>.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="95" sourceLocale="is">WEB:15331625</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Má ég nota eða líkja eftir Outline-vörumerkinu?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Outline er vissulega byggt á opnum kóða og notkun þess er gjaldfrjáls en vörumerkið er í eigu Jigsaw og það má ekki misnota. Farðu eftir <a href="https://github.com/Jigsaw-Code/outline-brand/blob/main/outline_brand_user_guide.pdf" target="_blank">notendahandbókinni</a> til að koma í veg fyrir að setja fram villandi fullyrðingar eða rangtúlka samband þitt við Outline eða Jigsaw og tryggja að þú notir samþykkt einkenni vörumerkjanna á réttan hátt.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="191" sourceLocale="is">WEB:15331628</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hvernig fæ ég aðgangslykil?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:3258;a">Outline er frábrugðið VPN-þjónustum sem þú kaupir aðgang að. Það er <a href="https://getoutline.org/#:~:text=Two%20Products%20that%20Work%20Together" target="_blank">verkfæri</a> sem gerir þér kleift að keyra og deila aðgangi að lokuðum VPN-þjóni. Eini aðilinn sem getur veitt aðgangslykil er&nbsp;<a href="/outline/answer/15330920#servicemanager" rel="noopener" target="_blank">þjónustustjóri</a>. Starfsfólk Outline dreifir hvorki gjaldfrjálsum né gjaldskyldum aðgangslyklum. Við erum ekki með neina opinbera samstarfsaðila fyrir Outline-aðgangslykla, að undanskildum Paskoocheh á persnesku.<br />
+  <br />
+  Hér eru þrjár leiðir til að fá aðgangslykil:&nbsp;</p>
+
+<ul data-aura-rendered-by="12:3258;a">
+  <li>Biddu einhvern um að bjóða þér í þjóninn sinn: Ef þú þekkir einhvern með Outline-þjón skaltu hafa samband við viðkomandi og biðja um aðgangslykil.</li>
+  <li><a href="/outline/answer/15331530" rel="noopener" target="_blank">Búðu til þinn eigin þjón:</a> Sæktu <a href="https://getoutline.org/get-started/#step-1" target="_blank">Outline Manager</a> í Windows-, Mac- eða Linux-tölvu og settu upp þinn eigin, lokaða <a href="/outline/answer/15330920" rel="noopener" target="_blank">Outline-þjón</a>. Ferlið er einfalt, sérstaklega í gegnum DigitalOcean-skýjaþjónustuna.</li>
+  <li>Notaðu þjónustu Outline eða <a href="https://en.wikipedia.org/wiki/Shadowsocks#:~:text=Shadowsocks%20is%20a%20free%20and,have%20been%20made%20available%20since." target="_blank">Shadowsocks</a>: Einnig er hægt að nota Outline-biðlarann með þjónustum þriðju aðila sem nota Outline eða Shadowsocks-samskiptaregluna. Til dæmis:
+    <ul>
+      <li><a href="http://nthlink.com/" target="_blank">nthLink</a> keyrir gjaldfrjálsa þjónustu sem byggist á Outline með breyttri útgáfu af Outline-biðlaranum.</li>
+      <li><a href="https://www.reddit.com/r/outlinevpn/comments/nwu1se/the_outline_distribution_system_is_here_to_help/" target="_blank">ASL19</a> keyrir breytta útgáfu af Outline sem kallast <a href="https://beepassvpn.com/" target="_blank">BeePass</a> sem og <a href="https://t.me/paskoochehbot" target="_blank">a Telegram-botta</a> sem veitir gjaldfrjálsa aðgangslykla að BeePass-þjónum.</li>
+      <li>Notendur sem tala persnesku geta einnig beðið um aðgangslykil að Outline frá <a href="https://outline.paskoocheh.com/" target="_blank">Paskoocheh frá ASL19</a>.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Þegar þú hefur sótt Outline Client-forritið skaltu afrita og líma <a href="/outline/answer/15330920#accesskey" rel="noopener" target="_blank">aðgangslykilinn</a>&nbsp;í Outline Client til að tengjast Outline-þjóninum.&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="133" sourceLocale="is">WEB:15331630</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hvernig eyði ég Outline-þjóni?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:14046;a">Hjá flestum skýjaþjónustum er tiltölulega auðvelt að fjarlægja tiltekna sýndarvél sem er í notkun.</p>
+
+<p data-aura-rendered-by="12:14046;a">Ef þú notar DigitalOcean sem skýjaþjónustu geturðu eytt fyrirliggjandi sýndarvél með því að smella á tannhjólshnappinn og velja „Eyðileggja þjón“. Í beinu framhaldi færðu beiðni um að búa til nýja sýndarvél á staðsetningu að eigin vali.</p>
+
+<p data-aura-rendered-by="12:14046;a">Ef þú fjarlægir Outline-þjón verður honum eytt varanlega og aðgangslyklar hans hætta að virka. Ef þú vilt ekki að truflun verði á aðgangi fólks í gegnum Outline þarftu að <a href="/outline-faq/answer/15331530" rel="noopener" target="_blank">setja upp nýjan Outline-þjón</a>&nbsp; og deila aðgangi að honum áður en gamla þjóninum er eytt.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="99" sourceLocale="is">WEB:15331631</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hvernig á að setja upp marga Outline-þjóna</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:27908;a">Til að setja upp fleiri Outline-þjóna skaltu smella á „+“-táknið á yfirlitssvæðinu vinstra megin í Outline Manager-forritinu. Sömu leiðbeiningar gilda þegar nýr þjónn er settur upp og gilda þegar sá fyrsti er settur upp.</p>
+
+<ul data-aura-rendered-by="12:27908;a">
+  <li>Við setjum ekkert hámark á fjölda Outline-þjóna sem hver og einn getur búið til.</li>
+  <li>Fyrir hvern Outline-þjón sem þú býrð til þarftu samsvarandi sýndarvél.</li>
+  <li>Þegar þú býrð til viðbótarvélar eða „Droplets“ gætirðu þurft að greiða skýjaþjónustunni hærri gjöld. Athugaðu áskriftarverðið hjá skýjaþjónustunni þinni til að vera viss um að vita við hverju þú getur búist.</li>
+</ul>
+
+<p data-aura-rendered-by="12:27908;a"><strong>Að búa til viðbótar Outline-þjón á DigitalOcean</strong></p>
+
+<p data-aura-rendered-by="12:27908;a">Eftir að þú smellir á „+“-táknið og velur að setja upp á DigitalOcean fylgirðu sömu leiðbeiningum og þegar þú settir fyrsta þjóninn þinn upp. Þar sem Outline Manager er samþætt við DigitalOcean getum við einnig búið til „Droplet“ fyrir þig án þess að þú þurfir að fara úr Outline Manager-forritinu.</p>
+
+<p data-aura-rendered-by="12:27908;a">Athugaðu að Outline Manager getur aðeins stutt einn DigitalOcean-reikning í einu. Ef þú vilt bæta við eða búa til fleiri Outline-þjóna á öðrum DigitalOcean-reikningum geturðu bætt þeim við sem ítarlegri stillingu.</p>
+
+<p data-aura-rendered-by="12:27908;a"><strong>Að búa til viðbótar Outline-þjón á GCP, AWS eða hjá annarri skýjaþjónustu</strong></p>
+
+<p data-aura-rendered-by="12:27908;a">Byrjaðu á því að búa til nýja sýndarvél hjá skýjaþjónustunni sem þú velur. Opnaðu svo Outline Manager og fylgdu leiðbeiningunum fyrir ítarlega uppsetningu, líkt og þú kannt að hafa gert í fyrsta skiptið.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="96" sourceLocale="is">WEB:15331632</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hvers vegna get ég ekki sett Outline Manager upp í Windows?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:34680;a">Þú gætir séð þessi villuboð: „Því miður lítur út fyrir að Outline sé ekki sett rétt upp. Prófaðu að setja það upp aftur. Ef það virkar ekki skaltu <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">senda inn ábendingu</a>.“</p>
+
+<p data-aura-rendered-by="12:34680;a">Ef þú notar Outline í Windows gæti óvænt villa komið upp við og við. Í flestum tilfellum þarf að eyða TAP-tengi (rekli) Outline og setja Outline svo upp aftur.&nbsp;</p>
+
+<p data-aura-rendered-by="12:34680;a">Skrefin kunna að vera mismunandi eftir stýrikerfisútgáfu Windows en hér fyrir neðan eru almennar leiðbeiningar um að fjarlægja TAP-tengið og Outline Manager og setja svo Outline Manager upp aftur.</p>
+
+<ol data-aura-rendered-by="12:34680;a">
+  <li>Fjarlægja TAP-tengi fyrir Outline Manager
+    <ol>
+      <li>Opnaðu „Tækjastjórnun“ og síðan „Nettengi“</li>
+      <li>Finndu skrána „TAP-Windows Adapter V9“ eða TAP-tengið sem tengist Outline</li>
+      <li>Fjarlægðu tengið eða eyddu því. Hafðu í huga að þetta gæti haft áhrif á önnur VPN-forrit sem þú hefur sett upp.&nbsp;</li>
+    </ol>
+  </li>
+  <li>Að fjarlægja Outline Manager
+    <ol>
+      <li>Farðu í „Forrit og eiginleikar“ og síðan „Fjarlægja forrit“</li>
+      <li>Finndu Outline Manager-forritið og fjarlægðu það</li>
+      <li><a href="https://getoutline.org/get-started/#step-1" target="_blank">Sæktu nýjustu útgáfu af Outline Manager</a>&nbsp;og settu forritið aftur upp í Windows-tækinu. Nýja uppsetningin ætti að setja upp nýtt TAP-tengi sjálfkrafa.</li>
+    </ol>
+  </li>
+</ol>
+
+<p data-aura-rendered-by="12:34680;a">Ef þú ert enn í vandræðum skaltu <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">hafa samband við þjónustudeildina</a>.&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="94" sourceLocale="is">WEB:15331727</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Sjálfvirk uppsetning á Google Cloud</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:26310;a"><strong>Yfirlit</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Outline Manager felur í sér eiginleika sem gerir þér kleift að stilla Outline-þjón sjálfkrafa á þjóni sem keyrir á Google Cloud. Ef þú velur að nota þennan eiginleika mun Outline Manager biðja þig um að skrá þig inn með Google-reikningnum þínum en slíkt veitir tilteknar <a href="https://developers.google.com/identity/protocols/oauth2" target="_blank">OAuth-heimildir</a> fyrir staðbundna uppsetningu Outline Manager í þeim tilgangi að stilla Google Cloud-reikninginn þinn.<br />
+  Ef þú vilt ekki veita þessar heimildir geturðu fylgt ítarlegum uppsetningarleiðbeiningum í Outline Manager til að keyra Outline á Google Cloud Platform.&nbsp;</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Heimildir veittar</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Outline Manager krefst eftirfarandi heimilda frá Google-reikningnum þínum til að hægt sé setja upp sjálfvirkt.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Google Cloud Platform</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>Skoða og hafa umsjón með gögnum í Google Compute Engine</li>
+  <li>Skoða gögnin þín í öllum Google Cloud-þjónustum og sjá netfang Google-reikningsins þíns</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Grunnupplýsingar reiknings</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>Sjá aðalnetfang Google-reikningsins þíns</li>
+  <li>Tengja þig við persónuupplýsingar þínar á Google</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Aukinn aðgangur</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>Hafa umsjón með Cloud Platform-verkefnunum þínum</li>
+  <li>Skoða og hafa umsjón með innheimtureikningum Google Cloud Platform</li>
+  <li>Hafa umsjón með þjónustustillingunum þínum fyrir forritaskil Google</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a">Þessar heimildir gera okkur kleift að styðja við ítareiginleika til að stjórna Outline-þjónum, þar á meðal:</p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>Gera þér kleift að velja réttan greiðslureikning</li>
+  <li>Búa til nýtt verkefni til koma skipulagi á Outline-þjóna</li>
+  <li>Skrá tiltæk gagnaver</li>
+  <li>Búa til nýjar sýndarvélar til að keyra Outline</li>
+  <li>Stilla nýja sýndarvél með Outline</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Afturköllun heimilda</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Þú getur afturkallað aðgang Outline Manager að Google Cloud Platform með því að opna<a href="https://myaccount.google.com/permissions" target="_blank"> Reikningurinn minn</a>. Ef þú afturkallar aðgang halda þjónar sem þú bjóst til með sjálfvirkri uppsetningu áfram að keyra en munu hætta að birtast í Outline Manager. Til að endurheimta aðgang að þeim skaltu einfaldlega tengjast Google Cloud Platform á ný með því að hefja sjálfvirka uppsetningarferlið.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Verkefnaskipulag Outline</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Sjálfvirk uppsetning Google Cloud notar stakt<a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects" target="_blank"> Google Cloud-verkefni</a> til að flokka Outline-þjónana þína. Verkefnið er búið til við fyrstu notkun sjálfvirku uppsetningarinnar með tillögu að auðkenni verkefnis sem byrjar á „Outline-“ og endar á handahófsvalinni stafarunu. Þú getur valið annað auðkenni verkefnis þegar það er búið til ef þú vilt. Verkefnið fær heitið „Outline-þjónar“.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Greiðslureikningur</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Google Cloud-verkefni þurfa tengdan „greiðslureikning“ þar sem greiðsluupplýsingar eru tilgreindar. Þegar þú notar sjálfvirka uppsetningu Google Cloud í fyrsta sinn færðu beiðni um að gefa upp greiðslureikning til að tengja við Outline-þjónana þína. Stundum hættir þjónn að virka vegna vandamáls varðandi greiðslureikninginn. Ef það gerist skaltu skrá þig inn á <a href="https://console.cloud.google.com/getting-started" target="_blank">Google Cloud Console</a>, finna Google Cloud-verkefnið sem tengist Outline (með heitið „Outline-þjónar“) og uppfæra greiðslustillingarnar.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Eyðilegging þjóna</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Ef þú vilt eyðileggja þjóna sem voru búnir til með sjálfvirkri uppsetningu er einfaldast að gera það innan Outline Manager. Ef þú vilt hins vegar eyðileggja þjónana upp á eigin spýtur geturðu skráð þig inn á<a href="https://console.cloud.google.com/getting-started" target="_blank"> Google Cloud Console</a>, fundið verkefnið sem var búið til við upphaflegu uppsetninguna (með heitið „Outline-þjónar“) og ýmist eytt gögnunum þar eða lokað verkefninu.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="99" sourceLocale="is">WEB:15331728</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Algengar spurningar um uppsetningu Outline-þjóns</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:28806;a"><strong>Get ég notað Outline án þjóns?</strong><br />
+  <br />
+  Nei, því miður. Outline-hugbúnaðurinn krefst aðgangs að þjóni, hvort sem hann er í umsjá þinni, fyrirtækisins þíns eða traust þriðja aðila.&nbsp;</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>Hversu langan tíma tekur að setja upp Outline-þjón?</strong></p>
+
+<p data-aura-rendered-by="12:28806;a">Í flestum tilfellum tekur það innan við fimm mínútur. Þú getur sett Outline upp hjá hvaða skýjaþjónustu sem er en í samstarfi við DigitalOcean getum við boðið upp á notendavænni, leidda uppsetningarupplifun sem gerir þér kleift að setja upp þjóninn með nokkrum smellum – engar skriftur.</p>
+
+<p data-aura-rendered-by="12:28806;a">Ef þú velur AWS, GCP eða ítarlega uppsetningu höfum við einfaldað uppsetningarferli þjónsins niður í eina skriftu sem virkar í flestum umhverfum.&nbsp;</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>Hvar get ég sett upp Outline-þjón?</strong></p>
+
+<p data-aura-rendered-by="12:28806;a">Þú getur sett upp Outline-þjón hjá flestum skýjaþjónustum, óháð því hvar þær starfa.</p>
+
+<p data-aura-rendered-by="12:28806;a">Einfaldast er að setja þjóninn upp hjá DigitalOcean þar sem þau eru með þjóna víða, t.d. í Amsterdam, Toronto, San Francisco og Singapúr. Ef þú vilt setja upp hjá annarri skýjaþjónustu eða í þínu eigin kerfi geturðu valið „Ítarlegar stillingar“ í Outline Manager-forritinu og fylgt uppsetningarleiðbeiningunum með uppsetningarskriftu.&nbsp;</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>Hvar ætti ég að setja Outline-þjóninn minn upp?</strong></p>
+
+<ol data-aura-rendered-by="12:28806;a">
+  <li>Þú skalt hafa nokkur atriði í huga við val á staðsetningu Outline-þjóns:</li>
+  <li>Staðsetning Outline-þjóns hefur áhrif á upplifun notenda af netinu. Ef þjónninn er til dæmis staðsettur í Amsterdam verður upplifun notanda sem notar þjóninn eins og viðkomandi væri raunverulega staddur í Hollandi. Sum vefsvæði gætu jafnvel birst á hollensku. Yfirleitt er hægt að sneiða hjá staðbundnu tungumáli með tungumálavali vefsvæðisins.</li>
+  <li>Fjarlægðin á milli notenda þinna og Outline-þjónsins gæti haft áhrif á hraða. Almennt getur raunveruleg fjarlægð á milli notenda Outline og þjónsins haft áhrif á nethraða notendanna. Í flestum tilfellum geturðu valið þjónsstaðsetningu sem er næst staðsetningu áætlaðra notenda en þú getur skoðað <a href="https://www.submarinecablemap.com/" rel="noopener" target="_blank">Submarine Cable Map</a> til að sjá hvaða internetstrengir tengjast landinu þínu eða svæði.</li>
+  <li>Staðsetning VPN-þjóns getur haft áhrif á lagarammann sem gildir. Hafðu í huga að Outline-hugbúnaðurinn skráir ekki umferðina þína. Nánar um <a href="/outline-faq/answer/14919822" rel="noopener" target="_blank">öryggi og persónuvernd við notkun Outline</a>.</li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="is">WEB:15331758</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Ég er forritari. Hvar get ég fundið stuðning við samþættingu forritunarverkfæra Outline við forritið mitt?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Þetta stuðningsvefsvæði er fyrir notendur Outline Manager og Client. Forritarar ættu að nota GitHub til að fá aðstoð. Til að spyrja spurningar skaltu birta færslu á&nbsp;<a href="https://github.com/Jigsaw-Code/outline-sdk/discussions" target="_blank">Umræðuborði</a> forritunarverkfæra. Umræðuborðið er frábær staður til að spyrja spurninga, deila hugmyndum, tengja á prufuútgáfur og styðja aðra forritara sem nota forritunarverkfæri Outline. Fyrir beiðnir um eiginleika eða villutilkynningar skaltu opna&nbsp;<a href="https://github.com/Jigsaw-Code/outline-sdk/issues/new" target="_blank">Vandamál</a>&nbsp;í staðinn.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="74" sourceLocale="is">WEB:15448041</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Tiltæk tungumál</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Outline er í boði á eftirfarandi tungumálum:</p>
+
+<ul>
+  <li aria-level="1">Afríkönsku</li>
+  <li aria-level="1">Albönsku</li>
+  <li aria-level="1">Amharísku</li>
+  <li aria-level="1">Arabísku</li>
+  <li aria-level="1">Armensku</li>
+  <li aria-level="1">Asersku</li>
+  <li aria-level="1">Bengölsku</li>
+  <li aria-level="1">Bosnísku</li>
+  <li aria-level="1">Búlgörsku</li>
+  <li aria-level="1">Búrmönsku</li>
+  <li aria-level="1">Katalónsku</li>
+  <li aria-level="1">Kínversku (einfaldaðri)</li>
+  <li aria-level="1">Kínversku (hefðbundinni)</li>
+  <li aria-level="1">Króatísku</li>
+  <li aria-level="1">Tékknesku</li>
+  <li aria-level="1">Dönsku</li>
+  <li aria-level="1">Hollensku</li>
+  <li aria-level="1">Ensku (bandarískri)</li>
+  <li aria-level="1">Ensku (breskri)</li>
+  <li aria-level="1">Eistnesku</li>
+  <li aria-level="1">Filippseysku</li>
+  <li aria-level="1">Finnsku</li>
+  <li aria-level="1">Frönsku</li>
+  <li aria-level="1">Georgísku</li>
+  <li aria-level="1">Þýsku</li>
+  <li aria-level="1">Grísku</li>
+  <li aria-level="1">Hebresku</li>
+  <li aria-level="1">Hindí</li>
+  <li aria-level="1">Ungversku</li>
+  <li aria-level="1">Íslensku</li>
+  <li aria-level="1">Indónesísku</li>
+  <li aria-level="1">Ítölsku</li>
+  <li aria-level="1">Japönsku</li>
+  <li aria-level="1">Kasöksku</li>
+  <li aria-level="1">Khmer</li>
+  <li aria-level="1">Kóresku</li>
+  <li aria-level="1">Laó</li>
+  <li aria-level="1">Lettnesku</li>
+  <li aria-level="1">Litháísku</li>
+  <li aria-level="1">Makedónsku</li>
+  <li aria-level="1">Malajísku</li>
+  <li aria-level="1">Maratí</li>
+  <li aria-level="1">Mongólsku</li>
+  <li aria-level="1">Nepölsku</li>
+  <li aria-level="1">Norsku</li>
+  <li aria-level="1">Persnesku</li>
+  <li aria-level="1">Pólsku</li>
+  <li aria-level="1">Portúgölsku (brasilískri)</li>
+  <li aria-level="1">Portúgölsku (evrópskri)</li>
+  <li aria-level="1">Rúmensku</li>
+  <li aria-level="1">Rússnesku</li>
+  <li aria-level="1">Serbnesku (kyrillískri)</li>
+  <li aria-level="1">Serbnesku (latneskri)</li>
+  <li aria-level="1">Singalísku</li>
+  <li aria-level="1">Slóvakísku</li>
+  <li aria-level="1">Slóvensku</li>
+  <li aria-level="1">Spænsku (evrópskri)</li>
+  <li aria-level="1">Spænsku (rómönsk-amerísku)</li>
+  <li aria-level="1">Svahílí</li>
+  <li aria-level="1">Sænsku</li>
+  <li aria-level="1">Tamíl</li>
+  <li aria-level="1">Taílensku</li>
+  <li aria-level="1">Tyrknesku</li>
+  <li aria-level="1">Úkraínsku</li>
+  <li aria-level="1">Úrdú</li>
+  <li aria-level="1">Víetnömsku</li>
+</ul>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="79" sourceLocale="is">WEB:15528599</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Vandamál tengd eldvegg</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:268;a">Þrjár gerðir vandamála sem tengjast eldvegg geta komið upp:</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>Eldveggur netkerfis kann að hafa lokað á þig.</strong></p>
+
+<p data-aura-rendered-by="12:268;a">Ef þú reynir að setja upp Outline í gegnum netkerfi sem er á bakvið eldvegg, t.d. skóla- eða vinnunet, skaltu prófa að tengjast öðru neti til að setja upp Outline.</p>
+
+<p data-aura-rendered-by="12:268;a">Ef það virkar ekki skaltu hafa samband við kerfisstjórann þinn og óska eftir leyfi fyrir tengingu á milli netkerfisins sem er á bakvið eldvegg og Outline-þjónsins þíns. Þú þarft að gefa upp IP-tölu Outline-þjónsins og gáttirnar sem Outline er keyrt í en þær eru tilgreindar í lok uppsetningarskriftunnar.</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>Eldveggur tækis kann að hafa lokað á þig</strong>.</p>
+
+<p data-aura-rendered-by="12:268;a">Ef þú ert með hugbúnað í tækinu þínu sem lokar á tengingar á útleið í óstöðluðum gáttum eða á óþekkan hugbúnað (ZoneAlarm frá CheckPoint) skaltu skoða fylgiskjöl tækisins eða hugbúnaðarins til að kynna þér hvernig hægt er að gera undantekningu fyrir Outline.</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>Eldveggur þjóns kann að hafa lokað á þig.</strong></p>
+
+<p data-aura-rendered-by="12:268;a">Skýjaþjónustan sem þú valdir kann að fara fram á að þú búir handvirkt til undantekningar fyrir eldvegg þjónsins til að opna fyrir gáttirnar sem Outline keyrir í. Þegar þú hefur keyrt uppsetningarskriftuna ættu handahófsvöldu gáttirnar tvær sem Outline keyrir í á þjóninum þínum að birtast. Það ætti að nægja að opna þessar tvær gáttir.<br />
+  <br />
+  Til að búa til undantekningar fyrir eldvegg þjónsins mælum við með að þú kynnir þér fylgiskjöl fyrir „ufw“ og „iptables“:</p>
+
+<ul data-aura-rendered-by="12:268;a">
+  <li>UFW:&nbsp;<a href="https://help.ubuntu.com/community/UFW" rel="noopener" target="_blank">https://help.ubuntu.com/community/UFW</a></li>
+  <li>Iptables:&nbsp;<a href="https://help.ubuntu.com/community/IptablesHowTo" rel="noopener" target="_blank">https://help.ubuntu.com/community/IptablesHowTo</a></li>
+</ul>
+</div>
+</body>
+</html>

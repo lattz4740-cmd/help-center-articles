@@ -1,0 +1,1086 @@
+<html>
+<head>
+<style type="text/css">
+.gkms-gtt-answer-header, .gkms-gtt-message-header {
+  color: black !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 2em;
+  padding: 4px;
+}.gkms-gtt-answer-header {
+  background-color: #E5ECF9;
+  border-top: 1px solid #36C;
+}
+.gkms-gtt-message-header {
+  background-color: #F8F8F8;
+  border-top: 1px solid #CCC;
+}
+.gkms-gtt-hide {
+  visibility: hidden;
+}
+.form_field_data .temporary_signal_wrapper {
+  display: inline;
+}
+</style>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+</head>
+<body lang="bn">
+<br/><div class="gkms id notranslate" sourceGlobalRevision="116" sourceLocale="bn">WEB:14917423</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline কীভাবে কাজ করে</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1723;a">&nbsp;</p>
+
+<p data-aura-rendered-by="12:1723;a"><strong>সার্ভার ইনস্টলেশন</strong><br />
+  <br />
+  ​Outline ইনস্টল করার কাজ সহজ বলে মনে হলেও আসলে সার্ভার ইনস্টল করার জন্য ব্যাকগ্রাউন্ডে জটিল কয়েকটি ধাপ চলতে থাকে। Outline যখনই ইনস্টল করা হয়, ইনস্টলেশন স্ক্রিপ্ট নিচে উল্লেখ করা ধাপ অনুযায়ী রান করানো হয়:</p>
+
+<ul data-aura-rendered-by="12:1723;a">
+  <li>ডকার ব্যবহার করে শ্যাডোবক্স ইমেজের স্টেবল ভার্সন রিট্রিভ ও ইমপোর্ট করা হয়। ইমেজটি <a href="https://quay.io/" target="_blank">Quay.io</a>-এ হোস্ট করা হয় এবং এর লিঙ্ক হল <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank">https://quay.io/repository/outline/shadowbox?tab=tags</a>। এই ইমেজে Outline সার্ভার এবং ম্যানেজমেন্ট API রয়েছে যা পরে Outline Server Management অ্যাপ্লিকেশনের মাধ্যমে অ্যাক্সেস কী তৈরি করা এবং সরানো, বেনামী মেট্রিক্স রিপোর্ট করার সুবিধা চালু করা/বন্ধ করা ইত্যাদি কাজে ব্যবহার করা যেতে পারে।</li>
+  <li>প্রতি ঘণ্টায় ইমেজ আপডেট চেক করার জন্য <a href="https://github.com/v2tec/watchtower" target="_blank">ওয়াচটাওয়ার</a> ইনস্টল এবং কনফিগার করা হয় এবং এর মাধ্যমে প্রতিটি Outline সার্ভার লেটেস্ট ফিচার এবং নিরাপত্তা সংক্রান্ত উন্নতির সাথে প্রতিনিয়ত আপ-টু-ডেট আছে কিনা তা নিশ্চিত করা যায়।</li>
+  <li>Management API অ্যাক্সেস করার জন্য ওয়েব সার্ভার ব্যবহৃত হয় যা একটি গোপনীয় এবং র‍্যান্ডম পাথে র‍্যান্ডম পোর্ট ব্যবহার করে শুরু হয়।</li>
+  <li>একটি <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank">স্ব-স্বাক্ষরিত SSL সার্টিফিকেট</a> তৈরি করা হয় যাতে ডোমেনের নাম না থাকা সত্ত্বেও TLS ব্যবহার করে Outline সার্ভারের ম্যানেজমেন্ট এনক্রিপটেড করা যেতে পারে। এছাড়াও, Outline Manager অ্যাপ্লিকেশনে এই সার্টিফিকেটের একটি স্বতন্ত্র ফিঙ্গারপ্রিন্ট জেনারেট ও স্টোর করে রাখা হয় যা MITM অ্যাটাক আটকাতে সাহায্য করে থাকে।</li>
+</ul>
+
+<p data-aura-rendered-by="12:1723;a">একবার ইনস্টল করা হয়ে গেলে, Outline ইনস্টলেশনের আর কোনও কনফিগারেশনের দরকার হয় না।<br />
+  <br />
+  <strong>সার্ভার সুরক্ষা</strong><br />
+  <br />
+  Outline সফ্টওয়্যার হল ওপেন-সোর্স, এর অর্থ হল, যেকোনও ব্যক্তি এর কোড দেখতে পারেন এবং কোড উন্নত করতে পারেন যদি সফ্টওয়্যারে কোনও অ্যাটাক বা ক্ষতি করার সম্ভাবনা খুঁজে পাওয়া যায়। আমাদের কোড <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank">GitHub</a>-এ হোস্ট করা হয়েছে।<br />
+  <br />
+  এছাড়াও, কোনও নতুন ভার্সন প্রকাশ হলেই সমস্ত ইনস্টল করা Outline সার্ভার অটোমেটিক আপডেট করা হয় এবং কোনও Outline সার্ভার সফ্টওয়্যারের পুরনো ভার্সনে রান করছে না তা নিশ্চিত করা হয়।<br />
+  <br />
+  সার্ভারে অ্যাক্সেস কী ম্যানেজ করার জন্য, Outline Manager অ্যাপ্লিকেশনটি Outline সার্ভারে ম্যানেজমেন্ট পরিষেবার সাথে ইন্টার‍্যাক্ট করে। ম্যানেজমেন্ট পরিষেবাটি র‍্যান্ডম পোর্টে গোপনীয় ও অনন্য পাথে রান করা হয়। ম্যানেজমেন্ট পরিষেবা নিজের থেকেই সার্চকে প্রতিরোধ করে কারণ এটি শুধুমাত্র যথাযথ গোপন পাথ নির্দিষ্ট থাকা কোয়ারির উত্তর দেয়। অবশেষে, ম্যানেজমেন্ট পরিষেবায় করা সব কমিউনিকেশন <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank">স্ব-স্বাক্ষরিত SSL সার্টিফিকেট</a> সহ এনক্রিপটেড করা থাকে।<br />
+  <br />
+  এছাড়াও, Outline সার্ভার কোনও লগ স্টোর করে রাখে না, তাই কোনওভাবে এটির গোপনীয়তা লঙ্ঘন করা হলেও ব্যবহারকারীর কোনও ডেটা প্রকাশিত হয় না। <a href="https://support.getoutline.org/s/article/Security-and-privacy" target="_blank">এখান</a> থেকে আরও জানুন। ২০১৮ সালে <a href="https://radicallyopensecurity.com/" target="_blank">Radically Open Security</a> ও <a href="https://cure53.de/" target="_blank">Cure53</a>-এর মাধ্যমে Outline অডিট করা হয়। <a href="https://support.getoutline.org/s/article/Security-and-privacy" target="_blank">এখানে</a> রিপোর্টগুলি দেখুন।<br />
+  <br />
+  <strong>UDP ট্রাফিক ম্যানেজ করা</strong><br />
+  <br />
+  সিস্টেম-ব্যাপী VPN হিসেবে Outline অপারেট করতে পারে। এর অর্থ হল, সব UDP ট্রাফিক Outline সার্ভারের মাধ্যমে টানেল করা হয়।<br />
+  <br />
+  <strong>DNS ট্রাফিক</strong></p>
+
+<p data-aura-rendered-by="12:1723;a"><br />
+  Outline সার্ভারের মাধ্যমে, Outline সবকটি DNS লুক-আপ করার প্রসেস পারফর্ম করে এবং অন্যান্য সব নেটওয়ার্ক অ্যাক্টিভিটির জন্য ব্যবহৃত একই এনক্রিপশন কাজে লাগিয়ে সেগুলিকে সুরক্ষিত রাখে। Outline সার্ভারের মাধ্যমে, Dyn ইন্টারনেট গাইড, OpenDNS, Cloudflare DNS বা Quad9 DNS-এর কাছে, আপনার DNS কোয়েরি পাঠানো হবে। Outline কখনই আপনার DNS লুক-আপকে লগ করে না।&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="232" sourceLocale="bn">WEB:14919822</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline ব্যবহার করার সময় সুরক্ষা এবং গোপনীয়তা</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:258;a">Outline ব্যবহার করার সময় সুরক্ষা এবং গোপনীয়তা</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Outline কীভাবে আপনার অনলাইন কমিউনিকেশন সুরক্ষিত করে</strong></p>
+
+<p data-aura-rendered-by="12:258;a">আপনার স্থানীয় বা জাতীয় নেটওয়ার্কের মধ্য দিয়ে যাওয়ার সময় ইন্টারনেট ট্রাফিকের উপর নজরদারি করার সম্ভাবনা অনেক বেশি থাকে।</p>
+
+<p data-aura-rendered-by="12:258;a">Outline, ইন্টারনেট ট্রাফিক এনক্রিপ্ট করে আপনার কমিউনিকেশন ব্যক্তিগত রাখতে সাহায্য করে। Outline সার্ভারে না পৌঁছানো পর্যন্ত আপনার জাতীয় নেটওয়ার্কের মধ্য দিয়ে যাওয়ার সময় ট্রাফিক এনক্রিপ্ট করে রাখা হয়। Outline-এর মাধ্যমে ট্রাফিক এনক্রিপ্ট করা হলে, নেটওয়ার্কের উপর নজরদারি করা ব্যক্তিদের পক্ষে আপনি কোন কোন ওয়েবসাইট ভিজিট করেছেন বা আপনার ট্রান্সফার করা তথ্য নিরীক্ষণ করা সম্ভব হয় না।</p>
+
+<p data-aura-rendered-by="12:258;a">এছাড়াও, Outline আপনাকে এন্ড-টু-এন্ড কমিউনিকেশন টুল সুরক্ষিত করে অ্যাক্সেস আগের অবস্থায় ফেরাতেও সাহায্য করতে পারে যা হয়ত আপনার দেশে অন্যভাবে অ্যাক্সেস করা যায় না।&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>এনক্রিপশন স্ট্যান্ডার্ড</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Outline, ২৫৬-বিট সম্পন্ন Chacha2020 IETF Poly 1305 অ্যালগরিদমের AEAD সাইফার কোড ব্যবহার করে আপনার ডিভাইস ও Outline সার্ভারের মধ্যে কমিউনিকেশন এনক্রিপ্ট করে। AEAD সাইফার কোড, গোপনীয়তা, ইন্টিগ্রিটি ও সত্যতা অফার করে এবং আধুনিক হার্ডওয়্যারের ক্ষেত্রে দারুণ পারফর্ম্যান্স প্রদর্শন করে।&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>সুরক্ষা সম্পর্কিত অডিট</strong></p>
+
+<p data-aura-rendered-by="12:258;a">২০১৮ সালে, Radically Open Security ও Cure53 নামের দুটি নিরপেক্ষ ডিজিটাল সুরক্ষা সংস্থা, Outline অডিট করেছিল যেখানে লেটেস্ট নিরাপত্তা স্ট্যান্ডার্ডের নিরিখে সফ্টওয়্যার পর্যালোচনা করে দেখা হয়েছিল। ২০২২ সালে Radically Open Security একটি অতিরিক্ত অডিট এবং ২০২৪ সালে Cure53 Outline SDK-এর অডিট পরিচালনা করেছিল। আপনি এখান থেকে রিপোর্টগুলি পড়তে পারবেন:</p>
+
+<ul data-aura-rendered-by="12:258;a">
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf" target="_blank">Radically Open Security-এর পেনিট্রেশন টেস্ট রিপোর্ট (মার্চ ২০১৮)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf" target="_blank">Cure53 পেন্টেস্ট ও অডিট রিপোর্ট, Jigsaw Outline (ডিসেম্বর ২০১৮)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf" target="_blank">Radically Open Security পেনিট্রেশন টেস্ট রিপোর্ট (ডিসেম্বর ২০২২)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf" target="_blank">Cure53 পেন্টেস্ট রিপোর্ট Jigsaw Outline VPN SDK (জানুয়ারি, ২০২৪)</a></li>
+</ul>
+
+<p data-aura-rendered-by="12:258;a"><strong>পরিচয় গোপন করা মেট্রিক ও লগ</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Outline প্রতিটি অ্যাক্সেস কীয়ের জন্য ব্যবহৃত ব্যান্ডউইথকে "ট্রান্সফার করা বাইট" হিসেবে ট্র্যাক করে। এই তথ্য সার্ভার অ্যাডমিনিস্ট্রেটরকে প্রয়োজনমতো তার ক্লাউড সার্ভার পরিষেবা প্রদানকারীর সাথে সাবস্ক্রিপশন ব্যান্ডউইথকে অ্যাডজাস্ট করতে দেয়, কিন্তু Outline সার্ভারের মাধ্যমে যে প্রকৃত তথ্য আদান-প্রদান হয়, তা দেখার অনুমতি দেয় না।</p>
+
+<p data-aura-rendered-by="12:258;a">Outline-এর <a href="/outline-faq/answer/15331222" rel="noopener" target="_blank">ডেটা ও তথ্য সংগ্রহের</a> ব্যাপারে আরও জানুন।</p>
+
+<hr data-aura-rendered-by="12:258;a" />
+<p data-aura-rendered-by="12:258;a"><strong>নিরাপত্তা ও গোপনীয়তা সম্পর্কিত প্রায়শই জিজ্ঞাসিত প্রশ্ন</strong>&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Outline কি আমাকে অনলাইনে পরিচয় গোপন করে থাকতে দেয়?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">না, Outline কোনও পরিচয় গোপন করার টুল নয়। Outline, নেটওয়ার্কের উপর নজরদারি করা সম্ভাব্য ব্যক্তিদের থেকে আপনার গোপনীয়তা সুরক্ষিত রাখে।</p>
+
+<p data-aura-rendered-by="12:258;a">আপনি যেসব ওয়েবসাইট ভিজিট করেন, সেখানে আপনার পরিচয় সম্পূর্ণভাবে গোপন রাখার সুবিধা Outline অফার করে না, কারণ আপনি লগ-ইন করলে বা কখনও কখনও ব্রাউজার ফিঙ্গারপ্রিন্টিংয়ের মতো কৌশলের মাধ্যমে তারা আপনাকে তবুও শনাক্ত করে নিতে পারে। মোবাইল অ্যাপের ক্ষেত্রে, বেশিরভাগ আধুনিক স্মার্টফোনে API থাকে যা ইনস্টল করা অ্যাপকে আপনার লোকেশন খুঁজতে দেয়। যদিও এর সাথে প্রক্সির কোনও সম্পর্ক থাকে না, কারণ সেটি এম্বেড করা জিপিএসের উপর নির্ভর করতে পারে।</p>
+
+<p data-aura-rendered-by="12:258;a">বিশেষ করে ইন্টারনেটে নজরদারির হাত থেকে VPN গুরুত্বপূর্ণ সুরক্ষা প্রদান করলেও অনলাইনে অপারেট করার ক্ষেত্রে সব সময়ই কিছু ঝুঁকি থেকে যায়। VPN থাকা সত্ত্বেও, কোনও ISP যদি আপনার পরিচয় জেনে যায় এবং নেটওয়ার্ক ট্রাফিক পর্যবেক্ষণ করতে পারে, তাহলে সেটি হয়ত আপনার Outline সার্ভারের IP অ্যাড্রেসও নির্ধারণ করতে পারে। এই তথ্য Outline সার্ভারের অ্যাক্সেস ব্লক করতে অথবা অনলাইনে থাকার সময় আপনার ব্যবহারের বিভিন্ন প্যাটার্ন এবং সম্ভবত আপনার লোকেশনের ব্যাপারে জানতে ব্যবহার করা হতে পারে।&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>আমি Outline ব্যবহার করলে কেউ কি সেটি জানতে পারবে?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">সম্ভবত। আপনার অ্যাক্সেস করা প্ল্যাটফর্ম ও পরিষেবা থেকে হয়ত এটি জানা যেতে পারে যে আপনার কানেকশন কোনও ক্লাউড সার্ভার থেকে এসেছে। কখনও কখনও তারা হয়ত এটি বুঝতে পারবে যে আপনি VPN ব্যবহার করছেন, কিন্তু আপনার ইন্টারনেট ট্রাফিকের কন্টেন্ট দেখা তাদের পক্ষে সম্ভব হবে না।&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Outline কি আমাকে সম্ভাব্য সব রকমের সাইবার হামলা থেকে রক্ষা করে?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">না। এমন কোনও টুল নেই যা আপনাকে সম্ভাব্য সব রকমের সাইবার হামলার হাত থেকে রক্ষা করবে। Outline আপনাকে উন্মুক্ত ইন্টারনেটে অ্যাক্সেস দেয় এবং ট্রাফিক এনক্রিপ্ট করে আপনার গোপনীয়তা বাড়ায়, কিন্তু ম্যালওয়্যার ও ফিশিংয়ের মতো অন্যান্য ধরনের আক্রমণের বিরুদ্ধে নিজেকে রক্ষা করতে অতিরিক্ত সাবধানতা অবলম্বন করার জন্য আমরা আপনাকে সাজেস্ট করছি।</p>
+
+<p data-aura-rendered-by="12:258;a">অনলাইন প্রতিরক্ষা আরও শক্তিশালী করতে, আপনার সংস্থার সাইবার নিরাপত্তা সংক্রান্ত বিশেষজ্ঞর সঙ্গে একসাথে কাজ করার ব্যাপারে বিবেচনা করে দেখুন। এছাড়াও, <a href="https://securityplanner.org/" target="_blank">Security Planner</a> ওয়েবসাইটে নের্তৃস্থানীয় নিরাপত্তা বিশেষজ্ঞদের পছন্দমতো নির্দেশিকা লাভ করতে পারেন। আপনার সমস্যার জন্য যথার্থ সাইবার নিরাপত্তা টুল বেছে নেওয়ার ব্যাপারে স্পষ্ট নির্দেশ প্রদান করার উদ্দেশ্যেই এই ওয়েবসাইট তৈরি করা হয়েছে।</p>
+
+<p data-aura-rendered-by="12:258;a">এছাড়াও, <a href="https://jigsaw.google.com/" target="_blank">Jigsaw</a>, <a href="https://getintra.org/" target="_blank">Intra</a>, <a href="https://g.co/shield" target="_blank">Project Shield</a> এবং <a href="https://chrome.google.com/webstore/detail/password-alert/noondiphcddnnabmjcihcjfbhfklnnep?" rel="noopener" target="_blank">Password Alert</a>-এর মতো অন্যান্য সাইবার সুরক্ষা সংক্রান্ত প্রোডাক্ট চেক-আউট করতে পারবেন।&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>VPN ব্যবহার করা কি আইনসম্মত?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Outline অপারেট করা বা অ্যাপ ব্যবহার করার আগে, আপনার স্থানীয় আইন, রেগুলেশন ও যে ক্লাউড পরিষেবা প্রদানকারী ব্যবহার করবেন বলে প্ল্যান করেছেন তার পরিষেবার শর্তাবলী চেক করে দেখুন।</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="89" sourceLocale="bn">WEB:15330317</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">আমি Outline সার্ভারের সাথে কানেক্ট করার পরেও কেন ইন্টারনেট অ্যাক্সেস করতে পারছি না?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:32933;a">আপনি মোবাইল ফোন ব্যবহার করলে, মোবাইল ডেটা এবং ওয়াই-ফাই কানেকশনের মধ্যে, একটি থেকে আরেকটিতে পরিবর্তন করে দেখতে পারেন। কখনও কখনও একটি কানেকশনের ধরন কাজ করে যখন অপরটি করে না। আপনি কম্পিউটার ব্যবহার করলে, সেটিকে ব্রডব্যান্ড থেকে ডিসকানেক্ট করে আবার কানেক্ট করার চেষ্টা করুন।</p>
+
+<p data-aura-rendered-by="12:32933;a">এর পরেও সমস্যার সমাধান না হলে, আপনার Outline সার্ভারে কোনও সমস্যা আছে বলে ধরে নিতে হবে। বিকল্প সার্ভারের নতুন অ্যাক্সেস 'কী' পেতে, আপনার<a href="/outline-faq/answer/15330920" rel="noopener" target="_blank"> পরিষেবা ম্যানেজারের</a>&nbsp;সাথে যোগাযোগ করুন। আপনার<a href="https://google-jigsaw--jigsawuat.sandbox.my.site.com/outline/s/article/Terminology" target="_blank"> </a><a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">অ্যাক্সেস কী</a>-এর&nbsp;নির্ধারিত কোটা পেরিয়ে গেলে, পরিষেবার ম্যানেজার ডেটার সীমা বাড়াতেও পারবেন।</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="296" sourceLocale="bn">WEB:15330818</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline Client চালানোর জন্য সিস্টেমে কী কনফিগারেশন থাকতে হবে?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:24676;a">যেকোনও অপারেটিং সিস্টেমে আপনি Outline ইনস্টল করতে পারবেন। অপারেটিং সিস্টেম অনুসারে সর্বনিম্ন এই ভার্সন থাকতে হবে:</p>
+
+<table class="borders" data-aura-rendered-by="12:24676;a" width="312">
+  <tbody>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top"><b>অপারেটিং সিস্টেম</b></td>
+      <td colspan="1" rowspan="1" valign="top"><b>সর্বনিম্ন ভার্সন</b></td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Android</td>
+      <td colspan="1" rowspan="1" valign="top">10</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">iOS</td>
+      <td colspan="1" rowspan="1" valign="top">15.5</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">macOS</td>
+      <td colspan="1" rowspan="1" valign="top">12.0</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Windows</td>
+      <td colspan="1" rowspan="1" valign="top">10</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Linux</td>
+      <td colspan="1" rowspan="1" valign="top">Ubuntu&nbsp;20.04</td>
+    </tr>
+  </tbody>
+</table>
+
+<p data-aura-rendered-by="12:24676;a"><br />
+  আরও নানান অপারেটিং সিস্টেমে কি Outline Client ইনস্টল করাতে সাহায্য করতে চান?&nbsp;GitHub-এ&nbsp;<a href="https://github.com/Jigsaw-Code/outline-client#platform-specific-development" target="_blank">আমাদের কোড বেসে কন্ট্রিবিউট করুন</a>!</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="107" sourceLocale="bn">WEB:15330824</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline সার্ভার সফ্টওয়্যার আমি কীভাবে আপডেট করতে পারি?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:10378;a">Outline সার্ভারে নিরাপত্তা সংক্রান্ত লেটেস্ট উন্নতি অটোমেটিক আপডেট করা হয়, যাতে আপনি সব সময় Outline-এর লেটেস্ট প্রযুক্তি রান করাতে পারেন। <a href="https://github.com/v2tec/watchtower" target="_blank">Watchtower</a>-এর মাধ্যমে অটোমেটিক আপডেট প্রক্রিয়া চালু করা হয়। এটি একটি ওপেন সোর্স লাইব্রেরি, যা নিয়মিতভাবে Outline সফ্টওয়্যার থাকা 'ডকার' ছবি চেক ও আপডেট করে।</p>
+
+<p data-aura-rendered-by="12:10378;a">এছাড়াও, আপনি Outline Manager ব্যবহার করে Outline ইনস্টল করলে, <a href="https://wiki.debian.org/UnattendedUpgrades" target="_blank">অসম্পূর্ণ আপগ্রেড</a> (Ubuntu) ব্যবহার করে, আমরা সার্ভারে অটোমেটিক আপগ্রেড করার জন্য একটি ক্রোন জব সেট-আপ করব এবং প্রয়োজনমতো রিবুট করব। মনে রাখবেন, বর্তমান কনফিগারেশন বজায় রাখতে, এটি উন্নত মোডে হয় না। এক্ষেত্রে এটি মনে করা হয় যে Outline রান করা ছাড়াও, হোস্টের ব্যবহার অন্য কোনও উদ্দেশ্যেও ব্যবহার করা হচ্ছে।</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="102" sourceLocale="bn">WEB:15330825</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ডাউনলোড লিঙ্ক কাজ না করলে আমি কীভাবে Outline Manager ডাউনলোড করতে পারি?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">একাধিক অপারেটিং সিস্টেমের জন্য সরাসরি অ্যাপ্লিকেশন ডাউনলোড করতে, <a href="https://getoutline.org/get-started/#step-1" target="_blank">এই লিঙ্ক</a> অথবা <a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">এই লিঙ্ক</a> ব্যবহার করুন।&nbsp;</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="129" sourceLocale="bn">WEB:15330920</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">পরিভাষা</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:23504;a"><strong>VPN বলতে কী বোঝায়?</strong><br />
+  ভার্চুয়াল প্রাইভেট নেটওয়ার্ক (VPN)-এর দ্বারা আপনার ডিভাইস ও হোস্ট সার্ভারের মধ্যে একটি 'ব্যক্তিগত' কানেকশন তৈরি করা হয়। VPN ব্যবহার করলে, ইন্টারনেট পরিষেবা প্রদানকারী আপনার ট্রাফিক দেখতে পায় না। আপনাকে নিম্নলিখিত প্রয়োজনে VPN ব্যবহার করতে হতে পারে:</p>
+
+<ul data-aura-rendered-by="12:23504;a">
+  <li>কোনও সর্বজনীন ওয়াই-ফাই নেটওয়ার্ক ব্যবহার করার সময় আপনার ডেটা সুরক্ষিত করতে</li>
+  <li>ইন্টারনেট পরিষেবা প্রদানকারী ও সরকারি এজেন্সির থেকে আপনার ব্রাউজ করা ডেটা গোপনীয় রাখতে</li>
+  <li>সারা বিশ্বের বিভিন্ন সোর্স থেকে সেন্সর না করা কন্টেন্ট অ্যাক্সেস করতে</li>
+</ul>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Outline কোন কোন ক্ষেত্রে গতানুগতিক VPN-এর থেকে আলাদা?</strong><br />
+  সুরক্ষা সংক্রান্ত সাধারণ প্রোটোকল এবং/বা ট্রাফিকের পরিমাণের প্যাটার্নকে চিহ্নিত করার মাধ্যমে ইন্টারনেট পরিষেবা প্রদানকারী সহজেই গতানুগতিক VPN-কে শনাক্ত ও ব্লক করতে পারে। যে প্রোটোকল ব্যবহার করে Outline তৈরি করা হয়েছে সেটি সহজে শনাক্ত করা যায় না এবং এর ফলে ব্লক করা আরও শক্ত হয়। তাই গতানুগতিক VPN-এর তুলনায় Outline-এর প্রতিরোধের ক্ষমতাও অনেক বেশি। নেটওয়ার্ক-ভিত্তিক ব্লকিং ও IP ব্লকিং সহ উন্নত ধরনের সেন্সরশিপও Outline প্রতিরোধ করে।</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Outline সার্ভার বলতে কী বোঝায়?</strong><br />
+  Outline সার্ভার এমন VPN-কে চালায় যেটি ব্যবহারকারীকে কানেক্ট করার অনুমতি দেয়। আপনি কোনও নতুন নেটওয়ার্ক তৈরি করলে, নিজের সুরক্ষিত সার্ভারকে Outline সার্ভার (যদি আপনার কাছে থাকে) হিসেবে ব্যবহার করতে পারবেন অথবা আপনি কোনও ক্লাউড পরিষেবা প্রদানকারীকে বেছে নিতে পারবেন, যেমন:</p>
+
+<ul data-aura-rendered-by="12:23504;a">
+  <li>DigitalOcean</li>
+  <li>Google Cloud Platform (GCP)</li>
+  <li>Amazon Web Services (AWS)</li>
+</ul>
+
+<p data-aura-rendered-by="12:23504;a"><a id="One" target="_blank"></a>আপনি Outline Manager-এ নিজের সার্ভার সেট-আপ করবেন।<br />
+  <br />
+  <strong><a id="servicemanager" name="servicemanager"></a>পরিষেবা ম্যানেজার বলতে কী বোঝায়?</strong><br />
+  পরিষেবা ম্যানেজারের কাজ হল Outline সার্ভার সেট-আপ করা এবং ব্যবহারকারীর সাথে অ্যাক্সেস কী শেয়ার করা। পরিষেবা ম্যানেজারই সাধারণত সার্ভার ব্যবহার সংক্রান্ত খরচের বিষয়টি দেখে থাকেন।&nbsp;<br />
+  <br />
+  <strong><a id="accesskey" name="accesskey"></a>অ্যাক্সেস কী বলতে কী বোঝায়?</strong><br />
+  বর্তমান Outline সার্ভার অ্যাক্সেস করতে ও VPN-এর সাথে কানেক্ট করতে অ্যাক্সেস কী ব্যবহার করা হয়। একজন <a href="#servicemanager" rel="noopener">পরিষেবা ম্যানেজারের</a>&nbsp;থেকেই আপনি অ্যাক্সেস কী পাবেন অথবা আপনি নিজেই<a href="/outline-faq/answer/15331530" rel="noopener" target="_blank"> একটি Outline সার্ভার সেট-আপ করতে</a> পারবেন।&nbsp;অ্যাক্সেস কী কেমন দেখতে হয় তার একটি উদাহরণ এখানে দেখানো হল (এটি একটি স্যাম্পেল মাত্র; বাস্তবে এটি কাজ করবে না):&nbsp;<br />
+  <br />
+  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1<br />
+  <br />
+  <strong>Outline Manager কী?</strong><br />
+  Outline Manager হল একটি ডেস্কটপ অ্যাপ্লিকেশন যার সাহায্যে পরিষেবা ম্যানেজার Outline সার্ভার সেট-আপ করতে, <a href="#accesskey" rel="noopener">অ্যাক্সেস কী</a>, তৈরি করতে এবং 'কী' পিছু ডেটা ব্যবহারের সীমা সেট করতে পারেন। আপনি<a href="https://getoutline.org/get-started/#step-3" target="_blank"> এখানে</a> অথবা<a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank"> এখানে</a> ক্লিক করে Outline Manager-এর লেটেস্ট ভার্সন ডাউনলোড করতে পারবেন।</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Outline Client বলতে কী বোঝায়?</strong><br />
+  Outline Client হল ডেস্কটপ ও মোবাইলে উপলভ্য একটি অ্যাপ্লিকেশন যেটি আপনাকে Outline সার্ভারে কানেক্ট করতে এবং অ্যাক্সেস কী ব্যবহার করে VPN অ্যাক্সেস করতে সাহায্য করে। আপনি<a href="https://getoutline.org/get-started/#step-3" target="_blank"> এখানে</a> অথবা<a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank"> এখানে</a> ক্লিক করে Outline Client-এর লেটেস্ট ভার্সন ডাউনলোড করতে পারবেন।</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>ডেটার সীমা বলতে কী বোঝায়?</strong><br />
+  Outline Manager, অত্যধিক ব্যবহার প্রতিরোধ করতে এবং খরচকে প্রত্যাশিত লেভেলের মধ্যে রাখতে সাহায্য করতে, পরিষেবা ম্যানেজারকে ৩০-দিনের ডেটার একটি ট্রেলিং সীমা সেট করতে দেয়। পরিষেবা ম্যানেজার প্রতিটি 'কী'-এর জন্য প্রযোজ্য হতে পারে এমন একটি ডিফল্ট সীমা সেট করতে পারেন। তাছাড়াও, তিনি ডিফল্ট সীমা ওভাররাইড করতে, যেকোনও 'কী'-তে অন্য একটি সীমাও সেট করতে পারেন। সীমা সেট করা হয়ে যাওয়া মাত্রই এটি কার্যকর হয়ে যায় এবং প্রতি ঘণ্টায় এটি প্রয়োগ করা হয়।</p>
+
+<p data-aura-rendered-by="12:23504;a">পরিষেবা ম্যানেজার Jigsaw-তে মেট্রিক শেয়ার করার বিকল্প চালু করলে, কীভাবে ডেটার সীমার ব্যবহার রিপোর্ট করা হবে তার সম্পর্কে বিস্তারিত তথ্য জানতে, তাকে<a href="/outline-faq/answer/15331222" rel="noopener" target="_blank"> ডেটা সংগ্রহ করা সংক্রান্ত নীতি</a> দেখতে হবে।</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="110" sourceLocale="bn">WEB:15331121</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">আপনি কি "getoutline.me" এবং "@OutlineVpnOfficial" নামের Telegram চ্যানেল সাপোর্ট করেন?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">"<a href="http://getoutline.me/" target="_blank">getoutline.me</a>" ওয়েবসাইট ও তার সাথে যুক্ত Telegram চ্যানেল "@OutlineVpnOfficial" সম্পর্কে Outline টিমের কাছে অসংখ্য প্রশ্ন জমা পড়েছে। Outline টিম এইসব পরিষেবাকে অনুমোদন করে না এবং অ্যাক্সেস কী ব্যবহার করার ক্ষেত্রে কোনও অসুবিধা হলে, আমরা এইসব পরিষেবার মাধ্যমে ব্যবহারকারীকে কোনও সহায়তা করতে পারি না।</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="bn">WEB:15331122</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">উপলভ্য ভাষা</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>নিম্নলিখিত ভাষায় Outline পরিষেবা উপলভ্য:</p>
+
+<ul>
+  <li aria-level="1">আফ্রিকান</li>
+  <li aria-level="1">আলবেনিয়ান</li>
+  <li aria-level="1">আমহারিক</li>
+  <li aria-level="1">আরবি</li>
+  <li aria-level="1">আর্মেনিয়ান</li>
+  <li aria-level="1">আজারবাইজানি</li>
+  <li aria-level="1">বাংলা</li>
+  <li aria-level="1">বসনিয়ান</li>
+  <li aria-level="1">বুলগেরিয়ান</li>
+  <li aria-level="1">বার্মিজ</li>
+  <li aria-level="1">কাতালান</li>
+  <li aria-level="1">চাইনিজ (সরলীকৃত)</li>
+  <li aria-level="1">চাইনিজ (ঐতিহ্যবাহী)</li>
+  <li aria-level="1">ক্রোয়েশিয়ান</li>
+  <li aria-level="1">চেক</li>
+  <li aria-level="1">ড্যানিশ</li>
+  <li aria-level="1">ডাচ</li>
+  <li aria-level="1">ইংরেজি (আমেরিকান)</li>
+  <li aria-level="1">ইংরেজি (ব্রিটিশ)</li>
+  <li aria-level="1">এস্তোনিয়ান</li>
+  <li aria-level="1">ফিলিপিনো</li>
+  <li aria-level="1">ফিনিশ</li>
+  <li aria-level="1">ফরাসি</li>
+  <li aria-level="1">জর্জিয়ান</li>
+  <li aria-level="1">জার্মান</li>
+  <li aria-level="1">গ্রিক</li>
+  <li aria-level="1">হিব্রু</li>
+  <li aria-level="1">হিন্দি</li>
+  <li aria-level="1">হাঙ্গেরিয়ান</li>
+  <li aria-level="1">আইসল্যান্ডিক</li>
+  <li aria-level="1">ইন্দোনেশিয়ান</li>
+  <li aria-level="1">ইতালিয়ান</li>
+  <li aria-level="1">জাপানিজ</li>
+  <li aria-level="1">কাজাখ</li>
+  <li aria-level="1">খমের</li>
+  <li aria-level="1">কোরিয়ান</li>
+  <li aria-level="1">লাও</li>
+  <li aria-level="1">লাটভিয়ান</li>
+  <li aria-level="1">লিথুয়ানিয়ান</li>
+  <li aria-level="1">ম্যাসিডোনিয়ান</li>
+  <li aria-level="1">মালয়</li>
+  <li aria-level="1">মারাঠি</li>
+  <li aria-level="1">মঙ্গোলিয়ান</li>
+  <li aria-level="1">নেপালি</li>
+  <li aria-level="1">নরওয়েজিয়ান</li>
+  <li aria-level="1">ফার্সি</li>
+  <li aria-level="1">পোলিশ</li>
+  <li aria-level="1">পর্তুগিজ (ব্রাজিলিয়ান)</li>
+  <li aria-level="1">পর্তুগিজ (ইউরোপিয়ান)</li>
+  <li aria-level="1">রোমানিয়ান</li>
+  <li aria-level="1">রাশিয়ান</li>
+  <li aria-level="1">সার্বিয়ান (সিরিলিক)</li>
+  <li aria-level="1">সার্বিয়ান (ল্যাটিন)</li>
+  <li aria-level="1">সিংহলী</li>
+  <li aria-level="1">স্লোভাক</li>
+  <li aria-level="1">স্লোভেনিয়ান</li>
+  <li aria-level="1">স্প্যানিশ (ইউরোপিয়ান)</li>
+  <li aria-level="1">স্প্যানিশ (লাতিন আমেরিকান)</li>
+  <li aria-level="1">সোয়াহিলি</li>
+  <li aria-level="1">সুইডিশ</li>
+  <li aria-level="1">তামিল</li>
+  <li aria-level="1">থাই</li>
+  <li aria-level="1">তুর্কি</li>
+  <li aria-level="1">ইউক্রেনিয়ান</li>
+  <li aria-level="1">উর্দু</li>
+  <li aria-level="1">ভিয়েতনামিজ</li>
+</ul>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="110" sourceLocale="bn">WEB:15331125</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Windows-এ আমি কেন Outline Client ইনস্টল করতে পারি না?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:31254;a">আপনি সমস্যা সংক্রান্ত এই মেসেজ দেখতে পেতে পারেন: "মনে হচ্ছে, Outline সঠিকভাবে ইনস্টল করা হয়নি। এটি আবার ইনস্টল করে দেখুন। এটি কাজ না করলে,&nbsp;<a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">মতামত জমা দিন</a>।”</p>
+
+<p data-aura-rendered-by="12:31254;a">Windows ডিভাইসে Outline ব্যবহার করলে, আপনি কখনও কখনও অপ্রত্যাশিত সমস্যার সম্মুখীন হতে পারেন। বেশিরভাগ ক্ষেত্রে, Outline TAP অ্যাডাপ্টার (ড্রাইভার) মুছে ফেলতে এবং Outline আবার ইনস্টল করতে হবে।</p>
+
+<p data-aura-rendered-by="12:31254;a">Windows অপারেটিং সিস্টেমের ভার্সন অনুযায়ী, ধাপগুলি আলাদা আলাদা হতে পারে, তবে TAP অ্যাডাপ্টার ও Outline কীভাবে আনইনস্টল করে আবার ইনস্টল করা যায়, তার ব্যাপারে সাধারণ ধাপগুলি নিচে দেখানো হল।</p>
+
+<ol data-aura-rendered-by="12:31254;a">
+  <li>Outline Client-এর জন্য TAP অ্যাডাপ্টার আনইনস্টল করুন
+    <ul>
+      <li><strong>ডিভাইস ম্যানেজার</strong>, তারপর&nbsp;<strong>নেটওয়ার্ক অ্যাডাপ্টার</strong>&nbsp;বিকল্পের যান</li>
+      <li><strong>TAP-Windows Adapter V9</strong>&nbsp;ফাইল বা Outline-এর সাথে যুক্ত TAP অ্যাডাপ্টার&nbsp;খুঁজে নিন</li>
+      <li>এই অ্যাডাপ্টার আনইনস্টল করুন বা মুছে ফেলুন। মনে রাখবেন যে, এটি আপনার ইনস্টল করা অন্যান্য VPN অ্যাপের উপর প্রভাব ফেলতে পারে।&nbsp;</li>
+    </ul>
+  </li>
+  <li>Outline Client আনইনস্টল করুন
+    <ul>
+      <li><strong>প্রোগ্রাম ও ফিচার</strong> তারপর&nbsp;<strong>প্রোগ্রাম আনইনস্টল করুন</strong>' বিকল্পে&nbsp;যান</li>
+      <li>Outline Client অ্যাপ খুঁজে নিয়ে Outline Client আনইনস্টল করুন</li>
+      <li><a href="https://getoutline.org/get-started/#step-3" target="_blank">Outline Client অ্যাপের লেটেস্ট ভার্সন ডাউনলোড করুন</a>&nbsp;এবং আপনার Windows ডিভাইসে এটি আবার ইনস্টল করুন। নতুন করে ইনস্টল করলে, এর সাথে নতুন TAP অ্যাডাপ্টার অটোমেটিক ইনস্টল হবে।</li>
+    </ul>
+  </li>
+</ol>
+
+<p data-aura-rendered-by="12:31254;a">এখনও সমস্যা হলে,&nbsp;<a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">সহায়তা টিমের সাথে যোগাযোগ করুন</a>।</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="109" sourceLocale="bn">WEB:15331126</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline পরিষেবার সাথে আমি কেন কানেক্ট করতে পারছি না?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Outline পরিষেবার সাথে কানেক্ট না করতে পারার জন্য কয়েকটি কারণ থাকতে পারে:&nbsp;</p>
+
+<ul>
+  <li aria-level="1"><strong>আপনার ডিভাইসের</strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#One" rel="noopener"><strong> </strong></a><a href="#Internetissues" rel="noopener"><strong>ইন্টারনেট কানেকশন কাজ করছে না</strong></a><a href="#Internetissues" rel="noopener"> </a><strong>. </strong>কখনও কখনও আপনার ডিভাইসের নেটওয়ার্ক কানেকশন কাজ করে না এবং 'নেটওয়ার্ক' আইকন আপডেট করতে কয়েক মুহূর্ত সময় লাগতে পারে। এছাড়া, এমনও হতে পারে যে আপনার ডিভাইস লোকাল নেটওয়ার্কের সাথে যুক্ত আছে, কিন্তু ইন্টারনেট কাজ করছে না।</li>
+  <li aria-level="1"><strong>আপনার</strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#Two"><strong> </strong></a><a href="#FirewallIssues" rel="noopener"><strong>নেটওয়ার্ক ফায়ারওয়াল Outline সার্ভারের</strong></a><a href="#FirewallIssues" rel="noopener"> </a><strong><a href="#FirewallIssues" rel="noopener">অ্যাক্সেস</a> ব্লক করছে। </strong>স্কুল, অফিস বা ফ্রি ওয়্যারলেস নেটওয়ার্কের মতো পাবলিক নেটওয়ার্ক ব্যবহার করলে, এমন ঘটনা প্রায়ই ঘটে থাকে।</li>
+  <li aria-level="1"><strong>আপনার ডিভাইসে একটি</strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#Three"><strong> </strong></a><a href="#SoftwareIssues" rel="noopener"><strong>ফায়ারওয়াল বা অ্যান্টিভাইরাস সফ্টওয়্যার সংক্রান্ত সমস্যা</strong></a> আছে<a href="#SoftwareIssues" rel="noopener"> </a><strong>যেটি Outline সার্ভারে আপনার অ্যাক্সেস ব্লক করে।</strong></li>
+  <li aria-level="1"><strong>আপনার</strong><a href="#DeviceSettings" rel="noopener"><strong> </strong><strong>ফোন ডিভাইসের সেটিংসে</strong></a><strong> কোনও পরিবর্তন নাও করতে হতে পারে।</strong></li>
+  <li aria-level="1"><strong>আপনার পরিষেবা ম্যানেজার</strong><a href="#ServerIssues" rel="noopener"><strong> </strong><strong>সার্ভার নষ্ট করে দিতে পারেন অথবা ISP আপনার অনুরোধ ব্লক করতে পারে</strong></a> ।</li>
+</ul>
+
+<p><a id="Internetissues" name="Internetissues"><strong>ইন্টারনেট কানেকশন সংক্রান্ত সমস্যা:</strong></a></p>
+
+<p><strong>কীভাবে পরীক্ষা করতে হয়:</strong></p>
+
+<p>Outline বন্ধ করে দেখুন যে আপনার ইন্টারনেট কানেকশন চালু হল কিনা।</p>
+
+<ul>
+  <li aria-level="1">ইন্টারনেট কানেকশন চালু হয়ে গেলে, নিচে দেওয়া সমস্যার সমাধান সংক্রান্ত আরও বিকল্প দেখুন।</li>
+  <li aria-level="1">তা না হলে, আপনার কানেকশন সেটিংস নিজে থেকে আপডেট হয় কিনা তা দেখার জন্য কয়েক মুহূর্ত অপেক্ষা করুন।</li>
+</ul>
+
+<p><strong>যেসব বিষয় সমাধান করতে হবে:</strong></p>
+
+<p>আপনার ডিভাইসকে আবার অনলাইন করুন:</p>
+
+<ol>
+  <li aria-level="1">অন্য ডিভাইস, একই নেটওয়ার্কে কানেক্ট করতে পারছে কিনা তা চেক করে দেখুন। অন্য ডিভাইস অনলাইন না হওয়ার অর্থ হল নেটওয়ার্ক হয়ত কাজ করছে না এবং আপনাকে নেটওয়ার্ক কানেকশন চালু হওয়া বা সমস্যার সমাধান হওয়া পর্যন্ত অপেক্ষা করতে হবে।</li>
+  <li aria-level="1">অন্য ডিভাইস একই নেটওয়ার্কে কানেক্ট করলে, অনলাইন হওয়ার জন্য আপনি নিম্নলিখিত উপায়ের মধ্যে একটি বা একাধিক উপায় ব্যবহার করে দেখতে পারেন:
+    <ol>
+      <li aria-level="2">ডিভাইসকে 'বিমান' মোডে রাখুন (মোবাইল)</li>
+      <li aria-level="2">ডিভাইস রিস্টার্ট করুন</li>
+      <li aria-level="2">ডিভাইসটি বন্ধ করে ২ মিনিট অপেক্ষা করুন এবং তারপরে আবার ডিভাইস চালু করুন</li>
+    </ol>
+  </li>
+</ol>
+
+<p><a id="FirewallIssues" name="FirewallIssues"><strong>নেটওয়ার্ক ফায়ারওয়াল সংক্রান্ত সমস্যা:</strong></a></p>
+
+<p><strong>কীভাবে পরীক্ষা করতে হয়:</strong></p>
+
+<ol>
+  <li aria-level="1">আপনার বর্তমান ওয়াই-ফাই বা তারযুক্ত নেটওয়ার্ক ডিসকানেক্ট করুন।</li>
+  <li aria-level="1">মোবাইল ফোনের মতো অন্য কোনও নেটওয়ার্কে কানেক্ট করুন</li>
+  <li aria-level="1">Outline সার্ভারে আবার কানেক্ট করার চেষ্টা করুন</li>
+</ol>
+
+<p>অন্য নেটওয়ার্ক ব্যবহার করে কানেক্ট করতে পারলে, তার অর্থ হল সমস্যাটি আপনার নেটওয়ার্কের।</p>
+
+<p><strong>যেসব বিষয় সমাধান করতে হবে:</strong></p>
+
+<p>পরিষেবার ম্যানেজারের সাথে যোগাযোগ করে Outline সার্ভারকে অ্যাক্সেস করার অনুমতি দেওয়ার জন্য তাকে অনুরোধ করুন অথবা অন্য কোনও নেটওয়ার্কের সাথে ব্যবহার করা চালিয়ে যান।</p>
+
+<p><a id="SoftwareIssues" name="SoftwareIssues"><img alt="এই ছবিটি উপলভ্য নেই কারণ: আপনার এটি দেখার অনুমতি নেই, বা এটি সিস্টেম থেকে সরিয়ে দেওয়া হয়েছে" height="1" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeoHNM7TWEsg0z4iydaS2xKOPga0zOjhOTqvGpA-JLd-Fwnydby6EBZziz3vqgRUJwssreEqP6lmjv_-13QXdzqh3yx9tZiR81BvxcXShi3kJ-XDKnqt951uRRPSO8BUhXaiijJLF8PixV_ezhGJ02Y3QPFbw?key=pJIeaVZQOqqoBTmDWZd2hw" width="1" /><strong>ফায়ারওয়াল বা অ্যান্টিভাইরাস সফ্টওয়্যার সংক্রান্ত সমস্যা:</strong></a><br />
+  <br />
+  <strong>কীভাবে পরীক্ষা করতে হয়:</strong><br />
+  <br />
+  অন্য ডিভাইস থেকে Outline-এর সাথে কানেক্ট করার চেষ্টা করুন।&nbsp;</p>
+
+<p>মনে রাখবেন: অন্য একটি ডিভাইসে Outline ব্যবহার করার জন্য আপনার কাছে একটি 'অ্যাক্সেস কী' এবং Outline অ্যাপ থাকতে হবে।</p>
+
+<p><strong>যেসব বিষয় সমাধান করতে হবে:</strong></p>
+
+<p>আপনার ফায়ারওয়াল বা অ্যান্টিভাইরাস সফ্টওয়্যার যাতে VPN এবং Outline ট্রাফিক না ব্লক করে তা নিশ্চিত করতে ফায়ারওয়াল বা অ্যান্টিভাইরাসের সেটিংস চেক করুন।</p>
+
+<p><a id="DeviceSettings" name="DeviceSettings"><strong>ডিভাইস সেটিংস:</strong></a></p>
+
+<p><strong>যেসব বিষয় চেক করতে হবে:</strong></p>
+
+<p>Android-এর জন্য:</p>
+
+<ol>
+  <li aria-level="1">'সেটিংস' অ্যাপ খুলুন।</li>
+  <li aria-level="1">আপনার ডিভাইসে (VPN সেটিংস সব VPN অ্যাপ দেখাবে যেগুলি বর্তমানে আপনার ফোন অ্যাক্সেস করছে) <strong>VPN সেটিংস</strong> খুঁজে দেখুন।&nbsp;</li>
+  <li aria-level="1">VPN সেটিংসে Outline না দেখতে পেলে, Outline আনইনস্টল করে আবার ইনস্টল করুন। ইনস্টল হওয়ার পরেই ডিভাইস থেকে অটোমেটিক Outline-কে অ্যাক্সেস দেওয়া হয়।</li>
+</ol>
+
+<p>নিশ্চিত করুন যে আপনার Android ডিভাইসে কোনও স্ক্রিন ওভারলে অ্যাপ্লিকেশন ইনস্টল করা নেই, কারণ এটি Outline অনুমতি উইন্ডোকে ব্যাকগ্রাউন্ডে পাঠিয়ে দিতে পারে এবং তার ফলে আপনি উইন্ডোকে স্ক্রিনে দেখতে পাবেন না।<br />
+  <br />
+  আপনার Android ডিভাইসে, 'সেটিংস &gt; অ্যাপ &gt; বিশেষ অ্যাপ অ্যাক্সেস' বিকল্প বেছে নিন। তারপরে, 'অন্যান্য অ্যাপে দেখুন' বিকল্পে ট্যাপ করুন। এই ধরনের আচরণের অনুমতি দেওয়া যেকোনও অ্যাপের অ্যাক্সেস আপনি সরিয়ে দিতে পারবেন।<br />
+  <br />
+  iOS-এর জন্য: <a href="https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web" rel="noopener" target="_blank"> এই সহায়তা নিবন্ধ</a> পড়ুন।</p>
+
+<p><a id="ServerIssues" name="ServerIssues"><strong>সার্ভার সংক্রান্ত সমস্যা:</strong></a></p>
+
+<p><strong>কীভাবে পরীক্ষা করতে হয়:</strong></p>
+
+<p>আপনার যদি একাধিক সার্ভারে অ্যাক্সেস থাকে, তাহলে অন্য সার্ভারে কানেক্ট করার চেষ্টা করুন।&nbsp;</p>
+
+<p><strong>যেসব বিষয় সমাধান করতে হবে:</strong></p>
+
+<p>সার্ভার নষ্ট হয়ে গেছে কিনা তা জানতে পরিষেবার ম্যানেজারের সাথে যোগাযোগ করুন। সার্ভার নষ্ট হয়ে গিয়ে থাকলে, তার কাছে অন্য একটি সার্ভারের<a href="/outline-faq/answer/15330920" rel="noopener"> অ্যাক্সেস কী</a> চান।</p>
+
+<p>আপনি সার্ভার সেট-আপ করলে, Outline Manager বা<a href="https://en.wikipedia.org/wiki/Secure_Shell"> SSH</a>-এর মতো অন্য একটি পদ্ধতির মাধ্যমে কানেক্ট করার চেষ্টা করুন। এটি কাজ না করলে, সার্ভার অনলাইন আছে কিনা তা দেখার জন্য, ক্লাউড পরিষেবা প্রদানকারীর কনসোলের সুবিধা থাকলে, তা চেক করতে পারেন।</p>
+
+<p data-aura-rendered-by="12:32047;a">&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="bn">WEB:15331127</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ডাউনলোড লিঙ্ক কাজ না করলে, আমি কীভাবে ক্লায়েন্ট অ্যাপ ডাউনলোড করতে পারব?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">অনেক অপারেটিং সিস্টেমের জন্য সরাসরি অ্যাপ্লিকেশন ডাউনলোড করতে,&nbsp;<a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">এই লিঙ্ক</a>&nbsp;ব্যবহার করুন।</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="131" sourceLocale="bn">WEB:15331222</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ডেটা এবং তথ্য সংগ্রহ</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:271;a">আপনি ব্যক্তিগত তথ্য প্রদান করার বিকল্প বেছে না নিলে, Outline তা সংগ্রহ করে না। এছাড়া, আপনি যেসব ওয়েবসাইট দেখেন অথবা যাদের সাথে যোগাযোগ করেন বা কী শেয়ার করেন সেগুলি সম্পর্কে কোনও তথ্য Outline সংগ্রহ করে না।<br />
+  <br />
+  আপনি Outline Manager-এর সাহায্যে কোনও থার্ড-পার্টি ক্লাউড পরিষেবা প্রদানকারীর মাধ্যমে অ্যাকাউন্ট তৈরি বা তাতে লগ-ইন করার সময়, আপনার ইমেল আইডি, নাম, বিলিংয়ের তথ্য ও পেমেন্টের বিবরণের মতো থার্ড-পার্টি ক্লাউড পরিষেবা প্রদানকারীকে দেওয়া কোনও তথ্য আমরা পাই না।<br />
+  <br />
+  <strong><strong>যে তথ্য আমরা অটোমেটিক সংগ্রহ করি</strong></strong><br />
+  <br />
+  আমরা দুই ধরনের তথ্য অটোমেটিক সংগ্রহ করি।<br />
+  ১. সার্ভার IP<br />
+  <a href="http://quay.io/" target="_blank">Quay.io</a> রেজিস্ট্রি পরিষেবাটি&nbsp;Outline সার্ভারের IP অ্যাড্রেস সংগ্রহ করে; সার্ভারে যখন লেটেস্ট নিরাপত্তা ফিচার ও অন্যান্য উন্নত ফিচার অটোমেটিক আপডেট হয়, তখন সেই অ্যাড্রেস আমাদের জানায়। সার্ভার IP হয়ত ক্লাউড সার্ভার পরিষেবা প্রদানকারীকে এবং সেই শহরটিকে শনাক্ত করতে পারবে যেখানে Outline সার্ভার সেট-আপ করা হয়েছে, তবে কে সার্ভারটি পরিচালনা করছে বা কে এটি অ্যাক্সেস করছে সেই তথ্য জানতে পারে না।<br />
+  <br />
+  ২. ব্যক্তিগতভাবে শনাক্তকরণযোগ্য নয়, এমন টেকনিক্যাল তথ্য<br />
+  Outline ক্র্যাশ করলে বা কোনও মারাত্মক এক্সেপশন হলে অথবা Outline অ্যাপের মাধ্যমে আপনি ম্যানুয়ালি মতামত পাঠালে, নিচে তালিকাভুক্ত তথ্য রিপোর্ট করা হবে। এই তথ্য শুধুমাত্র একটানা পরিষেবা দিয়ে যাওয়া বা পারফর্ম্যান্স সংক্রান্ত সমস্যা শনাক্ত ও সমাধান করার জন্য ব্যবহার করা হবে।</p>
+
+<ul data-aura-rendered-by="12:271;a">
+  <li>দেশ</li>
+  <li>লোকেল</li>
+  <li>ক্র্যাশ / এক্সেপশনের তারিখ ও সময় এবং সর্বাধিক ১০০টি আগের ইভেন্ট, যেমন, কোনও ব্যবহারকারী কখন ‘এই সম্পর্কে' বিভাগটি খুলেছেন</li>
+  <li>এক্সেপশন সংক্রান্ত একত্রিত করা মেসেজ</li>
+  <li>OS-এর নাম ও ভার্সন</li>
+  <li>ফোনের মডেল (প্রযোজ্য হলে)</li>
+  <li>অ্যাপ চালু করার সময়</li>
+  <li>ব্রাউজার</li>
+  <li>আর্কিটেকচার</li>
+  <li>Outline-এর ভার্সন ও বিল্ড নম্বর</li>
+</ul>
+
+<p data-aura-rendered-by="12:271;a"><br />
+  এই তথ্য HTTPS ব্যবহার করে Sentry-তে (<a href="http://sentry.io/" target="_blank">sentry.io</a>) পাঠানো হয়; এটি একটি থার্ড-পার্টি, ওপেন সোর্স অ্যাপ, যা সমস্যা ট্র্যাক করা সংক্রান্ত পরিষেবা দেয়। আপনার ডেটার অননুমোদিত অ্যাক্সেস, প্রকাশ, ব্যবহার এবং হারিয়ে যাওয়ার মতো ঘটনা প্রতিরোধ করতে, Sentry এই ইন্ডাস্ট্রির নির্ধারিত বিভিন্ন স্ট্যান্ডার্ড প্রযুক্তি এবং পরিষেবা ব্যবহার করে। Sentry-র নীতি সম্পর্কিত কোনও প্রশ্ন থাকলে&nbsp;<a href="https://sentry.io/security/" target="_blank">https://sentry.io/security/</a>&nbsp;এবং&nbsp;<a href="https://sentry.io/privacy/" target="_blank">https://sentry.io/privacy/</a> লিঙ্কে যান অথবা&nbsp;<a href="mailto:security@sentry.io" target="_blank">security@sentry.io</a> আইডিতে যোগাযোগ করুন। Sentry যেসব Outline ডেটা সেভ করে তাতে এমন বিধিনিষেধ আরোপ করা হয় যে শুধুমাত্র Outline টিমের মেম্বারাই সেগুলি অ্যাক্সেস করতে পারেন।<br />
+  <br />
+  <strong><strong>শুধুমাত্র আপনি সম্মতি দিলে যেসব তথ্য আমরা সংগ্রহ করি</strong></strong><br />
+  <br />
+  আপনি সম্মতি দিলে, Outline নিম্নলিখিত তথ্য Outline টিমকে দেয়।<br />
+  ১. ব্যবহারের মেট্রিক<br />
+  প্রত্যেক অ্যাক্সেস 'কী'-এর ভিত্তিতে, শেষ এক ঘণ্টার জন্য প্রতিটি Outline সার্ভার এইসব তথ্য অটোমেটিক সংগ্রহ করে: ট্রান্সফার করা বাইটের সংখ্যা, ব্যবহারকারী কতক্ষণ সার্ভারের সাথে কানেক্টেড ছিলেন, ব্যবহার করা ক্রেডেনশিয়ালের মূল&nbsp;উৎসের&nbsp;সাথে সম্পর্কিত দেশ ও অটোনোমাস সিস্টেম এবং কোনও ফিচার চালু বা বন্ধ করা হয়েছে কিনা। সার্ভারের সাথে কানেক্ট করা অবস্থায় ঠিক কী কন্টেন্ট আদান প্রদান করা হয়েছে তা ট্র্যাক করা হয় না অথবা কোনও ব্যক্তিগতভাবে শনাক্তকরণযোগ্য মেটাডেটা (যেমন, লগ-ইন ক্রেডেনশিয়াল, ইমেল আইডি, ডিভাইস আইডি ইত্যাদি) লগ করা হয় না। সমস্ত মেট্রিক একটি সার্ভার আইডির সাথে যুক্ত থাকে। সার্ভার আইডি পরিবর্তন করা সংক্রান্ত নির্দেশাবলী <a href="/outline-faq/answer/15548974" rel="noopener" target="_blank">এখানে</a>&nbsp;দেখতে পাবেন।<br />
+  <br />
+  ডিফল্ট হিসেবে, Outline সার্ভার এইসব মেট্রিক Outline টিমের সাথে শেয়ার করে না। সার্ভার অ্যাডমিনিস্ট্রেটর যদি ব্যবহার সম্পর্কিত মেট্রিক শেয়ার করার বিকল্প সুস্পষ্টভাবে বেছে নেন, তাহলে এই তথ্য সুরক্ষিতভাবে প্রতি ঘণ্টায় Outline টিমের কাছে পাঠানো হবে। ৬০ দিন পরে, দেশ অনুসারে ব্যবহার সম্পর্কিত মেট্রিক একত্রিত করা হবে। সার্ভার অ্যাডমিনিস্ট্রেটররা Outline Manager-এর 'সেটিংস' মেনুতে গিয়ে ব্যবহার সম্পর্কিত মেট্রিক শেয়ার করা সংক্রান্ত পছন্দ যেকোনও সময় পরিবর্তন করতে পারেন।<br />
+  <br />
+  আপনার পরিচয় গোপন রেখে, সার্ভারের ব্যবহার সম্পর্কিত মেট্রিক আমাদের সাথে শেয়ার করার জন্য ধন্যবাদ। সার্ভার ব্যবহারের ট্রেন্ড বুঝতে এবং আমাদের প্রোডাক্ট আরও ভালো করে তুলতে এইসব তথ্য আমরা ব্যবহার করি।<br />
+  <br />
+  যেমন, কোনও সার্ভার অ্যাডমিনিস্ট্রেটর আমাদের সাথে ব্যবহার সংক্রান্ত মেট্রিক শেয়ার করার বিকল্প বেছে নিলে, আমরা এমন তথ্য পেতে পারি যা ইঙ্গিত করে যে 12345 আইডির সার্ভার গতকাল ৩ ঘণ্টা ব্যবহার করা হয়েছে, মোট ৫০০ মেগাবাইট ডেটা ট্রান্সফার করা হয়েছে, এমন তিনটি 'কী' থেকে যেগুলির প্রতিটি মার্কিন যুক্তরাষ্ট্র এবং কানাডায় ব্যবহার করা হয়েছে এবং সেগুলিতে ডেটা সীমাবদ্ধ করার ফিচার চালু আছে।<br />
+  <br />
+  ২. আপনি যদি মতামত জমা দেন, তাহলে আপনার মন্তব্য এবং ইমেল আইডি<br />
+  Outline Manager এবং Outline অ্যাপের সাহায্যে আপনি আমাদের টিমকে মতামত জানাতে পারেন। আমরা ব্যক্তিগতভাবে শনাক্তকরণযোগ্য তথ্য অন্তর্ভুক্ত না করতে সাজেস্ট করি, তবে আপনি যদি টিমের থেকে কোনও উত্তর চান তাহলে ইমেল ফিল্ডে আপনার ইমেল আইডি দিতে পারেন। আপনার মতামত বোঝার জন্য, আমরা কিছু প্রাথমিক তথ্য অটোমেটিক সংগ্রহ করি। আমরা কোন কোন ডেটা সংগ্রহ করি তা জানতে "যে তথ্য আমরা অটোমেটিক সংগ্রহ করি" বিভাগে ২ নম্বর আইটেম দেখুন।&nbsp;Outline-এর নিরাপত্তা এবং গোপনীয়তা অনুশীলন সম্পর্কে আরও জানতে <a href="/outline-faq/answer/14919822" rel="noopener" target="_blank">এখানে</a>&nbsp;যান।<br />
+  <br />
+  আপনি Android ডিভাইসে Outline অ্যাপের বিটা ভার্সন ব্যবহার করলে, ডিবাগিং সংক্রান্ত তথ্য সংগ্রহ করার জন্য আমরা Google-এর&nbsp;<a href="https://firebase.google.com/" target="_blank">Firebase</a>&nbsp;পরিষেবা ব্যবহার করতে পারি, যা আমাদের সমস্যা খুঁজে বের করতে এবং Outline আরও উন্নত করতে সাহায্য করতে পারে। Firebase-এর গোপনীয়তা এবং নিরাপত্তা সংক্রান্ত নীতি সম্পর্কে জানতে <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a>&nbsp;ওয়েবসাইটে যান। আপনি যদি না চান যে Outline এই তথ্য Firebase-এর মাধ্যমে পাঠাক, তাহলে অ্যাপের প্রোডাকশন ভার্সন ব্যবহার করুন।</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="88" sourceLocale="bn">WEB:15331223</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">'অ্যাক্সেস কী' কাজ না করলে, আমি কী করতে পারি?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:30472;a">আপনি যদি এই ত্রুটি মেসেজটি পান:&nbsp;“মনে হচ্ছে, আপনার 'অ্যাক্সেস কী' বৈধ নয়। এটি আবার ঘটলে, আপনার সার্ভিস ম্যানেজারের সাথে যোগাযোগ করুন।" সমস্যাটির সমাধান করতে, নিচের ধাপগুলি অনুসরণ করুন:&nbsp;</p>
+
+<ol data-aura-rendered-by="12:30472;a">
+  <li>আপনি সম্পূর্ণ 'অ্যাক্সেস কী' লিখেছেন কিনা দেখে নিন, যার মধ্যে প্রথম পাঁচটি অক্ষর পড়ে, “ss://”, এগুলিকে ক্লিপবোর্ডে অটোমেটিক কপি করা নাও যেতে পারে। সম্পূর্ণ 'অ্যাক্সেস কী' কেমন দেখতে হয় তার একটি উদাহরণ এখানে দেখানো হল (শুধুমাত্র স্যাম্পেল হিসেবে দেখানো হয়েছে; এটি বাস্তবে কাজ করবে না):</li>
+</ol>
+
+<pre data-aura-rendered-by="12:30472;a">ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@145.230.4.1:39485/?outline=1&nbsp;
+</pre>
+
+<ol data-aura-rendered-by="12:30472;a" start="2">
+  <li>আপনার 'অ্যাক্সেস কী' ক্লিপবোর্ডে একদমই কপি না করা গেলে, এটি আপনার মেসেজিং অ্যাপ বা প্ল্যাটফর্মের কারণে হতে পারে। এই ধরনের ঘটনা সাধারণত তখনই হয়, যখন পরিচিতি তালিকার বাইরে থাকা কোনও ব্যক্তির থেকে আপনি মেসেজ পান। কোনও মেসেজ থেকে কোড কপি করার সময় মেসেজ প্রেরক আপনার পরিচিতিতে আছেন কিনা তা ভালো করে দেখে নিন, তারপরে লিঙ্ক আবার অ্যাক্সেস করার চেষ্টা করুন।&nbsp;</li>
+  <li>ধাপ ১ ও ২ সম্পূর্ণ করার পরেও ত্রুটি মেসেজ পেলে, এটি ধরে নিতে হবে যে সার্ভার ব্লক করা আছে অথবা 'অ্যাক্সেস কী'-এর বৈধতা শেষ হয়ে গেছে। আপনি একজন পরিষেবা ম্যানেজার হলে, নিজের জন্য একটি নতুন 'কী' তৈরি করে দেখুন। অথবা, নতুন 'কী'-এর জন্য পরিষেবা ম্যানেজারের সাথে যোগাযোগ করুন।</li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="96" sourceLocale="bn">WEB:15331322</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline চালাতে কত খরচ হয়?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>আপনি সার্ভার অ্যাডমিনিস্ট্রেটর হিসেবে VPN ম্যানেজ অথবা ওপেন ইন্টারনেট অ্যাক্সেস করার জন্য Outline ব্যবহার, যাই করুন না কেন, Outline সফ্টওয়্যার সবার জন্য ফ্রি।<br />
+  <br />
+  অবশ্য Outline রান করাতে, ক্লাউড সার্ভারে সেটির অ্যাক্সেস থাকতে হবে। সার্ভার অ্যাডমিনিস্ট্রেটরের কাছে আগে থেকেই সার্ভারে অ্যাক্সেস থাকলে তাতে কোনও বাড়তি খরচ ছাড়াই Outline ইনস্টল করতে পারবেন। যাদের কাছে সার্ভারের অ্যাক্সেস নেই তারা&nbsp;<a href="http://www.digitalocean.com/" rel="noopener" target="_blank">DigitalOcean</a>&nbsp;বা Amazon Web Services-এর মতো ক্লাউড পরিষেবা প্রদানকারীর থেকে প্রতি মাসে $৫ মার্কিন ডলারের বিনিময়ে ১ টেরাবাইট ডেটা ট্রান্সফারের সুবিধা পেতে পারেন — একটিমাত্র সার্ভার এই ডেটার মাধ্যমে প্রচুর ব্যবহারকারীর সংশ্লিষ্ট প্রয়োজন মেটানোর জন্য যথেষ্ট।<br />
+  <br />
+  আপনার পছন্দের ক্লাউড পরিষেবা প্রদানকারীর মাধ্যমে Outline ব্যবহার করতে কত খরচ হবে তা জানতে আপনি কীভাবে হিসেব কষতে পারেন তার একটি উদাহরণ দেওয়া হল:</p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td colspan="1" rowspan="1">
+      <p><em>ধরা যাক, প্রত্যেক ব্যবহারকারী মাসে গড়ে ৫ গিগাবাইট ডেটা ট্রান্সফারের করেন। ফলে প্রতি মাসে $৫ মার্কিন ডলারের প্ল্যানে প্রায় ২০০ ব্যবহারকারী একসাথে ব্যবহার করার অনুমতি পাবে এবং এর ফলে প্রতি মাসে ব্যবহারকারী পিছু মাত্র ২.৫ সেন্ট খরচ হবে। মনে রাখবেন, ব্যবহারকারীরা কম বা বেশি ব্যান্ডউইথ অ্যাক্টিভিটি করছেন কিনা তার উপর নির্ভর করে প্রতি মাসে প্রতি ব্যবহারকারী পিছু ডেটা ট্রান্সফারের পরিমাণ ব্যাপকভাবে পরিবর্তিত হতে পারে তবে ট্রাফিকের পরিমাণ বেড়ে গেলে বেশিরভাগ ক্লাউড পরিষেবা প্রদানকারীরা তা ম্যানেজ করার নমনীয় ব্যবস্থা রাখে।</em></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br />
+  আসলে, Jigsaw ও Google-এ পরিচয় সম্পূর্ণভাবে গোপন করে Outline ব্যবহার করা হয়। আমরা আপনার পরিচয় বা ট্রাফিক ট্র্যাক করি না এবং কোনও মনিটাইজেশন প্ল্যান চালু করা নেই। পরিবর্তে, আমরা কোনও খরচ ছাড়াই ব্যবহারকারীদের সফ্টওয়্যার দেওয়ার বিষয়টি নিশ্চিত করতে, ওপেন সোর্স কমিউনিটির সাথে কাজ করে থাকি। আমরা যেসব তথ্য সংগ্রহ করে থাকি তার বিষয়ে&nbsp;<a href="/outline-faq/answer/15331222" rel="noopener" target="_blank">এখান</a> থেকে আরও জানুন।</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="386" sourceLocale="bn">WEB:15331326</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">আমি কীভাবে 'অ্যাক্সেস কী'-তে ডেটার সীমা সেট করতে পারি?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:15859;a">আপনি সব 'অ্যাক্সেস কী'-এর ক্ষেত্রে প্রযোজ্য ডেটা সীমা সেট করতে পারবেন। সীমা সেট করতে, Outline Manager খুলে সেটিংস মেনুতে নেভিগেট করুন। সেখানে ডেটার সীমা নামে একটি টগল মেনু দেখতে পাবেন, যা চালু করা থাকলে আপনি সীমা সেট করতে পারবেন।</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787036"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">সীমা সেট করলে, 'অ্যাক্সেস কী' পৃষ্ঠাতে দেখানো সীমা থেকে প্রত্যেক ব্যবহারকারী কতটা দূরে আছেন তা আপনি দেখতে পারবেন। এখানে একটি বার গ্রাফের মাধ্যমে গত ৩০ দিনের ডেটার ব্যবহার দেখানো হয়।</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787037"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">আপনার সব 'অ্যাক্সেস কী'-তে সীমা সেট করতে পারা ছাড়াও, প্রতিটি 'অ্যাক্সেস কী'-এর নিজস্ব ডেটার সীমাও সেট করতে পারবেন। এই সেটিং আপনার সেট করা যেকোনও ডিফল্ট ডেটার সীমা ওভাররাইড করবে, তবে আপনি ডিফল্ট ডেটার কোনও সীমা সেট না করে থাকলে, যেকোনও 'অ্যাক্সেস কী'-তে এখনও ডেটার সীমা সেট করতে পারবেন।&nbsp;<br />
+  <br />
+  'অ্যাক্সেস কী'-তে ডেটা ট্রান্সফারের সীমা সেট করতে, Outline Manager খুলে, আপনার সেট করতে চাওয়া 'অ্যাক্সেস কী' যে 'কানেকশন' ট্যাবে রয়েছে সেখানে নেভিগেট করে, 'অ্যাক্সেস কী'-এর সারির ডানদিকে থাকা মেনুতে ক্লিক করুন। সেখান থেকে, 'ডেটার সীমা' বিকল্পে ক্লিক করুন। "আমার অ্যাক্সেস কী"-তে ডেটার সীমা পরিবর্তন করতে, 'ডেটার সীমা আইকনে&nbsp;<img alt="ডেটার সীমা দেখানোর আইকন" height="19" src="https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw" width="19" />' ক্লিক করুন।</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787423"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">'কাস্টম ডেটার সীমা সেট করুন' বিকল্প বেছে নিন। এই চেকবক্স বেছে নিলে একটি ফিল্ড দেখতে পাবেন, যেখানে আপনি ওই অ্যাক্সেস কী-তে কাস্টম করা ডেটার সীমা সেট করতে পারবেন। সব হয়ে গেলে, ডেটার সীমা সেভ করতে, 'সেভ করুন' বোতামে ক্লিক করুন।</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15788959"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">বেছে নেওয়া 'অ্যাক্সেস কী'-তে ডেটা ট্রান্সফারের সীমা সেভ করলে, প্রতিটি 'অ্যাক্সেস কী'-তে ব্যবহৃত ডেটার (গত ৩০ দিনের) পাশাপাশি, প্রধান স্ক্রিনে সংশ্লিষ্ট সীমা দেখানো হবে।</p>
+
+<p data-aura-rendered-by="12:15859;a">কোনও 'অ্যাক্সেস কী' থেকে ডেটার সীমা সরাতে, সংশ্লিষ্ট 'অ্যাক্সেস কী'-তে ডেটার সীমা আগে যেখানে ছিল সেখানে নেভিগেট করে 'কাস্টম ডেটার সীমা সেট করুন' লেবেল যুক্ত বক্স থেকে টিকচিহ্ন সরান এবং 'সেভ করুন' বোতামে ক্লিক করুন।</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15788414"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a"><b><strong>ডেটার সীমা সংক্রান্ত প্রায়শই জিজ্ঞাসিত প্রশ্ন</strong></b><br />
+  <br />
+  <strong><b>৩০-দিনের ট্রেলিং ডেটা সীমা বলতে কী বোঝায়?</b></strong><br />
+  <br />
+  ৩০-দিনের ট্রেলিং ডেটা সীমা, গত ৩০ দিন ধরে প্রতিটি 'অ্যাক্সেস কী'-তে ব্যবহৃত ডেটা যোগ করবে এবং ওই সময়ের মধ্যে 'অ্যাক্সেস কী'-তে ডেটার ব্যবহার সীমার মধ্যে রাখবে। এর ফলে ৩০ দিন বা তার চেয়ে কম দিন রয়েছে এমন মাস সহ, যেকোনও ৩০ দিন সময়ের মধ্যে ওই 'কী' নির্ধারিত সীমার বাইরে ডেটা ব্যবহার করতে পারবে না। এর প্রভাবে, প্রত্যেক ব্যবহারকারীর উপলভ্য ডেটা, ৩১ দিন আগে তার ব্যবহার করা ডেটার চেয়ে প্রতি দিন বাড়বে।</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Outline কেন ট্রেলিং ডেটা সীমা ব্যবহার করে?</strong><br />
+  <br />
+  ট্রেলিং ডেটা সীমা আপনাকে প্রতি ৩০ দিনের গ্যারেন্টি দেয়। এর মানে হল, একই রকম গ্যারেন্টি দেওয়ার বিচারে এটি রেকারিং সীমার চেয়ে সহজতর বিকল্প (যেমন কোনও মাসে এমন দিন যেটি কাস্টমাইজ করা যায়)। এটি বর্তমানে দেখানো Outline ডেটা ব্যবহারের পাশাপাশি, অ্যানালিটিক্স পরিষেবা ও সার্ভার সংক্রান্ত পরিসংখ্যানের সাধারণ টুলের সাথেও ম্যাচ করে।</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>ডেটা সীমায় কোন কোন ডেটা গণনা করা হয়?</strong><br />
+  <br />
+  সার্ভার থেকে প্রতিটি 'অ্যাক্সেস কী'-এর বেরিয়ে যাওয়াকে এই তালিকায় অন্তর্ভুক্ত করা হয়। এটি কঠোরভাবে বলা হচ্ছে মানে, 'কী'-এর হয়ে সার্ভারের বাইরে ডেটা পাঠানো হয়েছে, একই সাথে ক্লায়েন্টের কাছেও তা ফেরানো হয়েছে। প্রকৃতপক্ষে, এটি 'কী' থেকে সার্ভারে ডেটা পাঠানো ও ফেরানোর খুব কাছাকাছি হওয়ার কথা, তাই আমাদের আশা এটি আপনার ব্যবহারকারীদের তালিকার সাথে ম্যাচ করবে। আমরা যে ক্লাউড পরিষেবা প্রদানকারীর বিল সমীক্ষা করেছি, তা থেকে বেরিয়ে আসার সিদ্ধান্ত নিয়েছি।</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>ডেটার সীমা পেরিয়ে গেলে কি ব্যবহারকারীকে সেই ব্যাপারে বিজ্ঞপ্তি পাঠানো হয়?</strong><br />
+  <br />
+  এখনই নয়। অনেক ক্লাউড পরিষেবা প্রদানকারীরই সারা মাসে ১ টিবির মতো সীমা থাকে, যা ১০ জন ব্যবহারকারীকে ১০০ জিবি বা ১০০ জন ব্যবহারকারীকে ১০ জিবি করে ডেটা দিতে পারে। এগুলি যথেষ্ট বড় সংখ্যা এবং আমাদের মনে হয় না যে ব্যবহারকারীরা সবটা খরচ করতে পারবেন। আমাদের আশা, ব্যবহারকারীরা তাদের ব্যবহারের সীমায় পৌঁছে গেলে, সার্ভার ম্যানেজারের সঙ্গে যোগাযোগ করবেন। যাই হোক, আপনার ব্যবহার করার বিষয়ে বিজ্ঞপ্তি কীভাবে সাহায্য করতে পারে, সেই ব্যাপারে আপনার ইনসাইটকে আমরা গুরুত্ব দেব এবং আপনি<a href="https://support.getoutline.org/s/contactsupport" target="_blank"> এখানে</a> আমাদের সাথে যোগাযোগ করতে পারবেন।</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>ডেটার সীমায় পৌঁছালে কি ব্যবহারকারীকে বিজ্ঞপ্তি পাঠিয়ে জানানো হয়?</strong><br />
+  <br />
+  নতুন করে ডেটা ব্যবহার করার যে সীমা সেট করা হয়েছে, ব্যবহারকারী তা প্রায় পুরোটা ব্যবহার করে ফেললে, তিনি যে ডেটা পাবেন তা আলাদা হবে, কারণ সেটি ৩০ দিন আগে ব্যবহার করা ডেটার ভিত্তিতে পাওয়া। আমরা মনে করি যে, গ্রাহকদের সতর্ক করলে, সেটি তাদের সাহায্য করার বদলে বেশি বিভ্রান্তিকর হতে পারে। এই বিষয়ের ব্যাপারে, আমরা<a href="https://support.getoutline.org/s/contactsupport" rel="noopener" target="_blank"> এখানে</a> আপনার মতামত আশা করব।</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>ব্যবহারকারীর ডেটার ব্যবহার কি আমি রিসেট করতে পারি?</strong><br />
+  <br />
+  না, এর সীমা সবসময় বিগত ৩০ দিনের ডেটা ব্যবহারের উপরে নির্ভর করে। যদিও আপনি একটি 'কী'-এর ডেটার সীমা বাড়াতে বা তার জন্য একটি নতুন 'কী' তৈরি করতে পারবেন।</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>ডেটার সীমা চালু করা মাত্রই কেন আমার কিছু ব্যবহারকারীর অ্যাক্সেস বন্ধ হয়েছে?</strong><br />
+  <br />
+  ডেটার সীমার ভিত্তি হল, আগের ৩০ দিনে ব্যবহারকারীর ট্রান্সফার করা ডেটা, যেটি ডেটার সীমা চালু থাকা বা না থাকার উপরে নির্ভর না করে রেকর্ড করা হয়েছে। এমনও হতে পারে, যেসব ব্যবহারকারীরা অ্যাক্সেস হারিয়েছেন, তারা এটি চালু করার আগেই ডেটা ব্যবহারের সীমা পার করে ফেলেছেন।&nbsp; এছাড়াও মনে রাখবেন যে, একটিমাত্র 'অ্যাক্সেস কী'-এর ডেটার সীমা পরিবর্তন করার সময়েও সমস্ত ডেটার সীমা প্রযোজ্য হয়।</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>আমি কি সার্ভার-ওয়াইড সীমা সেট করতে পারব, যেমন "প্রতি ৩০ দিনের জন্য ১ টিবি"?</strong><br />
+  <br />
+  এখনই নয়। আপনার ডেটা ব্যবহার করার বিষয়ে, আমরা<a href="https://support.getoutline.org/s/contactsupport" rel="noopener" target="_blank"> এখানে</a> আরও শুনতে চাই।</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>ডেটার কোনও ডিফল্ট সীমা এবং নির্দিষ্ট 'অ্যাক্সেস কী'-তে ডেটার সীমা নির্ধারণ করা হলে, এদের মধ্যে কোনটি প্রযোজ্য হবে?</strong><br />
+  <br />
+  নির্দিষ্ট 'অ্যাক্সেস কী'-তে ডেটার সীমা, আপনার সেট করা ডিফল্ট ডেটার (যদি করে থাকেন) সীমা ওভাররাইড করে প্রযোজ্য হবে।</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>ডেটার ডিফল্ট সীমা সেট না করে, আমি কি কোনও নির্দিষ্ট 'কী'-তে ডেটার সীমা সেট করতে পারি?</strong><br />
+  <br />
+  হ্যাঁ।&nbsp; একটি 'কী'-তে ডেটার সীমা সেট করার জন্য, নির্দিষ্ট করে দেওয়া কোনও ডিফল্ট সীমা আপনার প্রয়োজন নেই।&nbsp; যেমন, যে 'কী' দিয়ে অনেক বেশি ডেটা শেয়ার করা হতে পারে বলে আপনি মনে করছেন, সেই নির্দিষ্ট 'কী' দিয়ে অত্যধিক ডেটা ট্রান্সফার করে ফেলা থেকে নিজেকে আটকাতে, আপনি সেই 'কী'-তে সীমা সেট করতে পারবেন।</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="bn">WEB:15331327</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">আমার সার্ভার আইডি আমি কীভাবে রিসেট করতে পারব?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:23999;a">সার্ভার আইডি হল একটি 'সার্ভার-সাইড আইডি' যা কোনও Outline সার্ভার তৈরি করার সময় র‌্যান্ডমভাবে তৈরি করা হয়। 'সেটিংস' ইন্টারফেসে পরিচয় গোপন করা মেট্রিকে শেয়ার করার বিকল্প বেছে নেওয়ার সময় আপনি এটি খুঁজে পেতে পারবেন। আপনি এখান থেকে সার্ভার আইডির লোকেশন খুঁজে পেতে পারবেন: সেটিংস =&gt; নিচের দিকে স্ক্রল করুন =&gt; "পরিচয় গোপন করা মেট্রিক শেয়ার করুন" বিকল্প চেক করুন।</p>
+
+<p data-aura-rendered-by="12:23999;a">সময়ের সাথে সাথে রিপোর্ট করা হয়েছে এমন পরিচয় গোপন করা ব্যবহারকারীর পরিসংখ্যান, সার্ভার আইডি একসাথে যোগ করে দেখায়। সার্ভার আইডি রিসেট করে একটি নতুন আইডি পেতে চাইলে, আপনাকে বর্তমান Outline সার্ভারের জায়গায় একটি নতুন সার্ভার তৈরি করতে হবে।</p>
+
+<p data-aura-rendered-by="12:23999;a">ক্লাউড পরিষেবা প্রদানকারী হিসেবে, DigitalOcean ব্যবহার করলে, 'সেটিংস' মেনুতে গিয়ে 'সার্ভার মুছে দিন' বিকল্প বেছে নিয়ে আপনার সার্ভার রিসেট করতে পারবেন। এই অ্যাকশনটি একবার করলে তাকে আর পুরনো অবস্থায় ফেরানো যায় না এবং ক্রেডেনশিয়াল মুছে দেওয়া হবে। এই অ্যাকশনের পরেই অবিলম্বে আপনার বেছে নেওয়া লোকেশনে একটি নতুন সার্ভার তৈরি করার জন্য প্রম্পট পাঠানো এবং একটি নতুন সার্ভার আইডি তৈরি করা হবে।</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="103" sourceLocale="bn">WEB:15331328</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline সার্ভারের লোকেশন আমি কীভাবে পরিবর্তন করতে পারব?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:24761;a">একবার সেট-আপ করা হয়ে গেলে, সার্ভারের লোকেশন পরিবর্তন করা যায় না। অন্য একটি লোকেশন থেকে সার্ভার রান করতে, আপনাকে Outline সার্ভার মুছে দিয়ে একটি নতুন সার্ভার তৈরি করতে হবে।</p>
+
+<p data-aura-rendered-by="12:24761;a"><br />
+  বিকল্প হিসেবে, <a href="https://developers.google.com/outline/docs/guides/service-providers/dynamic-access-keys" target="_blank">ডায়নামিক কী</a>, ব্যবহার করেও আপনার VPN-এর লোকেশন পরিবর্তন করতে পারবেন। এর ফলে আপনি একই কী বজায় রেখেও সার্ভার রোটেট করতে পারবেন। সার্ভারের লোকেশনে নিজের থেকে কোনও পরিবর্তন হবে না।</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="102" sourceLocale="bn">WEB:15331423</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">কীভাবে মতামত বা সাজেশন পাঠাতে হয়</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:22486;a">Outline আরও ভালো করতে সাহায্য করার জন্য ধন্যবাদ! আমাদের মতামত পাঠানোর একাধিক উপায় আছে, আপনি পরিচয় গোপন করে পাঠাতে পারেন অথবা আমাদের থেকে উত্তর পাওয়ার দরকার হলে আপনার ইমেল সহ পাঠাতে পারেন:</p>
+
+<ul data-aura-rendered-by="12:22486;a">
+  <li><strong>ডেভেলপারদের জন্য</strong>:&nbsp;Outline হল ওপেন সোর্স সফ্টওয়্যার এবং আমাদের সব কোড আমরা&nbsp;<a href="https://github.com/jigsaw-Code/?q=outline" target="_blank">GitHub</a>-এ হোস্ট করে থাকি। আপনি GitHub-এ অথবা আমাদের&nbsp;<a href="https://www.reddit.com/r/outlinevpn/" target="_blank">Reddit</a>&nbsp;কমিউনিটিতে নিজের আইডিয়া শেয়ার করতে পারেন।&nbsp;</li>
+  <li><strong>ব্যবহারকারীদের জন্য</strong>: আপনি Outline অথবা Outline Manager অ্যাপের মাধ্যমে আমাদের মতামত পাঠাতে পারবেন। কোন বিষয়ে মতামত দিচ্ছেন তা আমাদের জানান এবং চাইলে নিজের ইমেল আইডি লিখুন যাতে আমরা এই বিষয়ে আপনাকে উত্তর দিতে পারি। এছাড়াও, আমরা আপনার এনভায়রনমেন্টের বিষয়ে কিছু মেটাডেটা সংগ্রহ করি যা কাজে লাগিয়ে আমরা আপনার ব্রাউজার, অপারেটিং সিস্টেম সংক্রান্ত সমস্যার সমাধান করতে সাহায্য করি ও আপনি কোন সফ্টওয়্যার ভার্সন ব্যবহার করছেন তা বুঝতে পারি।</li>
+  <li><strong>এই সাইটের মাধ্যমে</strong>: এই সাইটের যেখানেই আপনি আমাদের সাথে যোগাযোগ করুন লেখা লিঙ্কটি দেখতে পাবেন, সেখানে ক্লিক করে যোগাযোগ করতে পারেন।</li>
+  <li><strong>গুরুতর সমস্যা</strong>: আপনি সুরক্ষা সম্পর্কিত গুরুতর কোনও ঘটনার বিষয়ে অভিযোগ জানাতে চাইলে আমাদের security [at] <a href="https://getoutline.org/" rel="noopener" target="_blank">getoutline.org</a> আইডিতে ইমেল পাঠাতে পারেন।</li>
+</ul>
+
+<p data-aura-rendered-by="12:22486;a">সময় বের করে আপনার মতামত ও ভাবনাচিন্তা আমাদের সাথে শেয়ার করার জন্য ধন্যবাদ।</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="146" sourceLocale="bn">WEB:15331424</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">একটি Outline সার্ভারে অ্যাক্সেস ম্যানেজ করা (অ্যাক্সেস কী সহ)</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:25527;a">Outline সার্ভার ইনস্টল করা সম্পূর্ণ হলে, এখন আপনি সার্ভারে ব্যক্তিদের অ্যাক্সেস শেয়ার ও ম্যানেজ করা শুরু করতে পারবেন। আপনার কাছ থেকে আমন্ত্রণ পাওয়া ব্যক্তি এখন Outline অ্যাপ ডাউনলোড করে Outline ব্যবহার করতে পারবেন যা তাকে ইন্টারনেট ট্রাফিক সুরক্ষিত করতে সাহায্য করবে।</p>
+
+<p data-aura-rendered-by="12:25527;a"><strong>আপনার Outline সার্ভারের অ্যাক্সেস শেয়ার করা</strong><br />
+  Outline সার্ভার ইনস্টল করার কাজ শেষ হলে, আপনাকে Outline Manager-এ 'সার্ভারের বিবরণ' পৃষ্ঠায় ডাইরেক্ট করা হবে যেখানে আপনি অ্যাক্সেস কী তৈরি করতে পারবেন। <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">অ্যাক্সেস কী</a>-এর ব্যাপারে আরও জানুন।</p>
+
+<ul data-aura-rendered-by="12:25527;a">
+  <li>কী তৈরি করা: নতুন কী তৈরি করতে, পৃষ্ঠার সবচেয়ে নিচে দেখানো ছোট "+" আইকনে ক্লিক করুন।</li>
+  <li>কী শেয়ার করা: প্রতিটি কীয়ের ডানদিকে, একটি শেয়ার করার আইকন আছে যাতে ক্লিক করে আপনি একটি আমন্ত্রণ পেতে পারেন। আপনার পছন্দসই মেসেজিং সিস্টেমে এই আমন্ত্রণ কপি ও পেস্ট করুন।</li>
+</ul>
+
+<p data-aura-rendered-by="12:25527;a"><strong>অনুরোধ ফিচার করা: Outline Manager অ্যাপ থেকে অ্যাক্সেস শেয়ার করা</strong><br />
+  অনেক সার্ভার অ্যাডমিনিস্ট্রেটর আমাদের অনুরোধ জানিয়েছেন যে Outline Manager-এ সরাসরি কোনও ব্যক্তির ইমেল আইডি লেখার বিকল্প চালু করে, আমরা যেন আমন্ত্রণ জানানোর প্রক্রিয়াকে আরও সহজ করে তুলি।</p>
+
+<p data-aura-rendered-by="12:25527;a">আমরা যদিও Outline Manager অ্যাপের মধ্যে এই কার্যকারিতা তৈরি করতে চাই না। আমাদের প্রধান নীতিগুলির মধ্যে একটি হল ব্যবহারকারীর গোপনীয়তা ও নিরাপত্তা সুরক্ষিত রাখতে সাহায্য করা। তাই আমাদের প্ল্যাটফর্মে এমন কোনও প্লেস ডিজাইন করা হয়নি, যেখানে কারও ইমেল আইডি বা যোগাযোগের তথ্য যোগ করা যায়।</p>
+
+<p data-aura-rendered-by="12:25527;a">এই কারণে, ব্যবহারকারীকে আমন্ত্রণ পাঠানোর জন্য আমরা সার্ভার অ্যাডমিনিস্ট্রেটরদের ইমেল বা সুরক্ষিত চ্যাটের মতো কোনও নিরাপদ মেসেজিং প্ল্যাটফর্ম ব্যবহার করতে বলি।<br />
+  <br />
+  <strong>আপনি ব্যবহারকারীর সাথে অ্যাক্সেস কী শেয়ার করার পরে তার অভিজ্ঞতা কেমন হয়</strong></p>
+
+<ol data-aura-rendered-by="12:25527;a">
+  <li>ব্যবহারকারী তার ডিভাইস থেকে ইনস্টল করার লিঙ্কে ক্লিক করবেন</li>
+  <li>আগে থেকে না করলে, ব্যবহারকারীকে Outline অ্যাপ ইনস্টল করার জন্য প্রম্পট মেসেজ পাঠানো হবে</li>
+  <li>আমন্ত্রণের মধ্যে এম্বেড করা স্বতন্ত্র কীয়ের মাধ্যমে আপনার Outline সার্ভারের সাথে ব্যবহারকারীর একটি প্রারম্ভিক কানেকশন স্থাপিত হবে</li>
+  <li>আপনার Outline সার্ভারের মাধ্যমে ইন্টারনেটের অ্যাক্সেস ম্যানেজ করতে, ব্যবহারকারী এখন 'কানেক্ট করুন'/'ডিসকানেক্ট করুন' বোতাম ব্যবহার করতে পারবেন</li>
+</ol>
+
+<p data-aura-rendered-by="12:25527;a"><strong>আপনার Outline সার্ভার থেকে অ্যাক্সেস সরানো</strong><br />
+  Outline Manager-এর 'সার্ভারের বিবরণ' পৃষ্ঠাতে, আপনি সার্ভারে দেখানো প্রতিটি কীয়ের ডানদিকে, কী মুছে দেওয়ার বিকল্প সহ মেনু দেখতে পাবেন। কী মুছে দেওয়ার অর্থ হল সার্ভার থেকে তার অ্যাক্সেস সরিয়ে দেওয়া।</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="92" sourceLocale="bn">WEB:15331524</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">getoutline.org ব্লক করা থাকলে, আমি কীভাবে Outline রিসোর্স অ্যাক্সেস করতে পারব?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">আপনি <a href="http://getoutline.org/" target="_blank">getoutline.org</a> অ্যাক্সেস করতে না পারলে <a href="https://s3.amazonaws.com/outline-vpn/index.html" target="_blank">এই মিরর করা সাইট বুকমার্ক করুন</a> ও ব্যবহার করুন।</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="321" sourceLocale="bn">WEB:15331527</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Linux-এ Outline ক্লায়েন্ট ইনস্টল করা</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Linux অপারেটিং সিস্টেমের জন্য, Outline Client-এর ভার্সন 1.15 থেকে শুরু করে ভবিষ্যতের সব ভার্সন Debian প্যাকেজ হিসেবে রিলিজ করা হবে। আমরা কোন অপারেটিং সিস্টেম সমর্থন করি সে সম্পর্কে আরও জানতে, আমাদের <a href="/outline/answer/15330818" rel="noopener" target="_blank"><u>ন্যূনতম সিস্টেমের প্রয়োজনীয়তা</u></a> দেখুন।</p>
+&nbsp;
+
+<p><strong>Debian-ভিত্তিক Linux ডিস্ট্রিবিউশনের জন্য Outline Client ইনস্টল করুন (সাজেস্ট করা)</strong></p>
+&nbsp;
+
+<p>এই কমান্ডগুলি রান করুন:</p>
+
+<ol>
+  <li aria-level="1">Outline-এর রিপোজিটরি কী ইনস্টল করুন এবং রিপোজিটরি যোগ করুন।
+    <div class="code">
+      <div class="no-margin">
+        <p>wget -qO- https://us-apt.pkg.dev/doc/repo-signing-key.gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/gcloud-artifact-registry-us.gpg</p>
+
+        <p>echo "deb [arch=amd64] https://us-apt.pkg.dev/projects/jigsaw-outline-apps outline-client main" | sudo tee /etc/apt/sources.list.d/outline-client.list</p>
+      </div>
+    </div>
+  </li>
+</ol>
+
+<p>&nbsp; ২.&nbsp;&nbsp;APT প্যাকেজের তালিকা আপডেট করুন এবং Outline Client-এর লেটেস্ট ভার্সন ইনস্টল করুন।</p>
+
+<div class="code">
+  <div class="no-margin">
+    <p>&nbsp; &nbsp;sudo apt update</p>
+
+    <p>&nbsp; &nbsp;sudo apt install outline-client</p>
+  </div>
+</div>
+
+<p>ভবিষ্য়তের আপডেট চেক এবং ইনস্টল করতে, ধাপ ২-এ আবার কমান্ডগুলি রান করুন। মনে রাখবেন যে Linux-এ Outline Client-এর 1.15 এবং পরবর্তী ভার্সনে অ্যাপে অটো-আপডেট ফিচারটি বন্ধ করা আছে।</p>
+
+<p>Outline Client আনইনস্টল করতে, এই কমান্ড রান করুন:</p>
+
+<div class="code">
+  <div class="no-margin">sudo apt purge outline-client</div>
+</div>
+
+<p><strong>অন্য বিকল্প</strong></p>
+
+<ol>
+  <li aria-level="1"><a href="https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb" rel="noopener" target="_blank">https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb</a> থেকে লেটেস্ট Outline Client Debian প্যাকেজ ডাউনলোড করুন</li>
+  <li aria-level="1">প্যাকেজ ইনস্টল করতে কমান্ড লাইনে এই কমান্ডগুলি রান করুন</li>
+</ol>
+
+<div class="code">
+  <div class="no-margin">
+    <p>wget -O ./outline-client.deb https://s3.amazonaws.com/outline-&nbsp; &nbsp; &nbsp; releases/client/linux/stable/outline-client_amd64.deb</p>
+
+    <p>sudo apt install ./outline-client.deb</p>
+  </div>
+</div>
+
+<p>&nbsp; ৩.&nbsp;&nbsp;ম্যানুয়ালি আপডেট চেক করুন, কারণ Linux-এ Outline Client-এর 1.15 এবং পরবর্তী ভার্সনে ইন-অ্যাপ অটো-আপডেট ফিচারটি বন্ধ করা আছে।</p>
+
+<p>&nbsp; ৪.&nbsp; Outline Client আনইনস্টল করতে, কমান্ড লাইনে এই কমান্ড রান করুন::</p>
+
+<div class="code">
+  <div class="no-margin">sudo apt purge outline-client</div>
+</div>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="206" sourceLocale="bn">WEB:15331528</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">কোনও 'অ্যাক্সেস কী' কি একবারের বেশি ব্যবহার করা যায়?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1895;a">হ্যাঁ। আপনি যতগুলি খুশি ডিভাইসে&nbsp;<a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">অ্যাক্সেস কী</a> ব্যবহার করতে পারবেন, তবে আপনার 'কী' অন্য কোনও ব্যক্তির সাথে শেয়ার করার সাজেশন আমরা দিই না। আপনার 'অ্যাক্সেস কী' যার কাছে থাকবে, সেই ব্যক্তির কাছে ইন্টারনেট ট্রাফিকের অ্যাক্সেস থাকলে, তিনি আপনার সব ট্রাফিক হয়ত পরীক্ষা করে দেখতে পারবেন এবং এর ফলে আপনার ইন্টারনেট ব্যবহার আর সুরক্ষিত বা গোপনীয় থাকবে না।</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="104" sourceLocale="bn">WEB:15331529</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline সার্ভারের সাথে আপনার ডিভাইসটি কানেক্ট করা</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1399;a">&nbsp;</p>
+
+<p data-aura-rendered-by="12:1399;a"><strong>Outline সার্ভারের সাথে আপনার ডিভাইসটি কানেক্ট করা</strong></p>
+
+<p data-aura-rendered-by="12:1399;a">Outline সার্ভারের সাথে আপনার ডিভাইস কানেক্ট করতে হলে, সার্ভার অ্যাডমিনিস্ট্রেটরকে একটি অনন্য&nbsp;<a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">অ্যাক্সেস কী</a> ব্যবহার করে তার সার্ভারে কানেক্ট করার জন্য আপনাকে আমন্ত্রণ পাঠাতে হয়। এই আমন্ত্রণ:</p>
+
+<ul data-aura-rendered-by="12:1399;a">
+  <li>আপনি আগে ডাউনলোড না করে থাকলে, আপনাকে একটি প্রম্পট মেসেজ পাঠিয়ে এখন আপনার ডিভাইসে Outline ডাউনলোড ও ইনস্টল করতে বলা হবে</li>
+  <li>অ্যাক্সেস 'কী' ব্যবহার করে আপনার এবং Outline সার্ভারের মধ্যে একটি সুরক্ষিত কানেকশন তৈরি করবে</li>
+</ul>
+
+<p data-aura-rendered-by="12:1399;a">সার্ভারের সাথে কানেক্ট করার পরে, আপনি Outline ব্যবহার করতে, "কানেক্ট করুন" বা "ডিসকানেক্ট করুন" বিকল্পে ক্লিক করতে পারবেন।</p>
+
+<p data-aura-rendered-by="12:1399;a"><em>গুরুত্বপূর্ণ:</em>&nbsp;Outline, অ্যাক্সেস 'কী' ও Outline সার্ভার ছাড়া কাজ করতে পারে না। 'কী' ব্যবহার না করে Outline অ্যাপ ডাউনলোড ও ইনস্টল করলে, সেই অ্যাপ আপনার ইন্টারনেট ট্রাফিক সুরক্ষিত রাখতে পারবে না।</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="100" sourceLocale="bn">WEB:15331530</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline সার্ভার কীভাবে সেট-আপ করা যায়?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:27063;a">Outline ব্যবহারের উপযুক্ত হওয়ার প্রথম ধাপ হল, একটি Outline সার্ভার সেট-আপ করা। Outline-এর মাধ্যমে ওপেন ইন্টারনেটে কানেক্ট করতে আপনি অথবা আপনার বিশ্বস্ত কাউকে আপনার হয়ে সার্ভার সেট-আপ করতে হবে।<br />
+  <br />
+  <strong>শুরু করার আগে</strong><br />
+  আপনার Outline সার্ভার সেট-আপ শুরু করার আগে, আপনার কয়েকটি জিনিসের প্রয়োজন হতে পারে:</p>
+
+<ol data-aura-rendered-by="12:27063;a">
+  <li>আপনার নিজস্ব সার্ভার বা ক্লাউড পরিষেবা প্রদানকারী, যেমন DigitalOcean, Amazon Web Services (AWS) বা Google Cloud Platform (GCP) অ্যাক্সেস করুন।<br />
+    কোনও ক্লাউড সার্ভারে আপনার তৎক্ষণাৎ অ্যাক্সেস না থাকলে, আপনি উপরে উল্লেখ করা ক্লাউড পরিষেবা প্রদানকারী সহ অন্যান্য কোনও ক্লাউড পরিষেবা প্রদানকারী মাধ্যমে সহজেই অ্যাকাউন্ট সেট-আপ করতে পারবেন। সাইন-আপ করার জন্য ক্রেডিট কার্ডের প্রয়োজন হতে পারে।</li>
+  <li>macOS 10.9+, Windows 7.0+ অথবা Linux সিস্টেমে চলা ডেস্কটপ কম্পিউটার।</li>
+  <li>Outline Manager অ্যাপ্লিকেশন।</li>
+</ol>
+
+<p data-aura-rendered-by="12:27063;a"><strong>DigitalOcean-এর মাধ্যমে সেট-আপ করা</strong><br />
+  <br />
+  আমরা DigitalOcean-এ Outline ইনস্টল করার কাজ এখন সহজ করেছি এবং এটি যেকেউ কয়েকটি ক্লিকেই করে ফেলতে পারবে। কম্পিউটারে Outline Manager ডাউনলোড ও ইনস্টল করার পর আপনি DigitalOcean সেট-আপ বিকল্পটি বেছে নিলে আপনাকে স্ক্রিনে সহজ কয়েকটি ধাপ দেখানো হবে যা কাজে লাগিয়ে আপনি নিজের Outline সার্ভার ইনস্টল ও কনফিগার করতে পারবেন।<br />
+  <br />
+  <strong>অন্য কোনও ক্লাউড প্রদানকারীর মাধ্যমে সেট-আপ করা</strong><br />
+  <br />
+  Outline Manager ডাউনলোড ও ইনস্টল করার পর আপনি AWS, GCP, DigitalOcean অথবা অন্য কোনও পরিষেবা প্রদানকারীর মাধ্যমে কোনও ভার্চুয়াল মেশিনে Outline সার্ভার ইনস্টল করার বিকল্প বেছে নিতে পারেন। প্রতিটি এনভায়রনমেন্ট আলাদা হওয়ার ফলে আমরা সাধারণ ক্লাউড প্রদানকারীদের জন্য Outline Manager সেট-আপ ফ্লোয়ের মধ্যে নির্দেশাবলী যুক্ত করেছি, এবং আপনি সার্ভারে Outline ইনস্টল করার জন্য ইনস্টলেশন স্ক্রিপ্ট রান করানোর আগে ভার্চুয়াল মেশিনে কীভাবে সেটিংস কনফিগার করবেন ইত্যাদি তথ্য এতে দেওয়া রয়েছে।<br />
+  <br />
+  <strong><em>আরও সাহায্যের প্রয়োজন?</em></strong><br />
+  <br />
+  আমাদের&nbsp;<a href="/outline-faq/answer/15331728" rel="noopener" target="_blank">outline সার্ভার সেট-আপ সংক্রান্ত প্রায়শই জিজ্ঞাসিত প্রশ্ন</a> দেখুন।</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="95" sourceLocale="bn">WEB:15331625</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">আমার কাছে কি Outline ব্র্যান্ড ব্যবহার বা কপি করার অনুমতি আছে?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Outline, ওপেন সোর্স ও কোনও চার্জ ছাড়াই ব্যবহার করা গেলেও, আমাদের ব্র্যান্ডের মালিকানা Jigsaw-এর হাতে আছে এবং এর অপব্যবহার করা যায় না। <a href="https://github.com/Jigsaw-Code/outline-brand/blob/main/outline_brand_user_guide.pdf" target="_blank">ব্যবহারকারীর নির্দেশিকা</a> ফলো করে এটি নিশ্চিত করুন যে আপনি কোনও সম্ভাব্য বিভ্রান্তিকর দাবি করেননি বা Outline বা Jigsaw-এর সাথে আপনার সম্পর্ককে অনৈতিকভাবে দেখাননি। তার সাথে অনুমোদিত ব্র্যান্ড এলিমেন্ট সঠিকভাবে ব্যবহার করছেন কিনা তাও দেখে নিন।</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="191" sourceLocale="bn">WEB:15331628</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">আমি কীভাবে 'অ্যাক্সেস কী' পেতে পারি?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:3258;a">Outline কোনও VPN পরিষেবার মতো নয়, যেখানে আপনি সেটির অ্যাক্সেস কিনতে পারবেন; এটি <a href="https://getoutline.org/#:~:text=Two%20Products%20that%20Work%20Together" target="_blank">একটি টুল</a>, যা আপনাকে একটি ব্যক্তিগত VPN সার্ভার চালাতে এবং তার অ্যাক্সেস শেয়ার করতে দেয়। <a href="/outline/answer/15330920#servicemanager" rel="noopener" target="_blank">পরিষেবা ম্যানেজারই</a>&nbsp;একমাত্র ব্যক্তি যিনি 'অ্যাক্সেস কী' প্রদান করতে পারেন। Outline টিম ফ্রি বা পেড 'অ্যাক্সেস কী' বিতরণ করে না। আমাদের কাছে, ফার্সিতে Paskoocheh ছাড়া অন্য কোনও অফিসিয়াল Outline 'অ্যাক্সেস কী' পার্টনার নেই।<br />
+  <br />
+  নিচে 'অ্যাক্সেস কী' পাওয়ার তিনটি বিকল্প দেওয়া হল:&nbsp;</p>
+
+<ul data-aura-rendered-by="12:3258;a">
+  <li>কোনও ব্যক্তির সার্ভারে আপনাকে আমন্ত্রণ জানানোর জন্য অনুরোধ করুন: আপনি যদি এমন কোনও ব্যক্তিকে চেনেন যার একটি Outline সার্ভার আছে, তাহলে তার সাথে যোগাযোগ করে 'অ্যাক্সেস কী' দেওয়ার জন্য অনুরোধ জানান।</li>
+  <li><a href="/outline/answer/15331530" rel="noopener" target="_blank">নিজেই একটি সার্ভার তৈরি করুন:</a> Windows, Mac বা Linux কম্পিউটার ব্যবহার করে, <a href="https://getoutline.org/get-started/#step-1" target="_blank">Outline Manager</a> ডাউনলোড এবং আপনার নিজের ব্যক্তিগত <a href="/outline/answer/15330920" rel="noopener" target="_blank">Outline সার্ভার</a> সেট-আপ করুন। আমরা, ক্লাউড পরিষেবা প্রদানকারী, DigitalOcean-এর মাধ্যমে, যেকোনও ব্যক্তির জন্য এই প্রক্রিয়াকে আরও সহজ করে তুলেছি।</li>
+  <li>Outline অথবা <a href="https://en.wikipedia.org/wiki/Shadowsocks#:~:text=Shadowsocks%20is%20a%20free%20and,have%20been%20made%20available%20since." target="_blank">Shadowsocks</a> পরিষেবা ব্যবহার করুন: Outline ক্লায়েন্ট, এমন থার্ড-পার্টি পরিষেবার সাথেও ব্যবহার করা যেতে পারে, যেটি Outline বা Shadowsocks প্রোটোকল ব্যবহার করে। যেমন:
+    <ul>
+      <li><a href="http://nthlink.com/" target="_blank">nthLink</a> একটি Outline-নির্ভর ফ্রি পরিষেবা চালায়, যা হল Outline ক্লায়েন্টের একটি পরিবর্তিত ভার্সন।</li>
+      <li><a href="https://www.reddit.com/r/outlinevpn/comments/nwu1se/the_outline_distribution_system_is_here_to_help/" target="_blank">ASL19</a>, Outline-এর একটি পরিবর্তিত ভার্সন চালায়, যার নাম হল <a href="https://beepassvpn.com/" target="_blank">BeePass</a> তাছাড়াও, <a href="https://t.me/paskoochehbot" target="_blank">একটি Telegram বটও</a> চালায় যা BeePass সার্ভারের জন্য ফ্রি 'অ্যাক্সেস কী' প্রদান করে।</li>
+      <li>ফার্সি ভাষার ব্যবহারকারীরাও <a href="https://outline.paskoocheh.com/" target="_blank">ASL19-এর Paskoocheh</a> কাছে Outline 'অ্যাক্সেস কী' দেওয়ার অনুরোধ জানাতে পারেন।</li>
+    </ul>
+  </li>
+</ul>
+
+<p>'Outline ক্লায়েন্ট' অ্যাপ ডাউনলোড করার পর, আপনার <a href="/outline/answer/15330920#accesskey" rel="noopener" target="_blank">'অ্যাক্সেস কী'</a>&nbsp;Outline ক্লায়েন্ট প্ল্যাটফর্মে কপি ও পেস্ট করুন যাতে Outline সার্ভারের সাথে কানেক্ট করতে পারেন।&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="133" sourceLocale="bn">WEB:15331630</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">আমি কীভাবে Outline সার্ভার মুছে দিতে পারি?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:14046;a">বেশিরভাগ ক্লাউড পরিষেবা প্রদানকারীর পক্ষে আপনার ব্যবহার করা নির্দিষ্ট ভার্চুয়াল মেশিন সরিয়ে দেওয়া খুবই সহজ।</p>
+
+<p data-aura-rendered-by="12:14046;a">ক্লাউড পরিষেবা প্রদানকারী হিসেবে, DigitalOcean ব্যবহার করলে, 'গিয়ার' বোতামে ক্লিক করে এবং 'সার্ভার মুছে দিন' বিকল্প বেছে নিয়ে আপনার বর্তমান ভার্চুয়াল মেশিন মুছে দিতে পারবেন। এর পরেই অবিলম্বে বেছে নেওয়া লোকেশনে একটি নতুন ভার্চুয়াল মেশিন তৈরি করার জন্য আপনাকে প্রম্পট করা হবে।</p>
+
+<p data-aura-rendered-by="12:14046;a">Outline সার্ভার সরিয়ে দিলে, এটি স্থায়ীভাবে মুছে যাবে এবং এর অ্যাক্সেস কী আর কাজ করবে না। Outline-এর মাধ্যমে অ্যাক্সেস করতে ব্যবহারকারীর যাতে কোনও অসুবিধা না হয়, তার জন্য পুরনো সার্ভার মুছে দেওয়ার আগে আপনাকে <a href="/outline-faq/answer/15331530" rel="noopener" target="_blank">নতুন Outline সার্ভার সেট-আপ</a>&nbsp; করতে এবং তার অ্যাক্সেস শেয়ার করতে হবে।</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="99" sourceLocale="bn">WEB:15331631</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">একাধিক Outline সার্ভার সেট-আপ করার পদ্ধতি</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:27908;a">অতিরিক্ত Outline সার্ভার সেট-আপ করতে, Outline Manager অ্যাপ্লিকেশনের বাঁদিকে থাকা নেভিগেশন প্যানেলে “+” আইকনে ক্লিক করুন। আপনি প্রথম সার্ভারটি যেভাবে ইনস্টল করেছিলেন, নতুন সার্ভারও সেই একই নির্দেশাবলী অনুসরণ করে করতে হবে।</p>
+
+<ul data-aura-rendered-by="12:27908;a">
+  <li>আপনি কতগুলি Outline সার্ভার তৈরি করতে পারেন সে সম্পর্কে আমরা কোনও সীমা স্থির করিনি।</li>
+  <li>আপনার তৈরি করা প্রতিটি Outline সার্ভারের জন্য একটি করে সংশ্লিষ্ট ভার্চুয়াল মেশিনের প্রয়োজন হবে।</li>
+  <li>অতিরিক্ত মেশিন বা ড্রপলেট তৈরি করলে আপনার ক্লাউড পরিষেবা প্রদানকারী আপনাকে বেশি ফি চার্জ করতে পারে। চার্জ কত হতে পারে তা নিশ্চিত করতে আপনার ক্লাউড পরিষেবা প্রদানকারীর কাছে দামের প্যাকেজ চেক করুন।</li>
+</ul>
+
+<p data-aura-rendered-by="12:27908;a"><strong>DigitalOcean-এ বাড়তি Outline সার্ভার তৈরি করা</strong></p>
+
+<p data-aura-rendered-by="12:27908;a">আপনি + আইকনে ক্লিক করে DigitalOcean-এ ইনস্টল করার জন্য বেছে নেওয়ার পর প্রথম সার্ভার যেভাবে সেট করেছেন সেই একই নির্দেশাবলী অনুসরণ করুন। এছাড়াও, Outline Manager, DigitalOcean-এর সাথে ইন্টিগ্রেট হওয়ার ফলে আমরা Outline Manager অ্যাপ থেকে না বেরিয়েই আপনার জন্য ড্রপলেট তৈরি করতে পেরেছি।</p>
+
+<p data-aura-rendered-by="12:27908;a">মনে রাখবেন, Outline Manager একই সময়ে কেবলমাত্র একটিই DigitalOcean অ্যাকাউন্টে কাজ করতে পারবে। আপনি অন্য DigitalOcean অ্যাকাউন্ট থেকে অন্য Outline সার্ভার যোগ বা তৈরি করতে চাইলে সেগুলিকে উন্নত কনফিগারেশন হিসেবে যোগ করতে পারেন।</p>
+
+<p data-aura-rendered-by="12:27908;a"><strong>GCP, AWS অথবা অন্য ক্লাউড পরিষেবা প্রদানকারীর মাধ্যমে অতিরিক্ত Outline সার্ভার তৈরি করা</strong></p>
+
+<p data-aura-rendered-by="12:27908;a">আপনার বেছে নেওয়া ক্লাউড পরিষেবা প্রদানকারীর মাধ্যমে একটি নতুন ভার্চুয়াল মেশিন তৈরি করে শুরু করুন। এরপর Outline Manager অ্যাপ খুলুন ও উন্নত ইনস্টলেশন সম্পূর্ণ করুন, ঠিক যেমনটি প্রথমবার করেছিলেন প্রায় সেরকমই।</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="96" sourceLocale="bn">WEB:15331632</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">আমি Windows-এ কেন Outline Manager ইনস্টল করতে পারছি না?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:34680;a">আপনি সমস্যা সংক্রান্ত এই মেসেজ দেখতে পেতে পারেন: "মনে হচ্ছে, Outline সঠিকভাবে ইনস্টল করা হয়নি। এটি আবার ইনস্টল করে দেখুন। এটি কাজ না করলে, <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">মতামত জমা দিন</a> বিকল্প বেছে নিন।”</p>
+
+<p data-aura-rendered-by="12:34680;a">Windows ডিভাইসে Outline ব্যবহার করলে, আপনি কখনও কখনও অপ্রত্যাশিত সমস্যার সম্মুখীন হতে পারেন। বেশিরভাগ ক্ষেত্রে, Outline TAP অ্যাডাপ্টার (ড্রাইভার) মুছে ফেলতে এবং Outline আবার ইনস্টল করতে হবে।&nbsp;</p>
+
+<p data-aura-rendered-by="12:34680;a">Windows অপারেটিং সিস্টেমের ভার্সন অনুযায়ী, ধাপগুলি আলাদা আলাদা হতে পারে, তবে TAP অ্যাডাপ্টার ও Outline কীভাবে আনইনস্টল করে আবার ইনস্টল করা যায়, সেই সংক্রান্ত সাধারণ ধাপগুলি নিচে দেখানো হল।</p>
+
+<ol data-aura-rendered-by="12:34680;a">
+  <li>Outline Manager-এর জন্য TAP অ্যাডাপ্টার আনইনস্টল করুন
+    <ol>
+      <li>ডিভাইস ম্যানেজার টুলে গিয়ে নেটওয়ার্ক অ্যাডাপ্টার বিকল্প দেখুন</li>
+      <li>TAP-Windows Adapter V9 ফাইল বা Outline-এর সাথে যুক্ত TAP অ্যাডাপ্টার খুঁজে নিন</li>
+      <li>এই অ্যাডাপ্টার আনইনস্টল করুন বা মুছে ফেলুন। মনে রাখবেন যে, এটি আপনার ইনস্টল করা অন্যান্য VPN অ্যাপের উপর প্রভাব ফেলতে পারে।&nbsp;</li>
+    </ol>
+  </li>
+  <li>Outline Manager আনইনস্টল করুন
+    <ol>
+      <li>প্রোগ্রাম ও ফিচার বিকল্পে গিয়ে 'প্রোগ্রাম আনইনস্টল করুন' বিকল্প বেছে নিন</li>
+      <li>Outline Manager অ্যাপ খুঁজে নিয়ে Outline Manager আনইনস্টল করুন</li>
+      <li><a href="https://getoutline.org/get-started/#step-1" target="_blank">Outline Manager-এর লেটেস্ট ভার্সন ডাউনলোড করুন</a>&nbsp;এবং আপনার Windows ডিভাইসে আবার ইনস্টল করুন। নতুন করে ইনস্টল করলে, এর সাথে নতুন TAP অ্যাডাপ্টার অটোমেটিক ইনস্টল হবে।</li>
+    </ol>
+  </li>
+</ol>
+
+<p data-aura-rendered-by="12:34680;a">এখনও সমস্যা হলে, <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">সহায়তা টিমের</a> সাথে যোগাযোগ করুন।&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="94" sourceLocale="bn">WEB:15331727</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Google Cloud-এর অটোমেটিক সেট-আপ</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:26310;a"><strong>এক নজরে</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Outline Manager-এ এমন একটি ফিচার আছে যা আপনাকে Google Cloud-এ রান করা কোনও সার্ভারে Outline সার্ভারকে অটোমেটিক কনফিগার করতে দেয়। আপনি এই ফিচার ব্যবহার করার বিকল্প বেছে নিলে, Outline Manager আপনার Google অ্যাকাউন্ট দিয়ে সাইন-ইন করতে বলবে, যার মাধ্যমে, আপনার Google Cloud অ্যাকাউন্ট কনফিগার করার উদ্দেশ্যে, স্থানীয় লেভেলে Outline Manager ইনস্টলেশনের জন্য নির্দিষ্ট <a href="https://developers.google.com/identity/protocols/oauth2" target="_blank"> OAuth</a> অনুমতি মঞ্জুর করতে হয়।<br />
+  আপনি এইসব অনুমতি দিতে না চাইলে, Google Cloud Platform-এ Outline রান করতে, Outline Manager-এ দেখানো উন্নত সেট-আপ প্রক্রিয়ার জন্য প্রয়োজনীয় নির্দেশাবলী ফলো করতে পারবেন।&nbsp;</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>অনুমতি মঞ্জুর করা হয়েছে</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">অটোমেটিক সেট-আপ প্রদান করার জন্য, Outline Manager-কে আপনার Google অ্যাকাউন্ট থেকে নিম্নলিখিত অনুমতিগুলি নিতে হয়।</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Google Cloud Platform</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>আপনার Google Compute Engine সংক্রান্ত রিসোর্স দেখা ও ম্যানেজ করা</li>
+  <li>Google Cloud পরিষেবা জুড়ে আপনার ডেটা এবং Google অ্যাকাউন্টের ইমেল আইডি দেখা</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>অ্যাকাউন্টের প্রাথমিক তথ্য</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>আপনার Google অ্যাকাউন্টের প্রাথমিক ইমেল আইডি দেখা</li>
+  <li>Google-এ আপনার ব্যক্তিগত তথ্যের সাথে আপনাকে যুক্ত করা</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>অতিরিক্ত অ্যাক্সেস</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>আপনার Cloud Platform-এর প্রোজেক্ট ম্যানেজ করা</li>
+  <li>আপনার Google Cloud Platform সংক্রান্ত বিলিং অ্যাকাউন্ট দেখা ও ম্যানেজ করা</li>
+  <li>আপনার Google API পরিষেবা কনফিগারেশন ম্যানেজ করা</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a">এইসব অনুমতি আপনার Outline সার্ভার ম্যানেজ করার জন্য আমাদের প্রয়োজনীয় উন্নত কার্যকারিতা প্রয়োগ করতে দেয়। এগুলির মধ্যে অন্তর্ভুক্ত হল:</p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>আপনাকে সঠিক বিলিং অ্যাকাউন্ট বেছে নিতে দেওয়া</li>
+  <li>আপনার Outline সার্ভার গোছানোর জন্য একটি নতুন প্রোজেক্ট তৈরি করা</li>
+  <li>উপলভ্য ডেটা সেন্টারের তালিকা তৈরি করা</li>
+  <li>Outline রান করার জন্য নতুন ভার্চুয়াল মেশিন তৈরি করা</li>
+  <li>Outline-এর সাথে নতুন ভার্চুয়াল মেশিন কনফিগার করা</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>অনুমতি প্রত্যাহার করে নেওয়া হচ্ছে</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">আপনি<a href="https://myaccount.google.com/permissions" target="_blank"> আমার অ্যাকাউন্ট</a> পৃষ্ঠাতে গিয়ে Outline Manager-এর জন্য Google Cloud Platform-এর অ্যাক্সেস প্রত্যাহার করতে পারবেন। অ্যাক্সেসের অনুমতি ফিরিয়ে নিলে, অটোমেটিক সেট-আপ প্রক্রিয়ার মাধ্যমে আপনার তৈরি করা সবকটি সার্ভার রান করলেও সেখানে আর Outline Manager দেখা যাবে না। সেগুলিতে অ্যাক্সেস ফিরিয়ে দিতে, শুধু অটোমেটিক সেট-আপ ফ্লো শুরু করে Google Cloud Platform-এ আবার কানেক্ট করতে হবে।</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Outline প্রোজেক্ট অর্গানাইজেশন</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">আপনার Outline সার্ভার সাজানোর জন্য Google Cloud-এর অটোমেটিক সেট-আপ একটি মাত্র<a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects" target="_blank"> Google Cloud প্রোজেক্ট</a> ব্যবহার করে। অটোমেটিক সেট-আপ প্রথম ব্যবহার করার সময় প্রোজেক্ট তৈরি করা হয় এবং এর সাজেস্ট করা প্রোজেক্ট আইডি “Outline-” লেখা দিয়ে শুরু হয় এবং তারপরে তাতে কিছু র‌্যান্ডম অক্ষরের স্ট্রিং দেখানো হয়। আপনি চাইলে প্রোজেক্ট তৈরি হওয়ার সময়েই একটি আলাদা প্রোজেক্ট আইডি বেছে নিতে পারবেন। প্রোজেক্টের নাম “Outline সার্ভার” দেওয়া হবে।</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>বিলিং অ্যাকাউন্ট</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Google Cloud প্রোজেক্টের জন্য একটি “বিলিং অ্যাকাউন্ট” দরকার হয় যা পেমেন্ট সংক্রান্ত তথ্য নির্ধারণ করে। প্রথমবার Google Cloud-এ অটোমেটিক সেট-আপ ব্যবহার করার সময়, Outline সার্ভারের সাথে যুক্ত করার জন্য আপনাকে একটি বিলিং অ্যাকাউন্ট দিতে বলা হবে। বিলিং অ্যাকাউন্টে সমস্যা থাকার কারণে কখনও কখনও সার্ভার রান করা বন্ধ করা হবে। এই ক্ষেত্রে, আপনাকে<a href="https://console.cloud.google.com/getting-started" target="_blank"> Google Cloud Console</a>-এ লগ-ইন করে, Outline-এর সাথে যুক্ত Google Cloud প্রোজেক্টের (যার নাম “Outline সার্ভার” দেওয়া হয়েছে) লোকেশন খুঁজে বিলিং সেটিংস আপডেট করতে হবে।</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>সার্ভার মুছে দেওয়া</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">অটোমেটিক সেট-আপ ব্যবহার করে আপনার তৈরি করা সার্ভার মুছে দিতে চাইলে, তা Outline Manager-এর মধ্যে থেকে সবচেয়ে সহজে করা যায়। তবে, আপনি নিজে থেকেই সার্ভার মুছে দিতে চাইলে, আপনাকে হয়ত<a href="https://console.cloud.google.com/getting-started" target="_blank"> Google Cloud Console</a>-এ লগ-ইন করে, প্রারম্ভিক সেট-আপ করার সময় তৈরি করা সেই প্রোজেক্টটি (যার নাম “Outline সার্ভার” রাখা হয়েছে) খুঁজে নিয়ে, সেটির রিসোর্স মুছতে অথবা প্রোজেক্ট বন্ধ করতে হবে।</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="99" sourceLocale="bn">WEB:15331728</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline সার্ভার সেট-আপ করা বিষয়ক প্রায়শই জিজ্ঞাসিত প্রশ্ন</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:28806;a"><strong>আমি কি কোনও সার্ভার ছাড়া Outline ব্যবহার করতে পারি?</strong><br />
+  <br />
+  না। Outline সফ্টওয়্যার ব্যবহার করার জন্য কোনও সার্ভারের অ্যাক্সেস পেতে হয়, যেটি আপনি, আপনার সংস্থা বা কোনও বিশ্বস্ত থার্ড-পার্টি ম্যানেজ করতে পারবেন।&nbsp;</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>Outline সার্ভার সেট-আপ করতে কতক্ষণ সময় লাগে?</strong></p>
+
+<p data-aura-rendered-by="12:28806;a">বেশিরভাগ ক্ষেত্রে, ৫ মিনিটেরও কম সময় লাগে। আপনি যেকোনও ক্লাউড সার্ভারে Outline ইনস্টল করতে পারবেন, কিন্তু আরও সহজ ব্যবহারযোগ্য, নির্দেশিকা সহ ইনস্টল করার অভিজ্ঞতা অফার করতে, আমরা DigitalOcean-এর সাথে কাজ করি যেখানে মাত্র কয়েকটি ক্লিকেই আপনি সার্ভার সেট-আপ করতে পারবেন—কোনও স্ক্রিপ্ট রান করতে হবে না।</p>
+
+<p data-aura-rendered-by="12:28806;a">AWS, GCP বা কোনও উন্নত সেট-আপ বেছে নিলে আপনি আমাদের সিঙ্গল স্ক্রিপ্টে সরলীকৃত করা সার্ভার ইনস্টলেশন প্রসেস ব্যবহার করতে পারবেন যা বেশিরভাগ এনভায়রনমেন্টেই কাজ করতে পারে।&nbsp;</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>আমি কোথায় Outline সার্ভার সেট-আপ করতে পারি?</strong></p>
+
+<p data-aura-rendered-by="12:28806;a">আপনি বেশিরভাগ ক্লাউড পরিষেবা প্রদানকারী যেখানে অপারেট করে, সেখানেই Outline সার্ভার সেট-আপ করতে পারবেন।</p>
+
+<p data-aura-rendered-by="12:28806;a">সবচেয়ে সহজ বিকল্প হল DigitalOcean-এ সেট-আপ করা যার আমস্টার্ডাম, টরন্টো, সান ফ্রান্সিসকো ও সিঙ্গাপুরের মতো একাধিক লোকেশনে সার্ভার রয়েছে। অন্য একটি ক্লাউড পরিষেবা প্রদানকারীর বা আপনার নিজস্ব পরিকাঠামোতে ইনস্টল করতে চাইলে, আপনি Outline Manager অ্যাপ্লিকেশনে 'উন্নত মোড' বেছে নিতে এবং একটি সেট-আপ স্ক্রিপ্ট ব্যবহার করে ইনস্টল করার নির্দেশাবলী অনুসরণ করতে পারবেন।&nbsp;</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>আমার Outline সার্ভার আমি কোথায় সেট-আপ করতে পারি?</strong></p>
+
+<ol data-aura-rendered-by="12:28806;a">
+  <li>Outline সার্ভার বেছে নেওয়ার সময় আপনাকে নিম্নলিখিত কিছু বিষয় ভেবে দেখতে হতে পারে:</li>
+  <li>ব্যবহারকারীর ইন্টারনেট ব্যবহারের অভিজ্ঞতা কেমন হবে তা Outline সার্ভারের লোকেশনের উপর নির্ভর করে। উদাহরণস্বরূপ, সার্ভারের লোকেশন আমস্টার্ডামে হলে, যেসব ব্যবহারকারী এই সার্ভার অ্যাক্সেস করে ইন্টারনেটের পরিষেবা নেবেন, তাদের মনে হবে তারা যেন বাস্তবে নেদারল্যান্ডেই রয়েছেন। কিছু ওয়েবসাইট ডাচ ভাষাতেও ডিসপ্লে করা হতে পারে। সাধারণভাবে, আপনি ওয়েবসাইটে 'ভাষা সিলেক্টর' ব্যবহার করে স্থানীয় ভাষা ওভাররাইড করতে পারবেন।</li>
+  <li>আপনার ব্যবহারকারী ও Outline সার্ভারের মধ্যে যে দূরত্ব রয়েছে তা সার্ভারের স্পিডকে প্রভাবিত করতে পারে। সাধারণত, Outline ব্যবহারকারী ও সার্ভারের মধ্যবর্তী শারীরিক দূরত্ব ব্যবহারকারীর ইন্টারনেটের স্পিডকে প্রভাবিত করে। বেশিরভাগ ক্ষেত্রে, আপনার প্রত্যাশিত ব্যবহারকারী যেখানে থাকবে তার সবচেয়ে কাছে কোথাও সার্ভারের লোকেশন বেছে নিতে পারেন, কিন্তু আপনি <a href="https://www.submarinecablemap.com/" rel="noopener" target="_blank">সাবমেরিন কেবেল ম্যাপ</a>চেক করে দেখতে পারেন যাতে কোন কোন ইন্টারনেট কেবেল আপনার দেশ বা অঞ্চলের সাথে কানেক্ট করে আছে তা আপনি বুঝে নিতে পারেন।</li>
+  <li>আইনি ফ্রেমওয়ার্ককে আপনার VPN সার্ভারের লোকেশন প্রভাবিত করতে পারে। মনে রাখবেন, Outline সফ্টওয়্যার আপনার ট্রাফিকের লগ রাখে না। <a href="/outline-faq/answer/14919822" rel="noopener" target="_blank">Outline ব্যবহার করার সময় নিরাপত্তা ও গোপনীয়তা</a> সম্পর্কে আরও জানুন।</li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="bn">WEB:15331758</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">আমি একজন ডেভেলপার। আমার অ্যাপ্লিকেশনে Outline SDK ইন্টিগ্রেট করা সংক্রান্ত সহায়তা আমি কোথায় পাবো?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">এই সহায়তা ওয়েবসাইট আমাদের Outline ম্যানেজার এবং ক্লায়েন্ট ব্যবহারকারীদের জন্য। ডেভেলপার, সহায়তার জন্য GitHub ব্যবহার করুন। প্রশ্ন করতে, SDK&nbsp;<a href="https://github.com/Jigsaw-Code/outline-sdk/discussions" target="_blank">আলোচনা বোর্ডে</a> পোস্ট করুন। আলোচনা বোর্ড বিভাগটি এমন একটি দারুণ জায়গা যেখানে আপনি প্রশ্ন জিজ্ঞাসা করা, আইডিয়া শেয়ার করা, ডেমো প্রোজেক্টের সাথে লিঙ্ক করার পাশাপাশি Outline SDK ব্যবহার করে অন্যান্য ডেভেলপারকেও সাহায্য করতে পারবেন। এর পরিবর্তে ফিচার করার অনুরোধ বা সমস্যার ব্যাপারে অভিযোগ জানাতে,&nbsp;<a href="https://github.com/Jigsaw-Code/outline-sdk/issues/new" target="_blank">সমস্যা</a>&nbsp;খুলুন।</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="74" sourceLocale="bn">WEB:15448041</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">উপলভ্য ভাষা</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>নিম্নলিখিত ভাষায় Outline পরিষেবা উপলভ্য:</p>
+
+<ul>
+  <li aria-level="1">আফ্রিকান</li>
+  <li aria-level="1">আলবেনিয়ান</li>
+  <li aria-level="1">আমহারিক</li>
+  <li aria-level="1">আরবি</li>
+  <li aria-level="1">আর্মেনিয়ান</li>
+  <li aria-level="1">আজারবাইজানি</li>
+  <li aria-level="1">বাংলা</li>
+  <li aria-level="1">বসনিয়ান</li>
+  <li aria-level="1">বুলগেরিয়ান</li>
+  <li aria-level="1">বার্মিজ</li>
+  <li aria-level="1">কাতালান</li>
+  <li aria-level="1">চাইনিজ (সরলীকৃত)</li>
+  <li aria-level="1">চাইনিজ (ঐতিহ্যবাহী)</li>
+  <li aria-level="1">ক্রোয়েশিয়ান</li>
+  <li aria-level="1">চেক</li>
+  <li aria-level="1">ড্যানিশ</li>
+  <li aria-level="1">ডাচ</li>
+  <li aria-level="1">ইংরেজি (আমেরিকান)</li>
+  <li aria-level="1">ইংরেজি (ব্রিটিশ)</li>
+  <li aria-level="1">এস্তোনিয়ান</li>
+  <li aria-level="1">ফিলিপিনো</li>
+  <li aria-level="1">ফিনিশ</li>
+  <li aria-level="1">ফরাসি</li>
+  <li aria-level="1">জর্জিয়ান</li>
+  <li aria-level="1">জার্মান</li>
+  <li aria-level="1">গ্রিক</li>
+  <li aria-level="1">হিব্রু</li>
+  <li aria-level="1">হিন্দি</li>
+  <li aria-level="1">হাঙ্গেরিয়ান</li>
+  <li aria-level="1">আইসল্যান্ডিক</li>
+  <li aria-level="1">ইন্দোনেশিয়ান</li>
+  <li aria-level="1">ইতালিয়ান</li>
+  <li aria-level="1">জাপানিজ</li>
+  <li aria-level="1">কাজাখ</li>
+  <li aria-level="1">খমের</li>
+  <li aria-level="1">কোরিয়ান</li>
+  <li aria-level="1">লাও</li>
+  <li aria-level="1">লাটভিয়ান</li>
+  <li aria-level="1">লিথুয়ানিয়ান</li>
+  <li aria-level="1">ম্যাসিডোনিয়ান</li>
+  <li aria-level="1">মালয়</li>
+  <li aria-level="1">মারাঠি</li>
+  <li aria-level="1">মঙ্গোলিয়ান</li>
+  <li aria-level="1">নেপালি</li>
+  <li aria-level="1">নরওয়েজিয়ান</li>
+  <li aria-level="1">ফার্সি</li>
+  <li aria-level="1">পোলিশ</li>
+  <li aria-level="1">পর্তুগিজ (ব্রাজিলিয়ান)</li>
+  <li aria-level="1">পর্তুগিজ (ইউরোপিয়ান)</li>
+  <li aria-level="1">রোমানিয়ান</li>
+  <li aria-level="1">রাশিয়ান</li>
+  <li aria-level="1">সার্বিয়ান (সিরিলিক)</li>
+  <li aria-level="1">সার্বিয়ান (ল্যাটিন)</li>
+  <li aria-level="1">সিংহলী</li>
+  <li aria-level="1">স্লোভাক</li>
+  <li aria-level="1">স্লোভেনিয়ান</li>
+  <li aria-level="1">স্প্যানিশ (ইউরোপিয়ান)</li>
+  <li aria-level="1">স্প্যানিশ (লাতিন আমেরিকান)</li>
+  <li aria-level="1">সোয়াহিলি</li>
+  <li aria-level="1">সুইডিশ</li>
+  <li aria-level="1">তামিল</li>
+  <li aria-level="1">থাই</li>
+  <li aria-level="1">তুর্কি</li>
+  <li aria-level="1">ইউক্রেনিয়ান</li>
+  <li aria-level="1">উর্দু</li>
+  <li aria-level="1">ভিয়েতনামিজ</li>
+</ul>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="79" sourceLocale="bn">WEB:15528599</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Firewall সংক্রান্ত সমস্যা</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:268;a">আপনি ফায়ারওয়াল সংক্রান্ত তিন ধরনের সমস্যার সম্মুখীন আপনি হতে পারেন:</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>কোনও নেটওয়ার্ক ফায়ারওয়ালের মাধ্যমে আপনাকে ব্লক করা হতে পারে।</strong></p>
+
+<p data-aura-rendered-by="12:268;a">স্কুল বা আপনার কর্মস্থলের মতো ফায়ারওয়াল থাকা নেটওয়ার্কের সাথে কানেক্ট করা অবস্থায় Outline ইনস্টল করার চেষ্টা করলে, অন্য কোনও নেটওয়ার্কে সেটি ইনস্টল করে দেখুন।</p>
+
+<p data-aura-rendered-by="12:268;a">এতে কাজ না হলে, আপনার নেটওয়ার্ক অ্যাডমিনিস্ট্রেটরের সাথে যোগাযোগ করুন যাতে আপনাকে ফায়ারওয়াল থাকা নেটওয়ার্ক ও Outline সার্ভারের মধ্যে কানেকশন স্থাপন করার অনুমতি দেওয়া হয়। Outline সার্ভারের IP অ্যাড্রেস ও যেখানে Outline রান করা হচ্ছে সেখানকার পোর্ট আপনাকে জানতে হবে যা ইনস্টলেশন স্ক্রিপ্টের শেষে দেওয়া থাকে।</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>কোনও ডিভাইস ফায়ারওয়ালের মাধ্যমে আপনাকে ব্লক করা হতে পারে</strong>।</p>
+
+<p data-aura-rendered-by="12:268;a">আপনার ডিভাইসে যদি এমন কোনও সফ্টওয়্যার থাকে যা নন-স্ট্যান্ডার্ড পোর্ট বা শনাক্ত করা যায়নি এমন সফ্টওয়্যারের (CheckPoint-এর ZoneAlarm) ক্ষেত্রে আউটগোয়িং কানেকশনকে ব্লক করে, তাহলে Outline-এর জন্য কীভাবে কোনও এক্সেপশন তৈরি করা যায় তা জানতে ডিভাইস বা সফ্টওয়্যার সংক্রান্ত ডকুমেন্টেশন পড়ে দেখুন।</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>কোনও সার্ভার ফায়ারওয়ালের মাধ্যমে আপনাকে ব্লক করা হতে পারে।</strong></p>
+
+<p data-aura-rendered-by="12:268;a">আপনার বেছে নেওয়া ক্লাউড পরিষেবা প্রদানকারী আপনাকে সার্ভার ফায়ারওয়ালের জন্য এমন এক্সেপশন তৈরি করার সুবিধা দিতে পারে যাতে Outline রান করতে পারে এমন পোর্ট খোলা সম্ভব হয়। ইনস্টলেশন স্ক্রিপ্ট রান করার পরে, র‌্যান্ডমভাবে বেছে নেওয়া দু'টি পোর্ট আপনাকে দেওয়া হবে যাতে আপনার সার্ভারে Outline রান করছে। এই দুটি পোর্ট খুললেই আপনি কাজ চালাতে পারবেন।<br />
+  <br />
+  সার্ভার ফায়ারওয়ালের জন্য এক্সেপশন তৈরি করার ব্যাপারে সাহায্য পেতে, আপনাকে 'ufw' ও 'iptables'-এর ডকুমেন্টেশন দেখার জন্য সাজেস্ট করা হচ্ছে:</p>
+
+<ul data-aura-rendered-by="12:268;a">
+  <li>UFW:&nbsp;<a href="https://help.ubuntu.com/community/UFW" rel="noopener" target="_blank">https://help.ubuntu.com/community/UFW</a></li>
+  <li>Iptables:&nbsp;<a href="https://help.ubuntu.com/community/IptablesHowTo" rel="noopener" target="_blank">https://help.ubuntu.com/community/IptablesHowTo</a></li>
+</ul>
+</div>
+</body>
+</html>

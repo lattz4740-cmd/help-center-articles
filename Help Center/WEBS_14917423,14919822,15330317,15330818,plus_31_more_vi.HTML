@@ -1,0 +1,1083 @@
+<html>
+<head>
+<style type="text/css">
+.gkms-gtt-answer-header, .gkms-gtt-message-header {
+  color: black !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 2em;
+  padding: 4px;
+}.gkms-gtt-answer-header {
+  background-color: #E5ECF9;
+  border-top: 1px solid #36C;
+}
+.gkms-gtt-message-header {
+  background-color: #F8F8F8;
+  border-top: 1px solid #CCC;
+}
+.gkms-gtt-hide {
+  visibility: hidden;
+}
+.form_field_data .temporary_signal_wrapper {
+  display: inline;
+}
+</style>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+</head>
+<body lang="vi">
+<br/><div class="gkms id notranslate" sourceGlobalRevision="116" sourceLocale="vi">WEB:14917423</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Cách hoạt động của Outline</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1723;a">&nbsp;</p>
+
+<p data-aura-rendered-by="12:1723;a"><strong>Cài đặt máy chủ</strong><br />
+  <br />
+  ​Mặc dù việc cài đặt Outline có vẻ đơn giản, nhưng thực ra có một tổ hợp phức tạp các bước diễn ra mà bạn không nhìn thấy để giúp cài đặt máy chủ của bạn. Mỗi khi cài đặt Outline, một tập lệnh cài đặt sẽ thực hiện các bước sau đây:</p>
+
+<ul data-aura-rendered-by="12:1723;a">
+  <li>Truy xuất và nhập phiên bản ổn định của hình ảnh Shadowbox bằng Docker. Ảnh này được lưu trữ tại địa chỉ <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank">https://quay.io/repository/outline/shadowbox?tab=tags</a> trên <a href="https://quay.io/" target="_blank">Quay.io</a>. Ảnh này chứa máy chủ Outline và API Quản lý. Ứng dụng Quản lý máy chủ Outline sẽ sử dụng API này về sau để tạo và xoá khoá truy cập, chọn bật/tắt tính năng báo cáo chỉ số ẩn danh, v.v.</li>
+  <li><a href="https://github.com/v2tec/watchtower" target="_blank">Watchtower</a> được cài đặt và định cấu hình để giúp kiểm tra nhằm tìm bản cập nhật hình ảnh mỗi giờ, qua đó giúp đảm bảo mọi máy chủ Outline đều chạy phiên bản mới nhất, được cải tiến bảo mật và sử dụng các tính năng mới nhất.</li>
+  <li>Một máy chủ web dùng để truy cập vào API Quản lý sẽ được khởi động tại một cổng ngẫu nhiên trên một đường dẫn ngẫu nhiên, bí mật.</li>
+  <li><a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank">Chứng chỉ SSL tự ký</a> được tạo để có thể mã hoá hoạt động quản lý máy chủ Outline bằng giao thức TLS (Bảo mật tầng truyền tải), dù không có tên miền. Vân tay số duy nhất của chứng chỉ này cũng được tạo và lưu trữ trong ứng dụng Quản lý Outline để giúp ngăn chặn các cuộc tấn công MITM (Man in the Middle – Tấn công xen giữa).</li>
+</ul>
+
+<p data-aura-rendered-by="12:1723;a">Bạn không cần định cấu hình sau khi cài đặt Outline.<br />
+  <br />
+  <strong>Bảo mật máy chủ</strong><br />
+  <br />
+  Outline là phần mềm nguồn mở, nghĩa là bất cứ ai cũng có thể xem mã nguồn và cải thiện nếu phát hiện ra lỗ hổng. Chúng tôi lưu trữ mã nguồn trên <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank">GitHub</a>.<br />
+  <br />
+  Ngoài ra, tất cả máy chủ Outline đã cài đặt đều sẽ cập nhật tự động mỗi khi có một phiên bản mới được phát hành, để đảm bảo rằng không có máy chủ Outline nào chạy phiên bản phần mềm cũ.<br />
+  <br />
+  Để quản lý khoá truy cập trên máy chủ, ứng dụng Quản lý Outline sẽ tương tác với một Dịch vụ quản lý trên máy chủ Outline. Dịch vụ quản lý này chạy tại một cổng ngẫu nhiên và sử dụng một đường dẫn bí mật, duy nhất. Bản thân Dịch vụ quản lý miễn nhiễm với hành vi dò lỗ hổng vì nó không đáp lại truy vấn trừ khi đường dẫn bí mật được xác định. Cuối cùng, mọi thông tin giao tiếp với Dịch vụ quản lý đều được mã hoá bằng một <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank">chứng chỉ SSL tự ký</a>.<br />
+  <br />
+  Ngoài ra, máy chủ Outline không lưu trữ nhật ký, nên kể cả khi bị xâm phạm, dữ liệu của người dùng cũng không bị lộ. Tìm hiểu thêm <a href="https://support.getoutline.org/s/article/Security-and-privacy" target="_blank">tại đây</a>. Outline đã được <a href="https://radicallyopensecurity.com/" target="_blank">Radically Open Security</a> và <a href="https://cure53.de/" target="_blank">Cure53</a> kiểm tra vào năm 2018. Xem các báo cáo đó <a href="https://support.getoutline.org/s/article/Security-and-privacy" target="_blank">tại đây</a>.<br />
+  <br />
+  <strong>Xử lý lưu lượng truy cập UDP</strong><br />
+  <br />
+  Outline có thể vận hành dưới dạng một VPN toàn hệ thống, nghĩa là mọi lưu lượng truy cập UDP đều được truyền bằng kỹ thuật tạo đường hầm qua máy chủ Outline.<br />
+  <br />
+  <strong>Lưu lượng truy cập DNS</strong></p>
+
+<p data-aura-rendered-by="12:1723;a"><br />
+  Outline thực hiện toàn bộ hoạt động tra cứu DNS qua máy chủ Outline và bảo vệ các lượt tra cứu này bằng cùng một phương thức mã hoá dùng trong tất cả hoạt động mạng khác. Các truy vấn DNS của bạn sẽ đi qua máy chủ Outline đến Dyn Internet Guide, OpenDNS, Cloudflare DNS hoặc Quad9 DNS. Outline không bao giờ ghi nhật ký các lượt tra cứu DNS của bạn.&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="232" sourceLocale="vi">WEB:14919822</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Tính bảo mật và quyền riêng tư khi sử dụng Outline</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:258;a">Tính bảo mật và quyền riêng tư khi sử dụng Outline</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Cách Outline bảo vệ thông tin giao tiếp của bạn trên mạng</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Lưu lượng truy cập vào Internet dễ bị theo dõi nhất khi đi qua mạng địa phương hoặc quốc gia.</p>
+
+<p data-aura-rendered-by="12:258;a">Outline giúp giữ bí mật cho thông tin giao tiếp bằng cách mã hoá lưu lượng truy cập Internet của bạn khi thông tin di chuyển trong mạng quốc gia và duy trì mã hoá cho đến khi những thông tin này đến máy chủ Outline. Khi Outine mã hoá lưu lượng truy cập, những người quan sát trên mạng không thể điều tra các trang web mà bạn truy cập hoặc thông tin bạn truyền đi.</p>
+
+<p data-aura-rendered-by="12:258;a">Outline cũng có thể giúp bạn khôi phục quyền sử dụng những công cụ giao tiếp bảo mật hai đầu mà bạn có thể không truy cập được tại quốc gia của bạn trong các trường hợp khác.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Tiêu chuẩn mã hoá</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Outline mã hoá thông tin giao tiếp giữa thiết bị của bạn và máy chủ Outline bằng thuật toán mật mã AEAD 256-bit Chacha2020 IETF Poly 1305. Thuật toán mật mã AEAD giúp đảm bảo tính bí mật, toàn vẹn và xác thực, đồng thời đạt hiệu suất rất cao trên phần cứng hiện đại.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Kiểm nghiệm bảo mật</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Vào năm 2018, Outline đã được Radically Open Security và Cure53 kiểm nghiệm. Đây là hai tổ chức đánh giá khả năng bảo mật kỹ thuật số độc lập, đánh giá phần mềm theo các tiêu chuẩn bảo mật mới nhất. Radically Open Security đã kiểm nghiệm Outline một lần nữa vào năm 2022 và Cure53 đã kiểm nghiệm Outline SDK vào năm 2024. Bạn có thể đọc các báo cáo liên quan dưới đây:</p>
+
+<ul data-aura-rendered-by="12:258;a">
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf" target="_blank">Báo cáo kiểm tra thâm nhập của Radically Open Security (tháng 3 năm 2018)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf" target="_blank">Báo cáo của Cure53 về việc kiểm nghiệm và kiểm tra thâm nhập Outline của Jigsaw (tháng 12 năm 2018)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf" target="_blank">Báo cáo kiểm tra thâm nhập của Radically Open Security (tháng 12 năm 2022)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf" target="_blank">Báo cáo kiểm tra thâm nhập của Cure53 đối với SDK của Outline VPN thuộc Jigsaw (tháng 1 năm 2024)</a></li>
+</ul>
+
+<p data-aura-rendered-by="12:258;a"><strong>Chỉ số và nhật ký ẩn danh</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Outline chỉ theo dõi băng thông đã dùng dưới dạng "số byte đã truyền" đối với mỗi khoá truy cập. Thông tin này cho phép quản trị viên máy chủ điều chỉnh gói thuê bao băng thông với các nhà cung cấp máy chủ đám mây khi cần, nhưng không cho phép họ xem thông tin thực tế được truyền qua máy chủ Outline.</p>
+
+<p data-aura-rendered-by="12:258;a">Tìm hiểu thêm về hoạt động <a href="/outline-faq/answer/15331222" rel="noopener" target="_blank">thu thập dữ liệu và thông tin</a> của Outline.</p>
+
+<hr data-aura-rendered-by="12:258;a" />
+<p data-aura-rendered-by="12:258;a"><strong>Câu hỏi thường gặp về tính bảo mật và quyền riêng tư</strong>&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Outline có thể giúp tôi ẩn danh trên mạng không?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Không, Outline không phải là một công cụ giúp ẩn danh. Outline bảo vệ quyền riêng tư của bạn khỏi những kẻ theo dõi tiềm ẩn trên mạng.</p>
+
+<p data-aura-rendered-by="12:258;a">Outline không ẩn danh bạn hoàn toàn trên các trang web mà bạn truy cập, vì những trang web này vẫn có thể nhận dạng bạn khi bạn đăng nhập hoặc đôi khi thông qua một số kỹ thuật như vân tay số trên trình duyệt. Đối với ứng dụng dành cho thiết bị di động, hầu hết điện thoại thông minh hiện đại đều có các API cho phép các ứng dụng đã cài đặt thu thập thông tin vị trí độc lập với proxy của bạn vì các API này có thể dựa trên GPS đã nhúng.</p>
+
+<p data-aura-rendered-by="12:258;a">Nói chung, VPN cung cấp các biện pháp bảo vệ quan trọng, đặc biệt là trước việc bị theo dõi trên Internet, nhưng luôn có rủi ro khi vận hành trên mạng. Kể cả khi bạn dùng VPN, nếu một nhà cung cấp dịch vụ mạng đã biết danh tính của bạn và có thể quan sát lưu lượng truy cập mạng của bạn, thì họ có thể xác định địa chỉ IP máy chủ Outline của bạn. Thông tin này có thể được dùng để chặn bạn truy cập vào máy chủ Outline hoặc để tìm hiểu thói quen sử dụng của bạn, chẳng như thời gian bạn thường lên mạng và có thể là vị trí tương đối của bạn.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Người ta có thể biết khi tôi đang sử dụng Outline hay không?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Có thể. Các nền tảng và dịch vụ bạn truy cập rất có khả năng sẽ biết được rằng bạn đang kết nối từ một máy chủ đám mây. Đôi khi, họ có thể suy luận được rằng bạn đang sử dụng một VPN, nhưng họ sẽ không thể xem nội dung lưu lượng truy cập Internet của bạn.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Outline có bảo vệ tôi khỏi tất cả các mối đe doạ về an ninh mạng có thể xảy ra không?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Không. Không một công cụ bảo mật nào có thể bảo vệ bạn trước tất cả mối đe dọa về an ninh mạng có thể xảy ra. Outline giúp bạn truy cập vào thế giới Internet rộng lớn và tăng cường khả năng bảo vệ quyền riêng tư bằng cách mã hoá lưu lượng truy cập, nhưng bạn nên thực hiện các biện pháp phòng ngừa bổ sung để bảo vệ bản thân khỏi các hình thức tấn công khác, chẳng hạn như phần mềm độc hại và tấn công giả mạo.</p>
+
+<p data-aura-rendered-by="12:258;a">Để củng cố khả năng bảo vệ trên mạng, bạn nên làm việc với một chuyên gia về an ninh mạng trong tổ chức của bạn. Ngoài ra, bạn có thể xem hướng dẫn phù hợp với bạn do các chuyên gia bảo mật hàng đầu trên <a href="https://securityplanner.org/" target="_blank">Security Planner</a> đưa ra. Security Planner là một trang web được xây dựng nhằm cung cấp hướng dẫn rõ ràng về cách lựa chọn các công cụ an ninh mạng phù hợp cho những vấn đề bạn lo ngại.</p>
+
+<p data-aura-rendered-by="12:258;a">Bạn cũng có thể tìm hiểu về các sản phẩm khác của <a href="https://jigsaw.google.com/" target="_blank">Jigsaw</a> về an ninh mạng, như <a href="https://getintra.org/" target="_blank">Intra</a>, <a href="https://g.co/shield" target="_blank">Project Shield</a> và <a href="https://chrome.google.com/webstore/detail/password-alert/noondiphcddnnabmjcihcjfbhfklnnep?" rel="noopener" target="_blank">Cảnh báo mật khẩu</a>.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Việc sử dụng VPN có hợp pháp không?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Vui lòng tìm hiểu luật pháp và quy định tại địa phương của bạn, cũng như Điều khoản dịch vụ của nhà cung cấp dịch vụ đám mây mà bạn dự định sử dụng trước khi vận hành Outline hoặc dùng ứng dụng này.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="89" sourceLocale="vi">WEB:15330317</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Tại sao tôi không thể truy cập Internet mặc dù đã kết nối với máy chủ Outline?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:32933;a">Nếu bạn đang dùng điện thoại di động, hãy thử chuyển đổi giữa dữ liệu di động và kết nối Wi-Fi. Đôi khi một loại kết nối sẽ hoạt động, trong khi loại còn lại thì không. Nếu bạn đang dùng máy tính, hãy thử ngắt kết nối khỏi băng thông rộng rồi kết nối lại.</p>
+
+<p data-aura-rendered-by="12:32933;a">Nếu bạn vẫn gặp khó khăn, thì có khả năng máy chủ Outline bạn đang dùng có vấn đề. Hãy liên hệ với<a href="/outline-faq/answer/15330920" rel="noopener" target="_blank"> người quản lý dịch vụ</a>&nbsp;để lấy khoá truy cập mới cho một máy chủ thay thế. Người quản lý dịch vụ cũng có thể tăng hạn mức dữ liệu cho<a href="https://google-jigsaw--jigsawuat.sandbox.my.site.com/outline/s/article/Terminology" target="_blank"> </a><a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">khoá truy cập</a>&nbsp;của bạn nếu khoá đó đã vượt quá hạn mức.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="296" sourceLocale="vi">WEB:15330818</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Cần đáp ứng những yêu cầu gì về hệ thống để chạy ứng dụng Outline?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:24676;a">Bạn có thể dùng thử Outline trên bất cứ hệ điều hành nào. Dưới đây là các yêu cầu tối thiểu về hệ điều hành:</p>
+
+<table class="borders" data-aura-rendered-by="12:24676;a" width="312">
+  <tbody>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top"><b>Hệ điều hành</b></td>
+      <td colspan="1" rowspan="1" valign="top"><b>Phiên bản tối thiểu</b></td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Android</td>
+      <td colspan="1" rowspan="1" valign="top">10</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">iOS</td>
+      <td colspan="1" rowspan="1" valign="top">15.5</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">macOS</td>
+      <td colspan="1" rowspan="1" valign="top">12.0</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Windows</td>
+      <td colspan="1" rowspan="1" valign="top">10</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Linux</td>
+      <td colspan="1" rowspan="1" valign="top">Ubuntu&nbsp;20.04</td>
+    </tr>
+  </tbody>
+</table>
+
+<p data-aura-rendered-by="12:24676;a"><br />
+  Bạn muốn giúp ứng dụng Outline hoạt động trên nhiều hệ điều hành hơn?&nbsp;<a href="https://github.com/Jigsaw-Code/outline-client#platform-specific-development" target="_blank">Hãy đóng góp cho kho mã nguồn của chúng tôi</a>&nbsp;trên GitHub!</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="107" sourceLocale="vi">WEB:15330824</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Làm cách nào để tôi cập nhật phần mềm máy chủ Outline?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:10378;a">Máy chủ Outline sẽ tự động cập nhật các điểm cải tiến bảo mật mới nhất nhằm giúp bạn luôn sử dụng công nghệ mới nhất của Outline. Quá trình cập nhật tự động sử dụng <a href="https://github.com/v2tec/watchtower" target="_blank">Watchtower</a>. Đây là một thư viện nguồn mở, thường xuyên kiểm tra và cập nhật hình ảnh Docker chứa phần mềm Outline.</p>
+
+<p data-aura-rendered-by="12:10378;a">Ngoài ra, khi bạn cài đặt Outline bằng ứng dụng Quản lý Outline, chúng tôi sẽ thiết lập một dịch vụ chạy ngầm theo thời gian định trước để tự động nâng cấp phần mềm trên máy chủ bằng <a href="https://wiki.debian.org/UnattendedUpgrades" target="_blank">Các bản nâng cấp không giám sát</a> (Ubuntu) và khởi động lại khi cần. Xin lưu ý rằng điều này không xảy ra trong Chế độ nâng cao nhằm mục đích duy trì cấu hình hiện có, dựa trên giả định là máy chủ lưu trữ đang được dùng cho các mục đích khác ngoài việc chạy Outline.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="102" sourceLocale="vi">WEB:15330825</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Làm cách nào để tải ứng dụng Quản lý Outline xuống nếu đường liên kết để tải xuống không hoạt động?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Hãy dùng <a href="https://getoutline.org/get-started/#step-1" target="_blank">đường liên kết này</a> hoặc <a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">đường liên kết này</a> để tải trực tiếp ứng dụng xuống cho nhiều hệ điều hành.&nbsp;</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="129" sourceLocale="vi">WEB:15330920</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Thuật ngữ</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:23504;a"><strong>VPN là gì?</strong><br />
+  Mạng riêng ảo (VPN) là kết nối riêng tư giữa (các) thiết bị của bạn và một máy chủ lưu trữ. Khi dùng VPN, lưu lượng truy cập của bạn sẽ được ẩn khỏi nhà cung cấp dịch vụ Internet. Bạn có thể dùng VPN trong những trường hợp sau:</p>
+
+<ul data-aura-rendered-by="12:23504;a">
+  <li>Bảo vệ dữ liệu khi dùng mạng Wi-Fi công cộng</li>
+  <li>Giữ bí mật dữ liệu duyệt web khỏi nhà cung cấp dịch vụ Internet và các cơ quan chính phủ</li>
+  <li>Truy cập vào nội dung không bị kiểm duyệt của nhiều nguồn trên khắp thế giới</li>
+</ul>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Outline khác với các VPN truyền thống ở điểm nào?</strong><br />
+  Nhà cung cấp dịch vụ Internet có thể dễ dàng phát hiện và chặn các VPN truyền thống bằng cách nhận dạng những giao thức bảo mật phổ biến và/hoặc dấu hiệu về lưu lượng truy cập. Outline có khả năng chống chọi cao hơn vì ứng dụng này được xây dựng bằng một giao thức được thiết kế để khó bị phát hiện và do đó khó bị chặn hơn. Outline có khả năng vượt qua các hình thức kiểm duyệt phức tạp như chặn dựa trên mạng hoặc chặn IP.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Máy chủ Outline là gì?</strong><br />
+  Máy chủ Outline chạy VPN mà những người dùng được cho phép sẽ có thể kết nối. Nếu đang tạo một mạng mới, thì bạn có thể sử dụng máy chủ bảo mật của riêng mình làm máy chủ Outline (nếu có) hoặc bạn có thể sử dụng một nhà cung cấp dịch vụ đám mây, chẳng hạn như:</p>
+
+<ul data-aura-rendered-by="12:23504;a">
+  <li>DigitalOcean</li>
+  <li>Google Cloud Platform (GCP)</li>
+  <li>Amazon Web Services (AWS)</li>
+</ul>
+
+<p data-aura-rendered-by="12:23504;a"><a id="One" target="_blank"></a>Bạn có thể thiết lập máy chủ trong ứng dụng Quản lý Outline.<br />
+  <br />
+  <strong><a id="servicemanager" name="servicemanager"></a>Người quản lý dịch vụ là ai?</strong><br />
+  Người quản lý dịch vụ là người chịu trách nhiệm thiết lập máy chủ Outline và chia sẻ khoá truy cập với người dùng. Người này thường chịu trách nhiệm về chi phí sử dụng máy chủ.&nbsp;<br />
+  <br />
+  <strong><a id="accesskey" name="accesskey"></a>Khoá truy cập là gì?</strong><br />
+  Khoá truy cập dùng để truy cập vào một máy chủ Outline hiện có và kết nối với VPN. <a href="#servicemanager" rel="noopener">Người quản lý dịch vụ</a>&nbsp;sẽ cung cấp cho bạn một khoá truy cập hoặc bạn có thể tự<a href="/outline-faq/answer/15331530" rel="noopener" target="_blank"> thiết lập một máy chủ Outline</a>.&nbsp;Dưới đây là một ví dụ về khoá truy cập (đây chỉ là khoá mẫu nên sẽ không hoạt động):&nbsp;<br />
+  <br />
+  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1<br />
+  <br />
+  <strong>Ứng dụng Quản lý Outline là gì?</strong><br />
+  Quản lý Outline là một ứng dụng máy tính cho phép người quản lý dịch vụ thiết lập một máy chủ Outline, tạo <a href="#accesskey" rel="noopener">khoá truy cập</a> và thiết lập hạn mức dữ liệu được sử dụng cho từng khoá. Bạn có thể tải phiên bản mới nhất của ứng dụng Quản lý Outline<a href="https://getoutline.org/get-started/#step-3" target="_blank"> tại đây</a> hoặc<a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank"> tại đây</a>.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Ứng dụng Outline là gì?</strong><br />
+  Outline là một ứng dụng dành cho máy tính và thiết bị di động, cho phép bạn kết nối với một máy chủ Outline và truy cập vào VPN bằng khoá truy cập. Bạn có thể tải phiên bản mới nhất của ứng dụng Outline<a href="https://getoutline.org/get-started/#step-3" target="_blank"> tại đây</a> hoặc<a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank"> tại đây</a>.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Hạn mức dữ liệu là gì?</strong><br />
+  Ứng dụng Quản lý Outline cho phép người quản lý dịch vụ đặt hạn mức dữ liệu kéo dài trong 30 ngày cho khoá truy cập để tránh việc sử dụng quá mức và giúp duy trì chi phí trong phạm vi dự đoán. Người quản lý dịch vụ có thể đặt một hạn mức mặc định áp dụng cho mọi khoá và cũng có thể đặt hạn mức riêng cho một khoá bất kỳ để thay thế hạn mức mặc định. Sau khi được thiết lập, hạn mức dữ liệu sẽ có hiệu lực ngay lập tức và được thực thi mỗi giờ.</p>
+
+<p data-aura-rendered-by="12:23504;a">Nếu người quản lý dịch vụ chọn chia sẻ các chỉ số với Jigsaw, họ cần phải đọc<a href="/outline-faq/answer/15331222" rel="noopener" target="_blank"> chính sách về việc thu thập dữ liệu</a> để nắm cụ thể cách hoạt động sử dụng hạn mức dữ liệu sẽ được báo cáo.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="110" sourceLocale="vi">WEB:15331121</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline có hỗ trợ "getoutline.me" và kênh Telegram "@OutlineVpnOfficial" không?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Nhóm Outline đã nhận được nhiều câu hỏi về trang web <a href="http://getoutline.me/" target="_blank">"getoutline.me"</a> và kênh Telegram "@OutlineVpnOfficial" được liên kết với trang đó. Những dịch vụ này không có liên kết với nhóm Outline, nên chúng tôi không thể hỗ trợ những người dùng gặp phải vấn đề khi sử dụng khoá truy cập của những dịch vụ này.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="vi">WEB:15331122</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Ngôn ngữ được hỗ trợ</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Outline hiện hỗ trợ các ngôn ngữ sau:</p>
+
+<ul>
+  <li aria-level="1">Tiếng Hà Lan (Nam Phi)</li>
+  <li aria-level="1">Tiếng Albania</li>
+  <li aria-level="1">Tiếng Amharic</li>
+  <li aria-level="1">Tiếng Ả Rập</li>
+  <li aria-level="1">Tiếng Armenia</li>
+  <li aria-level="1">Tiếng Azerbaijan</li>
+  <li aria-level="1">Tiếng Bengal</li>
+  <li aria-level="1">Tiếng Bosnia</li>
+  <li aria-level="1">Tiếng Bulgaria</li>
+  <li aria-level="1">Tiếng Miến Điện</li>
+  <li aria-level="1">Tiếng Catalan</li>
+  <li aria-level="1">Tiếng Trung (Giản thể)</li>
+  <li aria-level="1">Tiếng Trung (Phồn thể)</li>
+  <li aria-level="1">Tiếng Croatia</li>
+  <li aria-level="1">Tiếng Séc</li>
+  <li aria-level="1">Tiếng Đan Mạch</li>
+  <li aria-level="1">Tiếng Hà Lan</li>
+  <li aria-level="1">Tiếng Anh (Mỹ)</li>
+  <li aria-level="1">Tiếng Anh (Anh)</li>
+  <li aria-level="1">Tiếng Estonia</li>
+  <li aria-level="1">Tiếng Philippines</li>
+  <li aria-level="1">Tiếng Phần Lan</li>
+  <li aria-level="1">Tiếng Pháp</li>
+  <li aria-level="1">Tiếng Gruzia</li>
+  <li aria-level="1">Tiếng Đức</li>
+  <li aria-level="1">Tiếng Hy Lạp</li>
+  <li aria-level="1">Tiếng Do Thái</li>
+  <li aria-level="1">Tiếng Hindi</li>
+  <li aria-level="1">Tiếng Hungary</li>
+  <li aria-level="1">Tiếng Iceland</li>
+  <li aria-level="1">Tiếng Indonesia</li>
+  <li aria-level="1">Tiếng Ý</li>
+  <li aria-level="1">Tiếng Nhật</li>
+  <li aria-level="1">Tiếng Kazakh</li>
+  <li aria-level="1">Tiếng Khmer</li>
+  <li aria-level="1">Tiếng Hàn</li>
+  <li aria-level="1">Tiếng Lào</li>
+  <li aria-level="1">Tiếng Latvia</li>
+  <li aria-level="1">Tiếng Lithuania</li>
+  <li aria-level="1">Tiếng Macedonia</li>
+  <li aria-level="1">Tiếng Malay</li>
+  <li aria-level="1">Tiếng Marathi</li>
+  <li aria-level="1">Tiếng Mông Cổ</li>
+  <li aria-level="1">Tiếng Nepal</li>
+  <li aria-level="1">Tiếng Na Uy</li>
+  <li aria-level="1">Tiếng Ba Tư</li>
+  <li aria-level="1">Tiếng Ba Lan</li>
+  <li aria-level="1">Tiếng Bồ Đào Nha (Brazil)</li>
+  <li aria-level="1">Tiếng Bồ Đào Nha (Châu Âu)</li>
+  <li aria-level="1">Tiếng Romania</li>
+  <li aria-level="1">Tiếng Nga</li>
+  <li aria-level="1">Tiếng Serbia (Chữ Kirin)</li>
+  <li aria-level="1">Tiếng Serbia (Chữ Latinh)</li>
+  <li aria-level="1">Tiếng Sinhala</li>
+  <li aria-level="1">Tiếng Slovakia</li>
+  <li aria-level="1">Tiếng Slovenia</li>
+  <li aria-level="1">Tiếng Tây Ban Nha (Châu Âu)</li>
+  <li aria-level="1">Tiếng Tây Ban Nha (Mỹ Latinh)</li>
+  <li aria-level="1">Tiếng Swahili</li>
+  <li aria-level="1">Tiếng Thuỵ Điển</li>
+  <li aria-level="1">Tiếng Tamil</li>
+  <li aria-level="1">Tiếng Thái</li>
+  <li aria-level="1">Tiếng Thổ Nhĩ Kỳ</li>
+  <li aria-level="1">Tiếng Ukraina</li>
+  <li aria-level="1">Tiếng Urdu</li>
+  <li aria-level="1">Tiếng Việt</li>
+</ul>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="110" sourceLocale="vi">WEB:15331125</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Tại sao tôi không thể cài đặt ứng dụng Outline trên thiết bị chạy Windows?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:31254;a">Bạn có thể thấy thông báo lỗi này: "Rất tiếc, có vẻ như bạn đã cài đặt Outline không đúng cách. Vui lòng thử cài đặt lại. Nếu việc cài đặt lại không có tác dụng, vui lòng&nbsp;<a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">gửi ý kiến phản hồi</a>."</p>
+
+<p data-aura-rendered-by="12:31254;a">Nếu đang sử dụng Outline trên thiết bị chạy Windows, thì đôi khi bạn có thể gặp phải lỗi không mong muốn. Trong hầu hết trường hợp, bạn cần xoá bộ điều hợp TAP (trình điều khiển) của Outline và cài đặt lại Outline.</p>
+
+<p data-aura-rendered-by="12:31254;a">Các bước có thể khác nhau tuỳ theo phiên bản hệ điều hành Windows bạn dùng. Tuy nhiên, dưới đây là các bước tổng quát về cách gỡ cài đặt bộ điều hợp TAP và Outline, sau đó cài đặt lại Outline.</p>
+
+<ol data-aura-rendered-by="12:31254;a">
+  <li>Gỡ cài đặt bộ điều hợp TAP của ứng dụng Outline
+    <ul>
+      <li>Chuyển đến&nbsp;<strong>Trình quản lý thiết bị</strong>, sau đó chọn&nbsp;<strong>Bộ điều hợp mạng</strong></li>
+      <li>Tìm tệp&nbsp;<strong>TAP-Windows Adapter V9</strong>&nbsp;hoặc bộ điều hợp TAP liên kết với Outline</li>
+      <li>Gỡ cài đặt hoặc xoá bộ điều hợp này. Lưu ý rằng thao tác này có thể ảnh hưởng đến các ứng dụng VPN khác mà bạn đã cài đặt.&nbsp;</li>
+    </ul>
+  </li>
+  <li>Gỡ cài đặt ứng dụng Outline
+    <ul>
+      <li>Chuyển đến phần&nbsp;<strong>Chương trình và tính năng</strong>, sau đó chọn&nbsp;<strong>Gỡ cài đặt chương trình</strong></li>
+      <li>Tìm ứng dụng Outline rồi gỡ cài đặt ứng dụng này</li>
+      <li><a href="https://getoutline.org/get-started/#step-3" target="_blank">Tải phiên bản mới nhất của ứng dụng Outline xuống</a>&nbsp;rồi cài đặt lại trên thiết bị Windows. Thao tác này sẽ tự động cài đặt một bộ điều hợp TAP mới.</li>
+    </ul>
+  </li>
+</ol>
+
+<p data-aura-rendered-by="12:31254;a">Nếu bạn vẫn gặp sự cố, hãy&nbsp;<a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">liên hệ với nhóm hỗ trợ</a>.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="109" sourceLocale="vi">WEB:15331126</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Tại sao tôi không kết nối được với dịch vụ Outline?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Có một vài lý do khiến bạn không thể kết nối với dịch vụ Outline:&nbsp;</p>
+
+<ul>
+  <li aria-level="1"><strong>Thiết bị của bạn</strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=vi#One" rel="noopener"><strong> </strong></a><a href="#Internetissues" rel="noopener"><strong>bị ngắt kết nối Internet</strong></a><a href="#Internetissues" rel="noopener"> </a><strong>. </strong>Đôi khi, thiết bị của bạn có thể bị ngắt kết nối mạng và có thể cần một chút thời gian để cập nhật biểu tượng mạng. Cũng có khả năng thiết bị của bạn có kết nối với mạng cục bộ, nhưng lại không có kết nối Internet.</li>
+  <li aria-level="1"><strong></strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=vi#Two"><strong> </strong></a><a href="#FirewallIssues" rel="noopener"><strong>Tường lửa mạng của bạn đang chặn quyền truy cập</strong></a><a href="#FirewallIssues" rel="noopener"> </a><strong><a href="#FirewallIssues" rel="noopener">vào</a> máy chủ Outline. </strong>Điều này thường xảy ra nếu bạn sử dụng mạng công cộng, chẳng hạn như mạng trường học, cơ quan hoặc mạng không dây miễn phí.</li>
+  <li aria-level="1"><strong>Thiết bị của bạn có</strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=vi#Three"><strong> </strong></a><a href="#SoftwareIssues" rel="noopener"><strong>tường lửa hoặc phần mềm diệt virus</strong></a><a href="#SoftwareIssues" rel="noopener"> </a><strong>đang chặn quyền truy cập vào máy chủ Outline.</strong></li>
+  <li aria-level="1"><strong>Bạn có thể phải thay đổi</strong><a href="#DeviceSettings" rel="noopener"><strong> </strong><strong>chế độ cài đặt thiết bị điện thoại</strong></a><strong> của bạn.</strong></li>
+  <li aria-level="1"><strong>Người quản lý dịch vụ của bạn có thể đã</strong><a href="#ServerIssues" rel="noopener"><strong> </strong><strong>huỷ bỏ máy chủ hoặc Nhà cung cấp dịch vụ Internet (ISP) có thể đang chặn yêu cầu của bạn</strong></a> .</li>
+</ul>
+
+<p><a id="Internetissues" name="Internetissues"><strong>Sự cố kết nối Internet:</strong></a></p>
+
+<p><strong>Cách kiểm tra:</strong></p>
+
+<p>Tắt Outline và xem có kết nối Internet lại hay chưa.</p>
+
+<ul>
+  <li aria-level="1">Nếu đã có lại kết nối, hãy xem các phương án khắc phục sự cố khác bên dưới.</li>
+  <li aria-level="1">Nếu không, hãy đợi một lát để xem các chế độ cài đặt kết nối mạng của bạn có tự cập nhật hay không.</li>
+</ul>
+
+<p><strong>Điểm cần khắc phục:</strong></p>
+
+<p>Giúp thiết bị có mạng trở lại:</p>
+
+<ol>
+  <li aria-level="1">Kiểm tra một thiết bị khác để xem thiết bị đó có thể kết nối với mạng đó hay không. Nếu các thiết bị khác không thể vào mạng, thì có thể đã xảy ra sự cố kết nối mạng và bạn cần chờ đến khi có mạng trở lại hoặc khắc phục sự cố.</li>
+  <li aria-level="1">Nếu các thiết bị khác có thể kết nối với mạng đó thì bạn có thể thử một hoặc nhiều cách sau để kết nối lại với mạng:
+    <ol>
+      <li aria-level="2">Đặt thiết bị ở chế độ trên máy bay (thiết bị di động)</li>
+      <li aria-level="2">Khởi động lại thiết bị</li>
+      <li aria-level="2">Tắt thiết bị, đợi 2 phút rồi bật lại thiết bị</li>
+    </ol>
+  </li>
+</ol>
+
+<p><a id="FirewallIssues" name="FirewallIssues"><strong>Sự cố với tường lửa mạng:</strong></a></p>
+
+<p><strong>Cách kiểm tra:</strong></p>
+
+<ol>
+  <li aria-level="1">Ngắt kết nối với mạng Wi-Fi hoặc mạng có dây hiện tại.</li>
+  <li aria-level="1">Kết nối với một mạng khác, chẳng hạn như mạng di động</li>
+  <li aria-level="1">Thử kết nối lại với máy chủ Outline</li>
+</ol>
+
+<p>Nếu bạn có thể kết nối trong khi đang sử dụng mạng khác, thì sự cố là do mạng của bạn.</p>
+
+<p><strong>Điểm cần khắc phục:</strong></p>
+
+<p>Hãy liên hệ với người quản lý dịch vụ rồi yêu cầu họ cho phép truy cập vào máy chủ Outline của bạn hoặc tiếp tục sử dụng mạng khác.</p>
+
+<p><a id="SoftwareIssues" name="SoftwareIssues"><img alt="Hình ảnh này không hiển thị vì: Bạn không có đặc quyền xem hình ảnh đó hoặc hình ảnh đó đã bị xoá khỏi hệ thống" height="1" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeoHNM7TWEsg0z4iydaS2xKOPga0zOjhOTqvGpA-JLd-Fwnydby6EBZziz3vqgRUJwssreEqP6lmjv_-13QXdzqh3yx9tZiR81BvxcXShi3kJ-XDKnqt951uRRPSO8BUhXaiijJLF8PixV_ezhGJ02Y3QPFbw?key=pJIeaVZQOqqoBTmDWZd2hw" width="1" /><strong>Sự cố với tường lửa hoặc phần mềm diệt virus:</strong></a><br />
+  <br />
+  <strong>Cách kiểm tra:</strong><br />
+  <br />
+  Thử kết nối với Outline bằng một thiết bị khác.&nbsp;</p>
+
+<p>Lưu ý: Hãy nhớ rằng bạn cần có khoá truy cập và ứng dụng Outline để sử dụng Outline trên một thiết bị khác.</p>
+
+<p><strong>Điểm cần khắc phục:</strong></p>
+
+<p>Hãy kiểm tra các chế độ cài đặt tường lửa hay phần mềm diệt virus để đảm bảo rằng các chế độ đó cho phép lưu lượng VPN và Outline đi qua.</p>
+
+<p><a id="DeviceSettings" name="DeviceSettings"><strong>Chế độ cài đặt thiết bị:</strong></a></p>
+
+<p><strong>Điểm cần kiểm tra:</strong></p>
+
+<p>Đối với Android:</p>
+
+<ol>
+  <li aria-level="1">Mở ứng dụng Cài đặt.</li>
+  <li aria-level="1">Tìm mục <strong>cài đặt VPN</strong> trên thiết bị. (Mục cài đặt VPN sẽ hiển thị cho bạn tất cả ứng dụng VPN hiện có quyền truy cập vào điện thoại của bạn.)&nbsp;</li>
+  <li aria-level="1">Nếu bạn không thấy Outline trong mục cài đặt VPN, hãy gỡ cài đặt Outline rồi cài đặt lại. Outline sẽ tự động được thiết bị cấp quyền truy cập sau khi cài đặt.</li>
+</ol>
+
+<p>Hãy đảm bảo rằng bạn không cài đặt ứng dụng lớp phủ màn hình trên thiết bị Android của mình, vì ứng dụng này có thể đang đẩy cửa sổ quyền truy cập vào Outline xuống nền (không hiện trong nền trước).<br />
+  <br />
+  Trên thiết bị Android, hãy chuyển đến phần Cài đặt &gt; Ứng dụng &gt; Quyền truy cập đặc biệt. Sau đó, hãy nhấn vào "Hiển thị trên các ứng dụng khác". Bạn có thể xoá quyền truy cập vào bất kỳ ứng dụng nào cho phép hoạt động này.<br />
+  <br />
+  Đối với iOS: Hãy đọc <a href="https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web" rel="noopener" target="_blank">bài viết trợ giúp này</a>.</p>
+
+<p><a id="ServerIssues" name="ServerIssues"><strong>Sự cố với máy chủ:</strong></a></p>
+
+<p><strong>Cách kiểm tra:</strong></p>
+
+<p>Nếu bạn có quyền truy cập vào nhiều máy chủ, hãy thử kết nối với một máy chủ khác.&nbsp;</p>
+
+<p><strong>Điểm cần khắc phục:</strong></p>
+
+<p>Hãy liên hệ với người quản lý dịch vụ của bạn để xem máy chủ đã bị huỷ bỏ hay chưa. Nếu đã bị huỷ bỏ, hãy yêu cầu họ cấp<a href="/outline-faq/answer/15330920" rel="noopener"> khoá truy cập</a> vào một máy chủ khác.</p>
+
+<p>Nếu bạn thiết lập máy chủ đó, hãy thử kết nối bằng ứng dụng Quản lý Outline hoặc một phương thức khác như<a href="https://en.wikipedia.org/wiki/Secure_Shell"> SSH</a>. Nếu cách này không hiệu quả, thì bạn có thể thử kiểm tra bảng điều khiển của nhà cung cấp dịch vụ đám mây (nếu có) để xem máy chủ đó có đang hoạt động hay không.</p>
+
+<p data-aura-rendered-by="12:32047;a">&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="vi">WEB:15331127</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Làm cách nào để tải ứng dụng xuống nếu đường liên kết tải xuống không hoạt động?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Hãy&nbsp;dùng&nbsp;<a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">đường liên kết này</a>&nbsp;để tải trực tiếp ứng dụng xuống (dành cho nhiều hệ điều hành).</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="131" sourceLocale="vi">WEB:15331222</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Thu thập dữ liệu và thông tin</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:271;a">Outline không thu thập thông tin cá nhân trừ phi bạn chọn cung cấp thông tin đó. Outline cũng không thu thập thông tin về các trang web mà bạn truy cập hoặc những người bạn giao tiếp và nội dung giao tiếp.<br />
+  <br />
+  Nếu bạn đang tạo hoặc đăng nhập vào một tài khoản thông qua nhà cung cấp dịch vụ đám mây bên thứ ba bằng ứng dụng Quản lý Outline, thì chúng tôi sẽ không thu thập bất kỳ thông tin nào mà bạn cung cấp cho nhà cung cấp dịch vụ đám mây bên thứ ba, chẳng hạn như địa chỉ email, tên, thông tin thanh toán và chi tiết thanh toán.<br />
+  <br />
+  <strong><strong>Thông tin chúng tôi thu thập tự động</strong></strong><br />
+  <br />
+  Chúng tôi thu thập tự động hai loại thông tin.<br />
+  1. IP của máy chủ<br />
+  IP của máy chủ Outline do&nbsp;<a href="http://quay.io/" target="_blank">Quay.io</a> thu thập và chúng tôi có thể truy cập vào thông tin này, khi máy chủ tự động cập nhật bản nâng cấp bảo mật và tính năng mới nhất. IP của máy chủ có thể nhận dạng nhà cung cấp máy chủ đám mây và thành phố mà máy chủ Outline được thiết lập, nhưng không cung cấp thông tin về người đang chạy máy chủ hay ai đang truy cập vào máy chủ đó.<br />
+  <br />
+  2. Thông tin kỹ thuật không nhận dạng cá nhân<br />
+  Nếu Outline bị treo hoặc gặp lỗi ngoại lệ nghiêm trọng, hoặc nếu bạn gửi ý kiến phản hồi theo cách thủ công qua ứng dụng Outline, thì những thông tin dưới đây sẽ được báo cáo. Những thông tin này chỉ dùng để giúp xác định và sửa lỗi về độ ổn định hoặc các vấn đề về hiệu suất.</p>
+
+<ul data-aura-rendered-by="12:271;a">
+  <li>Quốc gia</li>
+  <li>Ngôn ngữ</li>
+  <li>Ngày tháng và thời gian xảy ra hiện tượng treo/lỗi ngoại lệ và tối đa 100 sự kiện trước đó, chẳng hạn như sự kiện một người dùng mở phần "Giới thiệu"</li>
+  <li>Thông báo về lỗi ngoại lệ được biên dịch theo phương thức tĩnh</li>
+  <li>Phiên bản và tên hệ điều hành</li>
+  <li>Mẫu điện thoại (nếu có)</li>
+  <li>Thời gian khởi động ứng dụng</li>
+  <li>Trình duyệt</li>
+  <li>Kiến trúc</li>
+  <li>Phiên bản và số bản dựng của Outline</li>
+</ul>
+
+<p data-aura-rendered-by="12:271;a"><br />
+  Thông tin này được truyền qua giao thức HTTPS đến Sentry (<a href="http://sentry.io/" target="_blank">sentry.io</a>), một nhà cung cấp dịch vụ theo dõi lỗi mã nguồn mở bên thứ ba. Sentry sử dụng nhiều công nghệ và dịch vụ theo tiêu chuẩn ngành để bảo mật dữ liệu khỏi bị truy cập, tiết lộ, sử dụng trái phép và mất mát. Nếu bạn có câu hỏi về các chính sách của Sentry, vui lòng truy cập vào&nbsp;<a href="https://sentry.io/security/" target="_blank">https://sentry.io/security/</a>&nbsp;and&nbsp;<a href="https://sentry.io/privacy/" target="_blank">https://sentry.io/privacy/</a> hoặc contact&nbsp;<a href="mailto:security@sentry.io" target="_blank">security@sentry.io</a>. Tất cả dữ liệu Outline do Sentry lưu trữ đề được hạn chế để chỉ những thành viên của nhóm Outline mới có thể truy cập.<br />
+  <br />
+  <strong><strong>Những thông tin chúng tôi chỉ thu thập khi có sự đồng ý</strong></strong><br />
+  <br />
+  Outline báo cáo những thông tin sau đây cho nhóm Outline sau khi được đồng ý.<br />
+  1. Các chỉ số về mức sử dụng<br />
+  Mỗi máy chủ Outline đều tự động thu thập những dữ liệu sau đây trong một giờ gần nhất và theo từng khoá truy cập: số byte được chuyển, thời lượng một người dùng kết nối với máy chủ, các quốc gia và hệ thống tự quản nguồn gốc của thông tin đăng nhập được sử dụng và việc có những tính năng nào được bật hay bị tắt. Cả nội dung giao tiếp và siêu dữ liệu có thể nhận dạng cá nhân (ví dụ: thông tin đăng nhập, email, mã thiết bị, v.v.) đều không được ghi nhật ký. Tất cả các chỉ số đều được gắn với một mã nhận dạng máy chủ. Bạn có thể xem hướng dẫn về cách thay đổi mã nhận dạng máy chủ <a href="/outline-faq/answer/15548974" rel="noopener" target="_blank">tại&nbsp;đây</a>.<br />
+  <br />
+  Theo mặc định, Máy chủ Outline không chia sẻ các chỉ số này cho nhóm Outline. Nếu Quản trị viên máy chủ đồng ý chia sẻ một cách rõ ràng các chỉ số về mức sử dụng, thông tin này sẽ được gửi cho nhóm Outline một cách bảo mật mỗi giờ. Sau 60 ngày, số liệu mức sử dụng sẽ được tổng hợp theo cấp độ quốc gia. Quản trị viên máy chủ có thể thay đổi lựa chọn ưu tiên đối với việc chia sẻ các chỉ số về mức sử dụng bất cứ lúc nào bằng cách truy cập vào trình đơn "Cài đặt" trong ứng dụng Quản lý Outline.<br />
+  <br />
+  Chúng tôi rất trân trọng việc bạn chia sẻ các chỉ số ẩn danh về mức sử dụng máy chủ của bạn với chúng tôi, vì chúng tôi dùng những thông tin này để đo lường xu hướng sử dụng và cải tiến sản phẩm.<br />
+  <br />
+  Ví dụ: Nếu một Quản trị viên máy chủ đồng ý chia sẻ các chỉ số về mức sử dụng với chúng tôi, thì chúng tôi có thể nhận được thông tin cho biết Máy chủ có mã 12345 hôm qua đã được sử dụng 3 tiếng, truyền tổng cộng 500 megabyte dữ liệu bằng 3 khoá, trong đó mỗi khoá được sử dụng ở Hoa Kỳ và Canada, đồng thời có bật tính năng hạn mức dữ liệu.<br />
+  <br />
+  2. Nhận xét và email của bạn nếu bạn gửi ý kiến phản hồi<br />
+  Ứng dụng Outline và ứng dụng Quản lý Outline cho phép bạn gửi ý kiến phản hồi cho nhóm của chúng tôi. Bạn không nên gửi kèm thông tin nhận dạng cá nhân, nhưng bạn có thể điền vào trường email (không bắt buộc) nếu muốn nhận ý kiến phản hồi từ nhóm của chúng tôi. Chúng tôi cũng tự động thu thập một số thông tin cơ bản để có thể hiểu rõ phản hồi của bạn. Vui lòng xem mục 2 ở trên, trong phần "Thông tin chúng tôi thu thập tự động", để xem chúng tôi thu thập những dữ liệu nào.&nbsp;Tìm hiểu thêm về các phương thức bảo mật và bảo vệ quyền riêng tư của Outline&nbsp;<a href="/outline-faq/answer/14919822" rel="noopener" target="_blank">tại&nbsp;đây</a>.<br />
+  <br />
+  Nếu bạn đang dùng một phiên bản thử nghiệm của ứng dụng Outline trên Android, chúng tôi có thể dùng dịch vụ <a href="https://firebase.google.com/" target="_blank">Firebase</a>&nbsp;của Google để thu thập những thông tin gỡ lỗi có thể giúp phát hiện sự cố và cải thiện Outline. Bạn có thể tìm hiểu thêm về các chính sách của Firebase liên quan đến bảo mật và quyền riêng tư trên trang web của họ:&nbsp;<a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a>. Nếu bạn không muốn Outline gửi thông tin này qua Firebase, vui lòng sử dụng phiên bản phát hành công khai của ứng dụng Outline.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="88" sourceLocale="vi">WEB:15331223</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Điều gì sẽ xảy ra nếu khoá truy cập của tôi không hoạt động?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:30472;a">Nếu bạn nhận được thông báo lỗi:&nbsp;"Có vẻ như khoá truy cập của bạn không hợp lệ. Nếu vấn đề này vẫn tiếp diễn, vui lòng liên hệ với người quản lý dịch vụ của bạn", hãy làm theo các bước dưới đây để khắc phục sự cố:&nbsp;</p>
+
+<ol data-aura-rendered-by="12:30472;a">
+  <li>Đảm bảo bạn nhập đầy đủ khoá truy cập, bao gồm cả năm ký tự đầu tiên là "ss://" vì phần này có thể không tự động sao chép vào bảng nhớ tạm. Dưới đây là ví dụ minh hoạ một khoá truy cập đầy đủ (chỉ dùng để minh hoạ và không hoạt động được):</li>
+</ol>
+
+<pre data-aura-rendered-by="12:30472;a">ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@145.230.4.1:39485/?outline=1&nbsp;
+</pre>
+
+<ol data-aura-rendered-by="12:30472;a" start="2">
+  <li>Nếu khoá truy cập của bạn hoàn toàn không sao chép vào bảng nhớ tạm, thì có thể là do nền tảng hoặc ứng dụng nhắn tin của bạn. Điều này thường xảy ra khi bạn nhận được tin nhắn từ người không có trong danh bạ của bạn. Nếu bạn đang sao chép mã từ một tin nhắn, hãy đảm bảo rằng người gửi đã được thêm vào danh bạ, sau đó thử truy cập lại vào đường liên kết.&nbsp;</li>
+  <li>Nếu bạn đã hoàn thành bước 1 và 2 mà vẫn nhận được thông báo lỗi, thì rất có thể máy chủ đã bị chặn hoặc khoá truy cập không còn hiệu lực. Nếu bạn là người quản lý dịch vụ, hãy thử tạo một khoá mới cho chính mình. Nếu không, hãy liên hệ với người quản lý dịch vụ để yêu cầu khoá mới.</li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="96" sourceLocale="vi">WEB:15331322</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Chi phí để chạy Outline là bao nhiêu?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Outline là phần mềm hoàn toàn miễn phí dành cho tất cả mọi người, dù bạn là quản trị viên máy chủ quản lý VPN hay người dùng Outline để kết nối với Internet mở.<br />
+  <br />
+  Tuy nhiên, để chạy Outline thì người dùng phải có quyền truy cập vào máy chủ đám mây. Đối với những quản trị viên máy chủ đã có quyền truy cập vào máy chủ, họ có thể cài đặt Outline trên máy chủ đó mà không mất thêm chi phí. Những người không có quyền truy cập vào máy chủ có thể được cấp quyền truy cập từ một nhà cung cấp dịch vụ đám mây, chẳng hạn như&nbsp;<a href="http://www.digitalocean.com/" rel="noopener" target="_blank">DigitalOcean</a>&nbsp;hoặc Amazon Web Services, với giá khoảng 5 USD mỗi tháng để có hạn mức 1 TB truyền dữ liệu. Mức này đủ để hỗ trợ hàng trăm người dùng trên một máy chủ.<br />
+  <br />
+  Ví dụ về cách tính chi phí chạy Outline thông qua nhà cung cấp dịch vụ đám mây bạn lựa chọn:</p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td colspan="1" rowspan="1">
+      <p><em>Giả sử mức sử dụng trung bình hằng tháng của một người dùng là 5 GB truyền dữ liệu, thì gói 5 USD mỗi tháng sẽ cho phép khoảng 200 người dùng đồng thời, tức chi phí cho mỗi người dùng chỉ mất 2,5 cent mỗi tháng. Xin lưu ý rằng mức truyền dữ liệu mà mỗi người dùng sử dụng mỗi tháng sẽ khác nhau, tuỳ thuộc vào việc người dùng thực hiện các hoạt động cần băng thông thấp hay băng thông cao. Tuy nhiên, hầu hết các nhà cung cấp dịch vụ đám mây sẽ điều chỉnh linh hoạt để hỗ trợ lưu lượng truy cập tăng.</em></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br />
+  Trên thực tế, khi sử dụng Outline, bạn hoàn toàn ẩn danh đối với Jigsaw và Google. Chúng tôi không theo dõi danh tính hoặc lưu lượng truy cập của bạn và cũng không có kế hoạch kiếm tiền. Thay vào đó, chúng tôi hợp tác với cộng đồng nguồn mở để đảm bảo rằng chúng tôi có thể cung cấp phần mềm miễn phí cho người dùng. Tìm hiểu thêm về dữ liệu chúng tôi thu thập&nbsp;<a href="/outline-faq/answer/15331222" rel="noopener" target="_blank">tại đây</a>.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="386" sourceLocale="vi">WEB:15331326</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Làm cách nào để đặt hạn mức dữ liệu đối với khoá truy cập?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:15859;a">Bạn có thể đặt hạn mức dữ liệu để áp dụng cho tất cả các khoá truy cập. Để đặt hạn mức, hãy mở ứng dụng Quản lý Outline và chuyển đến phần Cài đặt. Ở đó, bạn sẽ thấy một nút bật/tắt Hạn mức dữ liệu. Khi bật nút chuyển này, bạn có thể đặt hạn mức.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787036"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">Sau khi đặt hạn mức, bạn có thể xem dung lượng còn lại của mỗi người dùng trên trang khoá truy cập. Trang này có một biểu đồ thanh cho biết mức sử dụng dữ liệu trong 30 ngày gần nhất.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787037"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">Ngoài việc có thể đặt hạn mức cho tất cả các khoá truy cập, bạn cũng có thể cấp hạn mức dữ liệu riêng cho từng khoá. Chế độ cài đặt này sẽ thay thế hạn mức dữ liệu mặc định mà bạn đặt. Nhưng nếu chưa đặt hạn mức dữ liệu mặc định thì bạn vẫn có thể đặt hạn mức dữ liệu cho bất kỳ khoá nào.&nbsp;<br />
+  <br />
+  Để đặt hạn mức chuyển dữ liệu của khoá, hãy mở ứng dụng Quản lý Outline, chuyển đến thẻ Kết nối có khoá mà bạn muốn thiết lập, rồi nhấp vào trình đơn bên phải của hàng có khoá đó. Tại đó, hãy nhấp vào Hạn mức dữ liệu. Để thay đổi hạn mức dữ liệu trên trang "Khoá truy cập của tôi", hãy nhấp vào biểu tượng Hạn mức dữ liệu&nbsp;<img alt="Biểu tượng hạn mức dữ liệu" height="19" src="https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw" width="19" />.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787423"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">Chọn mục Đặt hạn mức dữ liệu tuỳ chỉnh. Sau khi chọn hộp đánh dấu này, bạn sẽ thấy trường để đặt hạn mức dữ liệu tuỳ chỉnh cho khoá đó. Khi hoàn tất, hãy nhấp vào nút LƯU để lưu hạn mức dữ liệu.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15788959"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">Sau khi bạn lưu hạn mức chuyển dữ liệu cho khoá đã chọn, hạn mức này sẽ xuất hiện trên màn hình chính cùng với mức sử dụng dữ liệu (trong 30 ngày qua) của từng khoá.</p>
+
+<p data-aura-rendered-by="12:15859;a">Để xoá hạn mức dữ liệu khỏi một khoá truy cập, hãy chuyển đến hộp thoại Hạn mức dữ liệu của khoá đó như trước, bỏ đánh dấu hộp Đặt hạn mức dữ liệu tuỳ chỉnh rồi nhấp vào nút LƯU.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15788414"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a"><b><strong>Câu hỏi thường gặp về hạn mức dữ liệu</strong></b><br />
+  <br />
+  <strong><b>Hạn mức dữ liệu kéo dài 30 ngày là gì?</b></strong><br />
+  <br />
+  Hạn mức dữ liệu kéo dài 30 ngày cho biết tổng mức sử dụng dữ liệu của từng khoá trong 30 ngày qua và đảm bảo mức sử dụng của khoá trong khoảng thời gian đó được giữ dưới hạn mức. Do đó, mức sử dụng dữ liệu của khoá không bao giờ vượt quá hạn mức trong khoảng thời gian 30 ngày, kể cả các tháng có 30 ngày hoặc chưa đến 30 ngày. Trên thực tế, điều này có nghĩa là lượng dữ liệu tăng lên mỗi ngày của từng người dùng sẽ bằng với lượng dữ liệu họ sử dụng 31 ngày trước đó.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Vì sao Outline sử dụng hạn mức kéo dài?</strong><br />
+  <br />
+  Hạn mức kéo dài đảm bảo hạn mức cho khoảng thời gian mỗi 30 ngày, nghĩa là các hạn mức đó dễ định cấu hình hơn hạn mức định kỳ (chẳng hạn như một ngày có thể tuỳ chỉnh trong tháng) trong khi vẫn đảm bảo được hạn mức tương tự. Các hạn mức này cũng phù hợp với cách trình bày mức sử dụng dữ liệu sẵn có trong Outline và các công cụ thường gặp như dịch vụ phân tích và số liệu thống kê máy chủ.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Những dữ liệu nào được tính vào hạn mức dữ liệu?</strong><br />
+  <br />
+  Mỗi lần khoá truy cập lấy dữ liệu từ máy chủ đều được kiểm đếm. Nói một cách chính xác thì đây là lượng dữ liệu được gửi ra khỏi máy chủ thay cho khoá đó, đồng thời là lượng dữ liệu được gửi về ứng dụng. Trên thực tế, số liệu kiểm đếm này sẽ khớp gần đúng với lưu lượng truy cập được gửi từ khoá đến máy chủ và ngược lại, vì vậy, chúng tôi hy vọng rằng khoá sẽ khớp với số liệu kiểm đếm của người dùng. Chúng tôi chọn lượng dữ liệu đầu ra vì các nhà cung cấp dịch vụ đám mây mà chúng tôi khảo sát đều tính phí dựa trên lượng dữ liệu này.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Người dùng có được thông báo nếu họ vượt quá hạn mức dữ liệu không?</strong><br />
+  <br />
+  Hiện tại thì không. Nhiều nhà cung cấp dịch vụ đám mây áp dụng một hạn mức cho cả tháng, chẳng hạn như 1 TB, nhờ vậy có thể cung cấp 100 GB cho 10 người dùng hoặc 10 GB cho 100 người dùng. Đây là những con số khá lớn và chúng tôi không nghĩ là nhiều người dùng sẽ sử dụng hết chúng. Chúng tôi hy vọng rằng người dùng sẽ liên hệ với người quản lý máy chủ khi họ đạt đến hạn mức của mình. Tuy nhiên, chúng tôi rất mong bạn có thể chia sẻ ý kiến về sự hữu ích của thông báo đối với trường hợp sử dụng của bạn. Bạn có thể liên hệ với chúng tôi <a href="https://support.getoutline.org/s/contactsupport" target="_blank">tại đây</a>.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Người dùng có được thông báo nếu họ sắp đạt đến hạn mức dữ liệu không?</strong><br />
+  <br />
+  Lượng dữ liệu mới được cung cấp cho người dùng sắp đạt đến hạn mức sẽ thay đổi theo từng ngày, vì lượng dữ liệu này là dựa trên mức sử dụng của họ 30 ngày trước. Chúng tôi cho rằng thông báo cảnh báo sẽ dễ khiến người dùng cuối thấy bối rối hơn là giúp ích cho họ. Chúng tôi mong bạn có thể chia sẻ ý kiến phản hồi về việc này <a href="https://support.getoutline.org/s/contactsupport" rel="noopener" target="_blank">tại đây</a>.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Tôi có thể đặt lại mức sử dụng dữ liệu của một người dùng không?</strong><br />
+  <br />
+  Không. Hạn mức dữ liệu đối với một người dùng luôn bao gồm cả mức sử dụng dữ liệu của họ trong 30 ngày qua. Tuy nhiên, bạn có thể nâng hạn mức dữ liệu cho khoá của người dùng đó hoặc tạo một khoá mới cho người đó.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Vì sao một số người dùng mất quyền truy cập ngay sau khi tôi bật hạn mức dữ liệu?</strong><br />
+  <br />
+  Hạn mức dữ liệu là dựa trên dung lượng chuyển dữ liệu của người dùng trong 30 ngày trước đó. Thông tin này được ghi lại bất kể hạn mức dữ liệu có được bật hay không. Có thể những người dùng bạn đề cập đã vượt quá hạn mức đó trước khi bạn đặt hạn mức.&nbsp; Ngoài ra, xin lưu ý rằng tất cả hạn mức dữ liệu đều được áp dụng, kể cả khi bạn thay đổi hạn mức dữ liệu của một khoá duy nhất.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Tôi có thể đặt hạn mức cho toàn bộ máy chủ, chẳng hạn như "1 TB mỗi 30 ngày" không?</strong><br />
+  <br />
+  Hiện chưa được. Chúng tôi rất mong bạn chia sẻ thêm thông tin về trường hợp sử dụng của bạn <a href="https://support.getoutline.org/s/contactsupport" rel="noopener" target="_blank">tại đây</a>.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Giữa hạn mức dữ liệu mặc định và hạn mức dữ liệu đối với một khoá cụ thể, hạn mức nào sẽ được áp dụng?</strong><br />
+  <br />
+  Hạn mức dữ liệu đối với khoá cụ thể sẽ thay thế hạn mức dữ liệu mặc định (nếu có) mà bạn đặt.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Tôi có thể đặt hạn mức dữ liệu cho một khoá cụ thể mà không đặt hạn mức dữ liệu mặc định không?</strong><br />
+  <br />
+  Có.&nbsp; Bạn không cần đặt hạn mức mặc định để có thể đặt hạn mức dữ liệu cho một khoá.&nbsp; Ví dụ: Bạn có thể đặt hạn mức đối với khoá mà bạn nghĩ sẽ bị chia sẻ cho nhiều người, nhờ đó có thể ngăn việc chuyển dữ liệu quá nhiều qua khoá đó.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="vi">WEB:15331327</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Làm cách nào để đặt lại mã máy chủ?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:23999;a">Mã máy chủ là mã phía máy chủ, được tạo ngẫu nhiên khi bạn tạo một máy chủ Outline. Bạn có thể tìm thấy mã này khi đồng ý chia sẻ các chỉ số ẩn danh trong giao diện Cài đặt. Bạn có thể tìm mã máy chủ như sau: truy cập vào phần Cài đặt =&gt; kéo xuống phần dưới cùng =&gt; chọn "chia sẻ chỉ số ẩn danh".</p>
+
+<p data-aura-rendered-by="12:23999;a">Mã máy chủ sẽ liên kết số liệu thống kê về việc sử dụng (ẩn danh) được báo cáo theo thời gian. Nếu muốn đặt lại mã máy chủ và nhận một mã mới, bạn cần thay thế máy chủ Outline hiện có bằng một máy chủ mới.</p>
+
+<p data-aura-rendered-by="12:23999;a">Nếu đang sử dụng nhà cung cấp dịch vụ đám mây DigitalOcean, bạn có thể đặt lại máy chủ bằng cách truy cập vào phần Cài đặt rồi chọn Huỷ máy chủ. Hành động này sẽ không huỷ được và sẽ xoá thông tin xác thực của bạn. Ngay sau khi thực hiện hành động này, bạn sẽ được nhắc tạo một máy chủ mới ở vị trí bạn chọn, đồng thời một mã máy chủ mới sẽ được tạo.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="103" sourceLocale="vi">WEB:15331328</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Tôi có thể thay đổi vị trí của máy chủ Outline bằng cách nào?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:24761;a">Sau khi thiết lập, bạn không thể thay đổi vị trí của máy chủ. Để chạy máy chủ từ một vị trí khác, bạn cần xoá máy chủ Outline của mình và tạo một máy chủ mới.</p>
+
+<p data-aura-rendered-by="12:24761;a"><br />
+  Ngoài ra, bạn có thể thay đổi vị trí của VPN bằng <a href="https://developers.google.com/outline/docs/guides/service-providers/dynamic-access-keys" target="_blank">khoá linh hoạt</a>, giúp bạn luân phiên thay đổi máy chủ mà vẫn giữ nguyên khoá. Vị trí của máy chủ sẽ không thay đổi.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="102" sourceLocale="vi">WEB:15331423</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Cách gửi ý kiến phản hồi hoặc nội dung đề xuất</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:22486;a">Cảm ơn bạn đã giúp cải tiến Outline! Có một số cách để gửi ý kiến phản hồi cho chúng tôi. Bạn có thể gửi ẩn danh hoặc gửi qua email nếu cần chúng tôi trả lời:</p>
+
+<ul data-aura-rendered-by="12:22486;a">
+  <li><strong>Đối với nhà phát triển</strong>:&nbsp;Outline là phần mềm nguồn mở và chúng tôi lưu trữ tất cả mã nguồn của mình trên&nbsp;<a href="https://github.com/jigsaw-Code/?q=outline" target="_blank">GitHub</a>. Bạn có thể chia sẻ ý tưởng của mình trên GitHub hoặc trên cộng đồng&nbsp;<a href="https://www.reddit.com/r/outlinevpn/" target="_blank">Reddit</a>&nbsp;của chúng tôi.&nbsp;</li>
+  <li><strong>Đối với người dùng</strong>: Bạn có thể gửi ý kiến phản hồi cho chúng tôi thông qua ứng dụng Outline hoặc ứng dụng Quản lý Outline. Hãy cho chúng tôi biết phản hồi của bạn và, nếu có thể, hãy để lại email để chúng tôi có thể hồi đáp lại cho bạn về phản hồi đó. Chúng tôi cũng thu thập một số siêu dữ liệu về môi trường của bạn để có thể giúp bạn khắc phục sự cố, chẳng hạn như trình duyệt, hệ điều hành và phiên bản phần mềm mà bạn đang sử dụng.</li>
+  <li><strong>Thông qua trang web này</strong>: Bạn có thể nhấp vào mọi đường liên kết liên hệ với chúng tôi mà bạn nhìn thấy trên trang web này.</li>
+  <li><strong>Các vấn đề nghiêm trọng</strong>: Nếu bạn muốn báo cáo một vấn đề nghiêm trọng về bảo mật, vui lòng gửi email cung cấp chi tiết cho chúng tôi đến bộ phận bảo mật [tại] <a href="https://getoutline.org/" rel="noopener" target="_blank">getoutline.org</a>.</li>
+</ul>
+
+<p data-aura-rendered-by="12:22486;a">Xin cảm ơn bạn một lần nữa vì đã dành thời gian chia sẻ suy nghĩ của mình với chúng tôi!</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="146" sourceLocale="vi">WEB:15331424</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Quản lý quyền truy cập vào máy chủ Outline (có khoá truy cập)</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:25527;a">Sau khi cài đặt xong máy chủ Outline, bạn có thể bắt đầu chia sẻ và quản lý quyền truy cập của mọi người vào máy chủ đó. Những người được bạn mời sẽ có thể tải ứng dụng Outline xuống để sử dụng nhằm bảo vệ lưu lượng truy cập Internet của họ.</p>
+
+<p data-aura-rendered-by="12:25527;a"><strong>Chia sẻ quyền truy cập vào máy chủ Outline</strong><br />
+  Sau khi cài đặt xong máy chủ Outline, bạn sẽ được chuyển đến trang chi tiết máy chủ trên ứng dụng Quản lý Outline để tạo khoá truy cập. Tìm hiểu thêm về <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">khoá truy cập</a>.</p>
+
+<ul data-aura-rendered-by="12:25527;a">
+  <li>Tạo khoá: Nhấp vào biểu tượng "+" nhỏ ở cuối trang để tạo khoá mới.</li>
+  <li>Chia sẻ khoá: Ở bên phải mỗi khoá, bạn có thể nhấp vào biểu tượng chia sẻ để lấy lời mời. Sao chép và dán lời mời này vào hệ thống nhắn tin bạn chọn.</li>
+</ul>
+
+<p data-aura-rendered-by="12:25527;a"><strong>Yêu cầu tính năng: Chia sẻ quyền truy cập ngay trong ứng dụng Quản lý Outline</strong><br />
+  Nhiều quản trị viên máy chủ yêu cầu chúng tôi hợp lý hoá quy trình mời bằng cách cung cấp tính năng nhập trực tiếp địa chỉ email của người dùng vào ứng dụng Quản lý Outline.</p>
+
+<p data-aura-rendered-by="12:25527;a">Tuy nhiên, chúng tôi rất tiếc vì không thể tích hợp chức năng này vào ứng dụng Quản lý Outline. Một trong những nguyên tắc cốt lõi của chúng tôi là hỗ trợ quyền riêng tư và bảo mật của người dùng, điều đó có nghĩa là chúng tôi không tạo bất kỳ nơi nào để thêm địa chỉ email hoặc thông tin liên hệ.</p>
+
+<p data-aura-rendered-by="12:25527;a">Đây là lý do chúng tôi yêu cầu quản trị viên máy chủ sử dụng một nền tảng nhắn tin bảo mật, chẳng hạn như gửi email hoặc nhắn tin bảo mật, để gửi lời mời đến người dùng cuối.<br />
+  <br />
+  <strong>Người dùng cần làm gì sau khi bạn chia sẻ khoá truy cập với họ</strong></p>
+
+<ol data-aura-rendered-by="12:25527;a">
+  <li>Người dùng sẽ nhấp vào đường liên kết cài đặt trên thiết bị của họ</li>
+  <li>Họ sẽ được nhắc cài đặt ứng dụng Outline</li>
+  <li>Họ sẽ thiết lập kết nối ban đầu đến máy chủ Outline của bạn thông qua khóa truy cập duy nhất được nhúng trong lời mời</li>
+  <li>Giờ đây, họ có thể sử dụng nút kết nối/ngắt kết nối để quản lý quyền truy cập vào Internet thông qua máy chủ Outline của bạn</li>
+</ol>
+
+<p data-aura-rendered-by="12:25527;a"><strong>Xoá quyền truy cập vào máy chủ Outline</strong><br />
+  Trên trang chi tiết máy chủ trong ứng dụng Quản lý Outline, ở bên phải mỗi khoá trên máy chủ, bạn sẽ thấy một trình đơn có tuỳ chọn xoá khoá. Thao tác xoá khoá sẽ huỷ quyền truy cập của người dùng vào máy chủ của bạn.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="92" sourceLocale="vi">WEB:15331524</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Làm cách nào để truy cập vào các tài nguyên của Outline nếu trang web getoutline.org bị chặn?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><a href="https://s3.amazonaws.com/outline-vpn/index.html" target="_blank">Hãy đánh dấu lại trang web sao phỏng này</a> để sử dụng nếu bạn không truy cập được vào <a href="http://getoutline.org/" target="_blank">getoutline.org</a>.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="321" sourceLocale="vi">WEB:15331527</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Cài đặt ứng dụng Outline trên Linux</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Kể từ phiên bản 1.15 của ứng dụng Outline, tất cả các phiên bản trong tương lai sẽ được phát hành dưới dạng gói Debian cho hệ điều hành Linux. Hãy xem <a href="/outline/answer/15330818" rel="noopener" target="_blank"><u>các yêu cầu tối thiểu về hệ thống</u></a> của chúng tôi để biết thêm thông tin về những hệ điều hành mà chúng tôi hỗ trợ.</p>
+&nbsp;
+
+<p><strong>Cài đặt ứng dụng Outline cho các bản phân phối Linux dựa trên Debian (Nên dùng)</strong></p>
+&nbsp;
+
+<p>Chạy các lệnh sau:</p>
+
+<ol>
+  <li aria-level="1">Cài đặt khoá kho lưu trữ của Outline và thêm kho lưu trữ.
+    <div class="code">
+      <div class="no-margin">
+        <p>wget -qO- https://us-apt.pkg.dev/doc/repo-signing-key.gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/gcloud-artifact-registry-us.gpg</p>
+
+        <p>echo "deb [arch=amd64] https://us-apt.pkg.dev/projects/jigsaw-outline-apps outline-client main" | sudo tee /etc/apt/sources.list.d/outline-client.list</p>
+      </div>
+    </div>
+  </li>
+  <li aria-level="2">Cập nhật danh sách gói apt và cài đặt phiên bản mới nhất của ứng dụng Outline.
+    <div class="code">
+      <div class="no-margin">
+        <p>sudo apt update</p>
+
+        <p>sudo apt install outline-client</p>
+      </div>
+    </div>
+  </li>
+</ol>
+
+<p>Để kiểm tra hoặc cài đặt các bản cập nhật trong tương lai, hãy chạy lại các lệnh trong Bước 2. Xin lưu ý rằng tính năng tự động cập nhật trong ứng dụng bị tắt đối với ứng dụng Outline trên Linux, bắt đầu từ phiên bản 1.15.</p>
+
+<p>Để gỡ cài đặt ứng dụng Outline, hãy chạy lệnh sau:</p>
+
+<div class="code">
+  <div class="no-margin">sudo apt purge outline-client</div>
+</div>
+
+<p><strong>Lựa chọn thay thế</strong></p>
+
+<ol>
+  <li aria-level="1">Tải gói ứng dụng Outline mới nhất cho Debian xuống từ <a href="https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb" rel="noopener" target="_blank">https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb</a></li>
+  <li aria-level="2">Chạy các lệnh sau trong dòng lệnh để cài đặt gói
+    <div class="code">
+      <div class="no-margin">
+        <p>wget -O ./outline-client.deb https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb</p>
+
+        <p>sudo apt install ./outline-client.deb</p>
+      </div>
+    </div>
+  </li>
+  <li aria-level="3">Kiểm tra bản cập nhật theo cách thủ công, vì tính năng tự động cập nhật trong ứng dụng bị tắt đối với ứng dụng Outline trên Linux, bắt đầu từ phiên bản 1.15.</li>
+  <li aria-level="4">Để gỡ cài đặt ứng dụng Outline, hãy chạy lệnh sau trong dòng lệnh:
+    <div class="code">
+      <div class="no-margin">sudo apt purge outline-client</div>
+    </div>
+  </li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="206" sourceLocale="vi">WEB:15331528</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Khoá truy cập có dùng được nhiều lần không?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1895;a">Có. Bạn có thể sử dụng <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">khoá truy cập</a>&nbsp;cho bao nhiêu thiết bị tuỳ ý, nhưng bạn không nên chia sẻ khoá của mình với người khác. Người có khoá truy cập của bạn có thể sẽ kiểm tra được tất cả lưu lượng truy cập của bạn nếu họ có quyền truy cập vào, khiến hoạt động sử dụng Internet của bạn không còn được bảo mật hoặc riêng tư.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="104" sourceLocale="vi">WEB:15331529</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Kết nối thiết bị với một máy chủ Outline</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1399;a">&nbsp;</p>
+
+<p data-aura-rendered-by="12:1399;a"><strong>Kết nối thiết bị với một máy chủ Outline</strong></p>
+
+<p data-aura-rendered-by="12:1399;a">Để bạn có thể kết nối thiết bị với một máy chủ Outline, một quản trị viên máy chủ phải gửi cho bạn lời mời kết nối với máy chủ của họ kèm theo một <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">khoá truy cập</a> duy nhất. Nội dung lời mời sẽ:</p>
+
+<ul data-aura-rendered-by="12:1399;a">
+  <li>Hướng dẫn bạn cách tải và cài đặt Outline trên thiết bị nếu bạn chưa cài đặt ứng dụng này</li>
+  <li>Bao gồm cách sử dụng khoá truy cập để tạo kết nối bảo mật giữa bạn và máy chủ Outline</li>
+</ul>
+
+<p data-aura-rendered-by="12:1399;a">Sau khi thiết lập kết nối với máy chủ, bạn có thể nhấp vào "kết nối" hoặc "ngắt kết nối" để sử dụng Outline.</p>
+
+<p data-aura-rendered-by="12:1399;a"><em>Quan trọng:</em>&nbsp;Outline sẽ không hoạt động nếu không có khoá truy cập và một máy chủ Outline. Việc tải và cài đặt ứng dụng Outline mà không có khoá sẽ không giúp bảo vệ lưu lượng truy cập Internet của bạn.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="100" sourceLocale="vi">WEB:15331530</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Làm cách nào để thiết lập một máy chủ Outline?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:27063;a">Bước đầu tiên để có thể sử dụng Outline là thiết lập một máy chủ Outline. Bạn hoặc người mà bạn tin tưởng phải thiết lập một máy chủ cho bạn để bạn kết nối với Internet mở thông qua Outline.<br />
+  <br />
+  <strong>Trước khi bắt đầu</strong><br />
+  Trước khi bắt đầu thiết lập máy chủ Outline, bạn cần chuẩn bị một vài thứ:</p>
+
+<ol data-aura-rendered-by="12:27063;a">
+  <li>Quyền truy cập vào máy chủ của riêng bạn hoặc nhà cung cấp dịch vụ đám mây, chẳng hạn như DigitalOcean, Amazon Web Services (AWS) hoặc Google Cloud Platform (GCP).<br />
+    Nếu không có ngay quyền truy cập vào máy chủ đám mây thì bạn có thể dễ dàng thiết lập một tài khoản với bất kỳ nhà cung cấp nào, kể cả những nhà cung cấp trong danh sách ở trên. Bạn có thể cần một thẻ tín dụng để đăng ký.</li>
+  <li>Một máy tính để bàn chạy macOS 10.9 trở lên, Windows 7.0 trở lên hoặc Linux.</li>
+  <li>Ứng dụng Quản lý Outline.</li>
+</ol>
+
+<p data-aura-rendered-by="12:27063;a"><strong>Thiết lập bằng DigitalOcean</strong><br />
+  <br />
+  Chúng tôi đã đơn giản hoá quá trình để ai cũng có thể cài đặt Outline trên DigitalOcean chỉ bằng vài cú nhấp chuột. Sau khi tải ứng dụng Quản lý Outline xuống và cài đặt nó trên máy tính, bạn có thể chọn chế độ thiết lập DigitalOcean. Chế độ này sẽ hướng dẫn bạn thông qua một vài màn hình đơn giản để định cấu hình và cài đặt máy chủ Outline.<br />
+  <br />
+  <strong>Thiết lập với một nhà cung cấp dịch vụ đám mây khác</strong><br />
+  <br />
+  Sau khi tải ứng dụng Quản lý Outline xuống và cài đặt nó, bạn có thể chọn cài đặt một máy chủ Outline trên máy ảo thông qua AWS, GCP, DigitalOcean hoặc một nhà cung cấp khác. Vì không có môi trường nào giống nhau nên chúng tôi đã đưa các hướng dẫn vào quy trình thiết lập ứng dụng Quản lý Outline cho các nhà cung cấp dịch vụ đám mây phổ biến nhất, bao gồm cả cách định cấu hình chế độ cài đặt trên máy ảo trước khi bạn chạy tập lệnh cài đặt để cài đặt Outline trên máy chủ.<br />
+  <br />
+  <strong><em>Bạn cần được hỗ trợ thêm?</em></strong><br />
+  <br />
+  Hãy tham khảo&nbsp;<a href="/outline-faq/answer/15331728" rel="noopener" target="_blank">các câu hỏi thường gặp về cách thiết lập máy chủ Outline</a>.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="95" sourceLocale="vi">WEB:15331625</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Tôi có được sử dụng hoặc sao chép thương hiệu Outline không?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Dù Outline là một phần mềm nguồn mở và cho phép sử dụng miễn phí, nhưng thương hiệu của chúng tôi thuộc quyền sở hữu riêng của Jigsaw và bạn không được sử dụng sai mục đích. Vui lòng làm theo <a href="https://github.com/Jigsaw-Code/outline-brand/blob/main/outline_brand_user_guide.pdf" target="_blank">hướng dẫn sử dụng</a> để đảm bảo bạn không đưa ra tuyên bố gây hiểu lầm hoặc mô tả sai mối quan hệ của bạn với Outline hoặc Jigsaw, cũng như để đảm bảo bạn đang sử dụng đúng những thành phần thương hiệu được phê duyệt.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="191" sourceLocale="vi">WEB:15331628</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Làm cách nào để lấy khoá truy cập?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:3258;a">Outline không giống với các dịch vụ VPN (mạng riêng ảo) bạn mua quyền truy cập, mà đây là <a href="https://getoutline.org/#:~:text=Two%20Products%20that%20Work%20Together" target="_blank">một công cụ</a> giúp bạn chạy và chia sẻ quyền truy cập vào một máy chủ VPN riêng tư. <a href="/outline/answer/15330920#servicemanager" rel="noopener" target="_blank">Người quản lý dịch vụ</a> là người duy nhất có thể cung cấp khoá truy cập. Nhóm Outline không phân phối khoá truy cập miễn phí hoặc có tính phí. Chúng tôi không có đối tác chính thức nào phân phối khoá truy cập Outline, ngoại trừ Paskoocheh bằng tiếng Farsi.<br />
+  <br />
+  Sau đây là ba cách để lấy khoá truy cập:&nbsp;</p>
+
+<ul data-aura-rendered-by="12:3258;a">
+  <li>Nhờ người khác mời bạn truy cập vào máy chủ của họ: Nếu bạn biết một người có máy chủ Outline, hãy liên hệ với họ và nhờ họ cung cấp khoá truy cập.</li>
+  <li><a href="/outline/answer/15331530" rel="noopener" target="_blank">Tự tạo máy chủ:</a> Trên máy tính Windows, Mac hoặc Linux, hãy tải ứng dụng <a href="https://getoutline.org/get-started/#step-1" target="_blank">Quản lý Outline</a> xuống rồi tự thiết lập <a href="/outline/answer/15330920" rel="noopener" target="_blank">máy chủ Outline</a> riêng tư của bạn. Chúng tôi đã đơn giản hoá quy trình này để ai cũng có thể làm, đặc biệt là khi thực hiện qua nhà cung cấp dịch vụ đám mây DigitalOcean.</li>
+  <li>Dùng một dịch vụ của Outline hoặc <a href="https://en.wikipedia.org/wiki/Shadowsocks#:~:text=Shadowsocks%20is%20a%20free%20and,have%20been%20made%20available%20since." target="_blank">Shadowsocks</a>: Ứng dụng Outline cũng có thể được dùng với những dịch vụ bên thứ ba sử dụng giao thức Shadowsocks hoặc Outline. Ví dụ:
+    <ul>
+      <li><a href="http://nthlink.com/" target="_blank">nthLink</a> vận hành một dịch vụ miễn phí dựa trên Outline, có một phiên bản sửa đổi của ứng dụng Outline.</li>
+      <li><a href="https://www.reddit.com/r/outlinevpn/comments/nwu1se/the_outline_distribution_system_is_here_to_help/" target="_blank">ASL19</a> vận hành một phiên bản sửa đổi của Outline có tên là <a href="https://beepassvpn.com/" target="_blank">BeePass</a> cùng <a href="https://t.me/paskoochehbot" target="_blank">một bot trên Telegram</a> để cung cấp khoá truy cập miễn phí cho các máy chủ BeePass.</li>
+      <li>Người dùng nói tiếng Farsi cũng có thể yêu cầu khoá truy cập Outline thông qua <a href="https://outline.paskoocheh.com/" target="_blank">trang web Paskoocheh của ASL19</a>.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Sau khi tải ứng dụng Outline xuống, hãy sao chép và dán <a href="/outline/answer/15330920#accesskey" rel="noopener" target="_blank">khoá truy cập</a>&nbsp;của bạn vào ứng dụng Outline để kết nối với máy chủ Outline.&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="133" sourceLocale="vi">WEB:15331630</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Làm cách nào để tôi xoá máy chủ Outline của mình?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:14046;a">Đối với hầu hết các nhà cung cấp dịch vụ đám mây, việc xoá một máy ảo cụ thể mà bạn đang sử dụng khá dễ dàng.</p>
+
+<p data-aura-rendered-by="12:14046;a">Nếu đang sử dụng nhà cung cấp dịch vụ đám mây DigitalOcean, bạn có thể xoá máy ảo hiện có bằng cách nhấp vào nút bánh răng rồi chọn mục Huỷ máy chủ. Ngay sau đó, bạn sẽ được nhắc tạo một máy ảo mới ở vị trí do bạn chọn.</p>
+
+<p data-aura-rendered-by="12:14046;a">Nếu bạn xoá máy chủ Outline, thì máy chủ đó sẽ bị xoá vĩnh viễn và các khoá truy cập của máy chủ đó sẽ không hoạt động nữa. Nếu không muốn mọi người bị gián đoạn khi dùng Outline, bạn cần phải <a href="/outline-faq/answer/15331530" rel="noopener" target="_blank">thiết lập máy chủ Outline mới</a> rồi chia sẻ quyền truy cập vào máy chủ đó trước khi bạn xoá máy chủ cũ.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="99" sourceLocale="vi">WEB:15331631</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Cách thiết lập nhiều máy chủ Outline</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:27908;a">Để thiết lập thêm máy chủ Outline, hãy nhấp vào biểu tượng "+" trên bảng điều hướng ở bên trái ứng dụng Quản lý Outline. Hướng dẫn cách thêm máy chủ mới tương tự như khi bạn cài đặt máy chủ đầu tiên.</p>
+
+<ul data-aura-rendered-by="12:27908;a">
+  <li>Chúng tôi không giới hạn số lượng máy chủ Outline mà bạn có thể tạo.</li>
+  <li>Đối với mọi máy chủ Outline bạn tạo, bạn cần một máy ảo tương ứng.</li>
+  <li>Việc tạo thêm máy hoặc các máy chủ riêng lẻ có thể khiến bạn phải trả thêm phí cho nhà cung cấp dịch vụ đám mây. Vui lòng kiểm tra gói giá của bạn với nhà cung cấp dịch vụ đám mây để đảm bảo bạn biết bạn nên làm gì.</li>
+</ul>
+
+<p data-aura-rendered-by="12:27908;a"><strong>Tạo thêm máy chủ Outline trên DigitalOcean</strong></p>
+
+<p data-aura-rendered-by="12:27908;a">Sau khi nhấp vào biểu tượng + và chọn cài đặt trên DigitalOcean, bạn cần làm theo các hướng dẫn tương tự như khi bạn đã thực hiện để thiết lập máy chủ đầu tiên. Ngoài ra, vì ứng dụng Quản lý Outline tích hợp với DigitalOcean, chúng tôi có thể tạo ra máy chủ riêng lẻ cho bạn mà không cần bạn phải rời khỏi ứng dụng Quản lý Outline.</p>
+
+<p data-aura-rendered-by="12:27908;a">Xin lưu ý rằng ứng dụng Quản lý Outline chỉ có thể hỗ trợ một tài khoản DigitalOcean tại một thời điểm. Nếu muốn thêm hoặc tạo các máy chủ Outline khác từ các tài khoản DigitalOcean khác, bạn có thể thêm máy chủ dưới dạng cấu hình nâng cao.</p>
+
+<p data-aura-rendered-by="12:27908;a"><strong>Tạo thêm máy chủ Outline trên GCP, AWS hoặc một nhà cung cấp dịch vụ đám mây khác</strong></p>
+
+<p data-aura-rendered-by="12:27908;a">Bạn có thể bắt đầu bằng cách tạo một máy ảo mới thông qua nhà cung cấp dịch vụ đám mây bạn đã chọn. Sau đó, mở ứng dụng Quản lý Outline và hoàn thành phần hướng dẫn cài đặt nâng cao, tương tự như những gì bạn có thể đã làm với máy chủ đầu tiên.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="96" sourceLocale="vi">WEB:15331632</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Tại sao tôi không tải được ứng dụng Quản lý Outline trên thiết bị chạy Windows?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:34680;a">Bạn có thể thấy thông báo lỗi này: "Rất tiếc, có vẻ như bạn đã cài đặt Outline không đúng cách. Hãy thử cài đặt lại. Nếu việc cài đặt lại không có tác dụng, vui lòng <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">gửi ý kiến phản hồi</a>."</p>
+
+<p data-aura-rendered-by="12:34680;a">Nếu đang sử dụng Outline trên thiết bị chạy Windows, thì đôi khi bạn có thể gặp phải lỗi không mong muốn. Trong hầu hết trường hợp, bạn cần xoá bộ điều hợp TAP (trình điều khiển) của Outline và cài đặt lại Outline.&nbsp;</p>
+
+<p data-aura-rendered-by="12:34680;a">Các bước có thể khác nhau tuỳ theo phiên bản hệ điều hành Windows bạn dùng. Tuy nhiên, bên dưới là các bước tổng quát về cách gỡ cài đặt bộ điều hợp TAP và ứng dụng Quản lý Outline, sau đó cài đặt lại ứng dụng Quản lý Outline.</p>
+
+<ol data-aura-rendered-by="12:34680;a">
+  <li>Gỡ cài đặt bộ điều hợp TAP của ứng dụng Quản lý Outline
+    <ol>
+      <li>Truy cập vào Trình quản lý thiết bị, sau đó chọn Bộ điều hợp mạng</li>
+      <li>Tìm tệp TAP-Windows Adapter V9 hoặc bộ điều hợp TAP liên kết với Outline</li>
+      <li>Gỡ cài đặt hoặc xoá bộ điều hợp này. Lưu ý rằng thao tác này có thể ảnh hưởng đến các ứng dụng VPN khác mà bạn đã cài đặt.&nbsp;</li>
+    </ol>
+  </li>
+  <li>Gỡ cài đặt ứng dụng Quản lý Outline
+    <ol>
+      <li>Truy cập vào phần Chương trình và tính năng, sau đó chọn mục Gỡ cài đặt chương trình</li>
+      <li>Tìm ứng dụng Quản lý Outline rồi gỡ cài đặt ứng dụng này</li>
+      <li><a href="https://getoutline.org/get-started/#step-1" target="_blank">Tải phiên bản mới nhất của ứng dụng Quản lý Outline xuống</a> rồi cài đặt lại trên thiết bị chạy Windows. Thao tác này sẽ tự động cài đặt một bộ điều hợp TAP mới.</li>
+    </ol>
+  </li>
+</ol>
+
+<p data-aura-rendered-by="12:34680;a">Nếu bạn vẫn gặp vấn đề, hãy <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">liên hệ với bộ phận hỗ trợ</a>.&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="94" sourceLocale="vi">WEB:15331727</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Thiết lập tự động Google Cloud</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:26310;a"><strong>Tổng quan</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Ứng dụng Quản lý Outline có một tính năng cho phép bạn tự động định cấu hình Máy chủ Outline trên máy chủ chạy trên Google Cloud. Nếu bạn chọn sử dụng tính năng này, thì ứng dụng Quản lý Outline sẽ yêu cầu bạn đăng nhập bằng Tài khoản Google. Tài khoản này sẽ cấp một số quyền<a href="https://developers.google.com/identity/protocols/oauth2" target="_blank"> OAuth</a> để cài đặt ứng dụng Quản lý Outline trên thiết bị nhằm mục đích định cấu hình Tài khoản Google Cloud.<br />
+  Nếu không muốn cấp những quyền này, bạn có thể làm theo các hướng dẫn thiết lập nâng cao trong ứng dụng Quản lý Outline để chạy Outline trên Google Cloud Platform.&nbsp;</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Quyền đã được cấp</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Để cung cấp chế độ thiết lập tự động, ứng dụng Quản lý Outline yêu cầu các quyền sau đây trong Tài khoản Google của bạn.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Google Cloud Platform</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>Xem và quản lý tài nguyên của bạn trên Google Compute Engine</li>
+  <li>Xem dữ liệu của bạn trong các dịch vụ của Google Cloud và xem địa chỉ email của Tài khoản Google của bạn</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Thông tin cơ bản về tài khoản</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>Xem địa chỉ email trong Tài khoản Google chính của bạn</li>
+  <li>Liên kết bạn với những thông tin cá nhân của bạn trên Google</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Quyền truy cập bổ sung</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>Quản lý các dự án của bạn trên Cloud Platform</li>
+  <li>Xem và quản lý tài khoản thanh toán Google Cloud Platform của bạn</li>
+  <li>Quản lý cấu hình dịch vụ API của Google</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a">Các quyền này cho phép chúng tôi hỗ trợ chức năng nâng cao để quản lý máy chủ Outline của bạn, bao gồm:</p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>Cho phép bạn chọn đúng tài khoản thanh toán</li>
+  <li>Tạo một dự án mới để sắp xếp các máy chủ Outline của bạn</li>
+  <li>Liệt kê các trung tâm dữ liệu có sẵn</li>
+  <li>Tạo máy ảo mới để chạy Outline</li>
+  <li>Định cấu hình máy ảo mới bằng Outline</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Thu hồi quyền</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Bạn có thể thu hồi quyền truy cập vào Google Cloud Platform đối với ứng dụng Quản lý Outline bằng cách truy cập vào phần<a href="https://myaccount.google.com/permissions" target="_blank"> Tài khoản của tôi</a>. Nếu bạn thu hồi quyền truy cập, mọi máy chủ bạn đã tạo bằng tính năng thiết lập tự động sẽ vẫn chạy nhưng không còn xuất hiện trong ứng dụng Quản lý Outline nữa. Để khôi phục quyền truy cập vào các ứng dụng đó, bạn chỉ cần kết nối lại với Google Cloud Platform bằng cách bắt đầu quy trình thiết lập tự động.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Sắp xếp dự án Outline</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Tính năng thiết lập tự động của Google Cloud sử dụng một<a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects" target="_blank"> dự án Google Cloud</a> duy nhất để sắp xếp các máy chủ Outline của bạn. Dự án này được tạo trong lần đầu tiên thiết lập tự động, với một mã dự án đề xuất bắt đầu bằng “Outline-” rồi đến một chuỗi ký tự ngẫu nhiên. Bạn có thể chọn một mã dự án khác khi tạo, nếu muốn. Dự án này sẽ có tên là "Máy chủ Outline".</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Tài khoản thanh toán</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Các dự án Google Cloud yêu cầu bạn phải liên kết với một "tài khoản thanh toán" để xác định thông tin thanh toán. Khi mới sử dụng tính năng thiết lập tự động trên Google Cloud, bạn sẽ được yêu cầu cung cấp một tài khoản thanh toán để liên kết với máy chủ Outline của bạn. Đôi khi, máy chủ sẽ ngừng chạy vì xảy ra sự cố với tài khoản thanh toán. Trong trường hợp này, bạn nên đăng nhập vào<a href="https://console.cloud.google.com/getting-started" target="_blank"> Google Cloud Console</a>, tìm dự án Google Cloud liên kết với Outline (có tên là “Máy chủ Outline”) rồi cập nhật các chế độ cài đặt thanh toán.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Huỷ bỏ máy chủ</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Nếu bạn muốn huỷ bỏ các máy chủ đã tạo bằng chế độ thiết lập tự động, thì cách dễ nhất là làm việc này trong ứng dụng Quản lý Outline. Tuy nhiên, nếu muốn tự hủy bỏ các máy chủ, bạn có thể đăng nhập vào<a href="https://console.cloud.google.com/getting-started" target="_blank"> Google Cloud Console</a>, tìm dự án được tạo trong quá trình thiết lập ban đầu (có tên là “Máy chủ Outline”) rồi xóa các tài nguyên ở đó hoặc tắt dự án đó.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="99" sourceLocale="vi">WEB:15331728</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Các câu hỏi thường gặp về việc thiết lập máy chủ</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:28806;a"><strong>Tôi có thể sử dụng Outline mà không cần máy chủ không?</strong><br />
+  <br />
+  Rất tiếc là không. Phần mềm Outline cần truy cập vào một máy chủ, cho dù máy chủ đó do bạn, tổ chức của bạn hay bên thứ ba đáng tin cậy quản lý.&nbsp;</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>Thiết lập một máy chủ Outline mất bao lâu?</strong></p>
+
+<p data-aura-rendered-by="12:28806;a">Trong hầu hết các trường hợp, thời gian thiết lập chưa đến 5 phút. Bạn có thể cài đặt Outline trên bất kỳ máy chủ đám mây nào. Ngoài ra, chúng tôi đã hợp tác với DigitalOcean để cung cấp hướng dẫn cài đặt và giúp quy trình này phù hợp hơn với người dùng. Vì vậy, bạn có thể thiết lập máy chủ với một vài cú nhấp chuột mà không cần tập lệnh.</p>
+
+<p data-aura-rendered-by="12:28806;a">Nếu bạn chọn AWS, GCP hoặc thiết lập nâng cao, thì chúng tôi đã đơn giản hoá quy trình cài đặt máy chủ thành một tập lệnh có thể xử lý hầu hết các môi trường.&nbsp;</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>Tôi có thể thiết lập máy chủ Outline ở đâu?</strong></p>
+
+<p data-aura-rendered-by="12:28806;a">Bạn có thể thiết lập máy chủ Outline trên hầu hết các nhà cung cấp dịch vụ đám mây ở bất cứ địa điểm hoạt động nào của họ.</p>
+
+<p data-aura-rendered-by="12:28806;a">Cách đơn giản nhất là thiết lập máy chủ trên DigitalOcean, vì nhà cung cấp dịch vụ đám mây này có máy chủ ở nhiều địa điểm, chẳng hạn như Amsterdam, Toronto, San Francisco và Singapore. Nếu muốn cài đặt máy chủ trên một nhà cung cấp dịch vụ đám mây khác hoặc trên cơ sở hạ tầng của chính mình, thì bạn có thể chọn "Chế độ nâng cao" trong ứng dụng Quản lý Outline và làm theo hướng dẫn cài đặt qua tập lệnh thiết lập.&nbsp;</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>Tôi nên thiết lập máy chủ Outline ở đâu?</strong></p>
+
+<ol data-aura-rendered-by="12:28806;a">
+  <li>Dưới đây là một vài điểm cần lưu ý khi bạn chọn vị trí cho Máy chủ Outline:</li>
+  <li>Vị trí máy chủ Outline tác động đến cách người dùng trải nghiệm Internet. Ví dụ: nếu máy chủ được đặt tại Amsterdam, người dùng truy cập vào máy chủ này sẽ có trải nghiệm trên Internet hệt như họ đang ở Hà Lan. Một số trang web thậm chí có thể hiển thị bằng tiếng Hà Lan. Thông thường, bạn có thể thay thế ngôn ngữ địa phương bằng trình chọn ngôn ngữ trên trang web.</li>
+  <li>Khoảng cách giữa người dùng và Máy chủ Outline có thể ảnh hưởng đến tốc độ của bạn. Nói chung, khoảng cách thực giữa người dùng Outline và máy chủ có thể ảnh hưởng đến tốc độ Internet của người dùng. Trong hầu hết các trường hợp, bạn có thể chọn máy chủ gần nhất với nơi ở của người dùng dự kiến, nhưng bạn có thể kiểm tra <a href="https://www.submarinecablemap.com/" rel="noopener" target="_blank">Bản đồ cáp ngầm</a> để xem cáp Internet nào kết nối với quốc gia hoặc khu vực của mình.</li>
+  <li>Nơi đặt máy chủ VPN có thể ảnh hưởng đến khung pháp lý. Xin lưu ý rằng phần mềm Outline không ghi nhật ký lưu lượng truy cập của bạn. Tìm hiểu thêm về <a href="/outline-faq/answer/14919822" rel="noopener" target="_blank">Tính bảo mật và quyền riêng tư khi sử dụng Outline</a>.</li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="vi">WEB:15331758</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Tôi là một nhà phát triển. Tôi có thể tìm thông tin hỗ trợ để tích hợp Outline SDK vào ứng dụng của mình ở đâu?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Trang web hỗ trợ này dành cho người dùng ứng dụng Outline và ứng dụng Quản lý Outline. Nếu bạn là nhà phát triển, vui lòng tham khảo GitHub để xem thông tin hỗ trợ. Để đặt câu hỏi, vui lòng đăng trên <a href="https://github.com/Jigsaw-Code/outline-sdk/discussions" target="_blank">Diễn đàn thảo luận</a> về Outline SDK. Mục Diễn đàn thảo luận là nơi rất phù hợp để đặt câu hỏi, chia sẻ ý tưởng, đăng đường liên kết đến bản minh hoạ và hỗ trợ các nhà phát triển khác sử dụng Outline SDK. Đối với các yêu cầu về tính năng hoặc báo cáo lỗi, vui lòng tạo phiếu <a href="https://github.com/Jigsaw-Code/outline-sdk/issues/new" target="_blank">Yêu cầu giải quyết vấn đề</a>.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="74" sourceLocale="vi">WEB:15448041</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Các ngôn ngữ được hỗ trợ</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Outline hiện hỗ trợ các ngôn ngữ sau:</p>
+
+<ul>
+  <li aria-level="1">Tiếng Hà Lan (Nam Phi)</li>
+  <li aria-level="1">Tiếng Albania</li>
+  <li aria-level="1">Tiếng Amharic</li>
+  <li aria-level="1">Tiếng Ả Rập</li>
+  <li aria-level="1">Tiếng Armenia</li>
+  <li aria-level="1">Tiếng Azerbaijan</li>
+  <li aria-level="1">Tiếng Bengal</li>
+  <li aria-level="1">Tiếng Bosnia</li>
+  <li aria-level="1">Tiếng Bulgaria</li>
+  <li aria-level="1">Tiếng Miến Điện</li>
+  <li aria-level="1">Tiếng Catalan</li>
+  <li aria-level="1">Tiếng Trung (Giản thể)</li>
+  <li aria-level="1">Tiếng Trung (Phồn thể)</li>
+  <li aria-level="1">Tiếng Croatia</li>
+  <li aria-level="1">Tiếng Séc</li>
+  <li aria-level="1">Tiếng Đan Mạch</li>
+  <li aria-level="1">Tiếng Hà Lan</li>
+  <li aria-level="1">Tiếng Anh (Mỹ)</li>
+  <li aria-level="1">Tiếng Anh (Anh)</li>
+  <li aria-level="1">Tiếng Estonia</li>
+  <li aria-level="1">Tiếng Philippines</li>
+  <li aria-level="1">Tiếng Phần Lan</li>
+  <li aria-level="1">Tiếng Pháp</li>
+  <li aria-level="1">Tiếng Gruzia</li>
+  <li aria-level="1">Tiếng Đức</li>
+  <li aria-level="1">Tiếng Hy Lạp</li>
+  <li aria-level="1">Tiếng Do Thái</li>
+  <li aria-level="1">Tiếng Hindi</li>
+  <li aria-level="1">Tiếng Hungary</li>
+  <li aria-level="1">Tiếng Iceland</li>
+  <li aria-level="1">Tiếng Indonesia</li>
+  <li aria-level="1">Tiếng Ý</li>
+  <li aria-level="1">Tiếng Nhật</li>
+  <li aria-level="1">Tiếng Kazakh</li>
+  <li aria-level="1">Tiếng Khmer</li>
+  <li aria-level="1">Tiếng Hàn</li>
+  <li aria-level="1">Tiếng Lào</li>
+  <li aria-level="1">Tiếng Latvia</li>
+  <li aria-level="1">Tiếng Lithuania</li>
+  <li aria-level="1">Tiếng Macedonia</li>
+  <li aria-level="1">Tiếng Malay</li>
+  <li aria-level="1">Tiếng Marathi</li>
+  <li aria-level="1">Tiếng Mông Cổ</li>
+  <li aria-level="1">Tiếng Nepal</li>
+  <li aria-level="1">Tiếng Na Uy</li>
+  <li aria-level="1">Tiếng Ba Tư</li>
+  <li aria-level="1">Tiếng Ba Lan</li>
+  <li aria-level="1">Tiếng Bồ Đào Nha (Brazil)</li>
+  <li aria-level="1">Tiếng Bồ Đào Nha (Châu Âu)</li>
+  <li aria-level="1">Tiếng Romania</li>
+  <li aria-level="1">Tiếng Nga</li>
+  <li aria-level="1">Tiếng Serbia (Chữ Kirin)</li>
+  <li aria-level="1">Tiếng Serbia (Chữ Latinh)</li>
+  <li aria-level="1">Tiếng Sinhala</li>
+  <li aria-level="1">Tiếng Slovakia</li>
+  <li aria-level="1">Tiếng Slovenia</li>
+  <li aria-level="1">Tiếng Tây Ban Nha (Châu Âu)</li>
+  <li aria-level="1">Tiếng Tây Ban Nha (Mỹ Latinh)</li>
+  <li aria-level="1">Tiếng Swahili</li>
+  <li aria-level="1">Tiếng Thuỵ Điển</li>
+  <li aria-level="1">Tiếng Tamil</li>
+  <li aria-level="1">Tiếng Thái</li>
+  <li aria-level="1">Tiếng Thổ Nhĩ Kỳ</li>
+  <li aria-level="1">Tiếng Ukraina</li>
+  <li aria-level="1">Tiếng Urdu</li>
+  <li aria-level="1">Tiếng Việt</li>
+</ul>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="79" sourceLocale="vi">WEB:15528599</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Lỗi tường lửa</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:268;a">Có ba loại sự cố tường lửa mà bạn có thể gặp phải:</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>Bạn có thể bị tường lửa mạng chặn.</strong></p>
+
+<p data-aura-rendered-by="12:268;a">Nếu bạn cố cài đặt Outline khi đang kết nối với một mạng đã kích hoạt tường lửa, chẳng hạn như ở trường học hoặc nơi làm việc, hãy thử cài đặt khi kết nối với một mạng khác.</p>
+
+<p data-aura-rendered-by="12:268;a">Nếu cách này không hiệu quả, vui lòng liên hệ với quản trị viên mạng để được phép kết nối giữa mạng đã kích hoạt tường lửa với máy chủ Outline. Bạn sẽ cần phải biết địa chỉ IP của máy chủ Outline và các cổng mà Outline đang chạy (thông tin này có ở phần cuối cùng trong tập lệnh cài đặt).</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>Bạn có thể bị tường lửa thiết bị chặn</strong>.</p>
+
+<p data-aura-rendered-by="12:268;a">Nếu trên thiết bị có phần mềm chặn kết nối đầu ra trên các cổng không chuẩn hoặc phần mềm không được nhận dạng (ví dụ: ZoneAlarm của CheckPoint), vui lòng tham khảo tài liệu của thiết bị hoặc phần mềm tương ứng để tìm hiểu cách tạo trường hợp ngoại lệ cho Outline.</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>Bạn có thể bị tường lửa máy chủ chặn.</strong></p>
+
+<p data-aura-rendered-by="12:268;a">Nhà cung cấp dịch vụ đám mây bạn đã chọn có thể yêu cầu bạn tạo thủ công trường hợp ngoại lệ cho tường lửa máy chủ để mở các cổng mà Outline đang chạy. Sau khi chạy tập lệnh cài đặt, bạn sẽ thấy hai cổng được chọn ngẫu nhiên mà Outline đang chạy trong máy chủ. Bạn chỉ cần mở hai cổng này là đủ.<br />
+  <br />
+  Để tạo trường hợp ngoại lệ cho tường lửa máy chủ, bạn nên xem tài liệu về 'ufw' và 'iptables':</p>
+
+<ul data-aura-rendered-by="12:268;a">
+  <li>UFW:&nbsp;<a href="https://help.ubuntu.com/community/UFW" rel="noopener" target="_blank">https://help.ubuntu.com/community/UFW</a></li>
+  <li>Iptables:&nbsp;<a href="https://help.ubuntu.com/community/IptablesHowTo" rel="noopener" target="_blank">https://help.ubuntu.com/community/IptablesHowTo</a></li>
+</ul>
+</div>
+</body>
+</html>

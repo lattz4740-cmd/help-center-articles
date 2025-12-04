@@ -1,0 +1,1154 @@
+<html>
+<head>
+<style type="text/css">
+.gkms-gtt-answer-header, .gkms-gtt-message-header {
+  color: black !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 2em;
+  padding: 4px;
+}.gkms-gtt-answer-header {
+  background-color: #E5ECF9;
+  border-top: 1px solid #36C;
+}
+.gkms-gtt-message-header {
+  background-color: #F8F8F8;
+  border-top: 1px solid #CCC;
+}
+.gkms-gtt-hide {
+  visibility: hidden;
+}
+.form_field_data .temporary_signal_wrapper {
+  display: inline;
+}
+</style>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+</head>
+<body lang="zh-Hant">
+<br/><div class="gkms id notranslate" sourceGlobalRevision="116" sourceLocale="zh-Hant">WEB:14917423</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline 的運作原理</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><h3 data-aura-rendered-by="12:267;a">伺服器安裝</h3>
+雖然 Outline 的安裝程序看起來很簡單，但其實背後需要很多複雜的步驟，才能順利安裝伺服器。<br data-aura-rendered-by="12:267;a" />
+<br data-aura-rendered-by="12:267;a" />
+安裝 Outline 之後，安裝指令碼將會執行以下步驟：
+<ul data-aura-rendered-by="12:267;a">
+  <li>使用 Docker 擷取及匯入 Shadowbox 映像檔穩定版，這個映像檔將由&nbsp;<a href="https://support.getoutline.org/s/article/how-outline-works?language=zh_TW" target="_blank">Quay.io</a>&nbsp;代管於&nbsp;<a href="https://support.getoutline.org/s/article/how-outline-works?language=zh_TW" target="_blank">https://quay.io/repository/outline/shadowbox?tab=tags</a>。此映像檔包含 Outline 伺服器和 Management API；Outline Server Management 應用程式稍後會使用這個 API 來建立及移除存取金鑰、選擇回報/不回報匿名指標等。</li>
+  <li>安裝及設定&nbsp;<a href="https://support.getoutline.org/s/article/how-outline-works?language=zh_TW" target="_blank">Watchtower</a>，以便每小時檢查映像檔更新，並確認每台 Outline 伺服器隨時具備最新的功能和安全性改良設定。</li>
+  <li>用於存取 Management API 的網路伺服器開始在私密隨機路徑的隨機通訊埠上執行。</li>
+  <li>建立<a href="https://support.getoutline.org/s/article/how-outline-works?language=zh_TW" target="_blank">自行簽署安全資料傳輸層 (SSL) 憑證</a>，這樣一來，即使沒有網域名稱，也能使用傳輸層安全標準 (TLS) 為 Outline 伺服器加密。系統也會產生這個憑證的專屬指紋，並儲存在 Outline Manager 應用程式中，以用於防範中間人 (MITM) 攻擊。</li>
+</ul>
+Outline 安裝完成後不需要再進行任何設定。
+
+<h3 data-aura-rendered-by="12:267;a">伺服器安全性</h3>
+Outline 是開放原始碼軟體，代表任何人都可以查看程式碼，並在發現任何漏洞時予以改善。我們將程式碼交由&nbsp;<a data-aura-rendered-by="12:267;a" href="https://support.getoutline.org/s/article/how-outline-works?language=zh_TW" target="_blank">GitHub</a>&nbsp;代管。<br data-aura-rendered-by="12:267;a" />
+<br data-aura-rendered-by="12:267;a" />
+此外，只要有新版發布，所有已安裝的 Outline 伺服器都會自動更新，這樣就不會有任何 Outline 伺服器執行舊版軟體。<br data-aura-rendered-by="12:267;a" />
+<br data-aura-rendered-by="12:267;a" />
+為管理伺服器上的存取金鑰，Outline Manager 應用程式會與 Outline 伺服器上的 Management Service 互動；Management Service 會在隨機通訊埠和私密專屬路徑上執行。另外，由於 Management Service 只會在已指定適當私密路徑的情況下回應查詢，因此可以防止探測。最後，系統會使用<a data-aura-rendered-by="12:267;a" href="https://support.getoutline.org/s/article/how-outline-works?language=zh_TW" target="_blank">自行簽署安全資料傳輸層 (SSL) 憑證</a>為所有 Management Service 通訊加密。<br data-aura-rendered-by="12:267;a" />
+<br data-aura-rendered-by="12:267;a" />
+Outline 伺服器不會儲存任何記錄，所以即使遭到入侵，也不必擔心使用者資料洩漏。<a data-aura-rendered-by="12:267;a" href="https://support.getoutline.org/s/article/how-outline-works?language=zh_TW" target="_blank">瞭解詳情</a>。<br data-aura-rendered-by="12:267;a" />
+<br data-aura-rendered-by="12:267;a" />
+Outline 已於 2018 年接受&nbsp;<a data-aura-rendered-by="12:267;a" href="https://support.getoutline.org/s/article/how-outline-works?language=zh_TW" target="_blank">Radically Open Security</a>&nbsp;和&nbsp;<a data-aura-rendered-by="12:267;a" href="https://support.getoutline.org/s/article/how-outline-works?language=zh_TW" target="_blank">Cure53</a>&nbsp;的稽核。請按<a data-aura-rendered-by="12:267;a" href="/outline-faq/answer/14919822" rel="noopener" target="_blank">這裡</a>參閱報告。&nbsp;
+
+<h3 data-aura-rendered-by="12:267;a">處理 UDP 流量</h3>
+Outline 可做為全系統 VPN 運作，因此所有 UDP 流量都能透過 Outline 伺服器傳輸。
+
+<h3 data-aura-rendered-by="12:267;a">DNS 流量</h3>
+Outline 會透過 Outline 伺服器執行所有 DNS 查詢作業，並使用保護其他網路活動的加密方式來保護這些查詢作業。您的 DNS 查詢會透過 Outline 伺服器傳輸至 Dyn Internet Guide 或 OpenDNS。<br data-aura-rendered-by="12:267;a" />
+<br data-aura-rendered-by="12:267;a" />
+Outline 絕對不會記錄您的 DNS 查詢作業。</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="232" sourceLocale="zh-Hant">WEB:14919822</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">在使用 Outline 時確保安全與隱私</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:258;a">在使用 Outline 時確保安全與隱私</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Outline 如何保護你的線上通訊安全</strong></p>
+
+<p data-aura-rendered-by="12:258;a">網路流量在區域或國內網路中傳輸時，最容易受到監控。</p>
+
+<p data-aura-rendered-by="12:258;a">Outline 會確保網路流量從國內網路傳送到 Outline 伺服器時全程加密，保護您的通訊隱私。Outline 加密流量後，網路窺探者就無法檢視你造訪的網站或正在傳輸的資訊。</p>
+
+<p data-aura-rendered-by="12:258;a">此外，Outline 能協助你使用在當地原本無法存取的安全端對端通訊工具。</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>加密標準</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Outline 採用 AEAD 256 位元的 Chacha2020 IETF Poly 1305 編碼器，加密裝置與 Outline 伺服器之間的通訊。AEAD 編碼器在現代硬體上的效能一流，能確保資料的機密性、完整性和真實性。</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>安全性稽核</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Outline 於 2018 年接受 Radically Open Security 與 Cure53 稽核，這兩家獨立數位安全機構皆依據最新安全性標準審查軟體。Radically Open Security 於 2022 年再次進行稽核，Cure53 則在 2024 年完成對 Outline SDK 的稽核。歡迎參閱下列報告：</p>
+
+<ul data-aura-rendered-by="12:258;a">
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf" target="_blank">Radically Open Security 滲透測試報告 (2018 年 3 月)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf" target="_blank">Cure53 的 Jigsaw Outline 滲透測試與稽核報告 (2018 年 12 月)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf" target="_blank">Radically Open Security 滲透測試報告 (2022 年 12 月)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf" target="_blank">Cure53 的 Jigsaw Outline VPN SDK 滲透測試報告 (2024 年 1 月)</a></li>
+</ul>
+
+<p data-aura-rendered-by="12:258;a"><strong>匿名指標和記錄</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Outline 會追蹤每組存取金鑰使用的頻寬，並記錄為「已傳輸的位元組數」。伺服器管理員可以根據這些資訊，視需要向雲端伺服器供應商調整頻寬租用量，但他們無法看到實際透過 Outline 伺服器傳送的資訊內容。</p>
+
+<p data-aura-rendered-by="12:258;a">進一步瞭解 Outline 採取的<a href="/outline-faq/answer/15331222" rel="noopener" target="_blank">資料和資訊收集做法</a>。</p>
+
+<hr data-aura-rendered-by="12:258;a" />
+<p data-aura-rendered-by="12:258;a"><strong>安全性和隱私權常見問題</strong>&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Outline 能讓我匿名上網嗎？</strong></p>
+
+<p data-aura-rendered-by="12:258;a">不行。Outline 不是匿名工具，但會防止潛在網路窺探者侵犯你的隱私。</p>
+
+<p data-aura-rendered-by="12:258;a">Outline 不會讓您在造訪的網站上完全匿名，這些網站還是能在您登入時，或透過瀏覽器指紋等技術來識別您的身分。針對行動應用程式，現代智慧型手機多半都有 API，這些 API 能讓已安裝的應用程式透過內嵌的 GPS 擷取您的所在位置，而不須使用您的 Proxy。</p>
+
+<p data-aura-rendered-by="12:258;a">通常 VPN 都有保護功能，而且特別能防止網際網路監視，不過在網路上進行任何活動還是有其風險。即便使用 VPN，如果網際網路服務供應商 (ISP) 已經知道你的身分，並能觀察你的網路流量，他們或許還是能判斷出 Outline 伺服器的 IP 位址。這些資訊可用來封鎖對 Outline 伺服器的存取，或瞭解你的使用模式，例如你通常上線的時間，甚至可能推測你的大致位置。</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>別人能看出我在使用 Outline 嗎？</strong></p>
+
+<p data-aura-rendered-by="12:258;a">有可能。你存取的平台和服務很可能辨識出連線來自雲端伺服器，有時可以推測出在使用 VPN，但無法看到實際的網路流量內容。</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Outline 能完全防範所有潛在網路威脅嗎？</strong></p>
+
+<p data-aura-rendered-by="12:258;a">不能，沒有任何單一工具可以做到。Outline 提供開放網際網路的存取管道，並藉由加密流量增強隱私防護，但我們仍建議採取其他預防措施，防範惡意軟體、網路釣魚等其他類型的攻擊。</p>
+
+<p data-aura-rendered-by="12:258;a">為了強化網路防禦，請考慮與貴機構的網路安全專家合作，或尋求 <a href="https://securityplanner.org/" target="_blank">Security Planner</a> 網站頂尖安全專家的個人化指導。該網站會提供清晰說明，協助你根據需求選擇合適的網路安全工具。</p>
+
+<p data-aura-rendered-by="12:258;a">你也可以參考 <a href="https://jigsaw.google.com/" target="_blank">Jigsaw</a> 的其他網路安全產品，例如 <a href="https://getintra.org/" target="_blank">Intra</a>、<a href="https://g.co/shield" target="_blank">Project Shield</a> 和 <a href="https://chrome.google.com/webstore/detail/password-alert/noondiphcddnnabmjcihcjfbhfklnnep?" rel="noopener" target="_blank">密碼防護警示</a>。</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>使用 VPN 是否合法？</strong></p>
+
+<p data-aura-rendered-by="12:258;a">在運行 Outline 或使用該應用程式之前，請查閱所在地的法律及法規，以及所選雲端服務供應商的服務條款。</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="89" sourceLocale="zh-Hant">WEB:15330317</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">我已經連上 Outline 伺服器，為何仍無法連上網際網路？</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:262;a">如果你使用手機，請嘗試在行動數據連線和 Wi-Fi 連線之間進行切換，有時可能只有其中一種連線可以使用；如果你使用電腦，請嘗試中斷寬頻連線，再重新連線看看。</p>
+
+<p data-aura-rendered-by="12:262;a">&nbsp;</p>
+
+<p data-aura-rendered-by="12:262;a">如果還是無法上網，那麼可能是你的 Outline 伺服器有問題。請與<a href="/outline-faq/answer/15330920?hl=en&amp;ref_topic=15309650&amp;sjid=7239458068370432269-NA" rel="noopener" target="_blank">服務管理員</a>聯絡，索取其他伺服器的存取金鑰。如果<a href="/outline-faq/answer/15330920?hl=en&amp;ref_topic=15309650&amp;sjid=7239458068370432269-NA" rel="noopener" target="_blank">存取金鑰</a>的數據用量超過配額，服務管理員也可以提高存取金鑰的數據用量上限。</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="296" sourceLocale="zh-Hant">WEB:15330818</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline 用戶端有何系統需求？</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:24676;a">Outline 可以在任何作業系統上執行，以下是最低作業系統需求：</p>
+
+<table class="borders" data-aura-rendered-by="12:24676;a" width="312">
+  <tbody>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top"><b>作業系統</b></td>
+      <td colspan="1" rowspan="1" valign="top"><b>最低需求版本</b></td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Android</td>
+      <td colspan="1" rowspan="1" valign="top">10</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">iOS</td>
+      <td colspan="1" rowspan="1" valign="top">15.5</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">macOS</td>
+      <td colspan="1" rowspan="1" valign="top">12.0</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Windows</td>
+      <td colspan="1" rowspan="1" valign="top">10</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Linux</td>
+      <td colspan="1" rowspan="1" valign="top">Ubuntu&nbsp;20.04</td>
+    </tr>
+  </tbody>
+</table>
+
+<p data-aura-rendered-by="12:24676;a"><br />
+  想為 Outline 用戶端支援更多作業系統出一份力嗎？歡迎到 GitHub 協助我們<a href="https://github.com/Jigsaw-Code/outline-client#platform-specific-development" target="_blank">完善程式碼集</a>！</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="107" sourceLocale="zh-Hant">WEB:15330824</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">如何更新 Outline 伺服器軟體？</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Outline 伺服器會自動更新以採用最新的安全改進措施，確保你使用的是最先進的 Outline 技術。自動更新程序採用了 <a href="https://github.com/v2tec/watchtower" rel="noopener" target="_blank"><u>Watchtower</u></a> 開放原始碼程式庫。這個程式庫會定期檢查並更新含有 Outline 軟體的 Docker 映像檔。</p>
+&nbsp;
+
+<p>此外，當你使用 Outline Manager 安裝 Outline，系統就會設定 Cron 工作，藉此自動使用 Ubuntu 的 <a href="https://wiki.debian.org/UnattendedUpgrades" rel="noopener" target="_blank"><u>Unattended Upgrades</u></a> 升級伺服器上的軟體，並在必要時重新啟動。請注意，由於系統假設主機除了執行 Outline 外，也會用於其他用途，因此為保留現有設定，在進階模式中不會執行自動更新。</p>
+
+<p>&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="102" sourceLocale="zh-Hant">WEB:15330825</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">下載連結無效時，如何下載 Outline Manager？</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">請直接使用<a href="https://getoutline.org/get-started/#step-1" target="_blank">這個連結</a>或<a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">這個連結</a>下載適用於各種作業系統的應用程式。</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="129" sourceLocale="zh-Hant">WEB:15330920</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">術語</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p><strong>什麼是 VPN？</strong></p>
+
+<p>虛擬私人網路 (VPN) 是你的裝置和主機伺服器之間的私人連線。使用 VPN 時，你的流量將對網際網路服務供應商隱藏。</p>
+
+<p>以下是 VPN 的用途：</p>
+
+<ul>
+  <li aria-level="1">在使用公用 Wi-Fi 網路時保護個人資料</li>
+  <li aria-level="1">防止網際網路服務供應商和政府機關取得你的瀏覽資料</li>
+  <li aria-level="1">從全球各種來源取得未經審查的內容</li>
+</ul>
+
+<p><strong>Outline 與傳統 VPN 有何差異？</strong></p>
+
+<p>網際網路服務供應商可以辨識常見的安全通訊協定和/或流量模式，輕而易舉偵測並封鎖傳統 VPN。相較於傳統 VPN，Outline 更可靠穩定，因為這項服務採用的通訊協定相當難以偵測，所以較不容易受到封鎖。Outline 可防範複雜精密的審查方式，包括網路封鎖或 IP 封鎖。</p>
+
+<p><strong>什麼是 Outline 伺服器？</strong></p>
+
+<p>Outline 伺服器會執行 VPN，讓獲得許可的使用者連線。</p>
+
+<p>建立新網路時，可以使用自己的安全伺服器 (如果有的話) 做為 Outline 伺服器，或者選擇下列雲端服務供應商：</p>
+
+<ul>
+  <li aria-level="1">DigitalOcean</li>
+  <li aria-level="1">Google Cloud Platform (GCP)</li>
+  <li aria-level="1">Amazon Web Services (AWS)</li>
+</ul>
+
+<p>如要設定伺服器，請在 Outline Manager 中操作。</p>
+
+<p><strong><a id="servicemanager" name="servicemanager"></a>什麼是服務管理員？</strong></p>
+
+<p>服務管理員負責設定 Outline 伺服器及提供存取金鑰給使用者，通常也需要支付伺服器使用費。</p>
+
+<p><strong><a id="accesskey" name="accesskey"></a>什麼是存取金鑰？</strong></p>
+
+<p>存取金鑰的用途為存取現有 Outline 伺服器及連線至 VPN。你可以向<a href="#servicemanager" rel="noopener"><u>服務管理員</u></a>索取這類金鑰，也可以自行<a href="/outline-faq/answer/15331530" rel="noopener" target="_blank"><u>設定 Outline 伺服器</u></a>。</p>
+
+<p>存取金鑰的格式如下 (這個範例金鑰無法正常運作)：</p>
+
+<p>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1</p>
+
+<p><strong>什麼是 Outline Manager？</strong></p>
+
+<p>Outline Manager 是電腦應用程式，可讓服務管理員設定 Outline 伺服器、產生<a href="#accesskey" rel="noopener"><u>存取金鑰</u></a>，以及設定每個金鑰的數據用量上限。如要下載最新版 Outline Manager，請點選<a href="https://getoutline.org/get-started/#step-1" rel="noopener" target="_blank"><u>這個連結</u></a>或<a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" rel="noopener" target="_blank"><u>這個連結</u></a>。</p>
+
+<p><strong>什麼是 Outline 用戶端？</strong></p>
+
+<p>Outline 用戶端是提供電腦版與行動版的應用程式，可讓你連線至 Outline 伺服器，以及透過存取金鑰使用 VPN。如要下載最新版 Outline 用戶端，請點選<a href="https://getoutline.org/get-started/#step-3" rel="noopener" target="_blank"><u>這個連結</u></a>或<a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" rel="noopener" target="_blank"><u>這個連結</u></a>。</p>
+
+<p><strong>什麼是數據用量上限？</strong></p>
+
+<p>透過 Outline Manager，服務管理員可以設定存取金鑰的 30 天追蹤數據用量上限，藉此避免使用過多數據，並將費用控制在可預測的範圍內。這類管理員能夠設定每個金鑰套用的預設上限，也能為任何金鑰設定不同上限，覆寫預設上限。設定完成的上限會立即生效，並且每小時強制套用。</p>
+
+<p>如果服務管理員選擇將指標提供給 Jigsaw，應瀏覽<a href="/outline-faq/answer/15331222" rel="noopener" target="_blank"><u>資料收集政策</u></a>，進一步瞭解數據用量上限使用情形的回報方式。</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="110" sourceLocale="zh-Hant">WEB:15331121</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline 團隊是否對「getoutline.me」和 Telegram 頻道「@OutlineVpnOfficial」提供支援？</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Outline 團隊收到很多關於「<a href="http://getoutline.me/" target="_blank">getoutline.me</a>」網站與相關 Telegram 頻道「@OutlineVpnOfficial」的詢問。然而，Outline 團隊與這些服務並無關聯，因此無法協助使用者處理相關的存取金鑰問題。</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="zh-Hant">WEB:15331122</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE SUBTEXT</strong></div>
+<div class="gkms article subtext"><pre class="gkms-non-html">Outline 支援以下語言：</pre></div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">支援的語言</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><ul>
+  <li aria-level="1">南非荷蘭文</li>
+  <li aria-level="1">阿爾巴尼亞文</li>
+  <li aria-level="1">阿姆哈拉文</li>
+  <li aria-level="1">阿拉伯文</li>
+  <li aria-level="1">亞美尼亞文</li>
+  <li aria-level="1">亞塞拜然文</li>
+  <li aria-level="1">孟加拉文</li>
+  <li aria-level="1">波士尼亞文</li>
+  <li aria-level="1">保加利亞文</li>
+  <li aria-level="1">緬甸文</li>
+  <li aria-level="1">加泰隆尼亞文</li>
+  <li aria-level="1">簡體中文</li>
+  <li aria-level="1">繁體中文</li>
+  <li aria-level="1">克羅埃西亞文</li>
+  <li aria-level="1">捷克文</li>
+  <li aria-level="1">丹麥文</li>
+  <li aria-level="1">荷蘭文</li>
+  <li aria-level="1">英文 (美國)</li>
+  <li aria-level="1">英文 (英國)</li>
+  <li aria-level="1">愛沙尼亞文</li>
+  <li aria-level="1">菲律賓文</li>
+  <li aria-level="1">芬蘭文</li>
+  <li aria-level="1">法文</li>
+  <li aria-level="1">喬治亞文</li>
+  <li aria-level="1">德文</li>
+  <li aria-level="1">希臘文</li>
+  <li aria-level="1">希伯來文</li>
+  <li aria-level="1">北印度文</li>
+  <li aria-level="1">匈牙利文</li>
+  <li aria-level="1">冰島文</li>
+  <li aria-level="1">印尼文</li>
+  <li aria-level="1">義大利文</li>
+  <li aria-level="1">日文</li>
+  <li aria-level="1">哈薩克文</li>
+  <li aria-level="1">高棉文</li>
+  <li aria-level="1">韓文</li>
+  <li aria-level="1">寮文</li>
+  <li aria-level="1">拉脫維亞文</li>
+  <li aria-level="1">立陶宛文</li>
+  <li aria-level="1">馬其頓文</li>
+  <li aria-level="1">馬來文</li>
+  <li aria-level="1">馬拉地文</li>
+  <li aria-level="1">蒙古文</li>
+  <li aria-level="1">尼泊爾文</li>
+  <li aria-level="1">挪威文</li>
+  <li aria-level="1">波斯文</li>
+  <li aria-level="1">波蘭文</li>
+  <li aria-level="1">葡萄牙文 (巴西)</li>
+  <li aria-level="1">葡萄牙文 (歐洲)</li>
+  <li aria-level="1">羅馬尼亞文</li>
+  <li aria-level="1">俄文</li>
+  <li aria-level="1">塞爾維亞文 (西里爾字母)</li>
+  <li aria-level="1">塞爾維亞文 (拉丁字母)</li>
+  <li aria-level="1">僧伽羅文</li>
+  <li aria-level="1">斯洛伐克文</li>
+  <li aria-level="1">斯洛維尼亞文</li>
+  <li aria-level="1">西班牙文 (歐洲)</li>
+  <li aria-level="1">西班牙文 (拉丁美洲)</li>
+  <li aria-level="1">史瓦希里文</li>
+  <li aria-level="1">瑞典文</li>
+  <li aria-level="1">泰米爾文</li>
+  <li aria-level="1">泰文</li>
+  <li aria-level="1">土耳其文</li>
+  <li aria-level="1">烏克蘭文</li>
+  <li aria-level="1">烏都文</li>
+  <li aria-level="1">越南文</li>
+</ul>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="110" sourceLocale="zh-Hant">WEB:15331125</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">為何我無法在 Windows 裝置上安裝 Outline 用戶端？</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>你可能看到以下錯誤訊息：「很抱歉，系統無法正確安裝 Outline，請再安裝一次。如果仍無法解決問題，請<a href="https://support.getoutline.org/s/contactsupport" rel="noopener" target="_blank"><u>提交意見回饋</u></a>。」</p>
+
+<p>透過 Windows 裝置使用 Outline 時，有時可能會遇到未預期的錯誤。在大多數情況下，你必須刪除 Outline TAP 介面卡 (驅動程式)，並重新安裝 Outline。</p>
+
+<p>解決問題的具體步驟可能會因你的 Windows 作業系統版本而異，以下提供了解除安裝 TAP 介面卡和 Outline，再重新安裝 Outline 的通用步驟。</p>
+
+<ol>
+  <li aria-level="1">解除安裝 Outline 的 TAP 介面卡
+    <ol>
+      <li aria-level="2">依序前往「裝置管理員」和「網路介面卡」</li>
+      <li aria-level="2">找出「TAP-Windows Adapter V9」檔案，或與 Outline 相關聯的 TAP 介面卡</li>
+      <li aria-level="2">解除安裝或刪除這個介面卡。請注意，此操作可能會影響你已安裝的其他 VPN 應用程式。</li>
+    </ol>
+  </li>
+  <li aria-level="1">解除安裝 Outline 用戶端
+    <ol>
+      <li aria-level="2">依序前往「程式和功能」和「解除安裝程式」</li>
+      <li aria-level="2">找出 Outline 用戶端應用程式，然後解除安裝 Outline 用戶端</li>
+      <li aria-level="2"><a href="https://getoutline.org/get-started/#step-3" rel="noopener" target="_blank"><u>下載 Outline 用戶端最新版本</u></a>，然後在 Windows 裝置上重新安裝這個應用程式。重新安裝 Outline 時，也會自動安裝新的 TAP 介面卡。</li>
+    </ol>
+  </li>
+</ol>
+
+<p>如果仍無法解決問題，請<a href="https://support.getoutline.org/s/contactsupport" rel="noopener" target="_blank"><u>與支援團隊聯絡</u></a>。</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="109" sourceLocale="zh-Hant">WEB:15331126</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">為何我無法連上 Outline 服務？</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>以下是無法連上 Outline 服務的幾種可能原因：</p>
+
+<ul>
+  <li aria-level="1"><strong>裝置</strong><a href="https://docs.google.com/document/d/1YDlrtMErHZ2aoPehRlglSsSnbGjTfUWZ/edit?resourcekey=0-1uh7Y6iU_CCPDj22n3NGTQ#heading=h.2et92p0"><strong><u>未連上網際網路</u></strong></a><strong>。</strong>有時裝置會遇到網路連線中斷的問題，需要一些時間才能更新網路圖示。此外，裝置也可能連上已停止運作的區域網路。</li>
+  <li aria-level="1"><a href="https://docs.google.com/document/d/1YDlrtMErHZ2aoPehRlglSsSnbGjTfUWZ/edit?resourcekey=0-1uh7Y6iU_CCPDj22n3NGTQ#heading=h.4d34og8"><strong><u>網路防火牆已封鎖</u></strong></a><strong> Outline 伺服器。</strong>這很常發生在使用公用網路 (比如學校、公司或免費的無線網路) 的時候。</li>
+  <li aria-level="1"><strong>裝置上的</strong><a href="https://docs.google.com/document/d/1YDlrtMErHZ2aoPehRlglSsSnbGjTfUWZ/edit?resourcekey=0-1uh7Y6iU_CCPDj22n3NGTQ#heading=h.26in1rg"><strong><u>防火牆或防毒軟體</u></strong></a><strong>封鎖了 Outline 伺服器。</strong></li>
+  <li aria-level="1"><a href="https://docs.google.com/document/d/1YDlrtMErHZ2aoPehRlglSsSnbGjTfUWZ/edit?resourcekey=0-1uh7Y6iU_CCPDj22n3NGTQ#bookmark=id.1ksv4uv"><strong><u>手機裝置的設定</u></strong></a><strong>可能需要調整。</strong></li>
+</ul>
+
+<p><strong>服務管理員可能已</strong><a href="https://docs.google.com/document/d/1YDlrtMErHZ2aoPehRlglSsSnbGjTfUWZ/edit?resourcekey=0-1uh7Y6iU_CCPDj22n3NGTQ#bookmark=id.z337ya"><strong><u>刪除伺服器，或是網際網路服務供應商 (ISP) 可能已封鎖你的要求</u></strong></a><strong>。</strong></p>
+
+<p><a id="internetissues" name="internetissues"><u>網際網路連線問題：</u></a></p>
+
+<p><strong>測試方法：</strong></p>
+
+<p>關閉 Outline，然後查看網際網路連線是否恢復。</p>
+
+<ul>
+  <li aria-level="1">如果連線已經恢復，請進一步查看下列疑難排解做法。</li>
+  <li aria-level="1">如果連線並未恢復，請先稍等幾分鐘，再查看連線設定是否自行更新。</li>
+</ul>
+
+<h4>修正事項：</h4>
+
+<p><strong>讓裝置恢復連線：</strong></p>
+
+<ol>
+  <li aria-level="1">檢查其他裝置是否能連上同一個網路。如果其他裝置也無法連線，表示這個網路可能已停止運作，你必須等待網路恢復連線，或主動排解相關問題。</li>
+  <li aria-level="1">如果其他裝置可連上同一個網路，你可以嘗試按照下列做法讓有問題的裝置恢復連線：
+    <ol>
+      <li aria-level="2">將裝置切換到飛航模式 (適用於行動裝置)</li>
+      <li aria-level="2">重新啟動裝置</li>
+      <li aria-level="2">關閉裝置，等待 2 分鐘後再重新開啟裝置</li>
+    </ol>
+  </li>
+</ol>
+
+<p><a id="firewallissues" name="firewallissues"><u>網路防火牆問題：</u></a></p>
+
+<p><strong>測試方法：</strong></p>
+
+<ol>
+  <li aria-level="1">
+    <p>中斷目前的 Wi-Fi 或有線網路。</p>
+  </li>
+  <li aria-level="1">
+    <p>連線至其他網路，例如行動數據網路。</p>
+  </li>
+  <li aria-level="1">
+    <p>嘗試重新連線至 Outline 伺服器。</p>
+  </li>
+</ol>
+
+<p>如果使用其他網路可以成功連線，表示問題出在你這裡</p>
+
+<p>修正事項：</p>
+
+<p>與服務管理員聯絡，請對方讓你存取 Outline 伺服器；或者你也可以改為繼續使用連線正常的網路。</p>
+<a id="softwareissues" name="softwareissues"></a>
+
+<p><a id="softwareissues" name="softwareissues"><u>防火牆或防毒軟體問題：</u></a></p>
+
+<p><strong>測試方法：</strong></p>
+
+<p>嘗試透過其他裝置連線至 Outline。</p>
+
+<p>注意：提醒你，你需要有存取金鑰和 Outline 應用程式才能在其他裝置上使用 Outline。</p>
+
+<p><strong>修正事項：</strong></p>
+
+<p>檢查防火牆或防毒軟體設定，確保這些設定允許 VPN 和 Outline 的流量通過。</p>
+
+<p><a id="devicesettings" name="devicesettings"><strong><u>裝置設定：</u></strong></a></p>
+
+<p><a id="devicesettings" name="devicesettings"><strong>檢查事項：</strong></a></p>
+
+<p>Android 裝置：</p>
+
+<ol>
+  <li aria-level="1">開啟「設定」應用程式。</li>
+  <li aria-level="1">找出裝置上的 <strong>VPN 設定</strong>，其中會顯示手機上目前已獲得存取權的所有 VPN 應用程式。</li>
+  <li aria-level="1">如果 VPN 設定中未顯示 Outline，請先解除安裝 Outline 再重新安裝。安裝完成後，裝置會自動將存取權授予 Outline。</li>
+</ol>
+
+<p>請確認你的 Android 裝置上未安裝任何會重疊顯示的應用程式，因為這可能會導致 Outline 權限視窗移至背景，無法顯示在前景。</p>
+
+<p>在 Android 裝置上依序前往「設定」&gt;「應用程式」&gt;「特殊應用程式存取權」，然後輕觸「顯示在其他應用程式上層」。你可以針對能執行這項操作的應用程式移除權限。</p>
+
+<p>iOS 裝置：閱讀<a href="https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web"><u>這篇支援文章</u></a>。</p>
+
+<p><a id="serverissues" name="serverissues"><u>伺服器問題：</u></a></p>
+
+<p><strong>測試方法：</strong></p>
+
+<p>如果你可以存取多部伺服器，請嘗試連線至其他伺服器。</p>
+
+<p><strong>修正事項：</strong></p>
+
+<p>與服務管理員聯絡，瞭解該伺服器是否已刪除。如果是的話，請向服務管理員索取其他伺服器的<a href="https://docs.google.com/document/d/1Mp-hH49D0bn02LO-MkgVVh95O7FrG-6XXCjX49WA3nE/edit#heading=h.2dn8xnck0993"><u>存取金鑰</u></a>。</p>
+
+<p>如果你是自行設定伺服器，請嘗試透過 Outline Manager 或其他方式 (例如 <a href="https://en.wikipedia.org/wiki/Secure_Shell"><u>SSH</u></a>) 連線至該伺服器。如果問題仍未解決，你可以試著檢查雲端服務供應商主控台 (如果有的話)，看看伺服器是否仍在線上。</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="zh-Hant">WEB:15331127</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">下載連結無效時，如何下載用戶端應用程式？</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">請直接使用<a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" rel="noopener" target="_blank">這個連結</a>下載適用於各種作業系統的應用程式。</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="131" sourceLocale="zh-Hant">WEB:15331222</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">資料和資訊收集</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:271;a">除非你選擇提供，否則 Outline 不會收集個人資訊，也不會收集你造訪的網站、通訊對象或內容等資訊。<br />
+  <br />
+  如果你使用 Outline Manager 透過第三方雲端服務供應商建立或登入帳戶，我們不會取得你提供給第三方雲端服務供應商的任何資料，例如你的電子郵件地址、姓名、帳單資訊和付款資料。<br />
+  <br />
+  <strong><strong>系統自動取得的資訊</strong></strong><br />
+  <br />
+  我們的系統會自動收集以下兩種資訊。<br />
+  1. 伺服器 IP<br />
+  Outline 伺服器的 IP 會由 <a href="http://quay.io/" target="_blank">Quay.io</a> 收集。當伺服器自動更新以套用最新的安全性和功能改進時，我們就能取得這組 IP。伺服器 IP 或許會透露出雲端伺服器供應商和 Outline 伺服器所在的城市，但不會提供營運者或存取者的身分資訊。<br />
+  <br />
+  2. 無法用於識別個人身分的技術資訊<br />
+  如果 Outline 當機或發生重大例外狀況，或者你透過 Outline 應用程式手動傳送意見回饋，系統將回報下列資訊。這些資訊只會用於協助辨識和修正穩定性或效能問題。</p>
+
+<ul data-aura-rendered-by="12:271;a">
+  <li>國家/地區</li>
+  <li>語言代碼</li>
+  <li>發生當機/例外狀況的日期和時間，以及在此之前發生的最多 100 個事件 (例如使用者開啟了「關於」部分)</li>
+  <li>靜態編譯的例外狀況訊息</li>
+  <li>OS 名稱和版本</li>
+  <li>手機型號 (如適用)</li>
+  <li>應用程式啟動時間</li>
+  <li>瀏覽器</li>
+  <li>架構</li>
+  <li>Outline 版本和版本號碼</li>
+</ul>
+
+<p data-aura-rendered-by="12:271;a"><br />
+  這些資訊會透過 HTTPS 傳送給第三方開放原始碼錯誤追蹤供應商 Sentry (<a href="http://sentry.io/" target="_blank">sentry.io</a>)。Sentry 會用多種符合業界標準的技術和服務來確保資料安全，防止資料遭到未經授權存取、揭露及使用，並避免資料遺失。如對 Sentry 的政策有任何疑問，請前往&nbsp;<a href="https://sentry.io/security/" target="_blank">https://sentry.io/security/</a>&nbsp;和&nbsp;<a href="https://sentry.io/privacy/" target="_blank">https://sentry.io/privacy/</a>，或聯絡&nbsp;<a href="mailto:security@sentry.io" target="_blank">security@sentry.io</a>。所有交由 Sentry 儲存的 Outline 資料都受到嚴密控管，僅限 Outline 團隊成員存取。<br />
+  <br />
+  <strong><strong>我們在徵得使用者同意後收集的資訊</strong></strong><br />
+  <br />
+  只要使用者同意分享，Outline 就會向 Outline 團隊回報以下資訊。<br />
+  1. 使用指標<br />每部 Outline 伺服器都會以存取金鑰為單位，自動收集過去一小時內傳輸的位元組數、使用者與伺服器連線的時間、所用憑證的來源國家/地區和自治系統，以及是否已啟用或停用任何功能。系統不會記錄通訊內容，或是登入資訊、電子郵件、裝置 ID 等任何可識別個人身分的中繼資料。所有指標資訊都會與伺服器 ID 連結，如需變更伺服器 ID 的操作說明，請參閱<a href="/outline-faq/answer/15548974" rel="noopener" target="_blank">這篇文章</a>。<br />
+  <br />
+  根據預設，Outline 伺服器不會將這些指標資訊分享給 Outline 團隊。不過如果伺服器管理員明確同意分享這些使用指標，系統每小時都會將這些資訊安全傳送給 Outline 團隊，並在 60 天後以國家/地區為單位來匯總這些使用情形指標。伺服器管理員可隨時前往 Outline Manager 的「設定」選單，變更使用指標分享偏好設定。<br />
+  <br />
+  我們非常感謝使用者分享伺服器使用情形的匿名指標，協助我們評估使用趨勢和改良產品。<br />
+  <br />
+  舉例來說，如果伺服器管理員選擇分享使用指標，我們就能得知 ID 12345 的伺服器昨天使用了 3 個小時，分別透過在美國與加拿大使用的三組金鑰傳輸了共 500 MB 的資料，並已啟用數據用量上限功能。<br />
+  <br />
+  2. 你提交的意見回饋內容和電子郵件地址<br />
+  Outline Manager 和 Outline 應用程式都有意見回饋功能，使用時建議不要附上個人識別資訊，但如果想收到回覆，可以在電子郵件欄位留下資料。此外，我們也會自動收集一些基本資訊，以便進一步瞭解您的意見回饋。如想知道我們還會收集哪些資料，請參閱上文「系統自動取得的資訊」一節中的第 2 點說明。另請參閱<a href="/outline-faq/answer/14919822" rel="noopener" target="_blank">這篇文章</a>，進一步瞭解 Outline 的安全性和隱私權實務規範。<br />
+  <br />
+  如果你在 Android 裝置上使用 Outline 應用程式 Beta 版，我們會運用 Google 的 <a href="https://firebase.google.com/" target="_blank">Firebase</a> 服務收集偵錯資訊，從而偵測問題並提升 Outline 的服務品質。如要進一步瞭解 Firebase 的隱私權與安全性政策，請前往 Firebase 網站：<a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a>。如果不想讓 Outline 透過 Firebase 傳送這些資訊，請使用正式版應用程式。</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="88" sourceLocale="zh-Hant">WEB:15331223</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE SUBTEXT</strong></div>
+<div class="gkms article subtext"><pre class="gkms-non-html">如果收到以下錯誤訊息：</pre></div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">我的存取金鑰沒有用，該怎麼辦？</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>「你的存取金鑰可能無效。如果稍後仍無法解決問題，請與你的服務管理員聯絡。」</p>
+
+<p>請按照下列步驟排解問題：</p>
+
+<ol>
+  <li aria-level="1">確認你輸入的是完整的存取金鑰，包含開頭有「ss://」五個字元。這些字元可能不會自動複製到剪貼簿。以下列舉一組完整的存取金鑰 (僅供參考，沒有實際作用)：</li>
+</ol>
+
+<p><span> </span>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@145.230.4.1:39485/?outline=1&nbsp;</p>
+
+<ol start="2">
+  <li aria-level="1">如果存取金鑰完全無法複製到剪貼簿，這可能跟你使用的訊息應用程式或平台有關係。這種情況多半發生在你收到非聯絡人傳送的訊息時。如果你是從訊息中複製代碼，請確認訊息傳送者已加入你的聯絡人清單，然後再次嘗試存取連結。</li>
+  <li aria-level="1">如果完成步驟 1 和 2 後，你仍會收到錯誤訊息，則很可能是因為伺服器已受到封鎖，或是存取金鑰已失效。如果你是服務管理員，請嘗試自行產生一組新的金鑰。否則，請向服務管理員索取新的金鑰。</li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="96" sourceLocale="zh-Hant">WEB:15331322</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">執行 Outline 需要支付多少費用？</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:262;a">Outline 軟體提供所有人免費使用，不管您是管理 VPN 的伺服器管理員或透過 Outline 來存取開放網際網路的使用者，都不用付費。<br />
+  <br />
+  不過，Outline 需要有雲端服務的伺服器存取權才能運作。已有伺服器存取權的伺服器管理員可以直接安裝 Outline，不須支付額外費用。至於還沒有伺服器存取權的使用者，可透過雲端服務供應商 (如&nbsp;<a href="https://www.digitalocean.com/" rel="noopener" target="_blank">DigitalOcean</a>&nbsp;或 Amazon Web Services) 來設定伺服器，費用大約是每月 1 TB 資料傳輸量 $5 美元，這個流量足以讓一台伺服器支援上百名使用者的需求。<br />
+  <br />
+  以下舉例說明如何計算在您選擇的雲端服務供應商上運作 Outline 的費用：</p>
+
+<table border="" data-aura-rendered-by="12:262;a">
+  <tbody>
+    <tr>
+      <td colspan="" rowspan=""><i>假設每位使用者平均每月使用的資料傳輸量是 5 GB，而每月 $5 美元的方案可支援大約 200 名同時使用的使用者，換算下來，每位使用者每月的平均費用約為 $2.5 美分。請注意，每名使用者每月可用的資料傳輸量取決於使用者活動佔用的頻寬多寡，且用量可能有大幅波動，但大部分雲端服務供應商都會有因應流量爆增的彈性措施。</i></td>
+    </tr>
+  </tbody>
+</table>
+
+<p data-aura-rendered-by="12:262;a"><br />
+  使用者使用 Outline 時完全匿名，Jigsaw 和 Google 無法得知使用者資料。我們不會追蹤您的身分識別或流量，且也不會實施任何營利方案。事實上，我們與開放原始碼社群合作，確保能為使用者提供免費的軟體。進一步瞭解<a href="/outline-faq/answer/15331222?hl=en&amp;ref_topic=15309650&amp;sjid=7239458068370432269-NA" rel="noopener" target="_blank">我們收集的資料</a>。</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="386" sourceLocale="zh-Hant">WEB:15331326</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">如何設定存取金鑰的數據用量上限？</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:15859;a">你可以設定適用於所有存取金鑰的數據用量上限，方法是開啟 Outline Manager 並前往「設定」。畫面上會顯示「數據用量上限」的切換鈕，啟用後就能設定上限。</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787036"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">完成設定後，你可以在存取金鑰頁面查看每位使用者的剩餘傳輸量。該頁會以長條圖顯示過去 30 天的數據用量。</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787037"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">除了統一設定所有存取金鑰的數據用量上限外，你也可以針對個別金鑰設定上限。這項設定將覆寫先前指定的預設數據用量上限，但即使未設定預設上限，也能直接對任何金鑰進行設定。&nbsp;<br />
+  <br />
+  如要設定金鑰的資料傳輸上限，請開啟 Outline Manager，前往該金鑰所在的「連線」分頁，點選金鑰所在列右側的選單圖示，然後在開啟的選單中點選「數據用量上限」。如要變更「我的存取金鑰」的數據用量上限，請點選「數據用量上限」圖示&nbsp;<img alt="這張圖片無法顯示，原因可能是你沒有檢視權限，或是圖片已從系統移除" height="19" src="https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw" width="19" />。</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787423"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">勾選「設定自訂數據用量上限」核取方塊，之後就能在畫面上的欄位中，設定該金鑰的自訂數據用量上限。設定完成後，點選「儲存」按鈕即可儲存。</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15788959"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">儲存所選金鑰的資料傳輸上限後，主畫面會顯示該上限，以及每個金鑰過去 30 天的數據用量。</p>
+
+<p data-aura-rendered-by="12:15859;a">如要移除某個存取金鑰的數據用量上限，請按照先前的做法開啟金鑰的「數據用量上限」對話方塊，取消勾選「設定自訂數據用量上限」核取方塊，然後點選「儲存」按鈕。</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15788414"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a"><b><strong>數據用量上限常見問題</strong></b><br />
+  <br />
+  <strong><b>什麼是 30 天追蹤數據用量上限？</b></strong><br />
+  <br />
+  30 天追蹤數據用量上限會統計個別金鑰在過去 30 天的數據用量，並將這段期間的數據用量控制在上限範圍內。這表示金鑰在任意 30 天內的數據用量都不會超過上限，不受當月是否少於 30 天影響。也就是說，使用者每天恢復的用量額度，會是他們 31 天前的數據用量。</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Outline 為何採用追蹤上限？</strong><br />
+  <br />
+  採用追蹤上限可以確保任何 30 天內的數據用量不超過設定值，作用與週期性上限 (比如於每月某日重設) 類似，但設定上更為簡單。此外，這也符合 Outline 目前顯示數據用量的方式，而且和數據分析服務、伺服器統計資料等常見工具相容。</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>哪些數據用量會計入限額？</strong><br />
+  <br />
+  每個存取金鑰的伺服器輸出流量都會列入計算。嚴格來說，這指的是代表金鑰從伺服器發出的流量，以及傳回用戶端的流量。實務而言，資料輸出量應幾乎等同於金鑰和伺服器之間來回傳送的流量，希望這數據符合你使用者的計算結果。我們選擇以輸出流量為準，是因為調查的雲端服務供應商都以此計費。</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>超過數據用量上限時，使用者會收到通知嗎？</strong><br />
+  <br />
+  目前不會。很多雲端服務供應商會設定如整月 1 TB 的數據用量上限，相當於 10 位使用者各有 100 GB，或是 100 位使用者各有 10 GB。由於可傳輸的資料量相當大，我們預計僅有少數使用者會達到上限。使用者如果達到上限，可與伺服器管理員聯絡。不過，如果你認為特定使用情境下通知功能可能有幫助，歡迎按<a href="https://support.getoutline.org/s/contactsupport" target="_blank">這裡</a>與我們分享寶貴意見。</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>當使用者的數據用量即將達到上限，他們會收到通知嗎？</strong><br />
+  <br />
+  由於每天恢復的額度是以 30 天前的用量為準，因此當使用者的用量接近上限時，每天獲得的額度會有所不同。我們認為發出警告對使用者幫助不大，反而可能造成困擾。如果你對這個機制有任何想法，歡迎按<a href="https://support.getoutline.org/s/contactsupport" rel="noopener" target="_blank">這裡</a>提供意見。</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>可以重設使用者的數據用量嗎？</strong><br />
+  <br />
+  不行，因為系統在計算使用者的數據用量是否達到上限時，一律是以過去 30 天的數據用量為準。不過，你可以提高使用者所用金鑰的數據用量上限，或是為他們建立新金鑰。</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>為什麼在我啟用數據用量上限後，有些人就無法使用了？</strong><br />
+  <br />
+  系統是根據使用者過去 30 天的資料傳輸量，判斷他們的數據用量是否達到上限。無論你是否啟用數據用量上限，這些用量記錄都會保留。使用者若遇到此問題，可能是因為之前的數據用量已經超過上限。另請注意，所有數據用量上限都會強制執行，即使只更改單一金鑰的數據用量上限也是如此。</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>可以設定全伺服器的數據用量上限嗎？比如「每 30 天 1 TB」？</strong><br />
+  <br />
+  目前不行。我們希望進一步瞭解你的使用需求，歡迎按<a href="https://support.getoutline.org/s/contactsupport" rel="noopener" target="_blank">這裡</a>告訴我們。</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>如果同時設有預設數據用量上限和特定金鑰的數據用量上限，會以何者為準？</strong><br />
+  <br />
+  特定金鑰的數據用量上限會優先適用。</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>即使不設定預設數據用量上限，也能設定特定金鑰的數據用量上限嗎？</strong><br />
+  <br />
+  是的。你可以直接設定單一金鑰的數據用量上限，無需事先設定預設數據用量上限。舉例來說，你可以針對可能由多人共用的金鑰設定上限，以防透過該金鑰傳輸過多資料。</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="zh-Hant">WEB:15331327</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">如何重設伺服器 ID？</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:23999;a">伺服器 ID 是在建立 Outline 伺服器時，隨機產生的伺服器端 ID。只要在「設定」介面中選擇分享匿名指標，即可看到這組 ID。如要查詢伺服器 ID，請點選「設定」，捲動到底部，然後勾選「分享匿名指標」。</p>
+
+<p data-aura-rendered-by="12:23999;a">伺服器 ID 可統整系統持續回報的匿名使用統計資料。如要重設伺服器 ID 並取得新 ID，則必須建立新的 Outline 伺服器來取代現有伺服器。</p>
+
+<p data-aura-rendered-by="12:23999;a">如果你的雲端服務供應商是 DigitalOcean，只要前往「設定」並選取「刪除伺服器」，就能重設伺服器。這項操作無法復原，還會清除你的憑證。系統隨後會提示你在自己選擇的位置建立新伺服器，並產生新的伺服器 ID。</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="103" sourceLocale="zh-Hant">WEB:15331328</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">如何更改 Outline 伺服器的位址？</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:265;a">伺服器設定後就無法更改位址。如要更改 Outline 伺服器的位址，就必須刪除原本的伺服器，然後重新建立一個伺服器。</p>
+
+<p data-aura-rendered-by="12:265;a">此外，你可以使用<a href="https://developers.google.com/outline/docs/guides/service-providers/dynamic-access-keys" target="_blank">動態金鑰</a>來更改 VPN 的位置，這樣就能輪換伺服器並保有相同金鑰。伺服器本身的位址不會改變。</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="102" sourceLocale="zh-Hant">WEB:15331423</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">如何傳送意見回饋或建議</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">感謝您協助我們改善 Outline！我們提供多種傳送意見回饋的管道，您可以匿名提供意見；如想收到回覆，也可以透過電子郵件提供意見：
+<ul data-aura-rendered-by="12:267;a">
+  <li><b>開發人員</b>：Outline 是開放原始碼軟體，我們將所有程式碼都託管於&nbsp;<a href="https://support.getoutline.org/s/article/feedback?language=zh_TW" target="_blank">GitHub</a>。您可以在 GitHub 或我們的&nbsp;<a href="https://support.getoutline.org/s/article/feedback?language=zh_TW" target="_blank">Reddit</a>&nbsp;社群分享您的想法。</li>
+</ul>
+
+<ul data-aura-rendered-by="12:267;a">
+  <li><b>使用者</b>：您可以透過 Outline 或 Outline Manager 應用程式傳送意見回饋給我們。請說明您的意見回饋，或者留下您的電子郵件，方便我們回覆您。此外，為了協助您排解問題，我們也會<a href="https://support.getoutline.org/s/article/feedback?language=zh_TW" target="_blank">收集一些有關您作業環境的中繼資料</a>，例如您的瀏覽器、作業系統和執行的軟體版本等資訊。</li>
+</ul>
+
+<ul data-aura-rendered-by="12:267;a">
+  <li><b>透過這個網站</b>：按一下這個網站上任何位置顯示的「與我們聯絡」連結，即可提供意見回饋。</li>
+</ul>
+
+<ul data-aura-rendered-by="12:267;a">
+  <li><b>重大問題</b>：如要回報重大問題，請在電子郵件中詳述相關資訊並傳送至 security [at]&nbsp;<a href="http://getoutline.org/" rel="noopener" target="_blank">getoutline.org</a>。</li>
+</ul>
+<br data-aura-rendered-by="12:267;a" />
+再次感謝您撥空與我們分享您的意見與想法。</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="146" sourceLocale="zh-Hant">WEB:15331424</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">利用存取金鑰管理 Outline 伺服器存取權</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:25527;a">安裝完 Outline 伺服器後，你便可開始與他人共用及管理伺服器存取權。收到邀請的對象將能下載並使用 Outline 應用程式保護網路流量。</p>
+
+<p data-aura-rendered-by="12:25527;a"><strong>共用 Outline 伺服器存取權</strong><br />
+  Outline 伺服器安裝完畢後，系統會將你導向 Outline Manager 的伺服器詳細資料頁面。你可以在這個頁面建立存取金鑰。進一步瞭解<a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">存取金鑰</a>。</p>
+
+<ul data-aura-rendered-by="12:25527;a">
+  <li>建立金鑰：點選頁面底部的「+」小圖示，即可建立新的金鑰。</li>
+  <li>共用金鑰：點選每個金鑰右側的共用圖示，即會檢視邀請訊息。請複製這個訊息並貼到你選擇的通訊系統中。</li>
+</ul>
+
+<p data-aura-rendered-by="12:25527;a"><strong>功能要求：在 Outline Manager 應用程式中共用存取權</strong><br />
+  許多伺服器管理員曾表示希望簡化邀請流程，讓他們直接在 Outline Manager 中輸入特定對象的電子郵件地址。</p>
+
+<p data-aura-rendered-by="12:25527;a">然而很抱歉，我們目前無法在 Outline Manager 中內建這項功能。我們的其中一個核心原則是保護使用者的隱私和安全性，因此我們不能設計任何可插入電子郵件地址或聯絡資訊的位置。</p>
+
+<p data-aura-rendered-by="12:25527;a">正因為如此，我們要求伺服器管理員傳送邀請給使用者時，必須使用安全的通訊平台 (例如電子郵件) 或即時通訊工具。<br />
+  <br />
+  <strong>取得共用的存取金鑰後，使用者須執行以下操作</strong></p>
+
+<ol data-aura-rendered-by="12:25527;a">
+  <li>在自己的裝置上按一下安裝連結</li>
+  <li>如果使用者未安裝 Outline 應用程式，系統將提示他們安裝</li>
+  <li>使用者會透過邀請中隨附的專屬金鑰與您的 Outline 伺服器進行初次連線</li>
+  <li>隨後，使用者便可以利用「連線」或「中斷連線」按鈕，管理透過您 Outline 伺服器連線網際網路的存取權</li>
+</ol>
+
+<p data-aura-rendered-by="12:25527;a"><strong>移除使用者的 Outline 伺服器存取權</strong><br />
+  請前往 Outline Manager 的伺服器詳細資料頁面，在伺服器的每個金鑰右側找到選單，然後選取刪除金鑰的選項。請注意，刪除金鑰會一併移除對應的伺服器存取權。</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="92" sourceLocale="zh-Hant">WEB:15331524</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">在 getoutline.org 受到封鎖的情況下，如何存取 Outline 資源？</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">如果無法存取&nbsp;<a href="http://getoutline.org/" target="_blank">getoutline.org</a>，<a href="https://s3.amazonaws.com/outline-vpn/index.html" target="_blank">請將這個鏡像站點加入書籤</a></div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="321" sourceLocale="zh-Hant">WEB:15331527</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">在 Linux 上安裝 Outline 用戶端</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>自 Outline 用戶端 1.15 版起，適用於 Linux 作業系統的所有後續版本都會以 Debian 套件形式發布。如要進一步瞭解我們支援的作業系統，請參閱<a href="/outline/answer/15330818" rel="noopener" target="_blank"><u>最低系統需求</u></a>。</p>
+&nbsp;
+
+<p><strong>為 Debian 型 Linux 發行版安裝 Outline 用戶端 (建議)</strong></p>
+&nbsp;
+
+<p>請執行下列指令：</p>
+
+<ol>
+  <li aria-level="1">安裝 Outline 的存放區金鑰並新增存放區。
+    <div class="code">
+      <div class="no-margin">
+        <p>wget -qO- https://us-apt.pkg.dev/doc/repo-signing-key.gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/gcloud-artifact-registry-us.gpg</p>
+
+        <p>echo "deb [arch=amd64] https://us-apt.pkg.dev/projects/jigsaw-outline-apps outline-client main" | sudo tee /etc/apt/sources.list.d/outline-client.list</p>
+      </div>
+    </div>
+  </li>
+  <li aria-level="2">更新 APT 套件清單，並安裝最新版 Outline 用戶端。
+    <div class="code">
+      <div class="no-margin">
+        <p>sudo apt update</p>
+
+        <p>sudo apt install outline-client</p>
+      </div>
+    </div>
+  </li>
+</ol>
+
+<p>如要檢查或安裝後續更新，請再次執行步驟 2 的指令。請注意，自 1.15 版起，Linux 版 Outline 用戶端已停用應用程式內自動更新功能。</p>
+
+<p>如要解除安裝 Outline 用戶端，請執行以下指令：</p>
+
+<div class="code">
+  <div class="no-margin">sudo apt purge outline-client</div>
+</div>
+
+<p><strong>替代方案</strong></p>
+
+<ol>
+  <li aria-level="1">前往 <a href="https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb" rel="noopener" target="_blank">https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb</a>，下載最新版 Outline 用戶端 Debian 套件</li>
+  <li aria-level="2">在指令列執行以下指令，即可安裝套件
+    <div class="code">
+      <div class="no-margin">
+        <p>wget -O ./outline-client.deb https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb</p>
+
+        <p>sudo apt install ./outline-client.deb</p>
+      </div>
+    </div>
+  </li>
+  <li aria-level="3">自 1.15 版起，Linux 版 Outline 用戶端已停用應用程式內自動更新功能，因此請手動檢查更新。</li>
+  <li aria-level="4">如要解除安裝 Outline 用戶端，請在指令列執行以下指令：
+    <div class="code">
+      <div class="no-margin">sudo apt purge outline-client</div>
+    </div>
+  </li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="206" sourceLocale="zh-Hant">WEB:15331528</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">存取金鑰可以重複使用嗎？</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1895;a">沒問題。可使用<a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">存取金鑰</a>的裝置沒有數量限制，但此金鑰最好不要與他人共用，因為他們可能會查看你所有的網路流量，導致網路使用情形外洩並有安全疑慮。</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="104" sourceLocale="zh-Hant">WEB:15331529</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">將您的裝置連線至 Outline 伺服器</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">如要將您的裝置連線至 Outline 伺服器，伺服器管理員必須先傳送邀請給您，您才能利用一組專屬的<a data-aura-rendered-by="12:252;a" href="https://support.getoutline.org/s/article/connect-to-outline?language=zh_TW" target="_blank">存取金鑰</a>連線至伺服器。這個邀請將會：
+<ul data-aura-rendered-by="12:252;a">
+  <li>提示您將 Outline 下載並安裝到您的裝置 (如果您沒有 Outline 應用程式的話)</li>
+  <li>使用存取金鑰為您與 Outline 之間提供安全的連線</li>
+</ul>
+當您與伺服器建立連線之後，按一下 [連線] 或 [中斷連線] 即可使用 Outline。<br data-aura-rendered-by="12:252;a" />
+<br data-aura-rendered-by="12:252;a" />
+重要事項：Outline 需有存取金鑰和 Outline 伺服器才能運作。如果下載和安裝 Outline 應用程式，卻未使用金鑰的話，您的網際網路流量仍不會受到保護。</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="100" sourceLocale="zh-Hant">WEB:15331530</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">如何設定 Outline 伺服器？</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:243;a">如要使用 Outline，第一步得先設定 Outline 伺服器。請親自或是由您信任的人來設定伺服器，完成之後才能透過 Outline 連線至開放的網際網路。</p>
+
+<p data-aura-rendered-by="12:243;a"><strong>事前準備</strong></p>
+
+<p data-aura-rendered-by="12:243;a">開始設定 Outline 伺服器之前，您必須具備：</p>
+
+<ol data-aura-rendered-by="12:243;a">
+  <li>您專屬伺服器的存取權或雲端服務供應商 (例如 DigitalOcean、Amazon Web Services (AWS) 或 Google Cloud Platform (GCP)) 的存取權。<br />
+    如果您目前還無法存取任何雲端伺服器，可選擇任何供應商 (包括上述名單中的供應商)，輕鬆設定帳戶；不過您可能需要有信用卡才能完成註冊。</li>
+  <li>執行 macOS 10.9 以上版本、Windows 7.0 以上版本或 Linux 的桌上型電腦。</li>
+  <li>Outline Manager 應用程式。</li>
+</ol>
+
+<p data-aura-rendered-by="12:243;a"><strong>透過 DigitalOcean 進行設定</strong></p>
+
+<p data-aura-rendered-by="12:243;a">我們將設定步驟設計得非常簡單，使用者只要按幾下滑鼠，就能在 DigitalOcean 上安裝 Outline。在您的電腦下載並安裝 Outline Manager 後，您可以選取 DigitalOcean 設定選項，接著系統會顯示簡單的操作畫面，引導您設定及安裝 Outline 伺服器。</p>
+
+<p data-aura-rendered-by="12:243;a"><strong>透過其他雲端服務供應商進行設定</strong></p>
+
+<p data-aura-rendered-by="12:243;a">下載並安裝 Outline Manager 後，您可以選擇使用 AWS、GCP、DigitalOcean 或其他供應商的服務來將 Outline 安裝到虛擬機器。每種環境的步驟都不相同，因此我們在 Outline Manager 設定流程中納入幾間常見服務供應商的操作說明，包括如何在虛擬機器上完成設定並執行安裝指令碼，以在伺服器上安裝 Outline。</p>
+
+<p data-aura-rendered-by="12:243;a"><strong>需要其他說明嗎？</strong></p>
+
+<p data-aura-rendered-by="12:243;a">請參閱我們的&nbsp;<a href="/outline-faq/answer/15331728" rel="noopener" target="_blank">Outline 伺服器設定常見問題</a>。</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="95" sourceLocale="zh-Hant">WEB:15331625</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">我可以使用或複製 Outline 品牌元素嗎？</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>雖然 Outline 是免付費使用的開放原始碼軟體，但我們的品牌為 Jigsaw 擁有，不應遭到濫用。請遵守<a href="https://github.com/Jigsaw-Code/outline-brand/blob/main/outline_brand_user_guide.pdf" rel="noopener" target="_blank"><u>使用手冊</u></a>的規定，確保自身正確使用經核准的品牌元素，避免提出可能具有誤導性的聲明，或不當描述你與 Outline 或 Jigsaw 的關係。</p>
+<br />
+&nbsp;</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="191" sourceLocale="zh-Hant">WEB:15331628</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">如何取得存取金鑰？</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:3258;a">有別於需要購買存取權的 VPN 服務，Outline 是用來執行私人 VPN 伺服器並分享存取權的<a href="https://getoutline.org/#:~:text=Two%20Products%20that%20Work%20Together" target="_blank">工具</a>。只有<a href="/outline/answer/15330920#servicemanager" rel="noopener" target="_blank">服務管理員</a>才能提供存取金鑰，Outline 團隊不會發布免費或付費的存取金鑰。除了為波斯文使用者提供服務的 Paskoocheh 外，並沒有其他官方的 Outline 存取金鑰合作夥伴。<br />
+  <br />
+  以下是取得存取金鑰的三種方法：</p>
+
+<ul data-aura-rendered-by="12:3258;a">
+  <li>要求伺服器擁有者提出邀請：如果你知道有人已建立 Outline 伺服器，可以詢問對方是否能提供存取金鑰。</li>
+  <li><a href="/outline/answer/15331530" rel="noopener" target="_blank">自行建立伺服器：</a>使用 Windows、Mac 或 Linux 電腦下載 <a href="https://getoutline.org/get-started/#step-1" target="_blank">Outline Manager</a>，並自行設定私人 <a href="/outline/answer/15330920" rel="noopener" target="_blank">Outline 伺服器</a>。這是任何人都能輕鬆完成的程序，透過雲端服務供應商 DigitalOcean 操作會更加簡單。</li>
+  <li>使用 Outline 或 <a href="https://zh.wikipedia.org/wiki/Shadowsocks#:~:text=Shadowsocks%20is%20a%20free%20and,have%20been%20made%20available%20since." target="_blank">Shadowsocks</a> 服務：如果是採用 Outline 或 Shadowsocks 通訊協定的第三方服務，也可以與 Outline 用戶端搭配使用。例如：
+    <ul>
+      <li><a href="http://nthlink.com/" target="_blank">nthLink</a> 使用經過修改的 Outline 用戶端版本，以 Outline 為基礎執行免費服務。</li>
+      <li><a href="https://www.reddit.com/r/outlinevpn/comments/nwu1se/the_outline_distribution_system_is_here_to_help/" target="_blank">ASL19</a> 執行經過修改的 Outline 版本 (名為 <a href="https://beepassvpn.com/" target="_blank">BeePass</a>)，以及 <a href="https://t.me/paskoochehbot" target="_blank">Telegram 機器人</a>。這個機器人可為 BeePass 伺服器提供免費存取金鑰。</li>
+      <li>波斯文使用者也可以向 <a href="https://outline.paskoocheh.com/" target="_blank">ASL19 的 Paskoocheh</a> 索取 Outline 存取金鑰。</li>
+    </ul>
+  </li>
+</ul>
+
+<p>下載 Outline 用戶端應用程式後，請複製<a href="/outline/answer/15330920#accesskey" rel="noopener" target="_blank">存取金鑰</a>並貼到 Outline 用戶端中，即可連線至 Outline 伺服器。</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="133" sourceLocale="zh-Hant">WEB:15331630</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">如何刪除我的 Outline 伺服器？</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>大部分雲端服務供應商都能讓你輕鬆移除目前使用的虛擬機器。</p>
+&nbsp;
+
+<p>如果你的雲端服務供應商是 DigitalOcean，刪除現有機器的做法就是點選齒輪圖示並選取「刪除伺服器」。系統隨後會提示你在自己選擇的位置建立新的虛擬機器。</p>
+<br />
+Outline 伺服器一經移除便會永久刪除，而且伺服器的存取金鑰也將失效。如果想繼續讓使用者透過 Outline 存取內容，在刪除舊的伺服器前，請務必<a href="https://support.google.com/outline/answer/15331530?sjid=5147938692963654551-NC" rel="noopener"><u>設定新的 Outline 伺服器</u></a>並分享存取權。</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="99" sourceLocale="zh-Hant">WEB:15331631</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">如何設定多台 Outline 伺服器</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:27908;a">如要設定更多台 Outline 伺服器，請按一下 Outline Manager 應用程式左側導覽面板的「+」圖示。新增伺服器的操作方式，和安裝第一台伺服器相同。</p>
+
+<ul data-aura-rendered-by="12:27908;a">
+  <li>您可建立的 Outline 伺服器數量不限。</li>
+  <li>您建立的每台 Outline 伺服器都要有對應的虛擬機器。</li>
+  <li>如果建立額外的機器或 Droplet，雲端服務供應商向您收取的費用可能會隨之增加。請先與您的雲端服務供應商確認定價，以免超過您的預算。</li>
+</ul>
+
+<p data-aura-rendered-by="12:27908;a"><strong>在 DigitalOcean 上建立額外的 Outline 伺服器</strong></p>
+
+<p data-aura-rendered-by="12:27908;a">按一下「+」圖示並選取在 DigitalOcean 上安裝後，請按照設定第一台伺服器的說明操作。此外，由於 Outline Manager 已與 DigitalOcean 整合，因此即使未離開 Outline Manager 應用程式介面，也能直接建立 Droplet。</p>
+
+<p data-aura-rendered-by="12:27908;a">請注意，Outline Manager 一次只支援使用一個 DigitalOcean 帳戶。如果您要透過其他 DigitalOcean 帳戶來新增或建立額外的 Outline 伺服器，可以在進階設定中新增。</p>
+
+<p data-aura-rendered-by="12:27908;a"><strong>透過 GCP、AWS 或其他雲端服務供應商建立額外的 Outline 伺服器</strong></p>
+
+<p data-aura-rendered-by="12:27908;a">首先，請選擇雲端服務供應商來建立新的虛擬機器。接著開啟 Outline Manager，按照操作說明完成進階安裝，步驟與第一次設定相同。</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="96" sourceLocale="zh-Hant">WEB:15331632</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">為何我無法在 Windows 裝置上安裝 Outline Manager？</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:266;a">你可能看到以下錯誤訊息：「很抱歉，系統無法正確安裝 Outline，請再安裝一次。如果仍無法解決問題，請<a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">提交意見回饋</a>。」</p>
+
+<p data-aura-rendered-by="12:266;a">透過 Windows 裝置使用 Outline 時，有時可能會遇到未預期的錯誤。在大多數情況下，你必須刪除 Outline TAP 介面卡 (驅動程式)，並重新安裝 Outline。</p>
+
+<p data-aura-rendered-by="12:266;a">解決問題的具體步驟可能會因你的 Windows 作業系統版本而異，以下提供了解除安裝 TAP 介面卡和 Outline Manager，再重新安裝 Outline Manager 的通用步驟。</p>
+
+<ol data-aura-rendered-by="12:266;a">
+  <li>
+    <p>解除安裝 Outline Manager 的 TAP 介面卡</p>
+
+    <ol>
+      <li>
+        <p>依序前往「裝置管理員」和「網路介面卡」</p>
+      </li>
+      <li>
+        <p>找出「TAP-Windows Adapter V9」檔案，或與 Outline 相關聯的 TAP 介面卡</p>
+      </li>
+      <li>
+        <p>解除安裝或刪除這個介面卡。請注意，此操作可能會影響你已安裝的其他 VPN 應用程式。</p>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p>解除安裝 Outline Manager</p>
+
+    <ol>
+      <li>
+        <p>依序前往「程式和功能」和「解除安裝程式」</p>
+      </li>
+      <li>
+        <p>找出 Outline Manager 應用程式，然後解除安裝 Outline Manager</p>
+      </li>
+      <li>
+        <p><a href="https://getoutline.org/get-started/#step-3" target="_blank">下載 Outline Manager 最新版本</a>，然後在 Windows 裝置上重新安裝這個應用程式。重新安裝 Outline Manager 時，也會自動安裝新的 TAP 介面卡。.</p>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+<p data-aura-rendered-by="12:266;a">如果仍無法解決問題，請<a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">與支援團隊聯絡</a>。</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="94" sourceLocale="zh-Hant">WEB:15331727</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Google Cloud 自動化設定</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:257;a"><strong>總覽</strong></p>
+
+<p data-aura-rendered-by="12:257;a">Outline Manager 有項功能可以在執行 Google Cloud 的伺服器上自動設定 Outline 伺服器。如果你選擇使用這項功能，Outline Manager 就會要求你使用 Google 帳戶登入，而這項操作會將特定&nbsp;<a href="https://developers.google.com/identity/protocols/oauth2" target="_blank">OAuth</a>&nbsp;權限授予本機安裝的 Outline Manager，以供設定 Google Cloud 帳戶使用。</p>
+
+<p data-aura-rendered-by="12:257;a">如果你不想提供這些權限，可以依照 Outline Manager 中的進階設定操作說明，在 Google Cloud Platform 上執行 Outline。</p>
+
+<p data-aura-rendered-by="12:257;a"><strong>授予的權限</strong></p>
+
+<p data-aura-rendered-by="12:257;a">為了提供自動設定功能，Outline Manager 需要從你的 Google 帳戶取得下列權限。</p>
+
+<p data-aura-rendered-by="12:257;a"><strong>Google Cloud Platform</strong></p>
+
+<ul data-aura-rendered-by="12:257;a">
+  <li>
+    <p>查看及管理 Google Compute Engine 資源</p>
+  </li>
+  <li>
+    <p>查看你在各項 Google Cloud 服務中的資料，以及你的 Google 帳戶電子郵件地址</p>
+  </li>
+</ul>
+
+<p data-aura-rendered-by="12:257;a"><strong>基本帳戶資訊</strong></p>
+
+<ul data-aura-rendered-by="12:257;a">
+  <li>
+    <p>查看 Google 帳戶的主要電子郵件地址</p>
+  </li>
+  <li>
+    <p>將你與你在 Google 上的個人資訊建立關聯</p>
+  </li>
+</ul>
+
+<p data-aura-rendered-by="12:257;a"><strong>其他存取權</strong></p>
+
+<ul data-aura-rendered-by="12:257;a">
+  <li>
+    <p>管理 Cloud Platform 專案</p>
+  </li>
+  <li>
+    <p>查看及管理 Google Cloud Platform 帳單帳戶</p>
+  </li>
+  <li>
+    <p>管理 Google API 服務設定</p>
+  </li>
+</ul>
+
+<p data-aura-rendered-by="12:257;a"><strong>有了這些權限，Outline Manager 即可針對 Outline 伺服器提供下列進階管理功能：</strong></p>
+
+<ul data-aura-rendered-by="12:257;a">
+  <li>
+    <p>讓你選取正確的帳單帳戶</p>
+  </li>
+  <li>
+    <p>建立用於管理 Outline 伺服器的新專案</p>
+  </li>
+  <li>
+    <p>列出可用的資料中心</p>
+  </li>
+  <li>
+    <p>建立新的 Outline 虛擬執行機器</p>
+  </li>
+  <li>
+    <p>使用 Outline 設定新的虛擬機器</p>
+  </li>
+</ul>
+
+<p data-aura-rendered-by="12:257;a"><strong>撤銷權限</strong></p>
+
+<p data-aura-rendered-by="12:257;a">你可以前往<a href="https://myaccount.google.com/permissions" target="_blank">我的帳戶</a>撤銷 Outline Manager 的 Google Cloud Platform 存取權。撤銷存取權後，原先透過自動化設定建立的伺服器仍會繼續運作，但是 Outline Manager 就不會再顯示這些伺服器。如要重新授權，請啟動自動化設定流程，重新連線至 Google Cloud Platform。</p>
+
+<p data-aura-rendered-by="12:257;a"><strong>Outline 專案機構</strong></p>
+
+<p data-aura-rendered-by="12:257;a">Google Cloud 自動化設定會使用單一&nbsp;<a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects" target="_blank">Google Cloud 專案</a>來管理 Outline 伺服器。這個專案是在你首次使用自動化設定時建立的，建議的專案 ID 是「Outline-」加上一串隨機字元，你也可以在建立專案時選擇其他偏好的專案 ID。該專案將命名為「Outline 伺服器」。</p>
+
+<p data-aura-rendered-by="12:257;a"><strong>帳單帳戶</strong></p>
+
+<p data-aura-rendered-by="12:257;a">Google Cloud 專案需要連結至定義付款資訊的「帳單帳戶」。首次使用 Google Cloud 自動化設定時，你必須提供要與 Outline 伺服器建立關聯的帳單帳戶。帳單帳戶的問題有時會導致伺服器停止運作。發生這種情況時，請登入&nbsp;<a href="https://console.cloud.google.com/" target="_blank">Google Cloud Console</a>，找出與 Outline 相關聯的 Google Cloud 專案 (名為「Outline 伺服器」)，然後更新帳單設定。</p>
+
+<p data-aura-rendered-by="12:257;a"><strong>刪除伺服器</strong></p>
+
+<p data-aura-rendered-by="12:257;a">如果想刪除透過自動化設定建立的伺服器，最簡單的方法是從 Outline Manager 執行刪除作業。不過，如果你想自行刪除伺服器，可以登入&nbsp;<a href="https://console.cloud.google.com/" target="_blank">Google Cloud Console</a>，找出首次設定時建立的專案 (名為「Outline 伺服器」)，然後刪除其中的資源或關閉整個專案。</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="99" sourceLocale="zh-Hant">WEB:15331728</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline 伺服器設定常見問題</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:266;a"><strong>如果沒有伺服器，可以使用 Outline 嗎？</strong></p>
+
+<p>很抱歉，不可以。Outline 軟體需要有伺服器存取權才能運作；伺服器由您、您的機構組織或信任的第三方代管皆可。</p>
+
+<p data-aura-rendered-by="12:266;a"><strong>設定 Outline 伺服器需要多久時間？</strong></p>
+
+<p>通常可以在 5 分鐘以內完成。我們與 DigitalOcean 合作，提供更容易使用的引導安裝程序，讓您按幾下滑鼠就能輕鬆設定伺服器，完全不需要執行指令碼。不過，您也可以在其他雲端伺服器上安裝 Outline。<br data-aura-rendered-by="12:266;a" />
+  <br data-aura-rendered-by="12:266;a" />
+  如果您選用 AWS、GCP 或進階設定服務，我們也已將伺服器的安裝程序簡化為只要執行一個指令碼，就能處理好大部分的環境設定。</p>
+
+<p data-aura-rendered-by="12:266;a"><strong>我可以在哪裡設定 Outline 伺服器？</strong></p>
+您可以透過大部分雲端供應商在其提供服務的地區設定 Outline 伺服器。<br data-aura-rendered-by="12:266;a" />
+<br data-aura-rendered-by="12:266;a" />
+最簡單的做法是在 DigitalOcean 上設定，因為這間供應商提供的伺服器遍布阿姆斯特丹、多倫多、舊金山和新加坡等多個地區。如果您希望將 Outline 安裝在其他雲端服務供應商或自己的基礎架構上，可以在 Outline Manager 應用程式中選擇 [進階模式]，然後使用設定指令碼按照安裝說明操作。
+<p data-aura-rendered-by="12:266;a"><strong>我應該將 Outline 伺服器設定在哪裡？</strong></p>
+
+<p>為您的 Outline 伺服器挑選設定地點時，不妨考量以下幾點：</p>
+
+<ol data-aura-rendered-by="12:266;a">
+  <li>
+    <p>Outline 伺服器位置會影響使用者的網際網路體驗。&nbsp;舉例來說，假設伺服器位於阿姆斯特丹，存取這台伺服器的使用者連線網際網路時，看到的介面就會像在荷蘭上網一樣；有些網站甚至會顯示位於荷蘭。一般來說，您可以使用網站的語言選擇工具來覆寫語言設定。</p>
+  </li>
+  <li>
+    <p>使用者和 Outline 伺服器之間的距離可能會影響連線速度。&nbsp;一般而言，Outline 使用者和伺服器之間的實際距離會影響使用者的網際網路速度。在大部分情況下，您可以為最靠近預期使用者所在地的伺服器選擇位置，不過您也可以查看<a href="https://www.submarinecablemap.com/" rel="noopener" target="_blank">海底纜線圖</a>，確認連到您國家/地區的是哪一條網際網路纜線。</p>
+  </li>
+  <li>
+    <p>VPN 伺服器的所在位置可能會影響法律架構。&nbsp;請注意，Outline 軟體不會記錄你的流量。進一步瞭解「<a href="/outline-faq/answer/14919822" rel="noopener" target="_blank">使用 Outline 的安全性和隱私權</a>」。</p>
+  </li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="zh-Hant">WEB:15331758</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">我是開發人員，能到哪裡尋求支援，瞭解如何將 Outline SDK 整合進應用程式？</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">本支援網站適用於 Outline Manager 和 Outline 用戶端使用者。開發人員請前往 GitHub 尋求支援。如要提問，請在 SDK&nbsp;<a href="https://github.com/Jigsaw-Code/outline-sdk/discussions" target="_blank">討論區</a>發布貼文，這是提出問題、分享想法和連結至試用版的絕佳管道，你也能在該處支援使用 Outline SDK 的其他開發人員。如要查看功能要求或錯誤報告，請改為建立<a href="https://github.com/Jigsaw-Code/outline-sdk/issues/new" target="_blank">問題</a>。</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="74" sourceLocale="zh-Hant">WEB:15448041</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE SUBTEXT</strong></div>
+<div class="gkms article subtext"><pre class="gkms-non-html">Outline 支援以下語言：</pre></div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">支援的語言</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><ul>
+  <li aria-level="1">南非荷蘭文</li>
+  <li aria-level="1">阿爾巴尼亞文</li>
+  <li aria-level="1">阿姆哈拉文</li>
+  <li aria-level="1">阿拉伯文</li>
+  <li aria-level="1">亞美尼亞文</li>
+  <li aria-level="1">亞塞拜然文</li>
+  <li aria-level="1">孟加拉文</li>
+  <li aria-level="1">波士尼亞文</li>
+  <li aria-level="1">保加利亞文</li>
+  <li aria-level="1">緬甸文</li>
+  <li aria-level="1">加泰隆尼亞文</li>
+  <li aria-level="1">簡體中文</li>
+  <li aria-level="1">繁體中文</li>
+  <li aria-level="1">克羅埃西亞文</li>
+  <li aria-level="1">捷克文</li>
+  <li aria-level="1">丹麥文</li>
+  <li aria-level="1">荷蘭文</li>
+  <li aria-level="1">英文 (美國)</li>
+  <li aria-level="1">英文 (英國)</li>
+  <li aria-level="1">愛沙尼亞文</li>
+  <li aria-level="1">菲律賓文</li>
+  <li aria-level="1">芬蘭文</li>
+  <li aria-level="1">法文</li>
+  <li aria-level="1">喬治亞文</li>
+  <li aria-level="1">德文</li>
+  <li aria-level="1">希臘文</li>
+  <li aria-level="1">希伯來文</li>
+  <li aria-level="1">北印度文</li>
+  <li aria-level="1">匈牙利文</li>
+  <li aria-level="1">冰島文</li>
+  <li aria-level="1">印尼文</li>
+  <li aria-level="1">義大利文</li>
+  <li aria-level="1">日文</li>
+  <li aria-level="1">哈薩克文</li>
+  <li aria-level="1">高棉文</li>
+  <li aria-level="1">韓文</li>
+  <li aria-level="1">寮文</li>
+  <li aria-level="1">拉脫維亞文</li>
+  <li aria-level="1">立陶宛文</li>
+  <li aria-level="1">馬其頓文</li>
+  <li aria-level="1">馬來文</li>
+  <li aria-level="1">馬拉地文</li>
+  <li aria-level="1">蒙古文</li>
+  <li aria-level="1">尼泊爾文</li>
+  <li aria-level="1">挪威文</li>
+  <li aria-level="1">波斯文</li>
+  <li aria-level="1">波蘭文</li>
+  <li aria-level="1">葡萄牙文 (巴西)</li>
+  <li aria-level="1">葡萄牙文 (歐洲)</li>
+  <li aria-level="1">羅馬尼亞文</li>
+  <li aria-level="1">俄文</li>
+  <li aria-level="1">塞爾維亞文 (西里爾字母)</li>
+  <li aria-level="1">塞爾維亞文 (拉丁字母)</li>
+  <li aria-level="1">僧伽羅文</li>
+  <li aria-level="1">斯洛伐克文</li>
+  <li aria-level="1">斯洛維尼亞文</li>
+  <li aria-level="1">西班牙文 (歐洲)</li>
+  <li aria-level="1">西班牙文 (拉丁美洲)</li>
+  <li aria-level="1">史瓦希里文</li>
+  <li aria-level="1">瑞典文</li>
+  <li aria-level="1">泰米爾文</li>
+  <li aria-level="1">泰文</li>
+  <li aria-level="1">土耳其文</li>
+  <li aria-level="1">烏克蘭文</li>
+  <li aria-level="1">烏都文</li>
+  <li aria-level="1">越南文</li>
+</ul>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="79" sourceLocale="zh-Hant">WEB:15528599</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">防火牆錯誤</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>您可能會遇到以下三種類型的防火牆問題：</p>
+
+<p data-aura-rendered-by="12:267;a"><strong>遭到網路防火牆封鎖。</strong></p>
+
+<p>連線到已開啟防火牆的網路時 (例如學校或辦公地點的網路)，請勿嘗試安裝 Outline，建議等連線至其他網路後，再行安裝。<br data-aura-rendered-by="12:267;a" />
+  <br data-aura-rendered-by="12:267;a" />
+  如果這個方式行不通，請聯絡您的網路管理員，要求對方允許已開啟防火牆的網路與您的 Outline 伺服器連線。您必須備妥 Outline 伺服器的 IP 位址和執行 Outline 的連接埠資料；安裝指令碼的最後部分提供相關資訊，歡迎參閱。</p>
+
+<p data-aura-rendered-by="12:267;a"><strong>遭到裝置防火牆封鎖</strong>。</p>
+
+<p>如果您裝置上的軟體會封鎖非標準連接埠/無法辨識軟體 (例如 CheckPoint 的 ZoneAlarm) 的連出連線，請參閱您的裝置或軟體說明文件，瞭解如何為 Outline 建立例外狀況。</p>
+
+<p data-aura-rendered-by="12:267;a"><strong>遭到伺服器防火牆封鎖。</strong></p>
+
+<p>您選用的雲端服務供應商可能會要求您手動建立伺服器防火牆例外狀況，以開啟要執行 Outline 的連接埠。執行安裝指令碼後，系統應會提供兩個隨機選取的連接埠，讓您在伺服器中執行 Outline。開啟這兩個連接埠應已可滿足使用需求。<br data-aura-rendered-by="12:267;a" />
+  <br data-aura-rendered-by="12:267;a" />
+  如要為伺服器防火牆建立例外狀況，建議您參閱「ufw」和「iptables」的說明文件。</p>
+
+<ul data-aura-rendered-by="12:267;a">
+  <li>
+    <p>UFW：<a href="https://support.getoutline.org/s/article/Firewall-errors?language=zh_TW" target="_blank">https://help.ubuntu.com/community/UFW</a></p>
+  </li>
+  <li>
+    <p>Iptables：<a href="https://support.getoutline.org/s/article/Firewall-errors?language=zh_TW" target="_blank">https://help.ubuntu.com/community/IptablesHowTo</a></p>
+  </li>
+</ul>
+</div>
+</body>
+</html>

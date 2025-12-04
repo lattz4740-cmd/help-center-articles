@@ -1,0 +1,1 @@
+This directory contains the Redirect Rules. Because we couldn't export these rules, we captured the configuration page using screenshots.

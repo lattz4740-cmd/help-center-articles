@@ -1,0 +1,1082 @@
+<html>
+<head>
+<style type="text/css">
+.gkms-gtt-answer-header, .gkms-gtt-message-header {
+  color: black !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 2em;
+  padding: 4px;
+}.gkms-gtt-answer-header {
+  background-color: #E5ECF9;
+  border-top: 1px solid #36C;
+}
+.gkms-gtt-message-header {
+  background-color: #F8F8F8;
+  border-top: 1px solid #CCC;
+}
+.gkms-gtt-hide {
+  visibility: hidden;
+}
+.form_field_data .temporary_signal_wrapper {
+  display: inline;
+}
+</style>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+</head>
+<body lang="kk">
+<br/><div class="gkms id notranslate" sourceGlobalRevision="116" sourceLocale="kk">WEB:14917423</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline қалай жұмыс істейді?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1723;a">&nbsp;</p>
+
+<p data-aura-rendered-by="12:1723;a"><strong>Сервер орнату</strong><br />
+  <br />
+  ​Outline-ды орнату оңай көрінгенімен, шындығында серверіңізді орнату үшін көпшілікке көріне бермейтін күрделі қадамдар орындалып жатады. Outline-ды орнату скриптісі келесі қадамдардан тұрады:</p>
+
+<ul data-aura-rendered-by="12:1723;a">
+  <li>Shadowbox образының көпшілікке арналған нұсқасы Docker арқылы алынады және импортталады. Бұл образ <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank">https://quay.io/repository/outline/shadowbox?tab=tags</a> бетіндегі <a href="https://quay.io/" target="_blank">Quay.io</a> сақтау орнында орналастырылған. Бұл образда Outline сервері және Management API бар, оны кейінірек Outline Server Management қолданбасы рұқсат кілттерін жасау және жою, анонимді көрсеткіштер туралы есептерді қосу/өшіру және т.б. үшін пайдаланады.</li>
+  <li><a href="https://github.com/v2tec/watchtower" target="_blank">Watchtower</a> сағат сайын кескін жаңартуларын тексеріп отыру үшін орнатылады және конфигурацияланады. Осылай Outline серверлері соңғы функциялармен және қауіпсіздік жақсартуларымен үнемі жаңартылып отырады.</li>
+  <li>Management API интерфейсіне кіру үшін пайдаланылатын веб-сервер құпия әрі кездейсоқ жолдағы кездейсоқ портта іске қосылады.</li>
+  <li><a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank">Өздігінен қол қойылатын SSL сертификаты</a> домен атауы болмаса да, Outline серверін басқару TLS арқылы шифрланатындай етіп жасалады. Бұл сертификаттың бірегей саусақ ізі Outline Manager қолданбасында жасалады және сақталады, осылайша MITM шабуылдарының алдын алуға көмектеседі.</li>
+</ul>
+
+<p data-aura-rendered-by="12:1723;a">Outline орнатылғаннан кейін, ешқандай конфигурациялар қажет болмайды.<br />
+  <br />
+  <strong>Сервер қауіпсіздігі</strong><br />
+  <br />
+  Outline бағдарламалық құралы ашық кодты бағдарлама болып саналады, яғни оның кодын кез келген адам көре алады және кемшіліктер табылып жатса, жақсарта алады. Кодымыз <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank">GitHub</a> сайтында орналастырылған.<br />
+  <br />
+  Сондай-ақ жаңа нұсқа шыққан сайын, барлық орнатылған Outline сервері автоматты түрде жаңартылып отырады. Осылайша Outline серверлері бағдарламалық құралдың ескі нұсқаларында жұмыс істемейді.<br />
+  <br />
+  Серверде рұқсат кілттерін басқару үшін Outline Manager қолданбасы Outline серверіндегі Management Service қызметімен өзара әрекеттесіп жұмыс істейді. Management Service құпия әрі айрықша жол арылы кездейсоқ портта іске қосылады. Management Service тыңшылық әрекеттерге өз бетінше төтеп береді, өйткені тиісті құпия жол көрсетілмесе, сұрауларға жауап бермейді. Management Service қызметімен болатын барлық коммуникация <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank">өздігінен қол қойылатын SSL сертификатымен</a> шифрланды.<br />
+  <br />
+  Сондай-ақ Outline сервері ешқандай журналдарды сақтамайды, сондықтан ол қолды болса да, пайдаланушы деректері жария болмайды. Толық ақпаратты <a href="https://support.getoutline.org/s/article/Security-and-privacy" target="_blank">мына жерден</a> оқыңыз. Outline бағдарламалық құралына <a href="https://radicallyopensecurity.com/" target="_blank">Radically Open Security</a> және <a href="https://cure53.de/" target="_blank">Cure53</a> 2018 жылы аудит өткізген. Есептерді <a href="https://support.getoutline.org/s/article/Security-and-privacy" target="_blank">мына жерден</a> көре аласыз.<br />
+  <br />
+  <strong>UDP тарфигін реттеу</strong><br />
+  <br />
+  Outline жүйелік VPN ретінде жұмыс істей алады, яғни барлық UDP трафигі Outline сервері арқылы туннельденеді.<br />
+  <br />
+  <strong>DNS трафигі</strong></p>
+
+<p data-aura-rendered-by="12:1723;a"><br />
+  Outline қолданбасы DNS сұрауларын Outline сервері арқылы орындап, оларды басқа желіні пайдалану дерегінде қолданылатын шифрлау әдісі арқылы қорғайды. DNS сұрауларыңыз Outline сервері арқылы Dyn Internet Guide, OpenDNS, Cloudflare DNS немесе Quad 9 DNS қызметіне жіберіледі. Outline қолданбасы DNS сұрауларын журналға сақтамайды.&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="232" sourceLocale="kk">WEB:14919822</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline-ды пайдалану барысындағы қауіпсіздік және құпиялық</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:258;a">Outline-ды пайдалану барысындағы қауіпсіздік және құпиялық</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Outline қолданбасы онлайн байланысыңызды қалай қорғайды?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Интернет трафигі жергілікті немесе ұлттық желіде бақылауға қарсы тұруға өте әлсіз болады.</p>
+
+<p data-aura-rendered-by="12:258;a">Outline бағдарламалық құралы ұлттық желідегі интернет трафигіңізді шифрлау арқылы коммуникация құпиялығын сақтауға көмектеседі әрі Outline серверіне жеткенше оны шифрланған күйінде сақтайды. Трафик Outline арқылы шифрланғанда, желі бақылаушылары сіз кірген веб-сайттарды немесе сіз жіберіп жатқан ақпаратты тексере алмайды.</p>
+
+<p data-aura-rendered-by="12:258;a">Сондай-ақ Outline еліңізде қолжетімді болмауы мүмкін қауіпсіз өтпелі байланыс құралдарын қайта пайдалануға мүмкіндік береді.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Шифрлау стандарттары</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Outline қолданбасы AEAD 256&nbsp;биттік Chacha2020 IETF Poly 1305 шифрын пайдалана отырып, құрылғыңыз бен Outline сервері арасындағы байланысты шифрлайды. AEAD шифрлары құпиялықты, тұтастықты және түпнұсқалықты қамтамасыз етеді және қазіргі заманғы жабдықтарда өте жақсы жұмыс істейді.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Қауіпсіздік аудиттері</strong></p>
+
+<p data-aura-rendered-by="12:258;a">2018 жылы Outline қолданбасын Radically Open Security және Cure53 компаниялары қауіпсіздік аудитінен өткізген. Бұл екі тәуелсіз цифрлық қауіпсіздік ұйымы бағдарламалық құралдың соңғы қауіпсіздік стандарттарына сәйкестігін тексереді. Radically Open Security компаниясы 2022 жылы қосымша аудит жүргізді, ал Cure53 компаниясы Outline SDK бағдарламалық құралын 2024 жылы аудиттен өткізді. Есептерді осы жерден оқуға болады:</p>
+
+<ul data-aura-rendered-by="12:258;a">
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf" target="_blank">Radically Open Security өткізген бұзып кіру сынағының есебі (2018 жылдың наурызы)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf" target="_blank">Cure53 өткізген Jigsaw Outline қызметінің бұзып кіру сынағы және аудит есебі (2018 жылдың желтоқсаны)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf" target="_blank">Radically Open Security өткізген бұзып кіру сынағының есебі (2022 жылдың желтоқсаны)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf" target="_blank">Cure53 өткізген Jigsaw Outline VPN SDK бұзып кіру сынағының есебі (2024 жылдың қаңтары)</a></li>
+</ul>
+
+<p data-aura-rendered-by="12:258;a"><strong>Анонимді көрсеткіштер мен журналдар</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Outline әр рұқсат кілті үшін "аударылған байттар" ретінде пайдаланылатын өткізу мүмкіндігін қадағалайды. Бұл ақпараттың көмегімен сервер әкімшілері қажет кезде өткізу мүмкіндігі жазылымдарын бұлт сервері провайдерлерімен реттей алады, бірақ олар Outline серверінен өткен нақты ақпаратты көре алмайды.</p>
+
+<p data-aura-rendered-by="12:258;a">Outline-ның <a href="/outline-faq/answer/15331222" rel="noopener" target="_blank">деректер мен ақпарат жинауы</a> туралы толық мәлімет алыңыз.</p>
+
+<hr data-aura-rendered-by="12:258;a" />
+<p data-aura-rendered-by="12:258;a"><strong>Қауіпсіздік және құпиялық туралы сұрақ-жауап</strong>&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Outline менің атымды желіде жасыра ала ма?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Жоқ, Outline адам тұлғалығын жасыратын құрал емес. Outline желілік бақылаушылардан құпиялығыңызды қорғайды.</p>
+
+<p data-aura-rendered-by="12:258;a">Outline сіз кіретін веб-сайттарда толық анонимдікті ұсынбайды, өйткені олар бәрібір сіз аккаунтқа кіргенде немесе кейде браузердегі саусақ іздері сияқты әдістермен сізді анықтай алады. Мобильді қолданбаларға келетін болсақ, орнатылған қолданбалар қазір көптеген смартфонда бар API интерфейстерінің арқасында локацияңызды біле алады. Ендірілген GPS қолданылатындықтан, прокси-серверіңіз назарға алынбайды.</p>
+
+<p data-aura-rendered-by="12:258;a">Жалпы алғанда, VPN жақсы қорғай алады (әсіресе интернетті бақылаудан), бірақ интернетте жұмыс істеудің әрқашан өз қатері болады. Интернет провайдері VPN қолданған кезде де жеке басыңызды білсе және желі трафигін бақылай алса, онда Outline серверіңіздің IP мекенжайын да анықтай алады. Бұл ақпарат Outline серверіне кіруді блоктау немесе пайдалану үлгілерін (мысалы, сіз әдетте желіге қай кезде кіретініңіз және болжалды орналасқан жеріңіз туралы ақпаратты) зерттеу үшін пайдаланылуы мүмкін.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Outline-ды пайдаланып жатқанымды біреу біле ала ма?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Мүмкін. Сіз пайдаланатын платформалар мен қызметтер байланысыңыздың бұлт серверінен келгенін анықтай алуы мүмкін. Кейде олар сіздің VPN қолданып жатқаныңызды анықтағанымен, интернет трафигіңіздің контентін көре алмайды.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Outline мені барлық ықтимал қиберқауіптен қорғай ма?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Жоқ. Ешқандай құрал сізді мүмкін болатын барлық киберқауіптен қорғай алмайды. Outline ашық интернетке кіруге мүмкіндік береді және трафикті шифрлау арқылы құпиялығыңыздың деңгейін күшейтеді. Бірақ зиянды бағдарламалар мен фишинг сияқты шабуылдардың басқа түрлерінен қорғану үшін қосымша сақтық шараларын қолданғаныңыз жөн.</p>
+
+<p data-aura-rendered-by="12:258;a">Онлайн қорғанысты жақсарту үшін ұйымыңыздың киберқауіпсіздік сарапшысымен жұмыс істеу мүмкіндігін қарастырыңыз. Сондай-ақ мәселелеріңізді шешу үшін дұрыс киберқауіпсіздік құралдарын таңдауға қатысты нақты нұсқаулар беруге арналған <a href="https://securityplanner.org/" target="_blank">Security Planner</a> веб-сайтында жетекші қауіпсіздік сарапшыларынан жекелендірілген нұсқаулар ала аласыз.</p>
+
+<p data-aura-rendered-by="12:258;a">Сонымен қатар <a href="https://jigsaw.google.com/" target="_blank">Jigsaw</a> ұсынған <a href="https://getintra.org/" target="_blank">Intra</a>, <a href="https://g.co/shield" target="_blank">Project Shield</a> және <a href="https://chrome.google.com/webstore/detail/password-alert/noondiphcddnnabmjcihcjfbhfklnnep?" rel="noopener" target="_blank">Password Alert</a> сияқты басқа киберқауіпсіздік өнімдерімен таныса аласыз.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>VPN желісін пайдалану заңды ма?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Outline бағдарламасын іске қосар алдында немесе қолданбаны пайдаланбас бұрын, жергілікті заңдар мен ережелерді және қолданғыңыз келетін бұлт қызметтері провайдерінің Қызмет көрсету шарттарын қарап шығыңыз.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="89" sourceLocale="kk">WEB:15330317</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline серверіне қосылсам да, интернетке неліктен кіре алмай жатырмын?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:32933;a">Егер мобильдік телефонды пайдалансаңыз, мобильдік интернет пен Wi-Fi байланысын ауыстырып көріңіз. Кейде бір байланыс түрі істемесе, басқасы істеп тұрады. Компьютерді пайдалансаңыз, кең жолақты тасымалдан ажырап, қайта қосылып көріңіз.</p>
+
+<p data-aura-rendered-by="12:32933;a">Қате жойылмаса, Outline серверінде мәселе болуы мүмкін. Балама сервердің жаңа рұқсат кілтін алу үшін<a href="/outline-faq/answer/15330920" rel="noopener" target="_blank"> қызмет менеджеріне</a>&nbsp;хабарласыңыз. Сондай-ақ, кілт өз квотасынан асып кетсе, ол<a href="https://google-jigsaw--jigsawuat.sandbox.my.site.com/outline/s/article/Terminology" target="_blank"> </a><a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">рұқсат кілтінің</a> трафик шегін арттырып бере алады.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="296" sourceLocale="kk">WEB:15330818</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline клиентін пайдалануға қажетті жүйе талаптары қандай?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:24676;a">Outline клиентін кез келген операциялық жүйеде пайдаланып көруіңізге болады. Ең төменгі талаптарға сәйкес келетін операциялық жүйелер:</p>
+
+<table class="borders" data-aura-rendered-by="12:24676;a" width="312">
+  <tbody>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top"><b>Операциялық жүйе</b></td>
+      <td colspan="1" rowspan="1" valign="top"><b>Ең төменгі нұсқасы</b></td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Android</td>
+      <td colspan="1" rowspan="1" valign="top">10</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">iOS</td>
+      <td colspan="1" rowspan="1" valign="top">15.5</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">macOS</td>
+      <td colspan="1" rowspan="1" valign="top">12.0</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Windows</td>
+      <td colspan="1" rowspan="1" valign="top">10</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Linux</td>
+      <td colspan="1" rowspan="1" valign="top">Ubuntu&nbsp;20.04</td>
+    </tr>
+  </tbody>
+</table>
+
+<p data-aura-rendered-by="12:24676;a"><br />
+  Outline клиентінің басқа да операциялық жүйелерде істеуіне көмектескіңіз келе ме?&nbsp;<a href="https://github.com/Jigsaw-Code/outline-client#platform-specific-development" target="_blank">Кодтар дерекқорына үлес қосыңыз</a>: GitHub сайтына өтіңіз!</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="107" sourceLocale="kk">WEB:15330824</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline серверлік бағдарламасын қалай жаңартуға болады?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:10378;a">Outline серверлеріне соңғы қауіпсіздік жақсартулары автоматты түрде енгізіліп тұратындықтан, әрдайым ең жаңа Outline технологиясы қолданылады. Автоматтандырылған жаңарту процесі <a href="https://github.com/v2tec/watchtower" target="_blank">Watchtower</a> көмегімен қосылады. Бұл ашық кодты жинақ Outline бағдарламалық құралын қамтитын Docker кескінін тұрақты түрде тексеріп, жаңартады.</p>
+
+<p data-aura-rendered-by="12:10378;a">Сондай-ақ Outline Manager көмегімен Outline қолданбасын орнатқан кезде, <a href="https://wiki.debian.org/UnattendedUpgrades" target="_blank">Автоматты жаңартулар</a> (Ubuntu) арқылы сервердегі бағдарламалық құралды автоматты түрде жаңарту үшін cron тапсырмасын орнатамыз және қажет болса, оны қайта жүктейміз. Хост Outline қызметін іске қосудан басқа мақсаттарда пайдаланылатын болса, мұндай процесс ағымдағы конфигурацияны сақтау үшін Озық режимде шықпайтынын ескеріңіз.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="102" sourceLocale="kk">WEB:15330825</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Жүктеп алу сілтемесі істемей тұрса, Outline Manager құралын қалай жүктеп алуға болады?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Қолданбаларды тікелей бірнеше операциялық жүйеге жүктеп алу үшін <a href="https://getoutline.org/get-started/#step-1" target="_blank">мына сілтемені</a> немесе <a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">мына сілтемені</a> қолданыңыз.&nbsp;</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="129" sourceLocale="kk">WEB:15330920</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Терминология</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:23504;a"><strong>VPN деген не?</strong><br />
+  Виртуалдық жеке желі (VPN) – құрылғылар мен хост сервер арасындағы жеке байланыс. VPN пайдаланған кезде, трафигіңіз интернет провайдеріне көрінбейді. VPN желісі келесі жағдайларда пайдалы болуы мүмкін:</p>
+
+<ul data-aura-rendered-by="12:23504;a">
+  <li>қоғамдық Wi-Fi желісін пайдалану барысында деректерді қорғау;</li>
+  <li>браузерді пайдалану деректеріңізді интернет провайдері мен үкіметтік агенттіктерден құпия ұстау;</li>
+  <li>әлем бойынша түрлі дереккөздердегі цензурасыз контентке кіру.</li>
+</ul>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Outline қызметі дәстүрлі VPN желілерінен қалай ерекшеленеді?</strong><br />
+  Интернет провайдерлері қарапайым қауіпсіздік протоколдарын және/немесе трафик көлемінің үлгілерін тану арқылы дәстүрлі VPN желілерін оңай анықтай және блоктай алады. Outline дәстүрлі VPN желілеріне қарағанда тұрақты, өйткені оны жасауға қолданылған протокол қиын анықталады, сәйкесінше оны блоктау да қиын болады. Outline цензураның күрделі түрлеріне, соның ішінде желі бойынша блоктауға және IP мекенжайын блоктауға қарсы тұрады.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Outline сервері деген не?</strong><br />
+  Outline сервері рұқсаты бар пайдаланушылар қосылатын VPN желісін іске қосады. Жаңа желі құрып жатсаңыз, Outline сервері сияқты өзіңіздің қорғалған серверіңізді (бар болса) немесе төмендегілер сияқты бұлт қызметтері провайдерін пайдалана аласыз:</p>
+
+<ul data-aura-rendered-by="12:23504;a">
+  <li>DigitalOcean;</li>
+  <li>Google Cloud Platform (GCP);</li>
+  <li>Amazon Web Services (AWS).</li>
+</ul>
+
+<p data-aura-rendered-by="12:23504;a"><a id="One" target="_blank"></a>Outline Manager қызметінде серверіңізді реттейсіз.<br />
+  <br />
+  <strong><a id="servicemanager" name="servicemanager"></a>Қызмет менеджері деген не?</strong><br />
+  Қызмет менеджері&nbsp;– Outline серверін реттеуге және кіру кілттерін пайдаланушылармен бөлісуге жауапты адам. Қызмет менеджері әдетте серверді пайдалану құнына жауап береді.&nbsp;<br />
+  <br />
+  <strong><a id="accesskey" name="accesskey"></a>Рұқсат кілті деген не?</strong><br />
+  Кіру кілті қолданыстағы Outline серверіне кіруге және VPN желісіне қосылуға пайдаланылады. <a href="#servicemanager" rel="noopener">Қызмет менеджері</a>&nbsp;рұқсат кілтін береді немесе<a href="/outline-faq/answer/15331530" rel="noopener" target="_blank"> Outline серверін</a> өзіңіз реттей аласыз.&nbsp;Мұнда кіру кілті қандай болатыны туралы мысал келтірілген (тек үлгі ретінде; жұмыс істемейді)&nbsp;<br />
+  <br />
+  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1<br />
+  <br />
+  <strong>Outline Manager деген не?</strong><br />
+  Outline Manager&nbsp;– қызмет менеджеріне Outline серверін конфигурациялауға, <a href="#accesskey" rel="noopener">рұқсат кілттерін</a> жасауға және әр кілт үшін трафик шектерін қоюға мүмкіндік беретін компьютерге арналған қолданба. Outline Manager қолданбасының соңғы нұсқасын<a href="https://getoutline.org/get-started/#step-3" target="_blank"> осы жерден</a> немесе<a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank"> осы жерден</a> жүктеп ала аласыз.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Outline клиенті деген не?</strong><br />
+  Outline клиенті – компьютерге және мобильдік құрылғыға арналған қолданба, ол рұқсат кілтімен Outline серверіне қосылуға және VPN желілеріне кіруге мүмкіндік береді. Outline клиентінің соңғы нұсқасын<a href="https://getoutline.org/get-started/#step-3" target="_blank"> осы жерден</a> немесе<a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank"> осы жерден</a> жүктеп ала аласыз.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Трафик шектері деген не?</strong><br />
+  Outline Manager шамадан тыс пайдалануға жол бермей, шығындардың болжалды шамада қалуын қамтамасыз ету үшін қызмет менеджерлеріне рұқсат кілттері бойынша соңғы 30 күндік трафик шегін орнатуға мүмкіндік береді. Қызмет менеджерлері әр кілтке қолданылатын әдепкі шекті орната алады, сонымен қатар әдепкі шекті қайта анықтайтын етіп, кез келген кілтке басқа шек қоя алады. Орнатылған шек дереу күшіне енеді және сағат сайын іске қосылады.</p>
+
+<p data-aura-rendered-by="12:23504;a">Егер қызмет менеджерлері көрсеткіштерді Jigsaw-мен бөлісуді таңдаса, олар трафик шектерін пайдалану жөнінде қалай есеп берілетіні туралы мәліметтерді<a href="/outline-faq/answer/15331222" rel="noopener" target="_blank"> деректер жинау саясатынан</a> көруі керек.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="110" sourceLocale="kk">WEB:15331121</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">"getoutline.me" және "@OutlineVpnOfficial" Telegram арналарына қолдау көрсетесіз бе?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Outline ұжымы "<a href="http://getoutline.me/" target="_blank">getoutline.me</a>" веб-сайты мен онымен байланысты "@OutlineVpnOfficial" Telegram арнасы туралы көптеген сұрау алды. Бұл қызметтер Outline ұжымымен байланысты болмағандықтан, бұл қызметтердегі рұқсат кілттеріне қатысты пайдаланушы тәжірибесі мәселелері бойынша көмектесе алмаймыз.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="kk">WEB:15331122</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Қолжетімді тілдер</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Outline мына тілдерде істейді:</p>
+
+<ul>
+  <li aria-level="1">бур;</li>
+  <li aria-level="1">албан;</li>
+  <li aria-level="1">амхар;</li>
+  <li aria-level="1">араб;</li>
+  <li aria-level="1">армян;</li>
+  <li aria-level="1">әзірбайжан;</li>
+  <li aria-level="1">бенгал;</li>
+  <li aria-level="1">босния;</li>
+  <li aria-level="1">болгар;</li>
+  <li aria-level="1">бирма;</li>
+  <li aria-level="1">каталан;</li>
+  <li aria-level="1">қытай (жеңілдетілген);</li>
+  <li aria-level="1">қытай (дәстүрлі);</li>
+  <li aria-level="1">хорват;</li>
+  <li aria-level="1">чех;</li>
+  <li aria-level="1">дат;</li>
+  <li aria-level="1">голланд;</li>
+  <li aria-level="1">ағылшын (америкалық);</li>
+  <li aria-level="1">ағылшын (британ);</li>
+  <li aria-level="1">эстон;</li>
+  <li aria-level="1">филиппин;</li>
+  <li aria-level="1">фин;</li>
+  <li aria-level="1">француз;</li>
+  <li aria-level="1">грузин;</li>
+  <li aria-level="1">неміс;</li>
+  <li aria-level="1">грек;</li>
+  <li aria-level="1">иврит;</li>
+  <li aria-level="1">хинди;</li>
+  <li aria-level="1">мажар;</li>
+  <li aria-level="1">исланд;</li>
+  <li aria-level="1">индонезия;</li>
+  <li aria-level="1">итальян;</li>
+  <li aria-level="1">жапон;</li>
+  <li aria-level="1">қазақ;</li>
+  <li aria-level="1">кхмер;</li>
+  <li aria-level="1">корей;</li>
+  <li aria-level="1">лаос;</li>
+  <li aria-level="1">латыш;</li>
+  <li aria-level="1">литва;</li>
+  <li aria-level="1">македон;</li>
+  <li aria-level="1">малай;</li>
+  <li aria-level="1">маратхи;</li>
+  <li aria-level="1">моңғол;</li>
+  <li aria-level="1">непал;</li>
+  <li aria-level="1">норвег;</li>
+  <li aria-level="1">парсы;</li>
+  <li aria-level="1">поляк;</li>
+  <li aria-level="1">португал (бразилиялық);</li>
+  <li aria-level="1">португал (еуропалық);</li>
+  <li aria-level="1">румын;</li>
+  <li aria-level="1">орыс;</li>
+  <li aria-level="1">серб (кириллица)</li>
+  <li aria-level="1">серб (латын)</li>
+  <li aria-level="1">синхала;</li>
+  <li aria-level="1">словак;</li>
+  <li aria-level="1">словен;</li>
+  <li aria-level="1">испан (еуропалық);</li>
+  <li aria-level="1">испан (латынамерикалық)</li>
+  <li aria-level="1">суахили;</li>
+  <li aria-level="1">швед;</li>
+  <li aria-level="1">тамил;</li>
+  <li aria-level="1">тай;</li>
+  <li aria-level="1">түрік;</li>
+  <li aria-level="1">украин;</li>
+  <li aria-level="1">урду;</li>
+  <li aria-level="1">вьетнам.</li>
+</ul>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="110" sourceLocale="kk">WEB:15331125</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline клиентін неліктен Windows жүйесінде орната алмай жатырмын?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:31254;a">Мынадай қате туралы хабар алуыңыз мүмкін: "Өкінішке қарай, Outline дұрыс орнатылмаған сияқты. Оны қайта орнатып көріңіз. Бұл қате қайталанса, <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">пікір жазып жіберіңіз</a>."</p>
+
+<p data-aura-rendered-by="12:31254;a">Outline қолданбасын Windows жүйесінде пайдаланатын болсаңыз, кейде күтпеген қате пайда болуы мүмкін. Көп жағдайда Outline TAP адаптерін (драйверін) жойып, Outline қолданбасын қайта орнату қажет болады.</p>
+
+<p data-aura-rendered-by="12:31254;a">Windows операциялық жүйесінің нұсқасына байланысты орындалатын қадамдар әртүрлі болуы мүмкін. Бірақ төменде TAP адаптері мен Outline қолданбасын жойып, Outline қолданбасын қайта орнату жөніндегі жалпы қадамдар беріледі.</p>
+
+<ol data-aura-rendered-by="12:31254;a">
+  <li>Outline қолданбасының TAP адаптерін жою үшін:
+    <ul>
+      <li><strong>"Құрылғы менеджерлері</strong> &gt; <strong>Желі адаптерлері"</strong> тармағына өтіңіз.</li>
+      <li><strong>"TAP-Windows Adapter V9"</strong>&nbsp;деген файлды немесе Outline қолданбасымен байланысты TAP адаптерін іздеңіз.</li>
+      <li>Осы адаптерді жойыңыз. Бұл әрекет орнатылған басқа VPN қолданбаларына әсерін тигізуі мүмкін екенін ескеріңіз.&nbsp;</li>
+    </ul>
+  </li>
+  <li>Outline қолданбасын жою үшін:
+    <ul>
+      <li><strong>"Бағдарламалар және функциялар</strong> &gt; <strong>Бағдарламаны жою"</strong> тармағына өтіңіз.</li>
+      <li>Outline клиенті қолданбасын тауып алып, оны жойыңыз</li>
+      <li><a href="https://getoutline.org/get-started/#step-3" target="_blank">Outline клиентінің соңғы нұсқасын жүктеп алыңыз да,</a>&nbsp;оны Windows құрылғысына қайта орнатыңыз. Жаңа орнатылған нұсқа жаңа TAP адаптерін автоматты түрде орнатуы керек.</li>
+    </ul>
+  </li>
+</ol>
+
+<p data-aura-rendered-by="12:31254;a">Мәселе сонда да шешілмесе,&nbsp;<a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">қолдау көрсету қызметіне хабарласыңыз</a>.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="109" sourceLocale="kk">WEB:15331126</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline қызметіне неліктен қосыла алмаймын?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Outline қызметіне қосыла алмауыңыздың бірнеше себебі бар:&nbsp;</p>
+
+<ul>
+  <li aria-level="1"><strong>Құрылғыңыз</strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?#One" rel="noopener"><strong> </strong></a><a href="#Internetissues" rel="noopener"><strong>интернетке қосылмаған</strong></a><a href="#Internetissues" rel="noopener"> </a><strong>. </strong>Кейде құрылғыңыздың желі байланысы үзіліп, желіні көрсететін белгішелер біраз уақыт өткеннен кейін жаңартылуы мүмкін. Сондай-ақ құрылғыңыз жергілікті желіге қосылған, алайда сол желінің интернет байланысы ажыраған да болуы мүмкін.</li>
+  <li aria-level="1"><strong></strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?#Two"><strong> </strong></a><a href="#FirewallIssues" rel="noopener"><strong>Желі брандмауэрі Outline серверін</strong></a><a href="#FirewallIssues" rel="noopener"> </a><strong><a href="#FirewallIssues" rel="noopener"></a>пайдалану рұқсатын блоктап жатыр. </strong>Мұндай жағдай көбінесе мектеп, жұмыс сияқты қоғамдық жерлердегі желілерді немесе тегін сымсыз желіні пайдаланғанда болады.</li>
+  <li aria-level="1"><strong>Құрылғыңыздағы</strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?#Three"><strong> </strong></a><a href="#SoftwareIssues" rel="noopener"><strong>брандмауэр немесе антивирустық бағдарлама</strong></a><a href="#SoftwareIssues" rel="noopener"> </a><strong>Outline серверіне кіру мүмкіндігін блоктап тұр.</strong></li>
+  <li aria-level="1"><strong>Телефоныңыздағы</strong><a href="#DeviceSettings" rel="noopener"><strong> </strong><strong>құрылғы параметрлерін</strong></a><strong> өзгерту қажет болуы мүмкін.</strong></li>
+  <li aria-level="1"><strong>Қызмет менеджері</strong><a href="#ServerIssues" rel="noopener"><strong> </strong><strong>серверді бұзған немесе интернет провайдері сұрауыңызды блоктап жатқан болуы мүмкін</strong></a>.</li>
+</ul>
+
+<p><a id="Internetissues" name="Internetissues"><strong>Интернет байланысының мәселелері:</strong></a></p>
+
+<p><strong>Сынау әдісі:</strong></p>
+
+<p>Outline қолданбасын өшіріп, интернетпен байланыстың бар-жоғын тексеріңіз.</p>
+
+<ul>
+  <li aria-level="1">Бар болса, төменде берілген ақауларды жою опцияларын қараңыз.</li>
+  <li aria-level="1">Жоқ болса, байланыс параметрлері жаңартылғанша сәл күте тұрыңыз.</li>
+</ul>
+
+<p><strong>Түзеу қажет нәрселер:</strong></p>
+
+<p>Құрылғыны қайтадан интернетке қосыңыз:</p>
+
+<ol>
+  <li aria-level="1">Дәл сол желіге басқа құрылғыны қосып көріңіз. Егер басқа құрылғылар да интернетке қосыла алмаса, желіде ақау болуы мүмкін. Интернетке қайта қосылғанша күте тұрыңыз немесе желінің ақауларын жоюыңыз керек.</li>
+  <li aria-level="1">Егер басқа құрылғылар сол желіге қосылатын болса, интернетпен байланысты қалпына келтіру үшін төмендегі әрекеттердің бірін немесе бірнешеуін орындап көруіңізге болады:
+    <ol>
+      <li aria-level="2">Құрылғыны ұшақ режиміне ауыстырыңыз (мобильдік құрылғы).</li>
+      <li aria-level="2">Құрылғыны өшіріп қосыңыз.</li>
+      <li aria-level="2">Құрылғыны 2 минутқа өшіріп қойып, қайта қосыңыз.</li>
+    </ol>
+  </li>
+</ol>
+
+<p><a id="FirewallIssues" name="FirewallIssues"><strong>Желі брандмауэрінің мәселелері:</strong></a></p>
+
+<p><strong>Сынау әдісі:</strong></p>
+
+<ol>
+  <li aria-level="1">Қазір қосылып тұрған Wi-Fi немесе сымды желі байланысын ажыратыңыз.</li>
+  <li aria-level="1">Басқа желіге, мысалы, мобильдік интернетке қосылыңыз.</li>
+  <li aria-level="1">Outline серверіне қайта қосылып көріңіз.</li>
+</ol>
+
+<p>Егер басқа желіге қосылып тұрғанда сервермен байланыс орнатылатын болса, сіздің желіде ақау бар деген сөз.</p>
+
+<p><strong>Түзеу қажет нәрселер:</strong></p>
+
+<p>Қызмет менеджеріне хабарласып, Outline серверіңізге қосылуға рұқсат беруін сұраңыз немесе басқа желіні пайдалана беріңіз.</p>
+
+<p><a id="SoftwareIssues" name="SoftwareIssues"><img alt="Бұл сурет қолжетімді емес, себебі оны көруге рұқсатыңыз жоқ немесе сурет жүйеден жойылған." height="1" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeoHNM7TWEsg0z4iydaS2xKOPga0zOjhOTqvGpA-JLd-Fwnydby6EBZziz3vqgRUJwssreEqP6lmjv_-13QXdzqh3yx9tZiR81BvxcXShi3kJ-XDKnqt951uRRPSO8BUhXaiijJLF8PixV_ezhGJ02Y3QPFbw?key=pJIeaVZQOqqoBTmDWZd2hw" width="1" /><strong>Брандмауэр немесе антивирустық бағдарлама мәселелері:</strong></a><br />
+  <br />
+  <strong>Сынау әдісі:</strong><br />
+  <br />
+  Outline қызметіне басқа құрылғыдан қосылып көріңіз.&nbsp;</p>
+
+<p>Ескертпе: Outline қызметін басқа құрылғыдан пайдалану үшін рұқсат кілті мен Outline қолданбасы қажет болатынын естен шығармаңыз.</p>
+
+<p><strong>Түзеу қажет нәрселер:</strong></p>
+
+<p>Брандмауэрдің немесе антивирустық бағдарламаның параметрлерін тексеріп, VPN және Outline трафигін өткізуге рұқсат етілгеніне көз жеткізіңіз.</p>
+
+<p><a id="DeviceSettings" name="DeviceSettings"><strong>Құрылғы параметрлері:</strong></a></p>
+
+<p><strong>Тексеру қажет нәрселер:</strong></p>
+
+<p>Android үшін:</p>
+
+<ol>
+  <li aria-level="1">"Параметрлер" қолданбасын ашыңыз.</li>
+  <li aria-level="1">Құрылғыңыздағы <strong>VPN параметрлерін</strong> қараңыз (VPN параметрлері телефоныңызда рұқсатқа ие барлық VPN қолданбасын көрсетеді.)&nbsp;</li>
+  <li aria-level="1">VPN параметрлерінде Outline болмаса, оны жойып, қайта орнатыңыз. Орнатылғаннан кейін, құрылғы Outline-ға автоматты түрде рұқсат беруі керек.</li>
+</ol>
+
+<p>Android құрылғысында ешқандай экран оверлейі қолданбасы орнатылмағанына көз жеткізіңіз. Себебі соның әсерінен Outline-ның рұқсаттар терезесі фондық режимге жіберіліп, экрандық режимде көрсетілмеуі мүмкін.<br />
+  <br />
+  Android құрылғысында "Параметрлер &gt; Қолданбалар &gt; Арнайы қолданба рұқсаты" тармағына өтіңіз. Одан кейін "Басқа қолданбалардың үстінен көрсету" түймесін түртіңіз. Мұндайға рұқсат ететін кез келген қолданбаны пайдалану рұқсатын өшіре аласыз.<br />
+  <br />
+  iOS үшін: <a href="https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web" rel="noopener" target="_blank">осы анықтамалық мақаланы оқыңыз</a>.</p>
+
+<p><a id="ServerIssues" name="ServerIssues"><strong>Сервер мәселелері:</strong></a></p>
+
+<p><strong>Сынау әдісі:</strong></p>
+
+<p>Бірнеше серверге кіруге рұқсатыңыз болса, басқасына қосылып көріңіз.&nbsp;</p>
+
+<p><strong>Түзеу қажет нәрселер:</strong></p>
+
+<p>Қызмет менеджеріне хабарласып, сервердің жойылғаны не жойылмағаны туралы сұраңыз. Жойылған болса, одан басқа сервердің<a href="/outline-faq/answer/15330920" rel="noopener"> рұқсат кілтін</a> сұраңыз.</p>
+
+<p>Серверді өзіңіз реттеген болсаңыз, оған Outline Manager арқылы немесе<a href="https://en.wikipedia.org/wiki/Secure_Shell"> SSH</a> сияқты басқа әдіспен қосылып көріңіз. Мәселе шешілмесе, бұлт қызметтері провайдерінің консоліне (бар болса) кіріп, сервердің интернетке қосылған не қосылмағанын тексеруіңізге болады.</p>
+
+<p data-aura-rendered-by="12:32047;a">&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="kk">WEB:15331127</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Жүктеп алу сілтемесі істемесе, клиент қолданбасын қалай жүктеп алуға болады?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Қолданбаларды көптеген операциялық жүйеге тікелей жүктеп алу үшін <a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">осы сілтемені</a> пайдаланыңыз.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="131" sourceLocale="kk">WEB:15331222</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Деректерді және ақпаратты жинау</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:271;a">Келісіміңізді бермесеңіз, Outline жеке ақпаратыңызды жинамайды. Сондай-ақ кірген веб-сайттарыңыз немесе кіммен сөйлескеніңіз туралы ақпарат Outline-ға жіберілмейді.<br />
+  <br />
+  Outline Manager қолданбасы арқылы үшінші тараптың бұлт қызметтері провайдері бар аккаунт жасайтын не оған кіретін болсаңыз, біз үшінші тараптың бұлт қызметтері провайдеріне жіберілетін электрондық мекенжайыңыз, аты-жөніңіз, төлем ақпараты және төлем туралы мәлімет сияқты ақпаратты жинамаймыз.<br />
+  <br />
+  <strong><strong>Автоматты түрде алатын ақпарат</strong></strong><br />
+  <br />
+  Ақпараттың екі түрін автоматты түрде жинаймыз.<br />
+  1. Сервердің IP мекенжайы<br />
+  Серверге соңғы қауіпсіздік жаңартулары мен функция жақсартулары автоматты түрде орнатылған кезде,&nbsp;<a href="http://quay.io/" target="_blank">Quay.io</a> қызметі Outline серверінің IP мекенжайы туралы ақпаратты жинап, оны бізге қолжетімді етеді. Сервердің IP мекенжайы арқылы бұлт серверінің провайдері және Outline сервері реттелген қала анықталуы мүмкін, бірақ онда серверді кімнің басқаратыны немесе оған кірген тұлғалар туралы ақпарат берілмейді.<br />
+  <br />
+  2. Жеке тұлға анықталмайтын техникалық ақпарат<br />
+  Outline қолданбасы бұзылса, түзелмейтін қате шықса немесе Outline қолданбасы арқылы қолмен пікір жіберсеңіз, төменде көрсетілген ақпарат жіберіледі. Бұл ақпаратты біз қолданба жұмысына қатысты мәселелерді анықтап, оларды шешу үшін ғана пайдаланамыз:</p>
+
+<ul data-aura-rendered-by="12:271;a">
+  <li>ел;</li>
+  <li>тіл;</li>
+  <li>бұзылу/ерекше жағдай орын алған күні мен уақыты және пайдаланушының "Ақпарат" бөлімін ашуы сияқты осыған дейін орындалған 100 іс-әрекет;</li>
+  <li>статистикалық түрде жинақталған ерекше жағдай туралы хабарлар;</li>
+  <li>операциялық жүйенің атауы және нұсқасы;</li>
+  <li>телефон үлгісі (қажет болса);</li>
+  <li>қолданбаны іске қосу уақыты;</li>
+  <li>браузер;</li>
+  <li>архитектура;</li>
+  <li>Outline нұсқасы мен құрама нөмірі.</li>
+</ul>
+
+<p data-aura-rendered-by="12:271;a"><br />
+  Бұл ақпарат HTTPS протоколы арқылы ашық кодты бағдарлама қателерін бақылауға арналған үшінші тарап провайдері Sentry-ге (<a href="http://sentry.io/" target="_blank">sentry.io</a>) жіберіледі. Деректеріңізді рұқсатсыз көруден, таратудан, пайдаланудан және жоғалтудан қорғау үшін Sentry қолданбасы бірқатар стандартты технологиялар мен қызметтерді пайдаланады. Sentry қолданбасының саясаттары жайлы сұрақтарыңыз болса,&nbsp;<a href="https://sentry.io/security/" target="_blank">https://sentry.io/security/</a>&nbsp;және&nbsp;<a href="https://sentry.io/privacy/" target="_blank">https://sentry.io/privacy/</a> беттеріне өтіңіз немесе&nbsp;<a href="mailto:security@sentry.io" target="_blank">security@sentry.io</a> мекенжайына хабарласыңыз. Sentry қолданбасы сақтаған Outline деректерінің барлығы жабық болады және оларды тек Outline қызметкерлері көре алады.<br />
+  <br />
+  <strong><strong>Тек сіздің келісіміңізбен жинайтын ақпарат</strong></strong><br />
+  <br />
+  Келісім бергеннен кейін, Outline қолданбасы Outline ұжымына келесі ақпаратты жібереді.<br />
+  1. Пайдалану көрсеткіштері<br />
+  Әрбір Outline сервері соңғы сағатта әрбір рұқсат кілті бойынша тасымалданған байттар санын, пайдаланушының серверге қосылған уақытын, пайдаланылған тіркелу деректері шыққан автономдық жүйелер мен елдерді және қандай да бір функциялардың қосылғаны немесе өшірілгені туралы ақпаратты автоматты түрде жинайды. Хабарлардың мазмұны немесе жеке тұлғаны анықтайтын метадеректер (мысалы, логиндер, электрондық пошталар, құрылғы идентификаторлары және т.б.) жиналмайды. Көрсеткіштердің барлығы сервер идентификаторымен байланыстырылады. Сервер идентификаторын өзгерту туралы нұсқауларды&nbsp;<a href="/outline-faq/answer/15548974" rel="noopener" target="_blank">осы жерден</a> таба аласыз.<br />
+  <br />
+  Әдепкісінше Outline серверлері бұл көрсеткіштерді Outline ұжымына жібермейді. Сервер әкімшісі трафик көрсеткіштерін бөлісуге анық түрде рұқсат берген болса, бұл ақпарат Outline қызметкерлеріне сағат сайын құпия түрде жіберіледі. 60 күн өткеннен кейін, трафик көрсеткіштері ел деңгейінде жинақталады. Сервер әкімшілері Outline Manager қолданбасының "Параметрлер" мәзірін ашып, трафик көрсеткіштерін бөлісу параметрін кез келген уақытта өзгерте алады.<br />
+  <br />
+  Серверіңіздің пайдаланылуы туралы анонимді көрсеткіштерді бізбен бөліссеңіз, оларды қолданыс динамикасын өлшеу және өнімді жақсарту үшін пайдаланамыз.<br />
+  <br />
+  Мысалы, сервер әкімшісі трафик көрсеткіштерін бізбен бөлісуге рұқсат берсе, біз идентификаторы 12345 болатын сервердің кеше 3&nbsp;сағат пайдаланылғаны, жалпы 500&nbsp;мегабайт көлеміндегі деректің тасымалданғаны, АҚШ және Канадада пайдаланылған үш кілттен кіргені және трафик шектері функциясының қосылғаны туралы ақпарат аламыз.<br />
+  <br />
+  2. Пікір жіберсеңіз, пікірлеріңіз бен электрондық поштаңыз туралы ақпарат жіберіледі<br />
+  Outline Manager және Outline қолданбаларында ұжымға пікір жіберу мүмкіндігі бар. Жеке тұлғаны анықтайтын ақпаратты жібермегеніңіз дұрыс, бірақ ұжымнан жауап алғыңыз келсе, электрондық пошта өрісін пайдалануыңызға болады. Пікіріңізді жетік түсіну үшін біз автоматты түрде кейбір жалпы ақпаратты да жинауымыз мүмкін. Біз жинайтын деректер жоғарыдағы "Біз автоматты түрде жинайтын ақпарат" бөлімінің астындағы 2-тармақта берілген.&nbsp;Outline қолданбасының қауіпсіздік пен құпиялыққа қатысты шаралары туралы толық ақпаратты&nbsp;<a href="/outline-faq/answer/14919822" rel="noopener" target="_blank">осы жерден</a> көріңіз.<br />
+  <br />
+  Android жүйесіндегі Outline қолданбасының бета нұсқасын пайдалансаңыз, мәселелерді анықтап, Outline қолданбасын жақсартуға көмектесетін түзету туралы ақпаратты жинау үшін Google-дың&nbsp;<a href="https://firebase.google.com/" target="_blank">Firebase</a>&nbsp;қызметін пайдалануымыз мүмкін. Firebase қызметінің құпиялық және қауіпсіздік саясаттары туралы толық ақпаратты оның веб-сайтынан көре аласыз: <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a>. Outline қолданбасының бұл ақпаратты Firebase арқылы жіберуін қаламасаңыз, қолданбаның жұмыс нұсқасын пайдаланыңыз.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="88" sourceLocale="kk">WEB:15331223</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Рұқсат кілті істемесе, не істеймін?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:30472;a">"Рұқсат кілтіңіз жарамсыз сияқты. Бұл қате қайтадан пайда болса, қызмет менеджеріңізге хабарласыңыз." деген қате туралы хабар алсаңыз, ақауларды жою үшін келесі қадамдарды орындаңыз:&nbsp;</p>
+
+<ol data-aura-rendered-by="12:30472;a">
+  <li>Буферге автоматты түрде көшірілмеуі мүмкін алғашқы бес таңбаны ("ss://") қоса, толық рұқсат кілтіне кіргеніңізге көз жеткізіңіз. Мұнда толық рұқсат кілтінің мысалы келтірілген (тек үлгі ретінде; жұмыс істемейді):</li>
+</ol>
+
+<pre data-aura-rendered-by="12:30472;a">ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@145.230.4.1:39485/?outline=1&nbsp;
+</pre>
+
+<ol data-aura-rendered-by="12:30472;a" start="2">
+  <li>Рұқсат кілтіңіз буферге мүлдем көшірілмесе, бұл хабар алмасу қолданбаңызға немесе платформаңызға байланысты болуы мүмкін. Мұндай көбінесе контактілер тізімінде жоқ адамнан хабар алған кезде болады. Кодты хабардан көшіріп жатсаңыз, жіберушінің контактілерге қосылғанына көз жеткізіп, сілтеме бойынша қайта кіріп көріңіз.&nbsp;</li>
+  <li>1-ші және 2-ші қадамдарды орындағаныңызбен, қате туралы хабар шыға берсе, сервер блокталған немесе рұқсаи кілті жарамсыз болуы мүмкін. Егер қызмет менеджері болсаңыз, өзіңіз үшін жаңа кілт жасап көріңіз. Не болмаса, жаңа кілт алу үшін қызмет менеджеріне хабарласыңыз.</li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="96" sourceLocale="kk">WEB:15331322</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline қолданбасын іске қосу қанша тұрады?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Сіз VPN басқаратын сервер әкімшісі болсаңыз да, Outline-ды ашық интернетке кіру үшін пайдалансаңыз да, Outline бағдарламалық құралы бәріне тегін беріледі.<br />
+  <br />
+  Outline-ды іске қосу үшін бұлт серверін пайдалану рұқсаты қажет. Серверге кіруге рұқсаты бар сервер әкімшілері Outline-ды оған артық шығынсыз орната алады. Серверге кіре алмайтындар&nbsp;<a href="http://www.digitalocean.com/" rel="noopener" target="_blank">DigitalOcean</a>&nbsp;немесе Amazon Web Services сияқты бұлт қызметтері провайдерінен 1&nbsp;терабайт деректі тасымалдау үшін айына $5 сомасымен кіру рұқсатын ала алады. Бұл бір серверде жүздеген пайдаланушыға қолдау көрсетуге жетеді.<br />
+  <br />
+  Таңдаған бұлт қызметтері провайдерінің Outline-ды іске қосу құны қанша тұратынын есептеу жолының мысалы:</p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td colspan="1" rowspan="1">
+      <p><em>Орташа айлық деректер тасымалы әр пайдаланушыға 5 гигабайттан келеді деп есептесек, айына $5 тұратын жоспар бір уақытта 200-ге жуық пайдаланушыға қызмет көрсетуге мүмкіндік береді, бұл айына әр пайдаланушы үшін 2,5 центті құрайды. Бір пайдаланушы үшін айына пайдаланылатын деректер тасымалы пайдаланушылардың өткізу мүмкіндігі төмен немесе жоғары әрекеттер орындауына байланысты әртүрлі болады, бірақ бұлт қызметтері провайдерлерінің басым көбі трафиктің өсуіне бейімделеді.</em></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br />
+  Шын мәнінде, Outline-ды пайдалану әрекеті Jigsaw және Google үшін толығымен жасырылған. Біз жеке басыңызды немесе трафигіңізді қадағаламаймыз және бұдан пайда табу жоспарымыз жоқ. Керісінше өз пайдаланушыларымызды бағдарламалық құралмен тегін қамтамасыз ету үшін біз ашық кодты бағдарлама әзірлеушілерінің қауымдастығымен жұмыс істейміз. Біз жинайтын деректер туралы толық ақпарат&nbsp;<a href="/outline-faq/answer/15331222" rel="noopener" target="_blank">мына жерде</a> берілген.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="386" sourceLocale="kk">WEB:15331326</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Рұқсат кілттеріне трафик шектерін қалай орнатуға болады?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:15859;a">Барлық рұқсат кілтіне қолданылатын трафик шегін орната аласыз. Шек орнату үшін Outline Manager қолданбасын ашып, параметрлерге өтіңіз. Ондағы трафик шектерінің ауыстырғышын қоссаңыз, шек орнатасыз.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787036"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">Орнатып болған соң, әр пайдаланушының рұқсат кілті бетінде белгіленген шекке қаншалықты жақындағанын көре аласыз. Сол беттегі бағаналы диаграммада соңғы 30 күндегі дерек шығыны көрсетіледі.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787037"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">Барлық рұқсат кілтіне шек орнату мүмкіндігімен қоса әр кілтке өз трафик шегін қоя аласыз. Бұл параметр сіз орнатқан кез келген әдепкі трафик шегін қайта анықтайды. Бірақ әдепкі мәнін орнатпаған болсаңыз да, кез келген кілт үшін шекті реттей аласыз.&nbsp;<br />
+  <br />
+  Кілттің деректерді тасымалдау шегін орнату үшін Outline Manager-ді ашып, орнатқыңыз келетін кілті бар "Қосылымдар" қойындысына өтіп, кілт жолының оң жағындағы мәзірді басыңыз. Сол жерден "Трафик шектері" түймесін басыңыз. "Рұқсат кілтім" бөліміндегі трафик шектерін өзгерту үшін "Трафик шектері" белгішесін&nbsp;<img alt="Бұл сурет қолжетімді емес, себебі оны көруге рұқсатыңыз жоқ немесе ол жүйеден жойылған." height="19" src="https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw" width="19" /> басыңыз.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787423"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">"Арнаулы трафик шектерін орнату" ұяшығын белгілеңіз. Бұл ұяшықты белгілегеннен кейін, аталған кілт үшін арнаулы трафик шектерін орнатуға болатын өріс шығады. Аяқтағаннан кейін, трафик шегін сақтау үшін "САҚТАУ" түймесін басыңыз.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15788959"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">Таңдалған кілт үшін деректер тасымалдау шегі сақталғаннан кейін, бұл шек әр кілттің деректер трафигімен (соңғы 30 күн ішінде) бірге негізгі экранда көрсетіледі.</p>
+
+<p data-aura-rendered-by="12:15859;a">Рұқсат кілтінен трафик шегін өшіру үшін бұрынғыдай кілттің "Трафик шегі" диалогтік терезесіне өтіп, "Арнаулы трафик шектерін орнату" ұяшығынан белгіні алып тастап, "САҚТАУ" түймесін басыңыз.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15788414"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a"><b><strong>Трафик шегі жөніндегі сұрақ-жауаптар</strong></b><br />
+  <br />
+  <strong><b>30 күндік құбылмалы шек деген не?</b></strong><br />
+  <br />
+  30 күндік құбылмалы трафик шегі әр кілттің соңғы 30 күнде пайдаланылуын қорытындылап, белгіленген шекке сәйкес пайдаланылуын қадағалайды. Осылайша кілт кез келген 30 күндік мерзімде, соның ішінде 30 күндік не оған жетпейтін күнтізбелік айларда шектен аса алмайды. Яғни күн сайын әр пайдаланушының қолжетімді трафигі 31 күн бұрын пайдаланылған трафиктің көлеміне сәйкес артып отырады.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Outline неге құбылмалы шектерді пайдаланады?</strong><br />
+  <br />
+  Құбылмалы шектер әрбір 30 күндік кезеңге кепілдік береді. Яғни оларды конфигурациялау қайталанатын шекке (мысалы, айдың реттелмелі күніне) қарағанда оңайырақ әрі олар ұқсас кепілдік ұсынады. Олар Outline деректер трафигінің, сондай-ақ аналитика қызметтері мен сервер статистикасы сияқты жалпы құралдардың қолданыстағы көрінісіне де сәйкес келеді.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Трафик шегінде қандай деректер есепке алынады?</strong><br />
+  <br />
+  Әр рұқсат кілтінің серверден шығысы есепте қамтылады. Дәлірек айтқанда, мұнда серверден кілт атынан жіберілетін, сондай-ақ клиентке қайтарылатын деректер меңзеледі. Іс жүзінде ол кілттен серверге және кері жіберілген трафикпен шамалас болуы тиіс, сондықтан ол пайдаланушыларыңыздың есептеріне сәйкес келеді деп үміттенеміз. Біз шығысты таңдадық, өйткені сауалнамамызға қатысқан бұлт қызметтері провайдерлері сол үшін төлем алатын болып шықты.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Егер трафик шегі таусылса, бұл туралы пайдаланушыларға хабарлана ма?</strong><br />
+  <br />
+  Әзірге ондай мүмкіндік жоқ. Көптеген бұлт қызметтері провайдері бүкіл айға 1 ТБ сияқты шекті қояды, оны 10 пайдаланушыға 100 ГБ-тан немесе 100 пайдаланушыға 10 ГБ-тан бөлуге болады. Бұл шек аз емес және оны барлық пайдаланушы тауыса алады деп ойламаймыз. Шегіне жеткенде пайдаланушылар сервер басқарушыларына хабарласады деп үміттенеміз. Трафик шегін пайдалануыңызға хабарландырулардың қаншалықты пайдалы болатыны жайлы пікіріңізді білгіміз келеді. Бізге<a href="https://support.getoutline.org/s/contactsupport" target="_blank"> осы жерде</a> хабарласуыңызға болады.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Трафик шегі таусылуға жақындаса, бұл туралы пайдаланушыларға хабарлана ма?</strong><br />
+  <br />
+  Пайдаланушы өз шегіне жақындаған кезде алатын жаңа деректердің көлемі күн сайын өзгеріп отырады, өйткені ол 30 күн бұрынғы пайдалануына байланысты болады. Ескерту көмектескеннен гөрі түпкі пайдаланушыларды шатастырады деп ойлаймыз. Осы әрекет туралы пікіріңізді білгіміз келеді. Оны<a href="https://support.getoutline.org/s/contactsupport" rel="noopener" target="_blank"> осы жерде</a> қалдыра аласыз.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Пайдаланушының дерек трафигін бастапқы күйіне қайтара аламын ба?</strong><br />
+  <br />
+  Жоқ. Пайдаланушы шегіне әрдайым деректерді пайдаланудың соңғы 30 күні кіреді. Алайда оның кілтінің трафик шегін көтеруге немесе оған жаңа кілт жасауға болады.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Трафик шектерін қоса салысымен, кейбір пайдаланушыларым неге кіре алмай қалды?</strong><br />
+  <br />
+  Трафик шектері пайдаланушылардың алдыңғы 30 күндегі деректерді тасымалдауына байланысты, ол трафик шектерінің қосылған-қосылмағанына қарамастан жазылады. Қарастырылып отырған пайдаланушылар шек белгіленгенге дейін одан асырып жіберген болуы мүмкін.&nbsp; Сондай-ақ бір кілттің трафик шегін өзгерткен жағдайда да, барлық трафик шегі іске қосылатынын ескеріңіз.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Бүкіл серверге "30 күнде 1 TБ" сияқты шек орната аламын ба?</strong><br />
+  <br />
+  Әзірге ондай мүмкіндік жоқ. Трафик шегін пайдалануыңыз туралы<a href="https://support.getoutline.org/s/contactsupport" rel="noopener" target="_blank"> осы жерде</a> толығырақ айтып бергеніңізді қалаймыз.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Егер әдепкі трафик шегі де, белгілі бір кілттің трафик шегі де орнатылған болса, қайсысы қолданылады?</strong><br />
+  <br />
+  Белгілі бір кілттің трафик шегі сіз орнатқан кез келген әдепкі трафик шегін (бар болса) қайта анықтайды.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Әдепкі трафик шегін орнатпай-ақ, белгілі бір кілт үшін трафик шегін орната аламын ба?</strong><br />
+  <br />
+  Иә.&nbsp; Бір кілтке трафик шегін орнату үшін әдепкі шекті белгілеудің қажеті жоқ.&nbsp; Мысалы, өзіңіз кеңінен қолданылады деген бір кілтке шек орната аласыз. Осылайша сол кілт арқылы деректердің шамадан тыс тасымалдануынан өзіңізді қорғайсыз.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="kk">WEB:15331327</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Сервер идентификаторын қалай қайта орнатуға болады?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:23999;a">Сервер идентификаторы – Outline серверін құру кезінде кездейсоқ ретпен жасалатын серверлік идентификатор. Оны "Параметрлер" интерфейсіндегі аноним көрсеткіштерді бөлісуге келіскен кезде көресіз. Сервер идентификаторын былай таба аласыз: "Параметрлер =&gt; төмен қарай айналдырыңыз =&gt; "аноним көрсеткіштерді бөлісу" ұясына белгі қойыңыз.</p>
+
+<p data-aura-rendered-by="12:23999;a">Сервер идентификаторы уақыт өте келе есеп берілген аноним қолданыс статистикасын біріктіреді. Cервер идентификаторын қайта орнатып, жаңасын алғыңыз келсе, қолданыстағы Outline серверін жаңасына ауыстырыңыз.</p>
+
+<p data-aura-rendered-by="12:23999;a">Бұлт қызметтері провайдері ретінде DigitalOcean қызметін пайдаланылып жатсаңыз, серверді қайта орнату үшін "Параметрлер" бөліміне өтіп, "Серверді жою" тармағын таңдауыңызға болады. Бұл әрекет қайтарылмайды және оның нәтижесінде тіркелу деректері жойылады. Осыдан кейін бірден сізден өзіңіз таңдаған жерде жаңа сервер құру сұралады да, жаңа сервер идентификаторы жасалады.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="103" sourceLocale="kk">WEB:15331328</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline серверінің орнын қалай өзгертуге болады?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:24761;a">Сервер реттелгеннен кейін, оның орнын өзгерту мүмкін емес. Серверді басқа орыннан іске қосу үшін Outline серверін жойып, жаңасын жасау керек.</p>
+
+<p data-aura-rendered-by="12:24761;a"><br />
+  Балама әдіс ретінде серверлерді ауыстырып, бірдей кілттерді сақтауға мүмкіндік беретін <a href="https://developers.google.com/outline/docs/guides/service-providers/dynamic-access-keys" target="_blank">динамикалық кілттер</a> арқылы да VPN орнын өзгертуіңізге болады. Серверлердің орны өздігінен өзгермейді.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="102" sourceLocale="kk">WEB:15331423</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Пікір немесе ұсыныстар жіберу жолы</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:22486;a">Outline-ды жақсартуға көмектескеніңіз үшін рақмет! Бізге анонимді түрде немесе электрондық поштаңыз (егер сізге жауап қажет болса) арқылы пікіріңізді жіберудің бірнеше жолы бар:</p>
+
+<ul data-aura-rendered-by="12:22486;a">
+  <li><strong>Әзірлеушілер үшін</strong>:&nbsp;Outline&nbsp;– ашық кодты бағдарламалық құрал, сондықтан барлық кодымызды <a href="https://github.com/jigsaw-Code/?q=outline" target="_blank">GitHub-та</a> сақтаймыз. Идеяларыңызды GitHub сайтында немесе <a href="https://www.reddit.com/r/outlinevpn/" target="_blank">Reddit</a> қауымдастығында бөлісе аласыз.&nbsp;</li>
+  <li><strong>Пайдаланушылар үшін</strong>: Outline немесе Outline Manager қолданбалары арқылы бізге пікір жібере аласыз. Пікіріңіздің не туралы екенін айтыңыз және сізге жауап жазғанымызды қаласаңыз, электрондық пошта мекенжайыңызды қалдырыңыз. Сондай-ақ сізге ақауларды жоюға көмектесу үшін браузер, операциялық жүйе және қолданатын бағдарламалық құрал нұсқасы сияқты ортаңыз туралы біраз метадерек жинаймыз.</li>
+  <li><strong>Осы сайт арқылы</strong>: "Бізге хабарласу" сілтемесін осы сайтта көрген кез келген жерден баса аласыз.</li>
+  <li><strong>Күрделі мәселелер</strong>: егер қауіпсіздікке қатысты күрделі мәселе туралы хабарлағыңыз келсе, бізге <a href="https://getoutline.org/" rel="noopener" target="_blank">security@getoutline.org</a> мекенжайы арқылы электрондық хатпен егжей-тегжейлі ақпарат беріңіз.</li>
+</ul>
+
+<p data-aura-rendered-by="12:22486;a">Уақытыңызды бөліп, бізге өз ойыңызды білдіргеніңіз үшін рақмет!</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="146" sourceLocale="kk">WEB:15331424</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline серверіне (рұқсат кілттерімен) кіру мүмкіндігін реттеу</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:25527;a">Outline серверін орнатып болған соң, адамдардың оны пайдалану рұқсатын бөлісе және басқара аласыз. Сізден шақыру алған адамдар өз интернет трафигін қорғауға Outline-ды пайдалану үшін Outline қолданбасын жүктеп ала алады.</p>
+
+<p data-aura-rendered-by="12:25527;a"><strong>Outline серверін пайдалану рұқсатын бөлісу</strong><br />
+  Outline серверін орнатып болған соң, Outline Manager-де сервер мәліметтері бетіне бағытталып, онда рұқсат кілттерін жасай аласыз. <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">Рұқсат кілттері</a> туралы толық ақпарат алыңыз.</p>
+
+<ul data-aura-rendered-by="12:25527;a">
+  <li>Кілттер жасау: жаңа кілттер жасау үшін беттің төменгі жағындағы кішкентай "+" белгішесін басыңыз.</li>
+  <li>Кілттерді бөлісу: әр перненің оң жағында бөлісу белгісі бар, оны басып, шақыру ала аласыз. Бұл шақыруды сіз таңдаған хабар алмасу жүйесіне көшіріңіз және қойыңыз.</li>
+</ul>
+
+<p data-aura-rendered-by="12:25527;a"><strong>Функция сұрауы: Outline Manager қолданбасынан пайдалану рұқсатын бөлісу</strong><br />
+  Көптеген сервер әкімшісі оларға әлдекімнің электрондық мекенжайын тікелей Outline Manager-ге енгізу опциясын беріп, шақыру процесін жеңілдетуді сұрайды.</p>
+
+<p data-aura-rendered-by="12:25527;a">Өкінішке орай, біз бұл функцияны Outline Manager-ге ендіре алмауымыз мүмкін. Негізгі принциптеріміздің бірі – пайдаланушыларымыздың құпиялығы мен қауіпсіздігін қолдау. Яғни біз электрондық пошта мекенжайларын немесе байланыс ақпаратын енгізу үшін ешқандай орын әзірлеген жоқпыз.</p>
+
+<p data-aura-rendered-by="12:25527;a">Сондықтан біз сервер әкімшілерінен түпкі пайдаланушыға шақыруды электрондық пошта немесе қауіпсіз чат сияқты қауіпсіз хабар алмасу платформасы арқылы жіберуді сұраймыз.<br />
+  <br />
+  <strong>Сіз рұқсат кілтін онымен бөліскеннен кейін, пайдаланушы үшін не өзгереді?</strong></p>
+
+<ol data-aura-rendered-by="12:25527;a">
+  <li>Пайдаланушы құрылғыдан орнату сілтемесін басады.</li>
+  <li>Егер онда болмаса, оған Outline қолданбасын орнату ұсынылады.</li>
+  <li>Ол шақыруға ендірілген бірегей кілтпен Outline серверімен бастапқы қосылым орнатады.</li>
+  <li>Енді ол Outline серверіңіз арқылы интернетке кіруін басқару үшін қосылу/ажырату түймесін пайдалана алады.</li>
+</ol>
+
+<p data-aura-rendered-by="12:25527;a"><strong>Outline серверіне кіру рұқсатын жою</strong><br />
+  Outline Manager-дегі сервер туралы мәліметтер бетінде сервердегі әр кілттің оң жағында кілтті жою опциясы бар мәзірді көресіз. Кілтті жойсаңыз, ол серверге кіре алмай қалады.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="92" sourceLocale="kk">WEB:15331524</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">getoutline.org сайты блокталған болса, Outline ресурстарына қалай кіруге болады?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><a href="https://s3.amazonaws.com/outline-vpn/index.html" target="_blank">getoutline.org</a> сайтына кіре алмасаңыз, <a href="http://getoutline.org/" target="_blank">осы синхрондалған сайтқа бетбелгі қойыңыз</a>.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="321" sourceLocale="kk">WEB:15331527</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline клиентін Linux жүйесіне орнату</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Outline клиенті 1.15 нұсқасынан бастап барлық алдағы нұсқа Linux операциялық жүйелеріне арналған Debian пакеттері ретінде шығарылады. Біз қолдайтын операциялық жүйелер туралы қосымша ақпарат алу үшін <a href="/outline/answer/15330818" rel="noopener" target="_blank"><u>минималды жүйелік талаптарымызды</u></a> қараңыз.</p>
+&nbsp;
+
+<p><strong>Debian-ға арналған Linux дистрибутивтері үшін Outline клиентін орнатыңыз (ұсынылады).</strong></p>
+&nbsp;
+
+<p>Мына пәрмендерді орындаңыз:</p>
+
+<ol>
+  <li aria-level="1">Outline-ның қойма кілтін орнатып, қойманы қосыңыз.
+    <div class="code">
+      <div class="no-margin">
+        <p>wget -qO- https://us-apt.pkg.dev/doc/repo-signing-key.gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/gcloud-artifact-registry-us.gpg</p>
+
+        <p>echo "deb [arch=amd64] https://us-apt.pkg.dev/projects/jigsaw-outline-apps outline-client main" | sudo tee /etc/apt/sources.list.d/outline-client.list</p>
+      </div>
+    </div>
+  </li>
+  <li aria-level="2">"Жетілдірілген пакет құралы" пакетінің тізімін жаңартыңыз және Outline клиентінің соңғы нұсқасын орнатыңыз.
+    <div class="code">
+      <div class="no-margin">
+        <p>sudo apt update</p>
+
+        <p>sudo apt install outline-client</p>
+      </div>
+    </div>
+  </li>
+</ol>
+
+<p>Алдағы жаңартуларды тексеру немесе орнату үшін 2-қадамдағы пәрмендерді қайта орындаңыз. Linux жүйесіндегі Outline клиенті үшін қолданбадағы автоматты жаңарту 1.15 нұсқасынан бастап өшірілгенін ескеріңіз.</p>
+
+<p>Outline клиентін жою үшін мына пәрменді орындаңыз:</p>
+
+<div class="code">
+  <div class="no-margin">sudo apt purge outline-client</div>
+</div>
+
+<p><strong>Балама опция</strong></p>
+
+<ol>
+  <li aria-level="1">Debian пакетіне арналған соңғы Outline клиентін жүктеп алыңыз: <a href="https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb" rel="noopener" target="_blank">https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb</a></li>
+  <li aria-level="2">Пакетті орнату үшін пәрмен жолындағы мына пәрмендерді орындаңыз.
+    <div class="code">
+      <div class="no-margin">
+        <p>wget -O ./outline-client.deb https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb</p>
+
+        <p>sudo apt install ./outline-client.deb</p>
+      </div>
+    </div>
+  </li>
+  <li aria-level="3">Linux жүйесіндегі Outline клиенті үшін қолданбадағы автоматты жаңарту 1.15 нұсқасынан бастап өшірілгендіктен, жаңартуларды қолмен тексеріңіз.</li>
+  <li aria-level="4">Outline клиентін жою үшін пәрмен жолындағы мына пәрменді орындаңыз:
+    <div class="code">
+      <div class="no-margin">sudo apt purge outline-client</div>
+    </div>
+  </li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="206" sourceLocale="kk">WEB:15331528</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Рұқсат кілтін бірнеше рет пайдалана аламын ба?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1895;a">Иә. <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">Рұқсат кілтіңізді</a>құрылғыларда қалағаныңызша пайдалана аласыз, бірақ оны басқа адаммен бөліспеген жөн. Рұқсат кілтіңізді біліп алған адам барлық интернет-трафигіңізді көру рұқсатына ие болса, оны толықтай зерттеп алуы мүмкін, бұдан кейін интернетте қауіпсіздігіңіз бен құпиялылығыңыз сақталмайды.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="104" sourceLocale="kk">WEB:15331529</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Құрылғыны Outline серверіне қосу</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1399;a">&nbsp;</p>
+
+<p data-aura-rendered-by="12:1399;a"><strong>Құрылғыны Outline серверіне қосу</strong></p>
+
+<p data-aura-rendered-by="12:1399;a"><a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">Құрылғыны Outline серверіне қосу үшін сервер әкімшісі сізге өз серверіне бірегей&nbsp;</a>рұқсат кілтімен қосылуға шақыру жіберуі керек. Бұл шақыру арқылы мына әрекеттерді орындауға болады:</p>
+
+<ul data-aura-rendered-by="12:1399;a">
+  <li>егер сізде болмаса, Outline-ды құрылғыға жүктеп алып, орнату;</li>
+  <li>сіз бен Outline сервері арасында қауіпсіз байланыс орнату үшін рұқсат кілтін пайдалану.</li>
+</ul>
+
+<p data-aura-rendered-by="12:1399;a">Серверге қосылғаннан кейін, Outline-ды пайдалану үшін "Қосылу" немесе "Ажырату" түймесін баса аласыз.</p>
+
+<p data-aura-rendered-by="12:1399;a"><em>Маңызды:</em>Outline жұмыс істеуі үшін, рұқсат кілті мен Outline сервері қажет болады. Outline қолданбасын кілтсіз жүктеп алсаңыз және орнатсаңыз, интернет трафигіңіз қорғалмайды.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="100" sourceLocale="kk">WEB:15331530</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline серверін қалай реттеуге болады?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:27063;a">Outline-ды пайдалану Outline серверін реттеуден басталады. Outline арқылы ашық интернетке қосыла алуыңыз үшін, өзіңіз немесе сенімді адам сіз үшін серверді реттеуі керек.<br />
+  <br />
+  <strong>Бастау алдында</strong><br />
+  Outline серверін реттеу алдында, сізге келесілер қажет болады:</p>
+
+<ol data-aura-rendered-by="12:27063;a">
+  <li>DigitalOcean, Amazon Web Services (AWS) немесе Google Cloud Platform (GCP) сияқты өз серверлеріңізді немесе бұлт қызметтері провайдерін пайдалану мүмкіндігі.<br />
+    Егер бұлт серверін пайдалану рұқсатыңыз болмаса, кез келген провайдермен, соның ішінде жоғарыда аталған провайдерлермен аккаунтты оңай реттей аласыз. Тіркелу үшін несиелік карта қажет болуы мүмкін.</li>
+  <li>macOS 10.9+, Windows 7.0+ немесе Linux жүйесімен істейтін компьютер.</li>
+  <li>Outline Manager қолданбасы.</li>
+</ol>
+
+<p data-aura-rendered-by="12:27063;a"><strong>DigitalOcean арқылы реттеу</strong><br />
+  <br />
+  Кез келген пайдаланушы Outline-ды DigitalOcean-ға бірнеше кликпен орнататындай етіп жеңілдеттік. Outline Manager бағдарламасын жүктеп алып, орнатқаннан кейін, Outline серверін орнату және конфигурациялау үшін DigitalOcean-ды реттеу опциясын таңдап, бірнеше қарапайым экраннан өте аласыз.<br />
+  <br />
+  <strong>Басқа бұлт қызметтері провайдерімен реттеу</strong><br />
+  <br />
+  Outline Manager бағдарламасын жүктеп алып, орнатқаннан кейін, Outline серверін AWS, GCP, DigitalOcean бар виртуалдық машинада немесе басқа провайдерде орнатуды таңдай аласыз. Әр орта әртүрлі болғандықтан, ең көп қолданылатын бұлт қызметтері провайдерлеріне арналған Outline Manager-ді реттеу процедурасына нұсқауларды енгіздік. Онда Outline-ды серверде орнату скриптісін іске қосар алдында виртуалдық машинада параметрлерді қалай конфигурациялау керектігі де түсіндіріледі.<br />
+  <br />
+  <strong><em>Басқа көмек керек пе?</em></strong><br />
+  <br />
+  <a href="/outline-faq/answer/15331728" rel="noopener" target="_blank">Outline серверін реттеу туралы сұрақ-жауаптар</a> бөлімін қарап шығыңыз.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="95" sourceLocale="kk">WEB:15331625</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline брендісін пайдалануыма не көшіруіме бола ма?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Outline қызметі ашық кодты әрі тегін бағдарлама болғанына қарамастан, біздің брендіміз Jigsaw меншігі саналады және оны теріс пайдалануға болмайды. Жалған мәлімдеме жасамау немесе Outline не Jigsaw қызметімен байланысыңызды бұрыс сипаттамау үшін, сондай-ақ мақұлданған бренд элементтерін дұрыс пайдалану үшін <a href="https://github.com/Jigsaw-Code/outline-brand/blob/main/outline_brand_user_guide.pdf" target="_blank">пайдаланушы нұсқаулығын</a> басшылыққа алыңыз.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="191" sourceLocale="kk">WEB:15331628</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Рұқсат кілтін қалай алуға болады?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:3258;a">Outline қолданбасы ақылы VPN қызметтері сияқты емес. Ол&nbsp;– жеке VPN серверін іске қосуға және ортақ пайдалануға мүмкіндік беретін <a href="https://getoutline.org/#:~:text=Two%20Products%20that%20Work%20Together" target="_blank">құрал</a>. Рұқсат кілтін тек <a href="/outline/answer/15330920#servicemanager" rel="noopener" target="_blank">қызмет менеджері</a>&nbsp;береді. Outline ұжымы тегін не ақылы рұқсат кілттерін таратпайды. Парсы тіліндегі Paskoocheh-ті қоспағанда, Outline рұқсат кілтіне қатысты ресми серіктесіміз жоқ.<br />
+  <br />
+  Рұқсат кілтін үш жолмен алуға болады:&nbsp;</p>
+
+<ul data-aura-rendered-by="12:3258;a">
+  <li>Әлдекімнен сізді өз серверіне шақыруын сұраңыз: Outline серверін пайдаланатын танысыңыз болса, оған хабарласып, рұқсат кілтін сұраңыз.</li>
+  <li><a href="/outline/answer/15331530" rel="noopener" target="_blank">Өзіңіз сервер жасаңыз:</a> Windows, Mac не Linux жүйесі бар компьютерді пайдаланып, <a href="https://getoutline.org/get-started/#step-1" target="_blank">Outline Manager</a> қолданбасын жүктеп алыңыз да, жеке <a href="/outline/answer/15330920" rel="noopener" target="_blank">Outline серверіңізді</a> реттеңіз. Бұл процесті кез келген адам орындай алатындай (әсіресе DigitalOcean бұлт қызмет көрсетушісі арқылы) оңайлаттық.</li>
+  <li>Outline немесе <a href="https://en.wikipedia.org/wiki/Shadowsocks#:~:text=Shadowsocks%20is%20a%20free%20and,have%20been%20made%20available%20since." target="_blank">Shadowsocks</a> қызметін пайдалану: Outline клиентін Outline немесе Shadowsocks протоколдарымен жұмыс істейтін үшінші тарап қызметтерімен де қолдануға болады. Мысалы: <ul>
+      <li><a href="http://nthlink.com/" target="_blank">nthLink</a> қызметі Outline клиентінің жаңартылған нұсқасы орнатылған Outline-ға негізделетін тегін қызметті іске қосады.</li>
+      <li><a href="https://www.reddit.com/r/outlinevpn/comments/nwu1se/the_outline_distribution_system_is_here_to_help/" target="_blank">ASL19</a> Outline-ның <a href="https://beepassvpn.com/" target="_blank">BeePass</a> деп аталатын жаңартылған нұсқасын, сондай-ақ BeePass серверлерінің тегін рұқсат кілттерін беретін <a href="https://t.me/paskoochehbot" target="_blank">Telegram ботын</a> іске қосады.</li>
+      <li>Парсы тілін пайдаланушылар Outline рұқсат кілтін <a href="https://outline.paskoocheh.com/" target="_blank">ASL19 компаниясының Paskoocheh</a> жүйесінен де сұрай алады.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Outline серверіне қосылу үшін Outline Client қолданбасын жүктеп алғаннан кейін, <a href="/outline/answer/15330920#accesskey" rel="noopener" target="_blank">рұқсат кілтін</a>&nbsp;көшіріп, Outline Client қолданбасына қойыңыз.&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="133" sourceLocale="kk">WEB:15331630</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline серверін қалай жоюға болады?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:14046;a">Бұлт қызметтері провайдерлерінің көбісі үшін сіз қолданатын нақты виртуалдық машинаны өшіру оп-оңай.</p>
+
+<p data-aura-rendered-by="12:14046;a">Егер бұлт қызметтері провайдері ретінде DigitalOcean пайдаланылса, тегершік түймесін басып, "Серверді жою" пәрменін таңдау арқылы қолданыстағы виртуалдық машинаны жоя аласыз. Осыдан кейін бірден сізден таңдаған жеріңізден жаңа виртуалдық машина жасау сұралады.</p>
+
+<p data-aura-rendered-by="12:14046;a">Егер Outline серверін өшірсеңіз, ол біржола жойылады және оның рұқсат кілттері жұмыс істемей қалады. Егер адамдардың Outline арқылы серверді пайдалануын тоқтатуын қаламасаңыз, <a href="/outline-faq/answer/15331530" rel="noopener" target="_blank">жаңа Outline серверін орнату</a> және ескісін жоймас бұрын, кіру рұқсатын бөлісу қажет болады.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="99" sourceLocale="kk">WEB:15331631</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Бірнеше Outline серверін реттеу жолы</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:27908;a">Қосымша Outline серверлерін реттеу үшін Outline Manager қолданбасының сол жағындағы навигация панеліндегі "+" белгішесін түртіңіз. Жаңа серверді енгізу нұсқаулары біріншісін орнатқан кездегімен бірдей болады.</p>
+
+<ul data-aura-rendered-by="12:27908;a">
+  <li>Қанша Outline серверін жасай алатыныңызға шектеу қойылмайды.</li>
+  <li>Әр жасалған Outline сервері үшін сәйкес виртуалдық машина қажет болады.</li>
+  <li>Қосымша машиналар немесе дроплеттер жасасаңыз, бұлт қызметтері провайдеріне жіберетін төлемдеріңіз артуы мүмкін. Нені күте алатыныңызды білу үшін бұлт қызметтері провайдерінен баға пакетін нақтылаңыз.</li>
+</ul>
+
+<p data-aura-rendered-by="12:27908;a"><strong>DigitalOcean қызметінде қосымша Outline серверін жасау</strong></p>
+
+<p data-aura-rendered-by="12:27908;a">"+" белгішесін басып, DigitalOcean қызметінде орнатуды таңдағаннан кейін, бірінші серверді реттеген кезде қолданған нұсқауларды қайта орындайсыз. Сонымен қатар Outline Manager қолданбасы DigitalOcean қызметімен біріктірілгендіктен, сізді Outline manager қолданбасынан шығармай-ақ дроплет жасай аламыз.</p>
+
+<p data-aura-rendered-by="12:27908;a">Outline Manager бір уақытта тек бір DigitalOcean аккаунтымен жұмыс істейтінін ескеріңіз. Егер басқа DigitalOcean аккаунттарынан басқа Outline серверлерін қосқыңыз не жасағыңыз келсе, оларды кеңейтілген конфигурация ретінде қоса аласыз.</p>
+
+<p data-aura-rendered-by="12:27908;a"><strong>GCP, AWS немесе басқа бұлт қызметтері провайдерінде қосымша Outline серверін жасау</strong></p>
+
+<p data-aura-rendered-by="12:27908;a">Таңдаған бұлт қызметтері провайдеріңізбен жаңа виртуалдық машинаны жасаудан бастаңыз. Одан кейін Outline Manager қолданбасын ашып, кеңейтілген орнату нұсқауларын дәл алғашқысындай орындап шығыңыз.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="96" sourceLocale="kk">WEB:15331632</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline Manager қызметі неліктен Windows жүйесіне орнатылмай жатыр?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:34680;a">Мынадай қате туралы хабар алуыңыз мүмкін: "Өкінішке қарай, Outline дұрыс орнатылмаған сияқты. Оны қайта орнатып көріңіз. Бұл қате қайталанса, <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">бізге хабарласыңыз</a>."</p>
+
+<p data-aura-rendered-by="12:34680;a">Outline қолданбасын Windows жүйесінде пайдаланатын болсаңыз, кейде күтпеген қате пайда болуы мүмкін. Көп жағдайда Outline TAP адаптерін (драйверін) жойып, Outline қолданбасын қайта орнату қажет болады.&nbsp;</p>
+
+<p data-aura-rendered-by="12:34680;a">Windows операциялық жүйесінің нұсқасына байланысты орындалатын қадамдар әртүрлі болуы мүмкін. Бірақ төменде TAP адаптері мен Outline Manager қолданбасын жойып, Outline Manager қолданбасын қайта орнату жөніндегі жалпы қадамдар беріледі.</p>
+
+<ol data-aura-rendered-by="12:34680;a">
+  <li>Outline Manager қолданбасының TAP адаптерін жою
+    <ol>
+      <li>"Құрылғы менеджерлері &gt; Желі адаптерлері" тармағына өтіңіз.</li>
+      <li>"TAP-Windows Adapter V9" файлын немесе Outline қолданбасымен байланысты TAP адаптерін табыңыз.</li>
+      <li>Осы адаптерді жойыңыз. Бұл әрекет орнатылған басқа VPN қолданбаларына әсерін тигізуі мүмкін екенін ескеріңіз.&nbsp;</li>
+    </ol>
+  </li>
+  <li>Outline Manager қолданбасын жою
+    <ol>
+      <li>"Бағдарламалар және функциялар &gt; Бағдарламаны жою" тармағына өтіңіз.</li>
+      <li>Outline Manager қолданбасын тауып, оны жойыңыз.</li>
+      <li><a href="https://getoutline.org/get-started/#step-1" target="_blank">Outline Manager қолданбасының соңғы нұсқасын жүктеп алыңыз</a>&nbsp;және оны Windows құрылғысына қайта орнатыңыз. Жаңа орнатылған нұсқа жаңа TAP адаптерін автоматты түрде орнатуы керек.</li>
+    </ol>
+  </li>
+</ol>
+
+<p data-aura-rendered-by="12:34680;a">Мәселе сонда да шешілмесе, <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">қолдау қызметіне хабарласыңыз.</a>&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="94" sourceLocale="kk">WEB:15331727</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Google Cloud автоматтандырылған реттеу функциясы</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:26310;a"><strong>Жалпы ақпарат</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Outline серверін Google Cloud-та жұмыс істейтін серверде автоматты түрде реттеуге мүмкіндік беретін функция Outline Manager-де бар. Осы функцияны пайдаланатын болсаңыз, Outline Manager қолданбасы Google аккаунтыңызбен кіруді сұрайды. Кірген кезде, Google Cloud аккаунтын конфигурациялау мақсатында Outline Manager қолданбасын жергілікті дискіге орнату үшін белгілі бір<a href="https://developers.google.com/identity/protocols/oauth2" target="_blank"> OAuth</a> рұқсаттары беріледі.<br />
+  Бұл рұқсаттарды бергіңіз келмесе, Outline Manager қолданбасында кеңейтілген реттеу нұсқауларын орындап, Outline қолданбасын Google Cloud Platform-да іске қоса аласыз.&nbsp;</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Берілетін рұқсаттар</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Автоматтандырылған реттеуді қамтамасыз ету үшін Outline Manager қолданбасы Google аккаунтынан келесі рұқсаттарды сұрайды.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Google Cloud Platform</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>Google Compute Engine ресурстарын көру және басқару</li>
+  <li>Google Cloud қызметтеріндегі деректерді және Google аккаунтыңыздың электрондық мекенжайын көру.</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Негізгі аккаунт туралы ақпарат</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>Google аккаунтыңыздың негізгі электрондық мекенжайын көру;</li>
+  <li>Сізді Google-дағы жеке ақпаратыңызбен байланыстыру.</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Қосымша рұқсат</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>Cloud Platform жобаларын басқару;</li>
+  <li>Google Cloud Platform-дағы төлем аккаунттарын көру және басқару;</li>
+  <li>Google API қызметтік конфигурациясын басқару.</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a">Бұл рұқсаттар бізге Outline серверлерін басқарудың қосымша мүмкіндігін қолдауға, оның ішінде:</p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>дұрыс төлем аккаунтын таңдауға;</li>
+  <li>жаңа жоба жасап, Outline серверлерін реттеуге;</li>
+  <li>қолжетімді деректер орталығының тізімін жасауға;</li>
+  <li>Outline жұмыс істейтін жаңа виртуалдық машиналарды жасауға;</li>
+  <li>жаңа виртуалдық машиналарды Outline-мен конфигурациялауға мүмкіндік береді.</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Рұқсаттарды қайтару</strong></p>
+
+<p data-aura-rendered-by="12:26310;a"><a href="https://myaccount.google.com/permissions" target="_blank">Аккаунтым</a> бетіне өтіп, Outline Manager үшін Google Cloud Platform рұқсатын қайтара аласыз. Рұқсатты қайтарсаңыз, автоматты реттеумен жасаған барлық сервер жұмыс істей береді, бірақ Outline Manager-де бұдан былай көрсетілмейді. Рұқсаттарды қалпына келтіру үшін автоматты реттеу ағынын бастау арқылы Google Cloud Platform-ға қайта жалғасаңыз жеткілікті.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Outline жобасын реттеу</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Google Cloud автоматты реттеуі Outline серверлерін реттеуге бір<a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects" target="_blank"> Google Cloud жобасын</a> пайдаланады. Жоба автоматты реттеуді алғаш пайдаланған кезде жасалады. Онда "Outline-" деп басталатын ұсынылған жоба идентификаторы, содан кейін кездейсоқ таңбалардан құрылған жол болады. Қаласаңыз, жобаны жасаған кезде, оған басқа идентификаторды таңдай аласыз. Жоба "Outline серверлері" деп аталады.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Төлем аккаунты</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Google Cloud жобалары төлем туралы ақпарат көрсетілген "төлем аккаунтымен" байланыстырылуы керек. Google Cloud автоматты реттеуін алғаш пайдаланған кезде, Outline серверлерімен байланыстыру үшін сізден төлем аккаунты сұралады. Кейде төлем аккаунтына қатысты мәселе туындаған жағдайда, сервер жұмыс істемейді. Мұндай жағдайда<a href="https://console.cloud.google.com/getting-started" target="_blank"> Google Cloud консоліне</a> кіріп, Outline-мен байланыстырылған Google Cloud жобасын ("Outline серверлері" деп аталады) тауып, төлем параметрлерін жаңартуыңыз керек.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Серверлерді жою</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Автоматты реттеу функциясымен жасалған серверлерді жоюдың ең оңай жолы – Outline Manager арқылы жою. Алайда серверлерді өзіңіз жойғыңыз келсе,<a href="https://console.cloud.google.com/getting-started" target="_blank"> Google Cloud консоліне</a> кіріп, бастапқы реттеу кезінде жасалған жобаны ("Outline серверлері" деп аталады) тауып, ол жерден ресурстарды жойыңыз немесе жобаны өшіріңіз.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="99" sourceLocale="kk">WEB:15331728</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline серверін реттеу туралы сұрақ-жауап</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:28806;a"><strong>Outline қызметін серверсіз пайдалануға бола ма?</strong><br />
+  <br />
+  Өкінішке қарай, болмайды. Outline бағдарламалық құралын сіз, ұйымыңыз немесе сенімді үшінші тарап басқаратынына қарамастан, ол серверге қосылуы керек.&nbsp;</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>Outline серверін реттеуге қанша уақыт кетеді?</strong></p>
+
+<p data-aura-rendered-by="12:28806;a">Көп жағдайда максимум 5 минут кетеді. Outline-ды кез келген бұлт серверіне орната аласыз. Бұл ретте біз пайдалануға ыңғайлы және басқарылатын орнату мүмкіндігін ұсыну үшін DigitalOcean-мен жұмыс істейміз. Скриптілер жоқ — бірнеше түймені басып-ақ серверіңізді конфигурациялай аласыз.</p>
+
+<p data-aura-rendered-by="12:28806;a">AWS, GCP немесе кеңейтілген реттеу опциясын таңдау жағдайлары үшін серверді орнату процесін көптеген ортада қолдануға болатын бір скриптіге дейін жеңілдеттік.&nbsp;</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>Outline серверін қайда орнатуға болады?</strong></p>
+
+<p data-aura-rendered-by="12:28806;a">Outline серверін көптеген бұлт қызметтері провайдеріне (олар қайда жұмыс істесе де) орнатуыңызға болады.</p>
+
+<p data-aura-rendered-by="12:28806;a">Ең оңай жолы&nbsp;– оны DigitalOcean платформасына орнату. Өйткені оның Амстердам, Торонто, Сан-Франциско және Сингапур сияқты бірнеше жерде серверлері бар. Егер оны басқа бұлт қызметтері провайдеріне немесе өзіңіздің инфрақұрылымыңызға орнатқыңыз келсе, Outline Manager қолданбасынан "Озық режим" тармағын таңдап, реттеу скриптісі арқылы орнату нұсқауларын орындауыңызға болады.&nbsp;</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>Outline серверін қайда орнатуым керек?</strong></p>
+
+<ol data-aura-rendered-by="12:28806;a">
+  <li>Outline сервері үшін орын таңдау кезінде бірнеше жайтты ескеру қажет:</li>
+  <li>Outline серверінің орналасқан жері пайдаланушылардың интернетті қалай пайдаланатынына әсер етеді. Мысалы, егер сервер Амстердамда орналасқан болса, оған кірген пайдаланушы интернетті Нидерландыда отырғандай пайдаланады. Кейбір веб-сайттар тіпті голланд тілінде көрсетілуі мүмкін. Әдетте веб-сайттағы тілді таңдау құралы арқылы жергілікті тілді қайта анықтауға болады.</li>
+  <li>Пайдаланушылар мен Outline сервері арасындағы қашықтық жылдамдығыңызға әсер етуі мүмкін. Әдетте Outline пайдаланушылары мен сервер арасындағы физикалық қашықтық пайдаланушылардың интернет жылдамдығына әсер етеді. Көп жағдайда болжалды пайдаланушылар тұратын жерге ең жақын сервер орнын таңдауыңызға болады, бұл ретте еліңізге немесе аймағыңызға қандай интернет кабельдері қосылатынын <a href="https://www.submarinecablemap.com/" rel="noopener" target="_blank">Суасты кабельдері картасынан</a> көре аласыз.</li>
+  <li>VPN серверіңіз орналасқан жер құқықтық негізге әсер етуі мүмкін. Outline бағдарламалық құралы трафигіңізді тіркемейтінін ескеріңіз. <a href="/outline-faq/answer/14919822" rel="noopener" target="_blank">Outline-ды пайдалану кезіндегі қауіпсіздік және құпиялық</a> туралы толық ақпарат алыңыз.</li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="kk">WEB:15331758</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Мен әзірлеушімін. Outline SDK жиынтығын қолданбама интеграциялау бойынша көмекті қайдан таба аламын?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Осы көмек көрсету веб-сайты Outline Manager және Client қолданбасының пайдаланушыларына арналған. Әзірлеушілер, көмек алу үшін GitHub сайтын пайдаланыңыз. Сұрақтарыңызды SDK&nbsp;<a href="https://github.com/Jigsaw-Code/outline-sdk/discussions" target="_blank">Талқылау тақтасында</a> қойыңыз. "Талқылау тақтасы" бөлімі&nbsp;– сұрақ қоюға, идеяларды бөлісуге, демо нұсқаларға сілтеме қалдыруға және Outline SDK жиынтығын пайдаланатын басқа әзірлеушілерге көмек беруге арналған таптырмас орын. Ал функцияларға қатысты сұраулар немесе қате туралы есептер жіберу үшін&nbsp;<a href="https://github.com/Jigsaw-Code/outline-sdk/issues/new" target="_blank">Мәселе</a>&nbsp;бөлімін ашыңыз.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="74" sourceLocale="kk">WEB:15448041</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Қолжетімді тілдер</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Outline келесі тілдерде қолжетімді:</p>
+
+<ul>
+  <li aria-level="1">бур;</li>
+  <li aria-level="1">албан;</li>
+  <li aria-level="1">амхар;</li>
+  <li aria-level="1">араб;</li>
+  <li aria-level="1">армян;</li>
+  <li aria-level="1">әзірбайжан;</li>
+  <li aria-level="1">бенгал;</li>
+  <li aria-level="1">босния;</li>
+  <li aria-level="1">болгар;</li>
+  <li aria-level="1">бирма;</li>
+  <li aria-level="1">каталан;</li>
+  <li aria-level="1">қытай (жеңілдетілген);</li>
+  <li aria-level="1">қытай (дәстүрлі);</li>
+  <li aria-level="1">хорват;</li>
+  <li aria-level="1">чех;</li>
+  <li aria-level="1">дат;</li>
+  <li aria-level="1">голланд;</li>
+  <li aria-level="1">ағылшын (америкалық);</li>
+  <li aria-level="1">ағылшын (британ);</li>
+  <li aria-level="1">эстон;</li>
+  <li aria-level="1">филиппин;</li>
+  <li aria-level="1">фин;</li>
+  <li aria-level="1">француз;</li>
+  <li aria-level="1">грузин;</li>
+  <li aria-level="1">неміс;</li>
+  <li aria-level="1">грек;</li>
+  <li aria-level="1">иврит;</li>
+  <li aria-level="1">хинди;</li>
+  <li aria-level="1">мажар;</li>
+  <li aria-level="1">исланд;</li>
+  <li aria-level="1">индонезия;</li>
+  <li aria-level="1">итальян;</li>
+  <li aria-level="1">жапон;</li>
+  <li aria-level="1">қазақ;</li>
+  <li aria-level="1">кхмер;</li>
+  <li aria-level="1">корей;</li>
+  <li aria-level="1">лаос;</li>
+  <li aria-level="1">латыш;</li>
+  <li aria-level="1">литва;</li>
+  <li aria-level="1">македон;</li>
+  <li aria-level="1">малай;</li>
+  <li aria-level="1">маратхи;</li>
+  <li aria-level="1">моңғол;</li>
+  <li aria-level="1">непал;</li>
+  <li aria-level="1">норвег;</li>
+  <li aria-level="1">парсы;</li>
+  <li aria-level="1">поляк;</li>
+  <li aria-level="1">португал (бразилиялық);</li>
+  <li aria-level="1">португал (еуропалық);</li>
+  <li aria-level="1">румын;</li>
+  <li aria-level="1">орыс;</li>
+  <li aria-level="1">серб (кириллица);</li>
+  <li aria-level="1">серб (латын);</li>
+  <li aria-level="1">синхала;</li>
+  <li aria-level="1">словак;</li>
+  <li aria-level="1">словен;</li>
+  <li aria-level="1">испан (еуропалық);</li>
+  <li aria-level="1">испан (латын америкалық);</li>
+  <li aria-level="1">суахили;</li>
+  <li aria-level="1">швед;</li>
+  <li aria-level="1">тамил;</li>
+  <li aria-level="1">тай;</li>
+  <li aria-level="1">түрік;</li>
+  <li aria-level="1">украин;</li>
+  <li aria-level="1">урду;</li>
+  <li aria-level="1">вьетнам.</li>
+</ul>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="79" sourceLocale="kk">WEB:15528599</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Брандмауэр қателері</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:268;a">Брандмауэр қатесінің үш түрі кездесуі мүмкін:</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>Сізді желі брандмауэрі блоктауы мүмкін.</strong></p>
+
+<p data-aura-rendered-by="12:268;a">Егер мектепте немесе жұмыс орнында брандмауэрмен қорғалған желіге қосулы кезде Outline қолданбасын орнатпақшы болсаңыз, оны басқа желіден орнатып көріңіз.</p>
+
+<p data-aura-rendered-by="12:268;a">Мәселе шешілмесе, брандмауэрмен қорғалған желі мен Outline сервері арасында байланыс орнату үшін желі әкімшісіне хабарласыңыз. Орнату скриптісінің соңында көрсетілген Outline серверінің IP мекенжайы мен Outline жұмыс істейтін ұяшықтарды білуіңіз керек.</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>Сізді құрылғы брандмауэрі блоктауы мүмкін</strong>.</p>
+
+<p data-aura-rendered-by="12:268;a">Құрылғыңызда стандартты емес ұяшықтардағы шығыс қосылымдарды блоктайтын бағдарламалық құрал немесе танылмаған бағдарламалық құрал (CheckPoint's ZoneAlarm) болса, Outline үшін ерекше жағдай жасау жолын құрылғының не бағдарламалық құралдың құжатынан қараңыз.</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>Сізді сервер брандмауэрі блоктауы мүмкін.</strong></p>
+
+<p data-aura-rendered-by="12:268;a">Таңдаған бұлт қызметтері провайдеріңіз Outline жұмыс істейтін ұяшықтарды ашу үшін сервер брандмауэріне ерекше жағдайларды қолмен жасауды сұрауы мүмкін. Орнату скриптісін іске қосқаннан кейін, сізге Outline серверде іске қосылған екі кездейсоқ ұяшық ұсынылуы керек. Осы екі ұяшықты ашу жеткілікті болуы керек.<br />
+  <br />
+  Серверіңіздің брандмауэріне ерекше жағдайлар жасау үшін "ufw" және "iptables" құжатымен танысуға кеңес береміз:</p>
+
+<ul data-aura-rendered-by="12:268;a">
+  <li>UFW:&nbsp;<a href="https://help.ubuntu.com/community/UFW" rel="noopener" target="_blank">https://help.ubuntu.com/community/UFW</a></li>
+  <li>Iptables:&nbsp;<a href="https://help.ubuntu.com/community/IptablesHowTo" rel="noopener" target="_blank">https://help.ubuntu.com/community/IptablesHowTo</a></li>
+</ul>
+</div>
+</body>
+</html>
