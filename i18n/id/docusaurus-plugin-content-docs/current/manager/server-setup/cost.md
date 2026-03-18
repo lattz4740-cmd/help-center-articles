@@ -5,7 +5,7 @@ sidebar_label: "Berapa biaya untuk menjalankan Outline?"
 
 Software Outline disediakan secara gratis untuk siapa saja, baik Anda seorang administrator server yang mengelola VPN maupun seseorang yang menggunakan Outline untuk mengakses internet terbuka.
 
- Outline membutuhkan akses ke server cloud agar dapat berjalan. Administrator server yang sudah memiliki akses ke server dapat menginstal Outline di server tanpa dikenai biaya tambahan. Orang yang tidak memiliki akses ke server bisa mendapatkan akses dari penyedia layanan cloud, seperti [DigitalOcean](http://www.digitalocean.com/) atau Amazon Web Services, dengan harga sekitar $5 USD per bulan untuk alokasi transfer data sebesar 1 terabyte—cukup untuk mendukung ratusan pengguna pada satu server.
+ Outline membutuhkan akses ke server cloud agar dapat berjalan. Administrator server yang sudah memiliki akses ke server dapat menginstal Outline di server tanpa dikenai biaya tambahan. Orang yang tidak memiliki akses ke server bisa mendapatkan akses dari penyedia layanan cloud, seperti [DigitalOcean](https://www.digitalocean.com/) atau Amazon Web Services, dengan harga sekitar $5 USD per bulan untuk alokasi transfer data sebesar 1 terabyte—cukup untuk mendukung ratusan pengguna pada satu server.
 
  Contoh perhitungan penentuan biaya yang Anda perlukan untuk menjalankan Outline dengan penyedia cloud pilihan Anda:
 

@@ -13,7 +13,7 @@ Outline nuk mbledh informacione personale përveçse nëse zgjedh t'i japësh at
 
  1. Adresën IP të serverit
 
- Adresa IP e serverit të Outline mblidhet nga [Quay.io](http://quay.io/) dhe bëhet e qasshme për ne kur serveri përditësohet automatikisht me përmirësimet më të fundit të sigurisë dhe të veçorive. Adresa IP e serverit mund të identifikojë ofruesin e shërbimit të resë kompjuterike dhe qytetin ku është konfiguruar serveri i Outline, por kjo gjë nuk jep informacione se kush po e ekzekuton serverin apo se kush ka qasje në të.
+ Adresa IP e serverit të Outline mblidhet nga [Quay.io](https://quay.io/) dhe bëhet e qasshme për ne kur serveri përditësohet automatikisht me përmirësimet më të fundit të sigurisë dhe të veçorive. Adresa IP e serverit mund të identifikojë ofruesin e shërbimit të resë kompjuterike dhe qytetin ku është konfiguruar serveri i Outline, por kjo gjë nuk jep informacione se kush po e ekzekuton serverin apo se kush ka qasje në të.
 
  2. Informacionet teknike jo personalisht të identifikueshme
 
@@ -30,7 +30,7 @@ Outline nuk mbledh informacione personale përveçse nëse zgjedh t'i japësh at
 - Arkitektura
 - Numri i versionit dhe ndërtimit të Outline
 
-Këto informacione transferohen nëpërmjet HTTPS-së te Sentry ([sentry.io](http://sentry.io/)), një ofrues palë e tretë me burim të hapur për monitorimin e gabimeve. Sentry përdor një larmi shërbimesh dhe teknologjish standarde të kësaj industrie për të siguruar të dhënat e tua nga qasja e paautorizuar, zbulimi, përdorimi dhe humbja. Nëse ke ndonjë pyetje në lidhje me politikat e Sentry, vizito [https://sentry.io/security/](https://sentry.io/security/) dhe [https://sentry.io/privacy/](https://sentry.io/privacy/) ose kontakto me [security@sentry.io](mailto:security@sentry.io). Të gjitha të dhënat e Outline të ruajtura nga Sentry janë të kufizuara në mënyrë të tillë që vetëm anëtarët e ekipit të Outline mund të kenë qasje në to.
+Këto informacione transferohen nëpërmjet HTTPS-së te Sentry ([sentry.io](https://sentry.io/)), një ofrues palë e tretë me burim të hapur për monitorimin e gabimeve. Sentry përdor një larmi shërbimesh dhe teknologjish standarde të kësaj industrie për të siguruar të dhënat e tua nga qasja e paautorizuar, zbulimi, përdorimi dhe humbja. Nëse ke ndonjë pyetje në lidhje me politikat e Sentry, vizito [https://sentry.io/security/](https://sentry.io/security/) dhe [https://sentry.io/privacy/](https://sentry.io/privacy/) ose kontakto me [security@sentry.io](mailto:security@sentry.io). Të gjitha të dhënat e Outline të ruajtura nga Sentry janë të kufizuara në mënyrë të tillë që vetëm anëtarët e ekipit të Outline mund të kenë qasje në to.
 
 ****Informacionet që marrim vetëm pas zgjedhjes sate****
 

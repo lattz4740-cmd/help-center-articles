@@ -10,7 +10,7 @@ Outline није као VPN услуге за које купујете прис
 - Затражите од некога да вас позове на сервер. Ако познајете неку особу са Outline сервером, обратите јој се и затражите приступни кључ.
 - [Сами направите сервер](/manager/server-setup/setup-server): На Windows, Mac или Linux рачунару преузмите апликацију [Outline Manager](https://getoutline.org/get-started/#step-1) и подесите свој приватни [Outline сервер](/about/terminology). Тај процес смо олакшали за све, нарочито преко добављача услуге DigitalOcean у клауду.
 - Користите услугу Outline или [Shadowsocks](https://en.wikipedia.org/wiki/Shadowsocks#:~:text=Shadowsocks%20is%20a%20free%20and,have%20been%20made%20available%20since.): Outline Client можете да користите и са независним услугама које користе Outline или Shadowsocks протокол. На пример:
-   - [nthLink](http://nthlink.com/) покреће бесплатну услугу засновану на Outline-у, са измењеном верзијом Outline Client-а.
+   - [nthLink](https://nthlink.com/) покреће бесплатну услугу засновану на Outline-у, са измењеном верзијом Outline Client-а.
    - [ASL19](https://www.reddit.com/r/outlinevpn/comments/nwu1se/the_outline_distribution_system_is_here_to_help/) покреће измењену верзију Outline-а која се зове [BeePass](https://beepassvpn.com/), као и [Telegram бота](https://t.me/paskoochehbot) који пружа бесплатне приступне кључеве за BeePass сервере.
    - Говорници фарсија могу да затраже Outline приступни кључ и од [ASL19 Paskoocheh-а](https://outline.paskoocheh.com/).
 

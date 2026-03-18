@@ -13,7 +13,7 @@ Outline təqdim etməyi seçmədiyiniz təqdirdə şəxsi məlumatlarınızı to
 
  1. Server IP-si
 
- Outline server IP-si [Quay.io](http://quay.io/) tərəfindən toplanır və server avtomatik olaraq ən son təhlükəsizlik və funksiya təkmilləşdirmələri ilə yeniləndikdə bizim üçün əlçatan olur. Server IP-si bulud server provayderi və Outline serverinin quraşdırıldığı şəhəri müəyyən edə bilər, lakin bu zaman serveri kimin işlətdiyi və ya kimin daxil olduğu haqqında məlumat təqdim edilmir.
+ Outline server IP-si [Quay.io](https://quay.io/) tərəfindən toplanır və server avtomatik olaraq ən son təhlükəsizlik və funksiya təkmilləşdirmələri ilə yeniləndikdə bizim üçün əlçatan olur. Server IP-si bulud server provayderi və Outline serverinin quraşdırıldığı şəhəri müəyyən edə bilər, lakin bu zaman serveri kimin işlətdiyi və ya kimin daxil olduğu haqqında məlumat təqdim edilmir.
 
  2. Şəxsi olaraq kimliyi müəyyən etməyən texniki məlumatlar
 
@@ -30,7 +30,7 @@ Outline təqdim etməyi seçmədiyiniz təqdirdə şəxsi məlumatlarınızı to
 - Arxitektura
 - Outline versiyası və onun nömrəsi
 
-Bu məlumat HTTPS vasitəsilə üçüncü tərəf olan Sentry ([sentry.io](http://sentry.io/)), yəni açıq mənbə xəta izləmə provayderinə ötürülür. Sentry datanızı icazəsiz giriş, açıqlama, istifadə və itkidən qorumaq üçün sənaye standartlarına cavab verən müxtəlif texnologiya və xidmətlərdən istifadə edir. Sentry siyasətləri ilə bağlı sualınız varsa, [https://sentry.io/security/](https://sentry.io/security/) və [https://sentry.io/privacy/](https://sentry.io/privacy/) ünvanlarına daxil olun və ya [security@sentry.io](mailto:security@sentry.io) ilə əlaqə saxlayın. Sentry-nin saxladığı bütün Outline datasına yalnız Outline komandası giriş edə bilər.
+Bu məlumat HTTPS vasitəsilə üçüncü tərəf olan Sentry ([sentry.io](https://sentry.io/)), yəni açıq mənbə xəta izləmə provayderinə ötürülür. Sentry datanızı icazəsiz giriş, açıqlama, istifadə və itkidən qorumaq üçün sənaye standartlarına cavab verən müxtəlif texnologiya və xidmətlərdən istifadə edir. Sentry siyasətləri ilə bağlı sualınız varsa, [https://sentry.io/security/](https://sentry.io/security/) və [https://sentry.io/privacy/](https://sentry.io/privacy/) ünvanlarına daxil olun və ya [security@sentry.io](mailto:security@sentry.io) ilə əlaqə saxlayın. Sentry-nin saxladığı bütün Outline datasına yalnız Outline komandası giriş edə bilər.
 
 ****Yalnız seçim edildikdən sonra əldə etdiyimiz məlumatlar****
 

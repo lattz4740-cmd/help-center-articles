@@ -54,7 +54,7 @@ Ne. Z nobenim orodjem se ni mogoče zaščititi pred vsemi možnimi kibernetskim
 
 Če želite okrepiti svojo zaščito pred grožnjami v spletu, se posvetujte s strokovnjakom za kibernetsko varnost v svoji organizaciji. Druga možnost je, da za osebno prilagojene nasvete prosite vodilne strokovnjake za varnost na spletnem mestu [Security Planner](https://securityplanner.org/), zasnovanem za zagotavljanje jasnih navodil pri izbiri ustreznih orodij za kibernetsko varnost.
 
-Prav tako si lahko ogledate druge izdelke za kibernetsko varnost inkubatorja [Jigsaw](https://jigsaw.google.com/), kot so [Intra](https://getintra.org/), [Project Shield](https://g.co/shield) in [Zaščita gesla](https://chrome.google.com/webstore/detail/password-alert/noondiphcddnnabmjcihcjfbhfklnnep).
+Prav tako si lahko ogledate druge izdelke za kibernetsko varnost inkubatorja [Jigsaw](https://jigsaw.google.com/), kot so [Intra](https://getintra.org/), [Project Shield](https://g.co/shield) in [Zaščita gesla](https://chrome.google.com/webstore/detail/password-alert/noondiphcddnnabmjcihcjfbhfklnnep?).
 
 ## Ali je zakonsko dovoljeno uporabljati VPN?
 

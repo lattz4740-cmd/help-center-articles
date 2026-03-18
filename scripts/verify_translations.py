@@ -200,6 +200,16 @@ def strip_non_content(md_text: str) -> str:
 def normalize_link_url(url: str) -> str:
     """Normalize a link URL for comparison."""
     if url.startswith(('http://', 'https://', 'mailto:', '#')):
+        # Normalize http to https
+        if url.startswith('http://'):
+            url = 'https://' + url[7:]
+        # Strip language query params (?hl=XX, ?language=XX)
+        url = re.sub(r'[?&](hl|language)=[^&#]*', '', url)
+        # Clean up leftover ? or & at end
+        url = re.sub(r'[?&]$', '', url)
+        # Normalize Wikipedia locale subdomains to en
+        url = re.sub(r'https://[a-z]{2,3}(-[A-Za-z]+)?\.wikipedia\.org/',
+                      'https://en.wikipedia.org/', url)
         return url
     anchor = ''
     url_path = url

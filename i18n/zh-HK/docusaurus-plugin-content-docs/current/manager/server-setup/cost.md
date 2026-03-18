@@ -5,7 +5,7 @@ sidebar_label: 執行 Outline 需要支付多少費用？
 
 Outline 軟件供所有人免費使用。無論你是管理 VPN 的伺服器管理員或透過 Outline 存取開放互聯網的使用者，都無需付費。
 
- 不過，Outline 需要有雲端服務的伺服器存取權才能運作。已有伺服器存取權的伺服器管理員可直接安裝 Outline，無需支付額外費用。至於仍未有伺服器存取權的使用者，可透過雲端服務供應商 (如 [DigitalOcean](http://www.digitalocean.com/) 或 Amazon Web Services) 來設定伺服器，費用大約是每月 1 TB 資料傳輸量 $5 美元，這個流量足以讓一個伺服器支援數以百計使用者的需求。
+ 不過，Outline 需要有雲端服務的伺服器存取權才能運作。已有伺服器存取權的伺服器管理員可直接安裝 Outline，無需支付額外費用。至於仍未有伺服器存取權的使用者，可透過雲端服務供應商 (如 [DigitalOcean](https://www.digitalocean.com/) 或 Amazon Web Services) 來設定伺服器，費用大約是每月 1 TB 資料傳輸量 $5 美元，這個流量足以讓一個伺服器支援數以百計使用者的需求。
 
  以下例子說明如何計算在你選擇的雲端服務供應商上運作 Outline 的費用：
 

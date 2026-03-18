@@ -13,7 +13,7 @@ Outline ne zbira osebnih podatkov, razen če to omogočite. Outline prav tako ne
 
  1. Naslov IP strežnika
 
- Naslove IP strežnika Outline zbira [Quay.io](http://quay.io/), pri čemer dostop do teh naslovov pridobimo, ko se strežnik samodejno posodobi za najnovejše izboljšave glede varnosti in funkcij. Prek naslova IP strežnika je morda mogoče prepoznati ponudnika strežnika v oblaku in mesto, v katerem je nastavljen strežnik Outline, vendar na podlagi teh podatkov ni mogoče ugotoviti, kdo upravlja strežnik in kdo dostopa do njega.
+ Naslove IP strežnika Outline zbira [Quay.io](https://quay.io/), pri čemer dostop do teh naslovov pridobimo, ko se strežnik samodejno posodobi za najnovejše izboljšave glede varnosti in funkcij. Prek naslova IP strežnika je morda mogoče prepoznati ponudnika strežnika v oblaku in mesto, v katerem je nastavljen strežnik Outline, vendar na podlagi teh podatkov ni mogoče ugotoviti, kdo upravlja strežnik in kdo dostopa do njega.
 
  2. Tehnični podatki, ki ne omogočajo osebne prepoznave
 
@@ -30,7 +30,7 @@ Outline ne zbira osebnih podatkov, razen če to omogočite. Outline prav tako ne
 - Arhitektura
 - Različica in številka gradnje aplikacije Outline
 
-Ti podatki so prek protokola HTTPS preneseni podjetju Sentry ([sentry.io](http://sentry.io/)), ki je zunanji ponudnik odprtokodne storitve sledenja napakam. Sentry uporablja različne standardne panožne tehnologije in storitve, s katerimi preprečuje nepooblaščen dostop do vaših podatkov ter njihovo razkritje, uporabo in izgubo. Če imate morebitna vprašanja glede pravilnikov za Sentry, obiščite [https://sentry.io/security/](https://sentry.io/security/) in [https://sentry.io/privacy/](https://sentry.io/privacy/) ali se obrnite na [security@sentry.io](mailto:security@sentry.io). Dostop do vseh podatkov o storitvi Outline, ki jih shrani Sentry, je omejen, pri čemer lahko do njih dostopajo samo člani ekipe za Outline.
+Ti podatki so prek protokola HTTPS preneseni podjetju Sentry ([sentry.io](https://sentry.io/)), ki je zunanji ponudnik odprtokodne storitve sledenja napakam. Sentry uporablja različne standardne panožne tehnologije in storitve, s katerimi preprečuje nepooblaščen dostop do vaših podatkov ter njihovo razkritje, uporabo in izgubo. Če imate morebitna vprašanja glede pravilnikov za Sentry, obiščite [https://sentry.io/security/](https://sentry.io/security/) in [https://sentry.io/privacy/](https://sentry.io/privacy/) ali se obrnite na [security@sentry.io](mailto:security@sentry.io). Dostop do vseh podatkov o storitvi Outline, ki jih shrani Sentry, je omejen, pri čemer lahko do njih dostopajo samo člani ekipe za Outline.
 
 ****Podatki, ki jih pridobimo samo, če v to privolite****
 

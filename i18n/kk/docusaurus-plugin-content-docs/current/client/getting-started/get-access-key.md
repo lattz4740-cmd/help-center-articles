@@ -10,7 +10,7 @@ Outline қолданбасы ақылы VPN қызметтері сияқты е
 - Әлдекімнен сізді өз серверіне шақыруын сұраңыз: Outline серверін пайдаланатын танысыңыз болса, оған хабарласып, рұқсат кілтін сұраңыз.
 - [Өзіңіз сервер жасаңыз:](/manager/server-setup/setup-server) Windows, Mac не Linux жүйесі бар компьютерді пайдаланып, [Outline Manager](https://getoutline.org/get-started/#step-1) қолданбасын жүктеп алыңыз да, жеке [Outline серверіңізді](/about/terminology) реттеңіз. Бұл процесті кез келген адам орындай алатындай (әсіресе DigitalOcean бұлт қызмет көрсетушісі арқылы) оңайлаттық.
 - Outline немесе [Shadowsocks](https://en.wikipedia.org/wiki/Shadowsocks#:~:text=Shadowsocks%20is%20a%20free%20and,have%20been%20made%20available%20since.) қызметін пайдалану: Outline клиентін Outline немесе Shadowsocks протоколдарымен жұмыс істейтін үшінші тарап қызметтерімен де қолдануға болады. Мысалы:
-   - [nthLink](http://nthlink.com/) қызметі Outline клиентінің жаңартылған нұсқасы орнатылған Outline-ға негізделетін тегін қызметті іске қосады.
+   - [nthLink](https://nthlink.com/) қызметі Outline клиентінің жаңартылған нұсқасы орнатылған Outline-ға негізделетін тегін қызметті іске қосады.
    - [ASL19](https://www.reddit.com/r/outlinevpn/comments/nwu1se/the_outline_distribution_system_is_here_to_help/) Outline-ның [BeePass](https://beepassvpn.com/) деп аталатын жаңартылған нұсқасын, сондай-ақ BeePass серверлерінің тегін рұқсат кілттерін беретін [Telegram ботын](https://t.me/paskoochehbot) іске қосады.
    - Парсы тілін пайдаланушылар Outline рұқсат кілтін [ASL19 компаниясының Paskoocheh](https://outline.paskoocheh.com/) жүйесінен де сұрай алады.
 

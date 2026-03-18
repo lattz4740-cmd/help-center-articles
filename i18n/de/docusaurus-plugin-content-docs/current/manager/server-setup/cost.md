@@ -5,7 +5,7 @@ sidebar_label: "Wie viel kostet es, einen Outline-Server zu betreiben?"
 
 Outline ist für alle kostenlos, egal ob Sie ein Serveradministrator sind, der ein VPN verwaltet, oder ob Sie mithilfe von Outline auf das Internet zugreifen.
 
- Sie benötigen jedoch Zugriff auf einen Cloudserver. Serveradministratoren, die das bereits haben, können Outline ohne weitere Kosten installieren. Wenn Sie keinen Zugriff auf einen Server haben, können Sie diesen bei einem Cloud-Dienstanbieter wie [DigitalOcean](http://www.digitalocean.com/) oder Amazon Web Services für etwa 5 $ pro Monat mit einem Datenübermittlungslimit von 1 TB erwerben. Das reicht für hunderte von Nutzern auf einem einzigen Server.
+ Sie benötigen jedoch Zugriff auf einen Cloudserver. Serveradministratoren, die das bereits haben, können Outline ohne weitere Kosten installieren. Wenn Sie keinen Zugriff auf einen Server haben, können Sie diesen bei einem Cloud-Dienstanbieter wie [DigitalOcean](https://www.digitalocean.com/) oder Amazon Web Services für etwa 5 $ pro Monat mit einem Datenübermittlungslimit von 1 TB erwerben. Das reicht für hunderte von Nutzern auf einem einzigen Server.
 
  So berechnen Sie, welche Kosten durch Outline bei dem von Ihnen gewünschten Cloud-Anbieter anfallen:
 

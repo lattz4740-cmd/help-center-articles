@@ -5,7 +5,7 @@ sidebar_label: "Hvor mye koster det å kjøre Outline?"
 
 Outline-programvaren er kostnadsfri for alle, enten du er en tjeneradministrator som administrerer VPN eller du bruker Outline til å få tilgang til det åpne internettet.
 
- Du må imidlertid ha tilgang til en nettskytjener for å kjøre Outline. Tjeneradministratorer som allerede har tilgang til en tjener, kan installere Outline på den uten tilleggskostnader. De som ikke har tilgang til en nettskytjener, kan få tilgang via en leverandør av nettskytjenester, for eksempel [DigitalOcean](http://www.digitalocean.com/) eller Amazon Web Services, for omtrent USD 5 per måned for opptil 1 TB båndbredde. Dette er nok til å støtte hundrevis av brukere på én tjener.
+ Du må imidlertid ha tilgang til en nettskytjener for å kjøre Outline. Tjeneradministratorer som allerede har tilgang til en tjener, kan installere Outline på den uten tilleggskostnader. De som ikke har tilgang til en nettskytjener, kan få tilgang via en leverandør av nettskytjenester, for eksempel [DigitalOcean](https://www.digitalocean.com/) eller Amazon Web Services, for omtrent USD 5 per måned for opptil 1 TB båndbredde. Dette er nok til å støtte hundrevis av brukere på én tjener.
 
  Her er et eksempel på hvordan du kan regne ut hvor mye det vil koste å kjøre Outline med din valgte nettskyleverandør:
 

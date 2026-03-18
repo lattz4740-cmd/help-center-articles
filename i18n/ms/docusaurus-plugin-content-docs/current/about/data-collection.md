@@ -13,7 +13,7 @@ Outline tidak mengumpulkan maklumat peribadi melainkan anda memilih untuk member
 
  1. IP Pelayan
 
- IP pelayan Outline dikumpulkan oleh [Quay.io](http://quay.io/) dan boleh kami akses apabila pelayan dikemaskinikan secara automatik dengan keselamatan dan peningkatan ciri terkini. IP Pelayan boleh mengenal pasti penyedia pelayan awan dan bandar tempat pelayan Outline disediakan tetapi maklumat tentang pengguna yang menjalankan pelayan atau pengguna yang sedang mengakses pelayan tersebut tidak disediakan.
+ IP pelayan Outline dikumpulkan oleh [Quay.io](https://quay.io/) dan boleh kami akses apabila pelayan dikemaskinikan secara automatik dengan keselamatan dan peningkatan ciri terkini. IP Pelayan boleh mengenal pasti penyedia pelayan awan dan bandar tempat pelayan Outline disediakan tetapi maklumat tentang pengguna yang menjalankan pelayan atau pengguna yang sedang mengakses pelayan tersebut tidak disediakan.
 
  2. Maklumat teknikal bukan peribadi yang boleh dikenal pasti
 
@@ -30,7 +30,7 @@ Outline tidak mengumpulkan maklumat peribadi melainkan anda memilih untuk member
 - Seni bina
 - Versi dan nombor binaan Outline
 
-Maklumat ini dipindahkan menggunakan HTTPS kepada Sentry ([sentry.io](http://sentry.io/)), sebuah penyedia penjejakan ralat sumber terbuka pihak ketiga. Sentry menggunakan pelbagai teknologi dan perkhidmatan standard industri untuk melindungi data anda daripada akses tanpa izin, pendedahan, penggunaan dan kehilangan. Jika anda mempunyai apa-apa pertanyaan tentang dasar Sentry, sila lawati [https://sentry.io/security/](https://sentry.io/security/) dan [https://sentry.io/privacy/](https://sentry.io/privacy/) atau hubungi [security@sentry.io](mailto:security@sentry.io). Semua data Outline yang disimpan oleh Sentry dihadkan supaya hanya ahli pasukan Outline boleh mengakses data itu.
+Maklumat ini dipindahkan menggunakan HTTPS kepada Sentry ([sentry.io](https://sentry.io/)), sebuah penyedia penjejakan ralat sumber terbuka pihak ketiga. Sentry menggunakan pelbagai teknologi dan perkhidmatan standard industri untuk melindungi data anda daripada akses tanpa izin, pendedahan, penggunaan dan kehilangan. Jika anda mempunyai apa-apa pertanyaan tentang dasar Sentry, sila lawati [https://sentry.io/security/](https://sentry.io/security/) dan [https://sentry.io/privacy/](https://sentry.io/privacy/) atau hubungi [security@sentry.io](mailto:security@sentry.io). Semua data Outline yang disimpan oleh Sentry dihadkan supaya hanya ahli pasukan Outline boleh mengakses data itu.
 
 ****Maklumat yang kami peroleh sewaktu anda ikut serta****
 

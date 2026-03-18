@@ -45,8 +45,8 @@ Automatyczna konfiguracja Google Cloud wykorzystuje 1 [projekt Google Cloud](htt
 
 ## Konto rozliczeniowe
 
-Z projektami Google Cloud należy połączyć „konto rozliczeniowe”, które określa informacje o płatnościach. Po pierwszym uruchomieniu automatycznej konfiguracji Google Cloud zobaczysz prośbę o podanie konta rozliczeniowego, które będzie powiązane z Twoimi serwerami Outline. Czasami serwer przestaje działać, ponieważ wystąpił problem z kontem rozliczeniowym. W takim przypadku zaloguj się w [Google Cloud Console](https://console.cloud.google.com/), znajdź projekt Google Cloud powiązany z Outline (o nazwie „Serwery Outline”) i zaktualizuj ustawienia płatności.
+Z projektami Google Cloud należy połączyć „konto rozliczeniowe”, które określa informacje o płatnościach. Po pierwszym uruchomieniu automatycznej konfiguracji Google Cloud zobaczysz prośbę o podanie konta rozliczeniowego, które będzie powiązane z Twoimi serwerami Outline. Czasami serwer przestaje działać, ponieważ wystąpił problem z kontem rozliczeniowym. W takim przypadku zaloguj się w [Google Cloud Console](https://console.cloud.google.com/getting-started), znajdź projekt Google Cloud powiązany z Outline (o nazwie „Serwery Outline”) i zaktualizuj ustawienia płatności.
 
 ## Niszczenie serwerów
 
-Jeśli chcesz zniszczyć serwery utworzone w ramach automatycznej konfiguracji, najprostszym sposobem jest skorzystanie z Menedżera Outline. Jeśli jednak wolisz samodzielnie zniszczyć serwery, możesz zalogować się w [Google Cloud Console](https://console.cloud.google.com/), znaleźć projekt utworzony podczas początkowej konfiguracji (o nazwie „Serwery Outline”) i usunąć z niego zasoby lub wyłączyć sam projekt.
+Jeśli chcesz zniszczyć serwery utworzone w ramach automatycznej konfiguracji, najprostszym sposobem jest skorzystanie z Menedżera Outline. Jeśli jednak wolisz samodzielnie zniszczyć serwery, możesz zalogować się w [Google Cloud Console](https://console.cloud.google.com/getting-started), znaleźć projekt utworzony podczas początkowej konfiguracji (o nazwie „Serwery Outline”) i usunąć z niego zasoby lub wyłączyć sam projekt.

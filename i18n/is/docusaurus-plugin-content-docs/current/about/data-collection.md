@@ -13,7 +13,7 @@ Outline safnar ekki persónuupplýsingum nema þú samþykkir að gefa þær upp
 
  1. IP-tala
 
- Outline-þjóns er skráð hjá [Quay.io](http://quay.io/) og við fáum aðgang að henni þegar þjóninn uppfærist sjálfkrafa með nýjustu öryggis- og eiginleikaúrbótunum. IP-tala þjónsins kann að auðkenna skýjaþjónustuna sem er notuð og borgina þar sem Outline-þjóninn er uppsettur en engar upplýsingar eru veittar um það hver rekur þjóninn eða hvaða aðilar hafa aðgang að honum.
+ Outline-þjóns er skráð hjá [Quay.io](https://quay.io/) og við fáum aðgang að henni þegar þjóninn uppfærist sjálfkrafa með nýjustu öryggis- og eiginleikaúrbótunum. IP-tala þjónsins kann að auðkenna skýjaþjónustuna sem er notuð og borgina þar sem Outline-þjóninn er uppsettur en engar upplýsingar eru veittar um það hver rekur þjóninn eða hvaða aðilar hafa aðgang að honum.
 
  2. Ópersónugreinanlegar tækniupplýsingar
 
@@ -30,7 +30,7 @@ Outline safnar ekki persónuupplýsingum nema þú samþykkir að gefa þær upp
 - Uppbygging
 - Útgáfa Outline og útgáfunúmer smíðar
 
-Þessar upplýsingar eru fluttar með HTTPS til Sentry ([sentry.io](http://sentry.io/)) sem er villuskráningarþjónusta þriðja aðila með opinn kóða. Sentry notar ýmsa tækni og þjónustu sem stenst staðla atvinnugreinarinnar til að gæta öryggis gagnanna þinna til að koma í veg fyrir óheimila notkun þeirra, uppljóstrun, notkun og tap. Ef þú ert með spurningar um reglur Sentry skaltu skoða [https://sentry.io/security/](https://sentry.io/security/) og [https://sentry.io/privacy/](https://sentry.io/privacy/) eða hafa samband við [security@sentry.io](mailto:security@sentry.io). Öll Outline-gögn sem Sentry geymir eru lokuð óviðkomandi aðilum svo aðeins starfsfólk Outline hafi aðgang að þeim.
+Þessar upplýsingar eru fluttar með HTTPS til Sentry ([sentry.io](https://sentry.io/)) sem er villuskráningarþjónusta þriðja aðila með opinn kóða. Sentry notar ýmsa tækni og þjónustu sem stenst staðla atvinnugreinarinnar til að gæta öryggis gagnanna þinna til að koma í veg fyrir óheimila notkun þeirra, uppljóstrun, notkun og tap. Ef þú ert með spurningar um reglur Sentry skaltu skoða [https://sentry.io/security/](https://sentry.io/security/) og [https://sentry.io/privacy/](https://sentry.io/privacy/) eða hafa samband við [security@sentry.io](mailto:security@sentry.io). Öll Outline-gögn sem Sentry geymir eru lokuð óviðkomandi aðilum svo aðeins starfsfólk Outline hafi aðgang að þeim.
 
 ****Upplýsingar sem við fáum aðeins þegar samþykki liggur fyrir****
 

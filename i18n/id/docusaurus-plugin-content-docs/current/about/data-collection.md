@@ -13,7 +13,7 @@ Outline tidak mengumpulkan informasi pribadi kecuali jika Anda memilih untuk mem
 
  1. IP Server
 
- IP server Outline dikumpulkan oleh [Quay.io](http://quay.io/), dan dapat diakses oleh kami jika server diupdate secara otomatis menggunakan penyempurnaan keamanan dan fitur terbaru. IP Server dapat mengidentifikasi penyedia server cloud dan kota tempat server Outline disiapkan, tetapi hal ini tidak akan memberikan informasi tentang siapa yang menjalankan atau mengakses server.
+ IP server Outline dikumpulkan oleh [Quay.io](https://quay.io/), dan dapat diakses oleh kami jika server diupdate secara otomatis menggunakan penyempurnaan keamanan dan fitur terbaru. IP Server dapat mengidentifikasi penyedia server cloud dan kota tempat server Outline disiapkan, tetapi hal ini tidak akan memberikan informasi tentang siapa yang menjalankan atau mengakses server.
 
  2. Informasi teknis non-pribadi yang dapat diidentifikasi
 
@@ -30,7 +30,7 @@ Outline tidak mengumpulkan informasi pribadi kecuali jika Anda memilih untuk mem
 - Arsitektur
 - Versi dan nomor versi Outline
 
-Informasi ini ditransfer menggunakan HTTPS ke Sentry ([sentry.io](http://sentry.io/)), penyedia layanan pelacakan error pihak ketiga yang bersifat open source. Sentry menggunakan berbagai teknologi dan layanan standar industri untuk melindungi data Anda dari akses, pengungkapan, dan penggunaan yang tidak sah, atau kehilangan. Jika Anda memiliki pertanyaan terkait kebijakan Sentry, harap buka [https://sentry.io/security/](https://sentry.io/security/) dan [https://sentry.io/privacy/](https://sentry.io/privacy/), atau hubungi [security@sentry.io](mailto:security@sentry.io). Semua data Outline yang disimpan oleh Sentry dibatasi sehingga hanya anggota tim Outline yang dapat mengaksesnya.
+Informasi ini ditransfer menggunakan HTTPS ke Sentry ([sentry.io](https://sentry.io/)), penyedia layanan pelacakan error pihak ketiga yang bersifat open source. Sentry menggunakan berbagai teknologi dan layanan standar industri untuk melindungi data Anda dari akses, pengungkapan, dan penggunaan yang tidak sah, atau kehilangan. Jika Anda memiliki pertanyaan terkait kebijakan Sentry, harap buka [https://sentry.io/security/](https://sentry.io/security/) dan [https://sentry.io/privacy/](https://sentry.io/privacy/), atau hubungi [security@sentry.io](mailto:security@sentry.io). Semua data Outline yang disimpan oleh Sentry dibatasi sehingga hanya anggota tim Outline yang dapat mengaksesnya.
 
 ****Kami memperoleh informasi hanya dengan izin pengguna****
 

@@ -10,7 +10,7 @@ Outline ist kein VPN-Dienst mit kostenpflichtigem Zugriff: Vielmehr ist es [ein 
 - Zugriff anfragen: Bitten Sie jemanden mit einem Outline-Server um einen Zugriffsschlüssel, über den Sie dann Zugriff auf dessen Server haben.
 - [Eigenen Server einrichten](/manager/server-setup/setup-server): Laden Sie [Outline-Manager](https://getoutline.org/get-started/#step-1) für Windows, Mac oder Linux herunter und richten Sie Ihren eigenen privaten [Outline-Server](/about/terminology) ein. Die Einrichtung ist sehr nutzerfreundlich und intuitiv, insbesondere wenn Sie den Cloud-Anbieter DigitalOcean verwenden.
 - Über Drittanbieterdienste mit Outline oder [Shadowsocks](https://en.wikipedia.org/wiki/Shadowsocks#:~:text=Shadowsocks%20is%20a%20free%20and,have%20been%20made%20available%20since.): Sie können den Outline-Client über Drittanbieterdienste nutzen, die Outline oder das Verschlüsselungsprotokoll Shadowsocks verwenden. Beispiel:
-   - [nthLink](http://nthlink.com/) bietet einen kostenlosen Dienst mit einer abgeänderten Version des Outline-Clients an.
+   - [nthLink](https://nthlink.com/) bietet einen kostenlosen Dienst mit einer abgeänderten Version des Outline-Clients an.
    - [ASL19](https://www.reddit.com/r/outlinevpn/comments/nwu1se/the_outline_distribution_system_is_here_to_help/) betreibt die abgeänderte Outline-Version [BeePass](https://beepassvpn.com/) und einen [Telegram-Bot](https://t.me/paskoochehbot), über den Sie einen Zugriffsschlüssel für die BeePass-Server anfragen können.
    - Nutzer der persischen Version können einen Outline-Zugriffsschlüssel über [Paskoocheh von ASL19](https://outline.paskoocheh.com/) anfragen.
 

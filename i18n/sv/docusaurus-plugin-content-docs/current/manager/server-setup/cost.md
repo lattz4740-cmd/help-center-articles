@@ -5,7 +5,7 @@ sidebar_label: "Vad kostar det att köra Outline?"
 
 Outlines mjukvara är gratis för alla, oavsett om du är serveradministratör och hanterar VPN eller någon som kommer åt den öppna webben via Outline.
 
- Du måste däremot har en molnserver för att köra Outline. Serveradministratörer som redan har åtkomst till en server kan installera Outline på den utan extra kostnad. De som inte har åtkomst till en server kan få åtkomst via en leverantör av molntjänster, exempelvis [DigitalOcean](http://www.digitalocean.com/) eller Amazon Web Services, för ungefär 5 USD per månad för 1 TB av dataöverföringar. Det är tillräckligt för hundratals användare på en server.
+ Du måste däremot har en molnserver för att köra Outline. Serveradministratörer som redan har åtkomst till en server kan installera Outline på den utan extra kostnad. De som inte har åtkomst till en server kan få åtkomst via en leverantör av molntjänster, exempelvis [DigitalOcean](https://www.digitalocean.com/) eller Amazon Web Services, för ungefär 5 USD per månad för 1 TB av dataöverföringar. Det är tillräckligt för hundratals användare på en server.
 
  Ett exempel på hur du kan räkna ut hur mycket det skulle kosta att köra Outline med den molnleveratör du vill ha:
 

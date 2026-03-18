@@ -13,7 +13,7 @@ Az Outline kizárólag akkor gyűjt be személyes adatokat, ha azt Ön engedély
 
  1. A szerver IP-címe
 
- Az Outline-szerver IP-címét a [Quay.io](http://quay.io/) szolgáltatás gyűjti be és teszi számunkra hozzáférhetővé, amikor a szerver automatikusan frissül a legújabb biztonsági funkciókkal és más fejlesztésekkel. A szerver IP-címe alapján azonosítható a felhőszolgáltató, illetve az a település, ahol az Outline-szerver üzemel, de az, hogy ki futtatja a szervert, és ki fér hozzá, nem fejthető ki ebből az információból.
+ Az Outline-szerver IP-címét a [Quay.io](https://quay.io/) szolgáltatás gyűjti be és teszi számunkra hozzáférhetővé, amikor a szerver automatikusan frissül a legújabb biztonsági funkciókkal és más fejlesztésekkel. A szerver IP-címe alapján azonosítható a felhőszolgáltató, illetve az a település, ahol az Outline-szerver üzemel, de az, hogy ki futtatja a szervert, és ki fér hozzá, nem fejthető ki ebből az információból.
 
  2. Személyazonosításra nem alkalmas, műszaki jellegű információk
 
@@ -30,7 +30,7 @@ Az Outline kizárólag akkor gyűjt be személyes adatokat, ha azt Ön engedély
 - Architektúra
 - Az Outline verziószáma és buildszáma.
 
-Ezeket az adatokat HTTPS protokollon keresztül küldi el az alkalmazás a Sentry ([sentry.io](http://sentry.io/)) rendszerébe, amely egy nyílt forráskódot használó, harmadik fél hibakövetési szolgáltató. A Sentry többféle, az ipari szabványoknak megfelelő technológiával és szolgáltatással óvja meg adatait a jogosulatlan hozzáféréstől, kiszivárgástól, használattól és elvesztéstől. Ha kérdése van a Sentry irányelveivel kapcsolatban, látogasson el a [https://sentry.io/security/](https://sentry.io/security/) és a [https://sentry.io/privacy/](https://sentry.io/privacy/) webhelyre, vagy írjon a [security@sentry.io](mailto:security@sentry.io) címre. A Sentry által tárolt összes Outline-adat korlátozva van, így csak az Outline-csapat tagjai férhetnek hozzájuk.
+Ezeket az adatokat HTTPS protokollon keresztül küldi el az alkalmazás a Sentry ([sentry.io](https://sentry.io/)) rendszerébe, amely egy nyílt forráskódot használó, harmadik fél hibakövetési szolgáltató. A Sentry többféle, az ipari szabványoknak megfelelő technológiával és szolgáltatással óvja meg adatait a jogosulatlan hozzáféréstől, kiszivárgástól, használattól és elvesztéstől. Ha kérdése van a Sentry irányelveivel kapcsolatban, látogasson el a [https://sentry.io/security/](https://sentry.io/security/) és a [https://sentry.io/privacy/](https://sentry.io/privacy/) webhelyre, vagy írjon a [security@sentry.io](mailto:security@sentry.io) címre. A Sentry által tárolt összes Outline-adat korlátozva van, így csak az Outline-csapat tagjai férhetnek hozzájuk.
 
 ****A kizárólag a felhasználók külön engedélyével gyűjtött információk****
 

@@ -5,7 +5,7 @@ sidebar_label: "Cât costă să rulez Outline?"
 
 Software-ul Outline este gratuit pentru toată lumea, indiferent dacă sunteți administrator de server care administrează un VPN sau cineva care utilizează Outline pentru a accesa internetul liber.
 
- Outline necesită totuși acces la un server cloud pentru a putea rula. Administratorii de servere care au deja acces la un server pot instala Outline pe acesta fără niciun cost suplimentar. Persoanele care nu au acces la un server pot obține acces de la un furnizor de servicii cloud, de exemplu, [DigitalOcean](http://www.digitalocean.com/) sau Amazon Web Services, pentru aproximativ 5 USD pe lună pentru transfer de date de până la un terabyte, volum suficient pentru sute de utilizatori pe un singur server.
+ Outline necesită totuși acces la un server cloud pentru a putea rula. Administratorii de servere care au deja acces la un server pot instala Outline pe acesta fără niciun cost suplimentar. Persoanele care nu au acces la un server pot obține acces de la un furnizor de servicii cloud, de exemplu, [DigitalOcean](https://www.digitalocean.com/) sau Amazon Web Services, pentru aproximativ 5 USD pe lună pentru transfer de date de până la un terabyte, volum suficient pentru sute de utilizatori pe un singur server.
 
  Iată un exemplu de calcul pentru stabilirea costurilor pe care le implică rularea software-ului Outline prin furnizorul de servicii cloud ales de dvs.
 

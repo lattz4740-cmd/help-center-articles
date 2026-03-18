@@ -45,8 +45,8 @@ Google Cloud 자동 설정에서는 단일 [Google Cloud 프로젝트](https://c
 
 ## 결제 계정
 
-Google Cloud 프로젝트에는 결제 정보를 정의하는 연결된 '결제 계정'이 필요합니다. Google Cloud 자동 설정을 처음 사용할 때 Outline 서버와 연결할 결제 계정을 제공하라는 메시지가 표시됩니다. 결제 계정에 문제가 있어 서버 실행이 중지되는 경우가 있습니다. 이 경우 [Google Cloud Console](https://console.cloud.google.com/)에 로그인하여 Outline과 연결된 Google Cloud 프로젝트(‘Outline 서버’라고 함)를 찾아 결제 설정을 업데이트해야 합니다.
+Google Cloud 프로젝트에는 결제 정보를 정의하는 연결된 '결제 계정'이 필요합니다. Google Cloud 자동 설정을 처음 사용할 때 Outline 서버와 연결할 결제 계정을 제공하라는 메시지가 표시됩니다. 결제 계정에 문제가 있어 서버 실행이 중지되는 경우가 있습니다. 이 경우 [Google Cloud Console](https://console.cloud.google.com/getting-started)에 로그인하여 Outline과 연결된 Google Cloud 프로젝트(‘Outline 서버’라고 함)를 찾아 결제 설정을 업데이트해야 합니다.
 
 ## 서버 폐기
 
-자동 설정을 사용하여 생성된 서버를 폐기하려는 경우 Outline Manager 내에서 가장 간편하게 폐기할 수 있습니다. 하지만 서버를 직접 폐기하려면 [Google Cloud Console](https://console.cloud.google.com/)에 로그인하여 초기 설정 중에 생성된 프로젝트(‘Outline 서버’라고 함)를 찾아 리소스를 삭제하거나 프로젝트를 종료할 수 있습니다.
+자동 설정을 사용하여 생성된 서버를 폐기하려는 경우 Outline Manager 내에서 가장 간편하게 폐기할 수 있습니다. 하지만 서버를 직접 폐기하려면 [Google Cloud Console](https://console.cloud.google.com/getting-started)에 로그인하여 초기 설정 중에 생성된 프로젝트(‘Outline 서버’라고 함)를 찾아 리소스를 삭제하거나 프로젝트를 종료할 수 있습니다.

@@ -10,7 +10,7 @@ Outline ບໍ່ຄືກັບບໍລິການ VPN ທີ່ທ່ານ�
 - ຂໍໃຫ້ຜູ້ໃດຜູ້ໜຶ່ງເຊີນທ່ານເຂົ້າເຊີບເວີຂອງເຂົາເຈົ້າ: ຫາກທ່ານຮູ້ຈັກບຸກຄົນທີ່ມີເຊີບເວີ Outline, ໃຫ້ຕິດຕໍ່ບຸກຄົນດັ່ງກ່າວ ແລະ ຂໍກະແຈການເຂົ້າເຖິງຈາກເຂົາເຈົ້າ.
 - [ສ້າງເຊີບເວີຂອງທ່ານເອງ:](/manager/server-setup/setup-server) ໂດຍໃຊ້ຄອມພິວເຕີ Windows, Mac ຫຼື Linux, ໃຫ້ດາວໂຫຼດ [Outline Manager](https://getoutline.org/get-started/#step-1) ແລ້ວຕັ້ງຄ່າ [ເຊີບເວີ Outline](/about/terminology) ສ່ວນຕົວຂອງທ່ານເອງ. ພວກເຮົາເຮັດໃຫ້ຂະບວນການນີ້ງ່າຍສຳລັບທຸກຄົນ, ໂດຍສະເພາະເມື່ອໃຊ້ຜ່ານຜູ້ໃຫ້ບໍລິການລະບົບຄລາວ DigitalOcean.
 - ໃຊ້ບໍລິການຂອງ Outline ຫຼື [Shadowsocks](https://en.wikipedia.org/wiki/Shadowsocks#:~:text=Shadowsocks%20is%20a%20free%20and,have%20been%20made%20available%20since.): ທ່ານຍັງສາມາດໃຊ້ລູກຂ່າຍ Outline ກັບບໍລິການຂອງພາກສ່ວນທີສາມທີ່ໃຊ້ໂປຣໂຕຄໍ Outline ຫຼື Shadowsocks ໄດ້ນຳ. ຕົວຢ່າງ:
-   - [nthLink](http://nthlink.com/) ໃຫ້ບໍລິການຟຣີໂດຍອີງຕາມ Outline, ເຊິ່ງເຮັດວຽກຮ່ວມກັບລູກຂ່າຍ Outline ເວີຊັນທີ່ຜ່ານການປັບແຕ່ງ.
+   - [nthLink](https://nthlink.com/) ໃຫ້ບໍລິການຟຣີໂດຍອີງຕາມ Outline, ເຊິ່ງເຮັດວຽກຮ່ວມກັບລູກຂ່າຍ Outline ເວີຊັນທີ່ຜ່ານການປັບແຕ່ງ.
    - [ASL19](https://www.reddit.com/r/outlinevpn/comments/nwu1se/the_outline_distribution_system_is_here_to_help/) ໃຫ້ບໍລິການ Outline ເວີຊັນທີ່ຜ່ານການປັບແຕ່ງທີ່ຊື່ [BeePass](https://beepassvpn.com/) ເຊັ່ນດຽວກັນກັບ [Telegram Bot](https://t.me/paskoochehbot) ເຊິ່ງມອບກະແຈການເຂົ້າເຖິງຟຣີສຳລັບເຊີບເວີ BeePass.
    - ຜູ້ໃຊ້ພາສາຟາຊີຍັງສາມາດຂໍກະແຈການເຂົ້າເຖິງ Outline ຈາກ [Paskoocheh ຂອງ ASL19](https://outline.paskoocheh.com/) ໄດ້ເຊັ່ນກັນ.
 

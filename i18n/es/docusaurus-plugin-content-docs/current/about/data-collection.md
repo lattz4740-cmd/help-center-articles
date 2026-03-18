@@ -13,7 +13,7 @@ Outline no recoge información personal, a menos que aceptes proporcionarla. Tam
 
  1. IP del servidor
 
-[Quay.io](http://quay.io/) obtiene la IP del servidor de Outline y nos la facilita cuando el servidor instala automáticamente las mejoras de seguridad y funciones más recientes. Puede que mediante la IP del servidor se pueda identificar al proveedor del servidor basado en la nube y la ciudad donde se ha configurado el servidor de Outline, pero no se podrá saber quién utiliza el servidor ni quién accede a él.
+[Quay.io](https://quay.io/) obtiene la IP del servidor de Outline y nos la facilita cuando el servidor instala automáticamente las mejoras de seguridad y funciones más recientes. Puede que mediante la IP del servidor se pueda identificar al proveedor del servidor basado en la nube y la ciudad donde se ha configurado el servidor de Outline, pero no se podrá saber quién utiliza el servidor ni quién accede a él.
 
  2. Información técnica que no permite identificar personalmente al usuario
 
@@ -30,7 +30,7 @@ Outline no recoge información personal, a menos que aceptes proporcionarla. Tam
 - Arquitectura
 - Versión y número de compilación de Outline
 
-Esta información se transfiere mediante HTTPS A Sentry ([sentry.io](http://sentry.io/)), un proveedor externo de código abierto para monitorizar errores. Sentry utiliza diferentes tecnologías y servicios estándares del sector para proteger tus datos contra el acceso, uso o divulgación no autorizados y para evitar su filtración. Si tienes alguna duda sobre las políticas de Sentry, visita [https://sentry.io/security/](https://sentry.io/security/) y [https://sentry.io/privacy/](https://sentry.io/privacy/), o escribe un correo a [security@sentry.io](mailto:security@sentry.io). Los datos de Outline que guarda Sentry están restringidos, de modo que solo los miembros del equipo de Outline pueden acceder a ellos.
+Esta información se transfiere mediante HTTPS A Sentry ([sentry.io](https://sentry.io/)), un proveedor externo de código abierto para monitorizar errores. Sentry utiliza diferentes tecnologías y servicios estándares del sector para proteger tus datos contra el acceso, uso o divulgación no autorizados y para evitar su filtración. Si tienes alguna duda sobre las políticas de Sentry, visita [https://sentry.io/security/](https://sentry.io/security/) y [https://sentry.io/privacy/](https://sentry.io/privacy/), o escribe un correo a [security@sentry.io](mailto:security@sentry.io). Los datos de Outline que guarda Sentry están restringidos, de modo que solo los miembros del equipo de Outline pueden acceder a ellos.
 
 ****Información que obtenemos solo tras la aceptación****
 

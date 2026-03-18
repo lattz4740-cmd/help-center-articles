@@ -5,7 +5,7 @@ sidebar_label: "Apakah kos menjalankan Outline?"
 
 Perisian Outline adalah percuma untuk sesiapa sahaja, sama ada anda pentadbir pelayan yang mengurus VPN atau seseorang yang menggunakan Outline untuk mengakses Internet terbuka.
 
- Walau bagaimanapun, Outline memerlukan akses kepada pelayan awan untuk dijalankan. Pentadbir pelayan yang sudah mempunyai akses kepada pelayan boleh memasang Outline pada pelayan tersebut tanpa dikenakan sebarang kos tambahan. Mereka yang tiada akses kepada pelayan boleh mendapatkan akses daripada penyedia perkhidmatan awan seperti [DigitalOcean](http://www.digitalocean.com/) atau Amazon Web Services untuk kira-kira $5 USD sebulan untuk 1 terabait pemindahan data yang dibenarkan — ini memadai untuk menyokong ratusan pengguna pada satu pelayan tunggal.
+ Walau bagaimanapun, Outline memerlukan akses kepada pelayan awan untuk dijalankan. Pentadbir pelayan yang sudah mempunyai akses kepada pelayan boleh memasang Outline pada pelayan tersebut tanpa dikenakan sebarang kos tambahan. Mereka yang tiada akses kepada pelayan boleh mendapatkan akses daripada penyedia perkhidmatan awan seperti [DigitalOcean](https://www.digitalocean.com/) atau Amazon Web Services untuk kira-kira $5 USD sebulan untuk 1 terabait pemindahan data yang dibenarkan — ini memadai untuk menyokong ratusan pengguna pada satu pelayan tunggal.
 
  Satu contoh cara anda boleh membuat pengiraan untuk menentukan kos menjalankan Outline dengan penyedia awan pilihan anda:
 

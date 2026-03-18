@@ -13,7 +13,7 @@ sidebar_label: 資料和資訊收集
 
  1. 伺服器 IP
 
- Outline 伺服器根據最新的安全性和功能改良自動更新時，[Quay.io](http://quay.io/) 會收集伺服器 IP 並提供給我們。我們可以透過伺服器 IP 辨識雲端伺服器供應商和 Outline 伺服器所在的城市，但無法得知正在執行或存取伺服器的使用者是誰。
+ Outline 伺服器根據最新的安全性和功能改良自動更新時，[Quay.io](https://quay.io/) 會收集伺服器 IP 並提供給我們。我們可以透過伺服器 IP 辨識雲端伺服器供應商和 Outline 伺服器所在的城市，但無法得知正在執行或存取伺服器的使用者是誰。
 
  2. 無法用於識別個人身分的技術性資料
 
@@ -30,7 +30,7 @@ sidebar_label: 資料和資訊收集
 - 架構
 - Outline 版本和版本號碼
 
-系統會透過 HTTPS 將這些資訊傳送給第三方開放原始碼錯誤追蹤供應商 Sentry ([sentry.io](http://sentry.io/))；Sentry 使用多種符合業界標準的技術和服務來防止使用者資料遺失，避免這些資料經未授權存取、披露及使用。如果你對 Sentry 的政策有任何疑問，請前往 [https://sentry.io/security/](https://sentry.io/security/) 和 [https://sentry.io/privacy/](https://sentry.io/privacy/)，或聯絡 [security@sentry.io](mailto:security@sentry.io) 瞭解詳情。所有由 Sentry 儲存的 Outline 資料都受到嚴密監管，只限 Outline 團隊成員存取。
+系統會透過 HTTPS 將這些資訊傳送給第三方開放原始碼錯誤追蹤供應商 Sentry ([sentry.io](https://sentry.io/))；Sentry 使用多種符合業界標準的技術和服務來防止使用者資料遺失，避免這些資料經未授權存取、披露及使用。如果你對 Sentry 的政策有任何疑問，請前往 [https://sentry.io/security/](https://sentry.io/security/) 和 [https://sentry.io/privacy/](https://sentry.io/privacy/)，或聯絡 [security@sentry.io](mailto:security@sentry.io) 瞭解詳情。所有由 Sentry 儲存的 Outline 資料都受到嚴密監管，只限 Outline 團隊成員存取。
 
 ****我們在你選擇接受後才會取得的資料****
 

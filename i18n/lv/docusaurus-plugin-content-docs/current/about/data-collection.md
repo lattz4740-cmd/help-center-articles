@@ -13,7 +13,7 @@ Outline nevāc personas informāciju, ja vien jūs nepiekrītat tās sniegšanai
 
  1. Servera IP adrese
 
- Outline servera IP adresi vāc un padara mums pieejamu vietne [Quay.io](http://quay.io/), kad serveris tiek automātiski atjaunināts. izmantojot jaunākos drošības un funkciju uzlabojumus. Izmantojot servera IP adresi, var identificēt mākoņservera pakalpojumu sniedzēju un pilsētu, kurā ir uzstādīts Outline serveris, taču nav iespējams iegūt informāciju par to, kurš serveri darbina vai kurš tam piekļūst.
+ Outline servera IP adresi vāc un padara mums pieejamu vietne [Quay.io](https://quay.io/), kad serveris tiek automātiski atjaunināts. izmantojot jaunākos drošības un funkciju uzlabojumus. Izmantojot servera IP adresi, var identificēt mākoņservera pakalpojumu sniedzēju un pilsētu, kurā ir uzstādīts Outline serveris, taču nav iespējams iegūt informāciju par to, kurš serveri darbina vai kurš tam piekļūst.
 
  2. Personu neidentificējoša tehniska informācija
 
@@ -30,7 +30,7 @@ Outline nevāc personas informāciju, ja vien jūs nepiekrītat tās sniegšanai
 - Arhitektūra
 - Outline versija un būvējuma numurs
 
-Šī informācija, izmantojot HTTPS, tiek pārsūtīta uzņēmumam Sentry ([sentry.io](http://sentry.io/)), kas ir trešās puses atvērtā pirmkoda kļūdu izsekošanas nodrošinātājs. Sentry izmanto dažādas nozares standarta tehnoloģijas un pakalpojumus, lai pasargātu jūsu datus no nesankcionētas piekļuves, izpaušanas, izmantošanas vai zaudēšanas. Ja jums rodas kādi jautājumi par uzņēmuma Sentry politikām, lūdzu, apmeklējiet vietni [https://sentry.io/security/](https://sentry.io/security/) un[https://sentry.io/privacy/](https://sentry.io/privacy/) vai sazinieties, izmantojot e-pasta adresi [security@sentry.io](mailto:security@sentry.io). Piekļuve visiem Outline datiem, ko glabā uzņēmums Sentry, ir ierobežota — tiem var piekļūt tikai Outline komanda.
+Šī informācija, izmantojot HTTPS, tiek pārsūtīta uzņēmumam Sentry ([sentry.io](https://sentry.io/)), kas ir trešās puses atvērtā pirmkoda kļūdu izsekošanas nodrošinātājs. Sentry izmanto dažādas nozares standarta tehnoloģijas un pakalpojumus, lai pasargātu jūsu datus no nesankcionētas piekļuves, izpaušanas, izmantošanas vai zaudēšanas. Ja jums rodas kādi jautājumi par uzņēmuma Sentry politikām, lūdzu, apmeklējiet vietni [https://sentry.io/security/](https://sentry.io/security/) un[https://sentry.io/privacy/](https://sentry.io/privacy/) vai sazinieties, izmantojot e-pasta adresi [security@sentry.io](mailto:security@sentry.io). Piekļuve visiem Outline datiem, ko glabā uzņēmums Sentry, ir ierobežota — tiem var piekļūt tikai Outline komanda.
 
 ****Informācija, ko iegūstam tikai pēc pieprasījuma****
 

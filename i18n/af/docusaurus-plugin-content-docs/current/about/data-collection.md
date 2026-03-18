@@ -13,7 +13,7 @@ Outline samel nie persoonlike inligting in nie, tensy jy intekening aanvaar om d
 
  1. Bediener-IP
 
- Die Outline-bediener-IP word deur [Quay.io](http://quay.io/) ingesamel en toegang vir ons gegee wanneer die bediener outomaties met die jongste sekuriteit- en kenmerkverbeterings opgedateer word. Die bediener-IP kan identifiseer wie die wolkbedienerverskaffer is en die stad waar die Outline-bediener opgestel is, maar dit verskaf nie inligting oor wie die bediener laat loop of wie dit oopmaak nie.
+ Die Outline-bediener-IP word deur [Quay.io](https://quay.io/) ingesamel en toegang vir ons gegee wanneer die bediener outomaties met die jongste sekuriteit- en kenmerkverbeterings opgedateer word. Die bediener-IP kan identifiseer wie die wolkbedienerverskaffer is en die stad waar die Outline-bediener opgestel is, maar dit verskaf nie inligting oor wie die bediener laat loop of wie dit oopmaak nie.
 
  2. Tegniese inligting wat jou nie persoonlik identifiseer nie
 
@@ -30,7 +30,7 @@ Outline samel nie persoonlike inligting in nie, tensy jy intekening aanvaar om d
 - Argitektuur
 - Outline-weergawe en -bounommer
 
-Hierdie inligting word met HTTPS oorgedra na Sentry ([sentry.io](http://sentry.io/)), ’n derdepartyverskaffer van oopbronfoutnasporing. Sentry gebruik ’n verskeidenheid bedryfstandaardtegnologieë en -dienste om jou data teen ongemagtigde toegang, openbaarmaking, gebruik en verlies te beveilig. Indien jy enige vrae oor Sentry se beleide het, kan jy [https://sentry.io/security/](https://sentry.io/security/) en [https://sentry.io/privacy/](https://sentry.io/privacy/) besoek of [security@sentry.io](mailto:security@sentry.io) kontak. Alle Outline-data wat deur Sentry geberg word, word só beperk dat slegs lede van die Outline-span toegang daartoe het.
+Hierdie inligting word met HTTPS oorgedra na Sentry ([sentry.io](https://sentry.io/)), ’n derdepartyverskaffer van oopbronfoutnasporing. Sentry gebruik ’n verskeidenheid bedryfstandaardtegnologieë en -dienste om jou data teen ongemagtigde toegang, openbaarmaking, gebruik en verlies te beveilig. Indien jy enige vrae oor Sentry se beleide het, kan jy [https://sentry.io/security/](https://sentry.io/security/) en [https://sentry.io/privacy/](https://sentry.io/privacy/) besoek of [security@sentry.io](mailto:security@sentry.io) kontak. Alle Outline-data wat deur Sentry geberg word, word só beperk dat slegs lede van die Outline-span toegang daartoe het.
 
 ****Inligting wat ons kry slegs wanneer jy intekening aanvaar****
 

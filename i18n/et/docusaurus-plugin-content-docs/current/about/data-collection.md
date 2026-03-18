@@ -13,7 +13,7 @@ Outline ei kogu isikuandmeid, v.a juhul, kui nõustute nende esitamisega. Lisaks
 
  1. Serveri IP-aadress
 
- Outline'i serveri IP-aadressi kogub [Quay.io](http://quay.io/) ja see muudetakse meie jaoks kättesaadavaks siis, kui serverit uusimate turbe- ja funktsioonitäiustustega automaatselt värskendatakse. Serveri IP-aadressi alusel saab võib-olla tuvastada pilveserveri pakkuja ja linna, kus Outline'i server on seadistatud, ent mitte teavet selle kohta, kes serverit käitab või sellele juurde pääseb.
+ Outline'i serveri IP-aadressi kogub [Quay.io](https://quay.io/) ja see muudetakse meie jaoks kättesaadavaks siis, kui serverit uusimate turbe- ja funktsioonitäiustustega automaatselt värskendatakse. Serveri IP-aadressi alusel saab võib-olla tuvastada pilveserveri pakkuja ja linna, kus Outline'i server on seadistatud, ent mitte teavet selle kohta, kes serverit käitab või sellele juurde pääseb.
 
  2. Isikut mittetuvastav tehniline teave
 
@@ -30,7 +30,7 @@ Outline ei kogu isikuandmeid, v.a juhul, kui nõustute nende esitamisega. Lisaks
 - Arhitektuur
 - Outline'i versioon ja järgunumber
 
-Teave edastatakse HTTPS-i kaudu Sentrysse ([sentry.io](http://sentry.io/)), mis on kolmanda osapoole avatud lähtekoodiga vigade jälgimise teenus. Sentry kasutab mitmesuguseid valdkonnastandarditele vastavaid tehnoloogiaid ja teenuseid, et kaitsta teie andmeid volitamata juurdepääsu, avalikustamise, kasutamise ja kaotsimineku eest. Kui teil on Sentry eeskirjade kohta küsimusi, minge aadressile [https://sentry.io/security/](https://sentry.io/security/) ja [https://sentry.io/privacy/](https://sentry.io/privacy/) või võtke ühendust aadressil [security@sentry.io](mailto:security@sentry.io). Kõik Outline'i andmed, mille Sentry talletab, on piiratud, nii et ainult Outline'i tiimi liikmed pääsevad nendele juurde.
+Teave edastatakse HTTPS-i kaudu Sentrysse ([sentry.io](https://sentry.io/)), mis on kolmanda osapoole avatud lähtekoodiga vigade jälgimise teenus. Sentry kasutab mitmesuguseid valdkonnastandarditele vastavaid tehnoloogiaid ja teenuseid, et kaitsta teie andmeid volitamata juurdepääsu, avalikustamise, kasutamise ja kaotsimineku eest. Kui teil on Sentry eeskirjade kohta küsimusi, minge aadressile [https://sentry.io/security/](https://sentry.io/security/) ja [https://sentry.io/privacy/](https://sentry.io/privacy/) või võtke ühendust aadressil [security@sentry.io](mailto:security@sentry.io). Kõik Outline'i andmed, mille Sentry talletab, on piiratud, nii et ainult Outline'i tiimi liikmed pääsevad nendele juurde.
 
 ****Teave, mida kogume ainult loa alusel****
 

@@ -21,5 +21,5 @@ sidebar_label: ファイアウォールのエラー
 
  サーバーのファイアウォールに対する例外を作成する場合は、ドキュメントで「ufw」と「iptables」の項を参照することをおすすめします。
 
-- UFW: [https://help.ubuntu.com/community/UFW](/client/troubleshooting/firewall-errors)
-- Iptables: [https://help.ubuntu.com/community/IptablesHowTo](/client/troubleshooting/firewall-errors)
+- UFW: [https://help.ubuntu.com/community/UFW](https://help.ubuntu.com/community/UFW)
+- Iptables: [https://help.ubuntu.com/community/IptablesHowTo](https://help.ubuntu.com/community/IptablesHowTo)

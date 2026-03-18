@@ -10,7 +10,7 @@ Outline er frábrugðið VPN-þjónustum sem þú kaupir aðgang að. Það er [
 - Biddu einhvern um að bjóða þér í þjóninn sinn: Ef þú þekkir einhvern með Outline-þjón skaltu hafa samband við viðkomandi og biðja um aðgangslykil.
 - [Búðu til þinn eigin þjón:](/manager/server-setup/setup-server) Sæktu [Outline Manager](https://getoutline.org/get-started/#step-1) í Windows-, Mac- eða Linux-tölvu og settu upp þinn eigin, lokaða [Outline-þjón](/about/terminology). Ferlið er einfalt, sérstaklega í gegnum DigitalOcean-skýjaþjónustuna.
 - Notaðu þjónustu Outline eða [Shadowsocks](https://en.wikipedia.org/wiki/Shadowsocks#:~:text=Shadowsocks%20is%20a%20free%20and,have%20been%20made%20available%20since.): Einnig er hægt að nota Outline-biðlarann með þjónustum þriðju aðila sem nota Outline eða Shadowsocks-samskiptaregluna. Til dæmis:
-   - [nthLink](http://nthlink.com/) keyrir gjaldfrjálsa þjónustu sem byggist á Outline með breyttri útgáfu af Outline-biðlaranum.
+   - [nthLink](https://nthlink.com/) keyrir gjaldfrjálsa þjónustu sem byggist á Outline með breyttri útgáfu af Outline-biðlaranum.
    - [ASL19](https://www.reddit.com/r/outlinevpn/comments/nwu1se/the_outline_distribution_system_is_here_to_help/) keyrir breytta útgáfu af Outline sem kallast [BeePass](https://beepassvpn.com/) sem og [a Telegram-botta](https://t.me/paskoochehbot) sem veitir gjaldfrjálsa aðgangslykla að BeePass-þjónum.
    - Notendur sem tala persnesku geta einnig beðið um aðgangslykil að Outline frá [Paskoocheh frá ASL19](https://outline.paskoocheh.com/).
 

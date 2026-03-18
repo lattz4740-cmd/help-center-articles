@@ -5,7 +5,7 @@ sidebar_label: "Outline-ı işə salmaq üçün ödəniş nə qədərdir?"
 
 VPN idarə edən server administratoru, yaxud Outline vasitəsilə azad internetə daxil olan istifadəçi olmağınızdan asılı olmayaraq, Outline proqram təminatı hər kəs üçün ödənişsizdir.
 
- Lakin, Outline-ı işə salmaq üçün bulud serverinə giriş tələb olunur. Serverə girişi olan server administratorları əlavə ödəniş etmədən ona Outline quraşdıra bilər. Serverə girişi olmayanlar [DigitalOcean](http://www.digitalocean.com/) və ya Amazon Web Services kimi bulud xidmətləri provayderindən 1 terabayt datanın ötürülməsi üçün aylıq 5$ ödəniş etməklə giriş əldə edə bilərlər. Bu, bir serverdə yüzlərlə istifadəçini dəstəkləmək üçün kifayətdir.
+ Lakin, Outline-ı işə salmaq üçün bulud serverinə giriş tələb olunur. Serverə girişi olan server administratorları əlavə ödəniş etmədən ona Outline quraşdıra bilər. Serverə girişi olmayanlar [DigitalOcean](https://www.digitalocean.com/) və ya Amazon Web Services kimi bulud xidmətləri provayderindən 1 terabayt datanın ötürülməsi üçün aylıq 5$ ödəniş etməklə giriş əldə edə bilərlər. Bu, bir serverdə yüzlərlə istifadəçini dəstəkləmək üçün kifayətdir.
 
  Seçdiyiniz bulud provayderi ilə Outline-ı işə salmağın nə qədər ödəniş tələb edəcəyini hesablamaq üçün nümunə:
 

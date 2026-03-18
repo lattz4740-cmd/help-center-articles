@@ -5,7 +5,7 @@ sidebar_label: "Je, inagharimu kiasi gani kutumia Outline?"
 
 Programu ya Outline hailipishwi kwa mtu yeyote, iwe wewe ni msimamizi wa seva anayedhibiti VPN au mtu anayetumia Outline kufikia intaneti wazi.
 
- Hata hivyo, Outline inahitaji kufikia seva ya wingu ili iweze kutekeleza. Wasimamizi wa seva ambao tayari wana idhini ya kufikia seva wanaweza kuweka Outline kwenye seva hiyo bila gharama ya ziada. Wale wasio na uwezo wa kufikia seva wanaweza kupata idhini ya kufikia kutoka kwa mtoa huduma za wingu, kama vile [DigitalOcean](http://www.digitalocean.com/) au Huduma za Amazon kupitia Wavuti, kwa takriban USD $5 kwa mwezi. Bei hiyo inaruhusu uhamishaji wa terabaiti 1 ya data, unaotosha kuwasaidia mamia ya watumiaji kwenye seva moja.
+ Hata hivyo, Outline inahitaji kufikia seva ya wingu ili iweze kutekeleza. Wasimamizi wa seva ambao tayari wana idhini ya kufikia seva wanaweza kuweka Outline kwenye seva hiyo bila gharama ya ziada. Wale wasio na uwezo wa kufikia seva wanaweza kupata idhini ya kufikia kutoka kwa mtoa huduma za wingu, kama vile [DigitalOcean](https://www.digitalocean.com/) au Huduma za Amazon kupitia Wavuti, kwa takriban USD $5 kwa mwezi. Bei hiyo inaruhusu uhamishaji wa terabaiti 1 ya data, unaotosha kuwasaidia mamia ya watumiaji kwenye seva moja.
 
  Mfano wa jinsi unavyoweza kuhesabu gharama ya kutumia Outline kupitia mtoa huduma za wingu umpendaye:
 

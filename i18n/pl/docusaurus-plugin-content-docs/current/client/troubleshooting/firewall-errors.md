@@ -21,5 +21,5 @@ Wybrany przez Ciebie dostawca usług chmurowych może wymagać ręcznego utworze
 
  Aby utworzyć wyjątki dla zapory sieciowej serwera, poszukaj w dokumentacji informacji o „ufw” i „iptables”:
 
-- UFW: [https://help.ubuntu.com/community/UFW](/client/troubleshooting/firewall-errors)
-- Iptables: [https://help.ubuntu.com/community/IptablesHowTo](/client/troubleshooting/firewall-errors)
+- UFW: [https://help.ubuntu.com/community/UFW](https://help.ubuntu.com/community/UFW)
+- Iptables: [https://help.ubuntu.com/community/IptablesHowTo](https://help.ubuntu.com/community/IptablesHowTo)

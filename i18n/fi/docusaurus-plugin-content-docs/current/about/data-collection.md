@@ -13,7 +13,7 @@ Outline ei kerää henkilökohtaisia tietoja, ellet anna siihen lupaa. Outline e
 
  1. Palvelimen IP-osoite
 
- Outline-palvelimen IP-osoitetiedot kerää [Quay.io](http://quay.io/). Pääsemme näihin tietoihin, kun palvelimelle asennetaan automaattisesti uusimmat tietoturva- ja ominaisuuspäivitykset. Pilvipalveluntarjoaja ja kaupunki, jossa Outline-palvelin on määritetty, saattavat ilmetä palvelimen IP-osoitteesta, mutta näistä ei voi päätellä, kuka palvelimesta vastaa ja kuka sitä käyttää.
+ Outline-palvelimen IP-osoitetiedot kerää [Quay.io](https://quay.io/). Pääsemme näihin tietoihin, kun palvelimelle asennetaan automaattisesti uusimmat tietoturva- ja ominaisuuspäivitykset. Pilvipalveluntarjoaja ja kaupunki, jossa Outline-palvelin on määritetty, saattavat ilmetä palvelimen IP-osoitteesta, mutta näistä ei voi päätellä, kuka palvelimesta vastaa ja kuka sitä käyttää.
 
  2. Muut kuin henkilökohtaiset tekniset tunnistetiedot
 
@@ -30,7 +30,7 @@ Outline ei kerää henkilökohtaisia tietoja, ellet anna siihen lupaa. Outline e
 - Arkkitehtuuri
 - Outlinen versio ja koontiversion numero
 
-Nämä tiedot siirretään HTTPS-protokollan avulla Sentrylle ([sentry.io](http://sentry.io/)), kolmannen osapuolen palveluntarjoajalle, jonka tuottamaa avoimeen lähdekoodiin perustuvaa palvelua käytetään virheiden seurantaan. Sentry varmistaa erilaisilla alan vakiintuneilla tekniikoilla ja palveluilla, että datasi on suojattu luvatonta pääsyä, luovuttamista, käyttöä ja menetystä vastaan. Jos sinulla on kysyttävää Sentryn käytännöistä, käy osoitteessa [https://sentry.io/security/](https://sentry.io/security/) ja [https://sentry.io/privacy/](https://sentry.io/privacy/) tai ota yhteyttä osoitteeseen [security@sentry.io](mailto:security@sentry.io). Vain Outline-tiimillä on pääsy Sentryn tallentamaan Outline-dataan.
+Nämä tiedot siirretään HTTPS-protokollan avulla Sentrylle ([sentry.io](https://sentry.io/)), kolmannen osapuolen palveluntarjoajalle, jonka tuottamaa avoimeen lähdekoodiin perustuvaa palvelua käytetään virheiden seurantaan. Sentry varmistaa erilaisilla alan vakiintuneilla tekniikoilla ja palveluilla, että datasi on suojattu luvatonta pääsyä, luovuttamista, käyttöä ja menetystä vastaan. Jos sinulla on kysyttävää Sentryn käytännöistä, käy osoitteessa [https://sentry.io/security/](https://sentry.io/security/) ja [https://sentry.io/privacy/](https://sentry.io/privacy/) tai ota yhteyttä osoitteeseen [security@sentry.io](mailto:security@sentry.io). Vain Outline-tiimillä on pääsy Sentryn tallentamaan Outline-dataan.
 
 ****Tiedot, joita keräämme ainoastaan luvallasi****
 

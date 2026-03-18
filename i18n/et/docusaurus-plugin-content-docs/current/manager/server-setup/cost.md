@@ -5,7 +5,7 @@ sidebar_label: "Kui palju Outline'i käitamine maksab?"
 
 Outline'i tarkvara on kõigi jaoks tasuta olenemata sellest, kas olete serveri administraator, kes haldab VPN-i, või keegi ,eks kasutab Outline'i avatud internetile juurdepääsemiseks.
 
- Outline vajab töötamiseks aga juurdepääsu pilveserverile. Serveriadministraatorid, kellel on juba juurdepääs serverile, saavad installida sellesse Outline'i ilma täiendava maksekohustuseta. Kasutajad, kellel ei ole juurdepääsu serverile, saavad selle hankida pilveteenuste pakkujatelt, nagu [DigitalOcean](http://www.digitalocean.com/) või Amazon Web Services, hinnaga ligikaudu 5 USA dollarit kuus 1 terabaidi andmeedastuse eest — see on piisav, et toetada ühes serveris sadu kasutajaid.
+ Outline vajab töötamiseks aga juurdepääsu pilveserverile. Serveriadministraatorid, kellel on juba juurdepääs serverile, saavad installida sellesse Outline'i ilma täiendava maksekohustuseta. Kasutajad, kellel ei ole juurdepääsu serverile, saavad selle hankida pilveteenuste pakkujatelt, nagu [DigitalOcean](https://www.digitalocean.com/) või Amazon Web Services, hinnaga ligikaudu 5 USA dollarit kuus 1 terabaidi andmeedastuse eest — see on piisav, et toetada ühes serveris sadu kasutajaid.
 
  Siin on näide sellest, kuidas arvutada välja Outline'i kasutamisega kaasnevad kulud teie valitud pilveteenuste pakkuja juures.
 

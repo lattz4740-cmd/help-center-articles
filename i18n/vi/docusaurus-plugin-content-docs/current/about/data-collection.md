@@ -13,7 +13,7 @@ Outline không thu thập thông tin cá nhân trừ phi bạn chọn cung cấp
 
  1. IP của máy chủ
 
- IP của máy chủ Outline do [Quay.io](http://quay.io/) thu thập và chúng tôi có thể truy cập vào thông tin này, khi máy chủ tự động cập nhật bản nâng cấp bảo mật và tính năng mới nhất. IP của máy chủ có thể nhận dạng nhà cung cấp máy chủ đám mây và thành phố mà máy chủ Outline được thiết lập, nhưng không cung cấp thông tin về người đang chạy máy chủ hay ai đang truy cập vào máy chủ đó.
+ IP của máy chủ Outline do [Quay.io](https://quay.io/) thu thập và chúng tôi có thể truy cập vào thông tin này, khi máy chủ tự động cập nhật bản nâng cấp bảo mật và tính năng mới nhất. IP của máy chủ có thể nhận dạng nhà cung cấp máy chủ đám mây và thành phố mà máy chủ Outline được thiết lập, nhưng không cung cấp thông tin về người đang chạy máy chủ hay ai đang truy cập vào máy chủ đó.
 
  2. Thông tin kỹ thuật không nhận dạng cá nhân
 
@@ -30,7 +30,7 @@ Outline không thu thập thông tin cá nhân trừ phi bạn chọn cung cấp
 - Kiến trúc
 - Phiên bản và số bản dựng của Outline
 
-Thông tin này được truyền qua giao thức HTTPS đến Sentry ([sentry.io](http://sentry.io/)), một nhà cung cấp dịch vụ theo dõi lỗi mã nguồn mở bên thứ ba. Sentry sử dụng nhiều công nghệ và dịch vụ theo tiêu chuẩn ngành để bảo mật dữ liệu khỏi bị truy cập, tiết lộ, sử dụng trái phép và mất mát. Nếu bạn có câu hỏi về các chính sách của Sentry, vui lòng truy cập vào [https://sentry.io/security/](https://sentry.io/security/) and [https://sentry.io/privacy/](https://sentry.io/privacy/) hoặc contact [security@sentry.io](mailto:security@sentry.io). Tất cả dữ liệu Outline do Sentry lưu trữ đề được hạn chế để chỉ những thành viên của nhóm Outline mới có thể truy cập.
+Thông tin này được truyền qua giao thức HTTPS đến Sentry ([sentry.io](https://sentry.io/)), một nhà cung cấp dịch vụ theo dõi lỗi mã nguồn mở bên thứ ba. Sentry sử dụng nhiều công nghệ và dịch vụ theo tiêu chuẩn ngành để bảo mật dữ liệu khỏi bị truy cập, tiết lộ, sử dụng trái phép và mất mát. Nếu bạn có câu hỏi về các chính sách của Sentry, vui lòng truy cập vào [https://sentry.io/security/](https://sentry.io/security/) and [https://sentry.io/privacy/](https://sentry.io/privacy/) hoặc contact [security@sentry.io](mailto:security@sentry.io). Tất cả dữ liệu Outline do Sentry lưu trữ đề được hạn chế để chỉ những thành viên của nhóm Outline mới có thể truy cập.
 
 ****Những thông tin chúng tôi chỉ thu thập khi có sự đồng ý****
 

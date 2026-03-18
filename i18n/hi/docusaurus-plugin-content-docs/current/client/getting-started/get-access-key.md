@@ -10,7 +10,7 @@ Outline, वीपीएन सेवाओं जैसा नहीं है.
 - किसी व्यक्ति से कहें कि वह आपको उसके सर्वर से कनेक्ट होने का न्योता भेजे: अगर आपकी जान-पहचान का कोई ऐसा व्यक्ति है जिसने Outline सर्वर सेट अप किया है, तो उससे संपर्क करके ऐक्सेस कुंजी मांगी जा सकती है.
 - [खुद का कोई सर्वर बनाएं:](/manager/server-setup/setup-server) Windows, Mac या Linux कंप्यूटर का इस्तेमाल करके, [Outline Manager](https://getoutline.org/get-started/#step-1) डाउनलोड करें. इसके बाद, अपना निजी [Outline सर्वर](/about/terminology) सेट अप करें. क्लाउड सेवा देने वाली कंपनी DigitalOcean की मदद से, कोई भी व्यक्ति इस प्रक्रिया को आसानी से पूरा कर सकता है.
 - Outline या [Shadowsocks](https://en.wikipedia.org/wiki/Shadowsocks#:~:text=Shadowsocks%20is%20a%20free%20and,have%20been%20made%20available%20since.) सेवा का इस्तेमाल करें: Outline क्लाइंट का इस्तेमाल तीसरे पक्ष की ऐसी किसी भी सेवा के साथ किया जा सकता है जो Outline या Shadowsocks प्रोटोकॉल का इस्तेमाल करती है. उदाहरण के लिए:
-   - [nthLink](http://nthlink.com/), Outline क्लाइंट के बेहतर बनाए गए वर्शन की मदद से, Outline पर आधारित बिना शुल्क वाली सेवा चलाने की सुविधा देता है.
+   - [nthLink](https://nthlink.com/), Outline क्लाइंट के बेहतर बनाए गए वर्शन की मदद से, Outline पर आधारित बिना शुल्क वाली सेवा चलाने की सुविधा देता है.
    - [ASL19](https://www.reddit.com/r/outlinevpn/comments/nwu1se/the_outline_distribution_system_is_here_to_help/), Outline के बेहतर बनाए गए वर्शन, [BeePass](https://beepassvpn.com/) के साथ-साथ [Telegram बॉट](https://t.me/paskoochehbot) को चलाने की सुविधा देता है. यह दोनों सेवाएं, BeePass के सर्वर को बिना किसी शुल्क के ऐक्सेस कुंजियां मुहैया कराती हैं.
    - फ़ारसी भाषा बोलने वाले लोग, [ASL19 के Paskoocheh](https://outline.paskoocheh.com/) से Outline की ऐक्सेस कुंजी का अनुरोध भी कर सकते हैं.
 

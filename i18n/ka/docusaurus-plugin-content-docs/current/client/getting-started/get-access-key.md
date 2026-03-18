@@ -10,7 +10,7 @@ Outline განსხვავდება VPN სერვისების�
 - სთხოვეთ ვინმეს, მოგიწვიოთ თავის სერვერზე: თუ იცნობთ ვინმეს, ვინც Outline-ის სერვერით სარგებლობს, დაუკავშირდით მას და სთხოვეთ წვდომის გასაღები.
 - [შექმენით სერვერი დამოუკიდებლად:](/manager/server-setup/setup-server) Windows-ის, Mac-ის ან Linux-ის კომპიუტერის მეშვეობით ჩამოტვირთეთ [Outline-ის მმართველი](https://getoutline.org/get-started/#step-1) და დააყენეთ თქვენი [Outline-ის სერვერი](/about/terminology). ეს პროცესი ყველასთვის გავამარტივეთ, განსაკუთრებით, ღრუბლის სერვისის პროვაიდერის, DigitalOcean-ის მეშვეობით.
 - გამოიყენეთ Outline-ის ან [Shadowsocks](https://en.wikipedia.org/wiki/Shadowsocks#:~:text=Shadowsocks%20is%20a%20free%20and,have%20been%20made%20available%20since.)-ის სერვისი: Outline-ის კლიენტის გამოყენება შესაძლებელია მესამე მხარის სერვისებთან ერთად, რომლებიც სარგებლობენ Outline-ით ან Shadowsocks-ის პროტოკოლით. მაგალითად:
-   - [nthLink](http://nthlink.com/) უშვებს უფასო სერვისს Outline-ის საფუძველზე, Outline-ის კლიენტის მოდიფიცირებული ვერსიით.
+   - [nthLink](https://nthlink.com/) უშვებს უფასო სერვისს Outline-ის საფუძველზე, Outline-ის კლიენტის მოდიფიცირებული ვერსიით.
    - [ASL19](https://www.reddit.com/r/outlinevpn/comments/nwu1se/the_outline_distribution_system_is_here_to_help/) უშვებს Outline-ის მოდიფიცირებულ ვერსიას, რომელსაც ეწოდება [BeePass](https://beepassvpn.com/); ასევე, უშვებს [Telegram-ის ბოტს](https://t.me/paskoochehbot), რომელიც უზრუნველყოფს BeePass-ის სერვერების გასაღებებზე უფასო წვდომას.
    - სპარსული ენის მომხმარებლებს, ასევე, შეუძლიათ, მოითხოვონ Outline-ის წვდომის გასაღები [ASL19-ის Paskoocheh](https://outline.paskoocheh.com/)-ისგან.
 

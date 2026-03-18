@@ -5,7 +5,7 @@ sidebar_label: "Hoeveel kos dit om Outline te gebruik?"
 
 Die Outline-sagteware is kosteloos vir almal, hetsy jy ’n bedieneradmin is wat die VPN bestuur, óf iemand is wat Outline gebruik om toegang tot die oop internet te kry.
 
- Outline benodig wel toegang tot ’n wolkbediener om te kan werk. Bedieneradministrateurs wat reeds toegang tot ’n bediener het, kan Outline daarop installeer teen geen bykomende koste nie. Dié sonder toegang tot ’n bediener kan toegang vanaf ’n wolkdiensverskaffer soos [DigitalOcean](http://www.digitalocean.com/) of Amazon Web Services kry vir ongeveer $5 USD per maand vir ’n dataoordragtoelae van 1 teragreep — dis genoeg om honderde gebruikers op ’n enkele bediener te ondersteun.
+ Outline benodig wel toegang tot ’n wolkbediener om te kan werk. Bedieneradministrateurs wat reeds toegang tot ’n bediener het, kan Outline daarop installeer teen geen bykomende koste nie. Dié sonder toegang tot ’n bediener kan toegang vanaf ’n wolkdiensverskaffer soos [DigitalOcean](https://www.digitalocean.com/) of Amazon Web Services kry vir ongeveer $5 USD per maand vir ’n dataoordragtoelae van 1 teragreep — dis genoeg om honderde gebruikers op ’n enkele bediener te ondersteun.
 
  Hier is ’n voorbeeld van hoe jy die somme kan doen om uit te werk hoeveel dit sal kos om Outline met jou keuse van wolkverskaffer te gebruik:
 

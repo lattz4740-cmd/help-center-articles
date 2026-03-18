@@ -13,7 +13,7 @@ Outline에서는 사용자가 개인 정보를 제공하겠다고 선택하지 �
 
  1. 서버 IP
 
- Outline 서버 IP는 [Quay.io](http://quay.io/)에 의해 수집되며, 최신 보안 및 기능 개선사항 등의 서버 자동 업데이트가 이뤄질 때 Outline에 액세스 권한이 부여됩니다. 서버 IP에서 클라우드 서버 제공업체와 Outline 서버가 설정된 도시의 식별이 가능할 수 있지만, 누가 서버를 실행 또는 액세스하는지에 대한 정보는 제공하지 않습니다.
+ Outline 서버 IP는 [Quay.io](https://quay.io/)에 의해 수집되며, 최신 보안 및 기능 개선사항 등의 서버 자동 업데이트가 이뤄질 때 Outline에 액세스 권한이 부여됩니다. 서버 IP에서 클라우드 서버 제공업체와 Outline 서버가 설정된 도시의 식별이 가능할 수 있지만, 누가 서버를 실행 또는 액세스하는지에 대한 정보는 제공하지 않습니다.
 
  2. 개인 식별이 불가능한 기술 정보
 
@@ -30,7 +30,7 @@ Outline에서는 사용자가 개인 정보를 제공하겠다고 선택하지 �
 - 아키텍처
 - Outline 버전 및 빌드 번호
 
-이 정보는 HTTPS를 사용하여 서드 파티 오픈소스 오류 추적 제공업체인 Sentry([sentry.io](http://sentry.io/))로 전송됩니다. Sentry에서는 다양한 업계 표준 기술 및 서비스를 사용하여 무단 액세스, 공개, 사용, 손실로부터 데이터를 보호합니다. Sentry의 정책에 대해 궁금한 점이 있는 경우 [https://sentry.io/security/](https://sentry.io/security/) 및 [https://sentry.io/privacy/](https://sentry.io/privacy/)를 확인하거나 [security@sentry.io](mailto:security@sentry.io)에 문의하세요. Sentry에 저장된 모든 Outline 데이터는 Outline팀만 액세스할 수 있도록 제한됩니다.
+이 정보는 HTTPS를 사용하여 서드 파티 오픈소스 오류 추적 제공업체인 Sentry([sentry.io](https://sentry.io/))로 전송됩니다. Sentry에서는 다양한 업계 표준 기술 및 서비스를 사용하여 무단 액세스, 공개, 사용, 손실로부터 데이터를 보호합니다. Sentry의 정책에 대해 궁금한 점이 있는 경우 [https://sentry.io/security/](https://sentry.io/security/) 및 [https://sentry.io/privacy/](https://sentry.io/privacy/)를 확인하거나 [security@sentry.io](mailto:security@sentry.io)에 문의하세요. Sentry에 저장된 모든 Outline 데이터는 Outline팀만 액세스할 수 있도록 제한됩니다.
 
 ****정보 제공 선택 시 Outline에 전송되는 정보****
 

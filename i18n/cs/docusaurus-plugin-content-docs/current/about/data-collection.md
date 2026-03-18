@@ -13,7 +13,7 @@ Outline neshromažďuje osobní údaje, pokud se výslovně nerozhodnete je posk
 
  1. IP adresa serveru
 
- IP serveru Outline shromažďuje služba [Quay.io](http://quay.io/) a my k ní máme přístup, když se server automaticky aktualizuje, aby využíval nejnovější zabezpečení a vylepšení funkcí. IP adresa serveru může identifikovat poskytovatele cloudového serveru a město, kde byl server Outline nastaven, ale neukazuje, kdo server provozuje a kdo k němu získává přístup.
+ IP serveru Outline shromažďuje služba [Quay.io](https://quay.io/) a my k ní máme přístup, když se server automaticky aktualizuje, aby využíval nejnovější zabezpečení a vylepšení funkcí. IP adresa serveru může identifikovat poskytovatele cloudového serveru a město, kde byl server Outline nastaven, ale neukazuje, kdo server provozuje a kdo k němu získává přístup.
 
  2. Technické informace, které vás osobně neidentifikují
 
@@ -30,7 +30,7 @@ Outline neshromažďuje osobní údaje, pokud se výslovně nerozhodnete je posk
 - architektura,
 - verze a číslo sestavení aplikace Outline.
 
-Tyto informace jsou přenášeny pomocí protokolu HTTPS do služby Sentry ([sentry.io](http://sentry.io/)), což je externí opensourcová služba pro sledování chyb. Sentry chrání vaše data před neautorizovaným přístupem, zveřejněním, použitím a ztrátou. Využívá k tomu celou škálu technologií a služeb splňujících oborové standardy. Pokud máte nějaké otázky ohledně zásad služby Sentry, navštivte stránky [https://sentry.io/security/](https://sentry.io/security/) a [https://sentry.io/privacy/](https://sentry.io/privacy/), případně se obraťte e‑mailem na adresu [security@sentry.io](mailto:security@sentry.io). Přístup ke všem datům z aplikace Outline uloženým službou Sentry je omezený tak, že je můžou zobrazit jen členové týmu Outline.
+Tyto informace jsou přenášeny pomocí protokolu HTTPS do služby Sentry ([sentry.io](https://sentry.io/)), což je externí opensourcová služba pro sledování chyb. Sentry chrání vaše data před neautorizovaným přístupem, zveřejněním, použitím a ztrátou. Využívá k tomu celou škálu technologií a služeb splňujících oborové standardy. Pokud máte nějaké otázky ohledně zásad služby Sentry, navštivte stránky [https://sentry.io/security/](https://sentry.io/security/) a [https://sentry.io/privacy/](https://sentry.io/privacy/), případně se obraťte e‑mailem na adresu [security@sentry.io](mailto:security@sentry.io). Přístup ke všem datům z aplikace Outline uloženým službou Sentry je omezený tak, že je můžou zobrazit jen členové týmu Outline.
 
 ****Informace, které získáváme jen s vaším výslovným souhlasem****
 

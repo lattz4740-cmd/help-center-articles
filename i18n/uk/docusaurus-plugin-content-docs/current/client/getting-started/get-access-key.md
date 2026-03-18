@@ -10,7 +10,7 @@ sidebar_label: "Як отримати ключ доступу?"
 - Отримати запрошення на наявний сервер. Для цього зверніться до особи, яка має сервер Outline, і попросіть надіслати вам ключ доступу.
 - [Створити власний сервер.](/manager/server-setup/setup-server) Завантажте [Диспетчер Outline](https://getoutline.org/get-started/#step-1) на свій комп’ютер Windows, Mac або Linux і налаштуйте власний [сервер Outline](/about/terminology). Щоб максимально спростити цей процес, скористайтеся послугами постачальника хмарних сервісів DigitalOcean.
 - Скористатися сервісом Outline або [Shadowsocks](https://en.wikipedia.org/wiki/Shadowsocks#:~:text=Shadowsocks%20is%20a%20free%20and,have%20been%20made%20available%20since.). Клієнт Outline також можна використовувати зі сторонніми сервісами, які підтримують Outline або протокол Shadowsocks. Нижче наведено приклади.
-   - [nthLink](http://nthlink.com/) – безкоштовний сервіс на основі Outline із модифікованою версією Клієнта Outline.
+   - [nthLink](https://nthlink.com/) – безкоштовний сервіс на основі Outline із модифікованою версією Клієнта Outline.
    - [ASL19](https://www.reddit.com/r/outlinevpn/comments/nwu1se/the_outline_distribution_system_is_here_to_help/) [BeePass](https://beepassvpn.com/) – це модифікована версія Outline (отримати безкоштовні ключі доступу до серверів BeePass можна через [бот у Telegram](https://t.me/paskoochehbot).
    - Якщо ви володієте мовою фарсі, то можете отримати ключ доступу за допомогою сервісу [ASL19’s Paskoocheh](https://outline.paskoocheh.com/).
 

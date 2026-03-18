@@ -13,7 +13,7 @@ Outline haikusanyi taarifa binafsi isipokuwa ukichagua kuzitoa. Outline pia haik
 
  1. IP ya seva
 
- IP ya seva ya Outline hukusanywa na [Quay.io](http://quay.io/) na kuonyeshwa kwetu wakati seva inasasishwa kiotomatiki kwa vipengele na usalama wa hivi karibuni ulioboreshwa. Huenda IP ya Seva ikatambua mtoa huduma za seva ya wingu na mji ambapo mipangilio ya seva ya Outline imewekwa, lakini hali hii haitoi maelezo kuhusu anayetekeleza seva au anayeifikia.
+ IP ya seva ya Outline hukusanywa na [Quay.io](https://quay.io/) na kuonyeshwa kwetu wakati seva inasasishwa kiotomatiki kwa vipengele na usalama wa hivi karibuni ulioboreshwa. Huenda IP ya Seva ikatambua mtoa huduma za seva ya wingu na mji ambapo mipangilio ya seva ya Outline imewekwa, lakini hali hii haitoi maelezo kuhusu anayetekeleza seva au anayeifikia.
 
  2. Taarifa za kiufundi zisizomtambulisha mtu binafsi
 
@@ -30,7 +30,7 @@ Outline haikusanyi taarifa binafsi isipokuwa ukichagua kuzitoa. Outline pia haik
 - Usanifu programu
 - Toleo na nambari ya muundo ya Outline
 
-Taarifa hizi hutumwa kupitia HTTPS kwa Sentry ([sentry.io](http://sentry.io/)), mtoa huduma mwingine wa kufuatilia hitilafu za programu huria. Sentry hutumia teknolojia na huduma mbalimbali za kiwango cha sekta ili kulinda data yako kutokana na kufumbuliwa, kutumiwa, kupotezwa na kufikiwa bila idhini. Ikiwa una maswali yoyote kuhusu sera za Sentry, tafadhali tembelea [https://sentry.io/security/](https://sentry.io/security/) na [https://sentry.io/privacy/](https://sentry.io/privacy/) au uwasiliane na [security@sentry.io](mailto:security@sentry.io). Data yote ya Outline iliyohifadhiwa na Sentry imezuiwa hivi kwamba ni washiriki tu wa timu ya Outline wanaoweza kuifikia.
+Taarifa hizi hutumwa kupitia HTTPS kwa Sentry ([sentry.io](https://sentry.io/)), mtoa huduma mwingine wa kufuatilia hitilafu za programu huria. Sentry hutumia teknolojia na huduma mbalimbali za kiwango cha sekta ili kulinda data yako kutokana na kufumbuliwa, kutumiwa, kupotezwa na kufikiwa bila idhini. Ikiwa una maswali yoyote kuhusu sera za Sentry, tafadhali tembelea [https://sentry.io/security/](https://sentry.io/security/) na [https://sentry.io/privacy/](https://sentry.io/privacy/) au uwasiliane na [security@sentry.io](mailto:security@sentry.io). Data yote ya Outline iliyohifadhiwa na Sentry imezuiwa hivi kwamba ni washiriki tu wa timu ya Outline wanaoweza kuifikia.
 
 ****Maelezo tunayopata tu unapojijumuisha****
 

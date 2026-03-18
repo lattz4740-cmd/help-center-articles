@@ -10,7 +10,7 @@ Az Outline nem hasonlít azokra a VPN-szolgáltatásokra, amelyekhez meg kell v�
 - Kérjen meg valakit, hogy hívja meg a szerverére: ha ismer valakit, akinek van Outline-szervere, lépjen kapcsolatba vele, és kérjen hozzáférési kulcsot.
 - [Hozzon létre saját szervert:](/manager/server-setup/setup-server) Windows, Mac vagy Linux rendszerű számítógépen töltse le az [Outline Managert](https://getoutline.org/get-started/#step-1), és állítsa be saját privát [Outline-szerverét](/about/terminology). Ezt a folyamatot bárki könnyen elvégezheti, különösen a DigitalOcean felhőszolgáltatón keresztül.
 - Használja az Outline vagy a [Shadowsocks](https://en.wikipedia.org/wiki/Shadowsocks#:~:text=Shadowsocks%20is%20a%20free%20and,have%20been%20made%20available%20since.) szolgáltatást: az Outline-kliens olyan harmadik féltől származó szolgáltatásokkal is használható, amelyek az Outline-t vagy a Shadowsocks-protokollt használják. Például:
-   - Az [nthLink](http://nthlink.com/) az Outline-kliens módosított verziójával működő, az Outline-on alapuló díjmentes szolgáltatás.
+   - Az [nthLink](https://nthlink.com/) az Outline-kliens módosított verziójával működő, az Outline-on alapuló díjmentes szolgáltatás.
    - Az [ASL19](https://www.reddit.com/r/outlinevpn/comments/nwu1se/the_outline_distribution_system_is_here_to_help/) egy [BeePass](https://beepassvpn.com/) nevű, az Outline módosított változatán alapuló szolgáltatást üzemeltet, valamint [egy Telegram-robotot](https://t.me/paskoochehbot), amely díjmentes hozzáférési kulcsokat biztosít a BeePass-szerverekhez.
    - A perzsa nyelvű felhasználók Outline-hozzáférési kulcsot is kérhetnek az [ASL19 által üzemeltetett Paskoocheh](https://outline.paskoocheh.com/)-től.
 

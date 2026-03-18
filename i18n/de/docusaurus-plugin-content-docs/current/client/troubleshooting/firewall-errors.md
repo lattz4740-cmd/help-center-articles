@@ -21,5 +21,5 @@ Abhängig vom ausgewählten Cloudanbieter müssen Sie möglicherweise manuell Au
 
  Wie Sie Ausnahmen bei Ihrer Serverfirewall erstellen, können Sie in den Dokumentationen zu UFW und Iptables lesen:
 
-- UFW: [https://help.ubuntu.com/community/UFW](/client/troubleshooting/firewall-errors)
-- Iptables: [https://help.ubuntu.com/community/IptablesHowTo](/client/troubleshooting/firewall-errors)
+- UFW: [https://help.ubuntu.com/community/UFW](https://help.ubuntu.com/community/UFW)
+- Iptables: [https://help.ubuntu.com/community/IptablesHowTo](https://help.ubuntu.com/community/IptablesHowTo)

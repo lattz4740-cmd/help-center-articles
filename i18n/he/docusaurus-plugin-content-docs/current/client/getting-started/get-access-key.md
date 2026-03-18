@@ -10,7 +10,7 @@ sidebar_label: "איך מקבלים מפתח גישה?"
 - מבקשים ממישהו להזמין אתכם לשרת שלו: אם אתם מכירים מישהו שיש לו שרת Outline, אתם יכולים לבקש ממנו מפתח גישה.
 - [יוצרים שרת בעצמכם:](/manager/server-setup/setup-server) במחשב Windows,‏ Mac או Linux, מורידים את האפליקציה [Outline Manager](https://getoutline.org/get-started/#step-1) ומגדירים [שרת Outline](/about/terminology) פרטי משלכם. תהליך ההגדרה הוא פשוט וקל, במיוחד כשעושים אותו דרך ספק שירותי הענן DigitalOcean.
 - משתמשים בשירות של Outline או של [Shadowsocks](https://en.wikipedia.org/wiki/Shadowsocks#:~:text=Shadowsocks%20is%20a%20free%20and,have%20been%20made%20available%20since.): אפשר להשתמש באפליקציית הלקוח של Outline עם שירותי צד שלישי שמשתמשים בפרוטוקול של Outline או של Shadowsocks. לדוגמה:
-   - ‫[nthLink:](http://nthlink.com/) שירות ללא תשלום שמבוסס על Outline, עם גרסה מותאמת של אפליקציית הלקוח של Outline.
+   - ‫[nthLink:](https://nthlink.com/) שירות ללא תשלום שמבוסס על Outline, עם גרסה מותאמת של אפליקציית הלקוח של Outline.
    - ‫[ASL19:](https://www.reddit.com/r/outlinevpn/comments/nwu1se/the_outline_distribution_system_is_here_to_help/) שירות שמבוסס על גרסה מותאמת של Outline שנקראת [BeePass](https://beepassvpn.com/) וכוללת [בוט טלגרם](https://t.me/paskoochehbot) שמספק מפתחות גישה לשרתי BeePass ללא תשלום.
    - משתמשים בשפה הפרסית יכולים גם לבקש מפתח גישה מ-[Paskoocheh של ASL19](https://outline.paskoocheh.com/).
 

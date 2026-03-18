@@ -5,7 +5,7 @@ sidebar_label: "Quant costa utilitzar Outline?"
 
 El programari d'Outline és gratuït per a tothom, tant si ets un administrador de servidor que gestiona la VPN, com si ets un usuari que fa servir Outline per navegar per la Internet oberta.
 
- Per poder funcionar, Outline requereix tenir accés a un servidor en núvol. Els administradors del servidor que ja tinguin accés a un servidor poden instal·lar-hi Outline sense cap cost addicional. Els usuaris que no tinguin accés a cap servidor poden obtenir-hi accés des d'un proveïdor de serveis en núvol, com ara [DigitalOcean](http://www.digitalocean.com/) o Amazon Web Services, per uns 5 USD al mes, amb una capacitat de transferència de dades d'1 terabyte. Això és suficient per donar servei a centenars d'usuaris amb un sol servidor.
+ Per poder funcionar, Outline requereix tenir accés a un servidor en núvol. Els administradors del servidor que ja tinguin accés a un servidor poden instal·lar-hi Outline sense cap cost addicional. Els usuaris que no tinguin accés a cap servidor poden obtenir-hi accés des d'un proveïdor de serveis en núvol, com ara [DigitalOcean](https://www.digitalocean.com/) o Amazon Web Services, per uns 5 USD al mes, amb una capacitat de transferència de dades d'1 terabyte. Això és suficient per donar servei a centenars d'usuaris amb un sol servidor.
 
  A continuació t'oferim un exemple dels càlculs que pots fer per saber quant et costarà utilitzar Outline amb el proveïdor de serveis en núvol que triïs:
 

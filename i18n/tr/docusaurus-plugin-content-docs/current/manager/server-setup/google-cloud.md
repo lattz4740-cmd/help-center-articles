@@ -47,8 +47,8 @@ Google Cloud otomatik kurulumu, Outline sunucularınızı organize etmek için t
 
 ## Faturalandırma Hesabı
 
-Google Cloud projeleri için ödeme bilgilerini tanımlayan bağlı bir "faturalandırma hesabı" gerekir. Google Cloud otomatik kurulumunu ilk kez kullandığınızda, Outline sunucularınızla ilişkilendirilecek bir faturalandırma hesabı sağlamanız istenir. Faturalandırma hesabıyla ilgili bir sorun olduğunda bazen sunucu çalışmayı durdurur. Bu durumda, [Google Cloud Console](https://console.cloud.google.com/)'a giriş yapmanız, Outline ile ilişkili Google Cloud projesini ("Outline sunucuları" adlı proje) bulmanız ve faturalandırma ayarlarını güncellemeniz gerekir.
+Google Cloud projeleri için ödeme bilgilerini tanımlayan bağlı bir "faturalandırma hesabı" gerekir. Google Cloud otomatik kurulumunu ilk kez kullandığınızda, Outline sunucularınızla ilişkilendirilecek bir faturalandırma hesabı sağlamanız istenir. Faturalandırma hesabıyla ilgili bir sorun olduğunda bazen sunucu çalışmayı durdurur. Bu durumda, [Google Cloud Console](https://console.cloud.google.com/getting-started)'a giriş yapmanız, Outline ile ilişkili Google Cloud projesini ("Outline sunucuları" adlı proje) bulmanız ve faturalandırma ayarlarını güncellemeniz gerekir.
 
 ## Sunucuları Kaldırma
 
-Otomatik kurulumla oluşturulan sunucularınızı kaldırmak istiyorsanız bunu yapmanın en kolay yolu Outline Manager'ı kullanmaktır. Ancak sunucuları kendiniz kaldırmak istiyorsanız [Google Cloud Console](https://console.cloud.google.com/)'a giriş yapıp ilk kurulum sırasında oluşturulan projeyi ("Outline sunucuları" adlı proje) bulduktan sonra kaynakları buradan silebilir veya projeyi kapatabilirsiniz.
+Otomatik kurulumla oluşturulan sunucularınızı kaldırmak istiyorsanız bunu yapmanın en kolay yolu Outline Manager'ı kullanmaktır. Ancak sunucuları kendiniz kaldırmak istiyorsanız [Google Cloud Console](https://console.cloud.google.com/getting-started)'a giriş yapıp ilk kurulum sırasında oluşturulan projeyi ("Outline sunucuları" adlı proje) bulduktan sonra kaynakları buradan silebilir veya projeyi kapatabilirsiniz.

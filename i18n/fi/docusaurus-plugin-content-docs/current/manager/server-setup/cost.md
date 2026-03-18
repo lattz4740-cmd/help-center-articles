@@ -5,7 +5,7 @@ sidebar_label: "Paljonko Outlinen käyttäminen maksaa?"
 
 Outline-ohjelmisto on kaikille maksuton, niin VPN:ää ylläpitäville järjestelmänvalvojille kuin yksittäisille käyttäjille, jotka käyttävät avointa internetiä Outlinen kautta.
 
- Outlinen toiminta edellyttää pääsyä pilvipalvelimeen. Palvelimen järjestelmänvalvojat, joilla on palvelimen pääsyoikeudet, voivat asentaa Outlinen sille ilman lisämaksua. Käyttäjät, joilla ei ole pääsyä palvelimeen, voivat saada pääsyn palvelimelle [DigitalOceanin](http://www.digitalocean.com/) tai Amazon Web Servicesin kaltaiselta pilvipalveluntarjoajalta. 1 Tt:n datansiirtokiintiö maksaa noin 5 $/kk, ja se riittää sadoille käyttäjille yhdellä palvelimella.
+ Outlinen toiminta edellyttää pääsyä pilvipalvelimeen. Palvelimen järjestelmänvalvojat, joilla on palvelimen pääsyoikeudet, voivat asentaa Outlinen sille ilman lisämaksua. Käyttäjät, joilla ei ole pääsyä palvelimeen, voivat saada pääsyn palvelimelle [DigitalOceanin](https://www.digitalocean.com/) tai Amazon Web Servicesin kaltaiselta pilvipalveluntarjoajalta. 1 Tt:n datansiirtokiintiö maksaa noin 5 $/kk, ja se riittää sadoille käyttäjille yhdellä palvelimella.
 
  Esimerkki laskukaavasta, jolla voit selvittää, miten paljon Outlinen käyttö valitsemallasi pilvipalveluntarjoajalla tulee maksamaan:
 

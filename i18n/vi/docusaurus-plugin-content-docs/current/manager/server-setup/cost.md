@@ -5,7 +5,7 @@ sidebar_label: "Chi phí để chạy Outline là bao nhiêu?"
 
 Outline là phần mềm hoàn toàn miễn phí dành cho tất cả mọi người, dù bạn là quản trị viên máy chủ quản lý VPN hay người dùng Outline để kết nối với Internet mở.
 
- Tuy nhiên, để chạy Outline thì người dùng phải có quyền truy cập vào máy chủ đám mây. Đối với những quản trị viên máy chủ đã có quyền truy cập vào máy chủ, họ có thể cài đặt Outline trên máy chủ đó mà không mất thêm chi phí. Những người không có quyền truy cập vào máy chủ có thể được cấp quyền truy cập từ một nhà cung cấp dịch vụ đám mây, chẳng hạn như [DigitalOcean](http://www.digitalocean.com/) hoặc Amazon Web Services, với giá khoảng 5 USD mỗi tháng để có hạn mức 1 TB truyền dữ liệu. Mức này đủ để hỗ trợ hàng trăm người dùng trên một máy chủ.
+ Tuy nhiên, để chạy Outline thì người dùng phải có quyền truy cập vào máy chủ đám mây. Đối với những quản trị viên máy chủ đã có quyền truy cập vào máy chủ, họ có thể cài đặt Outline trên máy chủ đó mà không mất thêm chi phí. Những người không có quyền truy cập vào máy chủ có thể được cấp quyền truy cập từ một nhà cung cấp dịch vụ đám mây, chẳng hạn như [DigitalOcean](https://www.digitalocean.com/) hoặc Amazon Web Services, với giá khoảng 5 USD mỗi tháng để có hạn mức 1 TB truyền dữ liệu. Mức này đủ để hỗ trợ hàng trăm người dùng trên một máy chủ.
 
  Ví dụ về cách tính chi phí chạy Outline thông qua nhà cung cấp dịch vụ đám mây bạn lựa chọn:
 

@@ -10,7 +10,7 @@ Outline нь таны хандах эрх худалдан авдаг VPN үйл
 - Хэн нэгнээс таныг сервертээ урихыг хүсэх: Хэрэв та Outline сервертэй хэн нэгнийг таньдаг бол түүнтэй холбогдож, хандалтын түлхүүр хүснэ үү.
 - [Өөрөө сервер үүсгэх:](/manager/server-setup/setup-server) Windows, Mac, Linux компьютер ашиглан [Outline Manager-г](https://getoutline.org/get-started/#step-1) татаад, өөрийн хувийн [Outline серверийг](/about/terminology) тохируулна уу. Бид энэ явцыг хүн бүхэнд, ялангуяа үүлэн үйлчилгээ үзүүлэгч DigitalOcean-р дамжуулан хийхэд хялбар болгосон.
 - Outline эсвэл [Shadowsocks](https://en.wikipedia.org/wiki/Shadowsocks#:~:text=Shadowsocks%20is%20a%20free%20and,have%20been%20made%20available%20since.) үйлчилгээг ашиглах: Outline клиентийг мөн Outline эсвэл Shadowsocks протоколыг ашигладаг гуравдагч талын үйлчилгээнүүдээр ашиглах боломжтой. Жишээлбэл:
-   - [nthLink](http://nthlink.com/) нь Outline клиентийн өөрчилсөн хувилбараар Outline-д тулгуурласан үнэгүй үйлчилгээг ажиллуулдаг.
+   - [nthLink](https://nthlink.com/) нь Outline клиентийн өөрчилсөн хувилбараар Outline-д тулгуурласан үнэгүй үйлчилгээг ажиллуулдаг.
    - [ASL19](https://www.reddit.com/r/outlinevpn/comments/nwu1se/the_outline_distribution_system_is_here_to_help/) нь [BeePass](https://beepassvpn.com/) нэртэй Outline-н өөрчилсөн хувилбараас гадна BeePass серверүүдэд үнэгүй хандалтын түлхүүр өгдөг [Telegram бот](https://t.me/paskoochehbot) ажиллуулдаг.
    - Перс хэлтэй хэрэглэгчид мөн [ASL19-н Paskoocheh-с](https://outline.paskoocheh.com/) Outline-н хандалтын түлхүүр хүсэх боломжтой.
 

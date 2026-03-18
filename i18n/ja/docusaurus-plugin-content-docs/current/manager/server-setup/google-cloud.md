@@ -45,8 +45,8 @@ Google Cloud の自動セットアップでは、1 つの [Google Cloud プロ�
 
 ## 請求先アカウント
 
-Google Cloud プロジェクトには、お支払い情報を指定した「請求先アカウント」を関連付ける必要があります。Google Cloud の自動セットアップを初めて使用するときに、Outline サーバーに関連付ける請求先アカウントを指定するよう求められます。請求先アカウントに問題がある場合、サーバーが停止することがあります。サーバーが停止した場合は、[Google Cloud Console](https://console.cloud.google.com/) にログインし、Outline に関連付けられた Google Cloud プロジェクト（「Outline servers」）を見つけて、請求先の設定を更新してください。
+Google Cloud プロジェクトには、お支払い情報を指定した「請求先アカウント」を関連付ける必要があります。Google Cloud の自動セットアップを初めて使用するときに、Outline サーバーに関連付ける請求先アカウントを指定するよう求められます。請求先アカウントに問題がある場合、サーバーが停止することがあります。サーバーが停止した場合は、[Google Cloud Console](https://console.cloud.google.com/getting-started) にログインし、Outline に関連付けられた Google Cloud プロジェクト（「Outline servers」）を見つけて、請求先の設定を更新してください。
 
 ## サーバーの破棄
 
-自動セットアップで作成したサーバーを破棄する場合は、Outline マネージャーを使用する方法が最も簡単です。ただし、サーバーを自分で破棄する場合は、[Google Cloud Console](https://console.cloud.google.com/) にログインし、最初のセットアップ時に作成したプロジェクト（「Outline servers」）を見つけて、そこでリソースを削除するか、プロジェクトをシャットダウンしてください。
+自動セットアップで作成したサーバーを破棄する場合は、Outline マネージャーを使用する方法が最も簡単です。ただし、サーバーを自分で破棄する場合は、[Google Cloud Console](https://console.cloud.google.com/getting-started) にログインし、最初のセットアップ時に作成したプロジェクト（「Outline servers」）を見つけて、そこでリソースを削除するか、プロジェクトをシャットダウンしてください。

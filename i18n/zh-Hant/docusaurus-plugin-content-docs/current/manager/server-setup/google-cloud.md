@@ -47,8 +47,8 @@ Google Cloud 自動化設定會使用單一 [Google Cloud 專案](https://cloud.
 
 ## 帳單帳戶
 
-Google Cloud 專案需要連結至定義付款資訊的「帳單帳戶」。首次使用 Google Cloud 自動化設定時，你必須提供要與 Outline 伺服器建立關聯的帳單帳戶。帳單帳戶的問題有時會導致伺服器停止運作。發生這種情況時，請登入 [Google Cloud Console](https://console.cloud.google.com/)，找出與 Outline 相關聯的 Google Cloud 專案 (名為「Outline 伺服器」)，然後更新帳單設定。
+Google Cloud 專案需要連結至定義付款資訊的「帳單帳戶」。首次使用 Google Cloud 自動化設定時，你必須提供要與 Outline 伺服器建立關聯的帳單帳戶。帳單帳戶的問題有時會導致伺服器停止運作。發生這種情況時，請登入 [Google Cloud Console](https://console.cloud.google.com/getting-started)，找出與 Outline 相關聯的 Google Cloud 專案 (名為「Outline 伺服器」)，然後更新帳單設定。
 
 ## 刪除伺服器
 
-如果想刪除透過自動化設定建立的伺服器，最簡單的方法是從 Outline Manager 執行刪除作業。不過，如果你想自行刪除伺服器，可以登入 [Google Cloud Console](https://console.cloud.google.com/)，找出首次設定時建立的專案 (名為「Outline 伺服器」)，然後刪除其中的資源或關閉整個專案。
+如果想刪除透過自動化設定建立的伺服器，最簡單的方法是從 Outline Manager 執行刪除作業。不過，如果你想自行刪除伺服器，可以登入 [Google Cloud Console](https://console.cloud.google.com/getting-started)，找出首次設定時建立的專案 (名為「Outline 伺服器」)，然後刪除其中的資源或關閉整個專案。

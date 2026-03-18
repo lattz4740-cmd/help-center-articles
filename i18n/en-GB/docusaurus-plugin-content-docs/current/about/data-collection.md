@@ -13,7 +13,7 @@ Outline doesn't collect personal information unless you opt in to provide it. Ou
 
  1. Server IP
 
- The Outline server IP is collected by [Quay.io](http://quay.io/), and made accessible to us when the server automatically updates with the latest security and feature improvements. The server IP may identify the cloud server provider and the city in which the Outline server has been set up, but this doesn't provide information about who's running the server or who is accessing it.
+ The Outline server IP is collected by [Quay.io](https://quay.io/), and made accessible to us when the server automatically updates with the latest security and feature improvements. The server IP may identify the cloud server provider and the city in which the Outline server has been set up, but this doesn't provide information about who's running the server or who is accessing it.
 
  2. Non-personally identifiable technical information
 
@@ -30,7 +30,7 @@ Outline doesn't collect personal information unless you opt in to provide it. Ou
 - Architecture
 - Outline version and build number
 
-This information is transferred using HTTPS to Sentry ([sentry.io](http://sentry.io/)), a third-party, open source error tracking provider. Sentry uses a variety of industry-standard technologies and services to secure your data from unauthorised access, disclosure, use and loss. If you have any questions about Sentry's policies, please visit [https://sentry.io/security/](https://sentry.io/security/) and [https://sentry.io/privacy/](https://sentry.io/privacy/), or contact [security@sentry.io](mailto:security@sentry.io). All Outline data stored by Sentry is restricted such that only members of the Outline team can access it.
+This information is transferred using HTTPS to Sentry ([sentry.io](https://sentry.io/)), a third-party, open source error tracking provider. Sentry uses a variety of industry-standard technologies and services to secure your data from unauthorised access, disclosure, use and loss. If you have any questions about Sentry's policies, please visit [https://sentry.io/security/](https://sentry.io/security/) and [https://sentry.io/privacy/](https://sentry.io/privacy/), or contact [security@sentry.io](mailto:security@sentry.io). All Outline data stored by Sentry is restricted such that only members of the Outline team can access it.
 
 ****Information that we obtain only upon opt-in****
 

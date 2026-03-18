@@ -5,7 +5,7 @@ sidebar_label: "Mennyibe kerül az Outline futtatása?"
 
 Az Outline szoftver mindenki számára díjmentes, akár a VPN-t kezelő szerveradminisztrátor, akár a nyílt internethez az Outline-on keresztül hozzáférő felhasználó.
 
- Az Outline működéséhez azonban felhőszerverre van szükség. A szerverhozzáféréssel rendelkező szerveradminisztrátorok további költség nélkül telepíthetik az Outline-t. Ha még nincs szerverhozzáférése, körülbelül havi 5 USD összegért fizethet elő 1 terabájt mennyiségű adatátvitelre egy felhőszolgáltatónál (pl. [DigitalOcean](http://www.digitalocean.com/) vagy Amazon Web Services). Ez az adatmennyiség egyetlen szerver esetén több száz felhasználóra elég.
+ Az Outline működéséhez azonban felhőszerverre van szükség. A szerverhozzáféréssel rendelkező szerveradminisztrátorok további költség nélkül telepíthetik az Outline-t. Ha még nincs szerverhozzáférése, körülbelül havi 5 USD összegért fizethet elő 1 terabájt mennyiségű adatátvitelre egy felhőszolgáltatónál (pl. [DigitalOcean](https://www.digitalocean.com/) vagy Amazon Web Services). Ez az adatmennyiség egyetlen szerver esetén több száz felhasználóra elég.
 
  Egy példa arra, hogy miként számíthatja ki, hogy mennyibe kerülne az Outline futtatása a kiválasztott felhőszolgáltatónál:
 

@@ -10,7 +10,7 @@ Outline គឺមិនដូច​សេវាកម្ម VPN ដែលអ្�
 - ស្នើឱ្យ​នរណាម្នាក់​អញ្ជើញអ្នក​ឱ្យប្រើ​ម៉ាស៊ីនមេ​របស់គាត់៖ ប្រសិនបើ​អ្នកស្គាល់​នរណាម្នាក់​ដែលមាន​ម៉ាស៊ីនមេ Outline សូម​ទាក់ទង​ទៅគាត់ ហើយស្នើសុំ​កូដ​ចូលប្រើ​ពីគាត់។
 - [បង្កើត​ម៉ាស៊ីនមេ​ដោយ​ខ្លួនឯង៖](/manager/server-setup/setup-server) ទាញយក [Outline Manager](https://getoutline.org/get-started/#step-1) ហើយ​រៀបចំ[ម៉ាស៊ីនមេ Outline](/about/terminology) ឯកជន​របស់អ្នក​ផ្ទាល់​ដោយប្រើ​កុំព្យូទ័រ Windows, Mac ឬ Linux។ យើងបាន​ធ្វើឱ្យ​ដំណើរការនេះ​មានភាព​ងាយស្រួល​សម្រាប់​គ្រប់គ្នាក្នុងការអនុវត្ត ជាពិសេស​តាមរយៈ​ក្រុមហ៊ុន​ផ្ដល់សេវា​ពពក DigitalOcean។
 - ប្រើ​សេវាកម្ម Outline ឬ [Shadowsocks](https://en.wikipedia.org/wiki/Shadowsocks#:~:text=Shadowsocks%20is%20a%20free%20and,have%20been%20made%20available%20since.)៖ កម្មវិធីភ្ញៀវសម្រាប់ Outline ក៏អាច​ត្រូវបានប្រើ​ជាមួយ​សេវាកម្ម​ភាគីទីបី​ដែលប្រើ Outline ឬ​ប្រូតូកូល Shadowsocks ផងដែរ។ ឧទាហរណ៍៖
-   - [nthLink](http://nthlink.com/) ដំណើរការ​សេវាកម្ម​ឥតគិតថ្លៃ​ដោយ​ផ្អែកលើ Outline តាមរយៈ​កំណែ​កម្មវិធីភ្ញៀវសម្រាប់ Outline ដែលបាន​កែប្រែ។
+   - [nthLink](https://nthlink.com/) ដំណើរការ​សេវាកម្ម​ឥតគិតថ្លៃ​ដោយ​ផ្អែកលើ Outline តាមរយៈ​កំណែ​កម្មវិធីភ្ញៀវសម្រាប់ Outline ដែលបាន​កែប្រែ។
    - [ASL19](https://www.reddit.com/r/outlinevpn/comments/nwu1se/the_outline_distribution_system_is_here_to_help/) ដំណើរការ​កំណែ Outline ដែលបាន​កែប្រែ​ដែលហៅថា [BeePass](https://beepassvpn.com/) ក៏ដូចជា[បូត Telegram](https://t.me/paskoochehbot) ដែលផ្ដល់​លេខកូដ​ចូលប្រើ​ឥតគិតថ្លៃ​ដល់​ម៉ាស៊ីនមេ BeePass។
    - អ្នកប្រើប្រាស់​ភាសា​ហ្វាស៊ី​ក៏អាច​ស្នើសុំ​កូដ​ចូលប្រើ Outline ពី [Paskoocheh របស់ ASL19](https://outline.paskoocheh.com/) បាន​ផងដែរ។
 

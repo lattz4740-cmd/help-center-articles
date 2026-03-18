@@ -13,7 +13,7 @@ Outline indsamler ikke personlige oplysninger, medmindre du tilvælger at angive
 
  1. Serverens IP-adresse
 
- Outline-serverens IP-adresse indsamles af [LINKQuay.io](http://quay.io/) og gøres tilgængelig for os, når serveren automatisk opdateres med de nyeste forbedringer af sikkerheden og funktionerne. Serverens IP-adresse kan identificere cloudserverudbyderen og den by, hvor Outline-serveren er oprettet, men den giver ingen oplysninger om, hvem der driver serveren, eller hvem der har adgang til den.
+ Outline-serverens IP-adresse indsamles af [LINKQuay.io](https://quay.io/) og gøres tilgængelig for os, når serveren automatisk opdateres med de nyeste forbedringer af sikkerheden og funktionerne. Serverens IP-adresse kan identificere cloudserverudbyderen og den by, hvor Outline-serveren er oprettet, men den giver ingen oplysninger om, hvem der driver serveren, eller hvem der har adgang til den.
 
  2. Ikke-personhenførbare tekniske oplysninger
 
@@ -30,7 +30,7 @@ Outline indsamler ikke personlige oplysninger, medmindre du tilvælger at angive
 - Arkitektur
 - Outline-version og buildnummer
 
-Disse oplysninger overføres via HTTPS til Sentry ([sentry.io](http://sentry.io/)), som er en tredjepartsudbyder af open source-fejlsporing. Sentry benytter en række forskellige teknologier og tjenester, der er standard i branchen, til at beskytte dine data mod uautoriseret adgang, videregivelse, brug og tab. Hvis du har spørgsmål om Sentrys politikker, kan du gå til [https://sentry.io/security/](https://sentry.io/security/) og [https://sentry.io/privacy/](https://sentry.io/privacy/) eller kontakte [security@sentry.io](mailto:security@sentry.io). Alle Outline-data, der lagres af Sentry, er adgangsbegrænsede, så kun medlemmer af Outline-teamet kan få adgang til dem.
+Disse oplysninger overføres via HTTPS til Sentry ([sentry.io](https://sentry.io/)), som er en tredjepartsudbyder af open source-fejlsporing. Sentry benytter en række forskellige teknologier og tjenester, der er standard i branchen, til at beskytte dine data mod uautoriseret adgang, videregivelse, brug og tab. Hvis du har spørgsmål om Sentrys politikker, kan du gå til [https://sentry.io/security/](https://sentry.io/security/) og [https://sentry.io/privacy/](https://sentry.io/privacy/) eller kontakte [security@sentry.io](mailto:security@sentry.io). Alle Outline-data, der lagres af Sentry, er adgangsbegrænsede, så kun medlemmer af Outline-teamet kan få adgang til dem.
 
 ****Oplysninger, vi kun indhenter ved tilvalg****
 

@@ -13,7 +13,7 @@ sidebar_label: データと情報の収集
 
  1. サーバー IP
 
-　　Outline のサーバー IP が [Quay.io](http://quay.io/) によって収集されます。サーバーが最新のセキュリティ機能や強化機能を伴って自動更新される際、Google はこのサーバーの IP アドレスにアクセスできるようになります。サーバーの IP アドレスからクラウド サーバー プロバイダや、Outline サーバーが設置されている都市が特定される可能性はありますが、サーバーの運用者や、サーバーにアクセスしているユーザーに関する情報が明らかになることはありません。
+　　Outline のサーバー IP が [Quay.io](https://quay.io/) によって収集されます。サーバーが最新のセキュリティ機能や強化機能を伴って自動更新される際、Google はこのサーバーの IP アドレスにアクセスできるようになります。サーバーの IP アドレスからクラウド サーバー プロバイダや、Outline サーバーが設置されている都市が特定される可能性はありますが、サーバーの運用者や、サーバーにアクセスしているユーザーに関する情報が明らかになることはありません。
 
  2. 個人を特定できない技術情報
 
@@ -30,7 +30,7 @@ sidebar_label: データと情報の収集
 - アーキテクチャ
 - Outline のバージョンとビルド番号
 
-上記の情報は、HTTPS 経由でサードパーティのオープンソース エラー トラッキング プロバイダである Sentry（[sentry.io](http://sentry.io/)）に転送されます。Sentry は業界標準のさまざまテクノロジーやサービスを利用して、ユーザーのデータを不正なアクセス、開示、使用、損失から保護します。Sentry のポリシーについてのご質問は、[https://sentry.io/security/](https://sentry.io/security/) および [https://sentry.io/privacy/](https://sentry.io/privacy/) をご覧になるか、[security@sentry.io](mailto:security@sentry.io) までお問い合わせください。Sentry によって保管されるすべての Outline データへのアクセスは、Outline チームのメンバーのみに制限されます。
+上記の情報は、HTTPS 経由でサードパーティのオープンソース エラー トラッキング プロバイダである Sentry（[sentry.io](https://sentry.io/)）に転送されます。Sentry は業界標準のさまざまテクノロジーやサービスを利用して、ユーザーのデータを不正なアクセス、開示、使用、損失から保護します。Sentry のポリシーについてのご質問は、[https://sentry.io/security/](https://sentry.io/security/) および [https://sentry.io/privacy/](https://sentry.io/privacy/) をご覧になるか、[security@sentry.io](mailto:security@sentry.io) までお問い合わせください。Sentry によって保管されるすべての Outline データへのアクセスは、Outline チームのメンバーのみに制限されます。
 
 ****ユーザーの許可を得た場合にのみ Google が取得する情報****
 

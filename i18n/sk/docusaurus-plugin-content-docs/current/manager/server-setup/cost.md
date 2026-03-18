@@ -5,7 +5,7 @@ sidebar_label: "Koľko stojí prevádzkovanie služby Outline?"
 
 Softvér Outline je pre všetkých zadarmo: pre správcov servera spravujúcich VPN aj pre ľudí, ktorí ho používajú na prístup k otvorenému internetu.
 
- Na jeho fungovanie je však potrebný prístup ku cloudovému serveru. Správcovia servera, ktorí už k nejakému serveru prístup majú, na ňom môžu Outline inštalovať bez ďalších nákladov. Ostatní môžu prístup získať u poskytovateľa cloudových služieb, ako je [DigitalOcean](http://www.digitalocean.com/) alebo Amazon Web Services, za približne 5 USD mesačne s limitom prenosu údajov 1 terabajt, čo postačuje na podporu stoviek používateľov na jedinom serveri.
+ Na jeho fungovanie je však potrebný prístup ku cloudovému serveru. Správcovia servera, ktorí už k nejakému serveru prístup majú, na ňom môžu Outline inštalovať bez ďalších nákladov. Ostatní môžu prístup získať u poskytovateľa cloudových služieb, ako je [DigitalOcean](https://www.digitalocean.com/) alebo Amazon Web Services, za približne 5 USD mesačne s limitom prenosu údajov 1 terabajt, čo postačuje na podporu stoviek používateľov na jedinom serveri.
 
  Takto môžete vypočítať, koľko by vás stálo prevádzkovanie softvéru Outline u vybratého poskytovateľa cloudu:
 

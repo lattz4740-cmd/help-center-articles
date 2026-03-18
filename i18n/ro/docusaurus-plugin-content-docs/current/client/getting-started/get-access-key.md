@@ -10,7 +10,7 @@ Outline nu este un serviciu VPN la care cumpărați acces, ci este [un instrumen
 - Rugați pe cineva să vă invite în serverul lor. Dacă aveți o cunoștință cu un server Outline, contactați-o și cereți-i o cheie de acces.
 - [Creați propriul server.](/manager/server-setup/setup-server) Pe un computer Windows, Mac sau Linux, descărcați [Outline Manager](https://getoutline.org/get-started/#step-1) și configurați propriul [server Outline](/about/terminology) privat. Am simplificat acest proces astfel încât să fie accesibil oricui, mai ales prin furnizorul de servicii în cloud DigitalOcean.
 - Folosiți un serviciu Outline sau [Shadowsocks](https://en.wikipedia.org/wiki/Shadowsocks#:~:text=Shadowsocks%20is%20a%20free%20and,have%20been%20made%20available%20since.). Clientul Outline poate fi folosit și cu servicii terță parte care folosesc Outline sau protocolul Shadowsocks. De exemplu:
-   - [nthLink](http://nthlink.com/) rulează un serviciu gratuit bazat pe Outline, cu o versiune modificată a clientului Outline;
+   - [nthLink](https://nthlink.com/) rulează un serviciu gratuit bazat pe Outline, cu o versiune modificată a clientului Outline;
    - [ASL19](https://www.reddit.com/r/outlinevpn/comments/nwu1se/the_outline_distribution_system_is_here_to_help/) rulează o versiune modificată a Outline, numită [BeePass](https://beepassvpn.com/), precum și o [aplicație bot Telegram](https://t.me/paskoochehbot), care oferă chei de acces gratuite la serverele BeePass;
    - utilizatorii care folosesc limba persană pot și să solicite o cheie de acces Outline de la [Paskoocheh al ASL19](https://outline.paskoocheh.com/).
 

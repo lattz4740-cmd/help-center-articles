@@ -10,7 +10,7 @@ Outline သည် သင်သုံးရန် ဝယ်ထားသော VPN
 - Outline ဆာဗာရှိသူတစ်ဦးဦးနှင့် သိပါက ဆက်သွယ်ပြီး ၎င်း၏ဆာဗာသို့ ဖိတ်ကြားရန် တောင်းဆိုကာ သုံးခွင့်ကီး တောင်းပါ။
 - [သင်ကိုယ်တိုင်အတွက် ဆာဗာပြုလုပ်ပါ-](/manager/server-setup/setup-server) Windows၊ Mac (သို့) Linux ကွန်ပျူတာသုံးပြီး [Outline မန်နေဂျာ](https://getoutline.org/get-started/#step-1) ဒေါင်းလုဒ်လုပ်၍ သင့်ကိုယ်ပိုင်သီးသန့် [Outline ဆာဗာ](/about/terminology) စနစ်သတ်မှတ်ပါ။ အထူးသဖြင့် cloud ဝန်ဆောင်မှုပေးသူ DigitalOcean မှတစ်ဆင့် အားလုံးအတွက် လွယ်ကူသောလုပ်ငန်းစဥ်ဖြစ်အောင် ပြုလုပ်ထားသည်။
 - Outline (သို့) [Shadowsocks](https://en.wikipedia.org/wiki/Shadowsocks#:~:text=Shadowsocks%20is%20a%20free%20and,have%20been%20made%20available%20since.) ဝန်ဆောင်မှု သုံးပါ- Outline ကလိုင်းယင့်ကို Outline (သို့) Shadowsocks ပရိုတိုကော သုံးသည့် ပြင်ပကုမ္ပဏီ ဝန်ဆောင်မှုများနှင့်လည်း သုံးနိုင်သည်။ ဥပမာ-
-   - [nthLink](http://nthlink.com/) သည် ပြုပြင်ပြီး Outline ကလိုင်းယင့်ဗားရှင်း ပါရှိသော Outline အခြေပြု အခမဲ့ဝန်ဆောင်မှုကို လုပ်ဆောင်လျက်ရှိပါသည်။
+   - [nthLink](https://nthlink.com/) သည် ပြုပြင်ပြီး Outline ကလိုင်းယင့်ဗားရှင်း ပါရှိသော Outline အခြေပြု အခမဲ့ဝန်ဆောင်မှုကို လုပ်ဆောင်လျက်ရှိပါသည်။
    - [ASL19](https://www.reddit.com/r/outlinevpn/comments/nwu1se/the_outline_distribution_system_is_here_to_help/) သည် [BeePass](https://beepassvpn.com/) ခေါ် ပြုပြင်ပြီး Outline ဗားရှင်းအပြင် [Telegram ဘော့](https://t.me/paskoochehbot) ကိုပါ လုပ်ဆောင်လျက်ရှိပြီး ၎င်းဘော့သည် BeePass ဆာဗာများသို့ အခမဲ့သုံးခွင့်ကီးများကို ပံ့ပိုးသည်။
    - Farsi ဘာသာစကားအသုံးပြုသူများသည် Outline သုံးခွင့်ကီးကို [ASL19’s Paskoocheh](https://outline.paskoocheh.com/) ထံမှလည်း တောင်းဆိုနိုင်သည်။
 

@@ -13,7 +13,7 @@ Hindi nangongolekta ng personal na impormasyon ang Outline maliban na lang kung 
 
  1. Server IP
 
- Ang IP ng Outline server ay kinokolekta ng [Quay.io](http://quay.io/), at ginagawa nitong accessible sa amin ang IP ng Outline server kapag awtomatikong nag-update ang server sa mga pinakabagong pagpapahusay sa seguridad at feature. Posibleng matukoy ng IP ng Server ang cloud provider server at ang lungsod kung saan na-set up ang Outline server pero hindi ito nagbibigay ng impormasyon tungkol sa kung sino ang nagpapatakbo sa server at kung sino ang nag-a-access dito.
+ Ang IP ng Outline server ay kinokolekta ng [Quay.io](https://quay.io/), at ginagawa nitong accessible sa amin ang IP ng Outline server kapag awtomatikong nag-update ang server sa mga pinakabagong pagpapahusay sa seguridad at feature. Posibleng matukoy ng IP ng Server ang cloud provider server at ang lungsod kung saan na-set up ang Outline server pero hindi ito nagbibigay ng impormasyon tungkol sa kung sino ang nagpapatakbo sa server at kung sino ang nag-a-access dito.
 
  2. Teknikal na impormasyong hindi nagbibigay ng personal na pagkakakilanlan
 
@@ -30,7 +30,7 @@ Hindi nangongolekta ng personal na impormasyon ang Outline maliban na lang kung 
 - Architecture
 - Bersyon at build number ng Outline
 
-Inililipat ang impormasyong ito gamit ang HTTPS sa Sentry ([sentry.io](http://sentry.io/)), isang third-party at open source na error tracking provider. Gumagamit ang Sentry ng iba't ibang teknolohiya at serbisyong ayon sa pamantayan ng industriya para i-secure ang iyong data mula sa hindi pinapahintulutang pag-access, pagsisiwalat, paggamit, at pagkawala. Kung mayroon kang anumang tanong tungkol sa mga patakaran ng Sentry, pakibisita ang [https://sentry.io/security/](https://sentry.io/security/) at [https://sentry.io/privacy/](https://sentry.io/privacy/), o makipag-ugnayan sa [security@sentry.io](mailto:security@sentry.io). Ang lahat ng data ng Outline na na-store ng Sentry ay pinaghihigpitan para ang mga miyembro lang ng Outline team ang puwedeng maka-access nito.
+Inililipat ang impormasyong ito gamit ang HTTPS sa Sentry ([sentry.io](https://sentry.io/)), isang third-party at open source na error tracking provider. Gumagamit ang Sentry ng iba't ibang teknolohiya at serbisyong ayon sa pamantayan ng industriya para i-secure ang iyong data mula sa hindi pinapahintulutang pag-access, pagsisiwalat, paggamit, at pagkawala. Kung mayroon kang anumang tanong tungkol sa mga patakaran ng Sentry, pakibisita ang [https://sentry.io/security/](https://sentry.io/security/) at [https://sentry.io/privacy/](https://sentry.io/privacy/), o makipag-ugnayan sa [security@sentry.io](mailto:security@sentry.io). Ang lahat ng data ng Outline na na-store ng Sentry ay pinaghihigpitan para ang mga miyembro lang ng Outline team ang puwedeng maka-access nito.
 
 ****Impormasyong kinukuha lang namin kapag nag-opt in****
 

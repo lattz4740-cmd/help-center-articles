@@ -10,7 +10,7 @@ Outline no es como los servicios de VPN para los que compras el acceso. Más bie
 - Pídele a alguien que te invite a usar su servidor: Si conoces a una persona que tenga un servidor de Outline, comunícate con ella y pídele una clave de acceso.
 - [Crea un servidor:](/manager/server-setup/setup-server) Descarga [Outline Manager](https://getoutline.org/get-started/#step-1) en una computadora Windows, Mac o Linux y configura tu propio [servidor privado de Outline](/about/terminology). Facilitamos este proceso para que cualquier persona pueda realizarlo, especialmente por medio del proveedor de servicios en la nube DigitalOcean.
 - Usa un servicio de Outline o [Shadowsocks](https://en.wikipedia.org/wiki/Shadowsocks#:~:text=Shadowsocks%20is%20a%20free%20and,have%20been%20made%20available%20since.): El cliente de Outline también se puede usar con servicios de terceros que utilicen Outline o el protocolo Shadowsocks. Por ejemplo:
-   - [nthLink](http://nthlink.com/) ejecuta un servicio gratuito basado en Outline, con una versión modificada del cliente de Outline.
+   - [nthLink](https://nthlink.com/) ejecuta un servicio gratuito basado en Outline, con una versión modificada del cliente de Outline.
    - [ASL19](https://www.reddit.com/r/outlinevpn/comments/nwu1se/the_outline_distribution_system_is_here_to_help/) ejecuta una versión modificada de Outline llamada [BeePass](https://beepassvpn.com/), además de [un bot de Telegram](https://t.me/paskoochehbot) que proporciona claves de acceso gratuitas para los servidores de BeePass.
    - Los usuarios que hablan farsi también pueden solicitar una clave de acceso de Outline desde [Paskoocheh de ASL19](https://outline.paskoocheh.com/).
 

@@ -21,5 +21,5 @@ sidebar_label: أخطاء الجدار الناري
 
  لإنشاء استثناءات للجدار الناري لخادمك، ننصحك بالاطّلاع على مستندات "ufw" و"iptables":
 
-- UFW: [https://help.ubuntu.com/community/UFW](/client/troubleshooting/firewall-errors)
-- Iptables: [https://help.ubuntu.com/community/IptablesHowTo](/client/troubleshooting/firewall-errors)
+- UFW: [https://help.ubuntu.com/community/UFW](https://help.ubuntu.com/community/UFW)
+- Iptables: [https://help.ubuntu.com/community/IptablesHowTo](https://help.ubuntu.com/community/IptablesHowTo)

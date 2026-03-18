@@ -5,7 +5,7 @@ sidebar_label: "Koliko košta rad Outlinea?"
 
 Softver Outline je svima besplatan, bilo da ste administrator servera koji upravlja VPN-om ili neko ko koristi Outline za pristup otvorenom internetu.
 
- Međutim, Outline mora imati pristup serveru u oblaku da bi radio. Administratori servera koji već imaju pristup serveru mogu instalirati Outline na njemu bez dodatnih troškova. Administratori koji nemaju pristup serveru ga mogu nabaviti od pružaoca usluge oblaka, kao što su [DigitalOcean](http://www.digitalocean.com/) ili Amazon Web Services, po cijeni od oko 5 USD mjesečno za dozvoljeni prenos podataka od 1 terabajta – što je dovoljno da podrži stotine korisnika na jednom serveru.
+ Međutim, Outline mora imati pristup serveru u oblaku da bi radio. Administratori servera koji već imaju pristup serveru mogu instalirati Outline na njemu bez dodatnih troškova. Administratori koji nemaju pristup serveru ga mogu nabaviti od pružaoca usluge oblaka, kao što su [DigitalOcean](https://www.digitalocean.com/) ili Amazon Web Services, po cijeni od oko 5 USD mjesečno za dozvoljeni prenos podataka od 1 terabajta – što je dovoljno da podrži stotine korisnika na jednom serveru.
 
  Primjer kako možete izračunati koliko bi koštao rad Outlinea putem pružaoca usluge oblaka po vašem izboru:
 

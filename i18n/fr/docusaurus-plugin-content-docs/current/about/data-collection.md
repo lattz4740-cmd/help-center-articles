@@ -13,7 +13,7 @@ Nous collectons deux types d'informations de manière automatique.
 
 1. Adresse IP du serveur
 
-L'adresse IP du serveur Outline est collectée par [Quay.io](http://quay.io/), qui nous la transmet au moment où le serveur se met automatiquement à jour avec les dernières fonctionnalités et améliorations de sécurité. Cette adresse IP est susceptible de permettre l'identification du fournisseur de serveurs cloud et de la ville dans laquelle le serveur Outline a été configuré, sans pour autant fournir d'indications sur les personnes qui exécutent le serveur ou qui y accèdent.
+L'adresse IP du serveur Outline est collectée par [Quay.io](https://quay.io/), qui nous la transmet au moment où le serveur se met automatiquement à jour avec les dernières fonctionnalités et améliorations de sécurité. Cette adresse IP est susceptible de permettre l'identification du fournisseur de serveurs cloud et de la ville dans laquelle le serveur Outline a été configuré, sans pour autant fournir d'indications sur les personnes qui exécutent le serveur ou qui y accèdent.
 
 2. Informations techniques ne permettant pas d'identifier personnellement l'utilisateur
 
@@ -30,7 +30,7 @@ Si Outline plante ou qu'une exception irrécupérable se produit, ou si vous env
 - Architecture
 - Version et numéro de version d'Outline
 
-Ces informations sont transmises à l'aide du protocole HTTPS à Sentry ([sentry.io](http://sentry.io/)), un fournisseur tiers Open Source de suivi d'erreurs. À l'aide d'un ensemble de technologies et de services standards, Sentry protège vos données contre les accès, la divulgation et les utilisations non autorisés, et évite leur perte. Pour toute question concernant les règles de Sentry, veuillez consulter [https://sentry.io/security/](https://sentry.io/security/) et [https://sentry.io/privacy/](https://sentry.io/privacy/) ou envoyer un message à l'adresse [security@sentry.io](mailto:security@sentry.io). L'accès à toutes les données Outline stockées par Sentry est limité aux seuls membres de l'équipe Outline.
+Ces informations sont transmises à l'aide du protocole HTTPS à Sentry ([sentry.io](https://sentry.io/)), un fournisseur tiers Open Source de suivi d'erreurs. À l'aide d'un ensemble de technologies et de services standards, Sentry protège vos données contre les accès, la divulgation et les utilisations non autorisés, et évite leur perte. Pour toute question concernant les règles de Sentry, veuillez consulter [https://sentry.io/security/](https://sentry.io/security/) et [https://sentry.io/privacy/](https://sentry.io/privacy/) ou envoyer un message à l'adresse [security@sentry.io](mailto:security@sentry.io). L'accès à toutes les données Outline stockées par Sentry est limité aux seuls membres de l'équipe Outline.
 
 ****Informations collectées uniquement sur acceptation****
 

@@ -11,6 +11,6 @@ Danke, dass Sie uns helfen möchten, Outline zu verbessern. Sie haben verschiede
 
 - **Über diese Website**: Klicken Sie einfach auf dieser Website auf den Link "Kontakt".
 
-- **Schwere Fehler**: Bei schweren Fehlern bitten wir Sie, direkt eine E-Mail mit Details an security[at][getoutline.org](http://getoutline.org/) zu senden.
+- **Schwere Fehler**: Bei schweren Fehlern bitten wir Sie, direkt eine E-Mail mit Details an security[at][getoutline.org](https://getoutline.org/) zu senden.
 
 Nochmals vielen Dank dafür, dass Sie uns Ihre Ideen mitteilen.

@@ -5,7 +5,7 @@ sidebar_label: "Hvor meget koster det at køre Outline?"
 
 Outline-softwaren er gratis for alle, uanset om du er serveradministrator, der administrerer et VPN, eller en bruger, der får adgang til det åbne internet via Outline.
 
- Outline kræver imidlertid adgang til en server i skyen for at kunne køre. Serveradministratorer, der allerede har adgang til en server, kan installere Outline på den uden ekstra omkostninger. De, der ikke har adgang til en server, kan få adgang via en udbyder af tjenester i skyen, f.eks. [DigitalOcean](http://www.digitalocean.com/) eller Amazon Web Services, for omkring 5 USD om måneden med mulighed for 1 TB i dataoverførsel. Det er nok til at understøtte hundredvis af brugere på én server.
+ Outline kræver imidlertid adgang til en server i skyen for at kunne køre. Serveradministratorer, der allerede har adgang til en server, kan installere Outline på den uden ekstra omkostninger. De, der ikke har adgang til en server, kan få adgang via en udbyder af tjenester i skyen, f.eks. [DigitalOcean](https://www.digitalocean.com/) eller Amazon Web Services, for omkring 5 USD om måneden med mulighed for 1 TB i dataoverførsel. Det er nok til at understøtte hundredvis af brugere på én server.
 
  Her er et eksempel på, hvordan du kan beregne omkostningerne ved at køre Outline med din valgte udbyder af tjenester i skyen:
 

@@ -21,5 +21,5 @@ Il tuo provider di soluzioni cloud può richiedere di creare eccezioni al firewa
 
 Per creare eccezioni al firewall del tuo server, ti consigliamo di consultare la documentazione per "ufw" e "iptables":
 
-- UFW: [https://help.ubuntu.com/community/UFW](/client/troubleshooting/firewall-errors)
-- Iptables: [https://help.ubuntu.com/community/IptablesHowTo](/client/troubleshooting/firewall-errors)
+- UFW: [https://help.ubuntu.com/community/UFW](https://help.ubuntu.com/community/UFW)
+- Iptables: [https://help.ubuntu.com/community/IptablesHowTo](https://help.ubuntu.com/community/IptablesHowTo)

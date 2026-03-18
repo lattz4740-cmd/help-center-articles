@@ -5,7 +5,7 @@ sidebar_label: "Quanto custa executar o Outline?"
 
 O software Outline é gratuito para qualquer pessoa, quer seja um administrador de servidor que gere a VPN ou alguém que usa o Outline para aceder à Internet aberta.
 
- No entanto, o Outline requer acesso a um servidor na nuvem para ser executado. Os administradores de servidores que já têm acesso a um servidor podem instalar o Outline no mesmo sem custos adicionais. As pessoas sem acesso a um servidor podem receber acesso a partir de um fornecedor de serviços na nuvem, como o [DigitalOcean](http://www.digitalocean.com/) ou os serviços Web da Amazon, por cerca de 5 USD por mês para 1 terabyte de limite de transferência de dados, o que é suficiente para suportar centenas de utilizadores num único servidor.
+ No entanto, o Outline requer acesso a um servidor na nuvem para ser executado. Os administradores de servidores que já têm acesso a um servidor podem instalar o Outline no mesmo sem custos adicionais. As pessoas sem acesso a um servidor podem receber acesso a partir de um fornecedor de serviços na nuvem, como o [DigitalOcean](https://www.digitalocean.com/) ou os serviços Web da Amazon, por cerca de 5 USD por mês para 1 terabyte de limite de transferência de dados, o que é suficiente para suportar centenas de utilizadores num único servidor.
 
  Um exemplo de como pode fazer os cálculos para determinar o custo de execução do Outline com o seu fornecedor de nuvem escolhido:
 

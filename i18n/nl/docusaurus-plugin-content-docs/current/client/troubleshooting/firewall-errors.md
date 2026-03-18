@@ -21,5 +21,5 @@ De cloudprovider die je hebt gekozen, vereist wellicht dat je handmatig uitzonde
 
  Als je uitzonderingen wilt maken op je serverfirewall, raden we je aan de documentatie van UFW en Iptables te bekijken:
 
-- UFW: [https://help.ubuntu.com/community/UFW](/client/troubleshooting/firewall-errors)
-- Iptables: [https://help.ubuntu.com/community/IptablesHowTo](/client/troubleshooting/firewall-errors)
+- UFW: [https://help.ubuntu.com/community/UFW](https://help.ubuntu.com/community/UFW)
+- Iptables: [https://help.ubuntu.com/community/IptablesHowTo](https://help.ubuntu.com/community/IptablesHowTo)

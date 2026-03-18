@@ -13,7 +13,7 @@ Outline ne prikuplja lične informacije, osim ako pristanete da ih pružite. Out
 
  1. IP servera
 
- IP Outline servera prikuplja [Quay.io](http://quay.io/) i omogućava da mu pristupimo kada se na serveru izvrše automatska ažuriranja s najnovijim poboljšanjima sigurnosti i funkcija. Pomoću IP-a servera može se identificirati pružalac usluge oblaka i grad u kojem je postavljen Outline server, ali on ne pruža informacije o tome ko upravlja serverom niti ko mu pristupa.
+ IP Outline servera prikuplja [Quay.io](https://quay.io/) i omogućava da mu pristupimo kada se na serveru izvrše automatska ažuriranja s najnovijim poboljšanjima sigurnosti i funkcija. Pomoću IP-a servera može se identificirati pružalac usluge oblaka i grad u kojem je postavljen Outline server, ali on ne pruža informacije o tome ko upravlja serverom niti ko mu pristupa.
 
  2. Tehničke informacije kojima se ne otkriva identitet osobe
 
@@ -30,7 +30,7 @@ Outline ne prikuplja lične informacije, osim ako pristanete da ih pružite. Out
 - Arhitektura
 - Broj verzije i podverzije Outlinea
 
-Ove informacije se prenose pomoću HTTPS-a Sentryju ([sentry.io](http://sentry.io/)), pružaocu usluge praćenja grešaka treće strane otvorenog koda. Sentry koristi različite tehnologije i usluge, standardne u industriji, da zaštiti vaše podatke od neovlaštenog pristupa, otkrivanja, korištenja i gubitka. Ako imate pitanja o pravilima koja koristi Sentry, posjetite [https://sentry.io/security/](https://sentry.io/security/) i [https://sentry.io/privacy/](https://sentry.io/privacy/) ili pišite na [security@sentry.io](mailto:security@sentry.io). Pristup svim podacima Outlinea koje Sentry pohranjuje je ograničen tako da im mogu pristupati samo članovi tima Outlinea.
+Ove informacije se prenose pomoću HTTPS-a Sentryju ([sentry.io](https://sentry.io/)), pružaocu usluge praćenja grešaka treće strane otvorenog koda. Sentry koristi različite tehnologije i usluge, standardne u industriji, da zaštiti vaše podatke od neovlaštenog pristupa, otkrivanja, korištenja i gubitka. Ako imate pitanja o pravilima koja koristi Sentry, posjetite [https://sentry.io/security/](https://sentry.io/security/) i [https://sentry.io/privacy/](https://sentry.io/privacy/) ili pišite na [security@sentry.io](mailto:security@sentry.io). Pristup svim podacima Outlinea koje Sentry pohranjuje je ograničen tako da im mogu pristupati samo članovi tima Outlinea.
 
 ****Informacije koje prikupljamo samo ako prihvatite prikupljanje****
 

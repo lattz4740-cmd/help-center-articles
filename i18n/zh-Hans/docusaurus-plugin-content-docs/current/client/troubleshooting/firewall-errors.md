@@ -21,5 +21,5 @@ sidebar_label: 防火墙错误
 
  为了给您的服务器防火墙创建例外，我们建议您查看“ufw”和“iptables”的相关文档：
 
-- UFW：[https://help.ubuntu.com/community/UFW](/client/troubleshooting/firewall-errors)
-- Iptables：[https://help.ubuntu.com/community/IptablesHowTo](/client/troubleshooting/firewall-errors)
+- UFW：[https://help.ubuntu.com/community/UFW](https://help.ubuntu.com/community/UFW)
+- Iptables：[https://help.ubuntu.com/community/IptablesHowTo](https://help.ubuntu.com/community/IptablesHowTo)

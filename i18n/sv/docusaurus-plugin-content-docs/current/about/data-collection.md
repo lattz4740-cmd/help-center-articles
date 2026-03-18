@@ -13,7 +13,7 @@ Outline samlar inte in personliga uppgifter såvida du inte tillhandahåller dem
 
  1. Server-IP
 
- Outline-serverns IP-adress samlas in av [Quay.io](http://quay.io/) och blir tillgänglig för oss när servern uppdateras automatiskt med de senaste säkerhets- och funktionsförbättringarna. Med hjälp av serverns IP-adress kan det gå att identifiera leverantören av molnservern och i vilken stad Outline-servern har konfigurerats, men det visas ingen information om vem som kör servern eller vem som har åtkomst till den.
+ Outline-serverns IP-adress samlas in av [Quay.io](https://quay.io/) och blir tillgänglig för oss när servern uppdateras automatiskt med de senaste säkerhets- och funktionsförbättringarna. Med hjälp av serverns IP-adress kan det gå att identifiera leverantören av molnservern och i vilken stad Outline-servern har konfigurerats, men det visas ingen information om vem som kör servern eller vem som har åtkomst till den.
 
  2. Tekniska uppgifter som inte kan kopplas till en specifik individ
 
@@ -30,7 +30,7 @@ Outline samlar inte in personliga uppgifter såvida du inte tillhandahåller dem
 - Arkitektur
 - Version och versionsnummer för Outline
 
-Uppgifterna överförs via HTTPS till Sentry ([sentry.io](http://sentry.io/)) som är en tredjepartsleverantör av felspårning i öppen källkod. Sentry använder en rad olika tekniker och tjänster som uppfyller branschstandarden för att skydda din data mot obehörig åtkomst och användning, otillåtet yppande och förlust. Om du har frågor om Sentrys policyer besöker du [https://sentry.io/security/](https://sentry.io/security/) och [https://sentry.io/privacy/](https://sentry.io/privacy/), eller kontaktar företaget direkt på [security@sentry.io](mailto:security@sentry.io). All Outline-data som lagras av Sentry begränsas så att endast medlemmar i Outline-teamet får åtkomst till den.
+Uppgifterna överförs via HTTPS till Sentry ([sentry.io](https://sentry.io/)) som är en tredjepartsleverantör av felspårning i öppen källkod. Sentry använder en rad olika tekniker och tjänster som uppfyller branschstandarden för att skydda din data mot obehörig åtkomst och användning, otillåtet yppande och förlust. Om du har frågor om Sentrys policyer besöker du [https://sentry.io/security/](https://sentry.io/security/) och [https://sentry.io/privacy/](https://sentry.io/privacy/), eller kontaktar företaget direkt på [security@sentry.io](mailto:security@sentry.io). All Outline-data som lagras av Sentry begränsas så att endast medlemmar i Outline-teamet får åtkomst till den.
 
 ****Uppgifter vi samlar in på frivillig basis****
 

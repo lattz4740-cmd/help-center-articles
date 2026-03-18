@@ -13,7 +13,7 @@ Outline verzamelt geen persoonlijke informatie, tenzij je je hier zelf voor aanm
 
  1. Server-IP-adres
 
- Het server-IP-adres van Outline wordt opgehaald door [Quay.io](http://quay.io/) en aan ons doorgestuurd als de server automatisch wordt geüpdatet met de nieuwste beveiligings- en functieverbeteringen. Met het server-IP-adres kunnen de cloudserverprovider en de stad waarin de Outline-server is ingesteld worden geïdentificeerd, maar we krijgen geen gegevens over wie de server beheert of gebruikt.
+ Het server-IP-adres van Outline wordt opgehaald door [Quay.io](https://quay.io/) en aan ons doorgestuurd als de server automatisch wordt geüpdatet met de nieuwste beveiligings- en functieverbeteringen. Met het server-IP-adres kunnen de cloudserverprovider en de stad waarin de Outline-server is ingesteld worden geïdentificeerd, maar we krijgen geen gegevens over wie de server beheert of gebruikt.
 
  2. Technische gegevens die niet persoonlijk identificeerbaar zijn
 
@@ -30,7 +30,7 @@ Outline verzamelt geen persoonlijke informatie, tenzij je je hier zelf voor aanm
 - Architectuur.
 - Outline-versie en -buildnummer.
 
-Deze informatie wordt overgezet via HTTPS naar Sentry ([sentry.io](http://sentry.io/)), een open source-foutcontroleprovider van derden. Sentry gebruikt verschillende technologieën en services die voldoen aan de branchenorm om je gegevens te beveiligen tegen ongeautoriseerde toegang, vrijgave, gebruik en verlies. Als je vragen hebt over het beleid van Sentry, ga je naar [https://sentry.io/security/](https://sentry.io/security/) en [https://sentry.io/privacy/](https://sentry.io/privacy/) of neem je contact op met [security@sentry.io](mailto:security@sentry.io). Alle Outline-gegevens die door Sentry worden opgeslagen, zijn alleen toegankelijk voor leden van Team Outline.
+Deze informatie wordt overgezet via HTTPS naar Sentry ([sentry.io](https://sentry.io/)), een open source-foutcontroleprovider van derden. Sentry gebruikt verschillende technologieën en services die voldoen aan de branchenorm om je gegevens te beveiligen tegen ongeautoriseerde toegang, vrijgave, gebruik en verlies. Als je vragen hebt over het beleid van Sentry, ga je naar [https://sentry.io/security/](https://sentry.io/security/) en [https://sentry.io/privacy/](https://sentry.io/privacy/) of neem je contact op met [security@sentry.io](mailto:security@sentry.io). Alle Outline-gegevens die door Sentry worden opgeslagen, zijn alleen toegankelijk voor leden van Team Outline.
 
 ****Gegevens die we alleen verzamelen als je je hiervoor aanmeldt****
 

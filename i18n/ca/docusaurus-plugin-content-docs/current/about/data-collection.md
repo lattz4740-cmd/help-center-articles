@@ -13,7 +13,7 @@ Outline no recull informació personal tret que proporcionis el consentiment nec
 
  1. IP del servidor
 
-[Quay.io](http://quay.io/) recull la IP del servidor d'Outline i ens la dona a conèixer quan el servidor s'actualitza automàticament amb les darreres funcions i millores de seguretat. La IP del servidor pot identificar el proveïdor del servidor al núvol i la ciutat on s'ha configurat el servidor d'Outline, però no facilita informació sobre qui executa el servidor o qui hi accedeix.
+[Quay.io](https://quay.io/) recull la IP del servidor d'Outline i ens la dona a conèixer quan el servidor s'actualitza automàticament amb les darreres funcions i millores de seguretat. La IP del servidor pot identificar el proveïdor del servidor al núvol i la ciutat on s'ha configurat el servidor d'Outline, però no facilita informació sobre qui executa el servidor o qui hi accedeix.
 
  2. Informació tècnica que no permeti identificar l'usuari personalment
 
@@ -30,7 +30,7 @@ Outline no recull informació personal tret que proporcionis el consentiment nec
 - Arquitectura
 - Versió i número de compilació d'Outline
 
-Aquesta informació es transfereix mitjançant HTTPS a Sentry ([sentry.io](http://sentry.io/)), un proveïdor extern de serveis i de codi obert per al seguiment d'errors. Sentry utilitza diversos serveis i tecnologies estàndard del sector per protegir les teves dades de l'accés no autoritzat, la cessió, l'ús i la pèrdua. Si tens cap dubte sobre les polítiques de Sentry, visita [https://sentry.io/security/](https://sentry.io/security/) i [https://sentry.io/privacy/](https://sentry.io/privacy/), o contacta amb [security@sentry.io](mailto:security@sentry.io). Totes les dades d'Outline emmagatzemades per Sentry estan restringides de tal manera que només els membres de l'equip d'Outline hi poden accedir.
+Aquesta informació es transfereix mitjançant HTTPS a Sentry ([sentry.io](https://sentry.io/)), un proveïdor extern de serveis i de codi obert per al seguiment d'errors. Sentry utilitza diversos serveis i tecnologies estàndard del sector per protegir les teves dades de l'accés no autoritzat, la cessió, l'ús i la pèrdua. Si tens cap dubte sobre les polítiques de Sentry, visita [https://sentry.io/security/](https://sentry.io/security/) i [https://sentry.io/privacy/](https://sentry.io/privacy/), o contacta amb [security@sentry.io](mailto:security@sentry.io). Totes les dades d'Outline emmagatzemades per Sentry estan restringides de tal manera que només els membres de l'equip d'Outline hi poden accedir.
 
 ****Informació que obtenim únicament si es proporciona el consentiment necessari****
 

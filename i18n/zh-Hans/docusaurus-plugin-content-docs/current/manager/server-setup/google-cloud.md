@@ -47,8 +47,8 @@ Google Cloud 自动设置使用单一 [Google Cloud 项目](https://cloud.google
 
 ## 结算帐号
 
-Google Cloud 项目需要一个确定了付款信息的关联“结算帐号”。首次使用 Google Cloud 自动设置时，系统会要求您提供结算帐号以与您的 Outline 服务器关联。有时，服务器会因结算帐号存在问题而停止运行。在这种情况下，您应该登录 [Google Cloud Console](https://console.cloud.google.com/)，找到与 Outline 关联的 Google Cloud 项目（名为“Outline 服务器”），然后更新结算设置。
+Google Cloud 项目需要一个确定了付款信息的关联“结算帐号”。首次使用 Google Cloud 自动设置时，系统会要求您提供结算帐号以与您的 Outline 服务器关联。有时，服务器会因结算帐号存在问题而停止运行。在这种情况下，您应该登录 [Google Cloud Console](https://console.cloud.google.com/getting-started)，找到与 Outline 关联的 Google Cloud 项目（名为“Outline 服务器”），然后更新结算设置。
 
 ## 销毁服务器
 
-如果您想销毁使用自动设置创建的服务器，最简单的方法是使用 Outline 管理器。但是，如果您想自行销毁服务器，则可以登录 [Google Cloud Console](https://console.cloud.google.com/)，找到初始设置期间创建的项目（名为“Outline 服务器”），然后删除其中的资源或关闭项目。
+如果您想销毁使用自动设置创建的服务器，最简单的方法是使用 Outline 管理器。但是，如果您想自行销毁服务器，则可以登录 [Google Cloud Console](https://console.cloud.google.com/getting-started)，找到初始设置期间创建的项目（名为“Outline 服务器”），然后删除其中的资源或关闭项目。

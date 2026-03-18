@@ -13,7 +13,7 @@ Outline 不会收集个人信息，除非您选择提供这类信息。Outline �
 
 1. 服务器 IP
 
-当服务器进行自动更新以应用最新的安全和功能改进时，[Quay.io](http://quay.io/) 会收集 Outline 服务器 IP，并允许我们访问此信息。服务器 IP 可能被用于识别云服务提供商以及 Outline 服务器所在的城市，但并不会提供有关服务器的运行者和访问者的信息。
+当服务器进行自动更新以应用最新的安全和功能改进时，[Quay.io](https://quay.io/) 会收集 Outline 服务器 IP，并允许我们访问此信息。服务器 IP 可能被用于识别云服务提供商以及 Outline 服务器所在的城市，但并不会提供有关服务器的运行者和访问者的信息。
 
 2. 无法用于识别个人身份的技术信息
 
@@ -30,7 +30,7 @@ Outline 不会收集个人信息，除非您选择提供这类信息。Outline �
 - 架构
 - Outline 版本和版本号
 
-我们会使用 HTTPS 将此信息传输到 Sentry ([sentry.io](http://sentry.io/))。Sentry 是一家第三方开放源代码错误跟踪服务提供商，他们使用各种符合业界标准的技术和服务来确保您的数据安全，防止数据遭到未经授权的访问、披露和使用，并避免数据丢失。如果您对 Sentry 的政策有任何疑问，请访问 [https://sentry.io/security/](https://sentry.io/security/) 和 [https://sentry.io/privacy/](https://sentry.io/privacy/)，或者联系 [security@sentry.io](mailto:security@sentry.io)。仅 Outline 团队成员才能访问Sentry 存储的所有 Outline 数据。
+我们会使用 HTTPS 将此信息传输到 Sentry ([sentry.io](https://sentry.io/))。Sentry 是一家第三方开放源代码错误跟踪服务提供商，他们使用各种符合业界标准的技术和服务来确保您的数据安全，防止数据遭到未经授权的访问、披露和使用，并避免数据丢失。如果您对 Sentry 的政策有任何疑问，请访问 [https://sentry.io/security/](https://sentry.io/security/) 和 [https://sentry.io/privacy/](https://sentry.io/privacy/)，或者联系 [security@sentry.io](mailto:security@sentry.io)。仅 Outline 团队成员才能访问Sentry 存储的所有 Outline 数据。
 
 ****我们仅获取您选择披露的信息****
 

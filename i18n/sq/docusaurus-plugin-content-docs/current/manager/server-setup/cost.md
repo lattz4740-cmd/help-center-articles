@@ -5,7 +5,7 @@ sidebar_label: "Sa kushton funksionimi i Outline?"
 
 Softueri i Outline është falas për çdo person, pavarësisht nëse je një administrator serveri që menaxhon rrjetin VPN apo dikush që e përdor Outline për qasje në internetin e hapur.
 
- Sidoqoftë, Outline kërkon qasje në një server në renë kompjuterike për të funksionuar. Administratorët e serverëve që kanë tashmë qasje në një server mund ta instalojnë Outline në të pa kosto shtesë. Ata që nuk kanë qasje në një server, mund të marrin qasje nga një ofrues i shërbimeve të resë kompjuterike, si p.sh. [DigitalOcean](http://www.digitalocean.com/) ose Amazon Web Services, për rreth 5 USD në muaj për 1 terabajtë sasi të lejuar për transferimin e të dhënave - kjo është e mjaftueshme për të mbështetur qindra përdorues në një server të vetëm.
+ Sidoqoftë, Outline kërkon qasje në një server në renë kompjuterike për të funksionuar. Administratorët e serverëve që kanë tashmë qasje në një server mund ta instalojnë Outline në të pa kosto shtesë. Ata që nuk kanë qasje në një server, mund të marrin qasje nga një ofrues i shërbimeve të resë kompjuterike, si p.sh. [DigitalOcean](https://www.digitalocean.com/) ose Amazon Web Services, për rreth 5 USD në muaj për 1 terabajtë sasi të lejuar për transferimin e të dhënave - kjo është e mjaftueshme për të mbështetur qindra përdorues në një server të vetëm.
 
  Një shembull se si mund të llogaritësh se sa do të kushtojë funksionimi i Outline me ofruesin tënd të zgjedhur të shërbimit të resë kompjuterike:
 
