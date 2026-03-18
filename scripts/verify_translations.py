@@ -24,15 +24,15 @@ ENGLISH_DOCS_DIR = PROJECT_ROOT / "docs"
 I18N_BASE = PROJECT_ROOT / "i18n"
 
 LOCALES = [
-    "af", "am", "ar", "ar-EG", "as", "az", "be", "bg", "bn", "bs",
-    "ca", "cs", "cy", "da", "de", "de-CH", "el", "en-AU", "en-CA", "en-GB",
-    "en-IN", "en-SG", "es", "es-419", "et", "eu", "fa", "fi", "fil", "fr",
-    "fr-CA", "ga", "gl", "gu", "ha", "he", "hi", "hr", "hu", "hy", "id",
-    "is", "it", "ja", "ka", "kk", "km", "kn", "ko", "ky", "lo", "lt", "lv",
-    "mk", "ml", "mn", "mr", "ms", "my", "nb", "ne", "nl", "or", "pa", "pl",
+    "af", "am", "ar", "az", "bg", "bn", "bs",
+    "ca", "cs", "da", "de", "el", "en-GB",
+    "es", "es-419", "et", "fa", "fi", "fil", "fr",
+    "he", "hi", "hr", "hu", "hy", "id",
+    "is", "it", "ja", "ka", "kk", "km", "ko", "lo", "lv",
+    "mk", "mn", "mr", "ms", "my", "nb", "ne", "nl", "pl",
     "pt", "pt-BR", "ro", "ru", "si", "sk", "sl", "sq", "sr", "sv", "sw",
-    "ta", "te", "th", "tr", "uk", "ur", "uz", "vi", "yo", "zh-Hans",
-    "zh-Hant", "zh-HK", "zu",
+    "ta", "th", "tr", "uk", "ur", "vi", "zh-Hans",
+    "zh-Hant", "zh-HK",
 ]
 
 # Docs that only exist in English (no translation expected).

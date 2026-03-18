@@ -33,7 +33,7 @@ npm start -- --locale fr
 
 ## Building
 
-Build the site for all 90 locales (slow):
+Build the site for all 65 locales (slow):
 
 ```sh
 npm run build
@@ -59,14 +59,14 @@ npm run serve
 
 ## Deployment
 
-The site deploys to GitHub Pages via the CI workflow on push to `main`. It builds all 90 locales and publishes to the `gh-pages` branch, which is served at https://support.getoutline.org.
+The site deploys to GitHub Pages via the CI workflow on push to `main`. It builds all 65 locales and publishes to the `gh-pages` branch, which is served at https://support.getoutline.org.
 
 ## Content Conversion
 
 The original content was exported from Google's GKMS (Knowledge Management System) in HTML format. Conversion scripts in `scripts/` transform this into Markdown:
 
 - `scripts/convert_gkms.py` — Converts English articles from `old-site/` to `docs/`
-- `scripts/convert_translations.py` — Converts all 89 non-English translations to `i18n/`
+- `scripts/convert_translations.py` — Converts all non-English translations to `i18n/`
 - `scripts/create_placeholder_images.py` — Creates placeholder images (for development)
 - `scripts/download_images.py` — Downloads article images from Google Cloud Storage
 - `scripts/rename_images.sh` — Renames downloaded images to match expected filenames
@@ -82,9 +82,10 @@ python3 scripts/convert_translations.py
 
 ```
 docs/                  # English documentation (default locale)
-i18n/                  # Translated documentation (89 locales)
+i18n/                  # Translated documentation (64 locales)
   {locale}/
     docusaurus-plugin-content-docs/current/  # Translated articles
+  partial-translations/  # Incomplete translations (not built)
 old-site/              # Original GKMS HTML exports (source of truth)
 scripts/               # Conversion and utility scripts
 src/css/               # Custom CSS
