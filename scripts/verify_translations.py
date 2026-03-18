@@ -40,6 +40,26 @@ ENGLISH_ONLY: set[str] = {
     "index",  # Root redirect page
 }
 
+# Known missing translations that don't exist on support.google.com.
+# These were never translated in the original system.
+# Format: (locale, doc_path)
+KNOWN_MISSING: set[tuple[str, str]] = {
+    ("en-GB", "client/troubleshooting/firewall-errors"),
+    ("en-GB", "client/troubleshooting/internet-access"),
+    ("en-GB", "manager/server-setup/cost"),
+    ("en-GB", "manager/server-setup/multiple-servers"),
+    ("en-GB", "manager/server-setup/setup-faqs"),
+    ("es", "about/access-resources-blocked"),
+    ("es", "client/troubleshooting/firewall-errors"),
+    ("ms", "about/brand-usage"),
+    ("ms", "about/getoutline-me-telegram"),
+    ("ms", "about/how-outline-works"),
+    ("pl", "about/getoutline-me-telegram"),
+    ("pt", "about/how-outline-works"),
+    ("pt-BR", "client/troubleshooting/firewall-errors"),
+    ("ru", "about/access-resources-blocked"),
+}
+
 # Heading anchors that only exist in the English version (manually added
 # post-conversion). Translations won't have these.
 KNOWN_ENGLISH_ONLY_ANCHORS: dict[str, set[str]] = {
@@ -233,6 +253,8 @@ def verify_locale(locale: str, english_paths: set[str]) -> list[Issue]:
     # Check for missing translations
     missing = expected_paths - translated_paths
     for doc_path in sorted(missing):
+        if (locale, doc_path) in KNOWN_MISSING:
+            continue
         issues.append(Issue(locale, doc_path, "MISSING", "Translation file missing"))
 
     # Check for extra translations
