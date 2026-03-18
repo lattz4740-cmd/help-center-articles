@@ -3,7 +3,7 @@ title: "Miért nem tudom telepíteni az Outline Manager alkalmazást Windows ren
 sidebar_label: "Miért nem tudom telepíteni az Outline Manager alkalmazást Windows rendszeren?"
 ---
 
-Előfordulhat, hogy megjelenik a következő hibaüzenet: „Sajnos úgy tűnik, hogy az Outline nincs megfelelően telepítve. Próbálja meg újratelepíteni. Ha nem sikerül megoldani a problémát, [küldjön visszajelzést](https://support.getoutline.org/s/contactsupport?).”
+Előfordulhat, hogy megjelenik a következő hibaüzenet: „Sajnos úgy tűnik, hogy az Outline nincs megfelelően telepítve. Próbálja meg újratelepíteni. Ha nem sikerül megoldani a problémát, [küldjön visszajelzést](/about/feedback).”
 
 Ha Windows rendszeren használja az Outline-t, váratlan hiba is felléphet. A legtöbb esetben megoldja a problémát, ha törli az Outline TAP adaptert (illesztőprogramot), és újratelepíti az Outline alkalmazást.
 
@@ -18,4 +18,4 @@ A pontos lépések a Windows operációs rendszer verziójától függnek, de al
    2. Keresse meg az Outline Manager alkalmazást, és távolítsa el.
    3. [Töltse le az Outline Manager legújabb verzióját](https://getoutline.org/get-started/#step-1), és telepítse újra a Windows-eszközén. Ekkor a rendszer egy új TAP adaptert is automatikusan telepít.
 
-Ha továbbra is problémát tapasztal, [forduljon az ügyfélszolgálathoz](https://support.getoutline.org/s/contactsupport?).
+Ha továbbra is problémát tapasztal, [forduljon az ügyfélszolgálathoz](/about/feedback).

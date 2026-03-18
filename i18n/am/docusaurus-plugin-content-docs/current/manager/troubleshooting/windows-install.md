@@ -3,7 +3,7 @@ title: "ለምንድነው Outline አስተዳዳሪን በWindows ላይ መ�
 sidebar_label: "ለምንድነው Outline አስተዳዳሪን በWindows ላይ መጫን የማልችለው?"
 ---
 
-ይህን የስሕተት መልዕክት ሊመለከቱ ይችላሉ፦ «ይቅርታ፣ Outline በአግባቡ ያልተጫነ ይመስላል። እባክዎ እንደገና ለመጫን ይሞክሩ። እሱ ካልሠራ እባክዎ [ግብረመልስ ያስገቡ](https://support.getoutline.org/s/contactsupport?)።»
+ይህን የስሕተት መልዕክት ሊመለከቱ ይችላሉ፦ «ይቅርታ፣ Outline በአግባቡ ያልተጫነ ይመስላል። እባክዎ እንደገና ለመጫን ይሞክሩ። እሱ ካልሠራ እባክዎ [ግብረመልስ ያስገቡ](/about/feedback)።»
 
 Outlineን Windows ላይ እየተጠቀሙ ከሆነ፣ አልፎ አልፎ ያልተጠበቀ ስሕተት ሊያጋጥምዎት ይችላል። አብዛኛውን ጊዜ፣ የOutline TAP አስማሚ (ነጂ) መሰረዝ ያስፈልገዋል እና Outline እንደገና መጫን ይኖርበታል።
 
@@ -18,4 +18,4 @@ Outlineን Windows ላይ እየተጠቀሙ ከሆነ፣ አልፎ አልፎ �
    2. የOutline አስተዳዳሪ መተግበሪያን ያግኙ እና የOutline አስተዳዳሪን ያራግፉ
    3. [የOutline አስተዳዳሪ የቅርብ ጊዜ ሥሪትን ያውርዱ](https://getoutline.org/get-started/#step-1) እና Windows መሣሪያዎ ላይ ዳግም ይጫኑት። አዲሱ ጭነት በራስ-ሰር አዲስ TAP አስማሚ መጫን አለበት።
 
-አሁንም ችግር እያጋጠመዎ ከሆነ [ድጋፍን ያነጋግሩ](https://support.getoutline.org/s/contactsupport?)።
+አሁንም ችግር እያጋጠመዎ ከሆነ [ድጋፍን ያነጋግሩ](/about/feedback)።

@@ -3,7 +3,7 @@ title: "Miksi en voi asentaa Outline Manageria Windowsiin?"
 sidebar_label: "Miksi en voi asentaa Outline Manageria Windowsiin?"
 ---
 
-Saatat saada tämän virheilmoituksen: "Pahoittelut, näyttää siltä, ettei Outlinea ole asennettu kunnolla. Yritä asentaa se uudelleen. Jos tämä ei toimi, [lähetä palautetta](https://support.getoutline.org/s/contactsupport?)."
+Saatat saada tämän virheilmoituksen: "Pahoittelut, näyttää siltä, ettei Outlinea ole asennettu kunnolla. Yritä asentaa se uudelleen. Jos tämä ei toimi, [lähetä palautetta](/about/feedback)."
 
 Jos käytät Outlinea Windowsissa, saatat joskus kohdata odottamattoman virheen. Useimmiten sinun pitää poistaa Outline TAP ‑sovitin (ajuri) ja asentaa Outline uudestaan.
 
@@ -18,4 +18,4 @@ Ohjeet voivat vaihdella Windows-käyttöjärjestelmän version mukaan. Tässä o
    2. Etsi Outline Manager ‑sovellus ja poista sen asennus.
    3. [Lataa Outline Managerin uusin versio](https://getoutline.org/get-started/#step-1) ja asenna se uudestaan Windows-laitteellesi. Uuden asennuksen pitäisi asentaa uusi TAP-sovitin automaattisesti.
 
-Jos ongelma ei ratkea, [ota yhteyttä tukeen](https://support.getoutline.org/s/contactsupport?).
+Jos ongelma ei ratkea, [ota yhteyttä tukeen](/about/feedback).

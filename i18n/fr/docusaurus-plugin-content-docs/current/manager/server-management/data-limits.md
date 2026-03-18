@@ -43,11 +43,11 @@ Pour supprimer la limite de données d'une clé d'accès, accédez à la boîte 
 
 **Les utilisateurs recevront-ils une notification en cas de dépassement de la limite de données ?**
 
- Pas pour le moment. De nombreux fournisseurs de services cloud incluent une limite de 1 To par mois, pouvant accueillir 10 utilisateurs avec 100 Go ou 100 utilisateurs avec 10 Go. Il s'agit de chiffres assez élevés, et nous ne pensons pas que les utilisateurs les atteindront facilement. Nous espérons que les utilisateurs contacteront les administrateurs des serveurs lorsqu'ils atteindront leur limite. Mais si vous souhaitez nous expliquer en quoi les notifications peuvent vous être utiles, nous vous invitons à [nous contacter.](https://support.getoutline.org/s/contactsupport)
+ Pas pour le moment. De nombreux fournisseurs de services cloud incluent une limite de 1 To par mois, pouvant accueillir 10 utilisateurs avec 100 Go ou 100 utilisateurs avec 10 Go. Il s'agit de chiffres assez élevés, et nous ne pensons pas que les utilisateurs les atteindront facilement. Nous espérons que les utilisateurs contacteront les administrateurs des serveurs lorsqu'ils atteindront leur limite. Mais si vous souhaitez nous expliquer en quoi les notifications peuvent vous être utiles, nous vous invitons à [nous contacter.](/about/feedback)
 
 **Les utilisateurs recevront-ils une notification s'ils approchent de leur limite de données ?**
 
- La quantité de nouvelles données que reçoit un utilisateur approchant de sa limite varie d'un jour à l'autre, car elle est calculée en fonction de sa consommation 30 jours auparavant. Nous pensons qu'un avertissement risque de perturber les utilisateurs finaux plutôt que de les aider. Toutefois, vous pouvez [nous contacter](https://support.getoutline.org/s/contactsupport) pour nous faire part de vos commentaires à ce sujet.
+ La quantité de nouvelles données que reçoit un utilisateur approchant de sa limite varie d'un jour à l'autre, car elle est calculée en fonction de sa consommation 30 jours auparavant. Nous pensons qu'un avertissement risque de perturber les utilisateurs finaux plutôt que de les aider. Toutefois, vous pouvez [nous contacter](/about/feedback) pour nous faire part de vos commentaires à ce sujet.
 
 **Puis-je réinitialiser la consommation des données d'un utilisateur ?**
 
@@ -59,7 +59,7 @@ Pour supprimer la limite de données d'une clé d'accès, accédez à la boîte 
 
 **Puis-je définir une limite pour l'ensemble du serveur, par exemple "1 To pour 30 jours" ?**
 
- Pas pour le moment, mais nous aimerions beaucoup en savoir plus sur votre cas d'utilisation. N'hésitez pas à [nous contacter.](https://support.getoutline.org/s/contactsupport)
+ Pas pour le moment, mais nous aimerions beaucoup en savoir plus sur votre cas d'utilisation. N'hésitez pas à [nous contacter.](/about/feedback)
 
 **S'il existe une limite de données par défaut ainsi qu'une limite individuelle pour une clé donnée, laquelle est appliquée ?**
 

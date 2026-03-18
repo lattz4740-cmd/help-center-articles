@@ -43,11 +43,11 @@ Ta bort datagränsen för en åtkomstnyckel genom att navigera till dialogrutan 
 
 **Meddelas användarna om de överskrider datagränsen?**
 
- Inte just nu. Många molnleverantörer har en gräns, till exempel 1 TB för hela månaden som kan fördelas med 100 GB på 10 användare eller 10 GB på 100 användare. Det är ganska stora mängder och vi tror inte att särskilt många använder så mycket data. Vi hoppas att användare som når sin gräns kontaktar den ansvariga för servern. Vi vill dock gärna veta hur aviseringar kan underlätta användningen för dig. Du kan kontakta oss [här](https://support.getoutline.org/s/contactsupport).
+ Inte just nu. Många molnleverantörer har en gräns, till exempel 1 TB för hela månaden som kan fördelas med 100 GB på 10 användare eller 10 GB på 100 användare. Det är ganska stora mängder och vi tror inte att särskilt många använder så mycket data. Vi hoppas att användare som når sin gräns kontaktar den ansvariga för servern. Vi vill dock gärna veta hur aviseringar kan underlätta användningen för dig. Du kan kontakta oss [här](/about/feedback).
 
 **Meddelas användarna när de närmar sig datagränsen?**
 
- Mängden ny data som en användare får när gränsen närmar sig varierar från dag till dag då den grundar sig på användningen för 30 dagar sedan. Vi tror att det blir förvirrande snarare än användbart för användarna att få en varning. Vi vill gärna ha din feedback om detta [här](https://support.getoutline.org/s/contactsupport).
+ Mängden ny data som en användare får när gränsen närmar sig varierar från dag till dag då den grundar sig på användningen för 30 dagar sedan. Vi tror att det blir förvirrande snarare än användbart för användarna att få en varning. Vi vill gärna ha din feedback om detta [här](/about/feedback).
 
 **Kan jag nollställa en användares dataanvändning?**
 
@@ -59,7 +59,7 @@ Ta bort datagränsen för en åtkomstnyckel genom att navigera till dialogrutan 
 
 **Går det att ställa in en gräns för hela servern, till exempel 1 TB per 30 dagar?**
 
- Inte just nu. Vi vill gärna veta mer om hur du skulle använda det [här](https://support.getoutline.org/s/contactsupport).
+ Inte just nu. Vi vill gärna veta mer om hur du skulle använda det [här](/about/feedback).
 
 **Vilken datagräns används om det finns en som är standard och en för en specifik nyckel?**
 

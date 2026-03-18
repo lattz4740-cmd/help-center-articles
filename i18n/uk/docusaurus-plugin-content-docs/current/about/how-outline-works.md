@@ -22,7 +22,7 @@ sidebar_label: Як працює Outline
 
  Щоб керувати ключами доступу на сервері, додаток Диспетчер Outline взаємодіє із сервісом Management Service на сервері Outline. Management Service використовує випадково вибраний порт і має унікальний секретний шлях. Сам сервіс Management Service стійкий до зондування, оскільки не відповідає на запити, якщо не вказано відповідний секретний шлях. Також усі звернення до Management Service шифруються за допомогою [самопідписаного сертифіката SSL](https://en.wikipedia.org/wiki/Self-signed_certificate).
 
- Зверніть увагу, що сервер Outline не зберігає жодних журналів, тому навіть у разі зламу дані користувачів не буде розголошено. [Докладніше.](https://support.getoutline.org/s/article/Security-and-privacy) У 2018 році програмне забезпечення Outline пройшло аудит у двох організаціях із кібербезпеки – [Radically Open Security](https://radicallyopensecurity.com/) і [Cure53](https://cure53.de/). Звіти можна переглянути [тут](https://support.getoutline.org/s/article/Security-and-privacy).
+ Зверніть увагу, що сервер Outline не зберігає жодних журналів, тому навіть у разі зламу дані користувачів не буде розголошено. [Докладніше.](/about/security-and-privacy) У 2018 році програмне забезпечення Outline пройшло аудит у двох організаціях із кібербезпеки – [Radically Open Security](https://radicallyopensecurity.com/) і [Cure53](https://cure53.de/). Звіти можна переглянути [тут](/about/security-and-privacy).
 
 **Обробка трафіку UDP**
 

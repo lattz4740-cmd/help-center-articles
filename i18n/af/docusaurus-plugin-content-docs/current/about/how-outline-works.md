@@ -22,7 +22,7 @@ Die Outline-installering hoef nie ná installering opgestel te word nie.
 
  Om die toegangsleutels op die bediener te bestuur, is daar interaksie tussen die Outline Manager-app en die bestuurdiens op die Outline-bediener. Die bestuurdiens loop op ’n lukrake poort op ’n geheime en unieke pad. Die bestuurdiens self kan nie ondersoek word nie, aangesien dit nie reageer op vrae behalwe as die toepaslike geheime pad gespesifiseer word nie. Ten slotte word alle kommunikasie aan die bestuurdiens geënkripteer met ’n [selfondertekende SSL-sertifikaat](https://en.wikipedia.org/wiki/Self-signed_certificate).
 
- Die Outline-bediener stoor ook nie enige loglêers nie, so al word dit gekompromitteer, sal geen gebruikerdata openbaar gemaak word nie. Kry [hier](https://support.getoutline.org/s/article/Security-and-privacy) meer inligting. Outline is in 2018 deur [Radically Open Security](https://radicallyopensecurity.com/) en [Cure53](https://cure53.de/) geoudit. Lees die verslae [hier](https://support.getoutline.org/s/article/Security-and-privacy).
+ Die Outline-bediener stoor ook nie enige loglêers nie, so al word dit gekompromitteer, sal geen gebruikerdata openbaar gemaak word nie. Kry [hier](/about/security-and-privacy) meer inligting. Outline is in 2018 deur [Radically Open Security](https://radicallyopensecurity.com/) en [Cure53](https://cure53.de/) geoudit. Lees die verslae [hier](/about/security-and-privacy).
 
 **Hantering van UDP-verkeer**
 

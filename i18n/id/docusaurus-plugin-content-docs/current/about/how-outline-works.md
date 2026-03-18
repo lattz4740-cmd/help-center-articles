@@ -22,7 +22,7 @@ Setelah diinstal, Outline tidak memerlukan konfigurasi lain.
 
  Untuk mengelola kunci akses di server, aplikasi Outline Manager berinteraksi dengan Layanan Pengelolaan di server Outline. Layanan Pengelolaan ini beroperasi pada port acak serta jalur rahasia yang unik. Layanan Pengelolaan sendiri tahan terhadap serangan karena tidak merespons kueri kecuali diberikan jalur rahasia yang sesuai. Terakhir, semua komunikasi ke Layanan Pengelolaan dienkripsi dengan [sertifikat SSL yang ditandatangani sendiri](https://en.wikipedia.org/wiki/Self-signed_certificate).
 
- Perlu diketahui bahwa server Outline tidak menyimpan log apa pun sehingga tidak akan ada data pengguna yang terungkap meskipun disusupi. Pelajari lebih lanjut [di sini](https://support.getoutline.org/s/article/Security-and-privacy). Outline diaudit oleh [Radically Open Security](https://radicallyopensecurity.com/) dan [Cure53](https://cure53.de/) pada tahun 2018. Lihat laporannya [di sini](https://support.getoutline.org/s/article/Security-and-privacy).
+ Perlu diketahui bahwa server Outline tidak menyimpan log apa pun sehingga tidak akan ada data pengguna yang terungkap meskipun disusupi. Pelajari lebih lanjut [di sini](/about/security-and-privacy). Outline diaudit oleh [Radically Open Security](https://radicallyopensecurity.com/) dan [Cure53](https://cure53.de/) pada tahun 2018. Lihat laporannya [di sini](/about/security-and-privacy).
 
 **Menangani traffic UDP**
 

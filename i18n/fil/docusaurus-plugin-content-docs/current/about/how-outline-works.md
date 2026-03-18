@@ -22,7 +22,7 @@ Walang kailangang kahit anong pag-configure sa pag-install ng Outline pagkatapos
 
  Para pamahalaan ang mga access key sa server, nakikipag-interact ang Outline Manager application sa isang Management Service sa Outline server. Tumatakbo ang Management Service sa isang random na port at sa isang lihim at natatanging path. Ang Management Service mismo ay hindi puwedeng masuri dahil hindi ito tumutugon sa mga query maliban na lang kung tutukuyin ang naaangkop na lihim na path. Panghuli, naka-encrypt sa pamamagitan ng [self-signed na SSL certificate](https://en.wikipedia.org/wiki/Self-signed_certificate) ang lahat ng pakikipag-ugnayan sa Management Service.
 
- Gayundin, hindi nagso-store ng mga log ang Outline server, kaya kahit na makompromiso ito, walang maihahayag na data ng user. Matuto pa [rito](https://support.getoutline.org/s/article/Security-and-privacy). Na-audit ng [Radically Open Security](https://radicallyopensecurity.com/) at [Cure53](https://cure53.de/) ang Outline noong 2018. Tingnan [dito](https://support.getoutline.org/s/article/Security-and-privacy) ang mga ulat.
+ Gayundin, hindi nagso-store ng mga log ang Outline server, kaya kahit na makompromiso ito, walang maihahayag na data ng user. Matuto pa [rito](/about/security-and-privacy). Na-audit ng [Radically Open Security](https://radicallyopensecurity.com/) at [Cure53](https://cure53.de/) ang Outline noong 2018. Tingnan [dito](/about/security-and-privacy) ang mga ulat.
 
 **Pangangasiwa sa UDP na trapiko**
 

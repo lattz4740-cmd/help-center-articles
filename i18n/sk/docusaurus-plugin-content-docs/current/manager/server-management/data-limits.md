@@ -43,11 +43,11 @@ Ak chcete dátový limit odstrániť z prístupového kľúča, prejdite na jeho
 
 **Dostanú používatelia upozornenie, keď prekročia dátový limit?**
 
- Momentálne nie. Mnoho cloudových poskytovateľov zahŕňa limit napríklad 1 TB na celý mesiac, čo postačuje pre 10 používateľov po 100 GB alebo 100 používateľov po 10 GB. Ide o relatívne vysoké čísla, preto neočakávame, že limit dosiahne veľa používateľov. Dúfame, že používatelia po dosiahnutí limitu kontaktujú správcov servera. Oceníme však vaše poznatky o tom, ako môžu upozornenia pomôcť vo vašom prípade použitia. Môžete nás[kontaktovať tu](https://support.getoutline.org/s/contactsupport).
+ Momentálne nie. Mnoho cloudových poskytovateľov zahŕňa limit napríklad 1 TB na celý mesiac, čo postačuje pre 10 používateľov po 100 GB alebo 100 používateľov po 10 GB. Ide o relatívne vysoké čísla, preto neočakávame, že limit dosiahne veľa používateľov. Dúfame, že používatelia po dosiahnutí limitu kontaktujú správcov servera. Oceníme však vaše poznatky o tom, ako môžu upozornenia pomôcť vo vašom prípade použitia. Môžete nás[kontaktovať tu](/about/feedback).
 
 **Dostanú používatelia upozornenie, keď sa priblížia k dátovému limitu?**
 
- Množstvo nových dát, ktoré používateľ blížiaci sa k limitu dostane, sa bude denne líšiť, pretože sa zakladá na jeho používaní spred 30 dní. Myslíme si, že upozornenie koncových používateľov skôr mätie, než im pomáha. Radi si prečítame vašu spätnú väzbu k tomuto správaniu, keď ju odošlete na [tejto stránke](https://support.getoutline.org/s/contactsupport).
+ Množstvo nových dát, ktoré používateľ blížiaci sa k limitu dostane, sa bude denne líšiť, pretože sa zakladá na jeho používaní spred 30 dní. Myslíme si, že upozornenie koncových používateľov skôr mätie, než im pomáha. Radi si prečítame vašu spätnú väzbu k tomuto správaniu, keď ju odošlete na [tejto stránke](/about/feedback).
 
 **Môžem resetovať spotrebu dát používateľa?**
 
@@ -59,7 +59,7 @@ Ak chcete dátový limit odstrániť z prístupového kľúča, prejdite na jeho
 
 **Môžem nastaviť limit na úrovni servera, napríklad 1 TB na 30 dní?**
 
- Momentálne nie. Radi sa dozvieme viac o vašom prípade použitia na [tejto stránke](https://support.getoutline.org/s/contactsupport).
+ Momentálne nie. Radi sa dozvieme viac o vašom prípade použitia na [tejto stránke](/about/feedback).
 
 **Ak je nastavený predvolený dátový limit aj dátový limit konkrétneho kľúča, ktorý bude presadzovaný?**
 

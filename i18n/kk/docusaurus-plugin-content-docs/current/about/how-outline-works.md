@@ -22,7 +22,7 @@ Outline орнатылғаннан кейін, ешқандай конфигур
 
  Серверде рұқсат кілттерін басқару үшін Outline Manager қолданбасы Outline серверіндегі Management Service қызметімен өзара әрекеттесіп жұмыс істейді. Management Service құпия әрі айрықша жол арылы кездейсоқ портта іске қосылады. Management Service тыңшылық әрекеттерге өз бетінше төтеп береді, өйткені тиісті құпия жол көрсетілмесе, сұрауларға жауап бермейді. Management Service қызметімен болатын барлық коммуникация [өздігінен қол қойылатын SSL сертификатымен](https://en.wikipedia.org/wiki/Self-signed_certificate) шифрланды.
 
- Сондай-ақ Outline сервері ешқандай журналдарды сақтамайды, сондықтан ол қолды болса да, пайдаланушы деректері жария болмайды. Толық ақпаратты [мына жерден](https://support.getoutline.org/s/article/Security-and-privacy) оқыңыз. Outline бағдарламалық құралына [Radically Open Security](https://radicallyopensecurity.com/) және [Cure53](https://cure53.de/) 2018 жылы аудит өткізген. Есептерді [мына жерден](https://support.getoutline.org/s/article/Security-and-privacy) көре аласыз.
+ Сондай-ақ Outline сервері ешқандай журналдарды сақтамайды, сондықтан ол қолды болса да, пайдаланушы деректері жария болмайды. Толық ақпаратты [мына жерден](/about/security-and-privacy) оқыңыз. Outline бағдарламалық құралына [Radically Open Security](https://radicallyopensecurity.com/) және [Cure53](https://cure53.de/) 2018 жылы аудит өткізген. Есептерді [мына жерден](/about/security-and-privacy) көре аласыз.
 
 **UDP тарфигін реттеу**
 

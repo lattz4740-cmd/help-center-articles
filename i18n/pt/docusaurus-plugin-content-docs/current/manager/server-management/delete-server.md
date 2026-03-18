@@ -7,4 +7,4 @@ Com a maioria dos fornecedores de nuvem, é relativamente fácil remover a máqu
 
 Se estiver a usar o DigitalOcean como fornecedor de nuvem, pode eliminar a sua máquina virtual existente clicando no botão de roda dentada e selecionando a opção Destruir servidor. Imediatamente a seguir, é-lhe pedido que crie uma nova máquina virtual numa localização à sua escolha.
 
-Se remover um servidor do Outline, este é eliminado permanentemente, e as chaves de acesso deixam de funcionar. Se não quiser que o acesso através do Outline seja interrompido, tem de [configurar um novo servidor do Outline](https://support.google.com/outline/answer/15331530?sjid=5147938692963654551-NC) e partilhar o respetivo acesso antes de eliminar o servidor antigo.
+Se remover um servidor do Outline, este é eliminado permanentemente, e as chaves de acesso deixam de funcionar. Se não quiser que o acesso através do Outline seja interrompido, tem de [configurar um novo servidor do Outline](/manager/server-setup/setup-server) e partilhar o respetivo acesso antes de eliminar o servidor antigo.

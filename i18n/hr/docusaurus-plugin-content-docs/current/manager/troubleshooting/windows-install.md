@@ -3,7 +3,7 @@ title: "Zašto ne mogu instalirati Upravitelj Outlinea na Windows uređaju?"
 sidebar_label: "Zašto ne mogu instalirati Upravitelj Outlinea na Windows uređaju?"
 ---
 
-Može vam se prikazati sljedeća poruka o pogrešci: "Nažalost, izgleda da Outline nije ispravno instaliran. Pokušajte ga ponovo instalirati. Ako to ne funkcionira, [pošaljite povratne informacije](https://support.getoutline.org/s/contactsupport?)."
+Može vam se prikazati sljedeća poruka o pogrešci: "Nažalost, izgleda da Outline nije ispravno instaliran. Pokušajte ga ponovo instalirati. Ako to ne funkcionira, [pošaljite povratne informacije](/about/feedback)."
 
 Ako koristite Outline na Windows uređaju, povremeno može doći do neočekivane pogreške. U većini slučajeva potrebno je izbrisati Outlineov TAP adapter (upravljački program) i ponovo instalirati Outline.
 
@@ -18,4 +18,4 @@ Koraci se mogu razlikovati ovisno o verziji operativnog sustava Windows, ali u n
    2. Pronađite aplikaciju Upravitelj Outlinea i deinstalirajte je
    3. [Preuzmite najnoviju verziju Upravitelja Outlinea](https://getoutline.org/get-started/#step-1) i ponovo je instalirajte na svoj Windows uređaj. U novoj instalaciji trebao bi se automatski instalirati novi TAP adapter.
 
-Ako i dalje nailazite na poteškoće, [obratite se korisničkoj podršci](https://support.getoutline.org/s/contactsupport?).
+Ako i dalje nailazite na poteškoće, [obratite se korisničkoj podršci](/about/feedback).

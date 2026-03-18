@@ -22,7 +22,7 @@ Outline-installasjonen krever ingen konfigurering når den er installert.
 
  For å kunne administrere tilgangsnøklene på tjeneren samhandler appen Outline-administrator med en administrasjonstjeneste på Outline-tjeneren. Administrasjonstjenesten kjører på en tilfeldig port og i en hemmelig og unik bane. Selve administrasjonstjenesten er beskyttet mot innsyn, da den ikke responderer på søk med mindre den riktige hemmelige banen oppgis. All kommunikasjon til administrasjonstjenesten blir dessuten kryptert med et [selvsignert SSL-sertifikat](https://en.wikipedia.org/wiki/Self-signed_certificate).
 
- Vær oppmerksom på at Outline-tjeneren ikke lagrer noen logger, så selv om den skulle bli utsatt for sikkerhetsbrudd, blir ingen brukerdata avslørt. Finn ut mer [her](https://support.getoutline.org/s/article/Security-and-privacy). Outline ble revidert av [Radically Open Security](https://radicallyopensecurity.com/) og [Cure53](https://cure53.de/) i 2018. Du kan lese rapportene [her](https://support.getoutline.org/s/article/Security-and-privacy).
+ Vær oppmerksom på at Outline-tjeneren ikke lagrer noen logger, så selv om den skulle bli utsatt for sikkerhetsbrudd, blir ingen brukerdata avslørt. Finn ut mer [her](/about/security-and-privacy). Outline ble revidert av [Radically Open Security](https://radicallyopensecurity.com/) og [Cure53](https://cure53.de/) i 2018. Du kan lese rapportene [her](/about/security-and-privacy).
 
 **Håndtering av UDP-trafikk**
 

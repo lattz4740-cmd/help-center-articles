@@ -43,11 +43,11 @@ Untuk menghapus batas data dari kunci akses, buka dialog Batas Data kunci sepert
 
 **Apakah pengguna akan mendapatkan notifikasi jika telah melampaui batas data mereka?**
 
- Tidak pada saat ini. Banyak penyedia cloud menyertakan batas seperti 1 TB untuk satu bulan penuh. Jumlah ini dapat mendukung 10 pengguna dengan 100 GB atau 100 pengguna dengan 10 GB. Jumlah ini cukup besar dan kami tidak mengantisipasi banyak pengguna akan mencapai batas tersebut. Kami berharap pengguna akan menghubungi pengelola server saat mereka telah mencapai batas. Namun, kami menghargai masukan Anda tentang bagaimana notifikasi dapat membantu dalam kasus penggunaan Anda, dan Anda dapat menghubungi kami[https://support.getoutline.org/s/contactsupport](https://support.getoutline.org/s/contactsupport)di sini.
+ Tidak pada saat ini. Banyak penyedia cloud menyertakan batas seperti 1 TB untuk satu bulan penuh. Jumlah ini dapat mendukung 10 pengguna dengan 100 GB atau 100 pengguna dengan 10 GB. Jumlah ini cukup besar dan kami tidak mengantisipasi banyak pengguna akan mencapai batas tersebut. Kami berharap pengguna akan menghubungi pengelola server saat mereka telah mencapai batas. Namun, kami menghargai masukan Anda tentang bagaimana notifikasi dapat membantu dalam kasus penggunaan Anda, dan Anda dapat menghubungi kami[/about/feedback](/about/feedback)di sini.
 
 **Apakah pengguna akan mendapatkan notifikasi jika mendekati batas data mereka?**
 
- Jumlah data baru yang diterima oleh pengguna yang mendekati batas akan berbeda dari hari ke hari karena didasarkan pada penggunaannya 30 hari yang lalu. Menurut kami, hal ini dapat membingungkan pengguna akhir, bukan membantu mereka. Kami menghargai masukan Anda tentang perilaku ini [di sini](https://support.getoutline.org/s/contactsupport).
+ Jumlah data baru yang diterima oleh pengguna yang mendekati batas akan berbeda dari hari ke hari karena didasarkan pada penggunaannya 30 hari yang lalu. Menurut kami, hal ini dapat membingungkan pengguna akhir, bukan membantu mereka. Kami menghargai masukan Anda tentang perilaku ini [di sini](/about/feedback).
 
 **Dapatkah saya mereset penggunaan data pengguna?**
 
@@ -59,7 +59,7 @@ Untuk menghapus batas data dari kunci akses, buka dialog Batas Data kunci sepert
 
 **Dapatkah saya menetapkan batas di seluruh server, seperti “1 TB per 30 hari”?**
 
- Tidak untuk saat ini. Kami ingin mendengar lebih lanjut tentang kasus penggunaan Anda [di sini](https://support.getoutline.org/s/contactsupport).
+ Tidak untuk saat ini. Kami ingin mendengar lebih lanjut tentang kasus penggunaan Anda [di sini](/about/feedback).
 
 **Jika terdapat batas data default dan batas data di kunci tertentu, manakah yang akan diterapkan?**
 

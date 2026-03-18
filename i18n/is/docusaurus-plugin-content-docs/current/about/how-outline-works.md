@@ -22,7 +22,7 @@ Uppsetning Outline krefst engra grunnstillinga eftir uppsetningu.
 
  Til að stjórna aðgangslyklum á þjóninum á Outline Manager-forritið í samskiptum við stjórnunarþjónustu á Outline-þjóninum. Stjórnunarþjónustan keyrir á handahófsvalinni gátt og á leynilegri og einkvæmri slóð. Ekki er hægt að eiga við stjórnunarþjónustuna sjálfa þar sem hún svarar ekki fyrirspurnum nema viðeigandi leynileg slóð sé tilgreind. Að lokum skal þess getið að öll samskipti við stjórnunarþjónustuna eru dulkóðuð með [sjálfundirrituðu SSL-vottorði](https://en.wikipedia.org/wiki/Self-signed_certificate).
 
- Auk þess vistar Outline-þjónninn enga annála, svo jafnvel þótt árás yrði gerð á hann myndu engin notkunargögn verða gefin upp. Nánar [hér](https://support.getoutline.org/s/article/Security-and-privacy). Árið 2018 gekkst Outline undir endurskoðanir [Radically Open Security](https://radicallyopensecurity.com/) og [Cure53](https://cure53.de/). Skýrslurnar má finna [hér](https://support.getoutline.org/s/article/Security-and-privacy).
+ Auk þess vistar Outline-þjónninn enga annála, svo jafnvel þótt árás yrði gerð á hann myndu engin notkunargögn verða gefin upp. Nánar [hér](/about/security-and-privacy). Árið 2018 gekkst Outline undir endurskoðanir [Radically Open Security](https://radicallyopensecurity.com/) og [Cure53](https://cure53.de/). Skýrslurnar má finna [hér](/about/security-and-privacy).
 
 **Meðhöndlun UDP-umferðar**
 

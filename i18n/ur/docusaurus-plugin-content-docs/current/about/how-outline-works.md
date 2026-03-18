@@ -22,7 +22,7 @@ Outline سافٹ ویئر اوپن سورس ہے، اس کا مطلب ہے کہ 
 
  سرور پر موجود رسائی والی کلیدوں کا نظم کرنے کے لیے، Outline مینیجر ایپلیکیشن Outline سرور پر ایک مینیجمنٹ سروس سے تعامل کرتی ہے۔ مینیجمنٹ سروس بے ترتیب پورٹ اور ایک خفیہ اور منفرد راستہ پر چلتی ہے۔ مینیجمنٹ سروس خود تفتیش مزاحم ہے کیونکہ یہ ایک مناسب خفیہ راستے کے تعین تک استفساروں کا جواب نہیں دیتی ہے۔ آخر میں، مینجمنٹ سروس سے تمام مواصلات [خود دستخظ کردہ SSL سرٹیفکیٹ](https://en.wikipedia.org/wiki/Self-signed_certificate) کے ساتھ مرموز کردہ ہیں۔
 
- نیز، Outline سرور کوئی لاگ اسٹور نہیں کرتا ہے، لہذا اگر کوئی اس تک رسائی حاصل کر بھی لے تو صارف کا کوئی ڈیٹا افشاء نہیں ہوگا۔ [یہاں](https://support.getoutline.org/s/article/Security-and-privacy) مزید جانیں۔ ‫Outline کا آڈٹ 2018 میں [Radically Open Security](https://radicallyopensecurity.com/) اور [Cure53](https://cure53.de/) کے ذریعے کیا گیا تھا۔ رپورٹس [یہاں](https://support.getoutline.org/s/article/Security-and-privacy) دیکھیں۔
+ نیز، Outline سرور کوئی لاگ اسٹور نہیں کرتا ہے، لہذا اگر کوئی اس تک رسائی حاصل کر بھی لے تو صارف کا کوئی ڈیٹا افشاء نہیں ہوگا۔ [یہاں](/about/security-and-privacy) مزید جانیں۔ ‫Outline کا آڈٹ 2018 میں [Radically Open Security](https://radicallyopensecurity.com/) اور [Cure53](https://cure53.de/) کے ذریعے کیا گیا تھا۔ رپورٹس [یہاں](/about/security-and-privacy) دیکھیں۔
 
 **‫UDP ٹریفک کو ہینڈل کرنا**
 

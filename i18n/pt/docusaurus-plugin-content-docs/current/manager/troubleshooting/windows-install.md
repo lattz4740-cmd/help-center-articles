@@ -3,7 +3,7 @@ title: "Porque é que não consigo instalar o Gestor Outline no Windows?"
 sidebar_label: "Porque é que não consigo instalar o Gestor Outline no Windows?"
 ---
 
-Pode ser-lhe apresentada a seguinte mensagem de erro: "Lamentamos, parece que o Outline não está instalado corretamente. Tente instalá-lo novamente. Se esta solução não resolver o problema, [envie feedback](https://support.getoutline.org/s/contactsupport?)."
+Pode ser-lhe apresentada a seguinte mensagem de erro: "Lamentamos, parece que o Outline não está instalado corretamente. Tente instalá-lo novamente. Se esta solução não resolver o problema, [envie feedback](/about/feedback)."
 
 Se estiver a usar o Outline no Windows, pode encontrar ocasionalmente um erro inesperado. Na maioria dos casos, tem de eliminar o adaptador TAP do Outline (controlador) e reinstalar o Outline.
 
@@ -18,4 +18,4 @@ Os passos podem variar consoante a versão do seu sistema operativo Windows, mas
    2. Encontre a app Gestor Outline e desinstale-a
    3. [Transfira a versão mais recente do Gestor Outline](https://getoutline.org/get-started/#step-1) e reinstale-o no seu dispositivo Windows. A nova instalação deve instalar automaticamente um novo adaptador TAP.
 
-Se continuar a ter problemas, [contacte o apoio técnico](https://support.getoutline.org/s/contactsupport?).
+Se continuar a ter problemas, [contacte o apoio técnico](/about/feedback).

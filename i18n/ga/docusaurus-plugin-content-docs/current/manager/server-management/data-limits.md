@@ -43,11 +43,11 @@ Chun teorainn sonraí a bhaint d'eochair rochtana, déan nascleanúint chuig dia
 
 **An dtabharfar fógra d'úsáideoirí má sháraíonn siad a dteorainn sonraí?**
 
- Ní thabharfar faoi láthair. Cuireann go leor soláthraithe néil teorainn san áireamh amhail 1 TB in aghaidh na míosa iomláine, ar féidir leis tacú le 10 n-úsáideoir ag 100 GB nó 100 úsáideoir ag 10 GB. Is uimhreacha sách mór iad sin agus ní dóigh linn go mbainfidh mórán úsáideoirí iad amach. Tá súil againn go ndéanfaidh úsáideoirí teagmháil le bainisteoirí freastalaithe nuair a bhaineann siad a dteorainn amach. Ba mhór linn do léargas i dtaobh an chaoi a gcabhródh fógraí le do chás úsáide, áfach, agus is féidir leat teagmháil a dhéanamh linn[anseo](https://support.getoutline.org/s/contactsupport).
+ Ní thabharfar faoi láthair. Cuireann go leor soláthraithe néil teorainn san áireamh amhail 1 TB in aghaidh na míosa iomláine, ar féidir leis tacú le 10 n-úsáideoir ag 100 GB nó 100 úsáideoir ag 10 GB. Is uimhreacha sách mór iad sin agus ní dóigh linn go mbainfidh mórán úsáideoirí iad amach. Tá súil againn go ndéanfaidh úsáideoirí teagmháil le bainisteoirí freastalaithe nuair a bhaineann siad a dteorainn amach. Ba mhór linn do léargas i dtaobh an chaoi a gcabhródh fógraí le do chás úsáide, áfach, agus is féidir leat teagmháil a dhéanamh linn[anseo](/about/feedback).
 
 **An dtabharfar fógra d'úsáideoirí má dhruideann siad lena dteorainn sonraí?**
 
- Beidh méid na sonraí nua a gheobhaidh úsáideoir atá ag druidim lena dteorainn éagsúil ó lá go lá toisc go bhfuil sé bunaithe ar a n-úsáid 30 lá ó shin. Ceapaimid gur mó an seans go gcuirfeadh rabhadh mearbhall ar úsáideoirí deiridh seachas go gcabhrófaí leo. Ba mhór linn d'aiseolas maidir leis an iompar sin[anseo](https://support.getoutline.org/s/contactsupport).
+ Beidh méid na sonraí nua a gheobhaidh úsáideoir atá ag druidim lena dteorainn éagsúil ó lá go lá toisc go bhfuil sé bunaithe ar a n-úsáid 30 lá ó shin. Ceapaimid gur mó an seans go gcuirfeadh rabhadh mearbhall ar úsáideoirí deiridh seachas go gcabhrófaí leo. Ba mhór linn d'aiseolas maidir leis an iompar sin[anseo](/about/feedback).
 
 **An féidir liom úsáid sonraí úsáideora a athshocrú?**
 
@@ -59,7 +59,7 @@ Chun teorainn sonraí a bhaint d'eochair rochtana, déan nascleanúint chuig dia
 
 **An féidir liom teorainn ar fud an fhreastalaí a shocrú, amhail "1 TB in aghaidh na tréimhse 30 lá"?**
 
- Ní féidir faoi láthair. Ba bhreá linn tuilleadh a chloisteáil faoi do chás úsáide[anseo](https://support.getoutline.org/s/contactsupport).
+ Ní féidir faoi láthair. Ba bhreá linn tuilleadh a chloisteáil faoi do chás úsáide[anseo](/about/feedback).
 
 **Má tá teorainn sonraí réamhshocraithe agus teorainn sonraí le heochair ar leith, cén cheann a gcuirfear i bhfeidhm?**
 

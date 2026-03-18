@@ -3,7 +3,7 @@ title: "የOutline ደንበኛን Windows ላይ መጫን የማልችለው �
 sidebar_label: "የOutline ደንበኛን Windows ላይ መጫን የማልችለው ለምንድን ነው?"
 ---
 
-ይህን የስሕተት መልዕክት ሊመለከቱ ይችላሉ፦ «ይቅርታ፣ Outline በአግባቡ ያልተጫነ ይመስላል። እባክዎ እንደገና ለመጫን ይሞክሩ። እሱ ካልሠራ እባክዎ [ግብረመልስ ያስገቡ](https://support.getoutline.org/s/contactsupport?)።»
+ይህን የስሕተት መልዕክት ሊመለከቱ ይችላሉ፦ «ይቅርታ፣ Outline በአግባቡ ያልተጫነ ይመስላል። እባክዎ እንደገና ለመጫን ይሞክሩ። እሱ ካልሠራ እባክዎ [ግብረመልስ ያስገቡ](/about/feedback)።»
 
 Outlineን Windows ላይ እየተጠቀሙ ከሆነ፣ አልፎ አልፎ ያልተጠበቀ ስሕተት ሊያጋጥምዎት ይችላል። አብዛኛውን ጊዜ፣ የOutline TAP አስማሚ (ነጂ) መሰረዝ ያስፈልገዋል እና Outline እንደገና መጫን ይኖርበታል።
 
@@ -18,4 +18,4 @@ Outlineን Windows ላይ እየተጠቀሙ ከሆነ፣ አልፎ አልፎ �
    - የOutline ደንበኛ መተግበሪያን ያግኙ እና የOutline ደንበኛን ያራግፉ
    - [የOutline ደንበኛ የቅርብ ጊዜ ሥሪትን ያውርዱ](https://getoutline.org/get-started/#step-3) እና Windows መሣሪያዎ ላይ ዳግም ይጫኑት። አዲሱ ጭነት በራስ-ሰር አዲስ TAP አስማሚ መጫን አለበት።
 
-አሁንም ችግር እያጋጠመዎ ከሆነ [ድጋፍን ያነጋግሩ](https://support.getoutline.org/s/contactsupport?)።
+አሁንም ችግር እያጋጠመዎ ከሆነ [ድጋፍን ያነጋግሩ](/about/feedback)።

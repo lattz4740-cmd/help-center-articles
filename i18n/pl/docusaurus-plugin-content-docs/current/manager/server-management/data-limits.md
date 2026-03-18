@@ -47,7 +47,7 @@ Dlaczego Outline używa limitów okresowych?
 
 **Czy użytkownicy będą powiadamiani, gdy zbliżą się do swojego limitu danych?**
 
- Ilość nowych danych otrzymanych przez użytkownika zbliżającego się do limitu będzie się różnić w poszczególnych dniach, ponieważ zależy od użycia danych sprzed 30 dni. Naszym zdaniem takie powiadomienia nie pomagałyby użytkownikom, a wręcz wprowadzałyby ich w błąd. Będziemy wdzięczni za Twoją opinię na ten temat. Możesz ją przekazać [tutaj](https://support.getoutline.org/s/contactsupport).
+ Ilość nowych danych otrzymanych przez użytkownika zbliżającego się do limitu będzie się różnić w poszczególnych dniach, ponieważ zależy od użycia danych sprzed 30 dni. Naszym zdaniem takie powiadomienia nie pomagałyby użytkownikom, a wręcz wprowadzałyby ich w błąd. Będziemy wdzięczni za Twoją opinię na ten temat. Możesz ją przekazać [tutaj](/about/feedback).
 
 **Czy mogę zresetować użycie danych użytkownika?**
 
@@ -59,7 +59,7 @@ Dlaczego Outline używa limitów okresowych?
 
 **Czy mogę ustawić limit obejmujący cały serwer, np. „1 TB na 30 dni”?**
 
- Obecnie nie. Chętnie dowiemy się więcej o Twoim przypadku użycia danych [tutaj](https://support.getoutline.org/s/contactsupport).
+ Obecnie nie. Chętnie dowiemy się więcej o Twoim przypadku użycia danych [tutaj](/about/feedback).
 
 **Jeśli jest ustawiony domyślny limit danych, a także limit danych na konkretnym kluczu, to który z nich będzie egzekwowany?**
 

@@ -21,5 +21,5 @@ Le fournisseur de services cloud que vous avez choisi peut vous imposer de crée
 
  Pour créer des exceptions sur le pare-feu de votre serveur, nous vous recommandons de rechercher les termes "ufw" et "iptables" dans la documentation de ce dernier :
 
-- UFW : [https://help.ubuntu.com/community/UFW](https://support.getoutline.org/s/article/Firewall-errors?language=fr)
-- Iptables : [https://help.ubuntu.com/community/IptablesHowTo](https://support.getoutline.org/s/article/Firewall-errors?language=fr)
+- UFW : [https://help.ubuntu.com/community/UFW](/client/troubleshooting/firewall-errors)
+- Iptables : [https://help.ubuntu.com/community/IptablesHowTo](/client/troubleshooting/firewall-errors)

@@ -43,11 +43,11 @@ For å fjerne datagrensen for en tilgangsnøkkel må du gå til nøkkelens Datag
 
 **Blir brukerne varslet hvis de overskrider datagrensen?**
 
- Ikke for øyeblikket. Mange nettskyleverandører har en grense, for eksempel 1 TB for hele måneden, som kan støtte 10 brukere med 100 GB hver, eller 100 brukere med 10 GB hver. Dette er ganske høye tall, og vi tror ikke at det er mange brukere som når disse grensene. Vi håper at brukerne kontakter tjeneradministratorene dersom de skulle nå grensen. Men vi setter pris på innspill fra deg om hvordan varsler kan være nyttige for bruksmønsteret ditt. Du kan kontakte oss [her](https://support.getoutline.org/s/contactsupport).
+ Ikke for øyeblikket. Mange nettskyleverandører har en grense, for eksempel 1 TB for hele måneden, som kan støtte 10 brukere med 100 GB hver, eller 100 brukere med 10 GB hver. Dette er ganske høye tall, og vi tror ikke at det er mange brukere som når disse grensene. Vi håper at brukerne kontakter tjeneradministratorene dersom de skulle nå grensen. Men vi setter pris på innspill fra deg om hvordan varsler kan være nyttige for bruksmønsteret ditt. Du kan kontakte oss [her](/about/feedback).
 
 **Blir brukerne varslet når de nærmer seg datagrensen?**
 
- Mengden nye data som mottas av en bruker som nærmer seg grensen, varierer fra dag til dag fordi den er basert på hvor mye hen brukte for 30 dager siden. Vi tror varsler er mer egnet til å forvirre brukerne enn til å hjelpe dem. Gi oss gjerne tilbakemeldinger om denne funksjonaliteten [her](https://support.getoutline.org/s/contactsupport).
+ Mengden nye data som mottas av en bruker som nærmer seg grensen, varierer fra dag til dag fordi den er basert på hvor mye hen brukte for 30 dager siden. Vi tror varsler er mer egnet til å forvirre brukerne enn til å hjelpe dem. Gi oss gjerne tilbakemeldinger om denne funksjonaliteten [her](/about/feedback).
 
 **Kan jeg tilbakestille brukeres databruk?**
 
@@ -59,7 +59,7 @@ For å fjerne datagrensen for en tilgangsnøkkel må du gå til nøkkelens Datag
 
 **Kan jeg angi en grense som gjelder for hele tjeneren, for eksempel «1 TB per 30 dager»?**
 
- Ikke for øyeblikket. Fortell gjerne mer om bruksmønsteret ditt [her](https://support.getoutline.org/s/contactsupport).
+ Ikke for øyeblikket. Fortell gjerne mer om bruksmønsteret ditt [her](/about/feedback).
 
 **Hvis det er angitt en standard datagrense og en datagrense for en bestemt nøkkel, hvilken grense gjelder da?**
 

@@ -3,7 +3,7 @@ title: "¿Por qué no puedo instalar Outline Manager en Windows?"
 sidebar_label: "¿Por qué no puedo instalar Outline Manager en Windows?"
 ---
 
-Es posible que veas este mensaje de error: "Lamentablemente, parece que Outline no está instalado de forma adecuada. Vuelve a instalarlo. Si el problema persiste, [envía tus comentarios](https://support.getoutline.org/s/contactsupport?)".
+Es posible que veas este mensaje de error: "Lamentablemente, parece que Outline no está instalado de forma adecuada. Vuelve a instalarlo. Si el problema persiste, [envía tus comentarios](/about/feedback)".
 
 Si utilizas Outline en Windows, es posible que ocasionalmente te encuentres con un error inesperado. En la mayoría de los casos, se debe borrar el adaptador (controlador) TAP de Outline y reinstalar el servicio.
 
@@ -18,4 +18,4 @@ Si bien los pasos pueden variar según la versión de tu sistema operativo Windo
    2. Busca la app de Outline Manager y desinstálala.
    3. [Descarga la versión más reciente de Outline Manager](https://getoutline.org/get-started/#step-1) y reinstálala en tu dispositivo Windows. Con la instalación nueva, debería instalarse automáticamente un nuevo adaptador TAP.
 
-Si los problemas persisten, [comunícate con el equipo de asistencia](https://support.getoutline.org/s/contactsupport?l).
+Si los problemas persisten, [comunícate con el equipo de asistencia](/about/feedback).

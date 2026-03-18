@@ -43,11 +43,11 @@ Pokud chcete datový limit z přístupového klíče odebrat, podle pokynů vý�
 
 **Dostanou uživatelé upozornění, když vyčerpají limit?**
 
- V tuto chvíli ne. Řada poskytovatelů cloudových služeb nabízí limit například 1 TB na celý měsíc, který může čerpat 10 uživatelů po 100 GB nebo 100 uživatelů po 10 GB. To jsou celkem velké objemy a neočekáváme, že jich mnoho uživatelů dosáhne. Doufáme, že se uživatelé v případě dosažení limitu obrátí na správce serverů. Oceníme nicméně vaše postřehy, jak by vám upozornění ve vašem konkrétním případě pomohla. Můžete se s námi spojit [tady](https://support.getoutline.org/s/contactsupport).
+ V tuto chvíli ne. Řada poskytovatelů cloudových služeb nabízí limit například 1 TB na celý měsíc, který může čerpat 10 uživatelů po 100 GB nebo 100 uživatelů po 10 GB. To jsou celkem velké objemy a neočekáváme, že jich mnoho uživatelů dosáhne. Doufáme, že se uživatelé v případě dosažení limitu obrátí na správce serverů. Oceníme nicméně vaše postřehy, jak by vám upozornění ve vašem konkrétním případě pomohla. Můžete se s námi spojit [tady](/about/feedback).
 
 **Dostanou uživatelé upozornění, když se budou blížit vyčerpání limitu?**
 
- Množství nových dat, které uživatel blížící se limitu dostane k dispozici, se bude den ode dne lišit, protože vychází z jeho využití před 30 dny. Myslíme si, že takové varování by koncovým uživatelům příliš nepomohlo a spíše by je mátlo. Oceníme ale vaši zpětnou vazbu k tomuto chování, kterou nám můžete poslat [tady](https://support.getoutline.org/s/contactsupport).
+ Množství nových dat, které uživatel blížící se limitu dostane k dispozici, se bude den ode dne lišit, protože vychází z jeho využití před 30 dny. Myslíme si, že takové varování by koncovým uživatelům příliš nepomohlo a spíše by je mátlo. Oceníme ale vaši zpětnou vazbu k tomuto chování, kterou nám můžete poslat [tady](/about/feedback).
 
 **Můžu konkrétnímu uživateli resetovat využití dat?**
 
@@ -59,7 +59,7 @@ Pokud chcete datový limit z přístupového klíče odebrat, podle pokynů vý�
 
 **Mohu nastavit limit na úrovni serveru, například 1 TB na 30 dní?**
 
- Momentálně ne. Rádi bychom se o vašem konkrétním scénáři dozvěděli víc. Napište nám [sem](https://support.getoutline.org/s/contactsupport).
+ Momentálně ne. Rádi bychom se o vašem konkrétním scénáři dozvěděli víc. Napište nám [sem](/about/feedback).
 
 **Pokud existuje výchozí datový limit a limit pro určitý klíč, který z nich se bude uplatňovat?**
 

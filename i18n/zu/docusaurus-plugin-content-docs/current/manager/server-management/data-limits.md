@@ -43,11 +43,11 @@ Ukuze ususe umkhawulo wedatha kusukela kukhiye wokufinyeleleka, funa ngokuya kud
 
 **Ingabe abasebenzisi bazokwaziswa uma sebedlule kumkhawulo wabo wedatha?**
 
- Hhayi okwamanje. Iningi labahlinzeki be-cloud bafaka umkhawulo ofana ne-1TB ngenyanga egcwele, ongasekela abasebenzisi abayi-10 ngo-100GB noma abasebenzisi abayi-100 ngo-10 GB. Lezi izinombolo ezinkulu kakhulu, futhi asilindele ukuthi abasebenzisi abaningi bazofinyelela kuzo. Sithemba ukuthi abasebenzisi bazoxhumana nabaphathi beseva uma sebafike kumkhawulo wabo. Kodwa, sizolibonga ulwazi lwakho lokuthi izaziso zingasiza kanjani esimweni sakho sokusetshenziswa, futhi ungaxhumana nathi[lapha](https://support.getoutline.org/s/contactsupport).
+ Hhayi okwamanje. Iningi labahlinzeki be-cloud bafaka umkhawulo ofana ne-1TB ngenyanga egcwele, ongasekela abasebenzisi abayi-10 ngo-100GB noma abasebenzisi abayi-100 ngo-10 GB. Lezi izinombolo ezinkulu kakhulu, futhi asilindele ukuthi abasebenzisi abaningi bazofinyelela kuzo. Sithemba ukuthi abasebenzisi bazoxhumana nabaphathi beseva uma sebafike kumkhawulo wabo. Kodwa, sizolibonga ulwazi lwakho lokuthi izaziso zingasiza kanjani esimweni sakho sokusetshenziswa, futhi ungaxhumana nathi[lapha](/about/feedback).
 
 **Ingabe abasebenzisi bazokwaziswa uma sebasondele emkhawulweni wabo wedatha?**
 
- Inani ledatha entsha yokuthi umsebenzisi usondele emkhawulweni wakhe elizotholwa lizohluka ezinsukwini ezihlukile ngoba lisuselwa ekusetshenzisweni kwabo kwezinsuku ezingama-30 ezedlule. Sicabanga ukuthi isexwayoso kungenzeka kakhulu sidide abasebenzisi kunokuba sibasize. Singayijabulela impendulo yakho kulokhu kuziphatha[lapha](https://support.getoutline.org/s/contactsupport).
+ Inani ledatha entsha yokuthi umsebenzisi usondele emkhawulweni wakhe elizotholwa lizohluka ezinsukwini ezihlukile ngoba lisuselwa ekusetshenzisweni kwabo kwezinsuku ezingama-30 ezedlule. Sicabanga ukuthi isexwayoso kungenzeka kakhulu sidide abasebenzisi kunokuba sibasize. Singayijabulela impendulo yakho kulokhu kuziphatha[lapha](/about/feedback).
 
 **Ngingakwazi yini ukusetha kabusha ukusetshenziswa kwedatha yomsebenzisi?**
 
@@ -59,7 +59,7 @@ Ukuze ususe umkhawulo wedatha kusukela kukhiye wokufinyeleleka, funa ngokuya kud
 
 **Ngingakwazi yini ukusetha umkhawulo obanzi kuseva, ofana “ne-1 TB njalo ezinsukwini ezingama-30”?**
 
- Hhayi okwamanje. Singathanda ukuzwa okuningi mayelana nesimo sakho sokusetshenziswa[lapha](https://support.getoutline.org/s/contactsupport).
+ Hhayi okwamanje. Singathanda ukuzwa okuningi mayelana nesimo sakho sokusetshenziswa[lapha](/about/feedback).
 
 **Uma kukhona umkhawulo wedatha ozenzakalelayo kanye nomkhawulo wedatha kukhiye othile, iyiphi ezophoqelelwa?**
 

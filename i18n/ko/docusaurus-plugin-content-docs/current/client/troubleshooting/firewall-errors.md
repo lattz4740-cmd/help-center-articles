@@ -21,5 +21,5 @@ sidebar_label: 방화벽 오류
 
  서버 방화벽 예외를 만들 때는 'ufw' 및 'iptables' 도움말을 참고하세요.
 
-- UFW: [https://help.ubuntu.com/community/UFW](https://support.getoutline.org/s/article/Firewall-errors?language=ko)
-- Iptables: [https://help.ubuntu.com/community/IptablesHowTo](https://support.getoutline.org/s/article/Firewall-errors?language=ko)
+- UFW: [https://help.ubuntu.com/community/UFW](/client/troubleshooting/firewall-errors)
+- Iptables: [https://help.ubuntu.com/community/IptablesHowTo](/client/troubleshooting/firewall-errors)

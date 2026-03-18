@@ -22,7 +22,7 @@ Po namestitvi strežnika Outline ni potrebna konfiguracija.
 
  Za upravljanje ključev za dostop v strežniku aplikacija Upravitelj za Outline komunicira s storitvijo za upravljanje v strežniku Outline. Storitev za upravljanje se izvaja prek naključnih vrat ter skrivne in enolične poti. Storitev za upravljanje sama zmanjšuje tveganje, saj se ne odzove na poizvedbe, razen če je navedena ustrezna skrivna pot. Prav tako je vsa komunikacija s storitvijo za upravljanje šifrirana s [samopodpisanim potrdilom SSL](https://en.wikipedia.org/wiki/Self-signed_certificate).
 
- Poleg tega strežnik Outline ne shranjuje nobenih dnevnikov, zato se tudi v primeru ogroženega strežnika uporabniški podatki ne razkrijejo. Več o tem preberite [tukaj](https://support.getoutline.org/s/article/Security-and-privacy). Outline sta leta 2018 pregledali podjetji [Radically Open Security](https://radicallyopensecurity.com/) in [Cure53](https://cure53.de/). Poročila lahko preberete [tukaj](https://support.getoutline.org/s/article/Security-and-privacy).
+ Poleg tega strežnik Outline ne shranjuje nobenih dnevnikov, zato se tudi v primeru ogroženega strežnika uporabniški podatki ne razkrijejo. Več o tem preberite [tukaj](/about/security-and-privacy). Outline sta leta 2018 pregledali podjetji [Radically Open Security](https://radicallyopensecurity.com/) in [Cure53](https://cure53.de/). Poročila lahko preberete [tukaj](/about/security-and-privacy).
 
 **Obravnavanje prometa UDP**
 

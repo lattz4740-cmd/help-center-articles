@@ -22,7 +22,7 @@ sidebar_label: Outline ක්‍රියා කරන ආකාරය
 
  සේවාදායකයේ ප්‍රවේශ යතුරු කළමනාකරණය කිරීම සඳහා, Outline කළමනාකරු යෙදුම Outline සේවාදායකයේ කළමනාකරණ සේවාවක් සමග අන්තර්ක්‍රියා කරයි. කළමනාකරණ සේවාව අහඹු පෝටයක් මත සහ රහසිගත සහ අනන්‍ය වූ මාර්ගයක ධාවනය වේ. සුදුසු රහස් මාර්ගය සඳහන් කර නොමැති නම්, විමසුම්වලට ප්‍රතිචාර නොදක්වන බැවින් කළමනාකරණ සේවාවම ප්‍රතිරෝධී වේ. අවසාන වශයෙන්, කළමනාකරණ සේවාව වෙත සියලු සන්නිවේදනයන් [ස්වයං අත්සන් කළ SSL සහතිකයක්](https://en.wikipedia.org/wiki/Self-signed_certificate) සමග සංකේතනය කර ඇත.
 
- එසේම, Outline සේවාදායකය කිසිදු ලොගයක් ගබඩා නොකරයි, එබැවින් එය සම්මුතියකට ලක් වුවද, පරිශීලක දත්ත කිසිවක් අනාවරණය නොවේ. [මෙතැනින්](https://support.getoutline.org/s/article/Security-and-privacy) තව දැන ගන්න. Outline 2018 දී [Radically Open Security](https://radicallyopensecurity.com/) සහ [Cure53](https://cure53.de/) විසින් විගණනය කරන ලදි. [මෙහි](https://support.getoutline.org/s/article/Security-and-privacy) වාර්තා බලන්න.
+ එසේම, Outline සේවාදායකය කිසිදු ලොගයක් ගබඩා නොකරයි, එබැවින් එය සම්මුතියකට ලක් වුවද, පරිශීලක දත්ත කිසිවක් අනාවරණය නොවේ. [මෙතැනින්](/about/security-and-privacy) තව දැන ගන්න. Outline 2018 දී [Radically Open Security](https://radicallyopensecurity.com/) සහ [Cure53](https://cure53.de/) විසින් විගණනය කරන ලදි. [මෙහි](/about/security-and-privacy) වාර්තා බලන්න.
 
 **UDP ගමනාගමනය හැසිරවීම**
 

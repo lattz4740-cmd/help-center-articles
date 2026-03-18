@@ -3,7 +3,7 @@ title: "Pse nuk mund ta instaloj klientin e Outline në Windows?"
 sidebar_label: "Pse nuk mund ta instaloj klientin e Outline në Windows?"
 ---
 
-Mund të shikosh këtë mesazh gabimi: "Na vjen keq, por me sa duket Outline nuk është instaluar si duhet. Provo ta instalosh përsëri. Nëse kjo nuk funksionon, [dërgo komente](https://support.getoutline.org/s/contactsupport?).”
+Mund të shikosh këtë mesazh gabimi: "Na vjen keq, por me sa duket Outline nuk është instaluar si duhet. Provo ta instalosh përsëri. Nëse kjo nuk funksionon, [dërgo komente](/about/feedback).”
 
 Nëse po përdor Outline në Windows, herë pas here mund të ndeshësh një gabim të papritur. Në shumicën e rasteve, përshtatësi (drejtuesi) TAP i Outline duhet të fshihet dhe Outline duhet të instalohet përsëri.
 
@@ -18,4 +18,4 @@ Hapat mund të variojnë bazuar në versionin e sistemit operativ të Windows, p
    - Gjej aplikacionin e klientit të Outline dhe çinstalo klientin e Outline
    - [Shkarko versionin më të fundit të klientit të Outline](https://getoutline.org/get-started/#step-3) dhe riinstaloje atë në pajisjen tënde me Windows. Instalimi i ri do të instalojë automatikisht një përshtatës të ri TAP.
 
-Nëse ke akoma probleme, [kontakto me ekipin e mbështetjes](https://support.getoutline.org/s/contactsupport?).
+Nëse ke akoma probleme, [kontakto me ekipin e mbështetjes](/about/feedback).

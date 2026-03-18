@@ -22,7 +22,7 @@ Outline инсталација не захтева никакво конфигу
 
  Да би управљала приступним кључевима на серверу, апликација Outline Manager комуницира са Услугом управљања на Outline серверу. Услуга управљања се покреће на насумичном порту, као и на тајној и јединственој путањи. Сама Услуга управљања је непробојна јер не одговара на упите ако се не наведе одговарајућа тајна путања. На крају, комплетна комуникација са Услугом управљања шифрује се помоћу [самопотписаног SSL сертификата](https://en.wikipedia.org/wiki/Self-signed_certificate).
 
- Outline сервер не чува евиденције, па чак и да буде компромитован, неће открити податке корисника. Сазнајте више [овде](https://support.getoutline.org/s/article/Security-and-privacy). Ревизију Outline-а су 2018. извршили [Radically Open Security](https://radicallyopensecurity.com/) и [Cure53](https://cure53.de/). Погледајте извештаје [овде](https://support.getoutline.org/s/article/Security-and-privacy).
+ Outline сервер не чува евиденције, па чак и да буде компромитован, неће открити податке корисника. Сазнајте више [овде](/about/security-and-privacy). Ревизију Outline-а су 2018. извршили [Radically Open Security](https://radicallyopensecurity.com/) и [Cure53](https://cure53.de/). Погледајте извештаје [овде](/about/security-and-privacy).
 
 **Руковање UDP саобраћајем**
 

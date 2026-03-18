@@ -22,7 +22,7 @@ Aplicația Outline nu necesită o configurare după instalare.
 
  Pentru gestionarea cheilor de acces la server, aplicația Outline Manager interacționează cu un serviciu de gestionare pe serverul Outline. Serviciul de gestionare rulează pe un port aleatoriu și pe o cale unică și secretă. Serviciul de gestionare nu poate fi scanat deoarece nu răspunde la interogări decât dacă este specificată calea secretă corespunzătoare. Toată comunicarea cu serviciul de gestionare este criptată cu un [certificat SSL autosemnat](https://en.wikipedia.org/wiki/Self-signed_certificate).
 
- În plus, serverul Outline nu stochează niciun jurnal, prin urmare, chiar dacă este compromis, nu sunt dezvăluite datele utilizatorilor. Aflați mai multe [aici](https://support.getoutline.org/s/article/Security-and-privacy). Outline a fost auditat de [Radically Open Security](https://radicallyopensecurity.com/) și [Cure53](https://cure53.de/) în 2018. Consultați rapoartele [aici](https://support.getoutline.org/s/article/Security-and-privacy).
+ În plus, serverul Outline nu stochează niciun jurnal, prin urmare, chiar dacă este compromis, nu sunt dezvăluite datele utilizatorilor. Aflați mai multe [aici](/about/security-and-privacy). Outline a fost auditat de [Radically Open Security](https://radicallyopensecurity.com/) și [Cure53](https://cure53.de/) în 2018. Consultați rapoartele [aici](/about/security-and-privacy).
 
 **Gestionarea traficului UDP**
 

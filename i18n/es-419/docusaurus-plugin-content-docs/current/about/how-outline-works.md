@@ -22,7 +22,7 @@ La instalación de Outline no necesita ninguna configuración posterior.
 
  Para administrar las claves de acceso en el servidor, la aplicación de Outline Manager interactúa con un servicio de administración del servidor de Outline. Este servicio de administración se ejecuta en un puerto aleatorio y en una ruta de acceso única y secreta. El servicio de administración resulta ser resistente, ya que no responde consultas a menos que se especifique la ruta de acceso secreta adecuada. Por último, toda la comunicación dirigida al servicio de administración está encriptada con un [certificado SSL autofirmado](https://en.wikipedia.org/wiki/Self-signed_certificate).
 
- Asimismo, el servidor de Outline no almacena ningún registro, por lo que no se divulga ningún dato del usuario, incluso si el servidor se ve vulnerado. Obtén más información [aquí](https://support.getoutline.org/s/article/Security-and-privacy). En el 2018, Outline se sometió a las auditorías de [Radically Open Security](https://radicallyopensecurity.com/) y [Cure53](https://cure53.de/). Lee sus informes [aquí](https://support.getoutline.org/s/article/Security-and-privacy).
+ Asimismo, el servidor de Outline no almacena ningún registro, por lo que no se divulga ningún dato del usuario, incluso si el servidor se ve vulnerado. Obtén más información [aquí](/about/security-and-privacy). En el 2018, Outline se sometió a las auditorías de [Radically Open Security](https://radicallyopensecurity.com/) y [Cure53](https://cure53.de/). Lee sus informes [aquí](/about/security-and-privacy).
 
 **Maneja el tráfico de UDP**
 

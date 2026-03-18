@@ -43,11 +43,11 @@ Látì yọ gbèdéke dátà náà kúrò nínú kọ́kọ́rọ́ ìwọlé 
 
 **Ṣé wọ́n máa sọ fún àwọn olùṣàmúlò tí wọ́n bá ti kọjá gbèdéke dátà wọn?**
 
- Kò rí bẹ́ẹ̀ ní báyìí. Ọ̀pọ̀lọpọ̀ àwọn olùpèsè ibùdó ìpamọ́ dátà ní gbèdéke bíi 1TB fún odidi oṣù kan, èyí tó lè ṣe àtìlẹyìn fún àwọn olùṣàmúlò 10 ní ìwọ̀n 100 GB tàbí àwọn olùṣàmúlò 100 ní ìwọ̀n 10 GB. Àwọn iye wọ̀nyìí pọ̀, a ò sì retí pé ọ̀pọ̀lọpọ̀ àwọn olùṣàmúlò máa lò tó bẹ́ẹ̀. A ní ìrètí pé àwọn olùṣàmúlò máa kàn sí àwọn alákòóso olùpín nígbà tí wọ́n bá dé gbèdéke wọn. Àmọ́, a máa mọ rírì ìwòye rẹ nípa bí àwọn ìfitónilétí ṣe lè wúlò fún ọ, o sì le kàn sí wa[níbí](https://support.getoutline.org/s/contactsupport).
+ Kò rí bẹ́ẹ̀ ní báyìí. Ọ̀pọ̀lọpọ̀ àwọn olùpèsè ibùdó ìpamọ́ dátà ní gbèdéke bíi 1TB fún odidi oṣù kan, èyí tó lè ṣe àtìlẹyìn fún àwọn olùṣàmúlò 10 ní ìwọ̀n 100 GB tàbí àwọn olùṣàmúlò 100 ní ìwọ̀n 10 GB. Àwọn iye wọ̀nyìí pọ̀, a ò sì retí pé ọ̀pọ̀lọpọ̀ àwọn olùṣàmúlò máa lò tó bẹ́ẹ̀. A ní ìrètí pé àwọn olùṣàmúlò máa kàn sí àwọn alákòóso olùpín nígbà tí wọ́n bá dé gbèdéke wọn. Àmọ́, a máa mọ rírì ìwòye rẹ nípa bí àwọn ìfitónilétí ṣe lè wúlò fún ọ, o sì le kàn sí wa[níbí](/about/feedback).
 
 **Ṣé wọ́n máa sọ fún àwọn olùṣàmúlò tí wọ́n bá ti sún mọ́ gbèdéke dátà wọn?**
 
- Iye dátà tuntun tí olùṣàmúlò tó ń sún mọ́ gbèdéke rẹ̀ máa gbà máa yàtọ̀ láti ọjọ́ sí ọjọ́ nítorí pé ìlò wọn ní ọjọ́ 30 sẹ́yìn ló dá lé lórí. A rò pé ó ṣe é ṣe kí ìkìlọ̀ rú àwọn olùṣàmúlò lójú ju kí ó ràn wọ́n lọ́wọ́ lọ. A máa mọ rírì èsì yín lórí ìhùwàsí yìí[níbí](https://support.getoutline.org/s/contactsupport).
+ Iye dátà tuntun tí olùṣàmúlò tó ń sún mọ́ gbèdéke rẹ̀ máa gbà máa yàtọ̀ láti ọjọ́ sí ọjọ́ nítorí pé ìlò wọn ní ọjọ́ 30 sẹ́yìn ló dá lé lórí. A rò pé ó ṣe é ṣe kí ìkìlọ̀ rú àwọn olùṣàmúlò lójú ju kí ó ràn wọ́n lọ́wọ́ lọ. A máa mọ rírì èsì yín lórí ìhùwàsí yìí[níbí](/about/feedback).
 
 **Ṣé mo lè ṣe àtúntò ìlò dátà olùṣàmúlò?**
 
@@ -59,7 +59,7 @@ Látì yọ gbèdéke dátà náà kúrò nínú kọ́kọ́rọ́ ìwọlé 
 
 **Ṣé mo lè ṣètò gbèdéke sí gbogbo olùpín, bíi “1 TB fún ọjọ́ 30“?**
 
- O kò le tíì ṣe bẹ́ẹ̀ ní báyìí. A máa fẹ́ láti gbọ́ púpọ̀ síi nípa ọ̀ràn ìlò rẹ[níbí](https://support.getoutline.org/s/contactsupport).
+ O kò le tíì ṣe bẹ́ẹ̀ ní báyìí. A máa fẹ́ láti gbọ́ púpọ̀ síi nípa ọ̀ràn ìlò rẹ[níbí](/about/feedback).
 
 **Tó bá jẹ́ pé gbèdéke dátà ìpilẹ̀ṣẹ̀ àti gbèdéke dátà lórí kọ́kọ́rọ́ kan pàtó bá wà, èwo ló máa jẹ́ mímú ṣẹ?**
 

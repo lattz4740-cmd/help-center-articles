@@ -43,11 +43,11 @@ Para quitar el límite de datos de una clave de acceso, ve al cuadro de diálogo
 
 **¿Se notificará a los usuarios si han alcanzado el límite de datos?**
 
- Por el momento, no. Muchos proveedores de servicios en la nube aplican, por ejemplo, un límite de 1 TB para todo el mes, lo que equivale a 10 usuarios con 100 GB o a 100 con 10 GB. Son volúmenes bastante grandes y no creemos que muchos usuarios los alcancen. En el caso de que un usuario alcanzara el límite, debería ponerse en contacto con el administrador de su servidor. Sin embargo, si crees que las notificaciones podrían ser de ayuda en tu caso concreto, te agradeceríamos que [te pusieras en contacto con nosotros](https://support.getoutline.org/s/contactsupport) y nos lo contaras.
+ Por el momento, no. Muchos proveedores de servicios en la nube aplican, por ejemplo, un límite de 1 TB para todo el mes, lo que equivale a 10 usuarios con 100 GB o a 100 con 10 GB. Son volúmenes bastante grandes y no creemos que muchos usuarios los alcancen. En el caso de que un usuario alcanzara el límite, debería ponerse en contacto con el administrador de su servidor. Sin embargo, si crees que las notificaciones podrían ser de ayuda en tu caso concreto, te agradeceríamos que [te pusieras en contacto con nosotros](/about/feedback) y nos lo contaras.
 
 **¿Se notificará a los usuarios si falta poco para que alcancen el límite de datos?**
 
- La cantidad de datos nuevos que recibirá un usuario que se acerque a su límite variará de un día para otro, ya que se basa en su uso de hace 30 días. Si apareciera una advertencia, creemos que esto confundiría a los usuarios finales más que ayudarlos. Agradeceríamos que nos enviaras tus comentarios al respecto a través de [este enlace](https://support.getoutline.org/s/contactsupport).
+ La cantidad de datos nuevos que recibirá un usuario que se acerque a su límite variará de un día para otro, ya que se basa en su uso de hace 30 días. Si apareciera una advertencia, creemos que esto confundiría a los usuarios finales más que ayudarlos. Agradeceríamos que nos enviaras tus comentarios al respecto a través de [este enlace](/about/feedback).
 
 **¿Puedo restablecer el uso de datos de un usuario?**
 
@@ -59,7 +59,7 @@ Para quitar el límite de datos de una clave de acceso, ve al cuadro de diálogo
 
 **¿Puedo definir un límite para todo el servidor (por ejemplo, 1 TB por cada 30 días)?**
 
- Por el momento, no. Nos encantaría que nos dejaras tus comentarios sobre tu caso concreto [aquí](https://support.getoutline.org/s/contactsupport).
+ Por el momento, no. Nos encantaría que nos dejaras tus comentarios sobre tu caso concreto [aquí](/about/feedback).
 
 **Si hay un límite de datos predeterminado y un límite de datos en una clave concreta, ¿cuál de los dos se aplicará?**
 

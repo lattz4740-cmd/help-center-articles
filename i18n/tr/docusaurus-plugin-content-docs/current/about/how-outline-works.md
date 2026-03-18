@@ -22,7 +22,7 @@ Outline yüklendikten sonra herhangi bir yapılandırma işlemi gerekmez.
 
  Sunucudaki erişim anahtarlarının yönetilmesi için Outline Manager uygulaması Outline sunucusunda bir yönetim hizmeti ile etkileşimde bulunur. Yönetim hizmeti rastgele bir bağlantı noktasında ve gizli, benzersiz bir yolda çalışır. Yönetim Hizmeti, uygun gizli yol belirtilmediği sürece sorgulara yanıt vermediği için yoklamaya dayanıklıdır. Son olarak, yönetim hizmetine yönelik tüm iletişim [kendinden imzalı bir SSL sertifikasıyla](https://en.wikipedia.org/wiki/Self-signed_certificate) şifrelenir.
 
- Ayrıca Outline sunucusu herhangi bir günlük kaydı depolamadığından, güvenlik ihlali olsa bile kullanıcı verileri paylaşılmaz. [Daha fazla bilgi edinin.](https://support.getoutline.org/s/article/Security-and-privacy) Outline, 2018'de [Radically Open Security](https://radicallyopensecurity.com/) ve [Cure53](https://cure53.de/) tarafından denetlenmiştir. Raporları [burada](https://support.getoutline.org/s/article/Security-and-privacy) bulabilirsiniz.
+ Ayrıca Outline sunucusu herhangi bir günlük kaydı depolamadığından, güvenlik ihlali olsa bile kullanıcı verileri paylaşılmaz. [Daha fazla bilgi edinin.](/about/security-and-privacy) Outline, 2018'de [Radically Open Security](https://radicallyopensecurity.com/) ve [Cure53](https://cure53.de/) tarafından denetlenmiştir. Raporları [burada](/about/security-and-privacy) bulabilirsiniz.
 
 **UDP trafiğini işleme**
 

@@ -3,7 +3,7 @@ title: "Wieso kann ich den Outline-Client nicht unter Windows installieren?"
 sidebar_label: "Wieso kann ich den Outline-Client nicht unter Windows installieren?"
 ---
 
-Dieses Problem wird durch eine Fehlermeldung wie die folgende angezeigt: „Outline wurde anscheinend nicht korrekt installiert. Bitte versuchen Sie es noch einmal. Falls das Problem weiterhin besteht, [senden Sie uns Feedback über die App](https://support.getoutline.org/s/contactsupport?).“
+Dieses Problem wird durch eine Fehlermeldung wie die folgende angezeigt: „Outline wurde anscheinend nicht korrekt installiert. Bitte versuchen Sie es noch einmal. Falls das Problem weiterhin besteht, [senden Sie uns Feedback über die App](/about/feedback).“
 
 Wenn Sie Outline unter Windows verwenden, kann ein unerwarteter Fehler auftreten. In den meisten Fällen muss dann der TAP-Adapter für Outline (Treiber) gelöscht und Outline neu installiert werden.
 

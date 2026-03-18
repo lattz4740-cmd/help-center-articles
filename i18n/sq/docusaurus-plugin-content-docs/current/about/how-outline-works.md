@@ -22,7 +22,7 @@ Instalimi i Outline nuk ka nevojë për konfigurim pas instalimit.
 
  Për të menaxhuar çelësat e qasjes në server, aplikacioni Outline Manager ndërvepron me një shërbim menaxhimi në serverin e Outline. Shërbimi i menaxhimit ekzekutohet në një portë të rastësishme dhe në një shteg sekret dhe unik. Shërbimi i menaxhimit në vetvete është rezistent ndaj kontrolleve pasi nuk i përgjigjet kërkesave, përveçse nëse specifikohet shtegu përkatës sekret. Si përfundim, të gjitha komunikimet me shërbimin e menaxhimit janë të enkriptuara me një [certifikatë SSL me nënshkrim automatik](https://en.wikipedia.org/wiki/Self-signed_certificate).
 
- Gjithashtu, serveri i Outline nuk ruan asnjë evidencë, kështu që nuk do të zbulohen të dhëna të përdoruesve edhe nëse ai komprometohet. Mëso më shumë [këtu](https://support.getoutline.org/s/article/Security-and-privacy). Outline është audituar nga [Radically Open Security](https://radicallyopensecurity.com/) dhe [Cure53](https://cure53.de/) në vitin 2018. Shiko raportet [këtu](https://support.getoutline.org/s/article/Security-and-privacy).
+ Gjithashtu, serveri i Outline nuk ruan asnjë evidencë, kështu që nuk do të zbulohen të dhëna të përdoruesve edhe nëse ai komprometohet. Mëso më shumë [këtu](/about/security-and-privacy). Outline është audituar nga [Radically Open Security](https://radicallyopensecurity.com/) dhe [Cure53](https://cure53.de/) në vitin 2018. Shiko raportet [këtu](/about/security-and-privacy).
 
 **Administrimi i trafikut të protokollit UDP**
 

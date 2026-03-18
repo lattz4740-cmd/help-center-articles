@@ -22,7 +22,7 @@ Outline 安裝完成後不需要再進行任何設定。
 
  為管理伺服器上的存取金鑰，Outline Manager 應用程式會和 Outline 伺服器上的 Management Service 互動。Management Service 會在隨機通訊埠和私密專屬路徑上執行。由於 Management Service 只會在已指定適當私密路徑的情況下回應查詢，因此可防止探測。最後，系統會使用[自簽 SSL 憑證](https://zh.wikipedia.org/zh-hk/Self-signed_certificate)為所有 Management Service 通訊加密。
 
- Outline 伺服器不會儲存任何記錄，所以即使被入侵，亦無需擔心使用者資料外洩。按[這裡](https://support.getoutline.org/s/article/Security-and-privacy)瞭解詳情。2018 年，Outline 通過 [Radically Open Security](https://radicallyopensecurity.com/) 和 [Cure53](https://cure53.de/) 的審核。按[這裡](https://support.getoutline.org/s/article/Security-and-privacy)查看報告。
+ Outline 伺服器不會儲存任何記錄，所以即使被入侵，亦無需擔心使用者資料外洩。按[這裡](/about/security-and-privacy)瞭解詳情。2018 年，Outline 通過 [Radically Open Security](https://radicallyopensecurity.com/) 和 [Cure53](https://cure53.de/) 的審核。按[這裡](/about/security-and-privacy)查看報告。
 
 **處理 UDP 流量**
 

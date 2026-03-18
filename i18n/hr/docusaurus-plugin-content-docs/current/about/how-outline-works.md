@@ -22,7 +22,7 @@ Instalacija aplikacije Outline ne zahtijeva naknadnu instalaciju konfiguracije.
 
  Radi upravljanja pristupnim ključevima na poslužitelju aplikacija Upravitelj Outlinea komunicira s uslugom za upravljanje na Outline poslužitelju. Usluga za upravljanje pokreće se na nasumičnom priključku te na tajnoj i jedinstvenoj putanji. Ta je usluga otporna na utvrđivanje dostupnosti jer ne odgovara na upite ako se ne navede odgovarajuća tajna putanja. Konačno, sva komunikacija s uslugom za upravljanje šifrirana je [samopotpisanim SSL certifikatom](https://en.wikipedia.org/wiki/Self-signed_certificate).
 
- Također, Outline poslužitelj ne sprema zapisnike, što znači da se korisnički podaci ne otkrivaju čak ni ako je ugrožen. Više možete saznati [ovdje](https://support.getoutline.org/s/article/Security-and-privacy). [Radically Open Security](https://radicallyopensecurity.com/) i [Cure53](https://cure53.de/) provele su reviziju Outlinea 2018. Izvješća potražite [ovdje](https://support.getoutline.org/s/article/Security-and-privacy).
+ Također, Outline poslužitelj ne sprema zapisnike, što znači da se korisnički podaci ne otkrivaju čak ni ako je ugrožen. Više možete saznati [ovdje](/about/security-and-privacy). [Radically Open Security](https://radicallyopensecurity.com/) i [Cure53](https://cure53.de/) provele su reviziju Outlinea 2018. Izvješća potražite [ovdje](/about/security-and-privacy).
 
 **Rukovanje UDP prometom**
 

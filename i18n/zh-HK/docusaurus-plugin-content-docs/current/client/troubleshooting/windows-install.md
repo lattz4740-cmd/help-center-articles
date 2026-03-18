@@ -3,7 +3,7 @@ title: 為什麼我無法在 Windows 裝置上安裝 Outline 用戶端？
 sidebar_label: 為什麼我無法在 Windows 裝置上安裝 Outline 用戶端？
 ---
 
-你可能看到以下錯誤訊息：「很抱歉，系統無法正確安裝 Outline，請再安裝一次。如果仍無法解決問題，請[提交意見](https://support.getoutline.org/s/contactsupport?)。」
+你可能看到以下錯誤訊息：「很抱歉，系統無法正確安裝 Outline，請再安裝一次。如果仍無法解決問題，請[提交意見](/about/feedback)。」
 
 透過 Windows 裝置使用 Outline 時，有時可能會遇到預料之外的錯誤。在大多數情況下，你需要刪除 Outline TAP 介面卡 (驅動程式)，並重新安裝 Outline。
 
@@ -18,4 +18,4 @@ sidebar_label: 為什麼我無法在 Windows 裝置上安裝 Outline 用戶端�
    - 找出 Outline 用戶端應用程式，然後解除安裝 Outline 用戶端
    - [下載最新版本 Outline 用戶端](https://getoutline.org/get-started/#step-3)，然後在 Windows 裝置上重新安裝此應用程式。重新安裝 Outline 時，亦會自動安裝新的 TAP 介面卡。
 
-如果你仍然遇到問題，請[聯絡支援團隊](https://support.getoutline.org/s/contactsupport?)。
+如果你仍然遇到問題，請[聯絡支援團隊](/about/feedback)。

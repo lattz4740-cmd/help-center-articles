@@ -58,6 +58,20 @@ WEB_ID_TO_DOC = {
 # Build URL path map for link remapping
 WEB_ID_TO_URL = {wid: f"/{path}" for wid, path in WEB_ID_TO_DOC.items()}
 
+# Old Salesforce article slugs → new doc paths
+SLUG_TO_DOC = {
+    "accesskey": "/about/terminology",
+    "connect-to-outline": "/client/getting-started/connecting-device",
+    "cost": "/manager/server-setup/cost",
+    "feedback": "/about/feedback",
+    "firewall-errors": "/client/troubleshooting/firewall-errors",
+    "how-do-i-get-an-access-key": "/client/getting-started/get-access-key",
+    "how-outline-works": "/about/how-outline-works",
+    "security-and-privacy": "/about/security-and-privacy",
+    "what-if-my-access-key-doesn-t-work": "/client/troubleshooting/access-key-issues",
+    "why-can-t-i-connect-to-the-outline-service": "/client/troubleshooting/connection-issues",
+}
+
 
 def parse_image_snippets():
     """Parse IMAGE_SNIPPETS file to build snippet_id → {alt, blob, mime} map."""
@@ -104,6 +118,27 @@ def remap_link(href):
         if web_id in WEB_ID_TO_URL:
             return WEB_ID_TO_URL[web_id] + anchor
         return href
+
+    # Match https://support.google.com/outline/answer/WEB_ID with optional params
+    m = re.match(r"https?://support\.google\.com/outline/answer/(\d+)", href)
+    if m:
+        web_id = m.group(1)
+        if web_id in WEB_ID_TO_URL:
+            return WEB_ID_TO_URL[web_id]
+        return href
+
+    # Match https://support.getoutline.org/s/article/SLUG with optional ?params and #anchor
+    m = re.match(r"https?://support\.getoutline\.org/s/article/([^?#&]+)(?:\?[^#]*)?(#\w+)?", href)
+    if m:
+        slug = m.group(1).lower()
+        anchor = m.group(2) or ""
+        if slug in SLUG_TO_DOC:
+            return SLUG_TO_DOC[slug] + anchor
+        return href
+
+    # Match https://support.getoutline.org/s/contactsupport
+    if re.match(r"https?://support\.getoutline\.org/s/contactsupport", href):
+        return "/about/feedback"
 
     return href
 

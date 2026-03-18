@@ -22,7 +22,7 @@ Outline च्या इंस्टॉलेशननंतर त्याल�
 
  सर्व्हरवरील अ‍ॅक्सेस की व्यवस्थापित करण्यासाठी, Outline Manager अ‍ॅप्लिकेशन हे Outline सर्व्हरवरील व्यवस्थापन सेवा हिच्याशी संवाद साधते. व्यवस्थापन सेवा ही रॅंडम पोर्टवर आणि गुप्त व युनिक पाथवर रन होते. व्यवस्थापन सेवा ही स्वतः अवरोधाचा तपास करते, कारण ती योग्य गुप्त पाथ नमूद केला जात नाही, तोपर्यंत क्वेरीना प्रतिसाद देत नाही. शेवटी, व्यवस्थापन सेवा यासोबत होणारा सर्व संवाद हा [स्वतः स्वाक्षरी केलेले SSL सर्टिफिकेट](https://en.wikipedia.org/wiki/Self-signed_certificate) यासह एन्क्रिप्ट केला जातो.
 
- तसेच, Outline सर्व्हर कोणतेही लॉग स्टोअर करत नाही, त्यामुळे ते धोक्यात आले असले, तरीही कोणताही वापरकर्ता डेटा उघड केला जाणार नाही. [इथे](https://support.getoutline.org/s/article/Security-and-privacy) अधिक जाणून घ्या. [Radically Open Security](https://radicallyopensecurity.com/) आणि [Cure53](https://cure53.de/) यांनी २०१८ मध्ये Outline चे ऑडिट केले होते. अहवाल [इथे](https://support.getoutline.org/s/article/Security-and-privacy) पहा.
+ तसेच, Outline सर्व्हर कोणतेही लॉग स्टोअर करत नाही, त्यामुळे ते धोक्यात आले असले, तरीही कोणताही वापरकर्ता डेटा उघड केला जाणार नाही. [इथे](/about/security-and-privacy) अधिक जाणून घ्या. [Radically Open Security](https://radicallyopensecurity.com/) आणि [Cure53](https://cure53.de/) यांनी २०१८ मध्ये Outline चे ऑडिट केले होते. अहवाल [इथे](/about/security-and-privacy) पहा.
 
 **UDP ट्रॅफिक हाताळणे**
 

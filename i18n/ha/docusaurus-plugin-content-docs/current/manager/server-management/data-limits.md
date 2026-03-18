@@ -43,11 +43,11 @@ Domin cire iyakar data daga wani makullin shiga, shiga tattaunawar Iyakar Data t
 
 **Shin za a sanar da masu amfani idan suka ƙure iyakar datarsu?**
 
- Ba a wannan lokacin ba. Yawancin kamfanonin intanet suna haɗawa da iyaka kamar TB 1 na watan gabaɗaya, da zai tallafa wa masu amfani 10 da GB 100 ko masu amfani 100 a GB 10. Wannan adadi ne mai yawa sosai, kuma ba mu tsammanin yawancin masu amfani za su kai. Muna fatan masu amfani za su tuntuɓi manajojin saba idan suka kai iyakarsu. Har ila yau, za mu ji daɗin ra'ayinka a kan yadda sanarwa za ta taimaka a lokacin amfaninka, kuma za ka iya tuntuɓar mu[a nan](https://support.getoutline.org/s/contactsupport).
+ Ba a wannan lokacin ba. Yawancin kamfanonin intanet suna haɗawa da iyaka kamar TB 1 na watan gabaɗaya, da zai tallafa wa masu amfani 10 da GB 100 ko masu amfani 100 a GB 10. Wannan adadi ne mai yawa sosai, kuma ba mu tsammanin yawancin masu amfani za su kai. Muna fatan masu amfani za su tuntuɓi manajojin saba idan suka kai iyakarsu. Har ila yau, za mu ji daɗin ra'ayinka a kan yadda sanarwa za ta taimaka a lokacin amfaninka, kuma za ka iya tuntuɓar mu[a nan](/about/feedback).
 
 **Shin za a sanar da masu amfani idan suka kusan kaiwa ga iyakar datarsu?**
 
- Yawan sabuwar data da mai amfani ya yi kusan kaiwa ga iyakarsa da zai karɓa zai bambanta daga rana zuwa rana saboda ya danganta ne da amfanin da suka yi a kwana 30 da suka gabata. Muna tunanin akwai yiwuwar gargaɗi ya rikitar da masu amfani maimakon taimakon su. Za mu ji daɗin martaninka a kan wannan halin[a nan](https://support.getoutline.org/s/contactsupport).
+ Yawan sabuwar data da mai amfani ya yi kusan kaiwa ga iyakarsa da zai karɓa zai bambanta daga rana zuwa rana saboda ya danganta ne da amfanin da suka yi a kwana 30 da suka gabata. Muna tunanin akwai yiwuwar gargaɗi ya rikitar da masu amfani maimakon taimakon su. Za mu ji daɗin martaninka a kan wannan halin[a nan](/about/feedback).
 
 **Zan iya sake saita amfanin data ga wani mai amfani?**
 
@@ -59,7 +59,7 @@ Domin cire iyakar data daga wani makullin shiga, shiga tattaunawar Iyakar Data t
 
 **Zan iya saita iyaka ta dukkan saba, kamar "TB 1 a duk kwana 30”?**
 
- Ba a wannan lokacin ba. Za mu so ƙara ji game da yanayin amfaninka[a nan](https://support.getoutline.org/s/contactsupport).
+ Ba a wannan lokacin ba. Za mu so ƙara ji game da yanayin amfaninka[a nan](/about/feedback).
 
 **Idan akwai iyakar data ta asali da iyakar data a kan wani makulli, wanne daga ciki za a tabbatar?**
 

@@ -3,7 +3,7 @@ title: "Hoekom kan ek nie Outline Manager op Windows installeer nie?"
 sidebar_label: "Hoekom kan ek nie Outline Manager op Windows installeer nie?"
 ---
 
-Jy sal dalk hierdie foutboodskap sien: “Jammer, dit lyk of Outline nie behoorlik geïnstalleer is nie. Probeer asseblief weer om dit te installeer. As dit nie werk nie, moet jy asseblief [terugvoer indien](https://support.getoutline.org/s/contactsupport?).”
+Jy sal dalk hierdie foutboodskap sien: “Jammer, dit lyk of Outline nie behoorlik geïnstalleer is nie. Probeer asseblief weer om dit te installeer. As dit nie werk nie, moet jy asseblief [terugvoer indien](/about/feedback).”
 
 Indien jy Outline op Windows gebruik, kan jy soms ’n onverwagte fout teëkom. In die meeste gevalle moet die Outline TAP-verwerker (drywer) uitgevee word en Outline weer geïnstalleer word.
 
@@ -18,4 +18,4 @@ Die stappe wat jy moet neem, kan verskil gegrond op jou Windows-bedryfstelselwee
    2. Soek die Outline Manager-app en deïnstalleer Outline Manager
    3. [Laai die jongste weergawe van Outline Manager af](https://getoutline.org/get-started/#step-1) en herinstalleer dit op jou Windows-toestel. Die nuwe installasie behoort outomaties ’n nuwe TAP-verwerker te installeer.
 
-[Kontak steundienste](https://support.getoutline.org/s/contactsupport?) as jy steeds sukkel.
+[Kontak steundienste](/about/feedback) as jy steeds sukkel.

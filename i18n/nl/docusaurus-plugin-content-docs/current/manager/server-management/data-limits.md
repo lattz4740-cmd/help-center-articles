@@ -43,11 +43,11 @@ Als je de datalimiet voor een toegangssleutel wilt verwijderen, ga je zoals eerd
 
 **Krijgen gebruikers een melding als ze de datalimiet hebben overschreden?**
 
- Op dit moment niet. Veel cloudproviders hebben een limiet, zoals 1 TB voor de hele maand. Dit kan bijvoorbeeld worden verdeeld over 10 gebruikers met elk 100 GB of 100 gebruikers met elk 10 GB. Dit zijn vrij grote limieten en we verwachten niet dat veel gebruikers die zullen bereiken. We hopen dat gebruikers contact opnemen met hun serverbeheerder als ze de limiet hebben bereikt. We stellen het op prijs als je ons laat weten hoe meldingen in jouw use case kunnen helpen. Je kunt [hier](https://support.getoutline.org/s/contactsupport) contact met ons opnemen.
+ Op dit moment niet. Veel cloudproviders hebben een limiet, zoals 1 TB voor de hele maand. Dit kan bijvoorbeeld worden verdeeld over 10 gebruikers met elk 100 GB of 100 gebruikers met elk 10 GB. Dit zijn vrij grote limieten en we verwachten niet dat veel gebruikers die zullen bereiken. We hopen dat gebruikers contact opnemen met hun serverbeheerder als ze de limiet hebben bereikt. We stellen het op prijs als je ons laat weten hoe meldingen in jouw use case kunnen helpen. Je kunt [hier](/about/feedback) contact met ons opnemen.
 
 **Krijgen gebruikers een melding als ze de datalimiet bijna hebben bereikt?**
 
- De hoeveelheid nieuwe data die een gebruiker krijgt die de limiet bijna heeft bereikt, verschilt van dag tot dag. De limiet is namelijk gebaseerd op het gebruik van 30 dagen geleden. We denken dat waarschuwingen eindgebruikers eerder in verwarring brengen dan dat ze zullen helpen. Laat het ons [hier](https://support.getoutline.org/s/contactsupport) weten als je daar feedback over hebt.
+ De hoeveelheid nieuwe data die een gebruiker krijgt die de limiet bijna heeft bereikt, verschilt van dag tot dag. De limiet is namelijk gebaseerd op het gebruik van 30 dagen geleden. We denken dat waarschuwingen eindgebruikers eerder in verwarring brengen dan dat ze zullen helpen. Laat het ons [hier](/about/feedback) weten als je daar feedback over hebt.
 
 **Kan ik het datagebruik van een gebruiker resetten?**
 
@@ -59,7 +59,7 @@ Als je de datalimiet voor een toegangssleutel wilt verwijderen, ga je zoals eerd
 
 **Kan ik een limiet instellen voor de hele server, bijvoorbeeld 1 TB per 30 dagen?**
 
- Dat kan op dit moment niet. Laat ons [hier](https://support.getoutline.org/s/contactsupport) meer weten over je use case hiervoor.
+ Dat kan op dit moment niet. Laat ons [hier](/about/feedback) meer weten over je use case hiervoor.
 
 **Als er een standaard datalimiet is en er een datalimiet geldt voor een specifieke sleutel, welke wordt er dan afgedwongen?**
 

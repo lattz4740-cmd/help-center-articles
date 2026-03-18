@@ -3,7 +3,7 @@ title: Windows で Outline マネージャーをインストールできない�
 sidebar_label: Windows で Outline マネージャーをインストールできないのはなぜですか？
 ---
 
-エラー メッセージ「Outline が適切にインストールされていないようです。もう一度インストールしてみてください。それでも問題が解決しない場合は、[フィードバックを送信](https://support.getoutline.org/s/contactsupport?)してください。」が表示される場合があります。
+エラー メッセージ「Outline が適切にインストールされていないようです。もう一度インストールしてみてください。それでも問題が解決しない場合は、[フィードバックを送信](/about/feedback)してください。」が表示される場合があります。
 
 Windows で Outline を使用している場合は、予期しないエラーが発生することがあります。ほとんどの場合は、Outline TAP アダプター（ドライバ）を削除して Outline を再インストールする必要があります。
 
@@ -18,4 +18,4 @@ Windows オペレーティング システムのバージョンによって手�
    2. Outline マネージャー アプリを検索してアンインストールします
    3. [最新版の Outline マネージャーをダウンロード](https://getoutline.org/get-started/#step-3)し、お使いの Windows デバイスに再インストールします。新しいインストールでは、新しい TAP アダプターが自動的にインストールされます。
 
-引き続き問題が発生する場合は、[サポートにお問い合わせ](https://support.getoutline.org/s/contactsupport?)ください。
+引き続き問題が発生する場合は、[サポートにお問い合わせ](/about/feedback)ください。

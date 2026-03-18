@@ -3,7 +3,7 @@ title: "Outline Manager'ı Windows'a neden yükleyemiyorum?"
 sidebar_label: "Outline Manager'ı Windows'a neden yükleyemiyorum?"
 ---
 
-Şu hata mesajını görebilirsiniz: "Maalesef Outline'ın düzgün yüklenmediği anlaşılıyor. Lütfen uygulamayı tekrar yüklemeyi deneyin. Bu çözüm işe yaramazsa lütfen [geri bildirim gönderin](https://support.getoutline.org/s/contactsupport?)."
+Şu hata mesajını görebilirsiniz: "Maalesef Outline'ın düzgün yüklenmediği anlaşılıyor. Lütfen uygulamayı tekrar yüklemeyi deneyin. Bu çözüm işe yaramazsa lütfen [geri bildirim gönderin](/about/feedback)."
 
 Outline'ı Windows'da kullanıyorsanız bazen beklenmedik bir hatayla karşılaşabilirsiniz. Çoğu durumda, Outline TAP bağdaştırıcısının (sürücü) silinmesi ve Outline'ın yeniden yüklenmesi gerekir.
 
@@ -18,4 +18,4 @@ Uygulanacak adımlar, Windows işletim sistemi sürümünüze bağlı olarak far
    2. Outline Manager uygulamasını bulun ve kaldırın.
    3. [Outline Manager'ın en güncel sürümünü indirin](https://getoutline.org/get-started/#step-3)ve Windows cihazınıza tekrar yükleyin. Yeni yükleme işleminde yeni bir TAP bağdaştırıcısı otomatik olarak yüklenecektir.
 
-Sorun yaşamaya devam ederseniz [destek ekibiyle iletişime geçin](https://support.getoutline.org/s/contactsupport?).
+Sorun yaşamaya devam ederseniz [destek ekibiyle iletişime geçin](/about/feedback).

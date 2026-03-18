@@ -9,10 +9,10 @@ Hoewel de installatie van Outline eenvoudig lijkt, is de installatie van de serv
 
 Wanneer Outline wordt geïnstalleerd, voert een installatiescript de volgende stappen uit:
 
-- De stabiele versie van de Shadowbox-image wordt opgehaald en geïmporteerd met Docker. De image wordt gehost op [Quay.io](https://support.getoutline.org/s/article/how-outline-works?language=nl_NL), op [https://quay.io/repository/outline/shadowbox?tab=tags](https://support.getoutline.org/s/article/how-outline-works?language=nl_NL). Deze image bevat de Outline-server en Management API, die later wordt gebruikt door de Server Management-app van Outline om toegangssleutels te maken en verwijderen, aan of af te melden voor het verzenden van anonieme statistieken enzovoort.
-- [Watchtower](https://support.getoutline.org/s/article/how-outline-works?language=nl_NL) wordt geïnstalleerd en geconfigureerd om elk uur te controleren op image-updates, zodat elke Outline-server steeds de nieuwste functies en beveiligingsupdates bevat.
+- De stabiele versie van de Shadowbox-image wordt opgehaald en geïmporteerd met Docker. De image wordt gehost op [Quay.io](/about/how-outline-works), op [https://quay.io/repository/outline/shadowbox?tab=tags](/about/how-outline-works). Deze image bevat de Outline-server en Management API, die later wordt gebruikt door de Server Management-app van Outline om toegangssleutels te maken en verwijderen, aan of af te melden voor het verzenden van anonieme statistieken enzovoort.
+- [Watchtower](/about/how-outline-works) wordt geïnstalleerd en geconfigureerd om elk uur te controleren op image-updates, zodat elke Outline-server steeds de nieuwste functies en beveiligingsupdates bevat.
 - Een webserver, die wordt gebruikt om toegang te krijgen tot de Management API, wordt gestart op een willekeurige poort met een geheim, willekeurig pad.
-- Er wordt een [zelfondertekend SSL-certificaat](https://support.getoutline.org/s/article/how-outline-works?language=nl_NL) gemaakt, zodat het beheer van de Outline-server kan worden versleuteld met TLS, ook al is er geen domeinnaam. Er wordt ook een unieke vingerafdruk van dit certificaat gemaakt en opgeslagen in de Outline Manager-app, zodat MITM-aanvallen worden voorkomen.
+- Er wordt een [zelfondertekend SSL-certificaat](/about/how-outline-works) gemaakt, zodat het beheer van de Outline-server kan worden versleuteld met TLS, ook al is er geen domeinnaam. Er wordt ook een unieke vingerafdruk van dit certificaat gemaakt en opgeslagen in de Outline Manager-app, zodat MITM-aanvallen worden voorkomen.
 
 Na de installatie hoeft Outline niet meer te worden geconfigureerd.
 

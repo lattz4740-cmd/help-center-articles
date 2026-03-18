@@ -43,11 +43,11 @@ Kirish kalitidan trafik cheklovini olib tashlash uchun avvalgidek kalitning Traf
 
 **Foydalanuvchilar trafik cheklovidan oshib ketganida ogohlantiriladimi?**
 
- Hozircha yoʻq. Aksariyat bulut provayderlari butun oy uchun 1 TB kabi cheklovni oʻz ichiga oladi, bu 100 GB uchun 10 nafar foydalanuvchini yoki 10 GB uchun 100 nafar foydalanuvchini dastaklashi mumkin. Bu juda katta raqamlar, va koʻpchilik foydalanuvchilar bu chegaralarga yetib bormasligini taxmin qilyapmiz. Foydalanuvchilar cheklovga yetganda server menejerlariga murojaat qilishlariga umid qilamiz. Lekin, foydalanish holatingizda bildirishnomalar qanday yordam berishi haqidagi fikringizni qadrlaymiz va [bu yerda](https://support.getoutline.org/s/contactsupport) bizga murojaat qilishingiz mumkin.
+ Hozircha yoʻq. Aksariyat bulut provayderlari butun oy uchun 1 TB kabi cheklovni oʻz ichiga oladi, bu 100 GB uchun 10 nafar foydalanuvchini yoki 10 GB uchun 100 nafar foydalanuvchini dastaklashi mumkin. Bu juda katta raqamlar, va koʻpchilik foydalanuvchilar bu chegaralarga yetib bormasligini taxmin qilyapmiz. Foydalanuvchilar cheklovga yetganda server menejerlariga murojaat qilishlariga umid qilamiz. Lekin, foydalanish holatingizda bildirishnomalar qanday yordam berishi haqidagi fikringizni qadrlaymiz va [bu yerda](/about/feedback) bizga murojaat qilishingiz mumkin.
 
 **Foydalanuvchilar trafik chekloviga yaqinlashganda ogohlantiriladimi?**
 
- Cheklovga yaqinlashayotgan foydalanuvchi oladigan yangi trafik miqdori kundan kunga oʻzgarib turadi, chunki u 30 kun oldingi foydalanishga asoslangan. Bizningcha, ogohlantirish oxirgi foydalanuvchilarga yordam berishdan koʻra koʻproq chalgʻitadi. [Bu yerda](https://support.getoutline.org/s/contactsupport) ushbu xatti-harakat haqidagi fikr-mulohazangizni qadrlaymiz.
+ Cheklovga yaqinlashayotgan foydalanuvchi oladigan yangi trafik miqdori kundan kunga oʻzgarib turadi, chunki u 30 kun oldingi foydalanishga asoslangan. Bizningcha, ogohlantirish oxirgi foydalanuvchilarga yordam berishdan koʻra koʻproq chalgʻitadi. [Bu yerda](/about/feedback) ushbu xatti-harakat haqidagi fikr-mulohazangizni qadrlaymiz.
 
 **Foydalanuvchining trafik sarfini asliga qaytarishim mumkinmi?**
 
@@ -59,7 +59,7 @@ Kirish kalitidan trafik cheklovini olib tashlash uchun avvalgidek kalitning Traf
 
 **Server miqyosidagi cheklovni, masalan, 30 kunga 1 TB qilib belgilasam boʻladimi?**
 
- Hozircha yoʻq. [Bu yerda](https://support.getoutline.org/s/contactsupport) foydalanish holatingiz haqida batafsil axborot olishingiz mumkin.
+ Hozircha yoʻq. [Bu yerda](/about/feedback) foydalanish holatingiz haqida batafsil axborot olishingiz mumkin.
 
 **Agar birlamchi trafik cheklovi va muayyan kalitda trafik cheklovi mavjud boʻlsa, ulardan qaysi biri qoʻllaniladi?**
 

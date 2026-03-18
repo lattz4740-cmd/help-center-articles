@@ -43,11 +43,11 @@ Sau khi bạn lưu hạn mức chuyển dữ liệu cho khoá đã chọn, hạn
 
 **Người dùng có được thông báo nếu họ vượt quá hạn mức dữ liệu không?**
 
- Hiện tại thì không. Nhiều nhà cung cấp dịch vụ đám mây áp dụng một hạn mức cho cả tháng, chẳng hạn như 1 TB, nhờ vậy có thể cung cấp 100 GB cho 10 người dùng hoặc 10 GB cho 100 người dùng. Đây là những con số khá lớn và chúng tôi không nghĩ là nhiều người dùng sẽ sử dụng hết chúng. Chúng tôi hy vọng rằng người dùng sẽ liên hệ với người quản lý máy chủ khi họ đạt đến hạn mức của mình. Tuy nhiên, chúng tôi rất mong bạn có thể chia sẻ ý kiến về sự hữu ích của thông báo đối với trường hợp sử dụng của bạn. Bạn có thể liên hệ với chúng tôi [tại đây](https://support.getoutline.org/s/contactsupport).
+ Hiện tại thì không. Nhiều nhà cung cấp dịch vụ đám mây áp dụng một hạn mức cho cả tháng, chẳng hạn như 1 TB, nhờ vậy có thể cung cấp 100 GB cho 10 người dùng hoặc 10 GB cho 100 người dùng. Đây là những con số khá lớn và chúng tôi không nghĩ là nhiều người dùng sẽ sử dụng hết chúng. Chúng tôi hy vọng rằng người dùng sẽ liên hệ với người quản lý máy chủ khi họ đạt đến hạn mức của mình. Tuy nhiên, chúng tôi rất mong bạn có thể chia sẻ ý kiến về sự hữu ích của thông báo đối với trường hợp sử dụng của bạn. Bạn có thể liên hệ với chúng tôi [tại đây](/about/feedback).
 
 **Người dùng có được thông báo nếu họ sắp đạt đến hạn mức dữ liệu không?**
 
- Lượng dữ liệu mới được cung cấp cho người dùng sắp đạt đến hạn mức sẽ thay đổi theo từng ngày, vì lượng dữ liệu này là dựa trên mức sử dụng của họ 30 ngày trước. Chúng tôi cho rằng thông báo cảnh báo sẽ dễ khiến người dùng cuối thấy bối rối hơn là giúp ích cho họ. Chúng tôi mong bạn có thể chia sẻ ý kiến phản hồi về việc này [tại đây](https://support.getoutline.org/s/contactsupport).
+ Lượng dữ liệu mới được cung cấp cho người dùng sắp đạt đến hạn mức sẽ thay đổi theo từng ngày, vì lượng dữ liệu này là dựa trên mức sử dụng của họ 30 ngày trước. Chúng tôi cho rằng thông báo cảnh báo sẽ dễ khiến người dùng cuối thấy bối rối hơn là giúp ích cho họ. Chúng tôi mong bạn có thể chia sẻ ý kiến phản hồi về việc này [tại đây](/about/feedback).
 
 **Tôi có thể đặt lại mức sử dụng dữ liệu của một người dùng không?**
 
@@ -59,7 +59,7 @@ Sau khi bạn lưu hạn mức chuyển dữ liệu cho khoá đã chọn, hạn
 
 **Tôi có thể đặt hạn mức cho toàn bộ máy chủ, chẳng hạn như "1 TB mỗi 30 ngày" không?**
 
- Hiện chưa được. Chúng tôi rất mong bạn chia sẻ thêm thông tin về trường hợp sử dụng của bạn [tại đây](https://support.getoutline.org/s/contactsupport).
+ Hiện chưa được. Chúng tôi rất mong bạn chia sẻ thêm thông tin về trường hợp sử dụng của bạn [tại đây](/about/feedback).
 
 **Giữa hạn mức dữ liệu mặc định và hạn mức dữ liệu đối với một khoá cụ thể, hạn mức nào sẽ được áp dụng?**
 

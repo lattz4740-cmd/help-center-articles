@@ -43,11 +43,11 @@ Hvis du vil fjerne datagrænsen fra en adgangsnøgle, skal du ligesom før navig
 
 **Bliver brugere underrettet, hvis de overskrider deres datagrænse?**
 
- Ikke på nuværende tidspunkt. Mange skyudbydere har en grænse på f.eks. 1 TB for hele måneden, hvilket kan understøtte 10 brugere med 100 GB eller 100 brugere med 10 GB. Det er ret store tal, og vi forventer ikke, at mange brugere vil ramme grænsen. Vi håber, at brugerne vil kontakte serveradministratorerne, hvis de når grænsen. Vi vil dog gerne høre din mening om, hvordan notifikationer kan hjælpe i dit tilfælde, og du kan kontakte os [her](https://support.getoutline.org/s/contactsupport).
+ Ikke på nuværende tidspunkt. Mange skyudbydere har en grænse på f.eks. 1 TB for hele måneden, hvilket kan understøtte 10 brugere med 100 GB eller 100 brugere med 10 GB. Det er ret store tal, og vi forventer ikke, at mange brugere vil ramme grænsen. Vi håber, at brugerne vil kontakte serveradministratorerne, hvis de når grænsen. Vi vil dog gerne høre din mening om, hvordan notifikationer kan hjælpe i dit tilfælde, og du kan kontakte os [her](/about/feedback).
 
 **Bliver brugere underrettet, hvis de nærmer sig deres datagrænse?**
 
- Mængden af nye data, som modtages af en bruger, der nærmer sig sin grænse, varierer fra dag til dag, fordi den er baseret på brugerens forbrug for 30 dage siden. Vi mener, at en advarsel sandsynligvis forvirrer slutbrugerne mere, end den hjælper dem. Vi modtager gerne din feedback vedrørende denne adfærd [her](https://support.getoutline.org/s/contactsupport).
+ Mængden af nye data, som modtages af en bruger, der nærmer sig sin grænse, varierer fra dag til dag, fordi den er baseret på brugerens forbrug for 30 dage siden. Vi mener, at en advarsel sandsynligvis forvirrer slutbrugerne mere, end den hjælper dem. Vi modtager gerne din feedback vedrørende denne adfærd [her](/about/feedback).
 
 **Kan jeg nulstille en brugers dataforbrug?**
 
@@ -59,7 +59,7 @@ Hvis du vil fjerne datagrænsen fra en adgangsnøgle, skal du ligesom før navig
 
 **Kan jeg angive en grænse for hele serveren, f.eks. "1 TB pr. 30 dage"?**
 
- Ikke på nuværende tidspunkt. Vi vil meget gerne høre mere om din brug [her](https://support.getoutline.org/s/contactsupport).
+ Ikke på nuværende tidspunkt. Vi vil meget gerne høre mere om din brug [her](/about/feedback).
 
 **Hvis der er en standarddatagrænse og en datagrænse for en specifik nøgle, hvilken grænse bliver så håndhævet?**
 

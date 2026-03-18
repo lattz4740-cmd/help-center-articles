@@ -3,7 +3,7 @@ title: "Windows에 Outline 클라이언트를 설치할 수 없는 이유는 무
 sidebar_label: "Windows에 Outline 클라이언트를 설치할 수 없는 이유는 무엇인가요?"
 ---
 
-다음 오류 메시지가 표시될 수 있습니다. '죄송합니다. Outline이 제대로 설치되지 않은 것 같습니다. 다시 설치해 보세요. 그래도 문제가 해결되지 않는다면 [의견을 제출해 주세요](https://support.getoutline.org/s/contactsupport).'
+다음 오류 메시지가 표시될 수 있습니다. '죄송합니다. Outline이 제대로 설치되지 않은 것 같습니다. 다시 설치해 보세요. 그래도 문제가 해결되지 않는다면 [의견을 제출해 주세요](/about/feedback).'
 
 Windows에서 Outline을 사용하는 경우 가끔 예기치 않은 오류가 발생할 수 있습니다. 대부분의 경우 Outline TAP 어댑터(드라이버)를 삭제하면 Outline을 다시 설치할 수 있습니다.
 

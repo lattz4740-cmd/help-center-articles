@@ -22,7 +22,7 @@ Prilikom instalacije Outlinea nije potrebna nikakva konfiguracija nakon instalac
 
  Radi upravljanja pristupnim ključevima na serveru, aplikacija Outline Manager stupa u interakciju s Management Serviceom na Outline serveru. Management Service se pokreće na nasumično odabranom priključku i tajnoj, jedinstvenoj putanji. Management Service je i sam otporan na sondiranje, pošto ne reagira na upite ukoliko se ne navede tajna putanja. Konačno, sva komunikacija s Management Serviceom se šifrira pomoću [samostalno potpisanog SSL certifikata](https://en.wikipedia.org/wiki/Self-signed_certificate).
 
- Osim toga, Outline server ne pohranjuje nikakve zapisnike, tako da se podaci korisnika neće otkriti ni u slučaju da bude ugrožen. Saznajte više [ovdje](https://support.getoutline.org/s/article/Security-and-privacy). Reviziju Outlinea su izvršili [Radically Open Security](https://radicallyopensecurity.com/) i [Cure53](https://cure53.de/) 2018. godine. Pogledajte izvještaje [ovdje](https://support.getoutline.org/s/article/Security-and-privacy).
+ Osim toga, Outline server ne pohranjuje nikakve zapisnike, tako da se podaci korisnika neće otkriti ni u slučaju da bude ugrožen. Saznajte više [ovdje](/about/security-and-privacy). Reviziju Outlinea su izvršili [Radically Open Security](https://radicallyopensecurity.com/) i [Cure53](https://cure53.de/) 2018. godine. Pogledajte izvještaje [ovdje](/about/security-and-privacy).
 
 **Rukovanje UDP saobraćajem**
 

@@ -45,11 +45,11 @@ Para remover o limite de dados de uma chave de acesso, navegue para a caixa de d
 
 **Os utilizadores são notificados se esgotarem o limite?**
 
- De momento, não. Muitos fornecedores de nuvem incluem um limite, como 1 TB, para todo o mês, o que pode permitir ter 10 utilizadores a 100 GB ou 100 utilizadores a 10 GB. Estes números são bastante elevados e não esperamos que muitos utilizadores os atinjam. Esperamos que os utilizadores contactem os gestores dos servidores quando atingirem o limite. No entanto, agradecemos que partilhe informações sobre a forma como as notificações podem ajudar no seu exemplo de utilização. Pode contactar-nos [aqui](https://support.getoutline.org/s/contactsupport).
+ De momento, não. Muitos fornecedores de nuvem incluem um limite, como 1 TB, para todo o mês, o que pode permitir ter 10 utilizadores a 100 GB ou 100 utilizadores a 10 GB. Estes números são bastante elevados e não esperamos que muitos utilizadores os atinjam. Esperamos que os utilizadores contactem os gestores dos servidores quando atingirem o limite. No entanto, agradecemos que partilhe informações sobre a forma como as notificações podem ajudar no seu exemplo de utilização. Pode contactar-nos [aqui](/about/feedback).
 
 **Os utilizadores são notificados caso se aproximem do respetivo limite de dados?**
 
- A quantidade de novos dados recebida por um utilizador que se aproxima do limite varia de dia para dia, uma vez que é baseada na utilização que fez 30 dias antes. Parece-nos que um aviso iria provavelmente confundir os utilizadores finais em vez de os ajudar. Agradecemos que nos envie o seu feedback sobre este comportamento [aqui](https://support.getoutline.org/s/contactsupport).
+ A quantidade de novos dados recebida por um utilizador que se aproxima do limite varia de dia para dia, uma vez que é baseada na utilização que fez 30 dias antes. Parece-nos que um aviso iria provavelmente confundir os utilizadores finais em vez de os ajudar. Agradecemos que nos envie o seu feedback sobre este comportamento [aqui](/about/feedback).
 
 **Posso repor a utilização de dados de um utilizador?**
 
@@ -61,7 +61,7 @@ Para remover o limite de dados de uma chave de acesso, navegue para a caixa de d
 
 **Posso definir um limite para todo o servidor, como "1 TB por cada 30 dias"?**
 
- De momento, não é possível. Gostaríamos de saber mais sobre o seu exemplo de utilização [aqui](https://support.getoutline.org/s/contactsupport).
+ De momento, não é possível. Gostaríamos de saber mais sobre o seu exemplo de utilização [aqui](/about/feedback).
 
 **Se existir um limite de dados predefinido e um limite de dados para uma chave específica, qual é aplicado?**
 

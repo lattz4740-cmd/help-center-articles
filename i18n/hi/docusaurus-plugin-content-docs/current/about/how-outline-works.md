@@ -22,7 +22,7 @@ Outline को इंस्टॉल करने की प्रक्रि�
 
  सर्वर पर ऐक्सेस कुंजियों को मैनेज करने के लिए, Outline Manager ऐप्लिकेशन, Outline सर्वर पर किसी मैनेजमेंट सेवा से इंटरैक्ट करता है. यह मैनेजमेंट सेवा किसी रैंडम पोर्ट पर, एक सीक्रेट और यूनीक पाथ पर चलती है. मैनेजमेंट सेवा खुद रुकावट का पता लगाती है. यह क्वेरी का जवाब तब तक नहीं देती है, जब तक कि सही सीक्रेट पाथ का पता न चल जाए. आखिर में, मैनेजमेंट सेवा से की गई सभी बातचीत को [खुद हस्ताक्षर किए हुए एसएसएल सर्टिफ़िकेट](https://en.wikipedia.org/wiki/Self-signed_certificate) से एन्क्रिप्ट किया जाता है.
 
- साथ ही, Outline सर्वर कोई लॉग सेव नहीं करता है. इसलिए, अगर यह हैक भी हो जाए, तो उपयोगकर्ता का कोई भी डेटा ज़ाहिर नहीं होगा. इस बारे में [यहां](https://support.getoutline.org/s/article/Security-and-privacy) ज़्यादा जानें Outline को [Radically Open Security](https://radicallyopensecurity.com/) और [Cure53](https://cure53.de/) ने 2018 में ऑडिट किया था. इनकी रिपोर्ट [यहां](https://support.getoutline.org/s/article/Security-and-privacy) देखें.
+ साथ ही, Outline सर्वर कोई लॉग सेव नहीं करता है. इसलिए, अगर यह हैक भी हो जाए, तो उपयोगकर्ता का कोई भी डेटा ज़ाहिर नहीं होगा. इस बारे में [यहां](/about/security-and-privacy) ज़्यादा जानें Outline को [Radically Open Security](https://radicallyopensecurity.com/) और [Cure53](https://cure53.de/) ने 2018 में ऑडिट किया था. इनकी रिपोर्ट [यहां](/about/security-and-privacy) देखें.
 
 **यूडीपी ट्रैफ़िक को मैनेज करना**
 

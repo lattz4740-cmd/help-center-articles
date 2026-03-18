@@ -43,11 +43,11 @@ Lai piekļuves atslēgai noņemtu datu ierobežojumu, atkal atveriet atslēgas d
 
 **Vai lietotāji saņems paziņojumu, ja tiks sasniegts datu ierobežojums?**
 
- Šobrīd nē. Daudzi mākoņpakalpojumu sniedzēji piedāvā tādus ierobežojumus kā 1 TB mēnesī — ar to pietiek 10 lietotājiem, kas izmanto 100 GB, vai 100 lietotājiem, kas izmanto 10 GB. Tas ir liels datu apjoms, un maz ticams, ka ievērojama lietotāju daļa to sasniegs. Ceram, ka lietotāji sazināsies ar serveru pārvaldniekiem, ja sasniegs ierobežojumu. Tomēr labprāt uzklausīsim jūsu viedokli par to, kāpēc paziņojumi jūsu situācijā būtu noderīgi. Varat sazināties ar mums [šeit](https://support.getoutline.org/s/contactsupport).
+ Šobrīd nē. Daudzi mākoņpakalpojumu sniedzēji piedāvā tādus ierobežojumus kā 1 TB mēnesī — ar to pietiek 10 lietotājiem, kas izmanto 100 GB, vai 100 lietotājiem, kas izmanto 10 GB. Tas ir liels datu apjoms, un maz ticams, ka ievērojama lietotāju daļa to sasniegs. Ceram, ka lietotāji sazināsies ar serveru pārvaldniekiem, ja sasniegs ierobežojumu. Tomēr labprāt uzklausīsim jūsu viedokli par to, kāpēc paziņojumi jūsu situācijā būtu noderīgi. Varat sazināties ar mums [šeit](/about/feedback).
 
 **Vai lietotāji saņems paziņojumu, ja datu ierobežojums būs gandrīz sasniegts?**
 
- Lietotājam, kas būs gandrīz sasniedzis ierobežojumu, katru dienu būs pieejams cits datu apjoms, jo tas tiks aprēķināts atbilstoši lietojumam pirms 30 dienām. Uzskatām, ka šādi paziņojumi drīzāk samulsinātu galalietotājus, nevis būtu viņiem noderīgi. [Šeit](https://support.getoutline.org/s/contactsupport) labprāt uzklausīsim jūsu atsauksmes par mūsu lēmumu nesūtīt šādus paziņojumus.
+ Lietotājam, kas būs gandrīz sasniedzis ierobežojumu, katru dienu būs pieejams cits datu apjoms, jo tas tiks aprēķināts atbilstoši lietojumam pirms 30 dienām. Uzskatām, ka šādi paziņojumi drīzāk samulsinātu galalietotājus, nevis būtu viņiem noderīgi. [Šeit](/about/feedback) labprāt uzklausīsim jūsu atsauksmes par mūsu lēmumu nesūtīt šādus paziņojumus.
 
 **Vai varu atiestatīt lietotāja datu lietojumu?**
 
@@ -59,7 +59,7 @@ Lai piekļuves atslēgai noņemtu datu ierobežojumu, atkal atveriet atslēgas d
 
 **Vai varu iestatīt ierobežojumu visam serverim, piemēram, “1 TB 30 dienās”?**
 
- Šobrīd nē. Mēs labprāt dzirdētu vairāk par jūsu lietošanas piemēru — lūdzu, pastāstiet par to [šeit](https://support.getoutline.org/s/contactsupport).
+ Šobrīd nē. Mēs labprāt dzirdētu vairāk par jūsu lietošanas piemēru — lūdzu, pastāstiet par to [šeit](/about/feedback).
 
 **Ja ir iestatīts gan noklusējuma datu ierobežojums, gan datu ierobežojums konkrētai atslēgai, kurš no tiem tiks piemērots?**
 

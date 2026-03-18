@@ -9,10 +9,10 @@ Outline 설치 과정은 간단해 보일 수 있지만 사실 복잡한 일련�
 
 Outline이 설치될 때마다 설치 스크립트는 다음 단계를 실행합니다.
 
-- Docker를 통해 안정적인 버전의 Shadowbox 이미지를 검색해 가져옵니다. 이미지는 [Quay.io](https://support.getoutline.org/s/article/how-outline-works?language=ko)([https://quay.io/repository/outline/shadowbox?tab=tags](https://support.getoutline.org/s/article/how-outline-works?language=ko))에 호스팅되어 있습니다. 이 이미지에는 Outline 서버 및 Management API가 포함되어 있으며, 이 API는 나중에 Outline Server Management 애플리케이션에서 액세스 키를 생성 및 삭제하고, 익명처리된 측정항목 보고서를 선택 또는 선택 해제할 때 사용됩니다.
-- 매시간 이미지 업데이트를 확인하도록 [Watchtower](https://support.getoutline.org/s/article/how-outline-works?language=ko)가 설치 및 구성되므로 모든 Outline 서버는 지속적으로 최신 기능 및 보안 개선 사항을 받아 최신 상태를 유지할 수 있습니다.
+- Docker를 통해 안정적인 버전의 Shadowbox 이미지를 검색해 가져옵니다. 이미지는 [Quay.io](/about/how-outline-works)([https://quay.io/repository/outline/shadowbox?tab=tags](/about/how-outline-works))에 호스팅되어 있습니다. 이 이미지에는 Outline 서버 및 Management API가 포함되어 있으며, 이 API는 나중에 Outline Server Management 애플리케이션에서 액세스 키를 생성 및 삭제하고, 익명처리된 측정항목 보고서를 선택 또는 선택 해제할 때 사용됩니다.
+- 매시간 이미지 업데이트를 확인하도록 [Watchtower](/about/how-outline-works)가 설치 및 구성되므로 모든 Outline 서버는 지속적으로 최신 기능 및 보안 개선 사항을 받아 최신 상태를 유지할 수 있습니다.
 - Management API에 액세스하는 데 사용되는 웹 서버가 비공개 고유 경로를 통해 랜덤 포트에서 시작됩니다.
-- 도메인 이름 없이도 TLS를 사용해 Outline 서버 관리 내역을 암호화할 수 있도록 [자체 서명된 SSL 인증서](https://support.getoutline.org/s/article/how-outline-works?language=ko)가 생성됩니다. 이 인증서에 사용할 고유 디지털 지문이 생성되고 Outline Manager 애플리케이션에 저장되기 때문에 MITM 공격을 방지하는 데 도움이 됩니다.
+- 도메인 이름 없이도 TLS를 사용해 Outline 서버 관리 내역을 암호화할 수 있도록 [자체 서명된 SSL 인증서](/about/how-outline-works)가 생성됩니다. 이 인증서에 사용할 고유 디지털 지문이 생성되고 Outline Manager 애플리케이션에 저장되기 때문에 MITM 공격을 방지하는 데 도움이 됩니다.
 
 Outline은 설치가 완료된 후 따로 구성할 필요가 없습니다.
 

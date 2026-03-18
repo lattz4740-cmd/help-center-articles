@@ -22,7 +22,7 @@ Installationen av Outline behöver inte konfigureras efter installationen
 
  I syfte att hantera åtkomstnycklar på servern interagerar Outline Manager-appen med en hanteringstjänst på Outline-servern. Hanteringstjänsten körs via en slumpmässig port och en hemlig och unik sökväg. Själva hanteringstjänsten är avläsningsskyddad eftersom den inte svarar på förfrågningar om inte den hemliga sökvägen anges. Slutligen krypteras all kommunikation med hanteringstjänsten med ett [självsignerat SSL-certifikat](https://en.wikipedia.org/wiki/Self-signed_certificate).
 
- Dessutom lagras inga loggar på Outline-servern, så även om vi skulle utsättas för intrång skulle ingen data avslöjas. Läs mer [här](https://support.getoutline.org/s/article/Security-and-privacy). Outline granskades av [Radically Open Security](https://radicallyopensecurity.com/) och [Cure53](https://cure53.de/) under 2018. Läs rapporterna [här](https://support.getoutline.org/s/article/Security-and-privacy).
+ Dessutom lagras inga loggar på Outline-servern, så även om vi skulle utsättas för intrång skulle ingen data avslöjas. Läs mer [här](/about/security-and-privacy). Outline granskades av [Radically Open Security](https://radicallyopensecurity.com/) och [Cure53](https://cure53.de/) under 2018. Läs rapporterna [här](/about/security-and-privacy).
 
 **Hantera UDP-trafik**
 

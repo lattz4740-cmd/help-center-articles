@@ -22,7 +22,7 @@ sidebar_label: ວິທີການເຮັດວຽກຂອງ Outline
 
  ແອັບພລິເຄຊັນ Outline Manager ຈະໂຕ້ຕອບກັບບໍລິການການຈັດການໃນເຊີບເວີ Outline ເພື່ອຈັດການກະແຈການເຂົ້າເຖິງໃນເຊີບເວີດັ່ງກ່າວ. ໂດຍບໍລິການການຈັດການຈະເຮັດວຽກໃນຜອດແບບສຸ່ມ ຮວມທັງໃນເສັ້ນທາງລັບ ແລະ ບໍ່ຊ້ຳກັນ. ບໍລິການການຈັດການແມ່ນມີຄວາມຕ້ານທານຕໍ່ການເຈາະຂໍ້ມູນ ເນື່ອງຈາກມັນບໍ່ຕອບສະໜອງຕໍ່ການສອບຖາມເວັ້ນເສຍແຕ່ໄດ້ກໍານົດເສັ້ນທາງລັບທີ່ເໝາະສົມໄວ້ແລ້ວ. ສຸດທ້າຍ, ການສື່ສານທັງໝົດກັບບໍລິການການຈັດການຈະໄດ້ຖືກເຂົ້າລະຫັດດ້ວຍ [ໃບຮັບຮອງ SSL ແບບເຊັນດ້ວຍຕົນເອງ](https://en.wikipedia.org/wiki/Self-signed_certificate).
 
- ນອກຈາກນີ້, ເຊີບເວີ Outline ຈະບໍ່ຈັດເກັບບັນທຶກໃດໆ, ດັ່ງນັ້ນເຖິງແມ່ນວ່າຈະຖືກຮຸກຮານແຕ່ກໍຈະບໍ່ມີການເປີດເຜີຍຂໍ້ມູນຜູ້ໃຊ້. ສຶກສາເພີ່ມເຕີມໄດ້ [ບ່ອນນີ້](https://support.getoutline.org/s/article/Security-and-privacy). Outline ໄດ້ຮັບການກວດສອບໂດຍ [Radically Open Security](https://radicallyopensecurity.com/) ແລະ [Cure53](https://cure53.de/) ໃນປີ 2018. ເບິ່ງລາຍງານໄດ້ [ບ່ອນນີ້](https://support.getoutline.org/s/article/Security-and-privacy).
+ ນອກຈາກນີ້, ເຊີບເວີ Outline ຈະບໍ່ຈັດເກັບບັນທຶກໃດໆ, ດັ່ງນັ້ນເຖິງແມ່ນວ່າຈະຖືກຮຸກຮານແຕ່ກໍຈະບໍ່ມີການເປີດເຜີຍຂໍ້ມູນຜູ້ໃຊ້. ສຶກສາເພີ່ມເຕີມໄດ້ [ບ່ອນນີ້](/about/security-and-privacy). Outline ໄດ້ຮັບການກວດສອບໂດຍ [Radically Open Security](https://radicallyopensecurity.com/) ແລະ [Cure53](https://cure53.de/) ໃນປີ 2018. ເບິ່ງລາຍງານໄດ້ [ບ່ອນນີ້](/about/security-and-privacy).
 
 **ການຈັດການການຮັບສົ່ງຂໍ້ມູນ UDP**
 

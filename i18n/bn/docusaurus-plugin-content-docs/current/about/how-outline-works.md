@@ -22,7 +22,7 @@ sidebar_label: Outline কীভাবে কাজ করে
 
  সার্ভারে অ্যাক্সেস কী ম্যানেজ করার জন্য, Outline Manager অ্যাপ্লিকেশনটি Outline সার্ভারে ম্যানেজমেন্ট পরিষেবার সাথে ইন্টার‍্যাক্ট করে। ম্যানেজমেন্ট পরিষেবাটি র‍্যান্ডম পোর্টে গোপনীয় ও অনন্য পাথে রান করা হয়। ম্যানেজমেন্ট পরিষেবা নিজের থেকেই সার্চকে প্রতিরোধ করে কারণ এটি শুধুমাত্র যথাযথ গোপন পাথ নির্দিষ্ট থাকা কোয়ারির উত্তর দেয়। অবশেষে, ম্যানেজমেন্ট পরিষেবায় করা সব কমিউনিকেশন [স্ব-স্বাক্ষরিত SSL সার্টিফিকেট](https://en.wikipedia.org/wiki/Self-signed_certificate) সহ এনক্রিপটেড করা থাকে।
 
- এছাড়াও, Outline সার্ভার কোনও লগ স্টোর করে রাখে না, তাই কোনওভাবে এটির গোপনীয়তা লঙ্ঘন করা হলেও ব্যবহারকারীর কোনও ডেটা প্রকাশিত হয় না। [এখান](https://support.getoutline.org/s/article/Security-and-privacy) থেকে আরও জানুন। ২০১৮ সালে [Radically Open Security](https://radicallyopensecurity.com/) ও [Cure53](https://cure53.de/)-এর মাধ্যমে Outline অডিট করা হয়। [এখানে](https://support.getoutline.org/s/article/Security-and-privacy) রিপোর্টগুলি দেখুন।
+ এছাড়াও, Outline সার্ভার কোনও লগ স্টোর করে রাখে না, তাই কোনওভাবে এটির গোপনীয়তা লঙ্ঘন করা হলেও ব্যবহারকারীর কোনও ডেটা প্রকাশিত হয় না। [এখান](/about/security-and-privacy) থেকে আরও জানুন। ২০১৮ সালে [Radically Open Security](https://radicallyopensecurity.com/) ও [Cure53](https://cure53.de/)-এর মাধ্যমে Outline অডিট করা হয়। [এখানে](/about/security-and-privacy) রিপোর্টগুলি দেখুন।
 
 **UDP ট্রাফিক ম্যানেজ করা**
 

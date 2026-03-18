@@ -3,7 +3,7 @@ title: "Proč se mi nedaří nainstalovat Klienta Outline do Windows?"
 sidebar_label: "Proč se mi nedaří nainstalovat Klienta Outline do Windows?"
 ---
 
-Možná se vám zobrazuje následující chybová zpráva: „Je nám líto, zdá se, že aplikace Outline není správně nainstalovaná. Zkuste ji nainstalovat znovu. Pokud to nepomůže, [pošlete nám zpětnou vazbu](https://support.getoutline.org/s/contactsupport?).“
+Možná se vám zobrazuje následující chybová zpráva: „Je nám líto, zdá se, že aplikace Outline není správně nainstalovaná. Zkuste ji nainstalovat znovu. Pokud to nepomůže, [pošlete nám zpětnou vazbu](/about/feedback).“
 
 Pokud používáte Outline ve Windows, můžete se občas setkat s neočekávanou chybou. Ve většině případů je potřeba smazat adaptér TAP (ovladač) aplikace Outline a přeinstalovat ji.
 
@@ -18,4 +18,4 @@ Tady najdete obecný postup, jak odinstalovat adaptér TAP a aplikaci Outline a 
    - Najděte aplikaci Klient Outline a odinstalujte ji.
    - [Stáhněte si nejnovější verzi Klienta Outline](https://getoutline.org/get-started/#step-3) a znovu aplikaci nainstalujte na svoje zařízení s Windows. S novou instalací by se měl automaticky nainstalovat nový adaptér TAP.
 
-Pokud se problém nepodařilo vyřešit, [obraťte se na podporu](https://support.getoutline.org/s/contactsupport?).
+Pokud se problém nepodařilo vyřešit, [obraťte se na podporu](/about/feedback).

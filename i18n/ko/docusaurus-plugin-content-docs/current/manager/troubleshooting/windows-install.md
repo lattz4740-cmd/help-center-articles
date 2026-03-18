@@ -3,7 +3,7 @@ title: "Windows에 Outline Manager를 설치할 수 없는 이유는 무엇인�
 sidebar_label: "Windows에 Outline Manager를 설치할 수 없는 이유는 무엇인가요?"
 ---
 
-다음 오류 메시지가 표시될 수 있습니다. '죄송합니다. Outline이 제대로 설치되지 않은 것 같습니다. 다시 설치해 보세요. 그래도 문제가 해결되지 않는다면 [의견을 제출해 주세요](https://support.getoutline.org/s/contactsupport?).'
+다음 오류 메시지가 표시될 수 있습니다. '죄송합니다. Outline이 제대로 설치되지 않은 것 같습니다. 다시 설치해 보세요. 그래도 문제가 해결되지 않는다면 [의견을 제출해 주세요](/about/feedback).'
 
 Windows에서 Outline을 사용하는 경우 가끔 예기치 않은 오류가 발생할 수 있습니다. 대부분의 경우 Outline TAP 어댑터(드라이버)를 삭제하고 Outline을 다시 설치해야 합니다.
 
@@ -18,4 +18,4 @@ Windows에서 Outline을 사용하는 경우 가끔 예기치 않은 오류가 �
    2. Outline Manager 앱을 찾아 Outline Manager를 제거합니다.
    3. [최신 버전의 Outline Manager](https://getoutline.org/get-started/#step-3)를 다운로드하고 Windows 기기에 다시 설치합니다. 새로 설치하면 새 TAP 어댑터가 자동으로 설치됩니다.
 
-문제가 계속되면 [지원팀에 문의](https://support.getoutline.org/s/contactsupport?)해 주세요.
+문제가 계속되면 [지원팀에 문의](/about/feedback)해 주세요.

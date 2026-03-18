@@ -22,7 +22,7 @@ Outline-ს არ სჭირდება კონფიგურაცია
 
  წვდომის გასაღებების სამართავად სერვერზე Outline Manager აპი ინტერაქციაში შედის Management Service-თან Outline-ის სერვერზე. Management Service გაშვებულია შემთხვევით პორტზე და საიდუმლო და უნიკალურ მდებარეობაზე. თვითონ Management Service რეზისტენტულია შემოწმების მიმართ, რადგან ის არ რეაგირებს მოთხოვნებზე, თუ შესაბამისი საიდუმლო მდებარეობა მითითებული არ არის. დაბოლოს, Management Service-თან ყველა კომუნიკაცია დაშიფრულია [თვითდამოწმებული SSL სერტიფიკატით](https://en.wikipedia.org/wiki/Self-signed_certificate).
 
- აგრეთვე, Outline-ის სერვერი არ ინახავს ჟურნალებს და მისი გატეხის შემთხვევაშიც კი მომხმარებლის მონაცემები არ გამჟღავნდება. შეიტყვეთ მეტი [აქ](https://support.getoutline.org/s/article/Security-and-privacy). Outline-ს 2018 წელს აუდიტორული შემოწმება ჩაუტარა [Radically Open Security](https://radicallyopensecurity.com/)-მ და [Cure53](https://cure53.de/)-მა. ანგარიშები იხილეთ [აქ](https://support.getoutline.org/s/article/Security-and-privacy).
+ აგრეთვე, Outline-ის სერვერი არ ინახავს ჟურნალებს და მისი გატეხის შემთხვევაშიც კი მომხმარებლის მონაცემები არ გამჟღავნდება. შეიტყვეთ მეტი [აქ](/about/security-and-privacy). Outline-ს 2018 წელს აუდიტორული შემოწმება ჩაუტარა [Radically Open Security](https://radicallyopensecurity.com/)-მ და [Cure53](https://cure53.de/)-მა. ანგარიშები იხილეთ [აქ](/about/security-and-privacy).
 
 **UDP ტრაფიკის მართვა**
 

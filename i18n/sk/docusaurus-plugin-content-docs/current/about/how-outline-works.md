@@ -22,7 +22,7 @@ Outline po inštalácii netreba konfigurovať.
 
  Aplikácia Správca Outline interaguje so službou správy na serveri Outline, čo umožňuje spravovať prístupové kľúče na serveri. Služba správy sa prevádzkuje na náhodnom porte na tajnej a jedinečnej ceste Samotná služba správy je odolná proti preskúmaniu, keďže neodpovedá na dopyty, pokiaľ nie je uvedená príslušná tajná cesta. Všetka komunikácia so službou správy je navyše šifrovaná [certifikátom SSL s vlastným podpisom](https://en.wikipedia.org/wiki/Self-signed_certificate).
 
- Server Outline neukladá žiadne denníky, takže ani v prípade jeho napadnutia nedôjde k zverejneniu žiadnych údajov používateľov. [Ďalšie informácie](https://support.getoutline.org/s/article/Security-and-privacy) V roku 2018 prešiel Outline auditom organizácií [Radically Open Security](https://radicallyopensecurity.com/) a [Cure53](https://cure53.de/). Reporty [nájdete tu](https://support.getoutline.org/s/article/Security-and-privacy).
+ Server Outline neukladá žiadne denníky, takže ani v prípade jeho napadnutia nedôjde k zverejneniu žiadnych údajov používateľov. [Ďalšie informácie](/about/security-and-privacy) V roku 2018 prešiel Outline auditom organizácií [Radically Open Security](https://radicallyopensecurity.com/) a [Cure53](https://cure53.de/). Reporty [nájdete tu](/about/security-and-privacy).
 
 **Riešenie premávky UDP**
 

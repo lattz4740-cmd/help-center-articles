@@ -22,7 +22,7 @@ Outline-ı quraşdırdıqdan sonra konfiqurasiya etməyə ehtiyac yoxdur.
 
  Serverdə giriş açarlarını idarə etmək üçün Outline Manager tətbiqi Outline serverindəki İdarəetmə Xidməti ilə qarşılıqlı əlaqə yaradır. İdarəetmə Xidməti ixtiyari portda, eləcə də məxfi və ixtiyari olaraq yaradılmış ünvanda işləyir. İdarəetmə Xidməti müvafiq məxfi ünvan göstərilmədiyi təqdirdə sorğuları nəzərə almadığı üçün yoxlanışa qarşı davamlıdır. Son olaraq, Management Service ilə bütün data mübadiləsi [öz-özünə imzalanan SSL sertifikatı](https://en.wikipedia.org/wiki/Self-signed_certificate) ilə şifrlənir.
 
- Həmçinin Outline serveri heç bir qeydi saxlamır, ona görə də təhlükəli vəziyyət yaransa belə, heç bir istifadəçi datası açıqlanmır. Ətraflı məlumatı [burada](https://support.getoutline.org/s/article/Security-and-privacy) əldə edin. Outline 2018-ci ildə [Radically Open Security](https://radicallyopensecurity.com/) və [Cure53](https://cure53.de/) tərəfindən yoxlanılmışdır. Hesabatlara [burada](https://support.getoutline.org/s/article/Security-and-privacy) baxın.
+ Həmçinin Outline serveri heç bir qeydi saxlamır, ona görə də təhlükəli vəziyyət yaransa belə, heç bir istifadəçi datası açıqlanmır. Ətraflı məlumatı [burada](/about/security-and-privacy) əldə edin. Outline 2018-ci ildə [Radically Open Security](https://radicallyopensecurity.com/) və [Cure53](https://cure53.de/) tərəfindən yoxlanılmışdır. Hesabatlara [burada](/about/security-and-privacy) baxın.
 
 **UDP trafikinin idarə olunması**
 

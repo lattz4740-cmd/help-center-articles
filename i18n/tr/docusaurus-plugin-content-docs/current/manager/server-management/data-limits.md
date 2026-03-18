@@ -43,11 +43,11 @@ Bir erişim anahtarının veri sınırını kaldırmak için ilgili anahtarın V
 
 **Veri sınırını aşan kullanıcılara bildirim gönderilecek mi?**
 
- Şu anda gönderilmiyor. Birçok bulut sağlayıcısı, tüm ay için 1 TB gibi bir sınıra sahip. Bu sınır, 100 GB'tan 10 kullanıcıyı ya da 10 GB'tan 100 kullanıcıyı destekleyebiliyor. Bunlar oldukça büyük rakamlar ve çoğu kullanıcının bu tür rakamlara ulaşmasını beklemiyoruz. Kullanıcıların limite ulaştıklarında sunucu yöneticilerine ulaşacağını umuyoruz. Ancak sizin kullanım senaryonuzda bildirimlerin ne açıdan kullanışlı olacağını öğrenmek isteriz. Bize [buradan](https://support.getoutline.org/s/contactsupport) ulaşabilirsiniz.
+ Şu anda gönderilmiyor. Birçok bulut sağlayıcısı, tüm ay için 1 TB gibi bir sınıra sahip. Bu sınır, 100 GB'tan 10 kullanıcıyı ya da 10 GB'tan 100 kullanıcıyı destekleyebiliyor. Bunlar oldukça büyük rakamlar ve çoğu kullanıcının bu tür rakamlara ulaşmasını beklemiyoruz. Kullanıcıların limite ulaştıklarında sunucu yöneticilerine ulaşacağını umuyoruz. Ancak sizin kullanım senaryonuzda bildirimlerin ne açıdan kullanışlı olacağını öğrenmek isteriz. Bize [buradan](/about/feedback) ulaşabilirsiniz.
 
 **Veri sınırına yaklaşan kullanıcılara bildirim gönderilecek mi?**
 
- Sınıra yaklaşan bir kullanıcının alacağı yeni veri miktarı, 30 gün önceki kullanımı temel aldığından günden güne değişiklik gösterecektir. Uyarıların son kullanıcılara yardımcı olmaktan ziyade kafa karışıklığına neden olacağını düşünüyoruz. Bu davranışla ilgili görüşlerinizi öğrenmeyi çok isteriz. Bize [buradan](https://support.getoutline.org/s/contactsupport) ulaşabilirsiniz.
+ Sınıra yaklaşan bir kullanıcının alacağı yeni veri miktarı, 30 gün önceki kullanımı temel aldığından günden güne değişiklik gösterecektir. Uyarıların son kullanıcılara yardımcı olmaktan ziyade kafa karışıklığına neden olacağını düşünüyoruz. Bu davranışla ilgili görüşlerinizi öğrenmeyi çok isteriz. Bize [buradan](/about/feedback) ulaşabilirsiniz.
 
 **Bir kullanıcının veri kullanımını sıfırlayabilir miyim?**
 
@@ -59,7 +59,7 @@ Bir erişim anahtarının veri sınırını kaldırmak için ilgili anahtarın V
 
 **Sunucu genelinde bir sınır (ör. "30 gün için 1 TB") belirleyebilir miyim?**
 
- Şu anda bunu yapamazsınız. Kullanım alanınızla ilgili daha fazla bilgi edinmeyi çok isteriz. Bize [buradan](https://support.getoutline.org/s/contactsupport) ulaşabilirsiniz.
+ Şu anda bunu yapamazsınız. Kullanım alanınızla ilgili daha fazla bilgi edinmeyi çok isteriz. Bize [buradan](/about/feedback) ulaşabilirsiniz.
 
 **Hem varsayılan bir veri sınırı hem belirli bir anahtarın veri sınırı varsa hangisi uygulanır?**
 

@@ -43,11 +43,11 @@ Per suprimir el límit de dades d'una clau d'accés, igual que abans, navega fin
 
 **Els usuaris rebran una notificació si superen el límit de dades?**
 
- De moment, no. Molts proveïdors de serveis al núvol inclouen un límit, com ara 1 TB per a tot el mes, que pot admetre 10 usuaris amb 100 GB o 100 usuaris amb 10 GB. Són xifres força grans i no entra dins de les nostres expectatives que gaires usuaris hi arribin. Esperem que els usuaris contactin amb els gestors de servidor quan arribin al seu límit. Tanmateix, agrairíem que ens donessis la teva opinió sobre com les notificacions poden ser útils en el teu cas d'ús. Pots contactar amb nosaltres [aquí](https://support.getoutline.org/s/contactsupport).
+ De moment, no. Molts proveïdors de serveis al núvol inclouen un límit, com ara 1 TB per a tot el mes, que pot admetre 10 usuaris amb 100 GB o 100 usuaris amb 10 GB. Són xifres força grans i no entra dins de les nostres expectatives que gaires usuaris hi arribin. Esperem que els usuaris contactin amb els gestors de servidor quan arribin al seu límit. Tanmateix, agrairíem que ens donessis la teva opinió sobre com les notificacions poden ser útils en el teu cas d'ús. Pots contactar amb nosaltres [aquí](/about/feedback).
 
 **Els usuaris rebran una notificació si s'apropen al límit de dades?**
 
- La quantitat de dades noves que rebrà un usuari que s'apropa al seu límit variarà d'un dia a l'altre perquè es basa en el seu ús 30 dies abans. Pensem que, més que ajudar els usuaris finals, un advertiment els confondria. Agrairíem que ens enviessis [aquí](https://support.getoutline.org/s/contactsupport) els teus suggeriments sobre aquest comportament.
+ La quantitat de dades noves que rebrà un usuari que s'apropa al seu límit variarà d'un dia a l'altre perquè es basa en el seu ús 30 dies abans. Pensem que, més que ajudar els usuaris finals, un advertiment els confondria. Agrairíem que ens enviessis [aquí](/about/feedback) els teus suggeriments sobre aquest comportament.
 
 **Puc restablir l'ús de dades d'un usuari?**
 
@@ -59,7 +59,7 @@ Per suprimir el límit de dades d'una clau d'accés, igual que abans, navega fin
 
 **Puc establir un límit per a tot el servidor, com ara "1 TB cada 30 dies"?**
 
- De moment, no. Agrairíem que ens fessis arribar [aquí](https://support.getoutline.org/s/contactsupport) més informació sobre el teu cas d’ús.
+ De moment, no. Agrairíem que ens fessis arribar [aquí](/about/feedback) més informació sobre el teu cas d’ús.
 
 **Si hi ha un límit de dades predeterminat i un límit de dades per a una clau específica, quin s'aplicarà?**
 

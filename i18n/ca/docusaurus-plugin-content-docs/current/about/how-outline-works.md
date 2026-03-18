@@ -22,7 +22,7 @@ Per instal·lar Outline, no cal dur a terme cap configuració després de la ins
 
  Per gestionar les claus d'accés al servidor, l'aplicació Gestor d'Outline interacciona amb un servei de gestió del servidor d'Outline. Aquest servei s'executa en un port aleatori i en un camí únic i secret. També s'ha demostrat que és resistent, ja que no respon a consultes si no s'especifica el camí secret adequat. Per últim, totes les comunicacions mantingudes amb el servei de gestió s'encripten amb un [certificat SSL amb firma automàtica](https://en.wikipedia.org/wiki/Self-signed_certificate).
 
- A més, el servidor d'Outline no emmagatzema cap registre i, per tant, encara que es posi en perill, no es revelarà cap dada de l'usuari. [Obtén més informació](https://support.getoutline.org/s/article/Security-and-privacy). El 2018, Outline es va sotmetre a l'auditoria de [Radically Open Security](https://radicallyopensecurity.com/) i [Cure53](https://cure53.de/). En pots consultar els informes [aquí](https://support.getoutline.org/s/article/Security-and-privacy).
+ A més, el servidor d'Outline no emmagatzema cap registre i, per tant, encara que es posi en perill, no es revelarà cap dada de l'usuari. [Obtén més informació](/about/security-and-privacy). El 2018, Outline es va sotmetre a l'auditoria de [Radically Open Security](https://radicallyopensecurity.com/) i [Cure53](https://cure53.de/). En pots consultar els informes [aquí](/about/security-and-privacy).
 
 **Gestionar el trànsit d'UDP**
 

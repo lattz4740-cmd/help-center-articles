@@ -22,7 +22,7 @@ Outline instalācijai nav nepieciešama nekāda konfigurācija pēc instalēšan
 
  Lai pārvaldītu piekļuves atslēgas serverī, lietojumprogramma Outline pārvaldnieks mijiedarbojas ar pārvaldības pakalpojumu Outline serverī. Pārvaldības pakalpojums darbojas nejaušā slepena un unikāla ceļa portā. Pārvaldības pakalpojums pats ir izturīgs attiecībā uz zondēšanu, jo tas neatbild uz vaicājumiem, ja nav norādīts atbilstošs slepenais ceļš. Visbeidzot, visi sakari ar pārvaldības pakalpojumu tiek šifrēti, izmantojot [pašparakstītu SSL sertifikātu](https://en.wikipedia.org/wiki/Self-signed_certificate).
 
- Turklāt Outline serverī netiek glabāti nekādi žurnāli, tādēļ, pat ja tas tiek apdraudēts, netiktu izpausti nekādi lietotāja dati. Uzziniet vairāk [šeit](https://support.getoutline.org/s/article/Security-and-privacy). 2018. gadā programmatūras Outline auditu veica organizācija [Radically Open Security](https://radicallyopensecurity.com/) un [Cure53](https://cure53.de/). Pārskati ir pieejami [šeit](https://support.getoutline.org/s/article/Security-and-privacy).
+ Turklāt Outline serverī netiek glabāti nekādi žurnāli, tādēļ, pat ja tas tiek apdraudēts, netiktu izpausti nekādi lietotāja dati. Uzziniet vairāk [šeit](/about/security-and-privacy). 2018. gadā programmatūras Outline auditu veica organizācija [Radically Open Security](https://radicallyopensecurity.com/) un [Cure53](https://cure53.de/). Pārskati ir pieejami [šeit](/about/security-and-privacy).
 
 **UDP datplūsmas apstrāde**
 

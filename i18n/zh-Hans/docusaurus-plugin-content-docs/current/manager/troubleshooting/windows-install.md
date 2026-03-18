@@ -3,7 +3,7 @@ title: 为什么无法在 Windows 上安装 Outline 管理器？
 sidebar_label: 为什么无法在 Windows 上安装 Outline 管理器？
 ---
 
-您可能会看到以下错误消息：“抱歉，Outline 似乎未能正确安装。请尝试重新安装。如果还是无法解决问题，请[提交反馈](https://support.getoutline.org/s/contactsupport?)。”
+您可能会看到以下错误消息：“抱歉，Outline 似乎未能正确安装。请尝试重新安装。如果还是无法解决问题，请[提交反馈](/about/feedback)。”
 
 在 Windows 设备上使用 Outline 时，您有时可能会遇到意外错误。在多数情况下，您需要删除 Outline TAP 适配器（驱动程序）并应重新安装 Outline。
 
@@ -18,4 +18,4 @@ sidebar_label: 为什么无法在 Windows 上安装 Outline 管理器？
    2. 找到并卸载 Outline 管理器应用
    3. [下载最新版本的 Outline 管理器](https://getoutline.org/get-started/#step-3)，然后在 Windows 设备上重新安装 Outline 管理器。在重新安装时，系统应会自动安装新的 TAP 适配器。
 
-如果问题仍然存在，请[与支持团队联系](https://support.getoutline.org/s/contactsupport?)。
+如果问题仍然存在，请[与支持团队联系](/about/feedback)。

@@ -43,11 +43,11 @@ Pentru a elimina limita de date a unei chei de acces, navigați la caseta de dia
 
 **Utilizatorii vor primi o notificare dacă depășesc limita de date?**
 
- Momentan, nu. Mulți furnizori de servicii în cloud includ o limită, cum ar fi 1 TB pe lună, care poate accepta 10 utilizatori la 100 GB sau 100 de utilizatori la 10 GB. Aceste cifre oferă limite destul de ridicate și nu ne așteptăm să fie atinse de mulți utilizatori. Sperăm că utilizatorii vor apela la administratorii de server când ating limita. Totuși, am aprecia dacă ne trimiteți feedback legat de modul în care notificările pot fi utile în situația dvs. de folosire. Ne puteți contacta [aici](https://support.getoutline.org/s/contactsupport).
+ Momentan, nu. Mulți furnizori de servicii în cloud includ o limită, cum ar fi 1 TB pe lună, care poate accepta 10 utilizatori la 100 GB sau 100 de utilizatori la 10 GB. Aceste cifre oferă limite destul de ridicate și nu ne așteptăm să fie atinse de mulți utilizatori. Sperăm că utilizatorii vor apela la administratorii de server când ating limita. Totuși, am aprecia dacă ne trimiteți feedback legat de modul în care notificările pot fi utile în situația dvs. de folosire. Ne puteți contacta [aici](/about/feedback).
 
 **Utilizatorii vor primi o notificare dacă se apropie de limita de date?**
 
- Cantitatea de date noi primite de un utilizator care se apropie de limita de date va varia de la o zi la alta, deoarece se bazează pe utilizarea din perioada anterioară de 30 de zile. Credem că o atenționare va crea mai degrabă confuzie în rândul utilizatorilor finali, în loc să le fie de ajutor. Am aprecia feedbackul dvs. legat de acest comportament [aici](https://support.getoutline.org/s/contactsupport).
+ Cantitatea de date noi primite de un utilizator care se apropie de limita de date va varia de la o zi la alta, deoarece se bazează pe utilizarea din perioada anterioară de 30 de zile. Credem că o atenționare va crea mai degrabă confuzie în rândul utilizatorilor finali, în loc să le fie de ajutor. Am aprecia feedbackul dvs. legat de acest comportament [aici](/about/feedback).
 
 **Pot să resetez utilizarea datelor a unui utilizator?**
 
@@ -59,7 +59,7 @@ Pentru a elimina limita de date a unei chei de acces, navigați la caseta de dia
 
 **Pot să setez o limită la nivel de server, cum ar fi 1 TB per 30 de zile?**
 
- Momentan, nu. Ne-am dori să aflăm mai multe despre situația dvs. de folosire [aici](https://support.getoutline.org/s/contactsupport).
+ Momentan, nu. Ne-am dori să aflăm mai multe despre situația dvs. de folosire [aici](/about/feedback).
 
 **Dacă există o limită de date prestabilită și o limită de date pentru o anumită cheie, care dintre limite va fi aplicată?**
 

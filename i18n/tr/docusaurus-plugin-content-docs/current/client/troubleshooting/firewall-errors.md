@@ -21,5 +21,5 @@ Seçtiğiniz bulut sağlayıcısı, Outline'ın çalıştığı bağlantı nokta
 
  Sunucu güvenlik duvarınıza yönelik istisnalar oluşturmak için "ufw" ve "iptables" dokümanlarına bakmanızı öneririz:
 
-- UFW: [https://help.ubuntu.com/community/UFW](https://support.getoutline.org/s/article/Firewall-errors?language=tr)
-- Iptables: [https://help.ubuntu.com/community/IptablesHowTo](https://support.getoutline.org/s/article/Firewall-errors?language=tr)
+- UFW: [https://help.ubuntu.com/community/UFW](/client/troubleshooting/firewall-errors)
+- Iptables: [https://help.ubuntu.com/community/IptablesHowTo](/client/troubleshooting/firewall-errors)

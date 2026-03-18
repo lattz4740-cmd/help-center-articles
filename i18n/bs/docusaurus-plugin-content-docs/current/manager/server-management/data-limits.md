@@ -43,11 +43,11 @@ Da uklonite ograničenje prenosa podataka s pristupnog ključa, idite u dijaloš
 
 **Hoće li korisnici biti obaviješteni ako potroše ograničenje?**
 
- Trenutno ne. Mnogi pružaoci usluge oblaka imaju ograničenje poput 1 TB za cijeli mjesec, što podržava 10 korisnika s 100 GB ili 100 korisnika s 10 GB. To su prilično veliki brojevi i ne očekujemo da će ih mnogo korisnika dosegnuti. Nadamo da se će se korisnici obratiti upraviteljima servera kada dosegnu ograničenje. Međutim, značio bi nam uvid o načinu na koji bi obavještenja mogla pomoći u vašem slučaju upotrebe. Možete nas kontaktirati [ovdje](https://support.getoutline.org/s/contactsupport).
+ Trenutno ne. Mnogi pružaoci usluge oblaka imaju ograničenje poput 1 TB za cijeli mjesec, što podržava 10 korisnika s 100 GB ili 100 korisnika s 10 GB. To su prilično veliki brojevi i ne očekujemo da će ih mnogo korisnika dosegnuti. Nadamo da se će se korisnici obratiti upraviteljima servera kada dosegnu ograničenje. Međutim, značio bi nam uvid o načinu na koji bi obavještenja mogla pomoći u vašem slučaju upotrebe. Možete nas kontaktirati [ovdje](/about/feedback).
 
 **Hoće li korisnici biti obaviješteni ako se približe ograničenju prenosa podataka?**
 
- Količina novog prenosa podataka koju dobija korisnik koji se približava ograničenju razlikovat će se iz dana u dan, jer zavisi od njegovog prenosa podataka prije 30 dana. Smatramo da bi upozorenje prije zbunilo krajnje korisnike nego što bi im pomoglo. Značile bi nam povratne informacije o ovom ponašanju. Možete nam pisati [ovdje](https://support.getoutline.org/s/contactsupport).
+ Količina novog prenosa podataka koju dobija korisnik koji se približava ograničenju razlikovat će se iz dana u dan, jer zavisi od njegovog prenosa podataka prije 30 dana. Smatramo da bi upozorenje prije zbunilo krajnje korisnike nego što bi im pomoglo. Značile bi nam povratne informacije o ovom ponašanju. Možete nam pisati [ovdje](/about/feedback).
 
 **Mogu li poništiti prenos podataka nekog korisnika?**
 
@@ -59,7 +59,7 @@ Da uklonite ograničenje prenosa podataka s pristupnog ključa, idite u dijaloš
 
 **Mogu li postaviti ograničenje za čitav server, naprimjer "1 TB za 30 dana"?**
 
- Trenutno ne. Želimo čuti više o vašem slučaju upotrebe. Možete nam pisati [ovdje](https://support.getoutline.org/s/contactsupport).
+ Trenutno ne. Želimo čuti više o vašem slučaju upotrebe. Možete nam pisati [ovdje](/about/feedback).
 
 **Ako postoji zadano ograničenje prenosa podataka i ograničenje prenosa podataka za pojedinačni ključ, koje će se primjenjivati?**
 

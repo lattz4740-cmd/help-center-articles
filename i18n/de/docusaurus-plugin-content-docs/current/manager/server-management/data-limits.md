@@ -43,11 +43,11 @@ Wenn Sie ein festgelegtes Datenlimit für einen Zugriffsschlüssel wieder lösch
 
 **Werden Nutzer benachrichtigt, wenn ihr Datenlimit erreicht ist?**
 
- Momentan nicht. Viele Cloud-Anbieter arbeiten mit Limits von beispielsweise 1 TB pro Monat. Das ermöglicht Konfigurationen wie etwa 10 Nutzer mit je 100 GB oder 100 Nutzer mit je 10 GB. Dies sind ziemlich hohe Limits und wir gehen davon aus, dass die Datenmenge in den meisten Fällen ausreichend ist. Nutzer, die ihr Datenlimit erreicht haben, sollten sich an den Serveradministrator wenden. Wir freuen uns aber über Ihr Feedback, wie nützlich solche Benachrichtigungen für Sie wären. Sie können uns [hier kontaktieren](https://support.getoutline.org/s/contactsupport).
+ Momentan nicht. Viele Cloud-Anbieter arbeiten mit Limits von beispielsweise 1 TB pro Monat. Das ermöglicht Konfigurationen wie etwa 10 Nutzer mit je 100 GB oder 100 Nutzer mit je 10 GB. Dies sind ziemlich hohe Limits und wir gehen davon aus, dass die Datenmenge in den meisten Fällen ausreichend ist. Nutzer, die ihr Datenlimit erreicht haben, sollten sich an den Serveradministrator wenden. Wir freuen uns aber über Ihr Feedback, wie nützlich solche Benachrichtigungen für Sie wären. Sie können uns [hier kontaktieren](/about/feedback).
 
 **Werden Nutzer benachrichtigt, wenn ihr Datenlimit fast erreicht ist?**
 
- Die Menge an neuen Daten, die dem Nutzer zur Verfügung stehen, wird anhand der in den letzten 30 Tagen genutzten Daten berechnet und variiert deshalb von Tag zu Tag. Eine Benachrichtigung würde Nutzer daher wahrscheinlich eher verwirren und wäre nicht besonders hilfreich. [Hier können Sie uns dazu Feedback geben.](https://support.getoutline.org/s/contactsupport) Wir freuen uns über Ihren Beitrag.
+ Die Menge an neuen Daten, die dem Nutzer zur Verfügung stehen, wird anhand der in den letzten 30 Tagen genutzten Daten berechnet und variiert deshalb von Tag zu Tag. Eine Benachrichtigung würde Nutzer daher wahrscheinlich eher verwirren und wäre nicht besonders hilfreich. [Hier können Sie uns dazu Feedback geben.](/about/feedback) Wir freuen uns über Ihren Beitrag.
 
 **Kann ich die Datennutzung bei einzelnen Nutzern zurücksetzen?**
 
@@ -59,7 +59,7 @@ Wenn Sie ein festgelegtes Datenlimit für einen Zugriffsschlüssel wieder lösch
 
 **Kann ich ein serverweites Limit festlegen, z. B. „1 TB für 30 Tage“?**
 
- Derzeit nicht. Wir freuen uns aber über Ihr Feedback. Wenn Sie uns einen Anwendungsfall schildern möchten, können Sie uns [hier kontaktieren](https://support.getoutline.org/s/contactsupport).
+ Derzeit nicht. Wir freuen uns aber über Ihr Feedback. Wenn Sie uns einen Anwendungsfall schildern möchten, können Sie uns [hier kontaktieren](/about/feedback).
 
 **Falls sowohl ein Standardlimit als auch für einzelne Schlüssel geltende Datenlimits festgelegt wurden, welches Limit wird dann erzwungen?**
 

@@ -43,11 +43,11 @@ Giriş açarı üzrə data limitini silmək üçün əvvəlki kimi açarın "Dat
 
 **İstifadəçilər data limitini aşdıqda onlara bildiriş göndəriləcək?**
 
- Hazırda mümkün deyil. Bir çox bulud provayderi 10 istifadəçini 100 GB ilə və ya 100 istifadəçini 10 GB ilə dəstəkləyə bilən bütün ay üzrə 1 TB kimi limit təqdim edir. Bunlar olduqca böyük rəqəmlərdir və bir çox istifadəçinin bu limitləri aşacağını gözləmirik. İstifadəçilərin limitə çatdıqda server menecerləri ilə əlaqə saxlayacağına ümid edirik. Bununla belə, bildirişlərin sizin istifadəniz üçün necə yararlı ola biləcəyi ilə bağlı verəcəyiniz məlumat bizim üçün əhəmiyyətlidir. Bizimlə [burada](https://support.getoutline.org/s/contactsupport) əlaqə saxlaya bilərsiniz.
+ Hazırda mümkün deyil. Bir çox bulud provayderi 10 istifadəçini 100 GB ilə və ya 100 istifadəçini 10 GB ilə dəstəkləyə bilən bütün ay üzrə 1 TB kimi limit təqdim edir. Bunlar olduqca böyük rəqəmlərdir və bir çox istifadəçinin bu limitləri aşacağını gözləmirik. İstifadəçilərin limitə çatdıqda server menecerləri ilə əlaqə saxlayacağına ümid edirik. Bununla belə, bildirişlərin sizin istifadəniz üçün necə yararlı ola biləcəyi ilə bağlı verəcəyiniz məlumat bizim üçün əhəmiyyətlidir. Bizimlə [burada](/about/feedback) əlaqə saxlaya bilərsiniz.
 
 **İstifadəçi data limitinə çatdıqda ona bildiriş göndəriləcək?**
 
- Limit son 30 günlük istifadəyə əsaslandığı üçün limitə çatan istifadəçinin əldə edəcəyi yeni datanın həcmi gündən-günə dəyişir. Xəbərdarlığın son istifadəçilərə kömək etməkdənsə, onlarda çaşqınlıq yaradacağını zənn edirik. Bu barədə [burada](https://support.getoutline.org/s/contactsupport) qeyd edəcəyiniz rəy bizim üçün əhəmiyyətlidir.
+ Limit son 30 günlük istifadəyə əsaslandığı üçün limitə çatan istifadəçinin əldə edəcəyi yeni datanın həcmi gündən-günə dəyişir. Xəbərdarlığın son istifadəçilərə kömək etməkdənsə, onlarda çaşqınlıq yaradacağını zənn edirik. Bu barədə [burada](/about/feedback) qeyd edəcəyiniz rəy bizim üçün əhəmiyyətlidir.
 
 **İstifadəçinin data istifadəsini sıfırlaya bilərəm?**
 
@@ -59,7 +59,7 @@ Giriş açarı üzrə data limitini silmək üçün əvvəlki kimi açarın "Dat
 
 **"30 günlük 1 TB" kimi server üzrə ümumi limit təyin edə bilərəm?**
 
- Hazırda mümkün deyil. İstifadəniz haqqında [burada](https://support.getoutline.org/s/contactsupport) təqdim edəcəyiniz ətraflı məlumat bizim üçün əhəmiyyətlidir.
+ Hazırda mümkün deyil. İstifadəniz haqqında [burada](/about/feedback) təqdim edəcəyiniz ətraflı məlumat bizim üçün əhəmiyyətlidir.
 
 **Defolt data limiti və xüsusi açar üzrə ayrıca data limiti olduğu halda hansı tətbiq ediləcək?**
 

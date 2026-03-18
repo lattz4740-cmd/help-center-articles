@@ -3,7 +3,7 @@ title: "Hvers vegna get ég ekki sett Outline Client upp í Windows?"
 sidebar_label: "Hvers vegna get ég ekki sett Outline Client upp í Windows?"
 ---
 
-Þú gætir séð þessi villuboð: „Því miður lítur út fyrir að Outline sé ekki sett rétt upp. Prófaðu að setja það upp aftur. Ef það virkar ekki skaltu [senda inn ábendingu](https://support.getoutline.org/s/contactsupport?).“
+Þú gætir séð þessi villuboð: „Því miður lítur út fyrir að Outline sé ekki sett rétt upp. Prófaðu að setja það upp aftur. Ef það virkar ekki skaltu [senda inn ábendingu](/about/feedback).“
 
 Ef þú notar Outline í Windows gæti óvænt villa komið upp við og við. Í flestum tilfellum þarf að eyða TAP-tengi (TAP adapter) (rekli) Outline og setja Outline svo upp aftur.
 
@@ -18,4 +18,4 @@ Skrefin kunna að vera mismunandi eftir stýrikerfisútgáfu Windows en hér fyr
    - Finndu Outline Client-forritið og fjarlægðu það
    - [Sæktu nýjustu útgáfu af Outline Client](https://getoutline.org/get-started/#step-3) og settu forritið aftur upp í Windows-tækinu. Nýja uppsetningin ætti að setja upp nýtt TAP-tengi sjálfkrafa.
 
-Ef þú ert enn í vandræðum skaltu [hafa samband við þjónustudeildina](https://support.getoutline.org/s/contactsupport?).
+Ef þú ert enn í vandræðum skaltu [hafa samband við þjónustudeildina](/about/feedback).

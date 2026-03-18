@@ -3,7 +3,7 @@ title: "Hvorfor kan jeg ikke installere Outline-klienten på Windows?"
 sidebar_label: "Hvorfor kan jeg ikke installere Outline-klienten på Windows?"
 ---
 
-Du ser muligvis denne fejlmeddelelse: "Det ser desværre ikke ud til, at Outline er installeret korrekt. Prøv at installere det igen. Hvis dette ikke løser problemet, må du meget gerne [indsende feedback](https://support.getoutline.org/s/contactsupport?) via appen."
+Du ser muligvis denne fejlmeddelelse: "Det ser desværre ikke ud til, at Outline er installeret korrekt. Prøv at installere det igen. Hvis dette ikke løser problemet, må du meget gerne [indsende feedback](/about/feedback) via appen."
 
 Hvis du bruger Outline i Windows kan du til tider støde på en uventet fejl. I de fleste tilfælde skal Outline TAP-adapteren (driveren) slettes, og Outline skal geninstalleres.
 
@@ -18,4 +18,4 @@ Trinene kan variere, alt efter hvilken version af Windows-operativsystemet du ha
    - Find Outline-klientappen, og afinstaller Outline-klienten
    - [Download den nyeste version af Outline-klientenClien](https://getoutline.org/get-started/#step-3), og geninstaller den på din Windows-enhed. Den nye installation burde automatisk installere en ny TAP-adapter.
 
-Hvis du stadig har problemer, kan du [kontakte support](https://support.getoutline.org/s/contactsupport?).
+Hvis du stadig har problemer, kan du [kontakte support](/about/feedback).

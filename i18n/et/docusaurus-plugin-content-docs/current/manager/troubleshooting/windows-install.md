@@ -3,7 +3,7 @@ title: "Miks ei saa ma Outline Manageri Windowsis installida?"
 sidebar_label: "Miks ei saa ma Outline Manageri Windowsis installida?"
 ---
 
-Teile võidakse kuvada veateade: „Kahjuks näib, et Outline ei ole õigesti installitud. Proovige see uuesti installida. Kui see ei toimi, [esitage tagasisidet](https://support.getoutline.org/s/contactsupport?).“
+Teile võidakse kuvada veateade: „Kahjuks näib, et Outline ei ole õigesti installitud. Proovige see uuesti installida. Kui see ei toimi, [esitage tagasisidet](/about/feedback).“
 
 Kui kasutate Outline'i Windowsis, võivad aeg-ajalt ilmneda ootamatud vead. Enamikul juhtudest tuleb kustutada Outline'i TAP-adapter (draiver) ja Outline uuesti installida.
 
@@ -18,4 +18,4 @@ Toimingud võivad olenevalt teie Windowsi operatsioonisüsteemi versioonist vari
    2. Leidke Outline Manageri rakendus ja desinstallige Outline Manager
    3. [Laadige alla Outline Manageri uusim versioon](https://getoutline.org/get-started/#step-1) ja installige see uuesti oma Windowsi seadmesse. Uue installimise käigus installitakse automaatselt ka uus TAP-adapter.
 
-Kui probleem ei lahene, [võtke ühendust toega](https://support.getoutline.org/s/contactsupport?).
+Kui probleem ei lahene, [võtke ühendust toega](/about/feedback).

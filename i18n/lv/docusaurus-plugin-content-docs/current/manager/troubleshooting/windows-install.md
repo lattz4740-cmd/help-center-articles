@@ -3,7 +3,7 @@ title: "Kāpēc lietotni Outline pārvaldnieks nevar instalēt operētājsistēm
 sidebar_label: "Kāpēc lietotni Outline pārvaldnieks nevar instalēt operētājsistēmā Windows?"
 ---
 
-Var tikt parādīts kļūdas ziņojums “Diemžēl šķiet, ka lietotne Outline nav pareizi instalēta. Lūdzu, instalējiet to vēlreiz. Ja pēc tam problēma joprojām nav novērsta, [iesniedziet atsauksmi](https://support.getoutline.org/s/contactsupport?).”
+Var tikt parādīts kļūdas ziņojums “Diemžēl šķiet, ka lietotne Outline nav pareizi instalēta. Lūdzu, instalējiet to vēlreiz. Ja pēc tam problēma joprojām nav novērsta, [iesniedziet atsauksmi](/about/feedback).”
 
 Ja izmantojat Outline operētājsistēmā Windows, dažreiz var rasties neparedzēta kļūda. Lielākajā daļā gadījumu ir jāizdzēš Outline TAP adapteris (draiveris) un atkārtoti jāinstalē Outline.
 
@@ -18,4 +18,4 @@ Veicamās darbības var atšķirties atkarībā no Windows operētājsistēmas v
    2. Atrodiet lietotni Outline pārvaldnieks un atinstalējiet to.
    3. [Lejupielādējiet lietotnes Outline pārvaldnieks jaunāko versiju](https://getoutline.org/get-started/#step-1) un atkārtoti instalējiet to savā Windows ierīcē. Atkārtotās instalēšanas laikā automātiski tiks instalēts jauns TAP adapteris.
 
-Ja problēmu tādējādi neizdodas novērst, [sazinieties ar atbalsta dienestu](https://support.getoutline.org/s/contactsupport?).
+Ja problēmu tādējādi neizdodas novērst, [sazinieties ar atbalsta dienestu](/about/feedback).

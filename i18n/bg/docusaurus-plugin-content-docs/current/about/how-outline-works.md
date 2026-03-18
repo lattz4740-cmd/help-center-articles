@@ -22,7 +22,7 @@ sidebar_label: Начин на работа на Outline
 
  За да управлява ключовете за достъп на сървъра, приложението Outline Manager взаимодейства с услуга за управление, работеща на сървъра на Outline. Тя използва случаен порт и таен уникален път. Услугата е устойчива срещу външни проучвания, защото не отговаря на заявки, освен ако не е посочен правилният таен път. И накрая, цялата комуникация с услугата за управление е шифрована със [самоподписан SSL сертификат](https://en.wikipedia.org/wiki/Self-signed_certificate).
 
- Също така сървърът на Outline не съхранява никакви регистрационни файлове, така че дори да бъде компрометиран, няма да бъдат разкрити данни за потребителите. Научете повече [тук](https://support.getoutline.org/s/article/Security-and-privacy). През 2018 г. на Outline бе извършен одит от [Radically Open Security](https://radicallyopensecurity.com/) и [Cure53](https://cure53.de/). Вижте отчетите [тук](https://support.getoutline.org/s/article/Security-and-privacy).
+ Също така сървърът на Outline не съхранява никакви регистрационни файлове, така че дори да бъде компрометиран, няма да бъдат разкрити данни за потребителите. Научете повече [тук](/about/security-and-privacy). През 2018 г. на Outline бе извършен одит от [Radically Open Security](https://radicallyopensecurity.com/) и [Cure53](https://cure53.de/). Вижте отчетите [тук](/about/security-and-privacy).
 
 **Работа с UDP трафика**
 

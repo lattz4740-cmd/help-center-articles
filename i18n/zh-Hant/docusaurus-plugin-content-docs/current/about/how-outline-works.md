@@ -9,10 +9,10 @@ sidebar_label: Outline 的運作原理
 
 安裝 Outline 之後，安裝指令碼將會執行以下步驟：
 
-- 使用 Docker 擷取及匯入 Shadowbox 映像檔穩定版，這個映像檔將由 [Quay.io](https://support.getoutline.org/s/article/how-outline-works?language=zh_TW) 代管於 [https://quay.io/repository/outline/shadowbox?tab=tags](https://support.getoutline.org/s/article/how-outline-works?language=zh_TW)。此映像檔包含 Outline 伺服器和 Management API；Outline Server Management 應用程式稍後會使用這個 API 來建立及移除存取金鑰、選擇回報/不回報匿名指標等。
-- 安裝及設定 [Watchtower](https://support.getoutline.org/s/article/how-outline-works?language=zh_TW)，以便每小時檢查映像檔更新，並確認每台 Outline 伺服器隨時具備最新的功能和安全性改良設定。
+- 使用 Docker 擷取及匯入 Shadowbox 映像檔穩定版，這個映像檔將由 [Quay.io](/about/how-outline-works) 代管於 [https://quay.io/repository/outline/shadowbox?tab=tags](/about/how-outline-works)。此映像檔包含 Outline 伺服器和 Management API；Outline Server Management 應用程式稍後會使用這個 API 來建立及移除存取金鑰、選擇回報/不回報匿名指標等。
+- 安裝及設定 [Watchtower](/about/how-outline-works)，以便每小時檢查映像檔更新，並確認每台 Outline 伺服器隨時具備最新的功能和安全性改良設定。
 - 用於存取 Management API 的網路伺服器開始在私密隨機路徑的隨機通訊埠上執行。
-- 建立[自行簽署安全資料傳輸層 (SSL) 憑證](https://support.getoutline.org/s/article/how-outline-works?language=zh_TW)，這樣一來，即使沒有網域名稱，也能使用傳輸層安全標準 (TLS) 為 Outline 伺服器加密。系統也會產生這個憑證的專屬指紋，並儲存在 Outline Manager 應用程式中，以用於防範中間人 (MITM) 攻擊。
+- 建立[自行簽署安全資料傳輸層 (SSL) 憑證](/about/how-outline-works)，這樣一來，即使沒有網域名稱，也能使用傳輸層安全標準 (TLS) 為 Outline 伺服器加密。系統也會產生這個憑證的專屬指紋，並儲存在 Outline Manager 應用程式中，以用於防範中間人 (MITM) 攻擊。
 
 Outline 安裝完成後不需要再進行任何設定。
 

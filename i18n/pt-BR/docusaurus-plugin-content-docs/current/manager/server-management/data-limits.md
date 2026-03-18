@@ -43,11 +43,11 @@ Por que o Outline tem limites de uso?
 
 **Os usuários serão notificados se ultrapassarem o limite?**
 
- No momento, não. Muitos provedores de nuvem adotam um limite de 1 TB para o mês inteiro, que pode ser consumido por até 10 usuários com 100 GB ou 100 usuários com 10 GB. Esses números são bem altos, por isso acreditamos que a maioria dos usuários não os atingirá. Esperamos que os usuários entrem em contato com os gerentes do servidor quando atingirem o limite. No entanto, gostaríamos de saber como as notificações podem ajudar no seu caso de uso. Entre em contato com nossa equipe [aqui](https://support.getoutline.org/s/contactsupport).
+ No momento, não. Muitos provedores de nuvem adotam um limite de 1 TB para o mês inteiro, que pode ser consumido por até 10 usuários com 100 GB ou 100 usuários com 10 GB. Esses números são bem altos, por isso acreditamos que a maioria dos usuários não os atingirá. Esperamos que os usuários entrem em contato com os gerentes do servidor quando atingirem o limite. No entanto, gostaríamos de saber como as notificações podem ajudar no seu caso de uso. Entre em contato com nossa equipe [aqui](/about/feedback).
 
 **Os usuários serão notificados se chegarem perto do limite de dados?**
 
- A quantidade de novos dados que um usuário perto do limite recebe tende a variar, porque se baseia no uso dos últimos 30 dias. Acreditamos que um alerta pode confundir em vez de ajudar os usuários finais. Gostaríamos de receber seu feedback sobre esse comportamento [aqui](https://support.getoutline.org/s/contactsupport).
+ A quantidade de novos dados que um usuário perto do limite recebe tende a variar, porque se baseia no uso dos últimos 30 dias. Acreditamos que um alerta pode confundir em vez de ajudar os usuários finais. Gostaríamos de receber seu feedback sobre esse comportamento [aqui](/about/feedback).
 
 **Posso redefinir o uso de dados de um usuário?**
 
@@ -59,7 +59,7 @@ Por que o Outline tem limites de uso?
 
 **Posso definir um limite para o servidor, por exemplo, 1 TB por 30 dias?**
 
- No momento, não. Gostaríamos de saber mais sobre seu caso de uso [aqui](https://support.getoutline.org/s/contactsupport).
+ No momento, não. Gostaríamos de saber mais sobre seu caso de uso [aqui](/about/feedback).
 
 **Se houver um limite de dados padrão e outro em uma chave específica, qual deles será aplicado?**
 

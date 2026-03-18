@@ -22,7 +22,7 @@ Outline-installationen skal ikke konfigureres, efter den er udført.
 
  Med henblik på at administrere adgangsnøglerne på serveren kommunikerer programmet Outline Manager med en administrationstjeneste på Outline-serveren. Administrationstjenesten kører på en tilfældig port og på en hemmelig og unik sti. Selve administrationstjenesten kan modstå sondering, da den ikke reagerer på forespørgsler, medmindre den korrekte hemmelige sti er angivet. Al kommunikation til administrationstjenesten er desuden krypteret med et [selvunderskrevet SSL-certifikat](https://en.wikipedia.org/wiki/Self-signed_certificate).
 
- Der gemmes ikke logfiler på Outline-serveren, så selv hvis den bliver kompromitteret, er der ingen brugerdata at afsløre. Få flere oplysninger [her](https://support.getoutline.org/s/article/Security-and-privacy). Outline blev auditeret af [Radically Open Security](https://radicallyopensecurity.com/) og [Cure53](https://cure53.de/) i 2018. Se rapporterne [her](https://support.getoutline.org/s/article/Security-and-privacy).
+ Der gemmes ikke logfiler på Outline-serveren, så selv hvis den bliver kompromitteret, er der ingen brugerdata at afsløre. Få flere oplysninger [her](/about/security-and-privacy). Outline blev auditeret af [Radically Open Security](https://radicallyopensecurity.com/) og [Cure53](https://cure53.de/) i 2018. Se rapporterne [her](/about/security-and-privacy).
 
 **Håndtering af UDP-trafik**
 

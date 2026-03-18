@@ -43,11 +43,11 @@ Per rimuovere il limite dati da una chiave di accesso, vai alla finestra di dial
 
 **Gli utenti ricevono una notifica al superamento del limite dati?**
 
- Al momento no. Molti provider cloud prevedono un limite, ad esempio 1 TB per l'intero mese, che può supportare 10 utenti a 100 GB o 100 utenti a 10 GB. Si tratta di quantità piuttosto elevate e pensiamo sia difficile raggiungerle per molti utenti, ma se ciò accadesse ci auguriamo che contattino i gestori del server. In ogni caso saremmo lieti di sapere come le notifiche potrebbero aiutarti per il tuo caso d'uso; puoi contattarci [qui](https://support.getoutline.org/s/contactsupport).
+ Al momento no. Molti provider cloud prevedono un limite, ad esempio 1 TB per l'intero mese, che può supportare 10 utenti a 100 GB o 100 utenti a 10 GB. Si tratta di quantità piuttosto elevate e pensiamo sia difficile raggiungerle per molti utenti, ma se ciò accadesse ci auguriamo che contattino i gestori del server. In ogni caso saremmo lieti di sapere come le notifiche potrebbero aiutarti per il tuo caso d'uso; puoi contattarci [qui](/about/feedback).
 
 **Gli utenti ricevono una notifica se si avvicinano al limite dati?**
 
- La quantità di nuovi dati ricevuti da un utente che sta per raggiungere il limite varia da un giorno all'altro perché si basa sull'utilizzo al 30° giorno precedente. Riteniamo che sia più probabile che un avviso possa confondere gli utenti finali piuttosto che aiutarli. Saremmo lieti di ricevere il tuo feedback in merito a questo approccio [qui](https://support.getoutline.org/s/contactsupport).
+ La quantità di nuovi dati ricevuti da un utente che sta per raggiungere il limite varia da un giorno all'altro perché si basa sull'utilizzo al 30° giorno precedente. Riteniamo che sia più probabile che un avviso possa confondere gli utenti finali piuttosto che aiutarli. Saremmo lieti di ricevere il tuo feedback in merito a questo approccio [qui](/about/feedback).
 
 **Posso reimpostare l'utilizzo dei dati di un utente?**
 
@@ -59,7 +59,7 @@ Per rimuovere il limite dati da una chiave di accesso, vai alla finestra di dial
 
 **Posso impostare un limite a livello di server, ad esempio "1 TB per 30 giorni"?**
 
- Al momento no. Siamo lieti di ricevere ulteriori informazioni sul tuo caso d'uso [qui](https://support.getoutline.org/s/contactsupport).
+ Al momento no. Siamo lieti di ricevere ulteriori informazioni sul tuo caso d'uso [qui](/about/feedback).
 
 **Se esiste un limite dati predefinito e un limite dati su una chiave specifica, quale verrà applicato?**
 

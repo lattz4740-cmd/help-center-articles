@@ -22,7 +22,7 @@ Outline ikishawekwa kwenye kifaa, haihitaji kuwekewa mipangilio yoyote.
 
  Ili kudhibiti funguo kwenye seva, programu ya Kidhibiti cha Outline hushirikiana na Huduma ya Kudhibiti kwenye seva ya Outline. Huduma hiyo ya Kudhibiti hutekelezwa kwenye mlango nasibu na kwenye njia ya siri na ya kipekee inayochaguliwa kwa unasibu. Huduma ya Kudhibiti haiwezi kuchunguzwa kwa sababu haijibu hoja isipokuwa njia husika ya siri ibainishwe. Mwisho, mawasiliano yote yanayotumwa kwenye Huduma ya Kudhibiti husimbwa kwa njia fiche kwa kutumia [cheti cha SSL kinachojitia saini](https://en.wikipedia.org/wiki/Self-signed_certificate).
 
- Pia, seva ya Outline haihifadhi kumbukumbu zozote, kwa hivyo hata ikiathiriwa, hakuna data yoyote ya mtumiaji inayoweza kufumbuliwa. Pata maelezo zaidi [hapa](https://support.getoutline.org/s/article/Security-and-privacy). Outline ilikaguliwa na [Radically Open Security](https://radicallyopensecurity.com/) pamoja na [Cure53](https://cure53.de/) mwaka wa 2018. Angalia ripoti hizo [hapa](https://support.getoutline.org/s/article/Security-and-privacy).
+ Pia, seva ya Outline haihifadhi kumbukumbu zozote, kwa hivyo hata ikiathiriwa, hakuna data yoyote ya mtumiaji inayoweza kufumbuliwa. Pata maelezo zaidi [hapa](/about/security-and-privacy). Outline ilikaguliwa na [Radically Open Security](https://radicallyopensecurity.com/) pamoja na [Cure53](https://cure53.de/) mwaka wa 2018. Angalia ripoti hizo [hapa](/about/security-and-privacy).
 
 **Kushughulikia shughuli za UDP**
 

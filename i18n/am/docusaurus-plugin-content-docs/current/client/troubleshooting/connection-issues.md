@@ -5,9 +5,9 @@ sidebar_label: "ከOutline አገልግሎት ጋር መገናኘት የማል�
 
 ከOutline አገልግሎት ጋር መገናኘት የማይችሉባቸው ጥቂት ምክንያቶች አሉ፦
 
-- **መሣሪያዎ**[https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#One](https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#One)[**ከበይነመረብ ጋር ግንኙነቱ ተቋርጧል**](#Internetissues)[#Internetissues](#Internetissues)**።**አንዳንድ ጊዜ መሣሪያዎ የአውታረ መረብ ግንኙነት መቋረጥ ያጋጥመዋል እና የአውታረ መረብ አዶዎቹን ለማዘመን አፍታ ሊወስድ ይችላል። እንዲሁም መሣሪያዎ ከአካባቢያዊ አውታረ መረብ ጋር ተገናኝቶ፣ ነገር ግን በይነመረቡ ጠፍቶ ሊሆን ይችላል።
-- **የእርስዎ**[https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=am_US#Two](https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=am_US#Two)[**አውታረ መረብ ኬላ**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[ወ](#FirewallIssues)ደ Outline አገልጋይዎ መዳረሻን እያገደ ነው።**ይህ እንደ ትምህርት ቤት፣ ሥራ ወይም ነፃ ሽቦ አልባ አውታር ያከ ይፋዊ አውታረ መረብ እየተጠቀሙ ከሆነ የተለመደ ነው።
-- **መሣሪያዎ የእርስዎን Outline አገልጋይ መዳረሻ እያገደ ያለ**[https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=am_US#Three](https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=am_US#Three)[**ኬላ ወይም ጸረ-ቫይረስ ሶፍትዌር**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**አለው።**
+- **መሣሪያዎ**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#One)[**ከበይነመረብ ጋር ግንኙነቱ ተቋርጧል**](#Internetissues)[#Internetissues](#Internetissues)**።**አንዳንድ ጊዜ መሣሪያዎ የአውታረ መረብ ግንኙነት መቋረጥ ያጋጥመዋል እና የአውታረ መረብ አዶዎቹን ለማዘመን አፍታ ሊወስድ ይችላል። እንዲሁም መሣሪያዎ ከአካባቢያዊ አውታረ መረብ ጋር ተገናኝቶ፣ ነገር ግን በይነመረቡ ጠፍቶ ሊሆን ይችላል።
+- **የእርስዎ**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#Two)[**አውታረ መረብ ኬላ**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[ወ](#FirewallIssues)ደ Outline አገልጋይዎ መዳረሻን እያገደ ነው።**ይህ እንደ ትምህርት ቤት፣ ሥራ ወይም ነፃ ሽቦ አልባ አውታር ያከ ይፋዊ አውታረ መረብ እየተጠቀሙ ከሆነ የተለመደ ነው።
+- **መሣሪያዎ የእርስዎን Outline አገልጋይ መዳረሻ እያገደ ያለ**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#Three)[**ኬላ ወይም ጸረ-ቫይረስ ሶፍትዌር**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**አለው።**
 - **የእርስዎ**[**የስልክ የመሣሪያ ቅንብሮች**](#DeviceSettings)**መለወጥ ሊኖርባቸው ይችላሉ።**
 - **የአገልግሎት አስተዳዳሪዎ**[**አገልጋዩን አጥፍቶ ወይም የእርስዎን አይኤስፒ ጥያቄዎን እያገደ ሊሆን ይችላል**](#ServerIssues)።
 

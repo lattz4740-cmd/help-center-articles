@@ -5,9 +5,9 @@ sidebar_label: "למה לא הצלחתי להתחבר לשירות Outline?"
 
 אם לא הצלחתם להתחבר לשירות Outline, יכולות להיות לכך כמה סיבות:
 
-- **המכשיר שלכם**[https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#One](https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#One)[**לא מחובר לאינטרנט**](#Internetissues).[#Internetissues](#Internetissues)לפעמים המכשיר מתנתק באופן זמני מהרשת, אבל סמל החיבור לאינטרנט עדיין לא מראה את זה. יכול להיות גם שהמכשיר מחובר לרשת המקומית, אבל הרשת עצמה לא מחוברת לאינטרנט.
-- **חומת האש**[https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#Two](https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#Two)[**בין רשתות חוסמת את הגישה**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[לשרת](#FirewallIssues) של Outline.**זה בדרך כלל קורה כשמשתמשים ברשת ציבורית, כמו הרשת של בית הספר או מקום העבודה, או רשת אלחוטית חינמית.
-- **במכשיר יש**[https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#Three](https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#Three)[**חומת אש או תוכנת אנטי-וירוס**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**שחוסמות את הגישה לשרת של Outline.**
+- **המכשיר שלכם**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#One)[**לא מחובר לאינטרנט**](#Internetissues).[#Internetissues](#Internetissues)לפעמים המכשיר מתנתק באופן זמני מהרשת, אבל סמל החיבור לאינטרנט עדיין לא מראה את זה. יכול להיות גם שהמכשיר מחובר לרשת המקומית, אבל הרשת עצמה לא מחוברת לאינטרנט.
+- **חומת האש**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#Two)[**בין רשתות חוסמת את הגישה**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[לשרת](#FirewallIssues) של Outline.**זה בדרך כלל קורה כשמשתמשים ברשת ציבורית, כמו הרשת של בית הספר או מקום העבודה, או רשת אלחוטית חינמית.
+- **במכשיר יש**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#Three)[**חומת אש או תוכנת אנטי-וירוס**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**שחוסמות את הגישה לשרת של Outline.**
 - **ה**[**הגדרות של מכשיר הטלפון**](#DeviceSettings):**יכול להיות שצריך לשנות אותן.**
 - ‫**יכול להיות שמנהל השירות**[**הסיר את השרת או שספק האינטרנט (ISP) חוסם את הבקשה**](#ServerIssues).
 

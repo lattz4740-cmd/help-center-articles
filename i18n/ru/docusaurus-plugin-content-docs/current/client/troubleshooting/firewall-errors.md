@@ -21,5 +21,5 @@ sidebar_label: Ошибки брандмауэра
 
  Чтобы создать исключения для брандмауэра сервера, рекомендуем ознакомиться с документацией UFW и iptables:
 
-- UFW: [https://help.ubuntu.com/community/UFW](https://support.getoutline.org/s/article/Firewall-errors?language=ru)
-- iptables: [https://help.ubuntu.com/community/IptablesHowTo](https://support.getoutline.org/s/article/Firewall-errors?language=ru)
+- UFW: [https://help.ubuntu.com/community/UFW](/client/troubleshooting/firewall-errors)
+- iptables: [https://help.ubuntu.com/community/IptablesHowTo](/client/troubleshooting/firewall-errors)

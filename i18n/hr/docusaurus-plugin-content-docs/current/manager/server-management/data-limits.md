@@ -43,11 +43,11 @@ Da biste uklonili ograničenje podatkovnog prometa s pristupnog ključa, otvorit
 
 **Hoće li se korisnici obavijestiti ako prijeđu ograničenje podatkovnog prometa?**
 
- Trenutačno ne. Mnogi davatelji usluga u oblaku nude ograničenje od 1 TB za cijeli mjesec koje se odnosi na 10 korisnika i potrošnju od 100 GB po korisniku ili 100 korisnika i potrošnju od 10 GB po korisniku. To su prilično velike brojke i ne očekujemo da će ih mnogi korisnici dosegnuti. Nadamo se da će se korisnici javiti upraviteljima poslužitelja kada dosegnu ograničenje. No željeli bismo čuti vaše mišljenje o tome kako bi obavijesti mogle pomoći u vašoj upotrebi. Možete nam se javiti [ovdje](https://support.getoutline.org/s/contactsupport).
+ Trenutačno ne. Mnogi davatelji usluga u oblaku nude ograničenje od 1 TB za cijeli mjesec koje se odnosi na 10 korisnika i potrošnju od 100 GB po korisniku ili 100 korisnika i potrošnju od 10 GB po korisniku. To su prilično velike brojke i ne očekujemo da će ih mnogi korisnici dosegnuti. Nadamo se da će se korisnici javiti upraviteljima poslužitelja kada dosegnu ograničenje. No željeli bismo čuti vaše mišljenje o tome kako bi obavijesti mogle pomoći u vašoj upotrebi. Možete nam se javiti [ovdje](/about/feedback).
 
 **Hoće li se korisnici obavijestiti ako se približe ograničenju podatkovnog prometa?**
 
- Količina novih podataka koje će korisnik koji se približava ograničenju primiti razlikuje se ovisno o danu jer se temelji na upotrebi od prije 30 dana. Smatramo da će upozorenje vjerojatno zbuniti krajnje korisnike, umjesto da im pomogne. Rado bismo čuli vaše povratne informacije o tom ponašanju [ovdje](https://support.getoutline.org/s/contactsupport).
+ Količina novih podataka koje će korisnik koji se približava ograničenju primiti razlikuje se ovisno o danu jer se temelji na upotrebi od prije 30 dana. Smatramo da će upozorenje vjerojatno zbuniti krajnje korisnike, umjesto da im pomogne. Rado bismo čuli vaše povratne informacije o tom ponašanju [ovdje](/about/feedback).
 
 **Mogu li ponovno postaviti potrošnju podatkovnog prometa za korisnika?**
 
@@ -59,7 +59,7 @@ Da biste uklonili ograničenje podatkovnog prometa s pristupnog ključa, otvorit
 
 **Mogu li postaviti ograničenje za cijeli poslužitelj, na primjer 1 TB u 30 dana?**
 
- Trenutačno ne. Htjeli bismo čuti više o vašoj upotrebi [ovdje](https://support.getoutline.org/s/contactsupport).
+ Trenutačno ne. Htjeli bismo čuti više o vašoj upotrebi [ovdje](/about/feedback).
 
 **Ako postoji zadano ograničenje podatkovnog prometa i ograničenje podatkovnog prometa za određeni ključ, koje će se ograničenje implementirati?**
 

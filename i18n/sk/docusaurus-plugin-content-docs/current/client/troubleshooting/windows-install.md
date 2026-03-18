@@ -3,7 +3,7 @@ title: "Prečo si nemôžem nainštalovať aplikáciu Outline Client v systéme 
 sidebar_label: "Prečo si nemôžem nainštalovať aplikáciu Outline Client v systéme Windows?"
 ---
 
-Môže sa vám zobraziť toto chybové hlásenie: „Ľutujeme, zdá sa, že aplikácia Outline nie je správne nainštalovaná. Skúste ju nainštalovať znova. Ak to nepomôže, [odošlite spätnú väzbu](https://support.getoutline.org/s/contactsupport?).“
+Môže sa vám zobraziť toto chybové hlásenie: „Ľutujeme, zdá sa, že aplikácia Outline nie je správne nainštalovaná. Skúste ju nainštalovať znova. Ak to nepomôže, [odošlite spätnú väzbu](/about/feedback).“
 
 Ak používate Outline v systéme Windows, občas sa môže vyskytnúť nečakaná chyba. Vo väčšine prípadov je potrebné odstrániť adaptér (ovládač) TAP služby Outline a Outline preinštalovať.
 
@@ -18,4 +18,4 @@ Postup sa môže líšiť v závislosti od verzie operačného systému Windows,
    - Vyhľadajte aplikáciu Outline Client a odinštalujte ju.
    - [Stiahnite si najnovšiu verziu aplikácie Outline Client](https://getoutline.org/get-started/#step-3) a preinštalujte ju vo svojom zariadení so systémom Windows. V rámci novej inštalácie by sa mal automaticky nainštalovať nový adaptér TAP.
 
-Ak problémy pretrvávajú, [kontaktujte podporu](https://support.getoutline.org/s/contactsupport?).
+Ak problémy pretrvávajú, [kontaktujte podporu](/about/feedback).

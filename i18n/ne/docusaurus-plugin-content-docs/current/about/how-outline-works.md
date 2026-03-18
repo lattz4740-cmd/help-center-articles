@@ -22,7 +22,7 @@ Outline इन्स्टल गरेपछि यसलाई कन्फि
 
  सर्भरमा रहेका एक्सेस कीहरू व्यवस्थापन गर्न Outline म्यानेजर एपले Outline सर्भरमा व्यवस्थापन सेवासँग अन्तर्क्रिया गर्छ। यो व्यवस्थापन सेवा र्‍यान्डम पोर्टमा र गोप्य तथा अद्वितीय पाथमा चल्छ। उपयुक्त गोप्य पाथ नतोकिँदासम्म यो व्यवसथापन सेवाले क्वेरीरूको जवाफ नदिने हुनाले यसले स्वतः अनधिकृत एक्सेस वा आक्रमण रोक्ने गर्छ। अन्त्यमा, व्यवस्थापन सेवासँग गरिने सबै सञ्चार [आफैले हस्ताक्षर गरेको SSL प्रमाणपत्र](https://en.wikipedia.org/wiki/Self-signed_certificate)मार्फत इन्क्रिप्ट गरिन्छ।
 
- साथै, Outline सर्भरले कुनै पनि लग भण्डारण नगर्ने भएकाले यो सर्भरमा छेडखानी भए तापनि प्रयोगकर्तासम्बन्धी कुनै पनि जानकारी खुलासा हुँदैन। थप जान्न [यहाँ](https://support.getoutline.org/s/article/Security-and-privacy) जानुहोस्। [Radically Open Security](https://radicallyopensecurity.com/) र [Cure53](https://cure53.de/) ले २०१८ मा Outline को अडिट गरेका थिए। रिपोर्टहरू हेर्न [यहाँ](https://support.getoutline.org/s/article/Security-and-privacy) जानुहोस्।
+ साथै, Outline सर्भरले कुनै पनि लग भण्डारण नगर्ने भएकाले यो सर्भरमा छेडखानी भए तापनि प्रयोगकर्तासम्बन्धी कुनै पनि जानकारी खुलासा हुँदैन। थप जान्न [यहाँ](/about/security-and-privacy) जानुहोस्। [Radically Open Security](https://radicallyopensecurity.com/) र [Cure53](https://cure53.de/) ले २०१८ मा Outline को अडिट गरेका थिए। रिपोर्टहरू हेर्न [यहाँ](/about/security-and-privacy) जानुहोस्।
 
 **UDP ट्राफिकको व्यवस्थापन**
 

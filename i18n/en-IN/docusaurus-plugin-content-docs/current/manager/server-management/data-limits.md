@@ -43,11 +43,11 @@ To remove the data limit from an access key, navigate to the key's Data Limit di
 
 **Will users be notified if they’ve run over their data limit?**
 
- Not at the moment. Many cloud providers include a limit such as 1TB for the whole month, which can support 10 users at 100 GB or 100 users at 10 GB. These are pretty big numbers, and we do not expect many users will hit them. We hope that users will reach out to server managers when they hit their limit. However, we’d appreciate your insight into how notifications might help for your use case, and you can contact us[here](https://support.getoutline.org/s/contactsupport).
+ Not at the moment. Many cloud providers include a limit such as 1TB for the whole month, which can support 10 users at 100 GB or 100 users at 10 GB. These are pretty big numbers, and we do not expect many users will hit them. We hope that users will reach out to server managers when they hit their limit. However, we’d appreciate your insight into how notifications might help for your use case, and you can contact us[here](/about/feedback).
 
 **Will users be notified if they approach their data limit?**
 
- The amount of new data that a user approaching their limit will receive will vary from day to day because it’s based on their use 30 days ago. We think a warning is more likely to confuse end users than to help them. We’d appreciate your feedback on this behaviour[here](https://support.getoutline.org/s/contactsupport).
+ The amount of new data that a user approaching their limit will receive will vary from day to day because it’s based on their use 30 days ago. We think a warning is more likely to confuse end users than to help them. We’d appreciate your feedback on this behaviour[here](/about/feedback).
 
 **Can I reset a user’s data usage?**
 
@@ -59,7 +59,7 @@ To remove the data limit from an access key, navigate to the key's Data Limit di
 
 **Can I set a server-wide limit, such as “1 TB per 30 days”?**
 
- Not at the moment. We’d love to hear more about your use case[here](https://support.getoutline.org/s/contactsupport).
+ Not at the moment. We’d love to hear more about your use case[here](/about/feedback).
 
 **If there’s a default data limit and a data limit on a specific key, which one will be enforced?**
 

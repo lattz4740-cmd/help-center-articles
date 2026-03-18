@@ -22,7 +22,7 @@ sidebar_label: איך שירות Outline פועל
 
  כדי לנהל את מפתחות הגישה בשרת, אפליקציית Outline Manager מתקשרת עם שירות הניהול בשרת של Outline. שירות הניהול פועל ביציאה אקראית ובנתיב אקראי וסודי. בנוסף, שירות הניהול מוגן מפני גישושים (probe), כי הוא לא עונה לשאילתות בלי שמציינים את הנתיב הסודי הנכון. לסיום, כל התקשורת עם שירות הניהול מוצפנת באמצעות [אישור SSL בחתימה עצמית](https://en.wikipedia.org/wiki/Self-signed_certificate).
 
- מעבר לכל זה, השרת של Outline לא מאחסן יומנים, כך שגם אם הוא נפרץ, נתוני המשתמש לא נחשפים. אפשר לקרוא מידע נוסף [כאן](https://support.getoutline.org/s/article/Security-and-privacy). ‫Outline נבדקה על ידי [Radically Open Security](https://radicallyopensecurity.com/) ו-[Cure53](https://cure53.de/) ב-2018. [כאן](https://support.getoutline.org/s/article/Security-and-privacy) אפשר לקרוא את הדוחות.
+ מעבר לכל זה, השרת של Outline לא מאחסן יומנים, כך שגם אם הוא נפרץ, נתוני המשתמש לא נחשפים. אפשר לקרוא מידע נוסף [כאן](/about/security-and-privacy). ‫Outline נבדקה על ידי [Radically Open Security](https://radicallyopensecurity.com/) ו-[Cure53](https://cure53.de/) ב-2018. [כאן](/about/security-and-privacy) אפשר לקרוא את הדוחות.
 
 **טיפול בתנועת UDP**
 

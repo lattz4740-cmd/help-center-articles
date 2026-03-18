@@ -43,11 +43,11 @@ A hozzáférési kulcs adatforgalmi korlátozásának eltávolításához a kor�
 
 **Értesítik a felhasználókat, ha túllépik az adatforgalmi korlátot?**
 
- Egyelőre nem. Számos felhőszolgáltató alkalmaz havi korlátot, például 1 TB-osat – ez 10 felhasználónak fejenként 100 GB-ra, vagy 100 felhasználónak 10 GB-ra elég. Ezek meglehetősen nagy számok, és nem számítunk arra, hogy sok felhasználó eléri őket. Reméljük, hogy a felhasználók a szerverük kezelőjéhez fordulnak, amikor a korlátba ütköznek. Hálásak volnánk azonban, ha elmagyaráznák nekünk, hogyan segítenék az értesítések az Önök konkrét céljait. [Itt](https://support.getoutline.org/s/contactsupport) vehetik fel velünk a kapcsolatot.
+ Egyelőre nem. Számos felhőszolgáltató alkalmaz havi korlátot, például 1 TB-osat – ez 10 felhasználónak fejenként 100 GB-ra, vagy 100 felhasználónak 10 GB-ra elég. Ezek meglehetősen nagy számok, és nem számítunk arra, hogy sok felhasználó eléri őket. Reméljük, hogy a felhasználók a szerverük kezelőjéhez fordulnak, amikor a korlátba ütköznek. Hálásak volnánk azonban, ha elmagyaráznák nekünk, hogyan segítenék az értesítések az Önök konkrét céljait. [Itt](/about/feedback) vehetik fel velünk a kapcsolatot.
 
 **Értesítik a felhasználókat, ha megközelítik az adatforgalmi korlátot?**
 
- Változó, hogy a felhasználónak mennyivel nő meg egyik napról a másikra a kerete, hiszen attól függ, hogy mennyit használt fel 30 nappal korábban. Szerintünk egy figyelmeztetés inkább összezavarná a felhasználókat, mint segítene nekik. Hálásak volnánk, ha [itt](https://support.getoutline.org/s/contactsupport) visszajelzéssel szolgálna erről a működésmódról.
+ Változó, hogy a felhasználónak mennyivel nő meg egyik napról a másikra a kerete, hiszen attól függ, hogy mennyit használt fel 30 nappal korábban. Szerintünk egy figyelmeztetés inkább összezavarná a felhasználókat, mint segítene nekik. Hálásak volnánk, ha [itt](/about/feedback) visszajelzéssel szolgálna erről a működésmódról.
 
 **Visszaállíthatom egy felhasználó adathasználatát?**
 
@@ -59,7 +59,7 @@ A hozzáférési kulcs adatforgalmi korlátozásának eltávolításához a kor�
 
 **Beállíthatok az egész szerverre vonatkozó korlátozást, például „30 napra 1 TB”?**
 
- Egyelőre nem. Szívesen vennénk, ha [itt](https://support.getoutline.org/s/contactsupport) részletesebben elmondaná, miért volna erre szüksége.
+ Egyelőre nem. Szívesen vennénk, ha [itt](/about/feedback) részletesebben elmondaná, miért volna erre szüksége.
 
 **Ha van egy alapértelmezett adatforgalmi korlátozás és egy adott kulcsra vonatkozó adatforgalmi korlátozás is, melyik lesz érvényes?**
 

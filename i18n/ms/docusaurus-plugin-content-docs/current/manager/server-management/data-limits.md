@@ -43,11 +43,11 @@ Untuk mengalih keluar had data daripada kunci akses, navigasi kepada dialog Had 
 
 **Adakah pengguna akan dimaklumi jika mereka melebihi had data?**
 
- Tidak pada masa ini. Kebanyakan penyedia awan menyertakan had seperti 1TB untuk sepanjang bulan yang boleh menyokong 10 pengguna pada 100 GB atau 100 pengguna pada 10 GB. Ini ialah angka yang agak besar dan kami tidak menjangka ramai pengguna akan mencapainya. Kami berharap pengguna akan menghubungi pengurus pelayan apabila mereka mencapai had mereka. Walau bagaimanapun, kami menghargai maklum balas anda tentang cara pemberitahuan mungkin berguna untuk kes penggunaan anda. Anda boleh menghubungi kami[di sini](https://support.getoutline.org/s/contactsupport).
+ Tidak pada masa ini. Kebanyakan penyedia awan menyertakan had seperti 1TB untuk sepanjang bulan yang boleh menyokong 10 pengguna pada 100 GB atau 100 pengguna pada 10 GB. Ini ialah angka yang agak besar dan kami tidak menjangka ramai pengguna akan mencapainya. Kami berharap pengguna akan menghubungi pengurus pelayan apabila mereka mencapai had mereka. Walau bagaimanapun, kami menghargai maklum balas anda tentang cara pemberitahuan mungkin berguna untuk kes penggunaan anda. Anda boleh menghubungi kami[di sini](/about/feedback).
 
 **Adakah pengguna akan dimaklumi jika mereka menghampiri had data mereka?**
 
- Jumlah data baharu yang akan diterima oleh pengguna yang menghampiri had mereka berbeza-beza dari sehari ke sehari kerana jumlah ini berdasarkan penggunaan 30 hari yang lalu. Kami berpendapat amaran berkemungkinan besar mengelirukan pengguna akhir, bukannya membantu mereka. Kami menghargai maklum balas anda berkenaan dengan gelagat ini[di sini](https://support.getoutline.org/s/contactsupport).
+ Jumlah data baharu yang akan diterima oleh pengguna yang menghampiri had mereka berbeza-beza dari sehari ke sehari kerana jumlah ini berdasarkan penggunaan 30 hari yang lalu. Kami berpendapat amaran berkemungkinan besar mengelirukan pengguna akhir, bukannya membantu mereka. Kami menghargai maklum balas anda berkenaan dengan gelagat ini[di sini](/about/feedback).
 
 **Bolehkah saya menetapkan semula penggunaan data pengguna?**
 
@@ -59,7 +59,7 @@ Untuk mengalih keluar had data daripada kunci akses, navigasi kepada dialog Had 
 
 **Bolehkah saya menetapkan had seluruh pelayan, seperti “1 TB setiap 30 hari”?**
 
- Tidak pada masa ini. Kami mahu mendengar tentang kes penggunaan anda dengan lebih lanjut [di sini](https://support.getoutline.org/s/contactsupport).
+ Tidak pada masa ini. Kami mahu mendengar tentang kes penggunaan anda dengan lebih lanjut [di sini](/about/feedback).
 
 **Jika terdapat had data lalai dan had data pada kunci tertentu, yang manakah akan dikuatkuasakan?**
 

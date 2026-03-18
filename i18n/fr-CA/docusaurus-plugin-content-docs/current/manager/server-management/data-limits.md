@@ -43,11 +43,11 @@ Pour retirer la limite de données d'une clé d'accès, accédez à la boîte de
 
 **Les utilisateurs seront-ils avertis s'ils dépassent leur limite de données?**
 
- Pas pour le moment. De nombreux fournisseurs de service infonuagique incluent une limite telle que 1 To pour tout le mois, qui peut prendre en charge 10 utilisateurs avec 100 Go ou 100 utilisateurs avec 10 Go. Ce sont des quantités assez importantes, et nous ne nous attendons pas à ce que de nombreux utilisateurs les atteignent. Nous espérons que les utilisateurs communiqueront avec les gestionnaires de serveurs lorsqu'ils atteindront leur limite. Cependant, nous aimerions avoir votre avis sur la façon dont les notifications pourraient vous aider dans votre cas d'utilisation, et vous pouvez communiquer avec nous [ici](https://support.getoutline.org/s/contactsupport).
+ Pas pour le moment. De nombreux fournisseurs de service infonuagique incluent une limite telle que 1 To pour tout le mois, qui peut prendre en charge 10 utilisateurs avec 100 Go ou 100 utilisateurs avec 10 Go. Ce sont des quantités assez importantes, et nous ne nous attendons pas à ce que de nombreux utilisateurs les atteignent. Nous espérons que les utilisateurs communiqueront avec les gestionnaires de serveurs lorsqu'ils atteindront leur limite. Cependant, nous aimerions avoir votre avis sur la façon dont les notifications pourraient vous aider dans votre cas d'utilisation, et vous pouvez communiquer avec nous [ici](/about/feedback).
 
 **Les utilisateurs seront-ils avertis s'ils s'approchent de leur limite de données?**
 
- La quantité de nouvelles données qu'un utilisateur s'approchant de sa limite recevra variera de jour en jour, car elle est basée sur son utilisation d'il y a 30 jours. Nous croyons qu'un avertissement est plus susceptible de dérouter les utilisateurs finaux que de les aider. Vous pouvez nous envoyer vos commentaires sur ce comportement [ici](https://support.getoutline.org/s/contactsupport).
+ La quantité de nouvelles données qu'un utilisateur s'approchant de sa limite recevra variera de jour en jour, car elle est basée sur son utilisation d'il y a 30 jours. Nous croyons qu'un avertissement est plus susceptible de dérouter les utilisateurs finaux que de les aider. Vous pouvez nous envoyer vos commentaires sur ce comportement [ici](/about/feedback).
 
 **Puis-je réinitialiser l'utilisation de données d'un utilisateur?**
 
@@ -59,7 +59,7 @@ Pour retirer la limite de données d'une clé d'accès, accédez à la boîte de
 
 **Puis-je définir une limite à l'échelle du serveur, telle que « 1 To tous les 30 jours »?**
 
- Pas pour le moment. Nous aimerions en savoir plus sur votre cas d'utilisation. Vous pouvez communiquer avec nous [ici](https://support.getoutline.org/s/contactsupport).
+ Pas pour le moment. Nous aimerions en savoir plus sur votre cas d'utilisation. Vous pouvez communiquer avec nous [ici](/about/feedback).
 
 **S'il existe une limite de données par défaut et une limite de données sur une clé en particulier, laquelle sera appliquée?**
 

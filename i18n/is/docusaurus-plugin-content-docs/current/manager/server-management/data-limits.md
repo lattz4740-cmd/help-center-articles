@@ -43,11 +43,11 @@ Til að eyða gagnamörkum aðgangslykils skaltu opna gluggann sem sýnir gagnam
 
 **Fá notendur tilkynningu ef þeir fara yfir gagnamörk?**
 
- Ekki eins og stendur. Margar skýjaþjónustur stilla mörk á borð við 1 TB á mánuði, sem veitir 10 notendum aðgang að 100 GB eða 100 notendum aðgang að 10 GB. Þetta er nokkuð mikið gagnamagn og við búumst ekki við að margir notendur þurfi á því að halda. Ætlast er til að notendur hafi samband við stjórnendur þjóna ef farið er umfram gagnamörk. Okkur þætti þó vænt um að heyra hvernig tilkynningar gætu gagnast þér. Þú getur haft samband við okkur [hér](https://support.getoutline.org/s/contactsupport).
+ Ekki eins og stendur. Margar skýjaþjónustur stilla mörk á borð við 1 TB á mánuði, sem veitir 10 notendum aðgang að 100 GB eða 100 notendum aðgang að 10 GB. Þetta er nokkuð mikið gagnamagn og við búumst ekki við að margir notendur þurfi á því að halda. Ætlast er til að notendur hafi samband við stjórnendur þjóna ef farið er umfram gagnamörk. Okkur þætti þó vænt um að heyra hvernig tilkynningar gætu gagnast þér. Þú getur haft samband við okkur [hér](/about/feedback).
 
 **Fá notendur tilkynningu ef þeir nálgast gagnamörk?**
 
- Gagnamagnið sem notandi sem nálgast mörk hefur aðgang að er breytilegt frá degi til dags vegna þess að það veltur á notkun hans fyrir 30 dögum. Við teljum að viðvaranir geti ruglað notendur fremur enn að gagnast þeim. Við viljum gjarnan heyra álit þitt á þessu [hér](https://support.getoutline.org/s/contactsupport).
+ Gagnamagnið sem notandi sem nálgast mörk hefur aðgang að er breytilegt frá degi til dags vegna þess að það veltur á notkun hans fyrir 30 dögum. Við teljum að viðvaranir geti ruglað notendur fremur enn að gagnast þeim. Við viljum gjarnan heyra álit þitt á þessu [hér](/about/feedback).
 
 **Er hægt að endurstilla gagnanotkun notanda?**
 
@@ -59,7 +59,7 @@ Til að eyða gagnamörkum aðgangslykils skaltu opna gluggann sem sýnir gagnam
 
 **Er hægt að stilla mörk sem gilda um þjóninn í heild sinni, til dæmis „1 TB á hverja 30 daga“?**
 
- Ekki eins og stendur. Við viljum gjarnan heyra álit þitt á þessu [hér](https://support.getoutline.org/s/contactsupport).
+ Ekki eins og stendur. Við viljum gjarnan heyra álit þitt á þessu [hér](/about/feedback).
 
 **Hvorum gagnamörkunum er framfylgt ef bæði sjálfgefin gagnamörk og sérsniðin gagnamörk lykils eru stillt?**
 

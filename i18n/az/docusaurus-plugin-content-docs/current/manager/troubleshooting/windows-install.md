@@ -3,7 +3,7 @@ title: "Nəyə görə Windows-da Outline Manager quraşdıra bilmirəm?"
 sidebar_label: "Nəyə görə Windows-da Outline Manager quraşdıra bilmirəm?"
 ---
 
-Bu xəta mesajını görə bilərsiniz: "Görünür, Outline düzgün quraşdırılmayıb. Yenidən quraşdırın. İşə yaramadığı halda [rəy göndərin](https://support.getoutline.org/s/contactsupport?)."
+Bu xəta mesajını görə bilərsiniz: "Görünür, Outline düzgün quraşdırılmayıb. Yenidən quraşdırın. İşə yaramadığı halda [rəy göndərin](/about/feedback)."
 
 Windows-da Outline istifadə edirsinizsə, bəzən gözlənilməz xəta baş verə bilər. Əksər hallarda Outline TAP adapteri (drayver) silinməli və Outline yenidən quraşdırılmalıdır.
 
@@ -18,4 +18,4 @@ Addımlar Windows əməliyyat sisteminin versiyasından asılı olaraq dəyişə
    2. Outline Manager tətbiqini tapıb sistemdən silin
    3. [Outline Manager tətbiqinin ən son versiyasını endirin](https://getoutline.org/get-started/#step-1) və Windows cihazınızda yenidən quraşdırın. Yeni quraşdırma zamanı avtomatik olaraq yeni TAP adapteri quraşdırılacaq.
 
-Problem davam edərsə, [dəstək xidməti](https://support.getoutline.org/s/contactsupport?) ilə əlaqə saxlayın.
+Problem davam edərsə, [dəstək xidməti](/about/feedback) ilə əlaqə saxlayın.

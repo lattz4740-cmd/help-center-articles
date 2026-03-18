@@ -43,11 +43,11 @@ Voit poistaa pääsyavaimen datarajan siirtymällä avaimen Dataraja-valintaikku
 
 **Ilmoitetaanko käyttäjille datarajan ylittymisestä?**
 
- Ei tällä hetkellä. Monien pilvipalveluntarjoajien raja on esimerkiksi 1 Tt kuukaudessa, mikä vastaa esim. 100 Gt:n käyttöä 10 käyttäjältä tai 10 Gt:n käyttöä 100 käyttäjältä. Luvut ovat suurehkoja ja pidämme niiden ylittymistä melko epätodennäköisenä. Toivomme, että datarajan saavuttaneet käyttäjät ottavat yhteyttä palvelimensa ylläpitäjään. Olisimme kuitenkin kiitollisia, jos voisit kertoa, miten ilmoituksista olisi hyötyä omassa käyttötapauksessasi. Voit ottaa meihin yhteyttä [täällä](https://support.getoutline.org/s/contactsupport).
+ Ei tällä hetkellä. Monien pilvipalveluntarjoajien raja on esimerkiksi 1 Tt kuukaudessa, mikä vastaa esim. 100 Gt:n käyttöä 10 käyttäjältä tai 10 Gt:n käyttöä 100 käyttäjältä. Luvut ovat suurehkoja ja pidämme niiden ylittymistä melko epätodennäköisenä. Toivomme, että datarajan saavuttaneet käyttäjät ottavat yhteyttä palvelimensa ylläpitäjään. Olisimme kuitenkin kiitollisia, jos voisit kertoa, miten ilmoituksista olisi hyötyä omassa käyttötapauksessasi. Voit ottaa meihin yhteyttä [täällä](/about/feedback).
 
 **Ilmoitetaanko käyttäjille datarajan saavuttamisesta?**
 
- Käyttäjille palautuvan uuden datan määrä vaihtelee päivittäin, koska määrä perustuu 30 päivän takaiseen datan käyttöön. Mielestämme ilmoitukset saattaisivat pikemminkin hämmentää loppukäyttäjiä tällaisissa tapauksissa. Pyydämme antamaan palautetta tällaisesta toimintamallista [täällä](https://support.getoutline.org/s/contactsupport).
+ Käyttäjille palautuvan uuden datan määrä vaihtelee päivittäin, koska määrä perustuu 30 päivän takaiseen datan käyttöön. Mielestämme ilmoitukset saattaisivat pikemminkin hämmentää loppukäyttäjiä tällaisissa tapauksissa. Pyydämme antamaan palautetta tällaisesta toimintamallista [täällä](/about/feedback).
 
 **Voinko nollata käyttäjän datan käytön?**
 
@@ -59,7 +59,7 @@ Voit poistaa pääsyavaimen datarajan siirtymällä avaimen Dataraja-valintaikku
 
 **Voinko asettaa koko palvelinta koskevan rajan, esim. "1 Tt 30 päivän aikana"?**
 
- Et tällä hetkellä. Pyydämme sinua kertomaan omasta käyttötapauksestasi [täällä](https://support.getoutline.org/s/contactsupport).
+ Et tällä hetkellä. Pyydämme sinua kertomaan omasta käyttötapauksestasi [täällä](/about/feedback).
 
 **Jos käytössä on oletusdataraja tai tietyllä avaimella on oma dataraja, kumpi pakotetaan käyttöön?**
 

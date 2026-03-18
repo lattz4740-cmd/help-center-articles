@@ -22,7 +22,7 @@ sidebar_label: Outline እንዴት እንደሚሠራ
 
  አገልጋዩ ላይ የመዳረሻ ቁልፎችን ለማስተዳደር የOutline አስተዳዳሪ መተግበሪያ የOutline አገልጋይ ላይ ካለው የአስተዳደር አገልግሎት ጋር መስተጋብር ይፈጥራል። የአስተዳደር አገልግሎት የዘፈቀደ ወደብ ላይ እና ሚስጥራዊ እና ልዩ ዱካ ላይ ያሄዳል። የአስተዳደር አገልግሎት ራሱ ተገቢ የሆነው ሚስጥራዊ ዱካ እስካልተገለጸ ድረስ ለጥያቄዎች ምላሽ ስለማይሰጥ መቋቋምን እየፈተሸ ነው። በመጨረሻ፣ ሁሉም ወደ የአስተዳደር አገልግሎት የተደረገ ግንኙነት [በራስ-ሰር በመለያ ገቢ የኤስኤስኤል የእውቅና ማረጋገጫ](https://en.wikipedia.org/wiki/Self-signed_certificate) የተመሰጠረ ነው።
 
- እንዲሁም፣ የOutline አገልጋዩ ማናቸውንም ምዝግብ ማስታወሻዎች አያከማችም፣ ስለዚህ ተጠልፎ ቢሆን እንኳን ምንም የተጠቃሚ ውሂብ ይፋ አይወጣም። [እዚህ](https://support.getoutline.org/s/article/Security-and-privacy) የበለጠ ይወቁ። Outline በ[Radically Open Security](https://radicallyopensecurity.com/) እና [Cure53](https://cure53.de/) 2018 ውስጥ ኦዲት ተደርጓል። ሪፖርቶቹን [እዚህ](https://support.getoutline.org/s/article/Security-and-privacy) ይመልከቱ።
+ እንዲሁም፣ የOutline አገልጋዩ ማናቸውንም ምዝግብ ማስታወሻዎች አያከማችም፣ ስለዚህ ተጠልፎ ቢሆን እንኳን ምንም የተጠቃሚ ውሂብ ይፋ አይወጣም። [እዚህ](/about/security-and-privacy) የበለጠ ይወቁ። Outline በ[Radically Open Security](https://radicallyopensecurity.com/) እና [Cure53](https://cure53.de/) 2018 ውስጥ ኦዲት ተደርጓል። ሪፖርቶቹን [እዚህ](/about/security-and-privacy) ይመልከቱ።
 
 **UDP ትራፊክን መያዝ**
 

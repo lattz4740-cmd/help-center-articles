@@ -3,7 +3,7 @@ title: "Per què no puc instal·lar el client d'Outline a Windows?"
 sidebar_label: "Per què no puc instal·lar el client d'Outline a Windows?"
 ---
 
-És possible que es mostri aquest missatge d'error: "Sembla que Outline no s'ha instal·lat correctament. Prova de tornar-lo a instal·lar; si no funciona, [envia comentaris](https://support.getoutline.org/s/contactsupport?)."
+És possible que es mostri aquest missatge d'error: "Sembla que Outline no s'ha instal·lat correctament. Prova de tornar-lo a instal·lar; si no funciona, [envia comentaris](/about/feedback)."
 
 Si estàs fent servir Outline en un sistema operatiu Windows, pot ser que en algun moment es produeixi un error inesperat. En la majoria dels casos, cal suprimir l'adaptador TAP d'Outline (controlador) i tornar a instal·lar Outline.
 
@@ -18,4 +18,4 @@ Els passos poden variar en funció de la versió del sistema operatiu Windows qu
    - Cerca l'aplicació client d'Outline i desinstal·la-la.
    - [Baixa la darrera versió del client d'Outline](https://getoutline.org/get-started/#step-3) i torna a instal·lar-lo al teu dispositiu Windows. Amb la instal·lació nova també s'hauria d'instal·lar un nou adaptador TAP.
 
-Si continues tenint problemes, [contacta amb el servei d'assistència](https://support.getoutline.org/s/contactsupport?).
+Si continues tenint problemes, [contacta amb el servei d'assistència](/about/feedback).

@@ -43,11 +43,11 @@ Pääsuvõtme andmepiirangu eemaldamiseks avage taas võtme andmepiirangu dialoo
 
 **Kas kasutajaid teavitatakse, kui andmepiirang on ületatud?**
 
- Praegu mitte. Paljud pilveteenuste pakkujad lisavad piirangu, näiteks 1 TB kuus, mis tähendab 100 GB 10 kasutaja jaoks või 10 GB 100 kasutaja jaoks. Need on üsna suured arvud ja eeldame, et paljud kasutajad ei jõua nende piiranguteni. Loodame, et kasutajad võtavad piiranguni jõudes serverihalduritega ühendust. Oleme aga tänulikud, kui annate teada, kuidas märguanded võivad teie kasutusjuhtumi puhul kasulikud olla. Meiega saate ühendust võtta[siin](https://support.getoutline.org/s/contactsupport).
+ Praegu mitte. Paljud pilveteenuste pakkujad lisavad piirangu, näiteks 1 TB kuus, mis tähendab 100 GB 10 kasutaja jaoks või 10 GB 100 kasutaja jaoks. Need on üsna suured arvud ja eeldame, et paljud kasutajad ei jõua nende piiranguteni. Loodame, et kasutajad võtavad piiranguni jõudes serverihalduritega ühendust. Oleme aga tänulikud, kui annate teada, kuidas märguanded võivad teie kasutusjuhtumi puhul kasulikud olla. Meiega saate ühendust võtta[siin](/about/feedback).
 
 **Kas kasutajaid teavitatakse, kui nad lähenevad andmepiirangule?**
 
- Piirangule lähenevale kasutajale antava lisamahu suurus varieerub päevast päeva, kuna see põhineb nende kasutusel 30 päeva tagasi. Arvame, et hoiatus tekitab kasutajates pigem segadust kui aitab neid. Oleme tänulikud, kui annate selle käitumise kohta tagasisidet[siin](https://support.getoutline.org/s/contactsupport).
+ Piirangule lähenevale kasutajale antava lisamahu suurus varieerub päevast päeva, kuna see põhineb nende kasutusel 30 päeva tagasi. Arvame, et hoiatus tekitab kasutajates pigem segadust kui aitab neid. Oleme tänulikud, kui annate selle käitumise kohta tagasisidet[siin](/about/feedback).
 
 **Kas kasutaja andmekasutuse saab lähtestada?**
 
@@ -59,7 +59,7 @@ Pääsuvõtme andmepiirangu eemaldamiseks avage taas võtme andmepiirangu dialoo
 
 **Kas saan määrata serveriülese piirangu, näiteks 1 TB 30 päeva kohta?**
 
- Praegu mitte. Oleme tänulikud, kui saadate meile tagasisidet oma kasutusjuhtumi kohta[siin](https://support.getoutline.org/s/contactsupport).
+ Praegu mitte. Oleme tänulikud, kui saadate meile tagasisidet oma kasutusjuhtumi kohta[siin](/about/feedback).
 
 **Kui on määratud andmete vaikepiirang ja konkreetse võtme andmepiirang, siis kumb neist jõustatakse?**
 

@@ -22,7 +22,7 @@ Installitud Outline'i ei ole vaja pärast installimist seadistada.
 
  Selleks et hallata serveris pääsuvõtmeid, suhtleb Outline Manageri rakendus Outline'i serveris oleva haldusteenusega. Haldusteenus töötab juhuslikus pordis ning salajasel ja unikaalsel teel. Haldusteenus ise on sondeerimiskindel, kuna see reageerib päringutele ainult juhul, kui määratud on sobiv salajane tee. Viimaks krüpteeritakse kogu side haldusteenusega [iseallkirjastatud SSL-sertifikaadi](https://en.wikipedia.org/wiki/Self-signed_certificate) abil.
 
- Lisaks ei talleta Outline'i server ühtki logi, seega isegi kui selle turvalisust rikutakse, ei avalikustata kasutajaandmeid. Vaadake lisateavet [siit](https://support.getoutline.org/s/article/Security-and-privacy). Outline'i auditeerisid [Radically Open Security](https://radicallyopensecurity.com/) ja [Cure53](https://cure53.de/) aastal 2018. Vaadake aruandeid [siin](https://support.getoutline.org/s/article/Security-and-privacy).
+ Lisaks ei talleta Outline'i server ühtki logi, seega isegi kui selle turvalisust rikutakse, ei avalikustata kasutajaandmeid. Vaadake lisateavet [siit](/about/security-and-privacy). Outline'i auditeerisid [Radically Open Security](https://radicallyopensecurity.com/) ja [Cure53](https://cure53.de/) aastal 2018. Vaadake aruandeid [siin](/about/security-and-privacy).
 
 **UDP-liikluse juhtimine**
 

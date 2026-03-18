@@ -43,11 +43,11 @@ Kodėl „Outline“ naudoja pastarojo laikotarpio apribojimus?
 
 **Ar naudotojams bus pranešta, jei jie viršys taikomą duomenų apribojimą?**
 
- Šiuo metu ne. Dauguma debesies paslaugų teikėjų įtraukia apribojimą, pvz., 1 TB visam mėnesiui. Tai gali būti 10 naudotojų po 100 GB arba 100 naudotojų po 10 GB. Tai gana dideli skaičiai ir nesitikime, kad daug naudotojų juos pasieks. Tikimės, kad naudotojai susisieks su serverių valdytojus, kai pasieks apribojimą. Tačiau norėtume gauti įžvalgų, kaip pranešimai galėtų padėti jūsų naudojimo atveju. Susisiekti su mumis galite [čia](https://support.getoutline.org/s/contactsupport).
+ Šiuo metu ne. Dauguma debesies paslaugų teikėjų įtraukia apribojimą, pvz., 1 TB visam mėnesiui. Tai gali būti 10 naudotojų po 100 GB arba 100 naudotojų po 10 GB. Tai gana dideli skaičiai ir nesitikime, kad daug naudotojų juos pasieks. Tikimės, kad naudotojai susisieks su serverių valdytojus, kai pasieks apribojimą. Tačiau norėtume gauti įžvalgų, kaip pranešimai galėtų padėti jūsų naudojimo atveju. Susisiekti su mumis galite [čia](/about/feedback).
 
 **Ar naudotojams bus pranešta, jei jie priartės prie taikomo duomenų apribojimo?**
 
- Naujų duomenų kiekis, kurį gaus naudotojas, artėjantis prie savo apribojimo, skirsis kiekvieną dieną, nes tai pagrįsta naudojimo prieš 30 dienų duomenimis. Manome, kad įspėjimas galutinius naudotojus labiau suklaidins, nei jiems padės. Norėtume gauti atsiliepimų apie šią elgseną [čia](https://support.getoutline.org/s/contactsupport).
+ Naujų duomenų kiekis, kurį gaus naudotojas, artėjantis prie savo apribojimo, skirsis kiekvieną dieną, nes tai pagrįsta naudojimo prieš 30 dienų duomenimis. Manome, kad įspėjimas galutinius naudotojus labiau suklaidins, nei jiems padės. Norėtume gauti atsiliepimų apie šią elgseną [čia](/about/feedback).
 
 **Ar galiu iš naujo nustatyti naudotojo duomenų naudojimą?**
 
@@ -59,7 +59,7 @@ Kodėl „Outline“ naudoja pastarojo laikotarpio apribojimus?
 
 **Ar galiu nustatyti apribojimą serverio lygiu, pvz., „1 TB per 30 dienų“?**
 
- Šiuo metu ne. Norėtume daugiau sužinoti apie jūsų naudojimo atvejį [čia](https://support.getoutline.org/s/contactsupport).
+ Šiuo metu ne. Norėtume daugiau sužinoti apie jūsų naudojimo atvejį [čia](/about/feedback).
 
 **Jei yra nustatytas numatytasis duomenų apribojimas ir duomenų apribojimas konkrečiam raktui, kuris iš šių apribojimų bus taikomas?**
 

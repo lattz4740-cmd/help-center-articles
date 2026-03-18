@@ -22,7 +22,7 @@ Outlinea ei tarvitse määrittää sen jälkeen, kun se on asennettu.
 
  Outline Manager ‑sovellus on yhteydessä Outline-palvelimen hallintapalveluun palvelimen pääsyavainten hallintaa varten. Hallintapalvelu käyttää sattumanvaraista porttia ja yksilöllistä, salaista polkua. Hallintapalveluun kohdistuvia urkintayrityksiä on vaikeutettu siten, että palvelu ei vastaa kyselyihin, ellei oikeaa salaista polkua ole määritetty. Lisäksi kaikki yhteydenpito hallintapalveluun on salattu [itse allekirjoitetulla SSL-varmenteella](https://en.wikipedia.org/wiki/Self-signed_certificate).
 
- Outline-palvelin ei tallenna lokeja, joten mahdollisesti vaarantunut käyttäjädata ei paljastu. Lue lisää [täältä](https://support.getoutline.org/s/article/Security-and-privacy). [Radically Open Security](https://radicallyopensecurity.com/) ja [Cure53](https://cure53.de/) auditoivat Outlinen vuonna 2018. Lue niiden raportit [täältä](https://support.getoutline.org/s/article/Security-and-privacy).
+ Outline-palvelin ei tallenna lokeja, joten mahdollisesti vaarantunut käyttäjädata ei paljastu. Lue lisää [täältä](/about/security-and-privacy). [Radically Open Security](https://radicallyopensecurity.com/) ja [Cure53](https://cure53.de/) auditoivat Outlinen vuonna 2018. Lue niiden raportit [täältä](/about/security-and-privacy).
 
 **UDP-liikenteen käsitteleminen**
 

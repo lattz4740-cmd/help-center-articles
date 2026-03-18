@@ -21,5 +21,5 @@ sidebar_label: ข้อผิดพลาดของไฟร์วอลล�
 
  หากต้องการสร้างข้อยกเว้นในไฟร์วอลล์ของเซิร์ฟเวอร์ เราขอแนะนำให้อ่านเอกสารสำหรับ "ufw" และ "iptables" ดังนี้
 
-- UFW: [https://help.ubuntu.com/community/UFW](https://support.getoutline.org/s/article/Firewall-errors?language=th)
-- Iptables: [https://help.ubuntu.com/community/IptablesHowTo](https://support.getoutline.org/s/article/Firewall-errors?language=th)
+- UFW: [https://help.ubuntu.com/community/UFW](/client/troubleshooting/firewall-errors)
+- Iptables: [https://help.ubuntu.com/community/IptablesHowTo](/client/troubleshooting/firewall-errors)

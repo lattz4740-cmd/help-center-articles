@@ -43,11 +43,11 @@ Para alisin ang limitasyon sa data sa isang access key, mag-navigate papunta sa 
 
 **Aabisuhan ba ang mga user kapag lumampas sila sa limitasyon sa data?**
 
- Hindi sa ngayon. Maraming cloud provider ang nagsasama ng limitasyong 1TB para sa buong buwan, na puwedeng sumuporta sa 10 user sa 100 GB o 100 user sa 10 GB. Ito ay malalaking numero, at hindi namin inaasahan na maraming user ang makakaabot dito. Umaasa kaming makikipag-ugnayan ang mga user sa mga server manager kapag umabot sila sa kanilang limitasyon. Gayunpaman, pahahalagahan namin ang iyong opinyon tungkol sa kung paano puwedeng makatulong ang mga notification para sa iyong sitwasyon ng paggamit, at puwede kang makipag-ugnayan sa amin[dito](https://support.getoutline.org/s/contactsupport).
+ Hindi sa ngayon. Maraming cloud provider ang nagsasama ng limitasyong 1TB para sa buong buwan, na puwedeng sumuporta sa 10 user sa 100 GB o 100 user sa 10 GB. Ito ay malalaking numero, at hindi namin inaasahan na maraming user ang makakaabot dito. Umaasa kaming makikipag-ugnayan ang mga user sa mga server manager kapag umabot sila sa kanilang limitasyon. Gayunpaman, pahahalagahan namin ang iyong opinyon tungkol sa kung paano puwedeng makatulong ang mga notification para sa iyong sitwasyon ng paggamit, at puwede kang makipag-ugnayan sa amin[dito](/about/feedback).
 
 **Aabisuhan ba ang mga user kung malapit na sila sa kanilang limitasyon sa data?**
 
- Ang dami ng bagong data na matatanggap ng isang user na malapit na sa kanyang limitasyon ay magbabago-bago araw-araw dahil nakabatay ito sa paggamit niya 30 araw ang nakalipas. Sa palagay namin, kaysa makatulong, mas malamang na makalito ang isang babala sa mga end user. Pahahalagahan namin ang iyong feedback sa ganitong gawi[rito](https://support.getoutline.org/s/contactsupport).
+ Ang dami ng bagong data na matatanggap ng isang user na malapit na sa kanyang limitasyon ay magbabago-bago araw-araw dahil nakabatay ito sa paggamit niya 30 araw ang nakalipas. Sa palagay namin, kaysa makatulong, mas malamang na makalito ang isang babala sa mga end user. Pahahalagahan namin ang iyong feedback sa ganitong gawi[rito](/about/feedback).
 
 **Puwede ko bang i-reset ang paggamit ng data ng isang user?**
 
@@ -59,7 +59,7 @@ Para alisin ang limitasyon sa data sa isang access key, mag-navigate papunta sa 
 
 **Puwede ba akong magtakda ng limitasyon sa buong server, gaya ng “1 TB kada 30 araw?”**
 
- Hindi sa ngayon. Gusto pa naming malaman ang tungkol sa iyong sitwasyon ng paggamit[dito](https://support.getoutline.org/s/contactsupport).
+ Hindi sa ngayon. Gusto pa naming malaman ang tungkol sa iyong sitwasyon ng paggamit[dito](/about/feedback).
 
 **Kung may default na limitasyon sa data at may limitasyon sa data sa isang partikular na key, aling limitasyon ang ipapatupad?**
 

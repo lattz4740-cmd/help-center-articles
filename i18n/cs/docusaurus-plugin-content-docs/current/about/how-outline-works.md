@@ -22,7 +22,7 @@ Po instalaci už není Outline potřeba nijak nastavovat.
 
  Při správě přístupových klíčů na serveru komunikuje aplikace Správce Outline se spravující službou na serveru Outline. Spravující služba běží na tajném portu a po tajné a unikátní cestě. Samotná spravující služba je odolná vůči vniknutí, protože nereaguje na dotazy, pokud není specifikovaná správná unikátní trasa. Veškerá komunikace se spravující službou je navíc zašifrovaná pomocí [certifikátu SSL podepsaného sebou samým](https://cs.wikipedia.org/wiki/Certifik%C3%A1t_podepsan%C3%BD_s%C3%A1m_sebou).
 
- Server Outline si taky neukládá žádné protokoly, takže by žádná uživatelská data neunikla ani při jeho napadení. [Další informace](https://support.getoutline.org/s/article/Security-and-privacy). V roce 2018 prošla služba Outline audity společností [Radically Open Security](https://radicallyopensecurity.com/) a [Cure53](https://cure53.de/). Jejich zprávy si můžete přečíst [tady](https://support.getoutline.org/s/article/Security-and-privacy).
+ Server Outline si taky neukládá žádné protokoly, takže by žádná uživatelská data neunikla ani při jeho napadení. [Další informace](/about/security-and-privacy). V roce 2018 prošla služba Outline audity společností [Radically Open Security](https://radicallyopensecurity.com/) a [Cure53](https://cure53.de/). Jejich zprávy si můžete přečíst [tady](/about/security-and-privacy).
 
 **Zpracování provozu UDP**
 

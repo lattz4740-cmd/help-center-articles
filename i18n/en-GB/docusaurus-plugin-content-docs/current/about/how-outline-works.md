@@ -22,7 +22,7 @@ The Outline installation doesn’t need any configuration after installation.
 
  In order to manage the access keys on the server, the Outline Manager application interacts with a Management Service on the Outline server. The Management Service runs on a random port and on a secret and unique path. The Management Service itself is probing resistant since it doesn’t respond to queries unless the appropriate secret path is specified. Finally, all communication to the Management Service is encrypted with a [self-signed SSL certificate](https://en.wikipedia.org/wiki/Self-signed_certificate).
 
- Also, the Outline server does not store any logs, so even if it were compromised, no user data would be disclosed. Learn more [here](https://support.getoutline.org/s/article/Security-and-privacy).
+ Also, the Outline server does not store any logs, so even if it were compromised, no user data would be disclosed. Learn more [here](/about/security-and-privacy).
 
  Outline was audited by [Radically Open Security](https://radicallyopensecurity.com/) and [Cure53](https://cure53.de/) in 2018. See the reports [here](/about/security-and-privacy).
 

@@ -43,11 +43,11 @@ Për ta hequr kufirin e të dhënave nga një çelës qasjeje, navigo te dialogu
 
 **A do të njoftohen përdoruesit nëse e kalojnë kufirin e të dhënave?**
 
- Për momentin, jo. Shumë ofrues të shërbimit të resë kompjuterike përfshijnë një kufi si p.sh. 1 TB për të gjithë muajin, i cili mund të mbështesë 10 përdorues me 100 GB ose 100 përdorues me 10 GB. Këta janë numra mjaft të mëdhenj dhe nuk presim që do t'i arrijnë shumë përdorues. Ne shpresojmë që përdoruesit do të kontaktojnë me menaxherët e serverëve kur të arrijnë kufirin. Sidoqoftë, do ta vlerësonim opinionin tënd se si mund të ndihmojnë njoftimet për rastin tënd të përdorimit dhe mund të na kontaktosh [këtu](https://support.getoutline.org/s/contactsupport).
+ Për momentin, jo. Shumë ofrues të shërbimit të resë kompjuterike përfshijnë një kufi si p.sh. 1 TB për të gjithë muajin, i cili mund të mbështesë 10 përdorues me 100 GB ose 100 përdorues me 10 GB. Këta janë numra mjaft të mëdhenj dhe nuk presim që do t'i arrijnë shumë përdorues. Ne shpresojmë që përdoruesit do të kontaktojnë me menaxherët e serverëve kur të arrijnë kufirin. Sidoqoftë, do ta vlerësonim opinionin tënd se si mund të ndihmojnë njoftimet për rastin tënd të përdorimit dhe mund të na kontaktosh [këtu](/about/feedback).
 
 **A do të njoftohen përdoruesit nëse i afrohen kufirit të të dhënave?**
 
- Sasia e të dhënave të reja që do të marrë një përdorues që i afrohet kufirit të vet do të variojë nga dita në ditë, pasi ajo bazohet në përdorimin e tij 30 ditë më parë. Ne mendojmë se një paralajmërim ka më shumë mundësi që t'i ngatërrojë përdoruesit sesa t'i ndihmojë ata. Ne i vlerësojmë komentet e tua për këtë situatë [këtu](https://support.getoutline.org/s/contactsupport).
+ Sasia e të dhënave të reja që do të marrë një përdorues që i afrohet kufirit të vet do të variojë nga dita në ditë, pasi ajo bazohet në përdorimin e tij 30 ditë më parë. Ne mendojmë se një paralajmërim ka më shumë mundësi që t'i ngatërrojë përdoruesit sesa t'i ndihmojë ata. Ne i vlerësojmë komentet e tua për këtë situatë [këtu](/about/feedback).
 
 **Mund ta rivendos përdorimin e të dhënave për një përdorues?**
 
@@ -59,7 +59,7 @@ Për ta hequr kufirin e të dhënave nga një çelës qasjeje, navigo te dialogu
 
 **Mund të caktoj një kufi për të gjithë serverin, si p.sh. “1 TB për 30 ditë”?**
 
- Për momentin, jo. Ne dëshirojmë shumë të mësojmë më shumë për rastin tënd të përdorimit [këtu](https://support.getoutline.org/s/contactsupport).
+ Për momentin, jo. Ne dëshirojmë shumë të mësojmë më shumë për rastin tënd të përdorimit [këtu](/about/feedback).
 
 **Nëse ka një kufi të parazgjedhur të të dhënave dhe një kufi të të dhënave për një çelës specifik, cili do të zbatohet?**
 

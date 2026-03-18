@@ -3,7 +3,7 @@ title: "Zašto ne mogu instalirati klijent za Outline na Windowsu?"
 sidebar_label: "Zašto ne mogu instalirati klijent za Outline na Windowsu?"
 ---
 
-Možda će vam prikazati poruka o grešci: "Nažalost, izgleda da Outline nije ispravno instaliran. Pokušajte ga ponovo instalirati. Ako to ne riješi problem, [pošaljite povratne informacije](https://support.getoutline.org/s/contactsupport?)."
+Možda će vam prikazati poruka o grešci: "Nažalost, izgleda da Outline nije ispravno instaliran. Pokušajte ga ponovo instalirati. Ako to ne riješi problem, [pošaljite povratne informacije](/about/feedback)."
 
 Ako koristite Outline na Windowsu, povremeno možete naići na neočekivanu grešku. U većini slučajeva treba izbrisati Outline TAP adapter (drajver) i ponovo instalirati Outline.
 
@@ -18,4 +18,4 @@ Koraci se mogu razlikovati ovisno o verziji operativnog sistema Windows, ali u n
    - Pronađite aplikaciju klijent za Outline i deinstalirajte ga
    - [Preuzmite najnoviju verziju klijenta za Outline](https://getoutline.org/get-started/#step-3) i ponovo je instalirajte na Windows uređaju. Ova nova instalacija bi trebala automatski instalirati i novi TAP adapter
 
-Ako i dalje imate poteškoće, [kontaktirajte podršku](https://support.getoutline.org/s/contactsupport?).
+Ako i dalje imate poteškoće, [kontaktirajte podršku](/about/feedback).

@@ -24,7 +24,7 @@ sidebar_label: طرز کار Outline
 
 برای مدیریت کلیدهای دسترسی در سرور، برنامه «مدیر Outline» با «سرویس مدیریت» موجود در سرور Outline تعامل می‌کند. «سرویس مدیریت» در درگاهی تصادفی و در مسیری مخفی و بی‌همتا اجرا می‌شود. خود «سرویس مدیریت» پایداری را وارسی می‌کند، زیرا به پرسمان‌ها پاسخ نمی‌دهد مگراینکه مسیر مخفی مناسب مشخص شده باشد. در نهایت، همه ارتباطات «سرویس مدیریت» [با گواهینامه SSL خودامضایی](https://en.wikipedia.org/wiki/Self-signed_certificate) رمزگذاری می‌شود.
 
-همچنین، سرور Outline هیچ گزارشی ذخیره نمی‌کند، بنابراین حتی اگر درمعرض تهاجم هم قرار بگیرد هیچ داده کاربری‌ای افشا نخواهد شد. [در اینجا](https://support.getoutline.org/s/article/Security-and-privacy?language=en_US&r=148&ui-knowledge-components-aura-actions.KnowledgeArticleVersionCreateDraftFromOnlineAction.createDraftFromOnlineArticle=1) بیشتر بدانید.
+همچنین، سرور Outline هیچ گزارشی ذخیره نمی‌کند، بنابراین حتی اگر درمعرض تهاجم هم قرار بگیرد هیچ داده کاربری‌ای افشا نخواهد شد. [در اینجا](/about/security-and-privacy) بیشتر بدانید.
 
 در ۲۰۱۸، Outline را [Radically Open Security](https://radicallyopensecurity.com/) و [Cure53](https://cure53.de/) ممیزی کردند. گزارش آن‌ها را [اینجا](/about/security-and-privacy) بخوانید.
 

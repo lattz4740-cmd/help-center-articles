@@ -22,7 +22,7 @@ A telepítést követően nem kell konfigurálni az Outline szolgáltatást.
 
  A szerveren lévő hozzáférési kulcsok kezeléséhez az Outline Manager alkalmazás az Outline-szerveren lévő felügyeleti szolgáltatással kommunikál. A felügyeleti szolgáltatás egy véletlenszerűen kiválasztott porton és egy titkos és egyedi elérési úton fut. A felügyeleti szolgáltatás ellenáll a lekérdezéses támadásoknak, mivel csak abban az esetben reagál a lekérdezésekre, ha a megfelelő titkos elérési út van megadva. Végül pedig a felügyeleti szolgáltatással folytatott kommunikáció teljes mértékben titkosítva van egy [saját aláírású SSL-tanúsítvánnyal](https://en.wikipedia.org/wiki/Self-signed_certificate).
 
- Az Outline-szerver nem naplózza a forgalmat, így ha illetéktelenek fel is törnék, nem férhetnének hozzá a felhasználói adatokhoz. További információ [itt](https://support.getoutline.org/s/article/Security-and-privacy) található. 2018-ban az Outline-t két szervezet, a [Radically Open Security](https://radicallyopensecurity.com/) és a [Cure53](https://cure53.de/) auditálta. Az erről szóló jelentéseket [itt](https://support.getoutline.org/s/article/Security-and-privacy) találja.
+ Az Outline-szerver nem naplózza a forgalmat, így ha illetéktelenek fel is törnék, nem férhetnének hozzá a felhasználói adatokhoz. További információ [itt](/about/security-and-privacy) található. 2018-ban az Outline-t két szervezet, a [Radically Open Security](https://radicallyopensecurity.com/) és a [Cure53](https://cure53.de/) auditálta. Az erről szóló jelentéseket [itt](/about/security-and-privacy) találja.
 
 **Az UDP-forgalom kezelése**
 

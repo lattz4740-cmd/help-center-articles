@@ -3,7 +3,7 @@ title: اتصال دستگاه به سرور Outline
 sidebar_label: اتصال دستگاه به سرور Outline
 ---
 
-برای اتصال دستگاهتان به سرور Outline، مدیر سروری باید برایتان دعوتنامه‌ای برای اتصال به سرور با یک [کلید دسترسی](https://support.getoutline.org/s/article/accesskey?language=en_US&r=36&ui-knowledge-components-aura-actions.KnowledgeArticleVersionCreateDraftFromOnlineAction.createDraftFromOnlineArticle=1) منحصربه‌فرد ارسال کند. این دعوت:
+برای اتصال دستگاهتان به سرور Outline، مدیر سروری باید برایتان دعوتنامه‌ای برای اتصال به سرور با یک [کلید دسترسی](/about/terminology) منحصربه‌فرد ارسال کند. این دعوت:
 
 - از شما می‌خواهد Outline را بارگیری و در دستگاهتان نصب کنید (اگر قبلاً این کار را نکرده باشید)
 - از کلید دسترسی برای برقراری اتصال امنی میان شما و سرور Outline استفاده خواهد کرد

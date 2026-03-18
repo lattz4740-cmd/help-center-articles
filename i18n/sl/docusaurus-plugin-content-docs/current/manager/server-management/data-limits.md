@@ -43,11 +43,11 @@ Ko shranite omejitev prenosa podatkov za izbrani ključ, se ta omejitev prikaže
 
 **Ali bodo uporabniki obveščeni, če bodo prekoračili omejitev podatkov?**
 
- Zaenkrat ne. Številni ponudniki storitev v oblaku ponujajo omejitev, kot je 1 TB, za celoten mesec, ki lahko podpira 10 uporabnikov s prenosom količine 100 GB ali 100 uporabnikov s prenosom količine 10 GB. Te količine so zelo velike, zato pričakujemo, da jih ne bo doseglo veliko uporabnikov. Upamo, da se bodo uporabniki obrnili na skrbnike strežnikov, ko bodo dosegli omejitev. Cenili bomo, če nam boste sporočili, kako bi lahko obvestila pomagala v vašem primeru uporabe, pri čemer se na nas lahko obrnete [tukaj](https://support.getoutline.org/s/contactsupport).
+ Zaenkrat ne. Številni ponudniki storitev v oblaku ponujajo omejitev, kot je 1 TB, za celoten mesec, ki lahko podpira 10 uporabnikov s prenosom količine 100 GB ali 100 uporabnikov s prenosom količine 10 GB. Te količine so zelo velike, zato pričakujemo, da jih ne bo doseglo veliko uporabnikov. Upamo, da se bodo uporabniki obrnili na skrbnike strežnikov, ko bodo dosegli omejitev. Cenili bomo, če nam boste sporočili, kako bi lahko obvestila pomagala v vašem primeru uporabe, pri čemer se na nas lahko obrnete [tukaj](/about/feedback).
 
 **Ali bodo uporabniki obveščeni, ko se bodo približali omejitvi podatkov?**
 
- Količina novih podatkov, ki jih bo prejel uporabnik, ki se približuje omejitvi, se bo razlikovala glede na posamezen dan, ker omejitev temelji na njegovem prenosu podatkov v predhodnih 30 dneh. Menimo, da bi opozorilo končne uporabnike bolj zmedlo, kot pa jim pomagalo. Cenili bomo, če nam boste povratne informacije o tem vedenju sporočili [tukaj](https://support.getoutline.org/s/contactsupport).
+ Količina novih podatkov, ki jih bo prejel uporabnik, ki se približuje omejitvi, se bo razlikovala glede na posamezen dan, ker omejitev temelji na njegovem prenosu podatkov v predhodnih 30 dneh. Menimo, da bi opozorilo končne uporabnike bolj zmedlo, kot pa jim pomagalo. Cenili bomo, če nam boste povratne informacije o tem vedenju sporočili [tukaj](/about/feedback).
 
 **Ali lahko ponastavim preneseno količino podatkov uporabnika?**
 
@@ -59,7 +59,7 @@ Ko shranite omejitev prenosa podatkov za izbrani ključ, se ta omejitev prikaže
 
 **Ali lahko nastavim omejitev za celoten strežnik, na primer »1 TB na vsakih 30 dni«?**
 
- Trenutno ne. Veseli bomo, če nam več informacij o svojem primeru uporabe sporočite [tukaj](https://support.getoutline.org/s/contactsupport).
+ Trenutno ne. Veseli bomo, če nam več informacij o svojem primeru uporabe sporočite [tukaj](/about/feedback).
 
 **Če je na voljo privzeta omejitev podatkov in omejitev podatkov za določen ključ, katera omejitev bo uveljavljena?**
 

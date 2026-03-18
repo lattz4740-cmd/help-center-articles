@@ -22,7 +22,7 @@ Bạn không cần định cấu hình sau khi cài đặt Outline.
 
  Để quản lý khoá truy cập trên máy chủ, ứng dụng Quản lý Outline sẽ tương tác với một Dịch vụ quản lý trên máy chủ Outline. Dịch vụ quản lý này chạy tại một cổng ngẫu nhiên và sử dụng một đường dẫn bí mật, duy nhất. Bản thân Dịch vụ quản lý miễn nhiễm với hành vi dò lỗ hổng vì nó không đáp lại truy vấn trừ khi đường dẫn bí mật được xác định. Cuối cùng, mọi thông tin giao tiếp với Dịch vụ quản lý đều được mã hoá bằng một [chứng chỉ SSL tự ký](https://en.wikipedia.org/wiki/Self-signed_certificate).
 
- Ngoài ra, máy chủ Outline không lưu trữ nhật ký, nên kể cả khi bị xâm phạm, dữ liệu của người dùng cũng không bị lộ. Tìm hiểu thêm [tại đây](https://support.getoutline.org/s/article/Security-and-privacy). Outline đã được [Radically Open Security](https://radicallyopensecurity.com/) và [Cure53](https://cure53.de/) kiểm tra vào năm 2018. Xem các báo cáo đó [tại đây](https://support.getoutline.org/s/article/Security-and-privacy).
+ Ngoài ra, máy chủ Outline không lưu trữ nhật ký, nên kể cả khi bị xâm phạm, dữ liệu của người dùng cũng không bị lộ. Tìm hiểu thêm [tại đây](/about/security-and-privacy). Outline đã được [Radically Open Security](https://radicallyopensecurity.com/) và [Cure53](https://cure53.de/) kiểm tra vào năm 2018. Xem các báo cáo đó [tại đây](/about/security-and-privacy).
 
 **Xử lý lưu lượng truy cập UDP**
 
