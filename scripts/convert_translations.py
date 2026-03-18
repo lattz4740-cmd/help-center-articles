@@ -27,6 +27,14 @@ LOCALE_MAP = {
     "no": "nb",
 }
 
+# Locales with incomplete translations, stored in i18n/partial-translations/.
+# Excluded from conversion to i18n/ (not built by Docusaurus).
+PARTIAL_LOCALES = {
+    "ar-EG", "as", "be", "cy", "de-CH", "en-AU", "en-CA", "en-IN", "en-SG",
+    "eu", "fr-CA", "ga", "gl", "gu", "ha", "kn", "ky", "lt", "ml", "or",
+    "pa", "te", "uz", "yo", "zu",
+}
+
 # TOPIC ID → directory path (relative to docs/) for _category_.json
 TOPIC_TO_DIR = {
     "15309650": "about",
@@ -148,6 +156,10 @@ def main():
             continue
 
         docusaurus_locale = LOCALE_MAP.get(gkms_locale, gkms_locale)
+
+        if docusaurus_locale in PARTIAL_LOCALES:
+            continue
+
         locale_dir = I18N / docusaurus_locale
 
         # Convert articles
