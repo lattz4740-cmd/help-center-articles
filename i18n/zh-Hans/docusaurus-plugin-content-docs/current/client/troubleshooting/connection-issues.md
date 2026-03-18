@@ -13,7 +13,7 @@ sidebar_label: 为什么我无法连接到 Outline 服务？
 
 ## 互联网连接问题： {#Internetissues}
 
-## 测试方法： {#internetissues}
+## 测试方法： {#Internetissues}
 
 关闭 Outline，然后看看您与互联网的连接是否可以恢复。
 

@@ -70,7 +70,7 @@ Outline را خاموش کنید و ببینید آیا اتصال اینترن�
 
 برای iOS: [این مقاله پشتیبانی](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web) را بخوانید.
 
-## مشکلات سرور: {#serverissues}
+## مشکلات سرور: {#ServerIssues}
 
 #### چطور آزمایش کنیم:
 

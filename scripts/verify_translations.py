@@ -62,13 +62,7 @@ KNOWN_MISSING: set[tuple[str, str]] = {
 
 # Heading anchors that only exist in the English version (manually added
 # post-conversion). Translations won't have these.
-KNOWN_ENGLISH_ONLY_ANCHORS: dict[str, set[str]] = {
-    "about/terminology": {"servicemanager", "accesskey"},
-    "client/troubleshooting/connection-issues": {
-        "Internetissues", "FirewallIssues", "SoftwareIssues",
-        "DeviceSettings", "ServerIssues",
-    },
-}
+KNOWN_ENGLISH_ONLY_ANCHORS: dict[str, set[str]] = {}
 
 # Known link count differences between English and translations.
 # English versions were manually edited post-conversion.

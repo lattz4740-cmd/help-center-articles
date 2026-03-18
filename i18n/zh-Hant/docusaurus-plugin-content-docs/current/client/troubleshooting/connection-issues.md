@@ -30,7 +30,7 @@ sidebar_label: 為何我無法連上 Outline 服務？
    2. 重新啟動裝置
    3. 關閉裝置，等待 2 分鐘後再重新開啟裝置
 
-網路防火牆問題：
+## 網路防火牆問題： {#FirewallIssues}
 
 ## 測試方法：
 
@@ -44,9 +44,9 @@ sidebar_label: 為何我無法連上 Outline 服務？
 
 與服務管理員聯絡，請對方讓你存取 Outline 伺服器；或者你也可以改為繼續使用連線正常的網路。
 
-防火牆或防毒軟體問題：
+## 防火牆或防毒軟體問題： {#SoftwareIssues}
 
-## 測試方法： {#FirewallIssues}
+## 測試方法：
 嘗試透過其他裝置連線至 Outline。
 
 注意：提醒你，你需要有存取金鑰和 Outline 應用程式才能在其他裝置上使用 Outline。
@@ -57,7 +57,7 @@ sidebar_label: 為何我無法連上 Outline 服務？
 
 **裝置設定：**
 
-## 檢查事項： {#devicesettings}
+## 檢查事項： {#DeviceSettings}
 
 Android 裝置：
 
@@ -71,9 +71,9 @@ Android 裝置：
 
 iOS 裝置：閱讀[這篇支援文章](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web)。
 
-伺服器問題：
+## 伺服器問題： {#ServerIssues}
 
-## 測試方法： {#SoftwareIssues}
+## 測試方法：
 如果你可以存取多部伺服器，請嘗試連線至其他伺服器。
 
 ## 修正事項：
