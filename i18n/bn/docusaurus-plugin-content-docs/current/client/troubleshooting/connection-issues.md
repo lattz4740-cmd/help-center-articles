@@ -5,9 +5,9 @@ sidebar_label: "Outline পরিষেবার সাথে আমি কে�
 
 Outline পরিষেবার সাথে কানেক্ট না করতে পারার জন্য কয়েকটি কারণ থাকতে পারে:
 
-- **আপনার ডিভাইসের**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#One)[**ইন্টারনেট কানেকশন কাজ করছে না**](#Internetissues)[#Internetissues](#Internetissues)**.**কখনও কখনও আপনার ডিভাইসের নেটওয়ার্ক কানেকশন কাজ করে না এবং 'নেটওয়ার্ক' আইকন আপডেট করতে কয়েক মুহূর্ত সময় লাগতে পারে। এছাড়া, এমনও হতে পারে যে আপনার ডিভাইস লোকাল নেটওয়ার্কের সাথে যুক্ত আছে, কিন্তু ইন্টারনেট কাজ করছে না।
-- **আপনার**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#Two)[**নেটওয়ার্ক ফায়ারওয়াল Outline সার্ভারের**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[অ্যাক্সেস](#FirewallIssues) ব্লক করছে।**স্কুল, অফিস বা ফ্রি ওয়্যারলেস নেটওয়ার্কের মতো পাবলিক নেটওয়ার্ক ব্যবহার করলে, এমন ঘটনা প্রায়ই ঘটে থাকে।
-- **আপনার ডিভাইসে একটি**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#Three)[**ফায়ারওয়াল বা অ্যান্টিভাইরাস সফ্টওয়্যার সংক্রান্ত সমস্যা**](#SoftwareIssues) আছে[#SoftwareIssues](#SoftwareIssues)**যেটি Outline সার্ভারে আপনার অ্যাক্সেস ব্লক করে।**
+- **আপনার ডিভাইসের**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**ইন্টারনেট কানেকশন কাজ করছে না**](#Internetissues)[#Internetissues](#Internetissues)**.**কখনও কখনও আপনার ডিভাইসের নেটওয়ার্ক কানেকশন কাজ করে না এবং 'নেটওয়ার্ক' আইকন আপডেট করতে কয়েক মুহূর্ত সময় লাগতে পারে। এছাড়া, এমনও হতে পারে যে আপনার ডিভাইস লোকাল নেটওয়ার্কের সাথে যুক্ত আছে, কিন্তু ইন্টারনেট কাজ করছে না।
+- **আপনার**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**নেটওয়ার্ক ফায়ারওয়াল Outline সার্ভারের**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[অ্যাক্সেস](#FirewallIssues) ব্লক করছে।**স্কুল, অফিস বা ফ্রি ওয়্যারলেস নেটওয়ার্কের মতো পাবলিক নেটওয়ার্ক ব্যবহার করলে, এমন ঘটনা প্রায়ই ঘটে থাকে।
+- **আপনার ডিভাইসে একটি**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**ফায়ারওয়াল বা অ্যান্টিভাইরাস সফ্টওয়্যার সংক্রান্ত সমস্যা**](#SoftwareIssues) আছে[#SoftwareIssues](#SoftwareIssues)**যেটি Outline সার্ভারে আপনার অ্যাক্সেস ব্লক করে।**
 - **আপনার**[**ফোন ডিভাইসের সেটিংসে**](#DeviceSettings)**কোনও পরিবর্তন নাও করতে হতে পারে।**
 - **আপনার পরিষেবা ম্যানেজার**[**সার্ভার নষ্ট করে দিতে পারেন অথবা ISP আপনার অনুরোধ ব্লক করতে পারে**](#ServerIssues) ।
 
@@ -52,14 +52,12 @@ Outline বন্ধ করে দেখুন যে আপনার ইন্�
 
 মনে রাখবেন: অন্য একটি ডিভাইসে Outline ব্যবহার করার জন্য আপনার কাছে একটি 'অ্যাক্সেস কী' এবং Outline অ্যাপ থাকতে হবে।
 
-## যেসব বিষয় সমাধান করতে হবে:
-
+## যেসব বিষয় সমাধান করতে হবে: {#SoftwareIssues}
 আপনার ফায়ারওয়াল বা অ্যান্টিভাইরাস সফ্টওয়্যার যাতে VPN এবং Outline ট্রাফিক না ব্লক করে তা নিশ্চিত করতে ফায়ারওয়াল বা অ্যান্টিভাইরাসের সেটিংস চেক করুন।
 
 ## ডিভাইস সেটিংস: {#DeviceSettings}
 
-## যেসব বিষয় চেক করতে হবে:
-
+## যেসব বিষয় চেক করতে হবে: {#DeviceSettings}
 Android-এর জন্য:
 
 1. 'সেটিংস' অ্যাপ খুলুন।
@@ -74,8 +72,7 @@ Android-এর জন্য:
 
 ## সার্ভার সংক্রান্ত সমস্যা: {#ServerIssues}
 
-## কীভাবে পরীক্ষা করতে হয়:
-
+## কীভাবে পরীক্ষা করতে হয়: {#ServerIssues}
 আপনার যদি একাধিক সার্ভারে অ্যাক্সেস থাকে, তাহলে অন্য সার্ভারে কানেক্ট করার চেষ্টা করুন।
 
 ## যেসব বিষয় সমাধান করতে হবে:

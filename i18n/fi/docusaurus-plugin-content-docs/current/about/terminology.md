@@ -25,12 +25,10 @@ sidebar_label: Terminologia
 
 Voit ottaa palvelimen käyttöön Outline Managerin kautta.
 
-**Mikä palvelun ylläpitäjä on?**
-
+## Mikä palvelun ylläpitäjä on? {#servicemanager}
  Palvelun ylläpitäjä on käyttäjä, joka vastaa Outline-palvelimen käyttöönotosta ja pääsyavainten jakamisesta käyttäjille. Yleensä palvelun ylläpitäjä vastaa palvelimen käyttökustannuksista. 
 
-**Mikä pääsyavain on?**
-
+## Mikä pääsyavain on? {#accesskey}
  Pääsyavain mahdollistaa pääsyn Outline-palvelimeen sekä VPN:ään. Saat pääsyavaimen [palvelun ylläpitäjältä](#servicemanager) tai voit [ottaa Outline-palvelimen käyttöön](/manager/server-setup/setup-server) itse. Tässä on esimerkki pääsyavaimesta (ei-toimiva malli): 
 
  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1

@@ -5,9 +5,9 @@ sidebar_label: "मी Outline सेवेशी कनेक्ट का क�
 
 तुम्ही Outline सेवेशी कनेक्ट न होण्याची काही कारणे पुढीलप्रमाणे असू शकतात:
 
-- **तुमचे डिव्हाइस**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#One)[**इंटरनेटवरून डिस्कनेक्ट झाले आहे**](#Internetissues)[#Internetissues](#Internetissues)**.**काही वेळा तुमच्या डिव्हाइसच्या नेटवर्क कनेक्शनमध्ये खंड पडेल आणि नेटवर्क आयकन अपडेट करण्यासाठी त्या डिव्हाइसला काही क्षण लागू शकतात. तुमचे डिव्हाइस स्थानिक नेटवर्कशी कनेक्ट केलेले आहे, पण इंटरनेट बंद आहे, असेदेखील होऊ शकते.
-- **तुमचे**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#Two)[**नेटवर्क फायरवॉल तुमच्या Outline सर्व्हरचा ॲक्सेस ब्लॉक करणे**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[हे](#FirewallIssues)करत आहे.**तुम्ही शाळा, ऑफिस किंवा विनामूल्य वायरलेस नेटवर्क यांसारखे सार्वजनिक नेटवर्क वापरत असल्यास, ही सामान्य बाब आहे.
-- **तुमच्या डिव्हाइसवर पुढील गोष्टी आहेत**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#Three)[**फायरवॉल किंवा अँटिव्हायरस सॉफ्टवेअर**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**ते तुमचा Outline सर्व्हरचा ॲक्सेस ब्लॉक करत आहे.**
+- **तुमचे डिव्हाइस**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**इंटरनेटवरून डिस्कनेक्ट झाले आहे**](#Internetissues)[#Internetissues](#Internetissues)**.**काही वेळा तुमच्या डिव्हाइसच्या नेटवर्क कनेक्शनमध्ये खंड पडेल आणि नेटवर्क आयकन अपडेट करण्यासाठी त्या डिव्हाइसला काही क्षण लागू शकतात. तुमचे डिव्हाइस स्थानिक नेटवर्कशी कनेक्ट केलेले आहे, पण इंटरनेट बंद आहे, असेदेखील होऊ शकते.
+- **तुमचे**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**नेटवर्क फायरवॉल तुमच्या Outline सर्व्हरचा ॲक्सेस ब्लॉक करणे**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[हे](#FirewallIssues)करत आहे.**तुम्ही शाळा, ऑफिस किंवा विनामूल्य वायरलेस नेटवर्क यांसारखे सार्वजनिक नेटवर्क वापरत असल्यास, ही सामान्य बाब आहे.
+- **तुमच्या डिव्हाइसवर पुढील गोष्टी आहेत**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**फायरवॉल किंवा अँटिव्हायरस सॉफ्टवेअर**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**ते तुमचा Outline सर्व्हरचा ॲक्सेस ब्लॉक करत आहे.**
 - **तुमची**[**फोन डिव्हाइस सेटिंग्ज**](#DeviceSettings)**तुम्ही बदलणे आवश्यक असू शकते.**
 - **तुमच्या सेवा व्यवस्थापकाने**[**सर्व्हर बंद करणे किंवा तुमच्या ISP ने तुमची विनंती ब्लॉक करणे**](#ServerIssues) हे केलेले असू शकते.
 
@@ -52,14 +52,12 @@ Outline बंद करा आणि तुमचे इंटरनेट क�
 
 टीप: लक्षात ठेवा, की इतर डिव्हाइसवर Outline वापरण्यासाठी तुम्हाला ॲक्सेस की आणि Outline ॲपची आवश्यकता आहे.
 
-## निराकरण करण्यासाठी उपाय:
-
+## निराकरण करण्यासाठी उपाय: {#SoftwareIssues}
 तुमची फायरवॉल किंवा अँटिव्हायरस सॉफ्टवेअर सेटिंग्ज तपासा, ती VPN आणि Outline ट्रॅफिकला अनुमती देण्यासाठी सेट केलेली आहेत याची खात्री करा.
 
 ## डिव्हाइस सेटिंग्ज: {#DeviceSettings}
 
-## तपासण्यासाठी गोष्टी:
-
+## तपासण्यासाठी गोष्टी: {#DeviceSettings}
 Android साठी:
 
 1. Settings ॲप उघडा.
@@ -74,8 +72,7 @@ Android साठी:
 
 ## सर्व्हरशी संबंधित समस्या: {#ServerIssues}
 
-## चाचणी कशी करावी:
-
+## चाचणी कशी करावी: {#ServerIssues}
 तुमच्याकडे एकाहून अधिक सर्व्हरचा ॲक्सेस असल्यास, दुसऱ्याशी कनेक्ट करून पहा.
 
 ## निराकरण करण्यासाठी उपाय:

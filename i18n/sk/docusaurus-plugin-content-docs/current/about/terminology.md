@@ -25,12 +25,10 @@ sidebar_label: Terminológia
 
 Server nastavíte v Správcovi Outline.
 
-**Čo je správca služby?**
-
+## Čo je správca služby? {#servicemanager}
  Správca služby je osoba zodpovedná za nastavenie servera Outline a zdieľanie prístupových kľúčov s používateľmi. Obvykle zodpovedá za náklady na používanie servera. 
 
-**Čo je prístupový kľúč?**
-
+## Čo je prístupový kľúč? {#accesskey}
  Prístupový kľúč slúži na prístup k existujúcemu serveru Outline a pripojenie k sieti VPN. Poskytne vám ho [správca služby](#servicemanager) alebo môžete [nastaviť server Outline](/manager/server-setup/setup-server) svojpomocne. Prístupový kľúč vyzerá napríklad takto (ide o nefunkčnú ukážku): 
 
  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1

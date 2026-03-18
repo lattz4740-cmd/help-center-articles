@@ -5,9 +5,9 @@ sidebar_label: "Зошто не можам да се поврзам со усл�
 
 Постојат неколку причини зошто не можете да се поврзете со услугата Outline:
 
-- **Вашиот уред**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#One)[**не е поврзан на интернет**](#Internetissues)[#Internetissues](#Internetissues)**.**Понекогаш може да се јави прекин на мрежната врска на вашиот уред, па може да биде потребно малку време за да се ажурираат иконите за мрежата. Можно е и уредот да биде поврзан на локалната мрежа, но да нема пристап на интернет.
-- [/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#Two)[**Заштитниот ѕид на вашата мрежа го блокира пристапот**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[д](#FirewallIssues)о вашиот сервер на Outline.**Ова е честа појава ако сте поврзани на училишна, работна или бесплатна безжична мрежа.
-- **Вашиот уред има**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#Three)[**заштитен ѕид или антивирусен софтвер**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**што го блокира пристапот до вашиот сервер на Outline.**
+- **Вашиот уред**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**не е поврзан на интернет**](#Internetissues)[#Internetissues](#Internetissues)**.**Понекогаш може да се јави прекин на мрежната врска на вашиот уред, па може да биде потребно малку време за да се ажурираат иконите за мрежата. Можно е и уредот да биде поврзан на локалната мрежа, но да нема пристап на интернет.
+- [/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**Заштитниот ѕид на вашата мрежа го блокира пристапот**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[д](#FirewallIssues)о вашиот сервер на Outline.**Ова е честа појава ако сте поврзани на училишна, работна или бесплатна безжична мрежа.
+- **Вашиот уред има**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**заштитен ѕид или антивирусен софтвер**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**што го блокира пристапот до вашиот сервер на Outline.**
 - **Вашите**[**поставки за телефонскиот уред**](#DeviceSettings)**можеби треба да се променат.**
 - **Вашиот управник со услугата можеби**[**го избришал серверот или вашиот ISP можеби го блокира вашето барање**](#ServerIssues) .
 
@@ -52,14 +52,12 @@ sidebar_label: "Зошто не можам да се поврзам со усл�
 
 Забелешка: не заборавајте дека ќе ви треба клуч за пристап и апликацијата Outline за да користите Outline на друг уред.
 
-## Работи за поправање:
-
+## Работи за поправање: {#SoftwareIssues}
 Проверете ги поставките на заштитниот ѕид или антивирусниот софтвер за да бидете сигурни дека се поставени да дозволуваат проток на VPN и Outline.
 
 ## Поставки за уредот: {#DeviceSettings}
 
-## Работи за проверување:
-
+## Работи за проверување: {#DeviceSettings}
 За Android:
 
 1. Отворете ја апликацијата „Поставки“.
@@ -74,8 +72,7 @@ sidebar_label: "Зошто не можам да се поврзам со усл�
 
 ## Проблеми со серверот: {#ServerIssues}
 
-## Како да тестирате:
-
+## Како да тестирате: {#ServerIssues}
 Ако имате пристап до повеќе од еден сервер, обидете се да се поврзете на друг.
 
 ## Работи за поправање:

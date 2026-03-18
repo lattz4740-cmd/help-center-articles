@@ -25,12 +25,10 @@ sidebar_label: Istilahi
 
 Utaweka mipangilio ya seva yako kwenye Kidhibiti cha Outline.
 
-**Je, msimamizi wa huduma ni nani?**
-
+## Je, msimamizi wa huduma ni nani? {#servicemanager}
  Msimamizi wa huduma ni mtu anayewajibika kuweka mipangilio ya seva ya Outline na kutuma funguo kwa watumiaji. Kwa ujumla msimamizi wa huduma anawajibikia gharama za matumizi ya seva. 
 
-**Je, ufunguo ni nini?**
-
+## Je, ufunguo ni nini? {#accesskey}
  Ufunguo unatumika kufikia seva iliyopo ya Outline na kuunganisha kwenye VPN. [Msimamizi wa huduma](#servicemanager) atakupatia ufunguo au unaweza[kuweka mipangilio ya seva ya Outline](/manager/server-setup/setup-server) mwenyewe. Huu ni mfano wa jinsi ufunguo unavyoonekana (sampuli pekee; hautafanya kazi): 
 
  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1

@@ -29,14 +29,12 @@ Du konfigurerer din server i Outline Manager.
 
  En tjenesteadministrator er den person, der er ansvarlig for at konfigurere Outline-serveren og dele adgangsnøgler med brugere. Tjenesteadministratoren er generelt ansvarlig for omkostningerne for brugen af serveren. 
 
-**Hvad er en adgangsnøgle?**
-
+## Hvad er en adgangsnøgle? {#servicemanager}
  En adgangsnøgle bruges til at tilgå en eksisterende Outline-server og oprette forbindelse til det pågældende VPN. En [tjenesteadministrator](#servicemanager) giver dig en adgangsnøgle, eller du kan selv [konfigurere en Outline-server](/manager/server-setup/setup-server). Her er der et eksempel på, hvordan en adgangsnøgle ser ud (kun et eksempel; fungerer ikke): 
 
  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1
 
-**Hvad er Outline Manager?**
-
+## Hvad er Outline Manager? {#accesskey}
  Outline Manager er et computerprogram, som tillader, at en tjenesteadministrator konfigurerer en Outline-server, genererer [adgangsnøgler](#accesskey) og angiver datagrænser for brug pr. nøgle. Du kan downloade den seneste version af Outline Manager [her](https://getoutline.org/get-started/#step-3) eller [her](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
 
 **Hvad er Outline Client?**

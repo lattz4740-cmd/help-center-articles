@@ -5,9 +5,9 @@ sidebar_label: "Zakaj ne morem vzpostaviti povezave s storitvijo Outline?"
 
 Obstaja več razlogov, zakaj morda ne morete vzpostaviti povezave s storitvijo Outline:
 
-- **Povezava naprave**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#One)[**z internetom je prekinjena**](#Internetissues)[#Internetissues](#Internetissues)**.**V napravi bo omrežna povezava včasih prekinjena in v tem primeru je treba nekoliko počakati, da se posodobijo ikone za omrežje. Prav tako je mogoče, da je naprava povezana z lokalnim omrežjem, vendar internet ne deluje.
-- [/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#Two)[**Požarni zid omrežja blokira dostop**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[do](#FirewallIssues) strežnika Outline.**To se pogosto zgodi, če uporabljate javno omrežje, na primer šolsko, službeno ali brezplačno brezžično omrežje.
-- **V napravi je**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#Three)[**požarni zid ali protivirusna programska oprema**](#SoftwareIssues),[#SoftwareIssues](#SoftwareIssues)**ki blokira dostop do strežnika Outline.**
+- **Povezava naprave**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**z internetom je prekinjena**](#Internetissues)[#Internetissues](#Internetissues)**.**V napravi bo omrežna povezava včasih prekinjena in v tem primeru je treba nekoliko počakati, da se posodobijo ikone za omrežje. Prav tako je mogoče, da je naprava povezana z lokalnim omrežjem, vendar internet ne deluje.
+- [/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**Požarni zid omrežja blokira dostop**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[do](#FirewallIssues) strežnika Outline.**To se pogosto zgodi, če uporabljate javno omrežje, na primer šolsko, službeno ali brezplačno brezžično omrežje.
+- **V napravi je**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**požarni zid ali protivirusna programska oprema**](#SoftwareIssues),[#SoftwareIssues](#SoftwareIssues)**ki blokira dostop do strežnika Outline.**
 - **Morda boste morali spremeniti**[**nastavitve telefona**](#DeviceSettings)**.**
 - **Upravitelj storitve je morda**[**uničil strežnik ali pa vašo zahtevo morda blokira ponudnik internetnih storitev**](#ServerIssues).
 
@@ -52,14 +52,12 @@ Obrnite se na upravitelja storitve z zahtevo, da vam omogoči dostop do strežni
 
 Opomba: Če želite strežnik Outline uporabljati v drugi napravi, ne pozabite, da potrebujete ključ za dostop in aplikacijo Outline.
 
-## Kaj je treba popraviti:
-
+## Kaj je treba popraviti: {#SoftwareIssues}
 Preverite nastavitve požarnega zida ali protivirusne programske opreme in se prepričajte, da ne preprečujejo prometa za VPN in Outline.
 
 ## Nastavitve naprave: {#DeviceSettings}
 
-## Kaj je treba preveriti:
-
+## Kaj je treba preveriti: {#DeviceSettings}
 V napravah Android:
 
 1. Odprite aplikacijo z nastavitvami.
@@ -74,8 +72,7 @@ Prepričajte se, da v napravi Android nimate nameščene nobene aplikacije za pr
 
 ## Težave s strežnikom: {#ServerIssues}
 
-## Kako izvesti preizkus:
-
+## Kako izvesti preizkus: {#ServerIssues}
 Če imate dostop do več strežnikov, poskusite vzpostaviti povezavo z enim od drugih strežnikov.
 
 ## Kaj je treba popraviti:

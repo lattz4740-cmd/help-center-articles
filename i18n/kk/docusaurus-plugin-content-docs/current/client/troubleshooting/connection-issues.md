@@ -5,9 +5,9 @@ sidebar_label: "Outline қызметіне неліктен қосыла алм�
 
 Outline қызметіне қосыла алмауыңыздың бірнеше себебі бар:
 
-- **Құрылғыңыз**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#One)[**интернетке қосылмаған**](#Internetissues)[#Internetissues](#Internetissues)**.**Кейде құрылғыңыздың желі байланысы үзіліп, желіні көрсететін белгішелер біраз уақыт өткеннен кейін жаңартылуы мүмкін. Сондай-ақ құрылғыңыз жергілікті желіге қосылған, алайда сол желінің интернет байланысы ажыраған да болуы мүмкін.
-- [/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#Two)[**Желі брандмауэрі Outline серверін**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)пайдалану рұқсатын блоктап жатыр.**Мұндай жағдай көбінесе мектеп, жұмыс сияқты қоғамдық жерлердегі желілерді немесе тегін сымсыз желіні пайдаланғанда болады.
-- **Құрылғыңыздағы**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#Three)[**брандмауэр немесе антивирустық бағдарлама**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**Outline серверіне кіру мүмкіндігін блоктап тұр.**
+- **Құрылғыңыз**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**интернетке қосылмаған**](#Internetissues)[#Internetissues](#Internetissues)**.**Кейде құрылғыңыздың желі байланысы үзіліп, желіні көрсететін белгішелер біраз уақыт өткеннен кейін жаңартылуы мүмкін. Сондай-ақ құрылғыңыз жергілікті желіге қосылған, алайда сол желінің интернет байланысы ажыраған да болуы мүмкін.
+- [/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**Желі брандмауэрі Outline серверін**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)пайдалану рұқсатын блоктап жатыр.**Мұндай жағдай көбінесе мектеп, жұмыс сияқты қоғамдық жерлердегі желілерді немесе тегін сымсыз желіні пайдаланғанда болады.
+- **Құрылғыңыздағы**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**брандмауэр немесе антивирустық бағдарлама**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**Outline серверіне кіру мүмкіндігін блоктап тұр.**
 - **Телефоныңыздағы**[**құрылғы параметрлерін**](#DeviceSettings)**өзгерту қажет болуы мүмкін.**
 - **Қызмет менеджері**[**серверді бұзған немесе интернет провайдері сұрауыңызды блоктап жатқан болуы мүмкін**](#ServerIssues).
 
@@ -52,14 +52,12 @@ Outline қолданбасын өшіріп, интернетпен байлан
 
 Ескертпе: Outline қызметін басқа құрылғыдан пайдалану үшін рұқсат кілті мен Outline қолданбасы қажет болатынын естен шығармаңыз.
 
-## Түзеу қажет нәрселер:
-
+## Түзеу қажет нәрселер: {#SoftwareIssues}
 Брандмауэрдің немесе антивирустық бағдарламаның параметрлерін тексеріп, VPN және Outline трафигін өткізуге рұқсат етілгеніне көз жеткізіңіз.
 
 ## Құрылғы параметрлері: {#DeviceSettings}
 
-## Тексеру қажет нәрселер:
-
+## Тексеру қажет нәрселер: {#DeviceSettings}
 Android үшін:
 
 1. "Параметрлер" қолданбасын ашыңыз.
@@ -74,8 +72,7 @@ Android құрылғысында ешқандай экран оверлейі қ
 
 ## Сервер мәселелері: {#ServerIssues}
 
-## Сынау әдісі:
-
+## Сынау әдісі: {#ServerIssues}
 Бірнеше серверге кіруге рұқсатыңыз болса, басқасына қосылып көріңіз.
 
 ## Түзеу қажет нәрселер:

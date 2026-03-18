@@ -5,9 +5,9 @@ sidebar_label: "Kāpēc nevar izveidot savienojumu ar pakalpojumu Outline?"
 
 Ir iespējami vairāki iemesli, kāpēc nevarat izveidot savienojumu ar pakalpojumu Outline.
 
-- **Jūsu ierīce ir**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#One)[**atvienota no interneta**](#Internetissues)[#Internetissues](#Internetissues)**.**Dažreiz ierīcē pārtrūkst tīkla savienojums, un var paiet kāds brīdis, līdz tīkla ikonas tiek atjauninātas. Iespējams arī, ka jūsu ierīce ir savienota ar vietējo tīklu, taču nav interneta savienojuma.
-- **Jūsu**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#Two)[**tīkla ugunsmūris bloķē piekļuvi**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)jūsu Outline serverim.**Tā bieži notiek, ja tiek izmantots publiskais tīkls, piemēram, mācību iestādes, darbavietas vai bezmaksas bezvadu tīkls.
-- **Jūsu ierīcē ir**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#Three)[**ugunsmūris vai antivīrusa programmatūra**](#SoftwareIssues),[#SoftwareIssues](#SoftwareIssues)**kas bloķē piekļuvi jūsu Outline serverim.**
+- **Jūsu ierīce ir**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**atvienota no interneta**](#Internetissues)[#Internetissues](#Internetissues)**.**Dažreiz ierīcē pārtrūkst tīkla savienojums, un var paiet kāds brīdis, līdz tīkla ikonas tiek atjauninātas. Iespējams arī, ka jūsu ierīce ir savienota ar vietējo tīklu, taču nav interneta savienojuma.
+- **Jūsu**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**tīkla ugunsmūris bloķē piekļuvi**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)jūsu Outline serverim.**Tā bieži notiek, ja tiek izmantots publiskais tīkls, piemēram, mācību iestādes, darbavietas vai bezmaksas bezvadu tīkls.
+- **Jūsu ierīcē ir**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**ugunsmūris vai antivīrusa programmatūra**](#SoftwareIssues),[#SoftwareIssues](#SoftwareIssues)**kas bloķē piekļuvi jūsu Outline serverim.**
 - **Jūsu**[**tālruņa ierīces iestatījumi**](#DeviceSettings),**iespējams, ir jāmaina.**
 - **Iespējams, jūsu pakalpojuma pārvaldnieks ir**[**likvidējis serveri vai jūsu interneta pakalpojumu sniedzējs bloķē pieprasījumu**](#ServerIssues).
 
@@ -52,14 +52,12 @@ Sazinieties ar pakalpojuma pārvaldnieku un lūdziet atļaut piekļuvi jūsu Out
 
 Piezīme. Ņemiet vērā, ka jums ir vajadzīga piekļuves atslēga un lietotne Outline, lai citā ierīcē izmantotu programmatūru Outline.
 
-## Problēmas novēršana
-
+## Problēmas novēršana {#SoftwareIssues}
 Pārbaudiet, vai jūsu ugunsmūra vai antivīrusa programmatūras iestatījumi atļauj virtuālā privātā tīkla un Outline datplūsmu.
 
 ## Ierīces iestatījumi {#DeviceSettings}
 
-## Pārbaudāmie iestatījumi
-
+## Pārbaudāmie iestatījumi {#DeviceSettings}
 Android ierīcē:
 
 1. Atveriet lietotni Iestatījumi.
@@ -74,8 +72,7 @@ Pārbaudiet, vai jūsu Android ierīcē nav instalēta ekrāna pārklājuma liet
 
 ## Ar serveri saistītas problēmas {#ServerIssues}
 
-## Testēšanas metode
-
+## Testēšanas metode {#ServerIssues}
 Ja jums ir piekļuve vairākiem serveriem, mēģiniet izveidot savienojumu ar citu serveri.
 
 ## Problēmas novēršana

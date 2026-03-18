@@ -25,12 +25,10 @@ sidebar_label: Terminologie
 
 Vă veți configura serverul în Outline Manager.
 
-**Ce este un manager de servicii?**
-
+## Ce este un manager de servicii? {#servicemanager}
  Un manager de servicii este persoana responsabilă pentru configurarea serverului Outline și trimiterea cheilor de acces către utilizatori. Managerul de servicii este responsabil în general de costul folosirii serverului. 
 
-**Ce este o cheie de acces?**
-
+## Ce este o cheie de acces? {#accesskey}
  O cheie de acces este folosită pentru a accesa un server Outline existent și conectarea la VPN. Un [manager de servicii](#servicemanager) vă va oferi o cheie de acces sau puteți [să configurați chiar dvs. un server Outline](/manager/server-setup/setup-server). Iată un exemplu de cheie de acces (doar exemplu, nu va funcționa): 
 
  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1

@@ -25,12 +25,10 @@ sidebar_label: Terminologija
 
 Strežnik boste nastavili v Upravitelju za Outline.
 
-**Kaj je upravitelj storitev?**
-
+## Kaj je upravitelj storitev? {#servicemanager}
  Upravitelj storitev je oseba, ki je odgovorna za nastavljanje strežnika Outline in deljenje ključev za dostop z uporabniki. Upravitelj storitev je na splošno odgovoren za stroške uporabe strežnika. 
 
-**Kaj je ključ za dostop?**
-
+## Kaj je ključ za dostop? {#accesskey}
  Ključ za dostop se uporablja za dostop do obstoječega strežnika Outline in povezavo z omrežjem VPN. [Upravitelj storitev](#servicemanager) vam bo dal ključ za dostop, lahko pa tudi sami[nastavite strežnik Outline](/manager/server-setup/setup-server). Ključ za dostop je videti na primer tako (samo vzorec; ta ključ ne bo deloval): 
 
  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1

@@ -5,16 +5,15 @@ sidebar_label: "Wieso kann ich keine Verbindung zum Outline-Dienst herstellen?"
 
 Wenn sich die Verbindung zu Outline nicht aufbauen lässt, kann das verschiedene Gründe haben:
 
-- [**Ihr Gerät ist nicht mit dem Internet verbunden**](#internetissues)**.**Die Netzwerkverbindung Ihres Geräts kann unterbrochen sein. In diesem Fall dauert es möglicherweise einen Moment, bis die Netzwerksymbole aktualisiert werden. Es kann auch sein, dass Ihr Gerät zwar mit dem lokalen Netzwerk verbunden, das Internet aber ausgefallen ist.
-- **Die**[**Firewall Ihres Netzwerks blockiert den Zugriff**](#firewallissues)**auf den Outline-Server.**Das kommt häufig bei Verbindungen über ein öffentliches Netzwerk vor, z. B. wenn Sie das Netzwerk einer Bildungseinrichtung oder eines Unternehmens bzw. ein kostenloses WLAN nutzen.
-- **Die**[**Firewall oder das Antivirenprogramm Ihres Geräts blockiert den Zugriff**](#softwareissues)**auf den Outline-Server.**
-- **Die**[**Geräteeinstellungen Ihres Smartphones**](#devicesettings)**müssen aktualisiert werden.**
-- **Möglicherweise hat der Administrator den**[**Server heruntergefahren oder der Internetanbieter blockiert Ihre Anfrage**](#serverissues)**.**
+- [**Ihr Gerät ist nicht mit dem Internet verbunden**](#Internetissues)**.**Die Netzwerkverbindung Ihres Geräts kann unterbrochen sein. In diesem Fall dauert es möglicherweise einen Moment, bis die Netzwerksymbole aktualisiert werden. Es kann auch sein, dass Ihr Gerät zwar mit dem lokalen Netzwerk verbunden, das Internet aber ausgefallen ist.
+- **Die**[**Firewall Ihres Netzwerks blockiert den Zugriff**](#FirewallIssues)**auf den Outline-Server.**Das kommt häufig bei Verbindungen über ein öffentliches Netzwerk vor, z. B. wenn Sie das Netzwerk einer Bildungseinrichtung oder eines Unternehmens bzw. ein kostenloses WLAN nutzen.
+- **Die**[**Firewall oder das Antivirenprogramm Ihres Geräts blockiert den Zugriff**](#SoftwareIssues)**auf den Outline-Server.**
+- **Die**[**Geräteeinstellungen Ihres Smartphones**](#DeviceSettings)**müssen aktualisiert werden.**
+- **Möglicherweise hat der Administrator den**[**Server heruntergefahren oder der Internetanbieter blockiert Ihre Anfrage**](#ServerIssues)**.**
 
 Probleme mit der Internetverbindung:
 
-## So können Sie testen, ob hier die Ursache liegt:
-
+## So können Sie testen, ob hier die Ursache liegt: {#Internetissues}
 Deaktivieren Sie Outline und überprüfen Sie, ob die Internetverbindung wiederhergestellt wird.
 
 - Falls ja, finden Sie unten weitere Optionen zur Fehlerbehebung.
@@ -38,13 +37,12 @@ Probleme mit der Firewall eines Netzwerks:
 2. Stellen Sie eine Verbindung zu einem anderen Netzwerk her, z. B. zu einem Mobilfunknetz.
 3. Versuchen Sie noch einmal, die Verbindung zum Outline-Server herzustellen.
 
-## Wenn der Versuch erfolgreich ist, liegt das Problem bei der Firewall.
-
+## Wenn der Versuch erfolgreich ist, liegt das Problem bei der Firewall. {#FirewallIssues}
 So beheben Sie dieses Problem:
 
 Wenden Sie sich an den Netzwerkadministrator und bitten Sie ihn, den Zugriff auf den Outline-Server zu erlauben, oder verwenden Sie stattdessen weiterhin das andere Netzwerk.
 
-Probleme mit der Firewall oder dem Antivirenprogramm:
+## Probleme mit der Firewall oder dem Antivirenprogramm: {#SoftwareIssues}
 
 So können Sie testen, ob hier die Ursache liegt:
 
@@ -56,7 +54,7 @@ Hinweis: Dazu benötigen Sie auf dem anderen Gerät den Zugriffsschlüssel und d
 
 Überprüfen Sie in den Einstellungen Ihrer Firewall oder Antivirussoftware, ob VPN- und Outline-Traffic zugelassen wird.
 
-Geräteeinstellungen:
+## Geräteeinstellungen: {#DeviceSettings}
 
 ## Was Sie prüfen sollten:
 
@@ -72,10 +70,9 @@ Rufen Sie auf Ihrem Android-Gerät „Einstellungen“ > „Apps“ > „Speziel
 
 Bei iOS: Lesen Sie die Anleitung [in diesem Hilfeartikel](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
-Probleme mit dem Server:
+## Probleme mit dem Server: {#ServerIssues}
 
 ## So können Sie testen, ob hier die Ursache liegt:
-
 Wenn Sie auf mehrere Server Zugriff haben, versuchen Sie, eine Verbindung zu einem anderen Server herzustellen.
 
 ## So beheben Sie dieses Problem:

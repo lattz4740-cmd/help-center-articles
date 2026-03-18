@@ -5,9 +5,9 @@ sidebar_label: "למה לא הצלחתי להתחבר לשירות Outline?"
 
 אם לא הצלחתם להתחבר לשירות Outline, יכולות להיות לכך כמה סיבות:
 
-- **המכשיר שלכם**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#One)[**לא מחובר לאינטרנט**](#Internetissues).[#Internetissues](#Internetissues)לפעמים המכשיר מתנתק באופן זמני מהרשת, אבל סמל החיבור לאינטרנט עדיין לא מראה את זה. יכול להיות גם שהמכשיר מחובר לרשת המקומית, אבל הרשת עצמה לא מחוברת לאינטרנט.
-- **חומת האש**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#Two)[**בין רשתות חוסמת את הגישה**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[לשרת](#FirewallIssues) של Outline.**זה בדרך כלל קורה כשמשתמשים ברשת ציבורית, כמו הרשת של בית הספר או מקום העבודה, או רשת אלחוטית חינמית.
-- **במכשיר יש**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#Three)[**חומת אש או תוכנת אנטי-וירוס**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**שחוסמות את הגישה לשרת של Outline.**
+- **המכשיר שלכם**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**לא מחובר לאינטרנט**](#Internetissues).[#Internetissues](#Internetissues)לפעמים המכשיר מתנתק באופן זמני מהרשת, אבל סמל החיבור לאינטרנט עדיין לא מראה את זה. יכול להיות גם שהמכשיר מחובר לרשת המקומית, אבל הרשת עצמה לא מחוברת לאינטרנט.
+- **חומת האש**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**בין רשתות חוסמת את הגישה**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[לשרת](#FirewallIssues) של Outline.**זה בדרך כלל קורה כשמשתמשים ברשת ציבורית, כמו הרשת של בית הספר או מקום העבודה, או רשת אלחוטית חינמית.
+- **במכשיר יש**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**חומת אש או תוכנת אנטי-וירוס**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**שחוסמות את הגישה לשרת של Outline.**
 - **ה**[**הגדרות של מכשיר הטלפון**](#DeviceSettings):**יכול להיות שצריך לשנות אותן.**
 - ‫**יכול להיות שמנהל השירות**[**הסיר את השרת או שספק האינטרנט (ISP) חוסם את הבקשה**](#ServerIssues).
 
@@ -52,14 +52,12 @@ sidebar_label: "למה לא הצלחתי להתחבר לשירות Outline?"
 
 חשוב לזכור שצריך מפתח גישה ואת אפליקציית Outline כדי להתחבר ל-Outline מהמכשיר השני.
 
-## מה צריך לעשות כדי לתקן את הבעיה:
-
+## מה צריך לעשות כדי לתקן את הבעיה: {#SoftwareIssues}
 בודקים את ההגדרות של חומת האש או תוכנת האנטי-וירוס, כדי לוודא שהן מאפשרות לכם להתחבר ל-VPN ולגלוש באינטרנט דרך Outline.
 
 ## הגדרות המכשיר: {#DeviceSettings}
 
-## מה צריך לבדוק:
-
+## מה צריך לבדוק: {#DeviceSettings}
 במכשיר Android:
 
 1. פותחים את האפליקציה 'הגדרות'.
@@ -74,8 +72,7 @@ sidebar_label: "למה לא הצלחתי להתחבר לשירות Outline?"
 
 ## בעיות שקשורות לשרת: {#ServerIssues}
 
-## איך מזהים את הבעיה:
-
+## איך מזהים את הבעיה: {#ServerIssues}
 אם יש לכם גישה ליותר משרת אחד, מנסים להתחבר לשרת האחר.
 
 ## מה צריך לעשות כדי לתקן את הבעיה:

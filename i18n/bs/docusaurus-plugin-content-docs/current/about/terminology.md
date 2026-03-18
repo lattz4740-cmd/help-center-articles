@@ -25,12 +25,10 @@ sidebar_label: Terminologija
 
 Postavit ćete svoj server u Outline Manageru.
 
-**Šta je upravitelj usluge?**
-
+## Šta je upravitelj usluge? {#servicemanager}
  Upravitelj usluge je osoba odgovorna za postavljanje Outline servera i dijeljenje pristupnih ključeva s korisnicima. Upravitelj usluge je općenito odgovoran za troškove korištenja servera. 
 
-**Šta je pristupni ključ?**
-
+## Šta je pristupni ključ? {#accesskey}
  Pristupni ključ se koristi za pristup postojećem Outline serveru i povezivanje s VPN-om. [Upravitelj usluge](#servicemanager) će vam dati pristupni ključ ili možete sami[postaviti Outline server](/manager/server-setup/setup-server). Evo primjera kako pristupni ključ izgleda (to je samo primjer; neće funkcionirati): 
 
  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1

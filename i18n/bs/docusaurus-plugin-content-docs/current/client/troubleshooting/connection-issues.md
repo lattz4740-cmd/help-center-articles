@@ -5,9 +5,9 @@ sidebar_label: "Zašto se ne mogu povezati s uslugom Outline?"
 
 Postoji nekoliko mogućih razloga zašto se ne možete povezati s uslugom Outline:
 
-- **Prekinuta je**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#One)[**veza uređaja s internetom**](#Internetissues)[#Internetissues](#Internetissues)**.**Ponekad će na vašem uređaju doći do prekida mrežne veze i može malo potrajati da se ažuriraju ikone mreže. Možda je i uređaj povezan s lokalnom mrežom, ali nema veze s internetom.
-- **Vaš**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#Two)[**zaštitni zid mreže blokira pristup**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[O](#FirewallIssues)utline serveru.**Ovo se često događa kada ste na javnoj mreži, npr. školskoj, poslovnoj ili besplatnoj bežičnoj mreži.
-- **Uređaj ima**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#Three)[**zaštitni zid ili antivirusni softver**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**koji blokira pristup Outline serveru.**
+- **Prekinuta je**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**veza uređaja s internetom**](#Internetissues)[#Internetissues](#Internetissues)**.**Ponekad će na vašem uređaju doći do prekida mrežne veze i može malo potrajati da se ažuriraju ikone mreže. Možda je i uređaj povezan s lokalnom mrežom, ali nema veze s internetom.
+- **Vaš**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**zaštitni zid mreže blokira pristup**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[O](#FirewallIssues)utline serveru.**Ovo se često događa kada ste na javnoj mreži, npr. školskoj, poslovnoj ili besplatnoj bežičnoj mreži.
+- **Uređaj ima**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**zaštitni zid ili antivirusni softver**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**koji blokira pristup Outline serveru.**
 - **Vaše**[**postavke telefona**](#DeviceSettings)**se možda trebaju promijeniti.**
 - **Vaš upravitelj usluge je možda**[**eliminirao server ili ISP blokira vaš zahtjev**](#ServerIssues) .
 
@@ -52,14 +52,12 @@ Obratite se upravitelju usluge i zatražite da vam dozvoli pristup Outline serve
 
 Napomena: ne zaboravite da vam trebaju pristupni ključ i aplikacija Outline da koristite Outline na drugom uređaju.
 
-## Trebate riješiti sljedeće:
-
+## Trebate riješiti sljedeće: {#SoftwareIssues}
 Provjerite jesu li postavke zaštitnog zida ili antivirusnog softvera postavljene tako da dozvoljavaju protok VPN i Outline saobraćaja.
 
 ## Postavke uređaja: {#DeviceSettings}
 
-## Šta trebate provjeriti:
-
+## Šta trebate provjeriti: {#DeviceSettings}
 Za Android:
 
 1. Otvorite aplikaciju Postavke.
@@ -74,8 +72,7 @@ Provjerite da na Android uređaju nemate neku aplikaciju za preklapanje ekrana j
 
 ## Problemi sa serverom: {#ServerIssues}
 
-## Kako testirati:
-
+## Kako testirati: {#ServerIssues}
 Ako imate pristup većem broju servera, pokušajte se povezati s nekim od njih.
 
 ## Trebate riješiti sljedeće:

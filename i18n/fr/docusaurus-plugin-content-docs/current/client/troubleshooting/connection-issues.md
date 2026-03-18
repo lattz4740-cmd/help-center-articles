@@ -5,16 +5,15 @@ sidebar_label: "Pourquoi ne puis-je pas me connecter au service Outline?"
 
 Plusieurs raisons peuvent expliquer ce problème :
 
-- **Votre appareil n'est**[**plus connecté à Internet**](#internetissues)**.**L'appareil peut parfois perdre sa connexion, et il peut lui falloir un moment pour mettre à jour les icônes réseau. Il se peut aussi que votre appareil soit connecté au réseau local, mais qu'Internet soit en panne.
-- **Votre**[**pare-feu réseau bloque l'accès**](#firewallissues)**à votre serveur Outline.**Ce problème est courant sur les réseaux publics, comme celui d'un établissement scolaire ou d'une entreprise, ou un réseau sans fil gratuit.
-- **Votre appareil est doté d'un**[**pare-feu ou d'un antivirus**](#softwareissues)**qui bloque l'accès à votre serveur Outline.**
-- **Vous devez peut-être modifier les**[**paramètres de votre téléphone**](#devicesettings)**.**
-- **Votre gestionnaire de service a peut-être**[**supprimé le serveur ou votre FAI bloque peut-être votre demande**](#serverissues)**.**
+- **Votre appareil n'est**[**plus connecté à Internet**](#Internetissues)**.**L'appareil peut parfois perdre sa connexion, et il peut lui falloir un moment pour mettre à jour les icônes réseau. Il se peut aussi que votre appareil soit connecté au réseau local, mais qu'Internet soit en panne.
+- **Votre**[**pare-feu réseau bloque l'accès**](#FirewallIssues)**à votre serveur Outline.**Ce problème est courant sur les réseaux publics, comme celui d'un établissement scolaire ou d'une entreprise, ou un réseau sans fil gratuit.
+- **Votre appareil est doté d'un**[**pare-feu ou d'un antivirus**](#SoftwareIssues)**qui bloque l'accès à votre serveur Outline.**
+- **Vous devez peut-être modifier les**[**paramètres de votre téléphone**](#DeviceSettings)**.**
+- **Votre gestionnaire de service a peut-être**[**supprimé le serveur ou votre FAI bloque peut-être votre demande**](#ServerIssues)**.**
 
 Problèmes de connexion Internet :
 
-## À tester :
-
+## À tester : {#Internetissues}
 Désactivez le serveur Outline et vérifiez si votre connexion Internet est rétablie.
 
 - Si oui, consultez les autres options de dépannage ci-dessous.
@@ -40,8 +39,7 @@ Problèmes liés au pare-feu réseau :
 
 Si vous parvenez à vous connecter au serveur à partir d'un autre réseau, vous avez trouvé l'origine du problème.
 
-## À corriger :
-
+## À corriger : {#FirewallIssues}
 Demandez à votre gestionnaire de service d'autoriser l'accès à votre serveur Outline ou bien continuez d'utiliser l'autre réseau.
 
 Problèmes liés à un pare-feu ou un antivirus :
@@ -58,8 +56,7 @@ Vérifiez que les paramètres de votre pare-feu ou de votre antivirus sont confi
 
 Paramètres de l'appareil :
 
-## À vérifier :
-
+## À vérifier : {#SoftwareIssues}
 Sur Android :
 
 1. Ouvrez l'application Paramètres.
@@ -72,14 +69,13 @@ Sur votre appareil Android, accédez à Paramètres > Applications > Accès spé
 
 Sur iOS : consultez [cet article d'aide](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
-Problèmes liés au serveur :
+## Problèmes liés au serveur : {#ServerIssues}
 
 ## À tester:
 
 Si vous avez accès à plusieurs serveurs, essayez-en un autre.
 
-## À corriger :
-
+## À corriger : {#DeviceSettings}
 Contactez votre gestionnaire de service pour savoir si le serveur a été supprimé. Si c'est le cas, demandez-lui de vous fournir une [clé d'accès](/about/terminology) à un autre serveur.
 
 Si vous avez configuré le serveur, essayez de vous y connecter depuis Outline Manager ou via une autre méthode, par exemple [SSH](https://en.wikipedia.org/wiki/Secure_Shell). Si cela ne fonctionne pas, vous pouvez essayer d'accéder à la console du fournisseur de services cloud, le cas échéant, pour vérifier si le serveur est toujours en ligne.

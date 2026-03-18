@@ -5,11 +5,11 @@ sidebar_label: "Mengapakah saya tidak dapat menyambung kepada perkhidmatan Outli
 
 Terdapat beberapa sebab anda mungkin tidak dapat menyambung kepada perkhidmatan Outline:
 
-- **Peranti anda**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#One)[**terputus sambungan daripada Internet**](#MasalahInternet)[#MasalahInternet](#MasalahInternet)**.**Kadangkala peranti anda akan terputus sambungan rangkaian dan mungkin mengambil sedikit masa untuk peranti anda mengemaskinikan ikon rangkaian tersebut. Terdapat juga kemungkinan peranti anda disambungkan kepada rangkaian setempat tetapi Internet tergendala.
-- [**Tembok api rangkaian anda menyekat akses**](#MasalahTembokApi)[#MasalahTembokApi](#MasalahTembokApi)**[kepada](#MasalahTembokApi) pelayan Outline anda.**Perkara ini biasa terjadi jika anda menggunakan rangkaian awam, seperti sekolah, kerja atau rangkaian wayarles percuma.
-- **Peranti anda memiliki**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#Three)[**tembok api atau perisian antivirus**](#MasalahPerisian)[#MasalahPerisian](#MasalahPerisian)**yang menyekat akses kepada pelayan Outline anda.**
-- **Your**[**Tetapan peranti telefon anda**](#TetapanPeranti)**mungkin perlu ditukar.**
-- **Pengurus perkhidmatan anda mungkin telah**[**memusnahkan pelayan atau ISP anda mungkin menyekat permintaan anda**](#MasalahPelayan) .
+- **Peranti anda**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**terputus sambungan daripada Internet**](#Internetissues)[#MasalahInternet](#Internetissues)**.**Kadangkala peranti anda akan terputus sambungan rangkaian dan mungkin mengambil sedikit masa untuk peranti anda mengemaskinikan ikon rangkaian tersebut. Terdapat juga kemungkinan peranti anda disambungkan kepada rangkaian setempat tetapi Internet tergendala.
+- [**Tembok api rangkaian anda menyekat akses**](#FirewallIssues)[#MasalahTembokApi](#FirewallIssues)**[kepada](#FirewallIssues) pelayan Outline anda.**Perkara ini biasa terjadi jika anda menggunakan rangkaian awam, seperti sekolah, kerja atau rangkaian wayarles percuma.
+- **Peranti anda memiliki**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**tembok api atau perisian antivirus**](#SoftwareIssues)[#MasalahPerisian](#SoftwareIssues)**yang menyekat akses kepada pelayan Outline anda.**
+- **Your**[**Tetapan peranti telefon anda**](#DeviceSettings)**mungkin perlu ditukar.**
+- **Pengurus perkhidmatan anda mungkin telah**[**memusnahkan pelayan atau ISP anda mungkin menyekat permintaan anda**](#ServerIssues) .
 
 ## Masalah sambungan Internet: {#Internetissues}
 
@@ -52,14 +52,12 @@ Hubungi pentadbir perkhidmatan dan minta mereka membenarkan akses kepada pelayan
 
 Nota: Ingat bahawa anda memerlukan kunci akses dan apl Outline untuk menggunakan Outline pada peranti yang lain.
 
-## Perkara yang perlu dibetulkan:
-
+## Perkara yang perlu dibetulkan: {#SoftwareIssues}
 Semak tetapan tembok api atau perisian antivirus untuk memastikan tembok api dan antivirus ditetapkan supaya membenarkan laluan trafik VPN dan Outline.
 
 ## Tetapan peranti: {#DeviceSettings}
 
-## Perkara yang perlu disemak:
-
+## Perkara yang perlu disemak: {#DeviceSettings}
 Untuk Android:
 
 1. Buka Apl Tetapan.
@@ -74,8 +72,7 @@ Pastikan anda tiada apa-apa aplikasi tindanan skrin yang dipasang pada peranti A
 
 ## Masalah pelayan: {#ServerIssues}
 
-## Cara menguji:
-
+## Cara menguji: {#ServerIssues}
 Jika anda mempunyai akses kepada lebih daripada satu pelayan, cuba menyambung kepada pelayan yang lain.
 
 ## Perkara yang perlu dibetulkan:

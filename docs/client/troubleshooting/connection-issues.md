@@ -44,7 +44,7 @@ If you are able to connect while on the other network, then this is your issue.
 
 Contact the service manager and request them to allow access to your Outline server or continue using the other network instead.
 
-**Firewall or antivirus software issues:**
+## Firewall or antivirus software issues: {#SoftwareIssues}
 
 **How to test:**
 

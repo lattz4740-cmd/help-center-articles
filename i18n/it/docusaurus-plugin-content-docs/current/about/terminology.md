@@ -25,12 +25,10 @@ sidebar_label: Terminologia
 
 Il server dovrà essere configurato in Outline Manager.
 
-**Che cosa si intende per gestore del servizio?**
-
+## Che cosa si intende per gestore del servizio? {#servicemanager}
  Il gestore del servizio è la persona responsabile della configurazione del server Outline e della condivisione delle chiavi di accesso con gli utenti. In genere il gestore del servizio è la persona che sostiene i costi connessi con l'utilizzo del server. 
 
-**Che cos'è una chiave di accesso?**
-
+## Che cos'è una chiave di accesso? {#accesskey}
  Una chiave di accesso viene utilizzata per accedere a un server Outline esistente e collegarsi alla VPN. La chiave di accesso ti verrà fornita da un [gestore del servizio](#servicemanager). In alternativa, hai la possibilità di [configurare un server Outline](/manager/server-setup/setup-server) autonomamente. Di seguito puoi vedere un esempio tipico di chiave di accesso (solo a scopo di esempio, non funzionante): 
 
  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1

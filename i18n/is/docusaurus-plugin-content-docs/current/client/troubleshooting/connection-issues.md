@@ -5,9 +5,9 @@ sidebar_label: "Hvers vegna get ég ekki tengst Outline-þjóni?"
 
 Nokkrar ástæður gætu valdið því að þú getur ekki tengst Outline-þjóni:
 
-- **Tækið þitt**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#One)[**aftengdist netinu**](#Internetissues)[#Internetissues](#Internetissues)**.**Stundum rofnar nettenging tækisins og smástund getur liðið áður en netkerfistáknin uppfærast. Einnig er mögulegt að tækið þitt sé tengt staðarnetinu en að netið liggi niðri.
-- **Mögulega**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#Two)[**lokar eldveggur netkerfisins á aðgang**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[a](#FirewallIssues)ð Outline-þjóninum.**Þetta er algengt ef þú tengist skóla- eða vinnuneti eða gjaldfrjálsu, þráðlausu neti.
-- **Tækið þitt er með**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#Three)[**eldvegg eða vírusvarnarhugbúnað**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**sem loka á aðgang að Outline-þjóninum.**
+- **Tækið þitt**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**aftengdist netinu**](#Internetissues)[#Internetissues](#Internetissues)**.**Stundum rofnar nettenging tækisins og smástund getur liðið áður en netkerfistáknin uppfærast. Einnig er mögulegt að tækið þitt sé tengt staðarnetinu en að netið liggi niðri.
+- **Mögulega**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**lokar eldveggur netkerfisins á aðgang**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[a](#FirewallIssues)ð Outline-þjóninum.**Þetta er algengt ef þú tengist skóla- eða vinnuneti eða gjaldfrjálsu, þráðlausu neti.
+- **Tækið þitt er með**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**eldvegg eða vírusvarnarhugbúnað**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**sem loka á aðgang að Outline-þjóninum.**
 - **Það gæti**[**þurft að breyta stillingum**](#DeviceSettings)**símtækisins þíns.**
 - **Þjónustustjórinn gæti hafa**[**eyðilagt þjóninn eða hugsanlega lokar netþjónustan þín á beiðnina**](#ServerIssues) .
 
@@ -52,14 +52,12 @@ Hafðu samband við þjónustustjórann og biddu hann um að leyfa aðgang að O
 
 Athugaðu: Mundu að þú þarft aðgangslykil og Outline-forritið til að nota Outline í öðru tæki.
 
-## Atriði sem þarf að laga:
-
+## Atriði sem þarf að laga: {#SoftwareIssues}
 Athugaðu stillingar eldveggsins eða vírusvarnarhugbúnaðarins til að ganga úr skugga að þær séu stilltar þannig að VPN- og Outline-umferð sé hleypt í gegn.
 
 ## Tækjastillingar: {#DeviceSettings}
 
-## Atriði til að athuga:
-
+## Atriði til að athuga: {#DeviceSettings}
 Í Android:
 
 1. Opnaðu stillingaforritið.
@@ -74,8 +72,7 @@ Gakktu úr skugga um að engin forrit fyrir skjáyfirlögn séu uppsett í Andro
 
 ## Vandamál varðandi þjón: {#ServerIssues}
 
-## Svona er prófun gerð:
-
+## Svona er prófun gerð: {#ServerIssues}
 Ef þú ert með aðgang að fleiri en einum þjóni skaltu prófa að tengjast hinum þjóninum.
 
 ## Atriði sem þarf að laga:

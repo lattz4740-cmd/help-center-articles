@@ -5,16 +5,15 @@ sidebar_label: "Зашто не могу да се повежем са Outline �
 
 Постоји неколико разлога због којих можда не можете да се повежете са Outline услугом:
 
-- **Уређај**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#One)[**није повезан на интернет**](#Internetissues)[#Internetissues](#Internetissues)**.**Понекад ће уређај имати прекид мрежне везе и може да буде потребно неко време за ажурирање икона мреже. Могуће је и да је уређај повезан са локалном мрежом, али интернет не ради.
-- [/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#Two)[**Заштитни зид мреже блокира приступ**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)Outline серверу.**Ово је уобичајено ако користите јавну мрежу, на пример, у школи, на послу или бесплатну бежичну мрежу.
-- **Уређај има**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#Three)[**заштитни зид или антивирусни софтвер**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**који блокира приступ Outline серверу.**
+- **Уређај**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**није повезан на интернет**](#Internetissues)[#Internetissues](#Internetissues)**.**Понекад ће уређај имати прекид мрежне везе и може да буде потребно неко време за ажурирање икона мреже. Могуће је и да је уређај повезан са локалном мрежом, али интернет не ради.
+- [/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**Заштитни зид мреже блокира приступ**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)Outline серверу.**Ово је уобичајено ако користите јавну мрежу, на пример, у школи, на послу или бесплатну бежичну мрежу.
+- **Уређај има**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**заштитни зид или антивирусни софтвер**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**који блокира приступ Outline серверу.**
 - **Ваша**[**подешавања мобилног уређаја**](#DeviceSettings)**можда треба да се промене.**
 - **Менаџер услуга је можда**[**уништио сервер или интернет провајдер блокира ваш захтев**](#ServerIssues) .
 
-**Проблеми са интернет везом**:
+## Проблеми са интернет везом: {#Internetissues}
 
 ## Како да тестирате:
-
 Искључите Outline и проверите да ли се поново успоставила веза са интернетом.
 
 - Ако јесте, у наставку погледајте још опција за решавање проблема.
@@ -30,7 +29,7 @@ sidebar_label: "Зашто не могу да се повежем са Outline �
    2. Рестартујте уређај
    3. Искључите уређај, сачекајте 2 минута, па га поново укључите
 
-**Проблеми са заштитним зидом мреже**:
+## Проблеми са заштитним зидом мреже: {#FirewallIssues}
 
 ## Како да тестирате:
 
@@ -41,12 +40,11 @@ sidebar_label: "Зашто не могу да се повежем са Outline �
 Ако можете да се повежете док сте на другој мрежи, ово је ваш проблем.
 
 ## Шта треба да поправите:
-
 Обратите се менаџеру услуга и затражите да вам одобри приступ Outline серверу или наставите да користите другу мрежу.
 
-**Проблеми са заштитним зидом или антивирусним софтвером**:
+## Проблеми са заштитним зидом или антивирусним софтвером: {#SoftwareIssues}
 
-**Како да тестирате**:
+## Како да тестирате: {#DeviceSettings}
 
  Пробајте да се повежете са Outline-ом са другог уређаја.
 
@@ -56,7 +54,7 @@ sidebar_label: "Зашто не могу да се повежем са Outline �
 
 Проверите подешавања заштитног зида или антивирусног софтвера да бисте се уверили да дозвољавају саобраћај са VPN-ом и Outline-ом.
 
-**Подешавања уређаја**:
+## Подешавања уређаја: {#ServerIssues}
 
 ## Шта би требало да проверите:
 
@@ -75,7 +73,6 @@ sidebar_label: "Зашто не могу да се повежем са Outline �
 **Проблеми са сервером**:
 
 ## Како да тестирате:
-
 Ако имате приступ већем броју сервера, пробајте да се повежете са другим сервером.
 
 ## Шта треба да поправите:

@@ -5,9 +5,9 @@ sidebar_label: "මට Outline සේවාවට සම්බන්ධ වි�
 
 ඔබට Outline සේවාව වෙත සම්බන්ධ වීමට නොහැකි වීමට හේතු කිහිපයක් තිබේ:
 
-- **ඔබේ උපාංගය**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#One)[**අන්තර්ජාලයෙන් විසන්ධි වී ඇත**](#Internetissues)[#Internetissues](#Internetissues)**.**සමහර විට ඔබේ උපාංගය ජාල සම්බන්ධතාවයේ බිඳීමක් අත්විඳින අතර එය ජාල නිරූපක යාවත්කාලීන කිරීමට මොහොතක් ගත විය හැක. ඔබේ උපාංගය ස්ථානීය ජාලයට සම්බන්ධ වී ඇති නමුත්, අන්තර්ජාලය ක්‍රියා විරහිත වීම ද විය හැක.
-- **ඔබේ**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#Two)[**ජාල ෆයර්වෝලය**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[ඔ](#FirewallIssues)බේ Outline සේවාදායකය වෙත ප්‍රවේශය අවහිර කරයි.**ඔබ පාසලක්, රැකියාවක් හෝ නොමිලේ රැහැන් රහිත ජාලයක් වැනි පොදු ජාලයක් භාවිතා කරන්නේ නම් මෙය පොදු වේ.
-- **ඔබේ උපාංගය සතුව තිබේ**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#Three)[**ෆයර්වෝල් හෝ ප්‍රති-වයිරස මෘදුකාංග**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**එය ඔබේ Outline සේවාදායකයට පිවිසීම අවහිර කරයි.**
+- **ඔබේ උපාංගය**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**අන්තර්ජාලයෙන් විසන්ධි වී ඇත**](#Internetissues)[#Internetissues](#Internetissues)**.**සමහර විට ඔබේ උපාංගය ජාල සම්බන්ධතාවයේ බිඳීමක් අත්විඳින අතර එය ජාල නිරූපක යාවත්කාලීන කිරීමට මොහොතක් ගත විය හැක. ඔබේ උපාංගය ස්ථානීය ජාලයට සම්බන්ධ වී ඇති නමුත්, අන්තර්ජාලය ක්‍රියා විරහිත වීම ද විය හැක.
+- **ඔබේ**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**ජාල ෆයර්වෝලය**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[ඔ](#FirewallIssues)බේ Outline සේවාදායකය වෙත ප්‍රවේශය අවහිර කරයි.**ඔබ පාසලක්, රැකියාවක් හෝ නොමිලේ රැහැන් රහිත ජාලයක් වැනි පොදු ජාලයක් භාවිතා කරන්නේ නම් මෙය පොදු වේ.
+- **ඔබේ උපාංගය සතුව තිබේ**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**ෆයර්වෝල් හෝ ප්‍රති-වයිරස මෘදුකාංග**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**එය ඔබේ Outline සේවාදායකයට පිවිසීම අවහිර කරයි.**
 - **ඔබේ**[**දුරකථන උපාංග සැකසිම්**](#DeviceSettings)**වෙනස් කිරීමට අවශ්‍ය විය හැක.**
 - **ඔබේ සේවා කළමනාකරු සේවාදායකය**[**විනාශ කර හෝ ඔබේ ISP ඔබේ ඉල්ලීම අවහිර කර තිබිය හැක**](#ServerIssues) .
 
@@ -52,14 +52,12 @@ Outline ක්‍රියා විරහිත කර ඔබේ අන්ත�
 
 සටහන: වෙනත් උපාංගයක Outline භාවිතා කිරීමට ඔබට ප්‍රවේශ යතුරක් සහ Outline යෙදුම අවශ්‍ය බව මතක තබා ගන්න.
 
-## නිරාකරණය කළ යුතු දේවල්:
-
+## නිරාකරණය කළ යුතු දේවල්: {#SoftwareIssues}
 ඔබේ ෆයර්වෝල් හෝ ප්‍රති-වයිරස මෘදුකාංග සැකසීම් VPN සහ Outline ගමනාගමනයට ඉඩ දෙන ලෙස සකසා ඇති බව සහතික කර ගන්න.
 
 ## උපාංග සැකසීම්: {#DeviceSettings}
 
-## පරීක්ෂා කළ යුතු දේවල්:
-
+## පරීක්ෂා කළ යුතු දේවල්: {#DeviceSettings}
 Android සඳහා:
 
 1. සැකසීම් යෙදුම විවෘත කරන්න.
@@ -74,8 +72,7 @@ Android සඳහා:
 
 ## සේවාදායක ගැටලු: {#ServerIssues}
 
-## පරීක්ෂා කරන ආකාරය:
-
+## පරීක්ෂා කරන ආකාරය: {#ServerIssues}
 ඔබට එක් සේවාදායකයකට වඩා ප්‍රවේශය තිබේ නම්, අනෙක් එකට සම්බන්ධ වීමට උත්සාහ කරන්න.
 
 ## නිරාකරණය කළ යුතු දේවල්:

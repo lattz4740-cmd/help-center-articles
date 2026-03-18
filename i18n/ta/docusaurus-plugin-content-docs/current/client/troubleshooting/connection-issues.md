@@ -5,9 +5,9 @@ sidebar_label: "Outline சேவையுடன் என்னால் ஏன
 
 Outline சேவையுடன் இணைக்க முடியாததற்கான சில காரணங்கள்:
 
-- **உங்கள் சாதனம்**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#One)[**இணையத்தில் இருந்து துண்டிக்கப்பட்டுள்ளது**](#Internetissues)[#Internetissues](#Internetissues)**.**சில நேரங்களில் உங்கள் சாதனத்தின் நெட்வொர்க் இணைப்பில் இடையூறு ஏற்படுவதால் நெட்வொர்க் ஐகான்கள் புதுப்பிக்கப்பட சிறிது நேரம் ஆகலாம். உங்கள் சாதனம் லோக்கல் நெட்வொர்க்கில் இணைக்கப்பட்டிருந்து, இணைய இணைப்பு இல்லாமல் இருக்கலாம்.
-- **உங்கள் Outline சேவையகத்திற்கான**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#Two)[**அணுகலை நெட்வொர்க் ஃபயர்வால் தடுக்கிறது**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues).**பள்ளி, பணியிடம், இலவச வயர்லெஸ் நெட்வொர்க் போன்ற பொது நெட்வொர்க்குகளைப் பயன்படுத்தினால் இப்படி நடப்பது இயல்பு.
-- **உங்கள் சாதனத்தில்**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#Three)[**இருக்கும் ஃபயர்வால் அல்லது ஆன்ட்டி வைரஸ் மென்பொருள்**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**உங்கள் Outline சேவையகத்திற்கான அணுகலைத் தடுக்கிறது.**
+- **உங்கள் சாதனம்**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**இணையத்தில் இருந்து துண்டிக்கப்பட்டுள்ளது**](#Internetissues)[#Internetissues](#Internetissues)**.**சில நேரங்களில் உங்கள் சாதனத்தின் நெட்வொர்க் இணைப்பில் இடையூறு ஏற்படுவதால் நெட்வொர்க் ஐகான்கள் புதுப்பிக்கப்பட சிறிது நேரம் ஆகலாம். உங்கள் சாதனம் லோக்கல் நெட்வொர்க்கில் இணைக்கப்பட்டிருந்து, இணைய இணைப்பு இல்லாமல் இருக்கலாம்.
+- **உங்கள் Outline சேவையகத்திற்கான**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**அணுகலை நெட்வொர்க் ஃபயர்வால் தடுக்கிறது**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues).**பள்ளி, பணியிடம், இலவச வயர்லெஸ் நெட்வொர்க் போன்ற பொது நெட்வொர்க்குகளைப் பயன்படுத்தினால் இப்படி நடப்பது இயல்பு.
+- **உங்கள் சாதனத்தில்**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**இருக்கும் ஃபயர்வால் அல்லது ஆன்ட்டி வைரஸ் மென்பொருள்**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**உங்கள் Outline சேவையகத்திற்கான அணுகலைத் தடுக்கிறது.**
 - **உங்கள்**[**மொபைல் அமைப்புகளை**](#DeviceSettings)**மாற்ற வேண்டியிருக்கலாம்.**
 - **உங்கள் சேவை நிர்வாகி**[**சேவையகத்தை அழித்திருக்கலாம் அல்லது ISP உங்கள் கோரிக்கையைத் தடுத்துக்கொண்டிருக்கலாம்**](#ServerIssues).
 
@@ -52,14 +52,12 @@ Outline சேவையகத்தை முடக்கி, இணைய இ�
 
 கவனத்திற்கு: வேறொரு சாதனத்தில் Outline பயன்படுத்த அணுகல் குறியீடும் Outline ஆப்ஸும் தேவை.
 
-## சரிசெய்ய வேண்டியவை:
-
+## சரிசெய்ய வேண்டியவை: {#SoftwareIssues}
 VPN, Outline டிராஃபிக் ஆகியவற்றை அனுமதிக்கும் வகையில் உங்கள் ஃபயர்வால் அல்லது ஆன்ட்டி வைரஸ் மென்பொருள் அமைப்புகள் உள்ளனவா என்பதைப் பார்க்கவும்.
 
 ## சாதன அமைப்புகள்: {#DeviceSettings}
 
-## சரிபார்க்க வேண்டியவை:
-
+## சரிபார்க்க வேண்டியவை: {#DeviceSettings}
 Android சாதனங்களுக்கு:
 
 1. அமைப்புகள் ஆப்ஸைத் திறக்கவும்.
@@ -74,8 +72,7 @@ Android சாதனங்களுக்கு:
 
 ## சேவையகச் சிக்கல்கள்: {#ServerIssues}
 
-## எப்படிச் சோதனை செய்வது?
-
+## எப்படிச் சோதனை செய்வது? {#ServerIssues}
 ஒன்றுக்கு மேற்பட்ட சேவையகங்களுக்கான அணுகல் உங்களிடம் இருந்தால் வேறொரு சேவையகத்துடன் இணைத்துப் பார்க்கவும்.
 
 ## சரிசெய்ய வேண்டியவை:

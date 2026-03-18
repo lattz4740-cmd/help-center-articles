@@ -5,9 +5,9 @@ sidebar_label: "Hvorfor kan jeg ikke koble til Outline-tjenesten?"
 
 Det finnes flere grunner til at du kanskje ikke kan koble til Outline-tjenesten:
 
-- **Enheten din er**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#One)[**koblet fra internett**](#Internetissues)[#Internetissues](#Internetissues)**.**Noen ganger kan nettverkstilkoblingen for enheten din bli brutt, og da kan det ta litt tid før nettverksikonene blir oppdatert. Det er også mulig at enheten din er koblet til det lokale nettverket, men at internett er nede.
-- [/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#Two)[**Brannmuren for nettverket ditt blokkerer tilgangen**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)til Outline-tjeneren.**Dette er vanlig når du bruker et offentlig nettverk, for eksempel et skole- eller jobbnettverk eller et kostnadsfritt trådløst nettverk.
-- **Enheten har**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#Three)[**en brannmur eller antivirusprogramvare**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**som blokkerer tilgangen til Outline-tjeneren.**
+- **Enheten din er**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**koblet fra internett**](#Internetissues)[#Internetissues](#Internetissues)**.**Noen ganger kan nettverkstilkoblingen for enheten din bli brutt, og da kan det ta litt tid før nettverksikonene blir oppdatert. Det er også mulig at enheten din er koblet til det lokale nettverket, men at internett er nede.
+- [/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**Brannmuren for nettverket ditt blokkerer tilgangen**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)til Outline-tjeneren.**Dette er vanlig når du bruker et offentlig nettverk, for eksempel et skole- eller jobbnettverk eller et kostnadsfritt trådløst nettverk.
+- **Enheten har**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**en brannmur eller antivirusprogramvare**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**som blokkerer tilgangen til Outline-tjeneren.**
 - **Det er mulig at**[**innstillingene for telefonen**](#DeviceSettings)**må endres.**
 - **Tjenesteadministratoren din kan ha**[**slettet tjeneren, eller nettleverandøren din blokkerer forespørselen**](#ServerIssues).
 
@@ -52,14 +52,12 @@ Kontakt tjenesteadministratoren og be om at tilgang til Outline-tjeneren din til
 
 Merk: Husk at du trenger en tilgangsnøkkel og Outline-appen for å kunne bruke Outline på en annen enhet.
 
-## Ting du bør fikse:
-
+## Ting du bør fikse: {#SoftwareIssues}
 Sjekk innstillingene for brannmuren din eller antivirusprogrammet ditt for å forsikre deg om at de slipper gjennom VPN- og Outline-trafikk.
 
 ## Enhetsinnstillinger: {#DeviceSettings}
 
-## Ting du bør sjekke:
-
+## Ting du bør sjekke: {#DeviceSettings}
 Android:
 
 1. Åpne Innstillinger-appen.
@@ -74,8 +72,7 @@ Sørg for at du ikke har en app for skjermoverlegg installert på Android-enhete
 
 ## Tjenerproblemer: {#ServerIssues}
 
-## Slik tester du det:
-
+## Slik tester du det: {#ServerIssues}
 Hvis du har tilgang til mer enn én tjener, kan du prøve å koble til den andre.
 
 ## Ting du bør fikse:

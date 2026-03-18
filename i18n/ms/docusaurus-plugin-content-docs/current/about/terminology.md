@@ -25,12 +25,10 @@ sidebar_label: Istilah
 
 Anda akan menyediakan pelayan anda dalam Outline Manager.
 
-**Apakah itu pengurus perkhidmatan?**
-
+## Apakah itu pengurus perkhidmatan? {#servicemanager}
  Pengurus perkhidmatan ialah orang yang bertanggungjawab untuk menyediakan pelayan Outline dan berkongsi kunci akses dengan pengguna. Pengurus perkhidmatan biasanya bertanggungjawab terhadap kos penggunaan pelayan. 
 
-**Apakah itu kunci akses?**
-
+## Apakah itu kunci akses? {#accesskey}
  Kunci akses digunakan untuk mengakses pelayan Outline yang sedia ada dan membuat sambungan kepada VPN. [Pengurus perkhidmatan](#servicemanager) akan memberi anda kunci akses atau anda boleh[menyediakan pelayan Outline](/manager/server-setup/setup-server) sendiri. Yang berikut ialah contoh rupa kunci akses (sampel sahaja; kunci ini tidak akan berfungsi): 
 
  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1

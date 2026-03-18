@@ -5,9 +5,9 @@ sidebar_label: "मुझे Outline सर्वर से कनेक्ट �
 
 Outline सर्वर से कनेक्ट न कर पाने की कुछ वजहें यहां बताई गई हैं:
 
-- **आपका डिवाइस**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#One)[**इंटरनेट से डिसकनेक्ट हो गया है**](#Internetissues)[#Internetissues](#Internetissues)**.**कभी-कभी डिवाइस पर इंटरनेट अचानक बंद हो जाता है और नेटवर्क आइकॉन अपडेट होने में कुछ समय लग सकता है. ऐसा भी हो सकता है कि आपका डिवाइस लोकल नेटवर्क से कनेक्ट हो, लेकिन इंटरनेट बंद हो.
-- **आपका**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#Two)[**नेटवर्क फ़ायरवॉल**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[आपके Outline सर्वर का ऐक्सेस ब्लॉक कर रहा है](#FirewallIssues) .**आम तौर पर, सार्वजनिक नेटवर्क का इस्तेमाल करने पर ऐसा होता है. जैसे, स्कूल और ऑफ़िस का वाई-फ़ाई नेटवर्क या बिना शुल्क के इस्तेमाल किया जाने वाला वायरलेस नेटवर्क.
-- **आपके डिवाइस में**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#Three)[**फ़ायरवॉल या एंटीवायरस सॉफ़्टवेयर**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**है जो आपके Outline सर्वर का ऐक्सेस ब्लॉक कर रहा है.**
+- **आपका डिवाइस**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**इंटरनेट से डिसकनेक्ट हो गया है**](#Internetissues)[#Internetissues](#Internetissues)**.**कभी-कभी डिवाइस पर इंटरनेट अचानक बंद हो जाता है और नेटवर्क आइकॉन अपडेट होने में कुछ समय लग सकता है. ऐसा भी हो सकता है कि आपका डिवाइस लोकल नेटवर्क से कनेक्ट हो, लेकिन इंटरनेट बंद हो.
+- **आपका**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**नेटवर्क फ़ायरवॉल**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[आपके Outline सर्वर का ऐक्सेस ब्लॉक कर रहा है](#FirewallIssues) .**आम तौर पर, सार्वजनिक नेटवर्क का इस्तेमाल करने पर ऐसा होता है. जैसे, स्कूल और ऑफ़िस का वाई-फ़ाई नेटवर्क या बिना शुल्क के इस्तेमाल किया जाने वाला वायरलेस नेटवर्क.
+- **आपके डिवाइस में**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**फ़ायरवॉल या एंटीवायरस सॉफ़्टवेयर**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**है जो आपके Outline सर्वर का ऐक्सेस ब्लॉक कर रहा है.**
 - **आपको अपने**[**फ़ोन की सेटिंग**](#DeviceSettings)**में बदलाव करना पड़ सकता है.**
 - **आपके सर्विस मैनेजर ने शायद**[**सर्वर बंद कर दिया है या इंटरनेट सेवा देने वाली कंपनी (आईएसपी) आपके अनुरोध को ब्लॉक कर रही है**](#ServerIssues) .
 
@@ -52,14 +52,12 @@ Outline को बंद करें और देखें कि डिवा
 
 ध्यान दें: Outline को किसी अन्य डिवाइस पर इस्तेमाल करने के लिए, आपको ऐक्सेस कुंजी और Outline ऐप्लिकेशन की ज़रूरत होगी.
 
-## ऐसा करके देखें:
-
+## ऐसा करके देखें: {#SoftwareIssues}
 अपने फ़ायरवॉल या एंटीवायरस सॉफ़्टवेयर की सेटिंग देखें और यह पक्का करें कि उन्हें वीपीएन और Outline ट्रैफ़िक को अनुमति देने के लिए सेट किया गया है.
 
 ## डिवाइस की सेटिंग: {#DeviceSettings}
 
-## ऐसा करके देखें:
-
+## ऐसा करके देखें: {#DeviceSettings}
 Android के लिए:
 
 1. सेटिंग ऐप्लिकेशन खोलें.
@@ -74,8 +72,7 @@ Android के लिए:
 
 ## सर्वर से जुड़ी समस्याएं: {#ServerIssues}
 
-## जांच करने का तरीका:
-
+## जांच करने का तरीका: {#ServerIssues}
 अगर आपके पास एक से ज़्यादा सर्वर का ऐक्सेस है, तो किसी अन्य सर्वर से कनेक्ट करने की कोशिश करें.
 
 ## ऐसा करके देखें:

@@ -5,16 +5,15 @@ sidebar_label: "Dlaczego nie mogę połączyć się z usługą Outline?"
 
 Istnieje kilka powodów, dla których możesz nie być w stanie połączyć się z usługą Outline:
 
-- **Urządzenie jest**[**odłączone od internetu**](#internetissues)**.**Czasem urządzenie może zostać chwilowo odłączone od sieci, a aktualizacja ikon informujących o stanie połączenia może trochę potrwać. Urządzenie może też być połączone z siecią lokalną, ale nie mieć połączenia z internetem.
-- [**Zapora sieciowa blokuje dostęp**](#firewallissues)**do Twojego serwera Outline.**Zdarza się to często, jeśli korzystasz z sieci publicznej, na przykład w szkole lub pracy, albo z darmowej sieci bezprzewodowej.
-- **Urządzenie ma**[**zaporę sieciową lub oprogramowanie antywirusowe**](#softwareissues)**, które blokują dostęp do serwera Outline.**
-- **Konieczna może być zmiana**[**ustawień telefonu**](#devsettings)**.**
-- **Menedżer usługi**[**zlikwidował serwer lub dostawca internetu blokuje żądania**](#serverissues)**.**
+- **Urządzenie jest**[**odłączone od internetu**](#Internetissues)**.**Czasem urządzenie może zostać chwilowo odłączone od sieci, a aktualizacja ikon informujących o stanie połączenia może trochę potrwać. Urządzenie może też być połączone z siecią lokalną, ale nie mieć połączenia z internetem.
+- [**Zapora sieciowa blokuje dostęp**](#FirewallIssues)**do Twojego serwera Outline.**Zdarza się to często, jeśli korzystasz z sieci publicznej, na przykład w szkole lub pracy, albo z darmowej sieci bezprzewodowej.
+- **Urządzenie ma**[**zaporę sieciową lub oprogramowanie antywirusowe**](#SoftwareIssues)**, które blokują dostęp do serwera Outline.**
+- **Konieczna może być zmiana**[**ustawień telefonu**](#DeviceSettings)**.**
+- **Menedżer usługi**[**zlikwidował serwer lub dostawca internetu blokuje żądania**](#ServerIssues)**.**
 
 Problemy z połączeniem z internetem:
 
-## Jak przeprowadzić test:
-
+## Jak przeprowadzić test: {#Internetissues}
 Wyłącz Outline i sprawdź, czy połączenie z internetem zostało przywrócone.
 
 - Jeśli tak, sprawdź inne sposoby rozwiązania tego problemu (opisane poniżej).
@@ -40,8 +39,7 @@ Problemy z zaporą sieciową:
 
 Jeśli możesz nawiązać połączenie w innej sieci, oznacza to, że problem jest po Twojej stronie.
 
-## Do naprawienia:
-
+## Do naprawienia: {#FirewallIssues}
 Skontaktuj się z menedżerem usługi i poproś o zezwolenie na dostęp do serwera Outline lub skorzystaj z innej sieci.
 
 Problemy z zaporą sieciową lub oprogramowaniem antywirusowym:
@@ -58,8 +56,7 @@ Sprawdź, czy ustawienia zapory sieciowej i oprogramowania antywirusowego zezwal
 
 Ustawienia urządzenia:
 
-## Do sprawdzenia:
-
+## Do sprawdzenia: {#SoftwareIssues}
 Na urządzeniu z Androidem:
 
 1. Otwórz aplikację Ustawienia.
@@ -76,10 +73,9 @@ Problemy z serwerem:
 
 ## Jak przeprowadzić test:
 
-Jeśli masz dostęp do większej liczby serwerów, spróbuj połączyć się z innym serwerem.
+## Jeśli masz dostęp do większej liczby serwerów, spróbuj połączyć się z innym serwerem. {#ServerIssues}
 
-## Do naprawienia:
-
+## Do naprawienia: {#DeviceSettings}
 Skontaktuj się z menedżerem usługi, aby dowiedzieć się, czy serwer został usunięty. Jeśli tak, poproś o [klucz dostępu](/about/terminology) do innego serwera.
 
 Jeśli serwer był konfigurowany przez Ciebie, spróbuj połączyć się z nim przez Menedżera Outline lub w inny sposób, np. przez [SSH](https://en.wikipedia.org/wiki/Secure_Shell). Jeśli to nie pomoże, możesz sprawdzić w konsoli usług w chmurze, czy serwer jest nadal online.

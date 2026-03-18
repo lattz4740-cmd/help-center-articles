@@ -5,9 +5,9 @@ sidebar_label: "Miért nem tudok csatlakozni az Outline szolgáltatáshoz?"
 
 Több oka is lehet annak, hogy nem tud csatlakozni az Outline szolgáltatáshoz:
 
-- **Az eszköz**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#One)[**nem kapcsolódik az internethez**](#Internetissues)[#Internetissues](#Internetissues)**.**Előfordulhat, hogy megszakad az eszköz hálózati kapcsolata, és eltart egy pár másodpercig, amíg a hálózati ikonok frissülnek. Az is lehet, hogy az eszköz csatlakozik a helyi hálózathoz, de az internetkapcsolat nem működik.
-- **A**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#Two)[**hálózati tűzfal korlátozza**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)az Outline-szerverhez való hozzáférést.**Ez nyilvános hálózat, például iskolai, munkahelyi vagy díjmentes vezeték nélküli hálózat használata esetén gyakori.
-- **Az eszközön lévő**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#Three)[**tűzfal vagy vírusirtó szoftver**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**letiltja az Outline-szerverhez való hozzáférést.**
+- **Az eszköz**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**nem kapcsolódik az internethez**](#Internetissues)[#Internetissues](#Internetissues)**.**Előfordulhat, hogy megszakad az eszköz hálózati kapcsolata, és eltart egy pár másodpercig, amíg a hálózati ikonok frissülnek. Az is lehet, hogy az eszköz csatlakozik a helyi hálózathoz, de az internetkapcsolat nem működik.
+- **A**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**hálózati tűzfal korlátozza**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)az Outline-szerverhez való hozzáférést.**Ez nyilvános hálózat, például iskolai, munkahelyi vagy díjmentes vezeték nélküli hálózat használata esetén gyakori.
+- **Az eszközön lévő**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**tűzfal vagy vírusirtó szoftver**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**letiltja az Outline-szerverhez való hozzáférést.**
 - **Az Ön**[**telefonján lévő eszközbeállításokat**](#DeviceSettings)**esetleg módosítania kell.**
 - **Lehet, hogy a szolgáltatáskezelője**[**megsemmisítette a szervert, vagy az internetszolgáltató letiltotta a kérelmét**](#ServerIssues).
 
@@ -52,14 +52,12 @@ Kérje meg a hálózati adminisztrátort, hogy engedélyezze az Outline-szerverh
 
 Megjegyzés: Ne feledje, hogy ha az Outline szolgáltatást egy másik eszközön szeretné használni, szüksége lesz egy hozzáférési kulcsra és az Outline alkalmazásra.
 
-## Javítási lehetőségek:
-
+## Javítási lehetőségek: {#SoftwareIssues}
 Ellenőrizze a tűzfal vagy a vírusirtó szoftver beállításait, és győződjön meg róla, hogy azok lehetővé teszik a VPN- és az Outline-forgalom áthaladását.
 
 ## Eszközbeállítások: {#DeviceSettings}
 
-## Amit érdemes ellenőrizni:
-
+## Amit érdemes ellenőrizni: {#DeviceSettings}
 Android esetén:
 
 1. Nyissa meg a Beállítások alkalmazást.
@@ -74,8 +72,7 @@ Győződjön meg arról, hogy nincsenek képernyőfedvényt előidéző alkalmaz
 
 ## Szerverrel kapcsolatos problémák: {#ServerIssues}
 
-## A tesztelés módja:
-
+## A tesztelés módja: {#ServerIssues}
 Ha egynél több szerverhez fér hozzá, csatlakozzon egy másikhoz.
 
 ## Javítási lehetőségek:

@@ -5,16 +5,15 @@ sidebar_label: "Outline hizmetine neden bağlanamıyorum?"
 
 Outline hizmetine bağlanamıyorsanız bunun birkaç nedeni olabilir:
 
-- **Cihazınızın**[**internet bağlantısı kesilmiştir**](#internetissues)**.**Bazen cihazınızın ağ bağlantısı kesilir ve ağ simgelerinin güncellenmesi biraz zaman alabilir. Cihazınız yerel ağa bağlı olduğu halde internet bağlantısının kesilmiş olması da mümkündür.
-- **Outline sunucunuza erişim,**[**ağınızdaki güvenlik duvarı tarafından engelleniyordur**](#firewallissues)**.**Okul ağı, iş ağı veya ücretsiz kablosuz ağ gibi herkese açık bir ağ kullanıldığı durumlarda buna sıkça rastlanır.
-- **Cihazınızda, Outline sunucunuza erişimi engelleyen bir**[**güvenlik duvarı veya antivirüs yazılımı**](#softwareissues)**vardır.**
-- [**Telefonunuzun cihaz ayarlarının**](#devsettings)**değiştirilmesi gerekiyordur.**
-- **Hizmet yöneticiniz**[**sunucuyu silmiş veya İSS'niz isteğinizi engelliyor olabilir**](#serverissues)**.**
+- **Cihazınızın**[**internet bağlantısı kesilmiştir**](#Internetissues)**.**Bazen cihazınızın ağ bağlantısı kesilir ve ağ simgelerinin güncellenmesi biraz zaman alabilir. Cihazınız yerel ağa bağlı olduğu halde internet bağlantısının kesilmiş olması da mümkündür.
+- **Outline sunucunuza erişim,**[**ağınızdaki güvenlik duvarı tarafından engelleniyordur**](#FirewallIssues)**.**Okul ağı, iş ağı veya ücretsiz kablosuz ağ gibi herkese açık bir ağ kullanıldığı durumlarda buna sıkça rastlanır.
+- **Cihazınızda, Outline sunucunuza erişimi engelleyen bir**[**güvenlik duvarı veya antivirüs yazılımı**](#SoftwareIssues)**vardır.**
+- [**Telefonunuzun cihaz ayarlarının**](#DeviceSettings)**değiştirilmesi gerekiyordur.**
+- **Hizmet yöneticiniz**[**sunucuyu silmiş veya İSS'niz isteğinizi engelliyor olabilir**](#ServerIssues)**.**
 
 İnternet bağlantısı sorunları:
 
-## Sorunları test etme:
-
+## Sorunları test etme: {#Internetissues}
 Outline'ı kapatın ve internet bağlantınızın geri gelip gelmediğine bakın.
 
 - Bağlantı varsa aşağıdaki diğer sorun giderme seçeneklerini inceleyin.
@@ -40,8 +39,7 @@ Cihazınızın tekrar internete bağlayın:
 
 Diğer ağ üzerinden internete bağlanabiliyorsanız sizin bağlantınızdan kaynaklanan bir sorun var demektir.
 
-## Sorunları düzeltme:
-
+## Sorunları düzeltme: {#FirewallIssues}
 Hizmet yöneticinizden Outline sunucunuza erişim izni vermesini isteyin veya bu ağ yerine diğer ağı kullanmaya devam edin.
 
 **Güvenlik duvarı veya antivirüs yazılımıyla ilgili sorunlar:**
@@ -58,8 +56,7 @@ Güvenlik duvarı veya virüsten koruma yazılımınızın ayarlarını kontrol 
 
 Cihaz ayarları:
 
-## Sorunları kontrol etme:
-
+## Sorunları kontrol etme: {#SoftwareIssues}
 Android için:
 
 1. Ayarlar uygulamasını açın.
@@ -76,10 +73,9 @@ Sunucuyla ilgili sorunlar:
 
 ## Sorunları test etme:
 
-Birden fazla sunucuya erişiminiz varsa diğer sunucuya bağlanmayı deneyin.
+## Birden fazla sunucuya erişiminiz varsa diğer sunucuya bağlanmayı deneyin. {#ServerIssues}
 
-## Sorunları düzeltme:
-
+## Sorunları düzeltme: {#DeviceSettings}
 Sunucunun silinip silinmediğini öğrenmek için hizmet yöneticinizle iletişime geçin. Sunucu silindiyse hizmet yöneticinizden başka bir sunucunun [erişim anahtarını](/about/terminology) isteyin.
 
 Sunucuyu siz oluşturduysanız Outline Manager aracılığıyla veya [SSH](https://en.wikipedia.org/wiki/Secure_Shell) gibi başka bir yöntemle sunucuya bağlanmayı deneyin. Bu çözüm işe yaramazsa sunucunun hâlâ internete bağlı olup olmadığını görmek için bulut sağlayıcı konsolunu (varsa) kontrol etmeyi deneyebilirsiniz.

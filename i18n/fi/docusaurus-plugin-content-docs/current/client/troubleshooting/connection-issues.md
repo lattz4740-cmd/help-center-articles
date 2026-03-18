@@ -5,9 +5,9 @@ sidebar_label: "Miksi en voi muodostaa yhteyttä Outline-palveluun?"
 
 Jos et voi muodostaa yhteyttä Outline-palveluun, siihen voi olla useita syitä:
 
-- **Laite**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#One)[**ei ole yhteydessä internetiin**](#Internetissues)[#Internetissues](#Internetissues)**.**Joskus laitteen verkkoyhteys voi katketa ja voi mennä hetki, ennen kuin verkkokuvakkeet päivittyvät. On myös mahdollista, että laitteesi on yhdistetty lähiverkkoon, mutta internetyhteys ei toimi.
-- [/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#Two)[**Verkon palomuuri estää yhteyden**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)Outline-palvelimeen.**Tämä on yleistä, jos käytät julkista verkkoa, kuten oppilaitoksen tai työpaikan verkkoa tai maksutonta langatonta verkkoa.
-- **Laitteessasi on**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#Three)[**palomuuri tai virustorjuntaohjelma,**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**joka estää yhteyden Outline-palvelimeen.**
+- **Laite**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**ei ole yhteydessä internetiin**](#Internetissues)[#Internetissues](#Internetissues)**.**Joskus laitteen verkkoyhteys voi katketa ja voi mennä hetki, ennen kuin verkkokuvakkeet päivittyvät. On myös mahdollista, että laitteesi on yhdistetty lähiverkkoon, mutta internetyhteys ei toimi.
+- [/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**Verkon palomuuri estää yhteyden**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)Outline-palvelimeen.**Tämä on yleistä, jos käytät julkista verkkoa, kuten oppilaitoksen tai työpaikan verkkoa tai maksutonta langatonta verkkoa.
+- **Laitteessasi on**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**palomuuri tai virustorjuntaohjelma,**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**joka estää yhteyden Outline-palvelimeen.**
 - **Puhelimesi**[**laiteasetuksia**](#DeviceSettings)**on ehkä muutettava.**
 - **Palvelun hallinnoija on saattanut**[**poistaa palvelimen, tai internetpalveluntarjoaja saattaa estää pyyntösi.**](#ServerIssues)
 
@@ -52,14 +52,12 @@ Pyydä palvelun hallinnoijaa sallimaan yhteyden muodostaminen Outline-palvelimee
 
 Huom. Tarvitset pääsyavaimen ja Outline-sovelluksen, jotta voit käyttää Outlinea toisella laitteella.
 
-## Korjattavat asiat:
-
+## Korjattavat asiat: {#SoftwareIssues}
 Tarkista palomuurin tai virustorjuntaohjelman asetukset varmistaaksesi, että ne sallivat VPN- ja Outline-liikenteen.
 
 ## Laiteasetukset: {#DeviceSettings}
 
-## Tarkistettavat asiat:
-
+## Tarkistettavat asiat: {#DeviceSettings}
 Android:
 
 1. Avaa Asetukset-sovellus.
@@ -74,8 +72,7 @@ Varmista, ettei Android-laitteeseen ole asennettu näyttöä peittäviä sovellu
 
 ## Palvelinongelmat: {#ServerIssues}
 
-## Testaaminen:
-
+## Testaaminen: {#ServerIssues}
 Jos käytössäsi on useampia palvelimia, yritä muodostaa yhteys toiseen palvelimeen.
 
 ## Korjattavat asiat:

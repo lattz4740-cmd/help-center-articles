@@ -25,12 +25,10 @@ sidebar_label: Terminologie
 
 Jy sal jou bediener in Outline Manager opstel.
 
-**Wat is ’n diensbestuurder?**
-
+## Wat is ’n diensbestuurder? {#servicemanager}
  ’n Diensbestuurder is die persoon wat verantwoordelik is om die Outline-bediener op te stel en toegangsleutels met gebruikers te deel. Die diensbestuurder is gewoonlik verantwoordelik vir die koste van die gebruik van die bediener. 
 
-**Wat is ’n toegangsleutel?**
-
+## Wat is ’n toegangsleutel? {#accesskey}
  ’n Toegangsleutel word gebruik om toegang tot ’n bestaande Outline-bediener te kry en aan die VPN te koppel. ’n [Diensbestuurder](#servicemanager) sal vir jou ’n toegangsleutel gee, of jy kan self [’n Outline-bediener opstel](/manager/server-setup/setup-server). Hier is ’n voorbeeld van hoe ’n toegangsleutel lyk (net ’n voorbeeld – dit sal nie werk nie): 
 
  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1

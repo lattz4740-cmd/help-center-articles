@@ -25,12 +25,10 @@ sidebar_label: Terminologjia
 
 Do të konfigurosh serverin tënd në Outline Manager.
 
-**Çfarë është një menaxher shërbimi?**
-
+## Çfarë është një menaxher shërbimi? {#servicemanager}
  Një menaxher shërbimi është personi përgjegjës për konfigurimin e serverit të Outline dhe ndarjen e çelësave të qasjes me përdoruesit. Menaxheri i shërbimit është në përgjithësi përgjegjës për koston e përdorimit të serverit. 
 
-**Çfarë është një çelës qasjeje?**
-
+## Çfarë është një çelës qasjeje? {#accesskey}
  Një çelës qasjeje përdoret për të pasur qasje te një server ekzistues i Outline dhe për t'u lidhur me VPN-në. Një [menaxher shërbimi](#servicemanager) do të të japë një çelës qasjeje ose mund[të konfigurosh vetë një server të Outline](/manager/server-setup/setup-server). Këtu është një shembull se si duket një çelës qasjeje (vetëm për shembull; nuk do të funksionojë): 
 
  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1

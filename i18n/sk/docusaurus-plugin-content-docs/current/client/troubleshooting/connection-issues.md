@@ -5,9 +5,9 @@ sidebar_label: "Prečo sa nemôžem pripojiť k službe Outline?"
 
 Existuje niekoľko možných dôvodov, prečo sa nemôžete pripojiť k službe Outline:
 
-- **Vaše zariadenie**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#One)[**nie je pripojené k internetu**](#Internetissues)[#Internetissues](#Internetissues)**.**Niekedy môže vo vašom zariadení dôjsť k prerušeniu pripojenia k sieti a aktualizácia ikon siete môže chvíľu trvať. Je tiež možné, že vaše zariadenie je pripojené k miestnej sieti, no internet nefunguje.
-- **Vaša**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#Two)[**brána firewall siete blokuje**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[prístup](#FirewallIssues) k vášmu serveru Outline.**Ide o bežný problém, keď používate verejnú sieť, napríklad školskú, pracovnú alebo bezplatnú bezdrôtovú sieť.
-- **Vaše zariadenie má**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#Three)[**bránu firewall alebo antivírusový softvér**](#SoftwareIssues),[#SoftwareIssues](#SoftwareIssues)**ktorý blokuje prístup k vášmu serveru Outline.**
+- **Vaše zariadenie**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**nie je pripojené k internetu**](#Internetissues)[#Internetissues](#Internetissues)**.**Niekedy môže vo vašom zariadení dôjsť k prerušeniu pripojenia k sieti a aktualizácia ikon siete môže chvíľu trvať. Je tiež možné, že vaše zariadenie je pripojené k miestnej sieti, no internet nefunguje.
+- **Vaša**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**brána firewall siete blokuje**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[prístup](#FirewallIssues) k vášmu serveru Outline.**Ide o bežný problém, keď používate verejnú sieť, napríklad školskú, pracovnú alebo bezplatnú bezdrôtovú sieť.
+- **Vaše zariadenie má**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**bránu firewall alebo antivírusový softvér**](#SoftwareIssues),[#SoftwareIssues](#SoftwareIssues)**ktorý blokuje prístup k vášmu serveru Outline.**
 - **Vaše**[**nastavenia telefónneho zariadenia**](#DeviceSettings)**možno bude potrebné zmeniť.**
 - **Váš správca služby možno**[**zničil príslušný server alebo váš poskytovateľ internetu možno blokuje vašu požiadavku**](#ServerIssues) .
 
@@ -52,14 +52,12 @@ Kontaktujte správcu služieb a požiadajte ho, aby povolil prístup k vášmu s
 
 Poznámka: Pamätajte, že ak chcete používať Outline v inom zariadení, budete potrebovať prístupový kľúč a aplikáciu Outline.
 
-## Čo treba opraviť:
-
+## Čo treba opraviť: {#SoftwareIssues}
 Skontrolujte si nastavenia firewallu alebo antivírusového softvéru a ubezpečte sa, že povoľujú návštevnosť cez VPN a Outline.
 
 ## Nastavenia zariadenia: {#DeviceSettings}
 
-## Čo treba skontrolovať:
-
+## Čo treba skontrolovať: {#DeviceSettings}
 Postup pre Android:
 
 1. Otvorte aplikáciu Nastavenia.
@@ -74,8 +72,7 @@ Uistite sa, že vo svojom zariadení s Androidom nemáte nainštalovanú žiadnu
 
 ## Problémy so serverom: {#ServerIssues}
 
-## Ako otestovať:
-
+## Ako otestovať: {#ServerIssues}
 Ak máte prístup k viac než jednému serveru, skúste sa pripojiť k inému.
 
 ## Čo treba opraviť:

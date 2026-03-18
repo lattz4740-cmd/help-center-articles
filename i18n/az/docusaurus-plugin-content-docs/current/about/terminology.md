@@ -25,12 +25,10 @@ sidebar_label: Terminologiya
 
 Serverinizi Outline Manager tətbiqində quraşdırırsınız.
 
-**Xidmət meneceri kimdir?**
-
+## Xidmət meneceri kimdir? {#servicemanager}
  Xidmət meneceri Outline serverini quraşdırmaq və istifadəçilər ilə giriş açarı paylaşmaq üçün məsuliyyət daşıyan şəxsdir. Xidmət meneceri ümumilikdə serverdən istifadə xərclərinə görə cavabdehdir. 
 
-**Giriş açarı nədir?**
-
+## Giriş açarı nədir? {#accesskey}
  Giriş açarı mövcud Outline serverinə daxil olmaq və VPN-ə qoşulmaq üçün istifadə edilir. [Xidmət meneceri](#servicemanager) sizə giriş açarı təqdim edir, yaxud özünüz[Outline serveriniz quraşdıra](/manager/server-setup/setup-server) bilərsiniz. Giriş açarının formasına aid nümunə aşağıda verilmişdir (yalnız nümunədir, işləməyəcək): 
 
  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1

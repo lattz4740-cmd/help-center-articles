@@ -25,12 +25,10 @@ sidebar_label: Terminologi
 
 Anda dapat menyiapkan server Anda di Outline Manager.
 
-**Apa itu pengelola layanan?**
-
+## Apa itu pengelola layanan? {#servicemanager}
  Pengelola layanan adalah orang yang bertanggung jawab untuk menyiapkan server Outline dan membagikan kunci akses kepada pengguna. Pengelola layanan umumnya bertanggung jawab atas biaya penggunaan server. 
 
-**Apa itu kunci akses?**
-
+## Apa itu kunci akses? {#accesskey}
  Kunci akses digunakan untuk mengakses server Outline yang ada dan menghubungkan ke VPN. Seorang [pengelola layanan](#servicemanager) akan memberi Anda kunci akses, atau Anda dapat [menyiapkan server Outline](/manager/server-setup/setup-server) sendiri. Berikut adalah contoh tampilan kunci akses (hanya contoh; tidak akan berfungsi): 
 
  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1

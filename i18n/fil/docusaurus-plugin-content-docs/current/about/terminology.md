@@ -25,12 +25,10 @@ sidebar_label: Terminolohiya
 
 Ise-set up mo ang iyong server sa Outline Manager.
 
-**Ano ang manager ng serbisyo?**
-
+## Ano ang manager ng serbisyo? {#servicemanager}
  Ang isang manager ng serbisyo ay ang taong may tungkuling i-set up ang Outline server at i-share ang mga access key sa mga user. Ang manager ng serbisyo ang may pangkalahatang responsibilidad sa pagbabayad sa gastusin sa paggamit ng server. 
 
-**Ano ang access key?**
-
+## Ano ang access key? {#accesskey}
  Gumagamit ng access key para mag-access ng dati nang Outline server at makakonekta sa VPN. May [manager ng serbisyo](#servicemanager) na magbibigay sa iyo ng access key o puwede kang[mag-set up ng Outline server](/manager/server-setup/setup-server) nang mag-isa. Narito ang isang halimbawa ng hitsura ng access key (sample lang; hindi gagana): 
 
  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1

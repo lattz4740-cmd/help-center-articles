@@ -25,12 +25,10 @@ sidebar_label: Terminoloģija
 
 Iestatiet savu serveri lietotnē Outline pārvaldnieks.
 
-**Kas ir pakalpojuma pārvaldnieks?**
-
+## Kas ir pakalpojuma pārvaldnieks? {#servicemanager}
  Pakalpojuma pārvaldnieks ir persona, kas ir atbildīga par Outline servera uzstādīšanu un piekļuves atslēgu kopīgošanu ar lietotājiem. Pakalpojuma pārvaldnieks parasti ir atbildīgs par pakalpojuma lietošanas maksas noteikšanu. 
 
-**Kas ir piekļuves atslēga?**
-
+## Kas ir piekļuves atslēga? {#accesskey}
  Piekļuves atslēga tiek izmantota, lai piekļūtu esošam Outline serverim un izveidotu savienojumu ar virtuālo privāto tīklu. [Pakalpojuma pārvaldnieks](#servicemanager) jums piešķirs piekļuves atslēgu, vai arī varat patstāvīgi [uzstādīt Outline serveri](/manager/server-setup/setup-server). Tālāk ir sniegts piemērs, kā izskatās piekļuves atslēga (tā ir tikai piemērs, un tā nedarbojas). 
 
  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1

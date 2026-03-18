@@ -25,12 +25,10 @@ sidebar_label: Terminológia
 
 A szervert az Outline Manager segítségével telepítheti.
 
-**Ki az a szolgáltatáskezelő?**
-
+## Ki az a szolgáltatáskezelő? {#servicemanager}
  A szolgáltatáskezelő az, aki felel az Outline-szerver telepítéséért, és ő ad hozzáférési kulcsot a felhasználóknak. Általában a szolgáltatáskezelő felel a szerverhasználat költségéért is. 
 
-**Mit nevezünk hozzáférési kulcsnak?**
-
+## Mit nevezünk hozzáférési kulcsnak? {#accesskey}
  A hozzáférési kulcs segítségével lehet hozzáférni a meglévő Outline-szerverekhez, illetve csatlakozni a VPN-hez. A [szolgáltatáskezelő](#servicemanager) ad Önnek hozzáférési kulcsot, vagy Ön saját maga is [telepíthet Outline-szervert](/manager/server-setup/setup-server). A hozzáférési kulcs a következőre hasonlít (ez csak minta, nem működik): 
 
  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1

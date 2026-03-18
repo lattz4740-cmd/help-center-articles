@@ -25,12 +25,10 @@ sidebar_label: 術語
 
 如要設定伺服器，請在 Outline Manager 中操作。
 
-**什麼是服務管理員？**
-
+## 什麼是服務管理員？ {#servicemanager}
  服務管理員負責設定 Outline 伺服器及向使用者提供存取金鑰，通常亦負責支付伺服器使用費。 
 
-**什麼是存取金鑰？**
-
+## 什麼是存取金鑰？ {#accesskey}
  存取金鑰的用途為存取現有 Outline 伺服器及連線至 VPN。你可向[服務管理員](#servicemanager)索取這類金鑰，亦可自行[設定 Outline 伺服器](/manager/server-setup/setup-server)。存取金鑰的格式如下 (此範例金鑰無法正常運作)：
 
  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1

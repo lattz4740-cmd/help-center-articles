@@ -5,9 +5,9 @@ sidebar_label: "Bakit hindi ako makakonekta sa serbisyo ng Outline?"
 
 May ilang dahilan kung bakit hindi ka makakonekta sa serbisyo ng Outline:
 
-- **Ang iyong device ay**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#One)[**nadiskonekta sa internet**](#Internetissues)[#Internetissues](#Internetissues)**.**Kung minsan, mapuputol ang koneksyon ng network ng iyong device at posibleng umabot nang ilang sandali bago nito ma-update ang mga icon ng network. Posible ring nakakonekta ang iyong device sa lokal na network, pero walang internet.
-- **Bina-block**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#Two)[**ng firewall ng network mo ang access**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[s](#FirewallIssues)a Outline server mo.**Karaniwan ito kung gumagamit ka ng pampublikong network, gaya ng wireless na network sa paaralan, trabaho, o libreng wireless network.
-- **Ang iyong device ay may**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#Three)[**firewall o antivirus software**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**na nagba-block ng access sa iyong Outline server.**
+- **Ang iyong device ay**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**nadiskonekta sa internet**](#Internetissues)[#Internetissues](#Internetissues)**.**Kung minsan, mapuputol ang koneksyon ng network ng iyong device at posibleng umabot nang ilang sandali bago nito ma-update ang mga icon ng network. Posible ring nakakonekta ang iyong device sa lokal na network, pero walang internet.
+- **Bina-block**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**ng firewall ng network mo ang access**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[s](#FirewallIssues)a Outline server mo.**Karaniwan ito kung gumagamit ka ng pampublikong network, gaya ng wireless na network sa paaralan, trabaho, o libreng wireless network.
+- **Ang iyong device ay may**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**firewall o antivirus software**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**na nagba-block ng access sa iyong Outline server.**
 - **Posibleng kailangang baguhin ang**[**mga setting ng device ng telepono**](#DeviceSettings)**mo.**
 - **Posibleng na-destroy na ng iyong manager ng serbisyo**[**ang server o posibleng bina-block ng ISP mo ang iyong request**](#ServerIssues) .
 
@@ -52,14 +52,12 @@ Makipag-ugnayan sa manager ng serbisyo at hilingin sa kanya na payagan ang acces
 
 Paalala: Tandaang kailangan mo ng access key at Outline app para magamit ang Outline sa ibang device.
 
-## Mga aayusin:
-
+## Mga aayusin: {#SoftwareIssues}
 Suriin ang mga setting ng iyong firewall o antivirus software para siguraduhing nakatakda ang mga ito na payagang dumaan ang trapiko ng VPN at Outline.
 
 ## Mga setting ng device: {#DeviceSettings}
 
-## Mga titingnan:
-
+## Mga titingnan: {#DeviceSettings}
 Para sa Android:
 
 1. Buksan ang App na Mga Setting.
@@ -74,8 +72,7 @@ Siguraduhing wala kang kahit anong naka-install na screen overlay application sa
 
 ## Mga isyu sa server: {#ServerIssues}
 
-## Paano i-test:
-
+## Paano i-test: {#ServerIssues}
 Kung mayroon kang access sa higit sa isang server, subukang kumonekta sa ibang server.
 
 ## Mga aayusin:

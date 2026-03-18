@@ -5,16 +5,15 @@ sidebar_label: "¿Por qué no puedo conectarme al servicio de Outline?"
 
 Hay varios factores que pueden impedir que te conectes al servicio de Outline:
 
-- **Tu dispositivo**[**no tiene conexión a Internet**](#internetissues)**.**En ocasiones, es posible que el dispositivo se desconecte momentáneamente de la red y tarde un poco en mostrar los iconos de red de nuevo. También es posible que el dispositivo esté conectado a la red local, pero que Internet esté caído.
-- **El**[**cortafuegos de la red está bloqueando el acceso**](#softwareissues)**a tu servidor de Outline.**Esto suele ocurrir cuando se usa una red pública; por ejemplo, si estás en un centro educativo o en el trabajo, o si te conectas a una red inalámbrica gratuita.
-- **Tu dispositivo tiene**[**un cortafuegos o un software antivirus**](#softwareissues)**que está bloqueando el acceso al servidor de Outline.**
-- **Es posible que tengas que cambiar los**[**ajustes de tu dispositivo**](#devsettings)**.**
-- **Puede que el gestor del servicio haya**[**eliminado el servidor o que tu proveedor de Internet esté bloqueando tu solicitud**](#serverissues)**.**
+- **Tu dispositivo**[**no tiene conexión a Internet**](#Internetissues)**.**En ocasiones, es posible que el dispositivo se desconecte momentáneamente de la red y tarde un poco en mostrar los iconos de red de nuevo. También es posible que el dispositivo esté conectado a la red local, pero que Internet esté caído.
+- **El**[**cortafuegos de la red está bloqueando el acceso**](#SoftwareIssues)**a tu servidor de Outline.**Esto suele ocurrir cuando se usa una red pública; por ejemplo, si estás en un centro educativo o en el trabajo, o si te conectas a una red inalámbrica gratuita.
+- **Tu dispositivo tiene**[**un cortafuegos o un software antivirus**](#SoftwareIssues)**que está bloqueando el acceso al servidor de Outline.**
+- **Es posible que tengas que cambiar los**[**ajustes de tu dispositivo**](#DeviceSettings)**.**
+- **Puede que el gestor del servicio haya**[**eliminado el servidor o que tu proveedor de Internet esté bloqueando tu solicitud**](#ServerIssues)**.**
 
 Problemas con la conexión a Internet:
 
-## Cómo probarlo:
-
+## Cómo probarlo: {#Internetissues}
 Desactiva Outline y comprueba si se ha restablecido la conexión a Internet.
 
 - En caso afirmativo, consulta otras posibles soluciones al problema que se describen a continuación.
@@ -40,8 +39,7 @@ Problemas con el cortafuegos de la red:
 
 Si puedes conectarte desde la otra red, este es tu problema.
 
-## Qué hacer:
-
+## Qué hacer: {#FirewallIssues}
 Ponte en contacto con el gestor del servicio y pídele que dé acceso a tu servidor de Outline, o sigue usando la otra red.
 
 Problemas con el cortafuegos o el software antivirus:
@@ -58,8 +56,7 @@ Comprueba los ajustes del cortafuegos y del software antivirus y confirma que es
 
 Ajustes del dispositivo:
 
-## Qué comprobar:
-
+## Qué comprobar: {#SoftwareIssues}
 Android:
 
 1. Abre la aplicación Ajustes.
@@ -76,10 +73,9 @@ Problemas con el servidor:
 
 ## Cómo probarlo:
 
-Si tienes acceso a más de un servidor, prueba a conectarte a otro.
+## Si tienes acceso a más de un servidor, prueba a conectarte a otro. {#ServerIssues}
 
-## Qué hacer:
-
+## Qué hacer: {#DeviceSettings}
 Ponte en contacto con el gestor del servicio para ver si lo ha eliminado. En caso afirmativo, pídele una [clave de acceso](https://docs.google.com/document/d/1Mp-hH49D0bn02LO-MkgVVh95O7FrG-6XXCjX49WA3nE/edit#heading=h.2dn8xnck0993) para otro servidor.
 
 Si configuras el servidor por tu cuenta, prueba a conectarte a él mediante el Administrador de Outline u otro método, como [SSH](https://en.wikipedia.org/wiki/Secure_Shell). Si esta alternativa no funciona, consulta la consola del proveedor de servicios en la nube, si la hubiera, para ver si el servidor sigue conectado.

@@ -5,9 +5,9 @@ sidebar_label: "Varför går det inte att ansluta till Outline-tjänsten?"
 
 Att du inte kan ansluta till Outline-tjänsten kan bero på några olika anledningar:
 
-- **Enheten är**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#One)[**inte ansluten till internet**](#Internetissues)[#Internetissues](#Internetissues)**.**Ibland förlorar enheten kontakten med nätverket och det kan ta en stund innan den har uppdaterat nätverksikonerna. Det är också möjligt att enheten är ansluten till det lokala nätverket men att internetanslutningen är nere.
-- **Nätverkets**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#Two)[**brandvägg blockerar åtkomsten**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[t](#FirewallIssues)ill Outline-servern.**Det händer ofta när man använder offentliga nätverk på till exempel skolor och arbetsplatser, eller kostnadsfria trådlösa nätverk.
-- **Enheten har en**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#Three)[**brandvägg eller ett antivirusprogram**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**som blockerar åtkomsten till Outline-servern.**
+- **Enheten är**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**inte ansluten till internet**](#Internetissues)[#Internetissues](#Internetissues)**.**Ibland förlorar enheten kontakten med nätverket och det kan ta en stund innan den har uppdaterat nätverksikonerna. Det är också möjligt att enheten är ansluten till det lokala nätverket men att internetanslutningen är nere.
+- **Nätverkets**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**brandvägg blockerar åtkomsten**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[t](#FirewallIssues)ill Outline-servern.**Det händer ofta när man använder offentliga nätverk på till exempel skolor och arbetsplatser, eller kostnadsfria trådlösa nätverk.
+- **Enheten har en**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**brandvägg eller ett antivirusprogram**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**som blockerar åtkomsten till Outline-servern.**
 - **Dina**[**telefoninställningar**](#DeviceSettings)**kan behöva ändras.**
 - **Tjänstansvarig kan ha**[**förstört servern, eller så kanske din begäran blockeras av internetleverantören**](#ServerIssues).
 
@@ -52,14 +52,12 @@ Kontakta tjänsteansvarig och be hen att tillåta åtkomst till Outline-servern 
 
 Obs! Tänk på att du behöver en åtkomstnyckel och Outline-appen för att använda Outline på en annan enhet.
 
-## Saker att åtgärda:
-
+## Saker att åtgärda: {#SoftwareIssues}
 Kontrollera inställningarna för brandväggen eller antivirusprogrammet och se till att de låter VPN- och Outline-trafik passera.
 
 ## Enhetsinställningar: {#DeviceSettings}
 
-## Saker att kontrollera:
-
+## Saker att kontrollera: {#DeviceSettings}
 För Android:
 
 1. Öppna Inställningar-appen.
@@ -74,8 +72,7 @@ Se till att du inte har någon app för skärmöverlagring installerad på din A
 
 ## Serverproblem: {#ServerIssues}
 
-## Så här testar du:
-
+## Så här testar du: {#ServerIssues}
 Om du har tillgång till mer än en server testar du att ansluta till den andra.
 
 ## Saker att åtgärda:

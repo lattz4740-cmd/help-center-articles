@@ -5,9 +5,9 @@ sidebar_label: Γιατί δεν μπορώ να συνδεθώ στην υπη�
 
 Υπάρχουν διάφοροι λόγοι για τους οποίους μπορεί να μην είναι δυνατή η σύνδεσή σας στην υπηρεσία Outline:
 
-- **Η συσκευή σας**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#One)[**έχει αποσυνδεθεί από το διαδίκτυο**](#Internetissues)[#Internetissues](#Internetissues)**.**Ορισμένες φορές η σύνδεση δικτύου της συσκευής μπορεί να διακόπτεται και να υπάρχει μικρή καθυστέρηση στην ενημέρωση των εικονιδίων δικτύου. Είναι, επίσης, πιθανό η συσκευή σας να είναι συνδεδεμένη στο τοπικό δίκτυο, αλλά να μην υπάρχει σύνδεση στο διαδίκτυο.
-- **Το**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#Two)[**τείχος προστασίας του δικτύου αποκλείει την πρόσβαση**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[στον διακομιστή Outline](#FirewallIssues).**Αυτό συμβαίνει συχνά αν χρησιμοποιείτε ένα δημόσιο δίκτυο, όπως ένα σχολικό, επαγγελματικό ή χωρίς χρέωση ασύρματο δίκτυο.
-- **Η συσκευή σας διαθέτει**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#Three)[**τείχος προστασίας ή λογισμικό προστασίας από ιούς**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**που αποκλείει την πρόσβαση στον διακομιστή Outline.**
+- **Η συσκευή σας**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**έχει αποσυνδεθεί από το διαδίκτυο**](#Internetissues)[#Internetissues](#Internetissues)**.**Ορισμένες φορές η σύνδεση δικτύου της συσκευής μπορεί να διακόπτεται και να υπάρχει μικρή καθυστέρηση στην ενημέρωση των εικονιδίων δικτύου. Είναι, επίσης, πιθανό η συσκευή σας να είναι συνδεδεμένη στο τοπικό δίκτυο, αλλά να μην υπάρχει σύνδεση στο διαδίκτυο.
+- **Το**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**τείχος προστασίας του δικτύου αποκλείει την πρόσβαση**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[στον διακομιστή Outline](#FirewallIssues).**Αυτό συμβαίνει συχνά αν χρησιμοποιείτε ένα δημόσιο δίκτυο, όπως ένα σχολικό, επαγγελματικό ή χωρίς χρέωση ασύρματο δίκτυο.
+- **Η συσκευή σας διαθέτει**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**τείχος προστασίας ή λογισμικό προστασίας από ιούς**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**που αποκλείει την πρόσβαση στον διακομιστή Outline.**
 - **Οι**[**ρυθμίσεις συσκευής τηλεφώνου**](#DeviceSettings)**μπορεί να χρειαστεί να αλλάξουν.**
 - **Ο υπεύθυνος εξυπηρέτησής σας μπορεί να**[**κατέστρεψε τον διακομιστή ή ο ISP μπορεί να αποκλείει το αίτημά σας**](#ServerIssues).
 
@@ -52,14 +52,12 @@ sidebar_label: Γιατί δεν μπορώ να συνδεθώ στην υπη�
 
 Σημείωση: Να θυμάστε ότι θα χρειαστείτε ένα κλειδί πρόσβασης και την εφαρμογή Outline για να χρησιμοποιήσετε το Outline σε άλλη συσκευή.
 
-## Τι να διορθώσετε:
-
+## Τι να διορθώσετε: {#SoftwareIssues}
 Ελέγξτε τις ρυθμίσεις του τείχους προστασίας ή του λογισμικού προστασίας από ιούς για να βεβαιωθείτε ότι επιτρέπουν τη διέλευση δεδομένων VPN και Outline.
 
 ## Ρυθμίσεις συσκευής: {#DeviceSettings}
 
-## Τι να ελέγξετε:
-
+## Τι να ελέγξετε: {#DeviceSettings}
 Για Android:
 
 1. Ανοίξτε την εφαρμογή Ρυθμίσεις.
@@ -74,8 +72,7 @@ sidebar_label: Γιατί δεν μπορώ να συνδεθώ στην υπη�
 
 ## Προβλήματα διακομιστή: {#ServerIssues}
 
-## Πώς να κάνετε έλεγχο:
-
+## Πώς να κάνετε έλεγχο: {#ServerIssues}
 Αν έχετε πρόσβαση σε περισσότερους από έναν διακομιστές, δοκιμάστε να συνδεθείτε στον άλλο.
 
 ## Τι να διορθώσετε:

@@ -25,12 +25,10 @@ sidebar_label: Terminologija
 
 Poslužitelj možete postaviti u Upravitelju Outlinea.
 
-**Što je upravitelj usluga?**
-
+## Što je upravitelj usluga? {#servicemanager}
  Upravitelj usluga osoba je odgovorna za postavljanje Outline poslužitelja i dodjelu pristupnih ključeva korisnicima. Upravitelj usluga u načelu je odgovoran za troškove upotrebe poslužitelja. 
 
-**Što je pristupni ključ?**
-
+## Što je pristupni ključ? {#accesskey}
  Pristupni ključ služi za pristup postojećem Outline poslužitelju i povezivanje s VPN-om. [Upravitelj usluga](#servicemanager) dat će vam pristupni ključ, a možete i sami [postaviti Outline poslužitelj](/manager/server-setup/setup-server). U nastavku se nalazi primjer pristupnog ključa (to je ogledni ključ koji ne funkcionira):
 
  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1

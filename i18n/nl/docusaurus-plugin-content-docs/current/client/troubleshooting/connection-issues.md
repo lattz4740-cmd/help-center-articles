@@ -9,12 +9,11 @@ Er zijn verschillende redenen waarom je geen verbinding kunt maken met de Outlin
 - **Je**[**netwerkfirewall blokkeert de toegang**](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)tot de Outline-server.**Dit gebeurt vaak als je een openbaar netwerk gebruikt, zoals dat van je school of werk of een gratis draadloos netwerk.
 - **Je apparaat gebruikt**[**een firewall of antivirussoftware**](#SoftwareIssues)**[#SoftwareIssues](#SoftwareIssues)die de toegang tot de Outline-server blokkeert.**
 - **Je moet misschien de**[**i**](#DeviceSettings)**[nstellingen van je telefoon](#SoftwareIssues)****[#SoftwareIssues](#SoftwareIssues)wijzigen.**
-- **Je serverbeheerder heeft misschien**[**de server vernietigd of je internetprovider blokkeert het verzoek**](#softwareissuesss)[**.**](#softwareissuesss)
+- **Je serverbeheerder heeft misschien**[**de server vernietigd of je internetprovider blokkeert het verzoek**](#SoftwareIssues)[**.**](#SoftwareIssues)
 
 Problemen met de internetverbinding:
 
-## Hoe je dit test:
-
+## Hoe je dit test: {#Internetissues}
 Zet Outline uit en check of je weer verbinding krijgt met internet.
 
 - Zo ja, check dan andere opties voor probleemoplossing hieronder.
@@ -40,8 +39,7 @@ Problemen veroorzaakt door de netwerkfirewall:
 
 Als je op het andere netwerk wel verbinding kunt maken, is dit de oorzaak van het probleem.
 
-## Oplossingen:
-
+## Oplossingen: {#FirewallIssues}
 Vraag de servicemanager je toegang te geven tot de Outline-server of blijf het andere netwerk gebruiken.
 
 Problemen veroorzaakt door de firewall of antivirussoftware:
@@ -58,8 +56,7 @@ Zorg dat de firewall of antivirussoftware zo is ingesteld dat VPN- en Outline-ve
 
 Apparaatinstellingen:
 
-## Check het volgende:
-
+## Check het volgende: {#SoftwareIssues}
 Voor Android:
 
 1. Open de Instellingen-app.
@@ -74,7 +71,11 @@ Voor iOS: Ga naar [dit supportartikel](https://support.apple.com/guide/deploymen
 
 Serverproblemen:
 
+## {#DeviceSettings}
+
 ## Hoe je dit test:
+
+## {#ServerIssues}
 
 Als je toegang hebt tot meer dan één server, probeer je verbinding te maken met de andere server.
 

@@ -25,12 +25,10 @@ sidebar_label: Hugtök
 
 Þú setur þjóninn upp í Outline Manager.
 
-**Hvað er þjónustustjóri?**
-
+## Hvað er þjónustustjóri? {#servicemanager}
  Þjónustustjóri er aðilinn sem ber ábyrgð á uppsetningu Outline-þjónsins og sér um að deila aðgangslyklum með notendum. Þjónustustjórinn er almennt ábyrgur fyrir kostnaðinum sem fellur til við notkun þjónsins. 
 
-**Hvað er aðgangslykill?**
-
+## Hvað er aðgangslykill? {#accesskey}
  Aðgangslykill er notaður til að fá aðgang að fyrirliggjandi Outline-þjóni og tengjast VPN-netinu. Þú getur fengið aðgangslykil hjá [þjónustustjóra](#servicemanager) eða [sett upp Outline-þjón](/manager/server-setup/setup-server) upp á eigin spýtur. Svona gæti aðgangslykill litið út (þetta er aðeins dæmi, lykillinn virkar ekki): 
 
  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1

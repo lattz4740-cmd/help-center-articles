@@ -5,9 +5,9 @@ sidebar_label: "Tại sao tôi không kết nối được với dịch vụ Out
 
 Có một vài lý do khiến bạn không thể kết nối với dịch vụ Outline:
 
-- **Thiết bị của bạn**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#One)[**bị ngắt kết nối Internet**](#Internetissues)[#Internetissues](#Internetissues)**.**Đôi khi, thiết bị của bạn có thể bị ngắt kết nối mạng và có thể cần một chút thời gian để cập nhật biểu tượng mạng. Cũng có khả năng thiết bị của bạn có kết nối với mạng cục bộ, nhưng lại không có kết nối Internet.
-- [/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#Two)[**Tường lửa mạng của bạn đang chặn quyền truy cập**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[vào](#FirewallIssues) máy chủ Outline.**Điều này thường xảy ra nếu bạn sử dụng mạng công cộng, chẳng hạn như mạng trường học, cơ quan hoặc mạng không dây miễn phí.
-- **Thiết bị của bạn có**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#Three)[**tường lửa hoặc phần mềm diệt virus**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**đang chặn quyền truy cập vào máy chủ Outline.**
+- **Thiết bị của bạn**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**bị ngắt kết nối Internet**](#Internetissues)[#Internetissues](#Internetissues)**.**Đôi khi, thiết bị của bạn có thể bị ngắt kết nối mạng và có thể cần một chút thời gian để cập nhật biểu tượng mạng. Cũng có khả năng thiết bị của bạn có kết nối với mạng cục bộ, nhưng lại không có kết nối Internet.
+- [/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**Tường lửa mạng của bạn đang chặn quyền truy cập**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[vào](#FirewallIssues) máy chủ Outline.**Điều này thường xảy ra nếu bạn sử dụng mạng công cộng, chẳng hạn như mạng trường học, cơ quan hoặc mạng không dây miễn phí.
+- **Thiết bị của bạn có**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**tường lửa hoặc phần mềm diệt virus**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**đang chặn quyền truy cập vào máy chủ Outline.**
 - **Bạn có thể phải thay đổi**[**chế độ cài đặt thiết bị điện thoại**](#DeviceSettings)**của bạn.**
 - **Người quản lý dịch vụ của bạn có thể đã**[**huỷ bỏ máy chủ hoặc Nhà cung cấp dịch vụ Internet (ISP) có thể đang chặn yêu cầu của bạn**](#ServerIssues) .
 
@@ -52,14 +52,12 @@ Hãy liên hệ với người quản lý dịch vụ rồi yêu cầu họ cho 
 
 Lưu ý: Hãy nhớ rằng bạn cần có khoá truy cập và ứng dụng Outline để sử dụng Outline trên một thiết bị khác.
 
-## Điểm cần khắc phục:
-
+## Điểm cần khắc phục: {#SoftwareIssues}
 Hãy kiểm tra các chế độ cài đặt tường lửa hay phần mềm diệt virus để đảm bảo rằng các chế độ đó cho phép lưu lượng VPN và Outline đi qua.
 
 ## Chế độ cài đặt thiết bị: {#DeviceSettings}
 
-## Điểm cần kiểm tra:
-
+## Điểm cần kiểm tra: {#DeviceSettings}
 Đối với Android:
 
 1. Mở ứng dụng Cài đặt.
@@ -74,8 +72,7 @@ Hãy đảm bảo rằng bạn không cài đặt ứng dụng lớp phủ màn 
 
 ## Sự cố với máy chủ: {#ServerIssues}
 
-## Cách kiểm tra:
-
+## Cách kiểm tra: {#ServerIssues}
 Nếu bạn có quyền truy cập vào nhiều máy chủ, hãy thử kết nối với một máy chủ khác.
 
 ## Điểm cần khắc phục:

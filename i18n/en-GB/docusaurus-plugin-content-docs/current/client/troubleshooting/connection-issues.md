@@ -5,16 +5,15 @@ sidebar_label: "Why can't I connect to the Outline service?"
 
 There are a few reasons why you may not be able to connect to the Outline service:
 
-- **Your device is**[**disconnected from the Internet**](#internetissues)**.**Sometimes, your device will experience a break in network connection and it may take a moment for it to update the network icons. It's also possible that your device is connected to the local network, but that the Internet is down.
-- **Your**[**network firewall is blocking access**](#firewallissues)**to your Outline server.**This is common if you're using a public network, like a school, work or free wireless network.
-- **Your device has a**[**firewall or antivirus software**](#softwareissues)**that's blocking access to your Outline server.**
-- **Your**[**phone device settings**](#devicesettings)**may need to be changed.**
-- **Your service manager may have**[**destroyed the server or your ISP may be blocking your request**](#serverissues)**.**
+- **Your device is**[**disconnected from the Internet**](#Internetissues)**.**Sometimes, your device will experience a break in network connection and it may take a moment for it to update the network icons. It's also possible that your device is connected to the local network, but that the Internet is down.
+- **Your**[**network firewall is blocking access**](#FirewallIssues)**to your Outline server.**This is common if you're using a public network, like a school, work or free wireless network.
+- **Your device has a**[**firewall or antivirus software**](#SoftwareIssues)**that's blocking access to your Outline server.**
+- **Your**[**phone device settings**](#DeviceSettings)**may need to be changed.**
+- **Your service manager may have**[**destroyed the server or your ISP may be blocking your request**](#ServerIssues)**.**
 
 Internet connection issues:
 
-## How to test:
-
+## How to test: {#Internetissues}
 Turn off Outline and see if your connection to the Internet is restored.
 
 - If yes, see more troubleshooting options below.
@@ -40,8 +39,7 @@ Network firewall issues:
 
 If you're able to connect while on the other network, then this is your issue
 
-## Things to fix:
-
+## Things to fix: {#FirewallIssues}
 Contact the service manager and request them to allow access to your Outline server or continue using the other network instead.
 
 Firewall or antivirus software issues:
@@ -58,8 +56,7 @@ Check your firewall or antivirus software settings to make sure that they're set
 
 Device settings:
 
-## Things to check:
-
+## Things to check: {#SoftwareIssues}
 For Android:
 
 1. Open the Settings app.
@@ -76,10 +73,9 @@ Server issues:
 
 ## How to test:
 
-If you have access to more than one server, try connecting to the other one.
+## If you have access to more than one server, try connecting to the other one. {#ServerIssues}
 
-## Things to fix:
-
+## Things to fix: {#DeviceSettings}
 Contact your service manager to see if the server has been destroyed. If so, ask them for an [access key](/about/terminology) to another server.
 
 If you set up the server, try connecting to it through the Outline Manager or another method such as [SSH](https://en.wikipedia.org/wiki/Secure_Shell). If that doesn't work, you can try checking the cloud provider console, if any, to see if the server is still online.

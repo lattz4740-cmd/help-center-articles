@@ -25,12 +25,10 @@ sidebar_label: Terminoloogia
 
 Serveri seadistamine toimub Outline Manageris.
 
-**Kes on teenusehaldur?**
-
+## Kes on teenusehaldur? {#servicemanager}
  Teenusehaldur on isik, kes vastutab Outline'i serveri seadistamise ja kasutajatele pääsuvõtmete jagamise eest. Tavaliselt vastutab teenusehaldur serveri kasutamise kulude eest. 
 
-**Mis on pääsuvõti?**
-
+## Mis on pääsuvõti? {#accesskey}
  Pääsuvõtit kasutatakse olemasolevale Outline'i serverile juurdepääsemiseks ja VPN-iga ühenduse loomiseks. Pääsuvõtme annab teile [teenusehaldur](#servicemanager) või saate [Outline'i serveri seadistada](/manager/server-setup/setup-server) ka ise. Siin on näide sellest, milline näeb välja pääsuvõti (ainult näidis, mis ei tööta): 
 
  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1

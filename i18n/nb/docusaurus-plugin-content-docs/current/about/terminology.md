@@ -25,12 +25,10 @@ sidebar_label: Terminologi
 
 Du konfigurerer tjeneren i Outline-administratoren.
 
-**Hva er en tjenesteadministrator?**
-
+## Hva er en tjenesteadministrator? {#servicemanager}
  En tjenesteadministrator er en person som har ansvar for å konfigurere Outline-tjeneren og dele tilgangsnøkler med brukerne. Tjenesteadministratoren er vanligvis ansvarlig for kostnadene ved bruken av tjeneren. 
 
-**Hva er en tilgangsnøkkel?**
-
+## Hva er en tilgangsnøkkel? {#accesskey}
  En tilgangsnøkkel brukes til å få tilgang til en eksisterende Outline-tjener og koble til VPN. Tilgangsnøkkelen får du av en [tjenesteadministrator](#servicemanager) – eller du kan [konfigurere din egen Outline-tjener](/manager/server-setup/setup-server). Her er et eksempel på hvordan en tilgangsnøkkel kan se ut (dette er bare et eksempel og fungerer ikke i praksis): 
 
  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1

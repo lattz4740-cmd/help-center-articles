@@ -25,12 +25,10 @@ sidebar_label: Terminologi
 
 Du konfigurerar servern i Outline Manager.
 
-**Vad är en tjänsteansvarig?**
-
+## Vad är en tjänsteansvarig? {#servicemanager}
  En tjänsteansvarig är personen som är ansvarig för att konfigurera Outline-servern och dela åtkomstnycklarna med användare. Den tjänsteansvariga är vanligtvis ansvarig för kostnaden för användningen av servern. 
 
-**Vad är en åtkomstnyckel?**
-
+## Vad är en åtkomstnyckel? {#accesskey}
  En åtkomstnyckel används för att komma åt en befintlig Outline-server och ansluta till VPN. En [tjänsteansvarig](#servicemanager) ger dig en åtkomstnyckel, eller så kan du [konfigurera en Outline-server](/manager/server-setup/setup-server) själv. Här är ett exempel på hur en åtkomstnyckel ser ut (endast exempel, fungerar inte): 
 
  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1

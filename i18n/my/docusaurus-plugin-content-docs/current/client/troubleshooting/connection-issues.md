@@ -5,9 +5,9 @@ sidebar_label: Outline ဝန်ဆောင်မှုနှင့် ဘာ�
 
 Outline ဝန်ဆောင်မှုနှင့် ချိတ်ဆက်၍မရနိုင်သည့် အကြောင်းရင်းသိပ်မရှိပါ-
 
-- **သင့်စက်ကို**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#One)[**အင်တာနက်မှ ချိတ်ဆက်မှုဖြုတ်ထားသည်**](#Internetissues)[#Internetissues](#Internetissues)**။**သင့်စက်သည် တစ်ခါတစ်ရံတွင် ကွန်ရက်ချိတ်ဆက်မှု ပြတ်တောက်ခြင်းကို ကြုံရမည်ဖြစ်ပြီး ကွန်ရက်သင်္ကေတများကို အပ်ဒိတ်လုပ်ရန် အချိန်အနည်းငယ်ကြာနိုင်သည်။ သင့်စက်သည် ဌာနတွင်း ကွန်ရက်နှင့် ချိတ်ဆက်ထားသော်လည်း အင်တာနက် လိုင်းကျသွားခြင်းလည်း ဖြစ်နိုင်သည်။
-- **သင်၏**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#Two)[**ကွန်ရက် firewall သည်**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**Outline ဆာဗာသုံးခွင့်ကို ပိတ်ထားသည်။**ကျောင်း၊ အလုပ် (သို့) အခမဲ့ ကြိုးမဲ့ကွန်ရက်ကဲ့သို့သော အများသုံး ကွန်ရက်ကို သင်သုံးနေခြင်းသည် ဖြစ်ရိုးဖြစ်စဥ်ဖြစ်သည်။
-- **သင့်စက်၌ ရှိသည့်အရာ**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#Three)[**firewall (သို့) ဗိုင်းရပ်အကာအကွယ် ဆော့ဖ်ဝဲ**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**သင်၏ Outline ဆာဗာသုံးခွင့်ကို ပိတ်ထားသည်။**
+- **သင့်စက်ကို**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**အင်တာနက်မှ ချိတ်ဆက်မှုဖြုတ်ထားသည်**](#Internetissues)[#Internetissues](#Internetissues)**။**သင့်စက်သည် တစ်ခါတစ်ရံတွင် ကွန်ရက်ချိတ်ဆက်မှု ပြတ်တောက်ခြင်းကို ကြုံရမည်ဖြစ်ပြီး ကွန်ရက်သင်္ကေတများကို အပ်ဒိတ်လုပ်ရန် အချိန်အနည်းငယ်ကြာနိုင်သည်။ သင့်စက်သည် ဌာနတွင်း ကွန်ရက်နှင့် ချိတ်ဆက်ထားသော်လည်း အင်တာနက် လိုင်းကျသွားခြင်းလည်း ဖြစ်နိုင်သည်။
+- **သင်၏**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**ကွန်ရက် firewall သည်**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**Outline ဆာဗာသုံးခွင့်ကို ပိတ်ထားသည်။**ကျောင်း၊ အလုပ် (သို့) အခမဲ့ ကြိုးမဲ့ကွန်ရက်ကဲ့သို့သော အများသုံး ကွန်ရက်ကို သင်သုံးနေခြင်းသည် ဖြစ်ရိုးဖြစ်စဥ်ဖြစ်သည်။
+- **သင့်စက်၌ ရှိသည့်အရာ**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**firewall (သို့) ဗိုင်းရပ်အကာအကွယ် ဆော့ဖ်ဝဲ**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**သင်၏ Outline ဆာဗာသုံးခွင့်ကို ပိတ်ထားသည်။**
 - **သင်၏**[**ဖုန်း စက်ဆက်တင်များ**](#DeviceSettings)**ပြောင်းရန် လိုအပ်နိုင်သည်။**
 - **သင်၏ ဝန်ဆောင်မှုမန်နေဂျာသည်**[**ဆာဗာကို ဖျက်ဆီးထားနိုင်သည် (သို့) သင်၏ ISP သည် သင့်တောင်းဆိုချက်ကို ပိတ်ထားနိုင်သည်**](#ServerIssues) ။
 
@@ -52,14 +52,12 @@ Outline ပိတ်ပြီး အင်တာနက်ချိတ်ဆက�
 
 အခြားစက်တွင် Outline သုံးရန်အတွက် သုံးခွင့်ကီးနှင့် Outline အက်ပ် လိုအပ်ကြောင်း မမေ့ပါနှင့်။
 
-## ပြင်ဆင်ရန် အချက်များ-
-
+## ပြင်ဆင်ရန် အချက်များ- {#SoftwareIssues}
 သင်၏ firewall (သို့) ဗိုင်းရပ်အကာအကွယ် ဆော့ဖ်ဝဲဆက်တင်များကို စစ်ဆေးပြီး ၎င်းတို့သည် VPN နှင့် Outline ဒေတာစီးဆင်းမှုကို ခွင့်ပြုကြောင်း သတ်မှတ်ထားပါစေ။
 
 ## စက်ဆက်တင်များ- {#DeviceSettings}
 
-## စစ်ကြည့်ရန် အချက်များ-
-
+## စစ်ကြည့်ရန် အချက်များ- {#DeviceSettings}
 Android အတွက်-
 
 1. ဆက်တင်များ အက်ပ်ကို ဖွင့်ပါ။
@@ -74,8 +72,7 @@ Android အတွက်-
 
 ## ဆာဗာပြဿနာများ- {#ServerIssues}
 
-## စမ်းသပ်ရန် နည်းလမ်း-
-
+## စမ်းသပ်ရန် နည်းလမ်း- {#ServerIssues}
 သင့်တွင် ဆာဗာတစ်ခုထက်ပို၍ သုံးခွင့်ရှိပါက အခြားတစ်ခုသို့ ချိတ်ဆက်ကြည့်ပါ။
 
 ## ပြင်ဆင်ရန် အချက်များ-

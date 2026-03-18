@@ -25,12 +25,10 @@ sidebar_label: Thuật ngữ
 
 Bạn có thể thiết lập máy chủ trong ứng dụng Quản lý Outline.
 
-**Người quản lý dịch vụ là ai?**
-
+## Người quản lý dịch vụ là ai? {#servicemanager}
  Người quản lý dịch vụ là người chịu trách nhiệm thiết lập máy chủ Outline và chia sẻ khoá truy cập với người dùng. Người này thường chịu trách nhiệm về chi phí sử dụng máy chủ. 
 
-**Khoá truy cập là gì?**
-
+## Khoá truy cập là gì? {#accesskey}
  Khoá truy cập dùng để truy cập vào một máy chủ Outline hiện có và kết nối với VPN. [Người quản lý dịch vụ](#servicemanager) sẽ cung cấp cho bạn một khoá truy cập hoặc bạn có thể tự[thiết lập một máy chủ Outline](/manager/server-setup/setup-server). Dưới đây là một ví dụ về khoá truy cập (đây chỉ là khoá mẫu nên sẽ không hoạt động): 
 
  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1

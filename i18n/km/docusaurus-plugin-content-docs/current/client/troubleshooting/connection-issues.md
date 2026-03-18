@@ -5,9 +5,9 @@ sidebar_label: "ហេតុអ្វី​ខ្ញុំ​មិន​អា�
 
 មាន​ហេតុផល​មួយចំនួន​ដែលអ្នក​ប្រហែល​មិនអាច​ភ្ជាប់​ទៅ​ម៉ាស៊ីន​មេ Outline បាន៖
 
-- **ឧបករណ៍​របស់អ្នក​ត្រូវបាន**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#One)[**ផ្ដាច់ពី​អ៊ីនធឺណិត**](#Internetissues)[#Internetissues](#Internetissues)**។**ជួនកាល ឧបករណ៍​របស់អ្នក​នឹងជួបប្រទះ​ការដាច់បណ្ដាញ និង​អាចចំណាយពេល​បន្តិច មុនពេល​ឧបករណ៍​នោះធ្វើបច្ចុប្បន្នភាព​រូបបណ្ដាញ។ ឧបករណ៍របស់អ្នកអាចត្រូវបានភ្ជាប់ទៅបណ្តាញមូលដ្ឋាន ប៉ុន្តែអ៊ីនធឺណិតមិនដំណើរការទេ។
-- [/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#Two)[**ជញ្ជាំង​ភ្លើង​បណ្ដាញរបស់អ្នកកំពុង​ទប់ស្កាត់​ការចូលប្រើ**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)ម៉ាស៊ីនមេ Outline របស់អ្នក។**នេះជា​រឿងធម្មតា ប្រសិនបើអ្នក​កំពុងប្រើប្រាស់​បណ្ដាញ​សាធារណៈ ដូចជា​បណ្ដាញ​សាលារៀន កន្លែងធ្វើការ ឬ​បណ្ដាញឥតខ្សែ​ឥតគិតថ្លៃ។
-- **ឧបករណ៍​របស់អ្នក​មាន**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#Three)[**កម្មវិធី​កម្ចាត់​មេរោគ ឬ​ជញ្ជាំង​ភ្លើង**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**ដែលកំពុង​ទប់ស្កាត់​ការចូលប្រើ​ម៉ាស៊ីនមេ Outline របស់អ្នក។**
+- **ឧបករណ៍​របស់អ្នក​ត្រូវបាន**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**ផ្ដាច់ពី​អ៊ីនធឺណិត**](#Internetissues)[#Internetissues](#Internetissues)**។**ជួនកាល ឧបករណ៍​របស់អ្នក​នឹងជួបប្រទះ​ការដាច់បណ្ដាញ និង​អាចចំណាយពេល​បន្តិច មុនពេល​ឧបករណ៍​នោះធ្វើបច្ចុប្បន្នភាព​រូបបណ្ដាញ។ ឧបករណ៍របស់អ្នកអាចត្រូវបានភ្ជាប់ទៅបណ្តាញមូលដ្ឋាន ប៉ុន្តែអ៊ីនធឺណិតមិនដំណើរការទេ។
+- [/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**ជញ្ជាំង​ភ្លើង​បណ្ដាញរបស់អ្នកកំពុង​ទប់ស្កាត់​ការចូលប្រើ**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)ម៉ាស៊ីនមេ Outline របស់អ្នក។**នេះជា​រឿងធម្មតា ប្រសិនបើអ្នក​កំពុងប្រើប្រាស់​បណ្ដាញ​សាធារណៈ ដូចជា​បណ្ដាញ​សាលារៀន កន្លែងធ្វើការ ឬ​បណ្ដាញឥតខ្សែ​ឥតគិតថ្លៃ។
+- **ឧបករណ៍​របស់អ្នក​មាន**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**កម្មវិធី​កម្ចាត់​មេរោគ ឬ​ជញ្ជាំង​ភ្លើង**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**ដែលកំពុង​ទប់ស្កាត់​ការចូលប្រើ​ម៉ាស៊ីនមេ Outline របស់អ្នក។**
 - **អាចត្រូវការផ្លាស់ប្ដូរ**[**ការកំណត់​ឧបករណ៍​ទូរសព្ទ**](#DeviceSettings)**របស់អ្នក។**
 - **អ្នកគ្រប់គ្រង​សេវាកម្ម​របស់អ្នក​ប្រហែលជា**[**បានលុប​ម៉ាស៊ីន​មេ ឬ ISP របស់អ្នក​ប្រហែល​កំពុងទប់ស្កាត់​សំណើ​របស់អ្នក**](#ServerIssues)។
 
@@ -52,14 +52,12 @@ sidebar_label: "ហេតុអ្វី​ខ្ញុំ​មិន​អា�
 
 ចំណាំ៖ សូមចងចាំថា អ្នកនឹង​ត្រូវការ​លេខកូដចូលប្រើ និង​កម្មវិធី Outline ទើបអាច​ប្រើ Outline នៅលើ​ឧបករណ៍​ផ្សេងទៀត​បាន។
 
-## អ្វីៗ​ដែលត្រូវ​ដោះស្រាយ៖
-
+## អ្វីៗ​ដែលត្រូវ​ដោះស្រាយ៖ {#SoftwareIssues}
 ពិនិត្យមើលការកំណត់ជញ្ជាំង​ភ្លើង ឬ​កម្មវិធី​កម្ចាត់​មេរោគ​របស់អ្នក ដើម្បីប្រាកដថា ការកំណត់ទាំងនេះអនុញ្ញាតចរាចរណ៍ឆ្លងកាត់ VPN និង Outline។
 
 ## ការកំណត់​ឧបករណ៍៖ {#DeviceSettings}
 
-## អ្វីៗ​ដែលត្រូវ​ពិនិត្យមើល៖
-
+## អ្វីៗ​ដែលត្រូវ​ពិនិត្យមើល៖ {#DeviceSettings}
 សម្រាប់ Android៖
 
 1. បើក​កម្មវិធី​ការកំណត់។
@@ -74,8 +72,7 @@ sidebar_label: "ហេតុអ្វី​ខ្ញុំ​មិន​អា�
 
 ## បញ្ហា​ម៉ាស៊ីនមេ៖ {#ServerIssues}
 
-## របៀប​ធ្វើតេស្ត៖
-
+## របៀប​ធ្វើតេស្ត៖ {#ServerIssues}
 ប្រសិនបើអ្នក​មានសិទ្ធិ​ចូលប្រើ​ម៉ាស៊ីនមេ​លើសពីមួយ សូមសាកល្បង​ភ្ជាប់ទៅ​ម៉ាស៊ីនមេ​មួយទៀត។
 
 ## អ្វីៗ​ដែលត្រូវ​ដោះស្រាយ៖

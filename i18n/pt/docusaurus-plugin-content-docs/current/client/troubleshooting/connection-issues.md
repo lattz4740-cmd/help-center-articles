@@ -5,9 +5,9 @@ sidebar_label: "Porque não consigo estabelecer ligação ao serviço do Outline
 
 Existem alguns motivos pelos quais pode não conseguir estabelecer ligação ao serviço do Outline:
 
-- **O seu dispositivo**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#One)[**não está ligado à Internet**](#Internetissues)[#Internetissues](#Internetissues)**.**Por vezes, o dispositivo sofre interrupções na ligação de rede e pode demorar algum tempo a atualizar os ícones de rede. Também é possível que o dispositivo esteja ligado à rede local, mas a Internet esteja indisponível.
-- **A sua**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#Two)[**firewall de rede está a bloquear o acesso**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)ao servidor do Outline.**Isto é comum se estiver a usar uma rede pública, como a rede da escola ou do trabalho, ou uma rede sem fios gratuita.
-- **O seu dispositivo tem um**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#Three)[**software antivírus ou firewall**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**que está a bloquear o acesso ao servidor do Outline.**
+- **O seu dispositivo**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**não está ligado à Internet**](#Internetissues)[#Internetissues](#Internetissues)**.**Por vezes, o dispositivo sofre interrupções na ligação de rede e pode demorar algum tempo a atualizar os ícones de rede. Também é possível que o dispositivo esteja ligado à rede local, mas a Internet esteja indisponível.
+- **A sua**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**firewall de rede está a bloquear o acesso**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)ao servidor do Outline.**Isto é comum se estiver a usar uma rede pública, como a rede da escola ou do trabalho, ou uma rede sem fios gratuita.
+- **O seu dispositivo tem um**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**software antivírus ou firewall**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**que está a bloquear o acesso ao servidor do Outline.**
 - **As**[**definições do dispositivo do seu telemóvel**](#DeviceSettings)**podem ter de ser alteradas.**
 - **O gestor do serviço pode ter**[**destruído o servidor ou o seu ISP pode estar a bloquear o pedido**](#ServerIssues).
 
@@ -52,14 +52,12 @@ Contacte o gestor do serviço para lhe pedir que autorize o acesso ao seu servid
 
 Nota: lembre-se de que precisa de uma chave de acesso e da app Outline para usar o Outline noutro dispositivo.
 
-## Aspetos a corrigir:
-
+## Aspetos a corrigir: {#SoftwareIssues}
 Verifique as definições do software antivírus ou firewall para garantir que permitem tráfego VPN e do Outline.
 
 ## Definições do dispositivo: {#DeviceSettings}
 
-## Aspetos a confirmar:
-
+## Aspetos a confirmar: {#DeviceSettings}
 Android:
 
 1. Abra a app Definições.
@@ -74,8 +72,7 @@ Certifique-se de que não tem nenhuma aplicação de sobreposição de ecrã ins
 
 ## Problemas com o servidor: {#ServerIssues}
 
-## Como testar:
-
+## Como testar: {#ServerIssues}
 Se tiver acesso a mais de um servidor, tente estabelecer ligação a outro servidor.
 
 ## Aspetos a corrigir:

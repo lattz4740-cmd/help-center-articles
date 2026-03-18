@@ -25,12 +25,10 @@ sidebar_label: Terminologia
 
 Configuraràs el servidor al Gestor d'Outline.
 
-**Què és un gestor de serveis?**
-
+## Què és un gestor de serveis? {#servicemanager}
  Un gestor de serveis és la persona responsable de configurar el servidor d'Outline i compartir les claus d'accés amb els usuaris. En general, el gestor de serveis és responsable del cost d'ús del servidor. 
 
-**Què és una clau d'accés?**
-
+## Què és una clau d'accés? {#accesskey}
  Les claus d'accés s'utilitzen per accedir a un servidor d'Outline existent i connectar-se a la VPN. El [gestor de serveis](#servicemanager) et donarà una clau d'accés, o bé pots [configurar un servidor d'Outline](/manager/server-setup/setup-server) pel teu compte. Aquí tens un exemple de com és una clau d'accés (només és una mostra, així que no funciona): 
 
  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1

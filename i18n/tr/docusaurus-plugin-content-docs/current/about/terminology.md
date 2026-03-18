@@ -25,12 +25,10 @@ sidebar_label: Terminoloji
 
 Sunucunuzu Outline Manager'da ayarlarsınız.
 
-**Hizmet yöneticisi nedir?**
-
+## Hizmet yöneticisi nedir? {#servicemanager}
  Hizmet yöneticisi, Outline sunucusunu ayarlayıp erişim anahtarlarını kullanıcılarla paylaşmakla yükümlü kişidir. Hizmet yöneticisi genellikle sunucu kullanım masraflarıyla da ilgilenir. 
 
-**Erişim anahtarı nedir?**
-
+## Erişim anahtarı nedir? {#accesskey}
  Erişim anahtarı, mevcut Outline sunucularına erişmek ve VPN'e bağlanmak için kullanılır. Erişim anahtarını [hizmet yöneticisi](#servicemanager) sağlayabilir ya da [Outline sunucusunu kendiniz ayarlayabilirsiniz.](/manager/server-setup/setup-server) Erişim anahtarı örneği (Yalnızca örnek verme amaçlıdır ve kullanılamaz): 
 
  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1

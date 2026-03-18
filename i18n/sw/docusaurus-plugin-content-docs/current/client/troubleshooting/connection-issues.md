@@ -5,9 +5,9 @@ sidebar_label: "Kwa nini ninashindwa kuunganisha na huduma ya Outline?"
 
 Kuna sababu chache ambazo zinaweza kufanya ushindwe kuunganisha na huduma ya Outline:
 
-- **Kifaa chako**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#One)[**kimetenganishwa na intaneti**](#Internetissues)[#Internetissues](#Internetissues)**.**Wakati mwingine kifaa chako kitakumbwa na hitilafu ya muunganisho wa mtandao na huenda kikachukua muda kusasisha aikoni za mtandao. Inawezekana pia kuwa kifaa chako kimeunganishwa na mtandao ulio karibu, lakini intaneti haifanyi kazi.
-- **Kinga mtandao yako**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#Two)[**inazuia ufikiaji wa**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)seva yako ya Outline.**Kwa kawaida hali hii hutokea ukiwa unatumia mtandao wa umma, kama vile, wa shuleni, kazini au mtandao pasiwaya usiolipishwa.
-- **Kifaa chako kina**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#Three)[**programu ya kingavirusi au kinga mtandao**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**ambayo inazuia usifikie seva yako ya Outline.**
+- **Kifaa chako**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**kimetenganishwa na intaneti**](#Internetissues)[#Internetissues](#Internetissues)**.**Wakati mwingine kifaa chako kitakumbwa na hitilafu ya muunganisho wa mtandao na huenda kikachukua muda kusasisha aikoni za mtandao. Inawezekana pia kuwa kifaa chako kimeunganishwa na mtandao ulio karibu, lakini intaneti haifanyi kazi.
+- **Kinga mtandao yako**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**inazuia ufikiaji wa**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)seva yako ya Outline.**Kwa kawaida hali hii hutokea ukiwa unatumia mtandao wa umma, kama vile, wa shuleni, kazini au mtandao pasiwaya usiolipishwa.
+- **Kifaa chako kina**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**programu ya kingavirusi au kinga mtandao**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**ambayo inazuia usifikie seva yako ya Outline.**
 - **Huenda**[**mipangilio ya simu yako**](#DeviceSettings)**ikahitaji kubadilishwa.**
 - **Huenda msimamizi wako wa huduma**[**ameharibu seva au Mtoa Huduma za Intaneti anazuia ombi lako**](#ServerIssues) .
 
@@ -52,14 +52,12 @@ Wasiliana na msimamizi wako wa huduma na umwombe aruhusu ufikiaji wa seva yako y
 
 Kumbuka: Utahitaji ufunguo na programu ya Outline ili utumie Outline kwenye kifaa kingine.
 
-## Hitilafu za kurekebisha:
-
+## Hitilafu za kurekebisha: {#SoftwareIssues}
 Angalia mipangilio ya programu yako ya kinga mtandao au kinga virusi ili uhakikishe kuwa inaruhusu VPN na shuguli za mtandaoni kwenye Outline.
 
 ## Mipangilio ya kifaa: {#DeviceSettings}
 
-## Mambo ya kukagua:
-
+## Mambo ya kukagua: {#DeviceSettings}
 Kwenye Android:
 
 1. Fungua Programu ya Mipangilio.
@@ -74,8 +72,7 @@ Hakikisha huna programu yoyote inayowekelewa juu ya nyingine iliyowekwa kwenye k
 
 ## Hitilafu za seva: {#ServerIssues}
 
-## Jinsi ya kujaribu:
-
+## Jinsi ya kujaribu: {#ServerIssues}
 Iwapo unaweza kufikia zaidi ya seva moja, jaribu kuunganisha na hiyo nyingine.
 
 ## Hitilafu za kurekebisha:
