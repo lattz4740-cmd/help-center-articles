@@ -59,7 +59,15 @@ npm run serve
 
 ## Deployment
 
-The site deploys to GitHub Pages via the CI workflow on push to `main`. It builds all 65 locales and publishes to the `gh-pages` branch, which is served at https://support.getoutline.org.
+Deploy to GitHub Pages:
+
+```sh
+npm run deploy
+```
+
+This verifies translations, builds all 65 locales, and pushes to the `gh-pages` branch, which is served at https://support.getoutline.org.
+
+The custom domain is configured via `static/CNAME`. DNS must have a CNAME record pointing `support.getoutline.org` to `outlinefoundation.github.io`.
 
 ## Content Conversion
 
