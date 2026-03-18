@@ -140,6 +140,14 @@ def remap_link(href):
     if re.match(r"https?://support\.getoutline\.org/s/contactsupport", href):
         return "/about/feedback"
 
+    # Match bare /WEB_ID?params (relative Google support links)
+    m = re.match(r"/(\d{8,})(?:\?[^#]*)?(#\w+)?", href)
+    if m:
+        web_id = m.group(1)
+        anchor = m.group(2) or ""
+        if web_id in WEB_ID_TO_URL:
+            return WEB_ID_TO_URL[web_id] + anchor
+
     return href
 
 

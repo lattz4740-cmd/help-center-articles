@@ -363,6 +363,8 @@ def verify_locale(locale: str, english_paths: set[str]) -> list[Issue]:
 
 
 def main():
+    warn_only = "--warn" in sys.argv
+
     english_paths = get_english_doc_paths()
 
     print(f"English docs: {len(english_paths)} files")
@@ -392,6 +394,9 @@ def main():
         print(f"Summary: {total_issues} issue(s) across {len(LOCALES)} locales")
         for cat, count in sorted(issues_by_category.items()):
             print(f"  {cat}: {count}")
+        if warn_only:
+            print("\n--warn: exiting with status 0 despite issues")
+            sys.exit(0)
         sys.exit(1)
     else:
         print("PASSED: All translations verified")

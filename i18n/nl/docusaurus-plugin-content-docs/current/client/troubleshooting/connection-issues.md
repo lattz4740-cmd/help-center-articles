@@ -80,6 +80,6 @@ Als je toegang hebt tot meer dan één server, probeer je verbinding te maken me
 
 **Oplossingen**:
 
-Vraag je servicemanager of de server is vernietigd. Als dit het geval is, vraag je de servicemanager om een [toegangssleutel](/15330920?sjid=3151972312752256121-NA) tot een andere server.
+Vraag je servicemanager of de server is vernietigd. Als dit het geval is, vraag je de servicemanager om een [toegangssleutel](/about/terminology) tot een andere server.
 
 Als je de server zelf hebt ingesteld, probeer je er verbinding mee te maken via Outline Manager of een andere methode, zoals [SSH](https://en.wikipedia.org/wiki/Secure_Shell). Als dat niet werkt, kun je in de console van de cloudprovider (indien aanwezig) checken of de server nog online is.
