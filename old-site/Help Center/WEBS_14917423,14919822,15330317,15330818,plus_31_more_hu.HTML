@@ -1,0 +1,1087 @@
+<html>
+<head>
+<style type="text/css">
+.gkms-gtt-answer-header, .gkms-gtt-message-header {
+  color: black !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 2em;
+  padding: 4px;
+}.gkms-gtt-answer-header {
+  background-color: #E5ECF9;
+  border-top: 1px solid #36C;
+}
+.gkms-gtt-message-header {
+  background-color: #F8F8F8;
+  border-top: 1px solid #CCC;
+}
+.gkms-gtt-hide {
+  visibility: hidden;
+}
+.form_field_data .temporary_signal_wrapper {
+  display: inline;
+}
+</style>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+</head>
+<body lang="hu">
+<br/><div class="gkms id notranslate" sourceGlobalRevision="116" sourceLocale="hu">WEB:14917423</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Az Outline működése</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1723;a">&nbsp;</p>
+
+<p data-aura-rendered-by="12:1723;a"><strong>A szerver telepítése</strong><br />
+  <br />
+  ​Noha az Outline telepítése egyszerűnek tűnhet, a szerver telepítéséhez a háttérben bonyolult folyamatok zajlanak. Az Outline telepítésekor a telepítési szkript a következő lépéseken halad végig:</p>
+
+<ul data-aura-rendered-by="12:1723;a">
+  <li>A Docker szolgáltatással lekéri és importálja a Shadowbox kép stabil verzióját. A képet a <a href="https://quay.io/" target="_blank">Quay.io</a> tárolja a <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank">https://quay.io/repository/outline/shadowbox?tab=tags</a> webhelyen. A kép tartalmazza az Outline-szervert és a Management API-t, mellyel később az Outline Server Management alkalmazás létrehozza és eltávolítja a hozzáférési kulcsokat, engedélyezi és letiltja az anonim mérőszámok elküldését, stb.</li>
+  <li>Telepíti és konfigurálja a <a href="https://github.com/v2tec/watchtower" target="_blank">Watchtower</a> alkalmazást, amely óránként ellenőrzi, hogy rendelkezésre áll-e új képverzió, így biztosítva, hogy az Outline-szerver mindig naprakész legyen, és rendelkezzen a legújabb funkciókkal és biztonsági javításokkal.</li>
+  <li>A rendszer elindít egy webszervert egy véletlenszerűen kiválasztott porton, egy titkos és véletlenszerű elérési úton, mely a Management API-hoz való hozzáféréshez szükséges.</li>
+  <li>Létrehoz egy <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank">saját aláírású SSL-tanúsítványt</a>, hogy domainnév hiányában is lehessen a TLS protokollal titkosítani az Outline-szerver kezelését. Emellett létrejön a tanúsítvány egyedi ujjlenyomata, melyet a rendszer az Outline Manager alkalmazásban tárol, így megakadályozva a közbeékelődéses támadásokat.</li>
+</ul>
+
+<p data-aura-rendered-by="12:1723;a">A telepítést követően nem kell konfigurálni az Outline szolgáltatást.<br />
+  <br />
+  <strong>Szerverbiztonság</strong><br />
+  <br />
+  Az Outline szoftver nyílt forráskódú, ami azt jelenti, hogy bárki hozzáférhet a programkódhoz, és ha biztonsági rést talál, tovább is fejlesztheti. A programkód a <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank">GitHub</a> webhelyén található.<br />
+  <br />
+  Emellett a telepített Outline-szerverek automatikusan frissülnek minden alkalommal, amikor új verzió jelenik meg, így egy Outline-szerver sem fogja a szoftver régebbi verzióját futtatni.<br />
+  <br />
+  A szerveren lévő hozzáférési kulcsok kezeléséhez az Outline Manager alkalmazás az Outline-szerveren lévő felügyeleti szolgáltatással kommunikál. A felügyeleti szolgáltatás egy véletlenszerűen kiválasztott porton és egy titkos és egyedi elérési úton fut. A felügyeleti szolgáltatás ellenáll a lekérdezéses támadásoknak, mivel csak abban az esetben reagál a lekérdezésekre, ha a megfelelő titkos elérési út van megadva. Végül pedig a felügyeleti szolgáltatással folytatott kommunikáció teljes mértékben titkosítva van egy <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank">saját aláírású SSL-tanúsítvánnyal</a>.<br />
+  <br />
+  Az Outline-szerver nem naplózza a forgalmat, így ha illetéktelenek fel is törnék, nem férhetnének hozzá a felhasználói adatokhoz. További információ <a href="https://support.getoutline.org/s/article/Security-and-privacy" target="_blank">itt</a> található. 2018-ban az Outline-t két szervezet, a <a href="https://radicallyopensecurity.com/" target="_blank">Radically Open Security</a> és a <a href="https://cure53.de/" target="_blank">Cure53</a> auditálta. Az erről szóló jelentéseket <a href="https://support.getoutline.org/s/article/Security-and-privacy" target="_blank">itt</a> találja.<br />
+  <br />
+  <strong>Az UDP-forgalom kezelése</strong><br />
+  <br />
+  Az Outline képes rendszerszintű VPN-ként működni, ami azt jelenti, hogy az összes UDP-forgalom az Outline-szerveren halad keresztül.<br />
+  <br />
+  <strong>DNS-forgalom</strong></p>
+
+<p data-aura-rendered-by="12:1723;a"><br />
+  Az Outline az összes DNS-keresést az Outline-szerveren keresztül hajtja végre, és a többi hálózati tevékenységhez használt titkosítással védi. A DNS-lekérdezések az Outline szerveren át jutnak el a Dyn Internet Guide, az OpenDNS, a Cloudflare DNS vagy a Quad9 DNS szolgáltatáshoz. Az Outline sohasem naplózza a DNS-kereséseket.&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="232" sourceLocale="hu">WEB:14919822</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Biztonság és adatvédelem az Outline használata során</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:258;a">Biztonság és adatvédelem az Outline használata során</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Hogyan óvja meg az Outline az online kommunikációt?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Illetéktelenek akkor figyelhetik meg a legegyszerűbben az internetes forgalmat, ha az épp a helyi vagy országos hálózaton zajlik.</p>
+
+<p data-aura-rendered-by="12:258;a">Az Outline-nal egyszerűen rejtheti el a forgalmazott adatokat az illetéktelenek elől, hiszen a rendszer titkosítja őket az országos hálózaton, és egészen az Outline-szerverig való eljutásukig titkosítva is tartja őket. Az Outline-nal titkosított forgalom alapján a hálózatról senki sem tudhatja meg, milyen webhelyeket nyitott meg, vagy hogy milyen információkat visz át.</p>
+
+<p data-aura-rendered-by="12:258;a">Az Outline emellett abban is segít, hogy azokhoz a biztonságos, végpontok közötti eszközökhöz is hozzáférhessen, amelyek egyébként le vannak tiltva az országában.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Titkosítási szabványok</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Az Outline az AEAD (256 bites) Chacha2020 IETF Poly 1305 rejtjelezéssel titkosítja az eszköze és az Outline-szerver közötti kommunikációt. Az AEAD-rejtjelezés megbízható, integratív és hatékony megoldás, amely kiváló teljesítményt nyújt modern hardvereken.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Biztonsági auditálások</strong></p>
+
+<p data-aura-rendered-by="12:258;a">2018-ban az Outline-t két független, digitális biztonsággal foglalkozó szervezet, a Radically Open Security és a Cure53 is auditálta. A szervezetek a legújabb biztonsági szabványoknak való megfelelőséget vizsgálják. A Radically Open Security még egy további auditálást is elvégzett 2022-ben, a Cure53 pedig 2024-ben végezte el az Outline SDK auditálását. A jelentéseket itt találja:</p>
+
+<ul data-aura-rendered-by="12:258;a">
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf" target="_blank">A Radically Open Security behatolási tesztjéről készült jelentés (2018. március)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf" target="_blank">A Cure53 behatolási tesztjéről és auditálásáról készült jelentés – Jigsaw Outline (2018. december)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf" target="_blank">A Radically Open Security behatolási tesztjéről készült jelentés (2022. december)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf" target="_blank">A Cure53 behatolási tesztjéről készült jelentés – Jigsaw Outline VPN SDK (2024. január)</a></li>
+</ul>
+
+<p data-aura-rendered-by="12:258;a"><strong>Anonimizált mérőszámok és naplók</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Az Outline az egyes hozzáférési kulcsokhoz tartozó „átvitt bájtokként” követi nyomon a felhasznált sávszélességet. Ezen információ birtokában a szerveradminisztrátorok az igényeknek megfelelően állíthatják be a felhőszerver-szolgáltatóval kötött sávszélesség-előfizetéseiket, de nem férhetnek hozzá az Outline-szerveren ténylegesen áthaladó információkhoz.</p>
+
+<p data-aura-rendered-by="12:258;a">További információ az Outline által végzett <a href="/outline-faq/answer/15331222" rel="noopener" target="_blank">adat- és információgyűjtésről</a>.</p>
+
+<hr data-aura-rendered-by="12:258;a" />
+<p data-aura-rendered-by="12:258;a"><strong>Biztonsági és adatvédelmi GYIK</strong>&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Képes az Outline anonimmá tenni az online jelenlétemet?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Nem, az Outline nem az internethasználat anonimizálására szolgáló eszköz, csupán a forgalmához illetéktelenül hozzáférni kívánók elől óvja meg adatait.</p>
+
+<p data-aura-rendered-by="12:258;a">Az Outline nem biztosít teljes anonimitást a megnyitott webhelyeken, mert azok továbbra is képesek azonosítani Önt, ha bejelentkezik, illetve más módokon (például böngésző-ujjlenyomatok alapján). Ha mobilalkalmazásokat használ, a legtöbb modern okostelefon rendelkezik olyan API-kkal, melyek lehetővé teszik a telepített appoknak, hogy a proxytól függetlenül (a beépített GPS-nek köszönhetően) lekérjék a helyadatait.</p>
+
+<p data-aura-rendered-by="12:258;a">A virtuális magánhálózatok (VPN-ek) hatékony védelmet nyújtanak, különösen az internetes megfigyeléssel szemben, de az internethasználattal járó kockázatok soha nem szüntethetők meg teljesen. Még ha VPN-t is használ, az internetszolgáltató már tisztában van a személyazonosságával, és megfigyelheti a hálózati forgalmát, így megállapíthatja például az Outline-szerver IP-címét. Ezen információ birtokában letilthatja az Outline-szerverhez való hozzáférését, vagy akár megismerheti a használati szokásait, például hogy mikor szokott csatlakozni az internethez, sőt akár a körülbelüli tartózkodási helyét is lekérheti.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Mások láthatják, hogy az Outline-t használom?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Lehetséges. A használt platformok és szolgáltatások valószínűleg képesek megmondani, hogy a kapcsolatot egy felhőszerverről indította. Ebből aztán kikövetkeztethetik, hogy VPN-t használ, de magához az internetes forgalom tartalmához nem férhetnek hozzá.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Képes megvédeni az Outline az összes lehetséges számítógépes fenyegetéstől?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Nem, egyetlen eszköz sem képes rá, hogy az összes potenciális kiberfenyegetéssel szemben megóvja Önt. Az Outline hozzáférést biztosít Önnek a nyílt internethez, és a forgalom titkosításával biztonságosabbá teszi az adatforgalmat, de azt javasoljuk, hogy további óvintézkedéseket is tegyen, hogy megóvja magát a különböző támadásokkal – például a rosszindulatú programokkal és az adathalászattal – szemben.</p>
+
+<p data-aura-rendered-by="12:258;a">Az online védelmi vonalak megerősítése érdekében érdemes lehet egyeztetni a szervezete kiberbiztonsági munkatársával. Alternatív megoldásként személyre szabott segítséget kaphat a <a href="https://securityplanner.org/" target="_blank">Security Planner</a> vezető biztonsági szakértőitől. A Security Planner webhely célja, hogy hatékony tippeket nyújtson az Ön számára megfelelő kiberbiztonsági eszközök kiválasztásához.</p>
+
+<p data-aura-rendered-by="12:258;a">Érdemes lehet továbbá kipróbálni a <a href="https://jigsaw.google.com/" target="_blank">Jigsaw</a> más kiberbiztonsági termékeit, például az <a href="https://getintra.org/" target="_blank">Intra</a>, a <a href="https://g.co/shield" target="_blank">Project Shield</a> és a <a href="https://chrome.google.com/webstore/detail/password-alert/noondiphcddnnabmjcihcjfbhfklnnep?" rel="noopener" target="_blank">Jelszóriasztás</a> szolgáltatást.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Törvényesen használhatok VPN-t?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Mielőtt beüzemelné az Outline-t, vagy használatba venné az alkalmazást, olvassa át a helyi törvényeket és jogszabályokat, valamint a tervezett felhőszolgáltató Általános Szerződési Feltételeit.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="89" sourceLocale="hu">WEB:15330317</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Miért nem tudok hozzáférni az internethez, miközben pedig csatlakozom az Outline-szerverhez?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:32933;a">Ha mobiltelefont használ, próbálkozzon azzal, hogy vált a mobiladat-kapcsolat és a Wi-Fi-kapcsolat között. Néha az egyik kapcsolattípus működik, miközben a másik nem. Számítógép használata esetén próbálkozzon azzal, hogy leválasztja a számítógépet a szélessávú kapcsolatról, majd újracsatlakoztatja.</p>
+
+<p data-aura-rendered-by="12:32933;a">Ha ezek után is nehézségeket tapasztal, akkor valószínűleg az Outline-szerverrel van valamilyen probléma. Forduljon a<a href="/outline-faq/answer/15330920" rel="noopener" target="_blank"> szolgáltatáskezelőjéhez</a>, és kérjen tőle új hozzáférési kulcsot egy másik szerverhez. Lehetséges, hogy a szolgáltatáskezelő a<a href="https://google-jigsaw--jigsawuat.sandbox.my.site.com/outline/s/article/Terminology" target="_blank"> </a><a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">hozzáférési kulcsához</a> beállított adatkorlátot is meg tudja emelni, ha a kulcs túllépte a hozzá meghatározott kvótát.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="296" sourceLocale="hu">WEB:15330818</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Mik a rendszerkövetelmények az Outline ügyfélalkalmazás futtatásához?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:24676;a">Az Outline-t bármilyen operációs rendszeren kipróbálhatja. Az operációs rendszerekre vonatkozó minimális követelmények a következők:</p>
+
+<table class="borders" data-aura-rendered-by="12:24676;a" width="312">
+  <tbody>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top"><b>Operációs rendszer</b></td>
+      <td colspan="1" rowspan="1" valign="top"><b>Minimális verzió</b></td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Android</td>
+      <td colspan="1" rowspan="1" valign="top">10</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">iOS</td>
+      <td colspan="1" rowspan="1" valign="top">15.5</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">macOS</td>
+      <td colspan="1" rowspan="1" valign="top">12.0</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Windows</td>
+      <td colspan="1" rowspan="1" valign="top">10</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Linux</td>
+      <td colspan="1" rowspan="1" valign="top">Ubuntu&nbsp;20.04</td>
+    </tr>
+  </tbody>
+</table>
+
+<p data-aura-rendered-by="12:24676;a"><br />
+  Szeretne segíteni abban, hogy az Outline ügyfélalkalmazás más operációs rendszereken is működjön?&nbsp;<a href="https://github.com/Jigsaw-Code/outline-client#platform-specific-development" target="_blank">Vegyen részt programkódunk fejlesztésében</a> a GitHubon!</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="107" sourceLocale="hu">WEB:15330824</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hogyan frissíthetem az Outline-szerverem szoftverét?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:10378;a">A rendszer automatikusan a legújabb biztonsági fejlesztésekkel frissíti az Outline-szervereket, hogy mindig a legkorszerűbb Outline-technológiát vehesse igénybe. Az automatizált frissítési folyamatot a <a href="https://github.com/v2tec/watchtower" target="_blank">Watchtower</a> nevű nyílt forráskódú könyvtár teszi lehetővé, amely rendszeresen ellenőrzi és frissíti az Outline szoftverét tartalmazó dockerképet.</p>
+
+<p data-aura-rendered-by="12:10378;a">Ha pedig az Outline Manager segítségével telepíti az Outline szolgáltatást, a rendszer egy cron-feladatot is beállít, amely automatikusan frissíti a szerveren futó szoftvert az Ubuntu <a href="https://wiki.debian.org/UnattendedUpgrades" target="_blank">Unattended Upgrades</a> (Felügyelet nélküli frissítések) funkciójával, és szükség esetén újraindítja a szoftvert. Ne feledje, hogy ezt Advanced Mode (Speciális mód) üzemmódban a rendszer a meglévő konfiguráció megőrzése érdekében nem hajtja végre, azt feltételezve, hogy a gazdagépet az Outline futtatásán kívül más célokra is használják.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="102" sourceLocale="hu">WEB:15330825</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hogyan tudom letölteni az Outline Managert, ha nem működik a letöltési link?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><a href="https://getoutline.org/get-started/#step-1" target="_blank">Ezt a linket</a> vagy <a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">ezt a linket</a> használva közvetlenül letöltheti az alkalmazásokat számos operációs rendszerre.&nbsp;</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="129" sourceLocale="hu">WEB:15330920</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Terminológia</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:23504;a"><strong>Mi az a VPN?</strong><br />
+  A virtuális magánhálózat (VPN) az Ön eszköze(i) és egy gazdaszerver között létrejött privát kapcsolat. VPN használatakor az adatforgalom rejtve marad az internetszolgáltató előtt. VPN-t az alábbi esetekben lehet érdemes használni:</p>
+
+<ul data-aura-rendered-by="12:23504;a">
+  <li>Az adatok védelmére nyilvános Wi-Fi-hálózat használata esetén</li>
+  <li>A böngészési adatoknak az internetszolgáltató és a kormányzati szervek előli elrejtésére</li>
+  <li>A világ különböző forrásaiból származó, cenzorálatlan tartalmakhoz való hozzáférésre</li>
+</ul>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Miben különbözik az Outline a hagyományos VPN-ektől?</strong><br />
+  Az internetszolgáltatók könnyen észlelni és blokkolni tudják a hagyományos VPN-eket a gyakori biztonsági protokollok, illetve a forgalom mértékében megmutatkozó egyes szabályszerűségek alapján. Az Outline kevésbé észlelhető, mint a hagyományos VPN-ek, mert egy olyan protokollra épül, amelynek kialakításakor az észlelés megnehezítése volt a fő szempont, ezért nehezebb blokkolni. Az Outline-on nem fognak ki a cenzúra rafinált formái sem, így például a hálózatalapú blokkolás és az IP-címek blokkolása sem.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Mit nevezünk Outline-szervernek?</strong><br />
+  Az Outline-szerveren fut a VPN, amelyhez az erre jogosult felhasználók csatlakoznak. Ha új hálózatot hoz létre, és van saját biztonságos szervere, használhatja azt Outline-szerverként, de valamelyik felhőszolgáltató rendszerét is választhatja, például:</p>
+
+<ul data-aura-rendered-by="12:23504;a">
+  <li>DigitalOcean</li>
+  <li>Google Cloud Platform (GCP)</li>
+  <li>Amazon Web Services (AWS)</li>
+</ul>
+
+<p data-aura-rendered-by="12:23504;a"><a id="One" target="_blank"></a>A szervert az Outline Manager segítségével telepítheti.<br />
+  <br />
+  <strong><a id="servicemanager" name="servicemanager"></a>Ki az a szolgáltatáskezelő?</strong><br />
+  A szolgáltatáskezelő az, aki felel az Outline-szerver telepítéséért, és ő ad hozzáférési kulcsot a felhasználóknak. Általában a szolgáltatáskezelő felel a szerverhasználat költségéért is.&nbsp;<br />
+  <br />
+  <strong><a id="accesskey" name="accesskey"></a>Mit nevezünk hozzáférési kulcsnak?</strong><br />
+  A hozzáférési kulcs segítségével lehet hozzáférni a meglévő Outline-szerverekhez, illetve csatlakozni a VPN-hez. A <a href="#servicemanager" rel="noopener">szolgáltatáskezelő</a>&nbsp;ad Önnek hozzáférési kulcsot, vagy Ön saját maga is <a href="/outline-faq/answer/15331530" rel="noopener" target="_blank">telepíthet Outline-szervert</a>.&nbsp;A hozzáférési kulcs a következőre hasonlít (ez csak minta, nem működik):&nbsp;<br />
+  <br />
+  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1<br />
+  <br />
+  <strong>Mi az az Outline Manager?</strong><br />
+  Az Outline Manager asztali alkalmazás, amely lehetővé teszi a szolgáltatáskezelő számára az Outline-szerver telepítését, a <a href="#accesskey" rel="noopener">hozzáférési kulcsok</a> generálását, illetve a kulcsokra vonatkozó adatforgalmi korlátozások beállítását. Az Outline Manager legújabb verziója <a href="https://getoutline.org/get-started/#step-3" target="_blank">innen</a> és <a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">innen</a> tölthető le.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Mi az az Outline-ügyfél?</strong><br />
+  Az Outline-ügyfél asztali és mobilverzióban is rendelkezésre álló alkalmazás, amellyel hozzáférési kulcs birtokában kapcsolatot lehet létesíteni az Outline-szerverrel, és hozzá lehet férni a VPN-hez. Az Outline-ügyfél legújabb verziója <a href="https://getoutline.org/get-started/#step-3" target="_blank">innen</a> és <a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">innen</a> tölthető le.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Mik azok az adatforgalmi korlátozások?</strong><br />
+  Az Outline Manager segítségével a szolgáltatáskezelők az elmúlt 30 napra összesítve mért adatforgalmi korlátot állíthatnak be, megakadályozva ezzel a túlzott mértékű használatot, és kiszámítható keretek között tartva a költségeket. A szolgáltatáskezelők beállíthatják az alapértelmezett korlátozást, amely minden kulcsra érvényes, de az alapértelmezett korlátozást felülbírálva bármelyik kulcsra eltérő korlátozást is beállíthatnak. A korlátozás a beállításakor azonnal életbe lép, és óránként vizsgálja a rendszer a túllépését.</p>
+
+<p data-aura-rendered-by="12:23504;a">Ha a szolgáltatáskezelő azt választja, hogy megosztja a mutatókat a Jigsaw-val, akkor az <a href="/outline-faq/answer/15331222" rel="noopener" target="_blank">adatgyűjtési irányelvekből</a> részletesen tájékozódhat az adatforgalmi korlátozásról beküldött jelentésekről.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="110" sourceLocale="hu">WEB:15331121</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Támogatja a „getoutline.me” webhelyet és az „@OutlineVpnOfficial” Telegram-csatornát?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Az Outline-csapat számos kérést kapott a „<a href="http://getoutline.me/" target="_blank">getoutline.me</a>” webhellyel és a hozzá társított „@OutlineVpnOfficial” Telegram-csatornával kapcsolatban. Ezek a szolgáltatások nincsenek kapcsolatban az Outline csapatával, ezért nem tudunk segíteni azoknak a felhasználóknak, akik problémát tapasztalnak az ezekből a szolgáltatásokból származó hozzáférési kulcsokkal.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="hu">WEB:15331122</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Rendelkezésre álló nyelvek</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Az Outline a következő nyelveken áll rendelkezésre:</p>
+
+<ul>
+  <li aria-level="1">afrikaans</li>
+  <li aria-level="1">albán</li>
+  <li aria-level="1">amhara</li>
+  <li aria-level="1">arab</li>
+  <li aria-level="1">örmény</li>
+  <li aria-level="1">azerbajdzsáni</li>
+  <li aria-level="1">bengáli</li>
+  <li aria-level="1">bosnyák</li>
+  <li aria-level="1">bolgár</li>
+  <li aria-level="1">burmai</li>
+  <li aria-level="1">katalán</li>
+  <li aria-level="1">kínai (egyszerűsített)</li>
+  <li aria-level="1">kínai (hagyományos)</li>
+  <li aria-level="1">horvát</li>
+  <li aria-level="1">cseh</li>
+  <li aria-level="1">dán</li>
+  <li aria-level="1">holland</li>
+  <li aria-level="1">angol (amerikai)</li>
+  <li aria-level="1">angol (brit)</li>
+  <li aria-level="1">észt</li>
+  <li aria-level="1">tagalog</li>
+  <li aria-level="1">finn</li>
+  <li aria-level="1">francia</li>
+  <li aria-level="1">grúz</li>
+  <li aria-level="1">német</li>
+  <li aria-level="1">görög</li>
+  <li aria-level="1">héber</li>
+  <li aria-level="1">hindi</li>
+  <li aria-level="1">magyar</li>
+  <li aria-level="1">izlandi</li>
+  <li aria-level="1">indonéz</li>
+  <li aria-level="1">olasz</li>
+  <li aria-level="1">japán</li>
+  <li aria-level="1">kazah</li>
+  <li aria-level="1">khmer</li>
+  <li aria-level="1">koreai</li>
+  <li aria-level="1">lao</li>
+  <li aria-level="1">lett</li>
+  <li aria-level="1">litván</li>
+  <li aria-level="1">macedón</li>
+  <li aria-level="1">maláj</li>
+  <li aria-level="1">maráthi</li>
+  <li aria-level="1">mongol</li>
+  <li aria-level="1">nepáli</li>
+  <li aria-level="1">norvég</li>
+  <li aria-level="1">perzsa</li>
+  <li aria-level="1">lengyel</li>
+  <li aria-level="1">portugál (brazil)</li>
+  <li aria-level="1">portugál (európai)</li>
+  <li aria-level="1">román</li>
+  <li aria-level="1">orosz</li>
+  <li aria-level="1">szerb (cirill)</li>
+  <li aria-level="1">szerb (latin)</li>
+  <li aria-level="1">szingaléz</li>
+  <li aria-level="1">szlovák</li>
+  <li aria-level="1">szlovén</li>
+  <li aria-level="1">spanyol (európai)</li>
+  <li aria-level="1">spanyol (latin-amerikai)</li>
+  <li aria-level="1">szuahéli</li>
+  <li aria-level="1">svéd</li>
+  <li aria-level="1">tamil</li>
+  <li aria-level="1">thai</li>
+  <li aria-level="1">török</li>
+  <li aria-level="1">ukrán</li>
+  <li aria-level="1">urdu</li>
+  <li aria-level="1">vietnámi</li>
+</ul>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="110" sourceLocale="hu">WEB:15331125</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Miért nem tudom telepíteni az Outline ügyfélalkalmazást Windows rendszeren?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:31254;a">Előfordulhat, hogy megjelenik a következő hibaüzenet: „Sajnos úgy tűnik, hogy az Outline nincs megfelelően telepítve. Próbálja meg újratelepíteni. Ha nem sikerül megoldani a problémát, <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">küldjön visszajelzést</a> az alkalmazáson keresztül.”</p>
+
+<p data-aura-rendered-by="12:31254;a">Ha Windows rendszeren használja az Outline-t, váratlan hiba is felléphet. A legtöbb esetben megoldja a problémát, ha törli az Outline TAP adaptert (illesztőprogramot), és újratelepíti az Outline alkalmazást.</p>
+
+<p data-aura-rendered-by="12:31254;a">A pontos lépések a Windows operációs rendszer verziójától függnek, de alább megtalálja a TAP adapter és az Outline eltávolításának, illetve az utóbbi újratelepítésének általános lépéseit.</p>
+
+<ol data-aura-rendered-by="12:31254;a">
+  <li>Az Outline ügyfélalkalmazás TAP adapterének eltávolítása
+    <ul>
+      <li>Nyissa meg az <strong>Eszközkezelők</strong> felületet, majd nyissa le a <strong>Hálózati adapterek</strong> szakaszt.</li>
+      <li>Keresse meg a <strong>TAP-Windows Adapter V9</strong> fájlt vagy az Outline-hoz rendelt TAP adaptert.</li>
+      <li>Távolítsa el vagy törölje az adaptert. Ne feledje, hogy ez a többi VPN-alkalmazásra is hatással lehet.&nbsp;</li>
+    </ul>
+  </li>
+  <li>Az Outline ügyfélalkalmazás eltávolítása
+    <ul>
+      <li>Nyissa meg a <strong>Programok és szolgáltatások</strong> felületet, és válassza a <strong>Program eltávolítása</strong> lehetőséget.</li>
+      <li>Keresse meg az Outline ügyfélalkalmazást, és távolítsa el.</li>
+      <li><a href="https://getoutline.org/get-started/#step-3" target="_blank">Töltse le az Outline ügyfélalkalmazás legújabb verzióját</a>, és telepítse újra a Windows-eszközén. Ekkor a rendszer egy új TAP adaptert is automatikusan telepít.</li>
+    </ul>
+  </li>
+</ol>
+
+<p data-aura-rendered-by="12:31254;a">Ha továbbra is problémát tapasztal, <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">forduljon az ügyfélszolgálathoz</a>.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="109" sourceLocale="hu">WEB:15331126</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Miért nem tudok csatlakozni az Outline szolgáltatáshoz?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Több oka is lehet annak, hogy nem tud csatlakozni az Outline szolgáltatáshoz:&nbsp;</p>
+
+<ul>
+  <li aria-level="1"><strong>Az eszköz</strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#One" rel="noopener"><strong> </strong></a><a href="#Internetissues" rel="noopener"><strong>nem kapcsolódik az internethez</strong></a><a href="#Internetissues" rel="noopener"></a><strong>. </strong>Előfordulhat, hogy megszakad az eszköz hálózati kapcsolata, és eltart egy pár másodpercig, amíg a hálózati ikonok frissülnek. Az is lehet, hogy az eszköz csatlakozik a helyi hálózathoz, de az internetkapcsolat nem működik.</li>
+  <li aria-level="1"><strong>A</strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#Two"><strong> </strong></a><a href="#FirewallIssues" rel="noopener"><strong>hálózati tűzfal korlátozza</strong></a><a href="#FirewallIssues" rel="noopener"> </a><strong><a href="#FirewallIssues" rel="noopener"></a>az Outline-szerverhez való hozzáférést. </strong>Ez nyilvános hálózat, például iskolai, munkahelyi vagy díjmentes vezeték nélküli hálózat használata esetén gyakori.</li>
+  <li aria-level="1"><strong>Az eszközön lévő</strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#Three"><strong> </strong></a><a href="#SoftwareIssues" rel="noopener"><strong>tűzfal vagy vírusirtó szoftver</strong></a><a href="#SoftwareIssues" rel="noopener"> </a><strong>letiltja az Outline-szerverhez való hozzáférést.</strong></li>
+  <li aria-level="1"><strong>Az Ön</strong><a href="#DeviceSettings" rel="noopener"><strong> </strong><strong>telefonján lévő eszközbeállításokat</strong></a><strong> esetleg módosítania kell.</strong></li>
+  <li aria-level="1"><strong>Lehet, hogy a szolgáltatáskezelője</strong><a href="#ServerIssues" rel="noopener"><strong> </strong><strong>megsemmisítette a szervert, vagy az internetszolgáltató letiltotta a kérelmét</strong></a>.</li>
+</ul>
+
+<p><a id="Internetissues" name="Internetissues"><strong>Internetkapcsolattal kapcsolatos problémák:</strong></a></p>
+
+<p><strong>A tesztelés módja:</strong></p>
+
+<p>Kapcsolja ki az Outline-t, és nézze meg, hogy helyreáll-e az internetkapcsolat.</p>
+
+<ul>
+  <li aria-level="1">Ha igen, hajtsa végre az alábbi hibaelhárítási lépéseket.</li>
+  <li aria-level="1">Ha nem, várjon néhány másodpercet, és ellenőrizze, hogy frissülnek-e a hálózati beállítások.</li>
+</ul>
+
+<p><strong>Javítási lehetőségek:</strong></p>
+
+<p>Kapcsolódjon újra az internethez:</p>
+
+<ol>
+  <li aria-level="1">Ellenőrizze, hogy más eszközök tudnak-e csatlakozni ugyanehhez a hálózathoz. Ha más eszközök sem tudnak csatlakozni, lehet, hogy a hálózat nem működik megfelelően, és meg kell várnia, amíg helyreáll, vagy Önnek kell megoldania a hálózati problémát.</li>
+  <li aria-level="1">Ha más eszközök képesek csatlakozni a hálózathoz, próbálkozzon az alábbi lépésekkel a kapcsolat helyreállításához:
+    <ol>
+      <li aria-level="2">Állítsa Repülős üzemmódba az eszközt (mobiltelefonon).</li>
+      <li aria-level="2">Indítsa újra az eszközt.</li>
+      <li aria-level="2">Kapcsolja ki az eszközt, várjon 2 percet, majd kapcsolja be újra.</li>
+    </ol>
+  </li>
+</ol>
+
+<p><a id="FirewallIssues" name="FirewallIssues"><strong>Hálózati tűzfallal kapcsolatos problémák:</strong></a></p>
+
+<p><strong>A tesztelés módja:</strong></p>
+
+<ol>
+  <li aria-level="1">Csatlakozzon le a jelenlegi Wi-Fi- vagy vezetékes hálózatról.</li>
+  <li aria-level="1">Csatlakozzon másik hálózathoz (például mobilhálózathoz).</li>
+  <li aria-level="1">Próbáljon újracsatlakozni az Outline-szerverhez.</li>
+</ol>
+
+<p>Ha másik hálózatról sikerül csatlakozni, ez a probléma lépett fel.</p>
+
+<p><strong>Javítási lehetőségek:</strong></p>
+
+<p>Kérje meg a hálózati adminisztrátort, hogy engedélyezze az Outline-szerverhez való hozzáférést, vagy használjon másik hálózatot.</p>
+
+<p><a id="SoftwareIssues" name="SoftwareIssues"><img alt="A kép nem áll rendelkezésre, mert Ön nem rendelkezik a megtekintéséhez szükséges jogosultsággal, vagy a képet eltávolították a rendszerből." height="1" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeoHNM7TWEsg0z4iydaS2xKOPga0zOjhOTqvGpA-JLd-Fwnydby6EBZziz3vqgRUJwssreEqP6lmjv_-13QXdzqh3yx9tZiR81BvxcXShi3kJ-XDKnqt951uRRPSO8BUhXaiijJLF8PixV_ezhGJ02Y3QPFbw?key=pJIeaVZQOqqoBTmDWZd2hw" width="1" /><strong>Tűzfallal vagy vírusirtó szoftverrel kapcsolatos problémák:</strong></a><br />
+  <br />
+  <strong>A tesztelés módja:</strong><br />
+  <br />
+  Csatlakozzon az Outline-hoz egy másik eszközről.&nbsp;</p>
+
+<p>Megjegyzés: Ne feledje, hogy ha az Outline szolgáltatást egy másik eszközön szeretné használni, szüksége lesz egy hozzáférési kulcsra és az Outline alkalmazásra.</p>
+
+<p><strong>Javítási lehetőségek:</strong></p>
+
+<p>Ellenőrizze a tűzfal vagy a vírusirtó szoftver beállításait, és győződjön meg róla, hogy azok lehetővé teszik a VPN- és az Outline-forgalom áthaladását.</p>
+
+<p><a id="DeviceSettings" name="DeviceSettings"><strong>Eszközbeállítások:</strong></a></p>
+
+<p><strong>Amit érdemes ellenőrizni:</strong></p>
+
+<p>Android esetén:</p>
+
+<ol>
+  <li aria-level="1">Nyissa meg a Beállítások alkalmazást.</li>
+  <li aria-level="1">Keresse meg a <strong>VPN-beállításokat</strong> az eszközén. (A VPN-beállítások között az összes olyan VPN-alkalmazás megjelenik, amely jelenleg hozzáféréssel rendelkezik a telefonjához.)&nbsp;</li>
+  <li aria-level="1">Ha nem látja az Outline szolgáltatást a VPN-beállítások között, távolítsa el, majd telepítse újra az Outline-t. Az Outline a telepítést követően automatikusan megkapja a hozzáférést az eszköztől.</li>
+</ol>
+
+<p>Győződjön meg arról, hogy nincsenek képernyőfedvényt előidéző alkalmazások telepítve az Android-eszközén, mert ezek az Outline engedélyeket megjelenítő ablakát a háttérbe küldhetik, így az nem lesz látható az előtérben.<br />
+  <br />
+  Az Android-eszközön válassza a Beállítások &gt; Alkalmazások &gt; Különleges alkalmazás-hozzáférés lehetőséget. Ezután koppintson A többi alkalmazás felett elemre. Bármely, ezt a viselkedést engedélyező alkalmazás esetén eltávolíthatja a hozzáférést.<br />
+  <br />
+  iOS esetén: Olvassa el <a href="https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web" rel="noopener" target="_blank">ezt a súgócikket</a>.</p>
+
+<p><a id="ServerIssues" name="ServerIssues"><strong>Szerverrel kapcsolatos problémák:</strong></a></p>
+
+<p><strong>A tesztelés módja:</strong></p>
+
+<p>Ha egynél több szerverhez fér hozzá, csatlakozzon egy másikhoz.&nbsp;</p>
+
+<p><strong>Javítási lehetőségek:</strong></p>
+
+<p>Kérdezze meg a szolgáltatáskezelőjét, hogy nem semmisítette-e meg a szervert. Ha igen, kérjen tőle <a href="/outline-faq/answer/15330920" rel="noopener">hozzáférési kulcsot</a> egy másik szerverhez.</p>
+
+<p>Ha Ön állította be a szervert, csatlakozzon hozzá az Outline Manageren keresztül vagy más módon, például <a href="https://hu.wikipedia.org/wiki/Secure_Shell">SSH</a> segítségével. Ha így sem jön létre a kapcsolat, ellenőrizze a felhőszolgáltató konzolján, hogy a szerver online-e még.</p>
+
+<p data-aura-rendered-by="12:32047;a">&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="hu">WEB:15331127</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hogyan tölthetem le az ügyfélalkalmazást, ha nem működik a letöltési link?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">Ezt a linket</a> használva közvetlenül letöltheti az alkalmazásokat számos operációs rendszerre.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="131" sourceLocale="hu">WEB:15331222</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Az általunk gyűjtött adatok és információk</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:271;a">Az Outline kizárólag akkor gyűjt be személyes adatokat, ha azt Ön engedélyezi. Az Outline a meglátogatott webhelyekről sem gyűjt információkat, ahogy arról sem, hogy kivel vagy mit kommunikál.<br />
+  <br />
+  Ha az Outline Manager segítségével hoz létre fiókot egy harmadik fél felhőszolgáltatónál, vagy az Outline Manageren keresztül jelentkezik be egy ilyen fiókba, nem rögzítjük a harmadik fél felhőszolgáltatónak küldött adatait (például az e-mail-címét, a nevét, a számlázási adatait és a fizetési részleteket).<br />
+  <br />
+  <strong><strong>Az automatikusan gyűjtött információk</strong></strong><br />
+  <br />
+  Két információtípust gyűjtünk automatikusan.<br />
+  1. A szerver IP-címe<br />
+  Az Outline-szerver IP-címét a&nbsp;<a href="http://quay.io/" target="_blank">Quay.io</a> szolgáltatás gyűjti be és teszi számunkra hozzáférhetővé, amikor a szerver automatikusan frissül a legújabb biztonsági funkciókkal és más fejlesztésekkel. A szerver IP-címe alapján azonosítható a felhőszolgáltató, illetve az a település, ahol az Outline-szerver üzemel, de az, hogy ki futtatja a szervert, és ki fér hozzá, nem fejthető ki ebből az információból.<br />
+  <br />
+  2. Személyazonosításra nem alkalmas, műszaki jellegű információk<br />
+  Ha az Outline leáll, vagy végzetes kivétel történik, illetve ha Ön manuálisan küld visszajelzést az Outline alkalmazásból, az alábbi információkat küldi el a rendszer. Ezek birtokában azonosíthatjuk és kijavíthatjuk a stabilitást és a teljesítményt érintő problémákat.</p>
+
+<ul data-aura-rendered-by="12:271;a">
+  <li>Ország</li>
+  <li>Nyelv- és országkód</li>
+  <li>A leállás/végzetes kivétel napja és időpontja, illetve az ezt megelőző legfeljebb 100 esemény (példa eseménye: a felhasználó megnyitotta a „Névjegy” szakaszt)</li>
+  <li>Statikusan tömörített kivételüzenetek</li>
+  <li>Az operációs rendszer neve és verziója</li>
+  <li>A telefon modellje (ha releváns)</li>
+  <li>Az alkalmazás elindításának időpontja.</li>
+  <li>Böngésző</li>
+  <li>Architektúra</li>
+  <li>Az Outline verziószáma és buildszáma.</li>
+</ul>
+
+<p data-aura-rendered-by="12:271;a"><br />
+  Ezeket az adatokat HTTPS protokollon keresztül küldi el az alkalmazás a Sentry (<a href="http://sentry.io/" target="_blank">sentry.io</a>) rendszerébe, amely egy nyílt forráskódot használó, harmadik fél hibakövetési szolgáltató. A Sentry többféle, az ipari szabványoknak megfelelő technológiával és szolgáltatással óvja meg adatait a jogosulatlan hozzáféréstől, kiszivárgástól, használattól és elvesztéstől. Ha kérdése van a Sentry irányelveivel kapcsolatban, látogasson el a&nbsp;<a href="https://sentry.io/security/" target="_blank">https://sentry.io/security/</a>&nbsp;és a&nbsp;<a href="https://sentry.io/privacy/" target="_blank">https://sentry.io/privacy/</a> webhelyre, vagy írjon a&nbsp;<a href="mailto:security@sentry.io" target="_blank">security@sentry.io</a> címre. A Sentry által tárolt összes Outline-adat korlátozva van, így csak az Outline-csapat tagjai férhetnek hozzájuk.<br />
+  <br />
+  <strong><strong>A kizárólag a felhasználók külön engedélyével gyűjtött információk</strong></strong><br />
+  <br />
+  Az Outline akkor jelenti a következő információkat az Outline csapatának, ha erre Ön külön engedélyt ad.<br />
+  1. Használati mutatók<br />
+  Mindegyik Outline-szervere automatikusan begyűjti az elmúlt órából az egyes hozzáférési kulcsokhoz kapcsolódóan átvitt bájtok számát, a felhasználó szerverhez való csatlakozásainak számát, a használt hitelesítési adatok forrásországát és autonóm rendszereit, valamint azt, hogy engedélyeztek vagy letiltottak-e valamilyen funkciót. Sem a kommunikáció tartalmát, sem a személyazonosításra alkalmas metaadatokat (például bejelentkezési azonosítókat, e-mail-címeket és eszközazonosítókat) nem rögzítjük. Minden mérőszám egy szerverazonosítóhoz kapcsolódik. A szerverazonosító módosítására vonatkozó útmutatást&nbsp;<a href="/outline-faq/answer/15548974" rel="noopener" target="_blank">itt</a> találja.<br />
+  <br />
+  Alapértelmezés szerint az Outline-szerverek nem osztják meg ezeket a mérőszámokat az Outline csapatával. Ha azonban a szerveradminisztrátor kifejezetten engedélyezi a mérőszámok megosztását, a rendszer minden órában biztonságosan elküldi ezeket az információkat az Outline csapatának. 60 nap után ezeket a használati mérőszámokat országos szinten összesítjük. A szerveradminisztrátorok az Outline Manager „Beállítások” menüjében bármikor módosíthatják a mérőszámok megosztási beállításait.<br />
+  <br />
+  Nagyra értékeljük, ha úgy dönt, hogy megosztja velünk a szerverhasználatra vonatkozó anonimizált mérőszámokat, mivel ezekkel azonosíthatjuk a használati tendenciákat, illetve fejleszthetjük a terméket.<br />
+  <br />
+  Ha például egy szerveradminisztrátor úgy dönt, hogy megosztja velünk a mérőszámokat, többek között olyan információkat kaphatunk, mint hogy az 12345-ös azonosítójú szervert tegnap 3 órán át használták, ez idő során 500 megabájtnyi adat haladt át rajta 3 kulcsról, amelyet az Egyesült Államokban és Kanadában használtak, és közben engedélyezve volt az adatkorlátozási funkció.<br />
+  <br />
+  2. Megjegyzések és e-mail-cím visszajelzés küldésekor<br />
+
+  Az Outline Manager és az Outline-alkalmazások lehetővé teszik, hogy közvetlen visszajelzést küldjön csapatunknak. Azt javasoljuk, hogy ebben ne adjon meg személyazonosításra alkalmas adatokat, de ha kíváncsi válaszunkra, megadhatja az e-mail-címét. A visszajelzés pontos értelmezése érdekében néhány alapvető adatot automatikusan begyűjtünk. Erről „Az automatikusan gyűjtött információk” szakasz 2. pontjában tudhat meg többet.&nbsp;Ha részletesebben szeretne tájékozódni az Outline biztonsági és adatvédelmi gyakorlatáról, kattintson&nbsp;<a href="/outline-faq/answer/14919822" rel="noopener" target="_blank">ide</a>.<br />
+  <br />
+  Ha az Outline alkalmazás bétaverzióját használja Androidon, akkor mi a Google&nbsp;<a href="https://firebase.google.com/" target="_blank">Firebase</a>&nbsp;szolgáltatásával a problémák felismeréséhez és az Outline fejlesztéséhez szükséges hibaelhárítási adatokat gyűjthetünk. A Firebase adatvédelmi és biztonsági irányelveiről a Firebase webhelyén tájékozódhat részletesebben:&nbsp;<a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a>. Ha nem szeretné, hogy az Outline elküldje ezeket az információkat a Firebase szolgáltatáson keresztül, térjen át az alkalmazás éles verziójára.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="88" sourceLocale="hu">WEB:15331223</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Mi a teendő, ha nem működik a hozzáférési kulcsom?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:30472;a">Ha a következő hibaüzenet jelenik meg:&nbsp;„Úgy tűnik, a hozzáférési kulcs nem érvényes. Ha a probléma továbbra is fennáll, forduljon a szolgáltatáskezelőhöz.” A probléma megoldásához hajtsa végre az alábbi lépéseket:&nbsp;</p>
+
+<ol data-aura-rendered-by="12:30472;a">
+  <li>Ügyeljen arra, hogy a teljes hozzáférési kulcsot adja meg, az első öt karaktert („ss://”) is beleértve, amelyet a rendszer nem feltétlenül másol automatikusan a vágólapra. A teljes hozzáférési kulcs az alábbihoz hasonlóan néz ki (ez csak egy minta, nem működőképes):</li>
+</ol>
+
+<pre data-aura-rendered-by="12:30472;a">ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@145.230.4.1:39485/?outline=1&nbsp;
+</pre>
+
+<ol data-aura-rendered-by="12:30472;a" start="2">
+  <li>Ha a rendszer egyáltalán nem másolja a hozzáférési kulcsot a vágólapra, annak hátterében az Ön által használt üzenetküldő alkalmazás vagy platform állhat. Ez leginkább abban az esetben fordulhat elő, ha olyan személytől kap üzenetet, aki nem szerepel a névjegylistájában. Ha a kódot egy üzenetből másolja ki, gondoskodjon arról, hogy a feladó szerepeljen a névjegyei között, majd próbálkozzon újra a linkhez való hozzáféréssel.&nbsp;</li>
+  <li>Ha az 1. és a 2. lépés elvégzése után is megjelenik a fenti hibaüzenet, akkor a szerver valószínűleg le van tiltva, vagy már nem érvényes a hozzáférési kulcs. Ha Ön a szolgáltatáskezelő, próbálkozzon azzal, hogy új kulcsot hoz létre saját magának. Ellenkező esetben kérjen új kulcsot a szolgáltatáskezelőjétől.</li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="96" sourceLocale="hu">WEB:15331322</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Mennyibe kerül az Outline futtatása?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Az Outline szoftver mindenki számára díjmentes, akár a VPN-t kezelő szerveradminisztrátor, akár a nyílt internethez az Outline-on keresztül hozzáférő felhasználó.<br />
+  <br />
+  Az Outline működéséhez azonban felhőszerverre van szükség. A szerverhozzáféréssel rendelkező szerveradminisztrátorok további költség nélkül telepíthetik az Outline-t. Ha még nincs szerverhozzáférése, körülbelül havi 5 USD összegért fizethet elő 1 terabájt mennyiségű adatátvitelre egy felhőszolgáltatónál (pl.&nbsp;<a href="http://www.digitalocean.com/" rel="noopener" target="_blank">DigitalOcean</a>&nbsp;vagy Amazon Web Services). Ez az adatmennyiség egyetlen szerver esetén több száz felhasználóra elég.<br />
+  <br />
+  Egy példa arra, hogy miként számíthatja ki, hogy mennyibe kerülne az Outline futtatása a kiválasztott felhőszolgáltatónál:</p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td colspan="1" rowspan="1">
+      <p><em>Ha felhasználónként havi 5 gigabájtnyi adatátvitellel számolunk, a havi 5 USD összegű csomag körülbelül 200 egyidejű felhasználó számára alkalmas, így a felhasználónkénti havi díj 2,5 cent. Ne feledje, hogy a felhasználónkénti havi adatátvitel nagy mértékben attól függ, hogy a felhasználók magas vagy alacsony sávszélességigényű tevékenységeket folytatnak. A legtöbb felhőszolgáltató rugalmas a forgalomnövekedéssel kapcsolatban.</em></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br />
+  Az Outline használata során teljesen anonim marad a Jigsaw és a Google számára. Nem követjük a személyazonosságát vagy forgalmát, és semmiféle bevételszerzési célunk nincs a szolgáltatással. A nyílt forráskódot szerkesztő közösségünkkel azon dolgozunk, hogy díjmentesen biztosítsuk a szoftvert a felhasználóknak. Az általunk gyűjtött adatokról&nbsp;<a href="/outline-faq/answer/15331222" rel="noopener" target="_blank">itt</a> talál további információt.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="386" sourceLocale="hu">WEB:15331326</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hogyan állíthatok be adatforgalmi korlátozásokat a hozzáférési kulcsokhoz?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:15859;a">Beállíthat egy adatforgalmi korlátozást, amely az összes hozzáférési kulcsra vonatkozik. Ha szeretne ilyen korlátozást beállítani, nyissa meg az Outline Managert, és lépjen a Beállításokhoz. Ekkor megjelenik egy Adatforgalmi korlátozások kapcsoló. Ha ezt bekapcsolja, beállíthatja a korlátozást.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787036"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">A korlátozás beállítása után a hozzáférési kulcs oldalán láthatja, hogy melyik felhasználó mennyire közelítette már meg a korlátot (sávdiagram mutatja az elmúlt 30 napra vonatkozó adathasználatot).</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787037"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">Amellett, hogy korlátozást állíthat be az összes hozzáférési kulcshoz, minden kulcsnak megadhatja a saját adatforgalmi korlátozását is. Ez a beállítás felülír minden előzőleg beállított alapértelmezett adatforgalmi korlátozást, de ha nem állított be ilyet, akkor is beállíthat adatforgalmi korlátozást bármely kulcshoz.&nbsp;<br />
+  <br />
+  Egy kulcs adatátviteli korlátozásának beállításához nyissa meg az Outline Managert, lépjen a beállítani kívánt kulcsot tartalmazó Kapcsolatok lapra, majd kattintson a kulcs sorának jobb oldalán található menüre. Itt kattintson az Adatforgalmi korlátozás lehetőségre. A „Saját hozzáférési kulcs” adatforgalmi korlátozásának módosításához kattintson az Adatforgalmi korlátozások&nbsp;<img alt="A kép nem áll rendelkezésre, mert Ön nem rendelkezik a megtekintéséhez szükséges jogosultsággal, vagy a képet eltávolították a rendszerből." height="19" src="https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw" width="19" />&nbsp;ikonra.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787423"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">Válassza ki az Egyéni adatforgalmi korlátozás beállítása lehetőséget. Miután bejelölte ezt a jelölőnégyzetet, megjelenik egy mező, ahol beállíthatja az adott kulcs egyéni adatforgalmi korlátozását. Ha végzett, kattintson a MENTÉS gombra az adatforgalmi korlátozás mentéséhez.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15788959"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">Miután elmentette a kiválasztott kulcsra vonatkozó adatátviteli korlátozást, a korlátozás megjelenik a főképernyőn az egyes kulcsok (az elmúlt 30 napra vonatkozó) adathasználati információi mellett.</p>
+
+<p data-aura-rendered-by="12:15859;a">A hozzáférési kulcs adatforgalmi korlátozásának eltávolításához a korábbiakhoz hasonlóan lépjen a kulcs Adatforgalmi korlátozás párbeszédablakába, távolítsa el a jelölést az Egyéni adatforgalmi korlátozás beállítása jelölőnégyzetből, majd kattintson a MENTÉS gombra.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15788414"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a"><b><strong>Gyakori kérdések az adatforgalmi korlátozásról</strong></b><br />
+  <br />
+  <strong><b>Mi az a 30 napos visszamenőleges adatforgalmi korlátozás?</b></strong><br />
+  <br />
+  A 30 napos visszamenőleges adatforgalmi korlátozás úgy működik, hogy összeadjuk az egyes kulcsokhoz kapcsolódó használatot az elmúlt 30 napra, és nem engedjük, hogy a kulcs használata meghaladja ezt a korlátozást. Ennek az lesz a hatása, hogy a kulcs egyetlen 30 napos időszakon belül sem lépheti túl a korlátozást, így a 30 napos és a rövidebb naptári hónapokban sem. Ez azt jelenti, hogy az egyes felhasználók rendelkezésére álló adatkeret minden nap megnő azzal a mennyiséggel, amelyet 31 nappal korábban felhasználtak.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Miért használ az Outline visszamenőleges korlátozásokat?</strong><br />
+  <br />
+  A visszamenőleges korlátozások minden 30 napos időszakra garantálják a korlátok betartását, vagyis könnyebb konfigurálni őket, mint az ismétlődő korlátozásokat (például amelyeknek a hónap egy adott napján van a fordulónapjuk), ugyanakkor hasonló garanciákat nyújtanak. Ezenkívül megfelel az Outline-adathasználat most alkalmazott megjelenítésmódjának, valamint az elterjedt – például elemzési szolgáltatásokat és szerverstatisztikákat nyújtó – eszközöknek.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Milyen adatok számítanak bele az adatforgalmi korlátozásba?</strong><br />
+  <br />
+  Az összegbe az egyes hozzáférési kulcsokhoz kapcsolódóan a szerverről kimenő adatok számítanak bele. Ez szigorúan véve a kulcs nevében a szerverről elküldött adatokat jelenti, csakúgy, mint az ügyfélnek visszaküldötteket. Ennek a gyakorlatban nagyon hasonlónak kell lennie a kulcstól a szerver felé és vissza irányuló adatforgalomhoz, így reményünk szerint egyezik a felhasználók számításaival. Azért a kimenő forgalmat választottuk, mert az általunk megkérdezett felhőszolgáltatók ennek alapján állítják ki a számlát.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Értesítik a felhasználókat, ha túllépik az adatforgalmi korlátot?</strong><br />
+  <br />
+  Egyelőre nem. Számos felhőszolgáltató alkalmaz havi korlátot, például 1 TB-osat – ez 10 felhasználónak fejenként 100 GB-ra, vagy 100 felhasználónak 10 GB-ra elég. Ezek meglehetősen nagy számok, és nem számítunk arra, hogy sok felhasználó eléri őket. Reméljük, hogy a felhasználók a szerverük kezelőjéhez fordulnak, amikor a korlátba ütköznek. Hálásak volnánk azonban, ha elmagyaráznák nekünk, hogyan segítenék az értesítések az Önök konkrét céljait. <a href="https://support.getoutline.org/s/contactsupport" target="_blank">Itt</a> vehetik fel velünk a kapcsolatot.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Értesítik a felhasználókat, ha megközelítik az adatforgalmi korlátot?</strong><br />
+  <br />
+  Változó, hogy a felhasználónak mennyivel nő meg egyik napról a másikra a kerete, hiszen attól függ, hogy mennyit használt fel 30 nappal korábban. Szerintünk egy figyelmeztetés inkább összezavarná a felhasználókat, mint segítene nekik. Hálásak volnánk, ha <a href="https://support.getoutline.org/s/contactsupport" rel="noopener" target="_blank">itt</a> visszajelzéssel szolgálna erről a működésmódról.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Visszaállíthatom egy felhasználó adathasználatát?</strong><br />
+  <br />
+  Nem, a felhasználói korlátozás mindig magában foglalja az elmúlt 30 nap adathasználatát. Megemelheti azonban a kulcsuk adatforgalmi korlátját, vagy új kulcsot hozhat létre számukra.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Miért veszítették el egyes felhasználóim a hozzáférésüket, amint engedélyeztem az adatforgalmi korlátozásokat?</strong><br />
+  <br />
+  Az adatforgalmi korlátozások a felhasználók korábbi 30 napos adatátvitelén alapulnak, amely rögzítésre kerül attól függetlenül, hogy engedélyezték-e az adatforgalmi korlátozásokat. Lehetséges, hogy a szóban forgó felhasználók már a bevezetés előtt túllépték a korlátozást.&nbsp; Vegye figyelembe azt is, hogy minden adatforgalmi korlátozás érvényesül, még akkor is, ha csak egyetlen kulcs adatforgalmi korlátozását módosítja.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Beállíthatok az egész szerverre vonatkozó korlátozást, például „30 napra 1 TB”?</strong><br />
+  <br />
+  Egyelőre nem. Szívesen vennénk, ha <a href="https://support.getoutline.org/s/contactsupport" rel="noopener" target="_blank">itt</a> részletesebben elmondaná, miért volna erre szüksége.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Ha van egy alapértelmezett adatforgalmi korlátozás és egy adott kulcsra vonatkozó adatforgalmi korlátozás is, melyik lesz érvényes?</strong><br />
+  <br />
+  Az adott kulcs adatforgalmi korlátozása felülírja az Ön által beállított alapértelmezett adatforgalmi korlátozást (ha van ilyen).</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Beállíthatok adatforgalmi korlátozást egy adott kulcshoz anélkül, hogy be lenne állítva egy alapértelmezett adatforgalmi korlátozás?</strong><br />
+  <br />
+  Igen.&nbsp; Nincs szükség alapértelmezett korlátozásra ahhoz, hogy adatforgalmi korlátozást állítson be egy kulcsra.&nbsp; Például korlátozhat egy kulcsot, amelyről úgy gondolja, hogy széles körben megosztható, hogy így megvédje magát a kulcson keresztüli túlzott adatátviteltől.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="hu">WEB:15331327</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hogyan állíthatok be új szerverazonosítót?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:23999;a">A szerverazonosító egy véletlenszerűen, a szerveroldalon generált azonosító, amely az Outline-szerver létrehozásakor jön létre. Akkor férhet hozzá, ha a Beállítások felületen engedélyezi az anonimizált mérőszámok megosztását. A szerverazonosítót úgy találhatja meg, hogy a Beállítások elemre kattint, lefelé görget, majd bejelöli az Anonim mérőszámok megosztása jelölőnégyzetet.</p>
+
+<p data-aura-rendered-by="12:23999;a">A szerverazonosító összeköti a megfelelő időközönként jelentett anonim használati statisztikákat. Ha új szerverazonosítót szeretne beállítani, új Outline-szervert kell létrehoznia a meglévő helyett.</p>
+
+<p data-aura-rendered-by="12:23999;a">Ha a DigitalOcean szolgáltatást használja felhőszolgáltatóként, a Beállítások elemet, majd a Szerver megsemmisítése lehetőséget választva új szervert állíthat be. A művelet nem vonható vissza, és törli a hitelesítési adatokat. Ezt követően a rendszer azonnal kérni fogja, hogy hozzon létre egy új szervert egy Ön által kiválasztott helyen, és új szerverazonosítót fog hozzá létrehozni.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="103" sourceLocale="hu">WEB:15331328</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hogyan módosíthatom az Outline-szerver helyét?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:24761;a">A beállítást követően a szerver helyét nem lehet módosítani. Ha egy másik helyről szeretné futtatni a szervert, törölnie kell az Outline-szervert, és újat kell létrehoznia.</p>
+
+<p data-aura-rendered-by="12:24761;a"><br />
+  Azt is megteheti, hogy a VPN helyét változtatja meg olyan <a href="https://developers.google.com/outline/docs/guides/service-providers/dynamic-access-keys" target="_blank">dinamikus kulcsok</a> segítségével, amelyek lehetővé teszik a szerverek váltogatását úgy, hogy megőrzik ugyanazokat a kulcsokat. Maguknak a szervereknek a helye nem fog változni.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="102" sourceLocale="hu">WEB:15331423</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Visszajelzés vagy javaslat küldése</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:22486;a">Köszönjük, hogy segít az Outline fejlesztésében! Több módon küldhet nekünk visszajelzést: névtelenül, vagy ha választ szeretne, az e-mail-címét is megadhatja:</p>
+
+<ul data-aura-rendered-by="12:22486;a">
+  <li><strong>Fejlesztőknek</strong>:&nbsp;Az Outline nyílt forráskódú szoftver, és a teljes programkód megtalálható a&nbsp;<a href="https://github.com/jigsaw-Code/?q=outline" target="_blank">GitHub</a> webhelyén. A GitHub webhelyén és&nbsp;<a href="https://www.reddit.com/r/outlinevpn/" target="_blank">Reddit</a>-közösségünkben is megoszthatja az ötleteit.&nbsp;</li>
+  <li><strong>Felhasználóknak</strong>: Az Outline és az Outline Manager alkalmazásokban küldheti el visszajelzését. Ossza meg velünk a véleményét, és ha szeretné, adja meg az e-mail-címét is, hogy válaszolhassunk. A felhasználói környezetről is gyűjtünk bizonyos metaadatokat, hogy segíthessünk a problémamegoldásban például az Ön által használt böngészővel, operációs rendszerrel és szoftververzióval kapcsolatban.</li>
+  <li><strong>Ezen a webhelyen keresztül</strong>: A webhelyen található kapcsolatfelvételi linkre kattintva is felveheti velünk a kapcsolatot.</li>
+  <li><strong>Súlyos problémák</strong>: Ha súlyos biztonsági problémát szeretne jelezni, arra kérjük, hogy írjon nekünk e-mailt a security [@] <a href="https://getoutline.org/" rel="noopener" target="_blank">getoutline.org</a> címre.</li>
+</ul>
+
+<p data-aura-rendered-by="12:22486;a">Még egyszer köszönjük, hogy időt szán véleménye megosztására.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="146" sourceLocale="hu">WEB:15331424</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Az Outline-szerverhez való hozzáférés kezelése (hozzáférési kulcsokkal)</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:25527;a">Az Outline-szerver telepítését követően megoszthatja a hozzáférési kulcsokat, és kezelheti a felhasználók hozzáférését. A meghívót kapó személyek az Outline alkalmazást letöltve biztonságosabbá tehetik az internetes forgalmat.</p>
+
+<p data-aura-rendered-by="12:25527;a"><strong>Az Outline-szerverhez való hozzáférés megosztása</strong><br />
+  Az Outline-szerver telepítését követően a rendszer átirányítja az Outline Manager szerver részleteit tartalmazó oldalára, ahol létrehozhatja a hozzáférési kulcsokat. További információ a <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">hozzáférési kulcsokról</a>.</p>
+
+<ul data-aura-rendered-by="12:25527;a">
+  <li>Kulcsok létrehozása: Új kulcsok létrehozásához kattintson az oldal alján lévő kis „+” ikonra.</li>
+  <li>Kulcsok megosztása: Az egyes kulcsoktól jobbra látható megosztás ikonra kattintva kérhet meghívót. A kimásolt meghívót bármelyik üzenetküldő rendszerbe beillesztheti.</li>
+</ul>
+
+<p data-aura-rendered-by="12:25527;a"><strong>Funkciókérelem: Hozzáférés megosztása az Outline Manager alkalmazásból</strong><br />
+  Számos szerveradminisztrátor kért minket, hogy egyszerűsítsük a meghívás folyamatát azzal, hogy lehetőséget biztosítunk a meghívottak e-mail-címének közvetlenül az Outline Managerben való megadására.</p>
+
+<p data-aura-rendered-by="12:25527;a">Sajnos nagyon valószínűtlen, hogy ezt a funkciót bármikor beépítenénk az Outline Managerbe. Felhasználóink adatainak védelme és biztonsága elsődleges számunkra, ezért nem építettünk be arra lehetőséget, hogy e-mail-címet vagy más kapcsolattartási adatokat adjanak meg az Outline Managerben.</p>
+
+<p data-aura-rendered-by="12:25527;a">Ezért arra kérjük a szerveradminisztrátorokat, hogy egy biztonságos üzenetküldő platformon (például e-mailben vagy biztonságos csevegésben) továbbítsák a meghívót a végfelhasználóknak.<br />
+  <br />
+  <strong>Felhasználói teendők a hozzáférési kulcs megérkezése után</strong></p>
+
+<ol data-aura-rendered-by="12:25527;a">
+  <li>A felhasználónak a telepítési linkre kell kattintania az eszközön.</li>
+  <li>Ekkor a rendszer arra kéri, hogy telepítse az Outline alkalmazást (ha még nem tette volna meg).</li>
+  <li>Ekkor a meghívóba ágyazott egyedi kulccsal létrejön egy alapkapcsolat az Outline-szerverrel.</li>
+  <li>A felhasználó ettől kezdve a csatlakozási és leválasztási gombbal állíthatja be az Outline-szerveren keresztüli internet-hozzáférését.</li>
+</ol>
+
+<p data-aura-rendered-by="12:25527;a"><strong>Az Outline-szerverhez való hozzáférés eltávolítása</strong><br />
+  Az Outline Manager szerverinformációkat tartalmazó oldalán, a szerverhez tartozó kulcsoktól jobbra egy menü látható, amelynek egyik parancsával törölheti a kulcsot. A törölt kulcsokkal nem lehet hozzáférni a szerverhez.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="92" sourceLocale="hu">WEB:15331524</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hogyan tudok hozzáférni az Outline-erőforrásokhoz, ha a getoutline.org le van tiltva?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><a href="https://s3.amazonaws.com/outline-vpn/index.html" target="_blank">Adja hozzá a könyvjelzőkhöz ezt a tükrözött webhelyet</a>, amelyet így használhat abban az esetben, ha nem tud hozzáférni a <a href="http://getoutline.org/" target="_blank">getoutline.org</a> webhelyhez.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="321" sourceLocale="hu">WEB:15331527</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Az Outline ügyfélalkalmazás telepítése Linux rendszeren</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Az Outline-ügyfél 1.15-ös verziójától kezdve az összes jövőbeli verzió Debian-csomagként jelenik meg a Linux operációs rendszerekhez. A támogatott operációs rendszerekről a <a href="/outline/answer/15330818" rel="noopener" target="_blank"><u>minimális rendszerkövetelményekben</u></a> talál további információt.</p>
+&nbsp;
+
+<p><strong>Az Outline-ügyfél telepítése Debian-alapú Linux-kiadások esetén (ajánlott)</strong></p>
+&nbsp;
+
+<p>Futtassa a következő parancsokat:</p>
+
+<ol>
+  <li aria-level="1">Telepítse az Outline tárhelykulcsát, és adja hozzá a tárhelyet.
+    <div class="code">
+      <div class="no-margin">
+        <p>wget -qO- https://us-apt.pkg.dev/doc/repo-signing-key.gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/gcloud-artifact-registry-us.gpg</p>
+
+        <p>echo "deb [arch=amd64] https://us-apt.pkg.dev/projects/jigsaw-outline-apps outline-client main" | sudo tee /etc/apt/sources.list.d/outline-client.list</p>
+      </div>
+    </div>
+  </li>
+</ol>
+
+<p>&nbsp; 2.&nbsp;&nbsp;Frissítse az apt-csomaglistát, és telepítse az Outline-ügyfél legújabb verzióját.</p>
+
+<div class="code">
+  <div class="no-margin">
+    <p>&nbsp; &nbsp;sudo apt update</p>
+
+    <p>&nbsp; &nbsp;sudo apt install outline-client</p>
+  </div>
+</div>
+
+<p>A jövőbeli frissítések kereséséhez és telepítéséhez futtassa újra a 2. lépésben szereplő parancsokat. Felhívjuk figyelmét, hogy az 1.15-ös verziótól kezdve a Linuxon használt Outline-ügyfél alkalmazáson belüli automatikus frissítése ki van kapcsolva.</p>
+
+<p>Az Outline-ügyfél eltávolításához futtassa a következő parancsot:</p>
+
+<div class="code">
+  <div class="no-margin">sudo apt purge outline-client</div>
+</div>
+
+<p><strong>Másik lehetőség</strong></p>
+
+<ol>
+  <li aria-level="1">Töltse le az Outline-ügyfél legújabb Debian-csomagját innen: <a href="https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb" rel="noopener" target="_blank">https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb</a>.</li>
+  <li aria-level="1">A csomag telepítéséhez adja meg a következő parancsokat a parancssorban</li>
+</ol>
+
+<div class="code">
+  <div class="no-margin">
+    <p>wget -O ./outline-client.deb https://s3.amazonaws.com/outline-&nbsp; &nbsp; &nbsp; releases/client/linux/stable/outline-client_amd64.deb</p>
+
+    <p>sudo apt install ./outline-client.deb</p>
+  </div>
+</div>
+
+<p>&nbsp; 3.&nbsp;&nbsp;Keresse meg a frissítéseket manuálisan, mivel az 1.15-ös verziótól kezdve a Linuxon használt Outline-ügyfél alkalmazáson belüli automatikus frissítése ki van kapcsolva.</p>
+
+<p>&nbsp; 4.&nbsp; Az Outline-ügyfél eltávolításához adja meg a következő parancsot a parancssorban</p>
+
+<div class="code">
+  <div class="no-margin">sudo apt purge outline-client</div>
+</div>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="206" sourceLocale="hu">WEB:15331528</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Egy hozzáférési kulcsot többször is használhatok?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1895;a">Igen. A <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">hozzáférési kulcsot</a> tetszőleges számú eszközön használhatja, de azt tanácsoljuk, hogy ne ossza meg másokkal. A hozzáférési kulcs birtokában mások is megtekinthetik az Ön teljes internetforgalmát, ha hozzáférnek, így az internethasználata nem lesz többé biztonságos és privát.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="104" sourceLocale="hu">WEB:15331529</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Az eszköz összekapcsolása egy Outline-szerverrel</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1399;a">&nbsp;</p>
+
+<p data-aura-rendered-by="12:1399;a"><strong>Az eszköz összekapcsolása egy Outline-szerverrel</strong></p>
+
+<p data-aura-rendered-by="12:1399;a">Ha össze szeretné kapcsolni az eszközét egy Outline-szerverrel, a szerveradminisztrátornak meghívót kell küldenie Önnek, mely tartalmazni fogja a szerverhez való kapcsolódáshoz szükséges egyedi <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">hozzáférési kulcsot</a>. A meghívó:</p>
+
+<ul data-aura-rendered-by="12:1399;a">
+  <li>arra kéri majd, hogy töltse le és telepítse az Outline alkalmazást az eszközére (ha még nem tette volna meg);</li>
+  <li>a hozzáférési kulccsal biztonságos kapcsolatot létesít Ön és az Outline-szerver között.</li>
+</ul>
+
+<p data-aura-rendered-by="12:1399;a">Ha létrejött a kapcsolat a szerverrel, kattintson a „connect” (csatlakozás) vagy a „disconnect” (leválasztás) elemre az Outline használatához.</p>
+
+<p data-aura-rendered-by="12:1399;a"><em>Fontos:</em> Az Outline nem működik hozzáférési kulcs és Outline-szerver nélkül. Az Outline app letöltése és telepítése kulcs nélkül nem óvja meg az internetes forgalmat az illetéktelenektől.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="100" sourceLocale="hu">WEB:15331530</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hogyan állíthatok be Outline-szervert?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:27063;a">Az Outline használatához szükséges első lépés az Outline-szerver beállítása. Ha az Outline-on keresztül szeretne csatlakozni a nyílt internethez, Önnek vagy egy megbízható személynek be kell állítania egy szervert.<br />
+  <br />
+  <strong>A kezdés előtt</strong><br />
+  Az Outline-szerver beállítása előtt szüksége lesz néhány dologra:</p>
+
+<ol data-aura-rendered-by="12:27063;a">
+  <li>Hozzáférés saját szerverekhez vagy egy felhőszolgáltatóhoz (például DigitalOcean, Amazon Web Services (AWS) vagy Google Cloud Platform (GCP)).<br />
+    Ha még nincs hozzáférése felhőszerverhez, bármelyik szolgáltatónál beállíthat egyet, akár a fenti listában szereplőknél is. A regisztrációhoz bankkártyára lesz szüksége.</li>
+  <li>MacOS 10.9+, Windows 7.0+ vagy Linux rendszerű asztali számítógép.</li>
+  <li>Az Outline Manager alkalmazás.</li>
+</ol>
+
+<p data-aura-rendered-by="12:27063;a"><strong>Beállítás a DigitalOcean szolgáltatóval</strong><br />
+  <br />
+  Az Outline néhány kattintással telepíthető a DigitalOcean szerverein. Miután letöltötte és telepítette az Outline Manager alkalmazást a számítógépén, válassza a DigitalOcean beállítási lehetőséget, és a rendszer néhány egyszerű képernyőn vezeti végig Önt az Outline-szerver konfigurálásának és telepítésének lépésein.<br />
+  <br />
+  <strong>Beállítás másik felhőszolgáltatóval</strong><br />
+  <br />
+  Miután letöltötte és telepítette az Outline Manager alkalmazást, dönthet úgy, hogy egy virtuális számítógépen telepíti az Outline-szervert. Ehhez igénybe veheti az AWS, a GCP, a DigitalOcean vagy bármely más szolgáltató szolgáltatásait. Minden környezet más, így az Outline Manager beállítási folyamatába beépítettük a leggyakoribb felhőszolgáltatókra vonatkozó utasításokat, melyek többek között tartalmazzák, hogy hogyan konfigurálhatja a beállításokat a virtuális számítógépen, mielőtt futtatná az Outline-nak a szerveren való telepítéséhez szükséges telepítési szkriptet.<br />
+  <br />
+  <strong><em>További segítségre van szüksége?</em></strong><br />
+  <br />
+  Olvassa el az&nbsp;<a href="/outline-faq/answer/15331728" rel="noopener" target="_blank">Outline-szerver beállítására vonatkozó GYIK-et</a>.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="95" sourceLocale="hu">WEB:15331625</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Jogomban áll az Outline márkát használni vagy replikálni?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Habár az Outline nyílt forráskódú, és díjmentesen használható, a márka a Jigsaw tulajdona, és tilos vele visszaélni. A <a href="https://github.com/Jigsaw-Code/outline-brand/blob/main/outline_brand_user_guide.pdf" target="_blank">felhasználói útmutatót</a> követve elkerülheti, hogy potenciálisan félrevezető állításokat tegyen, és azt is, hogy hamis színben tüntesse fel az Outline-nal vagy a Jigsaw-val való kapcsolatát, továbbá gondoskodhat arról, hogy helyesen használja a jóváhagyott márkaelemeket.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="191" sourceLocale="hu">WEB:15331628</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hogyan szerezhetek hozzáférési kulcsot?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:3258;a">Az Outline nem hasonlít azokra a VPN-szolgáltatásokra, amelyekhez meg kell vásárolnia a hozzáférést: ez egy olyan <a href="https://getoutline.org/#:~:text=Two%20Products%20that%20Work%20Together" target="_blank">eszköz</a>, amellyel Ön saját privát VPN-szervert működtethet és amelyhez megoszthatja a hozzáférést. A <a href="/outline/answer/15330920#servicemanager" rel="noopener" target="_blank">szolgáltatáskezelő</a>&nbsp;az egyetlen személy, aki hozzáférési kulcsot adhat. Az Outline csapata nem biztosít sem díjmentes, sem fizetős hozzáférési kulcsokat. Az Outline-nak nincsenek hivatalos hozzáférésikulcs-partnerei, kivéve a perzsa nyelvű Paskoocheh-t.<br />
+  <br />
+  Íme három lehetőség hozzáférési kulcs beszerzésére:&nbsp;</p>
+
+<ul data-aura-rendered-by="12:3258;a">
+  <li>Kérjen meg valakit, hogy hívja meg a szerverére: ha ismer valakit, akinek van Outline-szervere, lépjen kapcsolatba vele, és kérjen hozzáférési kulcsot.</li>
+  <li><a href="/outline/answer/15331530" rel="noopener" target="_blank">Hozzon létre saját szervert:</a> Windows, Mac vagy Linux rendszerű számítógépen töltse le az <a href="https://getoutline.org/get-started/#step-1" target="_blank">Outline Managert</a>, és állítsa be saját privát <a href="/outline/answer/15330920" rel="noopener" target="_blank">Outline-szerverét</a>. Ezt a folyamatot bárki könnyen elvégezheti, különösen a DigitalOcean felhőszolgáltatón keresztül.</li>
+  <li>Használja az Outline vagy a <a href="https://en.wikipedia.org/wiki/Shadowsocks#:~:text=Shadowsocks%20is%20a%20free%20and,have%20been%20made%20available%20since." target="_blank">Shadowsocks</a> szolgáltatást: az Outline-kliens olyan harmadik féltől származó szolgáltatásokkal is használható, amelyek az Outline-t vagy a Shadowsocks-protokollt használják. Például:
+    <ul>
+      <li>Az <a href="http://nthlink.com/" target="_blank">nthLink</a> az Outline-kliens módosított verziójával működő, az Outline-on alapuló díjmentes szolgáltatás.</li>
+      <li>Az <a href="https://www.reddit.com/r/outlinevpn/comments/nwu1se/the_outline_distribution_system_is_here_to_help/" target="_blank">ASL19</a> egy <a href="https://beepassvpn.com/" target="_blank">BeePass</a> nevű, az Outline módosított változatán alapuló szolgáltatást üzemeltet, valamint <a href="https://t.me/paskoochehbot" target="_blank">egy Telegram-robotot</a>, amely díjmentes hozzáférési kulcsokat biztosít a BeePass-szerverekhez.</li>
+      <li>A perzsa nyelvű felhasználók Outline-hozzáférési kulcsot is kérhetnek az <a href="https://outline.paskoocheh.com/" target="_blank">ASL19 által üzemeltetett Paskoocheh</a>-től.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Az Outline-kliens letöltése után másolja ki és illessze be a <a href="/outline/answer/15330920#accesskey" rel="noopener" target="_blank">hozzáférési kulcsot</a>&nbsp;az Outline-kliensbe, hogy csatlakozzon az Outline-szerverhez.&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="133" sourceLocale="hu">WEB:15331630</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hogyan törölhetnem az Outline-szerveremet?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:14046;a">A legtöbb felhőszolgáltató esetén egyszerűen távolíthatja el a meglévő virtuális gépeit.</p>
+
+<p data-aura-rendered-by="12:14046;a">Ha a DigitalOcean szolgáltatást használja felhőszolgáltatóként, a fogaskereket ábrázoló gombra, majd a Szerver megsemmisítése elemre kattintva törölheti a meglévő virtuális gépét. Ezt követően a rendszer azonnal arra kéri, hogy hozzon létre egy új virtuális gépet egy Ön által kiválasztott helyen.</p>
+
+<p data-aura-rendered-by="12:14046;a">Az eltávolított Outline-szervereket a rendszer véglegesen törli, és a hozzá tartozó hozzáférési kulcsok nem fognak működni. Ha gondoskodni szeretne arról, hogy zavartalan legyen az Outline-on keresztüli hozzáférés, <a href="/outline-faq/answer/15331530" rel="noopener" target="_blank">be kell állítania egy új Outline-szervert</a>, és meg kell osztania az új szerverhez való hozzáférést a régi szerver törlése előtt.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="99" sourceLocale="hu">WEB:15331631</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Több Outline-szerver beállítása</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:27908;a">Ha több Outline-szervert szeretne beállítani, kattintson az Outline Manager bal oldalán lévő navigációs panel „+” ikonjára. Új szervert éppen úgy adhat hozzá, mint ahogy az elsőt tette.</p>
+
+<ul data-aura-rendered-by="12:27908;a">
+  <li>Nincs a létrehozható Outline-szerverekre vonatkozó korlátozás.</li>
+  <li>Minden egyes Outline-szerverhez külön virtuális gépnek kell tartoznia.</li>
+  <li>Az új gépek vagy dropletek beállításával a felhőszolgáltató díja is emelkedhet. Érdemes ellenőrizni a felhőszolgáltató árazását, hogy tudja, milyen összegre számíthat.</li>
+</ul>
+
+<p data-aura-rendered-by="12:27908;a"><strong>Másik Outline-szerver létrehozása a DigitalOcean szolgáltatásban</strong></p>
+
+<p data-aura-rendered-by="12:27908;a">Miután a + ikonra kattintott, és kiválasztotta, hogy a DigitalOceannél szeretné telepíteni a szervert, kövesse ugyanazokat a lépéseket, mint amelyeket az első szerver létrehozásánál követett. Mivel az Outline Manager a DigitalOceannel integráltan működik, ki se kell lépnie az Outline Managerből ahhoz, hogy létrehozzon egy dropletet.</p>
+
+<p data-aura-rendered-by="12:27908;a">Ne feledje, hogy az Outline Manager egyszerre csak egy DigitalOcean-fiókot támogat. Ha különböző DigitalOcean-fiókokból szeretne létrehozni vagy hozzáadni Outline-szervereket, speciális beállítások szükségesek.</p>
+
+<p data-aura-rendered-by="12:27908;a"><strong>Másik Outline-szerver létrehozása a GCP, az AWS vagy más felhőszolgáltatásban</strong></p>
+
+<p data-aura-rendered-by="12:27908;a">Először hozzon létre egy új virtuális gépet a kiválasztott felhőszolgáltatónál, majd nyissa meg az Outline Managert, és kövesse a haladó telepítésre vonatkozó utasításokat, ahogyan azt az első alkalommal is tette.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="96" sourceLocale="hu">WEB:15331632</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Miért nem tudom telepíteni az Outline Manager alkalmazást Windows rendszeren?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:34680;a">Előfordulhat, hogy megjelenik a következő hibaüzenet: „Sajnos úgy tűnik, hogy az Outline nincs megfelelően telepítve. Próbálja meg újratelepíteni. Ha nem sikerül megoldani a problémát, <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">küldjön visszajelzést</a>.”</p>
+
+<p data-aura-rendered-by="12:34680;a">Ha Windows rendszeren használja az Outline-t, váratlan hiba is felléphet. A legtöbb esetben megoldja a problémát, ha törli az Outline TAP adaptert (illesztőprogramot), és újratelepíti az Outline alkalmazást.&nbsp;</p>
+
+<p data-aura-rendered-by="12:34680;a">A pontos lépések a Windows operációs rendszer verziójától függnek, de alább megtalálja a TAP adapter és az Outline Manager eltávolításának, illetve az utóbbi újratelepítésének általános lépéseit.</p>
+
+<ol data-aura-rendered-by="12:34680;a">
+  <li>Az Outline Manager TAP adapterének eltávolítása
+    <ol>
+      <li>Nyissa meg az Eszközkezelők felületet, majd nyissa le a Hálózati adapterek szakaszt.</li>
+      <li>Keresse meg a „TAP-Windows Adapter V9” fájlt vagy az Outline-hoz rendelt TAP adaptert.</li>
+      <li>Távolítsa el vagy törölje az adaptert. Ne feledje, hogy ez a többi VPN-alkalmazásra is hatással lehet.&nbsp;</li>
+    </ol>
+  </li>
+  <li>Az Outline Manager eltávolítása
+    <ol>
+      <li>Nyissa meg a Programok és szolgáltatások felületet, és válassza a Program eltávolítása lehetőséget.</li>
+      <li>Keresse meg az Outline Manager alkalmazást, és távolítsa el.</li>
+      <li><a href="https://getoutline.org/get-started/#step-1" target="_blank">Töltse le az Outline Manager legújabb verzióját</a>, és telepítse újra a Windows-eszközén. Ekkor a rendszer egy új TAP adaptert is automatikusan telepít.</li>
+    </ol>
+  </li>
+</ol>
+
+<p data-aura-rendered-by="12:34680;a">Ha továbbra is problémát tapasztal, <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">forduljon az ügyfélszolgálathoz</a>.&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="94" sourceLocale="hu">WEB:15331727</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">A Google Cloud automatikus beállítása</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:26310;a"><strong>Áttekintés</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Az Outline Manager tartalmaz egy funkciót, amely automatikusan konfigurálja az Outline szervert egy, a Google Cloudon futó szerveren. Ha úgy dönt, hogy használja ezt a funkciót, az Outline Manager arra kéri, hogy jelentkezzen be a Google-fiókjával. Ezzel Ön megad bizonyos <a href="https://developers.google.com/identity/protocols/oauth2" target="_blank">OAuth</a>-engedélyeket az Outline Manager helyi telepítésének, hogy az konfigurálni tudja a Google Cloud-fiókját.<br />
+  Ha nem szeretné megadni ezeket az engedélyeket, az Outline Manager speciális beállítási útmutatásának megfelelően konfigurálhatja az Outline-t a Google Cloud Platformon történő futtatásra.&nbsp;</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Engedélyek megadva</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Ahhoz, hogy az Outline Manager automatikusan elvégezhesse a beállítást, a következő engedélyekre van szüksége az Ön Google-fiókjától.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Google Cloud Platform</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>Google Compute Engine-erőforrások megtekintése és kezelése</li>
+  <li>A Google Cloud-szolgáltatásban szereplő adatok, illetve a Google-fiókjához tartozó e-mail-cím megtekintése</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Alapvető fiókadatok</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>Az Ön elsődleges Google-fiókjához tartozó e-mail-cím megtekintése</li>
+  <li>Az Ön összekapcsolása a Google rendszerében lévő személyes adataival</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>További hozzáférés</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>Az Ön Cloud Platform-projektjeinek kezelése</li>
+  <li>Az Ön Google Cloud Platform-számlázási fiókjainak megtekintése és kezelése</li>
+  <li>A Google API-szolgáltatáskonfiguráció kezelése</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a">Ezek az engedélyek lehetővé teszik, hogy speciális funkciókat biztosítsunk az Outline-szerverek kezelésére, például:</p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>A helyes számlázási fiók kiválasztása</li>
+  <li>Új projekt létrehozása az Outline szerverek csoportosítására</li>
+  <li>A rendelkezésre álló adatközpontok listázása</li>
+  <li>Új virtuális gépek létrehozása az Outline futtatására</li>
+  <li>Az Outline konfigurálása az új virtuális gépen</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Az engedélyek visszavonása</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">A <a href="https://myaccount.google.com/permissions" target="_blank"> Saját fiók</a> oldalon visszavonhatja az Outline Managertől a Google Cloud Platformhoz való hozzáférést. Ha visszavonja a hozzáférést, az automatikus beállítással létrehozott szerverek továbbra is futni fognak, de többé nem jelennek meg az Outline Managerben. Ha vissza szeretné állítani a hozzáférést, egyszerűen csatlakozzon újra a Google Cloud Platformhoz az automatikus beállítási folyamat elvégzésével.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Az Outline szervereket egybefogó projekt</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">A Google Cloud automatizált beállítása egyetlen <a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects" target="_blank">Google Cloud-projektbe</a> csoportosítja az Outline szervereket. A projekt az automatikus beállítás első használata során jön létre. A javasolt projektazonosító az „Outline-” karakterlánccal kezdődik, ezt pedig egy véletlenszerű karaktersorozat követi. A létrehozás alkalmával más projektazonosítót is megadhat. A projekt neve „Outline servers” lesz.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Számlázási fiók</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">A Google Cloud-projektekhez szükséges egy összekapcsolt „számlázási fiók”, amely meghatározza a fizetési információkat. Amikor először használja az automatikus Google Cloud-telepítést, meg kell adnia az Outline-szervereihez társítandó számlázási fiókot. Egyes esetekben a szerver leáll, mert probléma van a számlázási fiókkal. Ebben az esetben jelentkezzen be a <a href="https://console.cloud.google.com/getting-started" target="_blank">Google Cloud Console-ra</a>, keresse meg az Outline-hoz társított Google Cloud-projektet („Outline servers” a neve), és frissítse a számlázási beállításokat.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>A szerverek megsemmisítése</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Ha meg szeretné semmisíteni az automatizált beállítással létrehozott szervereit, ezt az Outline Managerben teheti meg a legegyszerűbben. Ha azonban maga szeretné megsemmisíteni a szervereket, bejelentkezhet a <a href="https://console.cloud.google.com/getting-started" target="_blank">Google Cloud Console-ra</a>, megkeresheti az első beállítás során létrehozott projektet („Outline servers” a neve), és törölheti az ott található erőforrásokat, vagy leállíthatja a projektet.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="99" sourceLocale="hu">WEB:15331728</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Az Outline-szerver beállítására vonatkozó GYIK</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:28806;a"><strong>Használhatom az Outline-t szerver nélkül?</strong><br />
+  <br />
+  Sajnos nem. Az Outline szoftvernek hozzá kell férnie egy szerverhez, amelyet kezelhet Ön, a szervezete vagy egy megbízható harmadik fél.&nbsp;</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>Mennyi időbe telik beállítani egy Outline-szervert?</strong></p>
+
+<p data-aura-rendered-by="12:28806;a">Általában kevesebb mint 5 percbe. Az Outline-t bármilyen felhőszerverre telepítheti, de a DigitalOceannel együttműködve egy felhasználóbarát, irányított telepítési folyamatot alkottunk meg, amely során néhány kattintással hozhat létre szervert, mindenféle szkript nélkül.</p>
+
+<p data-aura-rendered-by="12:28806;a">Ha az AWS-t, a GCP-t vagy speciális beállításokat választ, a legtöbb környezet esetén akkor se lesz szükség egynél több szkriptre a szervertelepítési folyamat során.&nbsp;</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>Hol állíthatok be Outline-szervert?</strong></p>
+
+<p data-aura-rendered-by="12:28806;a">A legtöbb felhőszolgáltatónál az üzemeltetési helyeiken állíthat be Outline-szervert.</p>
+
+<p data-aura-rendered-by="12:28806;a">A legegyszerűbb, ha a DigitalOceant választja, melynek több helyen is vannak szerverei, így például Amszterdamban, San Franciscóban, Szingapúrban és Torontóban. Ha másik felhőszolgáltatót választana, vagy a saját infrastruktúrájában telepítené a szoftvert, válassza az Outline Manager alkalmazásban az &lt;b&gt;Advanced Mode&lt;/b&gt; módot, és hajtsa végre a beállítási szkripttel való beállítás telepítési lépéseit.&nbsp;</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>Hol érdemes beállítanom az Outline-szerveremet?</strong></p>
+
+<ol data-aura-rendered-by="12:28806;a">
+  <li>Néhány szempontot érdemes figyelembe venni az Outline-szerver helyének kiválasztásakor:</li>
+  <li>Az Outline-szerver helye hatással van a felhasználók internetes élményére. Ha például amszterdami szervert használ, a szerverhez hozzáférő felhasználó számára olyan lesz az internet, mintha fizikailag Hollandiában lenne. Egyes webhelyek például hollandul jelennek meg. A webhelyeken általában található nyelvválasztó opció, amellyel a felhasználók felülírhatják a nyelvi beállításokat.</li>
+  <li>A felhasználók és az Outline-szerver közötti távolság hatással lehet a sebességre. A fizikai távolság a szerver és az Outline-felhasználók között a sebességre is kihathat. Általában olyan szerverhelyet érdemes választani, amely a legközelebb van a felhasználók várt tartózkodási helyéhez. A <a href="https://www.submarinecablemap.com/" rel="noopener" target="_blank">tenger alatti kábelek térképén</a> megtekintheti, hogy mely internetkábelek kötik be a rendszerbe az országát vagy régióját.</li>
+  <li>A VPN-szerver üzemeltetésének helye a vonatkozó jogszabályokat is befolyásolhatja. Ne feledje, hogy az Outline szoftver nem naplózza a forgalmat. További információ: <a href="/outline-faq/answer/14919822" rel="noopener" target="_blank">Biztonság és adatvédelem az Outline használata során</a>.</li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="hu">WEB:15331758</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Fejlesztő vagyok. Hol találok segítséget az Outline SDK-nak az alkalmazásomba való integrálásához?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Ez az ügyfélszolgálati webhely az Outline Manager és a kliens felhasználóinak szól. Kérjük a fejlesztőket, hogy a GitHubon keressenek támogatást. Ha kérdése van, tegye fel az SDK <a href="https://github.com/Jigsaw-Code/outline-sdk/discussions" target="_blank">Vita fórumán</a>. A Vita fórum szakasz nagyszerű hely arra, hogy kérdéseket tegyen fel, ötleteket osszon meg, demókra mutató linkeket adjon meg, és segítsen az Outline SDK-t használó többi fejlesztőnek. Funkciókérések vagy hibajelentések esetén inkább jelentsen be egy <a href="https://github.com/Jigsaw-Code/outline-sdk/issues/new" target="_blank">problémát</a>.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="74" sourceLocale="hu">WEB:15448041</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Rendelkezésre álló nyelvek</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Az Outline a következő nyelveken áll rendelkezésre:</p>
+
+<ul>
+  <li aria-level="1">afrikaans</li>
+  <li aria-level="1">albán</li>
+  <li aria-level="1">amhara</li>
+  <li aria-level="1">arab</li>
+  <li aria-level="1">örmény</li>
+  <li aria-level="1">azerbajdzsáni</li>
+  <li aria-level="1">bengáli</li>
+  <li aria-level="1">bosnyák</li>
+  <li aria-level="1">bolgár</li>
+  <li aria-level="1">burmai</li>
+  <li aria-level="1">katalán</li>
+  <li aria-level="1">kínai (egyszerűsített)</li>
+  <li aria-level="1">kínai (hagyományos)</li>
+  <li aria-level="1">horvát</li>
+  <li aria-level="1">cseh</li>
+  <li aria-level="1">dán</li>
+  <li aria-level="1">holland</li>
+  <li aria-level="1">angol (amerikai)</li>
+  <li aria-level="1">angol (brit)</li>
+  <li aria-level="1">észt</li>
+  <li aria-level="1">tagalog</li>
+  <li aria-level="1">finn</li>
+  <li aria-level="1">francia</li>
+  <li aria-level="1">grúz</li>
+  <li aria-level="1">német</li>
+  <li aria-level="1">görög</li>
+  <li aria-level="1">héber</li>
+  <li aria-level="1">hindi</li>
+  <li aria-level="1">magyar</li>
+  <li aria-level="1">izlandi</li>
+  <li aria-level="1">indonéz</li>
+  <li aria-level="1">olasz</li>
+  <li aria-level="1">japán</li>
+  <li aria-level="1">kazah</li>
+  <li aria-level="1">khmer</li>
+  <li aria-level="1">koreai</li>
+  <li aria-level="1">lao</li>
+  <li aria-level="1">lett</li>
+  <li aria-level="1">litván</li>
+  <li aria-level="1">macedón</li>
+  <li aria-level="1">maláj</li>
+  <li aria-level="1">maráthi</li>
+  <li aria-level="1">mongol</li>
+  <li aria-level="1">nepáli</li>
+  <li aria-level="1">norvég</li>
+  <li aria-level="1">perzsa</li>
+  <li aria-level="1">lengyel</li>
+  <li aria-level="1">portugál (brazil)</li>
+  <li aria-level="1">portugál (európai)</li>
+  <li aria-level="1">román</li>
+  <li aria-level="1">orosz</li>
+  <li aria-level="1">szerb (cirill)</li>
+  <li aria-level="1">szerb (latin)</li>
+  <li aria-level="1">szingaléz</li>
+  <li aria-level="1">szlovák</li>
+  <li aria-level="1">szlovén</li>
+  <li aria-level="1">spanyol (európai)</li>
+  <li aria-level="1">spanyol (latin-amerikai)</li>
+  <li aria-level="1">szuahéli</li>
+  <li aria-level="1">svéd</li>
+  <li aria-level="1">tamil</li>
+  <li aria-level="1">thai</li>
+  <li aria-level="1">török</li>
+  <li aria-level="1">ukrán</li>
+  <li aria-level="1">urdu</li>
+  <li aria-level="1">vietnámi</li>
+</ul>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="79" sourceLocale="hu">WEB:15528599</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">A tűzfallal kapcsolatos problémák</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:268;a">A tűzfallal kapcsolatban előforduló hibák három típusba sorolhatók:</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>Lehet, hogy hálózati tűzfal gátolja a telepítést.</strong></p>
+
+<p data-aura-rendered-by="12:268;a">Ha egy tűzfallal rendelkező hálózathoz csatlakozva próbálja meg telepíteni az Outline alkalmazást (például iskolában vagy a munkahelyén), azt javasoljuk, hogy csatlakozzon egy másik hálózathoz.</p>
+
+<p data-aura-rendered-by="12:268;a">Ha így sem sikerül, kérje meg a hálózatkezelő rendszergazdát, hogy tegye lehetővé a tűzfalat használó hálózat és az Outline-szervere közötti kapcsolat létrehozását. Ehhez szüksége lesz az Outline-t futtató Outline-szerver IP-címére és portjaira, melyeket a telepítési szkript végén talál.</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>Lehet, hogy az eszközön beállított tűzfal gátolja a telepítést</strong>.</p>
+
+<p data-aura-rendered-by="12:268;a">Ha egy, az eszközön lévő szoftver (például a CheckPoint ZoneAlarm alkalmazása) gátolja a nem szabványos portokon vagy nem ismert szoftvereken keresztüli kimenő kapcsolatokat, olvassa el az eszköz vagy a szoftver leírását, melyből megtudhatja, hogy hogyan állíthatja be az Outline alkalmazást kivételként.</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>Lehet, hogy a szerveren beállított tűzfal gátolja a telepítést.</strong></p>
+
+<p data-aura-rendered-by="12:268;a">Előfordulhat, hogy felhőszolgáltatója megköveteli, hogy az Outline-t futtató portok megnyitásához manuálisan állítson be kivételeket a szerver tűzfalához. A telepítési szkript futtatása után a rendszer megjelenítette azt a két véletlenszerűen kiválasztott portot, amelyen az Outline a szerverét futtatja. Ha ezt a két portot kinyitja, a rendszernek működnie kell.<br />
+  <br />
+  Ha kivételt szeretne adni a szerver tűzfalához, olvassa el az UFW és az Iptables programok dokumentációját:</p>
+
+<ul data-aura-rendered-by="12:268;a">
+  <li>UFW:&nbsp;<a href="https://help.ubuntu.com/community/UFW" rel="noopener" target="_blank">https://help.ubuntu.com/community/UFW</a></li>
+  <li>Iptables:&nbsp;<a href="https://help.ubuntu.com/community/IptablesHowTo" rel="noopener" target="_blank">https://help.ubuntu.com/community/IptablesHowTo</a></li>
+</ul>
+</div>
+</body>
+</html>

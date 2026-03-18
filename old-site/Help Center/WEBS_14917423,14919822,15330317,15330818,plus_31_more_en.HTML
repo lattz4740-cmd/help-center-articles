@@ -1,0 +1,1083 @@
+<html>
+<head>
+<style type="text/css">
+.gkms-gtt-answer-header, .gkms-gtt-message-header {
+  color: black !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 2em;
+  padding: 4px;
+}.gkms-gtt-answer-header {
+  background-color: #E5ECF9;
+  border-top: 1px solid #36C;
+}
+.gkms-gtt-message-header {
+  background-color: #F8F8F8;
+  border-top: 1px solid #CCC;
+}
+.gkms-gtt-hide {
+  visibility: hidden;
+}
+.form_field_data .temporary_signal_wrapper {
+  display: inline;
+}
+</style>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+</head>
+<body lang="en">
+<br/><div class="gkms id notranslate" sourceGlobalRevision="116" sourceLocale="en">WEB:14917423</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">How Outline Works</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1723;a">&nbsp;</p>
+
+<p data-aura-rendered-by="12:1723;a"><strong>Server installation</strong><br />
+  <br />
+  ​Although Outline installation may seem simple, there’s actually a complex set of steps happening behind the scenes to get your server installed. Whenever Outline is installed, an installation script runs the following steps:</p>
+
+<ul data-aura-rendered-by="12:1723;a">
+  <li>The stable version of the Shadowbox image is retrieved and imported using Docker. The image is hosted on <a href="https://quay.io/" target="_blank">Quay.io</a>, in <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank">https://quay.io/repository/outline/shadowbox?tab=tags</a>. This image contains the Outline server and Management API which is later used by the Outline Server Management application to create and remove access keys, opt in/out of reporting anonymous metrics, etc.</li>
+  <li><a href="https://github.com/v2tec/watchtower" target="_blank">Watchtower</a> is installed and configured to check for image updates every hour, helping ensure that every Outline server is constantly up-to-date with the latest features and security improvements.</li>
+  <li>A web server, used for accessing the Management API, is started on a random port on a secret and random path.</li>
+  <li>A <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank">self-signed SSL certificate</a> is created so that the management of the Outline server can be encrypted using TLS despite not having a domain name. A unique fingerprint of this certificate is also generated and stored in the Outline Manager application, helping prevent MITM attacks.</li>
+</ul>
+
+<p data-aura-rendered-by="12:1723;a">The Outline installation doesn’t need any configuration after installation<br />
+  <br />
+  <strong>Server security</strong><br />
+  <br />
+  Outline software is open source, meaning that anyone can see the code and improve it if there are any discovered vulnerabilities. Our code is hosted on <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank">GitHub</a>.<br />
+  <br />
+  Furthermore, all installed Outline servers are automatically updated whenever a new version is released, ensuring no Outline server is left running old versions of the software.<br />
+  <br />
+  In order to manage the access keys on the server, the Outline Manager application interacts with a Management Service on the Outline server. The Management Service runs on a random port and on a secret and unique path. The Management Service itself is probing resistant since it doesn’t respond to queries unless the appropriate secret path is specified. Finally, all communication to the Management Service is encrypted with a <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank">self-signed SSL certificate</a>.<br />
+  <br />
+  Also, the Outline server does not store any logs, so even if it were compromised, no user data would be disclosed. Learn more <a href="https://support.getoutline.org/s/article/Security-and-privacy" target="_blank">here</a>. Outline was audited by <a href="https://radicallyopensecurity.com/" target="_blank">Radically Open Security</a> and <a href="https://cure53.de/" target="_blank">Cure53</a> in 2018. See the reports <a href="https://support.getoutline.org/s/article/Security-and-privacy" target="_blank">here</a>.<br />
+  <br />
+  <strong>Handling UDP traffic</strong><br />
+  <br />
+  Outline is able to operate as a system-wide VPN, meaning that all UDP traffic is tunneled through the Outline server.<br />
+  <br />
+  <strong>DNS traffic</strong></p>
+
+<p data-aura-rendered-by="12:1723;a"><br />
+  Outline performs all DNS lookups through the Outline server, and protects them using the same encryption that’s used for all other network activity. Your DNS queries will go through the Outline server to the Dyn Internet Guide, OpenDNS, Cloudflare DNS or Quad9 DNS. Outline never logs your DNS lookups.&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="232" sourceLocale="en">WEB:14919822</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Security and privacy while using Outline</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:258;a">Security and privacy while using Outline</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>How Outline protects your online communications</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Internet traffic is most vulnerable to surveillance while it's traveling through your local or national network.</p>
+
+<p data-aura-rendered-by="12:258;a">Outline helps keep your communications private by encrypting your internet traffic while it travels inside your national network and keeps it encrypted until it reaches the Outline server. When traffic is encrypted with Outline, network onlookers cannot inspect the websites you visit, or the information you’re transferring.</p>
+
+<p data-aura-rendered-by="12:258;a">Outline may also help you recover access to secure end-to-end communications tools that may not be otherwise accessible in your country.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Encryption standards</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Outline encrypts communications between your device and the Outline Server using the AEAD 256-bit Chacha2020 IETF Poly 1305 cipher. AEAD ciphers offer confidentiality, integrity, and authenticity, and exhibits excellent performance on modern hardware.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Security audits</strong></p>
+
+<p data-aura-rendered-by="12:258;a">In 2018, Outline was audited by Radically Open Security and Cure53, two independent digital security organizations that review software against the latest security standards. Radically Open Security conducted an additional audit in 2022 and Cure53 conducted an audit of the Outline SDK in 2024. You can read the reports here:</p>
+
+<ul data-aura-rendered-by="12:258;a">
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf" target="_blank">Radically Open Security Penetration Test Report (March 2018)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf" target="_blank">Cure53 Pentest &amp; Audit Report Jigsaw Outline (December 2018)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf" target="_blank">Radically Open Security Penetration Test Report (December 2022)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf" target="_blank">Cure53 Pentest Report Jigsaw Outline VPN SDK (January 2024)</a></li>
+</ul>
+
+<p data-aura-rendered-by="12:258;a"><strong>Anonymous metrics and logs</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Outline tracks the bandwidth used, as "bytes transferred" for each access key. This information allows server administrators to adjust their bandwidth subscriptions with their cloud server providers as needed, but doesn’t allow them to see the actual information that went through the Outline server.</p>
+
+<p data-aura-rendered-by="12:258;a">Learn more about Outline's <a href="/outline-faq/answer/15331222" rel="noopener" target="_blank">data and information collection</a>.</p>
+
+<hr data-aura-rendered-by="12:258;a" />
+<p data-aura-rendered-by="12:258;a"><strong>Security and privacy FAQs</strong>&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Can Outline make me anonymous online?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">No, Outline is not an anonymity tool. Outline protects your privacy from potential network onlookers.</p>
+
+<p data-aura-rendered-by="12:258;a">Outline does not offer you full anonymity on the websites you visit, because they can still identify you when you log in and sometimes through techniques, like browser fingerprinting. For mobile apps, most modern smartphones have APIs that allow installed apps to retrieve your location independent to your proxy as they can rely on the embedded GPS.</p>
+
+<p data-aura-rendered-by="12:258;a">VPNs in general offer important protections, particularly from internet surveillance, but there are always risks to operating online. Even with a VPN, if an ISP is already aware of your identity and able to observe your network traffic, it may be able to determine the IP address of your Outline server. This information can be used to block access to the Outline server or learn usage patterns, like when you’re typically online, and possibly your rough location.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Can someone tell if I'm using Outline?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Possibly. The platforms and services you access will most likely be able to tell that your connection is coming from a cloud server. Occasionally, they can deduce that you are using a VPN, but they will not be able to see the contents of your internet traffic.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Does Outline protect me from all possible cyber threats?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">No. No one tool will protect you against all possible cyber threats. Outline gives you access to the open internet and increases your privacy by encrypting your traffic, but we recommend that you take additional precautions to protect yourself against other types of attacks, like malware and phishing.</p>
+
+<p data-aura-rendered-by="12:258;a">In order to strengthen your online defenses, please consider working with your organization’s cybersecurity expert. Alternatively, you can obtain personalized guidance from leading security experts at <a href="https://securityplanner.org/" target="_blank">Security Planner</a>, a website built to provide you with clear instructions on choosing the right cybersecurity tools for your concerns.</p>
+
+<p data-aura-rendered-by="12:258;a">You can also check out the other cybersecurity products from <a href="https://jigsaw.google.com/" target="_blank">Jigsaw</a>, like <a href="https://getintra.org/" target="_blank">Intra</a>, <a href="https://g.co/shield" target="_blank">Project Shield</a>, and <a href="https://chrome.google.com/webstore/detail/password-alert/noondiphcddnnabmjcihcjfbhfklnnep?" rel="noopener" target="_blank">Password Alert</a>.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Is it legal to use a VPN?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Please check your local laws, regulations, and the Terms of Service for the cloud provider you plan to use before operating Outline or using the app.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="89" sourceLocale="en">WEB:15330317</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Why can’t I access the internet even though I’m connected to the Outline server?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:32933;a">If you’re using a mobile phone, try switching between mobile data and Wi-Fi connections. Sometimes one connection type works when another does not. If you’re using a computer, try disconnecting from broadband and reconnecting.</p>
+
+<p data-aura-rendered-by="12:32933;a">If you continue to experience difficulties, there is likely a problem with your Outline server. Contact your<a href="/outline-faq/answer/15330920" rel="noopener" target="_blank"> service manager</a>&nbsp;for a new access key for an alternative server. They may also be able to increase your&nbsp;<a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">access key</a>’s&nbsp; data limit if the key has exceeded its quota.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="296" sourceLocale="en">WEB:15330818</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">What are the system requirements to run the Outline client?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:24676;a">You are welcome to try Outline on any operating system. The following are the minimum required operating systems:</p>
+
+<table class="borders" data-aura-rendered-by="12:24676;a" width="312">
+  <tbody>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top"><b>Operating system</b></td>
+      <td colspan="1" rowspan="1" valign="top"><b>Minimum version</b></td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Android</td>
+      <td colspan="1" rowspan="1" valign="top">10</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">iOS</td>
+      <td colspan="1" rowspan="1" valign="top">15.5</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">macOS</td>
+      <td colspan="1" rowspan="1" valign="top">12.0</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Windows</td>
+      <td colspan="1" rowspan="1" valign="top">10</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Linux</td>
+      <td colspan="1" rowspan="1" valign="top">Ubuntu&nbsp;20.04</td>
+    </tr>
+  </tbody>
+</table>
+
+<p data-aura-rendered-by="12:24676;a"><br />
+  Want to help Outline Client work on more operating systems?&nbsp;<a href="https://github.com/Jigsaw-Code/outline-client#platform-specific-development" target="_blank">Contribute to our code base</a>&nbsp;on GitHub!</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="107" sourceLocale="en">WEB:15330824</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">How do I update my Outline server software?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:10378;a">Outline servers automatically update with the latest security improvements so that you are always running the latest Outline technology. The automated update process is enabled by <a href="https://github.com/v2tec/watchtower" target="_blank">Watchtower</a>, an open-source library that regularly checks and updates the docker image containing the Outline software.</p>
+
+<p data-aura-rendered-by="12:10378;a">Additionally, when you install Outline using the Outline Manager, we will set up a cron job to automatically upgrade the software on the server using <a href="https://wiki.debian.org/UnattendedUpgrades" target="_blank">Unattended Upgrades</a> (Ubuntu) and reboot it when necessary. Note that this doesn’t occur in Advanced Mode to preserve the existing configuration, under the assumption that the host is being used for other purposes in addition to running Outline.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="102" sourceLocale="en">WEB:15330825</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">How can I download Outline Manager if the download link doesn’t work?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Use <a href="https://getoutline.org/get-started/#step-1" target="_blank">this link</a> or <a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">this link</a> to download the applications directly for many operating systems.&nbsp;</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="129" sourceLocale="en">WEB:15330920</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Terminology</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:23504;a"><strong>What is a VPN?</strong><br />
+  A virtual private network (VPN) is a private connection between your device(s) and a host server. When you use a VPN, your traffic is hidden from the internet provider. You may want to use a VPN in the following scenarios:</p>
+
+<ul data-aura-rendered-by="12:23504;a">
+  <li>Protect your data when using a public Wi-Fi network</li>
+  <li>Keep your browsing data private from your internet provider and government agencies</li>
+  <li>Access uncensored content from various sources around the world</li>
+</ul>
+
+<p data-aura-rendered-by="12:23504;a"><strong>How is Outline different from traditional VPNs?</strong><br />
+  Internet providers can easily detect and block traditional VPNs by recognizing common security protocols and/or traffic volume patterns. Outline is more resilient than traditional VPNs because it's built using a protocol that is designed to be difficult to detect and therefore harder to block. Outline is resistant to sophisticated forms of censorship including network-based blocking and IP blocking.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>What is an Outline server?</strong><br />
+  An Outline server runs the VPN that permitted users will connect to. If you’re creating a new network, you can use your own secure server as your Outline server if you have one, or you can use a cloud services provider such as:</p>
+
+<ul data-aura-rendered-by="12:23504;a">
+  <li>DigitalOcean</li>
+  <li>Google Cloud Platform (GCP)</li>
+  <li>Amazon Web Services (AWS)</li>
+</ul>
+
+<p>You’ll set up your server in Outline Manager.</p>
+
+<p data-aura-rendered-by="12:23504;a"><br />
+  <strong><a id="servicemanager" name="servicemanager"></a>What is a service manager?</strong><br />
+  A service manager is the person responsible for setting up the Outline server and sharing access keys with users. The service manager is generally responsible for the cost of the server use.&nbsp;<br />
+  <br />
+  <strong><a id="accesskey" name="accesskey"></a>What is an access key?</strong><br />
+  An access key is used to access an existing Outline server and connect to the VPN. A <a href="#servicemanager" rel="noopener">service manager</a>&nbsp;will give you an access key, or you can<a href="/outline-faq/answer/15331530" rel="noopener" target="_blank"> set up an Outline server</a> yourself.&nbsp;Here is an example of what an access key looks like (sample only; will not work):&nbsp;<br />
+  <br />
+  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1<br />
+  <br />
+  <strong>What is Outline Manager?</strong><br />
+  Outline Manager is a desktop application that allows a service manager to set up an Outline server, generate <a href="#accesskey" rel="noopener">access keys</a>, and set data limits on usage per key. You can download the latest version of Outline Manager<a href="https://getoutline.org/get-started/#step-3" target="_blank"> here</a> or<a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank"> here</a>.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>What is Outline Client?</strong><br />
+  Outline Client is an application, available for desktop and mobile, that allows you to connect to an Outline server and access the VPN using an access key. You can download the latest version of the Outline Client<a href="https://getoutline.org/get-started/#step-3" target="_blank"> here</a> or<a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank"> here</a>.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>What are data limits?</strong><br />
+  Outline Manager allows service managers to set a trailing 30-day data limit on access keys to prevent overuse and help keep costs predictable. Service managers can set a default limit that applies to every key, and also set a different limit on any key to override the default limit. Once a limit is set, it goes into effect immediately and is enforced hourly.</p>
+
+<p data-aura-rendered-by="12:23504;a">If service managers opt in to share metrics with Jigsaw, they should view the<a href="/outline-faq/answer/15331222" rel="noopener" target="_blank"> data collection policy</a> for details on how the use of data limits will be reported.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="110" sourceLocale="en">WEB:15331121</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Do you support "getoutline.me" and the "@OutlineVpnOfficial" Telegram channel?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">The Outline team has received numerous inquiries about the website "<a href="http://getoutline.me/" target="_blank">getoutline.me</a>" and its associated Telegram channel "@OutlineVpnOfficial". These services are not affiliated with the Outline team and we cannot assist users experiencing issues with access keys from these services.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="en">WEB:15331122</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Available languages</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Outline is available in the following languages:</p>
+
+<ul>
+  <li aria-level="1">Afrikaans</li>
+  <li aria-level="1">Albanian</li>
+  <li aria-level="1">Amharic</li>
+  <li aria-level="1">Arabic</li>
+  <li aria-level="1">Armenian</li>
+  <li aria-level="1">Azerbaijani</li>
+  <li aria-level="1">Bengali</li>
+  <li aria-level="1">Bosnian</li>
+  <li aria-level="1">Bulgarian</li>
+  <li aria-level="1">Burmese</li>
+  <li aria-level="1">Catalan</li>
+  <li aria-level="1">Chinese (Simplified)</li>
+  <li aria-level="1">Chinese (Traditional)</li>
+  <li aria-level="1">Croatian</li>
+  <li aria-level="1">Czech</li>
+  <li aria-level="1">Danish</li>
+  <li aria-level="1">Dutch</li>
+  <li aria-level="1">English (American)</li>
+  <li aria-level="1">English (British)</li>
+  <li aria-level="1">Estonian</li>
+  <li aria-level="1">Filipino</li>
+  <li aria-level="1">Finnish</li>
+  <li aria-level="1">French</li>
+  <li aria-level="1">Georgian</li>
+  <li aria-level="1">German</li>
+  <li aria-level="1">Greek</li>
+  <li aria-level="1">Hebrew</li>
+  <li aria-level="1">Hindi</li>
+  <li aria-level="1">Hungarian</li>
+  <li aria-level="1">Icelandic</li>
+  <li aria-level="1">Indonesian</li>
+  <li aria-level="1">Italian</li>
+  <li aria-level="1">Japanese</li>
+  <li aria-level="1">Kazakh</li>
+  <li aria-level="1">Khmer</li>
+  <li aria-level="1">Korean</li>
+  <li aria-level="1">Lao</li>
+  <li aria-level="1">Latvian</li>
+  <li aria-level="1">Lithuanian</li>
+  <li aria-level="1">Macedonian</li>
+  <li aria-level="1">Malay</li>
+  <li aria-level="1">Marathi</li>
+  <li aria-level="1">Mongolian</li>
+  <li aria-level="1">Nepali</li>
+  <li aria-level="1">Norwegian</li>
+  <li aria-level="1">Persian</li>
+  <li aria-level="1">Polish</li>
+  <li aria-level="1">Portuguese (Brazilian)</li>
+  <li aria-level="1">Portuguese (European)</li>
+  <li aria-level="1">Romanian</li>
+  <li aria-level="1">Russian</li>
+  <li aria-level="1">Serbian (Cyrillic)</li>
+  <li aria-level="1">Serbian (Latin)</li>
+  <li aria-level="1">Sinhala</li>
+  <li aria-level="1">Slovak</li>
+  <li aria-level="1">Slovenian</li>
+  <li aria-level="1">Spanish (European)</li>
+  <li aria-level="1">Spanish (Latin American)</li>
+  <li aria-level="1">Swahili</li>
+  <li aria-level="1">Swedish</li>
+  <li aria-level="1">Tamil</li>
+  <li aria-level="1">Thai</li>
+  <li aria-level="1">Turkish</li>
+  <li aria-level="1">Ukrainian</li>
+  <li aria-level="1">Urdu</li>
+  <li aria-level="1">Vietnamese</li>
+</ul>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="110" sourceLocale="en">WEB:15331125</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Why can't I install Outline Client on Windows?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:31254;a">You may see this error message: “Sorry, it looks like Outline is not properly installed. Please try installing it again. If that doesn’t work, please&nbsp;<a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">submit feedback</a>.”</p>
+
+<p data-aura-rendered-by="12:31254;a">If you’re using Outline on Windows, occasionally, you may run into an unexpected error. In most cases, the Outline TAP adapter (driver) needs to be deleted and Outline should be reinstalled.</p>
+
+<p data-aura-rendered-by="12:31254;a">The steps may vary based on your Windows operating system version, but below are general steps for how to uninstall the TAP adapter and Outline and then reinstall Outline.</p>
+
+<ol data-aura-rendered-by="12:31254;a">
+  <li>Uninstall the TAP adapter for Outline Client
+    <ul>
+      <li>Go to&nbsp;<strong>Device Managers</strong>, then&nbsp;<strong>Network Adapters</strong></li>
+      <li>Find the&nbsp;<strong>TAP-Windows Adapter V9</strong>&nbsp;file or the TAP adapter associated with Outline</li>
+      <li>Uninstall or delete this adapter. Keep in mind that this could affect other VPN apps that you have installed.&nbsp;</li>
+    </ul>
+  </li>
+  <li>Uninstall Outline Client
+    <ul>
+      <li>Go to&nbsp;<strong>Programs &amp; Features</strong>, then to&nbsp;<strong>Uninstall Program</strong></li>
+      <li>Find the Outline Client app and uninstall Outline Client</li>
+      <li><a href="https://getoutline.org/get-started/#step-3" target="_blank">Download the latest version of Outline Client</a>&nbsp;and reinstall it on your Windows device. The new installation should automatically install a new TAP adapter.</li>
+    </ul>
+  </li>
+</ol>
+
+<p data-aura-rendered-by="12:31254;a">If you’re still having trouble,&nbsp;<a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">contact support</a>.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="109" sourceLocale="en">WEB:15331126</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Why can't I connect to the Outline service?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>There are a few reasons you may not be able to connect to the Outline service:&nbsp;</p>
+
+<ul>
+  <li aria-level="1"><strong>Your device is&nbsp;</strong><a href="#Internetissues" rel="noopener"><strong>disconnected from the internet</strong></a><a href="#Internetissues" rel="noopener"> </a><strong>. </strong>Sometimes your device will experience a break in network connection and it may take a moment for it to update the network icons. It’s also possible that your device is connected to the local network, but that the internet is down.</li>
+  <li aria-level="1"><strong>Your&nbsp;</strong><a href="#FirewallIssues" rel="noopener"><strong>network firewall is blocking access</strong></a><a href="#FirewallIssues" rel="noopener"> </a><strong><a href="#FirewallIssues" rel="noopener">t</a>o your Outline server. </strong>This is common if you’re using a public network, like a school, work, or free wireless network.</li>
+  <li aria-level="1"><strong>Your device has a&nbsp;</strong><a href="#SoftwareIssues" rel="noopener"><strong>firewall or antivirus software</strong></a><a href="#SoftwareIssues" rel="noopener"> </a><strong>that is blocking access to your Outline server.</strong></li>
+  <li aria-level="1"><strong>Your&nbsp;</strong><a href="#DeviceSettings" rel="noopener"><strong>phone device settings</strong></a><strong> may need to be changed.</strong></li>
+  <li aria-level="1"><strong>Your service manager may have&nbsp;</strong><a href="#ServerIssues" rel="noopener"><strong>destroyed the server or your ISP may be blocking your request</strong></a> .</li>
+</ul>
+
+<p><a id="Internetissues" name="Internetissues"><strong>Internet connection issues:</strong></a></p>
+
+<p><strong>How to test:</strong></p>
+
+<p>Turn off Outline and see if your connection to the internet is restored.</p>
+
+<ul>
+  <li aria-level="1">If yes, see more troubleshooting options below.</li>
+  <li aria-level="1">If not, then wait a few moments to see if your connection settings update themselves.</li>
+</ul>
+
+<p><strong>Things to fix:</strong></p>
+
+<p>Get your device back online:</p>
+
+<ol>
+  <li aria-level="1">Check another device to see if it can connect to the same network. If other devices cannot get online, the network may be down and you will need to wait for it to return or troubleshoot it.</li>
+  <li aria-level="1">If other devices can get on the same network, you can try one or more of the following to get it back online:
+    <ol>
+      <li aria-level="2">Put the device in airplane mode (mobile)</li>
+      <li aria-level="2">Restart the device</li>
+      <li aria-level="2">Shutdown the device, wait 2 minutes, turn the device back on</li>
+    </ol>
+  </li>
+</ol>
+
+<p><a id="FirewallIssues" name="FirewallIssues"><strong>Network firewall issues:</strong></a></p>
+
+<p><strong>How to test:</strong></p>
+
+<ol>
+  <li aria-level="1">Disconnect from your current Wi-Fi or wired network.</li>
+  <li aria-level="1">Connect to a different network, like a cellular one</li>
+  <li aria-level="1">Try to reconnect to the Outline server</li>
+</ol>
+
+<p>If you are able to connect while on the other network, then this is your issue.</p>
+
+<p><strong>Things to fix:</strong></p>
+
+<p>Contact the service manager and request them to allow access to your Outline server or continue using the other network instead.</p>
+
+<p><a id="SoftwareIssues" name="SoftwareIssues"><img alt="This image is not available because: You don’t have the privileges to see it, or it has been removed from the system" height="1" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeoHNM7TWEsg0z4iydaS2xKOPga0zOjhOTqvGpA-JLd-Fwnydby6EBZziz3vqgRUJwssreEqP6lmjv_-13QXdzqh3yx9tZiR81BvxcXShi3kJ-XDKnqt951uRRPSO8BUhXaiijJLF8PixV_ezhGJ02Y3QPFbw?key=pJIeaVZQOqqoBTmDWZd2hw" width="1" /><strong>Firewall or antivirus software issues:</strong></a><br />
+  <br />
+  <strong>How to test:</strong><br />
+  <br />
+  Try connecting to Outline from another device.&nbsp;</p>
+
+<p>Note: Remember that you’ll need an access key and the Outline app to use Outline on another device.</p>
+
+<p><strong>Things to fix:</strong></p>
+
+<p>Check your firewall or antivirus software settings to make sure they are set to allow VPN and Outline traffic through.</p>
+
+<p><a id="DeviceSettings" name="DeviceSettings"><strong>Device settings:</strong></a></p>
+
+<p><strong>Things to check:</strong></p>
+
+<p>For Android:</p>
+
+<ol>
+  <li aria-level="1">Open the Settings App.</li>
+  <li aria-level="1">Look for the <strong>VPN settings</strong> on your device. (The VPN settings will show you all the VPN apps that currently has access on your phone.)&nbsp;</li>
+  <li aria-level="1">If you don’t see Outline on the VPN settings, uninstall Outline and reinstall it. Outline should automatically be given access by the device once installed.</li>
+</ol>
+
+<p>Make sure you don't have any screen overlay application installed on your Android device, as this may be sending the Outline permissions window to the background so that it is not visible in the foreground.<br />
+  <br />
+  On your Android device, go to Settings &gt; Apps &gt; Special app access. Then tap ‘Display over other apps’. You can remove access to any apps that allow this behavior.<br />
+  <br />
+  For iOS: Read&nbsp;<a href="https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web" rel="noopener" target="_blank">this support article</a>.</p>
+
+<p><a id="ServerIssues" name="ServerIssues"><strong>Server issues:</strong></a></p>
+
+<p><strong>How to test:</strong></p>
+
+<p>If you have access to more than one server, try connecting to the other one.&nbsp;</p>
+
+<p><strong>Things to fix:</strong></p>
+
+<p>Contact your service manager to see if the server has been destroyed. If so, ask them for an&nbsp;<a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">access key</a> to another server.</p>
+
+<p>If you set up the server, try connecting to it through the Outline Manager or another method such as&nbsp;<a href="https://en.wikipedia.org/wiki/Secure_Shell" rel="noopener" target="_blank">SSH</a>. If that doesn’t work, you can try checking the cloud provider console, if any, to see if the server is still online.</p>
+
+<p data-aura-rendered-by="12:32047;a">&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="en">WEB:15331127</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">How can I download the client app if the download link doesn't work?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Use&nbsp;<a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">this link</a>&nbsp;to download the applications directly for many operating systems.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="131" sourceLocale="en">WEB:15331222</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Data and Information collection</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:271;a">Outline doesn’t collect personal information unless you opt in to provide it. Outline also doesn’t collect information about the websites you visit or with whom or what you communicate.<br />
+  <br />
+  If you are creating or logging into an account with a third party cloud provider through the Outline Manager, we don’t obtain any information you provide to your third party cloud provider, such as your email address, name, billing information, and payment details.<br />
+  <br />
+  <strong><strong>Information we obtain automatically</strong></strong><br />
+  <br />
+  We collect two types of information automatically.<br />
+  1. Server IP<br />
+  The Outline server IP is collected by&nbsp;<a href="http://quay.io/" target="_blank">Quay.io</a>, and made accessible to us when the server automatically updates with the latest security and feature improvements. The Server IP may identify the cloud server provider and the city in which the Outline server has been set up, but this doesn’t provide information about who’s running the server or who is accessing it.<br />
+  <br />
+  2. Non personally identifiable technical information<br />
+  If Outline crashes or a fatal exception occurs, or if you manually send feedback through the Outline app, the information listed below will be reported. This information will only be used to help identify and fix stability or performance issues.</p>
+
+<ul data-aura-rendered-by="12:271;a">
+  <li>Country</li>
+  <li>Locale</li>
+  <li>Date and time of crash / exception and up to 100 prior events, like that of a user opening the ‘About’ section</li>
+  <li>Statically compiled exception messages</li>
+  <li>OS name and version</li>
+  <li>Phone model (if applicable)</li>
+  <li>App start time</li>
+  <li>Browser</li>
+  <li>Architecture</li>
+  <li>Outline version and build number</li>
+</ul>
+
+<p data-aura-rendered-by="12:271;a"><br />
+  This information is transferred using HTTPS to Sentry (<a href="http://sentry.io/" target="_blank">sentry.io</a>), a third-party, open source error tracking provider. Sentry uses a variety of industry-standard technologies and services to secure your data from unauthorized access, disclosure, use, and loss. If you have any questions about Sentry’s policies, please visit&nbsp;<a href="https://sentry.io/security/" target="_blank">https://sentry.io/security/</a>&nbsp;and&nbsp;<a href="https://sentry.io/privacy/" target="_blank">https://sentry.io/privacy/</a>, or contact&nbsp;<a href="mailto:security@sentry.io" target="_blank">security@sentry.io</a>. All Outline data stored by Sentry is restricted such that only members of the Outline team can access it.<br />
+  <br />
+  <strong><strong>Information we obtain only upon opt-in</strong></strong><br />
+  <br />
+  Outline reports the following information to the Outline team upon opt-in.<br />
+  1. Usage metrics<br />
+  Each Outline server automatically collects, for the last hour and on a per access key basis, the number of bytes transferred, the amount of time a user was connected to the server, the countries and autonomous systems&nbsp;of origin&nbsp;of the credentials used, and whether any features have been enabled or disabled. Neither the contents of the communication nor any personally identifiable metadata (e.g. logins, emails, device IDs, etc) is logged. All metrics are tied to a server ID. Instructions for changing the server ID can be found&nbsp;<a href="/outline-faq/answer/15548974" rel="noopener" target="_blank">here</a>.<br />
+  <br />
+  By default, Outline Servers do not share these metrics with the Outline team. If the Server administrator explicitly opts in to sharing usage metrics, this information will be securely sent to the Outline team every hour. After 60 days, the usage metrics will be aggregated to the country level. Server administrators can change their usage metrics sharing preference anytime by visiting the ‘Settings’ menu in the Outline Manager.<br />
+  <br />
+  We appreciate you sharing with us anonymous metrics about your server usage, as we use them to measure usage trends and to improve the product.<br />
+  <br />
+  For example, if a Server administrator opts in to sharing usage metrics with us, we could receive information indicating that a Server with ID 12345 was used for 3 hours yesterday, transferring a total of 500 megabytes of data, from three keys each used in the United States and Canada, with the data limits feature enabled.<br />
+  <br />
+  2. Your comments and email if you submit feedback<br />
+  The Outline Manager and Outline Apps allow you to submit feedback to the team. We recommend not including personally identifiable information, but an email field is optionally available if you would like a response from the team. We also automatically gather some basic information, so that we can understand your feedback. Please see item 2 above, under “Information we obtain automatically”, to see what data we collect.&nbsp;Learn more about Outline's security and privacy practices&nbsp;<a href="/outline-faq/answer/14919822" rel="noopener" target="_blank">here</a>.<br />
+  <br />
+  If you are using a beta version of the Outline app on Android, we may use Google’s&nbsp;<a href="https://firebase.google.com/" target="_blank">Firebase</a>&nbsp;service to collect debugging information that can help us detect problems and improve Outline. You can learn more about Firebase’s privacy and security policies from their website:&nbsp;<a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a>. If you do not want Outline to send this information through Firebase, please use the production version of the app.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="88" sourceLocale="en">WEB:15331223</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">What if my access key doesn't work?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:30472;a">If you receive the error message:&nbsp;“It seems like your access key is not valid. If this happens again, please contact your service manager.” Follow the steps below to troubleshoot the issue:&nbsp;</p>
+
+<ol data-aura-rendered-by="12:30472;a">
+  <li>Ensure you are entering the full access key, including the first five characters, “ss://”, which may not automatically copy to the clipboard. Here’s an example of what a full access key looks like (sample only; will not work):</li>
+</ol>
+
+<pre data-aura-rendered-by="12:30472;a">
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@145.230.4.1:39485/?outline=1&nbsp;
+</pre>
+
+<ol data-aura-rendered-by="12:30472;a" start="2">
+  <li>If your access key won’t copy to your clipboard at all, this may be due to your messaging app or platform. This is mostly likely to happen when you receive a message from someone who isn’t in your contact list. If you’re copying the code from a message, ensure the sender is added to your contacts, then try to access the link again.&nbsp;</li>
+  <li>If you completed steps 1 and 2 and still receive the error message, the server is most likely blocked or the access key is no longer valid. If you are the service manager, try generating a new key for yourself. Otherwise, contact your service manager for a new key.</li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="96" sourceLocale="en">WEB:15331322</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">How much does it cost to run Outline?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>The Outline software is free for anyone, whether you are a server administrator managing the VPN or someone using Outline to access the open internet.<br />
+  <br />
+  Outline does require access to a cloud server in order to run, though. Server administrators who already have access to a server can install Outline on it for no additional cost. Those without access to a server can get access from a cloud services provider, like&nbsp;<a href="http://www.digitalocean.com/" rel="noopener" target="_blank">DigitalOcean</a>&nbsp;or Amazon Web Services, for about $5 USD per month for 1 terabyte of data transfer allowance — that’s enough to support hundreds of users on a single server.<br />
+  <br />
+  An example of how you can do the math to determine how much it'd cost to run Outline with your choice cloud provider:</p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td colspan="1" rowspan="1">
+      <p><em>Assuming an average monthly usage of 5 gigabytes of data transfer per user, a plan of $5 USD per month would allow for about 200 concurrent users, making the cost per user just 2.5 cents per month. Note that data transfer used per month per user will vary greatly depending on whether users are doing low or high bandwidth activities, but most cloud providers will flex to accommodate increases in traffic.</em></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br />
+  In fact, using Outline is completely anonymous to Jigsaw and Google. We do not track your identity or traffic and there's no monetization plan. Instead, we work with our open source community to ensure that we can provide the software at no cost to our users. Learn more about the data we collect&nbsp;<a href="/outline-faq/answer/15331222" rel="noopener" target="_blank">here</a>.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="386" sourceLocale="en">WEB:15331326</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">How do I set data limits on access keys?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:15859;a">You can set a data limit that will apply to all access keys. To set the limit, open Outline Manager and navigate to Settings. There you will see a Data limits toggle that, when enabled, lets you set a limit.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787036"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">Once you set a limit, you can see how close each user is to the limit on the access key page, where a bar graph shows the data usage over the last 30 days.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787037"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">In addition to being able to set a limit for all of your access keys, you can grant each key its own data limit. This setting will override any default data limit you have set, but if you have not set a default data limit, you can still set a data limit for any key.&nbsp;<br />
+  <br />
+  To set a key's data transfer limit, open the Outline Manager, navigate to the Connections tab that contains the key you want to set, and click on the menu on the right side of the key's row. From there, click on Data Limit. To change the data limit on "My access key", click the Data Limits icon&nbsp;<img alt="Data limits icon" height="19" src="https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw" width="19" />.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787423"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">Select Set a custom data limit. Once you've selected this checkbox, a field will appear where you can set the custom data limit for that key. Click on the SAVE button when you're done to save the data limit.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15788959"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">Once you've saved your data transfer limit for the chosen key, the limit will show on the main screen, alongside the data usage (over the past 30 days) for each key.</p>
+
+<p data-aura-rendered-by="12:15859;a">To remove the data limit from an access key, navigate to the key's Data Limit dialog as before, uncheck the box labeled Set a custom data limit, and click the SAVE button.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15788414"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a"><b><strong>Data Limit FAQs</strong></b><br />
+  <br />
+  <strong><b>What is a 30-day trailing data limit?</b></strong><br />
+  <br />
+  A 30-day trailing data limit will sum each key’s usage over the past 30 days and keep the key’s usage over that period below the limit. The effect is that the key cannot go over the limit during any 30 day period, including calendar months of 30 days or less. In effect, this means that each user’s available data will increase each day by the amount they used 31 days ago.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Why does Outline use trailing limits?</strong><br />
+  <br />
+  Trailing limits provide guarantees over every 30 day period, which means they’re simpler to configure than a recurring limit (such as a customizable day of the month) while providing similar guarantees. They also match the existing display for Outline data use, as well as common tools such as analytics services and server statistics.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>What data is counted in a data limit?</strong><br />
+  <br />
+  Each access key’s egress from the server is included in the tally. Strictly speaking this means data sent on the key’s behalf out of the server, as well as back to the client. Practically, this should closely align to the traffic sent from the key to the server and back, so we hope it will match your users’ tallies. We chose egress since that is what the cloud providers we surveyed bill for.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Will users be notified if they’ve run over their data limit?</strong><br />
+  <br />
+  Not at the moment. Many cloud providers include a limit such as 1TB for the whole month, which can support 10 users at 100 GB or 100 users at 10 GB. These are pretty big numbers, and we don’t expect many users will hit them. We hope that users will reach out to server managers when they hit their limit. However, we’d appreciate your insight into how notifications might help for your use case, and you can contact us<a href="https://support.getoutline.org/s/contactsupport" target="_blank"> here</a>.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Will users be notified if they approach their data limit?</strong><br />
+  <br />
+  The amount of new data that a user approaching their limit will receive will vary from day to day because it’s based on their use 30 days ago. We think a warning is more likely to confuse end users than to help them. We’d appreciate your feedback on this behavior<a href="https://support.getoutline.org/s/contactsupport" rel="noopener" target="_blank"> here</a>.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Can I reset a user’s data usage?</strong><br />
+  <br />
+  No, a user’s limit always includes the past 30 days of data use. However, you can raise their key's data limit or create a new key for them.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Why did some of my users lose access as soon as I enabled data limits?</strong><br />
+  <br />
+  Data limits are based on users’ prior 30 days of data transfer, which is recorded whether or not data limits have been enabled. It’s possible that the users in question had already exceeded the limit before it was put in place.&nbsp; Also note that all data limits are enforced, even when changing a single key’s data limit.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Can I set a server-wide limit, such as “1 TB per 30 days”?</strong><br />
+  <br />
+  Not at the moment. We’d love to hear more about your use case<a href="https://support.getoutline.org/s/contactsupport" rel="noopener" target="_blank"> here</a>.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>If there’s a default data limit and a data limit on a specific key, which one will be enforced?</strong><br />
+  <br />
+  The specific key's data limit will override whatever default data limit (if any) you have set.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Can I set a data limit for a specific key without having a default data limit set?</strong><br />
+  <br />
+  Yes.&nbsp; You don’t need a default limit defined in order to set a data limit on one key.&nbsp; For example, you could set a limit on one key which you think may be shared broadly in order to protect yourself from excessive data transfer through that key.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="en">WEB:15331327</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">How do I reset my server ID?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:23999;a">The server ID is a server-side ID that is randomly generated when you create an Outline server. You can find it when opting into sharing anonymous metrics in the Settings interface. You can locate your server ID from: Settings =&gt; scroll to bottom =&gt; check "share anonymous metrics".</p>
+
+<p data-aura-rendered-by="12:23999;a">The server ID ties together anonymous usage statistics reported over time. If you want to reset the server ID and obtain a new one, you’ll need to replace your existing Outline server with a new one.</p>
+
+<p data-aura-rendered-by="12:23999;a">If you’re using DigitalOcean as your cloud provider, you can reset your server by going to the Settings and selecting Destroy Server. This action is irreversible and will erase your credentials. Immediately following this action, you’ll be prompted to create a new server in a location of your choosing, and a new server ID will be generated.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="103" sourceLocale="en">WEB:15331328</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">How do I change the location of the Outline server?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:24761;a">Once set up, a server location cannot be changed. To run your server from a different location, you need to delete your Outline server and create a new one.</p>
+
+<p data-aura-rendered-by="12:24761;a"><br />
+  Alternatively, you can change the location of your VPN using <a href="https://developers.google.com/outline/docs/guides/service-providers/dynamic-access-keys" target="_blank">dynamic keys</a>, which allow you to rotate servers and keep the same keys. The location of the servers themselves will not change.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="102" sourceLocale="en">WEB:15331423</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">How to send feedback or suggestions</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:22486;a">Thanks for helping make Outline better! There are a few ways to send us feedback, either anonymously or with your email if you require a response:</p>
+
+<ul data-aura-rendered-by="12:22486;a">
+  <li><strong>For developers</strong>:&nbsp;Outline is open source software and we host all our code on&nbsp;<a href="https://github.com/jigsaw-Code/?q=outline" target="_blank">GitHub</a>. You can share your ideas on GitHub or on our&nbsp;<a href="https://www.reddit.com/r/outlinevpn/" target="_blank">Reddit</a>&nbsp;community.&nbsp;</li>
+  <li><strong>For users</strong>: You can send us feedback through the Outline or Outline Manager apps. Tell us what your feedback is about and, optionally, leave an email so we can write you back about it. We also collect some metadata about your environment, so that we can help you with troubleshooting, like your browser, operating system, and which software version you’re on.</li>
+  <li><strong>Through this site</strong>: You can click on the contact us link anywhere you see it within this site.</li>
+  <li><strong>Serious issues</strong>: If you want to report a serious security issue, we’d appreciate you email us with details at security [at] <a href="https://getoutline.org/" rel="noopener" target="_blank">getoutline.org</a>.</li>
+</ul>
+
+<p data-aura-rendered-by="12:22486;a">Thank you again for taking the time to share your thoughts with us.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="146" sourceLocale="en">WEB:15331424</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Manage access to an Outline server (with access keys)</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:25527;a">Once you've finished installing your Outline server, you can now start sharing and managing people's access to it. People who receive an invitation from you will be able to download the Outline app to use Outline to protect their internet traffic.</p>
+
+<p data-aura-rendered-by="12:25527;a"><strong>Share access to your Outline server</strong><br />
+  After you've finished installing an Outline server, you'll be directed to the server details page on Outline Manager, where you can create access keys. Learn more about <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">access keys</a>.</p>
+
+<ul data-aura-rendered-by="12:25527;a">
+  <li>Create keys: Click the small "+" icon at the bottom of the page to create new keys.</li>
+  <li>Share keys: To the right of each key, there's a share icon you can click to get an invitation. Copy and paste this invitation into the messaging system of your choice.</li>
+</ul>
+
+<p data-aura-rendered-by="12:25527;a"><strong>Feature request: Sharing access from within the Outline Manager app</strong><br />
+  A lot of server administrators ask us to streamline the invitation process by giving them the option to enter someone’s email address directly into Outline Manager.</p>
+
+<p data-aura-rendered-by="12:25527;a">Unfortunately, we are unlikely to build this functionality into Outline Manager. One of our core principles is to support our users’ privacy and security, which means that we didn’t design any place to insert email addresses or contact information.</p>
+
+<p data-aura-rendered-by="12:25527;a">This is why we ask server administrators to use a secure messaging platform, like email or secure chat, to send the invitation to the end user.<br />
+  <br />
+  <strong>What the user experiences after you share an access key with them</strong></p>
+
+<ol data-aura-rendered-by="12:25527;a">
+  <li>The user will click on the installation link from their device</li>
+  <li>They will be prompted the install Outline app if they don’t already have it</li>
+  <li>They will establish an initial connection to your Outline server via the unique key embedded in the invitation</li>
+  <li>They can now use the connect/disconnect button to manage their access to the internet through your Outline server</li>
+</ol>
+
+<p data-aura-rendered-by="12:25527;a"><strong>Remove access to your Outline server</strong><br />
+  From the server details page in Outline Manager, to the right of every key on the server, you'll see a menu with an option to delete a key. Deleting a key removes their access to your server.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="92" sourceLocale="en">WEB:15331524</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">How can I access Outline resources if getoutline.org is blocked?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><a href="https://s3.amazonaws.com/outline-vpn/index.html" target="_blank">Bookmark this mirrored site</a> to use if you cannot access <a href="http://getoutline.org/" target="_blank">getoutline.org</a>.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="321" sourceLocale="en">WEB:15331527</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Installing Outline Client on Linux</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Beginning with Outline Client version 1.15, all future versions will be released as Debian packages for Linux operating systems. Review our <a href="/outline/answer/15330818" rel="noopener" target="_blank"><u>minimum system requirements</u></a> for more information on which operating systems we support.</p>
+&nbsp;
+
+<p><strong>Install Outline Client for Debian-based Linux distributions (Recommended)</strong></p>
+&nbsp;
+
+<p>Run the following commands:</p>
+
+<ol>
+  <li aria-level="1">Install Outline’s repository key and add the repository.
+    <div class="code">
+      <div class="no-margin">
+        <p>wget -qO- https://us-apt.pkg.dev/doc/repo-signing-key.gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/gcloud-artifact-registry-us.gpg</p>
+
+        <p>echo "deb [arch=amd64] https://us-apt.pkg.dev/projects/jigsaw-outline-apps outline-client main" | sudo tee /etc/apt/sources.list.d/outline-client.list</p>
+      </div>
+    </div>
+  </li>
+  <li aria-level="2">Update the apt package list and install the latest version of Outline Client.
+    <div class="code">
+      <div class="no-margin">
+        <p>sudo apt update</p>
+
+        <p>sudo apt install outline-client</p>
+      </div>
+    </div>
+  </li>
+</ol>
+
+<p>To check for or install future updates, run the commands in Step 2 again. Note that in-app auto-update is disabled for Outline Client on Linux, beginning in version 1.15.</p>
+
+<p>To uninstall Outline Client, run the following command:</p>
+
+<div class="code">
+  <div class="no-margin">sudo apt purge outline-client</div>
+</div>
+
+<p><strong>Alternative Option</strong></p>
+
+<ol>
+  <li aria-level="1">Download the latest Outline Client Debian package from <a href="https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb" rel="noopener" target="_blank">https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb</a></li>
+  <li aria-level="2">Run the following commands in the command line to install the package
+    <div class="code">
+      <div class="no-margin">
+        <p>wget -O ./outline-client.deb https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb</p>
+
+        <p>sudo apt install ./outline-client.deb</p>
+      </div>
+    </div>
+  </li>
+  <li aria-level="3">Check for updates manually, as in-app auto-update is disabled for Outline Client on Linux, beginning in version 1.15.</li>
+  <li aria-level="4">To uninstall Outline Client, run the following command in the command line:
+    <div class="code">
+      <div class="no-margin">sudo apt purge outline-client</div>
+    </div>
+  </li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="206" sourceLocale="en">WEB:15331528</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Can I use an access key more than once?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1895;a">Yes. You can use your <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">access key</a>&nbsp;on any number of your devices, but we do not recommend that you share your key with another person. Someone with your access key could potentially inspect all your internet traffic if they have access to it, which no longer makes your internet usage secure or private.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="104" sourceLocale="en">WEB:15331529</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Connecting your device to an Outline server</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1399;a"><strong>Connecting your device to an Outline server</strong></p>
+
+<p data-aura-rendered-by="12:1399;a">In order to connect your device to an Outline server, a server administrator has to send you an invitation to connect to their server with a unique&nbsp;<a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">access key</a>. This invitation will:</p>
+
+<ul data-aura-rendered-by="12:1399;a">
+  <li>Prompt you to download and install Outline on your device if you don't already have it</li>
+  <li>Use the access key to make a secure connection between you and the Outline server</li>
+</ul>
+
+<p data-aura-rendered-by="12:1399;a">Once you have established your connection to the server, you can click "connect" or "disconnect" to use Outline.</p>
+
+<p data-aura-rendered-by="12:1399;a"><em>Important:</em>&nbsp;Outline does not work without an access key and an Outline server. Downloading and installing the Outline app without a key won't protect your internet traffic.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="100" sourceLocale="en">WEB:15331530</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">How can I set up an Outline server?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:27063;a">Setting up an Outline server is the first step in being able to use Outline. Either you or someone you trust has to set up a server for you in order for you to connect the open internet through Outline.<br />
+  <br />
+  <strong>Before you begin</strong><br />
+  Before you start setting up your Outline server, you'll need a few things:</p>
+
+<ol data-aura-rendered-by="12:27063;a">
+  <li>Access to your own servers or a Cloud services provider, like DigitalOcean, Amazon Web Services (AWS), or Google Cloud Platform (GCP).<br />
+    If you don’t immediately have access to a cloud server, you can easily set up an account with any provider, including those listed above. You will likely need a credit card to sign up.</li>
+  <li>A desktop computer running macOS 10.9+, Windows 7.0+ or Linux.</li>
+  <li>The Outline Manager application.</li>
+</ol>
+
+<p data-aura-rendered-by="12:27063;a"><strong>Set up with DigitalOcean</strong><br />
+  <br />
+  We made it easy for anyone to install Outline on DigitalOcean in a few clicks. After downloading and installing Outline Manager on your computer, you can select the DigitalOcean setup option which will guide you through a few simple screens to configure and install your Outline Server.<br />
+  <br />
+  <strong>Set up with another cloud provider</strong><br />
+  <br />
+  After downloading and installing Outline Manager, you can select to install an Outline server on a virtual machine with AWS, GCP, DigitalOcean, or another provider. Every environment is different, so we've included instructions within the Outline Manager setup flow for the most common cloud providers, including how to configure the settings on your virtual machine before you run the installation script to install Outline on a server.<br />
+  <br />
+  <strong><em>Need more help?</em></strong><br />
+  <br />
+  Check out our&nbsp;<a href="/outline-faq/answer/15331728" rel="noopener" target="_blank">outline server setup FAQs</a>.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="95" sourceLocale="en">WEB:15331625</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Am I allowed to use or replicate the Outline brand?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">While Outline is open source and free to use, our brand is proprietary to Jigsaw and should not be misused. Please follow the <a href="https://github.com/Jigsaw-Code/outline-brand/blob/main/outline_brand_user_guide.pdf" target="_blank">user guide</a> to ensure you do not make potentially misleading claims or mischaracterize your relationship with Outline or with Jigsaw, and are correctly using the approved branding elements.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="191" sourceLocale="en">WEB:15331628</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">How can I get an access key?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:3258;a">Outline isn’t like VPN services that you buy access to; it’s <a href="https://getoutline.org/#:~:text=Two%20Products%20that%20Work%20Together" target="_blank">a tool</a> that lets you run and share access to a private VPN server. A <a href="/outline/answer/15330920#servicemanager" rel="noopener" target="_blank">service manager</a>&nbsp;is the only person that can provide an access key. The Outline team does not distribute free or paid access keys. We do not have any official Outline access key partners, except for Paskoocheh in Farsi.<br />
+  <br />
+  Here are three options for getting an access key:&nbsp;</p>
+
+<ul data-aura-rendered-by="12:3258;a">
+  <li>Ask someone to invite you to their server: If you know someone with an Outline server, contact them and ask them for an access key.</li>
+  <li><a href="/outline/answer/15331530" rel="noopener" target="_blank">Create a server yourself:</a> Using a Windows, Mac, or Linux computer, download <a href="https://getoutline.org/get-started/#step-1" target="_blank">Outline Manager</a> and set up your own private <a href="/outline/answer/15330920" rel="noopener" target="_blank">Outline server</a>. We made this process easy for anyone to do, particularly through cloud service provider DigitalOcean.</li>
+  <li>Use an Outline or <a href="https://en.wikipedia.org/wiki/Shadowsocks#:~:text=Shadowsocks%20is%20a%20free%20and,have%20been%20made%20available%20since." target="_blank">Shadowsocks</a> service: The Outline client can also be used with third-party services that use Outline or the Shadowsocks protocol. For example:
+    <ul>
+      <li><a href="http://nthlink.com/" target="_blank">nthLink</a> runs a free service based on Outline, with a modified version of the Outline client.</li>
+      <li><a href="https://www.reddit.com/r/outlinevpn/comments/nwu1se/the_outline_distribution_system_is_here_to_help/" target="_blank">ASL19</a> runs a modified version of Outline called <a href="https://beepassvpn.com/" target="_blank">BeePass</a> as well as <a href="https://t.me/paskoochehbot" target="_blank">a Telegram bot</a> that provides free access keys to BeePass servers.</li>
+      <li>Farsi language users can also request an Outline access key from <a href="https://outline.paskoocheh.com/" target="_blank">ASL19’s Paskoocheh</a>.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>After downloading the Outline Client app, copy and paste your <a href="/outline/answer/15330920#accesskey" rel="noopener" target="_blank">access key</a>&nbsp;into Outline Client to connect to the Outline server.&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="133" sourceLocale="en">WEB:15331630</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">How do I delete my Outline server?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:14046;a">For most cloud providers, it’s fairly easy to remove the specific virtual machine you are using.</p>
+
+<p data-aura-rendered-by="12:14046;a">If you are using DigitalOcean as your cloud provider, you can delete your existing virtual machine by clicking on the gear button and selecting Destroy Server. Immediately afterwards, you’ll be prompted to create a new virtual machine in a location of your choosing.</p>
+
+<p data-aura-rendered-by="12:14046;a">If you remove an Outline server, it will be permanently deleted and its access keys will no longer work. If you do not want people to have an interruption in their access through Outline, you will need to <a href="/outline-faq/answer/15331530" rel="noopener" target="_blank">set up a new Outline server</a>&nbsp; and share access to it before deleting your old server.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="99" sourceLocale="en">WEB:15331631</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">How to set up multiple Outline servers</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:27908;a">To set up additional Outline Servers, click on the “+” icon on the navigation panel on the left side of your Outline Manager application. The instructions to add a new server are the same as if you were installing your first.</p>
+
+<ul data-aura-rendered-by="12:27908;a">
+  <li>We do not have a limit on the number of Outline servers you can create.</li>
+  <li>For every Outline server you create, you’ll need a corresponding virtual machine.</li>
+  <li>Creating additional machines or droplets may increase your fees with your cloud provider. Please check your pricing package with your cloud provider to make sure you know what to expect.</li>
+</ul>
+
+<p data-aura-rendered-by="12:27908;a"><strong>Creating an additional Outline server on DigitalOcean</strong></p>
+
+<p data-aura-rendered-by="12:27908;a">After clicking the + icon and selecting to install on DigitalOcean, you’ll follow the same instructions you did to set up your first server. Also, since Outline Manager integrates with DigitalOcean, we’re able to create the droplet for you without your ever having to leave the Outline Manager app.</p>
+
+<p data-aura-rendered-by="12:27908;a">Note that Outline Manager can only support one DigitalOcean account at a time. If want to add or create other Outline servers from other DigitalOcean accounts, you can add them as an advanced configuration.</p>
+
+<p data-aura-rendered-by="12:27908;a"><strong>Creating an additional Outline server on GCP, AWS, or another cloud service provider</strong></p>
+
+<p data-aura-rendered-by="12:27908;a">Start by creating a new virtual machine with your chosen cloud provider. Then open up Outline Manager and complete the instructions for advanced installation, just like you may have the first time.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="96" sourceLocale="en">WEB:15331632</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Why can’t I install Outline Manager on Windows?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:34680;a">You may see this error message: “Sorry, it looks like Outline is not properly installed. Please try installing it again. If that doesn’t work, please <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">submit feedback</a>.”</p>
+
+<p data-aura-rendered-by="12:34680;a">If you’re using Outline on Windows, occasionally, you may run into an unexpected error. In most cases, the Outline TAP adapter (driver) needs to be deleted and Outline should be reinstalled.&nbsp;</p>
+
+<p data-aura-rendered-by="12:34680;a">The steps may vary based on your Windows operating system version, but below are general steps for how to uninstall the TAP adapter and Outline Manager and then reinstall Outline Manager.</p>
+
+<ol data-aura-rendered-by="12:34680;a">
+  <li>Uninstall the TAP adapter for Outline Manager
+    <ol>
+      <li>Go to Device Managers, then Network Adapters</li>
+      <li>Find the “TAP-Windows Adapter V9 file or the TAP adapter associated with Outline</li>
+      <li>Uninstall or delete this adapter. Keep in mind that this could affect other VPN apps that you have installed.&nbsp;</li>
+    </ol>
+  </li>
+  <li>Uninstall Outline Manager
+    <ol>
+      <li>Go to Programs &amp; Features, then to Uninstall Program</li>
+      <li>Find the Outline Manager app and uninstall Outline Manager</li>
+      <li><a href="https://getoutline.org/get-started/#step-1" target="_blank">Download the latest version of Outline Manager</a>&nbsp;and reinstall it on your Windows device. The new installation should automatically install a new TAP adapter.</li>
+    </ol>
+  </li>
+</ol>
+
+<p data-aura-rendered-by="12:34680;a">If you’re still having trouble, <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">contact support</a>.&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="94" sourceLocale="en">WEB:15331727</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Google Cloud Automated Setup</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:26310;a"><strong>Overview</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Outline Manager includes a feature that allows you to automatically configure Outline Server on a server running on the Google Cloud. If you choose to use this feature, Outline Manager will ask you to sign in with your Google Account, which will grant certain<a href="https://developers.google.com/identity/protocols/oauth2" target="_blank"> OAuth</a> permissions to your local installation of the Outline Manager for the purposes of configuring your Google Cloud Account.<br />
+  If you do not wish to provide these permissions, you can follow the advanced setup instructions in the Outline Manager to run Outline on Google Cloud Platform.&nbsp;</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Permissions Granted</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">In order to provide automated setup, Outline Manager requires the following permissions from your Google Account.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Google Cloud Platform</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>View and manage your Google Compute Engine resources</li>
+  <li>View your data across Google Cloud services and see the email address of your Google Account</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Basic account info</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>See your primary Google Account email address</li>
+  <li>Associate you with your personal info on Google</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Additional access</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>Manage your Cloud Platform projects</li>
+  <li>View and manage your Google Cloud Platform billing accounts</li>
+  <li>Manage your Google API service configuration</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a">These permissions allow us to support advanced functionality for managing your Outline servers including:</p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>Allowing you to select the correct billing account</li>
+  <li>Creating a new project to organize your Outline servers</li>
+  <li>Listing available data centers</li>
+  <li>Creating new virtual machines to run Outline</li>
+  <li>Configuring the new virtual machine with Outline</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Revoking Permissions</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">You can revoke access to Google Cloud Platform for the Outline Manager by visiting<a href="https://myaccount.google.com/permissions" target="_blank"> My Account</a>. If you revoke access, any servers you’ve created with the automated setup will remain running but will no longer appear in the Outline Manager. To restore access to them, simply reconnect to Google Cloud Platform by beginning the automated setup flow.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Outline Project Organization</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Google Cloud automated setup uses a single<a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects" target="_blank"> Google Cloud project</a> to organize your Outline servers. The project is created during the first use of the automated setup, with a suggested project ID that begins with “Outline-” followed by a string of random characters. You can choose a different project ID at creation if you prefer. The project will be named “Outline servers”.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Billing Account</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Google Cloud projects require a linked “billing account” that defines payment information. When you first use Google Cloud automated setup, you will be asked to provide a billing account to associate with your Outline servers. Sometimes a server will stop running because there is a problem with the billing account. In this case, you should log in to the<a href="https://console.cloud.google.com/getting-started" target="_blank"> Google Cloud Console</a>, locate the Google Cloud project associated with Outline (named “Outline servers”), and update the billing settings.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Destroying Servers</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">If you wish to destroy your servers created using the automated setup, the easiest way to do so is from within the Outline Manager. However, if you wish to destroy the servers yourself, you may log into the<a href="https://console.cloud.google.com/getting-started" target="_blank"> Google Cloud Console</a>, find the project that was created during initial setup (named “Outline servers”), and either delete the resources there or shut down the project.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="99" sourceLocale="en">WEB:15331728</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline server setup FAQs</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:28806;a"><strong>Can I use Outline without a server?</strong><br />
+  <br />
+  Unfortunately, no. Outline software requires access to a server, whether it’s managed by you, your organization, or a trusted third-party.&nbsp;</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>How long does it take to setup an Outline server?</strong></p>
+
+<p data-aura-rendered-by="12:28806;a">In most cases, less than 5 minutes. You can install Outline on any cloud server, but we worked with DigitalOcean to offer a more user-friendly, guided installation experience where you can set up your server with a few clicks—no scripts.</p>
+
+<p data-aura-rendered-by="12:28806;a">If you chose the AWS, GCP or an advanced setup, we’ve simplified the server installation process to a single script that handles most environments.&nbsp;</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>Where can I set up an Outline server?</strong></p>
+
+<p data-aura-rendered-by="12:28806;a">You can set up an Outline server on most cloud providers where ever they operate.</p>
+
+<p data-aura-rendered-by="12:28806;a">The easiest option is to set it up on DigitalOcean, as it has servers in multiple locations, like Amsterdam, Toronto, San Francisco, and Singapore. If you prefer to install on another cloud provider or on your own infrastructure, you can choose the ‘Advanced Mode’ in the Outline Manager application and follow installation instructions using a setup script.&nbsp;</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>Where should I set up my Outline server?</strong></p>
+
+<ol data-aura-rendered-by="12:28806;a">
+  <li>There are a few considerations you should make when selecting a location for your Outline Server:</li>
+  <li>The Outline Server location impacts how users experience the internet. For example, if the server is located in Amsterdam, the user accessing this server will experience the internet as if they were physically located in the Netherlands. Some websites may even display in Dutch. Typically, you can override the local language using a language selector on the website.</li>
+  <li>Distance between your users and the Outline Server may affect your speeds. In general, the physical distance between Outline users and the server can impact users’ internet speeds. In most cases, you can choose a server location closest to where your expected users will be, but you can check the <a href="https://www.submarinecablemap.com/" rel="noopener" target="_blank">Submarine Cable Map</a> to see which internet cables connect with your country or region.</li>
+  <li>Where your VPN server is located may affect the legal framework. Please note that Outline software doesn’t log your traffic. Learn more about <a href="/outline-faq/answer/14919822" rel="noopener" target="_blank">Security and privacy while using Outline</a>.</li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="en">WEB:15331758</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">I'm a developer. Where can I find support for integrating the Outline SDK into my application?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">This support website is for Outline Manager and Client users. Developers, please use GitHub for support. To ask a question, please post on the SDK&nbsp;<a href="https://github.com/Jigsaw-Code/outline-sdk/discussions" target="_blank">Discussion board</a>. The Discussion board section is a great place to ask questions, share ideas, link to demos, and support other developers using Outline SDK. For feature requests or bug reports, please open an&nbsp;<a href="https://github.com/Jigsaw-Code/outline-sdk/issues/new" target="_blank">Issue</a>&nbsp;instead.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="74" sourceLocale="en">WEB:15448041</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Available languages</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Outline is available in the following languages:</p>
+
+<ul>
+  <li aria-level="1">Afrikaans</li>
+  <li aria-level="1">Albanian</li>
+  <li aria-level="1">Amharic</li>
+  <li aria-level="1">Arabic</li>
+  <li aria-level="1">Armenian</li>
+  <li aria-level="1">Azerbaijani</li>
+  <li aria-level="1">Bengali</li>
+  <li aria-level="1">Bosnian</li>
+  <li aria-level="1">Bulgarian</li>
+  <li aria-level="1">Burmese</li>
+  <li aria-level="1">Catalan</li>
+  <li aria-level="1">Chinese (Simplified)</li>
+  <li aria-level="1">Chinese (Traditional)</li>
+  <li aria-level="1">Croatian</li>
+  <li aria-level="1">Czech</li>
+  <li aria-level="1">Danish</li>
+  <li aria-level="1">Dutch</li>
+  <li aria-level="1">English (American)</li>
+  <li aria-level="1">English (British)</li>
+  <li aria-level="1">Estonian</li>
+  <li aria-level="1">Filipino</li>
+  <li aria-level="1">Finnish</li>
+  <li aria-level="1">French</li>
+  <li aria-level="1">Georgian</li>
+  <li aria-level="1">German</li>
+  <li aria-level="1">Greek</li>
+  <li aria-level="1">Hebrew</li>
+  <li aria-level="1">Hindi</li>
+  <li aria-level="1">Hungarian</li>
+  <li aria-level="1">Icelandic</li>
+  <li aria-level="1">Indonesian</li>
+  <li aria-level="1">Italian</li>
+  <li aria-level="1">Japanese</li>
+  <li aria-level="1">Kazakh</li>
+  <li aria-level="1">Khmer</li>
+  <li aria-level="1">Korean</li>
+  <li aria-level="1">Lao</li>
+  <li aria-level="1">Latvian</li>
+  <li aria-level="1">Lithuanian</li>
+  <li aria-level="1">Macedonian</li>
+  <li aria-level="1">Malay</li>
+  <li aria-level="1">Marathi</li>
+  <li aria-level="1">Mongolian</li>
+  <li aria-level="1">Nepali</li>
+  <li aria-level="1">Norwegian</li>
+  <li aria-level="1">Persian</li>
+  <li aria-level="1">Polish</li>
+  <li aria-level="1">Portuguese (Brazilian)</li>
+  <li aria-level="1">Portuguese (European)</li>
+  <li aria-level="1">Romanian</li>
+  <li aria-level="1">Russian</li>
+  <li aria-level="1">Serbian (Cyrillic)</li>
+  <li aria-level="1">Serbian (Latin)</li>
+  <li aria-level="1">Sinhala</li>
+  <li aria-level="1">Slovak</li>
+  <li aria-level="1">Slovenian</li>
+  <li aria-level="1">Spanish (European)</li>
+  <li aria-level="1">Spanish (Latin American)</li>
+  <li aria-level="1">Swahili</li>
+  <li aria-level="1">Swedish</li>
+  <li aria-level="1">Tamil</li>
+  <li aria-level="1">Thai</li>
+  <li aria-level="1">Turkish</li>
+  <li aria-level="1">Ukrainian</li>
+  <li aria-level="1">Urdu</li>
+  <li aria-level="1">Vietnamese</li>
+</ul>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="79" sourceLocale="en">WEB:15528599</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Firewall errors</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:268;a">There are three type of firewall issues that you may encounter:</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>You might be blocked by a network firewall.</strong></p>
+
+<p data-aura-rendered-by="12:268;a">If you're trying to install Outline while connected to a firewalled network, like at school or in your workplace, try installing while on a different network.</p>
+
+<p data-aura-rendered-by="12:268;a">If this doesn't work, please contact your network administrator to allow for connections between the firewalled network to your Outline server. You will need to know your Outline server's IP address and the ports where Outline is running, which are indicated at the end of the installation script.</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>You might be blocked by a device firewall</strong>.</p>
+
+<p data-aura-rendered-by="12:268;a">If you have software on your device that blocks outgoing connections on non-standard ports, or non recognized software, (CheckPoint's ZoneAlarm), please consult your device or software documentation to learn how to create an exception for Outline.</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>You might be blocked by a server firewall.</strong></p>
+
+<p data-aura-rendered-by="12:268;a">The cloud provider you have chosen may require you to manually create exceptions to your server firewall, to open the ports Outline is running on. After you ran the installation script, you should have been presented with the two randomly selected ports where Outline is running in your server. Opening these two ports should suffice.<br />
+  <br />
+  In order to create exceptions to your Server firewall, we recommend you look into the documentation for 'ufw' and 'iptables':</p>
+
+<ul data-aura-rendered-by="12:268;a">
+  <li>UFW:&nbsp;<a href="https://help.ubuntu.com/community/UFW" rel="noopener" target="_blank">https://help.ubuntu.com/community/UFW</a></li>
+  <li>Iptables:&nbsp;<a href="https://help.ubuntu.com/community/IptablesHowTo" rel="noopener" target="_blank">https://help.ubuntu.com/community/IptablesHowTo</a></li>
+</ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,1083 @@
+<html>
+<head>
+<style type="text/css">
+.gkms-gtt-answer-header, .gkms-gtt-message-header {
+  color: black !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 2em;
+  padding: 4px;
+}.gkms-gtt-answer-header {
+  background-color: #E5ECF9;
+  border-top: 1px solid #36C;
+}
+.gkms-gtt-message-header {
+  background-color: #F8F8F8;
+  border-top: 1px solid #CCC;
+}
+.gkms-gtt-hide {
+  visibility: hidden;
+}
+.form_field_data .temporary_signal_wrapper {
+  display: inline;
+}
+</style>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+</head>
+<body lang="iw">
+<br/><div class="gkms id notranslate" sourceGlobalRevision="116" sourceLocale="iw">WEB:14917423</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">איך שירות Outline פועל</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1723;a">&nbsp;</p>
+
+<p data-aura-rendered-by="12:1723;a"><strong>התקנה של השרת</strong><br />
+  <br />
+  ​התקנת Outline היא תהליך פשוט מבחינת המשתמשים, אבל ברקע מתבצעות כמה וכמה פעולות מורכבות להתקנת השרת. כשמתקינים את Outline, סקריפט ההתקנה מבצע את הפעולות הבאות:</p>
+
+<ul data-aura-rendered-by="12:1723;a">
+  <li>הגרסה היציבה של קובץ האימג' של Shadowbox מאוחזרת ומיובאת באמצעות Docker. קובץ האימג' מתארח ב-<a href="https://quay.io/" target="_blank">Quay.io</a> בכתובת <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank">https://quay.io/repository/outline/shadowbox?tab=tags</a>. קובץ האימג' מכיל את שרת Outline ואת ה-Management API, שמשמש מאוחר יותר את אפליקציית ניהול השרת של Outline ליצירה ולהסרה של מפתחות גישה, להצטרפות או לביטול ההצטרפות לדיווח על מדדים אנונימיים וכו'.</li>
+  <li>‫<a href="https://github.com/v2tec/watchtower" target="_blank">Watchtower</a> מותקנת ומוגדרת. התוכנה הזאת בודקת כל שעה אם יש עדכון לקובץ האימג', כדי שהשרת של Outline תמיד יהיה עדכני ויכלול את התכונות החדשות ושיפורי האבטחה.</li>
+  <li>שרת אינטרנט, שמאפשר גישה לממשק ה-Management API, מופעל ביציאה אקראית ובנתיב אקראי וסודי.</li>
+  <li>נוצר <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank">אישור SSL בחתימה עצמית</a> כדי שיהיה אפשר להצפין את ניהול השרת של Outline באמצעות TLS למרות שאין לו שם דומיין. בנוסף, טביעת אצבע של האישור הזה נוצרת ואז מאוחסנת באפליקציית Outline Manager, כדי לעזור במניעת התקפות MITM ("אדם בתווך").</li>
+</ul>
+
+<p data-aura-rendered-by="12:1723;a">לא צריך להגדיר את Outline לאחר ההתקנה.<br />
+  <br />
+  <strong>אבטחת השרת</strong><br />
+  <br />
+  אפליקציית Outline כתובה בקוד פתוח. כלומר, כל אחד יכול לקרוא את הקוד ולשפר אותו אם מתגלות נקודות חולשה. הקוד שלנו מתארח ב-<a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank">GitHub</a>.<br />
+  <br />
+  בנוסף, כל השרתים המותקנים של Outline מתעדכנים אוטומטית כשמשוחררת גרסת תוכנה חדשה, כדי שלא יהיה אף שרת עם גרסה ישנה.<br />
+  <br />
+  כדי לנהל את מפתחות הגישה בשרת, אפליקציית Outline Manager מתקשרת עם שירות הניהול בשרת של Outline. שירות הניהול פועל ביציאה אקראית ובנתיב אקראי וסודי. בנוסף, שירות הניהול מוגן מפני גישושים (probe), כי הוא לא עונה לשאילתות בלי שמציינים את הנתיב הסודי הנכון. לסיום, כל התקשורת עם שירות הניהול מוצפנת באמצעות <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank">אישור SSL בחתימה עצמית</a>.<br />
+  <br />
+  מעבר לכל זה, השרת של Outline לא מאחסן יומנים, כך שגם אם הוא נפרץ, נתוני המשתמש לא נחשפים. אפשר לקרוא מידע נוסף <a href="https://support.getoutline.org/s/article/Security-and-privacy" target="_blank">כאן</a>. ‫Outline נבדקה על ידי <a href="https://radicallyopensecurity.com/" target="_blank">Radically Open Security</a> ו-<a href="https://cure53.de/" target="_blank">Cure53</a> ב-2018. <a href="https://support.getoutline.org/s/article/Security-and-privacy" target="_blank">כאן</a> אפשר לקרוא את הדוחות.<br />
+  <br />
+  <strong>טיפול בתנועת UDP</strong><br />
+  <br />
+  אפליקציית Outline מסוגלת לפעול כ-VPN כלל-מערכתי. כלומר, כל תנועת ה-UDP מועברת דרך השרת של Outline.<br />
+  <br />
+  <strong>תנועת DNS</strong></p>
+
+<p data-aura-rendered-by="12:1723;a"><br />
+  אפליקציית Outline מבצעת את כל חיפושי ה-DNS דרך השרת של Outline ומגנה עליהם באמצעות אותה הצפנה שמשמשת לשאר הפעילות ברשת. שאילתות DNS עוברות דרך השרת של Outline ל-Dyn Internet Guide,‏ OpenDNS,‏ Cloudflare DNS או Quad9 DNS. ‫Outline אף פעם לא שומרת חיפושי DNS.&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="232" sourceLocale="iw">WEB:14919822</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">אבטחה ופרטיות במהלך השימוש ב-Outline</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:258;a">אבטחה ופרטיות במהלך השימוש ב-Outline</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>איך Outline מגינה על הפרטיות כשגולשים באינטרנט?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">כשגולשים ברשת המקומית או הארצית, תעבורת הנתונים באינטרנט חשופה מאוד למעקב.</p>
+
+<p data-aura-rendered-by="12:258;a">אפליקציית Outline מצפינה את תעבורת הנתונים שנשלחים כשאתם גולשים ברשת הארצית, ושומרת עליהם מוצפנים עד שהם מגיעים לשרת של Outline. גורמים שמנטרים את הרשת לא יוכלו לראות את האתרים שאתם גולשים בהם ואת המידע שאתם מעבירים.</p>
+
+<p data-aura-rendered-by="12:258;a">אתם גם יכולים להשתמש ב-Outline כדי לגשת לכלי תקשורת שמאובטחים מקצה לקצה ולא נגישים במדינה שלכם.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>תקני הצפנה</strong></p>
+
+<p data-aura-rendered-by="12:258;a">התקשורת בין המכשיר שלכם לשרת של Outline מוצפנת בתקן AEAD 256-bit Chacha2020 IETF Poly 1305‎. הצפנות מסוג AEAD שומרות על הסודיות, התקינות והאותנטיות של הנתונים, והן משיגות ביצועים מצוינים בחומרה מודרנית.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>ביקורות אבטחה</strong></p>
+
+<p data-aura-rendered-by="12:258;a">בשנת 2018, שני ארגונים עצמאיים שמתמחים באבטחה דיגיטלית – Radically Open Security ו-Cure53 – בדקו את Outline בהתאם לתקני האבטחה החדשים ביותר. ב-2022 הארגון Radically Open Security ערך ביקורת נוספת, וב-2024 הארגון Cure53 ערך ביקורת ל-Outline SDK. הדוחות זמינים כאן:</p>
+
+<ul data-aura-rendered-by="12:258;a">
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf" target="_blank">דוח בדיקת החדירה של Radically Open Security (מרץ 2018)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf" target="_blank">דוח בדיקת החדירה והביקורת של Cure53 ל-Jigsaw Outline (דצמבר 2018)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf" target="_blank">דוח בדיקת החדירה של Radically Open Security (דצמבר 2022)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf" target="_blank">דוח בדיקת החדירה של Cure53 ל-Jigsaw Outline VPN SDK (ינואר 2024)</a></li>
+</ul>
+
+<p data-aura-rendered-by="12:258;a"><strong>יומנים ומדדים אנונימיים</strong></p>
+
+<p data-aura-rendered-by="12:258;a">‏Outline עוקבת אחרי רוחב הפס שבשימוש, או "מספר הבייטים שהועברו" באמצעות כל מפתח גישה. לפי המידע הזה, אדמינים של שרתים יכולים לשנות במידת הצורך את רוחב הפס במינויים שלהם אצל ספקי שירותי הענן. האדמינים לא רואים את תוכן המידע שמועבר דרך השרת של Outline.</p>
+
+<p data-aura-rendered-by="12:258;a">מידע נוסף על <a href="/outline-faq/answer/15331222" rel="noopener" target="_blank">איסוף הנתונים והמידע</a> ב-Outline.</p>
+
+<hr data-aura-rendered-by="12:258;a" />
+<p data-aura-rendered-by="12:258;a"><strong>שאלות נפוצות בנושא אבטחה ופרטיות</strong>&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>האם Outline יכולה להפוך את הגלישה באינטרנט לאנונימית?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">לא, Outline היא לא כלי שהופך את הגלישה לאנונימית. ‏Outline מגינה על הפרטיות שלכם מפני גורמים שמנטרים את הרשת.</p>
+
+<p data-aura-rendered-by="12:258;a">‏Outline לא שומרת על האנונימיות שלכם באתרים שאתם מבקרים בהם. הם עדיין יכולים לזהות אתכם כשאתם מתחברים לחשבון או באמצעות שיטות אחרות, כמו יצירה של טביעת אצבע דיגיטלית (fingerprinting) בדפדפן. בנוסף, לרוב הסמארטפונים יש ממשקי API שמאפשרים לאפליקציות המותקנות לזהות את המיקום שלכם בלי קשר לשרת ה-proxy, אלא דרך ה-GPS של המכשיר.</p>
+
+<p data-aura-rendered-by="12:258;a">שרתי VPN מספקים הגנה חשובה, במיוחד מפני גורמים שמנטרים את הרשת, אבל תמיד יש סכנות כשמשתמשים באינטרנט. גם כשאתם משתמשים ב-VPN, אם ספקית האינטרנט כבר יודעת מי אתם ומסוגלת לעקוב אחרי התנועה שלכם ברשת, סביר להניח שהיא תוכל לדעת מה כתובת ה-IP שלכם בשרת של Outline. ספקית האינטרנט יכולה להשתמש במידע הזה כדי לחסום את הגישה לשרת של Outline או לזהות את דפוסי השימוש שלכם, למשל מתי אתם בדרך כלל מתחברים לאינטרנט או מה המיקום המשוער שלכם.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>האם אנשים אחרים יכולים לדעת אם בחרתי להשתמש ב-Outline?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">אולי. סביר להניח שהפלטפורמות והשירותים שאתם משתמשים בהם יוכלו לדעת שהחיבור שלכם מגיע משרת בענן. מדי פעם הם יוכלו להסיק שאתם משתמשים ב-VPN, אבל לא לראות את התוכן של תעבורת הנתונים שלכם.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>האם Outline מגינה מפני כל איומי הסייבר השונים?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">לא. אף כלי לא מסוגל להגן מפני כל איומי הסייבר השונים. ‏Outline נותנת לכם גישה לאינטרנט הפתוח, מצפינה את הנתונים ומגינה על הפרטיות שלכם, אבל מומלץ להשתמש באמצעי זהירות נוספים כדי להתגונן מפני סוגים אחרים של מתקפות סייבר, כמו תוכנות זדוניות ופישינג.</p>
+
+<p data-aura-rendered-by="12:258;a">אנחנו ממליצים לכם להיעזר בצוות אבטחת הסייבר של הארגון כדי לשפר את רמת ההגנה שלכם באינטרנט. אתם יכולים גם לקבל הדרכה אישית ממומחי אבטחה מובילים באתר <a href="https://securityplanner.org/" target="_blank">Security Planner</a>, שנותן הוראות ברורות איך לבחור את כלי אבטחת הסייבר הנכונים לכל מצב.</p>
+
+<p data-aura-rendered-by="12:258;a">בנוסף, אנחנו מציעים מוצרים נוספים לאבטחת סייבר מבית <a href="https://jigsaw.google.com/" target="_blank">Jigsaw</a>, כמו <a href="https://getintra.org/" target="_blank">Intra</a>,‏ <a href="https://g.co/shield" target="_blank">Project Shield</a> ו-<a href="https://chrome.google.com/webstore/detail/password-alert/noondiphcddnnabmjcihcjfbhfklnnep?" rel="noopener" target="_blank">Password Alert</a>.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>האם חוקי להשתמש ב-VPN?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">לפני שמפעילים את Outline או משתמשים באפליקציה, מומלץ לברר מהם החוקים והתקנות המקומיים ולקרוא את מסמך התנאים וההגבלות של ספק שירותי הענן שבו תשתמשו.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="89" sourceLocale="iw">WEB:15330317</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">למה אין לי גישה לאינטרנט למרות שהתחברתי לשרת של Outline?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:32933;a">אם אתם משתמשים בטלפון נייד, נסו להחליף בין חיבור לנתונים סלולריים וחיבור Wi-Fi. אם אחד מהם לא עובד, יכול להיות שהשני כן יעבוד. אם אתם משתמשים במחשב, נסו להתנתק מהפס הרחב ואז להתחבר מחדש.</p>
+
+<p data-aura-rendered-by="12:32933;a">אם הבעיה נמשכת, כנראה שיש בעיה בשרת ה-Outline בצד שלכם. צרו קשר עם <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">מנהל השירות</a>&nbsp;כדי לקבל מפתח גישה חדש לשרת חלופי. יכול להיות גם שמנהל השירות יוכל להגדיל את <a href="https://google-jigsaw--jigsawuat.sandbox.my.site.com/outline/s/article/Terminology" target="_blank"></a> מגבלת הנתונים של&nbsp;<a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">מפתח הגישה</a> שלכם, אם הייתה חריגה מהמכסה שלו.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="296" sourceLocale="iw">WEB:15330818</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">מהן דרישות המערכת להפעלת אפליקציית הלקוח של Outline?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:24676;a">אתם יכולים לבדוק את Outline בכל מערכת הפעלה. אלה גרסאות המינימום שנדרשות לכל מערכת הפעלה:</p>
+
+<table class="borders" data-aura-rendered-by="12:24676;a" width="312">
+  <tbody>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top"><b>מערכת ההפעלה</b></td>
+      <td colspan="1" rowspan="1" valign="top"><b>גרסת המינימום</b></td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Android</td>
+      <td colspan="1" rowspan="1" valign="top">10</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">iOS</td>
+      <td colspan="1" rowspan="1" valign="top">15.5</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">MacOS</td>
+      <td colspan="1" rowspan="1" valign="top">12.0</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Windows</td>
+      <td colspan="1" rowspan="1" valign="top">10</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Linux</td>
+      <td colspan="1" rowspan="1" valign="top">Ubuntu&nbsp;20.04</td>
+    </tr>
+  </tbody>
+</table>
+
+<p data-aura-rendered-by="12:24676;a"><br />
+  רוצים לעזור להפעיל את אפליקציית הלקוח של Outline במערכות הפעלה נוספות?&nbsp;<a href="https://github.com/Jigsaw-Code/outline-client#platform-specific-development" target="_blank">השתתפו בכתיבה של ה-code base שלנו</a>&nbsp;ב-GitHub!</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="107" sourceLocale="iw">WEB:15330824</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">איך מעדכנים את תוכנת השרת של Outline?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:10378;a">הגרסה של תוכנת השרת של Outline מתעדכנת אוטומטית, כדי שתמיד יהיו לשרת של Outline את הטכנולוגיות החדשות ושיפורי האבטחה. תהליך העדכון האוטומטי מופעל על ידי <a href="https://github.com/v2tec/watchtower" target="_blank">Watchtower</a> – ספריית קוד פתוח שבודקת ומעדכנת באופן קבוע את קובץ האימג' של Docker שמכילה את תוכנת Outline.</p>
+
+<p data-aura-rendered-by="12:10378;a">בנוסף, כשמתקינים את Outline באמצעות Outline Manager, אנחנו מגדירים משימת cron שתשדרג אוטומטית את התוכנה בשרת באמצעות <a href="https://wiki.debian.org/UnattendedUpgrades" target="_blank">Unattended Upgrades</a>‏ (Ubuntu), ותפעיל אותו מחדש במידת הצורך. חשוב לשים לב שהפעולה הזאת לא מתרחשת במצב Advanced במטרה לשמר את ההגדרות הקיימות, מתוך הנחה שהמארח משמש למטרות נוספות מלבד ההרצה של Outline.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="102" sourceLocale="iw">WEB:15330825</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">איך אפשר להוריד את אפליקציית Outline Manager אם הקישור להורדה לא עובד?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">אפשר להשתמש <a href="https://getoutline.org/get-started/#step-1" target="_blank">בקישור הזה</a> או <a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">בקישור הזה</a> כדי להוריד את האפליקציות ישירות למערכות הפעלה רבות.&nbsp;</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="129" sourceLocale="iw">WEB:15330920</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">הסבר על המונח</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:23504;a"><strong>מה זה VPN?</strong><br />
+  רשת וירטואלית פרטית (VPN) יוצרת חיבור פרטי בין המכשירים שלכם לבין השרת המארח. כשמשתמשים ב-VPN, תעבורת הנתונים מוסתרת מספק האינטרנט. יכול להיות שתרצו להשתמש ב-VPN כדי:</p>
+
+<ul data-aura-rendered-by="12:23504;a">
+  <li>להגן על הנתונים שלכם בזמן חיבור לרשת Wi-Fi ציבורית</li>
+  <li>לשמור על הפרטיות של נתוני הגלישה שלכם מספק האינטרנט ומרשויות ממשלתיות</li>
+  <li>לגשת לתוכן לא מצונזר ממקורות שונים בעולם</li>
+</ul>
+
+<p data-aura-rendered-by="12:23504;a"><strong>מה ההבדל בין Outline לבין שרתי VPN אחרים?</strong><br />
+  ספקי אינטרנט יכולים לזהות שרתי VPN בקלות ולחסום אותם. הם עושים את זה על ידי זיהוי של פרוטוקולים נפוצים של אבטחה ו/או דפוסים של נפח תעבורת נתונים באינטרנט. ‫Outline הוא שרת VPN עמיד יותר משרתי VPN רגילים, כי הוא תוכנן באמצעות פרוטוקול שמיועד להיות קשה לזיהוי, ולכן גם קשה יותר לחסום אותו. ‫Outline עמיד בפני צורות מתוחכמות של צנזורה, כולל חסימה לפי רשתות וחסימה של כתובות IP.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>מה זה שרת Outline?</strong><br />
+  ‫Outline הוא השרת שמפעיל את ה-VPN שהמשתמשים שקיבלו אישור לכך יתחברו אליו. אם אתם יוצרים רשת חדשה, אתם יכולים להשתמש בשרת המאובטח שלכם כשרת Outline (אם יש לכם), או שאתם יכולים להשתמש בספק שירותי ענן כמו:</p>
+
+<ul data-aura-rendered-by="12:23504;a">
+  <li>DigitalOcean</li>
+  <li>Google Cloud Platform (GCP)</li>
+  <li>Amazon Web Services (AWS)</li>
+</ul>
+
+<p data-aura-rendered-by="12:23504;a"><a id="One" target="_blank"></a>כדי להגדיר את השרת, תשתמשו ב-Outline Manager.<br />
+  <br />
+  <strong><a id="servicemanager" name="servicemanager"></a>מה זה מנהל שירות?</strong><br />
+  מנהל שירות הוא מי שאחראי על ההגדרה של שרת Outline ועל שיתוף מפתחות הגישה עם המשתמשים. הוא בדרך כלל אחראי על עלות השימוש בשרת.&nbsp;<br />
+  <br />
+  <strong><a id="accesskey" name="accesskey"></a>מה זה מפתח גישה?</strong><br />
+  משתמשים במפתח הגישה כדי לגשת לשרת Outline קיים ולהתחבר ל-VPN. <a href="#servicemanager" rel="noopener">מנהל השירות</a>&nbsp;ייתן לכם מפתח גישה, או שתוכלו<a href="/outline-faq/answer/15331530" rel="noopener" target="_blank"> להגדיר שרת Outline</a> בעצמכם.&nbsp;הנה דוגמה למפתח גישה (זו רק דוגמה, הוא לא יעבוד):&nbsp;<br />
+  <br />
+  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1<br />
+  <br />
+  <strong>מהו Outline Manager?</strong><br />
+  ‫Outline Manager היא אפליקציה למחשב שמאפשרת למנהל השירות להגדיר שרת Outline, ליצור <a href="#accesskey" rel="noopener">מפתחות גישה</a> ולהגדיר מגבלות נתונים לשימוש בכל מפתח. אפשר להוריד את הגרסה העדכנית של Outline Manager<a href="https://getoutline.org/get-started/#step-3" target="_blank"> כאן</a> או<a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank"> כאן</a>.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>מהי אפליקציית הלקוח של Outline?</strong><br />
+  אפליקציית הלקוח של Outline היא אפליקציה שזמינה למחשבים ולמכשירים ניידים ומאפשרת לכם להתחבר לשרת Outline ולקבל גישה ל-VPN באמצעות מפתח גישה. אפשר להוריד את הגרסה העדכנית של אפליקציית הלקוח של Outline<a href="https://getoutline.org/get-started/#step-3" target="_blank"> כאן</a> או<a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank"> כאן</a>.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>מהן מגבלות נתונים?</strong><br />
+  ‫Outline Manager מאפשר למנהלי שירות להגדיר מגבלה מתגלגלת ל-30 ימים למפתחות הגישה, כדי למנוע שימוש יתר וכדי שיהיה אפשר לתכנן את העלויות. מנהלי שירות יכולים להגדיר מגבלת ברירת מחדל שתחול על כל המפתחות, וגם להגדיר מגבלה שונה למפתח מסוים, במקום המגבלה שהוגדרה כברירת מחדל. אחרי שמגדירים את המגבלה, היא נכנסת לתוקף מיד, ומתעדכנת כל שעה.</p>
+
+<p data-aura-rendered-by="12:23504;a">מנהלי שירות שמביעים הסכמה לשתף מדדים עם Jigsaw יכולים לעיין ב<a href="/outline-faq/answer/15331222" rel="noopener" target="_blank">מדיניות איסוף הנתונים</a> כדי להבין איך השימוש במגבלות הנתונים ידווח.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="110" sourceLocale="iw">WEB:15331121</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">האם אתם תומכים באתר getoutline.me ובערוץ הטלגרם ‎@OutlineVpnOfficial?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">צוות Outline קיבל מספר שאלות בנוגע לאתר <a href="http://getoutline.me/" target="_blank">getoutline.me</a> ולערוץ הטלגרם שלו ‎@OutlineVpnOfficial. השירותים האלה לא משויכים לצוות Outline, ואנחנו לא יכולים לסייע למשתמשים בבעיות שקשורות למפתחות הגישה של השירותים האלה.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="iw">WEB:15331122</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">באילו שפות האפליקציה זמינה?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>אפליקציית Outline זמינה בשפות הבאות:</p>
+
+<ul>
+  <li aria-level="1">אפריקאנס</li>
+  <li aria-level="1">אלבנית</li>
+  <li aria-level="1">אמהרית</li>
+  <li aria-level="1">ערבית</li>
+  <li aria-level="1">ארמנית</li>
+  <li aria-level="1">אזרית</li>
+  <li aria-level="1">בנגלית</li>
+  <li aria-level="1">בוסנית</li>
+  <li aria-level="1">בולגרית</li>
+  <li aria-level="1">בורמזית</li>
+  <li aria-level="1">קטלאנית</li>
+  <li aria-level="1">סינית (מפושטת)</li>
+  <li aria-level="1">סינית (מסורתית)</li>
+  <li aria-level="1">קרואטית</li>
+  <li aria-level="1">צ'כית</li>
+  <li aria-level="1">דנית</li>
+  <li aria-level="1">הולנדית</li>
+  <li aria-level="1">אנגלית (אמריקאית)</li>
+  <li aria-level="1">אנגלית (בריטית)</li>
+  <li aria-level="1">אסטונית</li>
+  <li aria-level="1">פיליפינית</li>
+  <li aria-level="1">פינית</li>
+  <li aria-level="1">צרפתית</li>
+  <li aria-level="1">גאורגית</li>
+  <li aria-level="1">גרמנית</li>
+  <li aria-level="1">יוונית</li>
+  <li aria-level="1">עברית</li>
+  <li aria-level="1">הינדית</li>
+  <li aria-level="1">הונגרית</li>
+  <li aria-level="1">איסלנדית</li>
+  <li aria-level="1">אינדונזית</li>
+  <li aria-level="1">איטלקית</li>
+  <li aria-level="1">יפנית</li>
+  <li aria-level="1">קזחית</li>
+  <li aria-level="1">חמרית</li>
+  <li aria-level="1">קוריאנית</li>
+  <li aria-level="1">לאית</li>
+  <li aria-level="1">לטבית</li>
+  <li aria-level="1">ליטאית</li>
+  <li aria-level="1">מקדונית</li>
+  <li aria-level="1">מלאית</li>
+  <li aria-level="1">מראטי</li>
+  <li aria-level="1">מונגולית</li>
+  <li aria-level="1">נפאלית</li>
+  <li aria-level="1">נורבגית</li>
+  <li aria-level="1">פרסית</li>
+  <li aria-level="1">פולנית</li>
+  <li aria-level="1">פורטוגזית (ברזילאית)</li>
+  <li aria-level="1">פורטוגזית (אירופאית)</li>
+  <li aria-level="1">רומנית</li>
+  <li aria-level="1">רוסית</li>
+  <li aria-level="1">סרבית (באותיות קיריליות)</li>
+  <li aria-level="1">סרבית (באותיות לטיניות)</li>
+  <li aria-level="1">סינהלה</li>
+  <li aria-level="1">סלובקית</li>
+  <li aria-level="1">סלובנית</li>
+  <li aria-level="1">ספרדית (אירופאית)</li>
+  <li aria-level="1">ספרדית (אמריקה הלטינית)</li>
+  <li aria-level="1">סוואהילי</li>
+  <li aria-level="1">שבדית</li>
+  <li aria-level="1">טאמיל</li>
+  <li aria-level="1">תאילנדית</li>
+  <li aria-level="1">טורקית</li>
+  <li aria-level="1">אוקראינית</li>
+  <li aria-level="1">אורדו</li>
+  <li aria-level="1">וייטנאמית</li>
+</ul>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="110" sourceLocale="iw">WEB:15331125</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">למה אין לי אפשרות להתקין את אפליקציית הלקוח של Outline ב-Windows?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:31254;a">ייתכן שתופיע ההודעה הבאה: "מצטערים, אפליקציית Outline לא הותקנה טוב וצריך להתקין אותה מחדש. אם הבעיה נמשכת, אפשר&nbsp;<a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">לשלוח לנו משוב</a>."</p>
+
+<p data-aura-rendered-by="12:31254;a">אם אתם משתמשים ב-Outline ב-Windows, יכול להיות שמדי פעם תתרחש שגיאה בלתי צפויה. ברוב המקרים, צריך למחוק את מתאם ה-TAP (מנהל ההתקן) של Outline ולהתקין מחדש את Outline.</p>
+
+<p data-aura-rendered-by="12:31254;a">תוכלו להיעזר בהסבר הכללי הבא כדי להסיר את מתאם ה-TAP ואת אפליקציית Outline, ולהתקין את האפליקציה מחדש. עם זאת, השלבים בפועל משתנים בהתאם לגרסת מערכת ההפעלה של Windows.</p>
+
+<ol data-aura-rendered-by="12:31254;a">
+  <li>הסרה של מתאם ה-TAP לאפליקציית הלקוח של Outline
+    <ul>
+      <li>נכנסים אל&nbsp;<strong>ניהול מכשירים</strong> ואז אל&nbsp;<strong>מתאמי רשת</strong>.</li>
+      <li>מוצאים את הקובץ&nbsp;<strong>TAP-Windows Adapter V9</strong>&nbsp;או את מתאם ה-TAP שקשור ל-Outline.</li>
+      <li>מסירים או מוחקים את המתאם הזה. חשוב לזכור שהמחיקה עלולה להשפיע גם על אפליקציות VPN אחרות שמותקנות במכשיר.&nbsp;</li>
+    </ul>
+  </li>
+  <li>הסרה של אפליקציית הלקוח של Outline
+    <ul>
+      <li>נכנסים אל&nbsp;<strong>תוכנות ותכונות</strong> ואז אל&nbsp;<strong>הסרת התוכנה</strong></li>
+      <li>מוצאים את אפליקציית הלקוח של Outline ומסירים אותה</li>
+      <li><a href="https://getoutline.org/get-started/#step-3" target="_blank">מורידים את הגרסה העדכנית של אפליקציית הלקוח של Outline</a>&nbsp;ומתקינים אותה מחדש על מכשיר Windows. במסגרת ההתקנה החדשה, יותקן במכשיר מתאם TAP חדש באופן אוטומטי.</li>
+    </ul>
+  </li>
+</ol>
+
+<p data-aura-rendered-by="12:31254;a">אם אתם עדיין נתקלים בבעיות, אתם יכולים&nbsp;<a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">לפנות לתמיכה</a>.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="109" sourceLocale="iw">WEB:15331126</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">למה לא הצלחתי להתחבר לשירות Outline?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>אם לא הצלחתם להתחבר לשירות Outline, יכולות להיות לכך כמה סיבות:&nbsp;</p>
+
+<ul>
+  <li aria-level="1"><strong>המכשיר שלכם</strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#One" rel="noopener"><strong> </strong></a><a href="#Internetissues" rel="noopener"><strong>לא מחובר לאינטרנט</strong></a>.<a href="#Internetissues" rel="noopener"> </a><strong> </strong>לפעמים המכשיר מתנתק באופן זמני מהרשת, אבל סמל החיבור לאינטרנט עדיין לא מראה את זה. יכול להיות גם שהמכשיר מחובר לרשת המקומית, אבל הרשת עצמה לא מחוברת לאינטרנט.</li>
+  <li aria-level="1"><strong>חומת האש</strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#Two"><strong> </strong></a><a href="#FirewallIssues" rel="noopener"><strong>בין רשתות חוסמת את הגישה</strong></a><a href="#FirewallIssues" rel="noopener"> </a><strong><a href="#FirewallIssues" rel="noopener">לשרת</a> של Outline. </strong>זה בדרך כלל קורה כשמשתמשים ברשת ציבורית, כמו הרשת של בית הספר או מקום העבודה, או רשת אלחוטית חינמית.</li>
+  <li aria-level="1"><strong>במכשיר יש</strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#Three"><strong> </strong></a><a href="#SoftwareIssues" rel="noopener"><strong>חומת אש או תוכנת אנטי-וירוס</strong></a><a href="#SoftwareIssues" rel="noopener"> </a><strong>שחוסמות את הגישה לשרת של Outline.</strong></li>
+  <li aria-level="1"><strong>ה</strong><a href="#DeviceSettings" rel="noopener"><strong></strong><strong>הגדרות של מכשיר הטלפון</strong></a>:<strong> יכול להיות שצריך לשנות אותן.</strong></li>
+  <li aria-level="1">‫<strong>יכול להיות שמנהל השירות</strong><a href="#ServerIssues" rel="noopener"><strong> </strong><strong>הסיר את השרת או שספק האינטרנט (ISP) חוסם את הבקשה</strong></a>.</li>
+</ul>
+
+<p><a id="Internetissues" name="Internetissues"><strong>בעיות בחיבור לאינטרנט:</strong></a></p>
+
+<p><strong>איך מזהים את הבעיה:</strong></p>
+
+<p>סוגרים את Outline ובודקים אם החיבור לאינטרנט חוזר.</p>
+
+<ul>
+  <li aria-level="1">אם החיבור חוזר, נעזרים באפשרויות לפתרון הבעיה שבהמשך.</li>
+  <li aria-level="1">אם החיבור לא חוזר, מחכים כמה דקות כדי לבדוק אם הגדרות החיבור מתעדכנות בעצמן.</li>
+</ul>
+
+<p><strong>מה צריך לעשות כדי לתקן את הבעיה:</strong></p>
+
+<p>לחבר את המכשיר לאינטרנט:</p>
+
+<ol>
+  <li aria-level="1">בודקים אם מכשירים אחרים מצליחים להתחבר לשרת דרך אותה רשת. אם אי אפשר להתחבר לרשת דרך מכשירים אחרים, יכול להיות שהרשת עצמה לא מחוברת לאינטרנט. חכו שהתקלה תתוקן, או נסו לתקן אותה בעצמכם.</li>
+  <li aria-level="1">אם מצליחים להתחבר לרשת דרך מכשירים אחרים, אפשר לנסות את הפתרונות שכאן כדי לחבר גם את המכשיר שלכם:
+    <ol>
+      <li aria-level="2">להעביר את המכשיר למצב טיסה (אם מדובר בנייד)</li>
+      <li aria-level="2">להפעיל מחדש את המכשיר</li>
+      <li aria-level="2">לכבות את המכשיר, לחכות 2 דקות ולהפעיל אותו מחדש</li>
+    </ol>
+  </li>
+</ol>
+
+<p><a id="FirewallIssues" name="FirewallIssues"><strong>בעיות בחומת האש בין רשתות:</strong></a></p>
+
+<p><strong>איך מזהים את הבעיה:</strong></p>
+
+<ol>
+  <li aria-level="1">מתנתקים מרשת ה-Wi-Fi או מהרשת הקווית שמחוברים אליה.</li>
+  <li aria-level="1">בוחרים רשת אחרת, למשל הרשת הסלולרית.</li>
+  <li aria-level="1">מנסים להתחבר מחדש לשרת של Outline.</li>
+</ol>
+
+<p>אם מצליחים להתחבר דרך הרשת השנייה, זו הייתה הבעיה.</p>
+
+<p><strong>מה צריך לעשות כדי לתקן את הבעיה:</strong></p>
+
+<p>פונים למנהל השירות ומבקשים ממנו הרשאת גישה לשרת של Outline, או ממשיכים להשתמש ברשת השנייה.</p>
+
+<p>‫<a id="SoftwareIssues" name="SoftwareIssues"><img alt="התמונה הזו לא זמינה כי: אין לכם את ההרשאות הנחוצות כדי להציג אותה או שהיא הוסרה מהמערכת" height="1" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeoHNM7TWEsg0z4iydaS2xKOPga0zOjhOTqvGpA-JLd-Fwnydby6EBZziz3vqgRUJwssreEqP6lmjv_-13QXdzqh3yx9tZiR81BvxcXShi3kJ-XDKnqt951uRRPSO8BUhXaiijJLF8PixV_ezhGJ02Y3QPFbw?key=pJIeaVZQOqqoBTmDWZd2hw" width="1" /><strong>בעיות שקשורות לחומת האש או לתוכנת האנטי-וירוס:</strong></a><br />
+  <br />
+  <strong>איך מזהים את הבעיה:</strong><br />
+  <br />
+  מנסים להתחבר ל-Outline ממכשיר אחר.&nbsp;</p>
+
+<p>חשוב לזכור שצריך מפתח גישה ואת אפליקציית Outline כדי להתחבר ל-Outline מהמכשיר השני.</p>
+
+<p><strong>מה צריך לעשות כדי לתקן את הבעיה:</strong></p>
+
+<p>בודקים את ההגדרות של חומת האש או תוכנת האנטי-וירוס, כדי לוודא שהן מאפשרות לכם להתחבר ל-VPN ולגלוש באינטרנט דרך Outline.</p>
+
+<p><a id="DeviceSettings" name="DeviceSettings"><strong>הגדרות המכשיר:</strong></a></p>
+
+<p><strong>מה צריך לבדוק:</strong></p>
+
+<p>במכשיר Android:</p>
+
+<ol>
+  <li aria-level="1">פותחים את האפליקציה 'הגדרות'.</li>
+  <li aria-level="1">מחפשים את <strong>הגדרות ה-VPN</strong> במכשיר (שם יופיעו כל אפליקציות ה-VPN בטלפון שלכם שיש להן גישה כרגע).&nbsp;</li>
+  <li aria-level="1">אם אתם לא רואים את אפליקציית Outline בהגדרות ה-VPN, צריך להסיר אותה מהמכשיר ולהתקין אותה מחדש. ברגע שמתקינים את אפליקציית Outline במכשיר, היא אמורה לקבל גישה באופן אוטומטי.</li>
+</ol>
+
+<p>חשוב לוודא שבמכשיר Android שלכם אין אפליקציה שההגדרות שלה קובעות שהיא חייבת תמיד להופיע בחזית המסך. אפליקציה כזו יכולה לגרום לכך שחלון ההרשאות של Outline יעבור לרקע ולא יוצג בחזית המסך.<br />
+  <br />
+  במכשיר Android, נכנסים ל'הגדרות' &gt; 'אפליקציות' &gt; 'אפליקציות עם הרשאות גישה מיוחדות'. לאחר מכן מקישים על 'הצגה מעל אפליקציות אחרות'. אפשר להסיר את הגישה של כל האפליקציות שמופיעות ברשימה הזו.‫<br />
+  <br />
+  במכשיר iOS: קוראים את <a href="https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web" rel="noopener" target="_blank">מאמר התמיכה הזה</a>.</p>
+
+<p><a id="ServerIssues" name="ServerIssues"><strong>בעיות שקשורות לשרת:</strong></a></p>
+
+<p><strong>איך מזהים את הבעיה:</strong></p>
+
+<p>אם יש לכם גישה ליותר משרת אחד, מנסים להתחבר לשרת האחר.&nbsp;</p>
+
+<p><strong>מה צריך לעשות כדי לתקן את הבעיה:</strong></p>
+
+<p>פונים למנהל השירות כדי לבדוק אם הוא הסיר את השרת. אם כן, מבקשים ממנו <a href="/outline-faq/answer/15330920" rel="noopener">מפתח גישה</a> לשרת אחר.</p>
+
+<p>אם הגדרתם את השרת, אפשר לנסות להתחבר אליו דרך אפליקציית 'Outline Manager' או בדרך אחרת, כמו פרוטוקול <a href="https://en.wikipedia.org/wiki/Secure_Shell">SSH</a>. אם זה לא עובד, צריך לבדוק אם השרת עדיין פעיל במסוף של ספק שירותי הענן (אם יש לכם ספק).</p>
+
+<p data-aura-rendered-by="12:32047;a">&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="iw">WEB:15331127</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">איך אפשר להוריד את אפליקציית הלקוח אם הקישור להורדה לא עובד?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">אפשר להשתמש&nbsp;<a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">בקישור הזה</a>&nbsp;כדי להוריד את האפליקציה ישירות למערכות הפעלה רבות.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="131" sourceLocale="iw">WEB:15331222</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">איסוף נתונים ומידע</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:271;a">‫Outline לא אוספת מידע אישי בלי שאתם מביעים הסכמה למסור אותו. ‫Outline גם לא אוספת מידע על האתרים שאתם מבקרים בהם או מתקשרים איתם.<br />
+  <br />
+  אם אתם יוצרים חשבון אצל ספק שירותי ענן של צד שלישי או נכנסים לחשבון כזה דרך Outline Manager, אנחנו לא אוספים את המידע שאתם מוסרים לאותו ספק, כמו כתובת אימייל, שם, פרטי חיוב ופרטי תשלום.<br />
+  <br />
+  <strong><strong>איזה מידע אנחנו אוספים אוטומטית?</strong></strong><br />
+  <br />
+  אנחנו אוספים שני סוגים של מידע אוטומטית.<br />
+  ‫1. כתובת ה-IP של השרת<br />
+  השירות&nbsp;<a href="http://quay.io/" target="_blank">Quay.io</a> אוסף את כתובת ה-IP של השרת של Outline ומעביר לנו אותה בעדכון האוטומטי של השרת, שבו אנחנו משפרים את התכונות והאבטחה. אפשר להשתמש בכתובת ה-IP של השרת כדי לזהות את ספק שירותי הענן והעיר שבה השרת של Outline הותקן, אבל לא כדי לזהות מי מפעיל את השרת או מתחבר אליו.<br />
+  <br />
+  ‫2. מידע טכני ללא פרטים אישיים מזהים<br />
+  אם Outline קורסת, במקרים של תקלות חריגות אחרות וכששולחים משוב דרך אפליקציית Outline, הפרטים הבאים מדווחים. נשתמש בהם רק כדי לזהות ולפתור בעיות ביציבות או בביצועים.</p>
+
+<ul data-aura-rendered-by="12:271;a">
+  <li>מדינה</li>
+  <li>לוקאל</li>
+  <li>תאריך ושעת הקריסה/התקלה, ועד 100 אירועים קודמים, למשל פתיחת הקטע 'מידע כללי' על ידי המשתמש</li>
+  <li>הודעות תקלה שעברו הידור סטטיסטי</li>
+  <li>השם והגרסה של מערכת ההפעלה</li>
+  <li>דגם הטלפון (אם רלוונטי)</li>
+  <li>שעת ההפעלה של האפליקציה</li>
+  <li>דפדפן</li>
+  <li>ארכיטקטורה</li>
+  <li>הגרסה ומספר ה-Build של Outline</li>
+</ul>
+
+<p data-aura-rendered-by="12:271;a"><br />
+  המידע הזה מועבר באמצעות HTTPS ל-Sentry‏ (<a href="http://sentry.io/" target="_blank">sentry.io</a>), חברה חיצונית שמספקת שירותי מעקב שגיאות בקוד פתוח. ‫Sentry משתמשת במגוון רחב של טכנולוגיות ושירותים מקובלים בתחום כדי לשמור על המידע מאובטח ומוגן מפני גישה בלתי מורשית, חשיפה ואובדן. בכל שאלה הקשורה למדיניות של Sentry, אפשר להיכנס לאתר&nbsp;<a href="https://sentry.io/security/" target="_blank">https://sentry.io/security/‎</a>&nbsp;ולאתר&nbsp;<a href="https://sentry.io/privacy/" target="_blank">https://sentry.io/privacy/‎</a> או לפנות לחברה באימייל&nbsp;<a href="mailto:security@sentry.io" target="_blank">security@sentry.io</a>. הגישה לנתונים של Outline ש-Sentry מאחסנת מוגבלת. רק לחברי הצוות של Outline יש גישה אליהם.<br />
+  <br />
+  <strong><strong>איזה מידע אנחנו אוספים רק אחרי הבעת הסכמה?</strong></strong><br />
+  <br />
+  התוכנה של Outline מדווחת לצוות של Outline את הפרטים הבאים רק אם הבעתם את הסכמתכם לכך.<br />
+  ‫1. מדדי שימוש<br />
+  כל שרת של Outline אוסף אוטומטית את המידע הבא: מספר הבייטים שהועברו בשעה האחרונה לכל מפתח גישה, משך הזמן שהמשתמש היה מחובר לשרת, מדינות המוצא והמערכות האוטונומיות שקשורות&nbsp;לפרטי&nbsp;הכניסה, ואם תכונות מסוימות הופעלו או הושבתו. הוא לא אוסף את התוכן של התקשורת או מטא-נתונים עם פרטים אישיים מזהים (כמו פרטי התחברות, כתובות אימייל, מזהי מכשירים וכו'). כל המדדים מקושרים למזהה שרת. <a href="/outline-faq/answer/15548974" rel="noopener" target="_blank">כאן מוסבר איך משנים את מזהה&nbsp;השרת.</a><br />
+  <br />
+  כברירת מחדל, השרתים של Outline לא שולחים את מדדי השימוש האלה לצוות של Outline. הם מועברים באופן מאובטח לצוות של Outline מדי שעה רק אם האדמין של השרת מביע הסכמה מפורשת לשתף אותם. אחרי 60 יום מדדי השימוש יצטברו ברמת המדינה. האדמינים של השרתים יכולים לשנות את העדפות השיתוף של המדדים בכל שלב בתפריט "הגדרות" באפליקציית Outline Manager.<br />
+  <br />
+  נשמח אם תשתפו איתנו מדדים אנונימיים על השימוש בשרת, כי אנחנו משתמשים בהם כדי למדוד מגמות שימוש ולשפר את המוצר.<br />
+  <br />
+  למשל, אם אדמין של שרת מסוים מביע הסכמה לשתף איתנו מדדי שימוש, נוכל לדעת ששרת מס' 12345 היה בשימוש במשך 3 שעות אתמול, שהועברו בו 500 מגה-בייט של נתונים משלושה מפתחות גישה שהשתמשו בהם בארה"ב ובקנדה, ושהתכונה "מגבלות נתונים" הופעלה.<br />
+  <br />
+  ‫2. תגובות וכתובת אימייל אם שלחתם משוב<br />
+  אפשר לשלוח משוב לצוות שלנו דרך אפליקציית Outline ואפליקציית Outline Manager. מומלץ לא לכלול פרטים אישיים מזהים (PII), אבל אם רוצים לקבל תשובה מהצוות אפשר להזין כתובת אימייל בשדה הרלוונטי. אנחנו גם אוספים אוטומטית פרטים בסיסיים מסוימים, כדי שנוכל להבין טוב יותר את המשוב. בסעיף 2 בקטע "איזה מידע אנחנו אוספים אוטומטית?" מוסבר איזה נתונים אנחנו אוספים.&nbsp;<a href="/outline-faq/answer/14919822" rel="noopener" target="_blank">כאן אפשר לקרוא על נוהלי הפרטיות והאבטחה של&nbsp;Outline</a>.<br />
+  <br />
+  אם אתם משתמשים בגרסת בטא של אפליקציית Outline ב-Android, אנחנו עשויים להשתמש בשירות&nbsp;<a href="https://firebase.google.com/" target="_blank">Firebase</a>&nbsp;של Google כדי לאסוף מידע על תוצאות ניפוי הבאגים, שיכול לעזור לנו לזהות בעיות ולשפר את Outline. מידע נוסף על מדיניות הפרטיות ומדיניות האבטחה של Firebase אפשר למצוא באתר הזה:&nbsp;<a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a>. אם אתם לא רוצים שאפליקציית Outline תשלח את המידע הזה דרך Firebase, אתם צריכים להשתמש בגרסת הפרודקשן של האפליקציה.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="88" sourceLocale="iw">WEB:15331223</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">מה עושים אם מפתח הגישה שלי לא עובד?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:30472;a">אם מופיעה הודעת השגיאה:&nbsp;'נראה שמפתח הגישה שלך לא חוקי. אם הבעיה תימשך עליך לפנות למנהל השירות', צריך לפעול לפי השלבים הבאים כדי לפתור את הבעיה:&nbsp;</p>
+
+<ol data-aura-rendered-by="12:30472;a">
+  <li>מוודאים שהזנתם את מפתח הגישה המלא כולל חמשת התווים הראשונים – "ss://‎" – שלפעמים המערכת לא מעתיקה באופן אוטומטי ללוח. הנה דוגמה למפתח גישה (זו רק דוגמה, הוא לא יעבוד):</li>
+</ol>
+
+<pre data-aura-rendered-by="12:30472;a">ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@145.230.4.1:39485/?outline=1‎&nbsp;
+</pre>
+
+<ol data-aura-rendered-by="12:30472;a" start="2">
+  <li>אם לא הצלחתם להעתיק את מפתח הגישה, זה יכול להיות קשור לאפליקציה או לפלטפורמה לשליחת הודעות שאתם משתמשים בה. זה בדרך כלל קורה כשמקבלים הודעה ממישהו שלא נמצא ברשימת אנשי הקשר. אם אתם מעתיקים את הקוד מתוך הודעה, צריך לוודא שהשולח נמצא ברשימת אנשי הקשר שלכם או להוסיף אותו לשם, ואז לנסות להיכנס שוב לקישור.&nbsp;</li>
+  <li>אם השלמתם את השלבים 1 ו-2 ואתם עדיין מקבלים הודעת שגיאה, כנראה שהשרת חסום או שמפתח הגישה כבר לא תקף. אם אתם מנהלי השירות, תוכלו לנסות לייצר מפתח חדש בעצמכם. אם לא, תוכלו לפנות למנהל השירות שלכם ולבקש ממנו מפתח חדש.</li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="96" sourceLocale="iw">WEB:15331322</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">כמה עולה להפעיל את Outline?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>כל אחד יכול להשתמש בחינם ב-Outline – מאדמינים שמנהלים את ה-VPN ועד למשתמשים שגולשים באינטרנט דרך Outline.<br />
+  <br />
+  עם זאת, כדי להשתמש ב-Outline צריך גישה לשרת בענן. האדמינים של השרתים שכבר יש להם גישה לשרת יכולים להתקין את Outline על השרת ללא עלות נוספת. משתמשים ללא גישה לשרת יכולים לקנות גישה מספק שירותי ענן, כמו <a href="http://www.digitalocean.com/" rel="noopener" target="_blank">DigitalOcean</a> או Amazon Web Services, בעלות של כ-5‎ USD לחודש (למכסת העברת נתונים של 1 טרה-בייט). הכמות הזאת מספיקה כדי לתמוך במאות משתמשים בשרת אחד.<br />
+  <br />
+  תוכלו להיעזר בדוגמה הבאה כדי לחשב כמה יעלה לכם להשתמש ב-Outline דרך ספק שירותי ענן שתבחרו:</p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td colspan="1" rowspan="1">
+      <p><em>בהנחה שהמשתמש הממוצע מעביר בחודש כ-5 ג'יגה-בייט של נתונים, תוכנית שעולה 5‎ USD אמורה להספיק ל-200 משתמשים בו-זמנית, כך שהעלות הממוצעת למשתמש תהיה 2.5 סנט לחודש. חשוב לזכור שכמות הנתונים שכל משתמש מעביר מדי חודש משתנה מאוד, בהתאם לשימוש ברוחב הפס ולפעילויות שלו באינטרנט. עם זאת, רוב ספקי שירותי הענן מספיק גמישים כדי להתמודד עם עלייה בנפח תנועת הגולשים.</em></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br />
+  למעשה, השימוש ב-Outline הוא אנונימי לגמרי מבחינת Jigsaw ו-Google. אנחנו לא עוקבים אחרי הזהות שלכם או התנועה שלכם באינטרנט ואין לנו תוכנית מונטיזציה. אנחנו עובדים עם קהילת הקוד הפתוח שלנו כדי להציע את התוכנה בחינם למשתמשים. <a href="/outline-faq/answer/15331222" rel="noopener" target="_blank">כאן</a> אפשר לקרוא איזה מידע אנחנו אוספים.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="386" sourceLocale="iw">WEB:15331326</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">איך מגדירים מגבלות נתונים במפתחות גישה?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:15859;a">אפשר להגדיר מגבלת נתונים שתחול על כל מפתחות הגישה. כדי להגדיר את המגבלה, פותחים את אפליקציית Outline Manager ונכנסים להגדרות. בהגדרות יופיע מתג שאפשר להפעיל כדי לקבוע מגבלות נתונים.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787036"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">אחרי הגדרת המגבלה, תוכלו לראות בדף של מפתחות הגישה כמה נתונים כל משתמש צרך ביחס לרף שהוגדר וסרגל התקדמות שמציג את צריכת הנתונים ב-30 הימים האחרונים.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787037"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">בנוסף לאפשרות להגדיר מגבלה שתחול על כל מפתחות הגישה, אתם יכולים גם להגדיר מגבלת נתונים ספציפית לכל מפתח. הגדרה כזו תבטל את מגבלת הנתונים שהגדרתם כברירת המחדל. אפשר להגדיר מגבלת נתונים לכל מפתח גם אם לא הגדרתם מגבלת נתונים כברירת מחדל.&nbsp;<br />
+  <br />
+  כדי להגדיר למפתח מגבלה על העברת הנתונים, פותחים את אפליקציית Outline Manager, נכנסים לכרטיסייה "חיבורים" שמכילה את המפתח שרוצים להגדיר ולוחצים על התפריט שמופיע משמאל לשורת המפתח. בתפריט לוחצים על "מגבלת נתונים". כדי לשנות את מגבלת הנתונים על "מפתח הגישה שלי", לוחצים על הסמל "מגבלות נתונים"&nbsp;<img alt="התמונה הזו לא זמינה כי: אין לכם את ההרשאות הנחוצות כדי להציג אותה או שהיא הוסרה מהמערכת" height="19" src="https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw" width="19" />.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787423"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">בוחרים באפשרות "הגדרה של מגבלת נתונים בהתאמה אישית". כשמסמנים את התיבה, מופיע שדה שבו אפשר להגדיר את מגבלת הנתונים בהתאמה אישית למפתח הזה. בסיום, לוחצים על "שמירה" כדי לשמור את מגבלת הנתונים.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15788959"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">אחרי ששומרים את המגבלה על העברת הנתונים למפתח מסוים, היא תופיע במסך הראשי לצד השימוש בנתונים (ב-30 הימים האחרונים) של אותו מפתח.</p>
+
+<p data-aura-rendered-by="12:15859;a">כדי להסיר את מגבלת הנתונים ממפתח גישה כלשהו, נכנסים כמו קודם לתיבת הדו-שיח "מגבלת נתונים". שם, מבטלים את הסימון של התיבה באפשרות "הגדרה של מגבלת נתונים בהתאמה אישית" ולוחצים על "שמירה".</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15788414"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a"><b><strong>שאלות נפוצות בנושא מגבלת נתונים</strong></b><br />
+  <br />
+  <strong><b>מהי מגבלת נתונים מתגלגלת ל-30 יום?</b></strong><br />
+  <br />
+  במגבלת נתונים מתגלגלת ל-30 יום, השימוש בנתונים בכל מפתח גישה מחושב לכל התקופה של 30 הימים האחרונים, כדי לוודא שהשימוש במפתח לא עובר את הרף באותו פרק זמן. כתוצאה מכך, מי שמשתמש במפתח הגישה לא יכול לחרוג מהמגבלה בכל פרק זמן של 30 יום. המגבלה לא מתאפסת בתאריך מסוים, כמו למשל ביום הראשון של החודש. זאת אומרת שלמכסת הנתונים שיש כל משתמש תתווסף כל יום כמות הנתונים שבה הוא השתמש לפני 31 יום.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>למה אפליקציית Outline משתמשת במגבלות מתגלגלות?</strong><br />
+  <br />
+  מגבלות מתגלגלות שומרות על צריכת הנתונים מתחת לרף מסוים בכל פרק זמן בן 30 יום. קל יותר להגדיר אותן מאשר מגבלות מתחדשות (כמו בחירת יום ספציפי בחודש) והן מבטיחות באותה מידה שלא יהיו חריגות מהרף. הן גם מתאימות לאופן שבו צריכת הנתונים מוצגת כיום ב-Outline ובכלים נפוצים אחרים, כמו שירותי ניתוח נתונים וכלים להצגת הנתונים הסטטיסטיים של השרת.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>אילו נתונים נכללים בספירה של מגבלת הנתונים?</strong><br />
+  <br />
+  בחישוב המכסה נספרת תעבורת הנתונים היוצאת (egress) מהשרת של כל מפתח גישה. זאת אומרת שנספרים גם הנתונים שנשלחים בשם המפתח מחוץ לשרת וגם אלה שנשלחים בחזרה ללקוח. בפועל, המספר הזה קרוב מאוד לתעבורה שנשלחת מהמפתח לשרת ובחזרה, כך שהוא צפוי להתאים למכסה הכוללת של המשתמשים. בחרנו בתעבורת הנתונים היוצאת מהשרת מכיוון שכך מחושב החיוב על ידי הספקים של שירותי הענן שמולם בדקנו את הנושא.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>המשתמשים מקבלים התראה כשהם חורגים ממגבלת הנתונים?</strong><br />
+  <br />
+  בשלב הזה, לא. רוב הספקים של שירותי הענן משתמשים במגבלה חודשית, כמו למשל 1TB, שיכולה להספיק ל-10 משתמשים שצורכים 100GB או ל-100 משתמשים שצורכים 10GB. מדובר בנפחים גדולים ואנחנו לא צופים שמשתמשים רבים יגיעו אליהם. אנחנו צופים שהמשתמשים יפנו למנהלי השרת כשהם יגיעו לרף. עם זאת, נשמח לשמוע איך לדעתכם התראות יוכלו לעזור במקרה הספציפי שלכם. אתם יכולים לפנות אלינו <a href="https://support.getoutline.org/s/contactsupport" target="_blank">כאן</a>.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>המשתמשים מקבלים התראה כשהם מתקרבים לרף של מגבלת הנתונים?</strong><br />
+  <br />
+  כמות הנתונים שנוספת כל יום למשתמש שמתקרב לרף משתנה מיום ליום, כי היא מבוססת על כמות הנתונים שבה הוא השתמש ב-30 הימים האחרונים. לדעתנו, התראה לא תעזור למשתמשי הקצה אלא רק תבלבל אותם יותר. נשמח לקבל מכם משוב על הנושא הזה <a href="https://support.getoutline.org/s/contactsupport" rel="noopener" target="_blank">כאן</a>.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>אפשר לאפס את השימוש של המשתמש בנתונים?</strong><br />
+  <br />
+  לא, המגבלה של המשתמש תמיד כוללת את השימוש שנעשה בנתונים ב-30 הימים האחרונים. עם זאת, אפשר להגדיל את מגבלת הנתונים במפתח של המשתמש או ליצור לו מפתח חדש.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>למה חלק מהמשתמשים שלי איבדו את הגישה ברגע שהפעלתי להם מגבלות נתונים?</strong><br />
+  <br />
+  מגבלות נתונים מבוססות על העברת הנתונים של המשתמשים ב-30 הימים האחרונים. זהו נתון שהמערכת מתעדת גם אם לא הופעלו מגבלות נתונים. יכול להיות שהמשתמשים שאיבדו את הגישה הגיעו למכסת הנתונים הזו לפני שהמגבלה הוגדרה.&nbsp; חשוב גם לדעת שכל מגבלות הנתונים נאכפות, גם כשמשנים מגבלת נתונים של מפתח אחד.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>אפשר להגדיר מגבלה כוללת לשרת, למשל "1TB ל-30 יום"?</strong><br />
+  <br />
+  לא כרגע. נשמח לשמוע על המקרה הספציפי שלכם <a href="https://support.getoutline.org/s/contactsupport" rel="noopener" target="_blank">כאן</a>.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>אם יש גם מגבלת נתונים כברירת מחדל וגם מגבלת נתונים על מפתח ספציפי, איזו מהן תחול?</strong><br />
+  <br />
+  מגבלת הנתונים של המפתח הספציפי היא זו שתחול והיא תבטל כל מגבלת נתונים שהגדרתם כברירת מחדל (אם הגדרתם כזו).</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>אפשר להגדיר מגבלת נתונים למפתח ספציפי בלי שהגדרתי מגבלת נתונים כברירת מחדל?</strong><br />
+  <br />
+  כן.&nbsp; לא צריך להגדיר מגבלה כברירת מחדל כדי להגדיר מגבלת נתונים על מפתח אחד.&nbsp; לדוגמה, אפשר להגדיר מגבלה על מפתח אחד שלדעתכם משתמשים רבים ישתמשו בו, כדי לוודא שלא תהיה בו חריגה בהעברת הנתונים.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="iw">WEB:15331327</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">איך מאפסים את מזהה השרת?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:23999;a">מזהה השרת הוא המזהה של צד השרת שנוצר באופן אקראי כשיוצרים שרת של Outline. אפשר למצוא אותו כשבוחרים לשתף מדדים אנונימיים דרך ממשק ההגדרות. כדי למצוא את מזהה השרת, נכנסים אל "הגדרות" =&gt; גוללים למטה =&gt; מסמנים את האפשרות "שיתוף מדדים אנונימיים".</p>
+
+<p data-aura-rendered-by="12:23999;a">מזהה השרת מקשר בין נתוני שימוש אנונימיים שמדווחים לאורך זמן. אם רוצים לאפס את מזהה השרת וליצור מזהה חדש, צריך להחליף את השרת של Outline הקיים בשרת חדש.</p>
+
+<p data-aura-rendered-by="12:23999;a">אם הספק שלכם לשירותי ענן הוא DigitalOcean, אתם יכולים לאפס את השרת באמצעות כניסה אל "הגדרות" ובחירה באפשרות "מחיקת השרת". השרת ופרטי הכניסה אליו יימחקו לצמיתות. מיד אחרי המחיקה תופיע הנחייה ליצור שרת חדש במיקום שתבחרו ויופק מזהה שרת חדש.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="103" sourceLocale="iw">WEB:15331328</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">איך אפשר לשנות את מיקום השרת של Outline?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:24761;a">אחרי שמגדירים את השרת אי אפשר לשנות את המיקום שלו. כדי להריץ את השרת ממיקום אחר, צריך למחוק את השרת של Outline וליצור אחד חדש.</p>
+
+<p data-aura-rendered-by="12:24761;a"><br />
+  לחלופין, אפשר לשנות את המיקום של ה-VPN שלכם באמצעות <a href="https://developers.google.com/outline/docs/guides/service-providers/dynamic-access-keys" target="_blank">מפתחות דינמיים</a>, שיאפשרו לכם להחליף שרתים ועדיין להשתמש באותם מפתחות. מיקום השרתים עצמם לא ישתנה.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="102" sourceLocale="iw">WEB:15331423</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">איך שולחים משוב או הצעות?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:22486;a">תודה שעזרתם לנו לשפר את Outline. אפשר לשלוח לנו משוב בכמה דרכים, ולהזין כתובת אימייל (אם רוצים לקבל תשובה) או להשאיר אותו אנונימי:</p>
+
+<ul data-aura-rendered-by="12:22486;a">
+  <li><strong>למפתחים</strong>:&nbsp;Outline היא תוכנה בקוד פתוח. הקוד המלא זמין&nbsp;ב-<a href="https://github.com/jigsaw-Code/?q=outline" target="_blank">GitHub</a>. יש לכם רעיונות? תוכלו לשתף אותם ב-GitHub או&nbsp;בקהילה שלנו&nbsp;ב-<a href="https://www.reddit.com/r/outlinevpn/" target="_blank">Reddit</a>.&nbsp;</li>
+  <li><strong>למשתמשים</strong>: אפשר לשלוח לנו משוב דרך אפליקציית Outline או אפליקציית Outline Manager. נשמח להבין במה עוסק המשוב ולקבל מכם כתובת אימייל, אם תרצו, כדי שנוכל לחזור אליכם. אנחנו גם אוספים כמה מטא-נתונים על סביבת השימוש שלכם, כדי שנוכל לעזור לכם לפתור בעיות, למשל סוג הדפדפן, מערכת ההפעלה וגרסת התוכנה שבה אתם משתמשים.</li>
+  <li><strong>דרך האתר הזה</strong>: אפשר ללחוץ על הקישור ליצירת קשר בכל אחד מהדפים שבו הוא מופיע באתר.</li>
+  <li><strong>בעיות חמורות</strong>: אם נתקלתם בבעיית אבטחה חמורה, נשמח לקבל מכם אימייל עם הפרטים לכתובת <a href="https://getoutline.org/" rel="noopener" target="_blank">security@getoutline.org</a>.</li>
+</ul>
+
+<p data-aura-rendered-by="12:22486;a">שוב, תודה מראש לכל מי שמשקיע מזמנו ושולח לנו משוב.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="146" sourceLocale="iw">WEB:15331424</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ניהול הגישה לשרת של Outline (באמצעות מפתחות גישה)</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:25527;a">אחרי שתתקינו את השרת של Outline תוכלו לשתף ולנהל את הרשאות הגישה של משתמשים אליו. המשתמשים שתשלחו להם הזמנה יוכלו להוריד את אפליקציית Outline כדי להגן על תעבורת הנתונים שלהם.</p>
+
+<p data-aura-rendered-by="12:25527;a"><strong>שיתוף הגישה לשרת Outline</strong><br />
+  אחרי שתתקינו שרת של Outline תועברו לדף עם פרטי השרת באפליקציית Outline Manager, שבו תוכלו ליצור מפתחות גישה. <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">למידע נוסף על מפתחות גישה</a></p>
+
+<ul data-aura-rendered-by="12:25527;a">
+  <li>יצירת מפתחות: לוחצים על סמל הפלוס הקטן '+' שבתחתית הדף כדי ליצור מפתחות חדשים.</li>
+  <li>שיתוף מפתחות: לוחצים על סמל השיתוף שמשמאל למפתח כדי ליצור הזמנה. מעתיקים את ההזמנה ומדביקים אותה במערכת להעברת הודעות.</li>
+</ul>
+
+<p data-aura-rendered-by="12:25527;a"><strong>בקשה להוספת תכונה: שיתוף הגישה ישירות מאפליקציית Outline Manager</strong><br />
+  הרבה אדמינים של שרתים ביקשו שנאפשר להזין את כתובת האימייל של המשתמשים ישירות באפליקציית Outline Manager, כדי לייעל את תהליך ההזמנה.</p>
+
+<p data-aura-rendered-by="12:25527;a">לצערנו, ככל הנראה לא נוסיף את הפונקציה הזו לאפליקציית Outline Manager. אחד מעקרונות המפתח שלנו הוא שמירה על הפרטיות והאבטחה של המשתמשים. לכן האפליקציה לא כוללת מקום שבו אפשר להזין כתובות אימייל או פרטים ליצירת קשר.</p>
+
+<p data-aura-rendered-by="12:25527;a">לכן אנחנו גם מבקשים מהאדמינים של השרתים לשלוח את ההזמנות למשתמשי הקצה מפלטפורמות מאובטחות להעברת הודעות, כמו אימייל או צ'אט מאובטח.<br />
+  <br />
+  <strong>חוויית המשתמש אחרי שמשתפים איתו מפתח גישה</strong></p>
+
+<ol data-aura-rendered-by="12:25527;a">
+  <li>המשתמש יצטרך ללחוץ על קישור ההתקנה במכשיר שלו.</li>
+  <li>הוא יתבקש להתקין את אפליקציית Outline במכשיר (אם הוא עוד לא התקין אותה).</li>
+  <li>הוא יצטרך להתחבר בפעם הראשונה לשרת של Outline באמצעות מפתח הגישה הייחודי שמצורף להזמנה.</li>
+  <li>וזהו! מעכשיו הוא יוכל להשתמש בלחצן ההתחברות/ההתנתקות כדי להגן על הנתונים שלו בזמן הגלישה באינטרנט דרך השרת של Outline.</li>
+</ol>
+
+<p data-aura-rendered-by="12:25527;a"><strong>הסרת הגישה לשרת של Outline</strong><br />
+  בדף עם פרטי השרת באפליקציית Outline Manager, משמאל לכל מפתח גישה יש תפריט עם אפשרות למחוק את המפתח. מחיקת המפתח מסירה את הגישה לשרת.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="92" sourceLocale="iw">WEB:15331524</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">איך אפשר לגשת למשאבים של Outline אם getoutline.org חסום?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">אם אין לכם גישה ל-<a href="http://getoutline.org/" target="_blank">getoutline.org</a>, כדאי <a href="https://s3.amazonaws.com/outline-vpn/index.html" target="_blank">להוסיף את שיקוף האתר הזה לסימניות</a> כדי שתוכלו להשתמש בו.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="321" sourceLocale="iw">WEB:15331527</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">איך מתקינים את אפליקציית הלקוח של Outline ב-Linux</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>החל מגרסה 1.15 של אפליקציית הלקוח של Outline, כל הגרסאות העתידיות יפורסמו כחבילות Debian להפצות השונות של מערכת ההפעלה Linux. ב<a href="/outline/answer/15330818" rel="noopener" target="_blank"><u>מאמר בנושא דרישות מערכת מינימליות</u></a> אתם יכולים לקרוא באילו מערכות הפעלה אנחנו תומכים.</p>
+&nbsp;
+
+<p><strong>איך מתקינים את אפליקציית הלקוח של Outline בהפצות Linux שמבוססות על Debian (מומלץ)</strong></p>
+&nbsp;
+
+<p>מריצים את הפקודות הבאות:</p>
+
+<ol>
+  <li aria-level="1">כדי להתקין את מפתח המאגר של Outline ולהוסיף את המאגר:
+    <div class="code">
+      <div class="no-margin">
+        <p>wget -qO- https://us-apt.pkg.dev/doc/repo-signing-key.gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/gcloud-artifact-registry-us.gpg</p>
+
+        <p>echo "deb [arch=amd64] https://us-apt.pkg.dev/projects/jigsaw-outline-apps outline-client main" | sudo tee /etc/apt/sources.list.d/outline-client.list</p>
+      </div>
+    </div>
+  </li>
+  <li aria-level="2">כדי לעדכן את רשימת החבילות של מנהל החבילות (APT) ולהתקין את הגרסה העדכנית של אפליקציית הלקוח של Outline:
+    <div class="code">
+      <div class="no-margin">
+        <p>sudo apt update</p>
+
+        <p>sudo apt install outline-client</p>
+      </div>
+    </div>
+  </li>
+</ol>
+
+<p>כדי לבדוק בהמשך אם יש עדכונים ולהתקין אותם, מריצים שוב את הפקודות שמופיעות בשלב 2. חשוב לדעת שהחל מגרסה 1.15, העדכון האוטומטי המובנה מושבת באפליקציית הלקוח של Outline ל-Linux.</p>
+
+<p>כדי להסיר את אפליקציית הלקוח של Outline, מריצים את הפקודה הבאה:</p>
+
+<div class="code">
+  <div class="no-margin">sudo apt purge outline-client</div>
+</div>
+
+<p><strong>אפשרות חלופית</strong></p>
+
+<ol>
+  <li aria-level="1">מורידים את חבילת Debian העדכנית של אפליקציית הלקוח של Outline מהכתובת הזו: <a href="https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb" rel="noopener" target="_blank">https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb</a></li>
+  <li aria-level="2">כדי להתקין את החבילה, מריצים את הפקודות הבאות בשורת הפקודה:
+    <div class="code">
+      <div class="no-margin">
+        <p>wget -O ./outline-client.deb https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb</p>
+
+        <p>sudo apt install ./outline-client.deb</p>
+      </div>
+    </div>
+  </li>
+  <li aria-level="3">אפשר לבדוק אם יש עדכונים רק באופן ידני, כי העדכון האוטומטי המובנה מושבת החל מגרסה 1.15 של אפליקציית הלקוח של Outline ל-Linux.</li>
+  <li aria-level="4">כדי להסיר את אפליקציית הלקוח של Outline, מריצים את הפקודה הבאה בשורת הפקודה:
+    <div class="code">
+      <div class="no-margin">sudo apt purge outline-client</div>
+    </div>
+  </li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="206" sourceLocale="iw">WEB:15331528</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">אפשר להשתמש באותו מפתח גישה יותר מפעם אחת?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1895;a">כן. אתם יכולים להשתמש ב<a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">מפתח הגישה</a> שלכם&nbsp;בכמה מכשירים שתרצו, אבל אנחנו ממליצים לא לשתף אותו עם אחרים. לכל מי שיש את מפתח הגישה יכולה להיות גישה לכל תעבורת הנתונים שלכם, מה שאומר שהגלישה שלכם באינטרנט מפסיקה להיות מאובטחת ופרטית.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="104" sourceLocale="iw">WEB:15331529</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">חיבור המכשיר לשרת של Outline</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1399;a">&nbsp;</p>
+
+<p data-aura-rendered-by="12:1399;a"><strong>חיבור המכשיר לשרת של Outline</strong></p>
+
+<p data-aura-rendered-by="12:1399;a">כדי לחבר את המכשיר שלכם לשרת Outline, אדמין של שרת צריך לשלוח לכם הזמנה להתחבר לשרת שלו באמצעות&nbsp;<a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">מפתח גישה</a> ייחודי. הזמנה כזו תאפשר לכם:</p>
+
+<ul data-aura-rendered-by="12:1399;a">
+  <li>להוריד ולהתקין את Outline במכשיר (אם עדיין לא התקנתם אותה).</li>
+  <li>ליצור חיבור מאובטח בין המכשיר לשרת Outline באמצעות מפתח הגישה.</li>
+</ul>
+
+<p data-aura-rendered-by="12:1399;a">אחרי שיצרתם חיבור לשרת, תוכלו ללחוץ על "התחברות" או "התנתקות" כדי להשתמש ב-Outline.</p>
+
+<p data-aura-rendered-by="12:1399;a"><em>חשוב:</em>&nbsp;כדי להשתמש ב-Outline צריך מפתח גישה וחיבור לשרת Outline. הורדה והתקנה של אפליקציית Outline בלי מפתח גישה לא מספיקה כדי להגן על תעבורת הנתונים שלכם.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="100" sourceLocale="iw">WEB:15331530</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">איך מתקינים שרת Outline?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:27063;a">כדי להתחבר לרשת האינטרנט דרך Outline, קודם צריך להתקין שרת של Outline. תוכלו להתקין אותו בעצמכם, או להיעזר במישהו שאתם סומכים עליו.<br />
+  <br />
+  ‫<strong>לפני שמתחילים</strong><br />
+  לפני ההתקנה של שרת Outline, תצטרכו:</p>
+
+<ol data-aura-rendered-by="12:27063;a">
+  <li>גישה לשרתים משלכם או לשרתים של ספק שירותי ענן, כמו DigitalOcean,‏ Amazon Web Services (‏AWS)‏ או Google Cloud Platform (‏GCP).<br />
+    אם אין לכם כרגע גישה לשרת בענן, תוכלו ליצור חשבון אצל אחת מהחברות המספקות גישה, כולל אלו שציינו. תצטרכו כרטיס אשראי כדי להירשם.</li>
+  <li>מחשב עם macOS 10.9 ואילך‏, Windows 7.0 ואילך או Linux.</li>
+  <li>את אפליקציית Outline Manager.</li>
+</ol>
+
+<p data-aura-rendered-by="12:27063;a">‫<strong>הגדרה באמצעות DigitalOcean</strong><br />
+  <br />
+  ההתקנה של שרת Outline באמצעות DigitalOcean פשוטה מאוד. מורידים למחשב את אפליקציית Outline Manager ומתקינים אותה. אחר כך, בוחרים להתקין את השרת של Outline דרך DigitalOcean ופועלים לפי ההנחיות הפשוטות במסכים כדי להגדיר ולהתקין אותו.<br />
+  <br />
+  <strong>הגדרה באמצעות ספק שירותי ענן אחר</strong><br />
+  <br />
+‫  אחרי שמורידים ומתקינים את אפליקציית Outline Manager, תוכלו לבחור להתקין שרת של Outline במכונה וירטואלית דרך AWS, ‏GCP, ‏DigitalOcean או ספק אחר. אין שתי סביבות שימוש זהות לחלוטין. לכן, אפליקציית Outline Manager כוללת הנחיות להתקנת השרת דרך רוב ספקי שירותי הענן הנפוצים, כולל הנחיות להגדרת המכונה הווירטואלית לפני שמפעילים את סקריפט ההתקנה של Outline בשרת.<br />
+  <br />
+  <strong><em>עדיין צריכים עזרה?</em></strong><br />
+  <br />
+  בדף&nbsp;<a href="/outline-faq/answer/15331728" rel="noopener" target="_blank">שאלות נפוצות בנושא התקנת שרת של Outline</a> תוכלו לקבל עזרה נוספת.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="95" sourceLocale="iw">WEB:15331625</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">מותר לי להשתמש במותג של Outline או לשכפל אותו?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">‫Outline היא תוכנה בקוד פתוח שהשימוש בה לא עולה כסף, אבל המותג שלנו הוא בבעלות Jigsaw ואסור לעשות בו שימוש לרעה. אתם צריכים לפעול לפי <a href="https://github.com/Jigsaw-Code/outline-brand/blob/main/outline_brand_user_guide.pdf" target="_blank">המדריך למשתמש</a> ולוודא שאתם לא מפרסמים טענות מטעות לגבי Outline או לגבי Jigsaw, שאתם לא מפרשים באופן שגוי את הקשר שלכם עם Outline ו-Jigsaw ושאתם משתמשים בצורה הולמת ברכיבי המיתוג שאושרו.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="191" sourceLocale="iw">WEB:15331628</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">איך מקבלים מפתח גישה?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:3258;a">אפליקציית Outline היא לא כמו שירותי VPN אחרים שבהם קונים גישה לשרת. היא <a href="https://getoutline.org/#:~:text=Two%20Products%20that%20Work%20Together" target="_blank">כלי</a> שמאפשר לכם להפעיל ולשתף שרת VPN פרטי משלכם. <a href="/outline/answer/15330920#servicemanager" rel="noopener" target="_blank">מנהל השירות</a> הוא האדם היחיד שיכול לספק לכם מפתח גישה. הצוות של Outline לא מפיץ מפתחות גישה בחינם או בתשלום. אנחנו לא עובדים עם שותפים רשמיים שיכולים לספק מפתחות גישה ל-Outline, מלבד Paskoocheh בשפה הפרסית.<br />
+  <br />
+  אפשר לקבל מפתח גישה בשלוש דרכים:&nbsp;</p>
+
+<ul data-aura-rendered-by="12:3258;a">
+  <li>מבקשים ממישהו להזמין אתכם לשרת שלו: אם אתם מכירים מישהו שיש לו שרת Outline, אתם יכולים לבקש ממנו מפתח גישה.</li>
+  <li><a href="/outline/answer/15331530" rel="noopener" target="_blank">יוצרים שרת בעצמכם:</a> במחשב Windows,‏ Mac או Linux, מורידים את האפליקציה <a href="https://getoutline.org/get-started/#step-1" target="_blank">Outline Manager</a> ומגדירים <a href="/outline/answer/15330920" rel="noopener" target="_blank">שרת Outline</a> פרטי משלכם. תהליך ההגדרה הוא פשוט וקל, במיוחד כשעושים אותו דרך ספק שירותי הענן DigitalOcean.</li>
+  <li>משתמשים בשירות של Outline או של <a href="https://en.wikipedia.org/wiki/Shadowsocks#:~:text=Shadowsocks%20is%20a%20free%20and,have%20been%20made%20available%20since." target="_blank">Shadowsocks</a>: אפשר להשתמש באפליקציית הלקוח של Outline עם שירותי צד שלישי שמשתמשים בפרוטוקול של Outline או של Shadowsocks. לדוגמה:
+    <ul>
+      <li>‫<a href="http://nthlink.com/" target="_blank">nthLink:</a> שירות ללא תשלום שמבוסס על Outline, עם גרסה מותאמת של אפליקציית הלקוח של Outline.</li>
+      <li>‫<a href="https://www.reddit.com/r/outlinevpn/comments/nwu1se/the_outline_distribution_system_is_here_to_help/" target="_blank">ASL19:</a> שירות שמבוסס על גרסה מותאמת של Outline שנקראת <a href="https://beepassvpn.com/" target="_blank">BeePass</a> וכוללת <a href="https://t.me/paskoochehbot" target="_blank">בוט טלגרם</a> שמספק מפתחות גישה לשרתי BeePass ללא תשלום.</li>
+      <li>משתמשים בשפה הפרסית יכולים גם לבקש מפתח גישה מ-<a href="https://outline.paskoocheh.com/" target="_blank">Paskoocheh של ASL19</a>.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>אחרי שמורידים את אפליקציית הלקוח של Outline, צריך להעתיק את <a href="/outline/answer/15330920#accesskey" rel="noopener" target="_blank">מפתח הגישה</a>&nbsp;ולהדביק אותו באפליקציית הלקוח של Outline כדי להתחבר לשרת Outline.&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="133" sourceLocale="iw">WEB:15331630</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">איך מוחקים את השרת של Outline?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:14046;a">אצל רוב הספקים של שירותי ענן די קל להסיר את המכונה הווירטואלית הספציפית שבה משתמשים.</p>
+
+<p data-aura-rendered-by="12:14046;a">אם ספק שירותי הענן שלכם הוא DigitalOcean, כדי למחוק את המכונה הווירטואלית הקיימת צריך ללחוץ על סמל גלגל השיניים ואז על "מחיקת השרת". מיד אחר כך תוצג לכם אפשרות ליצור מכונה וירטואלית חדשה במיקום שתבחרו.</p>
+
+<p data-aura-rendered-by="12:14046;a">כשמסירים שרת של Outline הוא נמחק לתמיד ומפתחות הגישה שלו לא פועלים יותר. כדי למנוע שיבושים בגישה של משתמשים ל-Outline, צריך <a href="/outline-faq/answer/15331530" rel="noopener" target="_blank">להגדיר שרת Outline חדש</a>&nbsp;ולשתף עם המשתמשים את הגישה אליו – לפני שמוחקים את השרת הישן.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="99" sourceLocale="iw">WEB:15331631</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">איך מתקינים כמה שרתים של Outline</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:27908;a">כדי להתקין שרתים נוספים של Outline, לוחצים על סמל הפלוס "+" בחלונית הניווט שמימין באפליקציית Outline Manager. התהליך להוספת שרת חדש זהה לתהליך של התקנת השרת הראשון.</p>
+
+<ul data-aura-rendered-by="12:27908;a">
+  <li>אין הגבלה על מספר השרתים של Outline שאפשר ליצור.</li>
+  <li>צריך לחבר לכל שרת של Outline שיוצרים מכונה וירטואלית משלו.</li>
+  <li>יצירת מכונות או חיבורים נוספים עלולה להגדיל את החיוב של ספק שירותי הענן. מומלץ לבדוק את החבילה אצל ספק שירותי הענן כדי שלא יהיו הפתעות.</li>
+</ul>
+
+<p data-aura-rendered-by="12:27908;a"><strong>יצירת שרת נוסף של Outline כשמתחברים באמצעות DigitalOcean</strong></p>
+
+<p data-aura-rendered-by="12:27908;a">אחרי שלוחצים על סמל הפלוס ובוחרים להתקין את השרת הנוסף באמצעות DigitalOcean, מבצעים את אותן פעולות כמו בהתקנת השרת הראשון. בנוסף, בזכות השילוב בין אפליקציית Outline Manager ו-DigitalOcean, אנחנו יכולים ליצור בשבילכם חיבור נוסף בלי לצאת מאפליקציית Outline Manager.</p>
+
+<p data-aura-rendered-by="12:27908;a">חשוב לזכור שאפליקציית Outline Manager תומכת רק בחשבון DigitalOcean אחד בכל פעם. אם רוצים להוסיף או ליצור שרתים נוספים של Outline באמצעות חשבונות DigitalOcean אחרים, אפשר להוסיף אותם באמצעות התקנה מתקדמת.</p>
+
+<p data-aura-rendered-by="12:27908;a"><strong>יצירת שרת נוסף של Outline כשמתחברים באמצעות GCP, ‏AWS או ספק שירותי ענן אחר</strong></p>
+
+<p data-aura-rendered-by="12:27908;a">בשלב הראשון, יוצרים מכונה וירטואלית חדשה אצל ספק שירותי הענן. אחר כך, פותחים את אפליקציית Outline Manager ופועלים לפי ההוראות להתקנה מתקדמת – בדיוק כמו בהתקנת השרת הראשון.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="96" sourceLocale="iw">WEB:15331632</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">למה אין לי אפשרות להתקין את אפליקציית Outline Manager ב-Windows?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:34680;a">ייתכן שתופיע הודעת השגיאה הבאה: "מצטערים, אפליקציית Outline לא הותקנה טוב  וצריך להתקין אותה מחדש. אם הבעיה נמשכת, אפשר <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">לשלוח לנו משוב</a>."</p>
+
+<p data-aura-rendered-by="12:34680;a">אם אתם משתמשים ב-Outline ב-Windows, יכול להיות שמדי פעם תהיה שגיאה בלתי צפויה. ברוב המקרים, צריך למחוק את מתאם ה-TAP (הדרייבר) של Outline ולהתקין מחדש את Outline.&nbsp;</p>
+
+<p data-aura-rendered-by="12:34680;a">תוכלו להיעזר בהסבר הכללי הבא כדי להסיר את מתאם ה-TAP ואת אפליקציית Outline Manager, ולהתקין את האפליקציה מחדש. עם זאת, השלבים בפועל משתנים בהתאם לגרסת Windows.</p>
+
+<ol data-aura-rendered-by="12:34680;a">
+  <li>הסרת מתאם ה-TAP של Outline Manager
+    <ol>
+      <li>נכנסים ל"ניהול מכשירים", ואז אל "מתאמי רשת".</li>
+      <li>מוצאים את הקובץ "TAP-Windows Adapter V9" או את מתאם ה-TAP שמשויך ל-Outline.</li>
+      <li>מסירים או מוחקים את המתאם הזה. חשוב לזכור שהמחיקה עלולה להשפיע גם על אפליקציות VPN אחרות שמותקנות במכשיר.&nbsp;</li>
+    </ol>
+  </li>
+  <li>הסרת האפליקציה Outline Manager
+    <ol>
+      <li>נכנסים ל"תוכנות ותכונות", ואז אל "הסרת התוכנה".</li>
+      <li>מוצאים את אפליקציית Outline Manager ומסירים אותה.</li>
+      <li><a href="https://getoutline.org/get-started/#step-1" target="_blank">מורידים את הגרסה האחרונה של Outline Manager</a>&nbsp;ומתקינים אותה מחדש על מכשיר Windows. במסגרת ההתקנה החדשה, יותקן במכשיר מתאם TAP חדש באופן אוטומטי.</li>
+    </ol>
+  </li>
+</ol>
+
+<p data-aura-rendered-by="12:34680;a">אם אתם עדיין נתקלים בבעיות אפשר <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">לפנות לתמיכה</a>.&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="94" sourceLocale="iw">WEB:15331727</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">הגדרה אוטומטית של Google Cloud</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:26310;a"><strong>סקירה כללית</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">אפליקציית Outline Manager כוללת פיצ'ר שמאפשר להגדיר אוטומטית את השרת Outline בשרת שפועל ב-Google Cloud. אם תבחרו להשתמש בפיצ'ר הזה, אפליקציית Outline Manager תבקש מכם להיכנס לחשבון Google. הפעולה הזו תעניק הרשאות <a href="https://developers.google.com/identity/protocols/oauth2" target="_blank">OAuth</a> מסוימות להתקנה המקומית של אפליקציית Outline Manager, לטובת הגדרה של חשבון Google Cloud שלכם.<br />
+  אם אתם לא רוצים להעניק את ההרשאות האלה, כדי להפעיל את Outline ב-Google Cloud Platform תוכלו לפעול לפי ההוראות להגדרה מתקדמת באפליקציית Outline Manager.&nbsp;</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>הרשאות שהוענקו</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">כדי שתהיה אפשרות לספק הגדרה אוטומטית, צריך לתת לאפליקציית Outline Manager את ההרשאות הבאות בחשבון Google שלכם:</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Google Cloud Platform</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>הצגה וניהול של המשאבים ב-Google Compute Engine</li>
+  <li>צפייה בנתונים בשירותי Google Cloud והצגת כתובת האימייל של חשבון Google שלכם</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>פרטי חשבון בסיסיים</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>הצגת כתובת האימייל הראשית שמשויכת לחשבון Google שלכם</li>
+  <li>שיוך של המידע האישי שלכם ב-Google אליכם</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>גישה נוספת</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>ניהול הפרויקטים ב-Cloud Platform</li>
+  <li>הצגה וניהול של חשבונות לחיוב ב-Google Cloud Platform</li>
+  <li>ניהול תצורת השירות ב-Google API</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a">בעזרת ההרשאות האלה אנחנו יכולים לתמוך בפונקציונליות מתקדמת לניהול השרתים שלכם ב-Outline, כולל:</p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>אפשרות לבחור בחשבון הנכון לחיוב</li>
+  <li>יצירת פרויקט חדש לארגון שרתי Outline</li>
+  <li>רישום של מרכזי נתונים זמינים</li>
+  <li>יצירת מכונות וירטואליות חדשות להרצת Outline</li>
+  <li>הגדרת המכונה הווירטואלית החדשה באמצעות Outline</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>ביטול הרשאות</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">רוצים לבטל את הגישה של Outline Manager ל-Google Cloud Platform? תוכלו לעשות זאת בדף <a href="https://myaccount.google.com/permissions" target="_blank">החשבון שלי</a>. אם תבטלו את הגישה, כל השרתים שיצרתם באמצעות ההגדרה האוטומטית ימשיכו לרוץ, אבל הם לא יופיעו יותר ב-Outline Manager. כדי לשחזר את הגישה אליהם, פשוט מתחברים מחדש ל-Google Cloud Platform ומתחילים את תהליך ההגדרה האוטומטי.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>ארגון פרויקטים ב-Outline</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">בהגדרה האוטומטית של Google Cloud, המערכת משתמשת ב<a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects" target="_blank">פרויקט Google Cloud</a> אחד לארגון השרתים שלכם ב-Outline. הפרויקט נוצר במהלך השימוש הראשון בהגדרה האוטומטית, ומזהה הפרויקט שהוצע לו מתחיל ב-"Outline-‎" וממשיך במחרוזת של תווים אקראיים. אם אתם מעדיפים לבחור מזהה פרויקט אחר, תוכלו לעשות זאת בזמן היצירה. השם של הפרויקט יהיה "שרתי Outline"‏ [“Outline servers”].</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>חשבון לחיוב</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">כדי להשתמש בפרויקטים של Google Cloud צריך חשבון לחיוב מקושר שמוגדרים בו פרטי תשלום. בפעם הראשונה שתשתמשו בהגדרה האוטומטית של Google Cloud, תתבקשו להזין חשבון לחיוב כדי לשייך אותו לשרתים שלכם ב-Outline. לפעמים שרת מפסיק לפעול כי יש בעיה בחשבון לחיוב. במקרה כזה, צריך להתחבר ל-<a href="https://console.cloud.google.com/getting-started" target="_blank">Google Cloud Console</a>, למצוא את הפרויקט ב-Google Cloud שמשויך ל-Outline (שנקרא "שרתי Outline") ולעדכן את הגדרות החיוב.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>כיבוי סופי של שרתים</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">אם אתם רוצים לכבות באופן סופי את השרתים שנוצרו באמצעות ההגדרה האוטומטית, הדרך הקלה ביותר לעשות זאת היא מתוך אפליקציית Outline Manager. עם זאת, אם אתם רוצים לכבות את השרתים באופן סופי בעצמכם, תוכלו להתחבר ל-<a href="https://console.cloud.google.com/getting-started" target="_blank">Google Cloud Console</a>, למצוא את הפרויקט (בשם "שרתי Outline") שנוצר במהלך ההגדרה הראשונית ושם למחוק את המשאבים או להשבית את הפרויקט.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="99" sourceLocale="iw">WEB:15331728</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">שאלות נפוצות בנושא התקנת שרת של Outline</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:28806;a"><strong>אפשר להשתמש ב-Outline בלי שרת?</strong><br />
+  <br />
+  לצערנו לא. אפליקציית Outline צריכה גישה לשרת. השרת יכול להיות מנוהל על ידיכם, על ידי הארגון שלכם או על ידי ספק צד שלישי שאתם סומכים עליו.&nbsp;</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>כמה זמן נמשכת התקנת שרת של Outline?</strong></p>
+
+<p data-aura-rendered-by="12:28806;a">ברוב המקרים פחות מ-5 דקות. אפשר להתקין את Outline דרך כל ספק שירותי ענן, אבל חברנו ל-DigitalOcean כדי ליצור חוויית התקנה מונחית וידידותית יותר למשתמש, שבה ההתקנה דורשת בסך הכול כמה לחיצות – בלי סקריפטים.</p>
+
+<p data-aura-rendered-by="12:28806;a">אם מתקינים את השרת דרך AWS, ‏GCP או התקנה מתקדמת, צמצמנו את תהליך ההתקנה לסקריפט אחד שמתאים לרוב הסביבות.&nbsp;</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>איפה אפשר להתקין שרת של Outline?</strong></p>
+
+<p data-aura-rendered-by="12:28806;a">אפשר להתקין שרת של Outline דרך רוב ספקי שירותי הענן, בכל מקום שבו הם פועלים.</p>
+
+<p data-aura-rendered-by="12:28806;a">האפשרות הקלה ביותר היא להתקין אותו דרך DigitalOcean, ספק עם שרתים בכמה מקומות שונים כמו אמסטרדם, טורונטו, סן פרנסיסקו וסינגפור. אם אתם מעדיפים להתקין את השרת דרך ספק שירותי ענן אחר או תשתית משלכם, תוכלו לבחור ב'מצב מתקדם' באפליקציית Outline Manager ולהתקין אותו בעזרת ההנחיות של סקריפט ההתקנה.&nbsp;</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>איפה כדאי להתקין את השרת של Outline?</strong></p>
+
+<ol data-aura-rendered-by="12:28806;a">
+  <li>כשבוחרים מיקום לשרת של Outline, כדאי לקחת בחשבון כמה דברים:</li>
+  <li>המיקום של השרת של Outline עשוי להשפיע על חוויית הגלישה באינטרנט. למשל, אם השרת נמצא באמסטרדם, המשתמשים יגלשו באינטרנט כאילו הם נמצאים פיזית באמסטרדם. ייתכן גם שחלק מהאתרים יוצגו להם בהולנדית. עם זאת, בדרך כלל אפשר לשנות את השפה המקומית באמצעות כלי לבחירת שפה באתר עצמו.</li>
+  <li>המרחק בין המשתמשים לשרת של Outline עשוי להשפיע על מהירות הגלישה. באופן כללי, המרחק הפיזי בין המשתמשים לשרת של Outline יכול להשפיע על מהירות הגלישה שלהם. ברוב המקרים תוכלו לבחור את השרת הקרוב ביותר למיקום שבו המשתמשים שלכם אמורים להיות. תוכלו גם להיעזר ב<a href="https://www.submarinecablemap.com/" rel="noopener" target="_blank">מפת הכבלים התת-ימיים</a>, כדי לבדוק אילו כבלי אינטרנט מחוברים למדינה או לאזור שלכם.</li>
+  <li>המיקום של שרת ה-VPN עשוי להשפיע על המסגרת המשפטית. אפליקציית Outline לא מאחסנת יומנים עם נתוני הגלישה באינטרנט. <a href="/outline-faq/answer/14919822" rel="noopener" target="_blank">מידע נוסף על אבטחה ופרטיות בזמן השימוש ב-Outline</a></li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="iw">WEB:15331758</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">אני עוסק/ת בפיתוח. איפה אפשר לקבל תמיכה בשילוב של Outline SDK באפליקציה שלי?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">אתר התמיכה הזה מיועד למשתמשי Outline Manager ולמשתמשים באפליקציית הלקוח של Outline. מפתחים שרוצים לקבל תמיכה צריכים להשתמש ב-GitHub. ב-<a href="https://github.com/Jigsaw-Code/outline-sdk/discussions" target="_blank">Discussion board</a>&nbsp;(אזור הדיונים) של ה-SDK אפשר לפרסם שאלות. הקטע Discussion board (אזור הדיונים) הוא מקום מצוין לשאול בו שאלות, לשתף רעיונות, לשלוח קישורים להדגמות ולעזור למפתחים אחרים שמשתמשים ב-Outline SDK. כדי לשלוח בקשה להוספת תכונה או לדווח על באג, צריך לפתוח במקום זה <a href="https://github.com/Jigsaw-Code/outline-sdk/issues/new" target="_blank">Issue</a> (פנייה).</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="74" sourceLocale="iw">WEB:15448041</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">באילו שפות האפליקציה זמינה?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>אפליקציית Outline זמינה בשפות הבאות:</p>
+
+<ul>
+  <li aria-level="1">אפריקאנס</li>
+  <li aria-level="1">אלבנית</li>
+  <li aria-level="1">אמהרית</li>
+  <li aria-level="1">ערבית</li>
+  <li aria-level="1">ארמנית</li>
+  <li aria-level="1">אזרית</li>
+  <li aria-level="1">בנגלית</li>
+  <li aria-level="1">בוסנית</li>
+  <li aria-level="1">בולגרית</li>
+  <li aria-level="1">בורמזית</li>
+  <li aria-level="1">קטלאנית</li>
+  <li aria-level="1">סינית (פשוטה)</li>
+  <li aria-level="1">סינית (מסורתית)</li>
+  <li aria-level="1">קרואטית</li>
+  <li aria-level="1">צ'כית</li>
+  <li aria-level="1">דנית</li>
+  <li aria-level="1">הולנדית</li>
+  <li aria-level="1">אנגלית (אמריקאית)</li>
+  <li aria-level="1">אנגלית (בריטית)</li>
+  <li aria-level="1">אסטונית</li>
+  <li aria-level="1">פיליפינית</li>
+  <li aria-level="1">פינית</li>
+  <li aria-level="1">צרפתית</li>
+  <li aria-level="1">גאורגית</li>
+  <li aria-level="1">גרמנית</li>
+  <li aria-level="1">יוונית</li>
+  <li aria-level="1">עברית</li>
+  <li aria-level="1">הינדית</li>
+  <li aria-level="1">הונגרית</li>
+  <li aria-level="1">איסלנדית</li>
+  <li aria-level="1">אינדונזית</li>
+  <li aria-level="1">איטלקית</li>
+  <li aria-level="1">יפנית</li>
+  <li aria-level="1">קזחית</li>
+  <li aria-level="1">חמרית</li>
+  <li aria-level="1">קוריאנית</li>
+  <li aria-level="1">לאו</li>
+  <li aria-level="1">לטבית</li>
+  <li aria-level="1">ליטאית</li>
+  <li aria-level="1">מקדונית</li>
+  <li aria-level="1">מלאית</li>
+  <li aria-level="1">מראטהית</li>
+  <li aria-level="1">מונגולית</li>
+  <li aria-level="1">נפאלית</li>
+  <li aria-level="1">נורבגית</li>
+  <li aria-level="1">פרסית</li>
+  <li aria-level="1">פולנית</li>
+  <li aria-level="1">פורטוגזית (ברזילאית)</li>
+  <li aria-level="1">פורטוגזית (אירופאית)</li>
+  <li aria-level="1">רומנית</li>
+  <li aria-level="1">רוסית</li>
+  <li aria-level="1">סרבית (קירילית)</li>
+  <li aria-level="1">סרבית (לטינית)</li>
+  <li aria-level="1">סינהלית</li>
+  <li aria-level="1">סלובקית</li>
+  <li aria-level="1">סלובנית</li>
+  <li aria-level="1">ספרדית (אירופאית)</li>
+  <li aria-level="1">ספרדית (אמריקה הלטינית)</li>
+  <li aria-level="1">סוואהילית</li>
+  <li aria-level="1">שבדית</li>
+  <li aria-level="1">טמילית</li>
+  <li aria-level="1">תאילנדית</li>
+  <li aria-level="1">טורקית</li>
+  <li aria-level="1">אוקראינית</li>
+  <li aria-level="1">אורדו</li>
+  <li aria-level="1">וייטנאמית</li>
+</ul>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="79" sourceLocale="iw">WEB:15528599</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">שגיאות שקשורות לחומת האש</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:268;a">יכולות להיות שלוש בעיות הקשורות לחומת האש שתיתקלו בהן:</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>חומת אש בין רשתות חסמה אתכם</strong></p>
+
+<p data-aura-rendered-by="12:268;a">אם ניסיתם להתקין את Outline ואתם מחוברים לרשת המוגנת בחומת אש, למשל בבית ספר או במקום העבודה, נסו להתחבר לרשת אחרת ואז לבצע את ההתקנה.</p>
+
+<p data-aura-rendered-by="12:268;a">אם הבעיה נמשכת, פנו למנהל הרשת ובקשו ממנו לאפשר חיבור בין הרשת שמוגנת בחומת אש לבין השרת של Outline. תצטרכו לדעת מה כתובת ה-IP של השרת של Outline ולאילו יציאות Outline מחוברת. הפרטים רשומים בסוף של סקריפט ההתקנה.</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>חומת האש של המכשיר חסמה אתכם</strong></p>
+
+<p data-aura-rendered-by="12:268;a">אם במכשיר שלכם מותקנת תוכנה שחוסמת חיבורים יוצאים ביציאות לא סטנדרטיות, או תוכנות לא מזוהות (כמו ZoneAlarm של CheckPoint), היעזרו במשאבי העזרה של המכשיר או של התוכנה כדי להבין איך מגדירים חריגה ל-Outline.</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>חומת האש של השרת חסמה אתכם</strong></p>
+
+<p data-aura-rendered-by="12:268;a">ספק שירותי הענן שבחרתם עשוי לדרוש מכם להגדיר ידנית חריגות בחומת האש של השרת, כדי לפתוח את היציאות שאליהן Outline צריכה להתחבר. אחרי הפעלת סקריפט ההתקנה, שתי היציאות האקראיות שאליהן Outline צריכה להתחבר בשרת אמורות להיות מוצגות. פתיחת שתי היציאות האלה אמורה לפתור את הבעיה.<br />
+  <br />
+  מומלץ להיעזר במשאבי העזרה של UFW ו-Iptables כדי להבין איך מגדירים חריגות בחומת האש של השרת:</p>
+
+<ul data-aura-rendered-by="12:268;a">
+  <li>‫UFW‏:&nbsp;<a href="https://help.ubuntu.com/community/UFW" rel="noopener" target="_blank">https://help.ubuntu.com/community/UFW</a></li>
+  <li>‫Iptables‏:&nbsp;<a href="https://help.ubuntu.com/community/IptablesHowTo" rel="noopener" target="_blank">https://help.ubuntu.com/community/IptablesHowTo</a></li>
+</ul>
+</div>
+</body>
+</html>

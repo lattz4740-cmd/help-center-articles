@@ -1,0 +1,1167 @@
+<html>
+<head>
+<style type="text/css">
+.gkms-gtt-answer-header, .gkms-gtt-message-header {
+  color: black !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 2em;
+  padding: 4px;
+}.gkms-gtt-answer-header {
+  background-color: #E5ECF9;
+  border-top: 1px solid #36C;
+}
+.gkms-gtt-message-header {
+  background-color: #F8F8F8;
+  border-top: 1px solid #CCC;
+}
+.gkms-gtt-hide {
+  visibility: hidden;
+}
+.form_field_data .temporary_signal_wrapper {
+  display: inline;
+}
+</style>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+</head>
+<body lang="th">
+<br/><div class="gkms id notranslate" sourceGlobalRevision="116" sourceLocale="th">WEB:14917423</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">วิธีการทำงานของ Outline</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><h3 data-aura-rendered-by="12:266;a">การติดตั้งเซิร์ฟเวอร์</h3>
+แม้ว่าการติดตั้ง Outline อาจดูง่าย แต่แท้จริงแล้วมีขั้นตอนที่ซับซ้อนเกิดขึ้นอยู่เบื้องหลังหลายประการกว่าที่จะติดตั้งเซิร์ฟเวอร์ของคุณได้<br data-aura-rendered-by="12:266;a" />
+<br data-aura-rendered-by="12:266;a" />
+เมื่อใดก็ตามที่มีการติดตั้ง Outline สคริปต์การติดตั้งจะทำงานตามขั้นตอนต่อไปนี้
+<ul data-aura-rendered-by="12:266;a">
+  <li>ระบบจะเรียกและนำเข้าไฟล์อิมเมจ Shadowbox เวอร์ชันเสถียรโดยใช้ Docker ระบบจะฝากไฟล์อิมเมจดังกล่าวไว้บน&nbsp;<a href="https://support.getoutline.org/s/article/how-outline-works?language=th" target="_blank">Quay.io</a>&nbsp;ใน&nbsp;<a href="https://support.getoutline.org/s/article/how-outline-works?language=th" target="_blank">https://quay.io/repository/outline/shadowbox?tab=tags</a>&nbsp;ไฟล์อิมเมจนี้จะประกอบด้วยเซิร์ฟเวอร์ Outline และ API การจัดการซึ่งแอปพลิเคชันการจัดการเซิร์ฟเวอร์ Outline จะนำไปใช้ในภายหลังเพื่อสร้างและนำคีย์การเข้าถึงออก เลือกหรือไม่เลือกใช้การรายงานเมตริกที่ไม่ระบุตัวตน และอื่นๆ</li>
+  <li><a href="https://support.getoutline.org/s/article/how-outline-works?language=th" target="_blank">Watchtower</a>&nbsp;จะได้รับการติดตั้งและกำหนดค่าเพื่อตรวจสอบการอัปเดตไฟล์อิมเมจทุกๆ ชั่วโมงเพื่อให้มั่นใจได้ว่าเซิร์ฟเวอร์ Outline ทุกเครื่องจะได้รับการอัปเดตฟีเจอร์และระบบรักษาความปลอดภัยเวอร์ชันล่าสุดอย่างต่อเนื่อง</li>
+  <li>เว็บเซิร์ฟเวอร์ที่ใช้เข้าถึง API การจัดการจะเริ่มต้นทำงานในพอร์ตที่สุ่มในเส้นทางลับที่สุ่ม</li>
+  <li>ระบบจะสร้าง<a href="https://support.getoutline.org/s/article/how-outline-works?language=th" target="_blank">ใบรับรอง SSL แบบ Self-signed</a>&nbsp;ขึ้นเพื่อเข้ารหัสการจัดการเซิร์ฟเวอร์ Outline โดยใช้ TLS แม้ว่าจะไม่มีชื่อโดเมนก็ตาม ระบบจะสร้างลายนิ้วมือที่ไม่ซ้ำกันของใบรับรองนี้และจัดเก็บไว้ในแอปพลิเคชัน Outline Manager ซึ่งช่วยป้องกันจากการโจมตีแบบ MITM</li>
+</ul>
+เมื่อติดตั้ง Outline แล้วจะไม่จำเป็นต้องกำหนดค่าใดๆ หลังการติดตั้ง
+
+<h3 data-aura-rendered-by="12:266;a">ความปลอดภัยของเซิร์ฟเวอร์</h3>
+ซอฟต์แวร์ Outline คือซอฟต์แวร์โอเพนซอร์ส ซึ่งหมายความว่าทุกคนจะเห็นและปรับปรุงโค้ดได้หากพบช่องโหว่ ซึ่งเราฝากโค้ดไว้บน&nbsp;<a data-aura-rendered-by="12:266;a" href="https://support.getoutline.org/s/article/how-outline-works?language=th" target="_blank">GitHub</a><br data-aura-rendered-by="12:266;a" />
+<br data-aura-rendered-by="12:266;a" />
+นอกจากนี้เซิร์ฟเวอร์ Outline ที่ติดตั้งทั้งหมดจะได้รับการอัปเดตโดยอัตโนมัติทุกครั้งที่มีการเปิดตัวเวอร์ชันใหม่เพื่อให้มั่นใจได้ว่าจะไม่มีเซิร์ฟเวอร์ Outline ใดใช้ซอฟต์แวร์เวอร์ชันเก่า<br data-aura-rendered-by="12:266;a" />
+<br data-aura-rendered-by="12:266;a" />
+แอปพลิเคชัน Outline Manager จะโต้ตอบกับบริการการจัดการในเซิร์ฟเวอร์ Outline เพื่อจัดการคีย์การเข้าถึงในเซิร์ฟเวอร์ดังกล่าว โดยบริการการจัดการจะทำงานบนพอร์ตแบบสุ่มรวมทั้งเส้นทางลับและไม่ซ้ำกัน นอกจากนี้ ตัวบริการการจัดการเองก็มีระบบป้องกันการล้วงข้อมูล เนื่องจากบริการจะไม่ตอบกลับคำขอยกเว้นจะระบุเส้นทางลับอย่างถูกต้อง ประการสุดท้ายคือการสื่อสารทั้งหมดกับบริการการจัดการจะได้รับการเข้ารหัสด้วย<a data-aura-rendered-by="12:266;a" href="https://support.getoutline.org/s/article/how-outline-works?language=th" target="_blank">ใบรับรอง SSL แบบ Self-signed</a><br data-aura-rendered-by="12:266;a" />
+<br data-aura-rendered-by="12:266;a" />
+อีกทั้งเซิร์ฟเวอร์ Outline ไม่ได้เก็บบันทึกข้อมูลใดๆ และแม้ว่าจะถูกบุกรุกก็จะไม่เปิดเผยข้อมูลผู้ใช้ ดูข้อมูลเพิ่มเติมได้<a data-aura-rendered-by="12:266;a" href="https://support.getoutline.org/s/article/how-outline-works?language=th" target="_blank">ที่นี่</a><br data-aura-rendered-by="12:266;a" />
+<br data-aura-rendered-by="12:266;a" />
+Outline ได้รับการตรวจสอบโดย&nbsp;<a data-aura-rendered-by="12:266;a" href="https://support.getoutline.org/s/article/how-outline-works?language=th" target="_blank">Radically Open Security</a>&nbsp;และ&nbsp;<a data-aura-rendered-by="12:266;a" href="https://support.getoutline.org/s/article/how-outline-works?language=th" target="_blank">Cure53</a>&nbsp;ในปี 2018 ดูรายงานได้<a data-aura-rendered-by="12:266;a" href="/outline-faq/answer/14919822" rel="noopener" target="_blank">ที่นี่</a>
+
+<h3 data-aura-rendered-by="12:266;a">การจัดการการรับส่งข้อมูล UDP</h3>
+Outline ใช้งานได้ในรูปแบบ VPN ทั่วทั้งระบบซึ่งหมายความว่าการรับส่งข้อมูล UDP ทั้งหมดจะส่งผ่านเซิร์ฟเวอร์ Outline
+
+<h3 data-aura-rendered-by="12:266;a">การรับส่งข้อมูล DNS</h3>
+Outline ดำเนินการค้นหา DNS ทั้งหมดผ่านเซิร์ฟเวอร์ Outline และปกป้องการค้นหาเหล่านั้นด้วยการเข้ารหัสแบบเดียวกับที่ใช้ในกิจกรรมเครือข่ายอื่นๆ ทั้งหมด ระบบจะส่งคำขอ DNS ไปยัง Dyn Internet Guide หรือ OpenDNS โดยผ่านเซิร์ฟเวอร์ Outline<br data-aura-rendered-by="12:266;a" />
+<br data-aura-rendered-by="12:266;a" />
+Outline จะไม่บันทึกการค้นหา DNS ของคุณ<br data-aura-rendered-by="12:266;a" />
+&nbsp;</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="232" sourceLocale="th">WEB:14919822</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ความปลอดภัยและความเป็นส่วนตัวขณะใช้ Outline</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:258;a">ความปลอดภัยและความเป็นส่วนตัวขณะใช้ Outline</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>วิธีที่ Outline ปกป้องการสื่อสารออนไลน์</strong></p>
+
+<p data-aura-rendered-by="12:258;a">การเข้าใช้อินเทอร์เน็ตนั้นจะมีความเสี่ยงต่อการรักษาความปลอดภัยมากที่สุดในขณะที่ข้อมูลเดินทางอยู่ในเครือข่ายในท้องถิ่นหรือระดับประเทศ</p>
+
+<p data-aura-rendered-by="12:258;a">Outline จะช่วยทำให้การสื่อสารของคุณมีความเป็นส่วนตัวโดยเข้ารหัสการเข้าใช้อินเทอร์เน็ตในขณะที่ข้อมูลเดินทางภายในเครือข่ายระดับประเทศและคงการเข้ารหัสจนกว่าการสื่อสารนั้นจะถึงเซิร์ฟเวอร์ Outline เมื่อใช้ Outline เข้ารหัสการเข้าใช้ บุคคลอื่นที่สังเกตการณ์อยู่ในเครือข่ายจะตรวจสอบเว็บไซต์ที่คุณเข้าชมหรือข้อมูลที่คุณโอนไม่ได้</p>
+
+<p data-aura-rendered-by="12:258;a">Outline ยังอาจช่วยให้เข้าถึงเครื่องมือการสื่อสารแบบต้นทางไปยังปลายทางที่ปลอดภัยซึ่งปกติอาจใช้งานไม่ได้ในประเทศของคุณ&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>มาตรฐานการเข้ารหัส</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Outline จะเข้ารหัสการสื่อสารระหว่างอุปกรณ์ของคุณกับเซิร์ฟเวอร์ Outline โดยใช้การเข้ารหัส AEAD 256-bit Chacha2020 IETF Poly 1305 การเข้ารหัส AEAD จะทำให้ฮาร์ดแวร์สมัยใหม่ทำงานได้อย่างมีประสิทธิภาพ มีความน่าเชื่อถือ สมบูรณ์แบบ และมีความถูกต้อง&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>การตรวจสอบความปลอดภัย</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Outline ได้รับการตรวจสอบโดย Radically Open Security และ Cure53 ในปี 2018 ซึ่งเป็นองค์กรด้านความปลอดภัยดิจิทัลอิสระทั้ง 2 แห่งที่ตรวจสอบซอฟต์แวร์กับมาตรฐานความปลอดภัยล่าสุด โดย Radically Open Security ได้ทำการตรวจสอบเพิ่มเติมในปี 2022 และ Cure53 ได้ทำการตรวจสอบ Outline SDK ในปี 2024 อ่านข้อมูลเพิ่มเติมได้ในรายงานต่อไปนี้</p>
+
+<ul data-aura-rendered-by="12:258;a">
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf" target="_blank">Radically Open Security Penetration Test Report (มีนาคม 2018)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf" target="_blank">Cure53 Pentest &amp; Audit Report Jigsaw Outline (ธันวาคม 2018)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf" target="_blank">Radically Open Security Penetration Test Report (ธันวาคม 2022)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf" target="_blank">Cure53 Pentest Report Jigsaw Outline VPN SDK (มกราคม 2024)</a></li>
+</ul>
+
+<p data-aura-rendered-by="12:258;a"><strong>เมตริกและบันทึกที่ไม่ระบุตัวตน</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Outline จะติดตามแบนด์วิดท์ที่ใช้เป็น "จำนวนไบต์ที่ถ่ายโอน" สำหรับคีย์การเข้าถึงแต่ละรายการ ข้อมูลนี้จะช่วยให้ผู้ดูแลระบบเซิร์ฟเวอร์ปรับการสมัครใช้บริการแบนด์วิดท์ที่ซื้อกับผู้ให้บริการเซิร์ฟเวอร์ระบบคลาวด์ได้ตามต้องการ แต่จะไม่อนุญาตให้เห็นข้อมูลจริงที่ส่งผ่านเซิร์ฟเวอร์ Outline</p>
+
+<p data-aura-rendered-by="12:258;a">ดูข้อมูลเพิ่มเติมเกี่ยวกับ<a href="/outline-faq/answer/15331222" rel="noopener" target="_blank">การเก็บรวบรวมข้อมูลและสารสนเทศ</a>ของ Outline</p>
+
+<hr data-aura-rendered-by="12:258;a" />
+<p data-aura-rendered-by="12:258;a"><strong>คำถามที่พบบ่อยเกี่ยวกับความปลอดภัยและความเป็นส่วนตัว</strong>&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Outline ทำให้ไม่มีใครรู้ตัวตนบนโลกออนไลน์ของฉันได้ใช่ไหม</strong></p>
+
+<p data-aura-rendered-by="12:258;a">ไม่ใช่ Outline ไม่ใช่เครื่องมือปกปิดตัวตน แต่จะปกป้องความเป็นส่วนตัวจากผู้สังเกตการณ์ในเครือข่ายที่เป็นไปได้</p>
+
+<p data-aura-rendered-by="12:258;a">Outline ไม่ได้ปกปิดตัวตนของคุณแบบเต็มรูปแบบเมื่อเข้าชมเว็บไซต์ เนื่องจากเว็บไซต์เหล่านั้นจะระบุตัวตนของคุณได้เมื่อเข้าสู่ระบบและผ่านทางเทคนิคต่างๆ ในบางครั้ง เช่น การใช้ลายนิ้วมือของเบราว์เซอร์ สำหรับแอปบนอุปกรณ์เคลื่อนที่ สมาร์ทโฟนรุ่นใหม่ส่วนใหญ่จะมี API ที่อนุญาตให้แอปที่ติดตั้งไว้เรียกดูตำแหน่งของคุณได้โดยไม่ต้องผ่านพร็อกซีเนื่องจากแอปเหล่านั้นใช้ GPS ในเครื่องได้</p>
+
+<p data-aura-rendered-by="12:258;a">โดยทั่วไปแล้ว VPN จะเป็นด่านป้องกันที่สำคัญโดยเฉพาะจากการสอดส่องกิจกรรมบนอินเทอร์เน็ต อย่างไรก็ดีการใช้งานออนไลน์มักจะมีความเสี่ยงอยู่เสมอ ถึงแม้ว่าจะใช้ VPN แล้วก็ตาม หาก ISP รู้ถึงตัวตนของคุณและเฝ้าสังเกตการจราจรของข้อมูลในเครือข่ายได้ ISP ก็อาจจะรู้ที่อยู่ IP ของเซิร์ฟเวอร์ Outline ของคุณด้วย ซึ่งข้อมูลนี้อาจจะนำไปใช้เพื่อปิดกั้นการเข้าถึงเซิร์ฟเวอร์ Outline หรือเรียนรู้รูปแบบการใช้งาน เช่น เวลาที่คุณมักจะออนไลน์ และอาจใช้ค้นหาตำแหน่งของคุณอย่างคร่าวๆ ได้อีกด้วย&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>ผู้อื่นจะทราบหรือไม่ว่าฉันกำลังใช้ Outline อยู่</strong></p>
+
+<p data-aura-rendered-by="12:258;a">อาจจะทราบ แพลตฟอร์มและบริการที่คุณเข้าถึงส่วนใหญ่อาจจะรู้ว่าการเชื่อมต่อของคุณมาจากเซิร์ฟเวอร์ระบบคลาวด์ ซึ่งก็อาจจะคาดเดาได้ในบางครั้งว่าคุณใช้ VPN แต่จะไม่เห็นเนื้อหาการเข้าใช้อินเทอร์เน็ตของคุณ&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Outline จะช่วยปกป้องฉันจากภัยคุกคามทางไซเบอร์ที่อาจเกิดขึ้นทั้งหมดไหม</strong></p>
+
+<p data-aura-rendered-by="12:258;a">ไม่ ไม่มีเครื่องมือใดจะช่วยป้องกันคุณจากภัยคุกคามทางไซเบอร์ที่อาจเกิดขึ้นทั้งหมดได้ แต่ Outline จะช่วยให้คุณใช้งานอินเทอร์เน็ตสาธารณะและเพิ่มความเป็นส่วนตัวได้โดยเข้ารหัสการเข้าใช้ของคุณ แต่เราขอแนะนำให้คุณยึดหลักปลอดภัยไว้ก่อนเพื่อป้องกันตัวคุณเองจากการโจมตีประเภทอื่นๆ เช่น มัลแวร์และฟิชชิง</p>
+
+<p data-aura-rendered-by="12:258;a">หากต้องการเพิ่มประสิทธิภาพการป้องกันทางออนไลน์ โปรดทำงานร่วมกับผู้เชี่ยวชาญด้านการรักษาความมั่นคงปลอดภัยไซเบอร์ขององค์กร หรือรับคำแนะนำที่ปรับเปลี่ยนให้เหมาะกับคุณจากผู้เชี่ยวชาญอันดับต้นๆ ในด้านความปลอดภัยได้ที่ <a href="https://securityplanner.org/" target="_blank">Security Planner</a> ซึ่งเป็นเว็บไซต์ที่สร้างเพื่อช่วยให้คุณเข้าใจวิธีการต่างๆ ในการเลือกเครื่องมือเพื่อรักษาความมั่นคงปลอดภัยไซเบอร์ที่เหมาะสมกับความต้องการ</p>
+
+<p data-aura-rendered-by="12:258;a">นอกจากนี้ คุณยังดูผลิตภัณฑ์ที่เกี่ยวกับการรักษาความมั่นคงปลอดภัยไซเบอร์อื่นๆ ได้จาก <a href="https://jigsaw.google.com/" target="_blank">Jigsaw</a> เช่น <a href="https://getintra.org/" target="_blank">Intra</a>, <a href="https://g.co/shield" target="_blank">Project Shield</a> และ <a href="https://chrome.google.com/webstore/detail/password-alert/noondiphcddnnabmjcihcjfbhfklnnep?" rel="noopener" target="_blank">Password Alert</a>&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>การใช้ VPN ถูกกฎหมายไหม</strong></p>
+
+<p data-aura-rendered-by="12:258;a">ก่อนใช้ Outline หรือแอปใดก็ตาม โปรดตรวจสอบกฎหมายและข้อบังคับในท้องถิ่นรวมถึงข้อกำหนดในการให้บริการของผู้ให้บริการคลาวด์ที่คุณวางแผนจะใช้งาน</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="89" sourceLocale="th">WEB:15330317</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ทำไมฉันถึงเข้าถึงอินเทอร์เน็ตไม่ได้แม้ว่าจะเชื่อมต่อกับเซิร์ฟเวอร์ Outline แล้ว</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:266;a">หากคุณใช้โทรศัพท์มือถือ&nbsp;ให้ลองสลับใช้ระหว่างการเชื่อมต่ออินเทอร์เน็ตมือถือและ&nbsp;Wi-Fi&nbsp;เพราะบางครั้งการเชื่อมต่อบางประเภทอาจใช้งานไม่ได้&nbsp;หากคุณใช้คอมพิวเตอร์&nbsp;ให้ลองยกเลิกการเชื่อมต่อจากบรอดแบนด์และเชื่อมต่อใหม่&nbsp;</p>
+
+<p data-aura-rendered-by="12:266;a">&nbsp;</p>
+
+<p data-aura-rendered-by="12:266;a">หากยังมีปัญหา&nbsp;อาจเป็นเพราะเซิร์ฟเวอร์&nbsp;Outline&nbsp;ของคุณมีปัญหา&nbsp;โปรดติดต่อ<a href="/outline-faq/answer/15330920?hl=en&amp;ref_topic=15309650&amp;sjid=7239458068370432269-NA" rel="noopener" target="_blank">ผู้ดูแลบริการ</a>เพื่อขอคีย์การเข้าถึงใหม่สำหรับเซิร์ฟเวอร์อื่น&nbsp;นอกจากนี้&nbsp;ผู้ดูแลบริการอาจเพิ่มขีดจำกัดของข้อมูลใน<a href="/outline-faq/answer/15330920?hl=en&amp;ref_topic=15309650&amp;sjid=7239458068370432269-NA" rel="noopener" target="_blank">คีย์การเข้าถึง</a>ได้&nbsp;หากขีดจำกัดของคีย์ถึงโควต้าแล้ว&nbsp;</p>
+
+<p data-aura-rendered-by="12:266;a">&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="296" sourceLocale="th">WEB:15330818</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ข้อกำหนดของระบบสำหรับไคลเอ็นต์ Outline มีอะไรบ้าง</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:24676;a">คุณสามารถทดลองใช้ Outline ได้ในระบบปฏิบัติการทุกระบบ ต่อไปนี้คือระบบปฏิบัติการขั้นต่ำที่ต้องการ</p>
+
+<table class="borders" data-aura-rendered-by="12:24676;a" width="312">
+  <tbody>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top"><b>ระบบปฏิบัติการ</b></td>
+      <td colspan="1" rowspan="1" valign="top"><b>เวอร์ชันต่ำสุด</b></td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Android</td>
+      <td colspan="1" rowspan="1" valign="top">10</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">iOS</td>
+      <td colspan="1" rowspan="1" valign="top">15.5</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">macOS</td>
+      <td colspan="1" rowspan="1" valign="top">12.0</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Windows</td>
+      <td colspan="1" rowspan="1" valign="top">10</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Linux</td>
+      <td colspan="1" rowspan="1" valign="top">Ubuntu&nbsp;20.04</td>
+    </tr>
+  </tbody>
+</table>
+
+<p data-aura-rendered-by="12:24676;a"><br />
+  ต้องการช่วยให้ไคลเอ็นต์ Outline ใช้งานในระบบปฏิบัติการอื่นๆ หรือไม่&nbsp;<a href="https://github.com/Jigsaw-Code/outline-client#platform-specific-development" target="_blank">ร่วมสร้างฐานของโค้ดกับเรา</a>ที่ GitHub</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="107" sourceLocale="th">WEB:15330824</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ฉันจะอัปเดตซอฟต์แวร์ของเซิร์ฟเวอร์ Outline ได้อย่างไร</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>เซิร์ฟเวอร์ Outline จะอัปเดตระบบรักษาความปลอดภัยเวอร์ชันล่าสุดโดยอัตโนมัติเพื่อให้คุณได้ใช้งานเทคโนโลยี Outline ล่าสุดเสมอ กระบวนการอัปเดตอัตโนมัตินี้เปิดใช้งานโดยใช้ <a href="https://github.com/v2tec/watchtower" rel="noopener" target="_blank"><u>Watchtower</u></a> ซึ่งเป็นไลบรารีโอเพนซอร์สที่ตรวจสอบและอัปเดตไฟล์อิมเมจใน Docker ที่มีซอฟต์แวร์ Outline เป็นประจำ</p>
+&nbsp;
+
+<p>นอกจากนี้เมื่อติดตั้ง Outline โดยใช้ Outline Manager เราจะตั้งค่างาน Cron ให้อัปเกรดซอฟต์แวร์ในเซิร์ฟเวอร์โดยอัตโนมัติโดยใช้<a href="https://wiki.debian.org/UnattendedUpgrades" rel="noopener" target="_blank"><u>การอัปเกรดโดยอัตโนมัติ</u></a> (Ubuntu) และรีบูตเมื่อจำเป็น โปรดทราบว่ากระบวนการนี้จะไม่เกิดขึ้นใน "โหมดขั้นสูง" เพื่อรักษาการกำหนดค่าที่มีอยู่ไว้ โดยถือว่ามีการใช้โฮสต์สำหรับจุดประสงค์อื่นนอกเหนือจากการเรียกใช้ Outline</p>
+<br />
+&nbsp;</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="102" sourceLocale="th">WEB:15330825</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ฉันจะดาวน์โหลด Outline Manager ได้อย่างไร หากลิงก์ดาวน์โหลดใช้งานไม่ได้</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">ใช้<a href="https://getoutline.org/get-started/#step-1" target="_blank">ลิงก์นี้</a>หรือ<a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">ลิงก์นี้</a>เพื่อดาวน์โหลดแอปพลิเคชันดังกล่าวสำหรับระบบปฏิบัติการต่างๆ&nbsp;โดยตรง</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="129" sourceLocale="th">WEB:15330920</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">คำศัพท์</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p><strong>VPN คืออะไร</strong></p>
+
+<p>เครือข่ายส่วนตัวเสมือน (VPN) คือการเชื่อมต่อส่วนตัวระหว่างอุปกรณ์ของคุณและเซิร์ฟเวอร์โฮสต์ ซึ่งจะซ่อนการรับส่งข้อมูลของคุณจากผู้ให้บริการอินเตอร์เน็ตเมื่อคุณใช้ VPN</p>
+
+<p>คุณอาจเลือกใช้ VPN ในสถานการณ์ต่อไปนี้</p>
+
+<ul>
+  <li aria-level="1">ปกป้องข้อมูลของคุณเมื่อใช้เครือข่าย Wi-Fi สาธารณะ</li>
+  <li aria-level="1">เก็บข้อมูลการท่องเว็บของคุณให้เป็นส่วนตัวจากผู้ให้บริการอินเทอร์เน็ตและหน่วยงานรัฐบาล</li>
+  <li aria-level="1">เข้าถึงเนื้อหาจากแหล่งที่มาต่างๆ ทั่วโลกโดยไม่ถูกปิดกั้น</li>
+</ul>
+
+<p><strong>Outline แตกต่างจาก VPN แบบดั้งเดิมอย่างไร</strong></p>
+
+<p>ผู้ให้บริการอินเทอร์เน็ตสามารถตรวจจับและบล็อก VPN แบบดั้งเดิมได้ง่ายโดยการจดจำโปรโตคอลการรักษาความปลอดภัยทั่วไปและ/หรือรูปแบบปริมาณการรับส่งข้อมูล แต่ Outline มีความยืดหยุ่นมากกว่า VPN แบบดั้งเดิม เนื่องจากสร้างด้วยโปรโตคอลที่ออกแบบให้ตรวจพบได้ยาก ดังนั้นจึงบล็อกได้ยากขึ้น อีกทั้ง Outline ยังช่วยป้องกันการเซ็นเซอร์ขั้นสูงได้หลายรูปแบบ เช่น การบล็อกบนเครือข่าย หรือการบล็อก IP</p>
+
+<p><strong>เซิร์ฟเวอร์ Outline คืออะไร</strong></p>
+
+<p>เซิร์ฟเวอร์ Outline จะทำหน้าที่บริหารจัดการ VPN ซึ่งผู้ใช้ที่ได้รับอนุญาตจะเชื่อมต่อได้</p>
+
+<p>&nbsp;หากคุณต้องการสร้างเครือข่ายใหม่ คุณสามารถใช้เซิร์ฟเวอร์ที่ปลอดภัยของคุณ (หากมี) เป็นเซิร์ฟเวอร์ Outline ได้ หรือจะใช้ผู้ให้บริการระบบคลาวด์ก็ได้ เช่น</p>
+
+<ul>
+  <li aria-level="1">DigitalOcean</li>
+  <li aria-level="1">Google Cloud Platform (GCP)</li>
+  <li aria-level="1">Amazon Web Services (AWS)</li>
+</ul>
+
+<p>คุณจะตั้งค่าเซิร์ฟเวอร์ของคุณได้ใน Outline Manager</p>
+
+<p><strong><a id="servicemanager" name="servicemanager"></a>ผู้ดูแลบริการคือใคร</strong></p>
+
+<p>ผู้ดูแลบริการคือบุคคลที่รับผิดชอบการตั้งค่าเซิร์ฟเวอร์ Outline และแชร์คีย์การเข้าถึงกับผู้ใช้ ซึ่งทั่วไปแล้วผู้ดูแลบริการมีหน้าที่ดูแลเรื่องค่าใช้จ่ายในการใช้งานเซิร์ฟเวอร์</p>
+
+<p><strong><a id="accesskey" name="accesskey"></a>คีย์การเข้าถึงคืออะไร</strong></p>
+
+<p>คีย์การเข้าถึงมีไว้เพื่อใช้เข้าถึงเซิร์ฟเวอร์ Outline ที่มีอยู่และเชื่อมต่อกับ VPN <a href="#servicemanager" rel="noopener"><u>ผู้ดูแลบริการ</u></a>จะมอบคีย์การเข้าถึงให้กับคุณ หรือคุณจะ<a href="/outline-faq/answer/15331530" rel="noopener" target="_blank"><u>ตั้งค่าเซิร์ฟเวอร์</u><u> Outline</u></a>ด้วยตนเองก็ได้</p>
+
+<p>ต่อไปนี้คือตัวอย่างลักษณะของคีย์การเข้าถึง (ซึ่งเป็นตัวอย่างเท่านั้น ใช้งานจริงไม่ได้)</p>
+
+<p>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1</p>
+
+<p><strong>Outline Manager คืออะไร</strong></p>
+
+<p>Outline Manager คือแอปพลิเคชันบนเดสก์ท็อปที่ช่วยให้ผู้ดูแลบริการตั้งค่าเซิร์ฟเวอร์ Outline, สร้าง<a href="#accesskey" rel="noopener"><u>คีย์การเข้าถึง</u></a> และตั้งค่าขีดจำกัดการใช้ข้อมูลของแต่ละคีย์ คุณสามารถดาวน์โหลด Outline Manager เวอร์ชันล่าสุดได้<a href="https://getoutline.org/get-started/#step-1" rel="noopener" target="_blank"><u>ที่นี่</u></a> หรือ<a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" rel="noopener" target="_blank"><u>ที่นี่</u></a></p>
+
+<p><strong>ไคลเอ็นต์ Outline คืออะไร</strong></p>
+
+<p>ไคลเอ็นต์ Outline คือแอปพลิเคชันที่มีให้บริการในเดสก์ท็อปและอุปกรณ์เคลื่อนที่ ซึ่งจะช่วยให้คุณเชื่อมต่อกับเซิร์ฟเวอร์ Outline และเข้าถึง VPN โดยใช้คีย์การเข้าถึงได้ คุณสามารถดาวน์โหลดไคลเอ็นต์ Outline เวอร์ชันล่าสุดได้<a href="https://getoutline.org/get-started/#step-3" rel="noopener" target="_blank"><u>ที่นี่</u></a> หรือ<a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" rel="noopener" target="_blank"><u>ที่นี่</u></a></p>
+
+<p><strong>ขีดจำกัดของข้อมูลคืออะไร</strong></p>
+
+<p>Outline Manager ช่วยให้ผู้ดูแลบริการสามารถตั้งค่าขีดจำกัดของข้อมูลช่วงเวลาล่าสุด 30 วันในคีย์การเข้าถึง เพื่อป้องกันการใช้งานมากเกินไปและช่วยให้คาดการณ์ค่าใช้จ่ายได้ โดยผู้ดูแลบริการสามารถตั้งขีดจำกัดเริ่มต้นที่จะมีผลกับทุกคีย์ หรือจะตั้งขีดจำกัดที่แตกต่างกันให้กับคีย์ใดก็ได้เพื่อลบล้างขีดจำกัดเริ่มต้น เมื่อตั้งค่าขีดจำกัดแล้ว ขีดจำกัดจะมีผลทันทีและจะมีการบังคับใช้ทุก 1 ชั่วโมง</p>
+
+<p>หากผู้ดูแลบริการเลือกแชร์เมตริกกับ Jigsaw ผู้ดูแลบริการควรตรวจสอบ<a href="/outline-faq/answer/15331222" rel="noopener" target="_blank"><u>นโยบายการเก็บรวบรวมข้อมูล</u></a>เพื่อดูรายละเอียดว่าจะมีการรายงานการใช้ขีดจำกัดของข้อมูลอย่างไร</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="110" sourceLocale="th">WEB:15331121</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ทีมให้การสนับสนุนทาง "getoutline.me" และช่องทาง Telegram "@OutlineVpnOfficial" หรือไม่</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">ทีม Outline ได้รับคำถามจำนวนมากเกี่ยวกับเว็บไซต์ "<a href="http://getoutline.me/" target="_blank">getoutline.me</a>" และช่องทาง Telegram "@OutlineVpnOfficial" ที่เกี่ยวข้องกัน และขอแจ้งว่า บริการเหล่านี้ไม่มีความเกี่ยวข้องใดๆ กับทีม Outline เราจึงไม่สามารถให้ความช่วยเหลือผู้ใช้ที่มีปัญหากับคีย์การเข้าถึงจากบริการเหล่านี้ได้</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="th">WEB:15331122</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE SUBTEXT</strong></div>
+<div class="gkms article subtext"><pre class="gkms-non-html">Outline พร้อมให้บริการในภาษาดังต่อไปนี้</pre></div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ภาษาที่พร้อมให้บริการ</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><ul>
+  <li aria-level="1">อาฟรีกานส์</li>
+  <li aria-level="1">แอลเบเนีย</li>
+  <li aria-level="1">อัมฮาริก</li>
+  <li aria-level="1">อาหรับ</li>
+  <li aria-level="1">อาร์เมเนีย</li>
+  <li aria-level="1">อาเซอร์ไบจาน</li>
+  <li aria-level="1">เบงกาลี</li>
+  <li aria-level="1">บอสเนีย</li>
+  <li aria-level="1">บัลแกเรีย</li>
+  <li aria-level="1">พม่า</li>
+  <li aria-level="1">คาตาลัน</li>
+  <li aria-level="1">จีน (ประยุกต์)</li>
+  <li aria-level="1">จีน (ดั้งเดิม)</li>
+  <li aria-level="1">โครเอเชีย</li>
+  <li aria-level="1">เช็ก</li>
+  <li aria-level="1">เดนมาร์ก</li>
+  <li aria-level="1">ดัตช์</li>
+  <li aria-level="1">อังกฤษ (อเมริกัน)</li>
+  <li aria-level="1">อังกฤษ (สหราชอาณาจักร)</li>
+  <li aria-level="1">เอสโตเนีย</li>
+  <li aria-level="1">ฟิลิปปินส์</li>
+  <li aria-level="1">ฟินแลนด์</li>
+  <li aria-level="1">ฝรั่งเศส</li>
+  <li aria-level="1">จอร์เจีย</li>
+  <li aria-level="1">เยอรมัน</li>
+  <li aria-level="1">กรีก</li>
+  <li aria-level="1">ฮีบรู</li>
+  <li aria-level="1">ฮินดี</li>
+  <li aria-level="1">ฮังการี</li>
+  <li aria-level="1">ไอซ์แลนด์</li>
+  <li aria-level="1">อินโดนีเซีย</li>
+  <li aria-level="1">อิตาลี</li>
+  <li aria-level="1">ญี่ปุ่น</li>
+  <li aria-level="1">คาซัค</li>
+  <li aria-level="1">เขมร</li>
+  <li aria-level="1">เกาหลี</li>
+  <li aria-level="1">ลาว</li>
+  <li aria-level="1">ลัตเวีย</li>
+  <li aria-level="1">ลิทัวเนีย</li>
+  <li aria-level="1">มาซิโดเนีย</li>
+  <li aria-level="1">มาเลย์</li>
+  <li aria-level="1">มราฐี</li>
+  <li aria-level="1">มองโกเลีย</li>
+  <li aria-level="1">เนปาล</li>
+  <li aria-level="1">นอร์เวย์</li>
+  <li aria-level="1">เปอร์เซีย</li>
+  <li aria-level="1">โปแลนด์</li>
+  <li aria-level="1">โปรตุเกส (บราซิล)</li>
+  <li aria-level="1">โปรตุเกส (ยุโรป)</li>
+  <li aria-level="1">โรมาเนีย</li>
+  <li aria-level="1">รัสเซีย</li>
+  <li aria-level="1">เซอร์เบีย (ซิริลลิก)</li>
+  <li aria-level="1">เซอร์เบีย (ละติน)</li>
+  <li aria-level="1">สิงหล</li>
+  <li aria-level="1">สโลวาเกีย</li>
+  <li aria-level="1">สโลวีเนีย</li>
+  <li aria-level="1">สเปน (ยุโรป)</li>
+  <li aria-level="1">สเปน (ลาตินอเมริกา)</li>
+  <li aria-level="1">สวาฮีลี</li>
+  <li aria-level="1">สวีเดน</li>
+  <li aria-level="1">ทมิฬ</li>
+  <li aria-level="1">ไทย</li>
+  <li aria-level="1">ตุรกี</li>
+  <li aria-level="1">ยูเครน</li>
+  <li aria-level="1">อูรดู</li>
+  <li aria-level="1">เวียดนาม</li>
+</ul>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="110" sourceLocale="th">WEB:15331125</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ทำไมฉันถึงติดตั้งไคลเอ็นต์ Outline บน Windows ไม่ได้</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>คุณอาจเห็นความแสดงข้อผิดพลาดนี้ "ขออภัย ดูเหมือนว่า Outline ไม่ได้ติดตั้งอย่างถูกต้อง โปรดลองติดตั้งอีกครั้ง หากไม่ได้ผล โปรด<a href="https://support.getoutline.org/s/contactsupport" rel="noopener" target="_blank"><u>ส่งความคิดเห็น</u></a>"</p>
+&nbsp;
+
+<p>หากคุณใช้ Outline ใน Windows บางครั้งคุณอาจพบข้อผิดพลาดที่ไม่คาดคิด ในกรณีส่วนใหญ่ คุณจะต้องลบอะแดปเตอร์ (ไดรเวอร์) Outline TAP และควรติดตั้ง Outline อีกครั้ง</p>
+
+<p>&nbsp;</p>
+
+<p>ขั้นตอนอาจแตกต่างกันไปตามเวอร์ชันของระบบปฏิบัติการ Windows แต่ด้านล่างนี้เป็นขั้นตอนทั่วไปในการถอนการติดตั้งอะแดปเตอร์ TAP และ Outline แล้วติดตั้ง Outline อีกครั้ง</p>
+&nbsp;
+
+<ol>
+  <li aria-level="1">ถอนการติดตั้งอะแดปเตอร์ TAP สำหรับไคลเอ็นต์ Outline
+    <ol>
+      <li aria-level="2">ไปที่<strong>โปรแกรมจัดการอุปกรณ์</strong> จากนั้นไปที่<strong>อะแดปเตอร์เครือข่าย</strong></li>
+      <li aria-level="2">ค้นหาไฟล์ <strong>TAP-Windows Adapter V9</strong> หรืออะแดปเตอร์ TAP ที่เชื่อมโยงกับ Outline</li>
+      <li aria-level="2">ถอนการติดตั้งหรือลบอะแดปเตอร์นี้ โปรดทราบว่าการดำเนินการนี้อาจส่งผลต่อแอป VPN อื่นๆ ที่คุณติดตั้งไว้</li>
+    </ol>
+  </li>
+  <li aria-level="1">ถอนการติดตั้งไคลเอ็นต์ Outline
+    <ol>
+      <li aria-level="2">ไปที่<strong>โปรแกรมและฟีเจอร์</strong> จากนั้นไปที่<strong>ถอนการติดตั้งโปรแกรม</strong></li>
+      <li aria-level="2">ค้นหาแอปไคลเอ็นต์ Outline แล้วถอนการติดตั้งแอปดังกล่าว</li>
+      <li aria-level="2"><a href="https://getoutline.org/get-started/#step-3" rel="noopener" target="_blank"><u>ดาวน์โหลดไคลเอ็นต์</u><u> Outline </u><u>เวอร์ชันล่าสุด</u></a> แล้วติดตั้งแอปในอุปกรณ์ Windows อีกครั้ง ซึ่งการติดตั้งดังกล่าวจะทำให้ระบบติดตั้งอะแดปเตอร์ TAP ใหม่โดยอัตโนมัติ</li>
+    </ol>
+  </li>
+</ol>
+
+<p>&nbsp;</p>
+หากยังคงพบปัญหา โปรด<a href="https://support.getoutline.org/s/contactsupport" rel="noopener" target="_blank"><u>ติดต่อทีมสนับสนุน</u></a></div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="109" sourceLocale="th">WEB:15331126</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ทำไมฉันถึงเชื่อมต่อกับบริการ Outline ไม่ได้</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>เหตุผลบางประการที่คุณไม่สามารถเชื่อมต่อกับบริการ Outline ได้มีดังนี้&nbsp;</p>
+
+<ul>
+  <li aria-level="1">
+    <p><strong>อุปกรณ์ของคุณ</strong><a href="#internetissues" rel="noopener"><strong><u>ถูกตัดการเชื่อมต่อจากอินเทอร์เน็ต</u></strong></a><strong> </strong>บางครั้งอุปกรณ์ของคุณอาจพบปัญหาการเชื่อมต่อเครือข่ายสะดุดและอาจใช้เวลาสักครู่ในการอัปเดตไอคอนเครือข่าย นอกจากนี้อาจเป็นไปได้ว่าอุปกรณ์ของคุณเชื่อมต่อกับเครือข่ายในพื้นที่อยู่ แต่อินเทอร์เน็ตไม่ทำงาน</p>
+  </li>
+  <li aria-level="1">
+    <p><a href="#firewallissues" rel="noopener"><strong><u>ไฟร์วอลล์เครือข่ายของคุณบล็อกการเข้าถึง</u></strong></a><strong>เซิร์ฟเวอร์</strong><strong> Outline </strong>กรณีนี้พบได้บ่อย หากคุณใช้เครือข่ายสาธารณะ เช่น เครือข่ายของโรงเรียน เครือข่ายของที่ทำงาน หรือเครือข่ายไร้สายที่ใช้ได้ฟรี</p>
+  </li>
+  <li aria-level="1">
+    <p><strong>อุปกรณ์ของคุณ</strong><a href="#softwareissues" rel="noopener"><strong><u>มีไฟร์วอลล์หรือซอฟต์แวร์ป้องกันไวรัส</u></strong></a><strong>ซึ่งบล็อกการเข้าถึงเซิร์ฟเวอร์</strong><strong> Outline</strong></p>
+  </li>
+  <li aria-level="1">
+    <p><strong>คุณอาจต้องเปลี่ยน</strong><a href="#devsettings" rel="noopener"><strong><u>การตั้งค่าโทรศัพท์ของคุณ</u></strong></a></p>
+  </li>
+  <li aria-level="1">
+    <p><strong>ผู้ดูแลบริการอาจ</strong><a href="#serverissues" rel="noopener"><strong><u>ทำลายเซิร์ฟเวอร์ไปแล้วหรือ</u></strong><strong><u> ISP </u></strong><strong><u>อาจบล็อกคำขอของคุณ</u></strong></a></p>
+  </li>
+</ul>
+&nbsp;
+
+<p><a id="internetissues" name="internetissues"><u>ปัญหาการเชื่อมต่ออินเทอร์เน็ต</u></a></p>
+
+<p><strong>วิธีทดสอบ</strong></p>
+
+<p>ปิด Outline และดูว่าการเชื่อมต่ออินเทอร์เน็ตกลับคืนมาดังเดิมหรือไม่</p>
+
+<ul>
+  <li aria-level="1">
+    <p>หากอินเทอร์เน็ตกลับคืนมา ให้ดูตัวเลือกการแก้ปัญหาเพิ่มเติมด้านล่าง</p>
+  </li>
+  <li aria-level="1">
+    <p>หากอินเทอร์เน็ตไม่กลับคืนมา ให้รอสักครู่เพื่อดูว่าการตั้งค่าการเชื่อมต่ออัปเดตเองหรือไม่</p>
+  </li>
+</ul>
+
+<p><strong>วิธีแก้ไข</strong></p>
+
+<p>วิธีทำให้อุปกรณ์ของคุณออนไลน์อีกครั้งมีดังนี้</p>
+
+<ol>
+  <li aria-level="1">ตรวจสอบอุปกรณ์เครื่องอื่นเพื่อดูว่าเชื่อมต่อกับเครือข่ายเดียวกันได้หรือไม่ หากอุปกรณ์เครื่องอื่นก็ไม่ออนไลน์ แสดงว่าเครือข่ายอาจล่มอยู่และคุณจะต้องรอให้เครือข่ายกลับมาทำงานหรือแก้ไขปัญหาเครือข่าย</li>
+  <li aria-level="1">หากอุปกรณ์เครื่องอื่นใช้เครือข่ายเดียวกันได้ ให้ลองใช้วิธีต่อไปนี้อย่างน้อย 1 วิธีเพื่อทำให้อุปกรณ์กลับมาออนไลน์อีกครั้ง
+    <ol>
+      <li aria-level="2">เปิดโหมดบนเครื่องบินในอุปกรณ์ (อุปกรณ์เคลื่อนที่)</li>
+      <li aria-level="2">รีสตาร์ทอุปกรณ์</li>
+      <li aria-level="2">ปิดอุปกรณ์แล้วรอ 2 นาที จากนั้นเปิดอุปกรณ์อีกครั้ง</li>
+    </ol>
+  </li>
+</ol>
+
+<p><a id="firewallissues" name="firewallissues"><u>ปัญหาไฟร์วอลล์เครือข่าย</u></a></p>
+
+<p><strong>วิธีทดสอบ</strong></p>
+
+<ol>
+  <li aria-level="1">ยกเลิกการเชื่อมต่อ Wi-Fi หรือเครือข่ายแบบมีสายที่กำลังใช้</li>
+  <li aria-level="1">เชื่อมต่อกับเครือข่ายอื่น เช่น เครือข่ายมือถือ</li>
+  <li aria-level="1">ลองเชื่อมต่อกับเครือข่าย Outline อีกครั้ง</li>
+</ol>
+
+<p>หากคุณเชื่อมต่อได้ขณะใช้เครือข่ายอื่น แสดงว่าปัญหาเกิดขึ้นทางฝั่งของคุณ</p>
+
+<p><strong>วิธีแก้ไข</strong></p>
+
+<p>ให้ติดต่อผู้ดูแลบริการและขอสิทธิ์เข้าถึงเซิร์ฟเวอร์ Outline หรือใช้เครือข่ายอื่นแทน</p>
+
+<p><a id="softwareissues" name="softwareissues"><u>ปัญหาไฟร์วอลล์หรือโปรแกรมป้องกันไวรัส</u></a></p>
+
+<p><strong>วิธีทดสอบ</strong></p>
+
+<p>ลองใช้อุปกรณ์อื่นเชื่อมต่อกับ Outline&nbsp;</p>
+
+<p>หมายเหตุ: โปรดทราบว่าคุณต้องมีคีย์การเข้าถึงและแอป Outline จึงจะใช้ Outline ในอุปกรณ์อื่นได้</p>
+
+<p><strong>วิธีแก้ไข</strong></p>
+
+<p>ตรวจสอบการตั้งค่าไฟร์วอลล์หรือซอฟต์แวร์ป้องกันไวรัสเพื่อให้แน่ใจว่าการตั้งค่านั้นอนุญาตให้รับส่งข้อมูลผ่าน VPN และ Outline ได้</p>
+
+<p><a id="devsettings" name="devsettings"><u>การตั้งค่าอุปกรณ์</u></a></p>
+
+<p><strong>วิธีตรวจสอบ</strong></p>
+
+<p>สำหรับ Android ให้ทำดังนี้</p>
+
+<ol>
+  <li aria-level="1">
+    <p>เปิดแอปการตั้งค่า</p>
+  </li>
+  <li aria-level="1">
+    <p>มองหา<strong>การตั้งค่า</strong><strong> VPN</strong> ในอุปกรณ์ของคุณ (การตั้งค่า VPN จะแสดงแอป VPN ทั้งหมดที่เข้าถึงโทรศัพท์ได้ในขณะนี้)</p>
+  </li>
+  <li aria-level="1">
+    <p>หากไม่เห็น Outline ในการตั้งค่า VPN ให้ถอนการติดตั้ง Outline และติดตั้งอีกครั้ง หลังจากติดตั้งแล้ว Outline จะได้รับสิทธิ์เข้าถึงจากอุปกรณ์โดยอัตโนมัติ</p>
+  </li>
+</ol>
+
+<p>โปรดตรวจสอบว่าคุณไม่ได้ติดตั้งแอปพลิเคชันการซ้อนทับบนหน้าจอในอุปกรณ์ Android เพราะอาจทำให้ระบบส่งหน้าต่างสิทธิ์ของ Outline ไปยังเบื้องหลังและไม่แสดงที่เบื้องหน้าของหน้าจอ</p>
+
+<p>ไปที่ "การตั้งค่า &gt; แอป &gt; สิทธิ์เข้าถึงพิเศษของแอป" บนอุปกรณ์ Android ของคุณ จากนั้นแตะ "แสดงทับแอปอื่นๆ" โดยคุณสามารถนำสิทธิ์การเข้าถึงออกสำหรับแอปที่อนุญาตการดำเนินการดังกล่าวได้&nbsp;</p>
+
+<p>สำหรับ iOS โปรดอ่าน<a href="https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web" rel="noopener" target="_blank"><u>บทความสนับสนุนนี้</u></a></p>
+
+<p><a id="serverissues" name="serverissues"><u>ปัญหาเซิร์ฟเวอร์</u></a></p>
+
+<p><strong>วิธีทดสอบ</strong></p>
+
+<p>หากคุณเข้าถึงเซิร์ฟเวอร์ได้มากกว่า 1 เครื่อง ให้ลองเชื่อมต่อกับเซิร์ฟเวอร์อื่น&nbsp;</p>
+
+<p><strong>วิธีแก้ไข</strong></p>
+
+<p>ติดต่อผู้ดูแลบริการเพื่อดูว่าเซิร์ฟเวอร์ถูกทำลายไปหรือยัง หากถูกทำลายแล้ว ให้ขอ<a href="/outline-faq/answer/15330920?sjid=965105971439608296-NA" rel="noopener"><u>คีย์การเข้าถึง</u></a>ไปยังเซิร์ฟเวอร์อื่น</p>
+
+<p>หากคุณเป็นคนตั้งค่าเซิร์ฟเวอร์ ให้ลองเชื่อมต่อกับเซิร์ฟเวอร์ผ่าน Outline Manager หรือใช้วิธีอื่น เช่น <a href="https://en.wikipedia.org/wiki/Secure_Shell"><u>SSH</u></a> หากไม่ได้ผล ให้ลองตรวจสอบคอนโซลของผู้ให้บริการคลาวด์ (หากมี) เพื่อดูว่าเซิร์ฟเวอร์ยังออนไลน์อยู่หรือไม่</p>
+<br />
+&nbsp;</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="th">WEB:15331127</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ฉันจะดาวน์โหลดแอปไคลเอ็นต์ได้อย่างไร หากลิงก์ดาวน์โหลดใช้งานไม่ได้</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">ใช้<a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" rel="noopener" target="_blank">ลิงก์นี้</a>เพื่อดาวน์โหลดแอปพลิเคชันสำหรับระบบปฏิบัติการต่างๆ&nbsp;โดยตรง&nbsp;</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="131" sourceLocale="th">WEB:15331222</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">การรวบรวมข้อมูลและสารสนเทศ</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:271;a">Outline จะไม่เก็บข้อมูลส่วนบุคคล เว้นแต่คุณจะเลือกให้ข้อมูลเอง และจะไม่เก็บข้อมูลเว็บไซต์ที่คุณเข้าชม รวมถึงสิ่งที่คุณสื่อสารหรือผู้ที่คุณสื่อสารด้วย<br />
+  <br />
+  หากคุณสร้างบัญชีหรือเข้าสู่ระบบบัญชีที่มีอยู่กับผู้ให้บริการคลาวด์บุคคลที่สามผ่าน Outline Manager เราจะไม่เก็บข้อมูลใดๆ ที่คุณมอบให้ผู้ให้บริการคลาวด์บุคคลที่สาม ไม่ว่าจะเป็นอีเมล ชื่อ ข้อมูลสำหรับการเรียกเก็บเงิน หรือรายละเอียดการชำระเงิน<br />
+  <br />
+  <strong><strong>ข้อมูลที่เราได้รับโดยอัตโนมัติ</strong></strong><br />
+  <br />
+  เราจะเก็บข้อมูล 2 ประเภทโดยอัตโนมัติ ดังนี้<br />
+  1. IP ของเซิร์ฟเวอร์<br />
+  เมื่อเซิร์ฟเวอร์ Outline มีการอัปเดตการปรับปรุงระบบรักษาความปลอดภัยและฟีเจอร์เวอร์ชันล่าสุดโดยอัตโนมัติ <a href="http://quay.io/" target="_blank">Quay.io</a>&nbsp;จะเก็บข้อมูล IP ของเซิร์ฟเวอร์ Outline และทำให้เราเข้าถึงข้อมูล IP ได้ ทั้งนี้ IP ของเซิร์ฟเวอร์อาจระบุผู้ให้บริการเซิร์ฟเวอร์บนระบบคลาวด์และเมืองที่ตั้งของเซิร์ฟเวอร์ Outline ได้ แต่จะไม่ให้ข้อมูลเกี่ยวกับบุคคลที่กำลังใช้งานหรือเข้าถึงเซิร์ฟเวอร์นั้น<br />
+  <br />
+  2. ข้อมูลทางเทคนิคที่ระบุตัวบุคคลไม่ได้<br />
+  หาก Outline เกิดเหตุขัดข้องหรือเกิดข้อผิดพลาดร้ายแรง หรือหากคุณส่งความคิดเห็นด้วยตนเองผ่านแอป Outline ระบบจะรายงานข้อมูลด้านล่างนี้ เราจะใช้ข้อมูลนี้เพื่อช่วยระบุและแก้ไขปัญหาด้านเสถียรภาพหรือประสิทธิภาพเท่านั้น</p>
+
+<ul data-aura-rendered-by="12:271;a">
+  <li>ประเทศ</li>
+  <li>ภาษา</li>
+  <li>วันที่และเวลาที่เกิดเหตุขัดข้อง/ข้อผิดพลาดและเหตุการณ์ก่อนหน้านี้ 100 รายการ เช่น เหตุการณ์ที่ผู้ใช้เปิดส่วน "เกี่ยวกับ"</li>
+  <li>ข้อความแสดงข้อผิดพลาดที่เก็บรวบรวมเป็นสถิติ</li>
+  <li>ชื่อและเวอร์ชันของระบบปฏิบัติการ</li>
+  <li>รุ่นโทรศัพท์ (หากทราบ)</li>
+  <li>เวลาเริ่มต้นใช้แอป</li>
+  <li>เบราว์เซอร์</li>
+  <li>สถาปัตยกรรมระบบ</li>
+  <li>เวอร์ชันและหมายเลขบิลด์ของ Outline</li>
+</ul>
+
+<p data-aura-rendered-by="12:271;a"><br />
+  ระบบจะโอนข้อมูลนี้ด้วย HTTPS ไปยัง Sentry (<a href="http://sentry.io/" target="_blank">sentry.io</a>) ซึ่งเป็นผู้ให้บริการบุคคลที่สามสำหรับการติดตามข้อผิดพลาดแบบโอเพนซอร์ส Sentry จะใช้เทคโนโลยีและบริการระดับมาตรฐานอุตสาหกรรมที่หลากหลายเพื่อปกป้องข้อมูลของคุณจากการเข้าถึง การเปิดเผย และการใช้โดยไม่ได้รับอนุญาต รวมถึงช่วยป้องกันไม่ให้สูญหายอีกด้วย หากมีข้อสงสัยเกี่ยวกับนโยบายของ Sentry โปรดไปที่&nbsp;<a href="https://sentry.io/security/" target="_blank">https://sentry.io/security/</a>&nbsp;และ&nbsp;<a href="https://sentry.io/privacy/" target="_blank">https://sentry.io/privacy/</a> หรือติดต่อ&nbsp;<a href="mailto:security@sentry.io" target="_blank">security@sentry.io</a> ข้อมูล Outline ทั้งหมดที่จัดเก็บโดย Sentry จะจำกัดให้เฉพาะสมาชิกทีม Outline เข้าถึงได้<br />
+  <br />
+  <strong><strong>ข้อมูลที่เราจะเก็บเฉพาะเมื่อมีการอนุญาต</strong></strong><br />
+  <br />
+  Outline จะรายงานข้อมูลต่อไปนี้ให้กับทีม Outline เมื่อมีการอนุญาต<br />
+  1. เมตริกการใช้งาน<br />
+  เซิร์ฟเวอร์ Outline แต่ละเซิร์ฟเวอร์จะเก็บรวบรวมจำนวนไบต์ที่ถ่ายโอน ระยะเวลาที่ผู้ใช้เชื่อมต่อกับเซิร์ฟเวอร์ ประเทศ และระบบเครือข่ายอัตโนมัติของข้อมูลเข้าสู่ระบบที่ใช้ โดยจะเก็บข้อมูลย้อนหลังไป 1 ชั่วโมงและเก็บตามคีย์การเข้าถึงแต่ละรายการโดยอัตโนมัติ รวมไปถึงข้อมูลว่ามีฟีเจอร์ใดที่เปิดหรือปิดใช้อยู่บ้าง ทั้งนี้ระบบจะไม่บันทึกเนื้อหาการสื่อสารหรือข้อมูลเมตาที่ระบุตัวบุคคลได้ (เช่น ข้อมูลเข้าสู่ระบบ อีเมล รหัสอุปกรณ์ ฯลฯ) เมตริกทั้งหมดจะเชื่อมโยงกับรหัสเซิร์ฟเวอร์ ดูวิธีการเปลี่ยนรหัสเซิร์ฟเวอร์ได้<a href="/outline-faq/answer/15548974" rel="noopener" target="_blank">ที่นี่</a><br />
+  <br />
+  เซิร์ฟเวอร์ Outline จะไม่แชร์เมตริกเหล่านี้กับทีม Outline โดยค่าเริ่มต้น หากผู้ดูแลระบบเซิร์ฟเวอร์เลือกแชร์เมตริกการใช้งานอย่างเปิดเผย ระบบจะส่งข้อมูลเหล่านี้ไปให้ทีม Outline ทุกๆ ชั่วโมงด้วยวิธีที่ปลอดภัย หลังจาก 60 วัน เมตริกการใช้งานจะได้รับการรวบรวมในระดับประเทศ ผู้ดูแลระบบเซิร์ฟเวอร์จะเปลี่ยนการกำหนดค่าการแชร์เมตริกการใช้งานได้ทุกเมื่อโดยไปที่เมนู "การตั้งค่า" ใน Outline Manager<br />
+  <br />
+  ขอขอบคุณที่แชร์เมตริกที่ไม่ระบุตัวตนเกี่ยวกับการใช้เซิร์ฟเวอร์ให้เรา เราจะใช้ข้อมูลดังกล่าวเพื่อวัดแนวโน้มการใช้งานและปรับปรุงผลิตภัณฑ์<br />
+  <br />
+  ตัวอย่างเช่น หากผู้ดูแลระบบเซิร์ฟเวอร์เลือกแชร์เมตริกการใช้งานให้เรา เราอาจได้รับข้อมูลที่ระบุว่ามีการใช้เซิร์ฟเวอร์รหัส 12345 เป็นเวลา 3 ชั่วโมงเมื่อวาน โดยได้โอนข้อมูลรวม 500 เมกะไบต์ มีการใช้คีย์ 3 คีย์จากในสหรัฐอเมริกาและแคนาดา และมีการเปิดฟีเจอร์จำกัดข้อมูล<br />
+  <br />
+  2. ความคิดเห็นและอีเมลหากคุณส่งความคิดเห็น<br />
+  แอป Outline Manager และ Outline ช่วยให้คุณส่งความคิดเห็นถึงทีมได้ เราไม่แนะนำให้ใส่ข้อมูลส่วนบุคคลที่ระบุตัวบุคคลนั้นได้ แต่คุณจะเลือกช่องทางอีเมลได้หากต้องการรับการตอบกลับจากทีม นอกจากนี้เรายังรวบรวมข้อมูลพื้นฐานบางส่วนโดยอัตโนมัติเพื่อให้เข้าใจความคิดเห็นของคุณ โปรดดูข้อมูลที่เรารวบรวมที่ข้อ 2 ข้างต้นในหัวข้อ "ข้อมูลที่เราได้รับโดยอัตโนมัติ"&nbsp;ดูข้อมูลเพิ่มเติมเกี่ยวกับหลักปฏิบัติเกี่ยวกับความปลอดภัยและความเป็นส่วนตัวของ Outline ได้<a href="/outline-faq/answer/14919822" rel="noopener" target="_blank">ที่นี่</a><br />
+  <br />
+  หากคุณกำลังใช้แอป Outline รุ่นเบต้าใน Android เราอาจใช้บริการ&nbsp;<a href="https://firebase.google.com/" target="_blank">Firebase</a>&nbsp;ของ Google เพื่อเก็บข้อมูลการแก้ไขข้อบกพร่อง ซึ่งอาจช่วยให้เราตรวจพบปัญหาและปรับปรุง Outline ได้ ดูข้อมูลเพิ่มเติมเกี่ยวกับนโยบายด้านความเป็นส่วนตัวและความปลอดภัยของ Firebase ได้ที่เว็บไซต์&nbsp;<a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a> หากไม่ต้องการให้ Outline ส่งข้อมูลนี้ผ่านทาง Firebase โปรดใช้แอปเวอร์ชันที่ใช้งานจริง</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="88" sourceLocale="th">WEB:15331223</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE SUBTEXT</strong></div>
+<div class="gkms article subtext"><pre class="gkms-non-html">หากคุณได้รับข้อความแสดงข้อผิดพลาดต่อไปนี้</pre></div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">หากคีย์การเข้าถึงไม่สามารถใช้งานได้ ฉันควรทำอย่างไร</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>"ดูเหมือนว่าคีย์การเข้าถึงของคุณไม่ถูกต้อง โปรดติดต่อผู้ดูแลบริการของคุณหากเกิดเหตุการณ์แบบนี้อีก"</p>
+&nbsp;
+
+<p>ให้ทำตามขั้นตอนด้านล่างเพื่อแก้ไขปัญหา&nbsp;</p>
+&nbsp;
+
+<ol>
+  <li aria-level="1">ยืนยันว่าคุณป้อนคีย์การเข้าถึงครบ โดยต้องมี "ss://" ที่เป็นอักขระ 5 ตัวแรกด้วย ซึ่งระบบอาจไม่คัดลอกไปยังคลิปบอร์ดโดยอัตโนมัติ ตัวอย่างคีย์การเข้าถึงเต็มรูปแบบมีดังนี้ (เป็นเพียงแค่ตัวอย่าง ไม่สามารถใช้งานจริงได้)</li>
+</ol>
+
+<p><span> </span>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@145.230.4.1:39485/?outline=1&nbsp;</p>
+&nbsp;
+
+<ol start="2">
+  <li aria-level="1">หากคุณคัดลอกคีย์การเข้าถึงไปยังคลิปบอร์ดไม่ได้ อาจเป็นเพราะแอปรับส่งข้อความหรือแพลตฟอร์มของคุณ กรณีนี้มักเกิดขึ้นเมื่อคุณได้รับข้อความจากบุคคลที่ไม่ได้อยู่ในข้อมูลรายชื่อติดต่อ หากคุณจะคัดลอกรหัสจากข้อความ โปรดยืนยันว่าได้เพิ่มผู้ส่งไปยังรายชื่อติดต่อแล้ว จากนั้นจึงลองเข้าถึงลิงก์อีกครั้ง</li>
+</ol>
+หากทำตามขั้นตอนที่ 1 และ 2 แล้ว แต่ยังได้รับข้อความแสดงข้อผิดพลาด อาจเป็นเพราะว่าเซิร์ฟเวอร์ถูกบล็อกหรือคีย์การเข้าถึงดังกล่าวใช้งานไม่ได้อีกต่อไป หากคุณเป็นผู้ดูแลบริการ ให้ลองสร้างคีย์ใหม่สำหรับตัวคุณเอง หากไม่ใช่ โปรดติดต่อผู้ดูแลบริการของคุณเพื่อขอคีย์ใหม่</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="96" sourceLocale="th">WEB:15331322</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">การใช้งาน Outline มีค่าใช้จ่ายเท่าใด</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:271;a">ซอฟต์แวร์ Outline เปิดให้ทุกคนใช้งานฟรี ไม่ว่าคุณจะเป็นผู้ดูแลระบบเซิร์ฟเวอร์ที่จัดการ VPN หรือผู้ที่ใช้ Outline เพื่อเข้าถึงอินเทอร์เน็ตแบบเปิด<br />
+  <br />
+  Outline ทำงานได้โดยไม่จำเป็นต้องเข้าถึงเซิร์ฟเวอร์ระบบคลาวด์ ผู้ดูแลระบบเซิร์ฟเวอร์ที่มีสิทธิ์เข้าถึงเซิร์ฟเวอร์อยู่แล้วจะติดตั้ง Outline ในเซิร์ฟเวอร์ได้โดยไม่มีค่าใช้จ่ายเพิ่มเติม ส่วนผู้ที่ไม่มีสิทธิ์เข้าถึงเซิร์ฟเวอร์จะเข้าถึงได้จากผู้ให้บริการระบบคลาวด์ เช่น&nbsp;<a href="https://www.digitalocean.com/" rel="noopener" target="_blank">DigitalOcean</a>&nbsp;หรือ Amazon Web Services โดยมีค่าใช้จ่ายราว $5 USD ต่อเดือนสำหรับการอนุญาตการโอนข้อมูลขนาด 1 เทราไบต์ ซึ่งเพียงพอที่จะรองรับผู้ใช้หลายร้อยคนในเซิร์ฟเวอร์เดียว<br />
+  <br />
+  ตัวอย่างของวิธีการคำนวณค่าใช้จ่ายในการใช้ Outline กับผู้ให้บริการระบบคลาวด์ที่คุณเลือก มีดังนี้</p>
+
+<table border="" data-aura-rendered-by="12:271;a">
+  <tbody>
+    <tr>
+      <td colspan="" rowspan=""><i>ในกรณีที่ผู้ใช้หนึ่งรายมีการใช้งานเพื่อโอนถ่ายข้อมูลเฉลี่ยต่อเดือนประมาณ 5 กิกะไบต์ แพ็กเกจราคา $5 USD ต่อเดือนจะอนุญาตให้ผู้ใช้ 200 รายใช้งานได้พร้อมกัน ทำให้ผู้ใช้หนึ่งรายจ่ายแค่เพียง 2.5 เซนต์ต่อเดือนเท่านั้น โปรดทราบว่าการโอนถ่ายข้อมูลที่ใช้ต่อเดือนต่อผู้ใช้หนึ่งรายจะแตกต่างกันโดยสิ้นเชิง ทั้งนี้ขึ้นอยู่ว่าผู้ใช้ทำกิจกรรมแบนด์วิดท์มากหรือน้อย แต่ผู้ให้บริการระบบคลาวด์ส่วนใหญ่จะยืดหยุ่นเพื่อรองรับการเข้าชมที่เพิ่มขึ้น</i></td>
+    </tr>
+  </tbody>
+</table>
+
+<p data-aura-rendered-by="12:271;a"><br />
+  ในความเป็นจริง การใช้ Outline จะทำให้ Jigsaw และ Google ระบุตัวตนไม่ได้อย่างสิ้นเชิง เราจะไม่ติดตามข้อมูลประจำตัวและการเข้าชมของคุณ และไม่มีแผนที่จะคิดค่าบริการด้วย ในทางกลับกัน เราจะทำงานร่วมกับชุมชนโอเพนซอร์สเพื่อให้มั่นใจว่าเราจะให้บริการซอฟต์แวร์แก่ผู้ใช้ได้โดยไม่มีค่าใช้จ่าย ดูข้อมูลเพิ่มเติมเกี่ยวกับข้อมูลที่เรารวบรวมได้<a href="/outline-faq/answer/15331222?hl=en&amp;ref_topic=15309650&amp;sjid=7239458068370432269-NA" rel="noopener" target="_blank">ที่นี่</a><br />
+  &nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="386" sourceLocale="th">WEB:15331326</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ฉันจะตั้งค่าขีดจำกัดของข้อมูลในคีย์การเข้าถึงได้อย่างไร</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:15859;a">คุณสามารถตั้งค่าขีดจำกัดของข้อมูลซึ่งจะมีผลกับคีย์การเข้าถึงทั้งหมดได้ หากต้องการตั้งขีดจำกัด ให้เปิด Outline Manager และไปที่การตั้งค่า โดยคุณจะเห็นปุ่มเปิด/ปิดขีดจำกัดของข้อมูล ซึ่งเมื่อเปิดใช้แล้ว จะช่วยให้คุณตั้งค่าขีดจำกัดได้</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787036"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">เมื่อตั้งค่าขีดจำกัดแล้ว คุณจะเห็นว่าผู้ใช้แต่ละรายใกล้ถึงขีดจำกัดมากน้อยเท่าใดแล้วในหน้าคีย์การเข้าถึง ซึ่งกราฟแท่งจะแสดงปริมาณการใช้ข้อมูลในช่วง 30 วันที่ผ่านมา</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787037"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">นอกจากการตั้งค่าขีดจำกัดสำหรับคีย์การเข้าถึงทั้งหมดแล้ว คุณยังสามารถกำหนดขีดจำกัดของข้อมูลให้กับคีย์แต่ละคีย์ได้ด้วย การตั้งค่านี้จะลบล้างขีดจำกัดของข้อมูลค่าเริ่มต้นทั้งหมดที่คุณเคยตั้งไว้ แต่หากคุณไม่ได้ตั้งค่าขีดจำกัดของข้อมูลค่าเริ่มต้นไว้ คุณจะยังคงตั้งค่าขีดจำกัดสำหรับคีย์ได้อยู่&nbsp;<br />
+  <br />
+  หากต้องการตั้งค่าขีดจำกัดการโอนข้อมูลของคีย์ ให้เปิด Outline Manager แล้วไปยังแท็บการเชื่อมต่อ ซึ่งในนั้นจะมีคีย์ที่คุณต้องการตั้งค่า จากนั้นให้คลิกเมนูที่ด้านขวาของแถวของคีย์ ในส่วนนั้น ให้คลิกที่ "ขีดจำกัดของข้อมูล" หากต้องการเปลี่ยนขีดจำกัดของข้อมูลใน "คีย์การเข้าถึงของฉัน" ให้คลิกที่ไอคอนขีดจำกัดของข้อมูล&nbsp;<img alt="ไอคอนขีดจำกัดของข้อมูล" height="19" src="https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw" width="19" /></p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787423"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">เลือก "ตั้งค่าขีดจำกัดของข้อมูลที่กำหนดเอง" เมื่อเลือกช่องทำเครื่องหมายนี้แล้วจะมีช่องปรากฏขึ้น ซึ่งในส่วนนี้คุณจะตั้งค่าขีดจำกัดของข้อมูลที่กำหนดเองสำหรับคีย์นั้นได้ คลิกปุ่ม "บันทึก" เมื่อเสร็จแล้ว เพื่อบันทึกขีดจำกัดของข้อมูล</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15788959"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">เมื่อบันทึกขีดจำกัดของการโอนข้อมูลสำหรับคีย์ที่เลือกแล้ว ขีดจำกัดดังกล่าวจะแสดงขึ้นในหน้าจอหลัก พร้อมด้วยปริมาณการใช้ข้อมูล (ในช่วง 30 วันที่ผ่านมา) สำหรับแต่ละคีย์</p>
+
+<p data-aura-rendered-by="12:15859;a">หากต้องการนำขีดจำกัดของข้อมูลออกจากคีย์การเข้าถึง ให้ไปที่กล่องโต้ตอบขีดจำกัดของข้อมูลของคีย์ตามที่ระบุไว้ก่อนหน้านี้ แล้วยกเลิกการเลือกช่องที่มีข้อความว่า "ตั้งค่าขีดจำกัดของข้อมูลที่กำหนดเอง" แล้วคลิกปุ่ม "บันทึก"</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15788414"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a"><b><strong>คำถามที่พบบ่อยเกี่ยวกับขีดจำกัดของข้อมูล</strong></b><br />
+  <br />
+  <strong><b>ขีดจำกัดของข้อมูลช่วงเวลาล่าสุด 30 วันคืออะไร</b></strong><br />
+  <br />
+  ขีดจำกัดของข้อมูลช่วงเวลาล่าสุด 30 วันจะสรุปข้อมูลการใช้งานของคีย์แต่ละคีย์ในช่วง 30 วันที่ผ่านมา และจำกัดการใช้งานคีย์ในช่วงเวลาดังกล่าวให้อยู่ภายใต้ขีดจำกัด ผลก็คือการใช้งานคีย์จะไม่เกินขีดจำกัดไม่ว่าในช่วงระยะเวลา 30 วันใดก็ตามโดยรวมถึงเดือนตามปฏิทินที่มีจำนวนวันไม่เกิน 30 วันด้วย ซึ่งหมายความว่าปริมาณข้อมูลที่ใช้ได้จะเพิ่มขึ้นในแต่ละวันตามปริมาณที่ใช้ไปเมื่อ 31 วันก่อน</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>ทำไม Outline จึงใช้ขีดจำกัดช่วงเวลาล่าสุด</strong><br />
+  <br />
+  ขีดจำกัดช่วงเวลาล่าสุดจะให้การรับประกันในช่วงระยะเวลา 30 วัน ซึ่งจะกำหนดค่าได้ง่ายกว่าขีดจำกัดตามรอบ (เช่น วันที่กำหนดเองได้ของเดือนนั้นๆ) โดยที่มีการรับประกันในรูปแบบที่คล้ายกัน และยังสอดคล้องกับการแสดงปริมาณการใช้ข้อมูล Outline ที่มีอยู่ รวมถึงเครื่องมือทั่วไป เช่น บริการวิเคราะห์และสถิติของเซิร์ฟเวอร์ด้วย</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>ข้อมูลใดบ้างที่จะนับรวมในขีดจำกัดของข้อมูล</strong><br />
+  <br />
+  ข้อมูลขาออกของคีย์การเข้าถึงแต่ละรายการจากเซิร์ฟเวอร์จะรวมอยู่ในการนับ หากกล่าวให้เฉพาะเจาะจงก็คือเมื่อข้อมูลที่ส่งในนามของคีย์เดินทางออกจากเซิร์ฟเวอร์ รวมถึงข้อมูลที่เดินทางกลับไปยังไคลเอ็นต์ด้วย ในทางปฏิบัติแล้ว วิธีนี้ควรสอดคล้องกับปริมาณการรับส่งข้อมูลที่ส่งจากคีย์ไปยังเซิร์ฟเวอร์และย้อนกลับมา เราจึงหวังว่าข้อมูลนี้จะตรงกับการนับของผู้ใช้ เราเลือกใช้ข้อมูลขาออกเนื่องจากผู้ให้บริการคลาวด์ที่เราสำรวจจะเรียกเก็บเงินจากข้อมูลส่วนนี้</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>ผู้ใช้จะได้รับการแจ้งเตือนเมื่อใช้ข้อมูลถึงขีดจำกัดไหม</strong><br />
+  <br />
+  ยังไม่ได้ในตอนนี้ ผู้ให้บริการคลาวด์หลายรายกำหนดขีดจำกัด เช่น 1 TB ตลอดทั้งเดือนซึ่งรองรับผู้ใช้ได้ 10 รายๆ ละ 100 GB หรือ 100 รายๆ ละ 10 GB ซึ่งตัวเลขดังกล่าวเป็นปริมาณที่สูง และเราคาดหวังว่าคงจะมีผู้ใช้จำนวนไม่มากที่ใช้งานถึงขีดจำกัดนั้น โดยเราหวังว่าเมื่อผู้ใช้ใช้งานถึงขีดจำกัดแล้ว จะติดต่อไปที่ผู้จัดการเซิร์ฟเวอร์ อย่างไรก็ตาม ขอขอบคุณสำหรับความคิดเห็นเกี่ยวกับฟังก์ชันการแจ้งเตือนที่อาจมีประโยชน์กับการใช้งานของคุณ หากมีอะไรเพิ่มเติม โปรดติดต่อเราได้<a href="https://support.getoutline.org/s/contactsupport" target="_blank">ที่นี่</a></p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>ผู้ใช้จะได้รับการแจ้งเตือนเมื่อใกล้ถึงขีดจำกัดไหม</strong><br />
+  <br />
+  ปริมาณข้อมูลใหม่ที่ผู้ใช้ใกล้ถึงขีดจำกัดจะได้รับนั้นแตกต่างกันไปในแต่ละวันเพราะขึ้นอยู่กับการใช้งานในช่วง 30 วันที่ผ่านมา เราคิดว่าการแจ้งเตือนอาจทำให้ผู้ใช้ปลายทางสับสนมากกว่าที่จะเป็นประโยชน์ หากมีความคิดเห็นเกี่ยวกับกรณีนี้ โปรดแจ้งให้เราทราบ<a href="https://support.getoutline.org/s/contactsupport" rel="noopener" target="_blank">ที่นี่</a></p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>ฉันจะรีเซ็ตปริมาณการใช้ข้อมูลของผู้ใช้ได้ไหม</strong><br />
+  <br />
+  ไม่ได้ ขีดจำกัดของผู้ใช้จะรวมการใช้ข้อมูลในช่วง 30 วันที่ผ่านมาเสมอ อย่างไรก็ตาม คุณสามารถเพิ่มขีดจำกัดของข้อมูลสำหรับคีย์ของผู้ใช้ หรือจะสร้างคีย์ใหม่ให้ผู้ใช้ก็ได้</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>ทำไมลูกค้าบางส่วนของฉันจึงเสียสิทธิ์การเข้าถึงในทันทีที่ฉันเปิดใช้งานขีดจำกัดของข้อมูล</strong><br />
+  <br />
+  ขีดจำกัดของข้อมูลจะอิงตามการโอนข้อมูลใน 30 วันก่อนหน้านี้ของผู้ใช้ ซึ่งระบบจะบันทึกข้อมูลนี้ไม่ว่าจะเปิดใช้งานขีดจำกัดของข้อมูลไว้หรือไม่ อาจเป็นไปได้ว่าผู้ใช้รายนั้นใช้งานข้อมูลเกินขีดจำกัดไปแล้วก่อนที่จะมีการบังคับใช้ขีดจำกัด&nbsp; นอกจากนี้ โปรดทราบว่าระบบจะบังคับใช้ขีดจำกัดของข้อมูลทุกรายการ แม้ว่าจะเป็นตอนที่เปลี่ยนขีดจำกัดของข้อมูลของคีย์ใดคีย์หนึ่งก็ตาม</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>ฉันจะกำหนดขีดจำกัดของทั้งเซิร์ฟเวอร์ได้ไหม เช่น "1 TB ต่อ 30 วัน"</strong><br />
+  <br />
+  ยังไม่ได้ในตอนนี้ โปรดแจ้งข้อมูลเพิ่มเติมเกี่ยวกับกรณีการใช้งานของคุณได้<a href="https://support.getoutline.org/s/contactsupport" rel="noopener" target="_blank">ที่นี่</a></p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>หากมีขีดจำกัดของข้อมูลค่าเริ่มต้น และขีดจำกัดของข้อมูลในคีย์ใดคีย์หนึ่งโดยเฉพาะ ระบบจะบังคับใช้ขีดจำกัดใด</strong><br />
+  <br />
+  ขีดจำกัดของข้อมูลเฉพาะในคีย์นั้นๆ จะลบล้างขีดจำกัดของข้อมูลค่าเริ่มต้นรายการใดก็ตามที่คุณตั้งค่าไว้ (หากมี)</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>ฉันจะตั้งค่าขีดจำกัดของข้อมูลสำหรับคีย์ใดคีย์หนึ่งโดยเฉพาะโดยไม่ต้องตั้งค่าขีดจำกัดของข้อมูลค่าเริ่มต้นได้ไหม</strong><br />
+  <br />
+  ได้&nbsp; การตั้งค่าขีดจำกัดของข้อมูลในคีย์ใดคีย์หนึ่งไม่จำเป็นต้องมีการกำหนดขีดจำกัดเริ่มต้น&nbsp; เช่น คุณสามารถตั้งค่าขีดจำกัดในคีย์ที่คุณคิดว่าอาจมีการแชร์ในวงกว้าง เพื่อป้องกันปัญหาจากการโอนข้อมูลผ่านคีย์นั้นมากเกินไป</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="th">WEB:15331327</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ฉันจะรีเซ็ตรหัสเซิร์ฟเวอร์ได้อย่างไร</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>รหัสเซิร์ฟเวอร์คือรหัสที่สร้างขึ้นแบบสุ่มจากฝั่งเซิร์ฟเวอร์เมื่อคุณสร้างเซิร์ฟเวอร์ Outline คุณจะดูรหัสได้เมื่อเลือกใช้การแชร์เมตริกแบบไม่ระบุตัวตนในอินเทอร์เฟซการตั้งค่า คุณสามารถค้นหารหัสเซิร์ฟเวอร์ได้โดยไปที่ การตั้งค่า =&gt; เลื่อนไปด้านล่าง =&gt; เลือก "แชร์เมตริกแบบไม่ระบุตัวตน"</p>
+
+<p>รหัสเซิร์ฟเวอร์จะรวบรวมสถิติการใช้งานที่ไม่ระบุตัวตนที่รายงานในระยะเวลาช่วงหนึ่งเข้าด้วยกัน หากต้องการรีเซ็ตรหัสเซิร์ฟเวอร์และขอรับรหัสใหม่ คุณต้องแทนที่เซิร์ฟเวอร์ Outline ที่มีอยู่ด้วยเซิร์ฟเวอร์ใหม่</p>
+
+<p>หากใช้ DigitalOcean เป็นผู้ให้บริการคลาวด์ คุณจะรีเซ็ตเซิร์ฟเวอร์ได้โดยไปที่<strong>การตั้งค่า</strong> แล้วเลือก<strong>ลบล้างเซิร์ฟเวอร์</strong> การดำเนินการนี้จะยกเลิกไม่ได้และจะลบข้อมูลเข้าสู่ระบบทั้งหมด หลังจากนั้นระบบจะแจ้งให้คุณสร้างเซิร์ฟเวอร์ใหม่ในตำแหน่งที่ต้องการทันที และจะมีการสร้างรหัสเซิร์ฟเวอร์ใหม่</p>
+<br />
+&nbsp;</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="103" sourceLocale="th">WEB:15331328</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ฉันจะเปลี่ยนตำแหน่งของเซิร์ฟเวอร์ Outline ได้อย่างไร</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:266;a">เมื่อตั้งค่าแล้ว&nbsp;คุณจะเปลี่ยนตำแหน่งของเซิร์ฟเวอร์ไม่ได้&nbsp;คุณต้องลบเซิร์ฟเวอร์&nbsp;Outline&nbsp;ออกและสร้างเซิร์ฟเวอร์ใหม่จึงจะเรียกใช้เซิร์ฟเวอร์จากตำแหน่งอื่นได้</p>
+
+<p data-aura-rendered-by="12:266;a">อีกวิธีหนึ่งคือคุณสามารถเปลี่ยนตำแหน่งของ&nbsp;VPN&nbsp;โดยใช้<a href="https://developers.google.com/outline/docs/guides/service-providers/dynamic-access-keys" target="_blank">คีย์แบบไดนามิก</a>ที่ให้คุณสับเปลี่ยนเซิร์ฟเวอร์ได้โดยที่ยังใช้คีย์เดิม&nbsp;ซึ่งวิธีนี้จะทำให้ตำแหน่งของเซิร์ฟเวอร์ไม่เปลี่ยนแปลง</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="102" sourceLocale="th">WEB:15331423</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">วิธีส่งความคิดเห็นหรือคำแนะนำ</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">ขอขอบคุณที่ช่วยทำให้ Outline ดีขึ้น คุณส่งความคิดเห็นถึงเราได้หลากหลายวิธี ไม่ว่าจะแบบไม่ระบุชื่อหรือแจ้งอีเมลไว้ในกรณีที่ต้องการให้เราตอบกลับ วิธีการมีดังนี้
+<ul data-aura-rendered-by="12:262;a">
+  <li><b>สำหรับนักพัฒนาซอฟต์แวร์</b>: Outline เป็นซอฟต์แวร์โอเพนซอร์สและเราฝากโค้ดทั้งหมดไว้บน&nbsp;<a href="https://support.getoutline.org/s/article/feedback?language=th" target="_blank">GitHub</a>&nbsp;ซึ่งคุณจะแชร์ไอเดียใน GitHub หรือในชุมชน&nbsp;<a href="https://support.getoutline.org/s/article/feedback?language=th" target="_blank">Reddit</a>&nbsp;ก็ได้</li>
+</ul>
+
+<ul data-aura-rendered-by="12:262;a">
+  <li><b>สำหรับผู้ใช้</b>: คุณจะส่งความคิดเห็นถึงเราผ่านแอป Outline หรือ Outline Manager ก็ได้ แจ้งให้เราทราบว่าเป็นความคิดเห็นเกี่ยวกับอะไร หรือให้ทิ้งอีเมลไว้เพื่อให้เราเขียนกลับถึงคุณได้ นอกจากนี้เรายัง<a href="https://support.getoutline.org/s/article/feedback?language=th" target="_blank">รวบรวมข้อมูลเมตาบางรายการ</a>เกี่ยวกับสภาพแวดล้อมของคุณ เพื่อให้เราช่วยแก้ปัญหาให้กับคุณได้ เช่น เบราว์เซอร์ ระบบปฏิบัติการ และเวอร์ชันซอฟต์แวร์ที่ใช้งานอยู่</li>
+</ul>
+
+<ul data-aura-rendered-by="12:262;a">
+  <li><b>ผ่านเว็บไซต์นี้</b>: คุณคลิกลิงก์ติดต่อเราได้ทุกที่ที่คุณเห็นภายในเว็บไซต์นี้</li>
+</ul>
+
+<ul data-aura-rendered-by="12:262;a">
+  <li><b>ปัญหาร้ายแรง</b>: หากต้องการรายงานปัญหาความปลอดภัยที่ร้ายแรง เรายินดีที่จะรับอีเมลเกี่ยวกับรายละเอียดต่างๆ ได้ที่&nbsp;<a href="mailto:security@getoutline.org">security@getoutline.org</a></li>
+</ul>
+ขอขอบคุณอีกครั้งที่สละเวลาในการแลกเปลี่ยนความคิดกับเรา</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="146" sourceLocale="th">WEB:15331424</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">จัดการการเข้าถึงเซิร์ฟเวอร์ Outline (ด้วยคีย์การเข้าถึง)</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:25527;a">เมื่อติดตั้งเซิร์ฟเวอร์ Outline เสร็จสิ้นแล้ว คุณจะเริ่มการแชร์และจัดการการเข้าถึงของผู้ใช้ในเซิร์ฟเวอร์ได้ทันที ผู้ใช้ที่ได้รับคำเชิญจากคุณจะดาวน์โหลดแอป Outline เพื่อใช้ในการป้องกันการเข้าใช้อินเทอร์เน็ตได้</p>
+
+<p data-aura-rendered-by="12:25527;a"><strong>แชร์สิทธิ์เข้าถึงเซิร์ฟเวอร์ Outline</strong><br />
+  หลังจากติดตั้งเซิร์ฟเวอร์ Outline เสร็จสิ้นแล้ว ระบบจะนำคุณไปยังหน้ารายละเอียดของเซิร์ฟเวอร์ใน Outline Manager ที่ซึ่งคุณสร้างคีย์การเข้าถึงได้ ดูข้อมูลเพิ่มเติมเกี่ยวกับ<a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">คีย์การเข้าถึง</a></p>
+
+<ul data-aura-rendered-by="12:25527;a">
+  <li>สร้างคีย์: คลิกไอคอน "+" เล็กๆ ที่ด้านล่างของหน้าเพื่อสร้างคีย์ใหม่</li>
+  <li>แชร์คีย์: คลิกไอคอนแชร์เพื่อรับคำเชิญ โดยไอคอนดังกล่าวจะอยู่ทางด้านขวาของแต่ละคีย์ ให้คัดลอกและวางคำเชิญนี้ลงในแพลตฟอร์มการรับส่งข้อความที่ต้องการ</li>
+</ul>
+
+<p data-aura-rendered-by="12:25527;a"><strong>คำขอฟีเจอร์: การแชร์การเข้าถึงจากภายในแอป Outline Manager</strong><br />
+  ผู้ดูแลระบบเซิร์ฟเวอร์จำนวนมากขอให้เราปรับปรุงกระบวนการเชิญโดยให้ทางเลือกในการป้อนอีเมลของผู้ใช้ที่ต้องการใน Outline Manager ได้โดยตรง</p>
+
+<p data-aura-rendered-by="12:25527;a">น่าเสียดายที่เราอาจจะสร้างฟังก์ชันนี้ใน Outline Manager ไม่ได้ หนึ่งในหลักการสำคัญของเราคือการสนับสนุนความเป็นส่วนตัวและความปลอดภัยของผู้ใช้ ซึ่งหมายความว่าเราไม่ได้ออกแบบรูปแบบที่อนุญาตให้แทรกอีเมลหรือข้อมูลติดต่อได้</p>
+
+<p data-aura-rendered-by="12:25527;a">ด้วยเหตุนี้ เราจึงขอให้ผู้ดูแลระบบเซิร์ฟเวอร์ใช้แพลตฟอร์มการรับส่งข้อความที่ปลอดภัย เช่น อีเมลหรือแชทที่ปลอดภัย เพื่อส่งคำเชิญดังกล่าวไปยังผู้ใช้ปลายทาง<br />
+  <br />
+  <strong>สิ่งที่จะเกิดขึ้นกับผู้ใช้หลังจากคุณแชร์คีย์การเข้าถึงให้</strong></p>
+
+<ol data-aura-rendered-by="12:25527;a">
+  <li>ผู้ใช้จะคลิกลิงก์การติดตั้งจากอุปกรณ์ของตน</li>
+  <li>ระบบจะแจ้งให้ผู้ใช้ติดตั้งแอป Outline หากยังไม่มีการติดตั้ง</li>
+  <li>ผู้ใช้จะสร้างการเชื่อมต่อเริ่มต้นกับเซิร์ฟเวอร์ Outline ผ่านคีย์ที่ไม่ซ้ำกันที่ฝังอยู่ในคำเชิญ</li>
+  <li>ผู้ใช้จะใช้ปุ่มเชื่อมต่อ/ยกเลิกการเชื่อมต่อเพื่อจัดการการเข้าถึงอินเทอร์เน็ตผ่านเซิร์ฟเวอร์ Outline ได้</li>
+</ol>
+
+<p data-aura-rendered-by="12:25527;a"><strong>นำสิทธิ์เข้าถึงเซิร์ฟเวอร์ Outline ออก</strong><br />
+  จากหน้ารายละเอียดของเซิร์ฟเวอร์ใน Outline Manager คุณจะเห็นเมนูที่มีตัวเลือกในการลบคีย์ทางด้านขวาของทุกคีย์ในเซิร์ฟเวอร์ ซึ่งการลบคีย์จะนำสิทธิ์การเข้าถึงออกจากเซิร์ฟเวอร์ของคุณ</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="92" sourceLocale="th">WEB:15331524</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ฉันจะเข้าถึงแหล่งข้อมูล Outline ได้อย่างไร หาก getoutline.org ถูกบล็อก</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><a href="https://s3.amazonaws.com/outline-vpn/index.html" target="_blank">บุ๊กมาร์กเว็บไซต์สำรองนี้</a>ไว้ใช้เมื่อคุณไม่สามารถเข้าถึง <a href="http://getoutline.org/" target="_blank">getoutline.org</a> ได้</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="321" sourceLocale="th">WEB:15331527</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">การติดตั้งไคลเอ็นต์ Outline ใน Linux</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>ตั้งแต่ไคลเอ็นต์ Outline เวอร์ชัน 1.15 เป็นต้นไป เวอร์ชันทั้งหมดในอนาคตจะเปิดตัวเป็นแพ็กเกจ Debian สำหรับระบบปฏิบัติการ Linux โปรดอ่าน<a href="/outline/answer/15330818" rel="noopener" target="_blank"><u>ข้อกำหนดขั้นต่ำของระบบ</u></a>เพื่อดูข้อมูลเพิ่มเติมเกี่ยวกับระบบปฏิบัติการที่เรารองรับ</p>
+&nbsp;
+
+<p><strong>ติดตั้งไคลเอ็นต์ Outline สำหรับระบบปฏิบัติการ Linux ที่พัฒนาจาก Debian (แนะนำ)</strong></p>
+&nbsp;
+
+<p>เรียกใช้คำสั่งต่อไปนี้</p>
+
+<ol>
+  <li aria-level="1">ติดตั้งคีย์ที่เก็บของ Outline และเพิ่มที่เก็บ
+    <div class="code">
+      <div class="no-margin">
+        <p>wget -qO- https://us-apt.pkg.dev/doc/repo-signing-key.gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/gcloud-artifact-registry-us.gpg</p>
+
+        <p>echo "deb [arch=amd64] https://us-apt.pkg.dev/projects/jigsaw-outline-apps outline-client main" | sudo tee /etc/apt/sources.list.d/outline-client.list</p>
+      </div>
+    </div>
+  </li>
+  <li aria-level="2">อัปเดตรายการแพ็กเกจ apt และติดตั้งไคลเอ็นต์ Outline เวอร์ชันล่าสุด
+    <div class="code">
+      <div class="no-margin">
+        <p>sudo apt update</p>
+
+        <p>sudo apt install outline-client</p>
+      </div>
+    </div>
+  </li>
+</ol>
+
+<p>หากต้องการตรวจสอบหรือติดตั้งการอัปเดตในอนาคต ให้เรียกใช้คำสั่งในขั้นตอนที่ 2 อีกครั้ง โปรดทราบว่าการอัปเดตอัตโนมัติในแอปจะปิดอยู่สำหรับไคลเอ็นต์ Outline ใน Linux ตั้งแต่เวอร์ชัน 1.15 เป็นต้นไป</p>
+
+<p>หากต้องการถอนการติดตั้งไคลเอ็นต์ Outline ให้เรียกใช้คำสั่งต่อไปนี้</p>
+
+<div class="code">
+  <div class="no-margin">sudo apt purge outline-client</div>
+</div>
+
+<p><strong>ตัวเลือกอื่น</strong></p>
+
+<ol>
+  <li aria-level="1">ดาวน์โหลดแพ็กเกจ Debian ของไคลเอ็นต์ Outline เวอร์ชันล่าสุดจาก <a href="https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb" rel="noopener" target="_blank">https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb</a></li>
+  <li aria-level="2">เรียกใช้คำสั่งต่อไปนี้ในบรรทัดคำสั่งเพื่อติดตั้งแพ็กเกจ
+    <div class="code">
+      <div class="no-margin">
+        <p>wget -O ./outline-client.deb https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb</p>
+
+        <p>sudo apt install ./outline-client.deb</p>
+      </div>
+    </div>
+  </li>
+  <li aria-level="3">โปรดตรวจสอบการอัปเดตด้วยตนเอง เนื่องจากระบบปิดใช้การอัปเดตอัตโนมัติในแอปสำหรับไคลเอ็นต์ Outline ใน Linux ตั้งแต่เวอร์ชัน 1.15</li>
+  <li aria-level="4">หากต้องการถอนการติดตั้งไคลเอ็นต์ Outline ให้เรียกใช้คำสั่งต่อไปนี้ในบรรทัดคำสั่ง
+    <div class="code">
+      <div class="no-margin">sudo apt purge outline-client</div>
+    </div>
+  </li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="206" sourceLocale="th">WEB:15331528</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ฉันใช้คีย์การเข้าถึงมากกว่า 1 ครั้งได้ไหม</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1895;a">ได้ คุณสามารถใช้<a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">คีย์การเข้าถึง</a>ในอุปกรณ์กี่เครื่องก็ได้ แต่เราไม่แนะนำให้แชร์คีย์กับบุคคลอื่น บุคคลอื่นที่มีคีย์การเข้าถึงของคุณอาจตรวจสอบการเข้าใช้อินเทอร์เน็ตทั้งหมดได้หากมีสิทธิ์เข้าถึง ซึ่งจะทำให้การใช้งานอินเทอร์เน็ตของคุณไม่ปลอดภัยและไม่มีความเป็นส่วนตัวอีกต่อไป</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="104" sourceLocale="th">WEB:15331529</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">การเชื่อมต่ออุปกรณ์กับเซิร์ฟเวอร์ Outline</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">หากต้องการเชื่อมต่ออุปกรณ์ของคุณไปยังเซิร์ฟเวอร์ Outline ผู้ดูแลระบบเซิร์ฟเวอร์ต้องส่งคำเชิญให้คุณเพื่อเชื่อมต่อกับเซิร์ฟเวอร์ด้วย<a data-aura-rendered-by="12:252;a" href="https://support.getoutline.org/s/article/connect-to-outline?language=th" target="_blank">คีย์การเข้าถึง</a>ที่ไม่ซ้ำกัน คำเชิญจะดำเนินการดังนี้
+<ul data-aura-rendered-by="12:252;a">
+  <li>แจ้งให้คุณดาวน์โหลดและติดตั้ง Outline ในอุปกรณ์หากยังไม่มีการติดตั้ง</li>
+  <li>ใช้คีย์การเข้าถึงเพื่อเชื่อมต่อคุณกับเซิร์ฟเวอร์ Outline อย่างปลอดภัย</li>
+</ul>
+เมื่อคุณสร้างการเชื่อมต่อกับเซิร์ฟเวอร์แล้ว ให้คลิก "เชื่อมต่อ" หรือ "ยกเลิกการเชื่อมต่อ" เพื่อใช้ Outline<br data-aura-rendered-by="12:252;a" />
+<br data-aura-rendered-by="12:252;a" />
+<i data-aura-rendered-by="12:252;a">สำคัญ</i>: Outline จะไม่ทำงานหากไม่มีคีย์การเข้าถึงและเซิร์ฟเวอร์ Outline การดาวน์โหลดและติดตั้งแอป Outline โดยไม่มีคีย์จะทำให้การเข้าชมอินเทอร์เน็ตของคุณไม่ได้รับการป้องกัน</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="100" sourceLocale="th">WEB:15331530</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ฉันจะตั้งค่าเซิร์ฟเวอร์ Outline ได้อย่างไร"</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:242;a">การตั้งค่าเซิร์ฟเวอร์ Outline เป็นขั้นตอนแรกที่ต้องดำเนินการเพื่อใช้งาน Outline โดยคุณหรือบุคคลอื่นที่คุณไว้ใจต้องตั้งค่าเซิร์ฟเวอร์เพื่อเชื่อมต่ออินเทอร์เน็ตแบบเปิดผ่าน Outline</p>
+
+<p data-aura-rendered-by="12:242;a"><strong>คำแนะนำก่อนเริ่มดำเนินการ</strong></p>
+
+<p data-aura-rendered-by="12:242;a">ก่อนที่คุณจะเริ่มตั้งค่าเซิร์ฟเวอร์ Outline คุณจะต้องมีสิ่งต่อไปนี้</p>
+
+<ol data-aura-rendered-by="12:242;a">
+  <li>สิทธิ์การเข้าถึงเซิร์ฟเวอร์ของตนเองหรือผู้ให้บริการระบบคลาวด์ เช่น DigitalOcean, Amazon Web Services (AWS) หรือ Google Cloud Platform (GCP)<br />
+    หากยังไม่มีสิทธิ์เข้าถึงเซิร์ฟเวอร์ระบบคลาวด์ก็ไม่ต้องกังวล เพราะคุณสร้างบัญชีกับผู้ให้บริการรายใดก็ได้ ซึ่งรวมถึงผู้ให้บริการที่กล่าวถึงไปแล้วข้างต้นด้วย โดยคุณอาจต้องใช้บัตรเครดิตในการลงชื่อสมัครใช้</li>
+  <li>คอมพิวเตอร์เดสก์ท็อปที่ใช้ macOS 10.9+, Windows 7.0+ หรือ Linux</li>
+  <li>แอปพลิเคชัน Outline Manager</li>
+</ol>
+
+<p data-aura-rendered-by="12:242;a"><strong>ตั้งค่ากับ DigitalOcean</strong></p>
+
+<p data-aura-rendered-by="12:242;a">ผู้ใช้ทุกคนจะตั้งค่า Outline กับ DigitalOcean ได้อย่างง่ายดายผ่านการคลิกเพียงไม่กี่ครั้ง หลังจากดาวน์โหลดและติดตั้ง Outline Manager ในคอมพิวเตอร์แล้ว ให้เลือกตัวเลือกการตั้งค่า DigitalOcean ที่จะแนะนำวิธีการกำหนดค่าและติดตั้ง Outline Server ซึ่งมีเพียงไม่กี่ขั้นตอนเท่านั้น</p>
+
+<p data-aura-rendered-by="12:242;a"><strong>ตั้งค่ากับผู้ให้บริการระบบคลาวด์รายอื่น</strong></p>
+
+<p data-aura-rendered-by="12:242;a">หลังจากดาวน์โหลดและติดตั้ง Outline Manager แล้ว คุณจะเลือกติดตั้งเซิร์ฟเวอร์ Outline ในเครื่องเสมือนกับ AWS, GCP, DigitalOcean หรือผู้ให้บริการรายอื่นได้ ขั้นตอนสำหรับผู้ให้บริการแต่ละรายนั้นแตกต่างกัน เราจึงได้รวบรวมวิธีการต่างๆ สำหรับผู้ให้บริการระบบคลาวด์ทั่วไปโดยส่วนใหญ่ไว้ในขั้นตอนการตั้งค่า Outline Manager รวมถึงวิธีกำหนดค่าการติดตั้งในเครื่องเสมือนก่อนที่จะเรียกใช้สคริปต์การติดตั้งเพื่อติดตั้ง Outline ในเซิร์ฟเวอร์</p>
+
+<p data-aura-rendered-by="12:242;a"><strong>หากต้องการความช่วยเหลือเพิ่มเติม</strong></p>
+
+<p data-aura-rendered-by="12:242;a">โปรดดู<a href="/outline-faq/answer/15331728" rel="noopener" target="_blank">คำถามที่พบบ่อยเกี่ยวกับการตั้งค่าเซิร์ฟเวอร์ Outline</a></p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="95" sourceLocale="th">WEB:15331625</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ฉันได้รับอนุญาตให้ใช้หรือจำลองการใช้แบรนด์ Outline หรือไม่</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">แม้ว่า Outline จะเป็นโอเพนซอร์สและใช้งานได้โดยไม่มีค่าใช้จ่าย แต่แบรนด์ของเราถือเป็นกรรมสิทธิ์ของ Jigsaw และไม่ควรมีการนำใช้ในทางที่ผิด โปรดปฏิบัติตาม<a href="https://github.com/Jigsaw-Code/outline-brand/blob/main/outline_brand_user_guide.pdf" rel="noopener" target="_blank"><u>คู่มือผู้ใช้</u></a>เพื่อให้แน่ใจว่าคุณจะหลีกเลี่ยงการกล่าวอ้างที่อาจทำให้เข้าใจผิดหรือแสดงลักษณะความสัมพันธ์ของคุณกับ Outline หรือ Jigsaw อย่างไม่ถูกต้อง และเพื่อให้คุณใช้องค์ประกอบการสร้างแบรนด์ที่ได้รับอนุมัติอย่างถูกต้อง</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="191" sourceLocale="th">WEB:15331628</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ต้องทำอย่างไรจึงจะได้รับคีย์การเข้าถึง</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:3258;a">Outline ไม่เหมือนบริการ VPN ที่คุณจะต้องจ่ายเงินซื้อสิทธิ์เข้าถึง แต่เป็น<a href="https://getoutline.org/#:~:text=Two%20Products%20that%20Work%20Together" target="_blank">เครื่องมือ</a>ที่ช่วยให้คุณใช้งานและแชร์สิทธิ์เข้าถึงเซิร์ฟเวอร์ VPN ส่วนตัวได้ โดย<a href="/outline/answer/15330920#servicemanager" rel="noopener" target="_blank">ผู้จัดการบริการ</a>จะเป็นบุคคลเดียวที่มอบคีย์การเข้าถึงได้ ทีม Outline ไม่ได้เป็นผู้แจกจ่ายคีย์การเข้าถึงที่ใช้งานฟรีหรือมีค่าใช้จ่าย เราไม่มีพาร์ทเนอร์คีย์การเข้าถึง Outline อย่างเป็นทางการ ยกเว้นสำหรับ Paskoocheh ในภาษาฟาร์ซี<br />
+  <br />
+  ต่อไปนี้คือ 3 ตัวเลือกในการรับคีย์การเข้าถึง&nbsp;</p>
+
+<ul data-aura-rendered-by="12:3258;a">
+  <li>ขอให้ใครสักคนเชิญคุณเข้าเซิร์ฟเวอร์: หากคุณรู้จักบุคคลที่มีเซิร์ฟเวอร์ Outline ให้ติดต่อบุคคลดังกล่าวและขอคีย์การเข้าถึง</li>
+  <li><a href="/outline/answer/15331530" rel="noopener" target="_blank">สร้างเซิร์ฟเวอร์เอง:</a> ใช้คอมพิวเตอร์ Windows, Mac, หรือ Linux เพื่อดาวน์โหลด <a href="https://getoutline.org/get-started/#step-1" target="_blank">Outline Manager</a> แล้วตั้งค่า<a href="/outline/answer/15330920" rel="noopener" target="_blank">เซิร์ฟเวอร์ Outline</a> ของคุณเอง เราทำให้กระบวนการนี้ง่ายสำหรับทุกคน โดยเฉพาะอย่างยิ่งเมื่อใช้งานผ่านผู้ให้บริการระบบคลาวด์ DigitalOcean</li>
+  <li>ใช้บริการของ Outline หรือ <a href="https://en.wikipedia.org/wiki/Shadowsocks#:~:text=Shadowsocks%20is%20a%20free%20and,have%20been%20made%20available%20since." target="_blank">Shadowsocks</a>: คุณยังสามารถใช้ไคลเอ็นต์ Outline กับบริการของบุคคลที่สามที่ใช้โปรโตคอล Outline หรือ Shadowsocks ได้ด้วย เช่น
+    <ul>
+      <li><a href="http://nthlink.com/" target="_blank">nthLink</a> ให้บริการฟรีโดยอิงตาม Outline ซึ่งทำงานร่วมกับไคลเอ็นต์ Outline เวอร์ชันที่ผ่านการปรับแต่ง</li>
+      <li><a href="https://www.reddit.com/r/outlinevpn/comments/nwu1se/the_outline_distribution_system_is_here_to_help/" target="_blank">ASL19</a> ให้บริการ Outline เวอร์ชันที่ผ่านการปรับแต่งที่ชื่อ <a href="https://beepassvpn.com/" target="_blank">BeePass</a> เช่นเดียวกับ <a href="https://t.me/paskoochehbot" target="_blank">Telegram Bot</a> ซึ่งมอบคีย์การเข้าถึงฟรีสำหรับเซิร์ฟเวอร์ BeePass</li>
+      <li>ผู้ใช้ภาษาฟาร์ซียังสามารถขอคีย์การเข้าถึง Outline จาก <a href="https://outline.paskoocheh.com/" target="_blank">Paskoocheh ของ ASL19</a> ได้เช่นกัน</li>
+    </ul>
+  </li>
+</ul>
+
+<p>หลังจากที่ดาวน์โหลดแอปไคลเอ็นต์ Outline แล้ว ให้คัดลอกและวาง<a href="/outline/answer/15330920#accesskey" rel="noopener" target="_blank">คีย์การเข้าถึง</a>ในไคลเอ็นต์ Outline เพื่อเชื่อมต่อกับเซิร์ฟเวอร์ Outline&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="133" sourceLocale="th">WEB:15331630</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ฉันจะลบเซิร์ฟเวอร์ Outline ของฉันได้อย่างไร</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>การนำเครื่องเสมือนที่คุณใช้ออกนั้นเป็นเรื่องที่ง่ายดายสำหรับผู้ให้บริการระบบคลาวด์ส่วนใหญ่</p>
+&nbsp;
+
+<p>หากใช้ DigitalOcean เป็นผู้ให้บริการคลาวด์ คุณจะลบเครื่องเสมือนที่มีอยู่ออกได้โดยคลิกที่ปุ่มรูปฟันเฟืองและเลือก<strong>ลบล้างเซิร์ฟเวอร์</strong> หลังจากนั้นระบบจะแจ้งให้คุณสร้างเครื่องเสมือนใหม่ในตำแหน่งที่ต้องการโดยทันที</p>
+<br />
+การนำเซิร์ฟเวอร์ Outline ออกจะเป็นการลบออกอย่างถาวรและจะใช้งานคีย์การเข้าถึงไม่ได้อีกต่อไป หากไม่ต้องการให้ผู้ใช้พบปัญหาในการใช้งาน Outline คุณจะต้อง<a href="https://support.google.com/outline/answer/15331530?sjid=5147938692963654551-NC" rel="noopener"><u>ตั้งค่าเซิร์ฟเวอร์</u><u> Outline </u><u>ใหม่</u></a> และแชร์สิทธิ์เข้าถึงเซิร์ฟเวอร์นั้นก่อนลบเซิร์ฟเวอร์เก่า</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="99" sourceLocale="th">WEB:15331631</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">วิธีตั้งค่าเซิร์ฟเวอร์ Outline หลายเครื่อง</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>หากต้องการตั้งค่าเซิร์ฟเวอร์ Outline เพิ่มเติม ให้คลิกไอคอน “+” ในแผงการนำทางด้านซ้ายของแอปพลิเคชัน Outline Manager วิธีการเพิ่มเซิร์ฟเวอร์ใหม่จะเหมือนกับวิธีที่คุณติดตั้งในครั้งแรก</p>
+
+<ul data-aura-rendered-by="12:267;a">
+  <li>
+    <p>คุณจะสร้างเซิร์ฟเวอร์ Outline ได้ไม่จำกัด</p>
+  </li>
+  <li>
+    <p>สำหรับเซิร์ฟเวอร์ Outline ทุกเครื่องที่คุณสร้าง คุณจะต้องมีเครื่องเสมือนที่ตรงกัน</p>
+  </li>
+  <li>
+    <p>ผู้ให้บริการระบบคลาวด์อาจคิดค่าธรรมเนียมเพิ่มเติมเมื่อมีการสร้างเครื่องหรือ Droplet เพิ่ม โปรดตรวจสอบราคาของแพ็กเกจกับผู้ให้บริการระบบคลาวด์เพื่อให้แน่ใจว่าคุณจะได้ใช้งานแพ็กเกจที่ตรงกับความต้องการ</p>
+  </li>
+</ul>
+
+<p data-aura-rendered-by="12:267;a"><strong>การสร้างเซิร์ฟเวอร์ Outline เพิ่มเติมใน DigitalOcean</strong></p>
+
+<p>หลังจากคลิกไอคอน + และเลือกติดตั้งใน DigitalOcean แล้ว คุณจะต้องทำตามวิธีการเดียวกับที่เคยทำในการตั้งค่าเซิร์ฟเวอร์แรก อีกทั้งเนื่องจาก Outline Manager ผสานรวมกับ DigitalOcean เราจะสร้าง Droplet ให้กับคุณโดยที่ไม่ต้องออกจากแอป Outline Manager<br data-aura-rendered-by="12:267;a" />
+  <br data-aura-rendered-by="12:267;a" />
+  โปรดทราบว่า Outline Manager จะรองรับบัญชี DigitalOcean ครั้งละ 1 บัญชีเท่านั้น หากต้องการเพิ่มหรือสร้างเซิร์ฟเวอร์ Outline จากบัญชี DigitalOcean อื่น ให้เพิ่มเซิร์ฟเวอร์เหล่านั้นเป็นการกำหนดค่าขั้นสูงแทน</p>
+
+<p data-aura-rendered-by="12:267;a"><strong>การสร้างเซิร์ฟเวอร์ Outline เพิ่มเติมใน GCP, AWS หรือผู้ให้บริการระบบคลาวด์รายอื่น</strong></p>
+
+<p>เริ่มต้นด้วยการสร้างเครื่องเสมือนใหม่กับผู้ให้บริการระบบคลาวด์ที่ต้องการ จากนั้นเปิด Outline Manager และทำตามวิธีการติดตั้งขั้นสูงให้เสร็จสมบูรณ์ เช่นเดียวกับการดำเนินการครั้งแรก</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="96" sourceLocale="th">WEB:15331632</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ทำไมฉันถึงติดตั้ง Outline Manager บน Windows ไม่ได้</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:262;a">คุณอาจเห็นความแสดงข้อผิดพลาดนี้&nbsp;"ขออภัย&nbsp;ดูเหมือนว่า&nbsp;Outline&nbsp;ไม่ได้ติดตั้งอย่างถูกต้อง&nbsp;โปรดลองติดตั้งอีกครั้ง&nbsp;หากไม่ได้ผล&nbsp;โปรด<a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">ส่งความคิดเห็น</a>"</p>
+
+<p data-aura-rendered-by="12:262;a">หากคุณใช้&nbsp;Outline&nbsp;ใน&nbsp;Windows&nbsp;บางครั้งคุณอาจพบข้อผิดพลาดที่ไม่คาดคิด&nbsp;ในกรณีส่วนใหญ่&nbsp;คุณจะต้องลบอะแดปเตอร์&nbsp;(ไดรเวอร์) Outline TAP&nbsp;และควรติดตั้ง&nbsp;Outline&nbsp;อีกครั้ง</p>
+
+<p data-aura-rendered-by="12:262;a">ขั้นตอนอาจแตกต่างกันไปตามเวอร์ชันของระบบปฏิบัติการ&nbsp;Windows&nbsp;แต่ด้านล่างนี้เป็นขั้นตอนทั่วไปในการถอนการติดตั้งอะแดปเตอร์&nbsp;TAP&nbsp;และ&nbsp;Outline Manager&nbsp;แล้วติดตั้ง&nbsp;Outline Manager&nbsp;อีกครั้ง</p>
+
+<ol data-aura-rendered-by="12:262;a">
+  <li>
+    <p>ถอนการติดตั้งอะแดปเตอร์&nbsp;TAP&nbsp;สำหรับ&nbsp;Outline Manager</p>
+
+    <ol>
+      <li>
+        <p>ไปที่<strong>โปรแกรมจัดการอุปกรณ์</strong>&nbsp;จากนั้นไปที่<strong>อะแดปเตอร์เครือข่าย</strong></p>
+      </li>
+      <li>
+        <p>ค้นหาไฟล์&nbsp;<strong>TAP-Windows Adapter V9</strong>&nbsp;หรืออะแดปเตอร์&nbsp;TAP&nbsp;ที่เชื่อมโยงกับ&nbsp;Outline</p>
+      </li>
+      <li>
+        <p>ถอนการติดตั้งหรือลบอะแดปเตอร์นี้&nbsp;โปรดทราบว่าการดำเนินการนี้อาจส่งผลต่อแอป&nbsp;VPN&nbsp;อื่นๆ&nbsp;ที่คุณติดตั้งไว้</p>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p>ถอนการติดตั้ง&nbsp;Outline Manager</p>
+
+    <ol>
+      <li>
+        <p>ไปที่<strong>โปรแกรมและฟีเจอร์</strong>&nbsp;จากนั้นไปที่<strong>ถอนการติดตั้งโปรแกรม</strong></p>
+      </li>
+      <li>
+        <p>ค้นหาแอป&nbsp;Outline Manager&nbsp;แล้วถอนการติดตั้งแอปดังกล่าว</p>
+      </li>
+      <li>
+        <p><a href="https://getoutline.org/get-started/#step-3" target="_blank">ดาวน์โหลด&nbsp;Outline Manager&nbsp;เวอร์ชันล่าสุด</a>&nbsp;แล้วติดตั้งแอปในอุปกรณ์&nbsp;Windows&nbsp;อีกครั้ง&nbsp;ซึ่งการติดตั้งดังกล่าวจะทำให้ระบบติดตั้งอะแดปเตอร์&nbsp;TAP&nbsp;ใหม่โดยอัตโนมัติ</p>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+<p data-aura-rendered-by="12:262;a">หากยังคงพบปัญหา&nbsp;โปรด<a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">ติดต่อทีมสนับสนุน</a>&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="94" sourceLocale="th">WEB:15331727</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ภาพรวม</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:257;a">Outline Manager มีฟีเจอร์ที่ช่วยให้คุณกําหนดค่าเซิร์ฟเวอร์ Outline ในเซิร์ฟเวอร์ที่ทํางานใน Google Cloud ได้โดยอัตโนมัติ หากเลือกใช้ฟีเจอร์นี้ Outline Manager จะขอให้คุณลงชื่อเข้าใช้ด้วยบัญชี Google ซึ่งจะให้สิทธิ์บางอย่างกับ<a href="https://developers.google.com/identity/protocols/oauth2" target="_blank">&nbsp;OAuth</a>&nbsp;ในการติดตั้ง Outline Manager เพื่อจุดประสงค์ในการกําหนดค่าบัญชี Google Cloud</p>
+
+<p data-aura-rendered-by="12:257;a">หากไม่ต้องการให้สิทธิ์เหล่านี้ โปรดทําตามวิธีการตั้งค่าขั้นสูงใน Outline Manager เพื่อเรียกใช้ Outline ใน Google Cloud Platform</p>
+
+<p data-aura-rendered-by="12:257;a"><strong>ได้รับสิทธิ์แล้ว</strong></p>
+
+<p data-aura-rendered-by="12:257;a">Outline Manager ต้องใช้สิทธิ์ต่อไปนี้จากบัญชี Google ของคุณในการตั้งค่าอัตโนมัติ</p>
+
+<p data-aura-rendered-by="12:257;a"><strong>Google Cloud Platform</strong></p>
+
+<ul data-aura-rendered-by="12:257;a">
+  <li>
+    <p>ดูและจัดการแหล่งข้อมูล Google Compute Engine ของคุณ</p>
+  </li>
+  <li>
+    <p>ดูข้อมูลในบริการของ Google Cloud รวมถึงดูอีเมลของบัญชี Google</p>
+  </li>
+</ul>
+
+<p data-aura-rendered-by="12:257;a"><strong>ข้อมูลบัญชีทั่วไป</strong></p>
+
+<ul data-aura-rendered-by="12:257;a">
+  <li>ดูอีเมลหลักของบัญชี Google</li>
+  <li>เชื่อมโยงตัวคุณกับข้อมูลส่วนบุคคลใน Google</li>
+</ul>
+
+<p data-aura-rendered-by="12:257;a"><strong>การเข้าถึงเพิ่มเติม</strong></p>
+
+<ul data-aura-rendered-by="12:257;a">
+  <li>
+    <p>จัดการโครงการ Cloud Platform</p>
+  </li>
+  <li>
+    <p>ดูและจัดการบัญชีสำหรับการเรียกเก็บเงินบน Google Cloud Platform ของคุณ</p>
+  </li>
+  <li>
+    <p>จัดการการกำหนดค่าบริการ Google API</p>
+  </li>
+</ul>
+
+<p data-aura-rendered-by="12:257;a"><strong>สิทธิ์เหล่านี้ช่วยให้เรารองรับฟังก์ชันการทํางานขั้นสูงสําหรับการจัดการเซิร์ฟเวอร์ Outline ได้ เช่น</strong></p>
+
+<ul data-aura-rendered-by="12:257;a">
+  <li>ช่วยให้คุณเลือกบัญชีสําหรับการเรียกเก็บเงินที่ถูกต้อง</li>
+  <li>สร้างโปรเจ็กต์ใหม่เพื่อจัดระเบียบเซิร์ฟเวอร์ Outline</li>
+  <li>แสดงรายการศูนย์ข้อมูลที่มีอยู่</li>
+  <li>การสร้างเครื่องเสมือนใหม่เพื่อเรียกใช้ Outline</li>
+  <li>การกําหนดค่าเครื่องเสมือนใหม่ด้วย Outline</li>
+</ul>
+
+<p data-aura-rendered-by="12:257;a"><strong>กำลังเพิกถอนสิทธิ์</strong></p>
+
+<p data-aura-rendered-by="12:257;a">คุณเพิกถอนสิทธิ์เข้าถึง Outline Manager ใน Google Cloud Platform ได้โดยไปที่<a href="https://myaccount.google.com/permissions" target="_blank">&nbsp;บัญชีของฉัน</a>&nbsp;หากคุณเพิกถอนสิทธิ์เข้าถึง เซิร์ฟเวอร์ที่คุณสร้างด้วยการตั้งค่าอัตโนมัติจะยังคงทํางานอยู่ แต่จะไม่ปรากฏใน Outline Manager อีกต่อไป หากต้องการคืนค่าสิทธิ์การเข้าถึง เพียงเชื่อมต่อ Google Cloud Platform อีกครั้งโดยเริ่มต้นขั้นตอนการตั้งค่าอัตโนมัติ</p>
+
+<p data-aura-rendered-by="12:257;a"><strong>องค์กรในโปรเจ็กต์ Outline</strong></p>
+
+<p data-aura-rendered-by="12:257;a">การตั้งค่าอัตโนมัติของ Google Cloud ใช้<a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects" target="_blank">&nbsp;โปรเจ็กต์ Google Cloud</a>&nbsp;รายการเดียวจัดระเบียบเซิร์ฟเวอร์ Outline ระบบจะสร้างโปรเจ็กต์ขึ้นระหว่างการใช้การตั้งค่าอัตโนมัติครั้งแรก โดยใช้รหัสโปรเจ็กต์ที่แนะนําซึ่งขึ้นต้นด้วย "Outline-" ตามด้วยสตริงอักขระแบบสุ่ม คุณจะเลือกรหัสโปรเจ็กต์อื่นขณะสร้างได้หากต้องการ โปรเจ็กต์จะมีชื่อว่า "เซิร์ฟเวอร์ Outline"</p>
+
+<p data-aura-rendered-by="12:257;a"><strong>บัญชีสำหรับการเรียกเก็บเงิน</strong></p>
+
+<p data-aura-rendered-by="12:257;a">โปรเจ็กต์ Google Cloud ต้องใช้ "บัญชีสําหรับการเรียกเก็บเงิน" ที่เชื่อมโยงอยู่และมีข้อมูลการชําระเงิน เมื่อใช้การตั้งค่าอัตโนมัติของ Google Cloud เป็นครั้งแรก ระบบจะขอให้คุณระบุบัญชีสําหรับการเรียกเก็บเงินเพื่อเชื่อมโยงกับเซิร์ฟเวอร์ Outline บางครั้งเซิร์ฟเวอร์จะหยุดทํางานเนื่องจากพบปัญหาในบัญชีสําหรับการเรียกเก็บเงิน ในกรณีนี้ คุณควรลงชื่อเข้าสู่ระบบ<a href="https://console.cloud.google.com/" target="_blank">&nbsp;Google Cloud Console</a>&nbsp;ค้นหาโปรเจ็กต์ใน Google Cloud ที่เชื่อมโยงกับ Outline (ชื่อว่า "เซิร์ฟเวอร์ Outline") และอัปเดตการตั้งค่าการเรียกเก็บเงิน</p>
+
+<p data-aura-rendered-by="12:257;a"><strong>การทําลายเซิร์ฟเวอร์</strong></p>
+
+<p data-aura-rendered-by="12:257;a">หากต้องการทําลายเซิร์ฟเวอร์ที่สร้างขึ้นโดยใช้การตั้งค่าอัตโนมัติ วิธีที่ง่ายที่สุดคือดำเนินการจากภายใน Outline Manager แต่ถ้าต้องการทําลายเซิร์ฟเวอร์ด้วยตนเอง ให้เข้าสู่ระบบ&nbsp;<a href="https://console.cloud.google.com/" target="_blank">Google Cloud Console</a>&nbsp;ค้นหาโปรเจ็กต์ที่สร้างระหว่างการตั้งค่าเริ่มต้น (ชื่อ "เซิร์ฟเวอร์ Outline") และลบทรัพยากรในเครื่องออกหรือปิดโปรเจ็กต์</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="99" sourceLocale="th">WEB:15331728</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">คำถามที่พบบ่อยเกี่ยวกับการตั้งค่าเซิร์ฟเวอร์ Outline</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:272;a"><strong>ฉันใช้ Outline โดยไม่มีเซิร์ฟเวอร์ได้ไหม</strong></p>
+
+<p>น่าเสียดายที่ไม่ได้ ซอฟต์แวร์ Outline จำเป็นต้องมีสิทธิ์เข้าถึงเซิร์ฟเวอร์ ไม่ว่าเซิร์ฟเวอร์นั้นจะได้รับการจัดการโดยคุณ องค์กร หรือบุคคลที่สามที่เชื่อถือได้ก็ตาม</p>
+
+<p data-aura-rendered-by="12:272;a"><strong>ระยะเวลาในการตั้งค่าเซิร์ฟเวอร์ Outline</strong></p>
+
+<p>ส่วนใหญ่แล้วจะใช้เวลาน้อยกว่า 5 นาที คุณติดตั้ง Outline ในเซิร์ฟเวอร์ระบบคลาวด์ใดก็ได้ แต่เราได้ทำงานร่วมกับ DigitalOcean เพื่อมอบประสบการณ์การติดตั้งที่ง่ายดายให้แก่คุณ กล่าวคือคุณจะตั้งค่าเซิร์ฟเวอร์ได้โดยการคลิกเพียงไม่กี่ครั้งโดยไม่มีสคริปต์ใดๆ ทั้งสิ้น<br data-aura-rendered-by="12:272;a" />
+  หากเลือก AWS, GCP หรือการตั้งค่าขั้นสูง เราก็ได้จัดทำกระบวนการติดตั้งเซิร์ฟเวอร์แบบง่ายเป็นสคริปต์เดียวที่รองรับผู้ให้บริการส่วนใหญ่ได้</p>
+
+<p data-aura-rendered-by="12:272;a"><strong>ฉันจะตั้งค่าเซิร์ฟเวอร์ Outline ได้ที่ไหน</strong></p>
+
+<p>คุณจะตั้งค่าเซิร์ฟเวอร์ Outline ในสถานที่ที่ผู้ให้บริการระบบคลาวด์ส่วนใหญ่ดำเนินงานอยู่ได้<br data-aura-rendered-by="12:272;a" />
+  วิธีที่ง่ายที่สุดคือการตั้งค่าใน DigitalOcean เนื่องจาก DigitalOcean มีเซิร์ฟเวอร์หลายแห่ง เช่น อัมสเตอร์ดัม โตรอนโต ซานฟรานซิสโก และสิงคโปร์ หากต้องการติดตั้งกับผู้ให้บริการระบบคลาวด์รายอื่นหรือบนโครงสร้างพื้นฐานของคุณเอง ให้เลือก "โหมดขั้นสูง" ในแอปพลิเคชัน Outline Manager และทำตามวิธีการติดตั้งโดยใช้สคริปต์การตั้งค่า</p>
+
+<p data-aura-rendered-by="12:272;a"><strong>ฉันควรจะตั้งค่าเซิร์ฟเวอร์ Outline ที่ไหน</strong></p>
+
+<p>ปัจจัยสำคัญบางประการที่คุณควรพิจารณาเมื่อตัดสินใจเลือกตำแหน่งที่ตั้งสำหรับเซิร์ฟเวอร์ Outline มีดังนี้</p>
+
+<ol data-aura-rendered-by="12:272;a">
+  <li>
+    <p>ตำแหน่งเซิร์ฟเวอร์ Outline ส่งผลต่อประสบการณ์การใช้งานอินเทอร์เน็ตของผู้ใช้&nbsp;เช่น หากเซิร์ฟเวอร์อยู่ในอัมสเตอร์ดัม ผู้ใช้ที่เข้าถึงเซิร์ฟเวอร์นี้จะใช้งานอินเทอร์เน็ตได้เหมือนกับว่าตนเองอยู่ในประเทศเนเธอร์แลนด์ บางเว็บไซต์อาจแสดงผลเป็นภาษาดัตช์ โดยปกติแล้ว คุณจะลบล้างภาษาท้องถิ่นได้โดยใช้ตัวเลือกภาษาในเว็บไซต์</p>
+  </li>
+  <li>
+    <p>ระยะห่างระหว่างผู้ใช้และเซิร์ฟเวอร์ Outline อาจส่งผลต่อความเร็ว&nbsp;โดยทั่วไป ระยะห่างทางกายภาพระหว่างตัวผู้ใช้ Outline และเครื่องเซิร์ฟเวอร์เองจะส่งผลต่อความเร็วอินเทอร์เน็ตของผู้ใช้ โดยส่วนใหญ่แล้ว คุณจะเลือกตำแหน่งของเซิร์ฟเวอร์ให้ใกล้กับตำแหน่งที่คาดว่าผู้ใช้จะอาศัยอยู่มากที่สุด แต่คุณอาจตรวจสอบ&nbsp;<a href="https://www.submarinecablemap.com/" rel="noopener" target="_blank">Submarine Cable Map</a>&nbsp;เพื่อดูการเชื่อมต่อสายอินเทอร์เน็ตในประเทศหรือภูมิภาคของคุณก็ได้เช่นกัน</p>
+  </li>
+  <li>
+    <p>ตำแหน่งที่ตั้งของเซิร์ฟเวอร์ VPN อาจส่งผลต่อกรอบด้านกฎหมาย&nbsp;โปรดทราบว่าซอฟต์แวร์ Outline ไม่ได้บันทึกการเข้าชมของคุณ ดูข้อมูลเพิ่มเติมเกี่ยวกับ<a href="/outline-faq/answer/14919822" rel="noopener" target="_blank">ความปลอดภัยและความเป็นส่วนตัวขณะใช้ Outline</a></p>
+  </li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="th">WEB:15331758</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ฉันเป็นนักพัฒนาแอป ฉันจะขอรับการสนับสนุนในการผสานรวม Outline SDK เข้ากับแอปพลิเคชันของฉันได้จากที่ใด</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">เว็บไซต์สนับสนุนนี้มีไว้สำหรับผู้ใช้ Outline Manager และผู้ใช้ไคลเอ็นต์ นักพัฒนาแอป โปรดใช้ GitHub เพื่อรับการสนับสนุน หากต้องการถามคำถาม โปรดโพสต์ใน<a href="https://github.com/Jigsaw-Code/outline-sdk/discussions" target="_blank">กระดานสนทนา</a>ของ SDK ซึ่งส่วนกระดานสนทนาเป็นพื้นที่ที่เหมาะสำหรับการถามคำถาม แชร์แนวคิด โพสต์ลิงก์ไปยังเดโม และสนับสนุนนักพัฒนาแอปรายอื่นๆ ที่ใช้ Outline SDK หากต้องการส่งคำขอฟีเจอร์หรือรายงานข้อบกพร่อง โปรดเปิด<a href="https://github.com/Jigsaw-Code/outline-sdk/issues/new" target="_blank">ปัญหา</a>แทน</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="74" sourceLocale="th">WEB:15448041</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE SUBTEXT</strong></div>
+<div class="gkms article subtext"><pre class="gkms-non-html">Outline พร้อมให้บริการในภาษาดังต่อไปนี้</pre></div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ภาษาที่พร้อมให้บริการ</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><ul>
+  <li aria-level="1">อาฟรีกานส์</li>
+  <li aria-level="1">แอลเบเนีย</li>
+  <li aria-level="1">อัมฮาริก</li>
+  <li aria-level="1">อาหรับ</li>
+  <li aria-level="1">อาร์เมเนีย</li>
+  <li aria-level="1">อาเซอร์ไบจาน</li>
+  <li aria-level="1">เบงกาลี</li>
+  <li aria-level="1">บอสเนีย</li>
+  <li aria-level="1">บัลแกเรีย</li>
+  <li aria-level="1">พม่า</li>
+  <li aria-level="1">คาตาลัน</li>
+  <li aria-level="1">จีน (ประยุกต์)</li>
+  <li aria-level="1">จีน (ดั้งเดิม)</li>
+  <li aria-level="1">โครเอเชีย</li>
+  <li aria-level="1">เช็ก</li>
+  <li aria-level="1">เดนมาร์ก</li>
+  <li aria-level="1">ดัตช์</li>
+  <li aria-level="1">อังกฤษ (อเมริกัน)</li>
+  <li aria-level="1">อังกฤษ (สหราชอาณาจักร)</li>
+  <li aria-level="1">เอสโตเนีย</li>
+  <li aria-level="1">ฟิลิปปินส์</li>
+  <li aria-level="1">ฟินแลนด์</li>
+  <li aria-level="1">ฝรั่งเศส</li>
+  <li aria-level="1">จอร์เจีย</li>
+  <li aria-level="1">เยอรมัน</li>
+  <li aria-level="1">กรีก</li>
+  <li aria-level="1">ฮีบรู</li>
+  <li aria-level="1">ฮินดี</li>
+  <li aria-level="1">ฮังการี</li>
+  <li aria-level="1">ไอซ์แลนด์</li>
+  <li aria-level="1">อินโดนีเซีย</li>
+  <li aria-level="1">อิตาลี</li>
+  <li aria-level="1">ญี่ปุ่น</li>
+  <li aria-level="1">คาซัค</li>
+  <li aria-level="1">เขมร</li>
+  <li aria-level="1">เกาหลี</li>
+  <li aria-level="1">ลาว</li>
+  <li aria-level="1">ลัตเวีย</li>
+  <li aria-level="1">ลิทัวเนีย</li>
+  <li aria-level="1">มาซิโดเนีย</li>
+  <li aria-level="1">มาเลย์</li>
+  <li aria-level="1">มราฐี</li>
+  <li aria-level="1">มองโกเลีย</li>
+  <li aria-level="1">เนปาล</li>
+  <li aria-level="1">นอร์เวย์</li>
+  <li aria-level="1">เปอร์เซีย</li>
+  <li aria-level="1">โปแลนด์</li>
+  <li aria-level="1">โปรตุเกส (บราซิล)</li>
+  <li aria-level="1">โปรตุเกส (ยุโรป)</li>
+  <li aria-level="1">โรมาเนีย</li>
+  <li aria-level="1">รัสเซีย</li>
+  <li aria-level="1">เซอร์เบีย (ซิริลลิก)</li>
+  <li aria-level="1">เซอร์เบีย (ละติน)</li>
+  <li aria-level="1">สิงหล</li>
+  <li aria-level="1">สโลวาเกีย</li>
+  <li aria-level="1">สโลวีเนีย</li>
+  <li aria-level="1">สเปน (ยุโรป)</li>
+  <li aria-level="1">สเปน (ลาตินอเมริกา)</li>
+  <li aria-level="1">สวาฮีลี</li>
+  <li aria-level="1">สวีเดน</li>
+  <li aria-level="1">ทมิฬ</li>
+  <li aria-level="1">ไทย</li>
+  <li aria-level="1">ตุรกี</li>
+  <li aria-level="1">ยูเครน</li>
+  <li aria-level="1">อูรดู</li>
+  <li aria-level="1">เวียดนาม</li>
+</ul>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="79" sourceLocale="th">WEB:15528599</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ข้อผิดพลาดของไฟร์วอลล์</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p><br />
+  ปัญหาของไฟร์วอลล์ที่คุณอาจพบมี 3 ประการ ดังนี้</p>
+
+<p data-aura-rendered-by="12:266;a"><strong>คุณอาจถูกบล็อกโดยไฟร์วอลล์ของเครือข่าย</strong></p>
+
+<p>หากคุณพยายามติดตั้ง Outline ในขณะที่มีการเชื่อมต่อเครือข่ายที่มีไฟร์วอลล์ เช่น ที่โรงเรียนหรือในที่ทำงาน ให้ลองติดตั้งโดยใช้เครือข่ายอื่น<br data-aura-rendered-by="12:266;a" />
+  <br data-aura-rendered-by="12:266;a" />
+  หากไม่ได้ผล โปรดติดต่อผู้ดูแลเครือข่ายเพื่ออนุญาตการเชื่อมต่อระหว่างเครือข่ายที่มีไฟร์วอลล์กับเซิร์ฟเวอร์ Outline คุณจะต้องทราบที่อยู่ IP ของเซิร์ฟเวอร์และพอร์ตที่ Outline ใช้งาน ซึ่งมีการระบุไว้ที่ท้ายสคริปต์การติดตั้ง</p>
+
+<p data-aura-rendered-by="12:266;a"><strong>คุณอาจถูกบล็อกโดยไฟร์วอลล์ของอุปกรณ์</strong></p>
+
+<p>หากคุณมีซอฟต์แวร์ในอุปกรณ์ที่บล็อกการเชื่อมต่อขาออกในพอร์ตที่ไม่ใช่แบบมาตรฐาน หรือซอฟต์แวร์ที่ไม่รู้จัก (เช่น ZoneAlarm ของ CheckPoint) โปรดอ่านคู่มือของอุปกรณ์หรือซอฟต์แวร์เพื่อดูข้อมูลเกี่ยวกับวิธีสร้างข้อยกเว้นสำหรับ Outline</p>
+
+<p data-aura-rendered-by="12:266;a"><strong>คุณอาจถูกบล็อกโดยไฟร์วอลล์ของเซิร์ฟเวอร์</strong></p>
+
+<p>ผู้ให้บริการระบบคลาวด์ที่คุณเลือกอาจกำหนดให้คุณต้องสร้างข้อยกเว้นในไฟร์วอลล์ของเซิร์ฟเวอร์ด้วยตนเองเพื่อเปิดพอร์ตที่ Outline ใช้งานอยู่ หลังจากที่เรียกใช้สคริปต์การติดตั้ง ระบบจะแสดงพอร์ตที่เลือกไว้แบบสุ่ม 2 พอร์ตที่ Outline ใช้งานอยู่ในเซิร์ฟเวอร์ การเปิดพอร์ต 2 พอร์ตนี้ก็น่าจะเพียงพอแล้ว<br data-aura-rendered-by="12:266;a" />
+  <br data-aura-rendered-by="12:266;a" />
+  หากต้องการสร้างข้อยกเว้นในไฟร์วอลล์ของเซิร์ฟเวอร์ เราขอแนะนำให้อ่านเอกสารสำหรับ "ufw" และ "iptables" ดังนี้</p>
+
+<ul data-aura-rendered-by="12:266;a">
+  <li>
+    <p>UFW:&nbsp;<a href="https://support.getoutline.org/s/article/Firewall-errors?language=th" target="_blank">https://help.ubuntu.com/community/UFW</a></p>
+  </li>
+  <li>
+    <p>Iptables:&nbsp;<a href="https://support.getoutline.org/s/article/Firewall-errors?language=th" target="_blank">https://help.ubuntu.com/community/IptablesHowTo</a></p>
+  </li>
+</ul>
+</div>
+</body>
+</html>

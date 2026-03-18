@@ -1,0 +1,1083 @@
+<html>
+<head>
+<style type="text/css">
+.gkms-gtt-answer-header, .gkms-gtt-message-header {
+  color: black !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 2em;
+  padding: 4px;
+}.gkms-gtt-answer-header {
+  background-color: #E5ECF9;
+  border-top: 1px solid #36C;
+}
+.gkms-gtt-message-header {
+  background-color: #F8F8F8;
+  border-top: 1px solid #CCC;
+}
+.gkms-gtt-hide {
+  visibility: hidden;
+}
+.form_field_data .temporary_signal_wrapper {
+  display: inline;
+}
+</style>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+</head>
+<body lang="ka">
+<br/><div class="gkms id notranslate" sourceGlobalRevision="116" sourceLocale="ka">WEB:14917423</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline-ის მუშაობის წესი</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1723;a">&nbsp;</p>
+
+<p data-aura-rendered-by="12:1723;a"><strong>სერვერის ინსტალაცია</strong><br />
+  <br />
+  ​მიუხედავად იმისა, რომ Outline-ის ინსტალაცია მარტივად გამოიყურება, სინამდვილეში ის მოიცავს რთული პროცესების ნაკრებს თქვენი სერვერის ინსტალაციისთვის. Outline-ის დაყენებისას ინსტალაციის სცენარი შემდეგ ნაბიჯებს გაივლის:</p>
+
+<ul data-aura-rendered-by="12:1723;a">
+  <li>Shadowbox-ის სურათის სტაბილური ვერსია მიიღება და იმპორტირდება Docker-ის გამოყენებით. სურათის ჰოსტინგს უზრუნველყოფს <a href="https://quay.io/" target="_blank">Quay.io</a>, მისამართზე: <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank">https://quay.io/repository/outline/shadowbox?tab=tags</a>. ეს სურათი შეიცავს Outline-ის სერვერისა და Management API-ს, რომელიც მოგვიანებით გამოიყენება Outline-ის სერვერის მართვის აპის მიერ წვდომის გასაღებების შესაქმნელად და წასაშლელად, ანონიმური მეტრიკის შესახებ მოხსენებაზე დასათანხმებლად/უარის სათქმელად და სხვა.</li>
+  <li><a href="https://github.com/v2tec/watchtower" target="_blank">Watchtower</a>-ის ინსტალაცია და კონფიგურაცია ხდება სურათის განახლებების შესამოწმებლად ყოველ საათში, რაც გვეხმარება, დავრწმუნდეთ, რომ Outline-ის სერვერი მუდმივად განახლებულია უახლესი ფუნქციებით და უსაფრთხოების გაუმჯობესებებით.</li>
+  <li>ვებ-სერვერი, რომელიც გამოიყენება Management API-ზე წვდომისთვის, ჩაირთვება შემთხვევით პორტზე, საიდუმლო და შემთხვევით მდებარეობაზე.</li>
+  <li>იქმნება <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank">თვითდამოწმებული SSL სერტიფიკატი</a>, რომ Outline-ის სერვერის მმართველობის დაშიფვრა შესაძლებელი იყოს TLS-ის გამოყენებით, მიუხედავად იმისა, რომ არ აქვს დომენის სახელი. ამ სერტიფიკატის უნიკალური ეკრანის ანაბეჭდი ასევე გენერირებული და შენახულია Outline Manager აპში, რაც გვეხმარება MITM თავდასხმების თავიდან აცილებაში.</li>
+</ul>
+
+<p data-aura-rendered-by="12:1723;a">Outline-ს არ სჭირდება კონფიგურაცია ინსტალაციის შემდეგ.<br />
+  <br />
+  <strong>სერვერის უსაფრთხოება</strong><br />
+  <br />
+  Outline-ის პროგრამული უზრუნველყოფა წარმოადგენს ღია კოდს, რაც იმას ნიშნავს, რომ ყველას შეუძლია მისი კოდის ნახვა და გაუმჯობესება, თუ რაიმე საფრთხეებს აღმოაჩენს. ჩვენი კოდის ჰოსტინგს უზრუნველყოფს <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank"></a>GitHub.<br />
+  <br />
+  გარდა ამისა, ყველა ინსტალირებული Outline-ის სერვერი ავტომატურად გაახლდება ყოველთვის, როდესაც გამოდის ახალი ვერსია, რაც უზრუნველყოფს იმას, რომ Outline-ის არცერთ სერვერზე აღარ დარჩება გაშვებული პროგრამული უზრუნველყოფის ძველი ვერსია.<br />
+  <br />
+  წვდომის გასაღებების სამართავად სერვერზე Outline Manager აპი ინტერაქციაში შედის Management Service-თან Outline-ის სერვერზე. Management Service გაშვებულია შემთხვევით პორტზე და საიდუმლო და უნიკალურ მდებარეობაზე. თვითონ Management Service რეზისტენტულია შემოწმების მიმართ, რადგან ის არ რეაგირებს მოთხოვნებზე, თუ შესაბამისი საიდუმლო მდებარეობა მითითებული არ არის. დაბოლოს, Management Service-თან ყველა კომუნიკაცია დაშიფრულია <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank">თვითდამოწმებული SSL სერტიფიკატით</a>.<br />
+  <br />
+  აგრეთვე, Outline-ის სერვერი არ ინახავს ჟურნალებს და მისი გატეხის შემთხვევაშიც კი მომხმარებლის მონაცემები არ გამჟღავნდება. შეიტყვეთ მეტი <a href="https://support.getoutline.org/s/article/Security-and-privacy" target="_blank">აქ</a>. Outline-ს 2018 წელს აუდიტორული შემოწმება ჩაუტარა <a href="https://radicallyopensecurity.com/" target="_blank">Radically Open Security</a>-მ და <a href="https://cure53.de/" target="_blank">Cure53</a>-მა. ანგარიშები იხილეთ <a href="https://support.getoutline.org/s/article/Security-and-privacy" target="_blank">აქ</a>.<br />
+  <br />
+  <strong>UDP ტრაფიკის მართვა</strong><br />
+  <br />
+  Outline-ს შეუძლია მუშაობა, როგორც სისტემის მასშტაბის VPN-ს, რაც იმას ნიშნავს, რომ მთელი UDP ტრაფიკი გაედინება Outline-ის სერვერიდან.<br />
+  <br />
+  <strong>DNS ტრაფიკი</strong></p>
+
+<p data-aura-rendered-by="12:1723;a"><br />
+  Outline ასრულებს ყველა DNS მოძიებას Outline-ის სერვერიდან და იცავს მათ იმავე დაშიფვრით, რომელიც გამოიყენება ქსელის ყველა სხვა აქტივობისთვის. თქვენი DNS მოთხოვნები Outline-ის სერვერის გავლით გადავა Dyn Internet Guide-ში, OpenDNS-ში, Cloudflare DNS-ში ან Quad9 DNS-ში. Outline არასდროს აღრიცხავს თქვენს DNS მოძიებებს.&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="232" sourceLocale="ka">WEB:14919822</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">უსაფრთხოება და კონფიდენციალურობა Outline-ის გამოყენებისას</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:258;a">უსაფრთხოება და კონფიდენციალურობა Outline-ის გამოყენებისას</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>როგორ იცავს Outline თქვენს ონლაინ კომუნიკაციას</strong></p>
+
+<p data-aura-rendered-by="12:258;a">ინტერნეტის ტრაფიკი ყველაზე დაუცველია თვალთვალის მიმართ, როდესაც ის თქვენს ადგილობრივ ან სახელმწიფო ქსელში გადაადგილდება.</p>
+
+<p data-aura-rendered-by="12:258;a">Outline ხელს უწყობს თქვენი კომუნიკაციის კონფიდენციალურობის დაცვას თქვენი ინტერნეტის ტრაფიკის დაშიფვრით, როდესაც ტრაფიკი თქვენი სახელმწიფო ქსელის შიგნით გადაადგილდება და დაშიფრულად ტოვებს მას, ვიდრე Outline-ის სერვერს მიაღწევდეს. როდესაც ტრაფიკი დაშიფრულია Outline-ით, ქსელზე დამკვირვებელი ვერ მიხვდება, რა ვებსაიტებს სტუმრობთ ან რა ინფორმაციას გადასცემთ.</p>
+
+<p data-aura-rendered-by="12:258;a">Outline შეიძლება დაგეხმაროთ დაცული, გამჭოლი კომუნიკაციის ხელსაწყოებზე წვდომის აღდგენაშიც, რომლებიც შეიძლება თქვენს ქვეყანაში სხვა გზით ხელმისაწვდომი არ იყოს.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>დაშიფვრის სტანდარტები</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Outline შიფრავს კომუნიკაციას თქვენს მოწყობილობასა და Outline-ის სერვერს შორის შიფრის „AEAD 256-bit Chacha2020 IETF Poly 1305“ გამოყენებით. AEAD შიფრები გთავაზობთ კონფიდენციალურობას, მთლიანობას და ავთენტურობას და აჩვენებს ბრწყინვალე მუშაობის მაგალითს თანამედროვე აპარატურაზე.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>უსაფრთხოების აუდიტები</strong></p>
+
+<p data-aura-rendered-by="12:258;a">2018 წელს Outline-ს აუდიტორული მომსახურება ჩაუტარა Radically Open Security-მ და Cure53-მა, ციფრული უსაფრთხოების ორმა დამოუკიდებელმა ორგანიზაციამ, რომლებიც განიხილავენ პროგრამულ უზრუნველყოფას უსაფრთხოების უახლეს სტანდარტებთან მიმართებაში. Radically Open Security-მა დამატებითი აუდიტი ჩაატარა 2022 წელს, ხოლო Cure53-მა Outline-ის SDK-ს აუდიტი ჩაატარა 2024 წელს. ანგარიშებს შეგიძლიათ, გაეცნოთ აქ:</p>
+
+<ul data-aura-rendered-by="12:258;a">
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf" target="_blank">Radically Open Security-ს ანგარიში შეღწევის ტესტირების შესახებ (2018 წლის იანვარი)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf" target="_blank">Cure53 Pentest &amp; Audit Report Jigsaw Outline (2018 წლის დეკემბერი)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf" target="_blank">Radically Open Security-ს ანგარიში შეღწევის ტესტირების შესახებ (2022 წლის დეკემბერი)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf" target="_blank">Cure53 Pentest Report Jigsaw Outline VPN SDK (2024 წლის იანვარი)</a></li>
+</ul>
+
+<p data-aura-rendered-by="12:258;a"><strong>ანონიმური მეტრიკა და ჟურნალები</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Outline თვალს ადევნებს გამტარუნარიანობას, რომელიც გამოიყენება, როგორც „გადაცემული ბაიტები“ თითოეული წვდომის გასაღებისთვის. ეს ინფორმაცია საშუალებას აძლევს სერვერის ადმინისტრატორებს, საჭიროებისამებრ დააკორექტირონ გამტარუნარიანობის გამოწერები თავიანთი ღრუბლოვანი სერვერის პროვაიდერებთან, თუმცა არ აძლევს მათ უფლებას, იხილონ ფაქტობრივი ინფორმაცია, რომელმაც Outline-ის სერვერი გაიარა.</p>
+
+<p data-aura-rendered-by="12:258;a">შეიტყვეთ მეტი Outline-ის <a href="/outline-faq/answer/15331222" rel="noopener" target="_blank">მონაცემებისა და ინფორმაციის შეგროვების შესახებ</a>.</p>
+
+<hr data-aura-rendered-by="12:258;a" />
+<p data-aura-rendered-by="12:258;a"><strong>უსაფრთხოებისა და კონფიდენციალურობის შესახებ ხშირად დასმული შეკითხვები</strong>&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>შეუძლია Outline-ს ანონიმური გამხადოს ონლაინ?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">არა, Outline ანონიმურობის ხელსაწყო არ არის. Outline იცავს თქვენს კონფიდენციალურობას ქსელის პოტენციური დამკვირვებლებისგან.</p>
+
+<p data-aura-rendered-by="12:258;a">Outline არ გთავაზობთ სრულ ანონიმურობას ვებსაიტებზე, რომლებსაც სტუმრობთ, რადგან მათ მაინც შეუძლია ამოგიცნოთ, როდესაც შედიხართ სისტემაში და ზოგჯერ ისეთი ტექნიკების მეშვეობით, როგორიცაა ბრაუზერის თითის ანაბეჭდის აღება. რაც შეეხება მობილურ აპებს, ყველაზე თანამედროვე სმარტფონებს აქვს API-ები, რომლებიც საშუალებას აძლევს დაყენებულ აპებს, მოიძიოს თქვენი მდებარეობა თქვენი პროქსი-სერვერისგან დამოუკიდებლად, რადგანაც ისინი ჩაშენებულ GPS-ს ეყრდნობა.</p>
+
+<p data-aura-rendered-by="12:258;a">VPN-ები ზოგადად გთავაზობთ მნიშვნელოვან დაცვას, განსაკუთრებით, ინტერნეტის თვალთვალისგან, მაგრამ ყოველთვის არსებობს რისკი ონლაინ ოპერირებისას. თუნდაც VPN-ით, თუ ინტერნეტ-პროვაიდერმა უკვე იცის თქვენი ვინაობა და შეუძლია თქვენი ქსელის ტრაფიკზე დაკვირვება, მას შეუძლია განსაზღვროს თქვენი Outline-ის სერვერის IP მისამართი. ამ ინფორმაციის გამოყენება შესაძლებელია Outline-ის სერვერზე წვდომის დასაბლოკად ან გამოყენების შაბლონების (მაგ., ჩვეულებისამებრ, როდის ხართ ონლაინ და თქვენი არაზუსტი მდებარეობა) შესასწავლად.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>ვინმეს შეუძლია გაგება, რომ Outline-ს ვიყენებ?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">შესაძლებელია. ძალიან სავარაუდოა, რომ პლატფორმები და სერვისები, რომლებზეც წვდომა გაქვთ, შეძლებენ გარჩევას, რომ თქვენი კავშირი ღრუბლოვანი სერვერიდან მოდის. დროდადრო მათ შეიძლება დაასკვნან, რომ VPN-ს იყენებთ, მაგრამ ვერ დაინახავენ თქვენი ინტერნეტის ტრაფიკის კონტენტს.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>მიცავს Outline ყველა შესაძლო კიბერთავდასხმისგან?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">არა. არცერთი ხელსაწყო არ დაგიცავთ ყველა შესაძლო კიბერთავდასხმისგან. Outline გაძლევთ წვდომას ღია ინტერნეტზე და ზრდის თქვენს კონფიდენციალურობას თქვენი ტრაფიკის დაშიფვრით, მაგრამ გირჩევთ, მიიღოთ დამატებითი ზომები, რომ დაიცვათ თავი სხვა ტიპის თავდასხმებისგან, როგორიცაა მავნე პროგრამა და ფიშინგი.</p>
+
+<p data-aura-rendered-by="12:258;a">თქვენი ონლაინ დაცვის საშუალებების გასაძლიერებლად გთხოვთ, დაფიქრდეთ თქვენი ორგანიზაციის კიბერუსაფრთხოების ექსპერტთან თანამშრომლობაზე. ალტერნატივის სახით, შეგიძლიათ მიიღოთ პერსონალიზებული ხელმძღვანელობა უსაფრთხოების წამყვანი ექსპერტებისგან <a href="https://securityplanner.org/" target="_blank">Security Planner</a>-იდან — ვებსაიტიდან, რომელიც შექმნილია მკაფიო ინსტრუქციის მოსაწოდებლად თქვენთვის, თუ როგორ აირჩიოთ კიბერუსაფრთხოების სწორი ხელსაწყოები თქვენი მოთხოვნების გათვალისწინებით.</p>
+
+<p data-aura-rendered-by="12:258;a">კიბერუსაფრთხოების სხვა პროდუქტების მონახულება ასევე შეგიძლიათ აქედან: <a href="https://jigsaw.google.com/" target="_blank">Jigsaw</a>, როგორიცაა <a href="https://getintra.org/" target="_blank">Intra</a>, <a href="https://g.co/shield" target="_blank">Project Shield</a> და <a href="https://chrome.google.com/webstore/detail/password-alert/noondiphcddnnabmjcihcjfbhfklnnep?" rel="noopener" target="_blank">Password Alert</a>.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>VPN-ის გამოყენება ლეგალურია?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">გთხოვთ, შეამოწმოთ თქვენი ადგილობრივი კანონები, რეგულაციები და მომსახურების პირობები იმ ღრუბლის პროვაიდერისთვის, რომლის გამოყენებასაც გეგმავთ, ვიდრე აამოქმედებდეთ Outline-ს ან აპს გამოიყენებდეთ.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="89" sourceLocale="ka">WEB:15330317</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">რატომ არ მაქვს წვდომა ინტერნეტზე მაშინაც კი, როცა დაკავშირებული ვარ Outline-ის სერვერთან?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:32933;a">თუ მობილურ ტელეფონს იყენებთ, სცადეთ მობილური ინტერნეტისა და Wi-Fi კავშირების გადართვა. ზოგჯერ კავშირის ერთი ტიპი მუშაობს, მეორე კი – არა. თუ კომპიუტერს იყენებთ, სცადეთ მაღალგამტარიანიდან გამორთვა და ხელახლა ჩართვა.</p>
+
+<p data-aura-rendered-by="12:32933;a">თუ კვლავ გაქვთ პრობლემები, როგორც ჩანს, ეს Outline-ის სერვერიდან მომდინარეობს. დაუკავშირდით თქვენს <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank"> სერვისის მმართველს</a>&nbsp;წვდომის ახალი გასაღების მისაღებად სხვა სერვერისთვის. მან შესაძლოა, გაგიზარდოთ <a href="https://google-jigsaw--jigsawuat.sandbox.my.site.com/outline/s/article/Terminology" target="_blank"> </a><a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">წვდომის გასაღების</a>&nbsp;მონაცემთა ლიმიტი, თუ გასაღები თავის კვოტას გადააჭარბებს.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="296" sourceLocale="ka">WEB:15330818</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">რა მოთხოვნები აქვს სისტემას Outline-ის კლიენტის გასაშვებად?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:24676;a">შეგიძლიათ, სცადოთ Outline ნებისმიერ ოპერაციულ სისტემაზე. სისტემის მინიმალური ოპერაციული მომთხოვნები შემდეგია:</p>
+
+<table class="borders" data-aura-rendered-by="12:24676;a" width="312">
+  <tbody>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top"><b>ოპერაციული სისტემა</b></td>
+      <td colspan="1" rowspan="1" valign="top"><b>მინიმალური ვერსია</b></td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Android</td>
+      <td colspan="1" rowspan="1" valign="top">10</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">iOS</td>
+      <td colspan="1" rowspan="1" valign="top">15.5</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">MacOS</td>
+      <td colspan="1" rowspan="1" valign="top">12.0</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Windows</td>
+      <td colspan="1" rowspan="1" valign="top">10</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Linux</td>
+      <td colspan="1" rowspan="1" valign="top">Ubuntu&nbsp;20.04</td>
+    </tr>
+  </tbody>
+</table>
+
+<p data-aura-rendered-by="12:24676;a"><br />
+  გსურთ, დაეხმაროთ Outline-ის კლიენტს მეტ ოპერაციულ სისტემაზე მუშაობაში?&nbsp;<a href="https://github.com/Jigsaw-Code/outline-client#platform-specific-development" target="_blank">შეიტანეთ წვლილი ჩვენი კოდების ბაზაში</a>&nbsp;GitHub-ზე!</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="107" sourceLocale="ka">WEB:15330824</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">როგორ განვაახლო ჩემი Outline-ის სერვერის პროგრამული უზრუნველყოფა?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:10378;a">Outline-ის სერვერები ავტომატურად განახლდება უსაფრთხოების უახლესი გაუმჯობესებებით, რათა ყოველთვის გაშვებული გქონდეთ Outline-ის უახლესი ტექნოლოგია. ავტომატიზებული განახლების პროცესი ჩართულია <a href="https://github.com/v2tec/watchtower" target="_blank">Watchtower</a>-ის — ღია კოდის ბიბლიოთეკის — გამოყენებით, რომელიც რეგულარულად ამოწმებს და განაახლებს Outline-ის პროგრამული უზრუნველყოფის შემცველ დოკერის სურათს.</p>
+
+<p data-aura-rendered-by="12:10378;a">ამასთანავე, როდესაც Outline-ის დეინსტალაციას ასრულებთ Outline-ის მმართველის გამოყენებით, ჩვენ დავაყენებთ „cron job“-ს, რათა ავტომატურად განახლდეს პროგრამული უზრუნველყოფა სერვერზე <a href="https://wiki.debian.org/UnattendedUpgrades" target="_blank">მართვადი განახლებებით</a> (Ubuntu) გადაიტვირთოს, როცა საჭიროა. გახსოვდეთ, რომ ეს არ მოხდება გაფართოებულ რეჟიმში, რათა შენარჩუნდეს არსებული კონფიგურაცია იმ დაშვებით, რომ ჰოსტი გამოიყენება Outline-ის გაშვების გარდა სხვა სერვისებისთვისაც.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="102" sourceLocale="ka">WEB:15330825</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">როგორ ჩამოვტვირთო Outline Manager, თუ ჩამოტვირთვის ბმული არ მუშაობს?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">გამოიყენეთ <a href="https://getoutline.org/get-started/#step-1" target="_blank">ეს ბმული</a> ან <a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">ეს ბმული</a>, რომ პირდაპირ ჩამოტვირთოთ აპი სხვადასხვა საოპერაციო სისტემისთვის.&nbsp;</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="129" sourceLocale="ka">WEB:15330920</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ტერმინოლოგია</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:23504;a"><strong>რა არის VPN?</strong><br />
+  ვირტუალური კერძო ქსელი (VPN) არის კერძო კავშირი თქვენს მოწყობილობასა და მასპინძელ სერვერს შორის. თქვენი ტრაფიკი დამალულია ინტერნეტის პროვაიდერისგან, როცა VPN-ს იყენებთ. შესაძლოა, VPN-ის გამოყენება მოისურვოთ შემდეგი მიზნებით:</p>
+
+<ul data-aura-rendered-by="12:23504;a">
+  <li>საჯარო Wi-Fi ქსელის გამოყენებისას თქვენი მონაცემების დაცვა</li>
+  <li>თქვენი დათვალიერების მონაცემების კონფიდენციალურობის დაცვა ინტერნეტის პროვაიდერისგან და სამთავრობო უწყებებისგან</li>
+  <li>უცენზურო კონტენტზე წვდომისას მსოფლიოს სხვადასხვა წყაროებიდან</li>
+</ul>
+
+<p data-aura-rendered-by="12:23504;a"><strong>რა გამოარჩევს Outline-ს ტრადიციული VPN-ებისგან?</strong><br />
+  ინტერნეტ-პროვაიდერები უსაფრთხოების ზოგადი პროტოკოლებისა და/ან ტრაფიკის მოცულობის ნიმუშების ამოცნობით მარტივად აღმოაჩენენ და ბლოკავენ ტრადიციულ VPN-ებს. Outline ტრადიციულ VPN-ებზე მეტად მდგრადია, რადგან მასში ჩაშენებული პროტოკოლი უზრუნველყოფს მის რთულად აღმოჩენას და შესაბამისად — დაბლოკვას. Outline მდგრადია ცენზურის სპეციალიზებული ფორმების, მათ შორის, ქსელისა და IP მისამართით, დაბლოკვის წინააღმდეგ.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>რა არის Outline-ის სერვერი?</strong><br />
+  Outline-ის სერვერზე გაშვებულია VPN, რომელსაც უკავშირდებიან ნებადართული მომხმარებლები. თუ ახალ ქსელს ქმნით, შეგიძლიათ, გამოიყენოთ საკუთარი დაცული სერვერი Outline-ის სერვერად, ან ისეთი ღრუბლოვანი სერვისის პროვაიდერები, როგორებიცაა:</p>
+
+<ul data-aura-rendered-by="12:23504;a">
+  <li>DigitalOcean</li>
+  <li>Google Cloud Platform (GCP)</li>
+  <li>Amazon Web Services (AWS)</li>
+</ul>
+
+<p data-aura-rendered-by="12:23504;a"><a id="One" target="_blank"></a>თქვენს სერვერს Outline Manager-ში შექმნით.<br />
+  <br />
+  <strong><a id="servicemanager" name="servicemanager"></a>რა არის სერვისის მმართველი?</strong><br />
+  სერვისის მმართველი არის Outline-ის სერვერის კონფიგურაციასა და მომხმარებლებისთვის წვდომის გასაღებების გაზიარებაზე პასუხისმგებელი პირი. სერვისის მმართველი, ზოგადად, პასუხისმგებელია სერვერის გამოყენების ღირებულებაზე.&nbsp;<br />
+  <br />
+  <strong><a id="accesskey" name="accesskey"></a>რა არის წვდომის გასაღები?</strong><br />
+  წვდომის გასაღები გამოიყენება Outline-ის არსებულ სერვერზე წვდომისა და VPN-თან დაკავშირებისთვის. <a href="#servicemanager" rel="noopener">სერვისის მმართველი</a> გადმოგცემთ წვდომის გასაღებს, ან თქვენ თვითონ შეგიძლიათ<a href="/outline-faq/answer/15331530" rel="noopener" target="_blank"> Outline-ის სერვერის კონფიგურაცია</a>.&nbsp;აი, მაგალითად, როგორ გამოიყურება წვდომის გასაღები (არ მუშაობს; განკუთვნილია მხოლოდ საჩვენებლად):&nbsp;<br />
+  <br />
+  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1<br />
+  <br />
+  <strong>რა არის Outline Manager?</strong><br />
+  Outline Manager-ის არის დესკტოპის აპი, რომელსაც სერვისის მმართველი იყენებს Outline-ის სერვერის კონფიგურაციისთვის, <a href="#accesskey" rel="noopener">წვდომის გასაღებების</a> გენერირებისთვის და თითოეულ გასაღებისთვის მონაცემთა ლიმიტის განსაზღვრისთვის. Outline Manager-ის უახლესი ვერსიის ჩამოტვირთვა შესაძლებელია<a href="https://getoutline.org/get-started/#step-3" target="_blank"> აქედან</a> ან<a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank"> აქედან</a>.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>რა არის Outline-ის კლიენტი?</strong><br />
+  Outline-ის კლიენტი არის აპი (დესკტოპ და მობილური ვერსია), რომლითაც დაუკავშირდებით Outline-ის სერვერს და წვდომას მიიღებთ VPN-ზე წვდომის გასაღებით. Outline კლიენტის უახლესი ვერსიის ჩამოტვირთვა შესაძლებელია<a href="https://getoutline.org/get-started/#step-3" target="_blank"> აქედან</a> ან<a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank"> აქედან</a>.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>რა არის მონაცემთა ლიმიტები?</strong><br />
+  Outline Manager საშუალებას აძლევს სერვისის მმართველებს, წვდომის გასაღებებზე დააყენონ მონაცემთა 30-დღიანი საცდელი ლიმიტები, რათა თავიდან აიცილონ ზედმეტად გამოყენება და გაუთვალისწინებელი ხარჯები. სერვისის მმართველებს შეუძლიათ დააყენონ ნაგულისხმევი ლიმიტი, რომელიც გავრცელდება თითოეულ გასაღებზე და სხვა ლიმიტიც ნებისმიერ გასაღებზე, რომელიც უგულებელყოფს ნაგულისხმევ ლიმიტს. როდესაც ლიმიტი დაყენებულია, ის ძალაში შედის დაუყოვნებლივ და ხორციელდება საათობრივად.</p>
+
+<p data-aura-rendered-by="12:23504;a">თუ სერვისის მმართველები დაეთანხმებიან მეტრიკის Jigsaw-თან გაზიარებას, ისინი უნდა გაეცნონ <a href="/outline-faq/answer/15331222" rel="noopener" target="_blank">მონაცემთა შეგროვების დებულებას</a> იმის შესახებ, თუ როგორ ხდება ანგარიშგება მონაცემთა ლიმიტების შესახებ.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="110" sourceLocale="ka">WEB:15331121</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">თქვენ მიერ მხარდაჭერილია getoutline.me და Telegram არხი @OutlineVpnOfficial?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Outline-ის გუნდმა მიიღო უამრავი შეკითხვა ვებსაიტის <a href="http://getoutline.me/" target="_blank">getoutline.me</a> და მასთან დაკავშირებული Telegram არხის @OutlineVpnOfficial თაობაზე. ეს სერვისები არ არის დაკავშირებული Outline-ის გუნდთან და ჩვენ ვერ დავეხმარებით იმ მომხმარებლებს, რომლებსაც ამ წყაროებისგან მიღებული წვდომის გასაღებებთან დაკავშირებით პრობლემები აქვთ.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="ka">WEB:15331122</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ხელმისაწვდომი ენები</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Outline ხელმისაწვდომია შემდეგ ენებზე:</p>
+
+<ul>
+  <li aria-level="1">აფრიკაანსი</li>
+  <li aria-level="1">ალბანური</li>
+  <li aria-level="1">ამჰარული</li>
+  <li aria-level="1">არაბული</li>
+  <li aria-level="1">სომხური</li>
+  <li aria-level="1">აზერბაიჯანული</li>
+  <li aria-level="1">ბენგალური</li>
+  <li aria-level="1">ბოსნიური</li>
+  <li aria-level="1">ბულგარული</li>
+  <li aria-level="1">ბირმული</li>
+  <li aria-level="1">კატალანური</li>
+  <li aria-level="1">ჩინური (გამარტივებული)</li>
+  <li aria-level="1">ჩინური (ტრადიციული)</li>
+  <li aria-level="1">ხორვატიული</li>
+  <li aria-level="1">ჩეხური</li>
+  <li aria-level="1">დანიური</li>
+  <li aria-level="1">ნიდერლანდური</li>
+  <li aria-level="1">ინგლისური (ამერიკული)</li>
+  <li aria-level="1">ინგლისური (ბრიტანული)</li>
+  <li aria-level="1">ესტონური</li>
+  <li aria-level="1">ფილიპინური</li>
+  <li aria-level="1">ფინური</li>
+  <li aria-level="1">ფრანგული</li>
+  <li aria-level="1">ქართული</li>
+  <li aria-level="1">გერმანული</li>
+  <li aria-level="1">ბერძნული</li>
+  <li aria-level="1">ებრაული</li>
+  <li aria-level="1">ჰინდი</li>
+  <li aria-level="1">უნგრული</li>
+  <li aria-level="1">ისლანდიური</li>
+  <li aria-level="1">ინდონეზიური</li>
+  <li aria-level="1">იტალიური</li>
+  <li aria-level="1">იაპონური</li>
+  <li aria-level="1">ყაზახური</li>
+  <li aria-level="1">ქმერული</li>
+  <li aria-level="1">კორეული</li>
+  <li aria-level="1">ლაოსური</li>
+  <li aria-level="1">ლატვიური</li>
+  <li aria-level="1">ლიეტუვური</li>
+  <li aria-level="1">მაკედონიური</li>
+  <li aria-level="1">მალაიური</li>
+  <li aria-level="1">მარათჰი</li>
+  <li aria-level="1">მონღოლური</li>
+  <li aria-level="1">ნეპალური</li>
+  <li aria-level="1">ნორვეგიული</li>
+  <li aria-level="1">სპარსული</li>
+  <li aria-level="1">პოლონური</li>
+  <li aria-level="1">პორტუგალიური (ბრაზილიური)</li>
+  <li aria-level="1">პორტუგალიური (ევროპული)</li>
+  <li aria-level="1">რუმინული</li>
+  <li aria-level="1">რუსული</li>
+  <li aria-level="1">სერბული (კირილიცა)</li>
+  <li aria-level="1">სერბული (ლათინური)</li>
+  <li aria-level="1">სინჰალური</li>
+  <li aria-level="1">სლოვაკური</li>
+  <li aria-level="1">სლოვენიური</li>
+  <li aria-level="1">ესპანური (ევროპა)</li>
+  <li aria-level="1">ესპანური (ლათინური ამერიკა)</li>
+  <li aria-level="1">სუაჰილი</li>
+  <li aria-level="1">შვედური</li>
+  <li aria-level="1">ტამილური</li>
+  <li aria-level="1">ტაილანდური</li>
+  <li aria-level="1">თურქული</li>
+  <li aria-level="1">უკრაინული</li>
+  <li aria-level="1">ურდუ</li>
+  <li aria-level="1">ვიეტნამური</li>
+</ul>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="110" sourceLocale="ka">WEB:15331125</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">რატომ ვერ ვაინსტალირებ Outline-ის კლიენტს Windows-ისთვის?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:31254;a">შეიძლება შეცდომის ეს შეტყობინება იხილოთ: „სამწუხაროდ, Outline სათანადოდ ვერ დაინსტალირდა. გთხოვთ, ხელახლა სცადოთ მისი ინსტალაცია. თუ ეს ვერ დაგეხმარებათ,&nbsp;<a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank"></a>გამოგვეხმაურეთ“.</p>
+
+<p data-aura-rendered-by="12:31254;a">თუ Outline-ს Windows-ში იყენებთ, შესაძლოა, ზოგჯერ მოულოდნელი შეცდომა მოხდეს. შემთხვევათა უმეტესობაში საჭიროა Outline TAP ადაპტერის (დრაივერი) წაშლა და Outline-ის ხელახალი ინსტალაცია.</p>
+
+<p data-aura-rendered-by="12:31254;a">ნაბიჯები შეიძლება განსხვავდებოდეს თქვენი Windows-ის ოპერაციული სისტემის მიხედვით, მაგრამ ქვემოთ მოცემულია ზოგადი ნაბიჯები, როგორ შეასრულოთ TAP ადაპტერისა და Outline-ის დეინსტალაცია და შემდეგ Outline-ის ხელახალი ინსტალაცია.</p>
+
+<ol data-aura-rendered-by="12:31254;a">
+  <li>TAP ადაპტერის დეინსტალაცია Outline-ის კლიენტისთვის
+    <ul>
+      <li>გადადით&nbsp;<strong>მოწყობილობათა მმართველებში</strong>, შემდეგ&nbsp;<strong>ქსელის ადაპტერებში</strong></li>
+      <li>იპოვეთ&nbsp;<strong>TAP-Windows Adapter V9</strong>&nbsp;ფაილი ან TAP ადაპტერი, რომელიც დაკავშირებულია Outline-თან</li>
+      <li>შეასრულეთ ამ ადაპტერის დეინსტალაცია ან წაშალეთ ის. გაითვალისწინეთ, რომ ამან შეიძლება, იმოქმედოს VPN-ის სხვა აპებზეც, რომლებიც დაინსტალირებული გაქვთ.&nbsp;</li>
+    </ul>
+  </li>
+  <li>Outline-ის კლიენტის დეინსტალაცია
+    <ul>
+      <li>გადადით&nbsp;<strong>პროგრამებსა და ფუნქციებში</strong>, შემდეგ კი აირჩიეთ&nbsp;<strong>პროგრამის დეინსტალაცია</strong></li>
+      <li>იპოვეთ Outline-ის კლიენტის აპი და შეასრულეთ Outline-ის კლიენტის დეინსტალაცია</li>
+      <li><a href="https://getoutline.org/get-started/#step-3" target="_blank">ჩამოტვირთეთ Outline-ის კლიენტის აპის უახლესი ვერსია</a>&nbsp;და ხელახლა დააინსტალირეთ ის თქვენს Windows მოწყობილობაზე. ახალი ინსტალაცია ავტომატურად დააინსტალირებს TAP-ის ახალ ადაპტერს.</li>
+    </ul>
+  </li>
+</ol>
+
+<p data-aura-rendered-by="12:31254;a">თუ კვალავაც ეჩეხებით სირთულეს,&nbsp;<a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">მხარდაჭერას დაუკავშირდით</a>.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="109" sourceLocale="ka">WEB:15331126</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">რატომ ვერ ვუკავშირდები Outline-ის სერვისს?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>აი, რამდენიმე მიზეზი, რის გამოც, შესაძლოა, ვერ დაუკავშირდეთ Outline-ის სერვისს:&nbsp;</p>
+
+<ul>
+  <li aria-level="1"><strong>თქვენი მოწყობილობა</strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#One" rel="noopener"><strong> </strong></a><a href="#Internetissues" rel="noopener"><strong>გათიშულია ინტერნეტიდან</strong></a><a href="#Internetissues" rel="noopener"> </a><strong>. </strong>ზოგჯერ თქვენს მოწყობილობას შეიძლება ჰქონდეს წყვეტა ქსელთან კავშირში და მას შეიძლება მცირე დრო დასჭირდეს ქსელის ხატულების გასაახლებლად. ასევე, შესაძლებელია, თქვენი მოწყობილობა დაკავშირებული იყოს ადგილობრივ ქსელთან, მაგრამ ინტერნეტი გათიშული იყოს.</li>
+  <li aria-level="1"><strong>თქვენი</strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#Two"><strong></strong></a> <a href="#FirewallIssues" rel="noopener"><strong>ქსელის დაცვა ბლოკავს თქვენს წვდომას</strong></a><a href="#FirewallIssues" rel="noopener"> </a><strong><a href="#FirewallIssues" rel="noopener"></a>Outline სერვერზე. </strong>ეს მოსალოდნელია, თუ იყენებთ საჯარო ქსელს, მაგალითად, სკოლის, სამსახურის ან უფასო უსადენო ქსელს.</li>
+  <li aria-level="1"><strong>თქვენს მოწყობილობას აქვს</strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#Three"><strong> </strong></a><a href="#SoftwareIssues" rel="noopener"><strong>ქსელის დაცვა ან ანტივირუსული პროგრამული უზრუნველყოფა</strong></a><a href="#SoftwareIssues" rel="noopener"> </a><strong>რომელიც ბლოკავს წვდომას თქვენს Outline სერვერზე.</strong></li>
+  <li aria-level="1"><strong>თქვენი</strong><a href="#DeviceSettings" rel="noopener"><strong> </strong><strong>ტელეფონის მოწყობილობის პარამეტრების</strong></a><strong> შეცვლა შეიძლება გახდეს საჭირო.</strong></li>
+  <li aria-level="1"><strong>შესაძლოა, თქვენმა სერვისის მმართველმა</strong><a href="#ServerIssues" rel="noopener"><strong> </strong><strong>გაანადგურა სერვერი ან თქვენი ინტერნეტ-პროვაიდერი ბლოკავს თქვენს მოთხოვნას</strong></a>.</li>
+</ul>
+
+<p><a id="Internetissues" name="Internetissues"><strong>ინტერნეტ-კავშირის პრობლემები:</strong></a></p>
+
+<p><strong>შემოწმების წესი:</strong></p>
+
+<p>გამორთეთ Outline და ნახეთ, აღგიდგებათ თუ არა ინტერნეტ-კავშირი.</p>
+
+<ul>
+  <li aria-level="1">თუ აღდგება, ქვემოთ გაეცანით დეფექტების აღმოფხვრის სხვა ვარიანტებს.</li>
+  <li aria-level="1">თუ არ აღდგება, მოითმინეთ, რომ ნახოთ, თვითონ განახლდება თუ არა თქვენი კავშირის პარამეტრები.</li>
+</ul>
+
+<p><strong>აღმოფხვრის გზები:</strong></p>
+
+<p>დააბრუნეთ თქვენი მოწყობილობა ონლაინ რეჟიმში:</p>
+
+<ol>
+  <li aria-level="1">შეამოწმეთ სხვა მოწყობილობა, რომ ნახოთ, შეუძლია თუ არა მას იმავე ქსელთან დაკავშირება. თუ სხვა მოწყობილობები ვერ გადადის ონლაინ რეჟიმში, ქსელი შეიძლება გათიშულია და მის აღდგენას უნდა დაელოდოთ, ან დეფექტების აღმოფხვრა დაიწყოთ.</li>
+  <li aria-level="1">თუ სხვა მოწყობილობები უერთდება იმავე ქსელს, შეგიძლიათ ცადოთ რომელიმე შემდეგი მეთოდი თქვენი მოწყობილობის ონლაინ რეჟიმში დასაბრუნებლად:
+    <ol>
+      <li aria-level="2">გადაიყვანეთ მოწყობილობა თვითმფრინავის რეჟიმში (მობილური)</li>
+      <li aria-level="2">გადატვირთეთ მოწყობილობა</li>
+      <li aria-level="2">გამორთეთ მოწყობილობა, დაელოდეთ 2 წუთი, ჩართეთ ხელახლა</li>
+    </ol>
+  </li>
+</ol>
+
+<p><a id="FirewallIssues" name="FirewallIssues"><strong>ქსელის დაცვის პრობლემები:</strong></a></p>
+
+<p><strong>შემოწმების წესი:</strong></p>
+
+<ol>
+  <li aria-level="1">გათიშეთ კავშირი Wi-Fi-სთან ან სადენიან ქსელთან.</li>
+  <li aria-level="1">დაუკავშირდით სხვა ქსელს, მაგალითად, ფიჭურს</li>
+  <li aria-level="1">ცადეთ Outline-ის სერვერთან ხელახლა დაკავშირება</li>
+</ol>
+
+<p>თუ დაკავშირება შეძელით, როდესაც სხვა ქსელში ხართ, მაშინ პრობლემა თქვენ გაქვთ.</p>
+
+<p><strong>აღმოფხვრის გზები:</strong></p>
+
+<p>დაუკავშირდით სერვისის მმართველს და სთხოვეთ, მოგცეთ წვდომა თქვენს სერვერზე ან, სანაცვლოდ, გააგრძელეთ სხვა ქსელის გამოყენება.</p>
+
+<p><a id="SoftwareIssues" name="SoftwareIssues"><img alt="ეს სურათი მიუწვდომელია, რადგან: თქვენ არ გაქვთ მისი ნახვის პრივილეგია, ან ის ამოღებულია სისტემიდან" height="1" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeoHNM7TWEsg0z4iydaS2xKOPga0zOjhOTqvGpA-JLd-Fwnydby6EBZziz3vqgRUJwssreEqP6lmjv_-13QXdzqh3yx9tZiR81BvxcXShi3kJ-XDKnqt951uRRPSO8BUhXaiijJLF8PixV_ezhGJ02Y3QPFbw?key=pJIeaVZQOqqoBTmDWZd2hw" width="1" /><strong>ქსელის დაცვის ან ანტივირუსული პროგრამული უზრუნველყოფის პრობლემები:</strong></a><br />
+  <br />
+  <strong>შემოწმების წესი:</strong><br />
+  <br />
+  ცადეთ Outline-თან დაკავშირება სხვა მოწყობილობიდან.&nbsp;</p>
+
+<p>შენიშვნა: გახსოვდეთ, რომ დაგჭირდებათ წვდომის გასაღები და Outline აპი Outline-ის გამოსაყენებლად სხვა მოწყობილობაზე.</p>
+
+<p><strong>აღმოფხვრის გზები:</strong></p>
+
+<p>შეამოწმეთ თქვენი ქსელის დაცვის ან ანტივირუსული პროგრამული უზრუნველყოფის პარამეტრები, რათა დარწმუნდეთ, რომ ისინი დაყენებულია ისე, რომ VPN-ის და Outline-ის ტრაფიკის გატარება დაშვებულია.</p>
+
+<p><a id="DeviceSettings" name="DeviceSettings"><strong>მოწყობილობის პარამეტრები:</strong></a></p>
+
+<p><strong>შეამოწმეთ:</strong></p>
+
+<p>Android-ისთვის:</p>
+
+<ol>
+  <li aria-level="1">გახსენით პარამეტრების აპი.</li>
+  <li aria-level="1">მოძებნეთ <strong>VPN-ის პარამეტრები</strong> თქვენს მოწყობილობაში (VPN-ის პარამეტრები გაჩვენებთ ყველა VPN აპს, რომელსაც ამჟამად თქვენს ტელეფონზე აქვს წვდომა).&nbsp;</li>
+  <li aria-level="1">თუ VPN-ის პარამეტრებში Outline-ს ვერ ხედავთ, ამოშალეთ Outline და ხელახლა დააინსტალირეთ. Outline-ს ავტომატურად უნდა მიეცეს წვდომა მოწყობილობაში ინსტალაციისას.</li>
+</ol>
+
+<p>დარწმუნდით, რომ დაინსტალირებული არ გაქვთ ეკრანის გადამფარავი რაიმე აპი თქვენს Android მოწყობილობაში, რადგან ის შესაძლოა, Outline-ის ნებართვების ფანჯარას ფონურ რეჟიმში გზავნიდეს და ის არ იყოს წინა პლანზე ხილული.<br />
+  <br />
+  თქვენს Android მოწყობილობაში გადადით: პარამეტრები &gt; აპები &gt; სპეციალური აპის წვდომა. შემდეგ შეეხეთ პარამეტრს „სხვა აპების ფონზე გამოჩენა“. შეგიძლიათ, ნებისმიერი აპის წვდომა გააუქმოთ, რომელიც მსგავს მოქმედებას ნებას რთავს.<br />
+  <br />
+  iOS-ისთვის: გაეცანით<a href="https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web" rel="noopener" target="_blank"> მხარდაჭერის ამ სტატიას</a>.</p>
+
+<p><a id="ServerIssues" name="ServerIssues"><strong>სერვერის პრობლემები:</strong></a></p>
+
+<p><strong>შემოწმების წესი:</strong></p>
+
+<p>თუ ერთზე მეტ სერვერზე გაქვთ წვდომა, ცადეთ დაკავშირება სხვა სერვერთან.&nbsp;</p>
+
+<p><strong>აღმოფხვრის გზები:</strong></p>
+
+<p>დაუკავშირდით თქვენი სერვისის მმართველს და გაიგეთ, განადგურებული ხომ არ არის სერვერი. თუ კი, სთხოვეთ მას სხვა სერვერზე <a href="/outline-faq/answer/15330920" rel="noopener">წვდომის გასაღები</a>.</p>
+
+<p>თუ სერვერი თქვენ დააყენეთ, ცადეთ ხელახლა დაკავშირება მასთან Outline-ის Manager-იდან ან სხვა მეთოდით, მაგალითად, <a href="https://en.wikipedia.org/wiki/Secure_Shell">SSH</a>-ით. თუ ამან არ იმუშავა, ცადეთ ღრუბლის პროვაიდერის კონსოლის შემოწმება, ასეთის არსებობის შემთხვევაში, რათა ნახოთ, სერვერი კვლავ ონლაინ არის თუ არა.</p>
+
+<p data-aura-rendered-by="12:32047;a">&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="ka">WEB:15331127</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">როგორ ჩამოვტვირთო კლიენტის აპი, თუ ჩამოტვირთვის ბმული არ მუშაობს?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">გამოიყენეთ&nbsp;<a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">ეს ბბმული</a>,&nbsp;რათა პირდაპირ ჩამოტვირთოთ აპები მრავალი ოპერაციული სისტემისთვის.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="131" sourceLocale="ka">WEB:15331222</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">მონაცემებისა და ინფორმაციის შეგროვება</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:271;a">Outline არ შეაგროვებს პერსონალურ ინფორმაციას, თუ მის მიწოდებაზე თანხმობას არ განაცხადებთ. აგრეთვე, Outline არ აგროვებს ინფორმაციას ვებსაიტების შესახებ, რომლებსაც სტუმრობთ ან მათ შესახებ, ვისთან ან რასთანაც გაქვთ კომუნიკაცია.<br />
+  <br />
+ თუ ქმნით ან შედიხართ ანგარიშში მესამე მხარის ღრუბლის პროვაიდერის მეშვეობით Outline Manager-იდან, ჩვენ არ მოვიპოვებთ ინფორმაციას (მაგალითად, ელფოსტის მისამართი, სახელი, ბილინგის ინფორმაცია და გადახდის დეტალები), რომელსაც მესამე მხარის ღრუბლის პროვაიდერს მიაწვდით.<br />
+  <br />
+  <strong><strong>ინფორმაცია, რომელსაც ავტომატურად ვიღებთ</strong></strong><br />
+  <br />
+  ჩვენ ავტომატურად ვაგროვებთ ორი ტიპის ინფორმაციას.<br />
+  1. სერვერის IP<br />
+ Outline-ის სერვერის IP-ს აგროვებს <a href="http://quay.io/" target="_blank">Quay.io</a> და ის ჩვენთვის ხელმისაწვდომი ხდება, როდესაც სერვერი ავტომატურად ახლდება უსაფრთხოებისა და ფუნქციების უახლესი გაუმჯობესებებით. სერვერის IP-მ შეიძლება ამოიცნოს ღრუბლოვანი სერვერის პროვაიდერი და ქალაქი, რომელშიც დაყენებულია Outline-ის სერვერი, მაგრამ ეს არ აწვდის ინფორმაციას იმის შესახებ, თუ ვინ ამუშავებს სერვერს და ვის აქვს მასზე წვდომა.<br />
+  <br />
+  2. პერსონალურად არაიდენტიფიცირებადი ტექნიკური ინფორმაცია<br />
+  თუ Outline ავარიულად გაითიშება ან მოხდება ფატალური გამონაკლისი, ან ხელით გაგზავნით გამოხმაურებას Outline აპიდან, ქვემოთ სიაში ნაჩვენები ინფორმაციის შესახებ გაიგზავნება მოხსენება. ეს ინფორმაცია გამოყენებული იქნება მხოლოდ სტაბილურობის ან ეფექტურობის პრობლემების იდენტიფიცირებისა და აღმოფხვრისთვის.</p>
+
+<ul data-aura-rendered-by="12:271;a">
+  <li>ქვეყანა</li>
+  <li>ლოკალი</li>
+  <li>ავარიულად გათიშვის / გამონაკლისის და მაქსიმუმ წინა 100 მოვლენის, მაგალითად, მომხმარებლის მიერ სექციის „ინფორმაცია“ გახსნის, თარიღი და დრო</li>
+  <li>სტატიკურად შედგენილი გამონაკლისის შეტყობინებები</li>
+  <li>ოპერაციული სისტემის სახელი და ვერსია</li>
+  <li>ტელეფონის მოდელი (თუ ხელმისაწვდომია)</li>
+  <li>აპის ჩართვის დრო</li>
+  <li>ბრაუზერი</li>
+  <li>სტრუქტურა</li>
+  <li>Outline-ის ვერსიისა და ანაწყობის ნომერი</li>
+</ul>
+
+<p data-aura-rendered-by="12:271;a"><br />
+ ეს ინფორმაცია HTTPS-ის გამოყენებით გადაეცემა Sentry-ს (<a href="http://sentry.io/" target="_blank">sentry.io</a>), მესამე მხარეს, შეცდომებზე თვალის დევნების ღია კოდის პროვაიდერს. Sentry იყენებს დარგობრივი სტანდარტის შესაბამის ტექნოლოგიებს და სერვისებს, რათა დაიცვას თქვენი მონაცემები არაავტორიზებული წვდომისგან, გამჟღავნებისგან, გამოყენებისა და დაკარგვისგან. თუ გაქვთ შეკითხვები Sentry-ს წესების შესახებ, მოინახულეთ <a href="https://sentry.io/security/" target="_blank">https://sentry.io/security/</a> და <a href="https://sentry.io/privacy/" target="_blank">https://sentry.io/privacy/</a>, ან დაუკავშირდით ელფოსტით მისამართზე: <a href="mailto:security@sentry.io" target="_blank">security@sentry.io.</a> Sentry-ს მიერ შენახული Outline-ის ყველა მონაცემი შენახულია იმგვარად, რომ მასზე წვდომა მხოლოდ Outline-ის გუნდის წევრებს შეუძლიათ.<br />
+  <br />
+  <strong><strong>ინფორმაცია, რომელსაც ვიღებთ მხოლოდ ცალსახა თანხმობის შემდეგ</strong></strong><br />
+  <br />
+  Outline მოახსენებს შემდეგი ინფორმაციის შესახებ Outline-ის გუნდს ცალსახა თანხმობის გაცხადებისას.<br />
+  1. გამოყენების მეტრიკა<br />
+ Outline-ის თითოეული სერვერი ბოლო საათისა და თითოეული წვდომის გასაღებისთვის  ავტომატურად აგროვებს შემდეგ ინფორმაციას: გადაცემული ბაიტების რაოდენობა, დრო, რომლის განმავლობაშიც მომხმარებელი დაკავშირებული იყო სერვერთან, გამოყენებული ავტორიზაციის მონაცემების წარმოშობის ქვეყნები და ინფორმაცია იმის შესახებ, ჩართულია თუ გათიშული ესა თუ ის ფუნქცია. კომუნიკაციის კონტენტი ან მეტამონაცემები, რომლებიც ვინაობის ამოცნობის საშუალებას იძლევა (მაგ., სისტემაში შესვლა, ელფოსტა, მოწყობილობის ID-ები და სხვ.), არ აღირიცხება. მთელი მეტრიკა მიბმულია სერვერის ID-ზე. სერვერის ID-ს შეცვლის ინსტრუქცია იხილეთ <a href="/outline-faq/answer/15548974" rel="noopener" target="_blank">აქ</a>.<br />
+  <br />
+  ნაგულისხმევად, Outline-ის სერვერები არ უზიარებს ამ მეტრიკას Outline-ის გუნდს. თუ სერვერის ადმინისტრატორი ცალსახად ეთანხმება გამოყენების მეტრიკის გაზიარებას, ეს ინფორმაცია დაცულად გაეგზავნება Outline-ის გუნდს ყოველ საათში. 60 დღის განმავლობაში მოხდება გამოყენების მეტრიკის შეჯამება ქვეყნის დონეზე. სერვერის ადმინისტრატორებს ნებისმიერ დროს შეუძლიათ გამოყენების მეტრიკის გაზიარების თავიანთი პარამეტრის შეცვლა „პარამეტრების“ მენიუს მონახულებით Outline Manager-ში.<br />
+  <br />
+  ჩვენ ვაფასებთ, რომ გვიზიარებთ ანონიმურ მეტრიკას თქვენი სერვერის გამოყენების შესახებ, რადგან მას ვიყენებთ გამოყენების ტენდენციების გასაზომად და პროდუქტის გასაუმჯობესებლად.<br />
+  <br />
+  მაგალითად, თუ სერვერის ადმინისტრატორი ეთანხმება გამოყენების მეტრიკის ჩვენთვის გაზიარებას, შეიძლება მივიღოთ ინფორმაცია, რომელიც მიგვანიშნებს, რომ გუშინ სერვერი (ID: 12345) გამოიყენებოდა 3 საათის განმავლობაში და მან სულ გადასცა 500 მეგაბაიტის მოცულობის მონაცემები, სამი გასაღებიდან თითოეული გამოიყენებოდა შეერთებულ შტატებსა და კანადაში, მონაცემთა ლიმიტის ჩართული ფუნქციით.<br />
+  <br />
+  2. თქვენი კომენტარები და ელფოსტა, თუ გამოხმაურებას გაგზავნით<br />
+  Outline-ის მმართველი და Outline აპები საშუალებას გაძლევთ, გამოეხმაუროთ გუნდს. გირჩევთ, არ მიუთითოთ პერსონალურად ამოცნობადი ინფორმაცია, თუმცა ელფოსტის ველი არასავალდებულოდ ხელმისაწვდომია, თუ გსურთ, მიიღოთ პასუხი ჩვენი გუნდისგან. ჩვენ ავტომატურად შევაგროვებთ გარკვეულ ძირითად ინფორმაციას, რომ შევძლოთ თქვენი გამოხმაურების გაგება. სანახავად, თუ რა მონაცემებს ვაგროვებთ, იხილეთ მე-2 ერთეული ზემოთ, სექციაში „ინფორმაცია, რომელსაც ავტომატურად ვიღებთ“.&nbsp;Outline-ის უსაფრთხოებისა და კონფიდენციალური ინფორმაციის გამოყენების პრაქტიკის შესახებ შეიტყვეთ მეტი <a href="/outline-faq/answer/14919822" rel="noopener" target="_blank">აქ</a>.<br />
+  <br />
+  თუ Outline აპის ბეტა ვერსიას იყენებთ Android-ში, ჩვენ შეიძლება გამოვიყენოთ Google-ის სერვისი <a href="https://firebase.google.com/" target="_blank">Firebase</a> შეცდომების გამართვის ინფორმაციის შესაგროვებლად, რაც შეიძლება დაგვეხმაროს პრობლემების აღმოჩენასა და Outline-ის გაუმჯობესებაში. Firebase-ის კონფიდენციალურობისა და უსაფრთხოების წესების შესახებ დამატებითი ინფორმაცია ხელმისაწვდომია ვებსაიტზე <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy.</a> თუ არ გსურთ, Outline-მა ეს ინფორმაცია Firebase-ის მეშვეობით გამოგიგზავნოთ, გამოიყენეთ აპის წარმოების ვერსია.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="88" sourceLocale="ka">WEB:15331223</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">როგორ მოვიქცე, თუ ჩემი წვდომის გასაღები არ მუშაობს?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:30472;a">თუ შეცდომის ასეთ შეტყობინებას მიიღებთ:&nbsp;„როგორც ჩანს, თქვენი წვდომის გასაღები მოქმედი არ არის. თუ ეს გამეორდება, სერვისის მმართველს მიმართეთ“. დეფექტების აღმოსაფხვრელად შემდეგი ნაბიჯები გადადგით:&nbsp;</p>
+
+<ol data-aura-rendered-by="12:30472;a">
+  <li>დარწმუნდით, რომ წვდომის გასაღები შეიყვანეთ სრულად პირველი ხუთი სიმბოლოს („ss://“) ჩათვლით, რომელიც შესაძლოა ავტომატურად არ დაკოპირდეს გაცვლის ბუფერში. აი, წვდომის სრული გასაღების მაგალითი (მხოლოდ ნიმუშია; არ მუშაობს):</li>
+</ol>
+
+<pre data-aura-rendered-by="12:30472;a">ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@145.230.4.1:39485/?outline=1&nbsp;
+</pre>
+
+<ol data-aura-rendered-by="12:30472;a" start="2">
+  <li>თუ თქვენი წვდომის გასაღები საერთოდ არ კოპირდება გაცვლის ბუფერში, ეს შესაძლოა თქვენი შეტყობინებების აპის ან პლატფორმის გამო ხდებოდეს. ეს მეტწილად მაშინ ხდება, როცა შეტყობინებას თქვენი კონტაქტების სიის მიღმა პირისგან იღებთ. თუ კოდს შეტყობინებიდან აკოპირებთ, დარწმუნდით, რომ გამგზავნი დამატებულია თქვენს კონტაქტების სიაში, შემდეგ კი სცადეთ ბმულზე ხელახლა წვდომა.&nbsp;</li>
+  <li>თუ 1-ელი და მე-2 ნაბიჯები შეასრულეთ და კვლავ იღებთ შეცდომის შესახებ შეტყობინებას, სერვერი, სავარაუდოდ, დაბლოკილია ან თქვენი წვდომის გასაღები აღარ მოქმედებს. თუ სერვისის მმართველი ხართ, ახალი გასაღები დააგენერირეთ თქვენთვის. სხვა შემთხვევაში დაუკავშირდით სერვისის მმართველს ახალი გასაღების მისაღებად.</li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="96" sourceLocale="ka">WEB:15331322</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">რა ღირს Outline-ის ოპერირება?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Outline-ის პროგრამული უზრუნველყოფა უფასოა ყველასთვის მიუხედავად იმისა, სერვერის ადმინისტრატორი ხართ, რომელიც VPN-ს მართავს, თუ მომხმარებელი, რომელიც Outline-ს ინტერნეტზე წვდომისთვის იყენებს.<br />
+ <br />
+ Outline საჭიროებს წვდომას ღრუბლოვან სერვერზე იმისთვის, რომ მისი გაშვება მოხერხდეს. სერვერის ადმინისტრატორებს, რომლებსაც უკვე აქვთ წვდომა სერვერზე, შეუძლიათ Outline-ის ინსტალაცია დამატებითი საფასურის გარეშე. ყველას, ვისაც აქვს წვდომა სერვერზე, შეუძლია წვდომის მიღება ღრუბლის პროვაიდერებისგან, როგორიცაა <a href="http://www.digitalocean.com/" rel="noopener" target="_blank">DigitalOcean</a> ან Amazon Web Services, დაახლოებით 5 აშშ დოლარად თვეში 1 ტერაბაიტის მოცულობის მონაცემთა გადაცემისთვის — ეს საკმარისია ასობით მომხმარებლის მხარდასაჭერად ერთ სერვერზე.<br />
+  <br />
+  მიერ არჩეული ღრუბლის პროვაიდერით Outline-ის გაშვების ხარჯის გამოთვლის მაგალითი:</p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td colspan="1" rowspan="1">
+      <p><em>ვთქვათ, მონაცემთა გადაცემის 5 გიგაბაიტი შეადგენს გამოყენების საშუალო თვიურ მაჩვენებელს ერთ მომხმარებელზე; თვეში 5 აშშ დოლარიანი გეგმა მოგცემდათ დაახლოებით 200 თანადროული მომხმარებლის დაშვების საშუალებას, ხოლო თითოეული მომხმარებლის თვიური ფასი შეადგენდა 2,5 ცენტს თვეში. გაითვალისწინეთ, რომ თვიურად გამოყენებული მონაცემთა გადაცემა ერთ მომხმარებელზე ძალიან განსხვავებული იქნება იმის მიხედვით, ასრულებენ თუ არა მომხმარებლები დაბალი თუ მაღალი გამტარუნარიანობის აქტივობებს, თუმცა ღრუბლოვანი სერვისების პროვაიდერთა უმრავლესობა გამოიჩენს მოქნილობას ტრაფიკის ზრდასთან გასამკლავებლად.</em></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br />
+  ფაქტობრივად, Outline-ის გამოყენება სრულიად ანონიმურია Jigsaw-ისთვის და Google-ისთვის. ჩვენ არ ვადევნებთ თვალს თქვენ ვინაობას ან ტრაფიკს და არ არსებობს მონეტიზაციის გეგმა. ამის მაგივრად, ვთანამშრომლობთ ჩვენი ღია კოდის საზოგადოებასთან, რათა უზრუნველვყოთ პროგრამული უზრუნველყოფა საფასურის გარეშე ჩვენი მომხმარებლებისთვის. მონაცემების შესახებ, რომლებსაც ვაგროვებთ, შეიტყვეთ მეტი <a href="/outline-faq/answer/15331222" rel="noopener" target="_blank">აქ</a>.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="386" sourceLocale="ka">WEB:15331326</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">როგორ დავაყენო მონაცემთა ლიმიტები წვდომის გასაღებებზე?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:15859;a">შეგიძლიათ დააყენოთ მონაცემთა ლიმიტი, რომელიც ყველა წვდომის გასაღებზე გავრცელდება. ლიმიტის დასაყენებლად გახსენით Outline Manager და გადადით პარამეტრებზე. იქ დაინახავთ მონაცემთა ლიმიტების გადამრთველს, რომელიც, როდესაც ჩართულია, გაძლევთ ლიმიტის დაყენების უფლებას.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787036"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">როდესაც ლიმიტს დააყენებთ, ნახავთ, რამდენად ახლოსაა თითოეული მომხმარებელი ლიმიტთან, წვდომის გასაღების გვერდზე, სადაც ჰისტოგრამა აჩვენებს მონაცემთა გამოყენებას ბოლო 30 დღისთვის.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787037"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">გარდა იმისა, რომ შეგიძლიათ დააყენოთ ლიმიტი თქვენი ყველა წვდომის გასაღებისთვის, შეგიძლიათ თითოეულ გასაღებს მიანიჭოთ საკუთარი მონაცემთა ლიმიტი. ეს პარამეტრი უგულებელყოფს ნებისმიერ ნაგულისხმევ მონაცემთა ლიმიტს, რომელიც დაყენებული გაქვთ, მაგრამ თუ ნაგულისხმევი მონაცემთა ლიმიტი დაყენებული არ გაქვთ, შეგიძლიათ მაინც დააყენოთ მონაცემთა ლიმიტი ნებისმიერი გასაღებისთვის.&nbsp;<br />
+  <br />
+  გასაღების მონაცემთა გადაცემის ლიმიტის დასაყენებლად გახსენით Outline Manager, გადადით კავშირების ჩანართზე, რომელიც შეიცავს იმ გასაღებს, რომლისთვისაც გსურთ ლიმიტის დაყენება და დააწკაპუნეთ მენიუზე გასაღების მწკრივის მარჯვენა მხარეს. იქიდან დააწკაპუნეთ მონაცემთა ლიმიტზე. „ჩემი წვდომის გასაღების“ მონაცემთა ლიმიტის შესაცვლელად დააწკაპუნეთ მონაცემთა ლიმიტის ხატულაზე&nbsp;<img alt="ეს სურათი მიუწვდომელია, რადგან თქვენ არ გაქვთ მისი ნახვის უფლება, ან ის ამოშლილია სისტემიდან" height="19" src="https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw" width="19" />.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787423"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">აირჩიეთ მონაცემთა მორგებული ლიმიტის დაყენება. როდესაც ამ მოსანიშნ ველს მონიშნავთ, გამოჩნდება ველი, სადაც შეგიძლიათ დააყენოთ მონაცემთა მორგებული ლიმიტი შესაბამისი გასაღებისთვის. დააწკაპუნეთ შენახვის ღილაკზე, როდესაც მზად იქნებით მონაცემთა ლიმიტის შესანახად.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15788959"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">როდესაც თქვენს მონაცემთა გადაცემის ლიმიტს შეინახავთ არჩეული გასაღებისთვის, ლიმიტი გამოჩნდება მთავარ ეკრანზე, მონაცემთა გამოყენების (ბოლო 30 დღის განმავლობაში) გვერდით თითოეული გასაღებისთვის.</p>
+
+<p data-aura-rendered-by="12:15859;a">წვდომის გასაღებიდან მონაცემთა ლიმიტის წასაშლელად გადადით გასაღების მონაცემთა ლიმიტის დიალოგურ ფანჯარაზე, როგორც ადრე, გააუქმეთ მონიშვნა ველზე ლეიბლით „მონაცემთა მორგებული ლიმიტის დაყენება“ და დააწკაპუნეთ შენახვის ღილაკზე.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15788414"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a"><b><strong>მონაცემთა ლიმიტთან დაკავშირებული ხშირად დასმული შეკითხვები</strong></b><br />
+  <br />
+  <strong><b>რას ნიშნავს მონაცემთა 30-დღიანი განახლებადი ლიმიტი?</b></strong><br />
+  <br />
+  მონაცემთა 30-დღიანი განახლებადი ლიმიტი შეაჯამებს თითოეული გასაღების გამოყენებას ბოლო 30 დღის განმავლობაში და ამ პერიოდში გასაღების გამოყენებას ლიმიტის ფარგლებში შეინარჩუნებს. შედეგად, გასაღები ვერ გადასცდება ლიმიტს ვერცერთ 30-დღიან პერიოდში, მათ შორის, 30-დღიან კალენდარულ ან უფრო მოკლე თვეებში. რეალურად, ეს იმას ნიშნავს, რომ თითოეული მომხმარებლისთვის ხელმისაწვდომი მონაცემები გაიზრდება ყოველდღე იმ ოდენობით, რომელიც გამოიყენა 31 დღის წინ.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>რატომ იყენებს Outline განახლებად ლიმიტებს?</strong><br />
+  <br />
+  განახლებადი ლიმიტები უზრუნველყოფს გარანტიებს ყოველი 30-დღიანი პერიოდისთვის, რაც იმას ნიშნავს, რომ მათი კონფიგურირება განმეორებადი ლიმიტების (როგორიცაა თვის მორგებადი დღე) კონფიგურირებაზე ადვილია მსგავსი გარანტიების პირობებში. აგრეთვე, ისინი შეესატყვისება Outline-ის მონაცემთა გამოყენების არსებულ ჩვენებას, ისევე როგორც ჩვეულებრივ ხელსაწყოებს, როგორიცაა ანალიტიკური სერვისები და სერვერის სტატისტიკა.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>რა ტიპის მონაცემებს შეიცავს მონაცემთა ლიმიტი?</strong><br />
+  <br />
+  წვდომის თითოეული გასაღების სერვერიდან გასვლა ითვლება. კერძოდ, ეს გულისხმობს გასაღების სახელით სერვერიდან გაგზავნილ და, ასევე, კლიენტთან დაბრუნებულ მონაცემებს. პრაქტიკულად, ის უნდა უთანაბრდებოდეს ტრაფიკს, რომელიც გაიგზავნა გასაღებიდან სერვერზე და უკან, ამიტომ იმედი გვაქვს, რომ ის იქნება მომხმარებლების ჯამის შესატყვისი. ჩვენ ავირჩიეთ გაგზავნა, რადგან ღრუბლის ჩვენ მიერ გამოკითხული პროვაიდერები მასზე ახორციელებენ ბილინგს.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>ეცნობება მომხმარებლებს მონაცემთა ლიმიტის ამოწურვის შესახებ?</strong><br />
+  <br />
+  ამჟამად არა. ღრუბლის ბევრ პროვაიდერს აქვს ლიმიტი, მაგალითად, 1 ტბაიტი მთელ თვეზე, რომელსაც შეუძლია 10 მომხმარებლის მხარდაჭერა 100 გბაიტით, ან 100 მომხმარებლის — 10 გბაიტით. ეს საკმაოდ დიდი რიცხვებია და ჩვენი მოლოდინით, ბევრი მომხმარებელი ვერ მიაღწევს ასეთ ლიმიტს. იმედი გვაქვს, რომ მომხმარებლები დაუკავშირდებიან სერვერის მმართველებს, როდესაც ლიმიტს მიაღწევენ. ამის მიუხედავად, სიამოვნებით მივიღებთ თქვენს ანალიზს, როგორ დაგეხმარებოდათ შეტყობინებები თქვენი გამოყენების მაგალითზე. შეგიძლიათ დაგვიკავშირდეთ<a href="https://support.getoutline.org/s/contactsupport" target="_blank"> აქ</a>.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>ეცნობება მომხმარებლებს, როცა მონაცემთა ლიმიტს მიაღწევენ?</strong><br />
+  <br />
+  ახალი მონაცემების ოდენობა, რომელსაც ლიმიტთან მიახლოებული მომხმარებელი მიიღებს, განსხვავებული იქნება ყოველდღიურად, რადგან ის ეყრდნობა მის 30 დღის წინანდელ გამოყენებას. ვფიქრობთ, გაფრთხილება უფრო დააბნევს საბოლოო მომხმარებლებს, ვიდრე დაეხმარება მათ. ამ ქცევასთან დაკავშირებით სიამოვნებით მივიღებდით თქვენს გამოხმაურებას<a href="https://support.getoutline.org/s/contactsupport" rel="noopener" target="_blank"> აქ</a>.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>შემიძლია გადავაყენო მომხმარებლის მონაცემთა მოხმარების მაჩვენებელი?</strong><br />
+  <br />
+  არა, მომხმარებლის ლიმიტი ყოველთვის მოიცავს მონაცემთა გამოყენებას გასული 30 დღის განმავლობაში. ამის მიუხედავად, შეგიძლიათ გაზარდოთ გასაღების მონაცემთა ლიმიტი ან შექმნათ მისთვის ახალი გასაღები.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>რატომ დაკარგა ჩემმა რამდენიმე მომხმარებელმა წვდომა, როგორც კი ჩავრთე მონაცემთა ლიმიტი?</strong><br />
+  <br />
+  მონაცემთა ლიმიტი ეყრდნობა მომხმარებლების 30 დღის წინანდელ მონაცემთა გადაცემას, რაც აღინუსხება, მიუხედავად იმისა, მონაცემთა ლიმიტები ჩართულია თუ არა. შესაძლებელია, რომ აღნიშნულ მომხმარებლებს უკვე გადაჭარბებული ჰქონდათ ლიმიტი მის გააქტიურებამდე.&nbsp; აგრეთვე, გაითვალისწინეთ, რომ მონაცემთა ლიმიტები ხორციელდება, როდესაც თუნდაც ერთი გასაღების მონაცემთა ლიმიტი იცვლება.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>შემიძლია დავაყენო ლიმიტი სერვერის მასშტაბით, მაგალითად, „1 ტბაიტი ყოველ 30 დღეზე“?</strong><br />
+  <br />
+  ამჟამად არა. დამატებითი ინფორმაცია თქვენი გამოცდილების შესახებ გაგვიზიარეთ<a href="https://support.getoutline.org/s/contactsupport" rel="noopener" target="_blank"> აქ</a>.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>თუ დაწესებულია მონაცემთა ნაგულისხმევი ლიმიტი და მონაცემთა ლიმიტი კონკრეტულ გასაღებზე, რომელი განხორციელდება?</strong><br />
+  <br />
+  კონკრეტული გასაღების მონაცემთა ლიმიტი უგულებელყოფს მონაცემთა თქვენ მიერ დაყენებულ ნებისმიერ ნაგულისხმევ ლიმიტს (ასეთის არსებობის შემთხვევაში).</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>შემიძლია დავაყენო მონაცემთა ლიმიტი კონკრეტული გასაღებისთვის მონაცემთა ნაგულისხმევი ლიმიტის დაყენების გარეშე?</strong><br />
+  <br />
+  დიახ.&nbsp; ნაგულისხმევი ლიმიტის განსაზღვრა არ არის საჭირო ერთ გასაღებზე მონაცემთა ლიმიტის დასაყენებლად.&nbsp; მაგალითად, შეგიძლიათ დააყენოთ ლიმიტი ერთ გასაღებზე, რომელიც, თქვენი აზრით, შეიძლება ფართოდ არის გაზიარებული, რათა დაიცვათ თავი მონაცემთა ჭარბი გადაცემისგან ამ გასაღების მეშვეობით.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="ka">WEB:15331327</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">როგორ გადავაყენო ჩემი სერვერის ID?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:23999;a">სერვერის ID არის შემთხვევითობის პრინციპით, თქვენ მიერ Outline სერვერის შექმნისას, სერვერის მხარეს გენერირებული ID. მას იპოვით, როდესაც დაეთანხმებით ანონიმური მეტრიკის გაზიარებას პარამეტრების ინტერფეისში. თქვენი სერვერის ID-ს დადგენა შეგიძლიათ აქ: პარამეტრები =&gt; გადადით ბოლოში =&gt; შეამოწმეთ „ანონიმური მეტრიკის გაზიარება“.</p>
+
+<p data-aura-rendered-by="12:23999;a">სერვერის ID, დროთა განმავლობაში, ებმება მოხსენებული ანონიმური გამოყენების სტატისტიკას. თუ გსურთ, გადააყენოთ სერვერის ID და მიიღოთ ახალი, Outline-ის არსებული სერვერი უნდა ჩაანაცვლოთ ახლით.</p>
+
+<p data-aura-rendered-by="12:23999;a">თუ DigitalOcean-ს იყენებთ ღრუბლის პროვაიდერად, სერვერის გადაყენება შეგიძლიათ პარამეტრებში გადასვლითა და სერვერის განადგურების არჩევით. ამ მოქმედების დაბრუნება შეუძლებელია და ის წაშლის თქვენს ავტორიზაციის მონაცემებსაც. ამ მოქმედების შესრულებისთანავე გიკარნახებთ, შექმნათ ახალი სერვერი სასურველ მდებარეობაზე, ხოლო ახალი სერვერის ID დაგენერირდება.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="103" sourceLocale="ka">WEB:15331328</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">როგორ შევცვალო Outline-ის სერვერის მდებარეობა?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:24761;a">დაყენების შემდეგ სერვერის მდებარეობის შეცვლა შეუძლებელია. თქვენი სერვერის სხვა მდებარეობიდან გასაშვებად საჭიროა, წაშალოთ თქვენი Outline-ის სერვერი და შექმნათ ახალი.</p>
+
+<p data-aura-rendered-by="12:24761;a"><br />
+  ალტერნატივის სახით შეგიძლიათ, თქვენი VPN-ის მდებარეობის შეცვლა <a href="https://developers.google.com/outline/docs/guides/service-providers/dynamic-access-keys" target="_blank">დინამიკური გასაღებების</a> გამოყენებით, რაც საშუალებას მოგცემთ, გადაანაცვლოთ სერვერები და შეინარჩუნოთ იგივე გასაღებები. სერვერების მდებარეობა, თავის მხრივ, არ შეიცვლება.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="102" sourceLocale="ka">WEB:15331423</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">როგორ გამოგიგზავნოთ გამოხმაურება ან შეთავაზება</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:22486;a">გმადლობთ, რომ Outline-ის გაუმჯობესებაში გვეხმარებით! ჩვენთან გამოხმაურების რამდენიმე გზა არსებობს: ანონიმურად ან თქვენი ელფოსტით, თუ პასუხი გჭირდებათ:</p>
+
+<ul data-aura-rendered-by="12:22486;a">
+  <li><strong>დეველოპერებისთვის</strong>:&nbsp;Outline ღია კოდის მქონე პროგრამული უზრუნველყოფაა და ჩვენი სრული კოდის ჰოსტინგს უზრუნველყოფს <a href="https://github.com/jigsaw-Code/?q=outline" target="_blank">GitHub</a>. შეგიძლიათ, გაგვიზიაროთ იდეები GitHub-ში ან ჩვენს <a href="https://www.reddit.com/r/outlinevpn/" target="_blank">Reddit</a> საზოგადოებაში.&nbsp;</li>
+  <li><strong>მომხმარებლებისთვის</strong>: შეგიძლიათ გამოგვეხმაუროთ Outline ან Outline Manager აპებიდან. გვითხარით, რას შეეხება თქვენი გამოხმაურება და, სურვილისამებრ, დაგვიტოვეთ ელფოსტა, რომ შევძლოთ თქვენთვის პასუხის დაბრუნება ამის შესახებ. ჩვენ, ასევე, ვაგროვებთ გარკვეულ მეტამონაცემებს თქვენი გარემოს შესახებ, რომ შევძლოთ თქვენი დახმარება დეფექტების აღმოფხვრაში, მათ შორის, მონაცემებს თქვენი ბრაუზერის, ოპერაციული სისტემისა და პროგრამული უზრუნველყოფის ვერსიის შესახებ, რომელსაც იყენებთ.</li>
+  <li><strong>ამ საიტიდან</strong>: შეგიძლიათ, დააწკაპუნოთ ბმულზე „დაგვიკავშირდით“ ყველგან, სადაც კი მას დაინახავთ ამ საიტზე.</li>
+  <li><strong>სერიოზული პრობლემები</strong>: თუ გსურთ, მოგვახსენოთ უსაფრთხოების სერიოზული პრობლემის შესახებ, დაგვიკავშირდით ელფოსტით მისამართზე: security [at] <a href="https://getoutline.org/" rel="noopener" target="_blank">getoutline.org</a>.</li>
+</ul>
+
+<p data-aura-rendered-by="12:22486;a">კიდევ ერთხელ გიხდით მადლობას გამოხმაურებისთვის.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="146" sourceLocale="ka">WEB:15331424</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline-ის სერვერზე წვდომის მართვა (წვდომის გასაღებებით)</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:25527;a">თქვენი Outline-ის სერვერის ინსტალაციის დასრულების შემდეგ უკვე შეგიძლიათ დაიწყოთ მასზე ხალხის წვდომის გაზიარება და მართვა. ვინც თქვენგან მოსაწვევს მიიღებს, შეძლებს Outline აპის ჩამოტვირთვას, რათა გამოიყენოს Outline თავისი ინტერნეტის ტრაფიკის დასაცავად.</p>
+
+<p data-aura-rendered-by="12:25527;a"><strong>წვდომის გაზიარება თქვენს Outline-ის სერვერზე</strong><br />
+  Outline-ის სერვერის ინსტალაციის დასრულების შემდეგ გადამისამართდებით სერვერის დეტალების გვერდზე Outline Manager-ში, სადაც წვდომის გასაღებების შექმნას შეძლებთ. შეიტყვეთ მეტი <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">წვდომის გასაღებების</a> შესახებ.</p>
+
+<ul data-aura-rendered-by="12:25527;a">
+  <li>გასაღებების შექმნა: ახალი გასაღებების შესაქმნელად დააწკაპუნეთ პატარა „+“ ხატულაზე გვერდის ბოლოში.</li>
+  <li>გასაღებების გაზიარება: თითოეული გასაღების მარჯვნივ არის გაზიარების ხატულა, რომელზე დაწკაპუნებაც შეგიძლიათ მოსაწვევის მისაღებად. დააკოპირეთ და ჩასვით ეს მოსაწვევი შეტყობინებების მიმოცვლის თქვენს შერჩეულ სისტემაში.</li>
+</ul>
+
+<p data-aura-rendered-by="12:25527;a"><strong>ფუნქციის მოთხოვნა: გააზიარეთ წვდომა Outline Manager აპიდან</strong><br />
+  ბევრი სერვერის ადმინისტრატორი გვთხოვს მოწვევის პროცესის გამარტივებას მათთვის მომხმარებლის ელფოსტის მისამართის პირდაპირ Outline Manager-ში შეყვანის ვარიანტის მიცემით.</p>
+
+<p data-aura-rendered-by="12:25527;a">სამწუხაროდ, ნაკლებად მოსალოდნელია, რომ ეს ფუნქციონალობა ჩავაშენოთ Outline Manager-ში. ჩვენი ერთ-ერთი ძირითადი პრინციპია, მხარი დავუჭიროთ ჩვენი მომხმარებლების კონფიდენციალურობას და უსაფრთხოებას, რაც ნიშნავს, რომ ჩვენ არ შეგვიქმნია ადგილი, სადაც შესაძლებელია ელფოსტის მისამართების ან საკონტაქტო ინფორმაციის ჩასმა.</p>
+
+<p data-aura-rendered-by="12:25527;a">ამიტომ სერვერის ადმინისტრატორებს ვთხოვთ, საბოლოო მომხმარებლისთვის მოსაწვევის გასაგზავნად გამოიყენონ შეტყობინებების მიმოცვლის დაცული პლატფორმა, როგორიცაა ელფოსტა ან დაცული ჩეთი.<br />
+  <br />
+  <strong>როგორია მომხმარებლის გამოცდილება მას შემდეგ, როდესაც წვდომის გასაღებს გაუზიარებთ</strong></p>
+
+<ol data-aura-rendered-by="12:25527;a">
+  <li>მომხმარებელი დააწკაპუნებს ინსტალაციის ბმულზე თავისი მოწყობილობიდან</li>
+  <li>მას ვუკარნახებთ, დააყენოს Outline აპი, თუ უკვე არ აქვს ის</li>
+  <li>ის დაამყარებს თავდაპირველ კავშირს თქვენს Outline-ის სერვერთან უნიკალური გასაღების მეშვეობით, რომელიც ჩაშენებულია მოსაწვევში</li>
+  <li>ახლა ის შეძლებს დაკავშირების/გათიშვის ღილაკის გამოყენებას თავისი წვდომის სამართავად ინტერნეტზე თქვენი Outline-ის სერვერიდან</li>
+</ol>
+
+<p data-aura-rendered-by="12:25527;a"><strong>თქვენს Outline-ის სერვერზე წვდომის გაუქმება</strong><br />
+  სერვერის დეტალების გვერდიდან Outline Manager-ში, თითოეული გასაღების მარჯვნივ სერვერში, დაინახავთ მენიუს გასაღების წაშლის ვარიანტით. გასაღების წაშლა მომხმარებელს თქვენს სერვერზე წვდომას გაუუქმებს.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="92" sourceLocale="ka">WEB:15331524</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">როგორ მივიღო Outline-ის რესურსებზე წვდომა, თუ getoutline.org დაბლოკილია?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><a href="https://s3.amazonaws.com/outline-vpn/index.html" target="_blank">ჩაინიშნეთ ეს ასლი ვებსაიტი</a> იმ შემთხვევისთვის, თუ არ გაქვთ წვდომა <a href="http://getoutline.org/" target="_blank">getoutline.org</a>-ზე.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="321" sourceLocale="ka">WEB:15331527</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline-ის კლიენტის ინსტალაცია Linux-ზე</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Outline-ის კლიენტის ვერსია 1.15-დან მოყოლებული, ყველა მომავალი ვერსია გამოეშვება Debian პაკეტების სახით Linux ოპერაციული სისტემებისთვის. გადახედეთ ჩვენს <a href="/outline/answer/15330818" rel="noopener" target="_blank"><u>სისტემის მინიმალურ მოთხოვნებს</u></a> იმის შესახებ დამატებითი ინფორმაციის მისაღებად, რომელ ოპერაციულ სისტემებს ვუჭერთ მხარს.</p>
+&nbsp;
+
+<p><strong>დააყენეთ Outline-ის კლიენტი Debian-ის ბაზაზე შექმნილი Linux დისტრიბუციებისთვის (რეკომენდებულია)</strong></p>
+&nbsp;
+
+<p>გაუშვით შემდეგი ბრძანებები:</p>
+
+<ol>
+  <li aria-level="1">დააინსტალირეთ Outline-ის საცავის გასაღები და დაამატეთ საცავი.
+    <div class="code">
+      <div class="no-margin">
+        <p>wget -qO- https://us-apt.pkg.dev/doc/repo-signing-key.gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/gcloud-artifact-registry-us.gpg</p>
+
+        <p>echo "deb [arch=amd64] https://us-apt.pkg.dev/projects/jigsaw-outline-apps outline-client main" | sudo tee /etc/apt/sources.list.d/outline-client.list</p>
+      </div>
+    </div>
+  </li>
+  <li aria-level="2">განაახლეთ apt პაკეტის სია და დააინსტალირეთ Outline Client-ის უახლესი ვერსია.
+    <div class="code">
+      <div class="no-margin">
+        <p>sudo apt update</p>
+
+        <p>sudo apt install outline-client</p>
+      </div>
+    </div>
+  </li>
+</ol>
+
+<p>მომავალი განახლებების შესამოწმებლად და დასაინსტალირებლად ხელახლა გაუშვით მე-2 ნაბიჯში მოცემული ბრძანებები. გაითვალისწინეთ, რომ აპსშიდა განახლება გათიშულია Outline-ის კლიენტისთვის Linux-ზე, ვერსია 1.15-დან მოყოლებული.</p>
+
+<p>Outline-ის კლიენტის დეინსტალაციისთვის გაუშვით შემდეგი ბრძანება:</p>
+
+<div class="code">
+  <div class="no-margin">sudo apt purge outline-client</div>
+</div>
+
+<p><strong>ალტერნატიული ვარიანტი</strong></p>
+
+<ol>
+  <li aria-level="1">ჩამოტვირთეთ Outline-ის კლიენტის უახლესი Debian პაკეტი <a href="https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb" rel="noopener" target="_blank">https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb</a>-დან</li>
+  <li aria-level="2">პაკეტის დასაინსტალირებლად ბრძანების ზოლში გაუშვით შემდეგი ბრძანებები:
+    <div class="code">
+      <div class="no-margin">
+        <p>wget -O ./outline-client.deb https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb</p>
+
+        <p>sudo apt install ./outline-client.deb</p>
+      </div>
+    </div>
+  </li>
+  <li aria-level="3">ხელით შეამოწმეთ განახლებები, რადგან ვერსია 1.15-დან მოყოლებული აპსშიდა ავტომატური განახლება გათიშულია Outline-ის კლიენტისთვის Linux-ზე.</li>
+  <li aria-level="4">Outline-ის კლიენტის დეინსტალაციისთვის ბრძანების ზოლში გაუშვით შემდეგი ბრძანება:
+    <div class="code">
+      <div class="no-margin">sudo apt purge outline-client</div>
+    </div>
+  </li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="206" sourceLocale="ka">WEB:15331528</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">შემიძლია თუ არა წვდომის გასაღების ერთზე მეტჯერ გამოყენება?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1895;a">დიახ. <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">წვდომის გასაღების</a>&nbsp;გამოყენება შეგიძლიათ მოწყობილობების ნებისმიერ რაოდენობაზე, მაგრამ არ გირჩევთ გასაღების სხვა ადამიანთან გაზიარებას. მათ, ვისაც აქვთ თქვენი წვდომის გასაღები, შეუძლიათ თქვენი ინტერნეტის სრული ტრაფიკის ინსპექტირება, თუ მასზე წვდომა აქვთ, რის შედეგადაც თქვენ მიერ ინტერნეტის გამოყენება აღარაა დაცული და პირადი.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="104" sourceLocale="ka">WEB:15331529</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">თქვენი მოწყობილობის დაკავშირება Outline-ის სერვერთან</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1399;a">&nbsp;</p>
+
+<p data-aura-rendered-by="12:1399;a"><strong>თქვენი მოწყობილობის დაკავშირება Outline-ის სერვერთან</strong></p>
+
+<p data-aura-rendered-by="12:1399;a">თქვენი მოწყობილობის დასაკავშირებლად Outline-ის სერვერთან სერვერის ადმინისტრატორმა უნდა გამოგიგზავნოთ მოსაწვევი, რომ დაუკავშირდეთ მის სერვერს უნიკალური&nbsp;<a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">წვდომის გასაღებით</a>. ეს მოსაწვევი:</p>
+
+<ul data-aura-rendered-by="12:1399;a">
+  <li>მოგთხოვთ, ჩამოტვირთოთ და დააინსტალიროთ Outline თქვენს მოწყობილობაზე, თუ ის უკვე არ გაქვთ</li>
+  <li>გამოიყენებს წვდომის გასაღებს უსაფრთხო კავშირის დასამყარებლად თქვენსა და Outline-ის სერვერს შორის</li>
+</ul>
+
+<p data-aura-rendered-by="12:1399;a">როდესაც სერვერთან კავშირს დაამყარებთ, Outline-ის გამოსაყენებლად შეგიძლიათ დააწკაპუნოთ „დაკავშირებაზე“ ან „გათიშვაზე“.</p>
+
+<p data-aura-rendered-by="12:1399;a"><em>მნიშვნელოვანია:</em>&nbsp;Outline არ მუშაობს წვდომის გასაღებისა და Outline-ის სერვერის გარეშე. Outline აპის ჩამოტვირთვა და ინსტალაცია გასაღების გარეშე ვერ დაიცავს თქვენს ინტერნეტის ტრაფიკს.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="100" sourceLocale="ka">WEB:15331530</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">როგორ დავაყენო Outline-ის სერვერი?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:27063;a">Outline-ის სერვერის დაყენება პირველი ნაბიჯია იმისათვის, რომ Outline-ის გამოყენება შეძლოთ. თქვენ ან ვინმემ, ვისაც ენდობით, უნდა დააყენოთ სერვერი იმისათვის, რომ დაუკავშირდეთ ღია ინტერნეტს Outline-იდან.<br />
+  <br />
+  <strong>დაწყებამდე</strong><br />
+  თქვენი Outline-ის სერვერის დაყენების დაწყებამდე დაგჭირდებათ რამდენიმე რაღაც:</p>
+
+<ol data-aura-rendered-by="12:27063;a">
+  <li>წვდომა საკუთარ სერვერებზე ან Cloud სერვისების პროვაიდერზე, როგორიცაა DigitalOcean, Amazon Web Services (AWS) ან Google Cloud Platform (GCP).<br />
+    თუ არ შეგიძლიათ ღრუბლოვან სერვერზე დაუყოვნებლივ წვდომა, შეგიძლიათ ადვილად დააყენოთ ანგარიში ნებისმიერ, მათ შორის, ზემოთ ჩამოთვლილ პროვაიდერთან. რეგისტრაციისთვის, სავარაუდოდ, საკრედიტო ბარათი დაგჭირდებათ.</li>
+  <li>სამაგიდო კომპიუტერი, რომელზეც გაშვებულია macOS 10.9+, Windows 7.0+ ან Linux.</li>
+  <li>Outline Manager აპი.</li>
+</ol>
+
+<p data-aura-rendered-by="12:27063;a"><strong>DigitalOcean-ის დახმარებით დაყენება</strong><br />
+  <br />
+  ჩვენ გავამარტივეთ Outline-ის რამდენიმე დაწკაპუნებით ინსტალაცია DigitalOcean-ის დახმარებით. თქვენს კომპიუტერში Outline Manager-ის ჩამოტვირთვისა და ინსტალაციის შემდეგ შეგიძლიათ აირჩიოთ DigitalOcean-ის დაყენების ვარიანტი, რომელიც გაგიძღვებათ რამდენიმე მარტივი ეკრანით, რომ Outline-ის სერვერის კონფიგურირება და ინსტალაცია შეძლოთ.<br />
+  <br />
+  <strong>ღრუბლის სხვა პროვაიდერით დაყენება</strong><br />
+  <br />
+  Outline Manager-ის ჩამოტვირთვისა და ინსტალაციის შემდეგ აირჩიეთ Outline-ის სერვერის ინსტალაცია AWS-ის, GCP-ს, DigitalOcean-ის ან სხვა პროვაიდერის დახმარებით. ყველა გარემო განსხვავებულია, ამიტომ Outline Manager-ის დაყენების ნაკადში ყველაზე გავრცელებული ღრუბლოვანი სერვისების პროვაიდერებისთვის დავამატეთ ინსტრუქცია, რომელიც მოიცავს წესებს, თუ როგორ შეასრულოთ პარამეტრების კონფიგურირება თქვენს ვირტუალურ მანქანაზე, ვიდრე გაუშვებთ საინსტალაციო სცენარს Outline-ის ინსტალაციისთვის სერვერზე.<br />
+  <br />
+  <strong><em>კიდევ გჭირდებათ დახმარება?</em></strong><br />
+  <br />
+  გაეცანით&nbsp;<a href="/outline-faq/answer/15331728" rel="noopener" target="_blank">ხშირად დასმულ შეკითხვებს Outline-ის სერვერის დაყენების შესახებ</a>.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="95" sourceLocale="ka">WEB:15331625</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">უფლება მაქვს გამოვიყენო ან გავამრავლო Outline ბრენდი?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">მიუხედავად იმისა, რომ Outline არის ღია კოდის წყარო და გამოსაყენებლად უფასოა, ჩვენი ბრენდი ეკუთვნის Jigsaw-ს და ის არ უნდა იქნას ბოროტად გამოყენებული. გაეცანით <a href="https://github.com/Jigsaw-Code/outline-brand/blob/main/outline_brand_user_guide.pdf" target="_blank">მომხმარებლის სახელმძღვანელოს</a>, რათა დარწმუნდეთ, რომ არ აკეთებთ პოტენციურად შეცდომაში შემყვან მოთხოვნას, სწორად აფასებთ თქვენს ურთიერთობას Outline-თან და Jigsaw-თან და სწორად იყენებთ ბრენდის დამტკიცებულ ელემენტებს.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="191" sourceLocale="ka">WEB:15331628</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">როგორ მივიღო წვდომის გასაღები?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:3258;a">Outline განსხვავდება VPN სერვისებისგან, რომლებზე წვდომასაც ყიდულობთ; ის არის <a href="https://getoutline.org/#:~:text=Two%20Products%20that%20Work%20Together" target="_blank">ხელსაწყო</a>, რომელიც გაძლევთ საშუალებას, გაუშვათ საკუთარი VPN სერვერი და გააზიაროთ მასზე წვდომა. <a href="/outline/answer/15330920#servicemanager" rel="noopener" target="_blank">სერვისის მმართველი</a>&nbsp;ერთადერთია, ვისაც შეუძლია წვდომის გასაღების უზრუნველყოფა. Outline-ის გუნდი არ გასცემს უფასო ან ფასიანი წვდომის გასაღებებს. ჩვენ არ გვყავს წვდომის გასაღების ოფიციალური პარტნიორები, სპარსულში Paskoocheh-ის გარდა.<br />
+  <br />
+  წარმოგიდგენთ წვდომის გასაღების მიღების სამ ვარიანტს:&nbsp;</p>
+
+<ul data-aura-rendered-by="12:3258;a">
+  <li>სთხოვეთ ვინმეს, მოგიწვიოთ თავის სერვერზე: თუ იცნობთ ვინმეს, ვინც Outline-ის სერვერით სარგებლობს, დაუკავშირდით მას და სთხოვეთ წვდომის გასაღები.</li>
+  <li><a href="/outline/answer/15331530" rel="noopener" target="_blank">შექმენით სერვერი დამოუკიდებლად:</a> Windows-ის, Mac-ის ან Linux-ის კომპიუტერის მეშვეობით ჩამოტვირთეთ <a href="https://getoutline.org/get-started/#step-1" target="_blank">Outline-ის მმართველი</a> და დააყენეთ თქვენი <a href="/outline/answer/15330920" rel="noopener" target="_blank">Outline-ის სერვერი</a>. ეს პროცესი ყველასთვის გავამარტივეთ, განსაკუთრებით, ღრუბლის სერვისის პროვაიდერის, DigitalOcean-ის მეშვეობით.</li>
+  <li>გამოიყენეთ Outline-ის ან <a href="https://en.wikipedia.org/wiki/Shadowsocks#:~:text=Shadowsocks%20is%20a%20free%20and,have%20been%20made%20available%20since." target="_blank">Shadowsocks</a>-ის სერვისი: Outline-ის კლიენტის გამოყენება შესაძლებელია მესამე მხარის სერვისებთან ერთად, რომლებიც სარგებლობენ Outline-ით ან Shadowsocks-ის პროტოკოლით. მაგალითად:
+    <ul>
+      <li><a href="http://nthlink.com/" target="_blank">nthLink</a> უშვებს უფასო სერვისს Outline-ის საფუძველზე, Outline-ის კლიენტის მოდიფიცირებული ვერსიით.</li>
+      <li><a href="https://www.reddit.com/r/outlinevpn/comments/nwu1se/the_outline_distribution_system_is_here_to_help/" target="_blank">ASL19</a> უშვებს Outline-ის მოდიფიცირებულ ვერსიას, რომელსაც ეწოდება <a href="https://beepassvpn.com/" target="_blank">BeePass</a>; ასევე, უშვებს <a href="https://t.me/paskoochehbot" target="_blank">Telegram-ის ბოტს</a>, რომელიც უზრუნველყოფს BeePass-ის სერვერების გასაღებებზე უფასო წვდომას.</li>
+      <li>სპარსული ენის მომხმარებლებს, ასევე, შეუძლიათ, მოითხოვონ Outline-ის წვდომის გასაღები <a href="https://outline.paskoocheh.com/" target="_blank">ASL19-ის Paskoocheh</a>-ისგან.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Outline-ის კლიენტის აპის ჩამოტვირთვის შემდეგ დააკოპირეთ და ჩასვით თქვენი <a href="/outline/answer/15330920#accesskey" rel="noopener" target="_blank">წვდომის გასაღები</a>&nbsp;Outline-ის კლიენტში, რომ დაუკავშირდეთ Outline-ის სერვერს.&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="133" sourceLocale="ka">WEB:15331630</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">როგორ წავშალო ჩემი Outline-ის სერვერი?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:14046;a">ღრუბლის პროვაიდერების უმრავლესობისთვის საკმაოდ ადვილია კონკრეტული ვირტუალური მანქანის წაშლა, რომელსაც იყენებთ.</p>
+
+<p data-aura-rendered-by="12:14046;a">თუ DigitalOcean-ს იყენებთ ღრუბლის პროვაიდერად, შეგიძლიათ, წაშალოთ თქვენი არსებული ვირტუალური მანქანა კბილანას ღილაკზე დაწკაპუნებითა და სერვერის განადგურების არჩევით. თქვენ დაუყოვნებლივ გიკარნახებთ, შექმნათ ახალი ვირტუალური მანქანა სასურველ მდებარეობაზე.</p>
+
+<p data-aura-rendered-by="12:14046;a">თუ Outline-ის სერვერს ამოშლით, ის სამუდამოდ წაიშლება და მისი წვდომის გასაღებები აღარ იმუშავებს. თუ არ გსურთ, ხალხს ჰქონდეს შეფერხებები Outline-იდან წვდომისას, მოგიწევთ <a href="/outline-faq/answer/15331530" rel="noopener" target="_blank">Outline-ის ახალი სერვერის დაყენება</a> და მასზე წვდომის გაზიარება, ვიდრე თქვენს ძველ სერვერს წაშლიდეთ.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="99" sourceLocale="ka">WEB:15331631</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline-ის რამდენიმე სერვერის დაყენების წესი</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:27908;a">Outline-ის დამატებითი სერვერების დასაყენებლად დააწკაპუნეთ ხატულაზე „+“ თქვენს Outline Manager აპში მარცხნივ, ნავიგაციის არეში. ახალი სერვერის დამატების ინსტრუქცია იგივეა, რაც პირველად ინსტალაციის შემთხვევაში.</p>
+
+<ul data-aura-rendered-by="12:27908;a">
+  <li>არ არსებობს ლიმიტი, თუ Outline-ის რამდენი სერვერის შექმნა შეგიძლიათ.</li>
+  <li>Outline-ის ყოველი სერვერისთვის, რომელსაც შექმნით, შესაბამისი ვირტუალური მანქანა დაგჭირდებათ.</li>
+  <li>დამატებითი მანქანების ან „droplet“-ების შექმნამ შეიძლება გაგიზარდოთ საფასური თქვენი ღრუბლის პროვაიდერთან. შეამოწმეთ ფასების პაკეტები თქვენი ღრუბლის პროვაიდერთან, რათა იცოდეთ, რას ელოდოთ.</li>
+</ul>
+
+<p data-aura-rendered-by="12:27908;a"><strong>Outline-ის დამატებითი სერვერის შექმნა DigitalOcean-ში</strong></p>
+
+<p data-aura-rendered-by="12:27908;a">ხატულაზე „+“ დაწკაპუნების და DigitalOcean-ში ინსტალაციის არჩევის შემდეგ უნდა მიჰყვეთ იმავე ინსტრუქციას, რომელიც გამოიყენეთ თქვენი პირველი სერვერის დაყენებისას. აგრეთვე, რადგანაც Outline Manager ინტეგრირებულად მუშაობს DigitalOcean-თან, ჩვენ შეგვიძლია შეგიქმნათ „droplet“ ისე, რომ Outline Manager აპიდან გასვლა არ დაგჭირდეთ.</p>
+
+<p data-aura-rendered-by="12:27908;a">გაითვალისწინეთ, რომ Outline Manager-ს ერთჯერადად აქვს DigitalOcean-ის მხოლოდ ერთი ანგარიშის მხარდაჭერა. თუ გსურთ, დაამატოთ ან შექმნათ Outline-ის სხვა სერვერები DigitalOcean-ის სხვა ანგარიშებიდან, შეგიძლიათ დაამატოთ გაფართოებული კონფიგურაციის სახით.</p>
+
+<p data-aura-rendered-by="12:27908;a"><strong>Outline-ის დამატებითი სერვერების შექმნა GCP-ზე, AWS-ზე ან ღრუბლოვანი სერვისის სხვა პროვაიდერთან</strong></p>
+
+<p data-aura-rendered-by="12:27908;a">დაიწყეთ ახალი ვირტუალური მანქანის შექმნით ღრუბლის თქვენ მიერ არჩეულ პროვაიდერთან. შემდეგ გახსენით Outline Manager და ბოლომდე მიჰყევით ინსტრუქციას გაფართოებული ინსტალაციისთვის, ზუსტად ისევე, როგორც პირველად.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="96" sourceLocale="ka">WEB:15331632</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">რატომ ვერ ვაყენებ Outline Manager-ს Windows-ზე?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:34680;a">შეიძლება შეცდომის ეს შეტყობინება იხილოთ: „სამწუხაროდ, Outline სათანადოდ ვერ დაინსტალირდა. გთხოვთ, ხელახლა ცადოთ მისი ინსტალაცია. <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">გამოგვეხმაურეთ</a>, თუ ეს ვერ დაგეხმარებათ.</p>
+
+<p data-aura-rendered-by="12:34680;a">თუ Outline-ს Windows-ში იყენებთ, შესაძლოა, ზოგჯერ მოულოდნელი შეცდომა მოხდეს. უმეტესწილად საჭიროა Outline TAP ადაპტერის (დრაივერი) წაშლა და Outline-ის ხელახლა ინსტალაცია.&nbsp;</p>
+
+<p data-aura-rendered-by="12:34680;a">ნაბიჯები შეიძლება განსხვავდებოდეს თქვენი Windows-ის ოპერაციული სისტემის მიხედვით, მაგრამ ქვემოთ მოცემულია ზოგადი ნაბიჯები, როგორ შეასრულოთ TAP ადაპტერისა და Outline Manager-ის დეინსტალაცია და შემდეგ ხელახლა დააყენოთ Outline Manager.</p>
+
+<ol data-aura-rendered-by="12:34680;a">
+  <li>TAP ადაპტერის დეინსტალაცია Outline Manager-ისთვის
+    <ol>
+      <li>გადადით მოწყობილობათა მმართველებში, შემდეგ — ქსელის ადაპტერებში</li>
+      <li>იპოვეთ ფაილი „TAP-Windows Adapter V9“ ან TAP ადაპტერი, რომელიც დაკავშირებულია Outline-თან</li>
+      <li>შეასრულეთ ამ ადაპტერის დეინსტალაცია ან წაშალეთ ის. გაითვალისწინეთ, რომ ამან შეიძლება, იმოქმედოს VPN-ის სხვა აპებზეც, რომლებიც დაინსტალირებული გაქვთ.&nbsp;</li>
+    </ol>
+  </li>
+  <li>Outline Manager-ის დეინსტალაცია
+    <ol>
+      <li>გადადით პროგრამებსა და ფუნქციებში, შემდეგ კი აირჩიეთ პროგრამის დეინსტალაცია</li>
+      <li>იპოვეთ Outline Manager აპი და შეასრულეთ მისი დეინსტალაცია</li>
+      <li><a href="https://getoutline.org/get-started/#step-1" target="_blank">ჩამოტვირთეთ Outline Manager აპის უახლესი ვერსია</a> და ხელახლა დააინსტალირეთ ის თქვენს Windows მოწყობილობაში. ახალი ინსტალაცია ავტომატურად დააინსტალირებს ახალ TAP ადაპტერს.</li>
+    </ol>
+  </li>
+</ol>
+
+<p data-aura-rendered-by="12:34680;a">თუ პრობლემა არ აღმოიფხვრა, <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">დაუკავშირდით მხარდაჭერას</a>.&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="94" sourceLocale="ka">WEB:15331727</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Google Cloud-ის ავტომატიზებული დაყენება</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:26310;a"><strong>გადახედვა</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Outline Manager-ს აქვს ფუნქცია, რომლითაც ავტომატურად შეგიძლიათ Outline-ის სერვერის კონფიგურაციის დაყენება სერვერზე, რომელიც გაშვებულია Google Cloud-ში. თუ ამ ფუნქციას აირჩევთ, Outline Manager გთხოვთ შესვლას თქვენს Google ანგარიშში, რომელიც მოგანიჭებთ გარკვეულ <a href="https://developers.google.com/identity/protocols/oauth2" target="_blank">OAuth</a> ნებართვებს Outline Manager-ის თქვენს ადგილობრივ ინსტალაციაზე თქვენი Google Cloud ანგარიშის კონფიგურირების მიზნით.<br />
+  თუ ამ ნებართვების მინიჭება არ გსურთ, მიჰყევით გაფართოებული დაყენების ინსტრუქციას Outline Manager-ში, რათა Outline გაუშვათ Google Cloud Platform-ზე.&nbsp;</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>მინიჭებული ნებართვები</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">ავტომატიზებული დაყენების უზრუნველსაყოფად Outline Manager საჭიროებს შემდეგ ნებართვებს თქვენი Google ანგარიშიდან.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Google Cloud Platform</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>თქვენი Google Compute Engine-ის რესურსების ნახვა და მართვა</li>
+  <li>თქვენი მონაცემების ნახვა Google Cloud სერვისებში და თქვენი Google ანგარიშის ელფოსტის მისამართის ნახვა</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>ანგარიშის საბაზისო ინფორმაცია</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>თქვენი Google ანგარიშის ძირითადი ელფოსტის მისამართის ნახვა</li>
+  <li>თქვენი დაკავშირება Google-ში არსებულ თქვენს პერსონალურ ინფორმაციასთან</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>დამატებითი წვდომა</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>თქვენი Cloud Platform-ის პროექტების მართვა</li>
+  <li>თქვენი Google Cloud Platform-ის ბილინგის ანგარიშის ნახვა და მართვა</li>
+  <li>თქვენი Google API სერვისის კონფიგურაციის მართვა</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a">ამ ნებართვებით შეგვიძლია მხარი დავუჭიროთ გაფართოებულ ფუნქციონალობას თქვენი Outline-ის სერვერების სამართავად, მათ შორის, შემდეგს:</p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>თქვენთვის ნების დართვა, აირჩიოთ სწორი ბილინგის ანგარიში</li>
+  <li>ახალი პროექტის შექმნა თქვენი Outline-ის სერვერების ორგანიზებისთვის</li>
+  <li>ხელმისაწვდომი მონაცემთა ცენტრების ჩამონათვალის შექმნა</li>
+  <li>ახალი ვირტუალური მანქანების შექმნა Outline-ის გასაშვებად</li>
+  <li>ახალი ვირტუალური მანქანის კონფიგურირება Outline-ით</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>ნებართვების გაუქმება</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">შეგიძლიათ გააუქმოთ წვდომა Google Cloud Platform-ზე Outline Manager-ისთვის <a href="https://myaccount.google.com/permissions" target="_blank">ჩემი ანგარიშის</a> მონახულებით. თუ წვდომას გამოიხმობთ, ნებისმიერი სერვერი, რომელიც შექმენით ავტომატიზებული დაყენებით, გაშვებული დარჩება, მაგრამ აღარ გამოჩნდება Outline Manager-ში. მათთვის წვდომის აღსადგენად, უბრალოდ, ხელახლა დააკავშირეთ Google Cloud Platform-თან ავტომატიზებული დაყენების ნაკადის დაწყებით.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Outline-ის პროექტის ორგანიზაცია</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Google Cloud-ის ავტომატიზებული დაყენება იყენებს ერთ<a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects" target="_blank"> Google Cloud პროექტს</a> თქვენი Outline-ის სერვერების ორგანიზებისთვის. პროექტი იქმნება ავტომატიზებული დაყენების პირველი გამოყენების დროს, პროექტის შემოთავაზებული ID-ით, რომელიც იწყება სიტყვით „Outline-“ და გრძელდება შემთხვევითი სიმბოლოებისგან შედგენილი ფრაზით. შექმნისას შეგიძლიათ აირჩიოთ სხვა პროექტის ID, თუ ასე გირჩევნიათ. პროექტს დაერქმევა „Outline-ის სერვერები“.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>ბილინგის ანგარიში</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Google Cloud პროექტები საჭიროებს „ბილინგის ანგარიშს“, რომელიც გადახდის ინფორმაციას განსაზღვრავს. როდესაც პირველად იყენებთ Google Cloud-ის ავტომატიზებულ დაყენებას, მოგეთხოვებათ ბილინგის ანგარიშის მითითება Outline-ის სერვერებთან ასოცირებისთვის. ზოგჯერ სერვერის გაშვება წყდება ბილინგის ანგარიშის პრობლემის გამო. ასეთ შემთხვევაში უნდა შეხვიდეთ სისტემაში <a href="https://console.cloud.google.com/getting-started" target="_blank">Google Cloud კონსოლში</a>, მოძებნოთ Google Cloud პროექტი, დაკავშირებული Outline-თან (სახელწოდებით „Outline-ის სერვერები“) და განაახლოთ ბილინგის პარამეტრები.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>სერვერების განადგურება</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">თუ გსურთ ავტომატიზებული დაყენებით შექმნილი თქვენი სერვერების განადგურება, ამის გაკეთება ყველაზე ადვილია Outline Manager-იდან. თუმცა, თუ გსურთ სერვერები თვითონ გაანადგუროთ, შეგიძლიათ შეხვიდეთ სისტემაში <a href="https://console.cloud.google.com/getting-started" target="_blank">Google Cloud კონსოლში</a>, იპოვოთ პროექტი, რომელიც თავდაპირველი დაყენების დროს შეიქმნა (სახელწოდებით „Outline-ის სერვერები“) და ან წაშალოთ რესურსები მასში, ან გამორთოთ პროექტი.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="99" sourceLocale="ka">WEB:15331728</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ხშირად დასმული შეკითხვები Outline-ის სერვერის დაყენების შესახებ</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:28806;a"><strong>შემიძლია, Outline გამოვიყენო სერვერის გარეშე?</strong><br />
+  <br />
+  სამწუხაროდ, არა. Outline-ის პროგრამული უზრუნველყოფა საჭიროებს წვდომას სერვერზე მიუხედავად იმისა, ის იმართება თქვენ მიერ, თქვენი ორგანიზაციის თუ სანდო მესამე მხარის მიერ.&nbsp;</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>რა დრო სჭირდება Outline-ის სერვერის დაყენებას?</strong></p>
+
+<p data-aura-rendered-by="12:28806;a">უმრავლეს შემთხვევაში, 5 წუთზე ნაკლები. Outline-ის ინსტალაცია შეგიძლიათ ნებისმიერ ღრუბლოვან სერვერზე, თუმცა ჩვენ ვითანამშრომლეთ DigitalOcean-თან, რათა შემოგთავაზოთ მომხმარებელზე უფრო მეტად მორგებული, ნაბიჯ-ნაბიჯ ინსტალაციის გამოცდილება, რომლითაც შეგიძლიათ დააყენოთ თქვენი სერვერი სულ რამდენიმე დაწკაპუნებით, სცენარების გარეშე.</p>
+
+<p data-aura-rendered-by="12:28806;a">თუ აირჩიეთ AWS, GCP ან გაფართოებული დაყენება, ჩვენ გავამარტივეთ სერვერის ინსტალაციის პროცესი ერთ სცენარამდე, რომელიც მუშაობს თითქმის ყველა გარემოში.&nbsp;</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>სად შემიძლია Outline-ის სერვერის დაყენება?</strong></p>
+
+<p data-aura-rendered-by="12:28806;a">Outline-ის სერვერის დაყენება შესაძლებელია ღრუბლოვანი სერვისის პროვაიდერების უმრავლესობაში, სადაც კი ისინი ოპერირებს.</p>
+
+<p data-aura-rendered-by="12:28806;a">ყველაზე მარტივია მისი დაყენება DigitalOcean-ზე, რადგანაც მას აქვს მრავალი მდებარეობა, როგორიცაა ამსტერდამი, ტორონტო, სან-ფრანცისკო და სინგაპური. თუ გირჩევნიათ მისი ინსტალაცია სხვა ღრუბლის პროვაიდერზე ან საკუთარ ინფრასტრუქტურაში, შეგიძლიათ აირჩიოთ „გაფართოებული რეჟიმი“ Outline Manager აპლიკაციაში და მიჰყვეთ ინსტალაციის ინსტრუქციას დაყენების სცენარის გამოყენებით.&nbsp;</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>სად უნდა დავაყენო Outline-ის სერვერი?</strong></p>
+
+<ol data-aura-rendered-by="12:28806;a">
+  <li>როდესაც ირჩევთ მდებარეობას თქვენი Outline-ის სერვერისთვის, უნდა გაითვალისწინოთ შემდეგი ფაქტორები:</li>
+  <li>Outline-ის სერვერის მდებარეობა გავლენას ახდენს მომხმარებლის გამოცდილებაზე ინტერნეტში. მაგალითად, თუ სერვერი მდებარეობს ამსტერდამში, მომხმარებელი, რომელიც წვდომას იქონიებს ამ სერვერზე, ინტერნეტში მიიღებს ისეთ გამოცდილებას, თითქოს ფიზიკურად ნიდერლანდებში იმყოფებოდეს. ზოგიერთი ვებსაიტი ჰოლანდიურადაც კი შეიძლება იყოს ნაჩვენები. ჩვეულებისამებრ, შეგიძლიათ უგულებელყოთ ადგილობრივი ენა ვებსაიტზე, ენის ამომრჩევის გამოყენებით.</li>
+  <li>თქვენს მომხმარებლებსა და Outline-ის სერვერს შორის მანძილი შეიძლება გავლენას ახდენდეს სიჩქარეზე. ზოგადად, Outline-ის მომხმარებლებსა და სერვერს შორის ფიზიკურ მანძილს შეუძლია გავლენა მოახდინოს მომხმარებლების ინტერნეტის სიჩქარეზე. უმეტესწილად შეგიძლიათ აირჩიოთ სერვერის მდებარეობა იმ ადგილთან ყველაზე ახლოს, სადაც თქვენი მოსალოდნელი მომხმარებლები იმყოფებიან, მაგრამ შეგიძლიათ შეამოწმოთ <a href="https://www.submarinecablemap.com/" rel="noopener" target="_blank">წყალქვეშა კაბელების რუკა</a>, რომ ნახოთ, რომელი ინტერნეტის კაბელი უკავშირდება თქვენს ქვეყანას ან რეგიონს.</li>
+  <li>თქვენი VPN სერვერის მდებარეობამ შეიძლება გავლენა მოახდინოს სამართლებრივ ნორმებზე. გთხოვთ, გაითვალისწინოთ, რომ Outline-ის პროგრამული უზრუნველყოფა თქვენს ტრაფიკს არ აღრიცხავს. შეიტყვეთ მეტი <a href="/outline-faq/answer/14919822" rel="noopener" target="_blank">Outline-ის გამოყენების დროს უსაფრთხოებისა და კონფიდენციალურობის</a> შესახებ.</li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="ka">WEB:15331758</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">მე დევლოპერი ვარ. სად მოვიპოვო მხარდაჭერა ჩემს აპლიკაციაში Outline SDK-ის ინტეგრირებისთვის?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">ეს მხარდაჭერის ვებსაიტი Outline Manager-ისა და Client-ის მომხმარებლებისთვისაა განკუთვნილი. დეველოპერებო, მხარდაჭერისთვის GitHub გამოიყენეთ. შეკითხვის დასასმელად გამოაქვეყნეთ SDK&nbsp;<a href="https://github.com/Jigsaw-Code/outline-sdk/discussions" target="_blank">Discussion-ის დაფაზე</a>. SDK Discussion-ის დაფა შესანიშნავი ადგილია, სადაც შეგიძლიათ, დასვათ კითხვები, გააზიაროთ იდეები, მიიღოთ ბმულები დემო ვერსიებზე და დაეხმაროთ სხვა დეველოპერებს Outline SDK-ის გამოყენებით. ფუნქციის მოთხოვნის ან სისტემური ხარვეზის ანგარიშებისთვის გახსენით&nbsp;<a href="https://github.com/Jigsaw-Code/outline-sdk/issues/new" target="_blank">პრობლემა</a>&nbsp;.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="74" sourceLocale="ka">WEB:15448041</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ხელმისაწვდომი ენები</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Outline ხელმისაწვდომია შემდეგ ენებზე:</p>
+
+<ul>
+  <li aria-level="1">აფრიკაანსი</li>
+  <li aria-level="1">ალბანური</li>
+  <li aria-level="1">ამჰარული</li>
+  <li aria-level="1">არაბული</li>
+  <li aria-level="1">სომხური</li>
+  <li aria-level="1">აზერბაიჯანული</li>
+  <li aria-level="1">ბენგალური</li>
+  <li aria-level="1">ბოსნიური</li>
+  <li aria-level="1">ბულგარული</li>
+  <li aria-level="1">ბირმული</li>
+  <li aria-level="1">კატალანური</li>
+  <li aria-level="1">ჩინური (გამარტივებული)</li>
+  <li aria-level="1">ჩინური (ტრადიციული)</li>
+  <li aria-level="1">ხორვატიული</li>
+  <li aria-level="1">ჩეხური</li>
+  <li aria-level="1">დანიური</li>
+  <li aria-level="1">ნიდერლანდური</li>
+  <li aria-level="1">ინგლისური (ამერიკული)</li>
+  <li aria-level="1">ინგლისური (ბრიტანული)</li>
+  <li aria-level="1">ესტონური</li>
+  <li aria-level="1">ფილიპინური</li>
+  <li aria-level="1">ფინური</li>
+  <li aria-level="1">ფრანგული</li>
+  <li aria-level="1">ქართული</li>
+  <li aria-level="1">გერმანული</li>
+  <li aria-level="1">ბერძნული</li>
+  <li aria-level="1">ებრაული</li>
+  <li aria-level="1">ჰინდი</li>
+  <li aria-level="1">უნგრული</li>
+  <li aria-level="1">ისლანდიური</li>
+  <li aria-level="1">ინდონეზიური</li>
+  <li aria-level="1">იტალიური</li>
+  <li aria-level="1">იაპონური</li>
+  <li aria-level="1">ყაზახური</li>
+  <li aria-level="1">ქმერული</li>
+  <li aria-level="1">კორეული</li>
+  <li aria-level="1">ლაოსური</li>
+  <li aria-level="1">ლატვიური</li>
+  <li aria-level="1">ლიეტუვური</li>
+  <li aria-level="1">მაკედონიური</li>
+  <li aria-level="1">მალაიური</li>
+  <li aria-level="1">მარათჰი</li>
+  <li aria-level="1">მონღოლური</li>
+  <li aria-level="1">ნეპალური</li>
+  <li aria-level="1">ნორვეგიული</li>
+  <li aria-level="1">სპარსული</li>
+  <li aria-level="1">პოლონური</li>
+  <li aria-level="1">პორტუგალიური (ბრაზილიური)</li>
+  <li aria-level="1">პორტუგალიური (ევროპული)</li>
+  <li aria-level="1">რუმინული</li>
+  <li aria-level="1">რუსული</li>
+  <li aria-level="1">სერბული (კირილიცა)</li>
+  <li aria-level="1">სერბული (ლათინური)</li>
+  <li aria-level="1">სინჰალური</li>
+  <li aria-level="1">სლოვაკური</li>
+  <li aria-level="1">სლოვენიური</li>
+  <li aria-level="1">ესპანური (ევროპა)</li>
+  <li aria-level="1">ესპანური (ლათინური ამერიკა)</li>
+  <li aria-level="1">სუაჰილი</li>
+  <li aria-level="1">შვედური</li>
+  <li aria-level="1">ტამილური</li>
+  <li aria-level="1">ტაილანდური</li>
+  <li aria-level="1">თურქული</li>
+  <li aria-level="1">უკრაინული</li>
+  <li aria-level="1">ურდუ</li>
+  <li aria-level="1">ვიეტნამური</li>
+</ul>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="79" sourceLocale="ka">WEB:15528599</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ქსელის დაცვის შეცდომები</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:268;a">არის ქსელის დაცვის საკითხების სამი ტიპი, რომელიც შეიძლება წარმოიშვას:</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>თქვენ შეიძლება დაბლოკილი იყოთ ქსელის დაცვის მიერ.</strong></p>
+
+<p data-aura-rendered-by="12:268;a">თუ Outline-ის ინსტალაციას ცდილობთ, როდესაც დაკავშირებული ხართ დაცულ ქსელთან, მაგალითად, სკოლაში ან სამუშაო ადგილზე, სცადეთ ინსტალაცია სხვა ქსელით.</p>
+
+<p data-aura-rendered-by="12:268;a">თუ ეს არ იმუშავებს, დაუკავშირდით თქვენი ქსელის ადმინისტრატორს, რათა დაუშვას კავშირი დაცულ ქსელსა და თქვენს Outline-ის სერვერს შორის. თქვენ უნდა იცოდეთ თქვენი Outline-ის სერვერის IP მისამართი და პორტები, სადაც გაშვებულია Outline, რომლებიც მითითებულია საინსტალაციო სცენარის ბოლოში.</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>თქვენ შეიძლება, დაბლოკილი იყოთ მოწყობილობის ქსელის დაცვის მიერ</strong>.</p>
+
+<p data-aura-rendered-by="12:268;a">თუ თქვენს მოწყობილობაზე დაყენებულია პროგრამული უზრუნველყოფა, რომელიც ბლოკავს გამავალ კავშირებს არასტანდარტულ პორტებზე ან არაღიარებულ პროგრამულ უზრუნველყოფას (CheckPoint's ZoneAlarm), მიმართეთ მოწყობილობის ან პროგრამული უზრუნველყოფის დოკუმენტაციის, რათა გაიგოთ, თუ როგორ შექმნათ გამონაკლისი Outline-ისთვის.</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>თქვენ შეიძლება, დაბლოკილი იყოთ სერვერის ქსელის დაცვის მიერ.</strong></p>
+
+<p data-aura-rendered-by="12:268;a">თქვენ მიერ არჩეულმა ღრუბლის პროვაიდერმა შეიძლება, მოითხოვოს გამონაკლისების ხელით შექმნა თქვენი სერვერის ქსელის დაცვისთვის, იმ პორტების გასახსნელად, რომლებზეც გაშვებულია Outline. საინსტალაციო სცენარის გაშვების შემდეგ უნდა წარგედგინოთ შემთხვევითობის პრინციპით არჩეული ორი პორტი, სადაც Outline გაშვებულია თქვენს სერვერზე. ამ ორი პორტის გახსნა საკმარისი უნდა იყოს.<br />
+  <br />
+  თქვენი სერვერის ქსელის დაცვისთვის გამონაკლისების შესაქმნელად გირჩევთ, გადახედოთ დოკუმენტაციას 'ufw'-ისთვის და 'iptables'-ისთვის:</p>
+
+<ul data-aura-rendered-by="12:268;a">
+  <li>UFW:&nbsp;<a href="https://help.ubuntu.com/community/UFW" rel="noopener" target="_blank">https://help.ubuntu.com/community/UFW</a></li>
+  <li>Iptables:&nbsp;<a href="https://help.ubuntu.com/community/IptablesHowTo" rel="noopener" target="_blank">https://help.ubuntu.com/community/IptablesHowTo</a></li>
+</ul>
+</div>
+</body>
+</html>

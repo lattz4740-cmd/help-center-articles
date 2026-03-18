@@ -1,0 +1,1085 @@
+<html>
+<head>
+<style type="text/css">
+.gkms-gtt-answer-header, .gkms-gtt-message-header {
+  color: black !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 2em;
+  padding: 4px;
+}.gkms-gtt-answer-header {
+  background-color: #E5ECF9;
+  border-top: 1px solid #36C;
+}
+.gkms-gtt-message-header {
+  background-color: #F8F8F8;
+  border-top: 1px solid #CCC;
+}
+.gkms-gtt-hide {
+  visibility: hidden;
+}
+.form_field_data .temporary_signal_wrapper {
+  display: inline;
+}
+</style>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+</head>
+<body lang="el">
+<br/><div class="gkms id notranslate" sourceGlobalRevision="116" sourceLocale="el">WEB:14917423</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Πώς λειτουργεί το Outline</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1723;a">&nbsp;</p>
+
+<p data-aura-rendered-by="12:1723;a"><strong>Εγκατάσταση διακομιστή</strong><br />
+  <br />
+  ​Παρόλο που η εγκατάσταση του Outline μπορεί να φαίνεται απλή, απαιτείται η εκτέλεση ενός περίπλοκου συνόλου βημάτων για να ολοκληρωθεί η εγκατάσταση του διακομιστή σας. Κάθε φορά που εγκαθίσταται το Outline, ένα σενάριο εγκατάστασης εκτελεί τα ακόλουθα βήματα:</p>
+
+<ul data-aura-rendered-by="12:1723;a">
+  <li>Ανακτάται και εισάγεται με το Docker η σταθερή έκδοση της εικόνας Shadowbox. Η εικόνα φιλοξενείται στο <a href="https://quay.io/" target="_blank">Quay.io</a>, στη διεύθυνση <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank">https://quay.io/repository/outline/shadowbox?tab=tags</a>. Αυτή η εικόνα περιέχει τον διακομιστή Outline και το Management API, το οποίο χρησιμοποιείται αργότερα από την εφαρμογή Outline Server Management για τη δημιουργία και την κατάργηση κλειδιών πρόσβασης, τη συμμετοχή/εξαίρεση από την αποστολή ανώνυμων μετρήσεων κ.λπ.</li>
+  <li>Το <a href="https://github.com/v2tec/watchtower" target="_blank">Watchtower</a> εγκαθίσταται και διαμορφώνεται έτσι ώστε να ελέγχει για ενημερώσεις εικόνων κάθε ώρα, διασφαλίζοντας ότι κάθε διακομιστής Outline ενημερώνεται συνεχώς με τις πιο πρόσφατες λειτουργίες και βελτιώσεις ασφάλειας.</li>
+  <li>Ένας διακομιστής ιστού, που χρησιμοποιείται για την πρόσβαση στο API διαχείρισης, εκκινείται σε μια τυχαία θύρα σε μια μυστική και τυχαία διαδρομή.</li>
+  <li>Δημιουργείται ένα <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank">αυτο-υπογεγραμμένο πιστοποιητικό SSL</a>, ώστε η διαχείριση του διακομιστή Outline να μπορεί να κρυπτογραφηθεί με χρήση TLS, παρόλο που δεν έχει όνομα τομέα. Δημιουργείται επίσης ένα μοναδικό αποτύπωμα αυτού του πιστοποιητικού που αποθηκεύεται στην εφαρμογή Outline Manager. Το αποτύπωμα αυτό βοηθά στην αποτροπή επιθέσεων MITM.</li>
+</ul>
+
+<p data-aura-rendered-by="12:1723;a">Η εγκατάσταση του Outline δεν χρειάζεται κάποια διαμόρφωση μετά την εγκατάσταση<br />
+  <br />
+  <strong>Ασφάλεια διακομιστή</strong><br />
+  <br />
+  Το λογισμικό Outline είναι ανοικτού κώδικα, γεγονός που σημαίνει ότι οποιοσδήποτε μπορεί να δει τον κώδικα και να κάνει βελτιώσεις σε περίπτωση που εντοπιστεί οποιαδήποτε ευπάθεια. Ο κώδικάς φιλοξενείται στο <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank">GitHub</a>.<br />
+  <br />
+  Επιπλέον, όλοι οι εγκατεστημένοι διακομιστές Outline ενημερώνονται αυτόματα κάθε φορά που κυκλοφορεί μια νέα έκδοση, διασφαλίζοντας έτσι ότι κανένας διακομιστής Outline δεν χρησιμοποιεί παλαιότερη έκδοση του λογισμικού.<br />
+  <br />
+  Για να είναι δυνατή η διαχείριση των κλειδιών πρόσβασης στον διακομιστή, η εφαρμογή Outline Manager αλληλεπιδρά με μια Υπηρεσία διαχείρισης στον διακομιστή Outline. Η Υπηρεσία διαχείρισης εκτελείται σε μια τυχαία θύρα και σε μια μυστική και μοναδική διαδρομή. Η ίδια η Υπηρεσία διαχείρισης λειτουργεί με προστασία, καθώς αποκρίνεται στα ερωτήματα μόνο όταν έχει οριστεί η κατάλληλη μυστική διαδρομή. Τέλος, όλη η επικοινωνία με την Υπηρεσία διαχείρισης κρυπτογραφείται με ένα <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank">αυτο-υπογεγραμμένο πιστοποιητικό SSL</a>.<br />
+  <br />
+  Επίσης, ο διακομιστής Outline δεν αποθηκεύει αρχεία καταγραφής, οπότε δεν υπάρχει κίνδυνος να αποκαλυφθούν δεδομένα χρηστών ακόμα και αν παραβιαστεί. Μάθετε περισσότερα <a href="https://support.getoutline.org/s/article/Security-and-privacy" target="_blank">εδώ</a>. Το Outline ελέγχθηκε από τη <a href="https://radicallyopensecurity.com/" target="_blank">Radically Open Security</a> και την <a href="https://cure53.de/" target="_blank">Cure53</a> το 2018. Δείτε τις αναφορές <a href="https://support.getoutline.org/s/article/Security-and-privacy" target="_blank">εδώ</a>.<br />
+  <br />
+  <strong>Χειρισμός επισκεψιμότητας UDP</strong><br />
+  <br />
+  Το Outline μπορεί να λειτουργεί ως VPN σε επίπεδο συστήματος, γεγονός που σημαίνει ότι όλη η επισκεψιμότητα UDP δρομολογείται μέσω του διακομιστή Outline.<br />
+  <br />
+  <strong>Επισκεψιμότητα DNS</strong></p>
+
+<p data-aura-rendered-by="12:1723;a"><br />
+  Το Outline εκτελεί όλες τις αναζητήσεις DNS μέσω του διακομιστή Outline και τις προστατεύει χρησιμοποιώντας την ίδια κρυπτογράφηση που χρησιμοποιείται για όλη την άλλη δραστηριότητα δικτύου. Τα ερωτήματα DNS θα διέρχονται από τον διακομιστή Outline στο Dyn Internet Guide, το OpenDNS, το Cloudflare DNS ή το Quad9 DNS. Το Outline δεν καταγράφει ποτέ τις αναζητήσεις DNS.&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="232" sourceLocale="el">WEB:14919822</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Ασφάλεια και απόρρητο κατά τη χρήση του Outline</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:258;a">Ασφάλεια και απόρρητο κατά τη χρήση του Outline</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Πώς το Outline προστατεύει τις διαδικτυακές επικοινωνίες σας</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Η διαδικτυακή κίνηση μπορεί να αποτελέσει στόχο παρακολούθησης, ιδιαίτερα κατά τη διακίνηση των δεδομένων μέσω του τοπικού ή του εθνικού δικτύου σας.</p>
+
+<p data-aura-rendered-by="12:258;a">Το Outline συμβάλλει στην προστασία της ιδιωτικότητας των επικοινωνιών σας, με κρυπτογράφηση της διαδικτυακής κίνησης κατά τη διακίνηση των δεδομένων στο εθνικό δίκτυο και μέχρι να φτάσουν στον διακομιστή Outline. Όταν η επισκεψιμότητα κρυπτογραφείται με το Outline, οι παρατηρητές δικτύου δεν μπορούν να δουν τους ιστοτόπους που επισκέπτεστε ή τις πληροφορίες που διακινείτε.</p>
+
+<p data-aura-rendered-by="12:258;a">Το Outline μπορεί επίσης να σας βοηθήσει να αποκαταστήσετε την πρόσβαση σε ασφαλή εργαλεία επικοινωνίας από τερματικό σε τερματικό (end-to-end) τα οποία μπορεί να μην είναι προσβάσιμα στη χώρα σας.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Πρότυπα κρυπτογράφησης</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Το Outline κρυπτογραφεί την επικοινωνία ανάμεσα στη συσκευή σας και τον διακομιστή Outline, χρησιμοποιώντας κρυπτογράφηση AEAD 256-bit Chacha2020 IETF Poly 1305. Τα κρυπτογραφήματα AEAD παρέχουν εμπιστευτικότητα, ακεραιότητα και αυθεντικότητα, και αποδίδουν εξαιρετικά στον σύγχρονο εξοπλισμό.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Έλεγχοι ασφαλείας</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Το 2018, το Outline ελέγχθηκε από το Radically Open Security και το Cure53, δύο ανεξάρτητους οργανισμούς ψηφιακής ασφάλειας που αξιολόγησαν το λογισμικό σε σχέση με τα τελευταία πρότυπα ασφαλείας. Το Radically Open Security διεξήγαγε έναν πρόσθετο έλεγχο το 2022 και η Cure53 διεξήγαγε έναν έλεγχο του Outline SDK το 2024. Μπορείτε να διαβάσετε τις αναφορές εδώ:</p>
+
+<ul data-aura-rendered-by="12:258;a">
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf" target="_blank">Radically Open Security Penetration Test Report (Μάρτιος 2018)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf" target="_blank">Cure53 Pentest &amp; Audit Report Jigsaw Outline (Δεκέμβριος 2018)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf" target="_blank">Radically Open Security Penetration Test Report (Δεκέμβριος 2022)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf" target="_blank">Cure53 Pentest Report Jigsaw Outline VPN SDK (Ιανουάριος 2024)</a></li>
+</ul>
+
+<p data-aura-rendered-by="12:258;a"><strong>Ανώνυμες μετρήσεις και αρχεία καταγραφής</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Το Outline παρακολουθεί τη χρήση του εύρους ζώνης, δηλαδή τα "μεταφερόμενα byte" ανά κλειδί πρόσβασης. Αυτές οι πληροφορίες παρέχουν στους διαχειριστές διακομιστών τη δυνατότητα να προσαρμόζουν τις συνδρομές τους για εύρος ζώνης στους παρόχους διακομιστών cloud ανάλογα με τις ανάγκες τους. Ωστόσο, δεν τους επιτρέπουν να βλέπουν τις πληροφορίες που διακινούνται μέσω του διακομιστή Outline.</p>
+
+<p data-aura-rendered-by="12:258;a">Μάθετε περισσότερα σχετικά με τη <a href="/outline-faq/answer/15331222" rel="noopener" target="_blank">συλλογή δεδομένων και πληροφοριών</a> του Outline.</p>
+
+<hr data-aura-rendered-by="12:258;a" />
+<p data-aura-rendered-by="12:258;a"><strong>Συνήθεις ερωτήσεις σχετικά με την ασφάλεια και το απόρρητο</strong>&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Μπορεί το Outline να με κάνει ανώνυμο στο διαδίκτυο;</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Όχι, το Outline δεν είναι εργαλείο ανωνυμοποίησης. Το Outline προστατεύει το απόρρητό σας από πιθανούς παρατηρητές δικτύου.</p>
+
+<p data-aura-rendered-by="12:258;a">Το Outline δεν προσφέρει πλήρη ανωνυμία στους ιστοτόπους που επισκέπτεστε, καθώς οι ιστότοποι μπορούν να προσδιορίσουν την ταυτότητά σας όταν συνδέεστε ή ενδεχομένως μέσω άλλων τεχνικών, όπως το μοναδικό χαρακτηριστικό προγράμματος περιήγησης. Ως προς τις εφαρμογές για κινητά, τα περισσότερα σύγχρονα smartphone έχουν API που επιτρέπουν στις εγκατεστημένες εφαρμογές την ανάκτηση της τοποθεσίας σας, ανεξάρτητα από τον διακομιστή μεσολάβησης, καθώς μπορούν να βασιστούν στο ενσωματωμένο GPS.</p>
+
+<p data-aura-rendered-by="12:258;a">Τα εικονικά ιδιωτικά δίκτυα (VPN) προσφέρουν σε γενικές γραμμές ικανοποιητική προστασία, ειδικά από την παρακολούθηση διαδικτύου, ωστόσο εξακολουθούν να υπάρχουν κίνδυνοι κατά τη χρήση του διαδικτύου. Ακόμα και με ένα VPN, εάν ένας πάροχος υπηρεσιών διαδικτύου (ISP) γνωρίζει ήδη την ταυτότητά σας και μπορεί να παρακολουθεί την επισκεψιμότητα διαδικτύου σας, μπορεί ενδεχομένως να προσδιορίσει τη διεύθυνση IP του διακομιστή Outline που χρησιμοποιείτε. Αυτές οι πληροφορίες μπορούν να χρησιμοποιηθούν για τον αποκλεισμό της πρόσβασης στον διακομιστή Outline ή τον προσδιορισμό μοτίβων χρήσης, όταν είστε συνδεδεμένοι στο διαδίκτυο, και ενδεχομένως για τον εντοπισμό της τοποθεσίας σας κατά προσέγγιση.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Μπορεί κανείς να καταλάβει εάν χρησιμοποιώ το Outline;</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Πιθανώς. Οι πλατφόρμες και οι υπηρεσίες στις οποίες αποκτάτε πρόσβαση θα μπορούν να διαπιστώσουν ότι η σύνδεσή σας προέρχεται από έναν διακομιστή cloud. Μερικές φορές, μπορούν να υποθέσουν ότι χρησιμοποιείτε ένα VPN, αλλά δεν θα μπορούν να δουν τα περιεχόμενα της διαδικτυακής σας κίνησης.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Το Outline με προστατεύει από όλες τις κυβερνοαπειλές;</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Όχι. Κανένα εργαλείο δεν μπορεί να σας προστατέψει από όλες τις πιθανές κυβερνοαπειλές. Το Outline σάς παρέχει πρόσβαση στο ανοικτό διαδίκτυο και ενισχύει την προστασία του απορρήτου σας, κρυπτογραφώντας την επισκεψιμότητά σας, αλλά συνιστούμε τη λήψη πρόσθετων προφυλάξεων για την προστασία σας από άλλους τύπους επιθέσεων, όπως τα κακόβουλα προγράμματα και το ηλεκτρονικό ψάρεμα (phishing).</p>
+
+<p data-aura-rendered-by="12:258;a">Για να ενισχύσετε την ασφάλειά σας στο διαδίκτυο, συνεργαστείτε με τον ειδικό του οργανισμού σας σε θέματα κυβερνοασφάλειας. Εναλλακτικά, μπορείτε να λάβετε εξατομικευμένη καθοδήγηση από κορυφαίους ειδικούς σε θέματα ασφαλείας στο <a href="https://securityplanner.org/" target="_blank">Security Planner</a>, έναν ιστότοπο που έχει σχεδιαστεί για να σας παρέχει σαφείς οδηγίες σχετικά με την επιλογή των κατάλληλων εργαλείων κυβερνοασφάλειας σύμφωνα με τις ανάγκες σας.</p>
+
+<p data-aura-rendered-by="12:258;a">Μπορείτε επίσης να ρίξετε μια ματιά σε άλλα προϊόντα κυβερνοασφάλειας της <a href="https://jigsaw.google.com/" target="_blank">Jigsaw</a>, όπως το <a href="https://getintra.org/" target="_blank">Intra</a>, το <a href="https://g.co/shield" target="_blank">Project Shield</a> και το <a href="https://chrome.google.com/webstore/detail/password-alert/noondiphcddnnabmjcihcjfbhfklnnep?" rel="noopener" target="_blank">Password Alert</a>.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Είναι νόμιμη η χρήση VPN;</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Πριν από τη λειτουργία του Outline ή τη χρήση της εφαρμογής, ελέγξτε την ισχύουσα τοπική νομοθεσία, τους κανονισμούς καθώς και τους Όρους Παροχής Υπηρεσιών του παρόχου cloud που σκοπεύετε να χρησιμοποιήσετε.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="89" sourceLocale="el">WEB:15330317</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Γιατί δεν μπορώ να αποκτήσω πρόσβαση στο διαδίκτυο, παρόλο που έχω συνδεθεί στον διακομιστή Outline;</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:32933;a">Αν χρησιμοποιείτε κινητό τηλέφωνο, κάντε εναλλαγή μεταξύ των συνδέσεων δεδομένων κινητής τηλεφωνίας και Wi-Fi. Μερικές φορές, όταν δεν λειτουργεί ο ένας τύπος σύνδεσης, λειτουργεί ο άλλος. Αν χρησιμοποιείτε υπολογιστή, αποσυνδεθείτε από την ευρυζωνική σύνδεση και επανασυνδεθείτε.</p>
+
+<p data-aura-rendered-by="12:32933;a">Αν συνεχίσετε να αντιμετωπίζετε δυσκολίες, πιθανόν να υπάρχει πρόβλημα με τον διακομιστή Outline. Επικοινωνήστε με τον <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">υπεύθυνο εξυπηρέτησης</a>&nbsp;για να σας δώσει ένα νέο κλειδί πρόσβασης για έναν εναλλακτικό διακομιστή. Μπορεί επίσης να αυξήσει το όριο δεδομένων του <a href="https://google-jigsaw--jigsawuat.sandbox.my.site.com/outline/s/article/Terminology" target="_blank"></a><a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">κλειδιού πρόσβασής</a> σας, αν το κλειδί έχει υπερβεί το όριο.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="296" sourceLocale="el">WEB:15330818</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Ποιες είναι οι απαιτήσεις συστήματος για την εκτέλεση της εφαρμογής Outline Client;</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:24676;a">Με χαρά σάς καλούμε να δοκιμάσετε το Outline σε οποιοδήποτε λειτουργικό σύστημα. Οι παρακάτω απαιτήσεις είναι οι ελάχιστες αναφορικά με τα λειτουργικά συστήματα:</p>
+
+<table class="borders" data-aura-rendered-by="12:24676;a" width="312">
+  <tbody>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top"><b>Λειτουργικό σύστημα</b></td>
+      <td colspan="1" rowspan="1" valign="top"><b>Ελάχιστη έκδοση</b></td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Android</td>
+      <td colspan="1" rowspan="1" valign="top">10</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">iOS</td>
+      <td colspan="1" rowspan="1" valign="top">15.5</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">macOS</td>
+      <td colspan="1" rowspan="1" valign="top">12.0</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Windows</td>
+      <td colspan="1" rowspan="1" valign="top">10</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Linux</td>
+      <td colspan="1" rowspan="1" valign="top">Ubuntu&nbsp;20.04</td>
+    </tr>
+  </tbody>
+</table>
+
+<p data-aura-rendered-by="12:24676;a"><br />
+  Θέλετε να μας βοηθήσετε να διαθέσουμε την εφαρμογή Outline Client σε περισσότερα λειτουργικά συστήματα;&nbsp;<a href="https://github.com/Jigsaw-Code/outline-client#platform-specific-development" target="_blank">Συνεισφέρετε στη βάση κωδίκων μας</a>&nbsp;στο GitHub!</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="107" sourceLocale="el">WEB:15330824</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Πώς μπορώ να ενημερώσω το λογισμικό του διακομιστή Outline;</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:10378;a">Οι διακομιστές Outline ενημερώνονται αυτόματα με τις νεότερες βελτιώσεις ασφαλείας, ώστε να χρησιμοποιείτε πάντα την πιο πρόσφατη τεχνολογία Outline. Η αυτοματοποιημένη διαδικασία ενημέρωσης γίνεται από το <a href="https://github.com/v2tec/watchtower" target="_blank">Watchtower</a>, μια βιβλιοθήκη με λογισμικό ανοικτού κώδικα, η οποία ελέγχει τακτικά και ενημερώνει την εικόνα του docker που περιέχει το λογισμικό Outline.</p>
+
+<p data-aura-rendered-by="12:10378;a">Επιπλέον, όταν εγκαταστήσετε το Outline χρησιμοποιώντας το Outline Manager, θα ρυθμίσουμε μια εργασία cron για να γίνεται αυτόματα αναβάθμιση του λογισμικού στον διακομιστή με τις <a href="https://wiki.debian.org/UnattendedUpgrades" target="_blank">Αναβαθμίσεις χωρίς παρακολούθηση</a> (Ubuntu) και για να επανεκκινείται όταν χρειάζεται. Λάβετε υπόψη ότι αυτό δεν γίνεται στη Σύνθετη λειτουργία, ώστε να διατηρείται η υπάρχουσα διαμόρφωση, θεωρώντας ότι ο κεντρικός υπολογιστής χρησιμοποιείται για άλλους σκοπούς εκτός από την εκτέλεση του Outline.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="102" sourceLocale="el">WEB:15330825</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Πώς μπορώ να κατεβάσω το Outline Manager, αν ο σύνδεσμος λήψης δεν λειτουργεί;</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Χρησιμοποιήστε <a href="https://getoutline.org/get-started/#step-1" target="_blank">αυτόν τον σύνδεσμο</a> ή <a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">αυτόν τον σύνδεσμο</a> για να κατεβάσετε τις εφαρμογές απευθείας για πολλά λειτουργικά συστήματα.&nbsp;</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="129" sourceLocale="el">WEB:15330920</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Ορολογία</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:23504;a"><strong>Τι είναι το VPN;</strong><br />
+  Το εικονικό ιδιωτικό δίκτυο (VPN) είναι μια ιδιωτική σύνδεση ανάμεσα στις συσκευές σας και σε έναν διακομιστή κεντρικού υπολογιστή. Όταν χρησιμοποιείτε VPN, οι κινήσεις σας στο διαδίκτυο δεν αποκαλύπτονται στον πάροχο υπηρεσιών διαδικτύου. Μπορεί να θέλετε να χρησιμοποιήστε VPN στις εξής περιπτώσεις:</p>
+
+<ul data-aura-rendered-by="12:23504;a">
+  <li>Για να προστατεύσετε τα δεδομένα σας όταν χρησιμοποιείτε δημόσιο δίκτυο Wi-Fi</li>
+  <li>Για να διατηρήσετε τα δεδομένα περιήγησής σας ιδιωτικά, ώστε να μην αποκαλυφθούν στον πάροχο υπηρεσιών διαδικτύου και σε δημόσιους φορείς</li>
+  <li>Για να αποκτήσετε πρόσβαση σε μη λογοκριμένο περιεχόμενο από διάφορες πηγές ανά τον κόσμο</li>
+</ul>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Σε τι διαφέρει το Outline από τα παραδοσιακά VPN;</strong><br />
+  Οι πάροχοι υπηρεσιών διαδικτύου μπορούν εύκολα να εντοπίσουν και να αποκλείσουν παραδοσιακά VPN αναγνωρίζοντας κοινά πρωτόκολλα ασφαλείας ή/και μοτίβα όγκου επισκεψιμότητας. Το Outline είναι πιο ανθεκτικό επειδή έχει δημιουργηθεί με ένα πρωτόκολλο το οποίο έχει σχεδιαστεί με τέτοιον τρόπο, ώστε να είναι δύσκολος ο εντοπισμός του και, ως εκ τούτου, να είναι πιο δύσκολος ο αποκλεισμός του. Το Outline είναι ανθεκτικό σε εξειδικευμένες μορφές λογοκρισίας, συμπεριλαμβανομένου του αποκλεισμού βάσει δικτύου και του αποκλεισμού ΙΡ.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Τι είναι ένας διακομιστής Outline;</strong><br />
+  Ένας διακομιστής Outline εκτελεί το VPN στο οποίο θα συνδεθούν οι χρήστες που έχουν άδεια. Αν δημιουργείτε ένα νέο δίκτυο, μπορείτε να χρησιμοποιήσετε τον δικό σας ασφαλή διακομιστή ως τον διακομιστή Outline, εφόσον έχετε έναν, ή μπορείτε να χρησιμοποιήσετε έναν πάροχο υπηρεσιών cloud, όπως οι εξής:</p>
+
+<ul data-aura-rendered-by="12:23504;a">
+  <li>DigitalOcean</li>
+  <li>Google Cloud Platform (GCP)</li>
+  <li>Amazon Web Services (AWS)</li>
+</ul>
+
+<p data-aura-rendered-by="12:23504;a"><a id="One" target="_blank"></a>Θα ρυθμίσετε τον διακομιστή σας στο Outline Manager.<br />
+  <br />
+  <strong><a id="servicemanager" name="servicemanager"></a>Τι είναι ένας διαχειριστής υπηρεσίας;</strong><br />
+  Ένας διαχειριστής υπηρεσίας είναι το άτομο που είναι υπεύθυνο για τη ρύθμιση του διακομιστή Outline και την παροχή κλειδιών πρόσβασης στους χρήστες. Ο διαχειριστής υπηρεσίας είναι σε γενικές γραμμές υπεύθυνος για το κόστος της χρήσης του διακομιστή.&nbsp;<br />
+  <br />
+  <strong><a id="accesskey" name="accesskey"></a>Τι είναι ένα κλειδί πρόσβασης;</strong><br />
+  Ένα κλειδί πρόσβασης χρησιμοποιείται για την πρόσβαση σε έναν υπάρχοντα διακομιστή Outline και τη σύνδεση στο VPN. Ο <a href="#servicemanager" rel="noopener">διαχειριστής υπηρεσίας</a>&nbsp;θα σας δώσει ένα κλειδί πρόσβασης ή μπορείτε να <a href="/outline-faq/answer/15331530" rel="noopener" target="_blank">ρυθμίσετε έναν διακομιστή Outline</a> μόνοι σας.&nbsp;Ακολουθεί ένα παράδειγμα της μορφής ενός κλειδιού πρόσβασης (πρόκειται απλώς για δείγμα και δεν λειτουργεί):&nbsp;<br />
+  <br />
+  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1<br />
+  <br />
+  <strong>Τι είναι το Outline Manager;</strong><br />
+  Το Outline Manager είναι μια εφαρμογή για υπολογιστές, η οποία επιτρέπει στον διαχειριστή υπηρεσίας να ρυθμίσει έναν διακομιστή Outline, να δημιουργήσει <a href="#accesskey" rel="noopener">κλειδιά πρόσβασης</a> και να ορίσει όρια δεδομένων σχετικά με τη χρήση ανά κλειδί. Μπορείτε να κατεβάσετε τη νεότερη έκδοση του Outline Manager<a href="https://getoutline.org/get-started/#step-3" target="_blank"> εδώ</a> ή<a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank"> εδώ</a>.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Τι είναι το Outline Client;</strong><br />
+  Το Outline Client είναι μια εφαρμογή, που είναι διαθέσιμη για υπολογιστές και κινητά, η οποία σας επιτρέπει να συνδέεστε σε έναν διακομιστή Outline και να αποκτάτε πρόσβαση στο VPN χρησιμοποιώντας ένα κλειδί πρόσβασης. Μπορείτε να κατεβάσετε τη νεότερη έκδοση του Outline Client<a href="https://getoutline.org/get-started/#step-3" target="_blank"> εδώ</a> ή<a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank"> εδώ</a>.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Τι είναι τα όρια δεδομένων;</strong><br />
+  Το Outline Manager επιτρέπει στους διαχειριστές υπηρεσίας να ορίζουν ένα όριο λήξης δεδομένων 30 ημερών για τα κλειδιά πρόσβασης, το οποίο αποτρέπει την κατάχρηση και συμβάλλει στη διατήρηση του κόστους εντός των προβλεπόμενων ορίων. Οι διαχειριστές υπηρεσίας μπορούν να ορίσουν ένα προεπιλεγμένο όριο που ισχύει για κάθε κλειδί, καθώς και να ορίσουν επίσης ένα διαφορετικό όριο για κάθε κλειδί, προκειμένου να παρακάμπτει το προεπιλεγμένο όριο. Μετά τη ρύθμισή του, το όριο αποκτά άμεση ισχύ και εφαρμόζεται σε ωριαία βάση.</p>
+
+<p data-aura-rendered-by="12:23504;a">Αν οι διαχειριστές υπηρεσίας επιλέξουν να μοιραστούν μετρήσεις με το Jigsaw, πρέπει να διαβάσουν την<a href="/outline-faq/answer/15331222" rel="noopener" target="_blank"> πολιτική συλλογής δεδομένων</a> για λεπτομέρειες σχετικά με την αναφορά της χρήσης των ορίων δεδομένων.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="110" sourceLocale="el">WEB:15331121</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Υποστηρίζετε τον ιστότοπο getoutline.me και το κανάλι Telegram @OutlineVpnOfficial;</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Η ομάδα του Outline έχει λάβει πολλές ερωτήσεις σχετικά με τον ιστότοπο <a href="http://getoutline.me/" target="_blank">getoutline.me</a> και το σχετικό κανάλι Telegram @OutlineVpnOfficial. Αυτές οι υπηρεσίες δεν συνδέονται με την ομάδα του Outline και δεν μπορούμε να βοηθήσουμε τους χρήστες που αντιμετωπίζουν προβλήματα με τα κλειδιά πρόσβασης αυτών των υπηρεσιών.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="el">WEB:15331122</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Διαθέσιμες γλώσσες</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Το Outline είναι διαθέσιμο στις ακόλουθες γλώσσες:</p>
+
+<ul>
+  <li aria-level="1">Αφρικάανς</li>
+  <li aria-level="1">Αλβανικά</li>
+  <li aria-level="1">Αμαρικά</li>
+  <li aria-level="1">Αραβικά</li>
+  <li aria-level="1">Αρμενικά</li>
+  <li aria-level="1">Αζερμπαϊτζανικά</li>
+  <li aria-level="1">Μπενγκάλι</li>
+  <li aria-level="1">Βοσνιακά</li>
+  <li aria-level="1">Βουλγαρικά</li>
+  <li aria-level="1">Βιρμανικά</li>
+  <li aria-level="1">Καταλανικά</li>
+  <li aria-level="1">Κινεζικά (Απλοποιημένα)</li>
+  <li aria-level="1">Κινεζικά (Παραδοσιακά)</li>
+  <li aria-level="1">Κροατικά</li>
+  <li aria-level="1">Τσεχικά</li>
+  <li aria-level="1">Δανικά</li>
+  <li aria-level="1">Ολλανδικά</li>
+  <li aria-level="1">Αγγλικά (ΗΠΑ)</li>
+  <li aria-level="1">Αγγλικά (Μεγάλης Βρετανίας)</li>
+  <li aria-level="1">Εσθονικά</li>
+  <li aria-level="1">Φιλιππινέζικα</li>
+  <li aria-level="1">Φινλανδικά</li>
+  <li aria-level="1">Γαλλικά</li>
+  <li aria-level="1">Γεωργιανά</li>
+  <li aria-level="1">Γερμανικά</li>
+  <li aria-level="1">Ελληνικά</li>
+  <li aria-level="1">Εβραϊκά</li>
+  <li aria-level="1">Χίντι</li>
+  <li aria-level="1">Ουγγρικά</li>
+  <li aria-level="1">Ισλανδικά</li>
+  <li aria-level="1">Ινδονησιακά</li>
+  <li aria-level="1">Ιταλικά</li>
+  <li aria-level="1">Ιαπωνικά</li>
+  <li aria-level="1">Καζακικά</li>
+  <li aria-level="1">Χμερ</li>
+  <li aria-level="1">Κορεατικά</li>
+  <li aria-level="1">Λαοτινά</li>
+  <li aria-level="1">Λετονικά</li>
+  <li aria-level="1">Λιθουανικά</li>
+  <li aria-level="1">Σλαβομακεδονικά</li>
+  <li aria-level="1">Μαλαϊκά</li>
+  <li aria-level="1">Μαραθικά</li>
+  <li aria-level="1">Μογγολικά</li>
+  <li aria-level="1">Νεπάλι</li>
+  <li aria-level="1">Νορβηγικά</li>
+  <li aria-level="1">Περσικά</li>
+  <li aria-level="1">Πολωνικά</li>
+  <li aria-level="1">Πορτογαλικά (Βραζιλίας)</li>
+  <li aria-level="1">Πορτογαλικά (Ευρώπης)</li>
+  <li aria-level="1">Ρουμανικά</li>
+  <li aria-level="1">Ρωσικά</li>
+  <li aria-level="1">Σερβικά (Κυριλλικά)</li>
+  <li aria-level="1">Σερβικά (Λατινικά)</li>
+  <li aria-level="1">Σινχάλα</li>
+  <li aria-level="1">Σλοβακικά</li>
+  <li aria-level="1">Σλοβενικά</li>
+  <li aria-level="1">Ισπανικά (Ευρώπης)</li>
+  <li aria-level="1">Ισπανικά (Λατινικής Αμερικής)</li>
+  <li aria-level="1">Σουαχίλι</li>
+  <li aria-level="1">Σουηδικά</li>
+  <li aria-level="1">Ταμίλ</li>
+  <li aria-level="1">Ταϊλανδικά</li>
+  <li aria-level="1">Τουρκικά</li>
+  <li aria-level="1">Ουκρανικά</li>
+  <li aria-level="1">Ουρντού</li>
+  <li aria-level="1">Βιετναμέζικα</li>
+</ul>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="110" sourceLocale="el">WEB:15331125</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Γιατί δεν μπορώ να εγκαταστήσω το Outline Client σε Windows;</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:31254;a">Μπορεί να δείτε το εξής μήνυμα σφάλματος: "Δυστυχώς, φαίνεται ότι το Outline δεν έχει εγκατασταθεί σωστά. Δοκιμάστε να το εγκαταστήσετε ξανά. Αν αυτό δεν διορθώσει το πρόβλημα, <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">υποβάλετε σχόλια</a>".</p>
+
+<p data-aura-rendered-by="12:31254;a">Αν χρησιμοποιείτε το Outline στα Windows, μπορεί μερικές φορές να αντιμετωπίσετε ένα μη αναμενόμενο σφάλμα. Στις περισσότερες περιπτώσεις, θα πρέπει να διαγράψετε τον προσαρμογέα TAP του Outline (πρόγραμμα οδήγησης) και να επανεγκαταστήσετε το Outline.</p>
+
+<p data-aura-rendered-by="12:31254;a">Τα βήματα μπορεί να διαφέρουν ανάλογα με την έκδοση του λειτουργικού συστήματος Windows που χρησιμοποιείτε, αλλά παρακάτω αναφέρονται τα γενικά βήματα που μπορείτε να κάνετε για να απεγκαταστήσετε τον προσαρμογέα TAP και το Outline και, έπειτα, να επανεγκαταστήσετε το Outline.</p>
+
+<ol data-aura-rendered-by="12:31254;a">
+  <li>Απεγκαταστήστε τον προσαρμογέα TAP για το Outline Client.
+    <ul>
+      <li>Επιλέξτε&nbsp;<strong>Διαχείριση συσκευών</strong> και έπειτα&nbsp;<strong>Προσαρμογείς δικτύου</strong>,</li>
+      <li>Εντοπίστε το αρχείο <strong>TAP-Windows Adapter V9</strong> ή τον προσαρμογέα TAP που σχετίζεται με το Outline.</li>
+      <li>Απεγκαταστήστε ή διαγράψτε αυτόν τον προσαρμογέα. Λάβετε υπόψη ότι αυτή η ενέργεια μπορεί να επηρεάσει άλλες εφαρμογές VPN που έχετε εγκαταστήσει.&nbsp;</li>
+    </ul>
+  </li>
+  <li>Απεγκαταστήστε το Outline Client.
+    <ul>
+      <li>Επιλέξτε&nbsp;<strong>Προγράμματα και δυνατότητες</strong>, και έπειτα,&nbsp;<strong>Απεγκατάσταση προγράμματος</strong>.</li>
+      <li>Εντοπίστε την εφαρμογή Outline Client και απεγκαταστήστε την.</li>
+      <li><a href="https://getoutline.org/get-started/#step-3" target="_blank">Κατεβάστε τη νεότερη έκδοση του Outline Client</a>&nbsp;και επανεγκαταστήστε την στη συσκευή σας Windows. Με τη νέα εγκατάσταση, θα εγκατασταθεί αυτόματα ένας νέος προσαρμογέας TAP.</li>
+    </ul>
+  </li>
+</ol>
+
+<p data-aura-rendered-by="12:31254;a">Αν εξακολουθείτε να αντιμετωπίζετε πρόβλημα,&nbsp;<a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">επικοινωνήστε με την υποστήριξη</a>.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="109" sourceLocale="el">WEB:15331126</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Γιατί δεν μπορώ να συνδεθώ στην υπηρεσία Outline;</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Υπάρχουν διάφοροι λόγοι για τους οποίους μπορεί να μην είναι δυνατή η σύνδεσή σας στην υπηρεσία Outline:&nbsp;</p>
+
+<ul>
+  <li aria-level="1"><strong>Η συσκευή σας</strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#One" rel="noopener"><strong> </strong></a><a href="#Internetissues" rel="noopener"><strong>έχει αποσυνδεθεί από το διαδίκτυο</strong></a><a href="#Internetissues" rel="noopener"> </a><strong>. </strong>Ορισμένες φορές η σύνδεση δικτύου της συσκευής μπορεί να διακόπτεται και να υπάρχει μικρή καθυστέρηση στην ενημέρωση των εικονιδίων δικτύου. Είναι, επίσης, πιθανό η συσκευή σας να είναι συνδεδεμένη στο τοπικό δίκτυο, αλλά να μην υπάρχει σύνδεση στο διαδίκτυο.</li>
+  <li aria-level="1"><strong>Το </strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#Two"><strong> </strong></a><a href="#FirewallIssues" rel="noopener"><strong>τείχος προστασίας του δικτύου αποκλείει την πρόσβαση</strong></a><a href="#FirewallIssues" rel="noopener"> </a><strong><a href="#FirewallIssues" rel="noopener">στον διακομιστή Outline</a>. </strong>Αυτό συμβαίνει συχνά αν χρησιμοποιείτε ένα δημόσιο δίκτυο, όπως ένα σχολικό, επαγγελματικό ή χωρίς χρέωση ασύρματο δίκτυο.</li>
+  <li aria-level="1"><strong>Η συσκευή σας διαθέτει</strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#Three"><strong> </strong></a><a href="#SoftwareIssues" rel="noopener"><strong>τείχος προστασίας ή λογισμικό προστασίας από ιούς</strong></a><a href="#SoftwareIssues" rel="noopener"> </a><strong>που αποκλείει την πρόσβαση στον διακομιστή Outline.</strong></li>
+  <li aria-level="1"><strong>Οι</strong><a href="#DeviceSettings" rel="noopener"><strong> </strong><strong>ρυθμίσεις συσκευής τηλεφώνου</strong></a><strong> μπορεί να χρειαστεί να αλλάξουν.</strong></li>
+  <li aria-level="1"><strong>Ο υπεύθυνος εξυπηρέτησής σας μπορεί να</strong><a href="#ServerIssues" rel="noopener"><strong> </strong><strong>κατέστρεψε τον διακομιστή ή ο ISP μπορεί να αποκλείει το αίτημά σας</strong></a>.</li>
+</ul>
+
+<p><a id="Internetissues" name="Internetissues"><strong>Προβλήματα σύνδεσης στο διαδίκτυο:</strong></a></p>
+
+<p><strong>Πώς να κάνετε έλεγχο:</strong></p>
+
+<p>Απενεργοποιήστε το Outline και δείτε αν θα επανέλθει η σύνδεση στο διαδίκτυο.</p>
+
+<ul>
+  <li aria-level="1">Αν επανέλθει, δείτε παρακάτω μερικές ακόμη επιλογές αντιμετώπισης προβλημάτων.</li>
+  <li aria-level="1">Αν δεν επανέλθει, τότε περιμένετε μερικά λεπτά για να δείτε αν θα ενημερωθούν αυτόματα οι ρυθμίσεις σύνδεσης.</li>
+</ul>
+
+<p><strong>Τι να διορθώσετε:</strong></p>
+
+<p>Συνδέστε ξανά τη συσκευή στο διαδίκτυο:</p>
+
+<ol>
+  <li aria-level="1">Ελέγξτε κάποια άλλη συσκευή, για να δείτε αν μπορεί να συνδεθεί στο ίδιο δίκτυο. Αν οι άλλες συσκευές δεν μπορούν να συνδεθούν στο ίδιο δίκτυο, τότε η λειτουργία του δικτύου ενδέχεται να έχει διακοπεί και θα πρέπει να περιμένετε να επανέλθει ή να αντιμετωπίσετε το πρόβλημα.</li>
+  <li aria-level="1">Αν μπορούν να συνδεθούν στο ίδιο δίκτυο άλλες συσκευές, δοκιμάστε ένα ή περισσότερα από τα ακόλουθα βήματα για να συνδεθείτε ξανά στο διαδίκτυο:
+    <ol>
+      <li aria-level="2">Θέστε τη συσκευή σε λειτουργία πτήσης (κινητά)</li>
+      <li aria-level="2">Επανεκκινήστε τη συσκευή</li>
+      <li aria-level="2">Τερματίστε τη λειτουργία της συσκευής, περιμένετε 2 λεπτά και ενεργοποιήστε ξανά τη συσκευή</li>
+    </ol>
+  </li>
+</ol>
+
+<p><a id="FirewallIssues" name="FirewallIssues"><strong>Προβλήματα με το τείχος προστασίας του δικτύου:</strong></a></p>
+
+<p><strong>Πώς να κάνετε έλεγχο:</strong></p>
+
+<ol>
+  <li aria-level="1">Αποσυνδεθείτε από το τρέχον Wi-Fi ή το ενσύρματο δίκτυο.</li>
+  <li aria-level="1">Συνδεθείτε σε άλλο δίκτυο, όπως ένα δίκτυο κινητής τηλεφωνίας</li>
+  <li aria-level="1">Δοκιμάστε να επανασυνδεθείτε στον διακομιστή Outline</li>
+</ol>
+
+<p>Αν μπορέσετε να συνδεθείτε ενώ χρησιμοποιείτε το άλλο δίκτυο, τότε το πρόβλημα βρίσκεται στη δική σας πλευρά.</p>
+
+<p><strong>Τι να διορθώσετε:</strong></p>
+
+<p>Επικοινωνήστε με τον υπεύθυνο εξυπηρέτησης και ζητήστε του να επιτρέψει την πρόσβαση στον διακομιστή Outline ή συνεχίστε να χρησιμοποιείτε το άλλο δίκτυο.</p>
+
+<p><a id="SoftwareIssues" name="SoftwareIssues"><img alt="Αυτή η εικόνα δεν είναι διαθέσιμη επειδή δεν έχετε τα προνόμια για να τη δείτε ή έχει καταργηθεί από το σύστημα" height="1" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeoHNM7TWEsg0z4iydaS2xKOPga0zOjhOTqvGpA-JLd-Fwnydby6EBZziz3vqgRUJwssreEqP6lmjv_-13QXdzqh3yx9tZiR81BvxcXShi3kJ-XDKnqt951uRRPSO8BUhXaiijJLF8PixV_ezhGJ02Y3QPFbw?key=pJIeaVZQOqqoBTmDWZd2hw" width="1" /><strong>Προβλήματα με το τείχος προστασίας ή το λογισμικό προστασίας από ιούς:</strong></a><br />
+  <br />
+  <strong>Πώς να κάνετε έλεγχο:</strong><br />
+  <br />
+  Δοκιμάστε να συνδεθείτε στο Outline από άλλη συσκευή.&nbsp;</p>
+
+<p>Σημείωση: Να θυμάστε ότι θα χρειαστείτε ένα κλειδί πρόσβασης και την εφαρμογή Outline για να χρησιμοποιήσετε το Outline σε άλλη συσκευή.</p>
+
+<p><strong>Τι να διορθώσετε:</strong></p>
+
+<p>Ελέγξτε τις ρυθμίσεις του τείχους προστασίας ή του λογισμικού προστασίας από ιούς για να βεβαιωθείτε ότι επιτρέπουν τη διέλευση δεδομένων VPN και Outline.</p>
+
+<p><a id="DeviceSettings" name="DeviceSettings"><strong>Ρυθμίσεις συσκευής:</strong></a></p>
+
+<p><strong>Τι να ελέγξετε:</strong></p>
+
+<p>Για Android:</p>
+
+<ol>
+  <li aria-level="1">Ανοίξτε την εφαρμογή Ρυθμίσεις.</li>
+  <li aria-level="1">Αναζητήστε τις <strong>ρυθμίσεις VPN</strong> στη συσκευή σας. (Στις ρυθμίσεις VPN θα δείτε όλες τις εφαρμογές VPN που έχουν πρόσβαση στο τηλέφωνό σας τη δεδομένη στιγμή.)&nbsp;</li>
+  <li aria-level="1">Αν δεν βλέπετε το Outline στις ρυθμίσεις VPN, απεγκαταστήστε το Outline και επανεγκαταστήστε το. Θα πρέπει να δοθεί αυτόματα πρόσβαση στο Outline από τη συσκευή μετά την εγκατάστασή του.</li>
+</ol>
+
+<p>Βεβαιωθείτε ότι δεν έχει εγκατασταθεί κάποια εφαρμογή επικάλυψης οθόνης στη συσκευή Android, καθώς μπορεί να στέλνει το παράθυρο αδειών του Outline στο παρασκήνιο, με αποτέλεσμα να μην είναι ορατό στο προσκήνιο.<br />
+  <br />
+  Στη συσκευή Android, επιλέξτε Ρυθμίσεις &gt; Εφαρμογές &gt; Ειδική πρόσβαση στην εφαρμογή. Έπειτα, πατήστε Εμφάνιση πάνω σε άλλες εφαρμογές. Μπορείτε να καταργήσετε την πρόσβαση σε οποιεσδήποτε εφαρμογές που επιτρέπουν αυτή τη συμπεριφορά.<br />
+  <br />
+  Για iOS: Διαβάστε<a href="https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web" rel="noopener" target="_blank"> αυτό το άρθρο υποστήριξης</a>.</p>
+
+<p><a id="ServerIssues" name="ServerIssues"><strong>Προβλήματα διακομιστή:</strong></a></p>
+
+<p><strong>Πώς να κάνετε έλεγχο:</strong></p>
+
+<p>Αν έχετε πρόσβαση σε περισσότερους από έναν διακομιστές, δοκιμάστε να συνδεθείτε στον άλλο.&nbsp;</p>
+
+<p><strong>Τι να διορθώσετε:</strong></p>
+
+<p>Επικοινωνήστε με τον υπεύθυνο εξυπηρέτησης για να μάθετε αν έχει καταστραφεί ο διακομιστής. Αν έχει καταστραφεί, ζητήστε του ένα<a href="/outline-faq/answer/15330920" rel="noopener"> κλειδί πρόσβασης</a> για άλλον διακομιστή.</p>
+
+<p>Αν ρυθμίσατε εσείς τον διακομιστή, δοκιμάστε να συνδεθείτε σε αυτόν μέσω του Outline Manager ή με κάποιον άλλο τρόπο, όπως <a href="https://en.wikipedia.org/wiki/Secure_Shell"> SSH</a>. Αν το πρόβλημα δεν διορθωθεί, μπορείτε να ελέγξετε την κονσόλα του παρόχου cloud, αν υπάρχει, για να δείτε αν ο διακομιστής εξακολουθεί να είναι σε σύνδεση.</p>
+
+<p data-aura-rendered-by="12:32047;a">&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="el">WEB:15331127</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Πώς μπορώ να κατεβάσω την εφαρμογή πελάτη, αν ο σύνδεσμος λήψης δεν λειτουργεί;</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Χρησιμοποιήστε&nbsp;<a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">αυτόν τον σύνδεσμο</a>&nbsp;για να κατεβάσετε τις εφαρμογές απευθείας για πολλά λειτουργικά συστήματα.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="131" sourceLocale="el">WEB:15331222</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Συλλογή δεδομένων και πληροφοριών</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:271;a">Το Outline δεν συλλέγει προσωπικά στοιχεία εκτός εάν επιλέξετε την παροχή τέτοιων στοιχείων. Το Outline δεν συλλέγει επίσης πληροφορίες σχετικά με τους ιστοτόπους που επισκέπτεστε, τα πρόσωπα με τα οποία επικοινωνείτε ή το περιεχόμενο των επικοινωνιών σας.<br />
+  <br />
+  Αν δημιουργείτε ή συνδέεστε σε έναν λογαριασμό με έναν τρίτο πάροχο cloud μέσω του Outline Manager, δεν συλλέγουμε καμία πληροφορία που παρέχετε στον τρίτο πάροχο cloud, όπως είναι η διεύθυνση ηλεκτρονικού ταχυδρομείου, το όνομα, η διεύθυνση χρέωσης και τα στοιχεία πληρωμής.<br />
+  <br />
+  <strong><strong>Πληροφορίες που συλλέγουμε αυτόματα</strong></strong><br />
+  <br />
+  Συλλέγουμε αυτόματα δύο τύπους πληροφοριών.<br />
+  1. IP διακομιστή<br />
+  Η διεύθυνση IP του διακομιστή Outline συλλέγεται από το&nbsp;<a href="http://quay.io/" target="_blank">Quay.io</a>και καθίσταται προσβάσιμη σε εμάς όταν ο διακομιστής ενημερώνεται αυτόματα με τις πιο πρόσφατες βελτιώσεις ασφάλειας και λειτουργιών. Η διεύθυνση IP του διακομιστή μπορεί να προσδιορίσει τον πάροχο διακομιστή cloud και την πόλη στην οποία έχει ρυθμιστεί ο διακομιστής Outline, αλλά δεν παρέχει πληροφορίες σχετικά με το ποιος εκτελεί τον διακομιστή ή ποιος αποκτά πρόσβαση σε αυτόν.<br />
+  <br />
+  2. Τεχνικές πληροφορίες μη προσωπικής ταυτοποίησης<br />
+  Αν η λειτουργία του Outline διακοπεί, παρουσιαστεί ανεπανόρθωτη εξαίρεση ή στείλετε μη αυτόματα σχόλια μέσω της εφαρμογής Outline, θα αναφερθούν οι πληροφορίες που παρατίθενται παρακάτω. Αυτές οι πληροφορίες θα χρησιμοποιηθούν αποκλειστικά για τον εντοπισμό και την επιδιόρθωση προβλημάτων σταθερότητας ή απόδοσης.</p>
+
+<ul data-aura-rendered-by="12:271;a">
+  <li>Χώρα</li>
+  <li>Τοπικές ρυθμίσεις</li>
+  <li>Ημερομηνία και ώρα διακοπής λειτουργίας/εξαίρεσης και έως 100 προηγούμενα συμβάντα (π.χ. άνοιγμα της ενότητας Πληροφορίες από έναν χρήστη)</li>
+  <li>Στατικά μεταγλωττισμένα μηνύματα εξαίρεσης</li>
+  <li>Όνομα και έκδοση λειτουργικού συστήματος</li>
+  <li>Μοντέλο τηλεφώνου (εάν ισχύει)</li>
+  <li>Ώρα έναρξης εφαρμογής</li>
+  <li>Πρόγραμμα περιήγησης</li>
+  <li>Αρχιτεκτονική</li>
+  <li>Έκδοση και αριθμός δόμησης Outline</li>
+</ul>
+
+<p data-aura-rendered-by="12:271;a"><br />
+  Αυτές οι πληροφορίες μεταφέρονται χρησιμοποιώντας HTTPS στο Sentry (<a href="http://sentry.io/" target="_blank">sentry.io</a>), έναν πάροχο λογισμικού ανοικτού κώδικα τρίτου μέρους για παρακολούθηση σφαλμάτων. Το Sentry χρησιμοποιεί διάφορες πρότυπες τεχνολογίες και υπηρεσίες του κλάδου για την προστασία των δεδομένων σας από μη εξουσιοδοτημένη πρόσβαση, αποκάλυψη, χρήση και απώλεια. Αν έχετε τυχόν απορίες σχετικά με τις πολιτικές του Sentry, ανατρέξτε στη διεύθυνση&nbsp;<a href="https://sentry.io/security/" target="_blank">https://sentry.io/security/</a>&nbsp;και&nbsp;<a href="https://sentry.io/privacy/" target="_blank">https://sentry.io/privacy/</a> ή επικοινωνήστε με τη διεύθυνση&nbsp;<a href="mailto:security@sentry.io" target="_blank">security@sentry.io</a>. Όλα τα δεδομένα του Outline που αποθηκεύονται από το Sentry είναι προσβάσιμα μόνο από τα μέλη της ομάδας του Outline.<br />
+  <br />
+  <strong><strong>Πληροφορίες που λαμβάνουμε μόνο μετά από δήλωση συμμετοχής</strong></strong><br />
+  <br />
+  Το Outline αναφέρει τις ακόλουθες πληροφορίες στην ομάδα του Outline, εφόσον ο χρήστης έχει επιλέξει να συμμετάσχει στην αναφορά των εν λόγω πληροφοριών.<br />
+  1. Μετρήσεις χρήσης<br />
+  Κάθε διακομιστής Outline συλλέγει αυτόματα, σε ωριαία βάση και ανά κλειδί πρόσβασης, τον αριθμό των byte που μεταφέρθηκαν, το χρονικό διάστημα σύνδεσης ενός χρήστη στον διακομιστή, τις χώρες και τα αυτόνομα συστήματα&nbsp;προέλευσης&nbsp;των διαπιστευτηρίων που χρησιμοποιήθηκαν και αν ενεργοποιήθηκαν ή απενεργοποιήθηκαν τυχόν λειτουργίες. Δεν καταγράφονται ούτε το περιεχόμενο της επικοινωνίας ούτε τυχόν μεταδεδομένα προσωπικής ταυτοποίησης (π.χ. συνδέσεις, διευθύνσεις ηλεκτρονικού ταχυδρομείου, αναγνωριστικά συσκευής κ.λπ.). Όλες οι μετρήσεις συνδέονται με ένα αναγνωριστικό διακομιστή. Μπορείτε να βρείτε οδηγίες για την αλλαγή του αναγνωριστικού διακομιστή&nbsp;<a href="/outline-faq/answer/15548974" rel="noopener" target="_blank">εδώ</a>.<br />
+  <br />
+  Από προεπιλογή, οι διακομιστές Outline δεν κοινοποιούν αυτές τις μετρήσεις στην ομάδα του Outline. Εάν ο διαχειριστής του διακομιστή επιλέξει ρητά να συμμετάσχει στην κοινοποίηση μετρήσεων χρήσης, αυτές οι πληροφορίες θα αποστέλλονται με ασφάλεια στην ομάδα του Outline ανά ώρα. Μετά από 60 ημέρες, οι μετρήσεις χρήσης θα συγκεντρώνονται σε επίπεδο χώρας. Οι διαχειριστές διακομιστών μπορούν ανά πάσα στιγμή να αλλάξουν την προτίμησή τους για την κοινοποίηση μετρήσεων χρήσης, μεταβαίνοντας στο μενού Ρυθμίσεις στο Outline Manager.<br />
+  <br />
+  Εκτιμούμε την από μέρους σας κοινοποίηση των ανώνυμων μετρήσεων σχετικά με τη χρήση των διακομιστών, καθώς χρησιμοποιούμε αυτές τις πληροφορίες για να υπολογίσουμε τις τάσεις χρήσης και να βελτιώσουμε το προϊόν.<br />
+  <br />
+  Για παράδειγμα, αν ένας διαχειριστής διακομιστή επιλέξει την κοινοποίηση των μετρήσεων χρήσης σε εμάς, θα μπορούσαμε να λάβουμε πληροφορίες που υποδεικνύουν ότι ένας διακομιστής με αναγνωριστικό 12345&nbsp;χρησιμοποιήθηκε για περισσότερες από 3&nbsp;ώρες χθες, μεταφέροντας συνολικά 500&nbsp;megabyte δεδομένων, από τρία κλειδιά καθένα από τα οποία χρησιμοποιήθηκε στις Ηνωμένες Πολιτείες και στον Καναδά, με ενεργοποιημένη τη λειτουργία ορίων δεδομένων.<br />
+  <br />
+  2. Σχόλια και διεύθυνση ηλεκτρονικού ταχυδρομείου σε περίπτωση υποβολής σχολίων<br />
+  Οι εφαρμογές Outline Manager και Outline επιτρέπουν την υποβολή σχολίων στην ομάδα. Συνιστούμε να μην συμπεριλαμβάνετε στοιχεία προσωπικής ταυτοποίησης στα σχόλιά σας. Ωστόσο, μπορείτε να συμπληρώσετε το προαιρετικό πεδίο διεύθυνσης ηλεκτρονικού ταχυδρομείου, εάν θέλετε να λάβετε απάντηση από την ομάδα. Συγκεντρώνουμε επίσης αυτόματα μερικές χρήσιμες πληροφορίες, ώστε να μπορούμε να κατανοήσουμε τα σχόλιά σας. Για να δείτε τα δεδομένα που συλλέγουμε, ανατρέξτε παραπάνω στο στοιχείο 2 της ενότητας Πληροφορίες που συλλέγουμε αυτόματα.&nbsp;Μάθετε περισσότερα σχετικά με τις πρακτικές ασφάλειας και απορρήτου του Outline&nbsp;<a href="/outline-faq/answer/14919822" rel="noopener" target="_blank">εδώ</a>.<br />
+  <br />
+  Αν χρησιμοποιείτε μια έκδοση beta της εφαρμογής Outline σε Android, μπορείτε να χρησιμοποιήσετε την υπηρεσία&nbsp;<a href="https://firebase.google.com/" target="_blank">Firebase</a>&nbsp;της Google για τη συλλογή πληροφοριών εντοπισμού και διόρθωσης σφαλμάτων που μπορούν να μας βοηθήσουν να εντοπίσουμε προβλήματα και να βελτιώσουμε το Outline. Μπορείτε να μάθετε περισσότερα σχετικά με τις πολιτικές απορρήτου και ασφαλείας του Firebase στον αντίστοιχο ιστότοπο:&nbsp;<a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a>. Εάν δεν θέλετε το Outline να στέλνει αυτές τις πληροφορίες μέσω του Firebase, χρησιμοποιήστε την έκδοση παραγωγής της εφαρμογής.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="88" sourceLocale="el">WEB:15331223</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Τι γίνεται αν το κλειδί πρόσβασής μου δεν λειτουργεί;</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:30472;a">Αν λάβετε το μήνυμα σφάλματος:&nbsp;"Φαίνεται πως το κλειδί πρόσβασης δεν είναι έγκυρο. Αν το πρόβλημα εμφανιστεί ξανά, επικοινωνήστε με τον υπεύθυνο εξυπηρέτησης." Ακολουθήστε τα παρακάτω βήματα για να αντιμετωπίσετε το πρόβλημα:&nbsp;</p>
+
+<ol data-aura-rendered-by="12:30472;a">
+  <li>Βεβαιωθείτε ότι καταχωρείτε το πλήρες κλειδί πρόσβασης, μαζί με τους πρώτους πέντε χαρακτήρες ss://, οι οποίοι μπορεί να μην αντιγράφονται αυτόματα στο πρόχειρο. Ένα πλήρες κλειδί πρόσβασης έχει την εξής μορφή (είναι ενδεικτικό, δεν λειτουργεί):</li>
+</ol>
+
+<pre data-aura-rendered-by="12:30472;a">
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@145.230.4.1:39485/?outline=1&nbsp;
+</pre>
+
+<ol data-aura-rendered-by="12:30472;a" start="2">
+  <li>Αν το κλειδί πρόσβασης δεν αντιγράφεται καθόλου στο πρόχειρο, αυτό μπορεί να οφείλεται στην εφαρμογή ανταλλαγής μηνυμάτων ή την πλατφόρμα που χρησιμοποιείτε. Κάτι τέτοιο είναι πιο πιθανό να συμβεί, όταν λαμβάνετε ένα μήνυμα από κάποιο άτομο που δεν βρίσκεται στη λίστα επαφών σας. Αν αντιγράψετε τον κωδικό από ένα μήνυμα, βεβαιωθείτε ότι ο αποστολέας έχει προστεθεί στις επαφές σας και έπειτα δοκιμάστε ξανά να αποκτήσετε πρόσβαση στον σύνδεσμο.&nbsp;</li>
+  <li>Αν ολοκληρώσατε τα βήματα 1 και 2 και εξακολουθείτε να λαμβάνετε το μήνυμα σφάλματος, ο διακομιστής είναι κατά πάσα πιθανότητα αποκλεισμένος ή το κλειδί πρόσβασης δεν είναι πλέον έγκυρο. Αν είστε ο υπεύθυνος εξυπηρέτησης, δημιουργήστε έναν νέο κλειδί για τον εαυτό σας. Διαφορετικά, επικοινωνήστε με τον υπεύθυνο εξυπηρέτησης για να σας δώσει ένα νέο κλειδί.</li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="96" sourceLocale="el">WEB:15331322</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Πόσο κοστίζει η λειτουργία του Outline;</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Το λογισμικό Outline είναι δωρεάν για όλους, είτε είστε ένας διαχειριστής διακομιστή που διαχειρίζεται ένα VPN είτε κάποιος που χρησιμοποιεί το Outline για την πρόσβαση στο ανοικτό διαδίκτυο.<br />
+  <br />
+  Ωστόσο, για να είναι δυνατή η λειτουργία του Outline, απαιτείται πρόσβαση σε διακομιστή cloud. Οι διαχειριστές διακομιστών που έχουν ήδη πρόσβαση σε έναν διακομιστή μπορούν να εγκαταστήσουν το Outline σε αυτόν τον διακομιστή χωρίς πρόσθετο κόστος. Όσοι δεν έχουν πρόσβαση σε διακομιστή μπορούν να αποκτήσουν πρόσβαση από κάποιον πάροχο υπηρεσιών cloud, όπως η&nbsp;<a href="http://www.digitalocean.com/" rel="noopener" target="_blank">DigitalOcean</a>&nbsp;ή η Amazon Web Services, με κόστος περίπου 5&nbsp;δολάρια ΗΠΑ τον μήνα για μεταφορά δεδομένων έως 1&nbsp;terabyte. Αυτός ο όγκος αρκεί για την υποστήριξη εκατοντάδων χρηστών σε έναν διακομιστή.<br />
+  <br />
+  Το ακόλουθο παράδειγμα παρουσιάζει τον τρόπο με τον οποίο μπορείτε να υπολογίσετε το κόστος για τη χρήση του Outline με τον πάροχο cloud της επιλογής σας:</p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td colspan="1" rowspan="1">
+      <p><em>Εάν υποθέσουμε ότι ο μέσος όρος μεταφοράς δεδομένων ανά χρήστη είναι 5 GB τον μήνα, ένα πακέτο των 5 δολαρίων ΗΠΑ ανά μήνα θα μπορούσε να υποστηρίξει έως και 200 χρήστες ταυτόχρονα, διαμορφώνοντας έτσι το μηνιαίο κόστος ανά χρήστη μόλις στα 2,5 σεντς. Να έχετε υπόψη ότι ο μηνιαίος όγκος μεταφερόμενων δεδομένων ανά χρήστη μπορεί να παρουσιάζει μεγάλες διακυμάνσεις ανάλογα με το εύρος ζώνης που απαιτούν οι δραστηριότητες των χρηστών. Ωστόσο, οι περισσότεροι πάροχοι μπορούν να καλύψουν τις αυξήσεις στην επισκεψιμότητα.</em></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br />
+  Στην πραγματικότητα, η χρήση του Outline γίνεται εντελώς ανώνυμα στο Jigsaw και την Google. Δεν προσδιορίζουμε την ταυτότητά σας ούτε παρακολουθούμε την επισκεψιμότητά σας και δεν έχουμε κάποιο σχέδιο δημιουργίας εσόδων. Αντίθετα, συνεργαζόμαστε με την κοινότητά μας λογισμικού ανοικτού κώδικα για να εξασφαλίσουμε ότι μπορούμε να παρέχουμε το λογισμικό χωρίς κόστος στους χρήστες μας. Μάθετε περισσότερα για τα δεδομένα που συγκεντρώνουμε&nbsp;<a href="/outline-faq/answer/15331222" rel="noopener" target="_blank">εδώ</a>.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="386" sourceLocale="el">WEB:15331326</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Πώς μπορώ να ρυθμίσω όρια δεδομένων στα κλειδιά πρόσβασης;</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:15859;a">Μπορείτε να ρυθμίσετε ένα όριο δεδομένων που θα ισχύει για όλα τα κλειδιά πρόσβασης. Για να ρυθμίσετε το όριο, ανοίξτε το Outline Manager και μεταβείτε στις Ρυθμίσεις. Εκεί θα δείτε τον διακόπτη Όρια δεδομένων ο οποίος, αφού ενεργοποιηθεί, σας επιτρέπει να ρυθμίσετε ένα όριο.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787036"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">Αφού ορίσετε ένα όριο, μπορείτε να δείτε πόσο πλησιάζει ο κάθε χρήστης στο όριο στη σελίδα του κλειδιού πρόσβασης, όπου ένα γράφημα ράβδων εμφανίζει τη χρήση δεδομένων τις τελευταίες 30 ημέρες.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787037"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">Εκτός από τη δυνατότητα να ρυθμίσετε ένα όριο για όλα τα κλειδιά πρόσβασης, μπορείτε να εκχωρήσετε σε κάθε κλειδί το δικό του όριο δεδομένων. Αυτή η ρύθμιση θα παρακάμψει οποιοδήποτε προεπιλεγμένο όριο δεδομένων που έχετε ρυθμίσει, αλλά εάν δεν έχετε ρυθμίσει ένα προεπιλεγμένο όριο δεδομένων, μπορείτε να ρυθμίσετε ένα όριο δεδομένων για οποιοδήποτε κλειδί.&nbsp;<br />
+  <br />
+  Για να ρυθμίσετε το όριο μεταφοράς δεδομένων ενός κλειδιού, ανοίξτε το Outline Manager, μεταβείτε στην καρτέλα Συνδέσεις που περιέχει το κλειδί που θέλετε να ρυθμίσετε και κάντε κλικ στο μενού στη δεξιά πλευρά της σειράς του κλειδιού. Από εκεί, κάντε κλικ στο Όριο δεδομένων. Για να αλλάξετε το όριο δεδομένων στην ενότητα Το κλειδί πρόσβασής μου, κάντε κλικ στο εικονίδιο Όρια δεδομένων&nbsp;<img alt="Αυτή η εικόνα δεν είναι διαθέσιμη επειδή: Δεν έχετε δικαιώματα για να τη δείτε ή έχει καταργηθεί από το σύστημα" height="19" src="https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw" width="19" />.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787423"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">Επιλέξτε Ορισμός προσαρμοσμένου ορίου δεδομένων. Αφού επιλέξετε αυτό το πλαίσιο ελέγχου, θα εμφανιστεί ένα πεδίο όπου μπορείτε να ρυθμίσετε το προσαρμοσμένο όριο δεδομένων για το συγκεκριμένο κλειδί. Κάντε κλικ στο κουμπί ΑΠΟΘΗΚΕΥΣΗ όταν ολοκληρώσετε την αποθήκευση του ορίου δεδομένων.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15788959"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">Αφού αποθηκεύσετε το όριο μεταφοράς δεδομένων για το επιλεγμένο κλειδί, το όριο θα εμφανίζεται στην κύρια οθόνη, μαζί με τη χρήση δεδομένων (τις τελευταίες 30 ημέρες) για κάθε κλειδί.</p>
+
+<p data-aura-rendered-by="12:15859;a">Για να καταργήσετε το όριο δεδομένων από ένα κλειδί πρόσβασης, μεταβείτε στο παράθυρο διαλόγου Όριο δεδομένων του κλειδιού όπως πριν, καταργήστε την επιλογή του πλαισίου με την ένδειξη Ορισμός προσαρμοσμένου ορίου δεδομένων και κάντε κλικ στο κουμπί ΑΠΟΘΗΚΕΥΣΗ.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15788414"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a"><b><strong>Συνήθεις ερωτήσεις για τα όρια δεδομένων</strong></b><br />
+  <br />
+  <strong><b>Τι είναι το όριο δεδομένων 30 ημερών;</b></strong><br />
+  <br />
+  Ένα όριο λήξης δεδομένων 30 ημερών αθροίζει τη χρήση κάθε κλειδιού κατά τις τελευταίες 30 ημέρες και διατηρεί τη χρήση του κλειδιού κατά τη διάρκεια της συγκεκριμένης περιόδου κάτω από το όριο. Το αποτέλεσμα είναι ότι το κλειδί δεν μπορεί να υπερβεί το όριο κατά τη διάρκεια οποιασδήποτε περιόδου 30 ημερών, συμπεριλαμβανομένων των ημερολογιακών μηνών με 30 ή λιγότερες ημέρες. Στην πράξη, αυτό σημαίνει ότι τα διαθέσιμα δεδομένα κάθε χρήστη θα αυξάνονται καθημερινά κατά την ποσότητα δεδομένων που χρησιμοποίησαν πριν από 31 ημέρες.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Γιατί επιλέξατε τα όρια παρακολούθησης;</strong><br />
+  <br />
+  Τα όρια παρακολούθησης παρέχουν εγγυήσεις για κάθε περίοδο 30 ημερών, γεγονός που σημαίνει ότι η διαμόρφωσή τους είναι πιο απλή σε σχέση με ένα επαναλαμβανόμενο όριο (όπως μια προσαρμόσιμη ημέρα τον μήνα) που παρέχει παρόμοιες εγγυήσεις. Επίσης, ταιριάζουν με την υπάρχουσα προβολή της χρήσης δεδομένων του Outline, καθώς και με κοινά εργαλεία, όπως υπηρεσίες αναλυτικών στοιχείων και τα στατιστικά στοιχεία διακομιστή.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Ποια δεδομένα υπολογίζονται στο όριο δεδομένων;</strong><br />
+  <br />
+  Η έξοδος κάθε κλειδιού πρόσβασης από τον διακομιστή περιλαμβάνεται στην καταμέτρηση. Για την ακρίβεια, αυτό σημαίνει ότι τα δεδομένα αποστέλλονται εκ μέρους του κλειδιού εκτός του διακομιστή, καθώς και πίσω στον πελάτη. Πρακτικά, αυτό θα πρέπει να ευθυγραμμίζεται στενά με την επισκεψιμότητα που αποστέλλεται από το κλειδί στον διακομιστή και πίσω, επομένως ελπίζουμε ότι θα αντιστοιχεί στις καταμετρήσεις των χρηστών σας. Επιλέξαμε την έξοδο επειδή με βάση αυτή χρεώνουν οι πάροχοι cloud που συμμετείχαν στην έρευνα.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Θα ειδοποιηθούν οι χρήστες αν εξαντληθεί το όριο δεδομένων τους;</strong><br />
+  <br />
+  Προς το παρόν όχι. Πολλοί πάροχοι cloud περιλαμβάνουν ένα όριο όπως 1 TB για ολόκληρο τον μήνα, το οποίο μπορεί να υποστηρίξει 10 χρήστες στα 100 GB ή 100 χρήστες στα 10 GB. Αυτοί οι αριθμοί είναι αρκετά μεγάλοι και δεν αναμένεται να συμπληρωθούν από πολλούς χρήστες. Ελπίζουμε ότι οι χρήστες θα επικοινωνήσουν με τους διαχειριστές του διακομιστή τους όταν συμπληρώσουν το όριό τους. Ωστόσο, θα εκτιμούσαμε τη γνώμη σας σχετικά με τον τρόπο με τον οποίο οι ειδοποιήσεις μπορούν να βοηθήσουν στην περίπτωση χρήσης σας. Μπορείτε να επικοινωνήσετε μαζί μας<a href="https://support.getoutline.org/s/contactsupport" target="_blank"> εδώ</a>.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Θα ειδοποιηθούν οι χρήστες καθώς πλησιάζουν το όριο δεδομένων τους;</strong><br />
+  <br />
+  Ο όγκος των νέων δεδομένων που θα χρησιμοποιεί ένας χρήστης που πλησιάζει το όριό του θα διαφέρει από μέρα σε μέρα, επειδή βασίζεται στη χρήση του πριν από 30 ημέρες. Πιστεύουμε ότι αυτή η προειδοποίηση είναι πιο πιθανό να δημιουργήσει σύγχυση στους τελικούς χρήστες παρά να τους βοηθήσει. Θα εκτιμήσουμε τα σχόλιά σας σχετικά με αυτή τη συμπεριφορά<a href="https://support.getoutline.org/s/contactsupport" rel="noopener" target="_blank"> εδώ</a>.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Μπορώ να επαναφέρω τη χρήση δεδομένων ενός χρήστη;</strong><br />
+  <br />
+  Όχι, το όριο ενός χρήστη περιλαμβάνει πάντα τις τελευταίες 30 ημέρες χρήσης δεδομένων. Ωστόσο, μπορείτε να αυξήσετε το όριο δεδομένων του κλειδιού τους ή να δημιουργήσετε ένα νέο κλειδί για τον χρήστη.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Γιατί ορισμένοι από τους χρήστες μου έχασαν την πρόσβαση αμέσως μόλις ενεργοποίησα τα όρια δεδομένων;</strong><br />
+  <br />
+  Τα όρια δεδομένων βασίζονται στις προηγούμενες 30 ημέρες μεταφοράς δεδομένων των χρηστών, οι οποίες καταγράφονται ανεξάρτητα από το αν έχουν ενεργοποιηθεί ή όχι τα όρια δεδομένων. Είναι πιθανό οι εν λόγω χρήστες να είχαν ήδη υπερβεί το όριο προτού εφαρμοστεί.&nbsp; Λάβετε επίσης υπόψη ότι επιβάλλονται όλα τα όρια δεδομένων, ακόμη και όταν αλλάζετε το όριο δεδομένων ενός μόνο κλειδιού.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Μπορώ να ορίσω ένα όριο που θα ισχύει για ολόκληρο τον διακομιστή, όπως "1 TB ανά 30 ημέρες";</strong><br />
+  <br />
+  Προς το παρόν όχι. Θα θέλαμε να μάθουμε περισσότερα σχετικά με την περίπτωση χρήσης σας<a href="https://support.getoutline.org/s/contactsupport" rel="noopener" target="_blank"> εδώ</a>.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Εάν υπάρχει ένα προεπιλεγμένο όριο δεδομένων και ένα όριο δεδομένων σε ένα συγκεκριμένο κλειδί, ποιο από τα δύο θα επιβληθεί;</strong><br />
+  <br />
+  Το όριο δεδομένων του συγκεκριμένου κλειδιού θα παρακάμπτει οποιοδήποτε προεπιλεγμένο όριο δεδομένων (αν υπάρχει) που έχετε ρυθμίσει.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Μπορώ να ρυθμίσω ένα όριο δεδομένων για ένα συγκεκριμένο κλειδί χωρίς να έχω ένα προεπιλεγμένο όριο δεδομένων;</strong><br />
+  <br />
+  Ναι.&nbsp; Δεν χρειάζεται να ρυθμίσετε ένα προεπιλεγμένο όριο για να ρυθμίσετε ένα όριο δεδομένων σε ένα κλειδί.&nbsp; Για παράδειγμα, θα μπορούσατε να ρυθμίσετε ένα όριο σε ένα κλειδί που πιστεύετε ότι μπορεί να κοινοποιηθεί ευρέως, προκειμένου να προστατευτείτε από υπερβολική μεταφορά δεδομένων μέσω του συγκεκριμένου κλειδιού.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="el">WEB:15331327</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Πώς μπορώ να επαναφέρω το αναγνωριστικό του διακομιστή μου;</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:23999;a">Το αναγνωριστικό διακομιστή δημιουργείται τυχαία από την πλευρά του διακομιστή, όταν δημιουργείτε έναν διακομιστή Outline. Μπορείτε να το βρείτε αν έχετε επιλέξει να συμμετάσχετε στην κοινοποίηση ανώνυμων μετρήσεων στη διεπαφή ρυθμίσεων. Για να εντοπίσετε το αναγνωριστικό διακομιστή, μεταβείτε στις Ρυθμίσεις, κάντε κύλιση μέχρι το κάτω μέρος της οθόνης και επιλέξτε Κοινοποίηση ανώνυμων μετρήσεων.</p>
+
+<p data-aura-rendered-by="12:23999;a">Το αναγνωριστικό διακομιστή συνδέει τα ανώνυμα στατιστικά στοιχεία χρήσης που αναφέρονται σταδιακά. Αν θέλετε να επαναφέρετε το αναγνωριστικό διακομιστή και να αποκτήσετε ένα νέο, θα πρέπει να αντικαταστήσετε τον υπάρχοντα διακομιστή Outline με έναν νέο.</p>
+
+<p data-aura-rendered-by="12:23999;a">Αν χρησιμοποιείτε την DigitalOcean ως πάροχο cloud, μπορείτε να επαναφέρετε τον διακομιστή σας επιλέγοντας Settings (Ρυθμίσεις) και Destroy Server (Καταστροφή διακομιστή). Αυτή η ενέργεια δεν μπορεί να αναιρεθεί και θα έχει ως αποτέλεσμα τη διαγραφή των διαπιστευτηρίων σας. Αμέσως μετά από αυτή την ενέργεια, θα σας ζητηθεί να δημιουργήσετε έναν νέο διακομιστή σε μια τοποθεσία της επιλογής σας και θα δημιουργηθεί ένα νέο αναγνωριστικό διακομιστή.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="103" sourceLocale="el">WEB:15331328</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Πώς μπορώ να αλλάξω την τοποθεσία του διακομιστή Outline;</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:24761;a">Η τοποθεσία ενός διακομιστή δεν μπορεί να αλλάξει μετά τη ρύθμισή της. Αν θέλετε να λειτουργεί ο διακομιστής σας από διαφορετική τοποθεσία, πρέπει να διαγράψετε τον τρέχοντα διακομιστή σας Outline και να δημιουργήσετε έναν νέο.</p>
+
+<p data-aura-rendered-by="12:24761;a"><br />
+  Εναλλακτικά, μπορείτε να αλλάξετε την τοποθεσία του VPN σας χρησιμοποιώντας <a href="https://developers.google.com/outline/docs/guides/service-providers/dynamic-access-keys" target="_blank">δυναμικά κλειδιά</a>, τα οποία σας επιτρέπουν να εναλλάσσετε τους διακομιστές και να χρησιμοποιείτε τα ίδια κλειδιά. Η τοποθεσία των ίδιων των διακομιστών δεν θα αλλάζει.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="102" sourceLocale="el">WEB:15331423</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Αποστολή σχολίων ή προτάσεων</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:22486;a">Ευχαριστούμε που μας βοηθάτε να κάνουμε το Outline καλύτερο. Μπορείτε να μας στείλετε τα σχόλιά σας με διάφορους τρόπους, είτε ανώνυμα είτε αναφέροντας τη διεύθυνση ηλεκτρονικού ταχυδρομείου σας εάν θέλετε να σας απαντήσουμε.</p>
+
+<ul data-aura-rendered-by="12:22486;a">
+  <li><strong>Για προγραμματιστές</strong>:&nbsp;Το Outline είναι ένα προϊόν λογισμικού ανοικτού κώδικα που φιλοξενείται στο&nbsp;<a href="https://github.com/jigsaw-Code/?q=outline" target="_blank">GitHub</a>. Μπορείτε να μοιραστείτε τις ιδέες σας στο GitHub ή στην&nbsp;κοινότητα&nbsp;<a href="https://www.reddit.com/r/outlinevpn/" target="_blank">Reddit</a>.&nbsp;</li>
+  <li><strong>Για χρήστες</strong>: Μπορείτε να μας στείλετε τα σχόλιά σας μέσω των εφαρμογών Outline ή Outline Manager. Πείτε μας σε τι αναφέρονται τα σχόλιά σας και, προαιρετικά, δηλώστε μια διεύθυνση ηλεκτρονικού ταχυδρομείου για να σας απαντήσουμε σχετικά. Συγκεντρώνουμε επίσης ορισμένα μεταδεδομένα σχετικά με το περιβάλλον σας, όπως πληροφορίες για το πρόγραμμα περιήγησης, το λειτουργικό σύστημα και την έκδοση λογισμικού που χρησιμοποιείτε, προκειμένου να σας βοηθήσουμε στην αντιμετώπιση προβλημάτων.</li>
+  <li><strong>Μέσω αυτού του ιστοτόπου</strong>: Μπορείτε να κάνετε κλικ στον σύνδεσμο Επικοινωνήστε μαζί μας οπουδήποτε εμφανίζεται σε αυτόν τον ιστότοπο.</li>
+  <li><strong>Σοβαρά ζητήματα</strong>: Αν θέλετε να αναφέρετε ένα σοβαρό ζήτημα ασφαλείας, στείλτε ένα μήνυμα ηλεκτρονικού ταχυδρομείου στη διεύθυνση security [at] <a href="https://getoutline.org/" rel="noopener" target="_blank">getoutline.org</a>.</li>
+</ul>
+
+<p data-aura-rendered-by="12:22486;a">Σας ευχαριστούμε ξανά για τον χρόνο που διαθέσατε για να μοιραστείτε τις σκέψεις σας μαζί μας.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="146" sourceLocale="el">WEB:15331424</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Διαχείριση πρόσβασης σε έναν διακομιστή Outline (με κλειδιά πρόσβασης)</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:25527;a">Όταν ολοκληρώσετε την εγκατάσταση του διακομιστή Outline, μπορείτε να αρχίσετε να εκχωρείτε πρόσβαση και να διαχειρίζεστε την πρόσβαση των ατόμων στον διακομιστή. Τα άτομα που θα λάβουν μια πρόσκληση από εσάς θα μπορούν να κατεβάσουν την εφαρμογή Outline και να τη χρησιμοποιήσουν για την προστασία της επισκεψιμότητας διαδικτύου τους.</p>
+
+<p data-aura-rendered-by="12:25527;a"><strong>Εκχώρηση πρόσβασης στον διακομιστή σας Outline</strong><br />
+  Αφού ολοκληρώσετε την εγκατάσταση ενός διακομιστή Outline, θα μεταφερθείτε στη σελίδα λεπτομερειών του διακομιστή στο Outline Manager, στην οποία μπορείτε να δημιουργήσετε κλειδιά πρόσβασης. Μάθετε περισσότερα σχετικά με τα <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">κλειδιά πρόσβασης</a>.</p>
+
+<ul data-aura-rendered-by="12:25527;a">
+  <li>Δημιουργία κλειδιών: Κάντε κλικ στο μικρό εικονίδιο "+" στο κάτω μέρος της σελίδας για να δημιουργήσετε νέα κλειδιά.</li>
+  <li>Κοινοποίηση κλειδιών: Δεξιά από κάθε κλειδί υπάρχει ένα εικονίδιο κοινής χρήσης στο οποίο μπορείτε να κάνετε κλικ για να λάβετε μια πρόσκληση. Αντιγράψτε και επικολλήστε αυτή την πρόσκληση σε ένα μήνυμα στο σύστημα μηνυμάτων της επιλογής σας.</li>
+</ul>
+
+<p data-aura-rendered-by="12:25527;a"><strong>Αίτημα λειτουργίας: Εκχώρηση πρόσβασης μέσω της εφαρμογής Outline Manager</strong><br />
+  Πολλοί διαχειριστές διακομιστών ζητούν να βελτιστοποιήσουμε τη διαδικασία πρόσκλησης, δίνοντάς τους τη δυνατότητα να εισαγάγουν τη διεύθυνση ηλεκτρονικού ταχυδρομείου ενός ατόμου απευθείας στο Outline Manager.</p>
+
+<p data-aura-rendered-by="12:25527;a">Δυστυχώς, είναι απίθανο να αναπτύξουμε αυτή τη λειτουργία στο Outline Manager. Μία από τις βασικές μας αρχές είναι η υποστήριξη της ασφάλειας και του απορρήτου των χρηστών μας, κάτι που σημαίνει ότι δεν σχεδιάσαμε κανέναν χώρο για την εισαγωγή διευθύνσεων ηλεκτρονικού ταχυδρομείου ή πληροφοριών επικοινωνίας.</p>
+
+<p data-aura-rendered-by="12:25527;a">Αυτός είναι ο λόγος για τον οποίο ζητάμε από τους διαχειριστές διακομιστών να χρησιμοποιούν μια ασφαλή πλατφόρμα μηνυμάτων, όπως μια εφαρμογή ηλεκτρονικού ταχυδρομείου ή ασφαλούς συνομιλίας, για την αποστολή των προσκλήσεων στους τελικούς χρήστες.<br />
+  <br />
+  <strong>Τι συμβαίνει όταν κοινοποιήσετε ένα κλειδί πρόσβασης σε έναν χρήστη</strong></p>
+
+<ol data-aura-rendered-by="12:25527;a">
+  <li>Ο χρήστης θα κάνει κλικ στον σύνδεσμο εγκατάστασης στη συσκευή του.</li>
+  <li>Θα του ζητηθεί να εγκαταστήσει την εφαρμογή Outline, εάν δεν το έχει κάνει ήδη.</li>
+  <li>Θα δημιουργήσει μια αρχική σύνδεση στον διακομιστή Outline μέσω του μοναδικού κλειδιού που είναι ενσωματωμένο στην πρόσκληση.</li>
+  <li>Θα μπορεί να διαχειρίζεται την πρόσβασή του στο διαδίκτυο μέσω του διακομιστή Outline χρησιμοποιώντας το κουμπί σύνδεσης/αποσύνδεσης.</li>
+</ol>
+
+<p data-aura-rendered-by="12:25527;a"><strong>Κατάργηση πρόσβασης στον διακομιστή Outline</strong><br />
+  Στη σελίδα λεπτομερειών του διακομιστή στο Outline Manager, δεξιά από κάθε κλειδί του διακομιστή, υπάρχει ένα μενού που περιλαμβάνει μια επιλογή για τη διαγραφή του κλειδιού. Η διαγραφή ενός κλειδιού καταργεί την πρόσβαση του κλειδιού στον διακομιστή.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="92" sourceLocale="el">WEB:15331524</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Πώς μπορώ να αποκτήσω πρόσβαση στους πόρους του Outline, αν το getoutline.org είναι αποκλεισμένο;</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><a href="https://s3.amazonaws.com/outline-vpn/index.html" target="_blank">Προσθέστε σελιδοδείκτη σε αυτόν τον κατοπτριζόμενο ιστότοπο</a> για να τον χρησιμοποιήσετε αν δεν έχετε πρόσβαση στο <a href="http://getoutline.org/" target="_blank">getoutline.org</a>.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="321" sourceLocale="el">WEB:15331527</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Εγκατάσταση της εφαρμογής Outline Client σε Linux</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Από την έκδοση 1.15 της εφαρμογής Outline Client, όλες οι μελλοντικές εκδόσεις θα κυκλοφορούν ως πακέτα Debian για λειτουργικά συστήματα Linux. Ανατρέξτε στις <a href="/outline/answer/15330818" rel="noopener" target="_blank"><u>ελάχιστες απαιτήσεις συστήματος</u></a> για περισσότερες πληροφορίες σχετικά με τα λειτουργικά συστήματα που υποστηρίζουμε.</p>
+&nbsp;
+
+<p><strong>Εγκατάσταση της εφαρμογής Outline Client για διανομές Linux που βασίζονται στο Debian (προτείνεται)</strong></p>
+&nbsp;
+
+<p>Εκτελέστε τις ακόλουθες εντολές:</p>
+
+<ol>
+  <li aria-level="1">Εγκαταστήστε το κλειδί χώρου φύλαξης του Outline και προσθέστε τον χώρο φύλαξης.
+    <div class="code">
+      <div class="no-margin">
+        <p>wget -qO- https://us-apt.pkg.dev/doc/repo-signing-key.gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/gcloud-artifact-registry-us.gpg</p>
+
+        <p>echo "deb [arch=amd64] https://us-apt.pkg.dev/projects/jigsaw-outline-apps outline-client main" | sudo tee /etc/apt/sources.list.d/outline-client.list</p>
+      </div>
+    </div>
+  </li>
+</ol>
+
+<p>&nbsp; 2.&nbsp;&nbsp;Ενημερώστε τη λίστα πακέτων apt και εγκαταστήστε τη νεότερη έκδοση του Outline Client.</p>
+
+<div class="code">
+  <div class="no-margin">
+    <p>&nbsp; &nbsp;sudo apt update</p>
+
+    <p>&nbsp; &nbsp;sudo apt install outline-client</p>
+  </div>
+</div>
+
+<p>Για να ελέγξετε ή να εγκαταστήσετε μελλοντικές ενημερώσεις, εκτελέστε ξανά τις εντολές στο Βήμα 2. Λάβετε υπόψη ότι η αυτόματη ενημέρωση εντός εφαρμογής είναι απενεργοποιημένη για το Outline Client σε Linux, από την έκδοση 1.15 και έπειτα.</p>
+
+<p>Για να απεγκαταστήσετε το Outline Client, εκτελέστε την ακόλουθη εντολή:</p>
+
+<div class="code">
+  <div class="no-margin">sudo apt purge outline-client</div>
+</div>
+
+<p><strong>Εναλλακτική επιλογή</strong></p>
+
+<ol>
+  <li aria-level="1">Κατεβάστε το νεότερο πακέτο Debian του Outline Client από τη διεύθυνση <a href="https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb" rel="noopener" target="_blank">https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb</a></li>
+  <li aria-level="1">Εκτελέστε τις παρακάτω εντολές στη γραμμή εντολών για να εγκαταστήσετε το πακέτο</li>
+</ol>
+
+<div class="code">
+  <div class="no-margin">
+    <p>wget -O ./outline-client.deb https://s3.amazonaws.com/outline-&nbsp; &nbsp; &nbsp; releases/client/linux/stable/outline-client_amd64.deb</p>
+
+    <p>sudo apt install ./outline-client.deb</p>
+  </div>
+</div>
+
+<p>&nbsp; 3.&nbsp;&nbsp;Ελέγξτε για ενημερώσεις με μη αυτόματο τρόπο, καθώς η αυτόματη ενημέρωση εντός εφαρμογής είναι απενεργοποιημένη για το Outline Client στο Linux, από την έκδοση&nbsp;1.15 και έπειτα.</p>
+
+<p>&nbsp; 4.&nbsp; Για να απεγκαταστήσετε το Outline Client, εκτελέστε την ακόλουθη εντολή στη γραμμή εντολών:</p>
+
+<div class="code">
+  <div class="no-margin">sudo apt purge outline-client</div>
+</div>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="206" sourceLocale="el">WEB:15331528</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Μπορώ να χρησιμοποιήσω ένα κλειδί πρόσβασης περισσότερες από μία φορές;</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1895;a">Ναι. Μπορείτε να χρησιμοποιήσετε το <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">κλειδί πρόσβασης</a>&nbsp;σε όσες συσκευές θέλετε, αλλά δεν συνιστούμε να μοιραστείτε το κλειδί σας με κάποιο άλλο άτομο. Εάν κάποιο άτομο αποκτήσει το κλειδί πρόσβασής σας, μπορεί δυνητικά να έχει πρόσβαση σε όλη τη διαδικτυακή σας κίνηση, οπότε η χρήση του διαδικτύου από μέρους σας δεν θα είναι πλέον ασφαλής ή ιδιωτική.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="104" sourceLocale="el">WEB:15331529</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Σύνδεση της συσκευής σας σε έναν διακομιστή Outline</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1399;a"><strong>Σύνδεση της συσκευής σας σε έναν διακομιστή Outline</strong></p>
+
+<p data-aura-rendered-by="12:1399;a">Για να συνδέσετε τη συσκευή σας σε έναν διακομιστή Outline, θα πρέπει να λάβετε πρόσκληση από έναν διαχειριστή διακομιστή για να συνδεθείτε στον διακομιστή του με ένα μοναδικό&nbsp;<a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">κλειδί πρόσβασης</a>. Αυτή η πρόσκληση:</p>
+
+<ul data-aura-rendered-by="12:1399;a">
+  <li>Θα σας προτρέψει να κατεβάσετε και να εγκαταστήσετε το Outline στη συσκευή σας, εάν δεν το έχετε ήδη κάνει.</li>
+  <li>Θα χρησιμοποιήσει το κλειδί πρόσβασης για να δημιουργήσει μια ασφαλή σύνδεση ανάμεσα σε εσάς και τον διακομιστή Outline.</li>
+</ul>
+
+<p data-aura-rendered-by="12:1399;a">Όταν γίνει η σύνδεσή σας στον διακομιστή, μπορείτε να κάνετε κλικ στα κουμπιά σύνδεσης ή αποσύνδεσης για να χρησιμοποιήσετε το Outline.</p>
+
+<p data-aura-rendered-by="12:1399;a"><em>Σημαντικό:</em>&nbsp;Το Outline δεν λειτουργεί χωρίς κλειδί πρόσβασης και έναν διακομιστή Outline. Η λήψη και η εγκατάσταση της εφαρμογής Outline χωρίς κλειδί δεν προστατεύει τη διαδικτυακή κίνησή σας.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="100" sourceLocale="el">WEB:15331530</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Πώς μπορώ να ρυθμίσω έναν διακομιστή Outline;</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:27063;a">Το πρώτο βήμα για τη χρήση του Outline είναι η ρύθμιση ενός διακομιστή Outline. Ρυθμίστε ή ζητήστε από κάποιον που εμπιστεύεστε να ρυθμίσει έναν διακομιστή, ώστε να έχετε τη δυνατότητα σύνδεσης στο ανοικτό διαδίκτυο μέσω του Outline.<br />
+  <br />
+  <strong>Πριν ξεκινήσετε</strong><br />
+  Πριν ξεκινήσετε τη διαδικασία ρύθμισης του διακομιστή Outline, θα χρειαστείτε τα εξής:</p>
+
+<ol data-aura-rendered-by="12:27063;a">
+  <li>Πρόσβαση σε δικούς σας διακομιστές ή σε έναν πάροχο υπηρεσιών cloud, όπως το DigitalOcean, το Amazon Web Services (AWS) ή το Google Cloud Platform (GCP).<br />
+    Εάν δεν έχετε άμεση πρόσβαση σε έναν διακομιστή cloud, μπορείτε εύκολα να δημιουργήσετε έναν λογαριασμό σε οποιονδήποτε πάροχο, συμπεριλαμβανομένων αυτών που αναφέρονται παραπάνω. Θα χρειαστείτε πιθανώς μια πιστωτική κάρτα για να εγγραφείτε.</li>
+  <li>Έναν υπολογιστή με λειτουργικό σύστημα macOS 10.9+, Windows 7.0+ ή Linux.</li>
+  <li>Την εφαρμογή Outline Manager.</li>
+</ol>
+
+<p data-aura-rendered-by="12:27063;a"><strong>Ρύθμιση με το DigitalOcean</strong><br />
+  <br />
+  Έχουμε απλοποιήσει τη διαδικασία εγκατάστασης του Outline στο DigitalOcean ώστε να γίνεται με μερικά κλικ. Αφού κατεβάσετε και εγκαταστήσετε το Outline Manager στον υπολογιστή σας, μπορείτε να χρησιμοποιήσετε την επιλογή ρύθμισης του DigitalOcean που θα σας βοηθήσει να ολοκληρώσετε τη διαμόρφωση και την εγκατάσταση του διακομιστή Outline σας μέσω μερικών απλών οθονών.<br />
+  <br />
+  <strong>Ρύθμιση με άλλον πάροχο cloud</strong><br />
+  <br />
+  Αφού κατεβάσετε και εγκαταστήσετε το Outline Manager στον υπολογιστή σας, μπορείτε να επιλέξετε την εγκατάσταση ενός διακομιστή Outline σε μια εικονική μηχανή με το AWS, το GCP, το DigitalOcean ή κάποιον άλλο πάροχο. Κάθε περιβάλλον είναι διαφορετικό, οπότε έχουμε συμπεριλάβει οδηγίες στη ροή ρύθμισης του Outline Manager για τους πιο συνηθισμένους παρόχους cloud, συμπεριλαμβανομένων οδηγιών για να διαμορφώσετε τις ρυθμίσεις της εικονικής μηχανής σας πριν από την εκτέλεση του σεναρίου εγκατάστασης για την εγκατάσταση του Outline σε έναν διακομιστή.<br />
+  <br />
+  <strong><em>Χρειάζεστε περισσότερη βοήθεια;</em></strong><br />
+  <br />
+  Ανατρέξτε στις&nbsp;<a href="/outline-faq/answer/15331728" rel="noopener" target="_blank">Συνήθεις ερωτήσεις για τη ρύθμιση του διακομιστή Outline</a>.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="95" sourceLocale="el">WEB:15331625</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Μπορώ να χρησιμοποιήσω ή να αντιγράψω την επωνυμία Outline;</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Ενώ το Outline είναι λογισμικό ανοικτού κώδικα και μπορεί να χρησιμοποιηθεί χωρίς χρέωση, η επωνυμία μας είναι ιδιόκτητη από το Jigsaw και δεν θα πρέπει να γίνεται κακή χρήση της. Ανατρέξτε στον <a href="https://github.com/Jigsaw-Code/outline-brand/blob/main/outline_brand_user_guide.pdf" target="_blank">οδηγό χρήσης</a> για να βεβαιωθείτε ότι αποφεύγετε πιθανώς παραπλανητικούς ισχυρισμούς ή εσφαλμένους χαρακτηρισμούς της σχέσης σας με το Outline ή με το Jigsaw και ότι χρησιμοποιείτε σωστά τα εγκεκριμένα στοιχεία καθιέρωσης επωνυμίας.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="191" sourceLocale="el">WEB:15331628</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Πώς μπορώ να αποκτήσω κλειδί πρόσβασης;</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:3258;a">Το Outline δεν μοιάζει με τις υπηρεσίες VPN στις οποίες αγοράζετε πρόσβαση. Πρόκειται για <a href="https://getoutline.org/#:~:text=Two%20Products%20that%20Work%20Together" target="_blank">ένα εργαλείο</a> που σας επιτρέπει να χρησιμοποιείτε και να μοιράζεστε την πρόσβαση σε έναν ιδιωτικό διακομιστή VPN. Ο <a href="/outline/answer/15330920#servicemanager" rel="noopener" target="_blank">υπεύθυνος υπηρεσίας</a>&nbsp;είναι το μόνο άτομο που μπορεί να παρέχει ένα κλειδί πρόσβασης. Η ομάδα του Outline δεν διανέμει κλειδιά πρόσβασης χωρίς χρέωση ή επί πληρωμή. Δεν έχουμε επίσημους συνεργάτες κλειδιών πρόσβασης στο Outline, εκτός από το Paskoocheh στη γλώσσα Φαρσί.<br />
+  <br />
+  Ακολουθούν τρεις επιλογές για την απόκτηση κλειδιού πρόσβασης:&nbsp;</p>
+
+<ul data-aura-rendered-by="12:3258;a">
+  <li>Ζητήστε από κάποιον να σας προσκαλέσει στον διακομιστή του. Αν γνωρίζετε κάποιον με διακομιστή Outline, επικοινωνήστε μαζί του και ζητήστε του ένα κλειδί πρόσβασης.</li>
+  <li><a href="/outline/answer/15331530" rel="noopener" target="_blank">Δημιουργήστε έναν διακομιστή εσείς οι ίδιοι:</a> Χρησιμοποιώντας υπολογιστή Windows, Mac ή Linux, κατεβάστε το <a href="https://getoutline.org/get-started/#step-1" target="_blank">Outline Manager</a> και ρυθμίστε τον δικό σας ιδιωτικό <a href="/outline/answer/15330920" rel="noopener" target="_blank">διακομιστή Outline</a>. Κάναμε αυτή τη διαδικασία εύκολη για οποιονδήποτε, ιδίως μέσω του παρόχου υπηρεσιών cloud DigitalOcean.</li>
+  <li>Χρησιμοποιήστε μια υπηρεσία Outline ή <a href="https://en.wikipedia.org/wiki/Shadowsocks#:~:text=Shadowsocks%20is%20a%20free%20and,have%20been%20made%20available%20since." target="_blank">Shadowsocks</a>: Η εφαρμογή πελάτης Outline μπορεί επίσης να χρησιμοποιηθεί με υπηρεσίες τρίτων που χρησιμοποιούν το πρωτόκολλο Outline ή Shadowsocks. Για παράδειγμα:
+    <ul>
+      <li>Το <a href="http://nthlink.com/" target="_blank">nthLink</a> εκτελεί μια υπηρεσία χωρίς χρέωση που βασίζεται στο Outline, με μια τροποποιημένη έκδοση της εφαρμογής πελάτη Outline.</li>
+      <li>Το <a href="https://www.reddit.com/r/outlinevpn/comments/nwu1se/the_outline_distribution_system_is_here_to_help/" target="_blank">ASL19</a> εκτελεί μια τροποποιημένη έκδοση του Outline που ονομάζεται <a href="https://beepassvpn.com/" target="_blank">BeePass</a> και ένα <a href="https://t.me/paskoochehbot" target="_blank">Telegram bot</a> που παρέχει κλειδιά πρόσβασης χωρίς χρέωση στους διακομιστές του BeePass.</li>
+      <li>Οι χρήστες στη γλώσσα Φαρσί μπορούν επίσης να ζητήσουν ένα κλειδί πρόσβασης Outline από το <a href="https://outline.paskoocheh.com/" target="_blank">Paskoocheh του ASL19</a>.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Μετά τη λήψη της εφαρμογής Outline Client, αντιγράψτε και επικολλήστε το <a href="/outline/answer/15330920#accesskey" rel="noopener" target="_blank">κλειδί πρόσβασης</a>&nbsp;στην εφαρμογή Outline Client για να συνδεθείτε στον διακομιστή Outline.&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="133" sourceLocale="el">WEB:15331630</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Πώς μπορώ να διαγράψω έναν διακομιστή Outline;</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:14046;a">Για τους περισσότερους παρόχους cloud, είναι αρκετά εύκολο να καταργήσετε τη συγκεκριμένη εικονική μηχανή που χρησιμοποιείτε.</p>
+
+<p data-aura-rendered-by="12:14046;a">Αν χρησιμοποιείτε την DigitalOcean ως πάροχο cloud, μπορείτε να διαγράψετε την υπάρχουσα εικονική μηχανή σας κάνοντας κλικ στο κουμπί με το γρανάζι και επιλέγοντας Destroy Server (Καταστροφή διακομιστή). Αμέσως μετά, θα σας ζητηθεί να δημιουργήσετε μια νέα εικονική μηχανή σε μια τοποθεσία της επιλογής σας.</p>
+
+<p data-aura-rendered-by="12:14046;a">Εάν καταργήσετε έναν διακομιστή Outline, ο διακομιστής θα διαγραφεί οριστικά και τα κλειδιά πρόσβασής του θα σταματήσουν να λειτουργούν. Αν δεν θέλετε να διακοπεί η πρόσβαση των χρηστών μέσω Outline, θα πρέπει να <a href="/outline-faq/answer/15331530" rel="noopener" target="_blank">ρυθμίσετε έναν νέο διακομιστή Outline</a>&nbsp;και να μοιραστείτε την πρόσβαση σε αυτόν πριν διαγράψετε τον παλιό διακομιστή.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="99" sourceLocale="el">WEB:15331631</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Ρύθμιση πολλών διακομιστών Outline</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:27908;a">Για να ρυθμίσετε πρόσθετους διακομιστές Outline κάντε κλικ στο εικονίδιο + στο πλαίσιο πλοήγησης στην αριστερή πλευρά της εφαρμογής Outline Manager. Οι οδηγίες για την προσθήκη ενός νέου διακομιστή είναι οι ίδιες με αυτές που ακολουθήσατε για την προσθήκη του πρώτου σας διακομιστή.</p>
+
+<ul data-aura-rendered-by="12:27908;a">
+  <li>Δεν υπάρχει περιορισμός στον αριθμό των διακομιστών Outline που μπορείτε να δημιουργήσετε.</li>
+  <li>Για κάθε διακομιστή Outline που δημιουργείτε, θα χρειαστείτε μια αντίστοιχη εικονική μηχανή.</li>
+  <li>Η δημιουργία πρόσθετων μηχανών και "σταγονιδίων" (droplets) μπορεί να αυξήσει την αμοιβή του παρόχου cloud. Εξετάστε το πακέτο τιμολόγησης του παρόχου cloud για να βεβαιωθείτε τι να περιμένετε.</li>
+</ul>
+
+<p data-aura-rendered-by="12:27908;a"><strong>Δημιουργία πρόσθετου διακομιστή Outline στο DigitalOcean</strong></p>
+
+<p data-aura-rendered-by="12:27908;a">Αφού κάνετε κλικ στο εικονίδιο + και επιλέξετε να κάνετε εγκατάσταση στο DigitalOcean, θα ακολουθήσετε τις ίδιες οδηγίες που ακολουθήσατε για τη ρύθμιση του πρώτου σας διακομιστή. Επιπλέον, καθώς το Outline Manager ενσωματώνεται με το DigitalOcean, θα μπορούσαμε να δημιουργήσουμε το "σταγονίδιο" (droplet) για λογαριασμό σας, χωρίς να χρειαστεί να αφήσετε την εφαρμογή Outline Manager.</p>
+
+<p data-aura-rendered-by="12:27908;a">Έχετε υπόψη ότι το Outline Manager υποστηρίζει τη χρήση μόνο ενός λογαριασμού DigitalOcean κάθε φορά. Εάν θέλετε να προσθέσετε ή να δημιουργήσετε άλλους διακομιστές Outline από άλλους λογαριασμούς DigitalOcean, μπορείτε να τους προσθέσετε στο πλαίσιο μιας σύνθετης διαμόρφωσης.</p>
+
+<p data-aura-rendered-by="12:27908;a"><strong>Δημιουργία πρόσθετου διακομιστή Outline στο GCP, το AWS ή έναν άλλο πάροχο υπηρεσιών cloud</strong></p>
+
+<p data-aura-rendered-by="12:27908;a">Ξεκινήστε δημιουργώντας μια νέα εικονική μηχανή στον πάροχο cloud της επιλογής σας. Στη συνέχεια, ανοίξτε το Outline Manager και ακολουθήστε τις οδηγίες σύνθετης εγκατάστασης, όπως είχατε κάνει και την πρώτη φορά.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="96" sourceLocale="el">WEB:15331632</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Γιατί δεν μπορώ να εγκαταστήσω το Outline Manager στα Windows;</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:34680;a">Μπορεί να δείτε το εξής μήνυμα σφάλματος: "Δυστυχώς, φαίνεται ότι το Outline δεν έχει εγκατασταθεί σωστά. Δοκιμάστε να το εγκαταστήσετε ξανά. Αν αυτό δεν διορθώσει το πρόβλημα <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">υποβάλετε σχόλια</a>".</p>
+
+<p data-aura-rendered-by="12:34680;a">Αν χρησιμοποιείτε το Outline στα Windows, μπορεί μερικές φορές να αντιμετωπίσετε ένα μη αναμενόμενο σφάλμα. Στις περισσότερες περιπτώσεις, θα πρέπει να διαγράψετε τον προσαρμογέα TAP του Outline (πρόγραμμα οδήγησης) και να επανεγκαταστήσετε το Outline.&nbsp;</p>
+
+<p data-aura-rendered-by="12:34680;a">Τα βήματα μπορεί να διαφέρουν ανάλογα με την έκδοση του λειτουργικού συστήματος Windows που χρησιμοποιείτε, αλλά παρακάτω αναφέρονται τα γενικά βήματα που μπορείτε να κάνετε για να απεγκαταστήσετε τον προσαρμογέα TAP και το Outline Manager και, έπειτα, να επανεγκαταστήσετε το Outline Manager.</p>
+
+<ol data-aura-rendered-by="12:34680;a">
+  <li>Απεγκατάσταση του προσαρμογέα TAP για το Outline Manager
+    <ol>
+      <li>Επιλέξτε Διαχείριση συσκευών και, έπειτα, Προσαρμογείς δικτύου.</li>
+      <li>Εντοπίστε το αρχείο TAP-Windows Adapter V9 ή τον προσαρμογέα TAP που σχετίζεται με το Outline.</li>
+      <li>Απεγκαταστήστε ή διαγράψτε αυτόν τον προσαρμογέα. Λάβετε υπόψη ότι αυτή η ενέργεια μπορεί να επηρεάσει άλλες εφαρμογές VPN που έχετε εγκαταστήσει.&nbsp;</li>
+    </ol>
+  </li>
+  <li>Απεγκατάσταση του Outline Manager
+    <ol>
+      <li>Επιλέξτε Προγράμματα και δυνατότητες και, έπειτα, Απεγκατάσταση προγράμματος.</li>
+      <li>Εντοπίστε την εφαρμογή Outline Manager και απεγκαταστήστε την.</li>
+      <li><a href="https://getoutline.org/get-started/#step-1" target="_blank">Κατεβάστε τη νεότερη έκδοση του Outline Manager</a>&nbsp;και επανεγκαταστήστε την στη συσκευή Windows. Με τη νέα εγκατάσταση, θα εγκατασταθεί αυτόματα ένας νέος προσαρμογέας TAP.</li>
+    </ol>
+  </li>
+</ol>
+
+<p data-aura-rendered-by="12:34680;a">Αν εξακολουθείτε να αντιμετωπίζετε πρόβλημα, <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">επικοινωνήστε με την ομάδα υποστήριξης.</a>&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="94" sourceLocale="el">WEB:15331727</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Αυτοματοποιημένη ρύθμιση Google Cloud</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:26310;a"><strong>Επισκόπηση</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Το Outline Manager περιλαμβάνει μια λειτουργία που σας επιτρέπει να διαμορφώνετε αυτόματα τον διακομιστή Outline σε έναν διακομιστή που εκτελείται στο Google Cloud. Εάν επιλέξετε να χρησιμοποιήσετε αυτή τη λειτουργία, το Outline Manager θα σας ζητήσει να συνδεθείτε με τον Λογαριασμό σας Google από τον οποίο θα εκχωρήσετε ορισμένες άδειες<a href="https://developers.google.com/identity/protocols/oauth2" target="_blank"> OAuth</a> στην τοπική εγκατάσταση του Outline Manager για σκοπούς διαμόρφωσης του λογαριασμού σας Google Cloud.<br />
+  Εάν δεν θέλετε να παράσχετε αυτές τις άδειες, μπορείτε να ακολουθήσετε τις οδηγίες σύνθετης ρύθμισης στο Outline Manager για εκτέλεση του Outline στο Google Cloud Platform.&nbsp;</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Εκχώρηση αδειών</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Για την αυτοματοποιημένη ρύθμιση, το Outline Manager ζητάει τις παρακάτω άδειες από τον Λογαριασμό σας Google.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Google Cloud Platform</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>Προβολή και διαχείριση των πόρων σας στη μηχανή Google Compute Engine</li>
+  <li>Προβολή των δεδομένων σας σε υπηρεσίες του Google Cloud και της διεύθυνσης ηλεκτρονικού ταχυδρομείου του Λογαριασμού σας Google</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Βασικά στοιχεία λογαριασμού</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>Προβολή της κύριας διεύθυνσης ηλεκτρονικού ταχυδρομείου του Λογαριασμού σας Google</li>
+  <li>Συσχέτισή σας με τα προσωπικά στοιχεία σας στο Google</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Επιπλέον πρόσβαση</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>Διαχείριση των έργων σας στο Cloud Platform</li>
+  <li>Προβολή και διαχείριση των λογαριασμών χρέωσής σας στο Google Cloud Platform</li>
+  <li>Διαχείριση της διαμόρφωσης υπηρεσίας API Google</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a">Με αυτές τις άδειες, μπορούμε να υποστηρίζουμε σύνθετες λειτουργίες για τη διαχείριση των διακομιστών Outline, όπως:</p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>Δυνατότητα να επιλέγετε τον σωστό λογαριασμό χρέωσης</li>
+  <li>Δημιουργία νέου έργου για την οργάνωση των διακομιστών Outline</li>
+  <li>Εμφάνιση διαθέσιμων κέντρων δεδομένων</li>
+  <li>Δημιουργία νέων εικονικών μηχανών για την εκτέλεση του Outline</li>
+  <li>Διαμόρφωση της νέας εικονικής μηχανής με το Outline</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Ανάκληση αδειών</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Μπορείτε να ανακαλέσετε την πρόσβαση στο Google Cloud Platform για το Outline Manager, μεταβαίνοντας στη σελίδα<a href="https://myaccount.google.com/permissions" target="_blank"> Ο λογαριασμός μου</a>. Εάν ανακαλέσετε την πρόσβαση, τυχόν διακομιστές που έχετε δημιουργήσει με την αυτοματοποιημένη ρύθμιση θα συνεχίσουν να εκτελούνται, αλλά δεν θα εμφανίζονται πλέον στο Outline Manager. Για να επαναφέρετε την πρόσβαση σε αυτούς, απλώς συνδεθείτε ξανά στο Google Cloud Platform, ξεκινώντας τη ροή αυτόματης ρύθμισης.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Οργάνωση έργου Outline</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Η αυτοματοποιημένη ρύθμιση Google Cloud χρησιμοποιεί ένα μόνο<a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects" target="_blank"> έργο Google Cloud</a> για την οργάνωση των διακομιστών Outline. Το έργο δημιουργείται κατά την πρώτη χρήση της αυτοματοποιημένης ρύθμισης, με ένα προτεινόμενο αναγνωριστικό έργου που ξεκινά με το "Outline-", ακολουθούμενο από μια συμβολοσειρά τυχαίων χαρακτήρων. Εάν το προτιμάτε, μπορείτε να επιλέξετε ένα διαφορετικό αναγνωριστικό έργου κατά τη δημιουργία. Το έργο θα ονομάζεται "Διακομιστές Outline".</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Λογαριασμός χρέωσης</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Τα έργα Google Cloud απαιτούν έναν συνδεδεμένο λογαριασμό χρέωσης που καθορίζει τα στοιχεία πληρωμής. Όταν χρησιμοποιήσετε την αυτοματοποιημένη ρύθμιση Google Cloud για πρώτη φορά, θα σας ζητηθεί να καταχωρίσετε έναν λογαριασμό χρέωσης για συσχέτιση με τους διακομιστές Outline. Μερικές φορές, η λειτουργία ενός διακομιστή διακόπτεται, επειδή υπάρχει πρόβλημα με τον λογαριασμό χρέωσης. Σε αυτήν την περίπτωση, θα πρέπει να συνδεθείτε στο<a href="https://console.cloud.google.com/getting-started" target="_blank"> Google Cloud Console</a>, να εντοπίσετε το έργο Google Cloud που σχετίζεται με το Outline (ονομάζεται "Διακομιστές Outline") και να ενημερώσετε τις ρυθμίσεις χρέωσης.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Καταστροφή διακομιστών</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Εάν θέλετε να καταστρέψετε τους διακομιστές που δημιουργήσατε χρησιμοποιώντας την αυτοματοποιημένη ρύθμιση, ο πιο εύκολος τρόπος να το κάνετε είναι από το Outline Manager. Ωστόσο, εάν θέλετε να καταστρέψετε οι ίδιοι τους διακομιστές, μπορείτε να συνδεθείτε στο<a href="https://console.cloud.google.com/getting-started" target="_blank"> Google Cloud Console</a>, να βρείτε το έργο που δημιουργήθηκε κατά την αρχική ρύθμιση (με το όνομα "Διακομιστές Outline") και είτε να διαγράψετε εκεί τους πόρους είτε να τερματίσετε το έργο.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="99" sourceLocale="el">WEB:15331728</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Συνήθεις ερωτήσεις σχετικά με τη ρύθμιση του διακομιστή Outline</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:28806;a"><strong>Μπορώ να χρησιμοποιήσω το Outline χωρίς διακομιστή;</strong><br />
+  <br />
+  Δυστυχώς, όχι. Το λογισμικό Outline απαιτεί πρόσβαση σε έναν διακομιστή, είτε η διαχείρισή του γίνεται από εσάς, τον οργανισμό σας είτε από κάποιο αξιόπιστο τρίτο μέρος.&nbsp;</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>Πόσος χρόνος χρειάζεται για τη ρύθμιση ενός διακομιστή Outline;</strong></p>
+
+<p data-aura-rendered-by="12:28806;a">Στις περισσότερες περιπτώσεις, λιγότερο από 5 λεπτά. Μπορείτε να εγκαταστήσετε το Outline σε οποιονδήποτε διακομιστή cloud. Ωστόσο, έχουμε συνεργαστεί με την DigitalOcean προκειμένου να σας προσφέρουμε μια φιλική, καθοδηγούμενη διαδικασία εγκατάστασης για να ολοκληρώσετε τη ρύθμιση του διακομιστή σας μόνο με μερικά κλικ.</p>
+
+<p data-aura-rendered-by="12:28806;a">Εάν επιλέξατε το AWS, το GCP ή μια σύνθετη ρύθμιση, έχουμε απλοποιήσει τη διαδικασία εγκατάστασης του διακομιστή σε ένα μόνο σενάριο που χειρίζεται τα περισσότερα περιβάλλοντα.&nbsp;</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>Πού μπορώ να ρυθμίσω έναν διακομιστή Outline;</strong></p>
+
+<p data-aura-rendered-by="12:28806;a">Μπορείτε να ρυθμίσετε έναν διακομιστή Outline στους περισσότερους παρόχους cloud οπουδήποτε λειτουργούν.</p>
+
+<p data-aura-rendered-by="12:28806;a">Η πιο εύκολη επιλογή είναι να τον ρυθμίσετε στην DigitalOcean, αφού έχει διακομιστές σε πολλές τοποθεσίες, όπως το Άμστερνταμ, το Τορόντο, το Σαν Φρανσίσκο και η Σιγκαπούρη. Εάν προτιμάτε να τον εγκαταστήσετε σε κάποιον άλλον πάροχο cloud ή στη δική σας υποδομή, μπορείτε να επιλέξτε τη Σύνθετη λειτουργία στην εφαρμογή Outline Manager και να ακολουθήσετε τις οδηγίες εγκατάστασης χρησιμοποιώντας ένα σενάριο ρύθμισης.&nbsp;</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>Πού πρέπει να ρυθμίσω τον διακομιστή Outline;</strong></p>
+
+<ol data-aura-rendered-by="12:28806;a">
+  <li>Υπάρχουν ορισμένα ζητήματα που πρέπει να εξετάσετε κατά την επιλογή μιας τοποθεσίας για τον διακομιστή Outline:</li>
+  <li>Η τοποθεσία του διακομιστή Outline επηρεάζει την εμπειρία των χρηστών στο διαδίκτυο. Για παράδειγμα, εάν ο διακομιστής βρίσκεται στο Άμστερνταμ, ο χρήστης που έχει πρόσβαση στον διακομιστή θα έχει την αίσθηση ότι περιηγείται στο διαδίκτυο σαν να βρισκόταν στην Ολλανδία. Ορισμένοι ιστότοποι μπορεί μάλιστα να εμφανίζονται στα ολλανδικά. Συνήθως, μπορείτε να αλλάξετε την τοπική γλώσσα χρησιμοποιώντας τον επιλογέα γλώσσας του ιστοτόπου.</li>
+  <li>Η απόσταση ανάμεσα στους χρήστες και τον διακομιστή Outline μπορεί να επηρεάσει την ταχύτητα. Γενικά, η φυσική απόσταση ανάμεσα στoυς χρήστες του Outline και τον διακομιστή μπορεί να επηρεάσει την ταχύτητα του διαδικτύου για τους χρήστες. Στις περισσότερες περιπτώσεις, μπορείτε να επιλέξετε μια τοποθεσία διακομιστή όσο το δυνατόν πιο κοντά στους αναμενόμενους χρήστες. Ωστόσο, μπορείτε να χρησιμοποιήσετε τον χάρτη <a href="https://www.submarinecablemap.com/" rel="noopener" target="_blank">Submarine Cable Map</a> για να δείτε ποια καλώδια διαδικτύου συνδέονται με τη χώρα ή την περιοχή σας.</li>
+  <li>Η τοποθεσία του διακομιστή VPN μπορεί να επηρεάζει το νομικό πλαίσιο. Έχετε υπόψη ότι το λογισμικό Outline δεν καταγράφει την επισκεψιμότητά σας. Μάθετε περισσότερα σχετικά με την <a href="/outline-faq/answer/14919822" rel="noopener" target="_blank">ασφάλεια και το απόρρητο κατά τη χρήση του Outline</a>.</li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="el">WEB:15331758</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Είμαι προγραμματιστής. Πού μπορώ να βρω υποστήριξη για την ενσωμάτωση του Outline SDK στην εφαρμογή μου;</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Αυτός ο ιστότοπος υποστήριξης προορίζεται για χρήστες του Outline Manager και του Outline Client. Οι προγραμματιστές μπορούν να χρησιμοποιήσουν το GitHub για υποστήριξη. Για να κάνετε μια ερώτηση, δημοσιεύστε τη στο&nbsp;<a href="https://github.com/Jigsaw-Code/outline-sdk/discussions" target="_blank">Discussion board</a> του SDK. Η ενότητα Discussion board είναι ένα εξαιρετικό μέρος για να κάνετε ερωτήσεις, να μοιράζεστε ιδέες, να δημοσιεύετε συνδέσμους προς επιδείξεις και να υποστηρίζετε άλλους προγραμματιστές που χρησιμοποιούν το Outline SDK. Για αιτήματα λειτουργιών ή αναφορές σφαλμάτων, ανοίξτε&nbsp;εναλλακτικά ένα&nbsp;<a href="https://github.com/Jigsaw-Code/outline-sdk/issues/new" target="_blank">Πρόβλημα</a>.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="74" sourceLocale="el">WEB:15448041</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Διαθέσιμες γλώσσες</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Το Outline είναι διαθέσιμο στις ακόλουθες γλώσσες:</p>
+
+<ul>
+  <li aria-level="1">Αφρικάανς</li>
+  <li aria-level="1">Αλβανικά</li>
+  <li aria-level="1">Αμαρικά</li>
+  <li aria-level="1">Αραβικά</li>
+  <li aria-level="1">Αρμενικά</li>
+  <li aria-level="1">Αζερμπαϊτζανικά</li>
+  <li aria-level="1">Μπενγκάλι</li>
+  <li aria-level="1">Βοσνιακά</li>
+  <li aria-level="1">Βουλγαρικά</li>
+  <li aria-level="1">Βιρμανικά</li>
+  <li aria-level="1">Καταλανικά</li>
+  <li aria-level="1">Κινεζικά (Απλοποιημένα)</li>
+  <li aria-level="1">Κινεζικά (Παραδοσιακά)</li>
+  <li aria-level="1">Κροατικά</li>
+  <li aria-level="1">Τσεχικά</li>
+  <li aria-level="1">Δανικά</li>
+  <li aria-level="1">Ολλανδικά</li>
+  <li aria-level="1">Αγγλικά (ΗΠΑ)</li>
+  <li aria-level="1">Αγγλικά (Μεγάλης Βρετανίας)</li>
+  <li aria-level="1">Εσθονικά</li>
+  <li aria-level="1">Φιλιππινέζικα</li>
+  <li aria-level="1">Φινλανδικά</li>
+  <li aria-level="1">Γαλλικά</li>
+  <li aria-level="1">Γεωργιανά</li>
+  <li aria-level="1">Γερμανικά</li>
+  <li aria-level="1">Ελληνικά</li>
+  <li aria-level="1">Εβραϊκά</li>
+  <li aria-level="1">Χίντι</li>
+  <li aria-level="1">Ουγγρικά</li>
+  <li aria-level="1">Ισλανδικά</li>
+  <li aria-level="1">Ινδονησιακά</li>
+  <li aria-level="1">Ιταλικά</li>
+  <li aria-level="1">Ιαπωνικά</li>
+  <li aria-level="1">Καζακικά</li>
+  <li aria-level="1">Χμερ</li>
+  <li aria-level="1">Κορεατικά</li>
+  <li aria-level="1">Λαοτινά</li>
+  <li aria-level="1">Λετονικά</li>
+  <li aria-level="1">Λιθουανικά</li>
+  <li aria-level="1">Σλαβομακεδονικά</li>
+  <li aria-level="1">Μαλαϊκά</li>
+  <li aria-level="1">Μαραθικά</li>
+  <li aria-level="1">Μογγολικά</li>
+  <li aria-level="1">Νεπάλι</li>
+  <li aria-level="1">Νορβηγικά</li>
+  <li aria-level="1">Περσικά</li>
+  <li aria-level="1">Πολωνικά</li>
+  <li aria-level="1">Πορτογαλικά (Βραζιλίας)</li>
+  <li aria-level="1">Πορτογαλικά (Ευρώπης)</li>
+  <li aria-level="1">Ρουμανικά</li>
+  <li aria-level="1">Ρωσικά</li>
+  <li aria-level="1">Σερβικά (Κυριλλικά)</li>
+  <li aria-level="1">Σερβικά (Λατινικά)</li>
+  <li aria-level="1">Σινχάλα</li>
+  <li aria-level="1">Σλοβακικά</li>
+  <li aria-level="1">Σλοβενικά</li>
+  <li aria-level="1">Ισπανικά (Ευρώπης)</li>
+  <li aria-level="1">Ισπανικά (Λατινικής Αμερικής)</li>
+  <li aria-level="1">Σουαχίλι</li>
+  <li aria-level="1">Σουηδικά</li>
+  <li aria-level="1">Ταμίλ</li>
+  <li aria-level="1">Ταϊλανδικά</li>
+  <li aria-level="1">Τουρκικά</li>
+  <li aria-level="1">Ουκρανικά</li>
+  <li aria-level="1">Ουρντού</li>
+  <li aria-level="1">Βιετναμέζικα</li>
+</ul>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="79" sourceLocale="el">WEB:15528599</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Σφάλματα τείχους προστασίας</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:268;a">Υπάρχουν τρεις τύποι προβλημάτων που μπορεί να αντιμετωπίσετε λόγω ενός τείχους προστασίας:</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>Μπορεί να αποκλειστείτε από ένα τείχος προστασίας δικτύου.</strong></p>
+
+<p data-aura-rendered-by="12:268;a">Εάν προσπαθείτε να εγκαταστήσετε το Outline ενώ είστε συνδεδεμένοι σε ένα δίκτυο που προστατεύεται από τείχος προστασίας, όπως το δίκτυο ενός εκπαιδευτικού ιδρύματος ή το δίκτυο στον χώρο εργασίας σας, κάντε την εγκατάσταση αφού συνδεθείτε σε άλλο δίκτυο.</p>
+
+<p data-aura-rendered-by="12:268;a">Εάν αυτό δεν έχει αποτέλεσμα, επικοινωνήστε με τον διαχειριστή δικτύου και ζητήστε του να επιτρέψει τις συνδέσεις μεταξύ του προστατευόμενου δικτύου και του διακομιστή Outline που χρησιμοποιείτε. Θα πρέπει να γνωρίζετε τη διεύθυνση IP του διακομιστή Outline και τις θύρες στις οποίες εκτελείται το Outline. Οι θύρες αναφέρονται στο τέλος του σεναρίου εγκατάστασης.</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>Μπορεί να αποκλειστείτε από ένα τείχος προστασίας συσκευής</strong>.</p>
+
+<p data-aura-rendered-by="12:268;a">Εάν υπάρχει στη συσκευή σας λογισμικό που εμποδίζει τις εξερχόμενες συνδέσεις σε μη τυπικές θύρες, ή μη αναγνωρισμένο λογισμικό (ZoneAlarm της CheckPoint), συμβουλευτείτε το υλικό τεκμηρίωσης της συσκευής ή του λογισμικού σας για να μάθετε πώς μπορείτε να δημιουργήσετε μια εξαίρεση για το Outline.</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>Μπορεί να αποκλειστείτε από ένα τείχος προστασίας διακομιστή.</strong></p>
+
+<p data-aura-rendered-by="12:268;a">Ο πάροχος cloud που έχετε επιλέξει μπορεί να απαιτεί την αυτόματη δημιουργία εξαιρέσεων στο τείχος προστασίας του διακομιστή σας για το άνοιγμα των θυρών στις οποίες εκτελείται το Outline. Μετά την εκτέλεση του σεναρίου εγκατάστασης, θα πρέπει να σας γνωστοποιήθηκαν οι δύο τυχαία επιλεγμένες θύρες στις οποίες θα εκτελείται το Outline στον διακομιστή σας. Αρκεί να ανοίξετε αυτές τις δύο θύρες.<br />
+  <br />
+  Για να δημιουργήσετε εξαιρέσεις στο τείχος προστασίας του διακομιστή σας, σας συνιστούμε να συμβουλευτείτε το υλικό τεκμηρίωσης για το 'ufw' και το 'iptables':</p>
+
+<ul data-aura-rendered-by="12:268;a">
+  <li>UFW:&nbsp;<a href="https://help.ubuntu.com/community/UFW" rel="noopener" target="_blank">https://help.ubuntu.com/community/UFW</a></li>
+  <li>Iptables:&nbsp;<a href="https://help.ubuntu.com/community/IptablesHowTo" rel="noopener" target="_blank">https://help.ubuntu.com/community/IptablesHowTo</a></li>
+</ul>
+</div>
+</body>
+</html>

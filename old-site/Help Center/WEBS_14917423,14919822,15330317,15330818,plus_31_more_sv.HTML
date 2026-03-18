@@ -1,0 +1,1084 @@
+<html>
+<head>
+<style type="text/css">
+.gkms-gtt-answer-header, .gkms-gtt-message-header {
+  color: black !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 2em;
+  padding: 4px;
+}.gkms-gtt-answer-header {
+  background-color: #E5ECF9;
+  border-top: 1px solid #36C;
+}
+.gkms-gtt-message-header {
+  background-color: #F8F8F8;
+  border-top: 1px solid #CCC;
+}
+.gkms-gtt-hide {
+  visibility: hidden;
+}
+.form_field_data .temporary_signal_wrapper {
+  display: inline;
+}
+</style>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+</head>
+<body lang="sv">
+<br/><div class="gkms id notranslate" sourceGlobalRevision="116" sourceLocale="sv">WEB:14917423</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Så här fungerar Outline</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1723;a">&nbsp;</p>
+
+<p data-aura-rendered-by="12:1723;a"><strong>Serverinstallation</strong><br />
+  <br />
+  ​Även om det kan verka enkelt att installera Outline sker flera komplexa steg bakom kulisserna när servern installeras. När Outline installeras kör ett installationsskript följande steg:</p>
+
+<ul data-aura-rendered-by="12:1723;a">
+  <li>Den stabila versionen av Shadowbox-avbildningen hämtas och importeras med hjälp av Docker. Bilden finns på <a href="https://quay.io/" target="_blank">Quay.io</a>, i <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank">https://quay.io/repository/outline/shadowbox?tab=tags</a>. Bilden innehåller Outline-servern och Management API som senare används av Outline Server Management-appen för att skapa och ta bort åtkomstnycklar, välja att rapportera anonyma mätvärden eller inte osv.</li>
+  <li><a href="https://github.com/v2tec/watchtower" target="_blank">Watchtower</a> installeras och konfigureras för att söka efter uppdateringar av avbildningen varje timme. På så sätt är alla Outline-servrar alltid uppdaterade med de senaste funktionerna och säkerhetsförbättringarna.</li>
+  <li>En webbserver som används för åtkomst till Management-API:et startas på en slumpmässig port på en hemlig och slumpmässig sökväg.</li>
+  <li>Ett <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank">självsignerat SSL-certifikat</a> skapas så att hanteringen av Outline-servern kan krypteras med hjälp av TLS även om det inte finns ett domännamn. En unik signatur för det här certifikatet skapas också och lagras i Outline Manager-appen för att förhindra man-i-mitten-attacker.</li>
+</ul>
+
+<p data-aura-rendered-by="12:1723;a">Installationen av Outline behöver inte konfigureras efter installationen<br />
+  <br />
+  <strong>Serversäkerhet</strong><br />
+  <br />
+  Outline-mjukvaran har öppen källkod, vilket innebär att alla kan se koden och förbättra den om de upptäcker brister. Vår kod lagras på <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank">GitHub</a>.<br />
+  <br />
+  Dessutom uppdateras alla Outline-servrar automatiskt när en ny version lanseras, så att ingen Outline-server körs med tidigare programvaruversioner.<br />
+  <br />
+  I syfte att hantera åtkomstnycklar på servern interagerar Outline Manager-appen med en hanteringstjänst på Outline-servern. Hanteringstjänsten körs via en slumpmässig port och en hemlig och unik sökväg. Själva hanteringstjänsten är avläsningsskyddad eftersom den inte svarar på förfrågningar om inte den hemliga sökvägen anges. Slutligen krypteras all kommunikation med hanteringstjänsten med ett <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank">självsignerat SSL-certifikat</a>.<br />
+  <br />
+  Dessutom lagras inga loggar på Outline-servern, så även om vi skulle utsättas för intrång skulle ingen data avslöjas. Läs mer <a href="https://support.getoutline.org/s/article/Security-and-privacy" target="_blank">här</a>. Outline granskades av <a href="https://radicallyopensecurity.com/" target="_blank">Radically Open Security</a> och <a href="https://cure53.de/" target="_blank">Cure53</a> under 2018. Läs rapporterna <a href="https://support.getoutline.org/s/article/Security-and-privacy" target="_blank">här</a>.<br />
+  <br />
+  <strong>Hantera UDP-trafik</strong><br />
+  <br />
+  Outline kan fungera som ett VPN för hela systemet, vilket innebär att UDP-trafiken körs via Outline-servern.<br />
+  <br />
+  <strong>DNS-trafik</strong></p>
+
+<p data-aura-rendered-by="12:1723;a"><br />
+  Outline gör DNS-uppslagningar via Outline-servern och skyddar dessa med samma kryptering som används för all annan nätverksaktivitet. Dina DNS-förfrågningar går via Outline-servern till Dyn Internet Guide, OpenDNS, Cloudflare DNS eller Quad9 DNS. Outline loggar aldrig DNS-uppslagningar.&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="232" sourceLocale="sv">WEB:14919822</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Säkerhet och integritet när du använder Outline</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:258;a">Säkerhet och integritet när du använder Outline</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Så här skyddas kommunikation online av Outline</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Internettrafik är som mest sårbar för övervakning när den färdas inom ett lokalt eller nationellt nätverk.</p>
+
+<p data-aura-rendered-by="12:258;a">Med Outline krypteras internettrafiken medan den färdas inom ett nationell nätverk tills den når Outline-servern. På så sätt är kommunikationen privat. När trafik krypteras med Outline kan ingen obehörig i nätverket se vilka webbplatser du besöker eller vilken information som överförs.</p>
+
+<p data-aura-rendered-by="12:258;a">Med hjälp av Outline kan du även komma åt säkra verktyg för ändpunktskommunikation som kanske inte är tillgängliga i ditt land.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Krypteringsstandard</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Outline krypterar kommunikation mellan enheten och Outline-servern med hjälp av IETF Poly 1305-chiffret AEAD 256-bit Chacha2020. AEAD-chiffer erbjuder konfidentialitet, integritet och autenticitet och fungerar utmärkt på modern hårdvara.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Säkerhetsgranskningar</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Under 2018 granskades Outline av Radically Open Security och Cure53, två oberoende organisationer inom digital säkerhet som granskar mjukvara mot den senaste säkerhetsstandarden. Radically Open Security gjorde ytterligare en granskning 2022 och Cure53 gjorde en granskning av Outline SDK 2024. Rapporterna finns att läsa här:</p>
+
+<ul data-aura-rendered-by="12:258;a">
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf" target="_blank">Radically Open Security Penetration Test Report (March 2018)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf" target="_blank">Cure53 Pentest &amp; Audit Report Jigsaw Outline (December 2018)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf" target="_blank">Radically Open Security Penetration Test Report (december 2022)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf" target="_blank">Cure53 Pentest Report Jigsaw Outline VPN SDK (januari 2024)</a></li>
+</ul>
+
+<p data-aura-rendered-by="12:258;a"><strong>Anonyma mätvärden och loggar</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Outline registrerar vilken bandbredd som används i form av antalet överförda byte för varje åtkomstnyckel. Med hjälp av dessa uppgifter kan serveradministratörerna justera prenumerationerna på bandbredd när det behövs, men de kan inte se den faktiska informationen som överfördes via Outline-servern.</p>
+
+<p data-aura-rendered-by="12:258;a">Läs mer om <a href="/outline-faq/answer/15331222" rel="noopener" target="_blank">insamling av data och information</a> i Outline.</p>
+
+<hr data-aura-rendered-by="12:258;a" />
+<p data-aura-rendered-by="12:258;a"><strong>Vanliga frågor om säkerhet och integritet</strong>&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Kan Outline göra mig anonym på internet?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Nej, Outline är inte ett verktyg för anonymitet. Outline skyddar din integritet från personer med insyn i nätverket.</p>
+
+<p data-aura-rendered-by="12:258;a">Outline ger dig inte fullständig anonymitet på webbplatser du besöker, eftersom webbplatserna fortfarande kan identifiera dig när du loggar in eller genom att använda tekniker som webbläsarsignaturer. För mobilappar har de flesta moderna smartphones API:er som ger installerade appar möjlighet att ta emot platsdata oberoende av proxyservern, eftersom de kan förlita sig på den inbyggda GPS:en</p>
+
+<p data-aura-rendered-by="12:258;a">I allmänhet ger VPN viktiga former av skydd, i synnerhet från övervakning på internet, men det finns alltid risker med att använda internet. Om en internetleverantör känner till din identitet och kan iaktta nätverkstrafiken är det även möjligt att det går att fastställa Outline-serverns IP-adress, även om du har ett VPN. Informationen kan användas för att blockera åtkomst till Outline-servern och identifiera användningsmönster, som när du oftast är online och kanske även din ungefärliga plats.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Kan någon se om jag använder Outline?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Det är möjligt. Plattformarna och tjänsterna du använder kan troligtvis se att anslutningen kommer från en molnserver. Ibland kan de dra slutsatsen att du använder ett VPN, men de kan inte se internettrafikens innehåll.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Skyddar Outline mig från alla typer av hot på internet?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Nej. Inget enskilt verktyg kan skydda dig mot alla faror på internet. Med Outline får du åtkomst till ett öppet internet samtidigt som din integritet skyddas genom kryptering av trafiken, men vi rekommenderar att du vidtar ytterligare försiktighetsåtgärder så att du skyddas mot olika typer av angrepp, t.ex. skadlig kod och nätfiske.</p>
+
+<p data-aura-rendered-by="12:258;a">Vi rekommenderar att du samarbetar med organisationens expert på cybersäkerhet för att öka skyddet online. Du kan även få personlig rådgivning från ledande säkerhetsexperter hos <a href="https://securityplanner.org/" target="_blank">Security Planner</a>, en webbplats som har skapats för att tillhandahålla tydliga anvisningar om hur du väljer de verktyg för cybersäkerhet som passar dig.</p>
+
+<p data-aura-rendered-by="12:258;a">Du kan även kolla in andra produkter för cybersäkerhet från <a href="https://jigsaw.google.com/" target="_blank">Jigsaw</a>, till exempel <a href="https://getintra.org/" target="_blank">Intra</a>, <a href="https://g.co/shield" target="_blank">Project Shield</a> och <a href="https://chrome.google.com/webstore/detail/password-alert/noondiphcddnnabmjcihcjfbhfklnnep?" rel="noopener" target="_blank">Lösenordsskydd</a>.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Är det lagligt att använda ett VPN?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Kontrollera lokala lagar och föreskrifter, samt användarvillkoren för den molnleverantör du tänkt använda innan du kör Outline eller använder appen.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="89" sourceLocale="sv">WEB:15330317</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Varför kommer jag inte åt internet även om jag är ansluten till Outline-servern?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:32933;a">Om du använder en mobiltelefon kan du prova att växla mellan mobildata och wifi. Ibland fungerar bara en typ av anslutning. Om du använder en dator kan du prova att koppla från bredbandet och sedan ansluta på nytt.</p>
+
+<p data-aura-rendered-by="12:32933;a">Om problemet kvarstår är det troligtvis Outline-servern det är fel på. Kontakta <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">tjänsteansvarig</a> och be om en ny åtkomstnyckel till en alternativ server. De kan eventuellt även höja datagränsen för din<a href="https://google-jigsaw--jigsawuat.sandbox.my.site.com/outline/s/article/Terminology" target="_blank"> </a><a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">åtkomstnyckel</a> om nyckeln överskridit sin kvot.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="296" sourceLocale="sv">WEB:15330818</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Vilka är systemkraven för att köra Outline-klienten?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:24676;a">Du kan testa Outline i alla operativsystem. Minimikraven för operativsystem är följande:</p>
+
+<table class="borders" data-aura-rendered-by="12:24676;a" width="312">
+  <tbody>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top"><b>Operativsystem</b></td>
+      <td colspan="1" rowspan="1" valign="top"><b>Minimiversion</b></td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Android</td>
+      <td colspan="1" rowspan="1" valign="top">10</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">iOS</td>
+      <td colspan="1" rowspan="1" valign="top">15.5</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">macOS</td>
+      <td colspan="1" rowspan="1" valign="top">12.0</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Windows</td>
+      <td colspan="1" rowspan="1" valign="top">10</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Linux</td>
+      <td colspan="1" rowspan="1" valign="top">Ubuntu&nbsp;20.04</td>
+    </tr>
+  </tbody>
+</table>
+
+<p data-aura-rendered-by="12:24676;a"><br />
+  Vill du hjälpa till att få Outline Client att fungera i fler operativsystem?&nbsp;<a href="https://github.com/Jigsaw-Code/outline-client#platform-specific-development" target="_blank">Bidra till vår kodbas</a>&nbsp;på GitHub!</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="107" sourceLocale="sv">WEB:15330824</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hur uppdaterar jag programvaran för min Outline-server?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:10378;a">Outline-servrar uppdateras automatiskt med de senaste säkerhetsförbättringarna, vilket innebär att du alltid använder den senaste Outline-tekniken. Den automatiserade uppdateringsprocessen drivs av <a href="https://github.com/v2tec/watchtower" target="_blank">Watchtower</a>, ett bibliotek med öppen källkod som regelbundet kontrollerar och uppdaterar dockerbilden som innehåller Outline-programvaran.</p>
+
+<p data-aura-rendered-by="12:10378;a">När du installerar Outline med Outline Manager konfigurerar vi även ett cron-jobb som automatiskt uppgraderar programvaran på servern med <a href="https://wiki.debian.org/UnattendedUpgrades" target="_blank">Unattended Upgrades</a> (Ubuntu) och startar om efter behov. Observera att det här inte händer i avancerat läge, för att den befintliga konfigurationen ska bevaras. Detta beror på att vi antar att värden används i andra syften utöver att köra Outline.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="102" sourceLocale="sv">WEB:15330825</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hur laddar jag ned Outline Manager om nedladdningslänken inte fungerar?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Använd <a href="https://getoutline.org/get-started/#step-1" target="_blank">den här länken</a> eller <a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">den här länken</a> om du vill ladda ned appar för många olika operativsystem direkt.&nbsp;</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="129" sourceLocale="sv">WEB:15330920</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Terminologi</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:23504;a"><strong>Vad är VPN?</strong><br />
+  Ett virtuellt privat nätverk (VPN) är en privat anslutning mellan dina enheter och en värdserver. När du använder VPN döljs din trafik från internetleverantören. VPN kan användas för att</p>
+
+<ul data-aura-rendered-by="12:23504;a">
+  <li>skydda din data när du använder ett offentligt wifi-nätverk</li>
+  <li>dölja din webbinformation från din internetleverantör och myndigheter</li>
+  <li>komma åt ocensurerat innehåll från världen över.</li>
+</ul>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Hur skiljer sig Outline från traditionella VPN?</strong><br />
+  Internetleverantörer kan enkelt upptäcka och blockera traditionella VPN genom att identifiera vanliga säkerhetsprotokoll och/eller mönster för trafikvolym. Outline är mer motståndskraftigt än traditionella VPN eftersom det är byggt med ett protokoll som har utformats för att vara svårt att upptäcka och därmed svårare att blockera. Outline motstår sofistikerade former av censur som nätverksbaserad blockering eller IP-blockering.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Vad är en Outline-server?</strong><br />
+  En Outline-server kör ett VPN som tillåtna användare ansluter till. Om du skapar ett nytt nätverk kan du använda din egen säkra server som Outline-server om du har en, eller så kan du använda en leverantör av molntjänster, till exempel</p>
+
+<ul data-aura-rendered-by="12:23504;a">
+  <li>DigitalOcean</li>
+  <li>Google Cloud Platform (GCP)</li>
+  <li>Amazon Web Services (AWS)</li>
+</ul>
+
+<p data-aura-rendered-by="12:23504;a"><a id="One" target="_blank"></a>Du konfigurerar servern i Outline Manager.<br />
+  <br />
+  <strong><a id="servicemanager" name="servicemanager"></a>Vad är en tjänsteansvarig?</strong><br />
+  En tjänsteansvarig är personen som är ansvarig för att konfigurera Outline-servern och dela åtkomstnycklarna med användare. Den tjänsteansvariga är vanligtvis ansvarig för kostnaden för användningen av servern.&nbsp;<br />
+  <br />
+  <strong><a id="accesskey" name="accesskey"></a>Vad är en åtkomstnyckel?</strong><br />
+  En åtkomstnyckel används för att komma åt en befintlig Outline-server och ansluta till VPN. En <a href="#servicemanager" rel="noopener">tjänsteansvarig</a> ger dig en åtkomstnyckel, eller så kan du <a href="/outline-faq/answer/15331530" rel="noopener" target="_blank">konfigurera en Outline-server</a> själv.&nbsp;Här är ett exempel på hur en åtkomstnyckel ser ut (endast exempel, fungerar inte):&nbsp;<br />
+  <br />
+  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1<br />
+  <br />
+  <strong>Vad är Outline Manager?</strong><br />
+  Outline Manager är ett datorprogram som en tjänsteansvarig kan använda för att konfigurera en Outline-server, generera <a href="#accesskey" rel="noopener">åtkomstnycklar</a> och ange datagränser för användningen per nyckel. Du kan ladda ned den senaste versionen av Outline Manager <a href="https://getoutline.org/get-started/#step-3" target="_blank">här</a> eller <a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">här</a>.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Vad är Outline Client?</strong><br />
+  Outline Client är ett program, tillgängligt för dator och mobil, som gör att du kan ansluta till en Outline-server och få åtkomst till VPN med hjälp av en åtkomstnyckel. Du kan ladda ned den senaste versionen av Outline Client <a href="https://getoutline.org/get-started/#step-3" target="_blank">här</a> eller <a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">här</a>.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Vad är datagränser?</strong><br />
+  Med Outline Manager kan tjänsteansvariga ställa in en löpande datagräns på 30 dagar för åtkomstnycklar för att förhindra överanvändning och hålla koll på kostnaderna. Tjänsteansvariga kan ställa in en standardgräns som gäller för alla nycklar samt andra gränser för enskilda nycklar som åsidosätter standardgränsen. När en gräns har ställts in börjar den gälla omedelbart och tillämpas varje timme.</p>
+
+<p data-aura-rendered-by="12:23504;a">Om tjänsteansvariga väljer att dela mätvärden med Jigsaw kan de läsa om hur användningen av datagränser rapporteras i <a href="/outline-faq/answer/15331222" rel="noopener" target="_blank">policyn för datainsamling</a>.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="110" sourceLocale="sv">WEB:15331121</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Stöder ni getoutline.me och Telegram-kanalen @OutlineVpnOfficial?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Teamet på Outline har fått många frågor om webbplatsen <a href="http://getoutline.me/" target="_blank">getoutline.me</a> och den tillhörande Telegram-kanalen @OutlineVpnOfficial. Tjänsterna har ingen koppling till oss på Outline och vi kan inte hjälpa användare som har problem med nycklar från dessa tjänster.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="sv">WEB:15331122</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Tillgängliga språk</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Outline finns på följande språk:</p>
+
+<ul>
+  <li aria-level="1">afrikaans</li>
+  <li aria-level="1">albanska</li>
+  <li aria-level="1">amhariska</li>
+  <li aria-level="1">arabiska</li>
+  <li aria-level="1">armeniska</li>
+  <li aria-level="1">azerbajdzjanska</li>
+  <li aria-level="1">bengali</li>
+  <li aria-level="1">bosniska</li>
+  <li aria-level="1">bulgariska</li>
+  <li aria-level="1">burmesiska</li>
+  <li aria-level="1">katalanska</li>
+  <li aria-level="1">kinesiska (förenklad)</li>
+  <li aria-level="1">kinesiska (traditionell)</li>
+  <li aria-level="1">kroatiska</li>
+  <li aria-level="1">tjeckiska</li>
+  <li aria-level="1">danska</li>
+  <li aria-level="1">nederländska</li>
+  <li aria-level="1">engelska (USA)</li>
+  <li aria-level="1">engelska (Förenade kungariket)</li>
+  <li aria-level="1">estniska</li>
+  <li aria-level="1">filipino</li>
+  <li aria-level="1">finska</li>
+  <li aria-level="1">franska</li>
+  <li aria-level="1">georgiska</li>
+  <li aria-level="1">tyska</li>
+  <li aria-level="1">grekiska</li>
+  <li aria-level="1">hebreiska</li>
+  <li aria-level="1">hindi</li>
+  <li aria-level="1">ungerska</li>
+  <li aria-level="1">isländska</li>
+  <li aria-level="1">indonesiska</li>
+  <li aria-level="1">italienska</li>
+  <li aria-level="1">japanska</li>
+  <li aria-level="1">kazakiska</li>
+  <li aria-level="1">khmer</li>
+  <li aria-level="1">koreanska</li>
+  <li aria-level="1">laotiska</li>
+  <li aria-level="1">lettiska</li>
+  <li aria-level="1">litauiska</li>
+  <li aria-level="1">makedonska</li>
+  <li aria-level="1">malajiska</li>
+  <li aria-level="1">marathi</li>
+  <li aria-level="1">mongoliska</li>
+  <li aria-level="1">nepali</li>
+  <li aria-level="1">norska</li>
+  <li aria-level="1">persiska</li>
+  <li aria-level="1">polska</li>
+  <li aria-level="1">portugisiska (Brasilien)</li>
+  <li aria-level="1">portugisiska (europeisk)</li>
+  <li aria-level="1">rumänska</li>
+  <li aria-level="1">ryska</li>
+  <li aria-level="1">serbiska (kyrillisk)</li>
+  <li aria-level="1">serbiska (latinsk)</li>
+  <li aria-level="1">singalesiska</li>
+  <li aria-level="1">slovakiska</li>
+  <li aria-level="1">slovenska</li>
+  <li aria-level="1">spanska (europeisk)</li>
+  <li aria-level="1">spanska (latinamerikansk)</li>
+  <li aria-level="1">swahili</li>
+  <li aria-level="1">svenska</li>
+  <li aria-level="1">tamil</li>
+  <li aria-level="1">thai</li>
+  <li aria-level="1">turkiska</li>
+  <li aria-level="1">ukrainska</li>
+  <li aria-level="1">urdu</li>
+  <li aria-level="1">vietnamesiska</li>
+</ul>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="110" sourceLocale="sv">WEB:15331125</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Varför går det inte att installera Outline Client på Windows?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:31254;a">Du kan se felmeddelandet ”Det verkar som att Outline inte har installerats korrekt. Testa att installera det igen. Om det inte fungerar kan du <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">skicka feedback</a>.”</p>
+
+<p data-aura-rendered-by="12:31254;a">Om du använder Outline på Windows kan det hända att du stöter på ett oväntat fel. I de flesta fall måste Outline TAP-adaptern (drivrutinen) raderas och Outline ominstalleras.</p>
+
+<p data-aura-rendered-by="12:31254;a">Hur du gör detta varierar beroende på vilken version av Windows operativsystem du använder, men nedan ser du allmänna anvisningar för hur du avinstallerar TAP-adaptern och Outline och sedan ominstallerar Outline.</p>
+
+<ol data-aura-rendered-by="12:31254;a">
+  <li>Avinstallera TAP-adaptern för Outline
+    <ul>
+      <li>Gå till <strong>Enhetshanterare</strong> och sedan <strong>Nätverkskort</strong>.</li>
+      <li>Leta reda på filen <strong>TAP-Windows Adapter V9</strong> eller den TAP-adapter som är kopplad till Outline.</li>
+      <li>Avinstallera eller radera den här adaptern. Tänk på att det här kan påverka andra VPN-appar som du har installerat.&nbsp;</li>
+    </ul>
+  </li>
+  <li>Avinstallera Outline Client
+    <ul>
+      <li>Gå till <strong>Program och funktioner</strong> och sedan till <strong>Avinstallera program</strong>.</li>
+      <li>Leta reda på Outline Client-appen och avinstallera Outline Client.</li>
+      <li><a href="https://getoutline.org/get-started/#step-3" target="_blank">Ladda ned den senaste versionen av Outline Client</a> och ominstallera den på din Windows-enhet. Den nya installationen ska installera en ny TAP-adapter automatiskt.</li>
+    </ul>
+  </li>
+</ol>
+
+<p data-aura-rendered-by="12:31254;a">Om du fortfarande har problem kan du <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">kontakta support</a>.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="109" sourceLocale="sv">WEB:15331126</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Varför går det inte att ansluta till Outline-tjänsten?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Att du inte kan ansluta till Outline-tjänsten kan bero på några olika anledningar:&nbsp;</p>
+
+<ul>
+  <li aria-level="1"><strong>Enheten är</strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#One" rel="noopener"><strong> </strong></a><a href="#Internetissues" rel="noopener"><strong>inte ansluten till internet</strong></a><a href="#Internetissues" rel="noopener"> </a><strong>. </strong>Ibland förlorar enheten kontakten med nätverket och det kan ta en stund innan den har uppdaterat nätverksikonerna. Det är också möjligt att enheten är ansluten till det lokala nätverket men att internetanslutningen är nere.</li>
+  <li aria-level="1"><strong>Nätverkets</strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#Two"><strong> </strong></a><a href="#FirewallIssues" rel="noopener"><strong>brandvägg blockerar åtkomsten</strong></a><a href="#FirewallIssues" rel="noopener"> </a><strong><a href="#FirewallIssues" rel="noopener">t</a>ill Outline-servern. </strong>Det händer ofta när man använder offentliga nätverk på till exempel skolor och arbetsplatser, eller kostnadsfria trådlösa nätverk.</li>
+  <li aria-level="1"><strong>Enheten har en</strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#Three"><strong> </strong></a><a href="#SoftwareIssues" rel="noopener"><strong>brandvägg eller ett antivirusprogram</strong></a><a href="#SoftwareIssues" rel="noopener"> </a><strong>som blockerar åtkomsten till Outline-servern.</strong></li>
+  <li aria-level="1"><strong>Dina</strong><a href="#DeviceSettings" rel="noopener"><strong> </strong><strong>telefoninställningar</strong></a><strong> kan behöva ändras.</strong></li>
+  <li aria-level="1"><strong>Tjänstansvarig kan ha</strong><a href="#ServerIssues" rel="noopener"><strong> </strong><strong>förstört servern, eller så kanske din begäran blockeras av internetleverantören</strong></a>.</li>
+</ul>
+
+<p><a id="Internetissues" name="Internetissues"><strong>Problem med internetanslutningen:</strong></a></p>
+
+<p><strong>Så här testar du:</strong></p>
+
+<p>Inaktivera Outline och kontrollera om anslutningen till internet återställs.</p>
+
+<ul>
+  <li aria-level="1">Om den gör det hittar du fler felsökningsalternativ nedan.</li>
+  <li aria-level="1">Om den inte gör det väntar du en liten stund och kontrollerar om anslutningsinställningarna uppdaterar sig själva.</li>
+</ul>
+
+<p><strong>Saker att åtgärda:</strong></p>
+
+<p>Få tillbaka enhetens internetanslutning:</p>
+
+<ol>
+  <li aria-level="1">Använd en annan enhet och kontrollera om den kan ansluta till samma nätverk. Om andra enheter inte heller får någon internetanslutning kanske nätverket är nere och du måste vänta tills det kommer tillbaka eller felsöka det.</li>
+  <li aria-level="1">Om andra enheter kan ansluta till samma nätverk kan du testa ett eller flera av följande alternativ för att återupprätta internetanslutningen:
+    <ol>
+      <li aria-level="2">Starta flygplansläget på enheten (mobil)</li>
+      <li aria-level="2">Starta om enheten</li>
+      <li aria-level="2">Stäng av enheten, vänta i två minuter och slå sedan på enheten igen.</li>
+    </ol>
+  </li>
+</ol>
+
+<p><a id="FirewallIssues" name="FirewallIssues"><strong>Problem med nätverkets brandvägg:</strong></a></p>
+
+<p><strong>Så här testar du:</strong></p>
+
+<ol>
+  <li aria-level="1">Koppla från den aktuella wifi-anslutningen eller kabelanslutningen.</li>
+  <li aria-level="1">Anslut till ett annat nätverk, till exempel ett mobilt nätverk.</li>
+  <li aria-level="1">Prova att ansluta till Outline-servern igen.</li>
+</ol>
+
+<p>Om du kan ansluta medan du är i det andra nätverket är det detta som är problemet.</p>
+
+<p><strong>Saker att åtgärda:</strong></p>
+
+<p>Kontakta tjänsteansvarig och be hen att tillåta åtkomst till Outline-servern eller fortsätt att använda det andra nätverket i stället.</p>
+
+<p><a id="SoftwareIssues" name="SoftwareIssues"><img alt="Den här bilden är inte tillgänglig eftersom du saknar behörighet att se den eller på grund av att den har tagits bort från systemet" height="1" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeoHNM7TWEsg0z4iydaS2xKOPga0zOjhOTqvGpA-JLd-Fwnydby6EBZziz3vqgRUJwssreEqP6lmjv_-13QXdzqh3yx9tZiR81BvxcXShi3kJ-XDKnqt951uRRPSO8BUhXaiijJLF8PixV_ezhGJ02Y3QPFbw?key=pJIeaVZQOqqoBTmDWZd2hw" width="1" /><strong>Problem med brandvägg eller antivirusprogram:</strong></a><br />
+  <br />
+  <strong>Så här testar du:</strong><br />
+  <br />
+  Testa att ansluta till Outline från en annan enhet.&nbsp;</p>
+
+<p>Obs! Tänk på att du behöver en åtkomstnyckel och Outline-appen för att använda Outline på en annan enhet.</p>
+
+<p><strong>Saker att åtgärda:</strong></p>
+
+<p>Kontrollera inställningarna för brandväggen eller antivirusprogrammet och se till att de låter VPN- och Outline-trafik passera.</p>
+
+<p><a id="DeviceSettings" name="DeviceSettings"><strong>Enhetsinställningar:</strong></a></p>
+
+<p><strong>Saker att kontrollera:</strong></p>
+
+<p>För Android:</p>
+
+<ol>
+  <li aria-level="1">Öppna Inställningar-appen.</li>
+  <li aria-level="1">Leta reda på <strong>VPN-inställningarna</strong> på enheten (i VPN-inställningarna ser du alla VPN-appar som har åtkomst på din telefon för närvarande).&nbsp;</li>
+  <li aria-level="1">Om du inte ser Outline i VPN-inställningarna avinstallerar du Outline och installerar det igen. Outline ska få åtkomst av enheten automatiskt så fort det installerats.</li>
+</ol>
+
+<p>Se till att du inte har någon app för skärmöverlagring installerad på din Android-enhet, då detta kan skicka fönstret för behörigheter i Outline till bakgrunden och förhindra att det syns i förgrunden.<br />
+  <br />
+  På Android går du till Inställningar &gt; Appar &gt; Särskild appåtkomst. Tryck sedan på Visa över andra appar. Du kan ta bort åtkomst till appar som tillåter beteendet.<br />
+  <br />
+  För iOS: Läs <a href="https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web" rel="noopener" target="_blank">den här supportartikeln</a>.</p>
+
+<p><a id="ServerIssues" name="ServerIssues"><strong>Serverproblem:</strong></a></p>
+
+<p><strong>Så här testar du:</strong></p>
+
+<p>Om du har tillgång till mer än en server testar du att ansluta till den andra.&nbsp;</p>
+
+<p><strong>Saker att åtgärda:</strong></p>
+
+<p>Kontakta tjänsteansvarig för att kontrollera om servern har förstörts. Be i så fall hen om en <a href="/outline-faq/answer/15330920" rel="noopener">åtkomstnyckel</a> till en annan server.</p>
+
+<p>Om det är du som konfigurerat servern testar du att ansluta till den via Outline Manager eller en annan metod, t.ex. <a href="https://en.wikipedia.org/wiki/Secure_Shell">SSH</a>. Om det inte fungerar kan du testa att kontrollera molnleverantörskonsolen, om du har en, för att se om servern fortfarande är online.</p>
+
+<p data-aura-rendered-by="12:32047;a">&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="sv">WEB:15331127</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hur laddar jag ned klientappen om nedladdningslänken inte fungerar?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Använd <a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">den här länken</a> om du vill ladda ned appar för många olika operativsystem direkt.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="131" sourceLocale="sv">WEB:15331222</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Insamling av data och uppgifter</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:271;a">Outline samlar inte in personliga uppgifter såvida du inte tillhandahåller dem. Outline samlar inte heller in information om webbplatser du besöker eller med vem eller om vad du kommunicerar.<br />
+  <br />
+  Om du skapar eller loggar in på ett konto hos en tredje parts molnleverantör via Outline Manager har vi inte åtkomst till uppgifterna du anger hos tredjepartsleverantören. Det gäller t.ex. e-postadress, namn, faktureringsuppgifter och betalningsuppgifter.<br />
+  <br />
+  <strong><strong>Uppgifter som vi får automatiskt</strong></strong><br />
+  <br />
+  Vi samlar in två typer av uppgifter automatiskt.<br />
+  1. Server-IP<br />
+  Outline-serverns IP-adress samlas in av <a href="http://quay.io/" target="_blank">Quay.io</a> och blir tillgänglig för oss när servern uppdateras automatiskt med de senaste säkerhets- och funktionsförbättringarna. Med hjälp av serverns IP-adress kan det gå att identifiera leverantören av molnservern och i vilken stad Outline-servern har konfigurerats, men det visas ingen information om vem som kör servern eller vem som har åtkomst till den.<br />
+  <br />
+  2. Tekniska uppgifter som inte kan kopplas till en specifik individ<br />
+  Om Outline kraschar eller ett allvarligt undantag uppstår, eller om du skickar feedback manuellt via Outline-appen, rapporteras de uppgifter som anges nedan. Uppgifterna används endast för att hjälpa oss att identifiera och lösa problem med stabilitet eller prestanda.</p>
+
+<ul data-aura-rendered-by="12:271;a">
+  <li>Land</li>
+  <li>Språkkod</li>
+  <li>Datum och tid för kraschen/systemfelet och upp till 100 tidigare händelser, exempelvis om en användare öppnat avsnittet About (om)</li>
+  <li>Statiskt sammanställda undantagsmeddelanden</li>
+  <li>Opertivsystemets namn och version</li>
+  <li>Mobilens modell (om tillämpligt)</li>
+  <li>Tid då appen startades</li>
+  <li>Webbläsare</li>
+  <li>Arkitektur</li>
+  <li>Version och versionsnummer för Outline</li>
+</ul>
+
+<p data-aura-rendered-by="12:271;a"><br />
+  Uppgifterna överförs via HTTPS till Sentry (<a href="http://sentry.io/" target="_blank">sentry.io</a>) som är en tredjepartsleverantör av felspårning i öppen källkod. Sentry använder en rad olika tekniker och tjänster som uppfyller branschstandarden för att skydda din data mot obehörig åtkomst och användning, otillåtet yppande och förlust. Om du har frågor om Sentrys policyer besöker du <a href="https://sentry.io/security/" target="_blank">https://sentry.io/security/</a> och <a href="https://sentry.io/privacy/" target="_blank">https://sentry.io/privacy/</a>, eller kontaktar företaget direkt på <a href="mailto:security@sentry.io" target="_blank">security@sentry.io</a>. All Outline-data som lagras av Sentry begränsas så att endast medlemmar i Outline-teamet får åtkomst till den.<br />
+  <br />
+  <strong><strong>Uppgifter vi samlar in på frivillig basis</strong></strong><br />
+  <br />
+  Outline rapporterar följande uppgifter till Outline-teamet på frivillig basis.<br />
+  1. Användningsmått<br />
+  Varje Outline-server samlar automatiskt in antal byte som har överförts, hur länge en användare var ansluten till servern, ursprungsländerna och ursprung för de autonoma system för användaruppgifter som används samt om funktioner har aktiverats eller inaktiverats under den sista timmen och per åtkomstnyckel. Varken innehållet i kommunikationen eller metadata som kan kopplas till en specifik individ (t.ex. inloggningar, e-post, enhets-id o.s.v.) loggas. Alla mätvärden kopplas till ett server-id. Du hittar anvisningar om att ändra server-id:t <a href="/outline-faq/answer/15548974" rel="noopener" target="_blank">här</a>.<br />
+  <br />
+  Som standard delar inte Outlines servrar dessa mätvärden med Outline-teamet. Om serveradministratören uttryckligen väljer att dela mätvärden om användning skickas uppgifterna på ett säkert sätt till Outline-teamet varje timme. Efter 60 dagar sammanställs mätvärden om användning på landsnivå. Serveradministratörer kan när som helst ändra inställningarna för delning av mätvärden om användning via inställningsmenyn i Outline Manager.<br />
+  <br />
+  Vi uppskattar att du delar anonyma mätvärden om serveranvändningen med oss, eftersom vi använder dem för att mäta användningstrender och förbättra produkten.<br />
+  <br />
+  Om en serveradministratör exempelvis väljer att dela mätvärden om användning med oss kan vi få information som indikerar att en server med id 12345 användes i tre timmar i går och överförde totalt 500&nbsp;megabyte data via tre åtkomstnycklar i USA och Kanada, och att funktionen för databegränsning var aktiverad.<br />
+  <br />
+  2. Dina kommentarer och din e-postadress om du skickar feedback<br />
+  Du kan skicka feedback till teamet via apparna Outline Manager och Outline. Vi rekommenderar inte att du anger uppgifter som kan kopplas till dig specifikt, men det finns ett e-postfält som du kan använda om du vill få ett svar från teamet. Vi samlar även automatiskt in grundläggande uppgifter, så att vi kan tolka feedbacken. I punkt 2 ovan under Uppgifter vi får automatiskt kan du läsa om vilken data vi samlar in.&nbsp;Läs mer om Outlines säkerhets- och sekretesspraxis <a href="/outline-faq/answer/14919822" rel="noopener" target="_blank">här</a>.<br />
+  <br />
+  Om du använder betaversionen av Outline-appen på Android kan Googles <a href="https://firebase.google.com/" target="_blank">Firebase-tjänst</a> användas till att samla in felsökninginformation i syfte att upptäcka problem och förbättra Outline. Du kan läsa mer om Firebases integritetspolicy och säkerhetspolicy på webbplatsen: <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a>. Om du inte vill att Outline skickar denna information via Firebase ska du använda produktionsverionen av appen.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="88" sourceLocale="sv">WEB:15331223</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Vad gör jag om åtkomstnyckeln inte fungerar?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:30472;a">Om du får felmeddelandet:&nbsp;”Åtkomstnyckeln verkar inte vara giltig. Kontakta tjänsteansvarig om detta händer igen.” Följ stegen nedan för att felsöka problemet:&nbsp;</p>
+
+<ol data-aura-rendered-by="12:30472;a">
+  <li>Se till att du angett hela åtkomstnyckeln, inklusive de första fem tecknen ”ss://”, som kanske inte kopieras till urklipp automatiskt. Här är ett exempel på hur en fullständig åtkomstnyckel ser ut (bara ett exempel, som inte fungerar):</li>
+</ol>
+
+<pre data-aura-rendered-by="12:30472;a">ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@145.230.4.1:39485/?outline=1&nbsp;
+</pre>
+
+<ol data-aura-rendered-by="12:30472;a" start="2">
+  <li>Om åtkomstnyckeln inte kopieras till urklipp alls kan det bero på din meddelandeapp eller -plattform. Det är störst risk att detta händer om du får ett meddelande från någon som inte finns i din kontaktlista. Om du kopierar koden från ett meddelande ska du se till att avsändaren finns i dina kontakter och sedan försöka komma åt länken igen.&nbsp;</li>
+  <li>Om du slutfört steg 1 och 2 och fortfarande får felmeddelandet är servern troligtvis blockerad, eller så är åtkomstnyckeln inte längre giltig. Om du är tjänsteansvarig kan du prova att generera en ny nyckel själv. Kontakta annars den tjänsteansvariga och be om en ny nyckel.</li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="96" sourceLocale="sv">WEB:15331322</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Vad kostar det att köra Outline?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Outlines mjukvara är gratis för alla, oavsett om du är serveradministratör och hanterar VPN eller någon som kommer åt den öppna webben via Outline.<br />
+  <br />
+  Du måste däremot har en molnserver för att köra Outline. Serveradministratörer som redan har åtkomst till en server kan installera Outline på den utan extra kostnad. De som inte har åtkomst till en server kan få åtkomst via en leverantör av molntjänster, exempelvis <a href="http://www.digitalocean.com/" rel="noopener" target="_blank">DigitalOcean</a> eller Amazon Web Services, för ungefär 5&nbsp;USD per månad för 1&nbsp;TB av dataöverföringar. Det är tillräckligt för hundratals användare på en server.<br />
+  <br />
+  Ett exempel på hur du kan räkna ut hur mycket det skulle kosta att köra Outline med den molnleveratör du vill ha:</p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td colspan="1" rowspan="1">
+      <p><em>Låt säga att varje användare i genomsnitt överför 5 GB data i månaden. En prenumeration på 5 USD i månaden räcker till ungefär 200 användare, vilket ger en kostnad på bara 2,5 cent per användare och månad. Observera att mängden dataöverföringar per användare och månad varierar mycket beroende på om användarna utför aktiviteter som kräver mycket eller lite bandbredd, men de flesta molnleverantörer är flexibla och kan hantera trafikökningar.</em></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br />
+  Faktum är att användare av Outline är helt anonyma för Jigsaw och Google. Vi registrerar inte din identitet eller trafik och det finns inga planer på intäktsgenerering. I&nbsp;stället samarbetar vi med personer inom öppen källkod för att se till att vi kan tillhandahålla programvaran utan kostnad till våra användare. Läs mer om vilken data vi samlar in <a href="/outline-faq/answer/15331222" rel="noopener" target="_blank">här</a>.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="386" sourceLocale="sv">WEB:15331326</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hur ställer jag in datagränser för åtkomstnycklar?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:15859;a">Du kan ställa in en datagräns som gäller för alla åtkomstnycklar. Om du vill ställa in en gräns öppnar du Outline Manager och navigerar till Inställningar. Där finns ett reglage som heter Datagränser. När det är aktiverat kan du ange en gräns.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787036"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">När du har ställt in en gräns kan du se hur nära gränsen varje användare är på sidan för åtkomstnycklar. Där visas ett stapeldiagram med dataanvändningen under de senaste 30 dagarna.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787037"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">Du kan antingen ställa in en gräns för alla åtkomstnycklar eller ge varje nyckel en egen datagräns. Den här inställningen åsidosätter datagränser som är angivna som standard. Om du inte har ställt in någon datagräns som standard kan du fortfarande ställa in en datagräns för en nyckel.&nbsp;<br />
+  <br />
+  Du ställer in en dataöverföringsgräns för en nyckel genom att öppna Outline Manager, klicka på den Anslutningar-flik där den nyckel som du vill ställa in finns och sedan klicka på menyn till höger om nyckelns rad. Klicka sedan på Datagräns. Klicka på datagränsikonen <img alt="Ikon för datagränser" height="19" src="https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw" width="19" /> om du vill ändra datagränsen på Min åtkomstnyckel.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787423"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">Markera Ställ in en anpassad datagräns. När du har markerat den här kryssrutan visas ett fält där du kan ställa in en anpassad datagräns för nyckeln. Klicka på knappen SPARA när du är färdig så sparas datagränsen.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15788959"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">Gränsen visas på huvudskärmen när du har sparat dataöverföringsgränsen för den valda nyckeln. Här visas även dataanvändning under de senaste 30 dagarna för varje nyckel.</p>
+
+<p data-aura-rendered-by="12:15859;a">Ta bort datagränsen för en åtkomstnyckel genom att navigera till dialogrutan Datagräns för nyckeln, precis som förut, avmarkera den ruta som heter Ställ in en anpassad datagräns och klicka på knappen SPARA.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15788414"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a"><b><strong>Vanliga frågor om datagränser</strong></b><br />
+  <br />
+  <strong><b>Vad innebär en löpande datagräns på 30 dagar?</b></strong><br />
+  <br />
+  En löpande datagräns på 30 dagar innebär att användningen av varje nyckel under de senaste 30 dagarna läggs ihop och begränsas så att användningen under den perioden inte överskrider gränsen. Då går det inte att överskrida gränsen med nyckeln under någon 30-dagarsperiod, även under månader som är 30 dagar eller kortare. Rent praktiskt innebär detta att användarens tillgängliga datamängd ökar för varje dag med samma mängd som användes för 31 dagar sedan.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Varför används löpande gränser i Outline?</strong><br />
+  <br />
+  Med löpande gränser går det att garantera att gränsen inte överskrids under en 30-dagarsperiod. Det gör att de är enklare att konfigurera än regelbundna gränser (till exempel en viss dag i månaden) och ger liknande garantier. De passar även in i den befintliga visningen av dataanvändning i Outline samt i vanliga verktyg för analystjänster och serverstatistik.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Vilken data räknas in i en datagräns?</strong><br />
+  <br />
+  Varje åtkomstnyckels utgående data från servern tas med i sammanräkningen. Detta innebär datan som skickas från servern med hjälp av nyckeln och tillbaka till klienten. I praktiken bör detta överensstämma med trafiken som skickas till och från servern med hjälp av nyckeln, så vi hoppas att datamängden liknar dina användares beräkningar. Vi valde utgående data eftersom det är vad molnleverantörerna som vi har undersökt tar betalt för.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Meddelas användarna om de överskrider datagränsen?</strong><br />
+  <br />
+  Inte just nu. Många molnleverantörer har en gräns, till exempel 1 TB för hela månaden som kan fördelas med 100 GB på 10 användare eller 10 GB på 100 användare. Det är ganska stora mängder och vi tror inte att särskilt många använder så mycket data. Vi hoppas att användare som når sin gräns kontaktar den ansvariga för servern. Vi vill dock gärna veta hur aviseringar kan underlätta användningen för dig. Du kan kontakta oss <a href="https://support.getoutline.org/s/contactsupport" target="_blank">här</a>.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Meddelas användarna när de närmar sig datagränsen?</strong><br />
+  <br />
+  Mängden ny data som en användare får när gränsen närmar sig varierar från dag till dag då den grundar sig på användningen för 30 dagar sedan. Vi tror att det blir förvirrande snarare än användbart för användarna att få en varning. Vi vill gärna ha din feedback om detta <a href="https://support.getoutline.org/s/contactsupport" rel="noopener" target="_blank">här</a>.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Kan jag nollställa en användares dataanvändning?</strong><br />
+  <br />
+  Nej, användares gränser bygger alltid på dataanvändningen under de senaste 30 dagarna. Du kan dock höja datagränsen för respektive nyckel eller skapa nya nycklar åt dem.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Varför förlorade några av användarna åtkomsten när jag aktiverade datagränser?</strong><br />
+  <br />
+  Datagränser baseras på användares dataöverföring under de föregående 30 dagarna, vilket registreras vare sig datagränser är igång eller inte. Det kan hända att användarna i fråga har överskridit gränsen redan innan den ställdes in.&nbsp; Tänk också på att alla datagränser tillämpas, även när du ändrar datagränsen för en enda nyckel.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Går det att ställa in en gräns för hela servern, till exempel 1 TB per 30 dagar?</strong><br />
+  <br />
+  Inte just nu. Vi vill gärna veta mer om hur du skulle använda det <a href="https://support.getoutline.org/s/contactsupport" rel="noopener" target="_blank">här</a>.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Vilken datagräns används om det finns en som är standard och en för en specifik nyckel?</strong><br />
+  <br />
+  Datagränser för specifika nycklar åsidosätter datagränser som har ställts in som standard (om det finns några).</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Kan jag ställa in en datagräns för en specifik nyckel utan att ha ställt in en standardgräns?</strong><br />
+  <br />
+  Ja.&nbsp; Du behöver inte ha ställt in en standardgräns för att kunna ställa in en datagräns för en nyckel.&nbsp; Du kan till exempel att ställa in en gräns för en nyckel som du tror kommer att delas av många och på så sätt undgå allt för hög dataöverföring med den nyckeln.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="sv">WEB:15331327</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hur återställer jag mitt server-id?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:23999;a">Server-id:t är ett id som genereras slumpmässigt på serversidan när du skapar en Outline-server. Du hittar det när du väljer att dela anonyma mätvärden i gränssnittet för inställningarna. Du hittar server-id:t under: Inställningar =&gt; scrolla längst ned på sidan =&gt; markera Dela anonyma mätvärden.</p>
+
+<p data-aura-rendered-by="12:23999;a">Server-id:t sammanställer anonym användningsstatistik som rapporterats under en viss tid. Om du vill återställa server-id:t och få ett nytt måste du byta ut den befintliga Outline-servern mot en ny.</p>
+
+<p data-aura-rendered-by="12:23999;a">Om du använder DigitalOcean som molnleverantör kan du återställa servern genom att gå till Inställningar och välja Förstör server. Den här åtgärden kan inte ångras och alla användaruppgifter raderas. Direkt efter åtgärden blir du ombedd att skapa en ny server på valfri plats, och ett nytt server-id genereras.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="103" sourceLocale="sv">WEB:15331328</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hur ändrar jag Outline-serverns plats?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:24761;a">När servern har konfigurerats går det inte att ändra dess plats. Om du vill köra din server från en annan plats måste du radera din Outline-server och skapa en ny.</p>
+
+<p data-aura-rendered-by="12:24761;a"><br />
+  Du kan även ändra platsen för VPN med <a href="https://developers.google.com/outline/docs/guides/service-providers/dynamic-access-keys" target="_blank">dynamiska nycklar</a>, som gör att du kan växla mellan servrar och behålla samma nycklar. Själva servrarna ändrar inte plats.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="102" sourceLocale="sv">WEB:15331423</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Så här skickar du feedback eller förslag</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:22486;a">Tack för att du hjälper oss att göra Outline bättre. Du kan skicka feedback till oss på några olika sätt, antingen anonymt eller via e-post om du vill ha ett svar:</p>
+
+<ul data-aura-rendered-by="12:22486;a">
+  <li><strong>För utvecklare</strong>: Outline är en mjukvara med öppen källkod och all kod finns på <a href="https://github.com/jigsaw-Code/?q=outline" target="_blank">GitHub</a>. Du kan dela med dig av dina idéer på GitHub eller i vår <a href="https://www.reddit.com/r/outlinevpn/" target="_blank">Reddit</a>-grupp.&nbsp;</li>
+  <li><strong>För användare</strong>: Du kan skicka feedback via Outline- eller Outline Manager-appen. Ange vad feedbacken handlar om och ange en e-postadress (om du vill) så att vi kan höra av oss till dig. Vi samlar även in viss metadata om miljön så att vi kan hjälpa dig med felsökningar, t.ex. om webbläsaren, operativsystemet och programvaruversionen som du använder.</li>
+  <li><strong>Via den här webbplatsen</strong>: Du kan klicka på länken Kontakta oss på den här webbplatsen.</li>
+  <li><strong>Allvarliga problem</strong>: Om du vill rapportera ett allvarligt säkerhetsproblem uppskattar vi om du skickar ett e-postmeddelande med informationen till security [snabel-a] <a href="https://getoutline.org/" rel="noopener" target="_blank">getoutline.org</a>.</li>
+</ul>
+
+<p data-aura-rendered-by="12:22486;a">Tack för att du tar dig tid att säga vad du tycker.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="146" sourceLocale="sv">WEB:15331424</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hantera åtkomst till en Outline-server (med åtkomstnycklar)</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:25527;a">När du har slutfört installationen av Outline-servern kan du börja dela och hantera åtkomst till den med andra. De som får en inbjudan från dig kan ladda ned Outline-appen och skydda sin internettrafik med hjälp av Outline.</p>
+
+<p data-aura-rendered-by="12:25527;a"><strong>Dela åtkomst till Outline-servern</strong><br />
+  När du har slutfört installationen av Outline-servern förflyttas du till serverns informationssida i Outline Manager. Där kan du skapa åtkomstnycklar. Läs mer om <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">åtkomsttangenter</a>.</p>
+
+<ul data-aura-rendered-by="12:25527;a">
+  <li>Skapa nycklar: Skapa nya nycklar genom att klicka på det lilla plustecknet (+) längst ned på sidan.</li>
+  <li>Dela nycklar: Till höger om varje nyckel finns en delningsikon som du kan klicka på för att få en inbjudan. Kopiera och klistra in inbjudan i valfritt meddelandesystem.</li>
+</ul>
+
+<p data-aura-rendered-by="12:25527;a"><strong>Förslag till ny funktion: Delningsåtkomst i Outline Manager-appen</strong><br />
+  Flera serveradministratörer har bett oss att förenkla processen för inbjudningar genom att lägga till ett alternativ där e-postadresser kan anges direkt i Outline Manager.</p>
+
+<p data-aura-rendered-by="12:25527;a">Det är tyvärr inte troligt att vi lägger till den här funktionen i Outline Manager. En av våra grundläggande principer är att skydda våra användares integritet och säkerhet, vilket innebär att vi inte utformade en funktion för att lägga till e-postadresser och kontaktuppgifter.</p>
+
+<p data-aura-rendered-by="12:25527;a">Det är anledningen till att vi ber serveradministratörerna att skicka inbjudningar till slutanvändarna via en säker meddelandeplattform, som e-post eller en säker chatt.<br />
+  <br />
+  <strong>Det här sker för användarna när du har delat en åtkomstnyckel</strong></p>
+
+<ol data-aura-rendered-by="12:25527;a">
+  <li>Användarna klickar på installationslänken från sina enheter.</li>
+  <li>De blir ombedda att installera Outline-appen om de inte redan har gjort det.</li>
+  <li>De upprättar en första anslutning till Outline-servern via den unika nyckeln som är inbäddad i inbjudan.</li>
+  <li>De kan nu använda knappen Connect/Disconnect (anslut/koppla från) för att hantera åtkomst till internet via Outline-servern.</li>
+</ol>
+
+<p data-aura-rendered-by="12:25527;a"><strong>Ta bort åtkomst till Outline-servern</strong><br />
+  Öppna serverns informationssida i Outline Manager. Till höger om respektive nyckel på servern finns en meny med ett alternativ för att radera en nyckel. Om du raderar en nyckel tas dess åtkomst till servern bort.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="92" sourceLocale="sv">WEB:15331524</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hur kommer jag åt Outline-resurser om getoutline.org är blockerat?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><a href="https://s3.amazonaws.com/outline-vpn/index.html" target="_blank">Bokmärk den här speglade webbplatsen</a> och använd den om du inte kan komma åt <a href="http://getoutline.org/" target="_blank">getoutline.org</a>.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="321" sourceLocale="sv">WEB:15331527</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Installera Outline-klienten på Linux</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Från och med Outline Client-version 1.15 släpps alla framtida versioner som Debian-paket för Linux-operativsystem. Sätt dig in i <a href="/outline/answer/15330818" rel="noopener" target="_blank"><u>minimisystemkraven</u></a> om du vill veta mer om vilka operativsystem vi har stöd för.</p>
+&nbsp;
+
+<p><strong>Installera Outline-klienten för Debian-baserade Linux-distributioner (rekommenderas)</strong></p>
+&nbsp;
+
+<p>Kör följande kommandon:</p>
+
+<ol>
+  <li aria-level="1">Installera Outlines lagringsnyckel och lägg till lagringsplatsen.
+    <div class="code">
+      <div class="no-margin">
+        <p>wget -qO- https://us-apt.pkg.dev/doc/repo-signing-key.gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/gcloud-artifact-registry-us.gpg</p>
+
+        <p>echo "deb [arch=amd64] https://us-apt.pkg.dev/projects/jigsaw-outline-apps outline-client main" | sudo tee /etc/apt/sources.list.d/outline-client.list</p>
+      </div>
+    </div>
+  </li>
+</ol>
+
+<p>&nbsp; 2.&nbsp;&nbsp;Uppdatera apt-paketlistan och installera den senaste versionen av Outline-klienten.</p>
+
+<div class="code">
+  <div class="no-margin">
+    <p>&nbsp; &nbsp;sudo apt update</p>
+
+    <p>&nbsp; &nbsp;sudo apt install outline-client</p>
+  </div>
+</div>
+
+<p>Om du vill söka efter eller installera framtida uppdateringar kör du kommandona i steg 2 igen. Tänk på att automatisk uppdatering i appen har inaktiverats för Outline-klienten på Linux från och med version 1.15.</p>
+
+<p>Kör följande kommando om du vill avinstallera Outline-klienten:</p>
+
+<div class="code">
+  <div class="no-margin">sudo apt purge outline-client</div>
+</div>
+
+<p><strong>Alternativ</strong></p>
+
+<ol>
+  <li aria-level="1">Ladda ned det senaste Debian-paketet för Outline-klienten från <a href="https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb" rel="noopener" target="_blank">https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb</a></li>
+  <li aria-level="1">Kör följande kommandon på kommandoraden för att installera paketet</li>
+</ol>
+
+<div class="code">
+  <div class="no-margin">
+    <p>wget -O ./outline-client.deb https://s3.amazonaws.com/outline-&nbsp; &nbsp; &nbsp; releases/client/linux/stable/outline-client_amd64.deb</p>
+
+    <p>sudo apt install ./outline-client.deb</p>
+  </div>
+</div>
+
+<p>&nbsp; 3.&nbsp;&nbsp;Sök efter uppdateringar manuellt eftersom automatisk uppdatering i appen har inaktiverats för Outline-klienten på Linux från och med version 1.15.</p>
+
+<p>&nbsp; 4.&nbsp; Om du vill avinstallera Outline-klienten kör du följande kommando på kommandoraden:</p>
+
+<div class="code">
+  <div class="no-margin">sudo apt purge outline-client</div>
+</div>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="206" sourceLocale="sv">WEB:15331528</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Kan jag använda en åtkomstnyckel mer än en gång?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1895;a">Ja. Du kan använda <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">åtkomstnyckeln</a> på så många enheter du vill, men vi rekommenderar inte att du delar nyckeln med någon annan. Den som har din åtkomstnyckel kan potentiellt granska all din internettrafik om hen har åtkomst till den. Det innebär att din internetanvändning då inte längre är säker eller privat.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="104" sourceLocale="sv">WEB:15331529</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Ansluta en enhet till en Outline-server</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1399;a"><strong>Ansluta en enhet till en Outline-server</strong></p>
+
+<p data-aura-rendered-by="12:1399;a">Du kan bara ansluta en enhet till en Outline-server om du får en inbjudan att ansluta från en serveradministratör. Inbjudan innehåller en unik <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">åtkomstnyckel</a>. Följande sker om du får en inbjudan:</p>
+
+<ul data-aura-rendered-by="12:1399;a">
+  <li>Du blir ombedd att ladda ned och installera Outline på enheten om du inte redan har gjort det.</li>
+  <li>Åtkomstnyckeln används för att upprätta en säker anslutning mellan dig och Outline-servern.</li>
+</ul>
+
+<p data-aura-rendered-by="12:1399;a">När du har upprättat en anslutning till servern kan du klicka på Connect (anslut) eller Disconnect (koppla från) när du vill använda Outline.</p>
+
+<p data-aura-rendered-by="12:1399;a"><em>Viktigt!</em> Det går inte att använda Outline utan en åtkomstnyckel och en Outline-server. Din internettrafik skyddas inte om du laddar ned och installerar Outline-appen utan att ha en nyckel.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="100" sourceLocale="sv">WEB:15331530</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hur konfigurerar jag en Outline-server?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:27063;a">Första steget i att använda Outline är att konfigurera en Outline-server. Du eller någon du litar på måste konfigurera en server åt dig för att du ska kunna ansluta till den öppna webben via Outline.<br />
+  <br />
+  <strong>Innan du börjar</strong><br />
+  Du behöver följande innan du börjar konfigurera en Outline-server:</p>
+
+<ol data-aura-rendered-by="12:27063;a">
+  <li>Åtkomst till egna servrar eller en leverantör av molntjänster, exempelvis DigitalOcean, Amazon Web Services (AWS) eller Google Cloud Platform (GCP).<br />
+    Om du inte har åtkomst till en molnserver direkt kan du enkelt skapa ett konto hos en leverantör, exempelvis hos någon av de som nämns ovan. Du behöver troligtvis ett kreditkort för att registrera dig.</li>
+  <li>En stationär dator med macOS 10.9+, Windows 7.0+ eller Linux.</li>
+  <li>Outline Manager-appen.</li>
+</ol>
+
+<p data-aura-rendered-by="12:27063;a"><strong>Konfigurera med DigitalOcean</strong><br />
+  <br />
+  Vi har gjort det enkelt för alla att installera Outline på DigitalOcean med bara några klick. När du har laddat ned och installerat Outline Manager på datorn kan du välja konfigurationsalternativet DigitalOcean så vägleds du genom några enkla skärmar där du konfigurerar och installerar Outline-servern.<br />
+  <br />
+  <strong>Konfigurera med en annan molnleverantör</strong><br />
+  <br />
+  När du har laddat ned och installerat Outline Manager kan du välja att installera en Outline-server på en virtuell dator med AWS, GCP, DigitalOcean eller en annan leverantör. Ingen miljö är den andra lik, så vi har inkluderat anvisningar för de flesta vanliga molnleverantörer i Outline Managers konfigurationsflöde. I flödet finns anvisningar om hur du konfigurerar inställningarna på den virtuella datorn innan du kör installationsskriptet och installerar Outline på en server.<br />
+  <br />
+  <strong><em>Behöver du mer hjälp?</em></strong><br />
+  <br />
+  Läs våra <a href="/outline-faq/answer/15331728" rel="noopener" target="_blank">vanliga frågor om konfiguration av Outline-servrar</a>.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="95" sourceLocale="sv">WEB:15331625</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Får jag använda eller kopiera Outline-varumärket?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Outline är öppen källkod och kostar inget att använda, men vårt varumärke tillhör Jigsaw och får inte användas på ett obehörigt sätt. Följ <a href="https://github.com/Jigsaw-Code/outline-brand/blob/main/outline_brand_user_guide.pdf" target="_blank">användarhandboken</a> för att undvika påståenden som kan vara vilseledande eller felaktigt representerar din relation med Outline eller Jigsaw, och för att se till att du använder de godkända varumärkena korrekt.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="191" sourceLocale="sv">WEB:15331628</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hur kan jag få en åtkomstnyckel?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:3258;a">Outline är inte som VPN-tjänster som du köper åtkomst till. Det är <a href="https://getoutline.org/#:~:text=Two%20Products%20that%20Work%20Together" target="_blank">ett verktyg</a> som du kan använda för att köra och dela åtkomst till en privat VPN-server. Det är bara <a href="/outline/answer/15330920#servicemanager" rel="noopener" target="_blank">tjänsteansvariga</a> som kan ge ut åtkomstnycklar. Outline-teamet distribuerar varken kostnadsfria åtkomstnycklar eller betalnycklar. Vi har inga officiella Outline-partners för åtkomstnycklar, förutom Paskoocheh på persiska.<br />
+  <br />
+  Här är tre sätt att få en åtkomstnyckel:&nbsp;</p>
+
+<ul data-aura-rendered-by="12:3258;a">
+  <li>Be om att bli inbjuden till någons server: Om du känner någon som har en Outline-server kan du kontakta hen och be om en åtkomstnyckel.</li>
+  <li><a href="/outline/answer/15331530" rel="noopener" target="_blank">Skapa en egen server:</a> Ladda ned <a href="https://getoutline.org/get-started/#step-1" target="_blank">Outline Manager</a> på en Windows-, Mac- eller Linux-dator och konfigurera en egen, privat <a href="/outline/answer/15330920" rel="noopener" target="_blank">Outline-server</a>. Vi har gjort det så enkelt att alla kan göra det, särskilt om man använder molntjänsteleverantören DigitalOcean.</li>
+  <li>Använd en Outline- eller <a href="https://en.wikipedia.org/wiki/Shadowsocks#:~:text=Shadowsocks%20is%20a%20free%20and,have%20been%20made%20available%20since." target="_blank">Shadowsocks</a>-tjänst: Outline-klienten kan även användas med tjänster från tredje part som använder Outline- eller Shadowsocks-protokollet. Här är några exempel:
+    <ul>
+      <li><a href="http://nthlink.com/" target="_blank">nthLink</a> kör en kostnadsfri tjänst som bygger på Outline och har en modifierad version av Outline-klienten.</li>
+      <li><a href="https://www.reddit.com/r/outlinevpn/comments/nwu1se/the_outline_distribution_system_is_here_to_help/" target="_blank">ASL19</a> kör en modifierad version av Outline som kallas <a href="https://beepassvpn.com/" target="_blank">BeePass</a> samt <a href="https://t.me/paskoochehbot" target="_blank">en Telegram-bot</a> som tillhandahåller kostnadsfria åtkomstnycklar till BeePass-servrar.</li>
+      <li>Användare med persiska som språkinställning kan också be om en Outline-åtkomstnyckel från <a href="https://outline.paskoocheh.com/" target="_blank">ASL19:s Paskoocheh</a>.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Ladda först ned Outline-klientappen. Kopiera sedan <a href="/outline/answer/15330920#accesskey" rel="noopener" target="_blank">åtkomstnyckeln</a> och klistra in den i Outline-klienten när du vill ansluta till Outline-servern.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="133" sourceLocale="sv">WEB:15331630</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Hur raderar jag min Outline-server?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:14046;a">Hos de flesta molnleverantörer är det ganska enkelt att ta bort den virtuella dator som du använder.</p>
+
+<p data-aura-rendered-by="12:14046;a">Om du använder DigitalOcean som molnleverantör kan du radera den befintliga virtuella datorn genom att klicka på kugghjulet och välja Förstör server. Direkt efter det blir du ombedd att skapa en ny virtuell dator på valfri plats.</p>
+
+<p data-aura-rendered-by="12:14046;a">Om du tar bort en Outline-server tas den bort permanent och åtkomstnycklarna till den fungerar inte längre. Om du inte vill avbryta andras åtkomst genom Outline måste du <a href="/outline-faq/answer/15331530" rel="noopener" target="_blank">installera en ny Outline-server</a> och dela åtkomst till den innan du raderar den gamla servern.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="99" sourceLocale="sv">WEB:15331631</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Så här konfigurerar du flera Outline-servrar</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:27908;a">Konfigurera ytterligare Outline-servrar genom att klicka på plustecknet i navigeringspanelen till vänster i Outline Manager-appen. Anvisningarna för att lägga till en ny server är samma som för att installera den första.</p>
+
+<ul data-aura-rendered-by="12:27908;a">
+  <li>Det finns ingen begränsning för hur många Outline-servrar du kan skapa.</li>
+  <li>Det måste finnas en motsvarande virtuell dator för varje Outline-server du skapar.</li>
+  <li>Om du skapar ytterligare virtuella datorer eller servrar (s.k. Droplets) kan molnleverantörens avgift öka. Kontrollera prispaketet hos molnleverantören så att du vet vad du kan förvänta dig.</li>
+</ul>
+
+<p data-aura-rendered-by="12:27908;a"><strong>Skapa ytterligare en Outline-server hos DigitalOcean</strong></p>
+
+<p data-aura-rendered-by="12:27908;a">När du har klickat på plustecknet och valt att installera servern hos DigitalOcean följer du samma anvisningar som när du konfigurerade den första servern. Eftersom Outline Manager är integrerat med DigitalOcean kan vi dessutom skapa en droplet åt dig utan att du behöver stänga Outline Manager-appen.</p>
+
+<p data-aura-rendered-by="12:27908;a">Observera att Outline Manager endast har stöd för ett DigitalOcean-konto åt gången. Om du vill lägga till eller skapa andra Outline-servrar från andra DigitalOcean-konton måste du lägga till dem som en avancerad konfiguration.</p>
+
+<p data-aura-rendered-by="12:27908;a"><strong>Skapa en Outline-server till på GCP, AWS eller en annan leverantör av molntjänster.</strong></p>
+
+<p data-aura-rendered-by="12:27908;a">Börja med att skapa en ny virtuell dator hos den valda molnleverantören. Öppna sedan Outline Manager och följ anvisningarna för avancerad installation, precis som du kanske gjorde den första gången.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="96" sourceLocale="sv">WEB:15331632</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Varför går det inte att installera Outline Manager på Windows?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:34680;a">Du kan se felmeddelandet ”Det verkar som att Outline inte har installerats korrekt. Testa att installera det igen. Om det inte fungerar kan du <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">skicka feedback</a>.”</p>
+
+<p data-aura-rendered-by="12:34680;a">Om du använder Outline på Windows kan det hända att du stöter på ett oväntat fel. I de flesta fall måste Outline TAP-adaptern (drivrutinen) raderas och Outline ominstalleras.&nbsp;</p>
+
+<p data-aura-rendered-by="12:34680;a">Hur du gör detta varierar beroende på vilken version av Windows operativsystem du använder, men nedan ser du allmänna anvisningar för hur du avinstallerar TAP-adaptern och Outline Manager och sedan ominstallerar Outline Manager.</p>
+
+<ol data-aura-rendered-by="12:34680;a">
+  <li>Avinstallera TAP-adaptern för Outline Manager.
+    <ol>
+      <li>Gå till Enhetshanterare och sedan Nätverkskort.</li>
+      <li>Leta reda på filen TAP-Windows Adapter V9 eller den TAP-adapter som är kopplad till Outline.</li>
+      <li>Avinstallera eller radera den här adaptern. Tänk på att det här kan påverka andra VPN-appar som du har installerat.</li>
+    </ol>
+  </li>
+  <li>Avinstallera Outline Manager
+    <ol>
+      <li>Gå till Program och funktioner och sedan till Avinstallera program.</li>
+      <li>Leta reda på Outline Manager-appen och avinstallera Outline Manager.</li>
+      <li><a href="https://getoutline.org/get-started/#step-1" target="_blank">Ladda ned den senaste versionen av Outline Manager</a> och ominstallera den på Windows-enheten. Den nya installationen ska installera en ny TAP-adapter automatiskt.</li>
+    </ol>
+  </li>
+</ol>
+
+<p data-aura-rendered-by="12:34680;a">Om du fortfarande har problem kan du <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">kontakta support</a>.&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="94" sourceLocale="sv">WEB:15331727</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Automatisk konfiguration av Google Cloud</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:26310;a"><strong>Översikt</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Outline Manager innehåller en funktion som gör att du automatiskt kan konfigurera Outline-servern på en server som körs på Google Cloud. Om du väljer att använda den här funktionen ber Outline Manager dig att logga in med ditt Google-konto, vilket ger vissa<a href="https://developers.google.com/identity/protocols/oauth2" target="_blank"> OAuth</a>-behörigheter för din lokala installation av Outline Manager, så att du kan konfigurera ditt Google Cloud-konto.<br />
+  Om du inte vill tillhandahålla dessa behörigheter kan du följa anvisningarna för avancerad konfigurering i Outline Manager och köra Outline på Google Cloud Platform.&nbsp;</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Behörigheter beviljade</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Outline Manager kräver följande behörigheter från ditt Google-konto för att kunna tillhandahålla automatisk konfigurering.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Google Cloud Platform</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>Visa och hantera dina resurser i Google Compute Engine</li>
+  <li>Visa din data för Google Cloud-tjänster och se e-postadressen för ditt Google-konto</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Grundläggande kontoinformation</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>Se den primära e-postadressen för ditt Google-konto</li>
+  <li>Koppla dig till dina personliga uppgifter på Google</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Ytterligare åtkomst</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>Hantera dina projekt på Cloud Platform</li>
+  <li>Visa och hantera dina faktureringskonton på Google Cloud Platform</li>
+  <li>Hantera konfigureringen av Googles API-tjänster</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a">Genom dessa behörigheter kan vi stödja avancerade funktioner för att hantera dina Outline-servrar, så att du till exempel kan</p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>välja rätt faktureringskonto</li>
+  <li>skapa ett nytt projekt för att organisera dina Outline-servrar</li>
+  <li>lista tillgängliga datacenter</li>
+  <li>skapa nya virtuella datorer för att köra Outline</li>
+  <li>konfigurera den nya virtuella datorn med Outline.</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Återkalla behörigheter</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Du kan återkalla åtkomsten till Google Cloud Platform för Outline Manager genom att besöka<a href="https://myaccount.google.com/permissions" target="_blank"> Mitt konto</a>. Om du återkallar åtkomsten fortsätter alla servrar som du har skapat med den automatiska konfigurationen att köras, men visas inte längre i Outline Manager. Om du vill återställa åtkomsten till dem, så ansluter du bara till Google Cloud Platform igen genom att påbörja det automatiska konfigurationsflödet.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Ordna Outline-projekt</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Google Clouds automatiska konfiguration använder ett och samma<a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects" target="_blank"> Google Cloud-projekt</a> för att organisera dina Outline-servrar. Projektet skapas under den första användningen av den automatiska konfigurationen, med ett projekt-id som börjar med ”Outline-” följt av en sträng med slumpmässiga tecken. Om du vill kan du välja ett annat projekt-id vid skapandet. Projektet får namnet ”Outline-servrar”.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Faktureringskonto</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">För Google Cloud-projekt krävs ett länkat faktureringskonto som definierar betalningsuppgifter. Första gången du använder automatisk konfiguration i Google Cloud blir du ombedd att ange ett faktureringskonto som ska kopplas till dina Outline-servrar. Ibland slutar en server att köras eftersom det finns ett problem med faktureringskontot. I så fall loggar du in på<a href="https://console.cloud.google.com/getting-started" target="_blank"> Google Cloud Console</a>, letar upp det Google Cloud-projekt som är kopplat till Outline (kallat ”Outline-servrar”) och uppdaterar faktureringsinställningarna.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Förstöra servrar</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Det enklaste sättet att förstöra dina servrar skapade med den automatiska konfigurationen är att göra det i Outline Manager. Om du vill förstöra servrarna själv kan du istället logga in på<a href="https://console.cloud.google.com/getting-started" target="_blank"> Google Cloud Console</a>, leta upp projektet som skapades under den första konfigurationen (kallat ”Outline-servrar”) och antingen radera resurserna där eller stänga av projektet.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="99" sourceLocale="sv">WEB:15331728</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Vanliga frågor om konfiguration av Outline-servrar</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:28806;a"><strong>Går det att använda Outline utan en server?</strong><br />
+  <br />
+  Tyvärr inte. Outlines mjukvara behöver åtkomst till en server, oavsett om den hanteras av dig, en organisation eller tredje part.&nbsp;</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>Hur lång tid tar det att konfigurera en Outline-server?</strong></p>
+
+<p data-aura-rendered-by="12:28806;a">Oftast tar under fem minuter. Du kan installera Outline på valfri molnserver, men vi samarbetar med DigitalOcean för att erbjuda en mer användarvänlig installation så att du kan konfigurera servern på bara några klick, helt utan skript.</p>
+
+<p data-aura-rendered-by="12:28806;a">Om du väljer AWS, GCP eller avancerad konfiguration har vi gjort installationen enkel med ett enda skript som hanterar de flesta miljöer.&nbsp;</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>Var kan jag konfigurera en Outline-server?</strong></p>
+
+<p data-aura-rendered-by="12:28806;a">Det går att konfigurera en Outline-server hos de flesta molnleverantörer oavsett var de är baserade.</p>
+
+<p data-aura-rendered-by="12:28806;a">Det enklaste alternativet är att konfigurera servern hos DigitalOcean eftersom de har servrar på flera olika platser, till exempel Amsterdam, Toronto, San Francisco och Singapore. Om du hellre vill installera den hos en annan molnleverantör eller i din egen infrastruktur kan du välja Advanced Mode (avancerat läge) i Outline Manager-appen och följa installationsanvisningarna med hjälp av ett konfigurationsskript.</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>Var ska jag konfigurera Outline-servern?</strong></p>
+
+<ol data-aura-rendered-by="12:28806;a">
+  <li>Du ska tänka på några saker när du väljer plats för Outline-servern:</li>
+  <li>Outline-servern plats påverkar vilken upplevelse användarna får på internet. Om servern finns i till exempel Amsterdam visas internet för användarna på servern som om de faktiskt befann sig i Nederländerna. En del webbplatser kanske till och med visas på nederländska. Det går oftast att åsidosätta det lokala språket med hjälp av en språkväljare på webbplatsen.</li>
+  <li>Avståndet mellan användarna och Outline-servern kan påverka hastigheten. Det är vanligt att det fysiska avståndet mellan Outlines användare och servern påverkar användarnas internethastighet. Det går oftast att välja en server i närheten av där användarna troligen befinner sig, men du kan kolla <a href="https://www.submarinecablemap.com/" rel="noopener" target="_blank">Submarine Cable Map</a> för att se vilka internetkablar som är ansluta till ditt land eller din region.</li>
+  <li>VPN-serverns plats kan påverka det juridiska ramverket. Observera att Outlines mjukvara inte loggar din trafik. Läs mer om <a href="/outline-faq/answer/14919822" rel="noopener" target="_blank">säkerhet och integritet när du använder Outline</a>.</li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="sv">WEB:15331758</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Jag är utvecklare. Var kan jag få support för att integrera Outline SDK i min app?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Den här supportwebbplatsen är avsedd för användare av Outline Manager och Client. Om du är utvecklare kan du använda GitHub för support. Om du vill ställa en fråga kan du göra det i <a href="https://github.com/Jigsaw-Code/outline-sdk/discussions" target="_blank">diskussionsforumet</a> för SDK. I diskussionsforumet kan du ställa frågor, dela idéer, länka till demoversioner och hjälpa andra utvecklare som använder Outline SDK. Om du vill begära en ny funktion eller få felrapporter kan du skapa ett <a href="https://github.com/Jigsaw-Code/outline-sdk/issues/new" target="_blank">ärende</a> i&nbsp;stället.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="74" sourceLocale="sv">WEB:15448041</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Tillgängliga språk</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Outline finns på följande språk:</p>
+
+<ul>
+  <li aria-level="1">afrikaans</li>
+  <li aria-level="1">albanska</li>
+  <li aria-level="1">amhariska</li>
+  <li aria-level="1">arabiska</li>
+  <li aria-level="1">armeniska</li>
+  <li aria-level="1">azerbajdzjanska</li>
+  <li aria-level="1">bengali</li>
+  <li aria-level="1">bosniska</li>
+  <li aria-level="1">bulgariska</li>
+  <li aria-level="1">burmesiska</li>
+  <li aria-level="1">katalanska</li>
+  <li aria-level="1">kinesiska (förenklad)</li>
+  <li aria-level="1">kinesiska (traditionell)</li>
+  <li aria-level="1">kroatiska</li>
+  <li aria-level="1">tjeckiska</li>
+  <li aria-level="1">danska</li>
+  <li aria-level="1">nederländska</li>
+  <li aria-level="1">engelska (USA)</li>
+  <li aria-level="1">engelska (Förenade kungariket)</li>
+  <li aria-level="1">estniska</li>
+  <li aria-level="1">filipino</li>
+  <li aria-level="1">finska</li>
+  <li aria-level="1">franska</li>
+  <li aria-level="1">georgiska</li>
+  <li aria-level="1">tyska</li>
+  <li aria-level="1">grekiska</li>
+  <li aria-level="1">hebreiska</li>
+  <li aria-level="1">hindi</li>
+  <li aria-level="1">ungerska</li>
+  <li aria-level="1">isländska</li>
+  <li aria-level="1">indonesiska</li>
+  <li aria-level="1">italienska</li>
+  <li aria-level="1">japanska</li>
+  <li aria-level="1">kazakiska</li>
+  <li aria-level="1">khmer</li>
+  <li aria-level="1">koreanska</li>
+  <li aria-level="1">laotiska</li>
+  <li aria-level="1">lettiska</li>
+  <li aria-level="1">litauiska</li>
+  <li aria-level="1">makedonska</li>
+  <li aria-level="1">malajiska</li>
+  <li aria-level="1">marathi</li>
+  <li aria-level="1">mongoliska</li>
+  <li aria-level="1">nepali</li>
+  <li aria-level="1">norska</li>
+  <li aria-level="1">persiska</li>
+  <li aria-level="1">polska</li>
+  <li aria-level="1">portugisiska (Brasilien)</li>
+  <li aria-level="1">portugisiska (europeisk)</li>
+  <li aria-level="1">rumänska</li>
+  <li aria-level="1">ryska</li>
+  <li aria-level="1">serbiska (kyrillisk)</li>
+  <li aria-level="1">serbiska (latinsk)</li>
+  <li aria-level="1">singalesiska</li>
+  <li aria-level="1">slovakiska</li>
+  <li aria-level="1">slovenska</li>
+  <li aria-level="1">spanska (europeisk)</li>
+  <li aria-level="1">spanska (latinamerikansk)</li>
+  <li aria-level="1">swahili</li>
+  <li aria-level="1">svenska</li>
+  <li aria-level="1">tamil</li>
+  <li aria-level="1">thai</li>
+  <li aria-level="1">turkiska</li>
+  <li aria-level="1">ukrainska</li>
+  <li aria-level="1">urdu</li>
+  <li aria-level="1">vietnamesiska</li>
+</ul>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="79" sourceLocale="sv">WEB:15528599</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Problem med brandvägg</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:268;a">Det kan uppstå tre olika typer av problem med brandväggar:</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>Du kanske blockeras av en brandvägg i ett nätverk</strong></p>
+
+<p data-aura-rendered-by="12:268;a">Om du försöker installera Outline i ett nätverk som skyddas av en brandvägg, till exempel på en skola eller arbetsplats, ska du testa att utföra installationen i ett annat nätverk.</p>
+
+<p data-aura-rendered-by="12:268;a">Om det inte fungerar kontaktar du nätverksadministratören så att han eller hon kan tillåta anslutningar mellan Outline-servern och det nätverk som skyddas av brandväggen. Du måste veta Outline-serverns IP-adress och på vilka portar Outline körs, vilket visas i slutet av installationsskriptet.</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>Du kanske blockeras av en brandvägg på en enhet</strong></p>
+
+<p data-aura-rendered-by="12:268;a">Om det finns mjukvara på enheten som blockerar utgående anslutningar på icke-standardiserade portar eller mjukvara som inte känns igen (ZoneAlarm från CheckPoint) läser du igenom dokumentationen för enheten eller programvaran för att ta reda på hur du kan skapa ett undantag för Outline.</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>Du kanske blockeras av en brandvägg på servern</strong></p>
+
+<p data-aura-rendered-by="12:268;a">Molnleverantören du valt kanske kräver att du öppnar de portar Outline körs på genom att skapa undantag för serverns brandvägg manuellt. När du körde installationsskriptet fick du information om vilka två slumpmässigt valda portar som Outline körs på. Det borde räcka med att öppna dessa två portar.<br />
+  <br />
+  Om du behöver skapa undantag i serverns brandvägg rekommenderar vi att du läser dokumentationen för UFW och Iptables:</p>
+
+<ul data-aura-rendered-by="12:268;a">
+  <li>UFW:&nbsp;<a href="https://help.ubuntu.com/community/UFW" rel="noopener" target="_blank">https://help.ubuntu.com/community/UFW</a></li>
+  <li>Iptables:&nbsp;<a href="https://help.ubuntu.com/community/IptablesHowTo" rel="noopener" target="_blank">https://help.ubuntu.com/community/IptablesHowTo</a></li>
+</ul>
+</div>
+</body>
+</html>

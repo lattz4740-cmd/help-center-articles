@@ -1,0 +1,1086 @@
+<html>
+<head>
+<style type="text/css">
+.gkms-gtt-answer-header, .gkms-gtt-message-header {
+  color: black !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 2em;
+  padding: 4px;
+}.gkms-gtt-answer-header {
+  background-color: #E5ECF9;
+  border-top: 1px solid #36C;
+}
+.gkms-gtt-message-header {
+  background-color: #F8F8F8;
+  border-top: 1px solid #CCC;
+}
+.gkms-gtt-hide {
+  visibility: hidden;
+}
+.form_field_data .temporary_signal_wrapper {
+  display: inline;
+}
+</style>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+</head>
+<body lang="si">
+<br/><div class="gkms id notranslate" sourceGlobalRevision="116" sourceLocale="si">WEB:14917423</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline ක්‍රියා කරන ආකාරය</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1723;a">&nbsp;</p>
+
+<p data-aura-rendered-by="12:1723;a"><strong>සේවාදායක ස්ථාපනය</strong><br />
+  <br />
+  ​Outline ස්ථාපනය සරල බවක් පෙනෙන්නට තිබුණත්, ඔබේ සේවාදායකය ස්ථාපනය කිරීමට තිරය පිටුපස සිදුවෙමින් පවතින සංකීර්ණ පියවර මාලාවක් ඇත. Outline ස්ථාපනය කරන සෑම විටම, ස්ථාපන ස්ක්‍රිප්ට් එකක් පහත පියවරයන් ධාවනය කරයි:</p>
+
+<ul data-aura-rendered-by="12:1723;a">
+  <li>Shadowbox රූපයෙහි ස්ථායී අනුවාදය Docker භාවිතයෙන් ලබා ගෙන ආයාත කරනු ලැබේ. රූපය <a href="https://quay.io/" target="_blank">Quay.io</a> මත, <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank">https://quay.io/repository/outline/shadowbox?tab=tags</a> හි සත්කාරකත්වය දරයි. මෙම රූපයේ Outline සේවාදායකය සහ කළමනාකරණ API අඩංගු වන අතර එය Outline සේවාදායක කළමනාකරණ යෙදුම මගින් ප්‍රවේශ යතුරු තැනීමට සහ ඉවත් කිරීමට, නිර්නාමික මිතික වාර්තා කිරීම ඇතුළු/ඉවත් වීම යනාදිය භාවිතා කරයි.</li>
+  <li><a href="https://github.com/v2tec/watchtower" target="_blank">Watchtower</a> සෑම පැයකම රූප යාවත්කාලීන කිරීම් සඳහා පරීක්ෂා කිරීමට ස්ථාපනය කර වින්‍යාස කර ඇති අතර, සෑම Outline සේවාදායකයක්ම නවතම විශේෂාංග සහ ආරක්ෂක වැඩි දියුණු කිරීම් සමග නිරන්තරයෙන් යාවත්කාලීන බව සහතික කිරීමට උදවු වේ.</li>
+  <li>කළමනාකරණ API වෙත ප්‍රවේශ වීම සඳහා භාවිතා කරන වෙබ් සේවාදායකයක්, රහසිගත සහ අහඹු මාර්ගයක අහඹු පෝටයක් මත ආරම්භ වේ.</li>
+  <li><a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank">ස්වයං අත්සන් කළ SSL සහතිකය</a> වසම් නාමයක් නොමැති වුවද Outline සේවාදායකයේ කළමනාකරණය TLS භාවිතයෙන් සංකේතනය කළ හැකි වන පරිදි ස්වයං-අත්සන සහිත SSL සහතිකයක් තනනු ලැබේ. මෙම සහතිකයේ අනන්‍ය වූ ඇඟිලි සලකුණක් ද උත්පාදනය කර Outline කළමනාකරු යෙදුම තුළ ගබඩා කර ඇති අතර, MITM ප්‍රහාර වළක්වා ගැනීමට උදවු වේ.</li>
+</ul>
+
+<p data-aura-rendered-by="12:1723;a">ස්ථාපනය කිරීමෙන් පසු Outline ස්ථාපනයට කිසිදු වින්‍යාසයක් අවශ්‍ය නොවේ.<br />
+  <br />
+  <strong>සේවාදායක ආරක්ෂාව</strong><br />
+  <br />
+  Outline මෘදුකාංගය විවෘත මූලාශ්‍රයකි, එයින් අදහස් කරන්නේ ඕනෑම කෙනෙකුට කේතය දැකගත හැකි අතර කිසියම් අනාවරණය වූ දුර්වලතා තිබේ නම් එය වැඩි දියුණු කළ හැකි බවයි. අපගේ කේතය <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank">GitHub</a> හි සත්කාරකත්වය දරයි.<br />
+  <br />
+  තවද, ස්ථාපනය කර ඇති සියලු Outline සේවාදායකයන් නව අනුවාදයක් නිකුත් කරන සෑම විටම ස්වයංක්‍රීයව යාවත්කාලීන වන අතර, මෘදුකාංගයේ පැරණි අනුවාදවල කිසිදු Outline සේවාදායකයක් ඉතිරි නොවන බව සහතික කරයි.<br />
+  <br />
+  සේවාදායකයේ ප්‍රවේශ යතුරු කළමනාකරණය කිරීම සඳහා, Outline කළමනාකරු යෙදුම Outline සේවාදායකයේ කළමනාකරණ සේවාවක් සමග අන්තර්ක්‍රියා කරයි. කළමනාකරණ සේවාව අහඹු පෝටයක් මත සහ රහසිගත සහ අනන්‍ය වූ මාර්ගයක ධාවනය වේ. සුදුසු රහස් මාර්ගය සඳහන් කර නොමැති නම්, විමසුම්වලට ප්‍රතිචාර නොදක්වන බැවින් කළමනාකරණ සේවාවම ප්‍රතිරෝධී වේ. අවසාන වශයෙන්, කළමනාකරණ සේවාව වෙත සියලු සන්නිවේදනයන් <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank">ස්වයං අත්සන් කළ SSL සහතිකයක්</a> සමග සංකේතනය කර ඇත.<br />
+  <br />
+  එසේම, Outline සේවාදායකය කිසිදු ලොගයක් ගබඩා නොකරයි, එබැවින් එය සම්මුතියකට ලක් වුවද, පරිශීලක දත්ත කිසිවක් අනාවරණය නොවේ. <a href="https://support.getoutline.org/s/article/Security-and-privacy" target="_blank">මෙතැනින්</a> තව දැන ගන්න. Outline 2018 දී <a href="https://radicallyopensecurity.com/" target="_blank">Radically Open Security</a> සහ <a href="https://cure53.de/" target="_blank">Cure53</a> විසින් විගණනය කරන ලදි. <a href="https://support.getoutline.org/s/article/Security-and-privacy" target="_blank">මෙහි</a> වාර්තා බලන්න.<br />
+  <br />
+  <strong>UDP ගමනාගමනය හැසිරවීම</strong><br />
+  <br />
+Outline හට පද්ධතිය පුරා VPN ලෙස ක්‍රියා කිරීමට හැකි වේ, එනම් සියලු UDP ගමනාගමනය Outline සේවාදායකය හරහා උමංගත කර ඇති බවයි.<br />
+  <br />
+  <strong>DNS ගමනාගමනය</strong></p>
+
+<p data-aura-rendered-by="12:1723;a"><br />
+  Outline සියලු DNS සෙවීම් Outline සේවාදායකය හරහා සිදු කරයි, සහ අනෙකුත් සියලු ජාල ක්‍රියාකාරකම් සඳහා භාවිතා කරන එකම සංකේතනය භාවිතයෙන් ඒවා ආරක්ෂා කරයි. ඔබේ DNS විමසුම් Outline සේවාදායකය හරහා Dyn අන්තර්ජාල මාර්ගෝපදේශය, OpenDNS, Cloudflare DNS හෝ Quad9 DNS වෙත යයි. Outline කිසිවිටෙක ඔබේ DNS සෙවීම් ලොග් නොකරයි.&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="232" sourceLocale="si">WEB:14919822</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline භාවිතා කරන අතරේ ආරක්ෂාව සහ පෞද්ගලිකත්වය</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:258;a">Outline භාවිතා කරන අතරේ ආරක්ෂාව සහ පෞද්ගලිකත්වය</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Outline ඔබේ සබැඳි සන්නිවේදන ආරක්ෂා කරන ආකාරය</strong></p>
+
+<p data-aura-rendered-by="12:258;a">අන්තර්ජාල ගමනාගමනය ඔබේ ප්‍රාදේශීය හෝ ජාතික ජාලය හරහා ගමන් කරන අතරතුර නිරීක්ෂණවලට වඩාත් අවදානමට ලක් වේ.</p>
+
+<p data-aura-rendered-by="12:258;a">Outline ඔබේ ජාතික ජාලය තුළ ගමන් කරන අතරේ ඔබේ අන්තර්ජාල ගමනාගමනය සංකේතනය කිරීමෙන් ඔබේ සන්නිවේදනය පුද්ගලිකව තබා ගැනීමට සහ එය Outline සේවාදායකය වෙත ළඟා වන තෙක් එය සංකේතනය කර තබා ගැනීමට උදවු වේ. ගමනාගමනය Outline සමග සංකේතනය කර ඇති විට, ජාල බලන්නන්ට ඔබ පිවිසෙන වෙබ් අඩවි හෝ ඔබ මාරු කරන තොරතුරු පරීක්ෂා කළ නොහැක.</p>
+
+<p data-aura-rendered-by="12:258;a">ඔබේ රට තුළ වෙනත් ආකාරයකින් ප්‍රවේශ විය නොහැකි ආරක්ෂිත අගට අග දක්වා සන්නිවේදන මෙවලම් වෙත ප්‍රවේශය ප්‍රතිසාධනය කිරීමට Outline ඔබට උදවු විය හැක.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>සංකේතන සම්මතයන්</strong></p>
+
+<p data-aura-rendered-by="12:258;a">AEAD 256-bit Chacha2020 IETF Poly 1305 කේතාංකය භාවිතයෙන් ඔබේ උපාංගය සහ Outline සේවාදායකය අතර සන්නිවේදන Outline සංකේතනය කරයි. AEAD කේතාංක රහස්‍යභාවය, අඛණ්ඩතාව සහ සත්‍යතාව පිරිනමන අතර නවීන දෘඪාංගවල අනර්ඝ කාර්ය සාධනයක් ප්‍රදර්ශනය කරයි.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>ආරක්ෂක විගණන</strong></p>
+
+<p data-aura-rendered-by="12:258;a">2018 දී, නවතම ආරක්ෂක ප්‍රමිතීන්ට එරෙහිව මෘදුකාංග සමාලෝචනය කරන ස්වාධීන ඩිජිටල් ආරක්ෂක සංවිධාන දෙකක් වන Radically Open Security සහ Cure53 විසින් Outline විගණනය කර ඇත. රැඩිකල් විවෘත ආරක්ෂාව 2022 දී අතිරේක විගණනයක් සිදු කරන ලද අතර Cure53 2024 දී Outline SDK හි විගණනයක් සිදු කරන ලදි. ඔබට මෙහි වාර්තා කියවිය හැක:</p>
+
+<ul data-aura-rendered-by="12:258;a">
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf" target="_blank">Radically Open Security අවබෝධ පරීක්ෂණ වාර්තාව (2018 මාර්තු)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf" target="_blank">Cure53 අවබෝධ සහ විගණන වාර්තාව Jigsaw Outline (2018 දෙසැම්බර්)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf" target="_blank">Radically Open Security අවබෝධ පරීක්ෂණ වාර්තාව (2022 දෙසැම්බර්)</a></li>
+  <li><a href="https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf" target="_blank">Cure53 Pentest වාර්තාව Jigsaw Outline VPN SDK (2024 ජනවාරි)</a></li>
+</ul>
+
+<p data-aura-rendered-by="12:258;a"><strong>නිර්නාමික මිනුම් සහ ලොග</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Outline එක් එක් ප්‍රවේශ යතුර සඳහා "බයිට් මාරු කළ" ලෙස භාවිතා කරන කලාප පළල හඹා යයි. මෙම තොරතුරු සේවාදායක පරිපාලකයින්ට අවශ්‍ය පරිදි ඔවුන්ගේ ක්ලවුඩ් සේවාදායක සැපයුම්කරුවන් සමග ඔවුන්ගේ කලාප පළල ග්‍රාහකත්වය සකස් කිරීමට ඉඩ සලසන නමුත්, ඔවුන්ට Outline සේවාදායකය හරහා ගිය සත්‍ය තොරතුරු බැලීමට ඉඩ නොදෙයි.</p>
+
+<p data-aura-rendered-by="12:258;a">Outline හි <a href="/outline-faq/answer/15331222" rel="noopener" target="_blank">දත්ත සහ තොරතුරු රැස් කිරීම</a> පිළිබඳව තව දැන ගන්න.</p>
+
+<hr data-aura-rendered-by="12:258;a" />
+<p data-aura-rendered-by="12:258;a"><strong>ආරක්ෂාව සහ රහස්‍යතා නිඅප්‍ර</strong>&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>Outline මා අන්තර්ජාලය හරහා නිර්නාමික කළ හැකි ද?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">නැහැ, Outline යනු නිර්නාමික මෙවලමක් නොවේ. Outline විභව ජාල බලන්නන්ගෙන් ඔබේ පෞද්ගලිකත්වය ආරක්ෂා කරයි.</p>
+
+<p data-aura-rendered-by="12:258;a">ඔබ ලොග් වන විට සහ සමහර විට බ්‍රව්සරයේ ඇඟිලි සලකුණු වැනි තාක්ෂණික ක්‍රම හරහා ඔවුන්ට ඔබව තවමත් හඳුනා ගත හැකි නිසා, ඔබ පිවිසෙන වෙබ් අඩවිවල Outline ඔබට සම්පූර්ණ නිර්නාමික භාවය ලබා නොදෙයි. ජංගම යෙදුම් සඳහා, බොහෝ නවීන ස්මාර්ට්ෆෝන් වල APIs ඇත, එමගින් ස්ථාපිත යෙදුම්වලට ඔබේ ප්‍රොක්සිය වෙත ස්වාධීනව ඔබේ ස්ථානය ලබා ගැනීමට ඉඩ සලසයි.</p>
+
+<p data-aura-rendered-by="12:258;a">VPNs සාමාන්‍යයෙන් වැදගත් ආරක්ෂාවක් ලබා දෙයි, විශේෂයෙන් අන්තර්ජාල නිරීක්ෂණවලින්, නමුත් අන්තර්ජාලය හරහා ක්‍රියාත්මක වීමට සෑම විටම අවදානම් පවතී. VPN එකක් සමග වුවද, ISP දැනටමත් ඔබේ අනන්‍යතාවය පිළිබඳව දැනුවත්ව සිටී නම් සහ ඔබේ ජාල ගමනාගමනය නිරීක්ෂණය කිරීමට හැකි නම්, එයට ඔබේ Outline සේවාදායකයේ IP ලිපිනය තීරණය කිරීමට හැකි වනු ඇත. මෙම තොරතුරු Outline සේවාදායකයට ප්‍රවේශය අවහිර කිරීමට හෝ ඔබ සාමාන්‍යයෙන් සබැඳිව සිටින විට, සහ සමහරවිට ඔබේ දළ ස්ථානය වැනි භාවිත රටා ඉගෙන ගැනීමට භාවිතා කළ හැක.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>මම Outline භාවිතා කරන්නේ නම් යමෙකුට පැවසිය හැකි ද?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">සමහරවිට. ඔබ ප්‍රවේශ වන වේදිකා සහ සේවාවන් බොහෝ විට ඔබේ සම්බන්ධතාවය ක්ලවුඩ් සේවාදායකයකින් පැමිණෙන බව පැවසීමට හැකි වනු ඇත. ඉඳහිට, ඔබ VPN භාවිතා කරන බව ඔවුන්ට නිගමනය කළ හැකි නමුත්, ඔවුන්ට ඔබේ අන්තර්ජාල ගමනාගමනයේ අන්තර්ගතය බැලීමට නොහැකි වනු ඇත.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>විය හැකි සියලු සයිබර් තර්ජනවලින් Outline මාව ආරක්ෂා කරයි ද?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">නැහැ. හැකි සියලු සයිබර් තර්ජනවලින් කිසිදු මෙවලමක් ඔබව ආරක්ෂා නොකරනු ඇත. Outline ඔබට විවෘත අන්තර්ජාලයට ප්‍රවේශය ලබා දෙන අතර ඔබේ ගමනාගමනය සංකේතනය කිරීමෙන් ඔබේ පෞද්ගලිකත්වය වැඩි කරන නමුත්, අනිෂ්ට මෘදුකාංග සහ තතුබෑම් වැනි, වෙනත් ආකාරයේ ප්‍රහාරවලින් ඔබව ආරක්ෂා කර ගැනීමට අමතර පූර්වාරක්ෂාවන් ගන්නා ලෙස අපි නිර්දේශ කරමු.</p>
+
+<p data-aura-rendered-by="12:258;a">ඔබේ සබැඳි ආරක්‍ෂාව ශක්තිමත් කිරීම සඳහා, ඔබේ සංවිධානයේ සයිබර් ආරක්ෂණ විශේෂඥයා සමග වැඩ කිරීමට සලකා බලන්න. විකල්පයක් ලෙස, ඔබට ඔබේ ගැටලු සඳහා නිවැරදි සයිබර් ආරක්ෂණ මෙවලම් තෝරා ගැනීම පිළිබඳ පැහැදිලි උපදෙස් ලබා දීම සඳහා ගොඩනගා ඇති වෙබ් අඩවියක් වන <a href="https://securityplanner.org/" target="_blank">Security Planner</a> හි දී ප්‍රමුඛ ආරක්ෂක විශේෂඥයින්ගෙන් පෞද්ගලීකරණය කළ මාර්ගෝපදේශ ලබා ගත හැක.</p>
+
+<p data-aura-rendered-by="12:258;a">ඔබට <a href="https://jigsaw.google.com/" target="_blank">Jigsaw</a> වෙතින්, <a href="https://getintra.org/" target="_blank">Intra</a>, <a href="https://g.co/shield" target="_blank">Project Shield</a>, සහ <a href="https://chrome.google.com/webstore/detail/password-alert/noondiphcddnnabmjcihcjfbhfklnnep?" rel="noopener" target="_blank">Password Alert</a> වැනි අනෙකුත් සයිබර් ආරක්ෂණ නිෂ්පාදන ද පරීක්ෂා කර බැලිය හැක.&nbsp;</p>
+
+<p data-aura-rendered-by="12:258;a"><strong>VPN එකක් භාවිතා කිරීම නීත්‍යානුකූල ද?</strong></p>
+
+<p data-aura-rendered-by="12:258;a">Outline ක්‍රියාත්මක කිරීමට හෝ යෙදුම භාවිතා කිරීමට පෙර ඔබ භාවිතා කිරීමට අදහස් කරන ක්ලවුඩ් සපයන්නා සඳහා ඔබේ ප්‍රාදේශීය නීති, රෙගුලාසි සහ සේවා නියම පරීක්ෂා කරන්න.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="89" sourceLocale="si">WEB:15330317</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">මම Outline සේවාදායකයට සම්බන්ධ වී සිටියත් මට අන්තර්ජාලයට පිවිසිය නොහැක්කේ ඇයි?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:32933;a">ඔබ ජංගම දුරකථනයක් භාවිතා කරන්නේ නම්, ජංගම දත්ත සහ Wi-Fi සම්බන්ධතා අතර මාරු වීමට උත්සාහ කරන්න. සමහර විට එක් සම්බන්ධතා වර්ගයක් තවත් ක්‍රියා නොකරන විට ක්‍රියා කරයි. ඔබ පරිගණකයක් භාවිතා කරන්නේ නම්, බ්‍රෝඩ්බෑන්ඩ් වෙතින් විසන්ධි කර නැවත සම්බන්ධ කිරීමට උත්සාහ කරන්න.</p>
+
+<p data-aura-rendered-by="12:32933;a">ඔබ දිගටම දුෂ්කරතා අත්විඳින්නේ නම්, ඔබේ Outline සේවාදායකයේ ගැටලුවක් තිබිය හැක. විකල්ප සේවාදායකයක් සඳහා නව ප්‍රවේශ යතුරක් සඳහා ඔබේ<a href="/outline-faq/answer/15330920" rel="noopener" target="_blank"> සේවා කළමනාකරු</a> අමතන්න. යතුර එහි කෝටාව ඉක්මවා ඇත්නම් ඔබේ<a href="https://google-jigsaw--jigsawuat.sandbox.my.site.com/outline/s/article/Terminology" target="_blank"> </a><a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">ප්‍රවේශ යතුරේ</a> දත්ත සීමාව වැඩි කිරීමට ද ඔවුන්ට හැකි විය හැක.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="296" sourceLocale="si">WEB:15330818</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline සේවාලාභියා ධාවනය කිරීමට පද්ධති අවශ්‍යතා මොනවා ද?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:24676;a">ඕනෑම මෙහෙයුම් පද්ධතියක Outline උත්සාහ කිරීමට ඔබව සාදරයෙන් පිළිගනිමු. අවශ්‍ය අවම මෙහෙයුම් පද්ධති පහත දැක්වේ.</p>
+
+<table class="borders" data-aura-rendered-by="12:24676;a" width="312">
+  <tbody>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top"><b>මෙහෙයුම් පද්ධතිය</b></td>
+      <td colspan="1" rowspan="1" valign="top"><b>අවම අනුවාදය</b></td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Android</td>
+      <td colspan="1" rowspan="1" valign="top">10</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">iOS</td>
+      <td colspan="1" rowspan="1" valign="top">15.5</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">macOS</td>
+      <td colspan="1" rowspan="1" valign="top">12.0</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Windows</td>
+      <td colspan="1" rowspan="1" valign="top">10</td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1" valign="top">Linux</td>
+      <td colspan="1" rowspan="1" valign="top">Ubuntu&nbsp;20.04</td>
+    </tr>
+  </tbody>
+</table>
+
+<p data-aura-rendered-by="12:24676;a"><br />
+  Outline සේවාලාභීයා තවත් මෙහෙයුම් පද්ධති මත වැඩ කිරීමට උදවු කිරීමට අවශ්‍ය ද?&nbsp;GitHub මත <a href="https://github.com/Jigsaw-Code/outline-client#platform-specific-development" target="_blank">අපගේ කේත පදනමට දායක වන්න</a>!</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="107" sourceLocale="si">WEB:15330824</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">මගේ Outline සේවාදායක මෘදුකාංගය යාවත්කාලීන කරන්නේ කෙසේ ද?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:10378;a">ඔබ සැම විටම නවතම Outline තාක්ෂණය ධාවනය වන පරිදි නවතම ආරක්ෂක වැඩි දියුණු කිරීම් සමග Outline සේවාදායක ස්වයංක්‍රීයව යාවත්කාලීන වේ. Outline මෘදුකාංගය අඩංගු ඈඳන රූපය නිතිපතා පරීක්ෂා කර යාවත්කාලීන කරන විවෘත මූලාශ්‍ර පුස්තකාලයක් වන <a href="https://github.com/v2tec/watchtower" target="_blank">Watchtower</a> භාවිතයෙන් ස්වයංක්‍රීය යාවත්කාලීන ක්‍රියාවලිය සබල කර ඇත.</p>
+
+<p data-aura-rendered-by="12:10378;a">මීට අමතරව, ඔබ Outline කළමනාකරු භාවිතයෙන් Outline ස්ථාපනය කරන විට, <a href="https://wiki.debian.org/UnattendedUpgrades" target="_blank">අවධානයෙන් තොර උත්ශ්‍රේණි කිරීම්</a> (Ubuntu) භාවිතයෙන් සේවාදායකයේ මෘදුකාංග ස්වයංක්‍රීයව උත්ශ්‍රේණි කිරීමට සහ අවශ්‍ය විට දී එය නැවත ආරම්භ කිරීමට අපි ක්‍රෝන් කාර්යයක් පිහිටුවන්නෙමු. ධාරකය Outline ධාවනය කිරීමට අමතරව වෙනත් අරමුණු සඳහා භාවිතා කරයි යන උපකල්පනය යටතේ, පවතින වින්‍යාසය සුරැකීමට මෙය උසස් ප්‍රකාරයේ දී සිදු නොවන බව සලකන්න.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="102" sourceLocale="si">WEB:15330825</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">බාගැනීමේ සබැඳිය ක්‍රියා නොකරන්නේ නම් මම Outline කළමනාකරු බාගන්නේ කෙසේ ද?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">බොහෝ මෙහෙයුම් පද්ධති සඳහා යෙදුම් සෘජුවම බාගැනීමට <a href="https://getoutline.org/get-started/#step-1" target="_blank">මෙම සබැඳිය</a> හෝ <a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">මෙම සබැඳිය</a> භාවිතා කරන්න.&nbsp;</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="129" sourceLocale="si">WEB:15330920</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">පාරිභාෂිතය</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:23504;a"><strong>VPN යනු කුමක් ද?</strong><br />
+  අතථ්‍ය පුද්ගලික ජාලයක් (VPN) යනු ඔබේ උපාංග(ය) සහ සංග්‍රාහක සේවාදායකයක් අතර පෞද්ගලික සම්බන්ධතාවයකි. ඔබ VPN භාවිතා කරන විට, ඔබේ ගමනාගමනය අන්තර්ජාල සැපයුම්කරුගෙන් සැඟවී ඇත. ඔබට පහත අවස්ථාවල දී VPN භාවිතා කිරීමට අවශ්‍ය විය හැක:</p>
+
+<ul data-aura-rendered-by="12:23504;a">
+  <li>පොදු Wi-Fi ජාලයක් භාවිතා කරන විට ඔබේ දත්ත ආරක්ෂා කරන්න</li>
+  <li>ඔබේ බ්‍රවුස් කිරීමේ දත්ත ඔබේ අන්තර්ජාල සැපයුම්කරුගෙන් සහ රාජ්‍ය ආයතනවලින් රහසිගතව තබා ගන්න</li>
+  <li>ලොව පුරා විවිධ මූලාශ්‍රවලින් වාරණය නොකළ අන්තර්ගතයට ප්‍රවේශ වන්න</li>
+</ul>
+
+<p data-aura-rendered-by="12:23504;a"><strong>සාම්ප්‍රදායික VPN වලට වඩා Outline වෙනස් වන්නේ කෙසේ ද?</strong><br />
+  පොදු ආරක්ෂක ප්‍රොටෝකෝල සහ/හෝ ගමනාගමන පරිමාව රටා හඳුනා ගැනීමෙන් අන්තර්ජාල සැපයුම්කරුවන්ට සම්ප්‍රදායික VPN පහසුවෙන් හඳුනාගෙන අවහිර කළ හැක. Outline සාම්ප්‍රදායික VPNs වලට වඩා ප්‍රත්‍යස්ථ වේ, මන්ද එය හදුනා ගැනීමට අපහසු වන පරිදි නිර්මාණය කර ඇති ප්‍රොටෝකෝලයක් භාවිතා කර ඇති නිසා අවහිර කිරීමට අපහසු වේ. Outline ජාල පදනම් අවහිර කිරීම් සහ IP අවහිර කිරීම් ඇතුළු සංකීර්ණ වාරණයන්ට ප්‍රතිරෝධී වේ.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Outline සේවාදායකයක් යනු කුමක් ද?</strong><br />
+  Outline සේවාදායකයක් VPN ධාවනය කරන අතර එය පරිශීලකයින්ට සම්බන්ධ වීමට ඉඩ දී ඇත. ඔබ නව ජාලයක් නිර්මාණය කරන්නේ නම්, ඔබට එකක් තිබේ නම්, ඔබට ඔබේම සුරක්ෂිත සේවාදායකයක් ඔබේ දළ සටහන් සේවාදායකය ලෙස භාවිතා කළ හැක, නැතහොත් ඔබට මෙවැනි ක්ලවුඩ් සේවා සපයන්නෙකු භාවිතා කළ හැක:</p>
+
+<ul data-aura-rendered-by="12:23504;a">
+  <li>DigitalOcean</li>
+  <li>Google Cloud වේදිකව (GCP)</li>
+  <li>Amazon Web Services (AWS)</li>
+</ul>
+
+<p data-aura-rendered-by="12:23504;a"><a id="One" target="_blank"></a>ඔබ ඔබේ සේවාදායකය Outline කළමනාකරු තුළ පිහිටුවනු ඇත.<br />
+  <br />
+  <strong><a id="servicemanager" name="servicemanager"></a>සේවා කළමනාකරු යනු කුමක් ද?</strong><br />
+  සේවා කළමනාකරු යනු Outline සේවාදායකය සැකසීමට සහ පරිශීලකයින් සමග ප්‍රවේශ යතුරු බෙදා ගැනීමට වගකිව යුතු පුද්ගලයා වේ. සේවා කළමනාකරු සාමාන්‍යයෙන් සේවාදායක භාවිතයේ පිරිවැය සඳහා වගකිව යුතු වේ.&nbsp;<br />
+  <br />
+  <strong><a id="accesskey" name="accesskey"></a>ප්‍රවේශ යතුරක් යනු කුමක් ද?</strong><br />
+  පවතින Outline සේවාදායකයකට ප්‍රවේශ වීමට සහ VPN වෙත සම්බන්ධ වීමට ප්‍රවේශ යතුරක් භාවිතා කරයි. <a href="#servicemanager" rel="noopener">සේවා කළමනාකරුවෙකු</a> ඔබට ප්‍රවේශ යතුරක් ලබා දෙනු ඇත, නැතහොත් ඔබටම <a href="/outline-faq/answer/15331530" rel="noopener" target="_blank">Outline සේවාදායකයක් පිහිටුවිය</a> හැක.&nbsp;ප්‍රවේශ යතුරක් පෙනෙන්නේ කෙසේ ද යන්න පිළිබඳ උදාහරණයක් මෙන්න (නියැදිය පමණි; ක්‍රියා නොකරනු ඇත): <br />
+  <br />
+  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1<br />
+  <br />
+  <strong>Outline කළමනාකරු යනු කුමක් ද?</strong><br />
+  Outline කළමනාකරු යනු සේවා කළමනාකරුවෙකුට Outline සේවාදායකයක් සැකසීමට, <a href="#accesskey" rel="noopener">ප්‍රවේශ යතුරු</a> උත්පාදනය කිරීමට සහ යතුරකට භාවිතය පිළිබඳ දත්ත සීමාවන් සැකසීමට ඉඩ දෙන ඩෙස්ක්ටොප් යෙදුමකි. ඔබට Outline කළමනාකරු හි නවතම අනුවාදය <a href="https://getoutline.org/get-started/#step-3" target="_blank">මෙතැනින්</a> හෝ <a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">මෙතැනින්</a> බාගත හැක.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>Outline සේවාලාභීයා යනු කුමක් ද?</strong><br />
+  Outline සේවාලාභීයා යනු ඩෙස්ක්ටොප් සහ ජංගම දුරකථන සඳහා ලබා ගත හැකි යෙදුමකි, එය ඔබට Outline සේවාදායකයකට සම්බන්ධ වීමට සහ ප්‍රවේශ යතුර භාවිතයෙන් VPN වෙත ප්‍රවේශ වීමට ඉඩ දෙයි. ඔබට Outline සේවාලාභීයා හි නවතම අනුවාදය <a href="https://getoutline.org/get-started/#step-3" target="_blank">මෙතැනින්</a> හෝ <a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">මෙතැනින්</a> බාගත හැක.</p>
+
+<p data-aura-rendered-by="12:23504;a"><strong>දත්ත සීමාවන් මොනවා ද?</strong><br />
+  Outline කළමනාකරු විසින් සේවා කළමනාකරුවන්ට ප්‍රවේශ යතුරු මත දින 30 ක දත්ත සීමාවක් සැකසීමට ඉඩ ලබා දෙන අතර, අධික ලෙස භාවිතය වැළැක්වීමට සහ පිරිවැය පුරෝකථනය කළ හැකි ලෙස තබා ගැනීමට උදවු වේ. සේවා කළමනාකරුවන්ට සෑම යතුරකටම අදාළ වන පෙරනිමි සීමාවක් සැකසිය හැකි අතර පෙරනිමි සීමාව අභිබවා යාමට ඕනෑම යතුරක වෙනස් සීමාවක් ද සැකසිය හැක. සීමාවක් නියම කළ පසු, එය වහාම ක්‍රියාත්මක වන අතර පැයකට වරක් බලාත්මක වේ.</p>
+
+<p data-aura-rendered-by="12:23504;a">සේවා කළමනාකරුවන් Jigsaw සමග මාත්‍රික බෙදා ගැනීමට තෝරා ගන්නේ නම්, ඔවුන් දත්ත සීමා භාවිතය වාර්තා කරන්නේ කෙසේ ද යන්න පිළිබඳ විස්තර සඳහා <a href="/outline-faq/answer/15331222" rel="noopener" target="_blank">දත්ත රැස් කිරීමේ ප්‍රතිපත්තිය</a> බැලිය යුතු ය.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="110" sourceLocale="si">WEB:15331121</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ඔබ "getoutline.me" සහ "@OutlineVpnOfficial" Telegram නාලිකාවට සහාය දක්වනවා ද?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Outline කණ්ඩායමට "<a href="http://getoutline.me/" target="_blank">getoutline.me</a>" වෙබ් අඩවිය සහ ඊට සම්බන්ධ Telegram නාලිකාව වන "@OutlineVpnOfficial" පිළිබඳව බොහෝ විමසීම් ලැබී ඇත. මෙම සේවාවන් Outline කණ්ඩායමට අනුබද්ධ නොවන අතර මෙම සේවාවන්ගෙන් ප්‍රවේශ යතුරු සමග ගැටලු අත්විඳින පරිශීලකයින්ට අපට සහාය විය නොහැක.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="si">WEB:15331122</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">තිබෙන භාෂා</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Outline පහත භාෂාවලින් ලබා ගත හැක:</p>
+
+<ul>
+  <li aria-level="1">අප්‍රිකානු</li>
+  <li aria-level="1">ඇල්බේනියානු</li>
+  <li aria-level="1">ඇම්හැරික්</li>
+  <li aria-level="1">අරාබි</li>
+  <li aria-level="1">ආර්මේනියානු</li>
+  <li aria-level="1">අසර්බයිජාන</li>
+  <li aria-level="1">බෙංගාලි</li>
+  <li aria-level="1">බොස්නියානු</li>
+  <li aria-level="1">බල්ගේරියානු</li>
+  <li aria-level="1">බුරුම</li>
+  <li aria-level="1">කැටලන්</li>
+  <li aria-level="1">චීන (සුළුකළ)</li>
+  <li aria-level="1">චීන (සාම්ප්‍රදායික)</li>
+  <li aria-level="1">ක්‍රොඒෂියානු</li>
+  <li aria-level="1">චෙක්</li>
+  <li aria-level="1">ඩෙන්මාර්ක</li>
+  <li aria-level="1">ලන්දේසි</li>
+  <li aria-level="1">ඉංග්‍රීසි (ඇමරිකානු)</li>
+  <li aria-level="1">ඉංග්‍රීසි (බ්‍රිතාන්‍ය)</li>
+  <li aria-level="1">එස්තෝනියානු</li>
+  <li aria-level="1">පිලිපීන</li>
+  <li aria-level="1">ෆින්ලන්ත</li>
+  <li aria-level="1">ප්‍රංශ</li>
+  <li aria-level="1">ජෝර්ජියානු</li>
+  <li aria-level="1">ජර්මානු</li>
+  <li aria-level="1">ග්‍රීක</li>
+  <li aria-level="1">හීබෲ</li>
+  <li aria-level="1">හින්දි</li>
+  <li aria-level="1">හංගේරියානු</li>
+  <li aria-level="1">අයිස්ලන්ත</li>
+  <li aria-level="1">ඉන්දුනීසියානු</li>
+  <li aria-level="1">ඉතාලි</li>
+  <li aria-level="1">ජපන්</li>
+  <li aria-level="1">කශාහ්</li>
+  <li aria-level="1">කමර්</li>
+  <li aria-level="1">කොරියානු</li>
+  <li aria-level="1">ලාඕ</li>
+  <li aria-level="1">ලැට්වියානු</li>
+  <li aria-level="1">ලිතුවේනියානු</li>
+  <li aria-level="1">මැසිඩෝනියානු</li>
+  <li aria-level="1">මැලේ</li>
+  <li aria-level="1">මරාති</li>
+  <li aria-level="1">මොන්ගෝලියානු</li>
+  <li aria-level="1">නේපාල</li>
+  <li aria-level="1">නෝර්වීජියානු</li>
+  <li aria-level="1">පර්සියානු</li>
+  <li aria-level="1">පෝලන්ත</li>
+  <li aria-level="1">පෘතුගීසි (බ්‍රසීලියානු)</li>
+  <li aria-level="1">පෘතුගීසි (යුරෝපීය)</li>
+  <li aria-level="1">රුමේනියානු</li>
+  <li aria-level="1">රුසියානු</li>
+  <li aria-level="1">සර්බියානු (සිරිලික්)</li>
+  <li aria-level="1">සර්බියානු (ලතින්)</li>
+  <li aria-level="1">සිංහල</li>
+  <li aria-level="1">ස්ලෝවැකියානු</li>
+  <li aria-level="1">ස්ලෝවේනියානු</li>
+  <li aria-level="1">ස්පාඤ්ඤ (යුරෝපීය)</li>
+  <li aria-level="1">ස්පාඤ්ඤ (ලතින් ඇමරිකානු)</li>
+  <li aria-level="1">ස්වාහීලී</li>
+  <li aria-level="1">ස්වීඩන</li>
+  <li aria-level="1">දෙමළ</li>
+  <li aria-level="1">තායි</li>
+  <li aria-level="1">තුර්කි</li>
+  <li aria-level="1">යුක්‍රේනියානු</li>
+  <li aria-level="1">උර්දු</li>
+  <li aria-level="1">වියට්නාම</li>
+</ul>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="110" sourceLocale="si">WEB:15331125</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">මට වින්ඩෝස් මත Outline සේවාලාභීයා ස්ථාපනය කළ නොහැක්කේ ඇයි?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:31254;a">ඔබට මෙම දෝෂ පණිවිඩය දැකිය හැක: “කණගාටුයි, දළ සටහන් නිසි ලෙස ස්ථාපනය කර නැති බව පෙනේ. එය නැවත ස්ථාපන කිරීමට උත්සාහ කරන්න. එය ක්‍රියා නොකරන්නේ නම්, <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">ප්‍රතිපෝෂණ ඉදිරිපත් කරන්න</a>.”</p>
+
+<p data-aura-rendered-by="12:31254;a">ඔබ Windows හි Outline භාවිතා කරන්නේ නම්, ඉඳහිට, ඔබට අනපේක්ෂිත දෝෂයක් ඇති විය හැක. බොහෝ අවස්ථාවල දී, Outline TAP ඇඩැප්ටරය (ධාවක) මකා දැමීමට අවශ්‍ය වන අතර Outline නැවත ස්ථාපනය කළ යුතු වේ.</p>
+
+<p data-aura-rendered-by="12:31254;a">ඔබේ Windows මෙහෙයුම් පද්ධති අනුවාදය මත පදනම්ව පියවර වෙනස් විය හැකි නමුත්, TAP ඇඩැප්ටරය සහ Outline අස්ථාපනය කර Outline යළි ස්ථාපනය කරන්නේ කෙසේ ද යන්න සඳහා පොදු පියවර පහත දැක්වේ.</p>
+
+<ol data-aura-rendered-by="12:31254;a">
+  <li>Outline සේවාලාභීයා සඳහා TAP ඇඩැප්ටරය අස්ථාපනය කරන්න
+    <ul>
+      <li><strong>උපාංග කළමනාකරු</strong>, පසුව <strong>ජාල ඇඩැප්ටර</strong> වෙත යන්න</li>
+      <li><strong>TAP-Windows Adapter V9</strong> ගොනුව හෝ Outline සමග සම්බන්ධ TAP ඇඩැප්ටරය සොයා ගන්න</li>
+      <li>මෙම ඇඩප්ටරය අස්ථාපනය කරන්න හෝ මකන්න. මෙය ඔබ ස්ථාපනය කර ඇති අනෙකුත් VPN යෙදුම්වලට බලපාන බව මතක තබා ගන්න.&nbsp;</li>
+    </ul>
+  </li>
+  <li>Outline සේවාලාභීයා අස්ථාපනය කරන්න
+    <ul>
+      <li><strong>වැඩසටහන් සහ විශේෂාංග</strong>, පසුව <strong>වැඩසටහන අස්ථාපනය කරන්න</strong> වෙත යන්න</li>
+      <li>Outline සේවාලාභීයා යෙදුම සොයා ගෙන Outline සේවාලාභීයා අස්ථාපනය කරන්න</li>
+      <li><a href="https://getoutline.org/get-started/#step-3" target="_blank">Outline සේවාලාභීයා හි නවතම අනුවාදය බාගත කර</a> එය ඔබේ Windows උපාංගයෙහි යළි ස්ථාපනය කරන්න. නව ස්ථාපනය ස්වයංක්‍රීයව නව TAP ඇඩප්ටරයක් ​​ස්ථාපනය කළ යුතු ය.</li>
+    </ul>
+  </li>
+</ol>
+
+<p data-aura-rendered-by="12:31254;a">ඔබට තවමත් ගැටලු තිබේ නම්, <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">සහය සම්බන්ධ කර ගන්න</a>.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="109" sourceLocale="si">WEB:15331126</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">මට Outline සේවාවට සම්බන්ධ විය නොහැක්කේ ඇයි?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>ඔබට Outline සේවාව වෙත සම්බන්ධ වීමට නොහැකි වීමට හේතු කිහිපයක් තිබේ:&nbsp;</p>
+
+<ul>
+  <li aria-level="1"><strong>ඔබේ උපාංගය</strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=en_US#One" rel="noopener"><strong> </strong></a><a href="#Internetissues" rel="noopener"><strong>අන්තර්ජාලයෙන් විසන්ධි වී ඇත</strong></a><a href="#Internetissues" rel="noopener"> </a><strong>. </strong>සමහර විට ඔබේ උපාංගය ජාල සම්බන්ධතාවයේ බිඳීමක් අත්විඳින අතර එය ජාල නිරූපක යාවත්කාලීන කිරීමට මොහොතක් ගත විය හැක. ඔබේ උපාංගය ස්ථානීය ජාලයට සම්බන්ධ වී ඇති නමුත්, අන්තර්ජාලය ක්‍රියා විරහිත වීම ද විය හැක.</li>
+  <li aria-level="1"><strong>ඔබේ</strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=si_LK#Two"><strong> </strong></a><a href="#FirewallIssues" rel="noopener"><strong>ජාල ෆයර්වෝලය</strong></a><a href="#FirewallIssues" rel="noopener"> </a><strong><a href="#FirewallIssues" rel="noopener">ඔ</a>බේ Outline සේවාදායකය වෙත ප්‍රවේශය අවහිර කරයි. </strong>ඔබ පාසලක්, රැකියාවක් හෝ නොමිලේ රැහැන් රහිත ජාලයක් වැනි පොදු ජාලයක් භාවිතා කරන්නේ නම් මෙය පොදු වේ.</li>
+  <li aria-level="1"><strong>ඔබේ උපාංගය සතුව තිබේ</strong><a href="https://support.getoutline.org/s/article/Why-can-t-I-connect-to-the-Outline-service?language=si_LK#Three"><strong> </strong></a><a href="#SoftwareIssues" rel="noopener"><strong>ෆයර්වෝල් හෝ ප්‍රති-වයිරස මෘදුකාංග</strong></a><a href="#SoftwareIssues" rel="noopener"> </a><strong>එය ඔබේ Outline සේවාදායකයට පිවිසීම අවහිර කරයි.</strong></li>
+  <li aria-level="1"><strong>ඔබේ</strong><a href="#DeviceSettings" rel="noopener"><strong> </strong><strong>දුරකථන උපාංග සැකසිම්</strong></a><strong> වෙනස් කිරීමට අවශ්‍ය විය හැක.</strong></li>
+  <li aria-level="1"><strong>ඔබේ සේවා කළමනාකරු සේවාදායකය</strong><a href="#ServerIssues" rel="noopener"><strong> </strong><strong>විනාශ කර හෝ ඔබේ ISP ඔබේ ඉල්ලීම අවහිර කර තිබිය හැක</strong></a> .</li>
+</ul>
+
+<p><a id="Internetissues" name="Internetissues"><strong>අන්තර්ජාල සම්බන්ධතා ගැටලු:</strong></a></p>
+
+<p><strong>පරීක්ෂා කරන ආකාරය:</strong></p>
+
+<p>Outline ක්‍රියා විරහිත කර ඔබේ අන්තර්ජාල සම්බන්ධතාවය ප්‍රතිසාධනය කර තිබේ දැයි බලන්න.</p>
+
+<ul>
+  <li aria-level="1">ඔව් නම්, පහත තවත් දෝෂාවේක්ෂ විකල්ප බලන්න.</li>
+  <li aria-level="1">එසේ නොවේ නම්, ඔබේ සම්බන්ධතා සැකසීම් තමන් විසින්ම යාවත්කාලීන කරන්නේ දැයි බැලීමට මොහොතක් රැඳී සිටින්න.</li>
+</ul>
+
+<p><strong>නිරාකරණය කළ යුතු දේවල්:</strong></p>
+
+<p>ඔබේ උපාංගය නැවත සබැඳිව ලබා ගන්න:</p>
+
+<ol>
+  <li aria-level="1">එකම ජාලයට සම්බන්ධ විය හැකි දැයි බැලීමට වෙනත් උපාංගයක් පරීක්ෂා කරන්න. වෙනත් උපාංගවලට සබැඳි වීමට නොහැකි නම්, ජාලය ක්‍රියා විරහිත විය හැකි අතර එය නැවත පැමිණීමට හෝ දෝෂාවේක්ෂ කිරීමට ඔබට බලා සිටීමට අවශ්‍ය වනු ඇත.</li>
+  <li aria-level="1">වෙනත් උපාංග එකම ජාලයට ලබා ගත හැකි නම්, ඔබට එය නැවත සබැඳිව ලබා ගැනීමට පහත එකක් හෝ කිහිපයක් උත්සාහ කළ හැක:
+    <ol>
+      <li aria-level="2">උපාංගය අහස්යානා ආකාරයට දමන්න (ජංගම)</li>
+      <li aria-level="2">උපාංගය යළි අරඹන්න</li>
+      <li aria-level="2">උපාංගය වසා දමා, මිනිත්තු 2ක් රැඳී සිට, උපාංගය නැවත ක්‍රියාත්මක කරන්න</li>
+    </ol>
+  </li>
+</ol>
+
+<p><a id="FirewallIssues" name="FirewallIssues"><strong>ජාල ෆයර්වෝල් ගැටලු:</strong></a></p>
+
+<p><strong>පරීක්ෂා කරන ආකාරය:</strong></p>
+
+<ol>
+  <li aria-level="1">ඔබේ වත්මන් Wi-Fi හෝ රැහැන්ගත ජාලයෙන් විසන්ධි කරන්න.</li>
+  <li aria-level="1">සෙලියුලර් එකක් වැනි වෙනස් ජාලයකට සම්බන්ධ වන්න</li>
+  <li aria-level="1">Outline සේවාදායකය වෙත නැවත සම්බන්ධ වීමට උත්සාහ කරන්න</li>
+</ol>
+
+<p>ඔබට වෙනත් ජාලයක සිටින අතරේ සම්බන්ධ වීමට හැකි නම්, මෙය ඔබේ ගැටලුවයි.</p>
+
+<p><strong>නිරාකරණය කළ යුතු දේවල්:</strong></p>
+
+<p>සේවා කළමනාකරු අමතා ඔබේ Outline සේවාදායකයට ප්‍රවේශ වීමට ඉඩ දෙන ලෙස හෝ ඒ වෙනුවට වෙනත් ජාලය දිගටම භාවිතා කරන ලෙස ඔවුන්ගෙන් ඉල්ලා සිටින්න.</p>
+
+<p><a id="SoftwareIssues" name="SoftwareIssues"><img alt="මෙම රූපය ලබා ගත නොහැක්කේ: ඔබට එය බැලීමට වරප්‍රසාද නැත, නැතහොත් එය පද්ධතියෙන් ඉවත් කර ඇත" height="1" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeoHNM7TWEsg0z4iydaS2xKOPga0zOjhOTqvGpA-JLd-Fwnydby6EBZziz3vqgRUJwssreEqP6lmjv_-13QXdzqh3yx9tZiR81BvxcXShi3kJ-XDKnqt951uRRPSO8BUhXaiijJLF8PixV_ezhGJ02Y3QPFbw?key=pJIeaVZQOqqoBTmDWZd2hw" width="1" /><strong>ෆයර්වෝල් හෝ ප්‍රති-වයිරස මෘදුකාංග ගැටලු:</strong></a><br />
+  <br />
+  <strong>පරීක්ෂා කරන ආකාරය:</strong><br />
+  <br />
+  වෙනත් උපාංගයකින් Outline වෙත සම්බන්ධ වීමට උත්සාහ කරන්න.&nbsp;</p>
+
+<p>සටහන: වෙනත් උපාංගයක Outline භාවිතා කිරීමට ඔබට ප්‍රවේශ යතුරක් සහ Outline යෙදුම අවශ්‍ය බව මතක තබා ගන්න.</p>
+
+<p><strong>නිරාකරණය කළ යුතු දේවල්:</strong></p>
+
+<p>ඔබේ ෆයර්වෝල් හෝ ප්‍රති-වයිරස මෘදුකාංග සැකසීම් VPN සහ Outline ගමනාගමනයට ඉඩ දෙන ලෙස සකසා ඇති බව සහතික කර ගන්න.</p>
+
+<p><a id="DeviceSettings" name="DeviceSettings"><strong>උපාංග සැකසීම්:</strong></a></p>
+
+<p><strong>පරීක්ෂා කළ යුතු දේවල්:</strong></p>
+
+<p>Android සඳහා:</p>
+
+<ol>
+  <li aria-level="1">සැකසීම් යෙදුම විවෘත කරන්න.</li>
+  <li aria-level="1">ඔබේ උපාංගයෙහි <strong>VPN සැකසීම්</strong> සොයන්න. (VPN සැකසීම් මඟින් ඔබේ දුරකථනයෙහි දැනට ප්‍රවේශය ඇති සියලු ම VPN යෙදුම් පෙන්වනු ඇත.)&nbsp;</li>
+  <li aria-level="1">ඔබ VPN සැකසීම් වල Outline නොපෙනේ නම්, Outline අස්ථාපනය කර එය නැවත ස්ථාපනය කරන්න. ස්ථාපනය කළ පසු උපාංගය මඟින් Outline ස්වයංක්‍රීයව ප්‍රවේශය ලබා දිය යුතු ය.</li>
+</ol>
+
+<p>ඔබේ Android උපාංගයෙහි කිසිදු තිර උඩැතිරි යෙදුමක් ස්ථාපනය කර නොමැති බව සහතික කර ගන්න, මෙය Outline අවසර කවුළුව පෙරබිමෙහි නොපෙනෙන ලෙස පසුබිමට යැවීම විය හැක.<br />
+  <br />
+  ඔබේ Android උපාංගයෙහි, සැකසීම් &gt; යෙදුම් &gt; විශේෂ යෙදුම් ප්‍රවේශය වෙත යන්න. ඉන්පසු ‘වෙනත් යෙදුම් මත සංදර්ශනය කරන්න’ තට්ටු කරන්න. ඔබට මෙම හැසිරීමට ඉඩ දෙන ඕනෑම යෙදුම් වෙත ප්‍රවේශය ඉවත් කළ හැක.<br />
+  <br />
+  iOS සඳහා: <a href="https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web" rel="noopener" target="_blank">මෙම සහාය ලිපිය</a> කියවන්න.</p>
+
+<p><a id="ServerIssues" name="ServerIssues"><strong>සේවාදායක ගැටලු:</strong></a></p>
+
+<p><strong>පරීක්ෂා කරන ආකාරය:</strong></p>
+
+<p>ඔබට එක් සේවාදායකයකට වඩා ප්‍රවේශය තිබේ නම්, අනෙක් එකට සම්බන්ධ වීමට උත්සාහ කරන්න.&nbsp;</p>
+
+<p><strong>නිරාකරණය කළ යුතු දේවල්:</strong></p>
+
+<p>සේවාදායකය විනාශ වී තිබේ දැයි බැලීමට ඔබේ සේවා කළමනාකරු සම්බන්ධ කර ගන්න. එසේ නම්, ඔවුන්ගෙන් වෙනත් සේවාදායකයකට <a href="/outline-faq/answer/15330920" rel="noopener">ප්‍රවේශ යතුරක්</a> විමසන්න</p>
+
+<p>ඔබ සේවාදායකය පිහිටුවන්නේ නම්, Outline කළමනාකරු හෝ <a href="https://en.wikipedia.org/wiki/Secure_Shell">SSH</a> වැනි වෙනත් ක්‍රමයක් හරහා එයට සම්බන්ධ වීමට උත්සාහ කරන්න. එය ක්‍රියා නොකරන්නේ නම්, සේවාදායකය තවමත් සබැඳි දැයි බැලීමට ඔබට ක්ලවුඩ් සැපයුම්කරු කොන්සෝලය පරීක්ෂා කිරීමට උත්සාහ කළ හැක.</p>
+
+<p data-aura-rendered-by="12:32047;a">&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="si">WEB:15331127</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">බාගත කිරීමේ සබැඳිය ක්‍රියා නොකරන්නේ නම් මම සේවාලාභී යෙදුම බාගන්නේ කෙසේ ද?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">බොහෝ මෙහෙයුම් පද්ධති සඳහා යෙදුම් සෘජුවම බාගැනීමට <a href="https://www.reddit.com/r/outlinevpn/wiki/index/download_links/" target="_blank">මෙම සබැඳිය</a> භාවිත කරන්න.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="131" sourceLocale="si">WEB:15331222</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">දත්ත සහ තොරතුරු රැස් කිරීම</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:271;a">ඔබ එය සැපයීමට තෝරා ගන්නේ නම් මිස Outline පුද්ගලික තොරතුරු රැස් නොකරයි. Outline ඔබ පිවිසෙන වෙබ් අඩවි හෝ කා සමග හෝ ඔබ සන්නිවේදනය කරන දේ පිළිබඳ තොරතුරු රැස් නොකරයි.<br />
+  <br />
+  ඔබ Outline කළමනාකරු හරහා තෙවන පාර්ශ්ව ක්ලවුඩ් සපයන්නෙකු සමග ගිණුමක් තනන්නේ නම් හෝ ලොග් වන්නේ නම්, ඔබේ ඉ-තැපැල් ලිපිනය, නම, බිල්පත් තොරතුරු, සහ ගෙවීම් විස්තර වැනි ඔබේ තෙවන පාර්ශ්ව ක්ලවුඩ් සපයන්නාට ඔබ සපයන කිසිදු තොරතුරක් අපි ලබා නොගනිමු.<br />
+  <br />
+  <strong><strong>අපි ස්වයංක්‍රීයව ලබා ගන්නා තොරතුරු</strong></strong><br />
+  <br />
+  අපි තොරතුරු වර්ග දෙකක් ස්වයංක්‍රීයව එකතු කරමු.<br />
+  1. සේවාදායක IP<br />
+  Outline සේවාදායක IP <a href="http://quay.io/" target="_blank">Quay.io</a> විසින් එකතු කරනු ලබන අතර, නවතම ආරක්ෂක සහ විශේෂාංග වැඩි දියුණු කිරීම් සමග සේවාදායකය ස්වයංක්‍රීයව යාවත්කාලීන වන විට අපට ප්‍රවේශ විය හැක. සේවාදායක IP මගින් ක්ලවුඩ් සේවාදායක සැපයුම්කරු සහ Outline සේවාදායකය පිහිටුවා ඇති නගරය හඳුනා ගත හැකි නමුත්, මෙය සේවාදායකය ධාවනය කරන්නේ කවුරුන් ද හෝ එයට ප්‍රවේශ වන්නේ කවුරුන් ද යන්න පිළිබඳ තොරතුරු සපයන්නේ නැත.<br />
+  <br />
+  2. පුද්ගලිකව හඳුනාගත නොහැකි තාක්ෂණික තොරතුරු<br />
+  Outline බිඳවැටීම හෝ මාරාන්තික ව්‍යතිරේකයක් සිදුවුවහොත්, හෝ ඔබ Outline යෙදුම හරහා හස්තීයව ප්‍රතිපෝෂණ යවන්නේ නම්, පහත ලැයිස්තුගත කර ඇති තොරතුරු වාර්තා කරනු ලැබේ. මෙම තොරතුරු ස්ථායිතාව හෝ කාර්ය සාධන ගැටලු හඳුනා ගැනීමට සහ විසඳීමට පමණක් භාවිතා කරනු ඇත.</p>
+
+<ul data-aura-rendered-by="12:271;a">
+  <li>රට</li>
+  <li>පෙදෙසිය</li>
+  <li>බිඳවැටීමේ / ව්‍යතිරේකයේ දිනය සහ වේලාව සහ පෙර සිදුවීම් 100ක් දක්වා, පරිශීලකයෙකු 'ගැන' කොටස විවෘත කරයි</li>
+  <li>ස්ථිතිකව සම්පාදනය කරන ලද ව්‍යතිරේක පණිවිඩ</li>
+  <li>OS නම සහ අනුවාදය</li>
+  <li>දුරකථනයේ මාදිළිය (අදාළ නම්)</li>
+  <li>යෙදුම් ආරම්භක වේලාව</li>
+  <li>බ්‍රව්සරය</li>
+  <li>නිර්මාණ ශිල්පය</li>
+  <li>Outline අනුවාදය සහ නිමැවුම් අංකය</li>
+</ul>
+
+<p data-aura-rendered-by="12:271;a"><br />
+  මෙම තොරතුරු HTTPS භාවිතයෙන් තෙවන පාර්ශ්වීය, විවෘත මූලාශ්‍ර දෝෂ ලුහුබැඳීමේ සැපයුම්කරුවෙකු වන Sentry (<a href="http://sentry.io/" target="_blank">sentry.io</a>), වෙත මාරු කරනු ලැබේ. Sentry ඔබේ දත්ත අනවසරයෙන් ප්‍රවේශ වීම, හෙළිදරව් කිරීම, භාවිතය සහ අලාභවලින් සුරක්ෂිත කිරීමට විවිධ කර්මාන්ත-සම්මත තාක්ෂණයන් සහ සේවාවන් භාවිතා කරයි. ඔබට Sentry හි ප්‍රතිපත්ති පිළිබඳව කිසියම් ප්‍රශ්නයක් ඇත්නම්,&nbsp;<a href="https://sentry.io/security/" target="_blank">https://sentry.io/security/</a>&nbsp;සහ <a href="https://sentry.io/privacy/" target="_blank">https://sentry.io/privacy/</a> වෙත පිවිසෙන්න, හෝ <a href="mailto:security@sentry.io" target="_blank">security@sentry.io</a> සම්බන්ධ කර ගන්න. Sentry විසින් ගබඩා කර ඇති සියලු Outline දත්ත, Outline කණ්ඩායමේ සාමාජිකයින්ට පමණක් ප්‍රවේශ විය හැකි පරිදි සීමා කර ඇත.<br />
+  <br />
+  <strong><strong>තොරතුරු අප ලබා ගන්නේ ඇතුළු වූ විට පමණි</strong></strong><br />
+  <br />
+  ඇතුළත් වූ පසු Outline කණ්ඩායමට පහත තොරතුරු වාර්තා කරයි.<br />
+  1. භාවිත මිනුම්<br />
+  සෑම Outline සේවාදායකයක්ම ස්වයංක්‍රීයව, පසුගිය පැය සඳහා සහ එක් ප්‍රවේශ යතුරු පදනමක් මත, මාරු කරන ලද බයිට් ගණන, පරිශීලකයෙකු සේවාදායකයට සම්බන්ධ වූ කාලය, භාවිතා කළ අක්තපත්‍රවල මූලාරම්භයේ රටවල් සහ ස්වයංක්‍රීය පද්ධති සහ ඕනෑම විශේෂාංගයක් සබල කර හෝ අබල කර තිබුණත් ස්වයංක්‍රීයව රැස් කරයි. සන්නිවේදනයේ අන්තර්ගතය හෝ පුද්ගලිකව හඳුනාගත හැකි පාර-දත්ත (උදා. පිරීම්, ඉ-තැපැල්, උපාංග IDs, ආදිය) ලොග් කර නැත. සියලු මාත්‍රික සේවාදායක ID එකකට බැඳී ඇත. සේවාදායක ID වෙනස් කිරීම සඳහා උපදෙස් <a href="/outline-faq/answer/15548974" rel="noopener" target="_blank">මෙහි</a> සොයා ගත හැක.<br />
+  <br />
+  පෙරනිමියෙන්, Outline සේවාදායකයන් මෙම මාත්‍රික Outline කණ්ඩායම සමග බෙදා නොගනී. සේවාදායක පරිපාලක භාවිත මාත්‍රික බෙදා ගැනීමට පැහැදිලිවම තෝරා ගන්නේ නම්, මෙම තොරතුරු සෑම පැයකටම Outline කණ්ඩායමට සුරක්ෂිතව යවනු ලැබේ. දින 60කට පසු, භාවිත මාත්‍රික රට මට්ටමට එකතු කරනු ලැබේ. Outline කළමනාකරු තුළ ‘සැකසීම්’ මෙනුව වෙත පිවිසීමෙන් සේවාදායක පරිපාලකයින්ට ඕනෑම වේලාවක ඔවුන්ගේ භාවිත මාත්‍රික බෙදා ගැනීමේ මනාපය වෙනස් කළ හැක.<br />
+  <br />
+  අපි භාවිත ප්‍රවණතා මැනීමට සහ නිෂ්පාදනය වැඩි දියුණු කිරීමට ඒවා භාවිත කරන බැවින්, ඔබේ සේවාදායක භාවිතය පිළිබඳ නිර්නාමික මිනුම් දඬු අප සමග බෙදා ගැනීම අපි අගය කරමු.<br />
+  <br />
+  උදාහරණයක් ලෙස, සේවාදායක පරිපාලකයෙකු අප සමග භාවිත මාත්‍රික බෙදා ගැනීමට තෝරා ගන්නේ නම්, ID 12345 සහිත සේවාදායකයක් ඊයේ පැය 3ක් භාවිත කළ බවට තොරතුරු ලබා ගත හැකි අතර, දත්ත සීමා විශේෂාංගය සබල කර, එක්සත් ජනපදය සහ කැනඩාව තුළ එක් එක් යතුරු තුනකින් මෙගාබයිට් 500ක දත්ත හුවමාරු කර ඇත.<br />
+  <br />
+  2. ඔබ ප්‍රතිපෝෂණ ඉදිරිපත් කරන්නේ නම් ඔබේ අදහස් සහ ඉ-තැපෑල<br />
+  Outline කළමනාකරු සහ Outline යෙදුම් ඔබට කණ්ඩායමට ප්‍රතිපෝෂණ ඉදිරිපත් කිරීමට ඉඩ දෙයි. පුද්ගලිකව හඳුනාගත හැකි තොරතුරු ඇතුළත් නොකිරීමට අපි නිර්දේශ කරන නමුත්, ඔබට කණ්ඩායමෙන් ප්‍රතිචාරයක් අවශ්‍ය නම් ඉ-තැපැල් ක්ෂේත්‍රයක් විකල්ප වශයෙන් ලබා ගත හැක. අපි ඔබේ ප්‍රතිපෝෂණය තේරුම් ගැනීමට හැකි වන පරිදි, අපි ස්වයංක්‍රීයව මූලික තොරතුරු කිහිපයක් ද රැස් කරමු. අප රැස් කරන දත්ත මොනවා දැයි බැලීමට “අපි ස්වයංක්‍රීයව ලබා ගන්නා තොරතුරු” යටතේ, ඉහත 2 අයිතමය බලන්න.&nbsp;Outline හි ආරක්ෂාව සහ රහස්‍යතා පරිචයන් පිළිබඳව <a href="/outline-faq/answer/14919822" rel="noopener" target="_blank">මෙතැනින්</a> තව දැන ගන්න.<br />
+  <br />
+  ඔබ Android හි Outline යෙදුමේ බීටා අනුවාදයක් භාවිතා කරන්නේ නම්, ගැටලු හඳුනා ගැනීමට සහ Outline වැඩි දියුණු කිරීමට අපට උදවු කළ හැකි නිදොස් කිරීමේ තොරතුරු රැස් කිරීමට අපි Google හි <a href="https://firebase.google.com/" target="_blank">Firebase</a> සේවාව භාවිතා කළ හැක. ඔබට ඔවුන්ගේ වෙබ් අඩවියෙන් Firebase හි රහස්‍යතා සහ ආරක්ෂක ප්‍රතිපත්ති පිළිබඳව තව දැන ගත හැක:&nbsp;<a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a>. ඔබට මෙම තොරතුරු Firebase හරහා යැවීමට Outline අවශ්‍ය නැතිනම්, යෙදුමේ නිෂ්පාදන අනුවාදය භාවිතා කරන්න.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="88" sourceLocale="si">WEB:15331223</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">මගේ ප්‍රවේශ යතුර ක්‍රියා නොකරන්නේ නම් කුමක් කළ යුතු ද?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:30472;a">ඔබට දෝෂ පණිවිඩය ලැබෙන්නේ නම්:&nbsp;“ඔබේ ප්‍රවේශ යතුර වලංගු නොවන බව පෙනේ. මෙය නැවත සිදුවුවහොත්, ඔබේ සේවා කළමනාකරු අමතන්න.” ගැටලුව දෝෂාවේක්ෂ කිරීමට පහත පියවර අනුගමනය කරන්න:&nbsp;</p>
+
+<ol data-aura-rendered-by="12:30472;a">
+  <li>ඔබ ස්වයංක්‍රීයව පසුරු පුවරුවට පිටපත් නොකළ හැකි “ss://” යන පළමු අනුලකුණු පහ ඇතුළුව සම්පූර්ණ ප්‍රවේශ යතුර ඇතුළු කරන බව සහතික කර ගන්න. සම්පූර්ණ ප්‍රවේශ යතුරක් පෙනෙන ආකාරය පිළිබඳ උදාහරණයක් මෙන්න (නියැදියක් පමණි; ක්‍රියා නොකරනු ඇත):</li>
+</ol>
+
+<pre data-aura-rendered-by="12:30472;a">ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@145.230.4.1:39485/?outline=1&nbsp;
+</pre>
+
+<ol data-aura-rendered-by="12:30472;a" start="2">
+  <li>ඔබේ ප්‍රවේශ යතුර කිසිසේත් ඔබේ පසුරු පුවරුවට පිටපත් නොකරන්නේ නම්, මෙය ඔබේ පණිවිඩකරණ යෙදුම හෝ වේදිකාව නිසා විය හැක. ඔබේ සම්බන්ධතා ලැයිස්තුවේ නොමැති කෙනෙකුගෙන් ඔබට පණිවිඩයක් ලැබුණු විට මෙය බොහෝ විට සිදු විය හැක. ඔබ පණිවිඩයකින් කේතය පිටපත් කරන්නේ නම්, යවන්නා ඔබේ සම්බන්ධතා වෙත එක් කර ඇති බව සහතික කර, පසුව නැවත සබැඳියට ප්‍රවේශ වීමට උත්සාහ කරන්න.&nbsp;</li>
+  <li>ඔබ පියවර 1 සහ 2 සම්පූර්ණ කර තවමත් දෝෂ පණිවිඩය ලබා ගන්නේ නම්, සේවාදායකය බොහෝ විට අවහිර වී තිබිය හැක නැතහොත් ප්‍රවේශ යතුර තවදුරටත් වලංගු නොවේ. ඔබ සේවා කළමනාකරු නම්, ඔබ වෙනුවෙන් නව යතුරක් උත්පාදනය කිරීමට උත්සාහ කරන්න. එසේ නොමැතිනම්, නව යතුරක් සඳහා ඔබේ සේවා කළමනාකරු අමතන්න.</li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="96" sourceLocale="si">WEB:15331322</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline ධාවනය කිරීමට කොපමණ මුදලක් වැය වේ ද?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>ඔබ VPN කළමනාකරණය කරන සේවාදායක පරිපාලකයෙකු හෝ විවෘත අන්තර්ජාලයට ප්‍රවේශ වීමට Outline භාවිතා කරන අයෙකු වුවද, Outline මෘදුකාංගය ඕනෑම කෙනෙකුට නොමිලේ වේ.<br />
+  <br />
+  Outline ධාවනය කිරීම සඳහා ක්ලවුඩ් සේවාදායකයකට ප්‍රවේශය අවශ්‍ය වේ. දැනටමත් සේවාදායකයකට ප්‍රවේශය ඇති සේවාදායක පරිපාලකයින්ට අතිරේක ගාස්තුවක් නොමැතිව එහි Outline ස්ථාපනය කළ හැක. සේවාදායකයකට ප්‍රවේශය නොමැති අයට <a href="http://www.digitalocean.com/" rel="noopener" target="_blank">DigitalOcean</a> හෝ Amazon Web Services වැනි ක්ලවුඩ් සේවා සපයන්නෙකුගෙන් ටෙරාබයිට් 1ක දත්ත හුවමාරු දීමනාවක් සඳහා මසකට $5ක පමණ මුදලකට ප්‍රවේශය ලබා ගත හැක — එය එක් සේවාදායකයක සිය ගණනක් පරිශීලකයින්ට සහාය වීමට ප්‍රමාණවත් වේ.<br />
+  <br />
+  ඔබේ තේරීම ක්ලවුඩ් සපයන්නා සමග Outline ධාවනය කිරීමට කොපමණ මුදලක් වැය වේ ද යන්න තීරණය කිරීමට ඔබට ගැනීම කළ හැකි ආකාරය පිළිබඳ උදාහරණයක්:</p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td colspan="1" rowspan="1">
+      <p><em>එක් පරිශීලකයෙකුට ගිගාබයිට් 5ක දත්ත හුවමාරු සාමාන්‍ය මාසික භාවිතයක් උපකල්පනය කළහොත්, මසකට $5 USD සැලැස්මක් සමගාමී පරිශීලකයින් 200කට පමණ ඉඩ ලබා දෙනු ඇත, එක් පරිශීලකයෙකුට මසකට වැය වන්නේ ශත 2.5ක් පමණි. පරිශීලකයන් අඩු හෝ ඉහළ කලාප පළල ක්‍රියාකාරකම් කරන්නේ ද යන්න මත එක් පරිශීලකයෙකුට මසකට භාවිතා කරන දත්ත හුවමාරුව බොහෝ සෙයින් වෙනස් වන බව සලකන්න, නමුත් බොහෝ ක්ලවුඩ් සපයන්නන් ගමනාගමනය වැඩිවීමට ඉඩ සැලසීමට නම්‍යශීලී වනු ඇත.</em></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br />
+  ඇත්ත වශයෙන්ම, Outline භාවිතා කිරීම Jigsaw සහ Google සඳහා සම්පූර්ණයෙන්ම නිර්නාමික වේ. අපි ඔබේ අනන්‍යතාවය හෝ ගමනාගමනය හඹා නොයන අතර මුදල් ඉපැයීමේ සැලසුමක් ද නොමැත. ඒ වෙනුවට, අපගේ පරිශීලකයින්ට කිසිදු වියදමක් නොමැතිව මෘදුකාංගය සැපයිය හැකි බව සහතික කිරීම සඳහා අපි අපගේ විවෘත මූලාශ්‍ර ප්‍රජාව සමග වැඩ කරන්නෙමු. අපි රැස් කරන දත්ත පිළිබඳව <a href="/outline-faq/answer/15331222" rel="noopener" target="_blank">මෙහි</a> තව දැන ගන්න.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="386" sourceLocale="si">WEB:15331326</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ප්‍රවේශ යතුරු මත දත්ත සීමාවන් සකසන්නේ කෙසේ ද?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:15859;a">ඔබට සියලු ප්‍රවේශ යතුරු සඳහා අදාළ වන දත්ත සීමාවක් සැකසිය හැක. සීමාව සැකසීම සඳහා, Outline කළමනාකරු විවෘත කර සැකසීම් වෙත යන්න. එහිදී ඔබට දත්ත සීමා ටොගලයක් පෙනෙනු ඇත, එය සබල කළ විට, ඔබට සීමාවක් සැකසීමට ඉඩ දෙයි.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787036"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">ඔබ සීමාවක් නියම කළ පසු, එක් එක් පරිශීලකයා සීමාවට කෙතරම් සමීප ද යන්න ප්‍රවේශ යතුරු පිටුවෙන් ඔබට දැක ගත හැක, එහි දී තීරු ප්‍රස්ථාරයක් පසුගිය දින 30 තුළ දත්ත භාවිතය පෙන්වයි.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787037"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">ඔබේ සියලු ප්‍රවේශ යතුරු සඳහා සීමාවක් සැකසීමට අමතරව, ඔබට එක් එක් යතුරට එහි දත්ත සීමාව ලබා දිය හැක. මෙම සැකසීම ඔබ සකසා ඇති ඕනෑම පෙරනිමි දත්ත සීමාවක් අභිබවා යනු ඇති නමුත්, ඔබ පෙරනිමි දත්ත සීමාවක් සකසා නොමැති නම්, ඔබට තවමත් ඕනෑම යතුරක් සඳහා දත්ත සීමාවක් සැකසිය හැක.&nbsp;<br />
+  <br />
+  යතුරක දත්ත හුවමාරු සීමාවක් සැකසීමට, Outline කළමනාකරු විවෘත කරන්න, ඔබට සැකසීමට අවශ්‍ය යතුර අඩංගු සම්බන්ධතා පටිත්ත වෙත ගොස් යතුරේ පේළියේ දකුණු පස ඇති මෙනුව මත ක්ලික් කරන්න. එතැනින්, දත්ත සීමාව මත ක්ලික් කරන්න. "මගේ ප්‍රවේශ යතුර" මත දත්ත සීමාව වෙනස් කිරීමට, දත්ත සීමා නිරූපකය <img alt="මෙම රූපය ලබා ගත නොහැක්කේ: ඔබට එය බැලීමට වරප්‍රසාද නැත, නැතහොත් එය පද්ධතියෙන් ඉවත් කර ඇත" height="19" src="https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw" width="19" /> ක්ලික් කරන්න.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15787423"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">අභිරුචි දත්ත සීමාවක් සකසන්න තෝරන්න. ඔබ මෙම තේරීම් කොටුව තෝරා ගැනීමෙන් පසු, ඔබට එම යතුර සඳහා අභිරුචි දත්ත සීමාව සැකසිය හැකි ක්ෂේත්‍රයක් දිස් වනු ඇත. දත්ත සීමාව සුරැකීමට ඔබ නිම වූ පසු සුරකින්න බොත්තම මත ක්ලික් කරන්න.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15788959"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a">ඔබ තෝරන ලද යතුර සඳහා ඔබේ දත්ත හුවමාරු සීමාව සුරකින ලද පසු, එක් එක් යතුර සඳහා දත්ත භාවිතය (පසුගිය දින 30 පුරා) සමග ප්‍රධාන තිරයේ සීමාව පෙන්වනු ඇත.</p>
+
+<p data-aura-rendered-by="12:15859;a">ප්‍රවේශ යතුරකින් දත්ත සීමාව ඉවත් කිරීම සඳහා, යතුරේ දත්ත සීමා සංවාද කොටුව වෙත පෙර පරිදි සංචාලනය කර, අභිරුචි දත්ත සීමාවක් සකසන්න යනුවෙන් ලේබල් කර ඇති කොටුව සලකුණු නොකර, ඉන්පසු සුරකින්න බොත්තම ක්ලික් කරන්න.</p>
+
+<p data-aura-rendered-by="12:15859;a"><gkms:snippet contenteditable="false" id="15788414"></gkms:snippet></p>
+
+<p data-aura-rendered-by="12:15859;a"><b><strong>දත්ත සීමා නිඅප්‍ර</strong></b><br />
+  <br />
+  <strong><b>30-දින පසුපස දත්ත සීමාව යනු කුමක් ද?</b></strong><br />
+  <br />
+  දින 30ක පසුගාමී දත්ත සීමාවක් පසුගිය දින 30 තුළ එක් එක් යතුරේ භාවිතය සාරාංශ කර එම කාල සීමාව තුළ යතුරේ භාවිතය සීමාවට වඩා පහළින් තබා ගනු ඇත. බලපෑම වන්නේ දින 30 හෝ ඊට අඩු දින දර්ශන මාස ඇතුළුව ඕනෑම දින 30ක කාල සීමාවක් තුළ යතුර සීමාව ඉක්මවා යා නොහැකි වීමයි. ඇත්ත වශයෙන්ම, මෙයින් අදහස් කරන්නේ එක් එක් පරිශීලකයාගේ පවතින දත්ත ඔවුන් දින 31කට පෙර භාවිතා කළ ප්‍රමාණයෙන් සෑම දිනකම වැඩි වන බවයි.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>Outline විසින් පසුපස සීමාවන් භාවිතා කරන්නේ ඇයි?</strong><br />
+  <br />
+  පසුපසට යාමේ සීමාවන් සෑම දින 30කට වරක්ම ඇපකර ලබා දෙන අතර, එයින් අදහස් වන්නේ ඒවා සමාන ඇපකර ලබා දෙන අතරම ප්‍රත්‍යාවර්තී සීමාවකට (මාසයේ අභිරුචිකරණය කළ හැකි දිනයක් වැනි) වඩා වින්‍යාස කිරීම සරල බවයි. ඒවා Outline දත්ත භාවිතය සඳහා පවතින සංදර්ශකය මෙන්ම විශ්ලේෂණ සේවා සහ සේවාදායක සංඛ්‍යාලේඛන වැනි පොදු මෙවලම් ද ගැළපෙයි.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>දත්ත සීමාවක ගණන් කරන දත්ත මොනවා ද?</strong><br />
+  <br />
+  සේවාදායකයෙන් එක් එක් ප්‍රවේශ යතුරේ පිටවීම ගණනයට ඇතුළත් වේ. නිවැරදිව කිවහොත් මෙයින් අදහස් කරන්නේ යතුර වෙනුවෙන් සේවාදායකයෙන් පිටතට යවන ලද දත්ත මෙන්ම නැවත සේවාදායකයා වෙත යවන ලද දත්ත වේ. ප්‍රායෝගිකව, මෙය යතුරේ සිට සේවාදායකයට සහ පසුපසට යවන ගමනාගමනයට සමීපව පෙළගැසිය යුතු බැවින්, එය ඔබේ පරිශීලකයන්ගේ අගයට ගැළපෙනු ඇතැයි අපි බලාපොරොත්තු වෙමු. අපි සමීක්ෂණය කළ ක්ලවුඩ් සපයන්නන් බිල්පත් කරන බැවින් අපි පිටවීම තෝරා ගත්තෙමු.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>පරිශීලකයින් ඔවුන්ගේ දත්ත සීමාව ඉක්මවා ගියහොත් ඔවුන්ට දැනුම් දෙනු ලැබේ ද?</strong><br />
+  <br />
+  මේ මොහොතේ නොවේ. බොහෝ ක්ලවුඩ් සපයන්නන් මුළු මාසය සඳහා 1TB වැනි සීමාවක් ඇතුළත් කරන අතර, එයට 100 GB දී පරිශීලකයන් 10 දෙනෙකුට හෝ 10 GB හි පරිශීලකයින් 100 දෙනෙකුට සහාය විය හැක. මේවා ඉතා විශාල සංඛ්‍යා වන අතර, බොහෝ පරිශීලකයින් ඒවාට යනු ඇතැයි අපි අපේක්ෂා නොකරමු. පරිශීලකයින් ඔවුන්ගේ සීමාවට පැමිණි විට සේවාදායක කළමනාකරුවන් වෙත ළඟා වනු ඇතැයි අපි බලාපොරොත්තු වෙමු. කෙසේ වෙතත්, ඔබේ භාවිත අවස්ථාව සඳහා දැනුම්දීම් උදවු විය හැකි ආකාරය පිළිබඳ ඔබේ ඇතුළාන්තය අපි අගය කරන අතර, ඔබට <a href="https://support.getoutline.org/s/contactsupport" target="_blank">මෙහි</a> අපව සම්බන්ධ කර ගත හැක</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>පරිශීලකයන් ඔවුන්ගේ දත්ත සීමාවට ළඟා වන්නේ නම් ඔවුන්ට දැනුම් දෙනවා ද?</strong><br />
+  <br />
+  ඔවුන්ගේ සීමාවට ළඟා වන පරිශීලකයෙකුට ලැබෙන නව දත්ත ප්‍රමාණය දින 30කට පෙර ඔවුන්ගේ භාවිතය මත පදනම් වූ බැවින් එය දිනෙන් දින වෙනස් වේ. අපි සිතන්නේ අනතුරු ඇඟවීමක් අවසාන පරිශීලකයින්ට උදවු කිරීමට වඩා ව්‍යාකූල වීමට ඉඩ ඇති බවයි. මෙම හැසිරීම පිළිබඳ ඔබේ ප්‍රතිපෝෂණය අපි <a href="https://support.getoutline.org/s/contactsupport" rel="noopener" target="_blank">මෙහි</a> අගය කරමු.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>මට පරිශීලකයෙකුගේ දත්ත භාවිතය නැවත සැකසිය හැකි ද?</strong><br />
+  <br />
+  නැහැ, පරිශීලකයෙකුගේ සීමාවට සෑම විටම පසුගිය දින 30 දත්ත භාවිතය ඇතුළත් වේ. කෙසේ වෙතත්, ඔබට ඔවුන්ගේ යතුරේ දත්ත සීමාව ඉහළ නැංවීමට හෝ ඔවුන් සඳහා නව යතුරක් තැනීමට හැක.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>මම දත්ත සීමාවන් සබල කළ වහාම මගේ සමහර පරිශීලකයින්ට ප්‍රවේශය අහිමි වූයේ ඇයි?</strong><br />
+  <br />
+  දත්ත සීමා පදනම් වන්නේ පරිශීලකයින්ගේ පෙර දින 30 දත්ත හුවමාරුව මත වන අතර, දත්ත සීමාවන් සබල කර තිබුණත් නැතත් එය සටහන් වේ. එය ක්‍රියාත්මක කිරීමට පෙර අදාළ පරිශීලකයින් දැනටමත් සීමාව ඉක්මවා ඇති බව සිතිය හැක.&nbsp; තනි යතුරක දත්ත සීමාව වෙනස් කිරීමේ දී පවා, සියලු දත්ත සීමාවන් බලාත්මක වන බව සලකන්න.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>මට “දින 30කට 1 TB” වැනි සේවාදායකය පුරා සීමාවක් සැකසිය හැකි ද?</strong><br />
+  <br />
+  මේ මොහොතේ නොවේ. ඔබේ භාවිත අවස්ථාව පිළිබඳව <a href="https://support.getoutline.org/s/contactsupport" rel="noopener" target="_blank">මෙතැනින් </a> වැඩිදුර ඇසීමට අපි කැමතියි.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>නිශ්චිත යතුරක් මත පෙරනිමි දත්ත සීමාවක් සහ දත්ත සීමාවක් තිබේ නම්, බලාත්මක කරන්නේ කුමන එකක් ද?</strong><br />
+  <br />
+  නිශ්චිත යතුරේ දත්ත සීමාව ඔබ සකසා ඇති ඕනෑම පෙරනිමි දත්ත සීමාව (ඇත්නම්) අභිබවා යයි.</p>
+
+<p data-aura-rendered-by="12:15859;a"><strong>පෙරනිමි දත්ත සීමාවක් නොමැතිව ඔබට නිශ්චිත යතුරක් සඳහා දත්ත සීමාවක් සැකසිය හැකි ද?</strong><br />
+  <br />
+  ඔව්.&nbsp; එක් යතුරක දත්ත සීමාවක් සැකසීමට ඔබට පෙරනිමි සීමාවක් අර්ථ දැක්වීම අවශ්‍ය නොවේ.&nbsp; උදාහරණයක් ලෙස, එම යතුර හරහා අධික දත්ත හුවමාරුවෙන් ඔබව ආරක්ෂා කර ගැනීම සඳහා පුළුල් ලෙස බෙදා ගත හැකි යැයි ඔබ සිතන එක් යතුරක සීමාවක් ඔබට සැකසීම කළ හැක.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="si">WEB:15331327</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">මගේ සේවාදායක ID නැවත සකසන්නේ කෙසේද?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:23999;a">සේවාදායක ID යනු ඔබ දළ සටහන් සේවාදායකයක් සාදන විට අහඹු ලෙස ජනනය වන සේවාදායක පැත්තේ ID එකකි. සැකසීම් අතුරුමුහුණත තුළ නිර්නාමික මාත්‍රික බෙදා ගැනීමට තේරීමේ දී ඔබට එය සොයා ගත හැක. ඔබට ඔබේ සේවාදායක ID මෙතැනින් සොයාගත හැක: සැකසීම් =&gt; පහළට අනුචලනය කරන්න =&gt; "නිර්නාමික මිතික බෙදාගන්න" පරීක්ෂා කරන්න.</p>
+
+<p data-aura-rendered-by="12:23999;a">සේවාදායක ID කාලයත් සමග වාර්තා කරන ලද නිර්නාමික භාවිත සංඛ්‍යාලේඛන එකට සම්බන්ධ කරයි. ඔබට සේවාදායක ID නැවත සකස් කර අලුත් එකක් ලබා ගැනීමට අවශ්‍ය නම්, ඔබට ඔබේ පවතින දළ සටහන් සේවාදායකය නව එකක් සමග ප්‍රතිස්ථාපනය කිරීමට අවශ්‍ය වේ.</p>
+
+<p data-aura-rendered-by="12:23999;a">ඔබ ඔබේ ක්ලවුඩ් සපයන්නා ලෙස DigitalOcean භාවිත කරන්නේ නම්, ඔබට සැකසීම් වෙත ගොස් Destroy Server තේරීමෙන් ඔබේ සේවාදායකය නැවත සැකසිය හැක. මෙම ක්‍රියාව ආපසු හැරවිය නොහැකි අතර ඔබගේ අක්තපත්‍ර මකනු ඇත. මෙම ක්‍රියාව අනුගමනය කළ වහාම, ඔබ තෝරා ගන්නා ස්ථානයක නව සේවාදායකයක් සෑදීමට ඔබෙන් විමසනු ඇති අතර, නව සේවාදායක ID එකක් ජනනය වනු ඇත.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="103" sourceLocale="si">WEB:15331328</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">මම Outline සේවාදායකය හි ස්ථානය වෙනස් කරන්නේ කෙසේ ද?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:24761;a">පිහිටුවීමෙන් පසු, සේවාදායක ස්ථානය වෙනස් කළ නොහැක. ඔබේ සේවාදායකය වෙනස් ස්ථානයක සිට ධාවනය කිරීමට, ඔබ ඔබේ Outline සේවාදායකය මකා දමා නව එකක් තැනීමට අවශ්‍ය වේ.</p>
+
+<p data-aura-rendered-by="12:24761;a"><br />
+  විකල්පයක් ලෙස, ඔබට <a href="https://developers.google.com/outline/docs/guides/service-providers/dynamic-access-keys" target="_blank">ගතික යතුරු</a> භාවිතයෙන් ඔබේ VPN පිහිටීම වෙනස් කළ හැකි අතර, එමඟින් ඔබට සේවාදායකයන් කරකැවීමට සහ එකම යතුරු තබා ගැනීමට ඉඩ සලසයි. සේවාදායකයන්ගේ ස්ථානය වෙනස් නොවනු ඇත.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="102" sourceLocale="si">WEB:15331423</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ප්‍රතිපෝෂණ හෝ යෝජනා යවන ආකාරය</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:22486;a">Outline වඩා හොඳ කිරීමට උදවු කිරීම ගැන ස්තූතියි! ඔබට ප්‍රතිචාරයක් අවශ්‍ය නම්, නිර්නාමිකව හෝ ඔබේ ඉ-තැපෑලෙන් අපට ප්‍රතිපෝෂණ එවීමට ක්‍රම කිහිපයක් තිබේ:</p>
+
+<ul data-aura-rendered-by="12:22486;a">
+  <li><strong>සංවර්ධකයින් සඳහා</strong>:&nbsp;Outline යනු විවෘත මූල මෘදුකාංග වන අතර අපි අපගේ සියලුම කේත&nbsp;<a href="https://github.com/jigsaw-Code/?q=outline" target="_blank">GitHub</a> මත සංග්‍රාහක කරන්නෙමු. ඔබට GitHub මත හෝ අපගේ&nbsp;<a href="https://www.reddit.com/r/outlinevpn/" target="_blank">Reddit</a>&nbsp;ප්‍රජාව මත ඔබේ අදහස් බෙදා ගත හැක.&nbsp;</li>
+  <li><strong>පරිශීලකයින් සඳහා</strong>: ඔබට Outline හෝ Outline Manager යෙදුම් හරහා අපට ප්‍රතිපෝෂණ එවිය හැක. ඔබේ ප්‍රතිපෝෂණය කුමක් ගැන දැයි අපට පවසා, විකල්පයක් ලෙස, ඉ-තැපෑලක් එවන්න එවිට අපට ඒ ගැන ඔබට නැවත ලිවිය හැක. අපට ඔබේ බ්‍රව්සරය, මෙහෙයුම් පද්ධතිය, සහ ඔබ සිටින මෘදුකාංග අනුවාදය වැනි දෝෂාවේක්ෂ සඳහා ඔබට උදවු කිරීමට හැකි වන පරිදි, අපි ඔබේ පරිසරය පිළිබඳ පාර-දත්ත කිහිපයක් ද රැස් කරමු.</li>
+  <li><strong>මෙම වෙබ් අඩවිය හරහා</strong>: මෙම වෙබ් අඩවිය තුළ ඔබ දකින ඕනෑම තැනක අප අමතන්න සබැඳිය ක්ලික් කළ හැක.</li>
+  <li><strong>බරපතල ගැටලු</strong>: ඔබට බරපතල ආරක්‍ෂක ගැටලුවක් වාර්තා කිරීමට අවශ්‍ය නම්, security [at] <a href="https://getoutline.org/" rel="noopener" target="_blank">getoutline.org</a> වෙත විස්තර සහිතව ඔබ අපට ඉ-තැපැල් කිරීම අපි අගය කරන්නෙමු.</li>
+</ul>
+
+<p data-aura-rendered-by="12:22486;a">ඔබේ අදහස් අප සමග බෙදා ගැනීමට කාලය ගත කිරීම ගැන නැවතත් ස්තූතියි.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="146" sourceLocale="si">WEB:15331424</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline සේවාදායකය එකකට ප්‍රවේශය කළමනාකරණය කරන්න (ප්‍රවේශ යතුරු සමඟ)</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:25527;a">ඔබ ඔබේ Outline සේවාදායකය ස්ථාපනය කර අවසන් කළ පසු, ඔබට දැන් එයට පුද්ගලයින්ගේ ප්‍රවේශය බෙදා ගැනීම සහ කළමනාකරණය කිරීම ආරම්භ කළ හැක. ඔබෙන් ආරාධනයක් ලබන පුද්ගලයින්ට ඔවුන්ගේ අන්තර්ජාල ගමනාගමනය ආරක්ෂා කර ගැනීමට Outline භාවිතා කිරීමට Outline යෙදුම බාගැනීමට හැකි වනු ඇත.</p>
+
+<p data-aura-rendered-by="12:25527;a"><strong>ඔබේ Outline සේවාදායකය වෙත ප්‍රවේශය බෙදා ගන්න</strong><br />
+  ඔබ Outline සේවාදායකයක් ස්ථාපනය කර අවසන් කළ පසු, ඔබව Outline කළමනාකරු හි සේවාදායක විස්තර පිටුව වෙත යොමු කරනු ඇත, එහි දී ඔබට ප්‍රවේශ යතුරු සෑදිය හැක. <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">ප්‍රවේශ යතුරු</a> ගැන තව දැන ගන්න.</p>
+
+<ul data-aura-rendered-by="12:25527;a">
+  <li>යතුරු සාදන්න: නව යතුරු සෑදීමට පිටුවේ පහළ ඇති කුඩා "+" නිරූපකය ක්ලික් කරන්න.</li>
+  <li>බෙදාගැනීමේ යතුරු: සෑම යතුරකම දකුණු පසින්, ඔබට ආරාධනාවක් ලබා ගැනීමට ක්ලික් කළ හැකි කොටස් නිරූපකයක් ඇත. ඔබ කැමති පණිවිඩ පද්ධතියට මෙම ආරාධනාව පිටපත් කර අලවන්න.</li>
+</ul>
+
+<p data-aura-rendered-by="12:25527;a"><strong>විශේෂාංග ඉල්ලීම: Outline කළමනාකරු යෙදුම තුළ සිට ප්‍රවේශය බෙදා ගැනීම</strong><br />
+  බොහෝ සේවාදායක පරිපාලකයින් අපෙන් ඉල්ලා සිටින්නේ යමෙකුගේ ඉ-තැපැල් ලිපිනය සෘජුවම Outline කළමනාකරු වෙත ඇතුළු කිරීමට අවස්ථාව ලබා දීමෙන් ආරාධනා ක්‍රියාවලිය විධිමත් කරන ලෙසයි.</p>
+
+<p data-aura-rendered-by="12:25527;a">අවාසනාවන්ත ලෙස, අපට මෙම ක්‍රියාකාරීත්වය Outline කළමනාකරු වෙත ගොඩ නැගීමට අපහසු වේ. අපගේ මූලික මූලධර්මවලින් එකක් වන්නේ අපගේ පරිශීලකයින්ගේ පෞද්ගලිකත්වය සහ ආරක්ෂාව සඳහා සහය දැක්වීමයි, එයින් අදහස් වන්නේ අපි ඉ-තැපැල් ලිපින හෝ සම්බන්ධතා තොරතුරු ඇතුළත් කිරීමට කිසිදු ස්ථානයක් සැලසුම් නොකළ බවයි.</p>
+
+<p data-aura-rendered-by="12:25527;a">අවසාන පරිශීලකයාට ආරාධනාව යැවීමට ඉ-තැපැල් හෝ සුරක්ෂිත කතාබස් වැනි ආරක්ෂිත පණිවිඩකරණ වේදිකාවක් භාවිතා කරන ලෙස අපි සේවාදායක පරිපාලකයින්ගෙන් ඉල්ලා සිටින්නේ එබැවිනි.<br />
+  <br />
+  <strong>ඔබ ඔවුන් සමඟ ප්‍රවේශ යතුරක් බෙදාගත් පසු පරිශීලකයා අත්විඳින දේ</strong></p>
+
+<ol data-aura-rendered-by="12:25527;a">
+  <li>පරිශීලකයා තම උපාංගයෙන් ස්ථාපන සබැඳිය ක්ලික් කරනු ඇත</li>
+  <li>ඔවුන් සතුව දැනටමත් එය නොමැති නම් Outline යෙදුම ස්ථාපනය කිරීමට ඔවුන්ගෙන් විමසනු ඇත</li>
+  <li>ඔවුන් ආරාධනා පත්‍රයේ අන්තර්ගත අනන්‍ය යතුර හරහා ඔබේ Outline සේවාදායකය වෙත මූලික සම්බන්ධතාවයක් ඇති කර ගනු ඇත</li>
+  <li>ඔබේ Outline සේවාදායකය හරහා අන්තර්ජාලයට ඔවුන්ගේ ප්‍රවේශය කළමනාකරණය කිරීමට ඔවුන්ට දැන් සම්බන්ධක/විසන්ධි බොත්තම භාවිතා කළ හැක</li>
+</ol>
+
+<p data-aura-rendered-by="12:25527;a"><strong>ඔබගේ Outline සේවාදායකයට ප්‍රවේශය ඉවත් කරන්න</strong><br />
+  Outline කළමනාකරු හි සේවාදායක විස්තර පිටුවේ සිට, සේවාදායකයේ ඇති සෑම යතුරකම දකුණට, යතුරක් මකා දැමීමට විකල්පයක් සහිත මෙනුවක් ඔබට පෙනෙනු ඇත. යතුරක් මකා දැමීම ඔබේ සේවාදායකයට ඔවුන්ගේ ප්‍රවේශය ඉවත් කරයි.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="92" sourceLocale="si">WEB:15331524</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">getoutline.org අවහිර කර ඇත්නම් මට Outline සම්පත් වෙත ප්‍රවේශ විය හැක්කේ කෙසේ ද?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">ඔබට <a href="http://getoutline.org/" target="_blank">getoutline.org</a> වෙත ප්‍රවේශ විය නොහැකි නම් භාවිතා කිරීමට <a href="https://s3.amazonaws.com/outline-vpn/index.html" target="_blank">මෙම දර්පණය කළ අඩවිය පිටුසන් කරන්න</a>.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="321" sourceLocale="si">WEB:15331527</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Linux මත Outline සේවාලාභීයා ස්ථාපනය කිරීම</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>දළ සටහන් සේවාලාභීයා අනුවාදය 1.15 සමඟින් ආරම්භ වන අතර, අනාගත අනුවාදයන් සියල්ලම Linux මෙහෙයුම් පද්ධති සඳහා Debian පැකේජ ලෙස නිකුත් කෙරේ. අපි සහාය දක්වන මෙහෙයුම් පද්ධති පිළිබඳ වැඩිදුර තොරතුරු සඳහා අපගේ <a href="/outline/answer/15330818" rel="noopener" target="_blank"><u>අවම පද්ධති අවශ්‍යතා</u></a> සමාලෝචනය කරන්න.</p>
+&nbsp;
+
+<p><strong>Debian-පාදක Linux බෙදාහැරීම් සඳහා දළ සටහන් සේවාලාභීයා ස්ථාපනය කරන්න (නිර්දේශිතයි)</strong></p>
+&nbsp;
+
+<p>පහත විධානයන් ක්‍රියාත්මක කරන්න:</p>
+
+<ol>
+  <li aria-level="1">Outline හි ගබඩා යතුර ස්ථාපනය කර ගබඩාව එක් කරන්න.
+    <div class="code">
+      <div class="no-margin">
+        <p>wget -qO- https://us-apt.pkg.dev/doc/repo-signing-key.gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/gcloud-artifact-registry-us.gpg</p>
+
+        <p>echo "deb [arch=amd64] https://us-apt.pkg.dev/projects/jigsaw-outline-apps outline-client main" | sudo tee /etc/apt/sources.list.d/outline-client.list</p>
+      </div>
+    </div>
+  </li>
+</ol>
+
+<p>&nbsp; 2.&nbsp;&nbsp;apt පැකේජ ලැයිස්තුව යාවත්කාලීන කර දළ සටහන් සේවාලාභීයාහි නවතම අනුවාදය ස්ථාපනය කරන්න.</p>
+
+<div class="code">
+  <div class="no-margin">
+    <p>&nbsp; &nbsp;sudo apt යාවත්කාලීන කිරීම</p>
+
+    <p>&nbsp; &nbsp;sudo apt දළ සටහන් සේවාලාභීයා ස්ථාපනය කරන්න</p>
+  </div>
+</div>
+
+<p>අනාගත යාවත්කාලීන කිරීම් පරීක්ෂා කිරීමට හෝ ස්ථාපනය කිරීමට, පියවර 2 හි විධාන නැවත ක්‍රියාත්මක කරන්න. 1.15 අනුවාදයෙන් ආරම්භ වන Linux හි දළ සටහන් සේවාලාභීයා සඳහා යෙදුම තුළ ස්වයංක්‍රීය යාවත්කාලීන කිරීම අබල කර ඇති බව සලකන්න.</p>
+
+<p>දළ සටහන් සේවාලාභීයා අස්ථාපනය කිරීමට, පහත විධානය ක්‍රියාත්මක කරන්න:</p>
+
+<div class="code">
+  <div class="no-margin">sudo apt purge outline-client</div>
+</div>
+
+<p><strong>විකල්ප විකල්පය</strong></p>
+
+<ol>
+  <li aria-level="1"><a href="https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb" rel="noopener" target="_blank">https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb</a> මඟින් නවතම දළ සටහන් සේවාලාභීයා Debian පැකේජය බාගන්න</li>
+  <li aria-level="1">පැකේජය ස්ථාපනය කිරීම සඳහා විධාන රේඛාවේ පහත විධානයන් ධාවනය කරන්න.</li>
+</ol>
+
+<div class="code">
+  <div class="no-margin">
+    <p>wget -O ./outline-client.deb https://s3.amazonaws.com/outline-&nbsp; &nbsp; &nbsp; releases/client/linux/stable/outline-client_amd64.deb</p>
+
+    <p>sudo apt install ./outline-client.deb</p>
+  </div>
+</div>
+
+<p>&nbsp; 3.&nbsp;&nbsp;1.15 අනුවාදයෙන් ආරම්භ වන Linux හි දළ සටහන් සේවාලාභීයා සඳහා යෙදුම තුළ ස්වයංක්‍රීය යාවත්කාලීන කිරීම අක්‍රිය කර ඇති බැවින්, යාවත්කාලීන කිරීම් සඳහා අතින් පරීක්ෂා කරන්න.</p>
+
+<p>&nbsp; 4.&nbsp; දළ සටහන් සේවාලාභීයා අස්ථාපනය කිරීමට, විධාන රේඛාවේ පහත විධානය ක්‍රියාත්මක කරන්න:</p>
+
+<div class="code">
+  <div class="no-margin">sudo apt purge දළ සටහන්-සේවාලාභියා</div>
+</div>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="206" sourceLocale="si">WEB:15331528</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">මට ප්‍රවේශ යතුර එක් වරකට වඩා භාවිතා කළ හැකි ද?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1895;a">ඔව්. ඔබට ඔබේ ඕනෑම උපාංග ගණනක ඔබේ <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">ප්‍රවේශ යතුර</a> භාවිතා කළ හැකි නමුත්, ඔබේ යතුර වෙනත් පුද්ගලයෙකු සමග බෙදා ගැනීමට අපි නිර්දේශ නොකරමු. ඔබේ ප්‍රවේශ යතුර ඇති කෙනෙකුට එයට ප්‍රවේශය තිබේ නම්, ඔබේ සියලු අන්තර්ජාල ගමනාගමනය පරීක්ෂා කළ හැක, එය තවදුරටත් ඔබේ අන්තර්ජාල භාවිතය සුරක්ෂිත හෝ පෞද්ගලික නොකරයි.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="104" sourceLocale="si">WEB:15331529</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ඔබේ උපාංගය Outline සේවාදායකයකට සම්බන්ධ කිරීම</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:1399;a">&nbsp;</p>
+
+<p data-aura-rendered-by="12:1399;a"><strong>ඔබේ උපාංගය Outline සේවාදායකයකට සම්බන්ධ කිරීම</strong></p>
+
+<p data-aura-rendered-by="12:1399;a">ඔබේ උපාංගය Outline සේවාදායකයකට සම්බන්ධ කිරීම සඳහා, සේවාදායක පරිපාලකයෙකුට අනන්‍ය වූ <a href="/outline-faq/answer/15330920" rel="noopener" target="_blank">ප්‍රවේශ යතුරකින්</a> ඔවුන්ගේ සේවාදායකයට සම්බන්ධ වීමට ඔබට ආරාධනාවක් එවිය යුතු වේ. මෙම ආරාධනය මගින්:</p>
+
+<ul data-aura-rendered-by="12:1399;a">
+  <li>ඔබ සතුව දැනටමත් එය නොමැති නම් ඔබේ උපාංගයෙහි Outline බාගත කර ස්ථාපනය කිරීමට ඔබෙන් විමසන්න</li>
+  <li>ඔබ සහ Outline සේවාදායකය අතර සුරක්ෂිත සම්බන්ධතාවයක් ඇති කිරීමට ප්‍රවේශ යතුර භාවිතා කරන්න</li>
+</ul>
+
+<p data-aura-rendered-by="12:1399;a">ඔබ සේවාදායකයට ඔබේ සම්බන්ධතාවය ස්ථාපිත කළ පසු, ඔබට Outline භාවිතා කිරීමට "සම්බන්ධ කරන්න" හෝ "විසන්ධි කරන්න" ක්ලික් කළ හැක.</p>
+
+<p data-aura-rendered-by="12:1399;a"><em>වැදගත්:</em>&nbsp;ප්‍රවේශ යතුරක් සහ Outline සේවාදායකයක් නොමැතිව Outline ක්‍රියා නොකරයි. යතුරක් නොමැතිව Outline යෙදුම බාගැනීම සහ ස්ථාපනය කිරීම ඔබේ අන්තර්ජාල ගමනාගමනය ආරක්ෂා නොකරයි.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="100" sourceLocale="si">WEB:15331530</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">මට Outline සේවාදායකයක් පිහිටුවිය හැක්කේ කොතැනින් ද?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:27063;a">Outline සේවාදායකයක් පිහිටුවීම Outline භාවිතා කිරීමට හැකි වීමේ පළමු පියවරයි. ඔබට Outline හරහා විවෘත අන්තර්ජාලය සම්බන්ධ කිරීම සඳහා ඔබ හෝ ඔබ විශ්වාස කරන කෙනෙකු ඔබ වෙනුවෙන් සේවාදායකයක් සැකසිය යුතු වේ.<br />
+  <br />
+  <strong>ඔබ ආරම්භ කිරීමට පෙර</strong><br />
+  ඔබ ඔබේ Outline සේවාදායකය පිහිටුවීම ආරම්භ කිරීමට පෙර, ඔබට කරුණු කිහිපයක් අවශ්‍ය වනු ඇත:</p>
+
+<ol data-aura-rendered-by="12:27063;a">
+  <li>DigitalOcean, Amazon Web Services (AWS), හෝ Google Cloud Platform (GCP) වැනි ඔබේම සේවාදායක හෝ Cloud සේවා සපයන්නෙකු වෙත ප්‍රවේශය.<br />
+    ඔබට වහාම ක්ලවුඩ් සේවාදායකයක් වෙත ප්‍රවේශය නොමැති නම්, ඔබට ඉහත ලැයිස්තුගත කර ඇති ඒවා ඇතුළුව ඕනෑම සැපයුම්කරුවෙකු සමග පහසුවෙන් ගිණුමක් පිහිටුවිය හැක. ලියාපදිංචි වීමට ඔබට ණය කාඩ්පතක් අවශ්‍ය වනු ඇත.</li>
+  <li>macOS 10.9+, Windows 7.0+ හෝ Linux ධාවනය වන ඩෙස්ක්ටොප් පරිගණකයක්.</li>
+  <li>Outline කළමනාකරු යෙදුම.</li>
+</ol>
+
+<p data-aura-rendered-by="12:27063;a"><strong>DigitalOcean සමග පිහිටුවන්න</strong><br />
+  <br />
+  අපි ඕනෑම කෙනෙකුට ක්ලික් කිරීම් කිහිපයකින් DigitalOcean මත Outline ස්ථාපනය කිරීම පහසු කළෙමු. ඔබේ පරිගණකයේ Outline Manager බාගත කර ස්ථාපනය කිරීමෙන් පසුව, ඔබට ඔබේ Outline Server වින්‍යාස කිරීමට සහ ස්ථාපනය කිරීමට සරල තිර කිහිපයක් හරහා ඔබට මඟ පෙන්වන DigitalOcean පිහිටුවීම් විකල්පය තෝරා ගත හැක.<br />
+  <br />
+  <strong>වෙනත් ක්ලවුඩ් සපයන්නෙකු සමග පිහිටුවන්න</strong><br />
+  <br />
+  Outline කළමනාකරු බාගත කර ස්ථාපනය කිරීමෙන් පසුව, ඔබට AWS, GCP, DigitalOcean හෝ වෙනත් සැපයුම්කරුවෙකු සමග අතථ්‍ය යන්ත්‍රයක Outline සේවාදායකයක් ස්ථාපනය කිරීමට තෝරාගත හැක. සෑම පරිසරයක්ම වෙනස් වේ, එබැවින් අපි ඔබ සේවාදායකයක Outline ස්ථාපනය කිරීමට ස්ථාපන ස්ක්‍රිප්ට් ධාවනය කිරීමට පෙර ඔබේ අතථ්‍ය යන්ත්‍රයේ සැකසීම් වින්‍යාස කරන්නේ කෙසේ ද යන්න ඇතුළුව, වඩාත් පොදු ක්ලවුඩ් සපයන්නන් සඳහා Outline Manager පිහිටුවීම් ප්‍රවාහය තුළ උපදෙස් ඇතුළත් කර ඇත.<br />
+  <br />
+  <strong><em>තවත් උදවු අවශ්‍ය ද?</em></strong><br />
+  <br />
+  අපගේ <a href="/outline-faq/answer/15331728" rel="noopener" target="_blank">outline සේවාදායක පිහිටුවීම් නිඅප්‍ර</a> පරීක්ෂා කර බලන්න.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="95" sourceLocale="si">WEB:15331625</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">මට Outline සන්නාමය භාවිතා කිරීමට හෝ අනුකරණය කිරීමට අවසර තිබේ ද?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">Outline විවෘත මූලාශ්‍ර සහ භාවිතා කිරීමට නොමිලේ වන අතර, අපගේ සන්නාමය Jigsaw සඳහා හිමිකාරී වන අතර එය අනිසි ලෙස භාවිතා නොකළ යුතු වේ. ඔබ නොමග යවන සුළු හිමිකම් පෑම හෝ Outline හෝ Jigsaw සමග ඔබේ සම්බන්ධතාවය වැරදි ලෙස අර්ථකථනය නොකිරීමට සහ අනුමත වෙළඳනාම මූලද්‍රව්‍ය නිවැරදිව භාවිතා කරන බව සහතික කිරීමට <a href="https://github.com/Jigsaw-Code/outline-brand/blob/main/outline_brand_user_guide.pdf" target="_blank">පරිශීලක මාර්ගෝපදේශය</a> අනුගමනය කරන්න.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="191" sourceLocale="si">WEB:15331628</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">මා ප්‍රවේශ යතුරක් ලබා ගන්නේ කෙසේ ද?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:3258;a">දළ සටහන ඔබ ප්‍රවේශය මිල දී ගන්නා VPN සේවාවන් මෙන් නොවේ; එය පෞද්ගලික VPN සේවාදායකයක් වෙත ප්‍රවේශය ධාවනය කිරීමට සහ බෙදා ගැනීමට ඔබට ඉඩ සලසන <a href="https://getoutline.org/#:~:text=Two%20Products%20that%20Work%20Together" target="_blank">මෙවලමකි</a>. ප්‍රවේශ යතුරක් සැපයිය හැකි එකම පුද්ගලයා <a href="/outline/answer/15330920#servicemanager" rel="noopener" target="_blank">සේවා කළමනාකරුවෙකි</a>. Outline කණ්ඩායම නොමිලේ හෝ ගෙවන ප්‍රවේශ යතුරු බෙදා හරින්නේ නැත. ෆාර්සි හි Paskoocheh හැර, අපට නිල Outline ප්‍රවේශ ප්‍රධාන හවුල්කරුවන් නොමැත.<br />
+  <br />
+  ප්‍රවේශ යතුරක් ලබා ගැනීම සඳහා විකල්ප තුනක් මෙන්න:&nbsp;</p>
+
+<ul data-aura-rendered-by="12:3258;a">
+  <li>ඔබට ඔවුන්ගේ සේවාදායකයට ආරාධනා කරන ලෙස යමෙකුගෙන් ඉල්ලා සිටින්න: ඔබ Outline සේවාදායකයක් ඇති කෙනෙකු හඳුනන්නේ නම්, ඔවුන් අමතා ප්‍රවේශ යතුරක් ඉල්ලා සිටින්න.</li>
+  <li><a href="/outline/answer/15331530" rel="noopener" target="_blank">ඔබම සේවාදායකයක් තනන්න:</a> Windows, Mac, හෝ Linux පරිගණකයක් භාවිතා කරමින්, <a href="https://getoutline.org/get-started/#step-1" target="_blank">Outline කළමනාකරු</a> බාගත කර ඔබගේම පෞද්ගලික <a href="/outline/answer/15330920" rel="noopener" target="_blank">Outline සේවාදායකයක්</a> පිහිටුවන්න. අපි මෙම ක්‍රියාවලිය ඕනෑම කෙනෙකුට කිරීමට පහසු කළෙමු, විශේෂයෙන් ක්ලවුඩ් සේවා සපයන්නා වන DigitalOcean හරහා.</li>
+  <li>Outline හෝ <a href="https://en.wikipedia.org/wiki/Shadowsocks#:~:text=Shadowsocks%20is%20a%20free%20and,have%20been%20made%20available%20since." target="_blank">Shadowsocks</a> සේවාවක් භාවිතා කරන්න: Outline හෝ Shadowsocks ප්‍රොටෝකෝලය භාවිතා කරන තුන්වන පාර්ශ්ව සේවා සමග ද Outline සේවාලාභියා භාවිතා කළ හැක. උදාහරණයක් වශයෙන්:
+    <ul>
+      <li><a href="http://nthlink.com/" target="_blank">nthLink</a> Outline මත පදනම්ව, Outline සේවාලාභියාගේ නවීකරණය කරන ලද අනුවාදයක් සමග නොමිලේ සේවාවක් ධාවනය කරයි.</li>
+      <li><a href="https://www.reddit.com/r/outlinevpn/comments/nwu1se/the_outline_distribution_system_is_here_to_help/" target="_blank">ASL19</a> <a href="https://beepassvpn.com/" target="_blank">BeePass</a> ලෙස හැඳින්වෙන Outline හි නවීකරණය කරන ලද අනුවාදයක් මෙන්ම BeePass සේවාදායකයන්ට නොමිලේ ප්‍රවේශ යතුරු සපයන <a href="https://t.me/paskoochehbot" target="_blank">Telegram බොට්</a> එකක් ද ධාවනය කරයි.</li>
+      <li>ෆාර්සි භාෂා භාවිතා කරන්නන්ට <a href="https://outline.paskoocheh.com/" target="_blank">ASL19 හි Paskoocheh</a> වෙතින් Outline ප්‍රවේශ යතුරක් ඉල්ලා සිටිය හැක.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Outline සේවාලාභී යෙදුම බාගත කිරීමෙන් පසු, Outline සේවාදායකය වෙත සම්බන්ධ වීමට ඔබේ <a href="/outline/answer/15330920#accesskey" rel="noopener" target="_blank">ප්‍රවේශ යතුර</a> පිටපත් කර Outline Client වෙත අලවන්න.&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="133" sourceLocale="si">WEB:15331630</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">මගේ Outline සේවාදායකය මකා දමන්නේ කෙසේ ද?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:14046;a">බොහෝ ක්ලවුඩ් සපයන්නන් සඳහා, ඔබ භාවිතා කරන විශේෂිත අථත්‍ය යන්ත්‍රය ඉවත් කිරීම තරමක් පහසු වේ.</p>
+
+<p data-aura-rendered-by="12:14046;a">ඔබ ඔබේ ක්ලවුඩ් සපයන්නා ලෙස DigitalOcean භාවිතා කරන්නේ නම්, ගියර් බොත්තම ක්ලික් කර සේවාදායකය විනාශ කරන්න තේරීමෙන් ඔබට දැනට පවතින අතථ්‍ය යන්ත්‍රය මකා දැමිය හැක. ඉක්බිතිව, ඔබ තෝරා ගන්නා ස්ථානයක නව අථත්‍ය යන්ත්‍රයක් තැනීමට ඔබෙන් විමසනු ඇත.</p>
+
+<p data-aura-rendered-by="12:14046;a">ඔබ Outline සේවාදායකයක් ඉවත් කළහොත්, එය ස්ථිරවම මකා දමන අතර එහි ප්‍රවේශ යතුරු තවදුරටත් ක්‍රියා නොකරනු ඇත. Outline හරහා පුද්ගලයින්ට ඔවුන්ගේ ප්‍රවේශයට බාධාවක් ඇති කර ගැනීමට ඔබට අවශ්‍ය නැතිනම්, ඔබේ පැරණි මකා දැමීමට පෙර ඔබට <a href="/outline-faq/answer/15331530" rel="noopener" target="_blank">නව Outline සේවාදායකයක් පිහිටුවා</a> එයට ප්‍රවේශය බෙදා ගැනීමට අවශ්‍ය වනු ඇත.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="99" sourceLocale="si">WEB:15331631</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">බහුවිධ Outline සේවාදායකයන් පිහිටුවන ආකාරය</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:27908;a">අතිරේක Outline සේවාදායක පිහිටුවීමට, ඔබේ Outline කළමනාකරු යෙදුමේ වම් පැත්තේ ඇති සංචාලන පැනලයේ “+” නිරූපකය මත ක්ලික් කරන්න. නව සේවාදායකයක් එක් කිරීමට උපදෙස් ඔබ ඔබේ පළමු ස්ථාපනය කළ ආකාරයටම වේ.</p>
+
+<ul data-aura-rendered-by="12:27908;a">
+  <li>ඔබට තැනීමට හැකි Outline සේවාදායක ගණනේ සීමාවක් අපට නැත.</li>
+  <li>ඔබ තනන සෑම Outline සේවාදායකයක් සඳහාම, ඔබට අනුරූප අථත්‍ය යන්ත්‍රයක් අවශ්‍ය වනු ඇත.</li>
+  <li>අතිරේක යන්ත්‍ර හෝ බිඳිති තැනීම ඔබේ ක්ලවුඩ් සපයන්නා සමග ඔබේ ගාස්තු වැඩි කළ හැක. ඔබ අපේක්ෂා කළ යුතු දේ දැන ගැනීමට ඔබේ ක්ලවුඩ් සපයන්නා සමග ඔබේ මිල පැකේජය පරීක්ෂා කරන්න.</li>
+</ul>
+
+<p data-aura-rendered-by="12:27908;a"><strong>DigitalOcean මත අතිරේක Outline සේවාදායකයක් තැනීම</strong></p>
+
+<p data-aura-rendered-by="12:27908;a">+ නිරූපකය ක්ලික් කර DigitalOcean මත ස්ථාපනය කිරීමට තේරීමෙන් පසු, ඔබ ඔබේ පළමු සේවාදායකය පිහිටුවීමට කළ උපදෙස්ම අනුගමනය කරනු ඇත. එසේම, Outline කළමනාකරු DigitalOcean සමග ඒකාබද්ධ වන බැවින්, ඔබ කිසි විටෙක Outline කළමනාකරු යෙදුම හැර යාමකින් තොරව ඔබට බිඳිති තැනීමට අපට හැකි වේ.</p>
+
+<p data-aura-rendered-by="12:27908;a">Outline කළමනාකරු හට වරකට සහාය දිය හැක්කේ එක් DigitalOcean ගිණුමක් පමණක් බව සලකන්න. වෙනත් DigitalOcean ගිණුම්වලින් වෙනත් Outline සේවාදායක එක් කිරීමට හෝ තැනීමට අවශ්‍ය නම්, ඔබට ඒවා උසස් වින්‍යාසයක් ලෙස එක් කළ හැක.</p>
+
+<p data-aura-rendered-by="12:27908;a"><strong>GCP, AWS, හෝ වෙනත් ක්ලවුඩ් සේවා සපයන්නෙකු මත අතිරේක Outline සේවාදායකයක් තැනීම</strong></p>
+
+<p data-aura-rendered-by="12:27908;a">ඔබ තෝරන ලද ක්ලවුඩ් සපයන්නා සමග නව අතථ්‍ය යන්ත්‍රයක් තැනීමෙන් ආරම්භ කරන්න. ඉන්පසු Outline කළමනාකරු විවෘත කර ඔබට පළමු වරට ඇති ආකාරයටම උසස් ස්ථාපනය සඳහා උපදෙස් සම්පූර්ණ කරන්න.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="96" sourceLocale="si">WEB:15331632</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">මට Windows මත Outline කළමනාකරු ස්ථාපනය කළ නොහැක්කේ ඇයි?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:34680;a">ඔබට මෙම දෝෂ පණිවිඩය දැකිය හැක: “කණගාටුයි, දළ සටහන් නිසි ලෙස ස්ථාපනය කර නැති බව පෙනේ. එය නැවත ස්ථාපන කිරීමට උත්සාහ කරන්න. එය ක්‍රියා නොකරන්නේ නම්, <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">ප්‍රතිපෝෂණ ඉදිරිපත් කරන්න</a>.”</p>
+
+<p data-aura-rendered-by="12:34680;a">ඔබ Windows හි Outline භාවිත කරන්නේ නම්, ඉඳහිට, ඔබට අනපේක්ෂිත දෝෂයක් ඇති විය හැක. බොහෝ අවස්ථාවල දී, Outline TAP ඇඩැප්ටරය (ධාවක) මකා දැමීමට අවශ්‍ය වන අතර Outline නැවත ස්ථාපනය කළ යුතු වේ.&nbsp;</p>
+
+<p data-aura-rendered-by="12:34680;a">ඔබේ Windows මෙහෙයුම් පද්ධති අනුවාදය මත පදනම්ව පියවර වෙනස් විය හැකි නමුත්, TAP ඇඩැප්ටරය සහ Outline කළමනාකරු අස්ථාපනය කර Outline කළමනාකරු යළි ස්ථාපනය කරන්නේ කෙසේ ද යන්න සඳහා පොදු පියවර පහත දැක්වේ.</p>
+
+<ol data-aura-rendered-by="12:34680;a">
+  <li>Outline සඳහා TAP ඇඩැප්ටරය අස්ථාපනය කරන්න
+    <ol>
+      <li>උපාංග කළමනාකරු, පසුව ජාල ඇඩැප්ටර වෙත යන්න</li>
+      <li>“TAP-Windows Adapter V9 ගොනුව හෝ Outline සමග සම්බන්ධ TAP ඇඩැප්ටරය සොයන්න</li>
+      <li>මෙම ඇඩප්ටරය අස්ථාපනය කරන්න හෝ මකන්න. මෙය ඔබ ස්ථාපනය කර ඇති අනෙකුත් VPN යෙදුම්වලට බලපාන බව මතක තබා ගන්න.&nbsp;</li>
+    </ol>
+  </li>
+  <li>Outline Manager අස්ථාපනය කරන්න
+    <ol>
+      <li>වැඩසටහන් සහ විශේෂාංග, පසුව වැඩසටහන අස්ථාපනය කරන්න වෙත යන්න</li>
+      <li>Outline කළමනාකරු යෙදුම සොයාගෙන Outline කළමනාකරු අස්ථාපනය කරන්න</li>
+      <li><a href="https://getoutline.org/get-started/#step-1" target="_blank">Outline කළමනාකරු හි නවතම අනුවාදය බාගත කර</a> එය ඔබේ Windows උපාංගයෙහි යළි ස්ථාපනය කරන්න. නව ස්ථාපනය ස්වයංක්‍රීයව නව TAP ඇඩප්ටරයක් ​​ස්ථාපනය කළ යුතු ය.</li>
+    </ol>
+  </li>
+</ol>
+
+<p data-aura-rendered-by="12:34680;a">ඔබට තවමත් ගැටලු තිබේ නම්, <a href="https://support.getoutline.org/s/contactsupport?" rel="noopener" target="_blank">සහය සම්බන්‍ධ කර ගන්න</a>.&nbsp;</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="94" sourceLocale="si">WEB:15331727</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Google Cloud ස්වයංක්‍රීය පිහිටුවීම</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:26310;a"><strong>දළ විශ්ලේෂණය</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Outline කළමනාකරු හි Google Cloud මත ධාවනය වන සේවාදායකයක Outline සේවාදායකය ස්වයංක්‍රීයව වින්‍යාස කිරීමට ඔබට ඉඩ සලසන විශේෂාංගයක් ඇතුළත් වේ. ඔබ මෙම විශේෂාංගය භාවිතා කිරීමට තෝරා ගන්නේ නම්, Outline කළමනාකරු විසින් ඔබේ Google ගිණුම සමග පුරනය වීමට ඔබෙන් අසනු ඇත, එය ඔබේ Google Cloud ගිණුම වින්‍යාස කිරීමේ අරමුණු සඳහා Outline කළමනාකරු හි ඔබේ දේශීය ස්ථාපනය සඳහා යම් <a href="https://developers.google.com/identity/protocols/oauth2" target="_blank">OAuth</a> අවසර ලබා දෙනු ඇත.<br />
+  ඔබ මෙම අවසර ලබා දීමට අකමැති නම්, ඔබට Google Cloud Platform මත Outline ධාවනය කිරීමට Outline කළමනාකරු හි ඇති උසස් පිහිටුවීම් උපදෙස් අනුගමනය කළ හැක.&nbsp;</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>අවසර ලබා දී ඇත</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">ස්වයංක්‍රීය පිහිටුවීම් සැපයීම සඳහා, Outline කළමනාකරු හට ඔබේ Google ගිණුමෙන් පහත අවසර අවශ්‍ය වේ.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Google Cloud වේදිකාව</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>ඔබේ Google Compute Engine සම්පත් බලන්න සහ කළමනාකරණය කරන්න</li>
+  <li>Google Cloud සේවා හරහා ඔබේ දත්ත බැලීම සහ ඔබේ Google ගිණුමේ ඉ-තැපැල් ලිපිනය බැලීම</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>මූලික ගිණුම් තතු</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>ඔබේ Google ගිණුම් ඉ-තැපැල් ලිපිනය බැලීම</li>
+  <li>Google මත ඔබේ පුද්ගලික තතු සමග ඔබව ආශ්‍රිත කරන්න</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>අතිරේක ප්‍රවේශය</strong></p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>ඔබේ Cloud වේදිකා ව්‍යාපෘති කළමනාකරණය කරන්න</li>
+  <li>ඔබේ Google Cloud වේදිකා ගෙවීම් ගිණුම් බලන්න සහ කළමනාකරණය කරන්න</li>
+  <li>ඔබේ Google API සේවා වින්‍යාසකරණය කළමනාකරණය කරන්න</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a">මෙම අවසරයන් පහත ඒවා ඇතුළුව ඔබේ Outline සේවාදායකයන් කළමනාකරණය කිරීම සඳහා උසස් ක්‍රියාකාරීත්වයට සහාය වීමට අපට ඉඩ සලසයි:</p>
+
+<ul data-aura-rendered-by="12:26310;a">
+  <li>නිවැරදි බිල්පත් ගිණුම තෝරා ගැනීමට ඔබට ඉඩ සලසයි</li>
+  <li>ඔබේ Outline සේවාදායක සංවිධානය කිරීමට නව ව්‍යාපෘතියක් තැනීම</li>
+  <li>පවතින දත්ත මධ්‍යස්ථාන ලැයිස්තුගත කිරීම</li>
+  <li>Outline ධාවනය කිරීමට නව අථත්‍ය යන්ත්‍ර තැනීම</li>
+  <li>Outline සමග නව අථත්‍ය යන්ත්‍රය වින්‍යාස කිරීම</li>
+</ul>
+
+<p data-aura-rendered-by="12:26310;a"><strong>අවසර අහෝසි කරමින්</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">ඔබට <a href="https://myaccount.google.com/permissions" target="_blank">මගේ ගිණුම</a> වෙත පිවිසීමෙන් Outline කළමනාකරු සඳහා Google Cloud Platform වෙත ප්‍රවේශය අවලංගු කළ හැක. ඔබ ප්‍රවේශය අවලංගු කළහොත්, ස්වයංක්‍රීය පිහිටුවීම සමග ඔබ නිර්මාණය කර ඇති ඕනෑම සේවාදායකයක් ක්‍රියාත්මකව පවතිනු ඇති නමුත් තවදුරටත් Outline කළමනාකරු හි දිස් නොවනු ඇත. ඒවාට ප්‍රවේශය ප්‍රතිසාධනය කිරීමට, ස්වයංක්‍රීය පිහිටුවීම ප්‍රවාහය ආරම්භ කිරීමෙන් Google Cloud Platform වෙත යළි සම්බන්ධ කරන්න.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>Outline ව්‍යාපෘති සංවිධානය</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Google Cloud ස්වයංක්‍රීය පිහිටුවීම් ඔබේ Outline සේවාදායක සංවිධානය කිරීමට තනි <a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects" target="_blank">Google Cloud ව්‍යාපෘතියක්</a> භාවිතා කරයි. ව්‍යාපෘතිය නිර්මාණය වන්නේ ස්වයංක්‍රීය පිහිටුවීමේ ප්‍රථම භාවිතයේ දී, යෝජිත ව්‍යාපෘති ID එකක් සමග ආරම්භ වන “Outline-” සහ පසුව අහඹු අනුලකුණු මාලාවක් සමගිනි. ඔබ කැමති නම් නිර්මාණයේ දී ඔබට වෙනත් ව්‍යාපෘති ID එකක් තෝරාගත හැක. ව්‍යාපෘතිය “Outline සේවාදායක” ලෙස නම් කරනු ලැබේ.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>බිල්පත් ගිණුම</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">Google Cloud ව්‍යාපෘති සඳහා ගෙවීම් තොරතුරු නිර්වචනය කරන සම්බන්ධිත “බිල්පත් ගිණුමක්” අවශ්‍ය වේ. ඔබ පළමුව Google Cloud ස්වයංක්‍රීය පිහිටුවීම භාවිතා කරන විට, ඔබේ Outline සේවාදායක සමග සම්බන්ධ වීමට බිල්පත් ගිණුමක් සපයන ලෙස ඔබෙන් අසනු ඇත. සමහර විට බිල්පත් ගිණුමේ ගැටලුවක් ඇති බැවින් සේවාදායකයක් ධාවනය වීම නතර වනු ඇත. මෙම අවස්ථාවේ දී, ඔබ <a href="https://console.cloud.google.com/getting-started" target="_blank">Google Cloud Console</a> වෙත පුරනය වී, Outline ("Outline සේවාදායක" ලෙස නම් කර ඇති) සමග සම්බන්ධ Google Cloud ව්‍යාපෘතිය සොයා ගෙන, සහ බිල්පත් සැකසීම් යාවත්කාලීන කළ යුතු වේ.</p>
+
+<p data-aura-rendered-by="12:26310;a"><strong>සේවාදායකයන් විනාශ කිරීම</strong></p>
+
+<p data-aura-rendered-by="12:26310;a">ස්වයංක්‍රීය පිහිටුවීම භාවිතයෙන් සාදන ලද ඔබේ සේවාදායකයන් විනාශ කිරීමට ඔබට අවශ්‍ය නම්, එය කිරීමට ඇති පහසුම ක්‍රමය වන්නේ Outline කළමනාකරු තුළිනි. කෙසේ වෙතත්, ඔබ විසින්ම සේවාදායකයන් විනාශ කිරීමට අදහස් කරන්නේ නම්, ඔබට <a href="https://console.cloud.google.com/getting-started" target="_blank">Google Cloud Console</a> වෙත පුරනය වී, මූලික පිහිටුවීමේ ("Outline සේවාදායක" ලෙස නම් කර ඇති) නිර්මාණය කරන ලද ව්‍යාපෘතිය සොයා ගැනීමට සහ එහි ඇති සම්පත් මකා දැමීමට හෝ ව්‍යාපෘතිය වසා දැමීමට හැක.</p>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="99" sourceLocale="si">WEB:15331728</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">Outline සේවාදායක පිහිටුවීම් නිඅප්‍ර</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:28806;a"><strong>මට සේවාදායකයක් නොමැතිව Outline භාවිතා කළ හැකි ද?</strong><br />
+  <br />
+  අවාසනාවකට, නැත. Outline මෘදුකාංගය ඔබ, ඔබේ සංවිධානය, හෝ විශ්වාසවන්ත තෙවන පාර්ශ්වයක් විසින් කළමනාකරණය කළත්, සේවාදායකයකට ප්‍රවේශය අවශ්‍ය වේ.&nbsp;</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>Outline සේවාදායකයක් පිහිටුවීමට කොපමණ කාලයක් ගනී ද?</strong></p>
+
+<p data-aura-rendered-by="12:28806;a">බොහෝ අවස්ථාවල දී, විනාඩි 5කට වඩා අඩුයි. ඔබට ඕනෑම ක්ලවුඩ් සේවාදායකයක් මත Outline ස්ථාපනය කළ හැකි නමුත්, අපි DigitalOcean සමග වඩාත් පරිශීලක-හිතකාමී, මාර්ගෝපදේශක ස්ථාපන අත්දැකීමක් ලබා දීමට කටයුතු කළෙමු—එහි දී ඔබට ක්ලික් කිරීම් කිහිපයකින් ස්ක්‍රිප්ට් නොමැතිව ඔබේ සේවාදායකය සැකසිය හැක.</p>
+
+<p data-aura-rendered-by="12:28806;a">ඔබ AWS, GCP හෝ උසස් සැකසුම තෝරා ගත්තේ නම්, අපි බොහෝ පරිසරයන් හසුරුවන තනි ස්ක්‍රිප්ට් එකකට සේවාදායක ස්ථාපන ක්‍රියාවලිය සරල කර ඇත.&nbsp;</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>මට Outline සේවාදායකයක් පිහිටුවිය හැක්කේ කොතැනින් ද?</strong></p>
+
+<p data-aura-rendered-by="12:28806;a">බොහෝ ක්ලවුඩ් සපයන්නන් ක්‍රියාත්මක වන ඕනෑම තැනක ඔබට Outline සේවාදායකයක් පිහිටුවිය හැක.</p>
+
+<p data-aura-rendered-by="12:28806;a">ඇම්ස්ටර්ඩෑම්, ටොරොන්ටෝ, සැන් ෆ්රැන්සිස්කෝ සහ සිංගප්පූරුව වැනි ස්ථාන කිහිපයක සේවාදායක ඇති බැවින් පහසුම විකල්පය වන්නේ එය DigitalOcean මත පිහිටුවීමයි. ඔබ වෙනත් ක්ලවුඩ් සපයන්නා මත හෝ ඔබේම යටිතල පහසුකම් මත ස්ථාපනය කිරීමට කැමති නම්, ඔබට Outline කළමනාකරු යෙදුමේ ‘උසස් ප්‍රකාරය’ තෝරාගෙන පිහිටුවීම් පිටපතක් භාවිතයෙන් ස්ථාපන උපදෙස් අනුගමනය කළ හැක.&nbsp;</p>
+
+<p data-aura-rendered-by="12:28806;a"><strong>මම මගේ Outline සේවාදායකයක් පිහිටුවිය යුත්තේ කොතැනින් ද?</strong></p>
+
+<ol data-aura-rendered-by="12:28806;a">
+  <li>ඔබේ Outline සේවාදායකය සඳහා ස්ථානයක් තෝරා ගන්නා විට ඔබ සලකා බැලිය යුතු කරුණු කිහිපයක් තිබේ:</li>
+  <li>Outline සේවාදායකයේ ස්ථානය පරිශීලකයින් අන්තර්ජාලය අත්විඳින ආකාරය බලපායි. උදාහරණයක් ලෙස, සේවාදායකය ඇම්ස්ටර්ඩෑම් හි පිහිටා තිබේ නම්, මෙම සේවාදායකයට ප්‍රවේශ වන පරිශීලකයා භෞතිකව නෙදර්ලන්තයේ පිහිටා ඇති ආකාරයට අන්තර්ජාලය අත්විඳියි. සමහර වෙබ් අඩවි ලන්දේසි භාෂාවෙන් පවා සංදර්ශනය විය හැක. සාමාන්‍යයෙන්, ඔබට වෙබ් අඩවියේ භාෂා තේරීමක් භාවිතයෙන් දේශීය භාෂාව ප්‍රතික්ෂේප කළ හැක.</li>
+  <li>ඔබේ පරිශීලකයන් සහ Outline සේවාදායකය අතර ඇති දුර ඔබේ වේගයට බලපෑ හැක. සාමාන්‍යයෙන්, Outline පරිශීලකයන් සහ සේවාදායකය අතර භෞතික දුරස්ථභාවය පරිශීලකයින්ගේ අන්තර්ජාල වේගයට බලපෑ හැක. බොහෝ අවස්ථාවන්හි දී, ඔබ අපේක්ෂිත පරිශීලකයින් සිටින ස්ථානයට ආසන්නතම සේවාදායක ස්ථානයක් තෝරා ගත හැකි නමුත්, ඔබේ රට හෝ කලාපය සමග සම්බන්ධ වන අන්තර්ජාල කේබල් මොනවා දැයි බැලීමට <a href="https://www.submarinecablemap.com/" rel="noopener" target="_blank">සබ්මැරීන් කේබල් සිතියම</a> පරීක්ෂා කළ හැක.</li>
+  <li>ඔබේ VPN සේවාදායකය පිහිටා ඇති ස්ථානය නීතිමය රාමුවට බලපෑ හැක. Outline මෘදුකාංගය ඔබේ ගමනාගමනය ලොග් නොකරන බව කරුණාවෙන් සලකන්න. <a href="/outline-faq/answer/14919822" rel="noopener" target="_blank">Outline භාවිතා කරන අතරේ ආරක්ෂාව සහ පෞද්ගලිකත්වය</a> පිළිබඳව තව දැන ගන්න.</li>
+</ol>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="93" sourceLocale="si">WEB:15331758</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">මම සංවර්ධකයෙක්. මගේ යෙදුමට Outline SDK ඒකාබද්ධ කිරීම සඳහා මට සහාය සොයාගත හැක්කේ කොතැනින් ද?</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web">මෙම සහාය වෙබ් අඩවිය Outline Manager සහ සේවාලාභීයා භාවිතා කරන්නන් සඳහා වේ. සංවර්ධකයින්, සහාය සඳහා GitHub භාවිතා කරන්න. ප්‍රශ්නයක් ඇසීමට, SDK&nbsp;<a href="https://github.com/Jigsaw-Code/outline-sdk/discussions" target="_blank">සාකච්ඡා පුවරුවේ</a> පළ කරන්න. සාකච්ඡා පුවරු කොටස ප්‍රශ්න ඇසීමට, අදහස් බෙදා ගැනීමට, ආදර්ශන වෙත සබැඳි කිරීමට සහ Outline SDK භාවිතා කරන අනෙකුත් සංවර්ධකයන්ට සහාය වීමට කදිම ස්ථානයකි. විශේෂාංග ඉල්ලීම් හෝ දෝෂ වාර්තා සඳහා, ඒ වෙනුවට <a href="https://github.com/Jigsaw-Code/outline-sdk/issues/new" target="_blank">ගැටලුවක්</a> විවෘත කරන්න.</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="74" sourceLocale="si">WEB:15448041</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">තිබෙන භාෂා</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p>Outline පහත භාෂාවලින් ලබා ගත හැක:</p>
+
+<ul>
+  <li aria-level="1">අප්‍රිකානු</li>
+  <li aria-level="1">ඇල්බේනියානු</li>
+  <li aria-level="1">ඇම්හැරික්</li>
+  <li aria-level="1">අරාබි</li>
+  <li aria-level="1">ආර්මේනියානු</li>
+  <li aria-level="1">අසර්බයිජාන</li>
+  <li aria-level="1">බෙංගාලි</li>
+  <li aria-level="1">බොස්නියානු</li>
+  <li aria-level="1">බල්ගේරියානු</li>
+  <li aria-level="1">බුරුම</li>
+  <li aria-level="1">කැටලන්</li>
+  <li aria-level="1">චීන (සුළුකළ)</li>
+  <li aria-level="1">චීන (සාම්ප්‍රදායික)</li>
+  <li aria-level="1">ක්‍රොඒෂියානු</li>
+  <li aria-level="1">චෙක්</li>
+  <li aria-level="1">ඩෙන්මාර්ක</li>
+  <li aria-level="1">ලන්දේසි</li>
+  <li aria-level="1">ඉංග්‍රීසි (ඇමරිකානු)</li>
+  <li aria-level="1">ඉංග්‍රීසි (බ්‍රිතාන්‍ය)</li>
+  <li aria-level="1">එස්තෝනියානු</li>
+  <li aria-level="1">පිලිපීන</li>
+  <li aria-level="1">ෆින්ලන්ත</li>
+  <li aria-level="1">ප්‍රංශ</li>
+  <li aria-level="1">ජෝර්ජියානු</li>
+  <li aria-level="1">ජර්මානු</li>
+  <li aria-level="1">ග්‍රීක</li>
+  <li aria-level="1">හීබෲ</li>
+  <li aria-level="1">හින්දි</li>
+  <li aria-level="1">හංගේරියානු</li>
+  <li aria-level="1">අයිස්ලන්ත</li>
+  <li aria-level="1">ඉන්දුනීසියානු</li>
+  <li aria-level="1">ඉතාලි</li>
+  <li aria-level="1">ජපන්</li>
+  <li aria-level="1">කශාහ්</li>
+  <li aria-level="1">කමර්</li>
+  <li aria-level="1">කොරියානු</li>
+  <li aria-level="1">ලාඕ</li>
+  <li aria-level="1">ලැට්වියානු</li>
+  <li aria-level="1">ලිතුවේනියානු</li>
+  <li aria-level="1">මැසිඩෝනියානු</li>
+  <li aria-level="1">මැලේ</li>
+  <li aria-level="1">මරාති</li>
+  <li aria-level="1">මොන්ගෝලියානු</li>
+  <li aria-level="1">නේපාල</li>
+  <li aria-level="1">නෝර්වීජියානු</li>
+  <li aria-level="1">පර්සියානු</li>
+  <li aria-level="1">පෝලන්ත</li>
+  <li aria-level="1">පෘතුගීසි (බ්‍රසීලියානු)</li>
+  <li aria-level="1">පෘතුගීසි (යුරෝපීය)</li>
+  <li aria-level="1">රුමේනියානු</li>
+  <li aria-level="1">රුසියානු</li>
+  <li aria-level="1">සර්බියානු (සිරිලික්)</li>
+  <li aria-level="1">සර්බියානු (ලතින්)</li>
+  <li aria-level="1">සිංහල</li>
+  <li aria-level="1">ස්ලෝවැකියානු</li>
+  <li aria-level="1">ස්ලෝවේනියානු</li>
+  <li aria-level="1">ස්පාඤ්ඤ (යුරෝපීය)</li>
+  <li aria-level="1">ස්පාඤ්ඤ (ලතින් ඇමරිකානු)</li>
+  <li aria-level="1">ස්වාහීලී</li>
+  <li aria-level="1">ස්වීඩන</li>
+  <li aria-level="1">දෙමළ</li>
+  <li aria-level="1">තායි</li>
+  <li aria-level="1">තුර්කි</li>
+  <li aria-level="1">යුක්‍රේනියානු</li>
+  <li aria-level="1">උර්දු</li>
+  <li aria-level="1">වියට්නාම</li>
+</ul>
+</div>
+<br/><div class="gkms id notranslate" sourceGlobalRevision="79" sourceLocale="si">WEB:15528599</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS ARTICLE TITLE</strong></div>
+<div class="gkms article title">ෆයර්වෝලයේ දෝෂ</div>
+<div class="gkms heading separator notranslate"><br/><strong>GKMS WEB</strong></div>
+<div class="gkms web"><p data-aura-rendered-by="12:268;a">ඔබට මුහුණ දිය හැකි ෆයර්වෝල් ගැටලු වර්ග තුනක් තිබේ:</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>ජාල ෆයර්වෝලයක් මගින් ඔබව අවහිර කළ හැක.</strong></p>
+
+<p data-aura-rendered-by="12:268;a">ඔබ පාසලේ දී හෝ ඔබේ සේවා ස්ථානයේ දී වැනි ෆයර්වෝල් ජාලයකට සම්බන්ධ වී Outline ස්ථාපනය කිරීමට උත්සාහ කරන්නේ නම්, වෙනත් ජාලයක සිටින අතරේ ස්ථාපනය කිරීමට උත්සාහ කරන්න.</p>
+
+<p data-aura-rendered-by="12:268;a">මෙය ක්‍රියා නොකරන්නේ නම්, ෆයර්වෝල් කරන ලද ජාලය ඔබේ Outline සේවාදායකයට සම්බන්ධ කිරීමට ඉඩ දීමට ඔබේ ජාල පරිපාලක අමතන්න. ඔබ ඔබේ Outline සේවාදායකයේ IP ලිපිනය සහ ස්ථාපන ස්ක්‍රිප්ට් අවසානයේ දක්වා ඇති Outline ධාවනය වන පෝටයන් දැන ගැනීමට අවශ්‍ය වනු ඇත.</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>උපාංග ෆයර්වෝලයක් මගින් ඔබව අවහිර කළ හැක</strong>.</p>
+
+<p data-aura-rendered-by="12:268;a">ඔබේ උපාංගයේ සම්මත නොවන පෝටයන් මත පිටතට යන සම්බන්ධතා අවහිර කරන මෘදුකාංගයක් හෝ හඳුනා නොගත් මෘදුකාංගයක් (CheckPoint's ZoneAlarm) තිබේ නම්, Outline සඳහා ව්‍යතිරේකයක් නිර්මාණය කරන්නේ කෙසේ දැයි දැන ගැනීමට ඔබේ උපාංගය හෝ මෘදුකාංග ලේඛන බලන්න.</p>
+
+<p data-aura-rendered-by="12:268;a"><strong>සේවාදායක ෆයර්වෝලයක් මගින් ඔබව අවහිර කළ හැක.</strong></p>
+
+<p data-aura-rendered-by="12:268;a">ඔබ තෝරා ගෙන ඇති වලාකුළු සපයන්නා විසින් ධාවනය වන පෝටයන් විවෘත කිරීමට, ඔබේ සේවාදායක ෆයර්වෝලයට ව්‍යතිරේක හස්තීයව තැනීමට අවශ්‍ය කළ හැක. ඔබ ස්ථාපන ස්ක්‍රිප්ට් ධාවනය කළ පසු, ඔබේ සේවාදායකයේ Outline ධාවනය වන අහඹු ලෙස තෝරාගත් පෝට දෙක ඔබට ඉදිරිපත් කර තිබිය යුතු වේ. මෙම පෝට දෙක විවෘත කිරීම ප්‍රමාණවත් විය යුතු වේ.<br />
+  <br />
+  ඔබේ සේවාදායක ෆයර්වෝලයට ව්‍යතිරේක තැනීම සඳහා, 'ufw' සහ 'iptables' සඳහා ලේඛන දෙස බැලීමට අපි නිර්දේශ කරමු:</p>
+
+<ul data-aura-rendered-by="12:268;a">
+  <li>UFW:&nbsp;<a href="https://help.ubuntu.com/community/UFW" rel="noopener" target="_blank">https://help.ubuntu.com/community/UFW</a></li>
+  <li>Iptables:&nbsp;<a href="https://help.ubuntu.com/community/IptablesHowTo" rel="noopener" target="_blank">https://help.ubuntu.com/community/IptablesHowTo</a></li>
+</ul>
+</div>
+</body>
+</html>
