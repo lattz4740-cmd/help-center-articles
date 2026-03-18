@@ -1,0 +1,73 @@
+---
+title: Bahasa yang tersedia
+sidebar_label: Bahasa yang tersedia
+---
+
+Outline tersedia dalam bahasa yang berikut:
+
+- Afrikaans
+- Albania
+- Amharic
+- Arab
+- Armenia
+- Azerbaijan
+- Bengali
+- Bosnia
+- Bulgaria
+- Burma
+- Catalan
+- Cina (Mudah)
+- Cina (Tradisional)
+- Croatia
+- Czech
+- Denmark
+- Belanda
+- Inggeris (Amerika)
+- Inggeris (British)
+- Estonia
+- Filipina
+- Finland
+- Perancis
+- Georgia
+- Jerman
+- Greek
+- Ibrani
+- Hindi
+- Hungary
+- Iceland
+- Indonesia
+- Itali
+- Jepun
+- Kazakhstan
+- Khmer
+- Korea
+- Lao
+- Latvia
+- Lithuania
+- Macedonia
+- Bahasa Melayu
+- Marathi
+- Mongolia
+- Nepal
+- Norway
+- Parsi
+- Poland
+- Portugis (Brazil)
+- Portugis (Eropah)
+- Romania
+- Rusia
+- Serbia (Cyril)
+- Serbia (Latin)
+- Sinhala
+- Slovak
+- Slovenia
+- Sepanyol (Eropah)
+- Sepanyol (Amerika Latin)
+- Swahili
+- Sweden
+- Tamil
+- Thai
+- Turkiye
+- Ukraine
+- Urdu
+- Vietnam

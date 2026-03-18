@@ -1,0 +1,73 @@
+---
+title: Pieejamās valodas
+sidebar_label: Pieejamās valodas
+---
+
+Programmatūra Outline ir pieejama tālāk norādītajās valodās.
+
+- Afrikandu
+- Albāņu
+- Amharu
+- Arābu
+- Armēņu
+- Azerbaidžāņu
+- Bengāļu
+- Bosniešu
+- Bulgāru
+- Birmiešu
+- Katalāņu
+- Ķīniešu (vienkāršotā)
+- Ķīniešu (tradicionālā)
+- Horvātu
+- Čehu
+- Dāņu
+- Holandiešu
+- Angļu (ASV)
+- Angļu (Lielbritānija)
+- Igauņu
+- Filipīniešu
+- Somu
+- Franču
+- Gruzīnu
+- Vācu
+- Grieķu
+- Ebreju
+- Hindi
+- Ungāru
+- Islandiešu
+- Indonēziešu
+- Itāļu
+- Japāņu
+- Kazahu
+- Khmeru
+- Korejiešu
+- Laosiešu
+- Latviešu
+- Lietuviešu
+- Maķedoniešu
+- Malajiešu
+- Marathu
+- Mongoļu
+- Nepāliešu
+- Norvēģu
+- Persiešu
+- Poļu
+- Portugāļu (Brazīlija)
+- Portugāļu (Portugāle)
+- Rumāņu
+- Krievu
+- Serbu (kirilica)
+- Serbu (latīņu)
+- Singāļu
+- Slovāku
+- Slovēņu
+- Spāņu (Spānija)
+- Spāņu (Latīņamerika)
+- Svahili
+- Zviedru
+- Tamilu
+- Taju
+- Turku
+- Ukraiņu
+- Urdu
+- Vjetnamiešu

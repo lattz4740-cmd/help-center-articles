@@ -1,0 +1,73 @@
+---
+title: Idiomas disponibles
+sidebar_label: Idiomas disponibles
+---
+
+Outline está disponible en los siguientes idiomas:
+
+- Afrikáans
+- Albanés
+- Amárico
+- Árabe
+- Armenio
+- Azerí
+- Bengalí
+- Bosnio
+- Búlgaro
+- Birmano
+- Catalán
+- Chino (simplificado)
+- Chino (tradicional)
+- Croata
+- Checo
+- Danés
+- Neerlandés
+- Inglés (Estados Unidos)
+- Inglés (Reino Unido)
+- Estonio
+- Filipino
+- Finés
+- Francés
+- Georgiano
+- Alemán
+- Griego
+- Hebreo
+- Hindi
+- Húngaro
+- Islandés
+- Indonesio
+- Italiano
+- Japonés
+- Kazajo
+- Jemer
+- Coreano
+- Laosiano
+- Letón
+- Lituano
+- Macedonio
+- Malayo
+- Maratí
+- Mongol
+- Nepalí
+- Noruego
+- Persa
+- Polaco
+- Portugués (Brasil)
+- Portugués (Portugal)
+- Rumano
+- Ruso
+- Serbio (cirílico)
+- Serbio (latino)
+- Cingalés
+- Eslovaco
+- Esloveno
+- Español (España)
+- Español (Latinoamérica)
+- Suajili
+- Sueco
+- Tamil
+- Tailandés
+- Turco
+- Ucraniano
+- Urdu
+- Vietnamita

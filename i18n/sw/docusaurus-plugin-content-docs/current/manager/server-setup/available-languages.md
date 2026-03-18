@@ -1,0 +1,73 @@
+---
+title: Lugha zinazopatikana
+sidebar_label: Lugha zinazopatikana
+---
+
+Outline inapatikana kwa lugha zifuatazo:
+
+- Kiafrikana
+- Kialbania
+- Kiamhariki
+- Kiarabu
+- Kiarmenia
+- Kiazabaijani
+- Kibengali
+- Kibosnia
+- Kibulgaria
+- Kibama
+- Kikatalani
+- Kichina (Kilichorahisishwa)
+- Kichina (cha Jadi)
+- Kikroeshia
+- Kicheki
+- Kidenmaki
+- Kiholanzi
+- Kiingereza (Marekani)
+- Kiingereza (Uingereza)
+- Kiestonia
+- Kifilipino
+- Kifini
+- Kifaransa
+- Kijojia
+- Kijerumani
+- Kigiriki
+- Kiyahudi
+- Kihindi
+- Kihangaria
+- Kiaisilandi
+- Kiindonesia
+- Kiitaliano
+- Kijapani
+- Kikazaki
+- Kikhema
+- Kikorea
+- Kilao
+- Kilativia
+- Kilitwania
+- Kimasedonia
+- Kimalei
+- Kimarathi
+- Kimongolia
+- Kinepali
+- Kinorwe
+- Kiajemi
+- Kipolandi
+- Kireno (Brazili)
+- Kireno (Ulaya)
+- Kiromania
+- Kirusi
+- Kisabia (Kisiriliki)
+- Kisabia (Kilatini)
+- Kisinhala
+- Kislovaki
+- Kislovenia
+- Kihispania (Ulaya)
+- Kihispania (Amerika ya Kilatini)
+- Kiswahili
+- Kiswidi
+- Kitamili
+- Kithai
+- Kituruki
+- Kiukraini
+- Kiurdu
+- Kivietinamu

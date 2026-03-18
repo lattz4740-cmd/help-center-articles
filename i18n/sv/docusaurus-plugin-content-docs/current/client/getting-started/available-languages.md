@@ -1,0 +1,73 @@
+---
+title: Tillgängliga språk
+sidebar_label: Tillgängliga språk
+---
+
+Outline finns på följande språk:
+
+- afrikaans
+- albanska
+- amhariska
+- arabiska
+- armeniska
+- azerbajdzjanska
+- bengali
+- bosniska
+- bulgariska
+- burmesiska
+- katalanska
+- kinesiska (förenklad)
+- kinesiska (traditionell)
+- kroatiska
+- tjeckiska
+- danska
+- nederländska
+- engelska (USA)
+- engelska (Förenade kungariket)
+- estniska
+- filipino
+- finska
+- franska
+- georgiska
+- tyska
+- grekiska
+- hebreiska
+- hindi
+- ungerska
+- isländska
+- indonesiska
+- italienska
+- japanska
+- kazakiska
+- khmer
+- koreanska
+- laotiska
+- lettiska
+- litauiska
+- makedonska
+- malajiska
+- marathi
+- mongoliska
+- nepali
+- norska
+- persiska
+- polska
+- portugisiska (Brasilien)
+- portugisiska (europeisk)
+- rumänska
+- ryska
+- serbiska (kyrillisk)
+- serbiska (latinsk)
+- singalesiska
+- slovakiska
+- slovenska
+- spanska (europeisk)
+- spanska (latinamerikansk)
+- swahili
+- svenska
+- tamil
+- thai
+- turkiska
+- ukrainska
+- urdu
+- vietnamesiska

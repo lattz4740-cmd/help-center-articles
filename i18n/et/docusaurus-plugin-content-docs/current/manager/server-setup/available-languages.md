@@ -1,0 +1,73 @@
+---
+title: Saadaolevad keeled
+sidebar_label: Saadaolevad keeled
+---
+
+Outline on saadaval järgmistes keeltes:
+
+- afrikaani
+- albaania
+- amhara
+- araabia
+- armeenia
+- aserbaidžaani
+- bengali
+- bosnia
+- bulgaaria
+- birma
+- katalaani
+- hiina (lihtsustatud)
+- hiina (traditsiooniline)
+- horvaadi
+- tšehhi
+- taani
+- hollandi
+- inglise (Ameerika)
+- inglise (Briti)
+- eesti
+- filipiini
+- soome
+- prantsuse
+- gruusia
+- saksa
+- kreeka
+- heebrea
+- hindi
+- ungari
+- islandi
+- indoneesia
+- itaalia
+- jaapani
+- kasahhi
+- khmeeri
+- korea
+- lao
+- läti
+- leedu
+- makedoonia
+- malai
+- marathi
+- mongoolia
+- nepali
+- norra
+- pärsia
+- poola
+- portugali (Brasiilia)
+- portugali (Euroopa)
+- rumeenia
+- vene
+- serbia (kirillitsa)
+- serbia (ladina)
+- singali
+- slovaki
+- sloveeni
+- hispaania (Euroopa)
+- hispaania (Ladina-Ameerika)
+- suahiili
+- rootsi
+- tamili
+- tai
+- türgi
+- ukraina
+- urdu
+- vietnami

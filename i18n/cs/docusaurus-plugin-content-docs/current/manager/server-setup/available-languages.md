@@ -1,0 +1,73 @@
+---
+title: Dostupné jazyky
+sidebar_label: Dostupné jazyky
+---
+
+Služba Outline je dostupná v těchto jazycích:
+
+- afrikánština
+- albánština
+- amharština
+- arabština
+- arménština
+- ázerbájdžánština
+- bengálština
+- bosenština
+- bulharština
+- barmština
+- katalánština
+- čínština (zjednodušená)
+- čínština (tradiční)
+- chorvatština
+- čeština
+- dánština
+- nizozemština
+- angličtina (americká)
+- angličtina (britská)
+- estonština
+- filipínština
+- finština
+- francouzština
+- gruzínština
+- němčina
+- řečtina
+- hebrejština
+- hindština
+- maďarština
+- islandština
+- indonéština
+- italština
+- japonština
+- kazaština
+- khmerština
+- korejština
+- laoština
+- lotyština
+- litevština
+- makedonština
+- malajština
+- maráthština
+- mongolština
+- nepálština
+- norština
+- perština
+- polština
+- portugalština (brazilská)
+- portugalština (evropská)
+- rumunština
+- ruština
+- srbština (cyrilice)
+- srbština (latinka)
+- sinhálština
+- slovenština
+- slovinština
+- španělština (evropská)
+- španělština (latinskoamerická)
+- svahilština
+- švédština
+- tamilština
+- thajština
+- turečtina
+- ukrajinština
+- urdština
+- vietnamština

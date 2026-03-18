@@ -1,0 +1,73 @@
+---
+title: Tilgængelige sprog
+sidebar_label: Tilgængelige sprog
+---
+
+Outline er tilgængelig på følgende sprog:
+
+- Afrikaans
+- Albansk
+- Amharisk
+- Arabisk
+- Armensk
+- Aserbajdsjansk
+- Bengalsk
+- Bosnisk
+- Bulgarsk
+- Burmesisk
+- Catalansk
+- Kinesisk (forenklet)
+- Kinesisk (traditionelt)
+- Kroatisk
+- Tjekkisk
+- Dansk
+- Nederlandsk
+- Engelsk (amerikansk)
+- Engelsk (britisk)
+- Estisk
+- Filippinsk
+- Finsk
+- Fransk
+- Georgisk
+- Tysk
+- Græsk
+- Hebraisk
+- Hindi
+- Ungarsk
+- Islandsk
+- Indonesisk
+- Italiensk
+- Japansk
+- Kasakhisk
+- Khmer
+- Koreansk
+- Lao
+- Lettisk
+- Litauisk
+- Makedonsk
+- Malajisk
+- Marathisk
+- Mongolsk
+- Nepalesisk
+- Norsk
+- Persisk
+- Polsk
+- Portugisisk (brasiliansk)
+- Portugisisk (europæisk)
+- Rumænsk
+- Russisk
+- Serbisk (kyrillisk)
+- Serbisk (latinsk)
+- Singalesisk
+- Slovakisk
+- Slovensk
+- Spansk (europæisk)
+- Spansk (latinamerikansk)
+- Swahili
+- Svensk
+- Tamil
+- Thai
+- Tyrkisk
+- Ukrainsk
+- Urdu
+- Vietnamesisk

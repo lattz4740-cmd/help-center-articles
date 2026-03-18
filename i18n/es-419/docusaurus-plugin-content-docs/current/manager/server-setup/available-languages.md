@@ -1,0 +1,71 @@
+---
+title: Idiomas disponibles
+sidebar_label: Idiomas disponibles
+---
+
+- Afrikáans
+- Albanés
+- Amárico
+- Árabe
+- Armenio
+- Azerbaiyano
+- Bengalí
+- Bosnio
+- Búlgaro
+- Birmano
+- Catalán
+- Chino (simplificado)
+- Chino (tradicional)
+- Croata
+- Checo
+- Danés
+- Neerlandés
+- Inglés (estadounidense)
+- Inglés (británico)
+- Estonio
+- Filipino
+- Finés
+- Francés
+- Georgiano
+- Alemán
+- Griego
+- Hebreo
+- Hindi
+- Húngaro
+- Islandés
+- Indonesio
+- Italiano
+- Japonés
+- Kazajo
+- Jemer
+- Coreano
+- Laosiano
+- Letón
+- Lituano
+- Macedonio
+- Malayo
+- Maratí
+- Mongol
+- Nepalés
+- Noruego
+- Persa
+- Polaco
+- Portugués (brasileño)
+- Portugués (europeo)
+- Rumano
+- Ruso
+- Serbio (cirílico)
+- Serbio (latino)
+- Cingalés
+- Eslovaco
+- Esloveno
+- Español (europeo)
+- Español (latinoamericano)
+- Suajili
+- Sueco
+- Tamil
+- Tailandés
+- Turco
+- Ucraniano
+- Urdu
+- Vietnamita

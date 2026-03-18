@@ -1,0 +1,73 @@
+---
+title: Ngôn ngữ được hỗ trợ
+sidebar_label: Ngôn ngữ được hỗ trợ
+---
+
+Outline hiện hỗ trợ các ngôn ngữ sau:
+
+- Tiếng Hà Lan (Nam Phi)
+- Tiếng Albania
+- Tiếng Amharic
+- Tiếng Ả Rập
+- Tiếng Armenia
+- Tiếng Azerbaijan
+- Tiếng Bengal
+- Tiếng Bosnia
+- Tiếng Bulgaria
+- Tiếng Miến Điện
+- Tiếng Catalan
+- Tiếng Trung (Giản thể)
+- Tiếng Trung (Phồn thể)
+- Tiếng Croatia
+- Tiếng Séc
+- Tiếng Đan Mạch
+- Tiếng Hà Lan
+- Tiếng Anh (Mỹ)
+- Tiếng Anh (Anh)
+- Tiếng Estonia
+- Tiếng Philippines
+- Tiếng Phần Lan
+- Tiếng Pháp
+- Tiếng Gruzia
+- Tiếng Đức
+- Tiếng Hy Lạp
+- Tiếng Do Thái
+- Tiếng Hindi
+- Tiếng Hungary
+- Tiếng Iceland
+- Tiếng Indonesia
+- Tiếng Ý
+- Tiếng Nhật
+- Tiếng Kazakh
+- Tiếng Khmer
+- Tiếng Hàn
+- Tiếng Lào
+- Tiếng Latvia
+- Tiếng Lithuania
+- Tiếng Macedonia
+- Tiếng Malay
+- Tiếng Marathi
+- Tiếng Mông Cổ
+- Tiếng Nepal
+- Tiếng Na Uy
+- Tiếng Ba Tư
+- Tiếng Ba Lan
+- Tiếng Bồ Đào Nha (Brazil)
+- Tiếng Bồ Đào Nha (Châu Âu)
+- Tiếng Romania
+- Tiếng Nga
+- Tiếng Serbia (Chữ Kirin)
+- Tiếng Serbia (Chữ Latinh)
+- Tiếng Sinhala
+- Tiếng Slovakia
+- Tiếng Slovenia
+- Tiếng Tây Ban Nha (Châu Âu)
+- Tiếng Tây Ban Nha (Mỹ Latinh)
+- Tiếng Swahili
+- Tiếng Thuỵ Điển
+- Tiếng Tamil
+- Tiếng Thái
+- Tiếng Thổ Nhĩ Kỳ
+- Tiếng Ukraina
+- Tiếng Urdu
+- Tiếng Việt

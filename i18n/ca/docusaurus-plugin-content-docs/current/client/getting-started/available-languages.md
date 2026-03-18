@@ -1,0 +1,73 @@
+---
+title: Idiomes disponibles
+sidebar_label: Idiomes disponibles
+---
+
+Outline està disponible en aquests idiomes:
+
+- Afrikaans
+- Albanès
+- Amhàric
+- Àrab
+- Armeni
+- Azerbaidjanès
+- Bengalí
+- Bosnià
+- Búlgar
+- Birmà
+- Català
+- Xinès (simplificat)
+- Xinès (tradicional)
+- Croat
+- Txec
+- Danès
+- Neerlandès
+- Anglès (americà)
+- Anglès (britànic)
+- Estonià
+- Filipí
+- Finès
+- Francès
+- Georgià
+- Alemany
+- Grec
+- Hebreu
+- Hindi
+- Hongarès
+- Islandès
+- Indonesi
+- Italià
+- Japonès
+- Kazakh
+- Khmer
+- Coreà
+- Laosià
+- Letó
+- Lituà
+- Macedoni
+- Malai
+- Marathi
+- Mongol
+- Nepalès
+- Noruec
+- Persa
+- Polonès
+- Portuguès (Brasil)
+- Portuguès (europeu)
+- Romanès
+- Rus
+- Serbi (ciríl·lic)
+- Serbi (llatí)
+- Singalès
+- Eslovac
+- Eslovè
+- Espanyol (europeu)
+- Espanyol (llatinoamericà)
+- Suahili
+- Suec
+- Tàmil
+- Tailandès
+- Turc
+- Ucraïnès
+- Urdú
+- Vietnamita

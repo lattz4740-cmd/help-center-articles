@@ -1,0 +1,73 @@
+---
+title: Pasiekiamos kalbos
+sidebar_label: Pasiekiamos kalbos
+---
+
+„Outline“ pasiekiama toliau nurodytomis kalbomis.
+
+- Afrikanų
+- Albanų
+- Amharų
+- Arabų
+- Armėnų
+- Azerbaidžaniečių
+- Bengalų
+- Bosnių
+- Bulgarų
+- Birmiečių
+- Katalonų
+- Kinų (supaprastinta)
+- Kinų (tradicinė)
+- Kroatų
+- Čekų
+- Danų
+- Nyderlandų
+- Anglų (JAV)
+- Anglų (JK)
+- Estų
+- Filipiniečių
+- Suomių
+- Prancūzų
+- Kartvelų
+- Vokiečių
+- Graikų
+- Hebrajų
+- Hindi
+- Vengrų
+- Islandų
+- Indoneziečių
+- Italų
+- Japonų
+- Kazachų
+- Khmerų
+- Korėjiečių
+- Laosiečių
+- Latvių
+- Lietuvių
+- Makedoniečių
+- Malajų
+- Maratų
+- Mongolų
+- Nepaliečių
+- Norvegų
+- Persų
+- Lenkų
+- Portugalų (Brazilija)
+- Portugalų (Europa)
+- Rumunų
+- Rusų
+- Serbų (kirilica)
+- Serbų (lot. rašmenys)
+- Sinhalų
+- Slovakų
+- Slovėnų
+- Ispanų (Europa)
+- Ispanų (Lotynų Amerika)
+- Svahilių
+- Švedų
+- Tamilų
+- Tajų
+- Turkų
+- Ukrainiečių
+- Urdų
+- Vietnamiečių

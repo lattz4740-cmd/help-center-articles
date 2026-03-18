@@ -1,0 +1,73 @@
+---
+title: Idiomas disponíveis
+sidebar_label: Idiomas disponíveis
+---
+
+O Outline está disponível nos seguintes idiomas:
+
+- Africânder
+- Albanês
+- Amárico
+- Árabe
+- Arménio
+- Azeri
+- Bengali
+- Bósnio
+- Búlgaro
+- Birmanês
+- Catalão
+- Chinês (simplificado)
+- Chinês (tradicional)
+- Croata
+- Checo
+- Dinamarquês
+- Neerlandês
+- Inglês (EUA)
+- Inglês (Reino Unido)
+- Estónio
+- Filipino
+- Finlandês
+- Francês
+- Georgiano
+- Alemão
+- Grego
+- Hebraico
+- Hindi
+- Húngaro
+- Islandês
+- Indonésio
+- Italiano
+- Japonês
+- Cazaque
+- Khmer
+- Coreano
+- Laosiano
+- Letão
+- Lituano
+- Macedónio
+- Malaio
+- Marata
+- Mongol
+- Nepalês
+- Norueguês
+- Persa
+- Polaco
+- Português (Brasil)
+- Português (Europa)
+- Romeno
+- Russo
+- Sérvio (cirílico)
+- Sérvio (latim)
+- Cingalês
+- Eslovaco
+- Esloveno
+- Espanhol (Europa)
+- Espanhol (América Latina)
+- Suaíli
+- Sueco
+- Tâmil
+- Tailandês
+- Turco
+- Ucraniano
+- Urdu
+- Vietnamita

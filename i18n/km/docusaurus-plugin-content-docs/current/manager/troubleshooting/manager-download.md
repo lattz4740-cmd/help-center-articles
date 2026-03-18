@@ -1,0 +1,6 @@
+---
+title: "តើខ្ញុំ​អាច​ទាញយក Outline Manager ដោយរបៀបណា ប្រសិនបើ​តំណទាញយក​មិន​ដំណើរការទេ?"
+sidebar_label: "តើខ្ញុំ​អាច​ទាញយក Outline Manager ដោយរបៀបណា ប្រសិនបើ​តំណទាញយក​មិន​ដំណើរការទេ?"
+---
+
+សូមប្រើប្រាស់[តំណនេះ](https://getoutline.org/get-started/#step-1) ឬ[តំណនេះ](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/) ដើម្បីទាញយក​កម្មវិធី​ដោយផ្ទាល់​សម្រាប់​ប្រព័ន្ធ​ប្រតិបត្តិការ​ជាច្រើន។

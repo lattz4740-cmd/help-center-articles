@@ -131,8 +131,16 @@ def is_header_paragraph(element):
 
     if len(children) == 1 and isinstance(target, Tag) and target.name in ("strong", "b"):
         inner_children = [c for c in target.children if not (isinstance(c, NavigableString) and c.strip() == "")]
+        # Filter out empty anchor targets: <a id="X"></a> or <a id="X" name="X"></a>
+        inner_children = [
+            c for c in inner_children
+            if not (isinstance(c, Tag) and c.name == "a" and (c.get("id") or c.get("name")) and not c.get_text(strip=True))
+        ]
         if all(isinstance(c, NavigableString) for c in inner_children):
             return True
+        if not inner_children:
+            # Only had empty anchors + whitespace, still counts as header if there's text
+            return bool(target.get_text(strip=True))
         # Also handle <b><strong>text</strong></b> nesting
         if len(inner_children) == 1 and isinstance(inner_children[0], Tag) and inner_children[0].name in ("strong", "b"):
             return True
@@ -142,6 +150,32 @@ def is_header_paragraph(element):
 def get_header_text(element):
     """Extract text from a header-style paragraph."""
     return element.get_text(strip=True)
+
+
+def get_header_anchor_id(element):
+    """Extract anchor ID from a header-style paragraph, if present.
+
+    Detects patterns like:
+    - <p><a id="X"><strong>...</strong></a></p>
+    - <p><strong><a id="X"></a>text</strong></p>
+    """
+    children = [c for c in element.children if not (isinstance(c, NavigableString) and c.strip() == "")]
+    if not children:
+        return ""
+
+    target = children[0]
+
+    # Pattern 1: <a id="X"><strong>...</strong></a>
+    if isinstance(target, Tag) and target.name == "a":
+        return target.get("id") or target.get("name") or ""
+
+    # Pattern 2: <strong><a id="X"></a>text</strong>
+    if isinstance(target, Tag) and target.name in ("strong", "b"):
+        for child in target.children:
+            if isinstance(child, Tag) and child.name == "a" and (child.get("id") or child.get("name")):
+                return child.get("id") or child.get("name") or ""
+
+    return ""
 
 
 def convert_inline(element):
@@ -378,8 +412,12 @@ def convert_body(web_div, image_snippets):
         # Header-style paragraph: <p><strong>Title</strong></p>
         if is_header_paragraph(child):
             header_text = get_header_text(child)
+            anchor_id = get_header_anchor_id(child)
             if header_text:
-                blocks.append(f"## {header_text}")
+                if anchor_id:
+                    blocks.append(f"## {header_text} {{#{anchor_id}}}")
+                else:
+                    blocks.append(f"## {header_text}")
             continue
 
         # Actual headers
@@ -547,6 +585,7 @@ def yaml_quote(s):
         escaped = s.replace("\\", "\\\\").replace('"', '\\"')
         return f'"{escaped}"'
     return s
+
 
 
 def write_doc(doc_path, title, sidebar_label, body_md):

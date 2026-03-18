@@ -1,0 +1,73 @@
+---
+title: Beskikbare tale
+sidebar_label: Beskikbare tale
+---
+
+Outline is in die volgende tale beskikbaar:
+
+- Afrikaans
+- Albanees
+- Amharies
+- Arabies
+- Armeens
+- Aserbeidjaans
+- Bengaals
+- Bosnies
+- Bulgaars
+- Birmaans
+- Katalaans
+- Chinees (Vereenvoudig)
+- Chinees (Tradisioneel)
+- Kroaties
+- Tsjeggies
+- Deens
+- Nederlands
+- Engels (Amerikaans)
+- Engels (Brits)
+- Esties
+- Filippyns
+- Fins
+- Frans
+- Georgies
+- Duits
+- Grieks
+- Hebreeus
+- Hindi
+- Hongaars
+- Yslands
+- Indonesies
+- Italiaans
+- Japannees
+- Kasaks
+- Khmer
+- Koreaans
+- Lao
+- Letties
+- Litaus
+- Masedonies
+- Maleis
+- Mahratti
+- Mongools
+- Nepalees
+- Noors
+- Persies
+- Pools
+- Portugees (Brasiliaans)
+- Portugees (Europees)
+- Roemeens
+- Russies
+- Serwies (Cyrillies)
+- Serwies (Latyns)
+- Sinhalees
+- Slowaaks
+- Sloweens
+- Spaans (Europees)
+- Spaans (Latyns-Amerikaans)
+- Swahili
+- Sweeds
+- Tamil
+- Thai
+- Turks
+- Oekraïns
+- Oerdoe
+- Viëtnamees

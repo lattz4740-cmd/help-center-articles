@@ -1,0 +1,73 @@
+---
+title: Tiltæk tungumál
+sidebar_label: Tiltæk tungumál
+---
+
+Outline er í boði á eftirfarandi tungumálum:
+
+- Afríkönsku
+- Albönsku
+- Amharísku
+- Arabísku
+- Armensku
+- Asersku
+- Bengölsku
+- Bosnísku
+- Búlgörsku
+- Búrmönsku
+- Katalónsku
+- Kínversku (einfaldaðri)
+- Kínversku (hefðbundinni)
+- Króatísku
+- Tékknesku
+- Dönsku
+- Hollensku
+- Ensku (bandarískri)
+- Ensku (breskri)
+- Eistnesku
+- Filippseysku
+- Finnsku
+- Frönsku
+- Georgísku
+- Þýsku
+- Grísku
+- Hebresku
+- Hindí
+- Ungversku
+- Íslensku
+- Indónesísku
+- Ítölsku
+- Japönsku
+- Kasöksku
+- Khmer
+- Kóresku
+- Laó
+- Lettnesku
+- Litháísku
+- Makedónsku
+- Malajísku
+- Maratí
+- Mongólsku
+- Nepölsku
+- Norsku
+- Persnesku
+- Pólsku
+- Portúgölsku (brasilískri)
+- Portúgölsku (evrópskri)
+- Rúmensku
+- Rússnesku
+- Serbnesku (kyrillískri)
+- Serbnesku (latneskri)
+- Singalísku
+- Slóvakísku
+- Slóvensku
+- Spænsku (evrópskri)
+- Spænsku (rómönsk-amerísku)
+- Svahílí
+- Sænsku
+- Tamíl
+- Taílensku
+- Tyrknesku
+- Úkraínsku
+- Úrdú
+- Víetnömsku

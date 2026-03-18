@@ -35,6 +35,7 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Troubleshooting',
+          key: 'client-troubleshooting',
           items: [
             'client/troubleshooting/download-link',
             'client/troubleshooting/windows-install',
@@ -77,6 +78,7 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Troubleshooting',
+          key: 'manager-troubleshooting',
           items: [
             'manager/troubleshooting/manager-download',
             'manager/troubleshooting/windows-install',

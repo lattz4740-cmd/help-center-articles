@@ -1,0 +1,73 @@
+---
+title: Əlçatan dillər
+sidebar_label: Əlçatan dillər
+---
+
+Outline aşağıdakı dilərdə əlçatandır:
+
+- Afrikaans
+- Alban
+- Amhar
+- Ərəb
+- Erməni
+- Azərbaycan
+- Benqal
+- Bosniya
+- Bolqar
+- Birman
+- Katalan
+- Çin (Sadələşdirilmiş)
+- Çin (Ənənəvi)
+- Xorvat
+- Çex
+- Dan
+- Niderland
+- İngilis (Amerika variantı)
+- İngilis (Britaniya variantı)
+- Eston
+- Filippin
+- Fin
+- Fransız
+- Gürcü
+- Alman
+- Yunan
+- İvrit
+- Hind
+- Macar
+- İsland
+- İndoneziya
+- İtalyan
+- Yapon
+- Qazax
+- Khmer
+- Koreya
+- Lao
+- Latış
+- Litva
+- Makedoniya
+- Malay
+- Marathi
+- Monqol
+- Nepal
+- Norveç
+- Fars
+- Polyak
+- Portuqal (Braziliya)
+- Portuqal (Avropa)
+- Rumın
+- Rus
+- Serb (Kiril)
+- Serb (Latın)
+- Sinhal
+- Slovak
+- Sloven
+- İspan (Avropa)
+- İspan (Latın Amerikası)
+- Suahili
+- İsveç
+- Tamil
+- Tay
+- Türk
+- Ukrayna
+- Urdu
+- Vyetnam

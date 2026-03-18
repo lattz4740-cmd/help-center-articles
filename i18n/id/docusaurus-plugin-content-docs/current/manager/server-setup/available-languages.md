@@ -1,0 +1,73 @@
+---
+title: Pilihan bahasa
+sidebar_label: Pilihan bahasa
+---
+
+Outline tersedia dalam bahasa berikut:
+
+- Afrikaans
+- Albania
+- Amhar
+- Arab
+- Armenia
+- Azerbaijan
+- Bengali
+- Bosnia
+- Bulgaria
+- Burma
+- Katala
+- Mandarin (Sederhana)
+- Mandarin (Tradisional)
+- Kroasia
+- Ceko
+- Denmark
+- Belanda
+- Inggris (Amerika)
+- Inggris (Britania Raya)
+- Estonia
+- Tagalog
+- Finlandia
+- Prancis
+- Georgia
+- Jerman
+- Yunani
+- Ibrani
+- Hindi
+- Hungaria
+- Islandia
+- Indonesia
+- Italia
+- Jepang
+- Kazak
+- Khmer
+- Korea
+- Lao
+- Latvia
+- Lituania
+- Makedonia
+- Melayu
+- Marathi
+- Mongolia
+- Nepali
+- Norwegia
+- Persia
+- Polandia
+- Portugis (Brasil)
+- Portugis (Eropa)
+- Rumania
+- Rusia
+- Serbia (Sirilik)
+- Serbia (Latin)
+- Sinhala
+- Slovakia
+- Slovenia
+- Spanyol (Eropa)
+- Spanyol (Amerika Latin)
+- Swahili
+- Swedia
+- Tamil
+- Thai
+- Turki
+- Ukraina
+- Urdu
+- Vietnam

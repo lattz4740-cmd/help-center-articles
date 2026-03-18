@@ -1,0 +1,71 @@
+---
+title: Mevcut Diller
+sidebar_label: Mevcut Diller
+---
+
+- Afrikaanca
+- Arnavutça
+- Habeşçe
+- Arapça
+- Ermenice
+- Azerbaycan dili
+- Bengalce
+- Boşnakça
+- Bulgarca
+- Burmaca
+- Katalanca
+- Çince (Basitleştirilmiş)
+- Çince (Geleneksel)
+- Hırvatça
+- Çekçe
+- Danca
+- Felemenkçe
+- İngilizce (ABD)
+- İngilizce (Birleşik Krallık)
+- Estonyaca
+- Filipince
+- Fince
+- Fransızca
+- Gürcüce
+- Almanca
+- Yunanca
+- İbranice
+- Hintçe
+- Macarca
+- İzlandaca
+- Endonezce
+- İtalyanca
+- Japonca
+- Kazakça
+- Kamboçyaca
+- Korece
+- Laoca
+- Letonca
+- Litvanca
+- Makedonca
+- Malayca
+- Marathi
+- Moğolca
+- Nepalce
+- Norveççe
+- Farsça
+- Lehçe
+- Portekizce (Brezilya)
+- Portekizce (Avrupa)
+- Romence
+- Rusça
+- Sırpça (Kiril)
+- Sırpça (Latin)
+- Seylanca
+- Slovakça
+- Slovence
+- İspanyolca (Avrupa)
+- İspanyolca (Latin Amerika)
+- Svahili dili
+- İsveççe
+- Tamil
+- Tayca
+- Türkçe
+- Ukraynaca
+- Urduca
+- Vietnamca

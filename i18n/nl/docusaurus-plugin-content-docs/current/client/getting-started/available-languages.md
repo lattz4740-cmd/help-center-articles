@@ -1,0 +1,71 @@
+---
+title: Beschikbare talen
+sidebar_label: Beschikbare talen
+---
+
+- Afrikaans
+- Albanees
+- Amhaars
+- Arabisch
+- Armeens
+- Azerbeidzjaans
+- Bengaals
+- Bosnisch
+- Bulgaars
+- Birmaans
+- Catalaans
+- Chinees (vereenvoudigd)
+- Chinees (traditioneel)
+- Kroatisch
+- Tsjechisch
+- Deens
+- Nederlands
+- Engels (Amerikaans)
+- Engels (Brits)
+- Estlands
+- Filipijns
+- Fins
+- Frans
+- Georgisch
+- Duits
+- Grieks
+- Hebreeuws
+- Hindi
+- Hongaars
+- IJslands
+- Indonesisch
+- Italiaans
+- Japans
+- Kazachs
+- Khmer
+- Koreaans
+- Laotiaans
+- Lets
+- Litouws
+- Macedonisch
+- Maleis
+- Marathi
+- Mongools
+- Nepalees
+- Noors
+- Perzisch
+- Pools
+- Portugees (Brazilië)
+- Portugees (Europa)
+- Roemeens
+- Russisch
+- Servisch (Cyrillisch)
+- Servisch (Latijns)
+- Singalees
+- Slowaaks
+- Sloveens
+- Spaans (Europa)
+- Spaans (Latijns-Amerika)
+- Swahili
+- Zweeds
+- Tamil
+- Thai
+- Turks
+- Oekraïens
+- Urdu
+- Vietnamees

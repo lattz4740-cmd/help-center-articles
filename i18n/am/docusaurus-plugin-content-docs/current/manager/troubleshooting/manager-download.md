@@ -1,0 +1,6 @@
+---
+title: "የማውረድ አገናኙ የማይሠራ ከሆነ እንዴት የOutline አስተዳዳሪን ማውረድ እችላለሁ?"
+sidebar_label: "የማውረድ አገናኙ የማይሠራ ከሆነ እንዴት የOutline አስተዳዳሪን ማውረድ እችላለሁ?"
+---
+
+ለብዙ ሥርዓተ ክወናዎች መተግበሪያዎችን በቀጥታ ለማውረድ [ይህን አገናኝ](https://getoutline.org/get-started/#step-1) ወይም [ይህን አገናኝ](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/) ይጠቀሙ።

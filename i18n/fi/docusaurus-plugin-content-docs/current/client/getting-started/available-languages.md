@@ -1,0 +1,73 @@
+---
+title: Saatavilla olevat kielet
+sidebar_label: Saatavilla olevat kielet
+---
+
+Outline on käytettävissä seuraavilla kielillä:
+
+- afrikaans
+- albania
+- amhara
+- arabia
+- armenia
+- azeri
+- bengali
+- bosnia
+- bulgaria
+- burma
+- katalaani
+- yksinkertaistettu kiina
+- perinteinen kiina
+- kroatia
+- tšekki
+- tanska
+- hollanti
+- englanti (Amerikka)
+- englanti (Iso-Britannia)
+- viro
+- filipino
+- suomi
+- ranska
+- georgia
+- saksa
+- kreikka
+- heprea
+- hindi
+- unkari
+- islanti
+- indonesia
+- italia
+- japani
+- kazakki
+- khmer
+- korea
+- lao
+- latvia
+- liettua
+- makedonia
+- malaiji
+- marathi
+- mongoli
+- nepali
+- norja
+- persia
+- puola
+- portugali (Brasilia)
+- portugali (Eurooppa)
+- romania
+- venäjä
+- serbia (kyrillinen)
+- serbia (latinalainen)
+- sinhala
+- slovakki
+- sloveeni
+- espanja (Eurooppa)
+- espanja (Latinalainen Amerikka)
+- swahili
+- ruotsi
+- tamili
+- thai
+- turkki
+- ukraina
+- urdu
+- vietnam

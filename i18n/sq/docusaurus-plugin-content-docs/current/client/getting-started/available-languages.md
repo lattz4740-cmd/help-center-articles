@@ -1,0 +1,73 @@
+---
+title: Gjuhët e disponueshme
+sidebar_label: Gjuhët e disponueshme
+---
+
+Outline është i disponueshëm në gjuhët e mëposhtme:
+
+- Afrikanisht
+- Shqip
+- Amarikisht
+- Arabisht
+- Armenisht
+- Azerbajxhanisht
+- Bengalisht
+- Boshnjakisht
+- Bullgarisht
+- Birmanisht
+- Katalonisht
+- Kinezisht (e thjeshtësuar)
+- Kinezisht (tradicionale)
+- Kroatisht
+- Çekisht
+- Danisht
+- Holandisht
+- Anglisht (amerikane)
+- Anglisht (britanike)
+- Estonisht
+- Filipinisht
+- Finlandisht
+- Frëngjisht
+- Gjeorgjisht
+- Gjermanisht
+- Greqisht
+- Hebraisht
+- Hindisht
+- Hungarisht
+- Islandisht
+- Indonezisht
+- Italisht
+- Japonisht
+- Kazakisht
+- Kmerisht
+- Koreanisht
+- Laosisht
+- Letonisht
+- Lituanisht
+- Maqedonisht
+- Malajzisht
+- Maratisht
+- Mongolisht
+- Nepalisht
+- Norvegjisht
+- Persisht
+- Polonisht
+- Portugalisht (braziliane)
+- Portugalisht (evropiane)
+- Rumanisht
+- Rusisht
+- Serbisht (cirilike)
+- Serbisht (latine)
+- Sinhalisht
+- Sllovakisht
+- Sllovenisht
+- Spanjisht (evropiane)
+- Spanjisht (amerikano-latine)
+- Suahilisht
+- Suedisht
+- Tamilisht
+- Tajlandisht
+- Turqisht
+- Ukrainisht
+- Urduisht
+- Vietnamisht

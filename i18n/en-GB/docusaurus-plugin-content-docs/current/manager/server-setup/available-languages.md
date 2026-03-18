@@ -1,0 +1,71 @@
+---
+title: Available languages
+sidebar_label: Available languages
+---
+
+- Afrikaans
+- Albanian
+- Amharic
+- Arabic
+- Armenian
+- Azerbaijani
+- Bengali
+- Bosnian
+- Bulgarian
+- Burmese
+- Catalan
+- Chinese (Simplified)
+- Chinese (Traditional)
+- Croatian
+- Czech
+- Danish
+- Dutch
+- English (American)
+- English (British)
+- Estonian
+- Filipino
+- Finnish
+- French
+- Georgian
+- German
+- Greek
+- Hebrew
+- Hindi
+- Hungarian
+- Icelandic
+- Indonesian
+- Italian
+- Japanese
+- Kazakh
+- Khmer
+- Korean
+- Lao
+- Latvian
+- Lithuanian
+- Macedonian
+- Malay
+- Marathi
+- Mongolian
+- Nepali
+- Norwegian
+- Persian
+- Polish
+- Portuguese (Brazilian)
+- Portuguese (European)
+- Romanian
+- Russian
+- Serbian (Cyrillic)
+- Serbian (Latin)
+- Sinhala
+- Slovak
+- Slovenian
+- Spanish (European)
+- Spanish (Latin American)
+- Swahili
+- Swedish
+- Tamil
+- Thai
+- Turkish
+- Ukrainian
+- Urdu
+- Vietnamese

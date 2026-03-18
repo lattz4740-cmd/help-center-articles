@@ -2,7 +2,17 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-const SUPPORTED_LOCALES = ['en'];
+const SUPPORTED_LOCALES = [
+  'en', 'af', 'am', 'ar', 'ar-EG', 'as', 'az', 'be', 'bg', 'bn', 'bs',
+  'ca', 'cs', 'cy', 'da', 'de', 'de-CH', 'el', 'en-AU', 'en-CA', 'en-GB',
+  'en-IN', 'en-SG', 'es', 'es-419', 'et', 'eu', 'fa', 'fi', 'fil', 'fr',
+  'fr-CA', 'ga', 'gl', 'gu', 'ha', 'he', 'hi', 'hr', 'hu', 'hy', 'id',
+  'is', 'it', 'ja', 'ka', 'kk', 'km', 'kn', 'ko', 'ky', 'lo', 'lt', 'lv',
+  'mk', 'ml', 'mn', 'mr', 'ms', 'my', 'nb', 'ne', 'nl', 'or', 'pa', 'pl',
+  'pt', 'pt-BR', 'ro', 'ru', 'si', 'sk', 'sl', 'sq', 'sr', 'sv', 'sw',
+  'ta', 'te', 'th', 'tr', 'uk', 'ur', 'uz', 'vi', 'yo', 'zh-Hans',
+  'zh-Hant', 'zh-HK', 'zu',
+];
 
 function buildLocaleConfigs(): Record<string, {label: string; direction: 'ltr' | 'rtl'}> {
   const configs: Record<string, {label: string; direction: 'ltr' | 'rtl'}> = {};
@@ -31,6 +41,7 @@ const config: Config = {
   deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
+  onBrokenAnchors: 'warn',
 
   markdown: {
     format: 'detect',
@@ -79,6 +90,10 @@ const config: Config = {
           sidebarId: 'helpSidebar',
           label: 'Help',
           position: 'left',
+        },
+        {
+          type: 'localeDropdown',
+          position: 'right',
         },
         {
           type: 'search',

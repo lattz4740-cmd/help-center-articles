@@ -1,0 +1,71 @@
+---
+title: Tilgjengelige språk
+sidebar_label: Tilgjengelige språk
+---
+
+- afrikaans
+- albansk
+- amharisk
+- arabisk
+- armensk
+- aserbajdsjansk
+- bengali
+- bosnisk
+- bulgarsk
+- burmesisk
+- katalansk
+- kinesisk (forenklet)
+- kinesisk (tradisjonell)
+- kroatisk
+- tsjekkisk
+- dansk
+- nederlandsk
+- engelsk (USA)
+- engelsk (Storbritannia)
+- estisk
+- filippinsk
+- finsk
+- fransk
+- georgisk
+- tysk
+- gresk
+- hebraisk
+- hindi
+- ungarsk
+- islandsk
+- indonesisk
+- italiensk
+- japansk
+- kasakhisk
+- khmer
+- koreansk
+- laotisk
+- latvisk
+- litauisk
+- makedonsk
+- malayisk
+- marathi
+- mongolsk
+- nepali
+- norsk
+- persisk
+- polsk
+- portugisisk (Brasil)
+- portugisisk (Europa)
+- rumensk
+- russisk
+- serbisk (kyrillisk)
+- serbisk (latin)
+- singalesisk
+- slovakisk
+- slovensk
+- spansk (Europa)
+- spansk (Latin-Amerika)
+- swahili
+- svensk
+- tamil
+- thai
+- tyrkisk
+- ukrainsk
+- urdu
+- vietnamesisk

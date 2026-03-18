@@ -1,0 +1,73 @@
+---
+title: Rendelkezésre álló nyelvek
+sidebar_label: Rendelkezésre álló nyelvek
+---
+
+Az Outline a következő nyelveken áll rendelkezésre:
+
+- afrikaans
+- albán
+- amhara
+- arab
+- örmény
+- azerbajdzsáni
+- bengáli
+- bosnyák
+- bolgár
+- burmai
+- katalán
+- kínai (egyszerűsített)
+- kínai (hagyományos)
+- horvát
+- cseh
+- dán
+- holland
+- angol (amerikai)
+- angol (brit)
+- észt
+- tagalog
+- finn
+- francia
+- grúz
+- német
+- görög
+- héber
+- hindi
+- magyar
+- izlandi
+- indonéz
+- olasz
+- japán
+- kazah
+- khmer
+- koreai
+- lao
+- lett
+- litván
+- macedón
+- maláj
+- maráthi
+- mongol
+- nepáli
+- norvég
+- perzsa
+- lengyel
+- portugál (brazil)
+- portugál (európai)
+- román
+- orosz
+- szerb (cirill)
+- szerb (latin)
+- szingaléz
+- szlovák
+- szlovén
+- spanyol (európai)
+- spanyol (latin-amerikai)
+- szuahéli
+- svéd
+- tamil
+- thai
+- török
+- ukrán
+- urdu
+- vietnámi

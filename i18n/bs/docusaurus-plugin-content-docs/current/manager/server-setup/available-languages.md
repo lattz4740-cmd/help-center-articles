@@ -1,0 +1,73 @@
+---
+title: Dostupni jezici
+sidebar_label: Dostupni jezici
+---
+
+Outline je dostupan na sljedećim jezicima:
+
+- afrikans
+- albanski
+- amharski
+- arapski
+- armenski
+- azerbejdžanski
+- bengalski
+- bosanski
+- bugarski
+- burmanski
+- katalonski
+- kineski (pojednostavljeni)
+- kineski (tradicionalni)
+- hrvatski
+- češki
+- danski
+- nizozemski
+- engleski (američki)
+- engleski (britanski)
+- estonski
+- filipino
+- finski
+- francuski
+- gruzijski
+- njemački
+- grčki
+- hebrejski
+- hindi
+- mađarski
+- islandski
+- indonezijski
+- italijanski
+- japanski
+- kazaški
+- kmerski
+- korejski
+- laoski
+- latvijski
+- litvanski
+- makedonski
+- malajski
+- marati
+- mongolski
+- nepalski
+- norveški
+- perzijski
+- poljski
+- portugalski (brazilski)
+- portugalski (evropski)
+- rumunski
+- ruski
+- srpski (ćirilica)
+- srpski (latinica)
+- sinhaleški
+- slovački
+- slovenski
+- španski (evropski)
+- španski (latinsko-američki)
+- svahili
+- švedski
+- tamilski
+- tajlandski
+- turski
+- ukrajinski
+- urdu
+- vijetnamski
