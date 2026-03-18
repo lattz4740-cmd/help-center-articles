@@ -11,7 +11,7 @@ Esse problema pode ter alguns motivos:
 - **Pode ser necessário alterar as**[**configurações do smartphone.**](#DeviceSettings)**.**
 - **O gerente de serviço pode ter**[**destruído o servidor ou o ISP pode estar bloqueando sua solicitação**](#ServerIssues)**.**
 
-## Problemas de conexão de Internet: {#Internetissues}
+**Problemas de conexão de Internet:**
 
 ## Como testar: {#Internetissues}
 Desative o Outline e verifique se a conexão com a Internet foi restaurada.
@@ -29,7 +29,7 @@ Restaure a conexão do dispositivo seguindo estas etapas:
    2. Reinicie o dispositivo.
    3. Desligue, aguarde dois minutos e ligue o dispositivo de novo.
 
-## AProblemas no firewall da rede: {#FirewallIssues}
+**AProblemas no firewall da rede:**
 
 ## Como testar:
 
@@ -42,7 +42,7 @@ Se você consegue se conectar enquanto está na outra rede, o problema está aqu
 ## O que corrigir: {#FirewallIssues}
 Entre em contato com o gerenciador de serviço e solicite acesso ao servidor do Outline ou continue usando a outra rede.
 
-## Problemas no software do antivírus ou firewall: {#SoftwareIssues}
+**Problemas no software do antivírus ou firewall:**
 
 ## Como testar:
 
@@ -54,9 +54,9 @@ Observação: você precisa de uma chave de acesso e do app Outline para usar es
 
 Verifique as configurações do software de firewall ou antivírus e descubra se elas permitem o tráfego da VPN e do Outline.
 
-## Configurações do dispositivo: {#DeviceSettings}
+**Configurações do dispositivo:**
 
-## Itens a serem verificados: {#ServerIssues}
+## Itens a serem verificados: {#SoftwareIssues}
 Para Android:
 
 1. Abra o app "Configurações".
@@ -73,7 +73,7 @@ Para iOS: leia [este artigo de suporte](https://support.apple.com/guide/deployme
 
 ## Como testar:
 
-Se você tiver acesso a mais de um servidor, tente se conectar ao outro.
+## Se você tiver acesso a mais de um servidor, tente se conectar ao outro. {#ServerIssues}
 
 ## O que corrigir: {#DeviceSettings}
 Entre em contato com o gerente de serviço para saber se o servidor foi destruído. Em caso positivo, peça uma [chave de acesso](https://docs.google.com/document/d/1Mp-hH49D0bn02LO-MkgVVh95O7FrG-6XXCjX49WA3nE/edit#heading=h.2dn8xnck0993) a outro servidor.

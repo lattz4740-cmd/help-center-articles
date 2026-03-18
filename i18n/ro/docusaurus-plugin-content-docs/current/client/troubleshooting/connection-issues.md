@@ -5,9 +5,9 @@ sidebar_label: "De ce nu pot să mă conectez la serviciul Outline?"
 
 Există câteva motive pentru care nu puteți să vă conectați la serviciul Outline.
 
-- **Dispozitivul este**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**deconectat de la internet**](#Internetissues)[#Internetissues](#Internetissues)**.**Uneori, conexiunea dispozitivului la rețea se poate întrerupe și actualizarea pictogramelor de rețea poate dura ceva timp. Este posibil și ca dispozitivul să fie conectat la rețeaua locală, dar conexiunea la internet să fie oprită.
-- **Firewallul**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**rețelei blochează accesul**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)la serverul Outline.**Se întâmplă frecvent dacă folosiți o rețea publică, cum ar fi rețeaua școlii, a locului de muncă sau o rețea wireless gratuită.
-- **Dispozitivul are un**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**firewall sau software antivirus**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**care blochează accesul la serverul Outline.**
+- **Dispozitivul este**/client/troubleshooting/connection-issues#One[**deconectat de la internet**](#Internetissues)[#Internetissues](#Internetissues)**.**Uneori, conexiunea dispozitivului la rețea se poate întrerupe și actualizarea pictogramelor de rețea poate dura ceva timp. Este posibil și ca dispozitivul să fie conectat la rețeaua locală, dar conexiunea la internet să fie oprită.
+- **Firewallul**/client/troubleshooting/connection-issues#Two[**rețelei blochează accesul**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)la serverul Outline.**Se întâmplă frecvent dacă folosiți o rețea publică, cum ar fi rețeaua școlii, a locului de muncă sau o rețea wireless gratuită.
+- **Dispozitivul are un**/client/troubleshooting/connection-issues#Three[**firewall sau software antivirus**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**care blochează accesul la serverul Outline.**
 - **Poate fi necesar ca**[**setările telefonului**](#DeviceSettings)**să fie modificate.**
 - **Este posibil ca administratorul serviciului**[**să fi distrus serverul sau ca ISP-ul să blocheze solicitarea**](#ServerIssues) .
 

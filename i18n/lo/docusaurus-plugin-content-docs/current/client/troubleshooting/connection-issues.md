@@ -5,9 +5,9 @@ sidebar_label: "ເປັນຫຍັງຂ້ອຍຈຶ່ງບໍ່ສາ�
 
 ເຫດຜົນບາງປະການທີ່ທ່ານບໍ່ສາມາດເຊື່ອມຕໍ່ກັບບໍລິການ Outline ໄດ້ມີດັ່ງນີ້:
 
-- **ອຸປະກອນຂອງທ່ານ**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**ຖືກຕັດການເຊື່ອມຕໍ່ຈາກອິນເຕີເນັດ**](#Internetissues)[#Internetissues](#Internetissues)**.**ບາງເທື່ອອຸປະກອນຂອງທ່ານອາດພົບບັນຫາການເຊື່ອມຕໍ່ເຄືອຂ່າຍຂັດຂ້ອງ ແລະ ອາດໃຊ້ເວລາໜ້ອຍໜຶ່ງໃນການອັບເດດໄອຄອນເຄືອຂ່າຍ. ນອກຈາກນີ້, ຍັງເປັນໄປໄດ້ວ່າອຸປະກອນຂອງທ່ານເຊື່ອມຕໍ່ກັບເຄືອຂ່າຍໃນພື້ນທີ່ຢູ່, ແຕ່ອິນເຕີເນັດຂັດຂ້ອງ.
-- [/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**firewall ເຄືອຂ່າຍຂອງທ່ານບລັອກການເຂົ້າເຖິງ**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)ເຊີບເວີ Outline ຂອງທ່ານ.**ເຊິ່ງກໍລະນີນີ້ຈະພົບເຫັນຢູ່ເລື້ອຍໆຫາກທ່ານໃຊ້ເຄືອຂ່າຍສາທາລະນະ ເຊັ່ນ: ເຄືອຂ່າຍຂອງໂຮງຮຽນ, ເຄືອຂ່າຍຂອງບ່ອນເຮັດວຽກ ຫຼື ເຄືອຂ່າຍໄຮ້ສາຍທີ່ໃຊ້ໄດ້ຟຣີ.
-- **ອຸປະກອນຂອງທ່ານມີ**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**firewall ຫຼື ຊອບແວປ້ອງກັນໄວຣັສ**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**ເຊິ່ງບລັອກການເຂົ້າເຖິງເຊີບເວີ Outline ຂອງທ່ານ.**
+- **ອຸປະກອນຂອງທ່ານ**/client/troubleshooting/connection-issues#One[**ຖືກຕັດການເຊື່ອມຕໍ່ຈາກອິນເຕີເນັດ**](#Internetissues)[#Internetissues](#Internetissues)**.**ບາງເທື່ອອຸປະກອນຂອງທ່ານອາດພົບບັນຫາການເຊື່ອມຕໍ່ເຄືອຂ່າຍຂັດຂ້ອງ ແລະ ອາດໃຊ້ເວລາໜ້ອຍໜຶ່ງໃນການອັບເດດໄອຄອນເຄືອຂ່າຍ. ນອກຈາກນີ້, ຍັງເປັນໄປໄດ້ວ່າອຸປະກອນຂອງທ່ານເຊື່ອມຕໍ່ກັບເຄືອຂ່າຍໃນພື້ນທີ່ຢູ່, ແຕ່ອິນເຕີເນັດຂັດຂ້ອງ.
+- /client/troubleshooting/connection-issues#Two[**firewall ເຄືອຂ່າຍຂອງທ່ານບລັອກການເຂົ້າເຖິງ**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)ເຊີບເວີ Outline ຂອງທ່ານ.**ເຊິ່ງກໍລະນີນີ້ຈະພົບເຫັນຢູ່ເລື້ອຍໆຫາກທ່ານໃຊ້ເຄືອຂ່າຍສາທາລະນະ ເຊັ່ນ: ເຄືອຂ່າຍຂອງໂຮງຮຽນ, ເຄືອຂ່າຍຂອງບ່ອນເຮັດວຽກ ຫຼື ເຄືອຂ່າຍໄຮ້ສາຍທີ່ໃຊ້ໄດ້ຟຣີ.
+- **ອຸປະກອນຂອງທ່ານມີ**/client/troubleshooting/connection-issues#Three[**firewall ຫຼື ຊອບແວປ້ອງກັນໄວຣັສ**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**ເຊິ່ງບລັອກການເຂົ້າເຖິງເຊີບເວີ Outline ຂອງທ່ານ.**
 - **ຂອງທ່ານ**[**ການຕັ້ງຄ່າອຸປະກອນໂທລະສັບ**](#DeviceSettings)**ອາດຕ້ອງມີການປ່ຽນແປງ.**
 - **ຜູ້ຈັດການບໍລິການຂອງທ່ານອາດ**[**ທຳລາຍເຊີບເວີໄປແລ້ວ ຫຼື ISP ຂອງທ່ານອາດບລັອກຄຳຮ້ອງຂໍຂອງທ່ານ**](#ServerIssues) .
 

@@ -5,9 +5,9 @@ sidebar_label: Ինչո՞ւ չեմ կարողանում միանալ Outline ծ�
 
 Outline ծառայությանը միանալ չկարողանալու մի քանի պատճառներ կարող են լինել․
 
-- **Ձեր սարքը**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**անջատվել է ինտերնետից**](#Internetissues)[#Internetissues](#Internetissues)**։**Երբեմն կապը սարքում կարող է ընդհատվել, իսկ նորից միանալու համար կարող է որոշակի ժամանակ պահանջվել։ Հնարավոր է նաև, որ ձեր սարքը միացած լինի լոկալ ցանցին, որում ինտերնետ կապը խափանվել է։
-- **Ձեր**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**ցանցի հրապատն արգելափակում է մուտքը**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[դեպի Outline-ի սերվեր։](#FirewallIssues)։**Սովորաբար սա տեղի է ունենում, երբ դուք միացած եք հանրային ցանցի, օրինակ՝ դպրոցի, կազմակերպության կամ անվճար անլար ցանցի։
-- **Ձեր սարքում տեղադրված է**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**հրապատ կամ հակավիրուսային ծրագիր**](#SoftwareIssues),[#SoftwareIssues](#SoftwareIssues)**որն արգելափակում է մուտքը դեպի Outline-ի սերվեր։**
+- **Ձեր սարքը**/client/troubleshooting/connection-issues#One[**անջատվել է ինտերնետից**](#Internetissues)[#Internetissues](#Internetissues)**։**Երբեմն կապը սարքում կարող է ընդհատվել, իսկ նորից միանալու համար կարող է որոշակի ժամանակ պահանջվել։ Հնարավոր է նաև, որ ձեր սարքը միացած լինի լոկալ ցանցին, որում ինտերնետ կապը խափանվել է։
+- **Ձեր**/client/troubleshooting/connection-issues#Two[**ցանցի հրապատն արգելափակում է մուտքը**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[դեպի Outline-ի սերվեր։](#FirewallIssues)։**Սովորաբար սա տեղի է ունենում, երբ դուք միացած եք հանրային ցանցի, օրինակ՝ դպրոցի, կազմակերպության կամ անվճար անլար ցանցի։
+- **Ձեր սարքում տեղադրված է**/client/troubleshooting/connection-issues#Three[**հրապատ կամ հակավիրուսային ծրագիր**](#SoftwareIssues),[#SoftwareIssues](#SoftwareIssues)**որն արգելափակում է մուտքը դեպի Outline-ի սերվեր։**
 - **Հնարավոր է, որ ձեր**[**հեռախոսի կարգավորումները**](#DeviceSettings)**անհրաժեշտ լինի փոխել։**
 - **Հնարավոր է՝ ծառայության կառավարիչը**[**ջնջել է սերվերը, կամ ԻԾՄ-ն արգելափակում է ձեր հարցումը**](#ServerIssues)։
 

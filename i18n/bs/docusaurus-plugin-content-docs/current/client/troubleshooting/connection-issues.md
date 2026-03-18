@@ -5,9 +5,9 @@ sidebar_label: "Zašto se ne mogu povezati s uslugom Outline?"
 
 Postoji nekoliko mogućih razloga zašto se ne možete povezati s uslugom Outline:
 
-- **Prekinuta je**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**veza uređaja s internetom**](#Internetissues)[#Internetissues](#Internetissues)**.**Ponekad će na vašem uređaju doći do prekida mrežne veze i može malo potrajati da se ažuriraju ikone mreže. Možda je i uređaj povezan s lokalnom mrežom, ali nema veze s internetom.
-- **Vaš**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**zaštitni zid mreže blokira pristup**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[O](#FirewallIssues)utline serveru.**Ovo se često događa kada ste na javnoj mreži, npr. školskoj, poslovnoj ili besplatnoj bežičnoj mreži.
-- **Uređaj ima**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**zaštitni zid ili antivirusni softver**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**koji blokira pristup Outline serveru.**
+- **Prekinuta je**/client/troubleshooting/connection-issues#One[**veza uređaja s internetom**](#Internetissues)[#Internetissues](#Internetissues)**.**Ponekad će na vašem uređaju doći do prekida mrežne veze i može malo potrajati da se ažuriraju ikone mreže. Možda je i uređaj povezan s lokalnom mrežom, ali nema veze s internetom.
+- **Vaš**/client/troubleshooting/connection-issues#Two[**zaštitni zid mreže blokira pristup**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[O](#FirewallIssues)utline serveru.**Ovo se često događa kada ste na javnoj mreži, npr. školskoj, poslovnoj ili besplatnoj bežičnoj mreži.
+- **Uređaj ima**/client/troubleshooting/connection-issues#Three[**zaštitni zid ili antivirusni softver**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**koji blokira pristup Outline serveru.**
 - **Vaše**[**postavke telefona**](#DeviceSettings)**se možda trebaju promijeniti.**
 - **Vaš upravitelj usluge je možda**[**eliminirao server ili ISP blokira vaš zahtjev**](#ServerIssues) .
 

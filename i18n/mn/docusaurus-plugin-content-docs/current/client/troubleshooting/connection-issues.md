@@ -5,9 +5,9 @@ sidebar_label: "Би Outline үйлчилгээтэй яагаад холбог�
 
 Та Outline үйлчилгээнд холбогдох боломжгүй байх цөөн хэдэн шалтгаан бий:
 
-- **Таны төхөөрөмж**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**интернэтээс салсан**](#Internetissues)[#Internetissues](#Internetissues)**.**Заримдаа таны төхөөрөмжийн сүлжээний холболт тасрах бөгөөд сүлжээний дүрс тэмдгийг шинэчлэхэд хэдэн хором болж магадгүй. Мөн таны төхөөрөмж дотоод сүлжээнд холбогдсон ч интернэт унтарсан байж болно.
-- **Таны**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues) Outline серверийн [**хандалтыг сүлжээний тань галт хана блоклож**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues) байна.**Энэ нь таныг сургууль, ажил, үнэ төлбөргүй утасгүй сүлжээ зэрэг олон нийтийн сүлжээ ашиглаж байвал нийтлэг тохиолддог.
-- **Таны төхөөрөмжийн**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**галт хана эсвэл антивирусний программ хангамж**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**Outline серверийн тань хандалтыг блоклож байна.**
+- **Таны төхөөрөмж**/client/troubleshooting/connection-issues#One[**интернэтээс салсан**](#Internetissues)[#Internetissues](#Internetissues)**.**Заримдаа таны төхөөрөмжийн сүлжээний холболт тасрах бөгөөд сүлжээний дүрс тэмдгийг шинэчлэхэд хэдэн хором болж магадгүй. Мөн таны төхөөрөмж дотоод сүлжээнд холбогдсон ч интернэт унтарсан байж болно.
+- **Таны**/client/troubleshooting/connection-issues#Two Outline серверийн [**хандалтыг сүлжээний тань галт хана блоклож**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues) байна.**Энэ нь таныг сургууль, ажил, үнэ төлбөргүй утасгүй сүлжээ зэрэг олон нийтийн сүлжээ ашиглаж байвал нийтлэг тохиолддог.
+- **Таны төхөөрөмжийн**/client/troubleshooting/connection-issues#Three[**галт хана эсвэл антивирусний программ хангамж**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**Outline серверийн тань хандалтыг блоклож байна.**
 - **Таны**[**утасны төхөөрөмжийн тохиргоог**](#DeviceSettings)**өөрчлөх шаардлагатай байж магадгүй.**
 - **Таны үйлчилгээний менежер**[**серверийг устгасан эсвэл таны ISP хүсэлтийг тань блоклож байж магадгүй**](#ServerIssues) .
 

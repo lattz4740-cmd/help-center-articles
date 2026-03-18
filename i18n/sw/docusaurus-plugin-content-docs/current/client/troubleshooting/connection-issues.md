@@ -5,9 +5,9 @@ sidebar_label: "Kwa nini ninashindwa kuunganisha na huduma ya Outline?"
 
 Kuna sababu chache ambazo zinaweza kufanya ushindwe kuunganisha na huduma ya Outline:
 
-- **Kifaa chako**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**kimetenganishwa na intaneti**](#Internetissues)[#Internetissues](#Internetissues)**.**Wakati mwingine kifaa chako kitakumbwa na hitilafu ya muunganisho wa mtandao na huenda kikachukua muda kusasisha aikoni za mtandao. Inawezekana pia kuwa kifaa chako kimeunganishwa na mtandao ulio karibu, lakini intaneti haifanyi kazi.
-- **Kinga mtandao yako**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**inazuia ufikiaji wa**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)seva yako ya Outline.**Kwa kawaida hali hii hutokea ukiwa unatumia mtandao wa umma, kama vile, wa shuleni, kazini au mtandao pasiwaya usiolipishwa.
-- **Kifaa chako kina**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**programu ya kingavirusi au kinga mtandao**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**ambayo inazuia usifikie seva yako ya Outline.**
+- **Kifaa chako**/client/troubleshooting/connection-issues#One[**kimetenganishwa na intaneti**](#Internetissues)[#Internetissues](#Internetissues)**.**Wakati mwingine kifaa chako kitakumbwa na hitilafu ya muunganisho wa mtandao na huenda kikachukua muda kusasisha aikoni za mtandao. Inawezekana pia kuwa kifaa chako kimeunganishwa na mtandao ulio karibu, lakini intaneti haifanyi kazi.
+- **Kinga mtandao yako**/client/troubleshooting/connection-issues#Two[**inazuia ufikiaji wa**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)seva yako ya Outline.**Kwa kawaida hali hii hutokea ukiwa unatumia mtandao wa umma, kama vile, wa shuleni, kazini au mtandao pasiwaya usiolipishwa.
+- **Kifaa chako kina**/client/troubleshooting/connection-issues#Three[**programu ya kingavirusi au kinga mtandao**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**ambayo inazuia usifikie seva yako ya Outline.**
 - **Huenda**[**mipangilio ya simu yako**](#DeviceSettings)**ikahitaji kubadilishwa.**
 - **Huenda msimamizi wako wa huduma**[**ameharibu seva au Mtoa Huduma za Intaneti anazuia ombi lako**](#ServerIssues) .
 

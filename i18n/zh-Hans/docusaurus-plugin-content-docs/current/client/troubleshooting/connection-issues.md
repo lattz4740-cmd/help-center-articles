@@ -44,7 +44,7 @@ sidebar_label: 为什么我无法连接到 Outline 服务？
 
 请与服务管理员联系，请求其允许您访问 Outline 服务器，或者您也可以改为继续使用其他连接正常的网络。
 
-## 防火墙或杀毒软件软件问题： {#SoftwareIssues}
+#### 防火墙或杀毒软件软件问题：
 
 #### 测试方法：
 
@@ -55,9 +55,9 @@ sidebar_label: 为什么我无法连接到 Outline 服务？
 ## 修复事项： {#SoftwareIssues}
 检查您的防火墙或杀毒软件的设置，确保它们已设为允许 VPN 和 Outline 流量通过。
 
-## 设备设置： {#DeviceSettings}
+#### 设备设置：
 
-## 检查事项： {#ServerIssues}
+#### 检查事项：
 
 对于 Android 设备：
 
@@ -69,13 +69,13 @@ sidebar_label: 为什么我无法连接到 Outline 服务？
 
 在 Android 设备上，依次找到“设置”>“应用”>“特殊应用权限”。然后，点按“显示在其他应用的上层”。您可以移除任意允许此行为的应用的权限。
 
-iOS：请参阅[这篇支持文章](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web)。
+## iOS：请参阅[这篇支持文章](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web)。 {#DeviceSettings}
 
 #### 服务器问题：
 
 #### 测试方法：
 
-如果您可以访问多台服务器，请尝试连接到其他服务器。
+## 如果您可以访问多台服务器，请尝试连接到其他服务器。 {#ServerIssues}
 
 ## 修复事项：
 

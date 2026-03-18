@@ -5,9 +5,9 @@ sidebar_label: "¿Por qué no puedo conectarme al servicio de Outline?"
 
 Existen algunos motivos por los que quizás no puedas conectarte al servicio de Outline. Por ejemplo:
 
-- **Tu dispositivo**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**no está conectado a Internet**](#Internetissues)[#Internetissues](#Internetissues)**.**En ocasiones, tu dispositivo puede experimentar problemas de conexión de red y es posible que los íconos de red demoren un poco en actualizarse. También es posible que tu dispositivo esté conectado a la red local, pero que Internet no funcione.
-- **El**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**firewall de la red bloquea el acceso**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[a](#FirewallIssues)l servidor de Outline.**Este es un problema común si usas una red pública, como la de una institución educativa, la del trabajo o una red inalámbrica gratuita.
-- **El**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**firewall o software antivirus**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**de tu dispositivo bloquea el acceso al servidor de Outline.**
+- **Tu dispositivo**/client/troubleshooting/connection-issues#One[**no está conectado a Internet**](#Internetissues)[#Internetissues](#Internetissues)**.**En ocasiones, tu dispositivo puede experimentar problemas de conexión de red y es posible que los íconos de red demoren un poco en actualizarse. También es posible que tu dispositivo esté conectado a la red local, pero que Internet no funcione.
+- **El**/client/troubleshooting/connection-issues#Two[**firewall de la red bloquea el acceso**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[a](#FirewallIssues)l servidor de Outline.**Este es un problema común si usas una red pública, como la de una institución educativa, la del trabajo o una red inalámbrica gratuita.
+- **El**/client/troubleshooting/connection-issues#Three[**firewall o software antivirus**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**de tu dispositivo bloquea el acceso al servidor de Outline.**
 - **Es posible que la**[**configuración de dispositivo de tu teléfono**](#DeviceSettings)**requiera cambios.**
 - **El administrador del servicio puede haber**[**destruido el servidor, o tu ISP puede estar bloqueando tu solicitud**](#ServerIssues) .
 

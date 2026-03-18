@@ -5,9 +5,9 @@ sidebar_label: 為什麼我無法連接 Outline 服務？
 
 以下是幾種可能無法連接 Outline 服務的原因：
 
-- **裝置**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**未連接互聯網**](#Internetissues)[#Internetissues](#Internetissues)**。**有時裝置會遇到網絡連線中斷問題，需要一些時間才能更新網絡圖示。裝置亦有可能已連接到區域網絡，惟區域網絡的互聯網停止運作。
-- **你的**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**網絡防火牆禁止存取**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues) Outline 伺服器。**在使用公共網絡 (例如學校、公司或免費的無線網絡) 的時候很常發生這種情況。
-- **裝置上的**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**防火牆或防毒軟件**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**封鎖了 Outline 伺服器。**
+- **裝置**/client/troubleshooting/connection-issues#One[**未連接互聯網**](#Internetissues)[#Internetissues](#Internetissues)**。**有時裝置會遇到網絡連線中斷問題，需要一些時間才能更新網絡圖示。裝置亦有可能已連接到區域網絡，惟區域網絡的互聯網停止運作。
+- **你的**/client/troubleshooting/connection-issues#Two[**網絡防火牆禁止存取**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues) Outline 伺服器。**在使用公共網絡 (例如學校、公司或免費的無線網絡) 的時候很常發生這種情況。
+- **裝置上的**/client/troubleshooting/connection-issues#Three[**防火牆或防毒軟件**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**封鎖了 Outline 伺服器。**
 - **你的**[**手機裝置設定**](#DeviceSettings)**可能需要調整。**
 - **服務管理員可能已**[**刪除伺服器，或 ISP 可能已封鎖你的要求**](#ServerIssues)。
 

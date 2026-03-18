@@ -5,9 +5,9 @@ sidebar_label: "Зашто не могу да се повежем са Outline �
 
 Постоји неколико разлога због којих можда не можете да се повежете са Outline услугом:
 
-- **Уређај**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**није повезан на интернет**](#Internetissues)[#Internetissues](#Internetissues)**.**Понекад ће уређај имати прекид мрежне везе и може да буде потребно неко време за ажурирање икона мреже. Могуће је и да је уређај повезан са локалном мрежом, али интернет не ради.
-- [/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**Заштитни зид мреже блокира приступ**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)Outline серверу.**Ово је уобичајено ако користите јавну мрежу, на пример, у школи, на послу или бесплатну бежичну мрежу.
-- **Уређај има**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**заштитни зид или антивирусни софтвер**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**који блокира приступ Outline серверу.**
+- **Уређај**/client/troubleshooting/connection-issues#One[**није повезан на интернет**](#Internetissues)[#Internetissues](#Internetissues)**.**Понекад ће уређај имати прекид мрежне везе и може да буде потребно неко време за ажурирање икона мреже. Могуће је и да је уређај повезан са локалном мрежом, али интернет не ради.
+- /client/troubleshooting/connection-issues#Two[**Заштитни зид мреже блокира приступ**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)Outline серверу.**Ово је уобичајено ако користите јавну мрежу, на пример, у школи, на послу или бесплатну бежичну мрежу.
+- **Уређај има**/client/troubleshooting/connection-issues#Three[**заштитни зид или антивирусни софтвер**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**који блокира приступ Outline серверу.**
 - **Ваша**[**подешавања мобилног уређаја**](#DeviceSettings)**можда треба да се промене.**
 - **Менаџер услуга је можда**[**уништио сервер или интернет провајдер блокира ваш захтев**](#ServerIssues) .
 

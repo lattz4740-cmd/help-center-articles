@@ -5,9 +5,9 @@ sidebar_label: "Hoekom kan ek nie aan die Outline-diens koppel nie?"
 
 Daar is ’n paar redes hoekom jy dalk nie aan die Outline-diens kan koppel nie:
 
-- **Jou toestel is**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**nie aan die internet gekoppel nie**](#Internetissues)[#Internetkwessies](#Internetissues)**.**Soms sal jou toestel ’n onderbreking van die netwerkverbinding ondervind en kan dit ’n rukkie neem om die netwerkikone op te dateer. Dis ook moontlik dat jou toestel aan die plaaslike netwerk gekoppel is, maar dat die internet nie werk nie.
-- **Jou**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**netwerkbrandmuur blokkeer tans toegang**](#FirewallIssues)[#BrandmuurKwessies](#FirewallIssues)**[#BrandmuurKwessies](#FirewallIssues)tot jou Outline-bediener.**Dit is algemeen as jy ’n publieke netwerk, soos ’n skool-, werk- of gratis draadlose netwerk, gebruik.
-- **Jou toestel het ’n**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**brandmuur of antivirussagteware**](#SoftwareIssues)[#SagtewareKwessies](#SoftwareIssues)**wat toegang tot jou Outline-bediener blokkeer.**
+- **Jou toestel is**/client/troubleshooting/connection-issues#One[**nie aan die internet gekoppel nie**](#Internetissues)[#Internetkwessies](#Internetissues)**.**Soms sal jou toestel ’n onderbreking van die netwerkverbinding ondervind en kan dit ’n rukkie neem om die netwerkikone op te dateer. Dis ook moontlik dat jou toestel aan die plaaslike netwerk gekoppel is, maar dat die internet nie werk nie.
+- **Jou**/client/troubleshooting/connection-issues#Two[**netwerkbrandmuur blokkeer tans toegang**](#FirewallIssues)[#BrandmuurKwessies](#FirewallIssues)**[#BrandmuurKwessies](#FirewallIssues)tot jou Outline-bediener.**Dit is algemeen as jy ’n publieke netwerk, soos ’n skool-, werk- of gratis draadlose netwerk, gebruik.
+- **Jou toestel het ’n**/client/troubleshooting/connection-issues#Three[**brandmuur of antivirussagteware**](#SoftwareIssues)[#SagtewareKwessies](#SoftwareIssues)**wat toegang tot jou Outline-bediener blokkeer.**
 - **Jou**[**foontoestelinstellings**](#DeviceSettings)**moet dalk verander word.**
 - **Jou diensbestuurder het dalk**[**die bediener vernietig, of jou internetdiensverskaffer blokkeer dalk jou versoek**](#ServerIssues) .
 

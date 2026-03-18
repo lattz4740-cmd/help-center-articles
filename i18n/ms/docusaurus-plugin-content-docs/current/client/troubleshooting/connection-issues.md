@@ -5,9 +5,9 @@ sidebar_label: "Mengapakah saya tidak dapat menyambung kepada perkhidmatan Outli
 
 Terdapat beberapa sebab anda mungkin tidak dapat menyambung kepada perkhidmatan Outline:
 
-- **Peranti anda**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**terputus sambungan daripada Internet**](#Internetissues)[#MasalahInternet](#Internetissues)**.**Kadangkala peranti anda akan terputus sambungan rangkaian dan mungkin mengambil sedikit masa untuk peranti anda mengemaskinikan ikon rangkaian tersebut. Terdapat juga kemungkinan peranti anda disambungkan kepada rangkaian setempat tetapi Internet tergendala.
+- **Peranti anda**/client/troubleshooting/connection-issues#One[**terputus sambungan daripada Internet**](#Internetissues)[#MasalahInternet](#Internetissues)**.**Kadangkala peranti anda akan terputus sambungan rangkaian dan mungkin mengambil sedikit masa untuk peranti anda mengemaskinikan ikon rangkaian tersebut. Terdapat juga kemungkinan peranti anda disambungkan kepada rangkaian setempat tetapi Internet tergendala.
 - [**Tembok api rangkaian anda menyekat akses**](#FirewallIssues)[#MasalahTembokApi](#FirewallIssues)**[kepada](#FirewallIssues) pelayan Outline anda.**Perkara ini biasa terjadi jika anda menggunakan rangkaian awam, seperti sekolah, kerja atau rangkaian wayarles percuma.
-- **Peranti anda memiliki**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**tembok api atau perisian antivirus**](#SoftwareIssues)[#MasalahPerisian](#SoftwareIssues)**yang menyekat akses kepada pelayan Outline anda.**
+- **Peranti anda memiliki**/client/troubleshooting/connection-issues#Three[**tembok api atau perisian antivirus**](#SoftwareIssues)[#MasalahPerisian](#SoftwareIssues)**yang menyekat akses kepada pelayan Outline anda.**
 - **Your**[**Tetapan peranti telefon anda**](#DeviceSettings)**mungkin perlu ditukar.**
 - **Pengurus perkhidmatan anda mungkin telah**[**memusnahkan pelayan atau ISP anda mungkin menyekat permintaan anda**](#ServerIssues) .
 

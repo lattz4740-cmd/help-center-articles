@@ -73,7 +73,7 @@ Sur iOS : consultez [cet article d'aide](https://support.apple.com/guide/deploym
 
 ## À tester:
 
-Si vous avez accès à plusieurs serveurs, essayez-en un autre.
+## Si vous avez accès à plusieurs serveurs, essayez-en un autre. {#ServerIssues}
 
 ## À corriger : {#DeviceSettings}
 Contactez votre gestionnaire de service pour savoir si le serveur a été supprimé. Si c'est le cas, demandez-lui de vous fournir une [clé d'accès](/about/terminology) à un autre serveur.

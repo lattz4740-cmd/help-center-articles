@@ -5,9 +5,9 @@ sidebar_label: "რატომ ვერ ვუკავშირდები O
 
 აი, რამდენიმე მიზეზი, რის გამოც, შესაძლოა, ვერ დაუკავშირდეთ Outline-ის სერვისს:
 
-- **თქვენი მოწყობილობა**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**გათიშულია ინტერნეტიდან**](#Internetissues)[#Internetissues](#Internetissues)**.**ზოგჯერ თქვენს მოწყობილობას შეიძლება ჰქონდეს წყვეტა ქსელთან კავშირში და მას შეიძლება მცირე დრო დასჭირდეს ქსელის ხატულების გასაახლებლად. ასევე, შესაძლებელია, თქვენი მოწყობილობა დაკავშირებული იყოს ადგილობრივ ქსელთან, მაგრამ ინტერნეტი გათიშული იყოს.
-- **თქვენი**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues) [**ქსელის დაცვა ბლოკავს თქვენს წვდომას**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)Outline სერვერზე.**ეს მოსალოდნელია, თუ იყენებთ საჯარო ქსელს, მაგალითად, სკოლის, სამსახურის ან უფასო უსადენო ქსელს.
-- **თქვენს მოწყობილობას აქვს**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**ქსელის დაცვა ან ანტივირუსული პროგრამული უზრუნველყოფა**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**რომელიც ბლოკავს წვდომას თქვენს Outline სერვერზე.**
+- **თქვენი მოწყობილობა**/client/troubleshooting/connection-issues#One[**გათიშულია ინტერნეტიდან**](#Internetissues)[#Internetissues](#Internetissues)**.**ზოგჯერ თქვენს მოწყობილობას შეიძლება ჰქონდეს წყვეტა ქსელთან კავშირში და მას შეიძლება მცირე დრო დასჭირდეს ქსელის ხატულების გასაახლებლად. ასევე, შესაძლებელია, თქვენი მოწყობილობა დაკავშირებული იყოს ადგილობრივ ქსელთან, მაგრამ ინტერნეტი გათიშული იყოს.
+- **თქვენი**/client/troubleshooting/connection-issues#Two [**ქსელის დაცვა ბლოკავს თქვენს წვდომას**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)Outline სერვერზე.**ეს მოსალოდნელია, თუ იყენებთ საჯარო ქსელს, მაგალითად, სკოლის, სამსახურის ან უფასო უსადენო ქსელს.
+- **თქვენს მოწყობილობას აქვს**/client/troubleshooting/connection-issues#Three[**ქსელის დაცვა ან ანტივირუსული პროგრამული უზრუნველყოფა**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**რომელიც ბლოკავს წვდომას თქვენს Outline სერვერზე.**
 - **თქვენი**[**ტელეფონის მოწყობილობის პარამეტრების**](#DeviceSettings)**შეცვლა შეიძლება გახდეს საჭირო.**
 - **შესაძლოა, თქვენმა სერვისის მმართველმა**[**გაანადგურა სერვერი ან თქვენი ინტერნეტ-პროვაიდერი ბლოკავს თქვენს მოთხოვნას**](#ServerIssues).
 

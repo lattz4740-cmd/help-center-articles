@@ -5,9 +5,9 @@ sidebar_label: "Hvorfor kan jeg ikke få forbindelse til Outline-tjenesten?"
 
 Der kan være nogle årsager til, at du muligvis ikke kan få forbindelse til Outline-tjenesten:
 
-- **Din enhed har**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**ikke forbindelse til internettet**](#Internetissues)[#Internetissues](#Internetissues)**.**Nogle gange kan der forekomme afbrydelser af din enheds netværksforbindelse, og det kan tage et øjeblik, før netværksikonerne opdateres. Det er også muligt, at din enhed har forbindelse til det lokale netværk, men at internettet er nede.
-- **Din**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**netværksfirewall blokerer adgang**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[t](#FirewallIssues)il din Outline-server.**Det er normalt, hvis du bruger et offentligt netværk, f.eks. en skole, en arbejdsplads eller et gratis trådløst netværk.
-- **Din enhed har en**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**firewall eller antivirussoftware**](#SoftwareIssues),[#SoftwareIssues](#SoftwareIssues)**der blokerer adgangen til din Outline-server.**
+- **Din enhed har**/client/troubleshooting/connection-issues#One[**ikke forbindelse til internettet**](#Internetissues)[#Internetissues](#Internetissues)**.**Nogle gange kan der forekomme afbrydelser af din enheds netværksforbindelse, og det kan tage et øjeblik, før netværksikonerne opdateres. Det er også muligt, at din enhed har forbindelse til det lokale netværk, men at internettet er nede.
+- **Din**/client/troubleshooting/connection-issues#Two[**netværksfirewall blokerer adgang**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[t](#FirewallIssues)il din Outline-server.**Det er normalt, hvis du bruger et offentligt netværk, f.eks. en skole, en arbejdsplads eller et gratis trådløst netværk.
+- **Din enhed har en**/client/troubleshooting/connection-issues#Three[**firewall eller antivirussoftware**](#SoftwareIssues),[#SoftwareIssues](#SoftwareIssues)**der blokerer adgangen til din Outline-server.**
 - **Dine**[**indstillinger for telefonenhed**](#DeviceSettings)**skal muligvis ændres.**
 - **Administratoren af din tjeneste har muligvis**[**ødelagt serveren, eller din internetudbyder blokerer din anmodning**](#ServerIssues).
 

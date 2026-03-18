@@ -5,4 +5,4 @@ sidebar_label: "ከOutline አገልጋይ ጋር ብገናኝም እንኳን �
 
 ተንቀሳቃሽ ስልክ እየተጠቀሙ ከሆነ በተንቀሳቃሽ ስልክ ውሂብ እና Wi-Fi ግንኙነቶች መካከል መቀያየርን ይሞክሩ። አንዳንዴ አንድ የግንኙነት ዓይነት ሳይሠራ ሲቀር ሌላኛው ይሠራል። ኮምፒውተር እየተጠቀሙ ከሆነ ከብሮድባንድ ያለዎትን ግንኙነት ማቋረጥን እና እንደገና መገናኘትን ይሞክሩ።
 
-ችግሮች እያጋጠሙዎ ከቀጠሉ የOutline አገልጋይዎ ላይ ችግር ሳይኖር አይቀርም። ለተለዋጭ አገልጋይ አዲስ መዳረሻ ቁልፍ ለማግኘት የእርስዎን[የአገልጋይ አስተዳዳሪ](/about/terminology) ያነጋግቱ እንዲሁም ቁልፉ ከኮታው ካለፈ የእርስዎ[https://google-jigsaw--jigsawuat.sandbox.my.site.com/outline/s/article/Terminology](https://google-jigsaw--jigsawuat.sandbox.my.site.com/outline/s/article/Terminology)[የመዳረሻ ቁልፍ](/about/terminology) ያለውን የውሂብ ገደብ መጨመር ይችሉ ይሆናል።
+ችግሮች እያጋጠሙዎ ከቀጠሉ የOutline አገልጋይዎ ላይ ችግር ሳይኖር አይቀርም። ለተለዋጭ አገልጋይ አዲስ መዳረሻ ቁልፍ ለማግኘት የእርስዎን[የአገልጋይ አስተዳዳሪ](/about/terminology) ያነጋግቱ እንዲሁም ቁልፉ ከኮታው ካለፈ የእርስዎhttps://google-jigsaw--jigsawuat.sandbox.my.site.com/outline/s/article/Terminology[የመዳረሻ ቁልፍ](/about/terminology) ያለውን የውሂብ ገደብ መጨመር ይችሉ ይሆናል።

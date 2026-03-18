@@ -5,9 +5,9 @@ sidebar_label: "Miks ma ei saa Outline'i teenusega ühendust luua?"
 
 Järgnevalt on toodud mõned põhjused, miks te ei pruugi saada Outline'i teenusega ühendust luua.
 
-- **Teie seadmel**[/client/troubleshooting/connection-issues#One](/client/troubleshooting/connection-issues#Internetissues)[**puudub internetiühendus**](#Internetissues)[#Internetissues](#Internetissues)**.**Mõnikord katkeb teie seadme võrguühendus ja võrguikoonide värskendamiseks võib kuluda pisut aega. Samuti on võimalik, et teie seade on ühendatud kohaliku võrguga, ent internet ei tööta.
-- **Teie**[/client/troubleshooting/connection-issues#Two](/client/troubleshooting/connection-issues#FirewallIssues)[**võrgu tulemüür blokeerib juurdepääsu**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[t](#FirewallIssues)eie Outline'i serverile.**See juhtub tavaliselt siis, kui kasutate avalikku võrku, nt kooli, töökoha või tasuta juhtmeta võrku.
-- **Teie seadmel on**[/client/troubleshooting/connection-issues#Three](/client/troubleshooting/connection-issues#SoftwareIssues)[**tulemüüri- või viirusetõrjetarkvara**](#SoftwareIssues),[#SoftwareIssues](#SoftwareIssues)**mis blokeerib juurdepääsu Outline'i serverile.**
+- **Teie seadmel**/client/troubleshooting/connection-issues#One[**puudub internetiühendus**](#Internetissues)[#Internetissues](#Internetissues)**.**Mõnikord katkeb teie seadme võrguühendus ja võrguikoonide värskendamiseks võib kuluda pisut aega. Samuti on võimalik, et teie seade on ühendatud kohaliku võrguga, ent internet ei tööta.
+- **Teie**/client/troubleshooting/connection-issues#Two[**võrgu tulemüür blokeerib juurdepääsu**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[t](#FirewallIssues)eie Outline'i serverile.**See juhtub tavaliselt siis, kui kasutate avalikku võrku, nt kooli, töökoha või tasuta juhtmeta võrku.
+- **Teie seadmel on**/client/troubleshooting/connection-issues#Three[**tulemüüri- või viirusetõrjetarkvara**](#SoftwareIssues),[#SoftwareIssues](#SoftwareIssues)**mis blokeerib juurdepääsu Outline'i serverile.**
 - **Teie**[**telefoni seadme seadeid**](#DeviceSettings)**tuleb võib-olla muuta.**
 - **Teie teenusehaldur võis**[**hävitada serveri või teie internetiteenuse pakkuja võib blokeerida teie päringut**](#ServerIssues).
 

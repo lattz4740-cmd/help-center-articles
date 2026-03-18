@@ -300,7 +300,11 @@ def verify_locale(locale: str, english_paths: set[str]) -> list[Issue]:
             ))
         else:
             for idx, (en_block, tr_block) in enumerate(zip(en_blocks, tr_blocks)):
-                if en_block != tr_block:
+                # Normalize whitespace for comparison (indentation may differ
+                # when code blocks are inside vs outside list items)
+                en_norm = "\n".join(l.strip() for l in en_block.strip().split("\n"))
+                tr_norm = "\n".join(l.strip() for l in tr_block.strip().split("\n"))
+                if en_norm != tr_norm:
                     issues.append(Issue(
                         locale, doc_path, "CODE_BLOCKS",
                         f"Block {idx + 1} differs from English"
