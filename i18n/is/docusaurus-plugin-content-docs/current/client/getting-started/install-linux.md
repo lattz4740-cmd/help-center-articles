@@ -36,7 +36,7 @@ sudo apt purge outline-client
 2. Keyrðu eftirfarandi skipanir í skipanalínunni til að setja pakkann upp
 
 ```
-wget -O ./outline-client.deb https://s3.amazonaws.com/outline-      releases/client/linux/stable/outline-client_amd64.deb
+wget -O ./outline-client.deb https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb
 sudo apt install ./outline-client.deb
 ```
 

@@ -36,7 +36,7 @@ sudo apt purge outline-client
 2. தொகுப்பை நிறுவ, கட்டளை வரியில் இந்தக் கட்டளைகளை இயக்கவும்
 
 ```
-wget -O ./outline-client.deb https://s3.amazonaws.com/outline-      releases/client/linux/stable/outline-client_amd64.deb
+wget -O ./outline-client.deb https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb
 sudo apt install ./outline-client.deb
 ```
 

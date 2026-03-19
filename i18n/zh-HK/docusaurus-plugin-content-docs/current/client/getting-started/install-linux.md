@@ -36,7 +36,7 @@ sudo apt purge outline-client
 2. 在指令列中執行以下指令以安裝套件
 
 ```
-wget -O ./outline-client.deb https://s3.amazonaws.com/outline-      releases/client/linux/stable/outline-client_amd64.deb
+wget -O ./outline-client.deb https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb
 sudo apt install ./outline-client.deb
 ```
 
