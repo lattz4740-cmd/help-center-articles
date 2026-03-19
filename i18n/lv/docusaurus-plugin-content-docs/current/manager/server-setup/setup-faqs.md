@@ -3,8 +3,7 @@ title: Bieži uzdotie jautājumi par Outline servera iestatīšanu
 sidebar_label: Bieži uzdotie jautājumi par Outline servera iestatīšanu
 ---
 
-**Vai var izmantot Outline programmatūru bez servera?**
-
+## Vai var izmantot Outline programmatūru bez servera?
  Diemžēl, nē. Outline programmatūrai ir nepieciešama piekļuve serverim neatkarīgi no tā, vai to pārvaldāt jūs, jūsu organizācija vai kāda uzticama trešā puse.
 
 ## Cik ilgs laiks nepieciešams Outline servera iestatīšanai?

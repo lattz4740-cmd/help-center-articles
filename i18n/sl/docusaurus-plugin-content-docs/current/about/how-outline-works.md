@@ -3,8 +3,7 @@ title: Kako deluje Outline
 sidebar_label: Kako deluje Outline
 ---
 
-**Namestitev strežnika**
-
+## Namestitev strežnika
  ​Čeprav se namestitev strežnika Outline morda zdi preprosta, se v ozadju izvede zapleteno zaporedje korakov za njegovo namestitev. Pri nameščanju strežnika Outline skript za namestitev izvede naslednje korake:
 
 - Pridobi in uvozi se stabilna različica slike Shadowbox, pri čemer se uporabi Docker. Sliko gosti [Quay.io](https://quay.io/) v shrambi [https://quay.io/repository/outline/shadowbox?tab=tags](https://quay.io/repository/outline/shadowbox?tab=tags). Slika vsebuje strežnik Outline in API za upravljanje, ki ga pozneje uporabi aplikacija za upravljanje strežnika Outline, da ustvari in odstrani ključe za dostop, omogoči/onemogoči sporočanje anonimnih meritev itd.
@@ -14,8 +13,7 @@ sidebar_label: Kako deluje Outline
 
 Po namestitvi strežnika Outline ni potrebna konfiguracija.
 
-**Varnost strežnika**
-
+## Varnost strežnika
  Programska oprema Outline je odprtokodna, kar pomeni, da si lahko kdor koli ogleda kodo in jo izboljša, če so odkrite ranljivosti. Našo kodo gosti storitev [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline).
 
  Poleg tega se nameščeni strežniki Outline samodejno posodobijo ob vsaki izdaji nove različice, kar zagotavlja, da se v nobenem strežniku Outline ne izvajajo stare različice programske opreme.
@@ -24,10 +22,8 @@ Po namestitvi strežnika Outline ni potrebna konfiguracija.
 
  Poleg tega strežnik Outline ne shranjuje nobenih dnevnikov, zato se tudi v primeru ogroženega strežnika uporabniški podatki ne razkrijejo. Več o tem preberite [tukaj](/about/security-and-privacy). Outline sta leta 2018 pregledali podjetji [Radically Open Security](https://radicallyopensecurity.com/) in [Cure53](https://cure53.de/). Poročila lahko preberete [tukaj](/about/security-and-privacy).
 
-**Obravnavanje prometa UDP**
-
+## Obravnavanje prometa UDP
  Outline lahko deluje kot sistemski VPN, kar pomeni, da je ves promet UDP preusmerjen prek strežnika Outline.
 
-**Promet DNS**
-
+## Promet DNS
 Outline vsa iskanja DNS izvaja prek strežnika Outline, pri čemer njihovo varnost zagotovi z enakim šifriranjem kot pri vsej drugi omrežni dejavnosti. Poizvedbe DNS bodo prek strežnika Outline poslane v storitev Dyn Internet Guide, OpenDNS, Cloudflare DNS ali Quad9 DNS. Outline nikoli ne beleži vaših iskanj DNS.

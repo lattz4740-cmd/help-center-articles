@@ -3,8 +3,7 @@ title: Česta pitanja o postavljanju Outline servera
 sidebar_label: Česta pitanja o postavljanju Outline servera
 ---
 
-**Mogu li koristiti Outline bez servera?**
-
+## Mogu li koristiti Outline bez servera?
  Nažalost, ne. Softver Outlinea zahtijeva pristup serveru, bilo da njime upravljate vi, vaša organizacija ili pouzdana treća strana.
 
 ## Koliko traje postavljanje Outline servera?

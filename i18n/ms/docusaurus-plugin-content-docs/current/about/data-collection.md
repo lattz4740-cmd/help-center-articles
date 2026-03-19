@@ -7,8 +7,7 @@ Outline tidak mengumpulkan maklumat peribadi melainkan anda memilih untuk member
 
  Sekiranya anda membuat atau log masuk ke akaun dengan penyedia awan pihak ketiga melalui Pengurus Outline, kami tidak memperoleh sebarang maklumat yang anda berikan kepada penyedia awan pihak ketiga anda, seperti alamat e-mel, nama, maklumat pengebilan dan butiran pembayaran anda.
 
-****Maklumat yang kami peroleh secara automatik****
-
+## Maklumat yang kami peroleh secara automatik
  Kami mengumpulkan dua jenis maklumat secara automatik.
 
  1. IP Pelayan
@@ -32,8 +31,7 @@ Outline tidak mengumpulkan maklumat peribadi melainkan anda memilih untuk member
 
 Maklumat ini dipindahkan menggunakan HTTPS kepada Sentry ([sentry.io](https://sentry.io/)), sebuah penyedia penjejakan ralat sumber terbuka pihak ketiga. Sentry menggunakan pelbagai teknologi dan perkhidmatan standard industri untuk melindungi data anda daripada akses tanpa izin, pendedahan, penggunaan dan kehilangan. Jika anda mempunyai apa-apa pertanyaan tentang dasar Sentry, sila lawati [https://sentry.io/security/](https://sentry.io/security/) dan [https://sentry.io/privacy/](https://sentry.io/privacy/) atau hubungi [security@sentry.io](mailto:security@sentry.io). Semua data Outline yang disimpan oleh Sentry dihadkan supaya hanya ahli pasukan Outline boleh mengakses data itu.
 
-****Maklumat yang kami peroleh sewaktu anda ikut serta****
-
+## Maklumat yang kami peroleh sewaktu anda ikut serta
  Outline melaporkan maklumat yang berikut kepada pasukan Outline semasa anda ikut serta.
 
  1. Metrik penggunaan

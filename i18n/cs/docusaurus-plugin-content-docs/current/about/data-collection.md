@@ -7,8 +7,7 @@ Outline neshromažďuje osobní údaje, pokud se výslovně nerozhodnete je posk
 
  Pokud si přes Správce Outline vytvoříte účet u externího poskytovatele cloudu nebo se do takového účtu přihlašujete, nezískáme žádné údaje, které svému poskytovateli sdělujete. Jedná se o informace, jako je vaše e‑mailová adresa, jméno, fakturační údaje nebo údaje o platbě.
 
-****Informace, které získáváme automaticky****
-
+## Informace, které získáváme automaticky
  Dva typy informací shromažďujeme automaticky.
 
  1. IP adresa serveru
@@ -32,8 +31,7 @@ Outline neshromažďuje osobní údaje, pokud se výslovně nerozhodnete je posk
 
 Tyto informace jsou přenášeny pomocí protokolu HTTPS do služby Sentry ([sentry.io](https://sentry.io/)), což je externí opensourcová služba pro sledování chyb. Sentry chrání vaše data před neautorizovaným přístupem, zveřejněním, použitím a ztrátou. Využívá k tomu celou škálu technologií a služeb splňujících oborové standardy. Pokud máte nějaké otázky ohledně zásad služby Sentry, navštivte stránky [https://sentry.io/security/](https://sentry.io/security/) a [https://sentry.io/privacy/](https://sentry.io/privacy/), případně se obraťte e‑mailem na adresu [security@sentry.io](mailto:security@sentry.io). Přístup ke všem datům z aplikace Outline uloženým službou Sentry je omezený tak, že je můžou zobrazit jen členové týmu Outline.
 
-****Informace, které získáváme jen s vaším výslovným souhlasem****
-
+## Informace, které získáváme jen s vaším výslovným souhlasem
  Pokud to schválíte, aplikace Outline předává týmu Outline tyto informace.
 
  1. Metriky využití

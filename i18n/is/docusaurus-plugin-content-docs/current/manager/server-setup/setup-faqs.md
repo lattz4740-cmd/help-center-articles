@@ -3,8 +3,7 @@ title: "Algengar spurningar um uppsetningu Outline-þjóns"
 sidebar_label: "Algengar spurningar um uppsetningu Outline-þjóns"
 ---
 
-**Get ég notað Outline án þjóns?**
-
+## Get ég notað Outline án þjóns?
  Nei, því miður. Outline-hugbúnaðurinn krefst aðgangs að þjóni, hvort sem hann er í umsjá þinni, fyrirtækisins þíns eða traust þriðja aðila.
 
 ## Hversu langan tíma tekur að setja upp Outline-þjón?

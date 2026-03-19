@@ -7,8 +7,7 @@ Outline verzamelt geen persoonlijke informatie, tenzij je je hier zelf voor aanm
 
  Als je via de Outline Manager een account maakt of erop inlogt bij een externe cloudprovider, krijgen wij niet de gegevens die je naar je externe cloudprovider stuurt, zoals je e-mailadres, naam, en facturerings- en betalingsgegevens.
 
-****Gegevens die we automatisch verzamelen****
-
+## Gegevens die we automatisch verzamelen
  We verzamelen automatisch 2 soorten gegevens.
 
  1. Server-IP-adres
@@ -32,8 +31,7 @@ Outline verzamelt geen persoonlijke informatie, tenzij je je hier zelf voor aanm
 
 Deze informatie wordt overgezet via HTTPS naar Sentry ([sentry.io](https://sentry.io/)), een open source-foutcontroleprovider van derden. Sentry gebruikt verschillende technologieën en services die voldoen aan de branchenorm om je gegevens te beveiligen tegen ongeautoriseerde toegang, vrijgave, gebruik en verlies. Als je vragen hebt over het beleid van Sentry, ga je naar [https://sentry.io/security/](https://sentry.io/security/) en [https://sentry.io/privacy/](https://sentry.io/privacy/) of neem je contact op met [security@sentry.io](mailto:security@sentry.io). Alle Outline-gegevens die door Sentry worden opgeslagen, zijn alleen toegankelijk voor leden van Team Outline.
 
-****Gegevens die we alleen verzamelen als je je hiervoor aanmeldt****
-
+## Gegevens die we alleen verzamelen als je je hiervoor aanmeldt
  Outline stuurt de volgende gegevens naar Team Outline als je toestemming hebt gegeven.
 
  1. Gebruiksstatistieken

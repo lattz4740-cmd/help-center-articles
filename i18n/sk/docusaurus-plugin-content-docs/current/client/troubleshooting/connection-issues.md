@@ -44,10 +44,8 @@ Ak sa dokážete pripojiť z inej siete, ide o problém na vašej strane.
 
 Kontaktujte správcu služieb a požiadajte ho, aby povolil prístup k vášmu serveru Outline, alebo namiesto toho používajte ďalej túto inú sieť.
 
-**Problémy s bránou firewall alebo antivírusovým softvérom:**
-
-**Ako otestovať:**
-
+## Problémy s bránou firewall alebo antivírusovým softvérom:
+## Ako otestovať:
  Skúste sa pripojiť k službe Outline v inom zariadení.
 
 Poznámka: Pamätajte, že ak chcete používať Outline v inom zariadení, budete potrebovať prístupový kľúč a aplikáciu Outline.

@@ -3,8 +3,7 @@ title: Programmatūras Outline darbības principi
 sidebar_label: Programmatūras Outline darbības principi
 ---
 
-**Servera instalēšana**
-
+## Servera instalēšana
  ​Lai gan Outline servera instalēšana var šķist vienkārša, fonā tiek veikts sarežģītu darbību kopums, kas nodrošina servera instalēšanu. Kad tiek instalēta programmatūra Outline, instalēšanas skripts izpilda tālāk minētās darbības.
 
 - Tiek izgūta Shadowbox attēla stabilā versija, kas tiek importēta, izmantojot Docker. Attēls tiek mitināts vietnes [Quay.io](https://quay.io/) sadaļā [https://quay.io/repository/outline/shadowbox?tab=tags](https://quay.io/repository/outline/shadowbox?tab=tags). Šajā attēlā ir ietverts Outline serveris un Pārvaldības API, ko vēlāk Outline servera pārvaldības lietojumprogramma izmanto, lai izveidotu un noņemtu piekļuves atslēgas, izvēlētos/atceltu anonīmas metrikas iekļaušanu pārskatos utt.
@@ -14,8 +13,7 @@ sidebar_label: Programmatūras Outline darbības principi
 
 Outline instalācijai nav nepieciešama nekāda konfigurācija pēc instalēšanas.
 
-**Servera drošība**
-
+## Servera drošība
  Outline ir atvērtā pirmkoda programmatūra, tādējādi ikviens var skatīt kodu un uzlabot to, ja tiek atklātas kādas ievainojamības. Mūsu kods tiek mitināts vietnē [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline).
 
  Turklāt visi instalētie Outline serveri tiek automātiski atjaunināti ikreiz, kad tiek izlaista jauna versija, nodrošinot, ka neviens serveris nav atstāts darbojoties ar programmatūras vecām versijām.
@@ -24,10 +22,8 @@ Outline instalācijai nav nepieciešama nekāda konfigurācija pēc instalēšan
 
  Turklāt Outline serverī netiek glabāti nekādi žurnāli, tādēļ, pat ja tas tiek apdraudēts, netiktu izpausti nekādi lietotāja dati. Uzziniet vairāk [šeit](/about/security-and-privacy). 2018. gadā programmatūras Outline auditu veica organizācija [Radically Open Security](https://radicallyopensecurity.com/) un [Cure53](https://cure53.de/). Pārskati ir pieejami [šeit](/about/security-and-privacy).
 
-**UDP datplūsmas apstrāde**
-
+## UDP datplūsmas apstrāde
  Outline var darboties kā sistēmisks VPN, tādējādi visa UDP datplūsma tiek tunelēta caur Outline serveri.
 
-**DNS datplūsma**
-
+## DNS datplūsma
 Outline veic visu DNS uzmeklēšanu caur Outline serveri un aizsargā to, izmantojot to pašu šifrējumu, kas tiek izmantots visām pārējām tīkla darbībām. Jūsu DNS vaicājumi tiks virzīti caur Outline serveri uz Dyn interneta ceļvedi, OpenDNS, Cloudflare DNS vai Quad9 DNS. Outline nekad nereģistrē jūsu DNS uzmeklēšanu.

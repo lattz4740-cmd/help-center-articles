@@ -44,10 +44,8 @@ Hvis du kan koble til mens du er på det andre nettverket, er det dette som er p
 
 Kontakt tjenesteadministratoren og be om at tilgang til Outline-tjeneren din tillates, eller fortsett å bruke det andre nettverket.
 
-**Problemer med brannmur eller antivirusprogramvare:**
-
-**Slik tester du det:**
-
+## Problemer med brannmur eller antivirusprogramvare:
+## Slik tester du det:
  Prøv å koble til Outline fra en annen enhet.
 
 Merk: Husk at du trenger en tilgangsnøkkel og Outline-appen for å kunne bruke Outline på en annen enhet.

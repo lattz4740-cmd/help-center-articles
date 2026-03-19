@@ -3,8 +3,7 @@ title: Česta pitanja o postavljanju poslužitelja za Outline
 sidebar_label: Česta pitanja o postavljanju poslužitelja za Outline
 ---
 
-**Mogu li upotrebljavati Outline bez poslužitelja?**
-
+## Mogu li upotrebljavati Outline bez poslužitelja?
  Nažalost, ne. Softver Outlinea zahtijeva pristup poslužitelju, bez obzira na to upravljate li njime vi, vaša organizacija ili pouzdana treća strana.
 
 ## Koliko dugo traje postavljanje poslužitelja za Outline?

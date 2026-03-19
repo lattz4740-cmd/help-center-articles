@@ -44,10 +44,8 @@ Ako se uspijete povezati s poslužiteljem dok upotrebljavate drugu mrežu, prona
 
 Zatražite od upravitelja usluge da omogući pristup vašem Outline poslužitelju ili nastavite upotrebljavati drugu mrežu.
 
-**Problemi s vatrozidom ili antivirusnim softverom:**
-
-**Postupak testiranja:**
-
+## Problemi s vatrozidom ili antivirusnim softverom:
+## Postupak testiranja:
  Pokušajte ponovo uspostaviti vezu s Outlineom s drugog uređaja.
 
 Napomena: ne zaboravite da za upotrebu Outlinea na drugom uređaju trebate imati pristupni ključ i aplikaciju Outline.

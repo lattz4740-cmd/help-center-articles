@@ -7,8 +7,7 @@ Outline에서는 사용자가 개인 정보를 제공하겠다고 선택하지 �
 
  Outline Manager에서 서드 파티 클라우드 제공업체를 통해 계정을 만들거나 계정에 로그인하는 경우, Outline에서는 이메일 주소, 이름, 청구 정보, 결제 세부정보 등 사용자가 서드 파티 클라우드 제공업체에 제공하는 정보를 수집하지 않습니다.
 
-****Outline에서 자동으로 수집하는 정보****
-
+## Outline에서 자동으로 수집하는 정보
  Outline에서는 두 가지 정보가 자동으로 수집됩니다.
 
  1. 서버 IP
@@ -32,8 +31,7 @@ Outline에서는 사용자가 개인 정보를 제공하겠다고 선택하지 �
 
 이 정보는 HTTPS를 사용하여 서드 파티 오픈소스 오류 추적 제공업체인 Sentry([sentry.io](https://sentry.io/))로 전송됩니다. Sentry에서는 다양한 업계 표준 기술 및 서비스를 사용하여 무단 액세스, 공개, 사용, 손실로부터 데이터를 보호합니다. Sentry의 정책에 대해 궁금한 점이 있는 경우 [https://sentry.io/security/](https://sentry.io/security/) 및 [https://sentry.io/privacy/](https://sentry.io/privacy/)를 확인하거나 [security@sentry.io](mailto:security@sentry.io)에 문의하세요. Sentry에 저장된 모든 Outline 데이터는 Outline팀만 액세스할 수 있도록 제한됩니다.
 
-****정보 제공 선택 시 Outline에 전송되는 정보****
-
+## 정보 제공 선택 시 Outline에 전송되는 정보
  사용자가 정보 제공을 선택한 경우 Outline에서 다음과 같은 정보를 Outline팀에 전송합니다.
 
  1. 사용 측정항목

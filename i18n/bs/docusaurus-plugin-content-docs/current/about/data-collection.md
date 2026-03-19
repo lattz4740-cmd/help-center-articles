@@ -7,8 +7,7 @@ Outline ne prikuplja lične informacije, osim ako pristanete da ih pružite. Out
 
  Ako kreirate ili se prijavljujete na račun pomoću pružaoca usluge oblaka treće strane putem Outline Managera, nećemo dobiti nijednu informaciju koju date pružaocu usluge oblaka treće strane, kao što su adresa e-pošte, ime, podaci o naplati i podaci o plaćanju.
 
-****Informacije koje automatski dobijamo****
-
+## Informacije koje automatski dobijamo
  Automatski prikupljamo dvije vrste informacija.
 
  1. IP servera
@@ -32,8 +31,7 @@ Outline ne prikuplja lične informacije, osim ako pristanete da ih pružite. Out
 
 Ove informacije se prenose pomoću HTTPS-a Sentryju ([sentry.io](https://sentry.io/)), pružaocu usluge praćenja grešaka treće strane otvorenog koda. Sentry koristi različite tehnologije i usluge, standardne u industriji, da zaštiti vaše podatke od neovlaštenog pristupa, otkrivanja, korištenja i gubitka. Ako imate pitanja o pravilima koja koristi Sentry, posjetite [https://sentry.io/security/](https://sentry.io/security/) i [https://sentry.io/privacy/](https://sentry.io/privacy/) ili pišite na [security@sentry.io](mailto:security@sentry.io). Pristup svim podacima Outlinea koje Sentry pohranjuje je ograničen tako da im mogu pristupati samo članovi tima Outlinea.
 
-****Informacije koje prikupljamo samo ako prihvatite prikupljanje****
-
+## Informacije koje prikupljamo samo ako prihvatite prikupljanje
  Outline prenosi sljedeće informacije timu Outlinea ako to prihvatite.
 
  1. Pokazatelji korištenja

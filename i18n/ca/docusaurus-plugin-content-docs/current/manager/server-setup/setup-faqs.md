@@ -3,8 +3,7 @@ title: "Preguntes freqüents relacionades amb la configuració del servidor d'Ou
 sidebar_label: "Preguntes freqüents relacionades amb la configuració del servidor d'Outline"
 ---
 
-**Puc fer servir Outline sense servidor?**
-
+## Puc fer servir Outline sense servidor?
  Malauradament, no. El programari d'Outline requereix l'accés a un servidor, tant si el gestiones tu com si ho fa la teva organització o un tercer de confiança.
 
 ## Quant es tarda a configurar un servidor d'Outline?

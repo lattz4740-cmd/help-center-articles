@@ -7,8 +7,7 @@ Outline doesn't collect personal information unless you opt in to provide it. Ou
 
  If you are creating or logging in to an account with a third-party cloud provider through the Outline Manager, we don't obtain any information that you provide to your third-party cloud provider, such as your email address, name, billing information and payment details.
 
-****Information that we obtain automatically****
-
+## Information that we obtain automatically
  We collect two types of information automatically.
 
  1. Server IP
@@ -32,8 +31,7 @@ Outline doesn't collect personal information unless you opt in to provide it. Ou
 
 This information is transferred using HTTPS to Sentry ([sentry.io](https://sentry.io/)), a third-party, open source error tracking provider. Sentry uses a variety of industry-standard technologies and services to secure your data from unauthorised access, disclosure, use and loss. If you have any questions about Sentry's policies, please visit [https://sentry.io/security/](https://sentry.io/security/) and [https://sentry.io/privacy/](https://sentry.io/privacy/), or contact [security@sentry.io](mailto:security@sentry.io). All Outline data stored by Sentry is restricted such that only members of the Outline team can access it.
 
-****Information that we obtain only upon opt-in****
-
+## Information that we obtain only upon opt-in
  Outline reports the following information to the Outline team upon opt-in.
 
  1. Usage metrics

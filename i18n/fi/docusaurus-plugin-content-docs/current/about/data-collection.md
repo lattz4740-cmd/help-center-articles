@@ -7,8 +7,7 @@ Outline ei kerää henkilökohtaisia tietoja, ellet anna siihen lupaa. Outline e
 
  Jos olet luomassa Outline Managerin kautta tiliä kolmannen osapuolen pilvipalveluun tai jos olet kirjautumassa kolmannen osapuolen pilvipalvelun tilille, emme saa tietää sähköpostiosoitettasi, nimeäsi, laskutustietojasi, maksutietojasi tai muita pilvipalvelulle antamiasi tietoja.
 
-****Automaattisesti saamamme tiedot****
-
+## Automaattisesti saamamme tiedot
  Keräämme automaattisesti kahdentyyppisiä tietoja:
 
  1. Palvelimen IP-osoite
@@ -32,8 +31,7 @@ Outline ei kerää henkilökohtaisia tietoja, ellet anna siihen lupaa. Outline e
 
 Nämä tiedot siirretään HTTPS-protokollan avulla Sentrylle ([sentry.io](https://sentry.io/)), kolmannen osapuolen palveluntarjoajalle, jonka tuottamaa avoimeen lähdekoodiin perustuvaa palvelua käytetään virheiden seurantaan. Sentry varmistaa erilaisilla alan vakiintuneilla tekniikoilla ja palveluilla, että datasi on suojattu luvatonta pääsyä, luovuttamista, käyttöä ja menetystä vastaan. Jos sinulla on kysyttävää Sentryn käytännöistä, käy osoitteessa [https://sentry.io/security/](https://sentry.io/security/) ja [https://sentry.io/privacy/](https://sentry.io/privacy/) tai ota yhteyttä osoitteeseen [security@sentry.io](mailto:security@sentry.io). Vain Outline-tiimillä on pääsy Sentryn tallentamaan Outline-dataan.
 
-****Tiedot, joita keräämme ainoastaan luvallasi****
-
+## Tiedot, joita keräämme ainoastaan luvallasi
  Outline-tiimi kerää suostumuksellasi Outlinesta seuraavia tietoja.
 
  1. Käyttötiedot

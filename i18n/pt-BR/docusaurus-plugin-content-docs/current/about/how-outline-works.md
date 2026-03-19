@@ -3,7 +3,7 @@ title: Como o Outline funciona
 sidebar_label: Como o Outline funciona
 ---
 
-### Instalação do servidor
+## Instalação do servidor
 
 A instalação do Outline pode parecer simples, mas há um conjunto complexo de etapas ocorrendo nos bastidores para isso.
 
@@ -16,7 +16,7 @@ Sempre que o Outline é instalado, um script de instalação executa as seguinte
 
 Após a instalação do Outline, nenhuma configuração é necessária.
 
-### Segurança do servidor
+## Segurança do servidor
 
 Como o software Outline é de código aberto, qualquer pessoa pode vê-lo e melhorá-lo se vulnerabilidades forem descobertas. Nosso código está hospedado na plataforma
 
@@ -40,11 +40,11 @@ em 2018. Veja os
 
 .
 
-### Processar o tráfego UDP
+## Processar o tráfego UDP
 
 O Outline funciona como uma VPN geral do sistema, ou seja, são criados túneis para todo o tráfego UDP pelo servidor do Outline.
 
-### Tráfego DNS
+## Tráfego DNS
 
 O Outline faz as buscas DNS pelo servidor do Outline e as protege com a mesma criptografia usada para outras atividades da rede. Suas consultas DNS passarão pelo servidor Outline até o Dyn Internet Guide ou o OpenDNS.
 

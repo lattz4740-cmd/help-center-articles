@@ -3,8 +3,7 @@ title: Soalan Lazim persediaan pelayan Outline
 sidebar_label: Soalan Lazim persediaan pelayan Outline
 ---
 
-**Bolehkah saya menggunakan Outline tanpa pelayan?**
-
+## Bolehkah saya menggunakan Outline tanpa pelayan?
  Dukacita dimaklumkan, tidak. Perisian Outline memerlukan akses kepada pelayan, sama ada pelayan yang diurus oleh anda, organisasi anda atau pihak ketiga yang dipercayai.
 
 ## Berapa lamakah masa yang diambil untuk menyediakan pelayan Outline?

@@ -3,7 +3,7 @@ title: "Fonctionnement d'Outline"
 sidebar_label: "Fonctionnement d'Outline"
 ---
 
-### Installation du serveur
+## Installation du serveur
 
 Même si l'installation d'un server Outline semble simple, elle consiste en une série d'étapes complexes réalisées en coulisses.
 
@@ -16,7 +16,7 @@ Lors de l'installation d'Outline, le script effectue les opérations suivantes 
 
 Une fois Outline installé, aucune autre configuration n'est requise.
 
-### Sécurité du serveur
+## Sécurité du serveur
 
 Outline est un logiciel Open Source. En d'autres termes, tout le monde peut accéder à son code et l'améliorer si des failles sont découvertes. Notre code est hébergé sur
 
@@ -40,11 +40,11 @@ et
 
 pour consulter les rapports.
 
-### Gestion du trafic UDP
+## Gestion du trafic UDP
 
 Outline peut fonctionner en tant que VPN à l'échelle du système. En d'autres termes, le trafic UDP transite intégralement via le serveur Outline.
 
-### Trafic DNS
+## Trafic DNS
 
 Outline effectue toutes les résolutions DNS via le serveur Outline et les protège avec les mêmes algorithmes de chiffrement que ceux mis en œuvre pour les autres activités du réseau. Vos requêtes DNS passent par le serveur Outline avant d'être adressées à Dyn Internet Guide ou OpenDNS.
 

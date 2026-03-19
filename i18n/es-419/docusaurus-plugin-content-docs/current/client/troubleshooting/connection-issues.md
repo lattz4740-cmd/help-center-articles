@@ -44,10 +44,8 @@ Si puedes conectarte desde la otra red, entonces aquí está el problema.
 
 Comunícate con el administrador del servicio y solicita que te permita acceder al servidor de Outline, o bien sigue usando la otra red.
 
-**Problemas con el firewall o software antivirus:**
-
-**Cómo hacer la prueba:**
-
+## Problemas con el firewall o software antivirus:
+## Cómo hacer la prueba:
  Intenta conectarte a Outline desde otro dispositivo.
 
 Nota: Recuerda que necesitarás una clave de acceso y la app de Outline para usar este servicio en otro dispositivo.

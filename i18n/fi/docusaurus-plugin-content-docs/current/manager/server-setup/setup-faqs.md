@@ -3,8 +3,7 @@ title: "Usein kysyttyä Outline-palvelimen käyttöönotosta"
 sidebar_label: "Usein kysyttyä Outline-palvelimen käyttöönotosta"
 ---
 
-**Voinko käyttää Outlinea ilman palvelinta?**
-
+## Voinko käyttää Outlinea ilman palvelinta?
  Valitettavasti et. Outline-ohjelmisto edellyttää pääsyä palvelimeen, jota hallinnoit itse tai joka on organisaatiosi tai luotetun kolmannen osapuolen hallinnoima.
 
 ## Miten kauan Outline-palvelimen käyttöönotto kestää?

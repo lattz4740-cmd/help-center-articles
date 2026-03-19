@@ -3,8 +3,7 @@ title: "Gereelde vrae oor Outline-bedieneropstelling"
 sidebar_label: "Gereelde vrae oor Outline-bedieneropstelling"
 ---
 
-**Kan ek Outline sonder ’n bediener gebruik?**
-
+## Kan ek Outline sonder ’n bediener gebruik?
  Nee, ongelukkig nie. Outline-sagteware vereis toegang tot ’n bediener, hetsy dit deur jou, jou organisasie of ’n vertroude derde party bestuur word.
 
 ## Hoe lank neem dit om ’n Outline-bediener op te stel?

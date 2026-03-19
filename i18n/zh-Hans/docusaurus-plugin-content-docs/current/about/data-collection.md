@@ -7,8 +7,7 @@ Outline 不会收集个人信息，除非您选择提供这类信息。Outline �
 
 在您通过 Outline 管理器创建或登录账号来使用第三方云服务提供商的服务时，我们不会获取您向第三方云服务提供商提供的任何信息，例如您的电子邮件地址、姓名、结算信息和支付明细。
 
-****我们自动获取的信息****
-
+## 我们自动获取的信息
 我们会自动收集两类信息。
 
 1. 服务器 IP
@@ -32,8 +31,7 @@ Outline 不会收集个人信息，除非您选择提供这类信息。Outline �
 
 我们会使用 HTTPS 将此信息传输到 Sentry ([sentry.io](https://sentry.io/))。Sentry 是一家第三方开放源代码错误跟踪服务提供商，他们使用各种符合业界标准的技术和服务来确保您的数据安全，防止数据遭到未经授权的访问、披露和使用，并避免数据丢失。如果您对 Sentry 的政策有任何疑问，请访问 [https://sentry.io/security/](https://sentry.io/security/) 和 [https://sentry.io/privacy/](https://sentry.io/privacy/)，或者联系 [security@sentry.io](mailto:security@sentry.io)。仅 Outline 团队成员才能访问Sentry 存储的所有 Outline 数据。
 
-****我们仅获取您选择披露的信息****
-
+## 我们仅获取您选择披露的信息
 Outline 只有在您选择同意后才会将以下信息报告给 Outline 团队。
 
 1. 用量指标

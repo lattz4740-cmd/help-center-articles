@@ -7,8 +7,7 @@ Outline tidak mengumpulkan informasi pribadi kecuali jika Anda memilih untuk mem
 
  Jika Anda membuat atau login ke akun dengan penyedia cloud pihak ketiga melalui Outline Manager, kami tidak memperoleh informasi apa pun yang Anda berikan kepada penyedia cloud pihak ketiga, seperti alamat email, nama, informasi penagihan, dan detail pembayaran.
 
-****Informasi yang kami peroleh secara otomatis****
-
+## Informasi yang kami peroleh secara otomatis
  Kami mengumpulkan dua jenis informasi secara otomatis.
 
  1. IP Server
@@ -32,8 +31,7 @@ Outline tidak mengumpulkan informasi pribadi kecuali jika Anda memilih untuk mem
 
 Informasi ini ditransfer menggunakan HTTPS ke Sentry ([sentry.io](https://sentry.io/)), penyedia layanan pelacakan error pihak ketiga yang bersifat open source. Sentry menggunakan berbagai teknologi dan layanan standar industri untuk melindungi data Anda dari akses, pengungkapan, dan penggunaan yang tidak sah, atau kehilangan. Jika Anda memiliki pertanyaan terkait kebijakan Sentry, harap buka [https://sentry.io/security/](https://sentry.io/security/) dan [https://sentry.io/privacy/](https://sentry.io/privacy/), atau hubungi [security@sentry.io](mailto:security@sentry.io). Semua data Outline yang disimpan oleh Sentry dibatasi sehingga hanya anggota tim Outline yang dapat mengaksesnya.
 
-****Kami memperoleh informasi hanya dengan izin pengguna****
-
+## Kami memperoleh informasi hanya dengan izin pengguna
  Outline melaporkan informasi berikut ke tim Outline jika pengguna memilih untuk membagikannya.
 
  1. Metrik penggunaan

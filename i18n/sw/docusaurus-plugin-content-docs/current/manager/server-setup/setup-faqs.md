@@ -3,8 +3,7 @@ title: Maswali Yanayoulizwa Sana kuhusu kuweka mipangilio ya seva ya Outline
 sidebar_label: Maswali Yanayoulizwa Sana kuhusu kuweka mipangilio ya seva ya Outline
 ---
 
-**Ninaweza kutumia Outline bila seva?**
-
+## Ninaweza kutumia Outline bila seva?
  Hapana. Programu ya Outline inahitaji uwezo wa kufikia seva, iwe inadhibitiwa na shirika lako, mhusika mwingine unayemwamini au unaidhibiti mwenyewe.
 
 ## Inachukua muda gani kuweka mipangilio ya seva ya Outline?

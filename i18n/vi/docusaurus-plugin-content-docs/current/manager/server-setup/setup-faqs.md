@@ -3,8 +3,7 @@ title: Các câu hỏi thường gặp về việc thiết lập máy chủ
 sidebar_label: Các câu hỏi thường gặp về việc thiết lập máy chủ
 ---
 
-**Tôi có thể sử dụng Outline mà không cần máy chủ không?**
-
+## Tôi có thể sử dụng Outline mà không cần máy chủ không?
  Rất tiếc là không. Phần mềm Outline cần truy cập vào một máy chủ, cho dù máy chủ đó do bạn, tổ chức của bạn hay bên thứ ba đáng tin cậy quản lý.
 
 ## Thiết lập một máy chủ Outline mất bao lâu?

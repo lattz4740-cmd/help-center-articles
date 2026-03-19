@@ -7,8 +7,7 @@ Outline safnar ekki persónuupplýsingum nema þú samþykkir að gefa þær upp
 
  Ef þú ert að stofna eða skrá þig inn á reikning hjá skýjaþjónustu þriðja aðila í gegnum Outline Manager, fáum við engar upplýsingar sem þú veitir skýjaþjónustu þriðja aðila á borð við netfang, nafn, reiknings- eða greiðsluupplýsingar.
 
-****Upplýsingar sem við fáum sjálfkrafa****
-
+## Upplýsingar sem við fáum sjálfkrafa
  Við söfnum tvenns konar upplýsingum sjálfkrafa.
 
  1. IP-tala
@@ -32,8 +31,7 @@ Outline safnar ekki persónuupplýsingum nema þú samþykkir að gefa þær upp
 
 Þessar upplýsingar eru fluttar með HTTPS til Sentry ([sentry.io](https://sentry.io/)) sem er villuskráningarþjónusta þriðja aðila með opinn kóða. Sentry notar ýmsa tækni og þjónustu sem stenst staðla atvinnugreinarinnar til að gæta öryggis gagnanna þinna til að koma í veg fyrir óheimila notkun þeirra, uppljóstrun, notkun og tap. Ef þú ert með spurningar um reglur Sentry skaltu skoða [https://sentry.io/security/](https://sentry.io/security/) og [https://sentry.io/privacy/](https://sentry.io/privacy/) eða hafa samband við [security@sentry.io](mailto:security@sentry.io). Öll Outline-gögn sem Sentry geymir eru lokuð óviðkomandi aðilum svo aðeins starfsfólk Outline hafi aðgang að þeim.
 
-****Upplýsingar sem við fáum aðeins þegar samþykki liggur fyrir****
-
+## Upplýsingar sem við fáum aðeins þegar samþykki liggur fyrir
  Outline tilkynnir starfsfólki Outline um eftirfarandi upplýsingar þegar samþykki liggur fyrir.
 
  1. Notkunarmælingar

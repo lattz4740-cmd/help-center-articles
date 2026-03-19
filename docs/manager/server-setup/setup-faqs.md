@@ -3,8 +3,7 @@ title: Outline server setup FAQs
 sidebar_label: Setup FAQs
 ---
 
-**Can I use Outline without a server?**
-
+## Can I use Outline without a server?
  Unfortunately, no. Outline software requires access to a server, whether it’s managed by you, your organization, or a trusted third-party.
 
 ## How long does it take to setup an Outline server?

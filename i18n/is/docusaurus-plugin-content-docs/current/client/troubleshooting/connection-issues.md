@@ -44,10 +44,8 @@ Tengdu tækið aftur við netið:
 
 Hafðu samband við þjónustustjórann og biddu hann um að leyfa aðgang að Outline-þjóninum þínum eða haltu áfram að nota annað net.
 
-**Vandamál varðandi eldvegg eða vírusvarnarhugbúnað:**
-
-**Svona er prófun gerð:**
-
+## Vandamál varðandi eldvegg eða vírusvarnarhugbúnað:
+## Svona er prófun gerð:
  Prófaðu að tengjast Outline í öðru tæki.
 
 Athugaðu: Mundu að þú þarft aðgangslykil og Outline-forritið til að nota Outline í öðru tæki.

@@ -3,8 +3,7 @@ title: Sådan fungerer Outline
 sidebar_label: Sådan fungerer Outline
 ---
 
-**Serverinstallation**
-
+## Serverinstallation
  ​Selvom installationen af Outline kan virke simpel, foregår der faktisk komplekse processer bag kulisserne, når serveren installeres. Når Outline installeres, køres der et installationsscript, der udfører følgende trin:
 
 - Den stabile version af Shadowbox-imagefilen hentes og importeres ved hjælp af Docker. Billedet hostes på [Quay.io](https://quay.io/) i [https://quay.io/repository/outline/shadowbox?tab=tags](https://quay.io/repository/outline/shadowbox?tab=tags). Dette billede indeholder Outline-serveren og Management API, som senere bruges af Outline Server Management-programmet til at oprette og fjerne adgangsnøgler, tilvælge/fravælge rapportering af anonyme metrics osv.
@@ -14,8 +13,7 @@ sidebar_label: Sådan fungerer Outline
 
 Outline-installationen skal ikke konfigureres, efter den er udført.
 
-**Serversikkerhed**
-
+## Serversikkerhed
  Outline-softwaren er open source, hvilket betyder, at alle kan se koden og forbedre den, hvis der findes sikkerhedsbrister. Vores kode hostes på [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline).
 
  Desuden opdateres alle installerede Outline-servere automatisk, når der udgives en ny version, hvilket sikrer, at ingen Outline-servere kører med gamle versioner af softwaren.
@@ -24,10 +22,8 @@ Outline-installationen skal ikke konfigureres, efter den er udført.
 
  Der gemmes ikke logfiler på Outline-serveren, så selv hvis den bliver kompromitteret, er der ingen brugerdata at afsløre. Få flere oplysninger [her](/about/security-and-privacy). Outline blev auditeret af [Radically Open Security](https://radicallyopensecurity.com/) og [Cure53](https://cure53.de/) i 2018. Se rapporterne [her](/about/security-and-privacy).
 
-**Håndtering af UDP-trafik**
-
+## Håndtering af UDP-trafik
  Outline kan fungere som et VPN for hele systemet, hvilket betyder, at al UDP-trafik føres gennem Outline-serveren.
 
-**DNS-trafik**
-
+## DNS-trafik
 Outline udfører alle DNS-opslag via Outline-serveren og beskytter dem ved hjælp af den samme kryptering, der anvendes til al anden netværksaktivitet. Dine DNS-forespørgsler går gennem Outline-serveren til Dyn Internet Guide, OpenDNS, Cloudflare DNS eller Quad9 DNS. Outline logfører aldrig dine DNS-opslag.

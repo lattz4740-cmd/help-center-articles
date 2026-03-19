@@ -3,8 +3,7 @@ title: "Outline'i tööpõhimõte"
 sidebar_label: "Outline'i tööpõhimõte"
 ---
 
-**Serveri installimine**
-
+## Serveri installimine
  ​Kuigi Outline'i installimine võib tunduda lihtne, leiavad kulisside taga aset keerukad protseduurid teie serveri installimiseks. Outline'i installimisel käitab installiskript järgmisi toiminguid.
 
 - Shadowboxi kujutise stabiilne versioon tuuakse ja imporditakse Dockeri abil. Kujutist hostitakse teenuses [Quay.io](https://quay.io/) aadressil [https://quay.io/repository/outline/shadowbox?tab=tags](https://quay.io/repository/outline/shadowbox?tab=tags). Kujutis sisaldab Outline'i serverit ja Management API-d, mille abil Outline'i serveri haldusrakendus saab hiljem pääsuvõtmeid luua ja eemaldada, anonüümsete mõõdikute esitamise lubada/keelata jms.
@@ -14,8 +13,7 @@ sidebar_label: "Outline'i tööpõhimõte"
 
 Installitud Outline'i ei ole vaja pärast installimist seadistada.
 
-**Serveri turvalisus**
-
+## Serveri turvalisus
  Outline'i tarkvara on avatud lähtekoodiga, mis tähendab, et igaüks saab koodi vaadata ja haavatavuste leidmisel täiustada. Meie koodi hostib [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline).
 
  Lisaks värskendatakse uue versiooni väljalaskmisel kõiki installitud Outline'i servereid automaatselt, et ükski Outline'i server ei käitaks tarkvara vana versiooni.
@@ -24,10 +22,8 @@ Installitud Outline'i ei ole vaja pärast installimist seadistada.
 
  Lisaks ei talleta Outline'i server ühtki logi, seega isegi kui selle turvalisust rikutakse, ei avalikustata kasutajaandmeid. Vaadake lisateavet [siit](/about/security-and-privacy). Outline'i auditeerisid [Radically Open Security](https://radicallyopensecurity.com/) ja [Cure53](https://cure53.de/) aastal 2018. Vaadake aruandeid [siin](/about/security-and-privacy).
 
-**UDP-liikluse juhtimine**
-
+## UDP-liikluse juhtimine
  Outline suudab toimida süsteemiülese VPN-ina, mis tähendab, et kogu UDP-liiklus suunatakse läbi Outline'i serveri.
 
-**DNS-i liiklus**
-
+## DNS-i liiklus
 Outline teeb kõik DNS-i otsingud Outline'i serveri kaudu ja kaitseb neid sama krüpteerimismeetodiga, mida kasutatakse kõigi muude võrgutegevuste puhul. Teie DNS-päringud suunatakse läbi Outline'i serveri teenusesse Dyn Internet Guide, OpenDNS, Cloudflare DNS või Quad9 DNS. Outline ei logi kunagi teie DNS-i otsinguid.

@@ -44,10 +44,8 @@ Se conseguir estabelecer ligação através de outra rede, então o seu problema
 
 Contacte o gestor do serviço para lhe pedir que autorize o acesso ao seu servidor do Outline ou, em alternativa, continue a usar a outra rede.
 
-**Problemas com o software antivírus ou firewall:**
-
-**Como testar:**
-
+## Problemas com o software antivírus ou firewall:
+## Como testar:
  Tente estabelecer ligação ao Outline noutro dispositivo.
 
 Nota: lembre-se de que precisa de uma chave de acesso e da app Outline para usar o Outline noutro dispositivo.

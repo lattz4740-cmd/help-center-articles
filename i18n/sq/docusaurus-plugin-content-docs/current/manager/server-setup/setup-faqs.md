@@ -3,8 +3,7 @@ title: Pyetjet e shpeshta për konfigurimin e serverit të Outline
 sidebar_label: Pyetjet e shpeshta për konfigurimin e serverit të Outline
 ---
 
-**A mund ta përdor Outline pa një server?**
-
+## A mund ta përdor Outline pa një server?
  Fatkeqësisht, jo. Softueri i Outline kërkon qasje në një server, pavarësisht nëse menaxhohet nga ti, organizata jote apo një palë e tretë e besuar.
 
 ## Sa kohë duhet për të konfiguruar një server të Outline?

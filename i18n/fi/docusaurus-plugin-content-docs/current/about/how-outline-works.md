@@ -3,8 +3,7 @@ title: Outlinen toiminta
 sidebar_label: Outlinen toiminta
 ---
 
-**Palvelimen asentaminen**
-
+## Palvelimen asentaminen
  ​Vaikka Outlinen asentaminen saattaa vaikuttaa yksinkertaiselta, palvelimen asennuksen taustalla on erilaisia monimutkaisia vaiheita. Aina kun Outline asennetaan, asennusskripti suorittaa seuraavat vaiheet:
 
 - Shadowbox-näköistiedoston vakaa versio noudetaan ja tuodaan Dockerin avulla. Näköistiedosto sijaitsee [Quay.io](https://quay.io/)-palvelussa osoitteessa [https://quay.io/repository/outline/shadowbox?tab=tags](https://quay.io/repository/outline/shadowbox?tab=tags). Näköistiedosto sisältää Outline-palvelimen ja Management APIn, jolla Outline-palvelimen hallintasovelluksen käyttäjä voi myöhemmin luoda ja poistaa pääsyavaimia, sallia tai kieltää anonyymien tietojen lähettämisen jne.
@@ -14,8 +13,7 @@ sidebar_label: Outlinen toiminta
 
 Outlinea ei tarvitse määrittää sen jälkeen, kun se on asennettu.
 
-**Palvelimen tietoturva**
-
+## Palvelimen tietoturva
  Outline-ohjelmisto käyttää avointa lähdekoodia, mikä tarkoittaa, että kuka tahansa voi nähdä koodin ja parantaa sitä haavoittuvuuksia havaitessaan. Koodimme on saatavilla [GitHubissa](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline).
 
  Lisäksi kaikki asennetut Outline-palvelimet päivittyvät automaattisesti heti, kun uusi versio julkaistaan. Näin varmistetaan, että yksikään Outline-palvelin ei käytä ohjelmiston vanhoja versioita.
@@ -24,10 +22,8 @@ Outlinea ei tarvitse määrittää sen jälkeen, kun se on asennettu.
 
  Outline-palvelin ei tallenna lokeja, joten mahdollisesti vaarantunut käyttäjädata ei paljastu. Lue lisää [täältä](/about/security-and-privacy). [Radically Open Security](https://radicallyopensecurity.com/) ja [Cure53](https://cure53.de/) auditoivat Outlinen vuonna 2018. Lue niiden raportit [täältä](/about/security-and-privacy).
 
-**UDP-liikenteen käsitteleminen**
-
+## UDP-liikenteen käsitteleminen
  Outline voi toimia koko järjestelmän kattavana VPN-verkkona, jolloin kaikki UDP-liikenne kulkee Outline-palvelimen kautta.
 
-**DNS-liikenne**
-
+## DNS-liikenne
 Outline suorittaa kaikki DNS-haut Outline-palvelimen kautta ja suojaa niitä samoilla salausmenetelmillä kuin kaikkea muutakin verkkotoimintaa. DNS-kyselysi lähetetään Outline-palvelimen kautta Dyn Internet Guideen, OpenDNS:ään, Cloudflare DNS:ään tai Quad9 DNS:ään. Outline ei koskaan kirjaa DNS-hakuja.

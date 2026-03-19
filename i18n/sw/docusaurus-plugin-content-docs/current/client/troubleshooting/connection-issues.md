@@ -44,10 +44,8 @@ Iwapo utaweza kuunganisha kwa kutumia mtandao mwingine, basi tatizo lako ni mtan
 
 Wasiliana na msimamizi wako wa huduma na umwombe aruhusu ufikiaji wa seva yako ya Outline au endelea kutumia mtandao mwingine badala yake.
 
-**Matatizo ya programu ya kingavirusi au ya kinga mtandao:**
-
-**Jinsi ya kujaribu:**
-
+## Matatizo ya programu ya kingavirusi au ya kinga mtandao:
+## Jinsi ya kujaribu:
  Jaribu kuunganisha na Outline kutoka kwenye kifaa kingine.
 
 Kumbuka: Utahitaji ufunguo na programu ya Outline ili utumie Outline kwenye kifaa kingine.

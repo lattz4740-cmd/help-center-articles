@@ -7,8 +7,7 @@ Outline nie zbiera danych osobowych, chyba że włączysz opcję ich przesyłani
 
  Gdy tworzysz konto na platformie zewnętrznego dostawcy chmury lub logujesz się na nie przy użyciu Menedżera Outline, nie uzyskujemy żadnych informacji, które przekazujesz (takich jak adres e-mail, imię i nazwisko, informacje rozliczeniowe i dane do płatności).
 
-****Informacje zbierane automatycznie****
-
+## Informacje zbierane automatycznie
  Automatycznie zbieramy 2 rodzaje informacji.
 
  1. Adres IP serwera
@@ -32,8 +31,7 @@ Jeśli w oprogramowaniu Outline wystąpi poważny błąd lub krytyczny wyjątek 
 
 Te informacje są przesyłane przy użyciu protokołu HTTPS do Sentry ([sentry.io](https://sentry.io/)), zewnętrznego dostawcy oprogramowania open source do śledzenia błędów. Sentry wykorzystuje różne technologie i usługi zgodne ze standardami branżowymi, by chronić Twoje dane przed nieuprawnionym dostępem, ujawnieniem i wykorzystaniem oraz by nie dopuścić do ich utraty. Jeśli masz pytania dotyczące zasad Sentry, wejdź na [https://sentry.io/security/](https://sentry.io/security/) i [https://sentry.io/privacy/](https://sentry.io/privacy/) lub napisz na adres [security@sentry.io](mailto:security@sentry.io). Dostęp do wszystkich danych dotyczących Outline przechowywanych przez Sentry mają tylko członkowie zespołu Outline.
 
-****Informacje uzyskiwane po wyrażeniu zgody na przekazywanie danych****
-
+## Informacje uzyskiwane po wyrażeniu zgody na przekazywanie danych
  Jeśli wyrazisz zgodę na przekazywanie danych, zespół Outline będzie otrzymywać te informacje:
 
  1. Dane o użyciu

@@ -27,44 +27,34 @@ Para remover o limite de dados de uma chave de acesso, abra a caixa de diálogo 
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-****Perguntas frequentes sobre limites de dados****
-
-****O que é um limite de uso de dados de 30 dias?****
-
+## **Perguntas frequentes sobre limites de dados**
+## **O que é um limite de uso de dados de 30 dias?**
  Esse limite soma o uso de cada chave nos últimos 30 dias e mantém o uso abaixo do limite nesse período. Assim, a chave nunca ultrapassa o limite, mesmo nos meses com mais ou menos de 30 dias. Ou seja, os dados disponíveis para cada usuário aumentam a cada dia de acordo com o valor usado nos 31 dias anteriores.
 
 Por que o Outline tem limites de uso?
 
  Esses limites oferecem garantias a cada período de 30 dias. Isso significa que são mais fáceis de configurar do que os limites recorrentes, como no caso de datas personalizadas, mas com garantias semelhantes. Eles também são usados na exibição atual do uso de dados do Outline e em ferramentas comuns, como estatísticas do servidor e serviços de análise de dados.
 
-**Quais dados são contabilizados nos limites?**
-
+## Quais dados são contabilizados nos limites?
  Cada saída de chave de acesso é incluída no cálculo. A rigor, isso abrange os dados enviados do servidor em nome da chave e os recebidos pelo cliente. Na prática, como isso se ajusta ao tráfego enviado da chave para o servidor e vice-versa, esperamos que isso corresponda aos cálculos dos seus usuários. Fizemos essa escolha porque os provedores de nuvem que pesquisamos cobram com base na saída.
 
-**Os usuários serão notificados se ultrapassarem o limite?**
-
+## Os usuários serão notificados se ultrapassarem o limite?
  No momento, não. Muitos provedores de nuvem adotam um limite de 1 TB para o mês inteiro, que pode ser consumido por até 10 usuários com 100 GB ou 100 usuários com 10 GB. Esses números são bem altos, por isso acreditamos que a maioria dos usuários não os atingirá. Esperamos que os usuários entrem em contato com os gerentes do servidor quando atingirem o limite. No entanto, gostaríamos de saber como as notificações podem ajudar no seu caso de uso. Entre em contato com nossa equipe [aqui](/about/feedback).
 
-**Os usuários serão notificados se chegarem perto do limite de dados?**
-
+## Os usuários serão notificados se chegarem perto do limite de dados?
  A quantidade de novos dados que um usuário perto do limite recebe tende a variar, porque se baseia no uso dos últimos 30 dias. Acreditamos que um alerta pode confundir em vez de ajudar os usuários finais. Gostaríamos de receber seu feedback sobre esse comportamento [aqui](/about/feedback).
 
-**Posso redefinir o uso de dados de um usuário?**
-
+## Posso redefinir o uso de dados de um usuário?
  Não. O limite de um usuário sempre inclui os últimos 30 dias do uso de dados. No entanto, é possível aumentar o limite de dados da chave ou criar uma nova chave para a pessoa.
 
-**Por que alguns usuários perderam o acesso assim que ativei os limites de dados?**
-
+## Por que alguns usuários perderam o acesso assim que ativei os limites de dados?
  Os limites são baseados nos 30 dias anteriores da transferência de dados dos usuários, que são registrados independentemente da ativação desse recurso. É possível que os usuários em questão já tenham excedido o limite antes da implantação. Todos os limites de dados são aplicados, mesmo se você alterar o limite de uma chave.
 
-**Posso definir um limite para o servidor, por exemplo, 1 TB por 30 dias?**
-
+## Posso definir um limite para o servidor, por exemplo, 1 TB por 30 dias?
  No momento, não. Gostaríamos de saber mais sobre seu caso de uso [aqui](/about/feedback).
 
-**Se houver um limite de dados padrão e outro em uma chave específica, qual deles será aplicado?**
-
+## Se houver um limite de dados padrão e outro em uma chave específica, qual deles será aplicado?
  O limite da chave específica substitui qualquer padrão.
 
-**Posso definir o limite de dados de uma chave específica sem ter um padrão definido?**
-
+## Posso definir o limite de dados de uma chave específica sem ter um padrão definido?
  Sim. Você não precisa ter um limite padrão para definir o de uma chave específica. Por exemplo, é possível definir um limite para uma chave que você acha que será amplamente compartilhada. Assim, você se protege da transferência excessiva de dados nessa chave.

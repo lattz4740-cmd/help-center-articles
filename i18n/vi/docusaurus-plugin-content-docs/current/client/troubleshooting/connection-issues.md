@@ -44,10 +44,8 @@ Nếu bạn có thể kết nối trong khi đang sử dụng mạng khác, thì
 
 Hãy liên hệ với người quản lý dịch vụ rồi yêu cầu họ cho phép truy cập vào máy chủ Outline của bạn hoặc tiếp tục sử dụng mạng khác.
 
-**Sự cố với tường lửa hoặc phần mềm diệt virus:**
-
-**Cách kiểm tra:**
-
+## Sự cố với tường lửa hoặc phần mềm diệt virus:
+## Cách kiểm tra:
  Thử kết nối với Outline bằng một thiết bị khác.
 
 Lưu ý: Hãy nhớ rằng bạn cần có khoá truy cập và ứng dụng Outline để sử dụng Outline trên một thiết bị khác.

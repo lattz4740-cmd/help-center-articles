@@ -27,44 +27,33 @@ Ak chcete dátový limit odstrániť z prístupového kľúča, prejdite na jeho
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-****Časté otázky o dátovom limite****
-
-****Čo je to 30‑dňový kĺzavý dátový limit?****
-
+## **Časté otázky o dátovom limite**
+## **Čo je to 30‑dňový kĺzavý dátový limit?**
  30‑dňový kĺzavý dátový limit spočíta používanie každého kľúča za posledných 30 dní a na dané obdobie obmedzí používanie kľúča tak, aby tento limit neprekročil. Výsledkom je, že kľúč nemôže presiahnuť limit počas ľubovoľného 30‑dňového obdobia vrátane kalendárnych mesiacov s najviac 30 dňami. V praxi to znamená, že dostupné dáta každého používateľa sa každý deň zvýšia o množstvo dát, ktoré daný používateľ použil pred 31 dňami.
 
-**Prečo Outline využíva kĺzavé limity?**
-
+## Prečo Outline využíva kĺzavé limity?
  Kĺzavé limity poskytujú záruku na každé 30‑dňové obdobie. Znamená to, že sa konfigurujú jednoduchšie než opakovaný limit (napríklad prispôsobiteľný deň mesiaca), no zároveň poskytujú podobnú záruku. Okrem toho zodpovedajú existujúcemu zobrazeniu používania dát v službe Outline, ale aj bežným nástrojom, ako sú analytické služby a štatistiky servera.
 
-**Aké dáta sa započítavajú do dátového limitu?**
-
+## Aké dáta sa započítavajú do dátového limitu?
  Zahŕňajú sa dáta každého prístupového kľúča odchádzajúce zo servera. V presnom slova zmysle ide o dáta odoslané v mene kľúča zo servera, ako aj späť ku klientovi. V praxi by mali tieto dáta relatívne presne zodpovedať prenosu dát z kľúča na server a naspäť. Dúfame preto, že tento údaj bude zodpovedať záznamom vašich používateľov. Vybrali sme odchádzajúce dáta, pretože ide o parameter, ktorý účtujú nami oslovení poskytovatelia cloudu.
 
-**Dostanú používatelia upozornenie, keď prekročia dátový limit?**
-
+## Dostanú používatelia upozornenie, keď prekročia dátový limit?
  Momentálne nie. Mnoho cloudových poskytovateľov zahŕňa limit napríklad 1 TB na celý mesiac, čo postačuje pre 10 používateľov po 100 GB alebo 100 používateľov po 10 GB. Ide o relatívne vysoké čísla, preto neočakávame, že limit dosiahne veľa používateľov. Dúfame, že používatelia po dosiahnutí limitu kontaktujú správcov servera. Oceníme však vaše poznatky o tom, ako môžu upozornenia pomôcť vo vašom prípade použitia. Môžete nás[kontaktovať tu](/about/feedback).
 
-**Dostanú používatelia upozornenie, keď sa priblížia k dátovému limitu?**
-
+## Dostanú používatelia upozornenie, keď sa priblížia k dátovému limitu?
  Množstvo nových dát, ktoré používateľ blížiaci sa k limitu dostane, sa bude denne líšiť, pretože sa zakladá na jeho používaní spred 30 dní. Myslíme si, že upozornenie koncových používateľov skôr mätie, než im pomáha. Radi si prečítame vašu spätnú väzbu k tomuto správaniu, keď ju odošlete na [tejto stránke](/about/feedback).
 
-**Môžem resetovať spotrebu dát používateľa?**
-
+## Môžem resetovať spotrebu dát používateľa?
  Nie, limit používateľa vždy zahŕňa posledných 30 dní spotreby dát. Môžete však zvýšiť dátový limit jeho kľúča alebo pre neho vytvoriť nový kľúč.
 
-**Prečo niektorí moji používatelia prišli po aktivácii dátových limitov o prístup?**
-
+## Prečo niektorí moji používatelia prišli po aktivácii dátových limitov o prístup?
  Dátové limity sa zakladajú na používateľových posledných 30 dňoch dátových prenosov, ktoré sú zaznamenané bez ohľadu na to, či boli dátové limity aktivované. Je možné, že dotyční používatelia už prekročili daný limit skôr, ako bol zavedený. Okrem toho pripomíname, že sú presadzované všetky dátové limity, aj keď meníte dátový limit jediného kľúča.
 
-**Môžem nastaviť limit na úrovni servera, napríklad 1 TB na 30 dní?**
-
+## Môžem nastaviť limit na úrovni servera, napríklad 1 TB na 30 dní?
  Momentálne nie. Radi sa dozvieme viac o vašom prípade použitia na [tejto stránke](/about/feedback).
 
-**Ak je nastavený predvolený dátový limit aj dátový limit konkrétneho kľúča, ktorý bude presadzovaný?**
-
+## Ak je nastavený predvolený dátový limit aj dátový limit konkrétneho kľúča, ktorý bude presadzovaný?
  Dátový limit príslušného kľúča prepíše akýkoľvek predvolený dátový limit (ak existuje), ktorý ste nastavili.
 
-**Môžem nastaviť dátový limit konkrétneho kľúča bez konfigurácie predvoleného dátového limitu?**
-
+## Môžem nastaviť dátový limit konkrétneho kľúča bez konfigurácie predvoleného dátového limitu?
  Áno. Ak chcete nastaviť dátový limit jedného kľúča, nemusíte definovať predvolený. Môžete napríklad nastaviť limit jedného kľúča, o ktorom si myslíte, že môže byť široko zdieľaný, aby ste sa chránili pred nadmerným dátovým prenosom prostredníctvom daného kľúča.

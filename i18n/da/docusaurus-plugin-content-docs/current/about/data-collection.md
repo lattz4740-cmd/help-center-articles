@@ -7,8 +7,7 @@ Outline indsamler ikke personlige oplysninger, medmindre du tilvælger at angive
 
  Hvis du opretter eller logger ind på en konto hos en tredjepartscloududbyder via Outline Manager, modtager vi ingen af de oplysninger, du giver til din tredjepartscloududbyder, f.eks. mailadresse, navn, faktureringsoplysninger og betalingsoplysninger.
 
-****Oplysninger, som vi automatisk indhenter****
-
+## Oplysninger, som vi automatisk indhenter
  Vi indsamler automatisk to typer oplysninger.
 
  1. Serverens IP-adresse
@@ -32,8 +31,7 @@ Outline indsamler ikke personlige oplysninger, medmindre du tilvælger at angive
 
 Disse oplysninger overføres via HTTPS til Sentry ([sentry.io](https://sentry.io/)), som er en tredjepartsudbyder af open source-fejlsporing. Sentry benytter en række forskellige teknologier og tjenester, der er standard i branchen, til at beskytte dine data mod uautoriseret adgang, videregivelse, brug og tab. Hvis du har spørgsmål om Sentrys politikker, kan du gå til [https://sentry.io/security/](https://sentry.io/security/) og [https://sentry.io/privacy/](https://sentry.io/privacy/) eller kontakte [security@sentry.io](mailto:security@sentry.io). Alle Outline-data, der lagres af Sentry, er adgangsbegrænsede, så kun medlemmer af Outline-teamet kan få adgang til dem.
 
-****Oplysninger, vi kun indhenter ved tilvalg****
-
+## Oplysninger, vi kun indhenter ved tilvalg
  Outline rapporterer følgende oplysninger til Outline-teamet ved tilvalg.
 
  1. Brugsmetrics

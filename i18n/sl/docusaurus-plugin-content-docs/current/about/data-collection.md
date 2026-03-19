@@ -7,8 +7,7 @@ Outline ne zbira osebnih podatkov, razen če to omogočite. Outline prav tako ne
 
  Če pri ponudniku storitev v oblaku ustvarite račun ali se vanj prijavite prek Upravitelja za Outline, ne pridobimo nobenih podatkov, ki jih posredujete takemu ponudniku, kot so e-poštni naslov, ime, podatki za obračunavanje in podrobnosti o plačilu.
 
-****Podatki, ki jih pridobimo samodejno****
-
+## Podatki, ki jih pridobimo samodejno
  Samodejno zbiramo dve vrsti podatkov.
 
  1. Naslov IP strežnika
@@ -32,8 +31,7 @@ Outline ne zbira osebnih podatkov, razen če to omogočite. Outline prav tako ne
 
 Ti podatki so prek protokola HTTPS preneseni podjetju Sentry ([sentry.io](https://sentry.io/)), ki je zunanji ponudnik odprtokodne storitve sledenja napakam. Sentry uporablja različne standardne panožne tehnologije in storitve, s katerimi preprečuje nepooblaščen dostop do vaših podatkov ter njihovo razkritje, uporabo in izgubo. Če imate morebitna vprašanja glede pravilnikov za Sentry, obiščite [https://sentry.io/security/](https://sentry.io/security/) in [https://sentry.io/privacy/](https://sentry.io/privacy/) ali se obrnite na [security@sentry.io](mailto:security@sentry.io). Dostop do vseh podatkov o storitvi Outline, ki jih shrani Sentry, je omejen, pri čemer lahko do njih dostopajo samo člani ekipe za Outline.
 
-****Podatki, ki jih pridobimo samo, če v to privolite****
-
+## Podatki, ki jih pridobimo samo, če v to privolite
  Ko uporabnik privoli v zbiranje podatkov, začne Outline te podatke pošiljati ekipi za Outline.
 
  1. Meritve o uporabi

@@ -27,44 +27,33 @@ Til að eyða gagnamörkum aðgangslykils skaltu opna gluggann sem sýnir gagnam
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-****Algengar spurningar um gagnamörk****
-
-****Hvað er 30 daga gagnarakning?****
-
+## **Algengar spurningar um gagnamörk**
+## **Hvað er 30 daga gagnarakning?**
  30 daga gagnarakning reiknar út heildarnotkun hvers lykils síðustu 30 dagana og heldur notkun lykils undir mörkum á því tímabili. Þetta sér til þess að lykill geti ekki farið umfram mörkin á hvaða 30 daga tímabili sem er, þ.m.t. í mánuðum ársins sem telja 30 daga eða færri. Þar af leiðandi eykst gagnamagn sem notandi hefur aðgang að með hverjum degi um það magn sem hann notaði fyrir 31 degi.
 
-**Hvers vegna notar Outline gagnarakningu?**
-
+## Hvers vegna notar Outline gagnarakningu?
  Gagnarakningin tryggir að ekki sé farið umfram gagnamörk á 30 daga tímabili, sem sér til þess að einfaldara er stilla þau en endurtekin mörk (svo sem mörk sem gilda á ákveðnum mánaðardegi) á sama tíma og þau veita svipaða tryggingu. Hún samsvarar einnig núverandi birtingu gagnanotkunar í Outline sem og í algengum verkfærum á borð við greiningarþjónustur og tölfræðiþjóna.
 
-**Hvaða gögn telja að gagnamörkum?**
-
+## Hvaða gögn telja að gagnamörkum?
  Hvert skipti sem aðgangslykill er sendur út af þjóni er talið með. Nánar tiltekið á þetta við um gögnin sem send eru út af þjóninum og aftur til biðlarans í tengslum við lykilinn. Þetta ætti að samsvara umferðinni frá lyklinum til þjónsins og til baka og koma heim og saman við gagnanotkun notenda þinna. Við teljum skipti sem lyklar eru sendir út vegna þess að það er það sem flestar skýjaþjónustur rukka fyrir.
 
-**Fá notendur tilkynningu ef þeir fara yfir gagnamörk?**
-
+## Fá notendur tilkynningu ef þeir fara yfir gagnamörk?
  Ekki eins og stendur. Margar skýjaþjónustur stilla mörk á borð við 1 TB á mánuði, sem veitir 10 notendum aðgang að 100 GB eða 100 notendum aðgang að 10 GB. Þetta er nokkuð mikið gagnamagn og við búumst ekki við að margir notendur þurfi á því að halda. Ætlast er til að notendur hafi samband við stjórnendur þjóna ef farið er umfram gagnamörk. Okkur þætti þó vænt um að heyra hvernig tilkynningar gætu gagnast þér. Þú getur haft samband við okkur [hér](/about/feedback).
 
-**Fá notendur tilkynningu ef þeir nálgast gagnamörk?**
-
+## Fá notendur tilkynningu ef þeir nálgast gagnamörk?
  Gagnamagnið sem notandi sem nálgast mörk hefur aðgang að er breytilegt frá degi til dags vegna þess að það veltur á notkun hans fyrir 30 dögum. Við teljum að viðvaranir geti ruglað notendur fremur enn að gagnast þeim. Við viljum gjarnan heyra álit þitt á þessu [hér](/about/feedback).
 
-**Er hægt að endurstilla gagnanotkun notanda?**
-
+## Er hægt að endurstilla gagnanotkun notanda?
  Nei, gagnamörk notenda byggjast alltaf á gagnanotkun síðustu 30 daga. Þú getur hins vegar hækkað gagnamörkin sem gilda um lykil notanda eða búið til nýjan lykil fyrir hann.
 
-**Hvers vegna misstu sumir notenda minna aðgang um leið og ég stillti gagnamörk?**
-
+## Hvers vegna misstu sumir notenda minna aðgang um leið og ég stillti gagnamörk?
  Gagnamörk byggjast á gagnaflutningi notanda síðustu 30 daga, sem er skráður hvort sem gagnamörk hafa verið stillt eða ekki. Hugsanlega höfðu þessir notendur þegar farið umfram mörkin áður en þau voru stillt. Hafðu einnig í huga að öllum gagnamörkum er framfylgt, jafnvel þegar gagnamörkum staks lykils er breytt.
 
-**Er hægt að stilla mörk sem gilda um þjóninn í heild sinni, til dæmis „1 TB á hverja 30 daga“?**
-
+## Er hægt að stilla mörk sem gilda um þjóninn í heild sinni, til dæmis „1 TB á hverja 30 daga“?
  Ekki eins og stendur. Við viljum gjarnan heyra álit þitt á þessu [hér](/about/feedback).
 
-**Hvorum gagnamörkunum er framfylgt ef bæði sjálfgefin gagnamörk og sérsniðin gagnamörk lykils eru stillt?**
-
+## Hvorum gagnamörkunum er framfylgt ef bæði sjálfgefin gagnamörk og sérsniðin gagnamörk lykils eru stillt?
  Sérsniðin gagnamörk lykils hnekkja sjálfgefnum gagnamörkum sem þú hefur stillt (ef við á).
 
-**Er hægt að stilla sérsniðin gagnamörk lykils ef sjálfgefin gagnamörk hafa ekki verið stillt?**
-
+## Er hægt að stilla sérsniðin gagnamörk lykils ef sjálfgefin gagnamörk hafa ekki verið stillt?
  Já. Ekki er þörf á að skilgreina sjálfgefin gagnamörk til að geta stillt gagnamörk fyrir tiltekinn lykil. Þú getur til dæmis stillt mörk fyrir lykil sem þú telur að verði deilt víða til að koma í veg fyrir óhóflegan gagnaflutning um lykilinn.

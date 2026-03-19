@@ -7,8 +7,7 @@ O Outline recolhe as suas informações pessoais apenas se aceitar fornecê-las.
 
  Se criar ou iniciar sessão numa conta de um fornecedor de nuvem terceiro através do Gestor Outline, não recolhemos nenhuma das informações que faculta ao fornecedor de nuvem terceiro, como o seu endereço de email, nome, informações de faturação e detalhes de pagamento.
 
-****Informações que recolhemos automaticamente****
-
+## Informações que recolhemos automaticamente
  Recolhemos dois tipos de informações automaticamente.
 
  1. IP do servidor
@@ -32,8 +31,7 @@ O Outline recolhe as suas informações pessoais apenas se aceitar fornecê-las.
 
 Estas informações são transferidas através de HTTPS para o Sentry ([sentry.io](https://sentry.io/)), um fornecedor de acompanhamento de erros terceiro de código aberto. O Sentry usa diversas tecnologias e serviços que são normas da indústria para proteger os seus dados da perda e do acesso, divulgação e utilização não autorizados. Se tiver alguma dúvida sobre as políticas do Sentry, consulte [https://sentry.io/security/](https://sentry.io/security/) e [https://sentry.io/privacy/](https://sentry.io/privacy/) ou contacte [security@sentry.io](mailto:security@sentry.io). Todos os dados do Outline armazenados pelo Sentry são restritos para que apenas os membros da equipa do Outline possam consultá-los.
 
-****Informações que recolhemos apenas se aceitar fornecê-las****
-
+## Informações que recolhemos apenas se aceitar fornecê-las
  O Outline comunica as seguintes informações à equipa do Outline, caso aceite fornecê-las.
 
  1. Métricas de utilização

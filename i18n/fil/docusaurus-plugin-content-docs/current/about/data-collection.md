@@ -7,8 +7,7 @@ Hindi nangongolekta ng personal na impormasyon ang Outline maliban na lang kung 
 
  Kung gumagawa ka ng o nagla-log in ka sa isang account sa isang third party na cloud provider sa pamamagitan ng Outline Manager, hindi namin kinukuha ang anumang impormasyong ibinibigay mo sa iyong cloud provider, tulad ng email address, pangalan, impormasyon sa pagsingil, at mga detalye ng pagbabayad mo.
 
-****Impormasyong awtomatiko naming kinukuha****
-
+## Impormasyong awtomatiko naming kinukuha
  Dalawang uri ng impormasyon ang awtomatiko naming kinokolekta.
 
  1. Server IP
@@ -32,8 +31,7 @@ Hindi nangongolekta ng personal na impormasyon ang Outline maliban na lang kung 
 
 Inililipat ang impormasyong ito gamit ang HTTPS sa Sentry ([sentry.io](https://sentry.io/)), isang third-party at open source na error tracking provider. Gumagamit ang Sentry ng iba't ibang teknolohiya at serbisyong ayon sa pamantayan ng industriya para i-secure ang iyong data mula sa hindi pinapahintulutang pag-access, pagsisiwalat, paggamit, at pagkawala. Kung mayroon kang anumang tanong tungkol sa mga patakaran ng Sentry, pakibisita ang [https://sentry.io/security/](https://sentry.io/security/) at [https://sentry.io/privacy/](https://sentry.io/privacy/), o makipag-ugnayan sa [security@sentry.io](mailto:security@sentry.io). Ang lahat ng data ng Outline na na-store ng Sentry ay pinaghihigpitan para ang mga miyembro lang ng Outline team ang puwedeng maka-access nito.
 
-****Impormasyong kinukuha lang namin kapag nag-opt in****
-
+## Impormasyong kinukuha lang namin kapag nag-opt in
  Iniuulat ng Outline sa Outline team ang mga sumusunod na impormasyon kapag nag-opt in.
 
  1. Mga sukatan sa paggamit

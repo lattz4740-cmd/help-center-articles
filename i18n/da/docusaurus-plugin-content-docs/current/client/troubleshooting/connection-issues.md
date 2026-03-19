@@ -44,10 +44,8 @@ Hvis du kan oprette forbindelse, mens du er på det andet netværk, kan det vær
 
 Kontakt administratoren af tjenesten, og bed vedkommende om at tillade adgang til din Outline-server, eller fortsæt med at bruge det andet netværk i stedet.
 
-**Problemer med firewall eller antivirussoftware:**
-
-**Sådan tester du:**
-
+## Problemer med firewall eller antivirussoftware:
+## Sådan tester du:
  Prøv at oprette forbindelse til Outline fra en anden enhed.
 
 Bemærk! Husk, at du skal have en adgangsnøgle og Outline-appen for at bruge Outline på en anden enhed.

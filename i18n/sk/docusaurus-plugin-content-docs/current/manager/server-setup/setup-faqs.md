@@ -3,8 +3,7 @@ title: Časté otázky o nastavení servera Outline
 sidebar_label: Časté otázky o nastavení servera Outline
 ---
 
-**Môžem Outline používať bez servera?**
-
+## Môžem Outline používať bez servera?
  Nie. Softvér Outline si vyžaduje prístup na server, ktorý môže byť spravovaný vami, vašou organizáciou alebo spoľahlivou treťou stranou.
 
 ## Koľko trvá nastavenia servera Outline?

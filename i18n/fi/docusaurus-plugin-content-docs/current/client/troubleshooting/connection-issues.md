@@ -44,10 +44,8 @@ Jos yhteyden muodostaminen onnistuu toisessa verkossa, olet löytänyt ongelman 
 
 Pyydä palvelun hallinnoijaa sallimaan yhteyden muodostaminen Outline-palvelimeen. Voit myös jatkaa toisen verkon käyttämistä.
 
-**Palomuurin tai virustorjuntaohjelman ongelmat:**
-
-**Testaaminen:**
-
+## Palomuurin tai virustorjuntaohjelman ongelmat:
+## Testaaminen:
  Yritä muodostaa yhteys Outlineen toisella laitteella.
 
 Huom. Tarvitset pääsyavaimen ja Outline-sovelluksen, jotta voit käyttää Outlinea toisella laitteella.

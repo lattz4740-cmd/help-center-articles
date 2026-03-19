@@ -3,7 +3,7 @@ title: Hoe Outline werkt
 sidebar_label: Hoe Outline werkt
 ---
 
-### Serverinstallatie
+## Serverinstallatie
 
 Hoewel de installatie van Outline eenvoudig lijkt, is de installatie van de server achter de schermen zeer complex.
 
@@ -16,7 +16,7 @@ Wanneer Outline wordt geïnstalleerd, voert een installatiescript de volgende st
 
 Na de installatie hoeft Outline niet meer te worden geconfigureerd.
 
-### Serverbeveiliging
+## Serverbeveiliging
 
 De Outline-software is open source. Dit betekent dat iedereen de code kan zien en deze kan verbeteren als er kwetsbaarheden worden ontdekt. De code wordt gehost op
 
@@ -40,11 +40,11 @@ en
 
 de rapporten.
 
-### UDP-verkeer
+## UDP-verkeer
 
 Outline kan worden gebruikt als systeembrede VPN. Dit betekent dat al het UDP-verkeer door de Outline-server wordt gestuurd.
 
-### DNS-Traffic
+## DNS-Traffic
 
 In Outline erfolgen alle DNS-Lookups über den Outline-Server. Dabei wird dieselbe Verschlüsselung verwendet wie bei allen anderen Netzwerkaktivitäten. Alle Ihre DNS-Abfragen werden über den Outline-Server an den Dyn Internet Guide oder an OpenDNS weitergeleitet.
 

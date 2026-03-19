@@ -3,8 +3,7 @@ title: Com funciona Outline
 sidebar_label: Com funciona Outline
 ---
 
-**Instal·lació del servidor**
-
+## Instal·lació del servidor
  ​Tot i que Outline pot semblar una aplicació senzilla, hi ha un conjunt de passos complexos que es duen a terme en segon pla per poder instal·lar el servidor. Quan s'instal·la Outline, un script d'instal·lació executa els passos següents:
 
 - La versió estable de la imatge de Shadowbox es recupera i s'importa mitjançant Docker. La imatge, que s'allotja a [Quay.io](https://quay.io/) ([https://quay.io/repository/outline/shadowbox?tab=tags](https://quay.io/repository/outline/shadowbox?tab=tags)), conté el servidor d'Outline i l'API de gestió que l'aplicació Gestor de servidors d'Outline utilitzarà més endavant per crear i suprimir les claus d'accés, optar per informar o no informar de mètriques de manera anònima, etc.
@@ -14,8 +13,7 @@ sidebar_label: Com funciona Outline
 
 Per instal·lar Outline, no cal dur a terme cap configuració després de la instal·lació.
 
-**Seguretat del servidor**
-
+## Seguretat del servidor
  El programari d'Outline és de codi obert, la qual cosa significa que tothom pot veure'n el codi i millorar-lo si s'hi troben vulnerabilitats. El nostre codi s'allotja a [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline).
 
  A més, tots els servidors d'Outline instal·lats s'actualitzen automàticament sempre que es publica una versió nova; per tant, es garanteix que cap servidor d'Outline no faci servir versions antigues del programari.
@@ -24,10 +22,8 @@ Per instal·lar Outline, no cal dur a terme cap configuració després de la ins
 
  A més, el servidor d'Outline no emmagatzema cap registre i, per tant, encara que es posi en perill, no es revelarà cap dada de l'usuari. [Obtén més informació](/about/security-and-privacy). El 2018, Outline es va sotmetre a l'auditoria de [Radically Open Security](https://radicallyopensecurity.com/) i [Cure53](https://cure53.de/). En pots consultar els informes [aquí](/about/security-and-privacy).
 
-**Gestionar el trànsit d'UDP**
-
+## Gestionar el trànsit d'UDP
  Outline pot funcionar com una VPN de sistema, amb la qual cosa tot el trànsit d'UDP es canalitzarà a través del servidor d'Outline.
 
-**Trànsit de DNS**
-
+## Trànsit de DNS
 Outline executa totes les cerques de DNS a través del servidor i les protegeix utilitzant la mateixa encriptació que es fa servir per a la resta d'activitat de xarxa. Les consultes de DNS passen pel servidor d'Outline fins a Internet Guide de Dyn, OpenDNS, Cloudflare DNS o Quad9 DNS. Outline no registra mai les teves cerques de DNS.

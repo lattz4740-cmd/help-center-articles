@@ -7,8 +7,7 @@ Az Outline kizárólag akkor gyűjt be személyes adatokat, ha azt Ön engedély
 
  Ha az Outline Manager segítségével hoz létre fiókot egy harmadik fél felhőszolgáltatónál, vagy az Outline Manageren keresztül jelentkezik be egy ilyen fiókba, nem rögzítjük a harmadik fél felhőszolgáltatónak küldött adatait (például az e-mail-címét, a nevét, a számlázási adatait és a fizetési részleteket).
 
-****Az automatikusan gyűjtött információk****
-
+## Az automatikusan gyűjtött információk
  Két információtípust gyűjtünk automatikusan.
 
  1. A szerver IP-címe
@@ -32,8 +31,7 @@ Az Outline kizárólag akkor gyűjt be személyes adatokat, ha azt Ön engedély
 
 Ezeket az adatokat HTTPS protokollon keresztül küldi el az alkalmazás a Sentry ([sentry.io](https://sentry.io/)) rendszerébe, amely egy nyílt forráskódot használó, harmadik fél hibakövetési szolgáltató. A Sentry többféle, az ipari szabványoknak megfelelő technológiával és szolgáltatással óvja meg adatait a jogosulatlan hozzáféréstől, kiszivárgástól, használattól és elvesztéstől. Ha kérdése van a Sentry irányelveivel kapcsolatban, látogasson el a [https://sentry.io/security/](https://sentry.io/security/) és a [https://sentry.io/privacy/](https://sentry.io/privacy/) webhelyre, vagy írjon a [security@sentry.io](mailto:security@sentry.io) címre. A Sentry által tárolt összes Outline-adat korlátozva van, így csak az Outline-csapat tagjai férhetnek hozzájuk.
 
-****A kizárólag a felhasználók külön engedélyével gyűjtött információk****
-
+## A kizárólag a felhasználók külön engedélyével gyűjtött információk
  Az Outline akkor jelenti a következő információkat az Outline csapatának, ha erre Ön külön engedélyt ad.
 
  1. Használati mutatók

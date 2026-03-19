@@ -7,8 +7,7 @@ Outline samler ikke inn personopplysninger med mindre du selv velger å oppgi de
 
  Hvis du oppretter eller logger på en konto hos en tredjeparts nettskyleverandør via Outline-administratoren, innhenter ikke vi noen av opplysningene du gir til nettskyleverandøren, for eksempel e-postadresse, navn, faktureringsinformasjon eller betalingsopplysninger.
 
-****Informasjon vi samler inn automatisk****
-
+## Informasjon vi samler inn automatisk
  Vi samler inn to typer informasjon automatisk.
 
  1. 
@@ -31,8 +30,7 @@ IP-adressen til Outline-tjeneren innhentes av [Quay.io](https://quay.io/) og gj�
 
 Denne informasjonen overføres via HTTPS til Sentry ([sentry.io](https://sentry.io/)), som er en tredjepartsleverandør av feilsporing basert på åpen kildekode. Sentry bruker en rekke ulike teknologier og tjenester som følger bransjestandarder, for å beskytte dataene dine mot uautorisert tilgang, avsløring, bruk og tap. Hvis du har spørsmål om retningslinjene til Sentry, kan du gå til [https://sentry.io/security/](https://sentry.io/security/) og [https://sentry.io/privacy/](https://sentry.io/privacy/) eller kontakte [security@sentry.io](mailto:security@sentry.io). Alle Outline-data som lagres av Sentry, er begrenset slik at kun medlemmer av Outline-teamet har tilgang til dem.
 
-****Informasjon vi samler inn kun etter å ha innhentet samtykke****
-
+## Informasjon vi samler inn kun etter å ha innhentet samtykke
  Outline formidler følgende informasjon til Outline-teamet når vi har innhentet samtykke.
 
  1. Bruksverdier

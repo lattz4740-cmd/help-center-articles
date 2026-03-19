@@ -3,8 +3,7 @@ title: "Outline'ın çalışma şekli"
 sidebar_label: "Outline'ın çalışma şekli"
 ---
 
-**Sunucunun yüklenmesi**
-
+## Sunucunun yüklenmesi
  ​Outline'ın yüklenmesi basit gibi görünse de sunucunuzun yüklenmesi için perde arkasında gerçekleşen bazı karmaşık adımlar vardır. Her Outline yüklemesinde bir komut dosyası aşağıdaki adımları çalıştırır:
 
 - Shadowbox görüntüsünün kararlı sürümü Docker kullanılarak alınır ve içe aktarılır. Görüntü, [Quay.io](https://quay.io/)'daki [https://quay.io/repository/outline/shadowbox?tab=tags](https://quay.io/repository/outline/shadowbox?tab=tags) adresinde barındırılır. Bu görüntüde Outline sunucusu ve Management API yer alır. Bu bilgiler daha sonra Outline Server Management uygulaması tarafından erişim anahtarlarını oluşturup kaldırmak, anonim metrikleri raporlamayı etkinleştirmek/devre dışı bırakmak vb. için kullanılır.
@@ -14,8 +13,7 @@ sidebar_label: "Outline'ın çalışma şekli"
 
 Outline yüklendikten sonra herhangi bir yapılandırma işlemi gerekmez.
 
-**Sunucu güvenliği**
-
+## Sunucu güvenliği
  Outline yazılımı açık kaynaktır. Bu, herkesin kodu görebileceği ve keşfedilen güvenlik açıkları varsa iyileştirebileceği anlamına gelir. Kodumuz [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline)'da barındırılır.
 
  Ayrıca hiçbir Outline sunucusunun, yazılımın eski sürümlerini çalıştırmaması için yeni bir sürüm yayınlandığında tüm yüklü Outline sunucuları otomatik olarak güncellenir.
@@ -24,10 +22,8 @@ Outline yüklendikten sonra herhangi bir yapılandırma işlemi gerekmez.
 
  Ayrıca Outline sunucusu herhangi bir günlük kaydı depolamadığından, güvenlik ihlali olsa bile kullanıcı verileri paylaşılmaz. [Daha fazla bilgi edinin.](/about/security-and-privacy) Outline, 2018'de [Radically Open Security](https://radicallyopensecurity.com/) ve [Cure53](https://cure53.de/) tarafından denetlenmiştir. Raporları [burada](/about/security-and-privacy) bulabilirsiniz.
 
-**UDP trafiğini işleme**
-
+## UDP trafiğini işleme
  Outline, sistem genelinde kullanılabilen bir VPN olarak çalıştırılabilir. Bu, tüm UDP trafiğinin Outline sunucusu üzerinden geçirildiği anlamına gelir.
 
-**DNS trafiği**
-
+## DNS trafiği
 Outline, tüm DNS aramalarını Outline sunucusu üzerinden gerçekleştirir ve bunları diğer tüm ağ etkinlikleri için kullanılan şifrelemeyi kullanarak korur. DNS sorgularınız, Outline sunucusu üzerinden Dyn Internet Guide, OpenDNS, Cloudflare DNS veya Quad9 DNS'ye gider. Outline, DNS aramalarınızı günlüğe kaydetmez.

@@ -3,7 +3,7 @@ title: Funktionsweise von Outline
 sidebar_label: Funktionsweise von Outline
 ---
 
-### Server installieren
+## Server installieren
 
 Die Installation von Outline mag einfach aussehen, aber im Hintergrund laufen dabei eine ganze Reihe komplexer Prozesse ab.
 
@@ -16,7 +16,7 @@ Bei der Installation von Outline wird immer ein Installationsskript mit folgende
 
 Die Outline-Installation muss nach der Installation nicht konfiguriert werden.
 
-### Sicherheit des Servers
+## Sicherheit des Servers
 
 Outline ist eine Open-Source-Software, das heißt, jeder kann sich den Quellcode bei GitHub ansehen und ihn verbessern, um eventuelle Schwachstellen zu beheben. Der Quellcode ist bei
 
@@ -36,11 +36,11 @@ und
 
 geprüft.
 
-### Handling von UPD-Traffic
+## Handling von UPD-Traffic
 
 Outline kann als systemweites VPN betrieben werden. Das bedeutet, dass der gesamte UDP-Traffic über den Outline-Server geleitet wird.
 
-### DNS-Traffic
+## DNS-Traffic
 
 In Outline erfolgen alle DNS-Lookups über den Outline-Server. Dabei wird dieselbe Verschlüsselung verwendet wie bei allen anderen Netzwerkaktivitäten. Alle Ihre DNS-Abfragen werden über den Outline-Server an den Dyn Internet Guide oder an OpenDNS weitergeleitet.
 

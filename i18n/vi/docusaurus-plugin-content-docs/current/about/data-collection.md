@@ -7,8 +7,7 @@ Outline không thu thập thông tin cá nhân trừ phi bạn chọn cung cấp
 
  Nếu bạn đang tạo hoặc đăng nhập vào một tài khoản thông qua nhà cung cấp dịch vụ đám mây bên thứ ba bằng ứng dụng Quản lý Outline, thì chúng tôi sẽ không thu thập bất kỳ thông tin nào mà bạn cung cấp cho nhà cung cấp dịch vụ đám mây bên thứ ba, chẳng hạn như địa chỉ email, tên, thông tin thanh toán và chi tiết thanh toán.
 
-****Thông tin chúng tôi thu thập tự động****
-
+## Thông tin chúng tôi thu thập tự động
  Chúng tôi thu thập tự động hai loại thông tin.
 
  1. IP của máy chủ
@@ -32,8 +31,7 @@ Outline không thu thập thông tin cá nhân trừ phi bạn chọn cung cấp
 
 Thông tin này được truyền qua giao thức HTTPS đến Sentry ([sentry.io](https://sentry.io/)), một nhà cung cấp dịch vụ theo dõi lỗi mã nguồn mở bên thứ ba. Sentry sử dụng nhiều công nghệ và dịch vụ theo tiêu chuẩn ngành để bảo mật dữ liệu khỏi bị truy cập, tiết lộ, sử dụng trái phép và mất mát. Nếu bạn có câu hỏi về các chính sách của Sentry, vui lòng truy cập vào [https://sentry.io/security/](https://sentry.io/security/) and [https://sentry.io/privacy/](https://sentry.io/privacy/) hoặc contact [security@sentry.io](mailto:security@sentry.io). Tất cả dữ liệu Outline do Sentry lưu trữ đề được hạn chế để chỉ những thành viên của nhóm Outline mới có thể truy cập.
 
-****Những thông tin chúng tôi chỉ thu thập khi có sự đồng ý****
-
+## Những thông tin chúng tôi chỉ thu thập khi có sự đồng ý
  Outline báo cáo những thông tin sau đây cho nhóm Outline sau khi được đồng ý.
 
  1. Các chỉ số về mức sử dụng

@@ -3,8 +3,7 @@ title: Az Outline működése
 sidebar_label: Az Outline működése
 ---
 
-**A szerver telepítése**
-
+## A szerver telepítése
  ​Noha az Outline telepítése egyszerűnek tűnhet, a szerver telepítéséhez a háttérben bonyolult folyamatok zajlanak. Az Outline telepítésekor a telepítési szkript a következő lépéseken halad végig:
 
 - A Docker szolgáltatással lekéri és importálja a Shadowbox kép stabil verzióját. A képet a [Quay.io](https://quay.io/) tárolja a [https://quay.io/repository/outline/shadowbox?tab=tags](https://quay.io/repository/outline/shadowbox?tab=tags) webhelyen. A kép tartalmazza az Outline-szervert és a Management API-t, mellyel később az Outline Server Management alkalmazás létrehozza és eltávolítja a hozzáférési kulcsokat, engedélyezi és letiltja az anonim mérőszámok elküldését, stb.
@@ -14,8 +13,7 @@ sidebar_label: Az Outline működése
 
 A telepítést követően nem kell konfigurálni az Outline szolgáltatást.
 
-**Szerverbiztonság**
-
+## Szerverbiztonság
  Az Outline szoftver nyílt forráskódú, ami azt jelenti, hogy bárki hozzáférhet a programkódhoz, és ha biztonsági rést talál, tovább is fejlesztheti. A programkód a [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline) webhelyén található.
 
  Emellett a telepített Outline-szerverek automatikusan frissülnek minden alkalommal, amikor új verzió jelenik meg, így egy Outline-szerver sem fogja a szoftver régebbi verzióját futtatni.
@@ -24,10 +22,8 @@ A telepítést követően nem kell konfigurálni az Outline szolgáltatást.
 
  Az Outline-szerver nem naplózza a forgalmat, így ha illetéktelenek fel is törnék, nem férhetnének hozzá a felhasználói adatokhoz. További információ [itt](/about/security-and-privacy) található. 2018-ban az Outline-t két szervezet, a [Radically Open Security](https://radicallyopensecurity.com/) és a [Cure53](https://cure53.de/) auditálta. Az erről szóló jelentéseket [itt](/about/security-and-privacy) találja.
 
-**Az UDP-forgalom kezelése**
-
+## Az UDP-forgalom kezelése
  Az Outline képes rendszerszintű VPN-ként működni, ami azt jelenti, hogy az összes UDP-forgalom az Outline-szerveren halad keresztül.
 
-**DNS-forgalom**
-
+## DNS-forgalom
 Az Outline az összes DNS-keresést az Outline-szerveren keresztül hajtja végre, és a többi hálózati tevékenységhez használt titkosítással védi. A DNS-lekérdezések az Outline szerveren át jutnak el a Dyn Internet Guide, az OpenDNS, a Cloudflare DNS vagy a Quad9 DNS szolgáltatáshoz. Az Outline sohasem naplózza a DNS-kereséseket.

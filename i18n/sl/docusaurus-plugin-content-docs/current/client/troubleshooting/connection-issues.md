@@ -44,10 +44,8 @@ Znova vzpostavite povezavo v napravi:
 
 Obrnite se na upravitelja storitve z zahtevo, da vam omogoči dostop do strežnika Outline, ali namesto tega še naprej uporabljajte drugo omrežje.
 
-**Težave s požarnim zidom ali protivirusno programsko opremo:**
-
-**Kako izvesti preizkus:**
-
+## Težave s požarnim zidom ali protivirusno programsko opremo:
+## Kako izvesti preizkus:
  Povezavo s strežnikom Outline poskusite vzpostaviti v drugi napravi.
 
 Opomba: Če želite strežnik Outline uporabljati v drugi napravi, ne pozabite, da potrebujete ključ za dostop in aplikacijo Outline.

@@ -44,10 +44,8 @@ Ja otrā tīklā varat izveidot savienojumu, tas nozīmē, ka problēma ir jūsu
 
 Sazinieties ar pakalpojuma pārvaldnieku un lūdziet atļaut piekļuvi jūsu Outline serverim vai arī turpiniet izmantot otru tīklu.
 
-**Ar ugunsmūri vai antivīrusa programmatūru saistītas problēmas**
-
-**Testēšanas metode**
-
+## Ar ugunsmūri vai antivīrusa programmatūru saistītas problēmas
+## Testēšanas metode
  Mēģiniet izveidot savienojumu ar Outline citā ierīcē.
 
 Piezīme. Ņemiet vērā, ka jums ir vajadzīga piekļuves atslēga un lietotne Outline, lai citā ierīcē izmantotu programmatūru Outline.

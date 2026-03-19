@@ -44,10 +44,8 @@ Ako se možete povezati kada ste na drugoj mreži, onda je u tome problem.
 
 Obratite se upravitelju usluge i zatražite da vam dozvoli pristup Outline serveru ili nastavite koristiti drugu mrežu.
 
-**Problemi sa zaštitnim zidom ili antivirusnim softverom:**
-
-**Kako testirati:**
-
+## Problemi sa zaštitnim zidom ili antivirusnim softverom:
+## Kako testirati:
  Pokušajte se povezati s Outlineom s drugog uređaja.
 
 Napomena: ne zaboravite da vam trebaju pristupni ključ i aplikacija Outline da koristite Outline na drugom uređaju.

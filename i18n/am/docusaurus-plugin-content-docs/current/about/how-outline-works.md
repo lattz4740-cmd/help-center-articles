@@ -3,8 +3,7 @@ title: Outline እንዴት እንደሚሠራ
 sidebar_label: Outline እንዴት እንደሚሠራ
 ---
 
-**የአገልጋይ ጭነት**
-
+## የአገልጋይ ጭነት
  ​የOutline ጭነት ቀላል ቢመስልም፣ አገልጋይዎ እንዲጫን ለማድረግ በእርግጥ በስተጀርባ እየተከሰተ ያለ ውስብስብ የደረጃዎች ስብስብ አለ። Outline በሚጫንበት ማንኛውም ጊዜ፣ የጭነት ስክሪፕት የሚከተሉትን ደረጃዎች ያሄዳል፦
 
 - የShadowbox ምስሉ የተረጋጋ ሥሪት Docker በመጠቀም ተሰርስሮ ይወጣል እና ይመጣል። ምስሉ የሚስተናገደው [Quay.io](https://quay.io/) ላይ [https://quay.io/repository/outline/shadowbox?tab=tags](https://quay.io/repository/outline/shadowbox?tab=tags) ውስጥ ነው። ይህ ምስል የመዳረሻ ቁልፎችን ለመፍጠር እና ለማስወገድ፣ ማንነታቸው የተሰወረ መለኪያዎችን ሪፖርት ከማድረግ መርጦ ለመግባት ወይም መርጦ ለመውጣት ወዘተ፣ በOutline አገልጋይ አስተዳደር መተግበሪያ በኋላ ላይ ጥቅም ላይ የሚውለውን የOutline አገልጋይ እና የአስተዳደር ኤፒአይ ይይዛል።
@@ -14,8 +13,7 @@ sidebar_label: Outline እንዴት እንደሚሠራ
 
 የOutline ጭነት ከጭነት በኋላ ማንኛውንም ውቅረት አያስፈልገውም።
 
-**የአገልጋይ ደህንነት**
-
+## የአገልጋይ ደህንነት
  Outline ሶፍትዌር ክፍት ምንጭ ነው፣ ይህ ማለት ማናቸውም ተጋላጭነቶች ከተገኙ ማንኛውም ሰው ኮዱን መመልከት እና ማሻሻል ይችላል። [የእኛ ኮድ የሚስተናገደው](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline)GitHub ላይ ነው።
 
  በተጨማሪም፣ ሁሉም የተጫኑ የOutline አገልጋዮች አዲስ ሥሪት በሚለቀቅበት ማንኛውም ጊዜ በራስ-ሰር ይዘመናሉ፣ ይህም ምንም የOutline አገልጋይ የሶፍትዌሩን የቆዩ ስሪቶች እንያሄደ እንዳይቀር ያረጋግጣል።
@@ -24,10 +22,8 @@ sidebar_label: Outline እንዴት እንደሚሠራ
 
  እንዲሁም፣ የOutline አገልጋዩ ማናቸውንም ምዝግብ ማስታወሻዎች አያከማችም፣ ስለዚህ ተጠልፎ ቢሆን እንኳን ምንም የተጠቃሚ ውሂብ ይፋ አይወጣም። [እዚህ](/about/security-and-privacy) የበለጠ ይወቁ። Outline በ[Radically Open Security](https://radicallyopensecurity.com/) እና [Cure53](https://cure53.de/) 2018 ውስጥ ኦዲት ተደርጓል። ሪፖርቶቹን [እዚህ](/about/security-and-privacy) ይመልከቱ።
 
-**UDP ትራፊክን መያዝ**
-
+## UDP ትራፊክን መያዝ
  Outline እንደ ሥርዓት-አቀፍ VPN ሥራውን መሥራት ይችላል፣ ይህ ማለት ሁሉም የUDP ትራፊክ በOutline አገልጋይ በኩል እንዲተላለፍ ይደረጋል ማለት ነው።
 
-**የዲኤንኤስ ትራፊክ**
-
+## የዲኤንኤስ ትራፊክ
 Outline ሁሉንም የDNS ፍለጋዎች በOutline አገልጋይ በኩል ያከናውናል እና ለሁሉም ሌላ የአውታረ መረብ እንቅስቃሴ ጥቅም ላይ የዋለ ተመሳሳይ ምስጠራን እንዳይጠቀሙ ይጠብቃቸዋል። የእርስዎ የDNS ጥያቄዎች በየOutline አገልጋይ በኩል ወደ Dyn Internet Guide፣ OpenDNS፣ Cloudflare DNS ወይም Quad9 DNS ያልፋሉ። Outline መቼም የእርስዎን የዲኤንኤስ ፍለጋዎች በምዝግብ ማስታወሻ አያስቀምጥም።

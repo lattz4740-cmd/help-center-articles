@@ -44,10 +44,8 @@ Kui saate muus võrgus ühenduse luua, on probleem leitud.
 
 Võtke ühendust teenusehalduriga ja paluge, et ta lubaks juurdepääsu teie Outline'i serverile, või jätkake teise võrgu kasutamist.
 
-**Tulemüüri- või viirusetõrjetarkvara probleemid**
-
-**Testimine**
-
+## Tulemüüri- või viirusetõrjetarkvara probleemid
+## Testimine
  Proovige luua ühendus Outline'iga muu seadme kaudu.
 
 Märkus. Pidage meeles, et teil on teises seadmes Outline'i kasutamiseks vaja pääsuvõtit ja Outline'i rakendust.

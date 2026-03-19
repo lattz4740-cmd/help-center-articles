@@ -44,10 +44,8 @@ Kung nakakakonekta ka habang nasa ibang network, ito ang iyong isyu.
 
 Makipag-ugnayan sa manager ng serbisyo at hilingin sa kanya na payagan ang access sa Outline server mo o kaya ay ipagpatuloy na lang ang paggamit sa kabilang network.
 
-**Mga isyu sa firewall o antivirus software:**
-
-**Paano i-test:**
-
+## Mga isyu sa firewall o antivirus software:
+## Paano i-test:
  Subukang kumonekta sa Outline mula sa ibang device.
 
 Paalala: Tandaang kailangan mo ng access key at Outline app para magamit ang Outline sa ibang device.

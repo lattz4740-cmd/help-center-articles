@@ -7,8 +7,7 @@ Outline non raccoglie informazioni personali a meno che tu non scelga di fornirl
 
  Se crei un account o vi accedi con un provider di soluzioni cloud di terze parti tramite Outline Manager, non riceviamo alcuna delle informazioni da te fornite a questo provider, come indirizzo email, nome, dati di fatturazione e dettagli sui pagamenti.
 
-****Informazioni che otteniamo automaticamente****
-
+## Informazioni che otteniamo automaticamente
  Raccogliamo due tipi di informazioni automaticamente.
 
  1. IP del server
@@ -32,8 +31,7 @@ Outline non raccoglie informazioni personali a meno che tu non scelga di fornirl
 
 Queste informazioni vengono trasferite tramite HTTPS a Sentry ([sentry.io](https://sentry.io/)), un provider di tracciamento degli errori open source di terze parti. Sentry utilizza diversi servizi e tecnologie standard del settore per proteggere i tuoi dati da accessi non autorizzati, divulgazione, utilizzo e smarrimento. Per eventuali domande sulle norme di Sentry, visita le pagine [https://sentry.io/security/](https://sentry.io/security/) e [https://sentry.io/privacy/](https://sentry.io/privacy/) oppure contatta [security@sentry.io](mailto:security@sentry.io). Tutti i dati di Outline archiviati da Sentry sono soggetti a restrizioni e solo i membri del team di Outline vi hanno accesso.
 
-****Informazioni che otteniamo esclusivamente tramite l'attivazione****
-
+## Informazioni che otteniamo esclusivamente tramite l'attivazione
  In seguito all'attivazione, Outline comunica al proprio team le seguenti informazioni.
 
  1. Metriche di utilizzo

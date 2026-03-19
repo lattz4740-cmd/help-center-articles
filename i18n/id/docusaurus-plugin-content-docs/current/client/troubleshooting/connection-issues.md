@@ -44,10 +44,8 @@ Jika Anda dapat terhubung saat menggunakan jaringan lain, berarti masalahnya ada
 
 Hubungi pengelola layanan dan minta mereka untuk mengizinkan akses ke server Outline, atau tetap gunakan jaringan lain.
 
-**Masalah software antivirus atau firewall:**
-
-**Cara mengujinya:**
-
+## Masalah software antivirus atau firewall:
+## Cara mengujinya:
  Coba hubungkan ke Outline dari perangkat lain.
 
 Catatan: Perlu diingat bahwa Anda memerlukan kunci akses dan aplikasi Outline untuk menggunakan Outline di perangkat lain.

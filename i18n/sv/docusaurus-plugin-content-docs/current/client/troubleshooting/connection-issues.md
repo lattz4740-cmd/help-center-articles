@@ -44,10 +44,8 @@ Om du kan ansluta medan du är i det andra nätverket är det detta som är prob
 
 Kontakta tjänsteansvarig och be hen att tillåta åtkomst till Outline-servern eller fortsätt att använda det andra nätverket i stället.
 
-**Problem med brandvägg eller antivirusprogram:**
-
-**Så här testar du:**
-
+## Problem med brandvägg eller antivirusprogram:
+## Så här testar du:
  Testa att ansluta till Outline från en annan enhet.
 
 Obs! Tänk på att du behöver en åtkomstnyckel och Outline-appen för att använda Outline på en annan enhet.

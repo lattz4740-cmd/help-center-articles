@@ -3,8 +3,7 @@ title: "Ofte stillede spørgsmål om konfiguration af Outline-servere"
 sidebar_label: "Ofte stillede spørgsmål om konfiguration af Outline-servere"
 ---
 
-**Kan jeg bruge Outline uden en server?**
-
+## Kan jeg bruge Outline uden en server?
  Nej, desværre. Outline-softwaren kræver adgang til en server, uanset om den administreres af dig, din organisation eller en godkendt tredjepart.
 
 ## Hvor lang tid tager det at konfigurere en Outline-server?

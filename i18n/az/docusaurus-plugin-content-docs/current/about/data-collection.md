@@ -7,8 +7,7 @@ Outline təqdim etməyi seçmədiyiniz təqdirdə şəxsi məlumatlarınızı to
 
  Outline Manager-də üçüncü tərəf bulud provayderi vasitəsilə hesab yaratsanız və ya daxil olsanız, e-poçt ünvanı, ad, faktura məlumatları və ödəniş təfərrüatları kimi üçüncü tərəf bulud provayderinə təqdim etdiyiniz məlumatları toplamırıq.
 
-****Avtomatik topladığımız məlumatlar****
-
+## Avtomatik topladığımız məlumatlar
  İki növ məlumatı avtomatik toplayırıq.
 
  1. Server IP-si
@@ -32,8 +31,7 @@ Outline təqdim etməyi seçmədiyiniz təqdirdə şəxsi məlumatlarınızı to
 
 Bu məlumat HTTPS vasitəsilə üçüncü tərəf olan Sentry ([sentry.io](https://sentry.io/)), yəni açıq mənbə xəta izləmə provayderinə ötürülür. Sentry datanızı icazəsiz giriş, açıqlama, istifadə və itkidən qorumaq üçün sənaye standartlarına cavab verən müxtəlif texnologiya və xidmətlərdən istifadə edir. Sentry siyasətləri ilə bağlı sualınız varsa, [https://sentry.io/security/](https://sentry.io/security/) və [https://sentry.io/privacy/](https://sentry.io/privacy/) ünvanlarına daxil olun və ya [security@sentry.io](mailto:security@sentry.io) ilə əlaqə saxlayın. Sentry-nin saxladığı bütün Outline datasına yalnız Outline komandası giriş edə bilər.
 
-****Yalnız seçim edildikdən sonra əldə etdiyimiz məlumatlar****
-
+## Yalnız seçim edildikdən sonra əldə etdiyimiz məlumatlar
  Outline seçim edildikdən sonra aşağıdakı məlumatı Outline komandasına bildirir:
 
  1. İstifadə göstəriciləri

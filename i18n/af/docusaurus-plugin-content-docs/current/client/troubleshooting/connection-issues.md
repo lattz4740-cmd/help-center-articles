@@ -44,10 +44,8 @@ As jy kan koppel wanneer jy op die ander netwerk is, is dit die fout.
 
 Kontak die diensbestuurder en vra hulle om toegang tot jou Outline-bediener toe te laat, of hou aan om eerder die ander netwerk te gebruik.
 
-**Brandmuur- of antivirussagtewarekwessies:**
-
-**Toets dit só:**
-
+## Brandmuur- of antivirussagtewarekwessies:
+## Toets dit só:
  Probeer om van ’n ander toestel af aan Outline te koppel.
 
 Let wel: Onthou dat jy ’n toegangsleutel en die Outline-app nodig het om Outline op ’n ander toestel te gebruik.

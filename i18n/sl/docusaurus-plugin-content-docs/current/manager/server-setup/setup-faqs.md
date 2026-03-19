@@ -3,8 +3,7 @@ title: Pogosta vprašanja o nastavitvi strežnika Outline
 sidebar_label: Pogosta vprašanja o nastavitvi strežnika Outline
 ---
 
-**Ali lahko uporabljam Outline brez strežnika?**
-
+## Ali lahko uporabljam Outline brez strežnika?
  Žal ne. Za uporabo programske opreme Outline potrebujete dostop do strežnika, pri čemer ga lahko upravljate sami, vaša organizacija ali zaupanja vreden zunanji ponudnik.
 
 ## Koliko časa traja nastavitev strežnika Outline?

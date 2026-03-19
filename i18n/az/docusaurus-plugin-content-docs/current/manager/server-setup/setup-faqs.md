@@ -3,8 +3,7 @@ title: "Outline serverinin quraşdırılması ilə bağlı tez-tez verilən sual
 sidebar_label: "Outline serverinin quraşdırılması ilə bağlı tez-tez verilən suallar"
 ---
 
-**Outline-ı server olmadan istifadə edə bilərəm?**
-
+## Outline-ı server olmadan istifadə edə bilərəm?
  Təəssüf ki, xeyr. Outline proqram təminatı üçün sizin, təşkilatınızın və ya etibarlı üçüncü tərəfin idarə etməyindən asılı olmayaraq, serverə giriş tələb edilir.
 
 ## Outline serverini quraşdırmaq üçün nə qədər vaxt lazımdır?

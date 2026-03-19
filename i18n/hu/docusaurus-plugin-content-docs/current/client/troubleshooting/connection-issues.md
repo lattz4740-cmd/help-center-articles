@@ -44,10 +44,8 @@ Ha másik hálózatról sikerül csatlakozni, ez a probléma lépett fel.
 
 Kérje meg a hálózati adminisztrátort, hogy engedélyezze az Outline-szerverhez való hozzáférést, vagy használjon másik hálózatot.
 
-**Tűzfallal vagy vírusirtó szoftverrel kapcsolatos problémák:**
-
-**A tesztelés módja:**
-
+## Tűzfallal vagy vírusirtó szoftverrel kapcsolatos problémák:
+## A tesztelés módja:
  Csatlakozzon az Outline-hoz egy másik eszközről.
 
 Megjegyzés: Ne feledje, hogy ha az Outline szolgáltatást egy másik eszközön szeretné használni, szüksége lesz egy hozzáférési kulcsra és az Outline alkalmazásra.

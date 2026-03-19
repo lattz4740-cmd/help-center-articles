@@ -44,10 +44,8 @@ Pokud se můžete připojit, když jste na jiné síti, jedná se o tento probl�
 
 Obraťte se na správce služeb a požádejte ho, aby vám povolil přístup k serveru Outline. Můžete taky dál používat alternativní síť.
 
-**Potíže s firewallem nebo antivirovým softwarem:**
-
-**Jak problém otestujete:**
-
+## Potíže s firewallem nebo antivirovým softwarem:
+## Jak problém otestujete:
  Zkuste se k Outline připojit z jiného zařízení.
 
 Poznámka: Nezapomeňte, že k tomu potřebujete přístupový klíč a aplikaci Outline.

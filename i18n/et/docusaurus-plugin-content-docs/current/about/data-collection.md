@@ -7,8 +7,7 @@ Outline ei kogu isikuandmeid, v.a juhul, kui nõustute nende esitamisega. Lisaks
 
  Kui loote Outline Manageri kaudu kolmandast osapoolest pilveteenuse pakkuja juures konto või logite sisse olemasolevasse kontosse, ei kogu me teavet, mille te oma kolmandast osapoolest pilveteenuse pakkujale edastate, nagu teie e-posti aadress, nimi, arveldusteave ja makseteave.
 
-****Automaatselt kogutav teave****
-
+## Automaatselt kogutav teave
  Kogume automaatselt kaht tüüpi teavet.
 
  1. Serveri IP-aadress
@@ -32,8 +31,7 @@ Outline ei kogu isikuandmeid, v.a juhul, kui nõustute nende esitamisega. Lisaks
 
 Teave edastatakse HTTPS-i kaudu Sentrysse ([sentry.io](https://sentry.io/)), mis on kolmanda osapoole avatud lähtekoodiga vigade jälgimise teenus. Sentry kasutab mitmesuguseid valdkonnastandarditele vastavaid tehnoloogiaid ja teenuseid, et kaitsta teie andmeid volitamata juurdepääsu, avalikustamise, kasutamise ja kaotsimineku eest. Kui teil on Sentry eeskirjade kohta küsimusi, minge aadressile [https://sentry.io/security/](https://sentry.io/security/) ja [https://sentry.io/privacy/](https://sentry.io/privacy/) või võtke ühendust aadressil [security@sentry.io](mailto:security@sentry.io). Kõik Outline'i andmed, mille Sentry talletab, on piiratud, nii et ainult Outline'i tiimi liikmed pääsevad nendele juurde.
 
-****Teave, mida kogume ainult loa alusel****
-
+## Teave, mida kogume ainult loa alusel
  Outline esitab Outline’i tiimile järgmist teavet, kui annate selleks loa.
 
  1. Kasutusmõõdikud

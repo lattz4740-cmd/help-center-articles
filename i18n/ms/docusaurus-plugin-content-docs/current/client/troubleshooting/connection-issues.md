@@ -44,10 +44,8 @@ Jika anda dapat membuat sambungan semasa berada pada rangkaian lain, maka akses 
 
 Hubungi pentadbir perkhidmatan dan minta mereka membenarkan akses kepada pelayan Outline anda atau terus gunakan rangkaian yang lain itu.
 
-**Masalah tembok api atau perisian antivirus:**
-
-**Cara menguji:**
-
+## Masalah tembok api atau perisian antivirus:
+## Cara menguji:
  Cuba menyambung kepada Outline daripada peranti yang lain.
 
 Nota: Ingat bahawa anda memerlukan kunci akses dan apl Outline untuk menggunakan Outline pada peranti yang lain.

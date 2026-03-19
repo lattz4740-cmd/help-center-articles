@@ -7,8 +7,7 @@ Outline nu colectează informații cu caracter personal decât dacă alegeți s�
 
  În cazul în care creați sau vă conectați la un cont folosind un furnizor de servicii cloud terț prin Outline Manager, nu obținem nicio informație pe care o transmiteți furnizorului respectiv, precum adresa de e-mail, numele, informațiile de facturare și detaliile de plată.
 
-****Informații pe care le obținem automat****
-
+## Informații pe care le obținem automat
  Colectăm automat două tipuri de informații.
 
  1. IP-ul serverului
@@ -32,8 +31,7 @@ Outline nu colectează informații cu caracter personal decât dacă alegeți s�
 
 Aceste informații sunt transferate folosind HTTPS către Sentry ([sentry.io](https://sentry.io/)), un furnizor terță parte de servicii de monitorizare a erorilor open source. Sentry folosește o varietate de tehnologii și servicii standard în domeniu pentru a vă securiza datele împotriva accesului neautorizat, a divulgării, a folosirii și a pierderii. Dacă aveți întrebări cu privire la politicile Sentry, accesați [https://sentry.io/security/](https://sentry.io/security/) și [https://sentry.io/privacy/](https://sentry.io/privacy/) sau contactați [security@sentry.io](mailto:security@sentry.io). Toate datele Outline stocate de Sentry sunt restricționate astfel încât numai membrii echipei Outline le pot accesa.
 
-****Informațiile pe care le obținem numai dacă alegeți să le trimiteți****
-
+## Informațiile pe care le obținem numai dacă alegeți să le trimiteți
  Outline raportează următoarele informații către echipa Outline, pe bază de înscriere.
 
  1. Valori privind utilizarea

@@ -7,8 +7,7 @@ Outline no recull informació personal tret que proporcionis el consentiment nec
 
  Si crees un compte o hi inicies la sessió amb un proveïdor de serveis al núvol de tercers a través del Gestor d'Outline, no obtindrem cap informació que proporcionis al proveïdor de serveis al núvol de tercers, com ara l'adreça electrònica, el nom, la informació de facturació i els detalls del pagament.
 
-****Informació que obtenim automàticament****
-
+## Informació que obtenim automàticament
  Recollim dos tipus d'informació automàticament.
 
  1. IP del servidor
@@ -32,8 +31,7 @@ Outline no recull informació personal tret que proporcionis el consentiment nec
 
 Aquesta informació es transfereix mitjançant HTTPS a Sentry ([sentry.io](https://sentry.io/)), un proveïdor extern de serveis i de codi obert per al seguiment d'errors. Sentry utilitza diversos serveis i tecnologies estàndard del sector per protegir les teves dades de l'accés no autoritzat, la cessió, l'ús i la pèrdua. Si tens cap dubte sobre les polítiques de Sentry, visita [https://sentry.io/security/](https://sentry.io/security/) i [https://sentry.io/privacy/](https://sentry.io/privacy/), o contacta amb [security@sentry.io](mailto:security@sentry.io). Totes les dades d'Outline emmagatzemades per Sentry estan restringides de tal manera que només els membres de l'equip d'Outline hi poden accedir.
 
-****Informació que obtenim únicament si es proporciona el consentiment necessari****
-
+## Informació que obtenim únicament si es proporciona el consentiment necessari
  Outline facilita la informació següent a l'equip d'Outline quan es dona el consentiment necessari.
 
  1. Mètriques d'ús

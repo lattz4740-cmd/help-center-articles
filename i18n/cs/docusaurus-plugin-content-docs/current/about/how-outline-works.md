@@ -3,8 +3,7 @@ title: Jak Outline funguje
 sidebar_label: Jak Outline funguje
 ---
 
-**Instalace serveru**
-
+## Instalace serveru
  ​Instalace Outline možná vypadá jednoduše, ale ve skutečnosti při instalaci serveru na pozadí probíhá docela složitý postup. Při instalaci Outline provede instalační skript tyto kroky:
 
 - Získá stabilní verzi obrazu Shadowbox a importuje ji pomocí Dockeru. Obraz je hostován na webu [Quay.io](https://quay.io/) na adrese [https://quay.io/repository/outline/shadowbox?tab=tags](https://quay.io/repository/outline/shadowbox?tab=tags). Obsahuje server Outline a rozhraní Management API, které bude aplikace pro správu serveru Outline později používat k vytváření a odstraňování přístupových klíčů, přihlašování a odhlašování z anonymních metrik v přehledech apod.
@@ -14,8 +13,7 @@ sidebar_label: Jak Outline funguje
 
 Po instalaci už není Outline potřeba nijak nastavovat.
 
-**Zabezpečení serveru**
-
+## Zabezpečení serveru
  Software Outline je opensourcový, což znamená, že si kdokoli může zobrazit jeho kód a vylepšovat ho, pokud se objeví nějaké slabiny. Náš kód hostujeme na [GitHubu](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline).
 
  Všechny nainstalované servery Outline se navíc automaticky aktualizují, kdykoli je uvedena nová verze, takže na žádném serveru Outline neběží staré verze softwaru.
@@ -24,10 +22,8 @@ Po instalaci už není Outline potřeba nijak nastavovat.
 
  Server Outline si taky neukládá žádné protokoly, takže by žádná uživatelská data neunikla ani při jeho napadení. [Další informace](/about/security-and-privacy). V roce 2018 prošla služba Outline audity společností [Radically Open Security](https://radicallyopensecurity.com/) a [Cure53](https://cure53.de/). Jejich zprávy si můžete přečíst [tady](/about/security-and-privacy).
 
-**Zpracování provozu UDP**
-
+## Zpracování provozu UDP
  Outline může fungovat jako systémová síť VPN, což znamená, že všechen provoz UDP je směrován přes server Outline.
 
-**Provoz DNS**
-
+## Provoz DNS
 Outline provádí všechna vyhledávání DNS přes server Outline a chrání je pomocí stejného šifrování jako všechnu ostatní síťovou aktivitu. Vaše dotazy na DNS jsou směrovány přes server Outline do služby Dyn Internet Guide, OpenDNS, Cloudflare DNS nebo Quad9 DNS. Outline si vaše dotazy na DNS nikdy neukládá.

@@ -3,8 +3,7 @@ title: Så här fungerar Outline
 sidebar_label: Så här fungerar Outline
 ---
 
-**Serverinstallation**
-
+## Serverinstallation
  ​Även om det kan verka enkelt att installera Outline sker flera komplexa steg bakom kulisserna när servern installeras. När Outline installeras kör ett installationsskript följande steg:
 
 - Den stabila versionen av Shadowbox-avbildningen hämtas och importeras med hjälp av Docker. Bilden finns på [Quay.io](https://quay.io/), i [https://quay.io/repository/outline/shadowbox?tab=tags](https://quay.io/repository/outline/shadowbox?tab=tags). Bilden innehåller Outline-servern och Management API som senare används av Outline Server Management-appen för att skapa och ta bort åtkomstnycklar, välja att rapportera anonyma mätvärden eller inte osv.
@@ -14,8 +13,7 @@ sidebar_label: Så här fungerar Outline
 
 Installationen av Outline behöver inte konfigureras efter installationen
 
-**Serversäkerhet**
-
+## Serversäkerhet
  Outline-mjukvaran har öppen källkod, vilket innebär att alla kan se koden och förbättra den om de upptäcker brister. Vår kod lagras på [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline).
 
  Dessutom uppdateras alla Outline-servrar automatiskt när en ny version lanseras, så att ingen Outline-server körs med tidigare programvaruversioner.
@@ -24,10 +22,8 @@ Installationen av Outline behöver inte konfigureras efter installationen
 
  Dessutom lagras inga loggar på Outline-servern, så även om vi skulle utsättas för intrång skulle ingen data avslöjas. Läs mer [här](/about/security-and-privacy). Outline granskades av [Radically Open Security](https://radicallyopensecurity.com/) och [Cure53](https://cure53.de/) under 2018. Läs rapporterna [här](/about/security-and-privacy).
 
-**Hantera UDP-trafik**
-
+## Hantera UDP-trafik
  Outline kan fungera som ett VPN för hela systemet, vilket innebär att UDP-trafiken körs via Outline-servern.
 
-**DNS-trafik**
-
+## DNS-trafik
 Outline gör DNS-uppslagningar via Outline-servern och skyddar dessa med samma kryptering som används för all annan nätverksaktivitet. Dina DNS-förfrågningar går via Outline-servern till Dyn Internet Guide, OpenDNS, Cloudflare DNS eller Quad9 DNS. Outline loggar aldrig DNS-uppslagningar.

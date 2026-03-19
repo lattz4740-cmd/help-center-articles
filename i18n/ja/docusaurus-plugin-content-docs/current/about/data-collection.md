@@ -7,8 +7,7 @@ sidebar_label: データと情報の収集
 
 お客様が Outline マネージャーを使用してサードパーティのクラウド プロバイダのアカウントを作成する場合や、そのアカウントにログインする場合に、お客様がクラウド プロバイダに提供する情報（メールアドレス、名前、課金情報、お支払いの詳細など）を Google が収集することは一切ありません。
 
-****Google が自動的に収集する情報****
-
+## Google が自動的に収集する情報
  Google は次の 2 種類の情報を自動的に収集します。
 
  1. サーバー IP
@@ -32,8 +31,7 @@ sidebar_label: データと情報の収集
 
 上記の情報は、HTTPS 経由でサードパーティのオープンソース エラー トラッキング プロバイダである Sentry（[sentry.io](https://sentry.io/)）に転送されます。Sentry は業界標準のさまざまテクノロジーやサービスを利用して、ユーザーのデータを不正なアクセス、開示、使用、損失から保護します。Sentry のポリシーについてのご質問は、[https://sentry.io/security/](https://sentry.io/security/) および [https://sentry.io/privacy/](https://sentry.io/privacy/) をご覧になるか、[security@sentry.io](mailto:security@sentry.io) までお問い合わせください。Sentry によって保管されるすべての Outline データへのアクセスは、Outline チームのメンバーのみに制限されます。
 
-****ユーザーの許可を得た場合にのみ Google が取得する情報****
-
+## ユーザーの許可を得た場合にのみ Google が取得する情報
  ユーザーの許可を得られた場合、Outline は以下の情報を Outline チームに報告します。
 
  1. 使用状況の指標

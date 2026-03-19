@@ -3,8 +3,7 @@ title: Întrebări frecvente privind configurarea unui server Outline
 sidebar_label: Întrebări frecvente privind configurarea unui server Outline
 ---
 
-**Pot folosi Outline fără un server?**
-
+## Pot folosi Outline fără un server?
  Nu. Software-ul Outline necesită acces la un server, fie că este administrat de dvs., de organizația din care faceți parte sau de o terță parte.
 
 ## Cât timp durează configurarea unui server Outline?

@@ -7,8 +7,7 @@ Outline haikusanyi taarifa binafsi isipokuwa ukichagua kuzitoa. Outline pia haik
 
  Ikiwa unafungua au kuingia katika akaunti ukitumia mtoa huduma mwingine za wingu kupitia Kidhibiti cha Outline, hatupati taarifa zozote unazotoa kwa mtoa huduma wako mwingine za wingu, kama vile anwani ya barua pepe, jina, maelezo ya kulipa na maelezo yako ya malipo.
 
-****Maelezo tunayopata kiotomatiki****
-
+## Maelezo tunayopata kiotomatiki
  Sisi hukusanya aina mbili ya maelezo kiotomatiki.
 
  1. IP ya seva
@@ -32,8 +31,7 @@ Outline haikusanyi taarifa binafsi isipokuwa ukichagua kuzitoa. Outline pia haik
 
 Taarifa hizi hutumwa kupitia HTTPS kwa Sentry ([sentry.io](https://sentry.io/)), mtoa huduma mwingine wa kufuatilia hitilafu za programu huria. Sentry hutumia teknolojia na huduma mbalimbali za kiwango cha sekta ili kulinda data yako kutokana na kufumbuliwa, kutumiwa, kupotezwa na kufikiwa bila idhini. Ikiwa una maswali yoyote kuhusu sera za Sentry, tafadhali tembelea [https://sentry.io/security/](https://sentry.io/security/) na [https://sentry.io/privacy/](https://sentry.io/privacy/) au uwasiliane na [security@sentry.io](mailto:security@sentry.io). Data yote ya Outline iliyohifadhiwa na Sentry imezuiwa hivi kwamba ni washiriki tu wa timu ya Outline wanaoweza kuifikia.
 
-****Maelezo tunayopata tu unapojijumuisha****
-
+## Maelezo tunayopata tu unapojijumuisha
  Outline huripoti taarifa zifuatazo kwa timu ya Outline unapojijumisha.
 
  1. Vipimo vya matumizi

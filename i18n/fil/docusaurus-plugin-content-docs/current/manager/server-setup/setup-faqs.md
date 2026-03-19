@@ -3,8 +3,7 @@ title: "Mga FAQ tungkol sa pag-set up ng Outline server"
 sidebar_label: "Mga FAQ tungkol sa pag-set up ng Outline server"
 ---
 
-**Magagamit ko ba ang Outline nang walang server?**
-
+## Magagamit ko ba ang Outline nang walang server?
  Sa kasamaang-palad, hindi. Kinakailangan ng Outline software ng access sa isang server, ikaw, iyong organisasyon, o isang pinagkakatiwalaang third-party man ang namamahala rito.
 
 ## Gaano katagal mag-set up ng Outline server?

@@ -3,8 +3,7 @@ title: Cách hoạt động của Outline
 sidebar_label: Cách hoạt động của Outline
 ---
 
-**Cài đặt máy chủ**
-
+## Cài đặt máy chủ
  ​Mặc dù việc cài đặt Outline có vẻ đơn giản, nhưng thực ra có một tổ hợp phức tạp các bước diễn ra mà bạn không nhìn thấy để giúp cài đặt máy chủ của bạn. Mỗi khi cài đặt Outline, một tập lệnh cài đặt sẽ thực hiện các bước sau đây:
 
 - Truy xuất và nhập phiên bản ổn định của hình ảnh Shadowbox bằng Docker. Ảnh này được lưu trữ tại địa chỉ [https://quay.io/](https://quay.io/) trên [Quay.io](https://quay.io/repository/outline/shadowbox?tab=tags). Ảnh này chứa máy chủ Outline và API Quản lý. Ứng dụng Quản lý máy chủ Outline sẽ sử dụng API này về sau để tạo và xoá khoá truy cập, chọn bật/tắt tính năng báo cáo chỉ số ẩn danh, v.v.
@@ -14,8 +13,7 @@ sidebar_label: Cách hoạt động của Outline
 
 Bạn không cần định cấu hình sau khi cài đặt Outline.
 
-**Bảo mật máy chủ**
-
+## Bảo mật máy chủ
  Outline là phần mềm nguồn mở, nghĩa là bất cứ ai cũng có thể xem mã nguồn và cải thiện nếu phát hiện ra lỗ hổng. Chúng tôi lưu trữ mã nguồn trên [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline).
 
  Ngoài ra, tất cả máy chủ Outline đã cài đặt đều sẽ cập nhật tự động mỗi khi có một phiên bản mới được phát hành, để đảm bảo rằng không có máy chủ Outline nào chạy phiên bản phần mềm cũ.
@@ -24,10 +22,8 @@ Bạn không cần định cấu hình sau khi cài đặt Outline.
 
  Ngoài ra, máy chủ Outline không lưu trữ nhật ký, nên kể cả khi bị xâm phạm, dữ liệu của người dùng cũng không bị lộ. Tìm hiểu thêm [tại đây](/about/security-and-privacy). Outline đã được [Radically Open Security](https://radicallyopensecurity.com/) và [Cure53](https://cure53.de/) kiểm tra vào năm 2018. Xem các báo cáo đó [tại đây](/about/security-and-privacy).
 
-**Xử lý lưu lượng truy cập UDP**
-
+## Xử lý lưu lượng truy cập UDP
  Outline có thể vận hành dưới dạng một VPN toàn hệ thống, nghĩa là mọi lưu lượng truy cập UDP đều được truyền bằng kỹ thuật tạo đường hầm qua máy chủ Outline.
 
-**Lưu lượng truy cập DNS**
-
+## Lưu lượng truy cập DNS
 Outline thực hiện toàn bộ hoạt động tra cứu DNS qua máy chủ Outline và bảo vệ các lượt tra cứu này bằng cùng một phương thức mã hoá dùng trong tất cả hoạt động mạng khác. Các truy vấn DNS của bạn sẽ đi qua máy chủ Outline đến Dyn Internet Guide, OpenDNS, Cloudflare DNS hoặc Quad9 DNS. Outline không bao giờ ghi nhật ký các lượt tra cứu DNS của bạn.

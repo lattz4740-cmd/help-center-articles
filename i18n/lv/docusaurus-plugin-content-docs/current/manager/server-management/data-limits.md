@@ -27,44 +27,33 @@ Lai piekļuves atslēgai noņemtu datu ierobežojumu, atkal atveriet atslēgas d
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-****Bieži uzdotie jautājumi par datu ierobežojumu****
-
-****Kas ir datu ierobežojums iepriekšējo 30 dienu laikā?****
-
+## **Bieži uzdotie jautājumi par datu ierobežojumu**
+## **Kas ir datu ierobežojums iepriekšējo 30 dienu laikā?**
  Iestatot datu ierobežojumu iepriekšējo 30 dienu laikā, tiek aprēķināts katras atslēgas kopējais lietojums iepriekšējo 30 dienu laikā un tiek gādāts, lai atslēgas lietojums šajā periodā nepārsniegtu ierobežojumu. Tādējādi lietojums nevar pārsniegt ierobežojumu nevienā 30 dienu periodā, tostarp kalendārajos mēnešos, kas nav garāki par 30 dienām. Praktiski tas nozīmē, ka katram lietotājam pieejamie dati katru dienu palielinās par tādu apjomu, kādu lietotājs patērēja pirms 31 dienas.
 
-**Kādēļ lietojumprogrammā Outline tiek izmantoti iepriekšējam lietojumam atbilstoši ierobežojumi?**
-
+## Kādēļ lietojumprogrammā Outline tiek izmantoti iepriekšējam lietojumam atbilstoši ierobežojumi?
  Iepriekšējam lietojumam atbilstoši ierobežojumi nodrošina garantiju katrā 30 dienu periodā. Tāpēc šādus ierobežojumus ir vieglāk konfigurēt nekā periodisku ierobežojumu (piemēram, ierobežojumu pielāgotai mēneša dienai), taču tie sniedz līdzīgas garantijas. Turklāt šie ierobežojumi atbilst pašreizējam datu lietojuma attēlojumam lietojumprogrammā Outline, kā arī plaši izplatītiem rīkiem, piemēram, analīzes pakalpojumiem un serveru statistikai.
 
-**Kādi dati tiek iekļauti, aprēķinot datu ierobežojumu?**
-
+## Kādi dati tiek iekļauti, aprēķinot datu ierobežojumu?
  Tiek ieskaitīta katra reize, kad piekļuves atslēgas dati iziet no servera. Principā tas nozīmē datus, kas pēc atslēgas pieprasījuma tiek sūtīti gan prom no servera, gan arī atpakaļ uz klientu. Tomēr paredzams, ka šo aprēķinu rezultāts būs ļoti tuvs abu virzienu datplūsmas apjomam starp atslēgu un serveri, tāpēc ceram, ka tas atbildīs jūsu lietotāju aprēķiniem. Izvēlējāmies izejošo datu apjomu, jo par to pieprasa norēķinus mūsu izpētītie mākoņpakalpojumu sniedzēji.
 
-**Vai lietotāji saņems paziņojumu, ja tiks sasniegts datu ierobežojums?**
-
+## Vai lietotāji saņems paziņojumu, ja tiks sasniegts datu ierobežojums?
  Šobrīd nē. Daudzi mākoņpakalpojumu sniedzēji piedāvā tādus ierobežojumus kā 1 TB mēnesī — ar to pietiek 10 lietotājiem, kas izmanto 100 GB, vai 100 lietotājiem, kas izmanto 10 GB. Tas ir liels datu apjoms, un maz ticams, ka ievērojama lietotāju daļa to sasniegs. Ceram, ka lietotāji sazināsies ar serveru pārvaldniekiem, ja sasniegs ierobežojumu. Tomēr labprāt uzklausīsim jūsu viedokli par to, kāpēc paziņojumi jūsu situācijā būtu noderīgi. Varat sazināties ar mums [šeit](/about/feedback).
 
-**Vai lietotāji saņems paziņojumu, ja datu ierobežojums būs gandrīz sasniegts?**
-
+## Vai lietotāji saņems paziņojumu, ja datu ierobežojums būs gandrīz sasniegts?
  Lietotājam, kas būs gandrīz sasniedzis ierobežojumu, katru dienu būs pieejams cits datu apjoms, jo tas tiks aprēķināts atbilstoši lietojumam pirms 30 dienām. Uzskatām, ka šādi paziņojumi drīzāk samulsinātu galalietotājus, nevis būtu viņiem noderīgi. [Šeit](/about/feedback) labprāt uzklausīsim jūsu atsauksmes par mūsu lēmumu nesūtīt šādus paziņojumus.
 
-**Vai varu atiestatīt lietotāja datu lietojumu?**
-
+## Vai varu atiestatīt lietotāja datu lietojumu?
  Nē, lietotāja ierobežojumā vienmēr ir ietverts pēdējo 30 dienu datu lietojums. Taču varat mainīt atslēgas datu ierobežojumu vai izveidot jaunu atslēgu.
 
-**Kādēļ daži lietotāji zaudēja piekļuvi, tiklīdz iespējoju datu ierobežojumus?**
-
+## Kādēļ daži lietotāji zaudēja piekļuvi, tiklīdz iespējoju datu ierobežojumus?
  Datu ierobežojumi ir balstīti uz iepriekšējo 30 dienu laikā pārsūtīto datu apjomu, kas tiek reģistrēts neatkarīgi no tā, vai ierobežojumi ir iespējoti. Var gadīties, ka lietotāji jau ir pārsnieguši ierobežojumus, pirms tie tika iestatīti. Ņemiet vērā, ka tiek piemēroti visi datu ierobežojumi, pat ja maināt atsevišķas atslēgas datu ierobežojumu.
 
-**Vai varu iestatīt ierobežojumu visam serverim, piemēram, “1 TB 30 dienās”?**
-
+## Vai varu iestatīt ierobežojumu visam serverim, piemēram, “1 TB 30 dienās”?
  Šobrīd nē. Mēs labprāt dzirdētu vairāk par jūsu lietošanas piemēru — lūdzu, pastāstiet par to [šeit](/about/feedback).
 
-**Ja ir iestatīts gan noklusējuma datu ierobežojums, gan datu ierobežojums konkrētai atslēgai, kurš no tiem tiks piemērots?**
-
+## Ja ir iestatīts gan noklusējuma datu ierobežojums, gan datu ierobežojums konkrētai atslēgai, kurš no tiem tiks piemērots?
  Attiecīgās atslēgas datu ierobežojumam ir augstāka prioritāte nekā noklusējuma datu ierobežojumam (ja tādu esat iestatījis).
 
-**Vai varu iestatīt datu ierobežojumu konkrētai atslēgai, nenosakot noklusējuma datu ierobežojumu?**
-
+## Vai varu iestatīt datu ierobežojumu konkrētai atslēgai, nenosakot noklusējuma datu ierobežojumu?
  Jā. Nav nepieciešams definēt noklusējuma ierobežojumu, lai iestatītu datu ierobežojumu vienai atslēgai. Piemēram, varat iestatīt ierobežojumu vienai atslēgai, kas, iespējams, tiks plaši izmantota, lai novērstu pārmērīgu datu pārsūtīšanu ar šo atslēgu.

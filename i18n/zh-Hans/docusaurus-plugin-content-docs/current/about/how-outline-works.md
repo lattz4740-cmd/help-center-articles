@@ -3,7 +3,7 @@ title: Outline 的运作原理
 sidebar_label: Outline 的运作原理
 ---
 
-### 服务器安装
+## 服务器安装
 
 安装 Outline 看似简单，但实际上，在服务器的安装过程中，屏幕背后隐藏着许多复杂的步骤。
 
@@ -16,7 +16,7 @@ sidebar_label: Outline 的运作原理
 
 Outline 安装完成后，无需进行任何配置。
 
-### 服务器安全
+## 服务器安全
 
 Outline 是一款开放源代码软件。也就是说，任何人都可以查看代码，并可在发现漏洞后改进代码。我们的代码托管在
 
@@ -40,11 +40,11 @@ Outline 在 2018 年通过了
 
 查看相应报告。
 
-### 处理 UDP 流量
+## 处理 UDP 流量
 
 Outline 可以作为整个系统的 VPN 运行。也就是说，所有 UDP 流量均会流向 Outline 服务器。
 
-### DNS 流量
+## DNS 流量
 
 Outline 会通过 Outline 服务器执行所有 DNS 查询，并采用与其他所有互联网活动相同的加密方式保护相应数据。DNS 查询将经过 Outline 服务器到达 Dyn Internet Guide 或 OpenDNS。
 

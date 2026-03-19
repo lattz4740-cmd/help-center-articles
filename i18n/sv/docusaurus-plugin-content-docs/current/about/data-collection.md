@@ -7,8 +7,7 @@ Outline samlar inte in personliga uppgifter såvida du inte tillhandahåller dem
 
  Om du skapar eller loggar in på ett konto hos en tredje parts molnleverantör via Outline Manager har vi inte åtkomst till uppgifterna du anger hos tredjepartsleverantören. Det gäller t.ex. e-postadress, namn, faktureringsuppgifter och betalningsuppgifter.
 
-****Uppgifter som vi får automatiskt****
-
+## Uppgifter som vi får automatiskt
  Vi samlar in två typer av uppgifter automatiskt.
 
  1. Server-IP
@@ -32,8 +31,7 @@ Outline samlar inte in personliga uppgifter såvida du inte tillhandahåller dem
 
 Uppgifterna överförs via HTTPS till Sentry ([sentry.io](https://sentry.io/)) som är en tredjepartsleverantör av felspårning i öppen källkod. Sentry använder en rad olika tekniker och tjänster som uppfyller branschstandarden för att skydda din data mot obehörig åtkomst och användning, otillåtet yppande och förlust. Om du har frågor om Sentrys policyer besöker du [https://sentry.io/security/](https://sentry.io/security/) och [https://sentry.io/privacy/](https://sentry.io/privacy/), eller kontaktar företaget direkt på [security@sentry.io](mailto:security@sentry.io). All Outline-data som lagras av Sentry begränsas så att endast medlemmar i Outline-teamet får åtkomst till den.
 
-****Uppgifter vi samlar in på frivillig basis****
-
+## Uppgifter vi samlar in på frivillig basis
  Outline rapporterar följande uppgifter till Outline-teamet på frivillig basis.
 
  1. Användningsmått

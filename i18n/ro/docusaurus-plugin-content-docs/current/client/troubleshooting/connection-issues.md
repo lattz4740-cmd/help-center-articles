@@ -44,10 +44,8 @@ Dacă vă puteți conecta din altă rețea, înseamnă că aceasta este problema
 
 Contactați administratorul serviciului și cereți-i să vă permită accesul la serverul Outline sau continuați să folosiți cealaltă rețea.
 
-**Probleme privind firewallul sau software-ul antivirus**
-
-**Cum să testați**
-
+## Probleme privind firewallul sau software-ul antivirus
+## Cum să testați
  Încercați să vă conectați la Outline de pe alt dispozitiv.
 
 Rețineți: aveți nevoie de o cheie de acces și de aplicația Outline pentru a putea folosi Outline pe alt dispozitiv.

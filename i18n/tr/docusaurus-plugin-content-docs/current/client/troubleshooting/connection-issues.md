@@ -42,8 +42,7 @@ Diğer ağ üzerinden internete bağlanabiliyorsanız sizin bağlantınızdan ka
 ## Sorunları düzeltme: {#FirewallIssues}
 Hizmet yöneticinizden Outline sunucunuza erişim izni vermesini isteyin veya bu ağ yerine diğer ağı kullanmaya devam edin.
 
-**Güvenlik duvarı veya antivirüs yazılımıyla ilgili sorunlar:**
-
+## Güvenlik duvarı veya antivirüs yazılımıyla ilgili sorunlar:
 ## Sorunları test etme:
 
 Outline'a başka bir cihazdan bağlanmayı deneyin.

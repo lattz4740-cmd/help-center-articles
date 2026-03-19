@@ -3,8 +3,7 @@ title: Slik fungerer Outline
 sidebar_label: Slik fungerer Outline
 ---
 
-**Installering av tjeneren**
-
+## Installering av tjeneren
  ​Selv om det ser lett ut å installere Outline, skjer det en rekke teknisk kompliserte trinn bak kulissene for å installere tjeneren. Når Outline installeres, kjøres et installeringsskript som utfører følgende trinn:
 
 - Den stabile versjonen av Shadowbox-bildet blir hentet og importert ved hjelp av Docker. Avbildningen ligger på [Quay.io](https://quay.io/): [https://quay.io/repository/outline/shadowbox?tab=tags](https://quay.io/repository/outline/shadowbox?tab=tags). Denne avbildningen inneholder Outline-tjeneren og Management API, som senere brukes av Outline Server Management-programmet til å opprette og fjerne tilgangsnøkler, velge eller velge bort rapportering av anonyme verdier osv.
@@ -14,8 +13,7 @@ sidebar_label: Slik fungerer Outline
 
 Outline-installasjonen krever ingen konfigurering når den er installert.
 
-**Tjenersikkerhet**
-
+## Tjenersikkerhet
  Outline-programvaren har åpen kildekode, noe som betyr at alle kan se koden og forbedre den hvis eventuelle sårbarheter blir oppdaget. [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline) er vert for koden vår.
 
  I tillegg blir alle installerte Outline-tjenere automatisk oppdatert når en ny versjon blir utgitt, slik at ingen Outline-tjenere kjører gamle versjoner av programvaren.
@@ -24,10 +22,8 @@ Outline-installasjonen krever ingen konfigurering når den er installert.
 
  Vær oppmerksom på at Outline-tjeneren ikke lagrer noen logger, så selv om den skulle bli utsatt for sikkerhetsbrudd, blir ingen brukerdata avslørt. Finn ut mer [her](/about/security-and-privacy). Outline ble revidert av [Radically Open Security](https://radicallyopensecurity.com/) og [Cure53](https://cure53.de/) i 2018. Du kan lese rapportene [her](/about/security-and-privacy).
 
-**Håndtering av UDP-trafikk**
-
+## Håndtering av UDP-trafikk
  Outline kan fungere som systemomfattende VPN, noe som betyr at all UDP-trafikk rutes gjennom Outline-tjeneren.
 
-**DNS-trafikk**
-
+## DNS-trafikk
 Outline utfører alle DNS-oppslag via Outline-tjeneren og beskytter dem med den samme krypteringen som brukes for all annen nettverksaktivitet. DNS-søkene dine går via Outline-tjeneren til Dyn Internet Guide, OpenDNS, Cloudflare DNS eller Quad9 DNS. Outline loggfører aldri DNS-oppslagene dine.

@@ -27,44 +27,33 @@ Para alisin ang limitasyon sa data sa isang access key, mag-navigate papunta sa 
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-****Mga FAQ sa Limitasyon sa Data****
-
-****Ano ang 30 araw na trailing na limitasyon sa data?****
-
+## **Mga FAQ sa Limitasyon sa Data**
+## **Ano ang 30 araw na trailing na limitasyon sa data?**
  Sa 30 araw na trailing na limitasyon sa data, pinagsasama-sama ang paggamit ng bawat key sa loob ng nakalipas na 30 araw at papanatilihing mas mababa sa limitasyon ang paggamit ng key sa loob ng panahong iyon. Dahil dito, hindi lalampas ang key sa limitasyon sa loob ng anumang 30 araw na yugto, kabilang ang mga buwan ng kalendaryo na may 30 araw o mas mababa. Ibig sabihin, ang available na data ng bawat user ay madaragdagan araw-araw ayon sa daming ginamit nila noong 31 araw ang nakalipas.
 
-**Bakit gumagamit ng mga trailing na limitasyon ang Outline?**
-
+## Bakit gumagamit ng mga trailing na limitasyon ang Outline?
  Ang mga trailing na limitasyon ay nagbibigay ng mga garantiya sa bawat 30 araw na yugto, ibig sabihin, mas simpleng i-configure ang mga iyon kumpara sa isang paulit-ulit na limitasyon (gaya ng isang nako-customize na araw ng buwan) habang nagbibigay ng mga katulad na garantiya. Tumutugma rin ang mga ito sa kasalukuyang display para sa paggamit ng data ng Outline, at pati sa mga karaniwang tool gaya ng mga serbisyo ng analytics at mga istatistika ng server.
 
-**Anong data ang binibilang sa limitasyon sa data?**
-
+## Anong data ang binibilang sa limitasyon sa data?
  Kasama sa tally ang paglabas mula sa server ng bawat access key. Sa istriktong pakahulugan, ito ay ang data na ipinapadala sa ngalan ng key na mula sa server, at pati pabalik sa client. Sa aktwal na sitwasyon, dapat itong tumugma nang malapit sa trapikong ipinadala mula sa key patungo sa server at pabalik, kaya umaasa kaming tutugma ito sa bilang ng iyong mga user. Pinipili namin ang paglabas dahil iyon ang sinisingil ng mga cloud provider na na-survey namin.
 
-**Aabisuhan ba ang mga user kapag lumampas sila sa limitasyon sa data?**
-
+## Aabisuhan ba ang mga user kapag lumampas sila sa limitasyon sa data?
  Hindi sa ngayon. Maraming cloud provider ang nagsasama ng limitasyong 1TB para sa buong buwan, na puwedeng sumuporta sa 10 user sa 100 GB o 100 user sa 10 GB. Ito ay malalaking numero, at hindi namin inaasahan na maraming user ang makakaabot dito. Umaasa kaming makikipag-ugnayan ang mga user sa mga server manager kapag umabot sila sa kanilang limitasyon. Gayunpaman, pahahalagahan namin ang iyong opinyon tungkol sa kung paano puwedeng makatulong ang mga notification para sa iyong sitwasyon ng paggamit, at puwede kang makipag-ugnayan sa amin[dito](/about/feedback).
 
-**Aabisuhan ba ang mga user kung malapit na sila sa kanilang limitasyon sa data?**
-
+## Aabisuhan ba ang mga user kung malapit na sila sa kanilang limitasyon sa data?
  Ang dami ng bagong data na matatanggap ng isang user na malapit na sa kanyang limitasyon ay magbabago-bago araw-araw dahil nakabatay ito sa paggamit niya 30 araw ang nakalipas. Sa palagay namin, kaysa makatulong, mas malamang na makalito ang isang babala sa mga end user. Pahahalagahan namin ang iyong feedback sa ganitong gawi[rito](/about/feedback).
 
-**Puwede ko bang i-reset ang paggamit ng data ng isang user?**
-
+## Puwede ko bang i-reset ang paggamit ng data ng isang user?
  Hindi, palaging kasama sa limitasyon ng user ang paggamit ng data sa loob ng nakalipas na 30 araw. Gayunpaman, puwede mong taasan ang limitasyon sa data ng kanyang key o puwede kang gumawa ng bagong key para sa kanya.
 
-**Bakit biglang nawalan ng access ang ilan sa mga user ko noong na-enable ko ang mga limitasyon sa data?**
-
+## Bakit biglang nawalan ng access ang ilan sa mga user ko noong na-enable ko ang mga limitasyon sa data?
  Ang mga limitasyon sa data ay nakabatay sa paglilipat ng data ng mga user sa loob ng nakalipas na 30 araw, na nire-record naka-enable man o hindi ang mga limitasyon sa data. Posibleng nalampasan na ng mga naturang user ang limitasyon bago pa man ito ilapat. Tandaan ding ipinapatupad ang lahat ng limitasyon sa data, kahit kapag nagpapalit ng limitasyon sa data ng iisang key.
 
-**Puwede ba akong magtakda ng limitasyon sa buong server, gaya ng “1 TB kada 30 araw?”**
-
+## Puwede ba akong magtakda ng limitasyon sa buong server, gaya ng “1 TB kada 30 araw?”
  Hindi sa ngayon. Gusto pa naming malaman ang tungkol sa iyong sitwasyon ng paggamit[dito](/about/feedback).
 
-**Kung may default na limitasyon sa data at may limitasyon sa data sa isang partikular na key, aling limitasyon ang ipapatupad?**
-
+## Kung may default na limitasyon sa data at may limitasyon sa data sa isang partikular na key, aling limitasyon ang ipapatupad?
  Io-override ng limitasyon sa data ng partikular na key ang kahit na anong default na limitasyon sa data (kung mayroon) na itinakda mo.
 
-**Puwede ba akong magtakda ng limitasyon sa data para sa isang partikular na key nang walang nakatakdang default na limitasyon sa data?**
-
+## Puwede ba akong magtakda ng limitasyon sa data para sa isang partikular na key nang walang nakatakdang default na limitasyon sa data?
  Oo. Hindi mo kailangang magtakda ng default na limitasyon para makapagtakda ng limitasyon sa data sa isang key. Halimbawa, puwede kang magtakda ng limitasyon sa isang key na sa tingin mo ay puwedeng maibahagi nang malawakan para maprotektahan ang iyong sarili laban sa sobra-sobrang paglilipat ng data sa key na iyon.

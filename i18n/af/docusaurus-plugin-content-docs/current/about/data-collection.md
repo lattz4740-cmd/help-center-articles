@@ -7,8 +7,7 @@ Outline samel nie persoonlike inligting in nie, tensy jy intekening aanvaar om d
 
  As jy ’n rekening skep of by een aanmeld met ’n derdepartywolkdiensverskaffer deur Outline Manager, kry ons nie enige inligting, soos jou e-posadres, naam, faktureringinligting en betalingbesonderhede, wat jy aan jou derdepartywolkdiensverskaffer gee nie.
 
-****Inligting wat ons outomaties kry****
-
+## Inligting wat ons outomaties kry
  Ons samel twee soorte inligting outomaties in.
 
  1. Bediener-IP
@@ -32,8 +31,7 @@ Outline samel nie persoonlike inligting in nie, tensy jy intekening aanvaar om d
 
 Hierdie inligting word met HTTPS oorgedra na Sentry ([sentry.io](https://sentry.io/)), ’n derdepartyverskaffer van oopbronfoutnasporing. Sentry gebruik ’n verskeidenheid bedryfstandaardtegnologieë en -dienste om jou data teen ongemagtigde toegang, openbaarmaking, gebruik en verlies te beveilig. Indien jy enige vrae oor Sentry se beleide het, kan jy [https://sentry.io/security/](https://sentry.io/security/) en [https://sentry.io/privacy/](https://sentry.io/privacy/) besoek of [security@sentry.io](mailto:security@sentry.io) kontak. Alle Outline-data wat deur Sentry geberg word, word só beperk dat slegs lede van die Outline-span toegang daartoe het.
 
-****Inligting wat ons kry slegs wanneer jy intekening aanvaar****
-
+## Inligting wat ons kry slegs wanneer jy intekening aanvaar
  Wanneer jy intekening aanvaar, gee Outline die volgende inligting by die Outline-span aan.
 
  1. Gebruiksmaatstawwe

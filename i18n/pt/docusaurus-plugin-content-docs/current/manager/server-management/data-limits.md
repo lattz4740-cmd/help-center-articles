@@ -27,46 +27,35 @@ Para remover o limite de dados de uma chave de acesso, navegue para a caixa de d
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-****Perguntas frequentes sobre o limite de dados****
-
-****O que é um limite de dados adaptável de 30 dias?****
-
+## **Perguntas frequentes sobre o limite de dados**
+## **O que é um limite de dados adaptável de 30 dias?**
  Um limite de dados adaptável de 30 dias soma a utilização de cada chave ao longo dos últimos 30 dias e mantém a utilização da chave abaixo do limite durante o período em questão. Como efeito, a chave não pode ultrapassar o limite durante qualquer período de 30 dias, incluindo os meses de calendário de 30 dias ou menos. Na prática, isto significa que os dados disponíveis de cada utilizador aumentam a cada dia, conforme a quantidade usada 31 dias antes.
 
-**Porque é que o Outline usa limites adaptáveis?**
-
+## Porque é que o Outline usa limites adaptáveis?
  Os limites adaptáveis dão garantias para cada período de 30 dias, o que significa que são mais simples de configurar do que um limite recorrente (como um dia personalizável do mês) e oferecem garantias semelhantes. Também correspondem à visualização atual da utilização de dados do Outline, bem como a ferramentas comuns, como serviços de análise e estatísticas de servidores.
 
-**Quais são os dados contabilizados num limite de dados?**
-
+## Quais são os dados contabilizados num limite de dados?
  ~
 
  O cálculo inclui a saída de cada chave de acesso do servidor. Em rigor, isto corresponde aos dados enviados em nome da chave para fora do servidor e também de volta ao cliente. Na prática, este valor deve estar estritamente alinhado com o tráfego enviado da chave para o servidor e vice-versa, pelo que esperamos que corresponda aos registos dos seus utilizadores. Escolhemos a saída porque é o valor faturado pelos fornecedores de nuvem que analisámos.
 
-**Os utilizadores são notificados se esgotarem o limite?**
-
+## Os utilizadores são notificados se esgotarem o limite?
  De momento, não. Muitos fornecedores de nuvem incluem um limite, como 1 TB, para todo o mês, o que pode permitir ter 10 utilizadores a 100 GB ou 100 utilizadores a 10 GB. Estes números são bastante elevados e não esperamos que muitos utilizadores os atinjam. Esperamos que os utilizadores contactem os gestores dos servidores quando atingirem o limite. No entanto, agradecemos que partilhe informações sobre a forma como as notificações podem ajudar no seu exemplo de utilização. Pode contactar-nos [aqui](/about/feedback).
 
-**Os utilizadores são notificados caso se aproximem do respetivo limite de dados?**
-
+## Os utilizadores são notificados caso se aproximem do respetivo limite de dados?
  A quantidade de novos dados recebida por um utilizador que se aproxima do limite varia de dia para dia, uma vez que é baseada na utilização que fez 30 dias antes. Parece-nos que um aviso iria provavelmente confundir os utilizadores finais em vez de os ajudar. Agradecemos que nos envie o seu feedback sobre este comportamento [aqui](/about/feedback).
 
-**Posso repor a utilização de dados de um utilizador?**
-
+## Posso repor a utilização de dados de um utilizador?
  Não, o limite de um utilizador inclui sempre os últimos 30 dias de utilização de dados. No entanto, pode aumentar o limite de dados da respetiva chave ou criar uma nova chave.
 
-**Porque é que alguns dos meus utilizadores perderam o acesso assim que ativei os limites de dados?**
-
+## Porque é que alguns dos meus utilizadores perderam o acesso assim que ativei os limites de dados?
  Os limites de dados baseiam-se nos 30 dias anteriores de transferência de dados dos utilizadores, que são registados quer os limites de dados tenham ou não sido ativados. É possível que os utilizadores em questão já tivessem ultrapassado o limite antes de este ter sido implementado. Tenha também em atenção que todos os limites de dados são aplicados mesmo quando altera o limite de dados de uma única chave.
 
-**Posso definir um limite para todo o servidor, como "1 TB por cada 30 dias"?**
-
+## Posso definir um limite para todo o servidor, como "1 TB por cada 30 dias"?
  De momento, não é possível. Gostaríamos de saber mais sobre o seu exemplo de utilização [aqui](/about/feedback).
 
-**Se existir um limite de dados predefinido e um limite de dados para uma chave específica, qual é aplicado?**
-
+## Se existir um limite de dados predefinido e um limite de dados para uma chave específica, qual é aplicado?
  O limite de dados da chave específica substitui qualquer limite de dados que tenha predefinido.
 
-**Posso definir um limite de dados para uma chave específica sem ter um limite de dados predefinido?**
-
+## Posso definir um limite de dados para uma chave específica sem ter um limite de dados predefinido?
  Sim. Não é preciso ter um limite predefinido de modo a definir um limite de dados para uma chave. Por exemplo, pode definir um limite para uma chave que, na sua opinião, pode ser amplamente partilhada, de modo a proteger-se da transferência de dados excessiva através da chave em questão.

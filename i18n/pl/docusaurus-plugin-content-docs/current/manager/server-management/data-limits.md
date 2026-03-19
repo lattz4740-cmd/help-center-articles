@@ -27,44 +27,34 @@ Aby usunąć limit danych z klucza dostępu, przejdź do okna „Limit danych”
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-****Najczęstsze pytania dotyczące limitów danych****
-
-****Co to jest 30-dniowy limit danych?****
-
+## **Najczęstsze pytania dotyczące limitów danych**
+## **Co to jest 30-dniowy limit danych?**
  Funkcja 30-dniowego limitu danych będzie sumować użycie danych przez poszczególne klucze dostępu z ostatnich 30 dni i zagwarantuje nieprzekroczenie limitu w tym okresie. W efekcie klucz nie może przekroczyć limitu w żadnym okresie 30 dni, również w przypadku miesięcy kalendarzowych liczących 30 dni i mniej. Oznacza to, że dostępne dane poszczególnych użytkowników będą zwiększać się każdego dnia o ilość wykorzystaną 31 dni wcześniej.
 
 Dlaczego Outline używa limitów okresowych?
 
  Limity okresowe dają gwarancje na każde 30 dni, co oznacza, że są łatwiejsze do konfiguracji niż limit cykliczny (np. odnawiany określonego dnia miesiąca) przy jednoczesnym zapewnieniu podobnych gwarancji. Są one również zgodne z obecnym sposobem wyświetlania użycia danych Outline, a także często stosowanymi narzędziami, takimi jak usługi analityczne i statystyki serwera.
 
-**Jakie dane są wliczane do limitu danych?**
-
+## Jakie dane są wliczane do limitu danych?
  W rejestrze uwzględniony jest ruch wychodzący z serwera każdego klucza dostępu. Dokładniej rzecz biorąc, oznacza to dane wysłane w imieniu klucza zarówno z serwera, jak i z powrotem do klienta. W praktyce powinno to odpowiadać ruchowi wysyłanemu z klucza do serwera i z powrotem. Mamy więc nadzieję, że liczby te będą zgodne z ilością danych przesyłanych przez użytkowników. Wybraliśmy ruch wychodzący, ponieważ takie rozliczenie stosują dostawcy usług w chmurze, którzy wzięli udział w naszej ankiecie.
 
-**Czy użytkownicy będą powiadamiani o przekroczeniu limitu danych?**
-
+## Czy użytkownicy będą powiadamiani o przekroczeniu limitu danych?
  Obecnie nie. Wielu dostawców usług w chmurze określa limit, na przykład 1 TB na cały miesiąc, który może obsłużyć 10 użytkowników przy wykorzystaniu na poziomie 100 GB lub 100 użytkowników przy wykorzystaniu na poziomie 10 GB. Jest to bardzo dużo i nie spodziewamy się, by wielu użytkowników wykorzystało taką ilość danych. Mamy nadzieję, że po osiągnięciu limitu użytkownicy będą kontaktować się z menedżerami serwerów. Będziemy jednak wdzięczni za informacje, na ile powiadomienia mogą być pomocne w Twoim przypadku. Możesz się z nami skontaktować tutaj.
 
-**Czy użytkownicy będą powiadamiani, gdy zbliżą się do swojego limitu danych?**
-
+## Czy użytkownicy będą powiadamiani, gdy zbliżą się do swojego limitu danych?
  Ilość nowych danych otrzymanych przez użytkownika zbliżającego się do limitu będzie się różnić w poszczególnych dniach, ponieważ zależy od użycia danych sprzed 30 dni. Naszym zdaniem takie powiadomienia nie pomagałyby użytkownikom, a wręcz wprowadzałyby ich w błąd. Będziemy wdzięczni za Twoją opinię na ten temat. Możesz ją przekazać [tutaj](/about/feedback).
 
-**Czy mogę zresetować użycie danych użytkownika?**
-
+## Czy mogę zresetować użycie danych użytkownika?
  Nie, limit użytkownika zawsze obejmuje ostatnie 30 dni użycia danych. Możesz jednak podnieść użytkownikowi limit danych jego klucza lub utworzyć dla niego nowy klucz.
 
-**Dlaczego część moich użytkowników utraciła dostęp po włączeniu przeze mnie limitów danych?**
-
+## Dlaczego część moich użytkowników utraciła dostęp po włączeniu przeze mnie limitów danych?
  Limity danych są oparte na transferze danych użytkowników z poprzednich 30 dni, który jest rejestrowany niezależnie od tego, czy limity danych zostały włączone, czy nie. Możliwe, że użytkownicy, o których mowa, przekroczyli limit jeszcze przed jego wprowadzeniem. Należy również pamiętać, że wszystkie limity danych są egzekwowane nawet podczas zmiany limitu danych pojedynczego klucza.
 
-**Czy mogę ustawić limit obejmujący cały serwer, np. „1 TB na 30 dni”?**
-
+## Czy mogę ustawić limit obejmujący cały serwer, np. „1 TB na 30 dni”?
  Obecnie nie. Chętnie dowiemy się więcej o Twoim przypadku użycia danych [tutaj](/about/feedback).
 
-**Jeśli jest ustawiony domyślny limit danych, a także limit danych na konkretnym kluczu, to który z nich będzie egzekwowany?**
-
+## Jeśli jest ustawiony domyślny limit danych, a także limit danych na konkretnym kluczu, to który z nich będzie egzekwowany?
  Limit danych określonego klucza zastąpi domyślny limit danych (jeśli taki został ustawiony).
 
-**Czy mogę określić limit danych dla konkretnego klucza, nie mając ustawionego domyślnego limitu danych?**
-
+## Czy mogę określić limit danych dla konkretnego klucza, nie mając ustawionego domyślnego limitu danych?
  Tak. Nie musisz mieć zdefiniowanego domyślnego limitu, aby ustawić limit danych na jednym kluczu. Możesz na przykład ustawić limit na jeden klucz, który Twoim zdaniem może być często udostępniany, aby zabezpieczyć się przed nadmiernym transferem danych przez ten klucz.

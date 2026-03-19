@@ -7,8 +7,7 @@ Outline nevāc personas informāciju, ja vien jūs nepiekrītat tās sniegšanai
 
  Ja izveidojat kontu trešās puses mākoņpakalpojumu sniedzēja platformā, izmantojot lietotni Outline pārvaldnieks, vai piesakāties šādā kontā, mēs neiegūstam nekādu informāciju, ko sniedzat trešās puses mākoņpakalpojumu sniedzējam, piemēram, jūsu e-pasta adresi, vārdu, norēķinu informāciju vai maksājumu informāciju.
 
-****Informācija, ko mēs iegūstam automātiski****
-
+## Informācija, ko mēs iegūstam automātiski
  Mēs automātiski vācam divējādu informāciju.
 
  1. Servera IP adrese
@@ -32,8 +31,7 @@ Outline nevāc personas informāciju, ja vien jūs nepiekrītat tās sniegšanai
 
 Šī informācija, izmantojot HTTPS, tiek pārsūtīta uzņēmumam Sentry ([sentry.io](https://sentry.io/)), kas ir trešās puses atvērtā pirmkoda kļūdu izsekošanas nodrošinātājs. Sentry izmanto dažādas nozares standarta tehnoloģijas un pakalpojumus, lai pasargātu jūsu datus no nesankcionētas piekļuves, izpaušanas, izmantošanas vai zaudēšanas. Ja jums rodas kādi jautājumi par uzņēmuma Sentry politikām, lūdzu, apmeklējiet vietni [https://sentry.io/security/](https://sentry.io/security/) un[https://sentry.io/privacy/](https://sentry.io/privacy/) vai sazinieties, izmantojot e-pasta adresi [security@sentry.io](mailto:security@sentry.io). Piekļuve visiem Outline datiem, ko glabā uzņēmums Sentry, ir ierobežota — tiem var piekļūt tikai Outline komanda.
 
-****Informācija, ko iegūstam tikai pēc pieprasījuma****
-
+## Informācija, ko iegūstam tikai pēc pieprasījuma
  Tālāk ir norādīta informācija, ko Outline pēc pieprasījuma ziņo Outline komandai.
 
  1. Lietojuma metrika

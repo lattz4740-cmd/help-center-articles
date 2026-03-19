@@ -44,10 +44,8 @@ Nëse mund të lidhesh ndërkohë që je në rrjetin tjetër, atëherë ky ësht
 
 Kontakto me menaxherin e shërbimit dhe kërkoji të lejojë qasjen në serverin tënd të Outline ose vazhdo të përdorësh rrjetin tjetër më mirë.
 
-**Problemet me murin mbrojtës ose softuerin antivirus:**
-
-**Si ta testosh:**
-
+## Problemet me murin mbrojtës ose softuerin antivirus:
+## Si ta testosh:
  Provo të lidhesh me Outline nga një pajisje tjetër.
 
 Shënim. Mos harro se do të të duhet një çelës qasjeje dhe aplikacioni Outline për ta përdorur Outline në një pajisje tjetër.

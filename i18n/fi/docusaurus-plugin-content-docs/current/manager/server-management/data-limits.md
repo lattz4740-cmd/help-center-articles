@@ -27,44 +27,33 @@ Voit poistaa pääsyavaimen datarajan siirtymällä avaimen Dataraja-valintaikku
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-****Usein kysyttyä datarajoista****
-
-****Mikä on 30 päivän palautuva dataraja?****
-
+## **Usein kysyttyä datarajoista**
+## **Mikä on 30 päivän palautuva dataraja?**
  30 päivän palautuva dataraja laskee datan käytön kunkin pääsyavaimen osalta 30 päivän ajalta. Datan käyttö pääsyavaimella ei voi ylittää rajaa kyseisellä ajanjaksolla. Tämä tarkoittaa sitä, että datan käyttö pääsyavaimella ei voi ylittää rajoitusta 30-päiväisten tai sitä lyhyempien kalenterikuukausien eikä minkään muun 30 päivän jakson aikana. Käytännössä tämä tarkoittaa sitä, että käyttäjän datarajaan päivittäin vapautuva määrä vastaa 31 päivää aiemmin käytetyn datan määrää.
 
-**Miksi Outline käyttää palautuvia rajoja?**
-
+## Miksi Outline käyttää palautuvia rajoja?
  Palautuva raja takaa datan enimmäiskäytön minkä tahansa 30 päivän jakson aikana. Tämä tarkoittaa, että se on helpompi määrittää kuin toistuva rajoitus (esimerkiksi vapaavalintainen päivä kuukaudessa) mutta dataa on silti käytettävissä samankaltainen määrä. Lisäksi palautuva dataraja vastaa nykyistä Outline-datan käytön esitystapaa sekä analytiikkapalveluita, palvelintilastoja ja muita yleisiä työkaluja.
 
-**Millainen data lasketaan mukaan datarajaan?**
-
+## Millainen data lasketaan mukaan datarajaan?
  Kullakin pääsyavaimella palvelimelta lähetetty data sisältyy laskelmaan. Tällä tarkoitetaan dataa, joka lähetetään palvelimelta pääsyavaimen pyynnöstä, sekä takaisin asiakassovellukselle lähetettyä dataa. Tämän pitäisi käytännössä olla lähes yhtä suuri kuin pääsyavaimelta palvelimelle ja takaisin lähetetyn datan määrä, joten toivomme, että laskelmat vastaavat käyttäjiesi odotuksia. Laskelmamme perustuvat lähetettyyn dataan, koska kyselyihimme vastanneet pilvipalveluntarjoajat laskuttavat sen mukaan.
 
-**Ilmoitetaanko käyttäjille datarajan ylittymisestä?**
-
+## Ilmoitetaanko käyttäjille datarajan ylittymisestä?
  Ei tällä hetkellä. Monien pilvipalveluntarjoajien raja on esimerkiksi 1 Tt kuukaudessa, mikä vastaa esim. 100 Gt:n käyttöä 10 käyttäjältä tai 10 Gt:n käyttöä 100 käyttäjältä. Luvut ovat suurehkoja ja pidämme niiden ylittymistä melko epätodennäköisenä. Toivomme, että datarajan saavuttaneet käyttäjät ottavat yhteyttä palvelimensa ylläpitäjään. Olisimme kuitenkin kiitollisia, jos voisit kertoa, miten ilmoituksista olisi hyötyä omassa käyttötapauksessasi. Voit ottaa meihin yhteyttä [täällä](/about/feedback).
 
-**Ilmoitetaanko käyttäjille datarajan saavuttamisesta?**
-
+## Ilmoitetaanko käyttäjille datarajan saavuttamisesta?
  Käyttäjille palautuvan uuden datan määrä vaihtelee päivittäin, koska määrä perustuu 30 päivän takaiseen datan käyttöön. Mielestämme ilmoitukset saattaisivat pikemminkin hämmentää loppukäyttäjiä tällaisissa tapauksissa. Pyydämme antamaan palautetta tällaisesta toimintamallista [täällä](/about/feedback).
 
-**Voinko nollata käyttäjän datan käytön?**
-
+## Voinko nollata käyttäjän datan käytön?
  Et voi. Käyttäjän raja sisältää aina datan käytön kuluneiden 30 päivän ajalta. Voit kuitenkin nostaa avaimen datarajaa tai luoda käyttäjälle uuden avaimen.
 
-**Otin datarajat käyttöön. Miksi osalla käyttäjistä ei enää ole pääsyoikeutta?**
-
+## Otin datarajat käyttöön. Miksi osalla käyttäjistä ei enää ole pääsyoikeutta?
  Datarajat perustuvat käyttäjien datan käyttöön kuluneiden 30 päivän ajalta. Datankäyttö kirjataan, olivatpa datarajat otettu käyttöön tai ei. On mahdollista, että kyseiset käyttäjät ovat ylittäneet rajansa jo ennen toiminnon käyttöönottoa. Huomaathan myös, että kaikki datarajat ovat pakotettuja, vaikka muuttaisit vain yksittäisen avaimen datarajaa.
 
-**Voinko asettaa koko palvelinta koskevan rajan, esim. "1 Tt 30 päivän aikana"?**
-
+## Voinko asettaa koko palvelinta koskevan rajan, esim. "1 Tt 30 päivän aikana"?
  Et tällä hetkellä. Pyydämme sinua kertomaan omasta käyttötapauksestasi [täällä](/about/feedback).
 
-**Jos käytössä on oletusdataraja tai tietyllä avaimella on oma dataraja, kumpi pakotetaan käyttöön?**
-
+## Jos käytössä on oletusdataraja tai tietyllä avaimella on oma dataraja, kumpi pakotetaan käyttöön?
  Tietyn avaimen dataraja ohittaa kaikki asettamasi oletusdatarajat.
 
-**Voinko asettaa datarajan tietylle avaimelle määrittämättä oletusdatarajaa?**
-
+## Voinko asettaa datarajan tietylle avaimelle määrittämättä oletusdatarajaa?
  Kyllä. Datarajan asettaminen tietylle avaimelle ei edellytä oletusdatarajan määrittämistä. Voit esimerkiksi asettaa rajan tietylle avaimelle, jonka olet jakanut useille käyttäjille. Näin voit estää liiallisen datankäytön kyseisen avaimen kautta.

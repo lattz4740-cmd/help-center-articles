@@ -7,8 +7,7 @@ In Outline werden personenbezogene Daten nur mit Ihrer Zustimmung erhoben. Es wi
 
  Wenn Sie sich über Outline-Manager in einem Konto bei einem Cloud-Drittanbieter anmelden oder wenn Sie darüber ein neues Konto bei diesem erstellen, erhalten wir keine der übertragenen Informationen wie E‑Mail-Adresse, Name oder Zahlungsinformationen und ‑details.
 
-****Informationen, die wir automatisch erhalten****
-
+## Informationen, die wir automatisch erhalten
  Es gibt zwei Arten von Informationen, die wir automatisch erheben.
 
  1. Server-IP-Adresse
@@ -32,8 +31,7 @@ Die IP-Adresse des Outline-Servers wird von [Quay.io](https://quay.io/) erhoben 
 
 Diese Informationen werden über HTTPS an Sentry ([sentry.io](https://sentry.io/)) übertragen, einen Open-Source-Drittanbieter für die Nachverfolgung von Fehlern. Dort sind Ihre Daten durch eine Vielzahl von branchenüblichen Technologien und Diensten vor unbefugtem Zugriff, Offenlegung, unbefugter Nutzung und Verlust geschützt. Informationen zu den Richtlinien von Sentry finden Sie unter [https://sentry.io/security/](https://sentry.io/security/) und [https://sentry.io/privacy/](https://sentry.io/privacy/). Wenn Sie Fragen haben, können Sie auch eine E‑Mail an [security@sentry.io](mailto:security@sentry.io) senden. Zugriff auf die von Sentry gespeicherten Outline-Daten hat nur das Outline-Team.
 
-****Informationen, die wir nur mit Ihrer Zustimmung erhalten****
-
+## Informationen, die wir nur mit Ihrer Zustimmung erhalten
 Nachdem Sie Ihre Zustimmung erteilt haben, werden über Outline folgende Informationen an das Outline-Team gesendet.
 
  1. Nutzungsmesswerte

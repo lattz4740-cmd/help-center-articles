@@ -3,8 +3,7 @@ title: "Az Outline-szerver beállítására vonatkozó GYIK"
 sidebar_label: "Az Outline-szerver beállítására vonatkozó GYIK"
 ---
 
-**Használhatom az Outline-t szerver nélkül?**
-
+## Használhatom az Outline-t szerver nélkül?
  Sajnos nem. Az Outline szoftvernek hozzá kell férnie egy szerverhez, amelyet kezelhet Ön, a szervezete vagy egy megbízható harmadik fél.
 
 ## Mennyi időbe telik beállítani egy Outline-szervert?

@@ -3,8 +3,7 @@ title: FAQ penyiapan server Outline
 sidebar_label: FAQ penyiapan server Outline
 ---
 
-**Dapatkah saya menggunakan Outline tanpa server?**
-
+## Dapatkah saya menggunakan Outline tanpa server?
  Sayangnya, tidak. Software Outline memerlukan akses ke server, baik yang dikelola oleh Anda, organisasi Anda, atau pihak ketiga yang tepercaya.
 
 ## Berapa lama waktu yang dibutuhkan untuk menyiapkan server Outline?

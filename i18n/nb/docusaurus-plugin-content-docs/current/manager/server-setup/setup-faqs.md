@@ -3,8 +3,7 @@ title: "Vanlige spørsmål om konfigurering av Outline-tjenere"
 sidebar_label: "Vanlige spørsmål om konfigurering av Outline-tjenere"
 ---
 
-**Kan jeg bruke Outline uten tjener?**
-
+## Kan jeg bruke Outline uten tjener?
  Nei, dessverre. Outline-programvaren krever tilgang til en tjener, enten den administreres av deg, organisasjonen din eller en pålitelig tredjepart.
 
 ## Hvor lang tid tar det å konfigurere en Outline-tjener?

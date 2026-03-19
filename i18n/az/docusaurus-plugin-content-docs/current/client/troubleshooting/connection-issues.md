@@ -44,10 +44,8 @@ Başqa şəbəkədə olarkən qoşula bilirsinizsə, o zaman bu sizinlə bağlı
 
 Xidmət administratoru ilə əlaqə saxlayaraq Outline serverinizə giriş icazəsi verməsi üçün sorğu göndərin və ya əvəzində digər şəbəkədən istifadə etməyə davam edin.
 
-**Qoruyucu divar və ya antivirus proqram təminatı ilə bağlı problemlər:**
-
-**Test etmək qaydası:**
-
+## Qoruyucu divar və ya antivirus proqram təminatı ilə bağlı problemlər:
+## Test etmək qaydası:
  Başqa cihazdan Outline serverinə qoşulmağı sınayın.
 
 Qeyd: Başqa cihazda Outline istifadə etmək üçün giriş açarı və Outline tətbiqiniz olmalıdır.

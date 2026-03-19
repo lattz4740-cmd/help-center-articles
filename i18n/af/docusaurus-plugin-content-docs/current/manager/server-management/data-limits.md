@@ -27,44 +27,33 @@ Om die datalimiet van ’n toegangsleutel te verwyder, moet jy soos vantevore na
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-****Gereelde vrae oor datalimiete****
-
-****Wat is ’n 30-dag- slepende limiet?****
-
+## **Gereelde vrae oor datalimiete**
+## **Wat is ’n 30-dag- slepende limiet?**
  ’n 30-dag- slepende datalimiet sal elke sleutel se gebruik oor die afgelope 30 dae bymekaar tel en die sleutel se gebruik oor daardie tydperk onder die limiet hou. Die uitwerking is dat die sleutel nie oor die limiet kan gaan tydens enige tydperk van 30 dae nie, insluitend kalendermaande van 30 dae of minder. Dit beteken dat elke gebruiker se beskikbare data elke dag sal vermeerder met die hoeveelheid wat hulle 31 dae gelede gebruik het.
 
-**Hoekom gebruik Outline slepende limiete?**
-
+## Hoekom gebruik Outline slepende limiete?
  Slepende limiete bied waarborge oor elke tydperk van 30 dae, wat beteken dat dit makliker is om op te stel as ’ herhalende limiet (soos ’n pasmaakbare dag van die maand) terwyl hulle soortgelyke waarborge gee. Die limiete stem ook ooreen met die bestaande vertoning van Outline-datagebruik, sowel as met algemene nutsgoed soos ontledingsdienste en bedienerstatistiek.
 
-**Watter data word in ’n datalimiet getel?**
-
+## Watter data word in ’n datalimiet getel?
  Elke toegangsleutel se uitvloei vanaf die bediener vorm deel van die totaal. Streng gesproke verwys dit na data wat vanaf die bediener gestuur word namens die sleutel, asook terug na die kliënt. In die praktyk behoort dit in lyn te wees met die verkeer wat van die sleutel na die bediener en terug gestuur word; dus hoop ons dit sal ooreenstem met jou gebruikers se berekeninge. Ons het uitvloei gekies aangesien dit is waarvolgens die wolkdiensverskaffers wat ons ondersoek het, faktureer.
 
-**Sal gebruikers in kennis gestel word as hulle hul datalimiet oorskry?**
-
+## Sal gebruikers in kennis gestel word as hulle hul datalimiet oorskry?
  Nie op die oomblik nie. Baie wolkdiensverskaffers sluit ’n limiet in soos 1 TB vir die volle maand, wat 10 gebruikers teen 100 GB of 100 gebruikers teen 10 GB kan steun. Dit is redelike hoë hoeveelhede en ons verwag nie dat baie gebruikers daarby sal uitkom nie. Ons hoop dat gebruikers hul bedienerbestuurders sal kontak wanneer hulle hul limiete bereik. Ons sal egter jou insig waardeer oor hoe kennisgewings vir jou gebruikgeval kan help en jy kan ons [hier](/about/feedback) kontak.
 
-**Sal gebruikers in kennis gestel word as hulle hul datalimiet nader?**
-
+## Sal gebruikers in kennis gestel word as hulle hul datalimiet nader?
  Die hoeveelheid nuwe data wat ’n gebruiker sal ontvang soos hulle nader aan hul limiet kom, sal van dag tot dag verander omdat dit gegrond is op hul gebruik van 30 dae gelede. Ons meen dat ’n waarskuwing eindgebruikers eerder sal verwar as wat dit hulle sal help. Ons sal jou terugvoer oor hierdie gedrag[hier](/about/feedback) waardeer.
 
-**Kan ek ’n gebruiker se datagebruik terugstel?**
-
+## Kan ek ’n gebruiker se datagebruik terugstel?
  Nee, ’n gebruiker se limiet sluit altyd die afgelope 30 dae se gebruik in. Jy kan egter hul sleutel se datalimiet verhoog of vir hulle ’n nuwe sleutel skep.
 
-**Hoekom het sommige van my gebruikers toegang verloor die oomblik toe ek datalimiete geaktiveer het?**
-
+## Hoekom het sommige van my gebruikers toegang verloor die oomblik toe ek datalimiete geaktiveer het?
  Datalimiete is gegrond op gebruikers se dataoordrag van die afgelope 30 dae, wat aangeteken word ongeag of datalimiete geaktiveer is of nie. Dit is moontlik dat die betrokke gebruikers reeds die limiet oorskry het voordat dit opgestel is. Neem ook kennis dat alle datalimiete afgedwing word, selfs wanneer ’n enkele sleutel se datalimiet verander word.
 
-**Kan ek ’n bedienerwye datalimiet stel, soos “1 TB vir 30 dae”?**
-
+## Kan ek ’n bedienerwye datalimiet stel, soos “1 TB vir 30 dae”?
  Nie op die oomblik nie. Ons wil graag[hier](/about/feedback) meer hoor oor jou gebruikgeval hoor.
 
-**Watter limiet word afgedwing as daar ’n verstekdatalimiet én ’n datalimiet op ’n spesifieke sleutel is?**
-
+## Watter limiet word afgedwing as daar ’n verstekdatalimiet én ’n datalimiet op ’n spesifieke sleutel is?
  Die spesifieke sleutel se datalimiet sal enige verstekdatalimiet wat jy gestel het (indien enige) ter syde stel.
 
-**Kan ek ’n datalimiet vir ’n spesifieke sleutel stel sonder dat ek ’n verstekdatalimiet gestel het?**
-
+## Kan ek ’n datalimiet vir ’n spesifieke sleutel stel sonder dat ek ’n verstekdatalimiet gestel het?
  Ja. Jy hoef nie ’n gedefinieerde verstekdatalimiet te hê om ’n datalimiet vir een sleutel te stel nie. Jy kan byvoorbeeld ’n limiet stel vir een sleutel wat jy dink wyd gebruik sal word om jouself te beskerm teen oormatige dataoordrag deur daardie sleutel.

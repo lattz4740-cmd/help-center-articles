@@ -3,8 +3,7 @@ title: Perguntas frequentes sobre a configuração do servidor do Outline
 sidebar_label: Perguntas frequentes sobre a configuração do servidor do Outline
 ---
 
-**Posso usar o Outline sem um servidor?**
-
+## Posso usar o Outline sem um servidor?
  Infelizmente, não. O software do Outline requer acesso a um servidor, que tanto pode ser gerido por si, pela sua organização ou por uma entidade terceira fidedigna.
 
 ## Quanto tempo demora a configurar um servidor do Outline?

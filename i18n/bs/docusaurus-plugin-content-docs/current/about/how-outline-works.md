@@ -3,8 +3,7 @@ title: Kako Outline funkcionira
 sidebar_label: Kako Outline funkcionira
 ---
 
-**Instalacija servera**
-
+## Instalacija servera
  ​Iako se instalacija Outlinea čini jednostavnom, zapravo postoji složen skup koraka koji se izvršavaju u pozadini i omogućavaju instalaciju servera. Prilikom svake instalacije Outlinea instalacijska skripta izvršava sljedeće korake:
 
 - Stabilna verzija slike Shadowboxa se preuzima i uvozi pomoću Dockera. Slika se hostira na [Quay.io](https://quay.io/), na [https://quay.io/repository/outline/shadowbox?tab=tags](https://quay.io/repository/outline/shadowbox?tab=tags). Ta slika sadržava Outline server i Management API koje će kasnije koristiti aplikacija Outline Server Management za kreiranje i uklanjanje pristupnih ključeva, uključivanje/isključivanje izvještavanja o anonimnim pokazateljima itd.
@@ -14,8 +13,7 @@ sidebar_label: Kako Outline funkcionira
 
 Prilikom instalacije Outlinea nije potrebna nikakva konfiguracija nakon instalacije.
 
-**Sigurnost servera**
-
+## Sigurnost servera
  Outline je softver otvorenog koda, što znači da svako može vidjeti kôd i poboljšati ga ako uoči neke propuste. Naš kôd se hostira na [GitHubu](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline).
 
  Osim toga, svi instalirani Outline serveri se automatski ažuriraju kad god se objavi nova verzija, čime se osigurava da nijedan Outline server ne ostane sa starim verzijama softvera.
@@ -24,10 +22,8 @@ Prilikom instalacije Outlinea nije potrebna nikakva konfiguracija nakon instalac
 
  Osim toga, Outline server ne pohranjuje nikakve zapisnike, tako da se podaci korisnika neće otkriti ni u slučaju da bude ugrožen. Saznajte više [ovdje](/about/security-and-privacy). Reviziju Outlinea su izvršili [Radically Open Security](https://radicallyopensecurity.com/) i [Cure53](https://cure53.de/) 2018. godine. Pogledajte izvještaje [ovdje](/about/security-and-privacy).
 
-**Rukovanje UDP saobraćajem**
-
+## Rukovanje UDP saobraćajem
  Outline može raditi kao VPN na čitavom sistemu, što znači da se sav UDP saobraćaj tunelira putem Outline servera.
 
-**DNS saobraćaj**
-
+## DNS saobraćaj
 Outline izvršava sva DNS pretraživanja putem Outline servera i štiti ih korištenjem istog šifriranja koje se koristi za svu drugu aktivnost na mreži. Vaši DNS upiti će prolaziti putem Outline servera do Dyn Internet Guidea, OpenDNS-a, Cloudflare DNS-a ili Quad9 DNS-a. Outline nikada ne zapisuje vaša DNS pretraživanja.

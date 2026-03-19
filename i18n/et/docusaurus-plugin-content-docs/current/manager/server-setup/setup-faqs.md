@@ -3,8 +3,7 @@ title: "Outline'i serveri seadistamise KKK-d"
 sidebar_label: "Outline'i serveri seadistamise KKK-d"
 ---
 
-**Kas Outline'i saab kasutada ilma serverita?**
-
+## Kas Outline'i saab kasutada ilma serverita?
  Kahjuks mitte. Outline'i tarkvara nõuab juurdepääsu serverile. See võib olla teie, teie organisatsiooni või usaldusväärse kolmanda osapoole hallatav server.
 
 ## Kui kaua Outline'i serveri seadistamiseks aega kulub?

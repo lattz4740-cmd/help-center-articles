@@ -253,6 +253,22 @@ def extract_heading_anchors(md_text: str) -> list[str]:
     return anchors
 
 
+def extract_heading_levels(md_text: str) -> list[int]:
+    """Extract the sequence of heading levels (e.g. [2, 2, 3, 2]) from markdown."""
+    levels = []
+    for m in re.finditer(r'^(#{1,6})\s+', md_text, re.MULTILINE):
+        levels.append(len(m.group(1)))
+    return levels
+
+
+def extract_bold_only_lines(md_text: str) -> list[str]:
+    """Extract standalone bold-only lines that may be misformatted headings."""
+    results = []
+    for m in re.finditer(r'^(\*{2,4})(.+?)\1\s*$', md_text, re.MULTILINE):
+        results.append(m.group(2).strip())
+    return results
+
+
 class Issue:
     """A verification issue."""
     def __init__(self, locale: str, doc_path: str, category: str, message: str):
@@ -369,6 +385,28 @@ def verify_locale(locale: str, english_paths: set[str]) -> list[Issue]:
             issues.append(Issue(
                 locale, doc_path, "HEADINGS",
                 f"Extra heading anchors: {sorted(extra_anchors)}"
+            ))
+
+        # Heading level structure: translations should have the same
+        # sequence of heading levels as English
+        en_levels = extract_heading_levels(en_text)
+        tr_levels = extract_heading_levels(tr_text)
+        if en_levels != tr_levels:
+            issues.append(Issue(
+                locale, doc_path, "HEADING_STRUCTURE",
+                f"Heading levels differ: English={en_levels}, "
+                f"translation={tr_levels}"
+            ))
+
+        # Bold-only lines that should be headings: translations should not
+        # have standalone **bold** lines if English doesn't
+        en_bolds = extract_bold_only_lines(en_text)
+        tr_bolds = extract_bold_only_lines(tr_text)
+        if tr_bolds and not en_bolds:
+            issues.append(Issue(
+                locale, doc_path, "BOLD_AS_HEADING",
+                f"Translation has {len(tr_bolds)} bold-only line(s) that "
+                f"may be misformatted headings: {[b[:40] for b in tr_bolds[:3]]}"
             ))
 
         # Content parity

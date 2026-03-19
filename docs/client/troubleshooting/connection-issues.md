@@ -46,8 +46,7 @@ Contact the service manager and request them to allow access to your Outline ser
 
 ## Firewall or antivirus software issues: {#SoftwareIssues}
 
-**How to test:**
-
+## How to test:
  Try connecting to Outline from another device.
 
 Note: Remember that you’ll need an access key and the Outline app to use Outline on another device.

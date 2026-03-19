@@ -7,8 +7,7 @@ Outline nuk mbledh informacione personale përveçse nëse zgjedh t'i japësh at
 
  Nëse krijon ose identifikohesh në një llogari me një ofrues palë të tretë të shërbimit të resë kompjuterike nëpërmjet Outline Manager, ne nuk i marrim informacionet që ti i jep ofruesit të shërbimit të resë kompjuterike, si p.sh. adresën e email-it, emrin tënd, informacionet e faturimit dhe detajet e pagesës.
 
-****Informacionet që marrim automatikisht****
-
+## Informacionet që marrim automatikisht
  Ne mbledhim automatikisht dy lloje informacionesh.
 
  1. Adresën IP të serverit
@@ -32,8 +31,7 @@ Outline nuk mbledh informacione personale përveçse nëse zgjedh t'i japësh at
 
 Këto informacione transferohen nëpërmjet HTTPS-së te Sentry ([sentry.io](https://sentry.io/)), një ofrues palë e tretë me burim të hapur për monitorimin e gabimeve. Sentry përdor një larmi shërbimesh dhe teknologjish standarde të kësaj industrie për të siguruar të dhënat e tua nga qasja e paautorizuar, zbulimi, përdorimi dhe humbja. Nëse ke ndonjë pyetje në lidhje me politikat e Sentry, vizito [https://sentry.io/security/](https://sentry.io/security/) dhe [https://sentry.io/privacy/](https://sentry.io/privacy/) ose kontakto me [security@sentry.io](mailto:security@sentry.io). Të gjitha të dhënat e Outline të ruajtura nga Sentry janë të kufizuara në mënyrë të tillë që vetëm anëtarët e ekipit të Outline mund të kenë qasje në to.
 
-****Informacionet që marrim vetëm pas zgjedhjes sate****
-
+## Informacionet që marrim vetëm pas zgjedhjes sate
  Outline i raporton informacionet e mëposhtme tek ekipi i Outline pas zgjedhjes sate.
 
  1. Metrikat e përdorimit

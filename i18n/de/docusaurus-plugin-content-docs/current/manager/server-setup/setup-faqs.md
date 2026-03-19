@@ -3,8 +3,7 @@ title: "Häufig gestellte Fragen zur Einrichtung des Outline-Servers"
 sidebar_label: "Häufig gestellte Fragen zur Einrichtung des Outline-Servers"
 ---
 
-**Kann ich Outline auch ohne Server nutzen?**
-
+## Kann ich Outline auch ohne Server nutzen?
  Nein. Für Outline benötigen Sie Zugriff auf einen Server, der von Ihnen, von Ihrer Organisation oder von einem vertrauenswürdigen Drittanbieter verwaltet wird.
 
 ## Wie lange dauert es, einen Outline-Server einzurichten?

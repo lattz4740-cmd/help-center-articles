@@ -11,8 +11,7 @@ Esse problema pode ter alguns motivos:
 - **Pode ser necessário alterar as**[**configurações do smartphone.**](#DeviceSettings)**.**
 - **O gerente de serviço pode ter**[**destruído o servidor ou o ISP pode estar bloqueando sua solicitação**](#ServerIssues)**.**
 
-**Problemas de conexão de Internet:**
-
+## Problemas de conexão de Internet:
 ## Como testar: {#Internetissues}
 Desative o Outline e verifique se a conexão com a Internet foi restaurada.
 
@@ -29,8 +28,7 @@ Restaure a conexão do dispositivo seguindo estas etapas:
    2. Reinicie o dispositivo.
    3. Desligue, aguarde dois minutos e ligue o dispositivo de novo.
 
-**AProblemas no firewall da rede:**
-
+## AProblemas no firewall da rede:
 ## Como testar:
 
 1. Saia da rede Wi-Fi ou com fio.
@@ -42,8 +40,7 @@ Se você consegue se conectar enquanto está na outra rede, o problema está aqu
 ## O que corrigir: {#FirewallIssues}
 Entre em contato com o gerenciador de serviço e solicite acesso ao servidor do Outline ou continue usando a outra rede.
 
-**Problemas no software do antivírus ou firewall:**
-
+## Problemas no software do antivírus ou firewall:
 ## Como testar:
 
 Use outro dispositivo para acessar o Outline.
@@ -54,8 +51,7 @@ Observação: você precisa de uma chave de acesso e do app Outline para usar es
 
 Verifique as configurações do software de firewall ou antivírus e descubra se elas permitem o tráfego da VPN e do Outline.
 
-**Configurações do dispositivo:**
-
+## Configurações do dispositivo:
 ## Itens a serem verificados: {#SoftwareIssues}
 Para Android:
 
@@ -69,8 +65,7 @@ No dispositivo Android, acesse Configurações > Apps > Acesso especial para app
 
 Para iOS: leia [este artigo de suporte](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
-**Problemas do servidor:**
-
+## Problemas do servidor:
 ## Como testar:
 
 ## Se você tiver acesso a mais de um servidor, tente se conectar ao outro. {#ServerIssues}

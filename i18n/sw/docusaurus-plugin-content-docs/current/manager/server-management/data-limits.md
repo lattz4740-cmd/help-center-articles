@@ -27,44 +27,33 @@ Ili uondoe kikomo cha data kwenye ufunguo, nenda kwenye kidirisha cha Kikomo cha
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-****Maswali Yanayoulizwa Sana kuhusu Vikomo vya Data****
-
-****Kikomo cha data cha siku 30 zilizopita ni nini?****
-
+## **Maswali Yanayoulizwa Sana kuhusu Vikomo vya Data**
+## **Kikomo cha data cha siku 30 zilizopita ni nini?**
  Kikomo cha data cha siku 30 zilizopita hujumlisha matumizi ya kila ufunguo katika kipindi cha siku 30 zilizopita na kuhakikisha kuwa matumizi ya ufunguo katika kipindi hicho yanasalia chini ya kikomo. Matokeo ni kwamba ufunguo huo hauwezi kuzidi kikomo katika kipindi chochote cha siku 30, ikiwa ni pamoja na miezi ya kalenda isiyozidi siku 30. Kutokana na hali hiyo, inamaanisha kuwa data iliyopo ya kila mtumiaji itaongezeka kila siku kwa kiasi alichotumia siku 31 zilizopita.
 
-**Kwa nini Outline hutumia vikomo vya matumizi ya ufunguo?**
-
+## Kwa nini Outline hutumia vikomo vya matumizi ya ufunguo?
  Vikomo vya matumizi ya funguo vya kipindi kilichopita hutoa hakikisho kwa kila kipindi cha siku 30, kwa hivyo ni rahisi zaidi kuviweka kuliko kikomo kinachojirudia (kama vile siku ya mwezi unayoweza kubadilisha upendavyo) huku vikikupa hakikisho sawa. Pia vinalingana na onyesho lililopo la matumizi ya data kwenye Outline, pamoja na nyenzo za kawaida kama vile huduma za takwimu na takwimu za seva.
 
-**Je, ni data ipi inayohesabiwa kwenye kikomo cha data?**
-
+## Je, ni data ipi inayohesabiwa kwenye kikomo cha data?
  Data ya kila ufunguo inayotoka kwenye seva hujumuishwa kwenye hesabu. Kwa hakika, hii inamaanisha data inayotumwa kwa niaba ya ufunguo nje ya seva na pia inayorejeshwa kwenye programu teja. Katika hali halisi, data hii inapaswa kuambatana kwa ukaribu na data inayotumwa kutoka kwenye ufunguo kwenda kwenye seva na kinyume chake, kwa hivyo tunatumai italingana na hesabu za watumiaji wako. Tulichagua data inayotoka kwa sababu hiyo ndiyo inayolipishwa na watoa huduma za wingu tuliowatafiti.
 
-**Je, watumiaji wataarifiwa wakifikia kikomo cha data?**
-
+## Je, watumiaji wataarifiwa wakifikia kikomo cha data?
  Kwa sasa hawataarifiwa. Watoa huduma wengi wa wingu huweka kikomo kama vile TB 1 kwa mwezi mzima, ambacho kinaweza kuruhusu watumiaji 10 kwa GB 100 au watumiaji 100 kwa GB 10. Vikomo hivi ni vya juu mno na hatutarajii kuwa watumiaji wengi watavifikia. Tunatumai kwamba watumiaji watawasiliana na wasimamizi wa seva zao endapo watafikia kikomo chao. Hata hivyo, tungependa kupata maarifa yako kuhusu jinsi arifa zinavyoweza kusaidia katika hali yako ya matumizi na unaweza kuwasiliana nasi[hapa](/about/feedback).
 
-**Je, watumiaji wataarifiwa wakifikia kikomo cha data?**
-
+## Je, watumiaji wataarifiwa wakifikia kikomo cha data?
  Kiasi cha data mpya ambacho mtumiaji anayekaribia kufikia kikomo chake atapokea kitatofautiana siku baada ya nyingine kwa sababu kinategemea matumizi yake ya siku 30 zilizopita. Tunafikiri kuwa onyo linaweza kuwakanganya zaidi watumiaji wa hatima kuliko kuwasaidia. Tungependa kupata maoni yako kuhusu hali hii[hapa](/about/feedback).
 
-**Je, ninaweza kubadilisha matumizi ya mtumiaji?**
-
+## Je, ninaweza kubadilisha matumizi ya mtumiaji?
  Hapana, kikomo cha mtumiaji kila wakati hujumuisha matumizi ya data ya siku 30 zilizopita. Hata hivyo, unaweza kuongeza kikomo cha data cha ufunguo wake au kumwekea ufunguo mpya.
 
-**Kwa nini baadhi ya watumiaji wangu hawakuweza kufikia pindi tu nilipowasha vikomo vya data?**
-
+## Kwa nini baadhi ya watumiaji wangu hawakuweza kufikia pindi tu nilipowasha vikomo vya data?
  Vikomo vya data hutegemea data iliyohamishwa na watumiaji katika kipindi cha siku 30 zilizotangulia, ambayo hurekodiwa iwe umewasha vikomo vya data au la. Inawezekana kuwa watumiaji hao tayari walikuwa wamepitisha kikomo kabla hujakiweka. Pia kumbuka kuwa vikomo vyote vya data hutekelezwa hata wakati unabadilisha kikomo cha data cha ufunguo mmoja.
 
-**Ninaweza kuweka kikomo cha seva nzima, kama vile “TB 1 kwa siku 30”?**
-
+## Ninaweza kuweka kikomo cha seva nzima, kama vile “TB 1 kwa siku 30”?
  Kwa sasa huwezi. Tungependa kusikia zaidi kuhusu hali yako ya matumizi[hapa](/about/feedback).
 
-**Ikiwa kuna kikomo chaguomsingi cha data na kikomo cha data kwenye ufunguo mahususi, ni kipi kitatekelezwa?**
-
+## Ikiwa kuna kikomo chaguomsingi cha data na kikomo cha data kwenye ufunguo mahususi, ni kipi kitatekelezwa?
  Kikomo cha data cha ufunguo mahususi kitabatilisha kikomo chochote chaguomsingi cha data ulichoweka (ikiwa kipo).
 
-**Je, ninaweza kuweka kikomo cha data cha ufunguo mahususi bila kuweka kikomo chaguomsingi cha data?**
-
+## Je, ninaweza kuweka kikomo cha data cha ufunguo mahususi bila kuweka kikomo chaguomsingi cha data?
  Ndiyo. Huhitaji kuweka kikomo chaguomsingi ili uweke kikomo cha data cha ufunguo mmoja. Kwa mfano, unaweza kuweka kikomo kwenye ufunguo mmoja ambao unafikiri kuwa huenda ukatumiwa na watu wengi, ili ujilinde kutokana na uhamishaji wa data kupita kiasi kupitia ufunguo huo.
