@@ -324,13 +324,17 @@ def verify_locale(locale: str, english_paths: set[str]) -> list[Issue]:
                     f"translation has {len(tr_links)}"
                 ))
         else:
-            for idx, (en_url, tr_url) in enumerate(zip(en_links, tr_links)):
-                if en_url != tr_url:
-                    issues.append(Issue(
-                        locale, doc_path, "LINKS",
-                        f"Link {idx + 1} differs: "
-                        f"English={en_url!r}, translation={tr_url!r}"
-                    ))
+            # Check if links differ only in order (valid for RTL/different word order)
+            if sorted(en_links) == sorted(tr_links):
+                pass  # Same links, different order — acceptable
+            else:
+                for idx, (en_url, tr_url) in enumerate(zip(en_links, tr_links)):
+                    if en_url != tr_url:
+                        issues.append(Issue(
+                            locale, doc_path, "LINKS",
+                            f"Link {idx + 1} differs: "
+                            f"English={en_url!r}, translation={tr_url!r}"
+                        ))
 
         # Heading anchors
         en_anchors = set(extract_heading_anchors(en_text))
