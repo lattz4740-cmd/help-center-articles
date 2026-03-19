@@ -43,7 +43,7 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline
 
 ## «مدیر Outline» کیست؟
 
-«مدیر Outline» برنامه رایانه‌ای است که به مدیر سرویس اجازه می‌دهد تا سرور Outline را راه‌اندازی کند، [کلیدهای دسترسی](#accesskey) را ایجاد کند، و محدودیت مصرف داده‌ها را برای هر کلید تنظیم کند. می‌توانید آخرین نسخه «مدیر Outline» را از [اینجا](https://getoutline.org/get-started/#step-1) یا [اینجا](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/) بارگیری کنید.
+«مدیر Outline» برنامه رایانه‌ای است که به مدیر سرویس اجازه می‌دهد تا سرور Outline را راه‌اندازی کند، [کلیدهای دسترسی](#accesskey) را ایجاد کند، و محدودیت مصرف داده‌ها را برای هر کلید تنظیم کند. می‌توانید آخرین نسخه «مدیر Outline» را از [اینجا](https://getoutline.org/get-started/#step-3) یا [اینجا](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/) بارگیری کنید.
 
 ## Outline Client چیست؟
 

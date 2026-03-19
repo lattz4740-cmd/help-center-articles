@@ -77,6 +77,6 @@ Wenn Sie auf mehrere Server Zugriff haben, versuchen Sie, eine Verbindung zu ein
 
 So beheben Sie dieses Problem:
 
-Erkundigen Sie sich beim Serveradministrator, ob der Server noch läuft. Falls ja, bitten Sie ihn um den [Zugriffsschlüssel](https://docs.google.com/document/d/1Mp-hH49D0bn02LO-MkgVVh95O7FrG-6XXCjX49WA3nE/edit#heading=h.2dn8xnck0993) eines anderen Servers.
+Erkundigen Sie sich beim Serveradministrator, ob der Server noch läuft. Falls ja, bitten Sie ihn um den [Zugriffsschlüssel](/about/terminology) eines anderen Servers.
 
 Wenn Sie den Server selbst eingerichtet haben, versuchen Sie, über den Outline-Manager oder [eine andere Methode wie SSH](https://en.wikipedia.org/wiki/Secure_Shell) eine Verbindung herzustellen. Falls das nicht funktioniert, können Sie in der Konsole des Cloud-Anbieters, falls vorhanden, prüfen, ob der Server noch online ist.

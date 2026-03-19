@@ -76,6 +76,6 @@ Problemas con el servidor:
 ## Si tienes acceso a más de un servidor, prueba a conectarte a otro. {#ServerIssues}
 
 ## Qué hacer: {#DeviceSettings}
-Ponte en contacto con el gestor del servicio para ver si lo ha eliminado. En caso afirmativo, pídele una [clave de acceso](https://docs.google.com/document/d/1Mp-hH49D0bn02LO-MkgVVh95O7FrG-6XXCjX49WA3nE/edit#heading=h.2dn8xnck0993) para otro servidor.
+Ponte en contacto con el gestor del servicio para ver si lo ha eliminado. En caso afirmativo, pídele una [clave de acceso](/about/terminology) para otro servidor.
 
 Si configuras el servidor por tu cuenta, prueba a conectarte a él mediante el Administrador de Outline u otro método, como [SSH](https://en.wikipedia.org/wiki/Secure_Shell). Si esta alternativa no funciona, consulta la consola del proveedor de servicios en la nube, si la hubiera, para ver si el servidor sigue conectado.

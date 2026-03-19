@@ -16,6 +16,6 @@ La procédure peut varier selon la version de votre système d'exploitation Wind
 2. Désinstaller Outline Manager
    1. Accédez à **Programmes et fonctionnalités**, puis cliquez sur **Désinstaller un programme**.
    2. Recherchez l'application Outline Manager et supprimez-la.
-   3. [Téléchargez la dernière version d'Outline Manager](https://getoutline.org/get-started/#step-3)et installez-la sur votre appareil Windows. Cela devrait installer automatiquement un nouvel adaptateur TAP.
+   3. [Téléchargez la dernière version d'Outline Manager](https://getoutline.org/get-started/#step-1)et installez-la sur votre appareil Windows. Cela devrait installer automatiquement un nouvel adaptateur TAP.
 
 Si le problème persiste, [contactez l'assistance](/about/feedback).

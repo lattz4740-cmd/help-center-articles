@@ -16,6 +16,6 @@ sidebar_label: 為何我無法在 Windows 裝置上安裝 Outline Manager？
 2. 解除安裝 Outline Manager
    1. 依序前往「程式和功能」和「解除安裝程式」
    2. 找出 Outline Manager 應用程式，然後解除安裝 Outline Manager
-   3. [下載 Outline Manager 最新版本](https://getoutline.org/get-started/#step-3)，然後在 Windows 裝置上重新安裝這個應用程式。重新安裝 Outline Manager 時，也會自動安裝新的 TAP 介面卡。.
+   3. [下載 Outline Manager 最新版本](https://getoutline.org/get-started/#step-1)，然後在 Windows 裝置上重新安裝這個應用程式。重新安裝 Outline Manager 時，也會自動安裝新的 TAP 介面卡。.
 
 如果仍無法解決問題，請[與支援團隊聯絡](/about/feedback)。

@@ -201,9 +201,11 @@ def normalize_link_url(url: str) -> str:
         url = re.sub(r'[?&](hl|language)=[^&#]*', '', url)
         # Clean up leftover ? or & at end
         url = re.sub(r'[?&]$', '', url)
-        # Normalize Wikipedia locale subdomains to en
-        url = re.sub(r'https://[a-z]{2,3}(-[A-Za-z]+)?\.wikipedia\.org/',
-                      'https://en.wikipedia.org/', url)
+        # Normalize Wikipedia: locale subdomains and localized article paths
+        # e.g. https://cs.wikipedia.org/wiki/Certifikát → https://en.wikipedia.org/wiki/ARTICLE
+        m_wiki = re.match(r'https://[a-z]{2,3}(-[A-Za-z]+)?\.wikipedia\.org/wiki/([^#?]*)', url)
+        if m_wiki:
+            return 'https://en.wikipedia.org/wiki/ARTICLE'
         return url
     anchor = ''
     url_path = url

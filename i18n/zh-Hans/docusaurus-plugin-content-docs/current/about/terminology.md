@@ -43,7 +43,7 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline
 
 ## 什么是 Outline 管理器？
 
-Outline 管理器是一款桌面应用，可让服务管理员设置 Outline 服务器、生成[访问密钥](#accesskey)并设置每个密钥的数据用量上限。您可以点击[此处](https://getoutline.org/get-started/#step-1)或[此处](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/)，下载最新版 Outline 管理器。
+Outline 管理器是一款桌面应用，可让服务管理员设置 Outline 服务器、生成[访问密钥](#accesskey)并设置每个密钥的数据用量上限。您可以点击[此处](https://getoutline.org/get-started/#step-3)或[此处](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/)，下载最新版 Outline 管理器。
 
 ## 什么是 Outline 客户端？
 

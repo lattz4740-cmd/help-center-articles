@@ -43,7 +43,7 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline
 
 ## Wat is Outline Manager?
 
-Outline Manager is een desktop-app waarmee servicemanagers een Outline-server kunnen instellen, [toegangssleutels](#accesskey) kunnen maken en een datalimiet kunnen instellen voor het gebruik per sleutel. Download [hier](https://getoutline.org/get-started/#step-1) of [hier](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/) de nieuwste versie van Outline Manager.
+Outline Manager is een desktop-app waarmee servicemanagers een Outline-server kunnen instellen, [toegangssleutels](#accesskey) kunnen maken en een datalimiet kunnen instellen voor het gebruik per sleutel. Download [hier](https://getoutline.org/get-started/#step-3) of [hier](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/) de nieuwste versie van Outline Manager.
 
 ## Wat is Outline-client?
 

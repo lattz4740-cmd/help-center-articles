@@ -16,6 +16,6 @@ Los pasos pueden variar en función de la versión del sistema operativo Windows
 2. Desinstalar Administrador de Outline
    1. Ve a **Programas y características** y, después, a **Desinstalar programa**.
    2. Busca la aplicación Administrador de Outline y desinstálala.
-   3. [Descarga la última versión de la aplicación Administrador de Outline](https://getoutline.org/get-started/#step-3) y vuelve a instalarla en tu dispositivo Windows. El nuevo proceso de instalación debería instalar automáticamente un nuevo adaptador TAP.
+   3. [Descarga la última versión de la aplicación Administrador de Outline](https://getoutline.org/get-started/#step-1) y vuelve a instalarla en tu dispositivo Windows. El nuevo proceso de instalación debería instalar automáticamente un nuevo adaptador TAP.
 
 Si los problemas persisten, [ponte en contacto con el equipo de Asistencia](/about/feedback).

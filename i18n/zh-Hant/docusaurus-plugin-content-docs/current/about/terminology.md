@@ -43,7 +43,7 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline
 
 ## 什麼是 Outline Manager？
 
-Outline Manager 是電腦應用程式，可讓服務管理員設定 Outline 伺服器、產生[存取金鑰](#accesskey)，以及設定每個金鑰的數據用量上限。如要下載最新版 Outline Manager，請點選[這個連結](https://getoutline.org/get-started/#step-1)或[這個連結](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/)。
+Outline Manager 是電腦應用程式，可讓服務管理員設定 Outline 伺服器、產生[存取金鑰](#accesskey)，以及設定每個金鑰的數據用量上限。如要下載最新版 Outline Manager，請點選[這個連結](https://getoutline.org/get-started/#step-3)或[這個連結](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/)。
 
 ## 什麼是 Outline 用戶端？
 

@@ -43,7 +43,7 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline
 
 ## Outline マネージャーとは
 
-Outline マネージャーは、サービス マネージャーが Outline サーバーの設定、[アクセスキー](#accesskey)の生成、データ使用量の上限の設定（キーごと）を行う際に使用するデスクトップ アプリケーションです。最新バージョンの Outline マネージャーは、[こちら](https://getoutline.org/get-started/#step-1)または[こちら](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/)からダウンロードできます。
+Outline マネージャーは、サービス マネージャーが Outline サーバーの設定、[アクセスキー](#accesskey)の生成、データ使用量の上限の設定（キーごと）を行う際に使用するデスクトップ アプリケーションです。最新バージョンの Outline マネージャーは、[こちら](https://getoutline.org/get-started/#step-3)または[こちら](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/)からダウンロードできます。
 
 ### Outline クライアントとは
 

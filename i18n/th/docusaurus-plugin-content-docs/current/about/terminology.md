@@ -43,7 +43,7 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline
 
 ## Outline Manager คืออะไร
 
-Outline Manager คือแอปพลิเคชันบนเดสก์ท็อปที่ช่วยให้ผู้ดูแลบริการตั้งค่าเซิร์ฟเวอร์ Outline, สร้าง[คีย์การเข้าถึง](#accesskey) และตั้งค่าขีดจำกัดการใช้ข้อมูลของแต่ละคีย์ คุณสามารถดาวน์โหลด Outline Manager เวอร์ชันล่าสุดได้[ที่นี่](https://getoutline.org/get-started/#step-1) หรือ[ที่นี่](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/)
+Outline Manager คือแอปพลิเคชันบนเดสก์ท็อปที่ช่วยให้ผู้ดูแลบริการตั้งค่าเซิร์ฟเวอร์ Outline, สร้าง[คีย์การเข้าถึง](#accesskey) และตั้งค่าขีดจำกัดการใช้ข้อมูลของแต่ละคีย์ คุณสามารถดาวน์โหลด Outline Manager เวอร์ชันล่าสุดได้[ที่นี่](https://getoutline.org/get-started/#step-3) หรือ[ที่นี่](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/)
 
 ## ไคลเอ็นต์ Outline คืออะไร
 

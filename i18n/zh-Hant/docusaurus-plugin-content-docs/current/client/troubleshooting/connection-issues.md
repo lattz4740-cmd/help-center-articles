@@ -5,12 +5,12 @@ sidebar_label: 為何我無法連上 Outline 服務？
 
 以下是無法連上 Outline 服務的幾種可能原因：
 
-- **裝置**[**未連上網際網路**](https://docs.google.com/document/d/1YDlrtMErHZ2aoPehRlglSsSnbGjTfUWZ/edit?resourcekey=0-1uh7Y6iU_CCPDj22n3NGTQ#heading=h.2et92p0)**。**有時裝置會遇到網路連線中斷的問題，需要一些時間才能更新網路圖示。此外，裝置也可能連上已停止運作的區域網路。
-- [**網路防火牆已封鎖**](https://docs.google.com/document/d/1YDlrtMErHZ2aoPehRlglSsSnbGjTfUWZ/edit?resourcekey=0-1uh7Y6iU_CCPDj22n3NGTQ#heading=h.4d34og8)**Outline 伺服器。**這很常發生在使用公用網路 (比如學校、公司或免費的無線網路) 的時候。
-- **裝置上的**[**防火牆或防毒軟體**](https://docs.google.com/document/d/1YDlrtMErHZ2aoPehRlglSsSnbGjTfUWZ/edit?resourcekey=0-1uh7Y6iU_CCPDj22n3NGTQ#heading=h.26in1rg)**封鎖了 Outline 伺服器。**
-- [**手機裝置的設定**](https://docs.google.com/document/d/1YDlrtMErHZ2aoPehRlglSsSnbGjTfUWZ/edit?resourcekey=0-1uh7Y6iU_CCPDj22n3NGTQ#bookmark=id.1ksv4uv)**可能需要調整。**
+- **裝置**[**未連上網際網路**](/about/terminology)**。**有時裝置會遇到網路連線中斷的問題，需要一些時間才能更新網路圖示。此外，裝置也可能連上已停止運作的區域網路。
+- [**網路防火牆已封鎖**](/about/terminology)**Outline 伺服器。**這很常發生在使用公用網路 (比如學校、公司或免費的無線網路) 的時候。
+- **裝置上的**[**防火牆或防毒軟體**](/about/terminology)**封鎖了 Outline 伺服器。**
+- [**手機裝置的設定**](/about/terminology)**可能需要調整。**
 
-**服務管理員可能已**[**刪除伺服器，或是網際網路服務供應商 (ISP) 可能已封鎖你的要求**](https://docs.google.com/document/d/1YDlrtMErHZ2aoPehRlglSsSnbGjTfUWZ/edit?resourcekey=0-1uh7Y6iU_CCPDj22n3NGTQ#bookmark=id.z337ya)**。**
+**服務管理員可能已**[**刪除伺服器，或是網際網路服務供應商 (ISP) 可能已封鎖你的要求**](/about/terminology)**。**
 
 網際網路連線問題：
 
@@ -78,6 +78,6 @@ iOS 裝置：閱讀[這篇支援文章](https://support.apple.com/guide/deployme
 
 ## 修正事項：
 
-與服務管理員聯絡，瞭解該伺服器是否已刪除。如果是的話，請向服務管理員索取其他伺服器的[存取金鑰](https://docs.google.com/document/d/1Mp-hH49D0bn02LO-MkgVVh95O7FrG-6XXCjX49WA3nE/edit#heading=h.2dn8xnck0993)。
+與服務管理員聯絡，瞭解該伺服器是否已刪除。如果是的話，請向服務管理員索取其他伺服器的[存取金鑰](/about/terminology)。
 
 如果你是自行設定伺服器，請嘗試透過 Outline Manager 或其他方式 (例如 [SSH](https://en.wikipedia.org/wiki/Secure_Shell)) 連線至該伺服器。如果問題仍未解決，你可以試著檢查雲端服務供應商主控台 (如果有的話)，看看伺服器是否仍在線上。

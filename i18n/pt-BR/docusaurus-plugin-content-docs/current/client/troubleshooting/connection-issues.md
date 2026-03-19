@@ -76,6 +76,6 @@ Para iOS: leia [este artigo de suporte](https://support.apple.com/guide/deployme
 ## Se você tiver acesso a mais de um servidor, tente se conectar ao outro. {#ServerIssues}
 
 ## O que corrigir: {#DeviceSettings}
-Entre em contato com o gerente de serviço para saber se o servidor foi destruído. Em caso positivo, peça uma [chave de acesso](https://docs.google.com/document/d/1Mp-hH49D0bn02LO-MkgVVh95O7FrG-6XXCjX49WA3nE/edit#heading=h.2dn8xnck0993) a outro servidor.
+Entre em contato com o gerente de serviço para saber se o servidor foi destruído. Em caso positivo, peça uma [chave de acesso](/about/terminology) a outro servidor.
 
 Se você for responsável pela configuração do servidor, conecte-se a ele pelo Outline Manager ou de outra forma, como [SSH](https://en.wikipedia.org/wiki/Secure_Shell). Se isso não funcionar, verifique o console do provedor de nuvem, se houver, para saber se o servidor ainda está on-line.

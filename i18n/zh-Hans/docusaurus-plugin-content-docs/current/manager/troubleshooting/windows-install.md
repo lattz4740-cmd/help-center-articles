@@ -16,6 +16,6 @@ sidebar_label: 为什么无法在 Windows 上安装 Outline 管理器？
 2. 卸载 Outline 管理器
    1. 进入**程序和功能**，然后进入**卸载程序**
    2. 找到并卸载 Outline 管理器应用
-   3. [下载最新版本的 Outline 管理器](https://getoutline.org/get-started/#step-3)，然后在 Windows 设备上重新安装 Outline 管理器。在重新安装时，系统应会自动安装新的 TAP 适配器。
+   3. [下载最新版本的 Outline 管理器](https://getoutline.org/get-started/#step-1)，然后在 Windows 设备上重新安装 Outline 管理器。在重新安装时，系统应会自动安装新的 TAP 适配器。
 
 如果问题仍然存在，请[与支持团队联系](/about/feedback)。

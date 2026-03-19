@@ -43,7 +43,7 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline
 
 ## ما هو "مدير Outline"؟
 
-"مدير Outline" هو تطبيق متوافق مع أجهزة الكمبيوتر المكتبي يسمح لمدير الخدمة بإعداد خادم Outline، وإنشاء [مفاتيح الوصول](#accesskey)، وضبط الحدود القصوى للبيانات على الاستخدام لكل مفتاح. يمكنك تنزيل أحدث إصدار من تطبيق "مدير Outline" [هنا](https://getoutline.org/get-started/#step-1) أو [هنا](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
+"مدير Outline" هو تطبيق متوافق مع أجهزة الكمبيوتر المكتبي يسمح لمدير الخدمة بإعداد خادم Outline، وإنشاء [مفاتيح الوصول](#accesskey)، وضبط الحدود القصوى للبيانات على الاستخدام لكل مفتاح. يمكنك تنزيل أحدث إصدار من تطبيق "مدير Outline" [هنا](https://getoutline.org/get-started/#step-3) أو [هنا](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
 
 ## ما هو "عميل Outline"؟
 

@@ -43,11 +43,11 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline
 
 ## Czym jest Menedżer Outline?
 
-Menedżer Outline to aplikacja na komputer, dzięki której menedżer usługi może skonfigurować serwer Outline, wygenerować [klucze dostępu](#accesskey) oraz ustalić limity wykorzystania danych przez poszczególne klucze. Najnowszą wersję Menedżera Outline możesz pobrać [stąd](https://getoutline.org/get-started/#step-1) lub [stąd](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
+Menedżer Outline to aplikacja na komputer, dzięki której menedżer usługi może skonfigurować serwer Outline, wygenerować [klucze dostępu](#accesskey) oraz ustalić limity wykorzystania danych przez poszczególne klucze. Najnowszą wersję Menedżera Outline możesz pobrać [stąd](https://getoutline.org/get-started/#step-3) lub [stąd](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
 
 ## Czym jest klient Outline?
 
-Klient Outline to aplikacja na komputery i komórki pozwalająca na połączenie się z serwerem Outline i uzyskanie dostępu do sieci VPN za pomocą klucza dostępu. Najnowszą wersję klienta Outline możesz pobrać [stąd](https://getoutline.org/get-started/#step-1) lub [stąd](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
+Klient Outline to aplikacja na komputery i komórki pozwalająca na połączenie się z serwerem Outline i uzyskanie dostępu do sieci VPN za pomocą klucza dostępu. Najnowszą wersję klienta Outline możesz pobrać [stąd](https://getoutline.org/get-started/#step-3) lub [stąd](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
 
 ## Czym są limity danych?
 

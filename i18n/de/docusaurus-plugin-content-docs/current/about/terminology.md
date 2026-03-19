@@ -43,7 +43,7 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline
 
 ## Was ist Outline-Manager?
 
-Outline-Manager ist eine Desktopanwendung, in der ein Dienstmanager einen Outline-Server einrichten und [Zugriffsschlüssel](#accesskey) generieren kann. Außerdem besteht die Möglichkeit, für jeden Schlüssel ein Datenlimit festzulegen. Sie können die neueste Version von Outline-Manager [hier](https://getoutline.org/get-started/#step-1) und [hier](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/) herunterladen.
+Outline-Manager ist eine Desktopanwendung, in der ein Dienstmanager einen Outline-Server einrichten und [Zugriffsschlüssel](#accesskey) generieren kann. Außerdem besteht die Möglichkeit, für jeden Schlüssel ein Datenlimit festzulegen. Sie können die neueste Version von Outline-Manager [hier](https://getoutline.org/get-started/#step-3) und [hier](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/) herunterladen.
 
 ## Was ist Outline-Client?
 

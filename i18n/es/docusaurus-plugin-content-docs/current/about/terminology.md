@@ -43,11 +43,11 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline
 
 ## ¿Qué es Administrador de Outline?
 
-Administrador de Outline es una aplicación de escritorio que permite a los gestores de servicio configurar servidores de Outline, generar [claves de acceso](#accesskey) y definir límites de datos en función del uso de cada clave. Puedes descargar la versión más reciente de Administrador de Outline [aquí](https://getoutline.org/get-started/#step-1) o [aquí](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
+Administrador de Outline es una aplicación de escritorio que permite a los gestores de servicio configurar servidores de Outline, generar [claves de acceso](#accesskey) y definir límites de datos en función del uso de cada clave. Puedes descargar la versión más reciente de Administrador de Outline [aquí](https://getoutline.org/get-started/#step-3) o [aquí](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
 
 ## ¿Qué es el cliente de Outline?
 
-El cliente de Outline es una aplicación, disponible para ordenadores y móviles, que te permite conectarte a un servidor de Outline y acceder a la VPN mediante una clave de acceso. Puedes descargar la versión más reciente del cliente de Outline [aquí](https://getoutline.org/get-started/#step-1) o [aquí](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
+El cliente de Outline es una aplicación, disponible para ordenadores y móviles, que te permite conectarte a un servidor de Outline y acceder a la VPN mediante una clave de acceso. Puedes descargar la versión más reciente del cliente de Outline [aquí](https://getoutline.org/get-started/#step-3) o [aquí](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
 
 ## ¿Qué son los límites de datos?
 

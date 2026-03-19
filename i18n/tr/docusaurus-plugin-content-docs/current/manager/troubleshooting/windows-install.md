@@ -16,6 +16,6 @@ Uygulanacak adımlar, Windows işletim sistemi sürümünüze bağlı olarak far
 2. Outline Manager'ı kaldırın:
    1. **Programlar ve Özellikler**'e, ardından **Program Kaldır**'a gidin.
    2. Outline Manager uygulamasını bulun ve kaldırın.
-   3. [Outline Manager'ın en güncel sürümünü indirin](https://getoutline.org/get-started/#step-3)ve Windows cihazınıza tekrar yükleyin. Yeni yükleme işleminde yeni bir TAP bağdaştırıcısı otomatik olarak yüklenecektir.
+   3. [Outline Manager'ın en güncel sürümünü indirin](https://getoutline.org/get-started/#step-1)ve Windows cihazınıza tekrar yükleyin. Yeni yükleme işleminde yeni bir TAP bağdaştırıcısı otomatik olarak yüklenecektir.
 
 Sorun yaşamaya devam ederseniz [destek ekibiyle iletişime geçin](/about/feedback).

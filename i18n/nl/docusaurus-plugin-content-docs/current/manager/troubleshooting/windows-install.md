@@ -16,6 +16,6 @@ De stappen kunnen verschillen, gebaseerd op je versie van het Windows-besturings
 2. Verwijder Outline Manager
    1. Ga naar **Programs & Features** (Programma's en functies) en dan naar **Uninstall Program (Programma verwijderen).**
    2. Zoek de Outline Manager-app en verwijder deze.
-   3. [Download de nieuwste versie van Outline Manager](https://getoutline.org/get-started/#step-3) en installeer de app opnieuw op je Windows-apparaat. Hierdoor wordt er automatisch een nieuwe TAP-adapter geïnstalleerd.
+   3. [Download de nieuwste versie van Outline Manager](https://getoutline.org/get-started/#step-1) en installeer de app opnieuw op je Windows-apparaat. Hierdoor wordt er automatisch een nieuwe TAP-adapter geïnstalleerd.
 
 Als je nog steeds problemen hebt, [neem je contact op met support](/about/feedback).

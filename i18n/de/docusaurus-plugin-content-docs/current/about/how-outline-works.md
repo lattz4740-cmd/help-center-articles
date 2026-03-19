@@ -9,10 +9,10 @@ Die Installation von Outline mag einfach aussehen, aber im Hintergrund laufen da
 
 Bei der Installation von Outline wird immer ein Installationsskript mit folgenden Schritten ausgeführt:
 
-- Die stabile Version des Shadowbox-Images wird mit Docker abgerufen und importiert. Das Image wird auf [Quay.io](/about/how-outline-works) unter [https://quay.io/repository/outline/shadowbox?tab=tags](/about/how-outline-works)gehostet. Es enthält den Outline-Server und die Management API. Letztere wird später von der Anwendung "Outline Server Management" verwendet, um Zugriffsschlüssel zu erstellen und zu entfernen sowie die Meldung anonymer Messwerte zu aktivieren oder zu deaktivieren usw.
-- [Watchtower](/about/how-outline-works) wird installiert und so konfiguriert, dass stündlich nach Image-Updates gesucht wird. Das trägt dazu bei, dass jeder Outline-Server ständig die neuesten Funktionen und Sicherheitsverbesserungen erhält und auf dem neuesten Stand ist.
+- Die stabile Version des Shadowbox-Images wird mit Docker abgerufen und importiert. Das Image wird auf Quay.io unter https://quay.io/repository/outline/shadowbox?tab=tagsgehostet. Es enthält den Outline-Server und die Management API. Letztere wird später von der Anwendung "Outline Server Management" verwendet, um Zugriffsschlüssel zu erstellen und zu entfernen sowie die Meldung anonymer Messwerte zu aktivieren oder zu deaktivieren usw.
+- Watchtower wird installiert und so konfiguriert, dass stündlich nach Image-Updates gesucht wird. Das trägt dazu bei, dass jeder Outline-Server ständig die neuesten Funktionen und Sicherheitsverbesserungen erhält und auf dem neuesten Stand ist.
 - Ein Webserver für den Zugriff auf die Management API wird auf einem zufälligen Port unter einem geheimen und zufälligen Pfad gestartet.
-- Ein [selbst signiertes SSL-Zertifikat](/about/how-outline-works) wird erstellt, sodass die Verwaltung des Outline-Servers mit TLS verschlüsselt werden kann, obwohl der Server keinen Domainnamen hat. Zusätzlich wird ein eindeutiger Fingerabdruck dieses Zertifikats erzeugt und im Outline-Manager gespeichert. So lassen sich MITM-Angriffe verhindern.
+- Ein selbst signiertes SSL-Zertifikat wird erstellt, sodass die Verwaltung des Outline-Servers mit TLS verschlüsselt werden kann, obwohl der Server keinen Domainnamen hat. Zusätzlich wird ein eindeutiger Fingerabdruck dieses Zertifikats erzeugt und im Outline-Manager gespeichert. So lassen sich MITM-Angriffe verhindern.
 
 Die Outline-Installation muss nach der Installation nicht konfiguriert werden.
 

@@ -43,11 +43,11 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline
 
 ## Что такое Менеджер Outline?
 
-Менеджер Outline – это приложение для ПК, которое позволяет менеджеру сервиса настроить сервер Outline, сгенерировать [ключи доступа](#accesskey) и задать для каждого из них лимиты трафика. Скачать последнюю версию Менеджера Outline можно [здесь](https://getoutline.org/get-started/#step-1) или [здесь](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
+Менеджер Outline – это приложение для ПК, которое позволяет менеджеру сервиса настроить сервер Outline, сгенерировать [ключи доступа](#accesskey) и задать для каждого из них лимиты трафика. Скачать последнюю версию Менеджера Outline можно [здесь](https://getoutline.org/get-started/#step-3) или [здесь](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
 
 ## Что такое клиент Outline?
 
-Клиент Outline – это приложение для ПК и мобильных устройств. Оно позволяет подключиться к серверу Outline и получить доступ к VPN с помощью ключа доступа. Скачать последнюю версию клиента Outline можно [здесь](https://getoutline.org/get-started/#step-1) или [здесь](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
+Клиент Outline – это приложение для ПК и мобильных устройств. Оно позволяет подключиться к серверу Outline и получить доступ к VPN с помощью ключа доступа. Скачать последнюю версию клиента Outline можно [здесь](https://getoutline.org/get-started/#step-3) или [здесь](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
 
 ## Что такое лимиты трафика?
 

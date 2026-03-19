@@ -9,10 +9,10 @@ sidebar_label: Outline 的运作原理
 
 每次安装 Outline 时都会运行一个安装脚本，并执行以下步骤：
 
-- 使用 Docker 检索和导入稳定版 Shadowbox 映像。该映像托管在 [Quay.io](/about/how-outline-works)，网址为 [https://quay.io/repository/outline/shadowbox?tab=tags](/about/how-outline-works)。该映像包含 Outline 服务器和管理 API。Outline 服务器管理应用稍后会使用此 API 创建和移除访问密钥，选择/取消报告匿名指标等。
-- 安装并配置 [Watchtower](/about/how-outline-works) 以每隔一小时检查映像更新，从而帮助确保每个 Outline 服务器均始终使用最新的功能和安全改进设置。
+- 使用 Docker 检索和导入稳定版 Shadowbox 映像。该映像托管在 Quay.io，网址为 https://quay.io/repository/outline/shadowbox?tab=tags。该映像包含 Outline 服务器和管理 API。Outline 服务器管理应用稍后会使用此 API 创建和移除访问密钥，选择/取消报告匿名指标等。
+- 安装并配置 Watchtower 以每隔一小时检查映像更新，从而帮助确保每个 Outline 服务器均始终使用最新的功能和安全改进设置。
 - 通过非公开的随机路径，使用随机端口启动一个网络服务器，用于访问管理 API。
-- 创建[自签名 SSL 证书](/about/how-outline-works)，以便在没有域名的情况下通过 TLS 加密 Outline 服务器的管理。系统还会生成一个唯一的证书指纹，并将其存储在 Outline 管理器应用中，帮助防止 MITM 攻击。
+- 创建自签名 SSL 证书，以便在没有域名的情况下通过 TLS 加密 Outline 服务器的管理。系统还会生成一个唯一的证书指纹，并将其存储在 Outline 管理器应用中，帮助防止 MITM 攻击。
 
 Outline 安装完成后，无需进行任何配置。
 

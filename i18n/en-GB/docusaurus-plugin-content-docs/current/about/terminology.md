@@ -43,7 +43,7 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline
 
 ## What is Outline Manager?
 
-Outline Manager is a desktop application that allows a service manager to set up an Outline server, generate [access keys](#accesskey) and set data limits on usage per key. You can download the latest version of Outline Manager [here](https://getoutline.org/get-started/#step-1) or [here](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
+Outline Manager is a desktop application that allows a service manager to set up an Outline server, generate [access keys](#accesskey) and set data limits on usage per key. You can download the latest version of Outline Manager [here](https://getoutline.org/get-started/#step-3) or [here](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
 
 ## What is Outline Client?
 

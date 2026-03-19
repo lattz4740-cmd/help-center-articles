@@ -16,6 +16,6 @@ Windows에서 Outline을 사용하는 경우 가끔 예기치 않은 오류가 �
 2. Outline Manager 제거
    1. **프로그램 및 기능** > **프로그램 제거**로 이동합니다.
    2. Outline Manager 앱을 찾아 Outline Manager를 제거합니다.
-   3. [최신 버전의 Outline Manager](https://getoutline.org/get-started/#step-3)를 다운로드하고 Windows 기기에 다시 설치합니다. 새로 설치하면 새 TAP 어댑터가 자동으로 설치됩니다.
+   3. [최신 버전의 Outline Manager](https://getoutline.org/get-started/#step-1)를 다운로드하고 Windows 기기에 다시 설치합니다. 새로 설치하면 새 TAP 어댑터가 자동으로 설치됩니다.
 
 문제가 계속되면 [지원팀에 문의](/about/feedback)해 주세요.

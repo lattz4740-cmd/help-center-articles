@@ -16,6 +16,6 @@ Kroki mogą się różnić w zależności od wersji systemu operacyjnego Windows
 2. Odinstalowywanie Menedżera Outline
    1. Otwórz **Programy i funkcje**, a następnie kliknij **Odinstaluj program**.
    2. Znajdź Menedżera Outline i go odinstaluj.
-   3. [Pobierz najnowszą wersję Menedżera Outline](https://getoutline.org/get-started/#step-3)i zainstaluj ją na urządzeniu z systemem Windows. Instalacja powinna obejmować nowy sterownik TAP.
+   3. [Pobierz najnowszą wersję Menedżera Outline](https://getoutline.org/get-started/#step-1)i zainstaluj ją na urządzeniu z systemem Windows. Instalacja powinna obejmować nowy sterownik TAP.
 
 Jeśli nadal masz problemy, [skontaktuj się z zespołem pomocy](/about/feedback).

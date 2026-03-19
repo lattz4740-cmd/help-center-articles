@@ -5,11 +5,11 @@ sidebar_label: چرا نمی‌توانم به سرویس Outline متصل شو�
 
 ممکن است به چند دلیل نتوانید به سرویس Outline متصل شوید:
 
-- اتصال دستگاهتان [به اینترنت قطع شده است](https://docs.google.com/document/d/1DV9aNKhn-QwzJgVzi8OB6Uw5moGB0tRM/edit?resourcekey=0-S4gm_B7j-3vPp_XVxWokGw#heading=h.3znysh7). برخی اوقات اتصال شبکه دستگاهتان قطع می‌شود و ممکن است به‌روزرسانی نمادهای شبکه کمی طول بکشد. ممکن است دستگاهتان به شبکه محلی هم وصل شده باشد اما اینترنت قطع باشد.
-- [دیوار آتش شبکه‌تان دسترسی به](https://docs.google.com/document/d/1DV9aNKhn-QwzJgVzi8OB6Uw5moGB0tRM/edit?resourcekey=0-S4gm_B7j-3vPp_XVxWokGw#heading=h.3dy6vkm) سرور Outline را مسدود می‌کند. اگر از شبکه عمومی مانند مدرسه، کار، یا شبکه بی‌سیم آزاد استفاده می‌کنید، وصل نشدن به این سرویس معمول است.
-- دستگاهتان [دیوار آتش یا نرم‌افزار ضدویروسی](https://docs.google.com/document/d/1DV9aNKhn-QwzJgVzi8OB6Uw5moGB0tRM/edit?resourcekey=0-S4gm_B7j-3vPp_XVxWokGw#heading=h.2s8eyo1) دارد که دسترسی به سرور Outline را مسدود می‌کند.
-- ممکن است [تنظیمات دستگاه تلفنتان](https://docs.google.com/document/d/1DV9aNKhn-QwzJgVzi8OB6Uw5moGB0tRM/edit?resourcekey=0-S4gm_B7j-3vPp_XVxWokGw#heading=h.26in1rg) نیاز به تغییر داشته باشد.
-- ممکن است مدیر سرویس شما [سرورتان را امحا کرده باشد یا ISP مانع درخواست شما شده باشد](https://docs.google.com/document/d/1DV9aNKhn-QwzJgVzi8OB6Uw5moGB0tRM/edit?resourcekey=0-S4gm_B7j-3vPp_XVxWokGw#bookmark=id.35nkun2).
+- اتصال دستگاهتان [به اینترنت قطع شده است](/about/terminology). برخی اوقات اتصال شبکه دستگاهتان قطع می‌شود و ممکن است به‌روزرسانی نمادهای شبکه کمی طول بکشد. ممکن است دستگاهتان به شبکه محلی هم وصل شده باشد اما اینترنت قطع باشد.
+- [دیوار آتش شبکه‌تان دسترسی به](/about/terminology) سرور Outline را مسدود می‌کند. اگر از شبکه عمومی مانند مدرسه، کار، یا شبکه بی‌سیم آزاد استفاده می‌کنید، وصل نشدن به این سرویس معمول است.
+- دستگاهتان [دیوار آتش یا نرم‌افزار ضدویروسی](/about/terminology) دارد که دسترسی به سرور Outline را مسدود می‌کند.
+- ممکن است [تنظیمات دستگاه تلفنتان](/about/terminology) نیاز به تغییر داشته باشد.
+- ممکن است مدیر سرویس شما [سرورتان را امحا کرده باشد یا ISP مانع درخواست شما شده باشد](/about/terminology).
 
 ## مشکلات اتصال اینترنت: {#Internetissues}
 

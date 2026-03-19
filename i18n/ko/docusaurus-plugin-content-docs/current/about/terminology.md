@@ -43,7 +43,7 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline
 
 ## Outline Manager란 무엇인가요?
 
-Outline Manager는 서비스 담당자가 Outline 서버를 설정하고, [액세스 키](#accesskey)를 생성하고, 키 1개당 사용 가능한 데이터 한도를 설정하도록 도와주는 데스크톱 애플리케이션입니다. [여기](https://getoutline.org/get-started/#step-1) 또는 [여기](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/)에서 최신 버전의 Outline Manager를 다운로드할 수 있습니다.
+Outline Manager는 서비스 담당자가 Outline 서버를 설정하고, [액세스 키](#accesskey)를 생성하고, 키 1개당 사용 가능한 데이터 한도를 설정하도록 도와주는 데스크톱 애플리케이션입니다. [여기](https://getoutline.org/get-started/#step-3) 또는 [여기](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/)에서 최신 버전의 Outline Manager를 다운로드할 수 있습니다.
 
 ## Outline 클라이언트란 무엇인가요?
 
