@@ -3,8 +3,6 @@ title: Connecting your device to an Outline server
 sidebar_label: Connecting your device
 ---
 
-## Connecting your device to an Outline server
-
 In order to connect your device to an Outline server, a server administrator has to send you an invitation to connect to their server with a unique [access key](/about/terminology). This invitation will:
 
 - Prompt you to download and install Outline on your device if you don't already have it

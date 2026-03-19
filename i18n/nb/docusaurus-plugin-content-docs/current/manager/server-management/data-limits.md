@@ -27,8 +27,8 @@ For å fjerne datagrensen for en tilgangsnøkkel må du gå til nøkkelens Datag
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-## **Vanlige spørsmål om datagrenser**
-## **Hva er en 30-dagers datagrense med sporing?**
+## Vanlige spørsmål om datagrenser
+## Hva er en 30-dagers datagrense med sporing?
  En 30-dagers datagrense med sporing summerer bruken av hver nøkkel de siste 30 dagene og hindrer at bruksgrensen for nøkkelen blir overskredet i den perioden. Dermed kan ikke nøkkelen overskride grensen i løpet av noen som helst 30-dagersperiode, inkludert kalendermåneder på 30 eller færre dager. I praksis betyr dette at hver brukers tilgjengelige data øker hver dag med den mengden hen brukte for 31 dager siden.
 
 ## Hvorfor bruker Outline grenser med sporing?

@@ -27,8 +27,8 @@ Da uklonite ograničenje prenosa podataka s pristupnog ključa, idite u dijaloš
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-## **Česta pitanja o ograničenju prenosa podataka**
-## **Šta je ograničenje za praćenje prenosa podataka od 30 dana?**
+## Česta pitanja o ograničenju prenosa podataka
+## Šta je ograničenje za praćenje prenosa podataka od 30 dana?
  Ograničenje za praćenje prenosa podataka od 30 dana će dati zbir korištenja svakog ključa u posljednjih 30 dana i zadržat će korištenje ključa ispod ograničenja u tom periodu. Rezultat je da ključ ne može premašiti ograničenje tokom bilo kojeg perioda od 30 dana, uključujući kalendarske mjesece od 30 dana ili manje. Dakle, to znači da će se dostupni prenos podataka svakog korisnika povećavati svakoga dana za količinu koju je iskoristio prije 31 dan.
 
 ## Zašto Outline koristi ograničenja za praćenje?

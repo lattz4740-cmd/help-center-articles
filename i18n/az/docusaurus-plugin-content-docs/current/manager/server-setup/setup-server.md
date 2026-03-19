@@ -20,5 +20,5 @@ Outline serverinin quraşdırılması Outline-dan istifadə edə bilmək üçün
 ## Digər bulud provayderi ilə quraşdırın
  Outline Manager tətbiqini endirdikdən və quraşdırdıqdan sonra AWS, GCP, DigitalOcean və ya digər provayder ilə virtual cihazda Outline serverini quraşdırmağı seçə bilərsiniz. Hər mühit fərqlidir, bu səbəblə ən çox istifadə olunan bulud provayderləri üçün Outline Manager quraşdırma prosesinə təlimatlar daxil etmişik. Bu təlimatlara Outline-ı serverdə quraşdırmaq üçün quraşdırma skriptini işə salmazdan əvvəl virtual cihazınızdakı ayarları konfiqurasiya etmək qaydası da daxildir.
 
-## *Əlavə kömək lazımdır?*
+## Əlavə kömək lazımdır?
 [Outline serverinin quraşdırılması ilə bağlı tez-tez verilən suallara](/manager/server-setup/setup-faqs) nəzər salın.

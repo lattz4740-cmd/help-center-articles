@@ -27,8 +27,8 @@ Om die datalimiet van ’n toegangsleutel te verwyder, moet jy soos vantevore na
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-## **Gereelde vrae oor datalimiete**
-## **Wat is ’n 30-dag- slepende limiet?**
+## Gereelde vrae oor datalimiete
+## Wat is ’n 30-dag- slepende limiet?
  ’n 30-dag- slepende datalimiet sal elke sleutel se gebruik oor die afgelope 30 dae bymekaar tel en die sleutel se gebruik oor daardie tydperk onder die limiet hou. Die uitwerking is dat die sleutel nie oor die limiet kan gaan tydens enige tydperk van 30 dae nie, insluitend kalendermaande van 30 dae of minder. Dit beteken dat elke gebruiker se beskikbare data elke dag sal vermeerder met die hoeveelheid wat hulle 31 dae gelede gebruik het.
 
 ## Hoekom gebruik Outline slepende limiete?

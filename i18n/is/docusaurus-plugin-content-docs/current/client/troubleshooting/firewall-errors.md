@@ -11,7 +11,7 @@ Ef þú reynir að setja upp Outline í gegnum netkerfi sem er á bakvið eldveg
 
 Ef það virkar ekki skaltu hafa samband við kerfisstjórann þinn og óska eftir leyfi fyrir tengingu á milli netkerfisins sem er á bakvið eldvegg og Outline-þjónsins þíns. Þú þarft að gefa upp IP-tölu Outline-þjónsins og gáttirnar sem Outline er keyrt í en þær eru tilgreindar í lok uppsetningarskriftunnar.
 
-**Eldveggur tækis kann að hafa lokað á þig**.
+## Eldveggur tækis kann að hafa lokað á þig.
 
 Ef þú ert með hugbúnað í tækinu þínu sem lokar á tengingar á útleið í óstöðluðum gáttum eða á óþekkan hugbúnað (ZoneAlarm frá CheckPoint) skaltu skoða fylgiskjöl tækisins eða hugbúnaðarins til að kynna þér hvernig hægt er að gera undantekningu fyrir Outline.
 

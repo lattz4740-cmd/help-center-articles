@@ -79,7 +79,7 @@ Serverproblemen:
 
 Als je toegang hebt tot meer dan één server, probeer je verbinding te maken met de andere server.
 
-**Oplossingen**:
+## Oplossingen:
 
 Vraag je servicemanager of de server is vernietigd. Als dit het geval is, vraag je de servicemanager om een [toegangssleutel](/about/terminology) tot een andere server.
 

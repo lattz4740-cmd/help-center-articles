@@ -27,8 +27,8 @@ Sau khi bạn lưu hạn mức chuyển dữ liệu cho khoá đã chọn, hạn
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-## **Câu hỏi thường gặp về hạn mức dữ liệu**
-## **Hạn mức dữ liệu kéo dài 30 ngày là gì?**
+## Câu hỏi thường gặp về hạn mức dữ liệu
+## Hạn mức dữ liệu kéo dài 30 ngày là gì?
  Hạn mức dữ liệu kéo dài 30 ngày cho biết tổng mức sử dụng dữ liệu của từng khoá trong 30 ngày qua và đảm bảo mức sử dụng của khoá trong khoảng thời gian đó được giữ dưới hạn mức. Do đó, mức sử dụng dữ liệu của khoá không bao giờ vượt quá hạn mức trong khoảng thời gian 30 ngày, kể cả các tháng có 30 ngày hoặc chưa đến 30 ngày. Trên thực tế, điều này có nghĩa là lượng dữ liệu tăng lên mỗi ngày của từng người dùng sẽ bằng với lượng dữ liệu họ sử dụng 31 ngày trước đó.
 
 ## Vì sao Outline sử dụng hạn mức kéo dài?

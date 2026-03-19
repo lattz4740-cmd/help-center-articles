@@ -3,8 +3,6 @@ title: Cihazınızın Outline serverinə qoşulması
 sidebar_label: Cihazınızın Outline serverinə qoşulması
 ---
 
-## Cihazınızın Outline serverinə qoşulması
-
 Cihazınızı Outline serverinə qoşmaq üçün server administratoru sizə öz serverinə unikal [giriş açarı](/about/terminology) ilə qoşulma dəvəti göndərməlidir. Bu dəvətdə:
 
 - Sizdə yoxdursa, Outline tətbiqini endirərək cihazınızda quraşdırmaq təklif olunacaq

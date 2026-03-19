@@ -3,8 +3,6 @@ title: "Opret forbindelse mellem din enhed og en Outline-server"
 sidebar_label: "Opret forbindelse mellem din enhed og en Outline-server"
 ---
 
-## Opret forbindelse mellem din enhed og en Outline-server
-
 Hvis du vil oprette forbindelse mellem din enhed og en Outline-server, skal en serveradministrator sende dig en invitation til at oprette forbindelse til vedkommendes server med en unik [adgangsnøgle](/about/terminology). Denne invitation gør følgende:
 
 - Beder dig om at downloade og installere Outline på din enhed, hvis du ikke allerede har gjort det

@@ -20,5 +20,5 @@ Ak chcete používať službu Outline, najprv je potrebné nastaviť si server O
 ## Nastavenie u iného poskytovateľa cloudu
  Po stiahnutí a inštalácii Správcu Outline môžete server Outline inštalovať vo virtuálnom počítači u poskytovateľa AWS, GCP, DigitalOcean, prípadne iného. Každé prostredie je iné, takže sme do postupu nastavenia Správcu Outline zahrnuli pokyny platné pri najčastejších poskytovateľoch cloudu. Zahŕňajú tiež návod na konfiguráciu nastavení vo virtuálnom počítači pred tým, ako spustíte inštalačný skript na inštaláciu služby Outline na serveri.
 
-## *Potrebujete ďalšiu pomoc?*
+## Potrebujete ďalšiu pomoc?
  Pozrite si [časté otázky o nastavení servera Outline](/manager/server-setup/setup-faqs).

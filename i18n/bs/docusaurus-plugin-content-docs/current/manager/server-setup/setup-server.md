@@ -20,5 +20,5 @@ Prvo morate postaviti Outline server da možete koristiti Outline. Server možet
 ## Postavite putem drugog pružaoca usluge oblaka
  Nakon preuzimanja i instaliranja Outline Managera možete odabrati instaliranje Outline servera na virtuelnoj mašini putem AWS-a, GCP-a, DigitalOceana ili drugog pružaoca usluge. Svako okruženje je različito, zato smo u tok postavljanja Outline Managera uključili uputstva za najčešće pružaoce usluge oblaka, uključujući postupak konfiguracije postavki na virtuelnoj mašini prije pokretanja instalacijskih skripta za instaliranje Outlinea na serveru.
 
-## *Trebate dodatnu pomoć?*
+## Trebate dodatnu pomoć?
  Pogledajte [Česta pitanja o postavljanju Outline servera](/manager/server-setup/setup-faqs).

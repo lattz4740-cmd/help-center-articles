@@ -20,5 +20,5 @@ Penyediaan pelayan Outline ialah langkah pertama untuk anda menggunakan Outline.
 ## Sediakan dengan penyedia awan yang lain
  Selepas memuat turun dan memasang Outline Manager, anda boleh memilih untuk memasang pelayan Outline pada mesin maya dengan AWS, GCP, DigitalOcean atau penyedia lain. Setiap persekitaran berbeza, oleh hal yang demikian kami telah menyertakan arahan dalam aliran persediaan Outline Manager untuk penyedia awan yang paling biasa, termasuk cara mengkonfigurasikan tetapan pada mesin maya anda sebelum anda menjalankan skrip pemasangan untuk memasang Outline pada pelayan.
 
-## *Perlukan bantuan lanjut?*
+## Perlukan bantuan lanjut?
  Semak [Soalan Lazim persediaan pelayan Outline](/manager/server-setup/setup-faqs) kami.

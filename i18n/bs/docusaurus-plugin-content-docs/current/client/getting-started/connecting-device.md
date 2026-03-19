@@ -3,8 +3,6 @@ title: Povezivanje uređaja s Outline serverom
 sidebar_label: Povezivanje uređaja s Outline serverom
 ---
 
-## Povezivanje uređaja s Outline serverom
-
 Da povežete uređaj s Outline serverom, administrator servera vam mora poslati pozivnicu za povezivanje s tim serverom pomoću jedinstvenog [pristupnog ključa](/about/terminology). Ta pozivnica će:
 
 - zatražiti da preuzmete i instalirate Outline na uređaj ako ga nemate

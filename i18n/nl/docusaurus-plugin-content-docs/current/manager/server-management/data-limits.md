@@ -27,8 +27,8 @@ Als je de datalimiet voor een toegangssleutel wilt verwijderen, ga je zoals eerd
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-## **Veelgestelde vragen over datalimieten**
-## **Wat is een totaallimiet van 30 dagen?**
+## Veelgestelde vragen over datalimieten
+## Wat is een totaallimiet van 30 dagen?
  Met een totaallimiet van 30 dagen wordt het gebruik van een sleutel in de afgelopen 30 dagen bij elkaar opgeteld en wordt gezorgd dat het gebruik van die sleutel onder de limiet blijft. Het gevolg is dat de limiet van de sleutel niet kan worden overschreden tijdens een periode van 30 dagen, waaronder kalendermaanden van 30 dagen of korter. Elke dag neemt dus de hoeveelheid beschikbare data voor een gebruiker toe met hoeveel data ze 31 dagen geleden hebben gebruikt.
 
 ## Waarom gebruikt Outline totaallimieten?

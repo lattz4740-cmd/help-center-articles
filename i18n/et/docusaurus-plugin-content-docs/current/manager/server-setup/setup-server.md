@@ -20,5 +20,5 @@ Outline'i kasutuselevõtmiseks tuleb esmalt seadistada Outline'i server. Seadist
 ## Seadistamine mõne muu pilveteenuse pakkuja abil
  Pärast Outline Manageri allalaadimist ja installimist võite installida Outline'i serveri virtuaalmasinasse AWS-i, GCP, DigitalOceani või muu teenusepakkuja abil. Iga keskkond on erinev, seega lisasime Outline Manageri seadistusvoogu juhised sageli kasutatavate pilveteenuste pakkujate jaoks. Sealhulgas selgitame, kuidas seadistada virtuaalmasina seadeid, enne kui käitate installiskripti, et Outline serverisse installida.
 
-## *Kas vajate rohkem abi?*
+## Kas vajate rohkem abi?
  Vaadake meie [Outline'i serveri seadistamise KKK-sid](/manager/server-setup/setup-faqs).

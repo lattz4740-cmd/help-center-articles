@@ -20,5 +20,5 @@ Para poder usar Outline, el primer paso consiste en configurar un servidor de Ou
 ## Cómo configurar Outline con otro proveedor de servicios en la nube
  Después de que descargues e instales Outline Manager, puedes instalar un servidor de Outline en una máquina virtual con AWS, Google Cloud, DigitalOcean o cualquier otro proveedor. Todos los entornos son diferentes, por lo que incluimos instrucciones en el flujo de configuración de Outline Manager para los proveedores de servicios en la nube más populares, incluidas instrucciones para definir la configuración en la máquina virtual antes de ejecutar la secuencia de comandos para instalar Outline en un servidor.
 
-## *¿Necesitas más ayuda?*
+## ¿Necesitas más ayuda?
  Consulta nuestras [Preguntas frecuentes sobre la configuración de servidores de Outline](/manager/server-setup/setup-faqs).

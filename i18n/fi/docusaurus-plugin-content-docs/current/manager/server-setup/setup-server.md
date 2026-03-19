@@ -20,5 +20,5 @@ Outlinen käyttö alkaa Outline-palvelimen käyttöönotolla. Sinun tai jonkun l
 ## Käyttöönotto toisella pilvipalveluntarjoajalla
  Kun olet ladannut ja asentanut Outline Managerin, voit asentaa Outline-palvelimen esimerkiksi AWS:ää, GCP:tä tai DigitalOceania tukevalle virtuaalikoneelle. Ympäristöt poikkeavat toisistaan, minkä vuoksi Outline Managerin käyttöönotto sisältää yleisimpiä pilvipalveluntarjoajia koskevat ohjeet. Ne auttavat sinua mm. valitsemaan virtuaalikoneen asetukset ennen kuin asennat Outlinen palvelimelle asennusskriptillä.
 
-## *tarvitsetko lisäapua?*
+## tarvitsetko lisäapua?
  Tutustu [Outline-palvelimen käyttöönoton usein kysyttyihin kysymyksiin](/manager/server-setup/setup-faqs).

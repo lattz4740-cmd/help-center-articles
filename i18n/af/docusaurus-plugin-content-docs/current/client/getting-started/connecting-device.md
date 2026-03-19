@@ -3,8 +3,6 @@ title: "Koppel jou toestel aan ’n Outline-bediener"
 sidebar_label: "Koppel jou toestel aan ’n Outline-bediener"
 ---
 
-## Koppel jou toestel aan ’n Outline-bediener
-
 Om jou toestel aan ’n Outline-bediener te kan koppel, moet ’n bedieneradministrateur vir jou ’n uitnodiging stuur met ’n unieke [toegangsleutel](/about/terminology) om aan hulle bediener te koppel. Hierdie uitnodiging sal:
 
 - Jou por om Outline op jou toestel af te laai en te installeer indien jy dit nie reeds het nie

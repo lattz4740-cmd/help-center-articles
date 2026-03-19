@@ -3,8 +3,6 @@ title: Conectarea dispozitivului la un server Outline
 sidebar_label: Conectarea dispozitivului la un server Outline
 ---
 
-## Conectarea dispozitivului la un server Outline
-
 Pentru a vă putea conecta dispozitivul la un server Outline, un administrator al serverului trebuie să vă trimită o invitație de conectare, împreună cu o [cheie de acces](/about/terminology) unică. Această invitație:
 
 - vă va solicita să descărcați și să instalați Outline pe dispozitiv dacă nu ați făcut-o deja;

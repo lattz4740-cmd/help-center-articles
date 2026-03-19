@@ -3,8 +3,6 @@ title: Pagkonekta ng iyong device sa isang Outline server
 sidebar_label: Pagkonekta ng iyong device sa isang Outline server
 ---
 
-## Pagkonekta ng iyong device sa isang Outline server
-
 Para maikonekta ang iyong device sa isang Outline server, kailangang padalhan ka ng isang administrator ng server ng imbitasyong kumonekta sa server nila sa pamamagitan ng natatanging [access key](/about/terminology). Ang imbitasyong ito ay:
 
 - Magpo-prompt sa iyo na i-download at i-install ang Outline sa iyong device kung wala ka pa nito

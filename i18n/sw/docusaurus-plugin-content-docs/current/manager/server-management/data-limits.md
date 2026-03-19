@@ -27,8 +27,8 @@ Ili uondoe kikomo cha data kwenye ufunguo, nenda kwenye kidirisha cha Kikomo cha
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-## **Maswali Yanayoulizwa Sana kuhusu Vikomo vya Data**
-## **Kikomo cha data cha siku 30 zilizopita ni nini?**
+## Maswali Yanayoulizwa Sana kuhusu Vikomo vya Data
+## Kikomo cha data cha siku 30 zilizopita ni nini?
  Kikomo cha data cha siku 30 zilizopita hujumlisha matumizi ya kila ufunguo katika kipindi cha siku 30 zilizopita na kuhakikisha kuwa matumizi ya ufunguo katika kipindi hicho yanasalia chini ya kikomo. Matokeo ni kwamba ufunguo huo hauwezi kuzidi kikomo katika kipindi chochote cha siku 30, ikiwa ni pamoja na miezi ya kalenda isiyozidi siku 30. Kutokana na hali hiyo, inamaanisha kuwa data iliyopo ya kila mtumiaji itaongezeka kila siku kwa kiasi alichotumia siku 31 zilizopita.
 
 ## Kwa nini Outline hutumia vikomo vya matumizi ya ufunguo?

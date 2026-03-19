@@ -20,5 +20,5 @@ Wenn Sie Outline nutzen möchten, müssen Sie zuerst einen Outline-Server einric
 ## Einrichtung bei einem anderen Cloud-Anbieter
  Nachdem Sie den Outline-Manager heruntergeladen und installiert haben, können Sie bei AWS, GCP, DigitalOcean oder einem anderen Anbieter auswählen, dass der Outline-Server auf einer virtuellen Maschine eingerichtet werden soll. Da jede Umgebung anders ist, enthält der Einrichtungsprozess von Outline-Manager Anleitungen für die häufigsten Cloud-Anbieter. So erfahren Sie unter anderem, wie Sie die Einstellungen auf Ihrer virtuellen Maschine konfigurieren müssen, bevor Sie das Skript ausführen, um Outline auf dem Server zu installieren.
 
-## *Sie brauchen weitere Hilfe?*
+## Sie brauchen weitere Hilfe?
 [Häufig gestellte Fragen zur Einrichtung eines Outline-Servers](/manager/server-setup/setup-faqs)

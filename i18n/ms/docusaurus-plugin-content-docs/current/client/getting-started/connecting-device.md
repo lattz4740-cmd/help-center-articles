@@ -3,8 +3,6 @@ title: Menyambungkan peranti anda kepada pelayan Outline
 sidebar_label: Menyambungkan peranti anda kepada pelayan Outline
 ---
 
-## Menyambungkan peranti anda kepada pelayan Outline
-
 Untuk menyambungkan peranti anda kepada pelayan Outline, pentadbir pelayan perlu menghantar undangan kepada anda untuk menyambungkan pelayan mereka dengan [kunci akses](/about/terminology) unik. Undangan ini akan:
 
 - Menggesa anda supaya memuat turun dan memasang Outline pada peranti anda jika anda belum mempunyai perisian itu

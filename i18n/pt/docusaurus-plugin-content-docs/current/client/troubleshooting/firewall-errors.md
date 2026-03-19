@@ -11,7 +11,7 @@ Se estiver a tentar instalar o Outline enquanto tem uma ligação estabelecida a
 
 Se isto não funcionar, contacte o administrador da rede para permitir ligações entre a rede com firewall e o servidor do Outline. Tem de conhecer o endereço IP do servidor do Outline e as portas em que o Outline está a ser executado, que estão indicadas no final do script de instalação.
 
-**A sua ligação pode estar bloqueada por uma firewall de dispositivo**.
+## A sua ligação pode estar bloqueada por uma firewall de dispositivo.
 
 Se tiver software no seu dispositivo que bloqueie ligações de saída em portas não padrão ou bloqueie software não reconhecido (ZoneAlarm da CheckPoint), consulte a documentação do dispositivo ou software para saber como criar uma exceção para o Outline.
 

@@ -11,7 +11,7 @@ Kui üritate installida Outline'i ja olete ühendatud tulemüüriga võrguga, n�
 
 Kui see ei toimi, võtke ühendust oma võrguadministraatoriga, et lubada ühendused tulemüüriga võrgu ja teie Outline'i serveri vahel. Teil on vaja teada oma Outline'i serveri IP-aadressi ja porte, kus Outline töötab, mis on märgitud installiskripti lõpus.
 
-**Teid võib blokeerida seadme tulemüür**.
+## Teid võib blokeerida seadme tulemüür.
 
 Kui teie seadmes on tarkvara, mis blokeerib mittestandardsete portide väljaminevad ühendused või tundmatu tarkvara (CheckPointi ZoneAlarm), vaadake seadme või tarkvara dokumentidest teavet Outline'i jaoks erandi loomise kohta.
 

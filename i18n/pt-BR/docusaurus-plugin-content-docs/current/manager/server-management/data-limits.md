@@ -27,8 +27,8 @@ Para remover o limite de dados de uma chave de acesso, abra a caixa de diálogo 
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-## **Perguntas frequentes sobre limites de dados**
-## **O que é um limite de uso de dados de 30 dias?**
+## Perguntas frequentes sobre limites de dados
+## O que é um limite de uso de dados de 30 dias?
  Esse limite soma o uso de cada chave nos últimos 30 dias e mantém o uso abaixo do limite nesse período. Assim, a chave nunca ultrapassa o limite, mesmo nos meses com mais ou menos de 30 dias. Ou seja, os dados disponíveis para cada usuário aumentam a cada dia de acordo com o valor usado nos 31 dias anteriores.
 
 Por que o Outline tem limites de uso?

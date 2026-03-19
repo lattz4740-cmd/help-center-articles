@@ -20,5 +20,5 @@ Konfigurationen af en Outline-server er det første skridt til at kunne bruge Ou
 ## Konfigurer med en anden skyudbyder
  Når du har downloadet og installeret Outline Manager, kan du vælge at installere en Outline-server på en virtuel maskine hos AWS, GCP, DigitalOcean eller en anden udbyder. Alle miljøer er forskellige, og derfor har vi inkluderet en vejledning, der gælder for de mest almindelige cloududbydere, i installationsflowet for Outline Manager. Vejledningen hjælper dig blandt andet med at konfigurere indstillingerne på din virtuelle maskine, før du kører installationsscriptet for at installere Outline på en server.
 
-## *Har du brug for mere hjælp?*
+## Har du brug for mere hjælp?
  Se vores [ofte stillede spørgsmål om konfiguration af Outline-serveren](/manager/server-setup/setup-faqs).

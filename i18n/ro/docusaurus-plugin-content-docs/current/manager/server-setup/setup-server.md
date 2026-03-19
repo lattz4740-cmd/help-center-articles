@@ -20,5 +20,5 @@ Configurarea unui server Outline este primul pas către utilizarea Outline. Dvs.
 ## Configurați cu alt furnizor de servicii cloud
  După ce descărcați și instalați Outline Manager, puteți selecta să instalați un server Outline pe o mașină virtuală folosind AWS, GCP, DigitalOcean sau alt furnizor. Fiecare mediu este diferit, așa că am inclus instrucțiuni în cadrul fluxului de configurare Outline Manager pentru cei mai frecvenți furnizori de servicii cloud, inclusiv modul de configurare a setărilor pe mașina dvs. virtuală, înainte de a rula scriptul de instalare pentru a instala Outline pe un server.
 
-## *Aveți nevoie de mai mult ajutor?*
+## Aveți nevoie de mai mult ajutor?
  Consultați [întrebările frecvente privind configurarea serverului Outline](/manager/server-setup/setup-faqs).

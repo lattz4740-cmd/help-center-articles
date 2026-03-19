@@ -20,5 +20,5 @@ sidebar_label: 如何設定 Outline 伺服器？
 ## 透過其他雲端服務供應商進行設定
  下載並安裝 Outline Manager 後，你可選擇使用 AWS、GCP、DigitalOcean 或其他供應商的服務，將 Outline 安裝至虛擬機器。每種環境的步驟各有不同，因此我們在 Outline Manager 設定流程中納入幾間常見服務供應商的指示，包括如何在虛擬機器上完成設定並執行安裝指令碼，以在伺服器上安裝 Outline。
 
-## *需要更多協助嗎？*
+## 需要更多協助嗎？
  請參閱我們的 [Outline 伺服器設定常見問題](/manager/server-setup/setup-faqs)。

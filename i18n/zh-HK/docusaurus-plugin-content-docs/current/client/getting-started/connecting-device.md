@@ -3,8 +3,6 @@ title: 將你的裝置連線至 Outline 伺服器
 sidebar_label: 將你的裝置連線至 Outline 伺服器
 ---
 
-## 將你的裝置連線至 Outline 伺服器
-
 如要將你的裝置連線至 Outline 伺服器，伺服器管理員需要先向你傳送連線至伺服器的邀請，並提供一組專屬的[存取金鑰](/about/terminology)。此邀請將會：
 
 - 提示你在裝置下載並安裝 Outline (如尚未安裝 Outline 應用程式)

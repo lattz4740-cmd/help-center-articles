@@ -70,7 +70,7 @@ Assegura't que no tinguis cap aplicació de superposició de pantalla instal·la
 
  Per a iOS: llegeix [aquest article d'assistència](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
-**Problemes amb el servidor**:
+## Problemes amb el servidor:
 
 ## Com pots fer una prova:
 Si tens accés a més d'un servidor, prova de connectar-te a un altre.

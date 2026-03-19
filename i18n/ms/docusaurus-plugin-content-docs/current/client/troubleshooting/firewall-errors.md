@@ -11,7 +11,7 @@ Jika anda sedang cuba memasang Outline semasa disambungkan kepada rangkaian bert
 
 Jika langkah ini tidak berjaya, sila hubungi pentadbir rangkaian anda untuk membolehkan sambungan antara rangkaian bertembok api tersebut dengan pelayan Outline anda. Anda perlu mengetahui alamat IP pelayan Outline anda dan port tempat Outline dijalankan, yang ditunjukkan pada penghujung skrip pemasangan.
 
-**Anda mungkin disekat oleh tembok api peranti**.
+## Anda mungkin disekat oleh tembok api peranti.
 
 Jika anda mempunyai perisian pada peranti anda yang menyekat sambungan keluar pada port tidak standard atau perisian yang tidak dikenali, (ZoneAlarm CheckPoint), sila rujuk dokumentasi peranti atau perisian anda untuk mengetahui cara membuat pengecualian bagi Outline.
 

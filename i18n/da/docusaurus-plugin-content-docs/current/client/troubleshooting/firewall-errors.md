@@ -11,7 +11,7 @@ Hvis du forsøger at installere Outline, mens du har forbindelse til et netværk
 
 Hvis det ikke virker, kan du kontakte din netværksadministrator, som kan tillade forbindelser mellem det netværk, der er beskyttet af en firewall, og din Outline-server. Du skal kende din Outline-servers IP-adresse og de porte, som Outline anvender. De angives til sidst i installationsscriptet.
 
-**Du kan blive blokeret af en firewall på en enhed**.
+## Du kan blive blokeret af en firewall på en enhed.
 
 Hvis du har software på din enhed, der blokerer for udgående forbindelser på ikke-standardporte, eller software, der ikke genkendes (f.eks. CheckPoints ZoneAlarm), kan du læse dokumentationen til enheden eller softwaren for at få flere oplysninger om, hvordan du opretter en undtagelse for Outline.
 

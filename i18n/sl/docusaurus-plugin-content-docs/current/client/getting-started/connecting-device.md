@@ -3,8 +3,6 @@ title: Povezovanje naprave s strežnikom Outline
 sidebar_label: Povezovanje naprave s strežnikom Outline
 ---
 
-## Povezovanje naprave s strežnikom Outline
-
 Če želite svojo napravo povezati s strežnikom Outline, vam mora skrbnik strežnika poslati povabilo za povezavo s strežnikom z edinstvenim [ključem za dostop](/about/terminology). To povabilo bo:
 
 - vsebovalo poziv k prenosu in namestitvi aplikacije Outline v napravo, če je še niste namestili,

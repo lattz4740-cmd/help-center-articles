@@ -27,8 +27,8 @@ Pentru a elimina limita de date a unei chei de acces, navigați la caseta de dia
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-## **Întrebări frecvente privind limitele de date**
-## **Ce este o limită de date timp de 30 de zile?**
+## Întrebări frecvente privind limitele de date
+## Ce este o limită de date timp de 30 de zile?
  O limită de date timp de 30 de zile va însuma utilizarea fiecărei chei în ultimele 30 de zile și va păstra utilizarea acesteia în perioada respectivă sub limita stabilită. Efectul este următorul: cheia nu poate depăși limita pe orice perioadă de 30 de zile, inclusiv lunile calendaristice de maximum 30 de zile. În fapt, datele disponibile pentru fiecare utilizator vor crește în fiecare zi cu cantitatea pe care au folosit-o acum 31 de zile.
 
 ## De ce folosește Outline astfel de limite?

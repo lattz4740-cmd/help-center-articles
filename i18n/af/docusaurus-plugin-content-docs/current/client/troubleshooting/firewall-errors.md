@@ -11,7 +11,7 @@ Indien jy Outline probeer installeer terwyl jy aan ’n brandmuurnetwerk gekoppe
 
 Indien dit nie werk nie, moet jy asseblief jou netwerkadmin kontak om verbindings tussen die brandmuurnetwerk en jou Outline-bediener toe te laat. Jy sal jou Outline-bediener se IP-adres moet ken, asook die poorte waardeur Outline loop. Dit word aan die einde van die installasieskrip aangedui.
 
-**Jy kan deur ’n toestelbrandmuur geblokkeer word**.
+## Jy kan deur ’n toestelbrandmuur geblokkeer word.
 
 Indien jy sagteware op jou toestel het wat uitgaande verbindings op nie-standaardpoorte blokkeer, of sagteware wat nie herken word nie (CheckPoint se ZoneAlarm), moet jy jou toestel of sagteware se dokumente raadpleeg om uit te vind hoe om ’n uitsondering vir Outline te skep.
 

@@ -20,5 +20,5 @@ Opstel van ’n Outline-bediener is die eerste stap in die gebruik van Outline. 
 ## Stel met ’n ander wolkverskaffer op
  Nadat jy Outline Manager afgelaai en geïnstalleer het, kan jy kies om ’n Outline-bediener op ’n virtuele masjien te installeer met AWS, GCP, DigitalOcean, of ’n ander verskaffer. Elke omgewing is anders, en dus het ons instruksies ingesluit binne die Outline Manager-opstellingsvloei vir die mees algemene wolkdiensverskaffers, insluitend hoe om die instellings op jou virtuele masjien op te stel voordat jy die installeringskrip laat loop om Outline op ’n bediener te installeer.
 
-## *Het jy nog hulp nodig?*
+## Het jy nog hulp nodig?
  Raadpleeg gerus ons [Gereelde vrae oor Outline-bedieneropstelling](/manager/server-setup/setup-faqs).

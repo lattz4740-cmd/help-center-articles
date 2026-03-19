@@ -20,5 +20,5 @@ Första steget i att använda Outline är att konfigurera en Outline-server. Du 
 ## Konfigurera med en annan molnleverantör
  När du har laddat ned och installerat Outline Manager kan du välja att installera en Outline-server på en virtuell dator med AWS, GCP, DigitalOcean eller en annan leverantör. Ingen miljö är den andra lik, så vi har inkluderat anvisningar för de flesta vanliga molnleverantörer i Outline Managers konfigurationsflöde. I flödet finns anvisningar om hur du konfigurerar inställningarna på den virtuella datorn innan du kör installationsskriptet och installerar Outline på en server.
 
-## *Behöver du mer hjälp?*
+## Behöver du mer hjälp?
  Läs våra [vanliga frågor om konfiguration av Outline-servrar](/manager/server-setup/setup-faqs).

@@ -27,8 +27,8 @@ Ak chcete dátový limit odstrániť z prístupového kľúča, prejdite na jeho
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-## **Časté otázky o dátovom limite**
-## **Čo je to 30‑dňový kĺzavý dátový limit?**
+## Časté otázky o dátovom limite
+## Čo je to 30‑dňový kĺzavý dátový limit?
  30‑dňový kĺzavý dátový limit spočíta používanie každého kľúča za posledných 30 dní a na dané obdobie obmedzí používanie kľúča tak, aby tento limit neprekročil. Výsledkom je, že kľúč nemôže presiahnuť limit počas ľubovoľného 30‑dňového obdobia vrátane kalendárnych mesiacov s najviac 30 dňami. V praxi to znamená, že dostupné dáta každého používateľa sa každý deň zvýšia o množstvo dát, ktoré daný používateľ použil pred 31 dňami.
 
 ## Prečo Outline využíva kĺzavé limity?

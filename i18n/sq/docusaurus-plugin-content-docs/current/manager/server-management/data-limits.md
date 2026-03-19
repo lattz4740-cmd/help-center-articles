@@ -27,8 +27,8 @@ Për ta hequr kufirin e të dhënave nga një çelës qasjeje, navigo te dialogu
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-## **Pyetjet e shpeshta për "Kufijtë e të dhënave"**
-## **Çfarë është një kufi gradual 30-ditor?**
+## Pyetjet e shpeshta për "Kufijtë e të dhënave"
+## Çfarë është një kufi gradual 30-ditor?
  Një kufi gradual 30-ditor i të dhënave do të përllogarisë përdorimin për çdo çelës gjatë 30-ditëve të fundit dhe do ta mbajë përdorimin e çelësit për atë periudhë nën kufirin përkatës. Efekti i kësaj është që çelësi nuk mund ta kalojë kufirin gjatë një periudhe 30-ditore, duke përfshirë muajt kalendarikë me 30 ditë ose më pak. Në fakt, kjo do të thotë që të dhënat e disponueshme të çdo përdoruesi do të rriten çdo ditë me sasinë që ka përdorur 31 ditë më parë.
 
 ## Pse Outline përdor kufij gradualë?

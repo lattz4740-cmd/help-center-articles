@@ -11,7 +11,7 @@ Ja mēģināt instalēt programmatūru Outline, kad ir izveidots savienojums ar 
 
 Ja tas nedarbojas, sazinieties ar tīkla administratoru, lai nodrošinātu atļauju savienojuma izveidei starp ugunsmūra aizsargātu tīklu un Outline serveri. Jums būs jāzina sava Outline servera IP adrese un porti, kuros darbojas programmatūra Outline — tie ir norādīti instalācijas skripta beigās.
 
-**Bloķēšanu var veikt ierīces ugunsmūris**.
+## Bloķēšanu var veikt ierīces ugunsmūris.
 
 Ja ierīcē ir programmatūra, kas bloķē nestandarta portu vai neatzītas programmatūras (CheckPoint ZoneAlarm) izejošos savienojumus, skatiet ierīces vai programmatūras dokumentāciju, lai uzzinātu, kā izveidot izņēmumu programmatūrai Outline.
 

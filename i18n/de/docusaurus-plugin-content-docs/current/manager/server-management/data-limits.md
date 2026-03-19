@@ -27,8 +27,8 @@ Wenn Sie ein festgelegtes Datenlimit für einen Zugriffsschlüssel wieder lösch
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-## **FAQs zu Datenlimits**
-## **Was ist ein abhängiges Datenlimit auf Grundlage der letzten 30 Tage?**
+## FAQs zu Datenlimits
+## Was ist ein abhängiges Datenlimit auf Grundlage der letzten 30 Tage?
  Das Datenlimit für die einzelnen Zugriffsschlüssel wird auf Grundlage der Datennutzung in den letzten 30 Tagen berechnet. Das Limit eines Schlüssels gilt also für den gesamten Zeitraum von 30 Tagen, auch bei Kalendermonaten mit 30 oder weniger Tagen. Das heißt, dass zu den für einen Nutzer verfügbaren Daten jeden Tag die Menge hinzugezählt wird, die er vor 31 Tagen genutzt hat.
 
 ## Welchen Vorteil haben abhängige Datenlimits?

@@ -3,8 +3,6 @@ title: "Laitteen yhdistäminen Outline-palvelimeen"
 sidebar_label: "Laitteen yhdistäminen Outline-palvelimeen"
 ---
 
-## Laitteen yhdistäminen Outline-palvelimeen
-
 Jos haluat yhdistää laitteesi Outline-palvelimeen, palvelimen järjestelmänvalvojan on lähetettävä sinulle kutsu yhteyden muodostamiseen palvelimelle yksilöllisen [pääsyavaimen](/about/terminology) avulla. Kyseinen kutsu
 
 - kehottaa sinua lataamaan ja asentamaan Outlinen laitteelle, jos sinulla ei vielä ole sitä

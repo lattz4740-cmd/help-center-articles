@@ -20,5 +20,5 @@ Bước đầu tiên để có thể sử dụng Outline là thiết lập một
 ## Thiết lập với một nhà cung cấp dịch vụ đám mây khác
  Sau khi tải ứng dụng Quản lý Outline xuống và cài đặt nó, bạn có thể chọn cài đặt một máy chủ Outline trên máy ảo thông qua AWS, GCP, DigitalOcean hoặc một nhà cung cấp khác. Vì không có môi trường nào giống nhau nên chúng tôi đã đưa các hướng dẫn vào quy trình thiết lập ứng dụng Quản lý Outline cho các nhà cung cấp dịch vụ đám mây phổ biến nhất, bao gồm cả cách định cấu hình chế độ cài đặt trên máy ảo trước khi bạn chạy tập lệnh cài đặt để cài đặt Outline trên máy chủ.
 
-## *Bạn cần được hỗ trợ thêm?*
+## Bạn cần được hỗ trợ thêm?
  Hãy tham khảo [các câu hỏi thường gặp về cách thiết lập máy chủ Outline](/manager/server-setup/setup-faqs).

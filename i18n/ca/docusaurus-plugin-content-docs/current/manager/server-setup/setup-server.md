@@ -20,5 +20,5 @@ Configurar un servidor d'Outline és el primer pas que s'ha de dur a terme per p
 ## Configurar el servidor amb un altre proveïdor de serveis al núvol
  Després de baixar i d'instal·lar el Gestor d'Outline, pots optar per instal·lar un servidor d'Outline en una màquina virtual amb AWS, GCP, DigitalOcean o un altre proveïdor. Cada entorn és diferent i, per això, hem inclòs instruccions per als proveïdors al núvol més habituals a l'auxiliar de configuració del Gestor d'Outline, que inclouen el procediment per configurar les opcions a la màquina virtual abans d'executar l'script d'instal·lació per instal·lar Outline en un servidor.
 
-## *Necessites més ajuda?*
+## Necessites més ajuda?
  Consulta les [preguntes més freqüents sobre la configuració del servidor d'Outline](/manager/server-setup/setup-faqs).

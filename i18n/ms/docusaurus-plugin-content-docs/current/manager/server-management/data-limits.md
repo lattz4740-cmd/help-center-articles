@@ -27,8 +27,8 @@ Untuk mengalih keluar had data daripada kunci akses, navigasi kepada dialog Had 
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-## **Soalan Lazim Had Data**
-## **Apakah itu had data mengekor 30 hari?**
+## Soalan Lazim Had Data
+## Apakah itu had data mengekor 30 hari?
  Had data mengekor 30 hari akan menjumlahkan penggunaan setiap kunci sepanjang 30 hari yang lalu dan memastikan penggunaan kunci sepanjang tempoh tersebut bawah had. Kesan daripada perkara ini ialah kunci tersebut tidak boleh melebihi had sepanjang sebarang tempoh 30 hari, termasuk bulan kalendar 30 hari atau kurang. Dengan penggunaan tersebut, hal ini bermakna bahawa data yang tersedia bagi setiap pengguna akan meningkat setiap hari mengikut jumlah yang digunakan oleh mereka sepanjang 31 hari yang lalu.
 
 ## Mengapakah Outline menggunakan had mengekor?

@@ -3,8 +3,6 @@ title: Ligar o dispositivo a um servidor do Outline
 sidebar_label: Ligar o dispositivo a um servidor do Outline
 ---
 
-## Ligar o dispositivo a um servidor do Outline
-
 Para ligar o seu dispositivo a um servidor do Outline, um administrador do servidor tem de lhe enviar um convite para estabelecer ligação ao respetivo servidor com uma [chave de acesso](/about/terminology) exclusiva. Este convite:
 
 - Vai pedir-lhe para transferir e instalar o Outline no seu dispositivo, se ainda não o tiver

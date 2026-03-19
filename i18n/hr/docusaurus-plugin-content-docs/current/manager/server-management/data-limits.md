@@ -27,8 +27,8 @@ Da biste uklonili ograničenje podatkovnog prometa s pristupnog ključa, otvorit
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-## **Česta pitanja o ograničenju podatkovnog prometa**
-## **Što je 30-dnevno promjenjivo ograničenje podatkovnog prometa?**
+## Česta pitanja o ograničenju podatkovnog prometa
+## Što je 30-dnevno promjenjivo ograničenje podatkovnog prometa?
  Promjenjivo ograničenje podatkovnog prometa za 30 dana zbrojit će upotrebu svakog ključa u proteklih 30 dana i zadržati je ispod ograničenja tijekom tog razdoblja. To znači da ključ ne može prekoračiti ograničenje tijekom bilo kojeg 30-dnevnog razdoblja, uključujući kalendarske mjesece koji imaju 30 dana ili manje. To zapravo znači da će se dostupan podatkovni promet svakog korisnika povećavati svaki dan na temelju količine podataka koju je potrošio prije 31 dan.
 
 ## Zašto Outline upotrebljava promjenjiva ograničenja?

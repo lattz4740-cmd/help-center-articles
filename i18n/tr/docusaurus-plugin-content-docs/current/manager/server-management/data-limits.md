@@ -27,8 +27,8 @@ Bir erişim anahtarının veri sınırını kaldırmak için ilgili anahtarın V
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-## **Veri sınırıyla ilgili sık sorulan sorular**
-## **30 günlük hareketli veri sınırı nedir?**
+## Veri sınırıyla ilgili sık sorulan sorular
+## 30 günlük hareketli veri sınırı nedir?
  30 günlük hareketli veri sınırı, her bir anahtarın son 30 gün içindeki toplam kullanımını hesaplar ve ilgili dönem boyunca anahtar kullanımını sınırın altında tutar. Böylece, anahtarın herhangi bir 30 günlük süre boyunca (30 gün veya daha kısa olan takvim ayları dahil) sınırı aşmaması sağlanır. Bu, her bir kullanıcının kullanılabileceği veri miktarının, 31 gün önce kullandıkları miktar ölçüsünde artacağı anlamına gelir.
 
 ## Outline, hareketli sınırları neden kullanır?

@@ -3,8 +3,6 @@ title: Pajisja jote po lidhet me një server të Outline
 sidebar_label: Pajisja jote po lidhet me një server të Outline
 ---
 
-## Pajisja jote po lidhet me një server të Outline
-
 Për ta lidhur pajisjen tënde me një server të Outline, një administrator sistemi duhet të të dërgojë një ftesë për t'u lidhur me serverin e tij me një [çelës unik qasjeje](/about/terminology). Kjo ftesë:
 
 - Do të të kërkojë të shkarkosh dhe të instalosh Outline në pajisjen tënde nëse nuk e ke tashmë atë

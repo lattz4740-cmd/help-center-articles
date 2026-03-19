@@ -27,8 +27,8 @@ Aby usunąć limit danych z klucza dostępu, przejdź do okna „Limit danych”
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-## **Najczęstsze pytania dotyczące limitów danych**
-## **Co to jest 30-dniowy limit danych?**
+## Najczęstsze pytania dotyczące limitów danych
+## Co to jest 30-dniowy limit danych?
  Funkcja 30-dniowego limitu danych będzie sumować użycie danych przez poszczególne klucze dostępu z ostatnich 30 dni i zagwarantuje nieprzekroczenie limitu w tym okresie. W efekcie klucz nie może przekroczyć limitu w żadnym okresie 30 dni, również w przypadku miesięcy kalendarzowych liczących 30 dni i mniej. Oznacza to, że dostępne dane poszczególnych użytkowników będą zwiększać się każdego dnia o ilość wykorzystaną 31 dni wcześniej.
 
 Dlaczego Outline używa limitów okresowych?

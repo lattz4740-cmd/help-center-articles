@@ -27,8 +27,8 @@ Pour supprimer la limite de données d'une clé d'accès, accédez à la boîte 
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-## **Questions fréquentes sur les limites de données**
-## **Qu'est-ce qu'une limite de données sur 30 jours glissants ?**
+## Questions fréquentes sur les limites de données
+## Qu'est-ce qu'une limite de données sur 30 jours glissants ?
  Une limite de données sur 30 jours glissants additionne l'utilisation de chaque clé au cours des 30 derniers jours et maintient les valeurs en dessous de la limite au cours de cette période. Ainsi, la clé ne peut pas dépasser la limite pendant toute période de 30 jours, y compris les mois calendaires de 30 jours ou moins. Cela signifie que la quantité de données disponible pour chaque utilisateur augmente chaque jour selon la quantité utilisée 31 jours avant.
 
 ## Pourquoi Outline fixe-t-il des limites glissantes ?

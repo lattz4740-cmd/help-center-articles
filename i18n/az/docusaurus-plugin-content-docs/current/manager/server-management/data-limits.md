@@ -27,8 +27,8 @@ Giriş açarı üzrə data limitini silmək üçün əvvəlki kimi açarın "Dat
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-## **Data Limiti haqqında tez-tez verilən suallar**
-## **30 günlük ardıcıl data limiti nədir?**
+## Data Limiti haqqında tez-tez verilən suallar
+## 30 günlük ardıcıl data limiti nədir?
  30 günlük ardıcıl data limiti ilə hər açarın son 30 gün ərzində istifadəsi cəmlənir və həmin müddət ərzində açardan istifadə limitdən aşağı olur. Təsiri ondan ibarətdir ki, açar 30 gün və ya daha az olan təqvim ayları daxil olmaqla, müəyyən 30 günlük müddət ərzində limiti keçə bilməz. Əslində bu, hər istifadəçinin mövcud datasının hər gün 31 gün əvvəl istifadə etdiyi miqdar qədər artacağı deməkdir.
 
 ## Nəyə görə Outline ardıcıl limitlərdən istifadə edir?

@@ -3,8 +3,6 @@ title: Kuunganisha kifaa chako kwenye seva ya Outline
 sidebar_label: Kuunganisha kifaa chako kwenye seva ya Outline
 ---
 
-## Kuunganisha kifaa chako kwenye seva ya Outline
-
 Ili uunganishe kifaa chako kwenye seva ya Outline, ni lazima msimamizi wa seva akutumie mwaliko wa kuunganisha katika seva yake ukitumia [ufunguo](/about/terminology) wa kipekee. Mwaliko huu:
 
 - Utakuomba upakue kisha uweke Outline kwenye kifaa chako ikiwa huna

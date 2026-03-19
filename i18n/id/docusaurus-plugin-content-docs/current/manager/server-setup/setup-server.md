@@ -20,5 +20,5 @@ Menyiapkan server Outline adalah langkah pertama untuk dapat menggunakan Outline
 ## Menyiapkan dengan penyedia cloud lain
  Setelah mendownload dan menginstal Outline Manager, Anda dapat memilih untuk menginstal server Outline di virtual machine dengan AWS, GCP, DigitalOcean, atau penyedia cloud lain. Setiap lingkungan memiliki perbedaan, sehingga kami menyertakan petunjuk di dalam alur penyiapan Outline Manager untuk penyedia cloud yang paling umum, termasuk cara mengonfigurasi setelan di mesin virtual sebelum Anda menjalankan skrip penginstalan untuk menginstal Outline di server.
 
-## *Perlu bantuan lain?*
+## Perlu bantuan lain?
  Lihat [FAQ penyiapan server outline](/manager/server-setup/setup-faqs) kami.

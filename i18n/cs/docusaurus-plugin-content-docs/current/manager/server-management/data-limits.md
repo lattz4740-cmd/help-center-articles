@@ -27,8 +27,8 @@ Pokud chcete datový limit z přístupového klíče odebrat, podle pokynů vý�
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-## **Časté dotazy k datovému limitu**
-## **Co je 30denní klouzavý limit?**
+## Časté dotazy k datovému limitu
+## Co je 30denní klouzavý limit?
  Třicetidenní klouzavý limit sčítá využití dat u jednotlivých klíčů za posledních 30 dnů a udržuje využití klíče za toto období pod limitem. Výsledkem je, že klíč během žádného období 30 dnů (včetně kalendářních měsíců se 30 a méně dny) nemůže překročit limit. Vlastně to znamená, že se dostupná data každého uživatele každý den zvýší o množství, které využil před 31 dny.
 
 ## Proč se v Outline používají klouzavé limity?

@@ -20,5 +20,5 @@ Uppsetning Outline-þjóns er fyrsta skrefið til að geta notað Outline. Anna�
 ## Uppsetning með annarri skýjaþjónustu
  Þegar búið er að sækja og setja upp Outline Manager er hægt að setja upp Outline-þjón í sýndarvél með AWS, GCP, DigitalOcean eða annarri þjónustu. Ekkert umhverfanna er eins svo uppsetningarferli Outline Manager inniheldur leiðbeiningar fyrir helstu skýjaþjónusturnar, þar á meðal um að velja stillingar í sýndarvélinni áður en uppsetningarskriftan er keyrð til að setja upp Outline á þjóni.
 
-## *Þarftu frekari aðstoð?*
+## Þarftu frekari aðstoð?
  Skoðaðu [algengar spurningar um uppsetningu Outline-þjóns](/manager/server-setup/setup-faqs).

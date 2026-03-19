@@ -11,7 +11,7 @@ Nëse po përpiqesh ta instalosh Outline ndërkohë që je i lidhur me një rrje
 
 Nëse kjo nuk funksionon, kontakto me administratorin e rrjetit për të lejuar lidhjet mes rrjetit me mur mbrojtës dhe serverit tënd të Outline. Do të duhet të dish adresën IP të serverëve të Outline dhe portat ku ekzekutohet Outline, të cilat jepen në skriptin e instalimit.
 
-**Mund të bllokohesh nga një mur mbrojtës i pajisjes**.
+## Mund të bllokohesh nga një mur mbrojtës i pajisjes.
 
 Nëse ke një softuer në pajisjen tënde që bllokon lidhjet dalëse në portat jostandarde ose një softuer jo të njohur (p.sh. ZoneAlarm nga CheckPoint), këshillohu me dokumentacionin e pajisjes ose softuerit për të mësuar se si të krijosh një përjashtim për Outline.
 

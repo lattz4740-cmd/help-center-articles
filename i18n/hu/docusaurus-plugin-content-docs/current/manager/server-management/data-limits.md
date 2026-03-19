@@ -27,8 +27,8 @@ A hozzáférési kulcs adatforgalmi korlátozásának eltávolításához a kor�
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-## **Gyakori kérdések az adatforgalmi korlátozásról**
-## **Mi az a 30 napos visszamenőleges adatforgalmi korlátozás?**
+## Gyakori kérdések az adatforgalmi korlátozásról
+## Mi az a 30 napos visszamenőleges adatforgalmi korlátozás?
  A 30 napos visszamenőleges adatforgalmi korlátozás úgy működik, hogy összeadjuk az egyes kulcsokhoz kapcsolódó használatot az elmúlt 30 napra, és nem engedjük, hogy a kulcs használata meghaladja ezt a korlátozást. Ennek az lesz a hatása, hogy a kulcs egyetlen 30 napos időszakon belül sem lépheti túl a korlátozást, így a 30 napos és a rövidebb naptári hónapokban sem. Ez azt jelenti, hogy az egyes felhasználók rendelkezésére álló adatkeret minden nap megnő azzal a mennyiséggel, amelyet 31 nappal korábban felhasználtak.
 
 ## Miért használ az Outline visszamenőleges korlátozásokat?

@@ -27,8 +27,8 @@ Per suprimir el límit de dades d'una clau d'accés, igual que abans, navega fin
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-## **Preguntes més freqüents sobre el límit de dades**
-## **Què és un límit de dades final de 30 dies?**
+## Preguntes més freqüents sobre el límit de dades
+## Què és un límit de dades final de 30 dies?
  Amb un límit de dades final de 30 dies, se suma l'ús de cada clau durant els 30 darrers dies i se'n manté l'ús per sota del límit durant aquest període. En conseqüència, la clau no pot superar el límit durant cap període de 30 dies, inclosos els mesos naturals de 30 dies o menys. De fet, això vol dir que les dades disponibles de cada usuari augmentaran cada dia d'acord amb la quantitat que hagués utilitzat 31 dies abans.
 
 ## Per què Outline utilitza límits finals?

@@ -11,7 +11,7 @@ Hvis du prøver å installere Outline mens du er koblet til et brannmurbeskyttet
 
 Hvis dette ikke virker, kan du be nettverksadministratoren om å tillate tilkoblinger mellom det brannmurbeskyttede nettverket og Outline-tjeneren din. Du må vite hva Outline-tjenerens IP-adresse er, og hvilke porter Outline bruker. Dette står på slutten av installasjonsskriptet.
 
-**Du kan bli blokkert av en enhetsbrannmur**.
+## Du kan bli blokkert av en enhetsbrannmur.
 
 Hvis du har programvare på enheten din som blokkerer utgående tilkoblinger på annet enn standardporter, eller har ukjent programvare (for eksempel ZoneAlarm fra CheckPoint), kan du slå opp i dokumentasjonen for enheten eller programvaren for å finne ut hvordan du oppretter et unntak for Outline.
 

@@ -20,5 +20,5 @@ Konfigurimi i një serveri të Outline është hapi i parë për të arritur të
 ## Konfigurimi me një ofrues tjetër të shërbimit të resë kompjuterike
  Pas shkarkimit dhe instalimit të Outline Manager, mund të zgjedhësh të instalosh një server të Outline në një pajisje virtuale me AWS, GCP, DigitalOcean ose një ofrues tjetër. Çdo mjedis është i ndryshëm, prandaj ne kemi përfshirë udhëzime në rrjedhën e konfigurimit të Outline Manager për ofruesit më të zakonshëm të shërbimit të resë kompjuterike, duke përfshirë se si t'i konfigurosh cilësimet në pajisjen tënde virtuale para se të ekzekutosh skriptin e instalimit për instalimin e Outline në një server.
 
-## *Ke nevojë për më shumë ndihmë?*
+## Ke nevojë për më shumë ndihmë?
  Kontrollo [pyetjet e shpeshta për konfigurimin e serverit të Outline](/manager/server-setup/setup-faqs).

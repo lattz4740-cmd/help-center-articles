@@ -3,8 +3,6 @@ title: "Ansluta en enhet till en Outline-server"
 sidebar_label: "Ansluta en enhet till en Outline-server"
 ---
 
-## Ansluta en enhet till en Outline-server
-
 Du kan bara ansluta en enhet till en Outline-server om du får en inbjudan att ansluta från en serveradministratör. Inbjudan innehåller en unik [åtkomstnyckel](/about/terminology). Följande sker om du får en inbjudan:
 
 - Du blir ombedd att ladda ned och installera Outline på enheten om du inte redan har gjort det.

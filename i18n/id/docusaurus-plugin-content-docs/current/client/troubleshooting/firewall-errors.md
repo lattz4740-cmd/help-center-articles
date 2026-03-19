@@ -11,7 +11,7 @@ Jika Anda mencoba menginstal Outline saat terhubung ke jaringan firewall, sepert
 
 Jika tindakan ini tidak berhasil, hubungi administrator jaringan untuk mengizinkan koneksi antara jaringan firewall ke server Outline Anda. Anda perlu mengetahui alamat IP server Outline Anda dan port tempat Outline berjalan yang ditunjukkan di akhir skrip penginstalan.
 
-**Anda mungkin diblokir oleh firewall perangkat**.
+## Anda mungkin diblokir oleh firewall perangkat.
 
 Jika Anda memiliki software di perangkat yang memblokir koneksi keluar pada port non-standar, atau software tidak dikenal, (ZoneAlarm CheckPoint), baca dokumentasi perangkat atau software untuk mempelajari cara membuat pengecualian untuk Outline.
 

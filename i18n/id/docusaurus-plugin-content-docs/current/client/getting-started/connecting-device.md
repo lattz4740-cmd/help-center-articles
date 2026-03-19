@@ -3,8 +3,6 @@ title: Menghubungkan perangkat Anda ke server Outline
 sidebar_label: Menghubungkan perangkat Anda ke server Outline
 ---
 
-## Menghubungkan perangkat Anda ke server Outline
-
 Agar dapat menghubungkan perangkat Anda ke server Outline, administrator server harus mengirimi Anda undangan untuk terhubung ke servernya dengan [kunci akses](/about/terminology) unik. Undangan ini akan:
 
 - Meminta Anda mendownload dan menginstal Outline di perangkat Anda, jika Anda belum memilikinya

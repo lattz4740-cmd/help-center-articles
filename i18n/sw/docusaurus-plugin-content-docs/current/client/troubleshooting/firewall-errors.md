@@ -11,7 +11,7 @@ Ikiwa unajaribu kuweka Outline ukiwa umeunganisha na mtandao uliokingwa, kama vi
 
 Hatua hiyo isipofanya kazi, tafadhali wasiliana na msimamizi wa mtandao wako ili aruhusu miunganisho kati ya mtandao uliokingwa na seva yako ya Outline. Utahitaji kujua anwani ya IP ya seva yako ya Outline na milango ambako Outline inatekelezwa, ambayo imeonyeshwa mwishoni mwa hati ya uwekaji.
 
-**Huenda ukazuiwa na kinga mtandao ya kifaa**.
+## Huenda ukazuiwa na kinga mtandao ya kifaa.
 
 Iwapo una programu katika kifaa chako inayozuia miunganisho inayotoka kwenye milango isiyo ya kawaida au programu isiyotambulika, (ZoneAlarm kutoka CheckPoint), tafadhali soma hati ya kifaa au ya programu yako ili upate maelezo zaidi kuhusu jinsi ya kuzuia Outline isiathiriwe.
 

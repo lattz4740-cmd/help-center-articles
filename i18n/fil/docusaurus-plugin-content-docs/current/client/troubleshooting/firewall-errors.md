@@ -11,7 +11,7 @@ Kung sinusubukan mong i-install ang Outline habang nakakonekta sa isang network 
 
 Kung hindi ito gagana, makipag-ugnayan sa administrator ng network mo para payagan ang mga koneksyon sa pagitan ng network na may firewall at ng iyong Outline server. Kakailanganin mong malaman ang IP address ng iyong Outline server at ang mga port kung saan gumagana ang Outline, na nakasaad sa dulo ng script sa pag-install.
 
-**Posible kang ma-block ng firewall ng device.**.
+## Posible kang ma-block ng firewall ng device..
 
 Kung may software ka sa iyong device na nagba-block sa mga palabas na koneksyon sa mga hindi standard na port, o kung may software kang hindi nakikilala, (ZoneAlarm ng CheckPoint), sumangguni sa dokumentasyon ng iyong device o software para alamin kung paano gumawa ng exception para sa Outline.
 

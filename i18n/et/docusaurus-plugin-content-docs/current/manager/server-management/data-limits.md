@@ -27,8 +27,8 @@ Pääsuvõtme andmepiirangu eemaldamiseks avage taas võtme andmepiirangu dialoo
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-## **Andmepiirangu KKK**
-## **Mis on 30-päevane jooksev andmepiirang?**
+## Andmepiirangu KKK
+## Mis on 30-päevane jooksev andmepiirang?
  30-päevane jooksev andmepiirang liidab kokku iga võtme kasutuse viimase 30 päeva jooksul ja hoiab võtme kasutust selle perioodi jooksul piirangust allpool. See toimib nii, et võti ei saa ületada piirangut mis tahes 30-päevase perioodi jooksul, sealhulgas 30-päevastel või lühematel kalendrikuudel. Sisuliselt tähendab see, et iga kasutaja saadaolev andmemaht suureneb iga päev 31 päeva tagasi kasutatud andmemahu võrra.
 
 ## Miks Outline jooksvaid andmepiiranguid kasutab?

@@ -27,8 +27,8 @@ Para remover o limite de dados de uma chave de acesso, navegue para a caixa de d
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-## **Perguntas frequentes sobre o limite de dados**
-## **O que é um limite de dados adaptável de 30 dias?**
+## Perguntas frequentes sobre o limite de dados
+## O que é um limite de dados adaptável de 30 dias?
  Um limite de dados adaptável de 30 dias soma a utilização de cada chave ao longo dos últimos 30 dias e mantém a utilização da chave abaixo do limite durante o período em questão. Como efeito, a chave não pode ultrapassar o limite durante qualquer período de 30 dias, incluindo os meses de calendário de 30 dias ou menos. Na prática, isto significa que os dados disponíveis de cada utilizador aumentam a cada dia, conforme a quantidade usada 31 dias antes.
 
 ## Porque é que o Outline usa limites adaptáveis?

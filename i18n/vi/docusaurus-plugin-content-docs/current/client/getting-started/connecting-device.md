@@ -3,8 +3,6 @@ title: Kết nối thiết bị với một máy chủ Outline
 sidebar_label: Kết nối thiết bị với một máy chủ Outline
 ---
 
-## Kết nối thiết bị với một máy chủ Outline
-
 Để bạn có thể kết nối thiết bị với một máy chủ Outline, một quản trị viên máy chủ phải gửi cho bạn lời mời kết nối với máy chủ của họ kèm theo một [khoá truy cập](/about/terminology) duy nhất. Nội dung lời mời sẽ:
 
 - Hướng dẫn bạn cách tải và cài đặt Outline trên thiết bị nếu bạn chưa cài đặt ứng dụng này

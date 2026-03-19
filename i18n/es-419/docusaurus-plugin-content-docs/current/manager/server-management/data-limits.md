@@ -27,8 +27,8 @@ Si quieres quitar el límite de datos de una clave de acceso, navega hacia el di
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-## **Preguntas frecuentes sobre los límites de datos**
-## **¿Qué es un límite de datos retrospectivo de 30 días?**
+## Preguntas frecuentes sobre los límites de datos
+## ¿Qué es un límite de datos retrospectivo de 30 días?
  Un límite de datos retrospectivo de 30 días suma el uso de cada clave durante los últimos 30 días y mantiene debajo del límite el uso de la clave durante ese período. De esta manera, la clave no puede superar el límite durante ningún período de 30 días, incluidos los meses calendario de 30 días o menos. Así, los datos disponibles de cada usuario aumentarán cada día según la cantidad que usó hace 31 días.
 
 ## ¿Por qué Outline usa límites retrospectivos?

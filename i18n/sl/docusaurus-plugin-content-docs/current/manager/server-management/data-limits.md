@@ -27,8 +27,8 @@ Ko shranite omejitev prenosa podatkov za izbrani ključ, se ta omejitev prikaže
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-## **Pogosta vprašanja o omejitvi podatkov**
-## **Kaj je omejitev podatkov na podlagi 30-dnevnega obdobja spremljanja?**
+## Pogosta vprašanja o omejitvi podatkov
+## Kaj je omejitev podatkov na podlagi 30-dnevnega obdobja spremljanja?
  Pri omejitvi prenosa podatkov na podlagi 30-dnevnega obdobja spremljanja se seštevajo prenesene količine podatkov za vsak posamezni ključ v preteklih 30 dneh, pri čemer je zagotovljeno, da prenesena količina podatkov za ključ v zadevnem obdobju ne preseže omejitve. Zato ključ ne more preseči omejitve v nobenem 30-dnevnem obdobju, vključno s koledarskimi meseci, dolgimi 30 dni ali manj. To dejansko pomeni, da se bo količina razpoložljivih podatkov posameznega uporabnika vsak dan povečala za količino, ki jo je prenesel pred 31 dnevi.
 
 ## Zakaj Outline uporablja omejitve na podlagi spremljanja?

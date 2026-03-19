@@ -11,7 +11,7 @@ Si intentas instalar Outline mientras usas una red protegida con firewall (por e
 
 Si esta opción no funciona, comunícate con el administrador de la red y pídele que permita las conexiones entre el servidor de Outline y la red protegida con firewall. Deberás conocer la dirección IP de tu servidor de Outline y los puertos en los que se ejecuta el servicio (aparecen al final de la secuencia de comandos de instalación).
 
-**Es posible que el firewall de un dispositivo te haya bloqueado**.
+## Es posible que el firewall de un dispositivo te haya bloqueado.
 
 Si tienes software en tu dispositivo que bloquea las conexiones salientes en los puertos que no son estándar o software no reconocido (por ejemplo, ZoneAlarm de CheckPoint), consulta la documentación del dispositivo o del software para descubrir cómo crear una excepción para Outline.
 

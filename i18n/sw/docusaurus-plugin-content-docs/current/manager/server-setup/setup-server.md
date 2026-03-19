@@ -20,5 +20,5 @@ Hatua ya kwanza ya kutumia Outline ni kuweka mipangilio ya seva ya Outline. Ni l
 ## Kuweka mipangilio kupitia mtoa huduma mwingine wa wingu
  Baada ya kupakua na kuweka Kidhibiti cha Outline, unaweza kuchagua kuweka seva ya Outline kwenye mashine pepe ukitumia AWS, GCP, DigitalOcean au mtoa huduma mwingine. Kila mazingira ni tofauti, kwa hivyo tumejumuisha maagizo kwenye utaratibu wa kuweka mipangilio wa Kidhibiti cha Outline kwa watoa huduma za wingu wanaotumika sana, ikiwa ni pamoja na jinsi ya kuweka mipangilio katika mashine yako pepe kabla ya kutekeleza hati ya kuweka Outline kwenye seva.
 
-## *Je, unahitaji usaidizi zaidi?*
+## Je, unahitaji usaidizi zaidi?
  Angalia sehemu yetu ya [Maswali Yanayoulizwa Sana kuhusu kuweka mipangilio ya seva ya Outline](/manager/server-setup/setup-faqs).

@@ -11,7 +11,7 @@ Ako pokušavate instalirati Outline dok ste povezani s mrežom koja ima vatrozid
 
 Ako time ne riješite problem, obratite se administratoru mreže i zatražite da omogući povezivanje mreže s vatrozidnom zaštitom i vašeg Outline poslužitelja. Morate znati IP adresu Outline poslužitelja i priključke na kojima se Outline pokreće. Navedeni su na kraju instalacijske skripte.
 
-**Možda vas blokira vatrozid na uređaju**.
+## Možda vas blokira vatrozid na uređaju.
 
 Ako vaš uređaj sadrži softver koji blokira odlazna povezivanja na nestandardnim priključcima ili nepoznatom softveru (kao što je CheckPointov ZoneAlarm), u dokumentaciji uređaja ili softvera potražite upute za izradu iznimke za Outline.
 

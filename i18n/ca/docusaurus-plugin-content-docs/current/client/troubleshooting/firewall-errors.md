@@ -11,7 +11,7 @@ Si estàs provant d'instal·lar Outline i la xarxa a què et connectes, com ara 
 
 Si això no funciona, contacta amb l'administrador de la teva xarxa perquè permeti les connexions entre la xarxa amb tallafoc i el teu servidor d'Outline. Hauràs de saber l'adreça IP del teu servidor d'Outline i els ports en què Outline s'executa. Trobaràs aquestes dades al final de l'script d'instal·lació.
 
-**Et pot bloquejar el tallafoc d'un dispositiu**.
+## Et pot bloquejar el tallafoc d'un dispositiu.
 
 Si el dispositiu conté programari que bloqueja les connexions de sortida en ports no estàndard o programari desconegut (per exemple, ZoneAlarm de CheckPoint), consulta la documentació del dispositiu o del programari per obtenir informació sobre com pots crear una excepció per a Outline.
 

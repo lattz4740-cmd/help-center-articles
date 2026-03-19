@@ -11,7 +11,7 @@ Ha egy tűzfallal rendelkező hálózathoz csatlakozva próbálja meg telepíten
 
 Ha így sem sikerül, kérje meg a hálózatkezelő rendszergazdát, hogy tegye lehetővé a tűzfalat használó hálózat és az Outline-szervere közötti kapcsolat létrehozását. Ehhez szüksége lesz az Outline-t futtató Outline-szerver IP-címére és portjaira, melyeket a telepítési szkript végén talál.
 
-**Lehet, hogy az eszközön beállított tűzfal gátolja a telepítést**.
+## Lehet, hogy az eszközön beállított tűzfal gátolja a telepítést.
 
 Ha egy, az eszközön lévő szoftver (például a CheckPoint ZoneAlarm alkalmazása) gátolja a nem szabványos portokon vagy nem ismert szoftvereken keresztüli kimenő kapcsolatokat, olvassa el az eszköz vagy a szoftver leírását, melyből megtudhatja, hogy hogyan állíthatja be az Outline alkalmazást kivételként.
 

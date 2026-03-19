@@ -20,5 +20,5 @@ Postavljanje poslužitelja za Outline prvi je korak prema upotrebi Outlinea. Da 
 ## Postavljanje s drugim davateljem usluga u oblaku
  Nakon što preuzmete i instalirate Upravitelj Outlinea, možete odabrati instalaciju poslužitelja za Outline na virtualnom uređaju s AWS-om, GCP-om, DigitalOceanom ili drugim davateljem usluga. Budući da je svako okruženje drugačije, Upravitelj Outlinea sadrži upute za postavljanje na većini najčešćih davatelja usluga u oblaku. U uputama možete saznati i kako konfigurirati postavke na virtualnom uređaju prije nego što pokrenete skriptu za instaliranje Outlinea na poslužitelju.
 
-## *Treba li vam dodatna pomoć?*
+## Treba li vam dodatna pomoć?
  Pročitajte [česta pitanja o postavljanju poslužitelja za Outline](/manager/server-setup/setup-faqs).

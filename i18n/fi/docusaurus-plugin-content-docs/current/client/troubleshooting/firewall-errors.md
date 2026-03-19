@@ -11,7 +11,7 @@ Jos yrität asentaa Outlinen ollessasi yhteydessä verkkoon, jossa on palomuuri 
 
 Jos tämä ei onnistu, ota yhteyttä verkon järjestelmänvalvojaan ja pyydä häntä sallimaan yhteydet palomuuritetun verkon ja Outline-palvelimen välillä. Selvitä etukäteen Outline-palvelimesi IP-osoite ja portit, joita Outline käyttää. Outlinen käyttämät portit löydät asennusohjeen lopusta.
 
-**Laitteen palomuuri saattaa estää käytön**.
+## Laitteen palomuuri saattaa estää käytön.
 
 Jos laitteellasi on ohjelmisto, joka estää lähtevät yhteydet ei-vakiomuotoisiin portteihin tai ei-tunnettuihin ohjelmistoihin (esim. CheckPointin ZoneAlarm), tarkista laitteen tai ohjelmiston ohjeista, miten Outlinea varten luodaan poikkeus.
 

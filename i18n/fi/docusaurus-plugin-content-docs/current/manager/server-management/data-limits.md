@@ -27,8 +27,8 @@ Voit poistaa pääsyavaimen datarajan siirtymällä avaimen Dataraja-valintaikku
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-## **Usein kysyttyä datarajoista**
-## **Mikä on 30 päivän palautuva dataraja?**
+## Usein kysyttyä datarajoista
+## Mikä on 30 päivän palautuva dataraja?
  30 päivän palautuva dataraja laskee datan käytön kunkin pääsyavaimen osalta 30 päivän ajalta. Datan käyttö pääsyavaimella ei voi ylittää rajaa kyseisellä ajanjaksolla. Tämä tarkoittaa sitä, että datan käyttö pääsyavaimella ei voi ylittää rajoitusta 30-päiväisten tai sitä lyhyempien kalenterikuukausien eikä minkään muun 30 päivän jakson aikana. Käytännössä tämä tarkoittaa sitä, että käyttäjän datarajaan päivittäin vapautuva määrä vastaa 31 päivää aiemmin käytetyn datan määrää.
 
 ## Miksi Outline käyttää palautuvia rajoja?

@@ -27,8 +27,8 @@ Para alisin ang limitasyon sa data sa isang access key, mag-navigate papunta sa 
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-## **Mga FAQ sa Limitasyon sa Data**
-## **Ano ang 30 araw na trailing na limitasyon sa data?**
+## Mga FAQ sa Limitasyon sa Data
+## Ano ang 30 araw na trailing na limitasyon sa data?
  Sa 30 araw na trailing na limitasyon sa data, pinagsasama-sama ang paggamit ng bawat key sa loob ng nakalipas na 30 araw at papanatilihing mas mababa sa limitasyon ang paggamit ng key sa loob ng panahong iyon. Dahil dito, hindi lalampas ang key sa limitasyon sa loob ng anumang 30 araw na yugto, kabilang ang mga buwan ng kalendaryo na may 30 araw o mas mababa. Ibig sabihin, ang available na data ng bawat user ay madaragdagan araw-araw ayon sa daming ginamit nila noong 31 araw ang nakalipas.
 
 ## Bakit gumagamit ng mga trailing na limitasyon ang Outline?

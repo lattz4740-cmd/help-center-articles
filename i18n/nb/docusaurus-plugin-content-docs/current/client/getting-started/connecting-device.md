@@ -3,8 +3,6 @@ title: "Koble enheten din til en Outline-tjener"
 sidebar_label: "Koble enheten din til en Outline-tjener"
 ---
 
-## Koble enheten din til en Outline-tjener
-
 Før du kan koble enheten din til en Outline-tjener, må en administrator for tjeneren invitere deg til å koble til den med en unik [tilgangsnøkkel](/about/terminology). I denne invitasjonen
 
 - blir du bedt om å laste ned og installere Outline på enheten din hvis du ikke allerede har gjort det

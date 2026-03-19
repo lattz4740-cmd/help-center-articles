@@ -27,8 +27,8 @@ Ta bort datagränsen för en åtkomstnyckel genom att navigera till dialogrutan 
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-## **Vanliga frågor om datagränser**
-## **Vad innebär en löpande datagräns på 30 dagar?**
+## Vanliga frågor om datagränser
+## Vad innebär en löpande datagräns på 30 dagar?
  En löpande datagräns på 30 dagar innebär att användningen av varje nyckel under de senaste 30 dagarna läggs ihop och begränsas så att användningen under den perioden inte överskrider gränsen. Då går det inte att överskrida gränsen med nyckeln under någon 30-dagarsperiod, även under månader som är 30 dagar eller kortare. Rent praktiskt innebär detta att användarens tillgängliga datamängd ökar för varje dag med samma mängd som användes för 31 dagar sedan.
 
 ## Varför används löpande gränser i Outline?

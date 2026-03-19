@@ -20,5 +20,5 @@ Det første trinnet på veien til å bruke Outline er å konfigurere en Outline-
 ## Konfigurer med en annen nettskyleverandør
  Når du har lastet ned og installert Outline-administrator, kan du velge å installere en Outline-tjener på en virtuell maskin med AWS, GCP, DigitalOcean eller en annen leverandør. Hvert miljø er forskjellig, så vi har inkludert instruksjoner for de vanligste skyleverandørene i installasjonsflyten for Outline-administrator. Dette omfatter blant annet hvordan du konfigurerer innstillingene på den virtuelle maskinen, før du kjører installasjonsskriptet for å installere Outline på en tjener.
 
-## *Trenger du mer hjelp?*
+## Trenger du mer hjelp?
  Ta en titt på de [vanlige spørsmålene om konfigurering av Outline-tjenere](/manager/server-setup/setup-faqs).

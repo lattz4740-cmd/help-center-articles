@@ -20,5 +20,5 @@ sidebar_label: "Kako lahko nastavim strežnik Outline?"
 ## Nastavitev pri drugem ponudniku storitev v oblaku
  Ko prenesete in namestite Upravitelja za Outline, lahko izberete namestitev strežnika Outline v navideznem računalniku pri ponudnikih AWS, GCP, DigitalOcean ali drugih. Vsako okolje se razlikuje, zato smo v postopek nastavitve v Upravitelju za Outline vključili navodila za najpogostejše ponudnike storitev v oblaku, vključno z navodili za konfiguracijo nastavitev v navideznem računalniku pred zagonom skripta za namestitev, s katerim se Outline namesti v strežnik.
 
-## *Potrebujete dodatno pomoč?*
+## Potrebujete dodatno pomoč?
  Oglejte si naša [pogosta vprašanja o nastavitvi strežnika Outline](/manager/server-setup/setup-faqs).

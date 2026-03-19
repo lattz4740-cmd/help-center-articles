@@ -20,5 +20,5 @@ Outline servera iestatīšana ir pirmā darbība, kas jāveic, lai varētu izman
 ## Iestatīšana, izmantojot citu mākoņpakalpojumu sniedzēju
  Pēc lietotnes Outline pārvaldnieks lejupielādes un instalēšanas datorā varat atlasīt Outline servera instalēšanas opciju virtuālajā mašīnā ar AWS, GCP, DigitalOcean vai citu pakalpojumu sniedzēju. Katra vide ir atšķirīga, tāpēc esam iekļāvuši norādījumus lietotnes Outline pārvaldnieks iestatīšanas plūsmā visbiežāk lietotajiem mākoņpakalpojumu sniedzējiem, tostarp norādījumus iestatījumu konfigurēšanai virtuālajā mašīnā pirms instalēšanas skripta palaišanas, lai instalētu Outline serverī.
 
-## *Vai nepieciešama papildu palīdzība?*
+## Vai nepieciešama papildu palīdzība?
  Skatiet mūsu [bieži uzdotos jautājumus par Outline servera iestatīšanu](/manager/server-setup/setup-faqs).

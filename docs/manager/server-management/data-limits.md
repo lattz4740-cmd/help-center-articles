@@ -27,8 +27,8 @@ To remove the data limit from an access key, navigate to the key's Data Limit di
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-## **Data Limit FAQs**
-## **What is a 30-day trailing data limit?**
+## Data Limit FAQs
+## What is a 30-day trailing data limit?
  A 30-day trailing data limit will sum each key’s usage over the past 30 days and keep the key’s usage over that period below the limit. The effect is that the key cannot go over the limit during any 30 day period, including calendar months of 30 days or less. In effect, this means that each user’s available data will increase each day by the amount they used 31 days ago.
 
 ## Why does Outline use trailing limits?

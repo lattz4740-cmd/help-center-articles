@@ -27,8 +27,8 @@ Hvis du vil fjerne datagrænsen fra en adgangsnøgle, skal du ligesom før navig
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-## **Ofte stillede spørgsmål om datagrænser**
-## **Hvad er en datagrænse på 30 løbende dage?**
+## Ofte stillede spørgsmål om datagrænser
+## Hvad er en datagrænse på 30 løbende dage?
  En datagrænse på 30 løbende dage opsummerer brugen af de enkelte nøgler i løbet af de seneste 30 dage og holder brugen af nøglerne under grænsen i den pågældende periode. Resultatet er, at en nøgle ikke kan overskride grænsen i løbet af enhver periode på 30 dage, herunder kalendermåneder på 30 dage eller færre. Det betyder i praksis, at den tilgængelige mængde data for hver bruger stiger hver dag med den mængde, de brugte for 31 dage siden.
 
 ## Hvorfor bruger Outline løbende grænser?

@@ -11,7 +11,7 @@ If you're trying to install Outline while connected to a firewalled network, lik
 
 If this doesn't work, please contact your network administrator to allow for connections between the firewalled network to your Outline server. You will need to know your Outline server's IP address and the ports where Outline is running, which are indicated at the end of the installation script.
 
-**You might be blocked by a device firewall**.
+## You might be blocked by a device firewall.
 
 If you have software on your device that blocks outgoing connections on non-standard ports, or non recognized software, (CheckPoint's ZoneAlarm), please consult your device or software documentation to learn how to create an exception for Outline.
 

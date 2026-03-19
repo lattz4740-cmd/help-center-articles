@@ -27,8 +27,8 @@ Per rimuovere il limite dati da una chiave di accesso, vai alla finestra di dial
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-## **Domande frequenti sui limiti dati**
-## **Cosa si intende per limite dati cumulativo per 30 giorni?**
+## Domande frequenti sui limiti dati
+## Cosa si intende per limite dati cumulativo per 30 giorni?
  Un limite dati cumulativo per 30 giorni conteggia l'utilizzo di ciascuna chiave negli ultimi 30 giorni e lo mantiene al di sotto del limite impostato per questo periodo. Di conseguenza, la chiave non può superare il limite durante qualsiasi periodo di 30 giorni, inclusi i mesi di calendario di 30 giorni o meno. In pratica, ciò significa che i dati disponibili di ogni utente aumenteranno ogni giorno della quantità utilizzata il 31° giorno precedente.
 
 ## Perché Outline utilizza i limiti cumulativi?

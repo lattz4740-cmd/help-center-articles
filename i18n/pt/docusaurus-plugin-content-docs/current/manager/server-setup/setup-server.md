@@ -20,5 +20,5 @@ A configuração de um servidor do Outline é o primeiro passo para poder usar o
 ## Configure com outro fornecedor de nuvem
  Depois de transferir e instalar o Gestor Outline, pode optar por instalar um servidor do Outline numa máquina virtual com AWS, GCP, DigitalOcean ou outro fornecedor. Cada ambiente é diferente. Por isso, incluímos instruções no fluxo de configuração do Gestor Outline para os fornecedores de nuvem mais comuns, incluindo como configurar as definições na sua máquina virtual antes de executar o script de instalação para instalar o Outline num servidor.
 
-## *Precisa de mais ajuda?*
+## Precisa de mais ajuda?
  Consulte as nossas [Perguntas frequentes sobre a configuração do servidor do Outline](/manager/server-setup/setup-faqs).

@@ -20,5 +20,5 @@ Az Outline használatához szükséges első lépés az Outline-szerver beállí
 ## Beállítás másik felhőszolgáltatóval
  Miután letöltötte és telepítette az Outline Manager alkalmazást, dönthet úgy, hogy egy virtuális számítógépen telepíti az Outline-szervert. Ehhez igénybe veheti az AWS, a GCP, a DigitalOcean vagy bármely más szolgáltató szolgáltatásait. Minden környezet más, így az Outline Manager beállítási folyamatába beépítettük a leggyakoribb felhőszolgáltatókra vonatkozó utasításokat, melyek többek között tartalmazzák, hogy hogyan konfigurálhatja a beállításokat a virtuális számítógépen, mielőtt futtatná az Outline-nak a szerveren való telepítéséhez szükséges telepítési szkriptet.
 
-## *További segítségre van szüksége?*
+## További segítségre van szüksége?
  Olvassa el az [Outline-szerver beállítására vonatkozó GYIK-et](/manager/server-setup/setup-faqs).

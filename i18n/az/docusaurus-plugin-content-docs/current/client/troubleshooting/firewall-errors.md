@@ -11,7 +11,7 @@ Məktəbdə və ya iş yerinizdə olduğu kimi qoruyucu divarı olan şəbəkəy
 
 Bu üsulla alınmırsa, qoruyucu divarı olan şəbəkə ilə Outline serveriniz arasında əlaqə yaratması üçün şəbəkə administratorunuzla əlaqə saxlayın. Quraşdırma skriptinin sonunda göstərilən Outline serverinizin IP ünvanını və Outline-ın işlədiyi portları bilməlisiniz.
 
-**Qoruyucu divarı olan cihaz sizi bloklaya bilər**.
+## Qoruyucu divarı olan cihaz sizi bloklaya bilər.
 
 Cihazınızda qeyri-standart portlarda gedən bağlantıları bloklayan proqram təminatı və ya naməlum proqram təminatı varsa (məsələn, CheckPoint üzrə ZoneAlarm), Outline üzrə istisna yaratmağı öyrənmək üçün cihaz və ya proqram təminatınızın sənədlərinə baxın.
 

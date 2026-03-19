@@ -20,5 +20,5 @@ Setting up an Outline server is the first step in being able to use Outline. Eit
 ## Set up with another cloud provider
  After downloading and installing Outline Manager, you can select to install an Outline server on a virtual machine with AWS, GCP, DigitalOcean or another provider. Every environment is different, so we've included instructions within the Outline Manager setup flow for the most common cloud providers, including how to configure the settings on your virtual machine before you run the installation script to install Outline on a server.
 
-## *Need more help?*
+## Need more help?
  Check out our [Outline server setup FAQ](/manager/server-setup/setup-faqs).

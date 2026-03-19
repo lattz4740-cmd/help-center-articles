@@ -3,8 +3,6 @@ title: Cómo conectar tu dispositivo a un servidor de Outline
 sidebar_label: Cómo conectar tu dispositivo a un servidor de Outline
 ---
 
-## Cómo conectar tu dispositivo a un servidor de Outline
-
 Para que puedas conectar un dispositivo a un servidor de Outline, su administrador debe enviarte una invitación que contiene una [clave de acceso](/about/terminology) única. Está invitación hará lo siguiente:
 
 - Te solicitará que descargues Outline y que lo instales en tu dispositivo, si aún no lo tienes.

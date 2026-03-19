@@ -27,8 +27,8 @@ Lai piekļuves atslēgai noņemtu datu ierobežojumu, atkal atveriet atslēgas d
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-## **Bieži uzdotie jautājumi par datu ierobežojumu**
-## **Kas ir datu ierobežojums iepriekšējo 30 dienu laikā?**
+## Bieži uzdotie jautājumi par datu ierobežojumu
+## Kas ir datu ierobežojums iepriekšējo 30 dienu laikā?
  Iestatot datu ierobežojumu iepriekšējo 30 dienu laikā, tiek aprēķināts katras atslēgas kopējais lietojums iepriekšējo 30 dienu laikā un tiek gādāts, lai atslēgas lietojums šajā periodā nepārsniegtu ierobežojumu. Tādējādi lietojums nevar pārsniegt ierobežojumu nevienā 30 dienu periodā, tostarp kalendārajos mēnešos, kas nav garāki par 30 dienām. Praktiski tas nozīmē, ka katram lietotājam pieejamie dati katru dienu palielinās par tādu apjomu, kādu lietotājs patērēja pirms 31 dienas.
 
 ## Kādēļ lietojumprogrammā Outline tiek izmantoti iepriekšējam lietojumam atbilstoši ierobežojumi?

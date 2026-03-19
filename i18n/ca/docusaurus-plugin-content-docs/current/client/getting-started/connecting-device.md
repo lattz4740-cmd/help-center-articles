@@ -3,8 +3,6 @@ title: "Connectar un dispositiu a un servidor d'Outline"
 sidebar_label: "Connectar un dispositiu a un servidor d'Outline"
 ---
 
-## Connectar un dispositiu a un servidor d'Outline
-
 Per poder connectar un dispositiu a un servidor d'Outline, un administrador del servidor t'ha d'enviar una invitació per connectar-te al seu servidor amb una [clau d'accés](/about/terminology) única. Aquesta invitació:
 
 - Et demanarà que baixis i instal·lis Outline al dispositiu si encara no ho has fet.

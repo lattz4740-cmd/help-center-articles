@@ -27,8 +27,8 @@ Untuk menghapus batas data dari kunci akses, buka dialog Batas Data kunci sepert
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-## **FAQ Batas Data**
-## **Apa yang dimaksud dengan pemantauan batas data 30 hari?**
+## FAQ Batas Data
+## Apa yang dimaksud dengan pemantauan batas data 30 hari?
  Pemantauan batas data 30 hari akan menghitung jumlah penggunaan data setiap kunci selama 30 hari terakhir dan menjaga agar penggunaan setiap kunci dalam periode tersebut tidak melampaui batas. Dengan demikian, kunci tidak dapat melampaui batas dalam rentang waktu 30 hari, termasuk pada bulan yang memiliki 30 hari atau kurang. Intinya, setiap data pengguna yang tersedia akan meningkat setiap hari berdasarkan jumlah data yang mereka gunakan 31 hari yang lalu.
 
 ## Mengapa Outline menggunakan pemantauan batas data?

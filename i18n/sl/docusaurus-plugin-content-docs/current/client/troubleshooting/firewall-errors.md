@@ -11,7 +11,7 @@ Pride lahko do treh vrst težav v zvezi s požarnim zidom:
 
 Če s tem ne odpravite težave, prosite skrbnika omrežja, naj omogoči povezave med omrežjem, zaščitenim s požarnim zidom, in strežnikom Outline. Potrebovali boste naslov IP strežnika Outline in vrata, prek katerih se izvaja Outline, kar je navedeno na koncu skripta za namestitev.
 
-**Morda vas je blokiral požarni zid naprave**.
+## Morda vas je blokiral požarni zid naprave.
 
 Če v napravi uporabljate programsko opremo, ki blokira odhodne povezave prek nestandardnih vrat ali neprepoznane programske opreme (na primer ZoneAlarm podjetja CheckPoint), v dokumentaciji za napravo ali programsko opremo poiščite navodila, kako ustvariti izjemo za Outline.
 

@@ -27,8 +27,8 @@ Til að eyða gagnamörkum aðgangslykils skaltu opna gluggann sem sýnir gagnam
 
 ![Removing the data limit on an individual access key](/images/snippet-15788414.png)
 
-## **Algengar spurningar um gagnamörk**
-## **Hvað er 30 daga gagnarakning?**
+## Algengar spurningar um gagnamörk
+## Hvað er 30 daga gagnarakning?
  30 daga gagnarakning reiknar út heildarnotkun hvers lykils síðustu 30 dagana og heldur notkun lykils undir mörkum á því tímabili. Þetta sér til þess að lykill geti ekki farið umfram mörkin á hvaða 30 daga tímabili sem er, þ.m.t. í mánuðum ársins sem telja 30 daga eða færri. Þar af leiðandi eykst gagnamagn sem notandi hefur aðgang að með hverjum degi um það magn sem hann notaði fyrir 31 degi.
 
 ## Hvers vegna notar Outline gagnarakningu?
