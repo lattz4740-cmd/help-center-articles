@@ -13,14 +13,14 @@ Nokkrar ástæður gætu valdið því að þú getur ekki tengst Outline-þjón
 
 ## Vandamál varðandi nettengingu: {#Internetissues}
 
-## Svona er prófun gerð:
+### Svona er prófun gerð:
 
 Slökktu á Outline og athugaðu hvort netið tengist á ný.
 
 - Ef svo er má finna fleiri úrræðaleitarkosti hér að neðan.
 - Ef svo er ekki skaltu hinkra í augnablik til að sjá hvort tengingarstillingarnar uppfærist sjálfkrafa.
 
-## Atriði sem þarf að laga:
+### Atriði sem þarf að laga:
 
 Tengdu tækið aftur við netið:
 
@@ -32,7 +32,7 @@ Tengdu tækið aftur við netið:
 
 ## Vandamál varðandi eldvegg netkerfis: {#FirewallIssues}
 
-## Svona er prófun gerð:
+### Svona er prófun gerð:
 
 1. Aftengstu núverandi WiFi-neti eða netinu sem þú tengist með snúru.
 2. Tengstu öðru neti, t.d. farsímaneti
@@ -40,22 +40,22 @@ Tengdu tækið aftur við netið:
 
 Þetta er vandamálið ef þú getur tengst á öðru neti.
 
-## Atriði sem þarf að laga:
+### Atriði sem þarf að laga:
 
 Hafðu samband við þjónustustjórann og biddu hann um að leyfa aðgang að Outline-þjóninum þínum eða haltu áfram að nota annað net.
 
-## Vandamál varðandi eldvegg eða vírusvarnarhugbúnað:
-## Svona er prófun gerð:
+## Vandamál varðandi eldvegg eða vírusvarnarhugbúnað: {#SoftwareIssues}
+### Svona er prófun gerð:
  Prófaðu að tengjast Outline í öðru tæki.
 
 Athugaðu: Mundu að þú þarft aðgangslykil og Outline-forritið til að nota Outline í öðru tæki.
 
-## Atriði sem þarf að laga: {#SoftwareIssues}
+### Atriði sem þarf að laga:
 Athugaðu stillingar eldveggsins eða vírusvarnarhugbúnaðarins til að ganga úr skugga að þær séu stilltar þannig að VPN- og Outline-umferð sé hleypt í gegn.
 
 ## Tækjastillingar: {#DeviceSettings}
 
-## Atriði til að athuga: {#DeviceSettings}
+## Atriði til að athuga: {#ServerIssues}
 Í Android:
 
 1. Opnaðu stillingaforritið.
@@ -68,12 +68,12 @@ Gakktu úr skugga um að engin forrit fyrir skjáyfirlögn séu uppsett í Andro
 
  Fyrir iOS: Lestu[þessa hjálpargrein](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
-## Vandamál varðandi þjón: {#ServerIssues}
+### Vandamál varðandi þjón:
 
-## Svona er prófun gerð: {#ServerIssues}
+### Svona er prófun gerð:
 Ef þú ert með aðgang að fleiri en einum þjóni skaltu prófa að tengjast hinum þjóninum.
 
-## Atriði sem þarf að laga:
+### Atriði sem þarf að laga:
 
 Hafðu samband við þjónustustjóra til að athuga hvort þjóninn hafi verið eyðilagður. Ef svo er skaltu biðja viðkomandi um [aðgangslykil](/about/terminology) að öðrum þjóni.
 

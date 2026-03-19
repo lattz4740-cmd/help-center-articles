@@ -13,14 +13,14 @@ Ir iespējami vairāki iemesli, kāpēc nevarat izveidot savienojumu ar pakalpoj
 
 ## Interneta savienojuma problēmas {#Internetissues}
 
-## Testēšanas metode
+### Testēšanas metode
 
 Izslēdziet Outline un pārbaudiet, vai interneta savienojums tiek atjaunots.
 
 - Ja savienojums tiek atjaunots, tālāk skatiet citas problēmu novēršanas iespējas.
 - Pretējā gadījumā nedaudz uzgaidiet, lai pārbaudītu, vai savienojuma iestatījumi tiek automātiski atjaunināti.
 
-## Problēmas novēršana
+### Problēmas novēršana
 
 Ierīcē atkal izveidojiet interneta savienojumu, veicot šīs darbības.
 
@@ -32,7 +32,7 @@ Ierīcē atkal izveidojiet interneta savienojumu, veicot šīs darbības.
 
 ## Ar tīkla ugunsmūri saistītas problēmas {#FirewallIssues}
 
-## Testēšanas metode
+### Testēšanas metode
 
 1. Pārtrauciet pašreizējo savienojumu ar Wi-Fi tīklu vai vadu tīklu.
 2. Izveidojiet savienojumu ar citu tīklu, piemēram, mobilo datu tīklu.
@@ -40,22 +40,22 @@ Ierīcē atkal izveidojiet interneta savienojumu, veicot šīs darbības.
 
 Ja otrā tīklā varat izveidot savienojumu, tas nozīmē, ka problēma ir jūsu pusē.
 
-## Problēmas novēršana
+### Problēmas novēršana
 
 Sazinieties ar pakalpojuma pārvaldnieku un lūdziet atļaut piekļuvi jūsu Outline serverim vai arī turpiniet izmantot otru tīklu.
 
-## Ar ugunsmūri vai antivīrusa programmatūru saistītas problēmas
-## Testēšanas metode
+## Ar ugunsmūri vai antivīrusa programmatūru saistītas problēmas {#SoftwareIssues}
+### Testēšanas metode
  Mēģiniet izveidot savienojumu ar Outline citā ierīcē.
 
 Piezīme. Ņemiet vērā, ka jums ir vajadzīga piekļuves atslēga un lietotne Outline, lai citā ierīcē izmantotu programmatūru Outline.
 
-## Problēmas novēršana {#SoftwareIssues}
+### Problēmas novēršana
 Pārbaudiet, vai jūsu ugunsmūra vai antivīrusa programmatūras iestatījumi atļauj virtuālā privātā tīkla un Outline datplūsmu.
 
 ## Ierīces iestatījumi {#DeviceSettings}
 
-## Pārbaudāmie iestatījumi {#DeviceSettings}
+## Pārbaudāmie iestatījumi {#ServerIssues}
 Android ierīcē:
 
 1. Atveriet lietotni Iestatījumi.
@@ -68,12 +68,12 @@ Pārbaudiet, vai jūsu Android ierīcē nav instalēta ekrāna pārklājuma liet
 
  Ja jums ir iOS ierīce, lasiet [šo atbalsta rakstu](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
-## Ar serveri saistītas problēmas {#ServerIssues}
+### Ar serveri saistītas problēmas
 
-## Testēšanas metode {#ServerIssues}
+### Testēšanas metode
 Ja jums ir piekļuve vairākiem serveriem, mēģiniet izveidot savienojumu ar citu serveri.
 
-## Problēmas novēršana
+### Problēmas novēršana
 
 Sazinieties ar pakalpojuma pārvaldnieku, lai noskaidrotu, vai serveris ir likvidēts. Ja tā ir noticis, lūdziet piešķirt citam serverim paredzētu [piekļuves atslēgu](/about/terminology).
 

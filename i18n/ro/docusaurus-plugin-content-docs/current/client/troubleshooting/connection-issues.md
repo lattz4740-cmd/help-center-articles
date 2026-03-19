@@ -13,14 +13,14 @@ Există câteva motive pentru care nu puteți să vă conectați la serviciul Ou
 
 ## Probleme privind conexiunea la internet {#Internetissues}
 
-## Cum să testați
+### Cum să testați
 
 Dezactivați Outline și controlați dacă a fost restabilită conexiunea la internet.
 
 - Dacă s-a restabilit, vedeți mai multe opțiuni de remediere a erorilor mai jos.
 - Dacă nu, așteptați câteva minute ca să vedeți dacă setările pentru conexiune se actualizează de la sine.
 
-## De remediat
+### De remediat
 
 Conectați din nou dispozitivul la internet:
 
@@ -32,7 +32,7 @@ Conectați din nou dispozitivul la internet:
 
 ## Probleme privind firewallul de rețea {#FirewallIssues}
 
-## Cum să testați
+### Cum să testați
 
 1. Deconectați-vă de la rețeaua Wi-Fi sau prin cablu la care v-ați conectat.
 2. Conectați-vă la altă rețea, de exemplu, o rețea mobilă.
@@ -40,22 +40,22 @@ Conectați din nou dispozitivul la internet:
 
 Dacă vă puteți conecta din altă rețea, înseamnă că aceasta este problema dvs.
 
-## De remediat
+### De remediat
 
 Contactați administratorul serviciului și cereți-i să vă permită accesul la serverul Outline sau continuați să folosiți cealaltă rețea.
 
-## Probleme privind firewallul sau software-ul antivirus
-## Cum să testați
+## Probleme privind firewallul sau software-ul antivirus {#SoftwareIssues}
+### Cum să testați
  Încercați să vă conectați la Outline de pe alt dispozitiv.
 
 Rețineți: aveți nevoie de o cheie de acces și de aplicația Outline pentru a putea folosi Outline pe alt dispozitiv.
 
-## De remediat {#SoftwareIssues}
+### De remediat
 Verificați firewallul sau software-ul antivirus ca să vă asigurați că sunt setate să permită traficul prin VPN și Outline.
 
 ## Setările dispozitivului {#DeviceSettings}
 
-## De verificat {#DeviceSettings}
+## De verificat {#ServerIssues}
 Pentru Android:
 
 1. deschideți aplicația Setări;
@@ -68,12 +68,12 @@ Asigurați-vă că nu ați instalat nicio aplicație cu suprapunere pe ecran pe 
 
  Pentru iOS: citiți [acest articol de ajutor](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
-## Probleme privind serverul {#ServerIssues}
+### Probleme privind serverul
 
-## Cum să testați {#ServerIssues}
+### Cum să testați
 Dacă aveți acces la mai multe servere, încercați să vă conectați la alt server.
 
-## De remediat
+### De remediat
 
 Contactați administratorul serviciului pentru a vedea dacă serverul a fost distrus. Dacă da, cereți-i o [cheie de acces](/about/terminology) la alt server.
 

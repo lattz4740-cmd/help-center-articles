@@ -13,14 +13,14 @@ Có một vài lý do khiến bạn không thể kết nối với dịch vụ O
 
 ## Sự cố kết nối Internet: {#Internetissues}
 
-## Cách kiểm tra:
+### Cách kiểm tra:
 
 Tắt Outline và xem có kết nối Internet lại hay chưa.
 
 - Nếu đã có lại kết nối, hãy xem các phương án khắc phục sự cố khác bên dưới.
 - Nếu không, hãy đợi một lát để xem các chế độ cài đặt kết nối mạng của bạn có tự cập nhật hay không.
 
-## Điểm cần khắc phục:
+### Điểm cần khắc phục:
 
 Giúp thiết bị có mạng trở lại:
 
@@ -32,7 +32,7 @@ Giúp thiết bị có mạng trở lại:
 
 ## Sự cố với tường lửa mạng: {#FirewallIssues}
 
-## Cách kiểm tra:
+### Cách kiểm tra:
 
 1. Ngắt kết nối với mạng Wi-Fi hoặc mạng có dây hiện tại.
 2. Kết nối với một mạng khác, chẳng hạn như mạng di động
@@ -40,22 +40,22 @@ Giúp thiết bị có mạng trở lại:
 
 Nếu bạn có thể kết nối trong khi đang sử dụng mạng khác, thì sự cố là do mạng của bạn.
 
-## Điểm cần khắc phục:
+### Điểm cần khắc phục:
 
 Hãy liên hệ với người quản lý dịch vụ rồi yêu cầu họ cho phép truy cập vào máy chủ Outline của bạn hoặc tiếp tục sử dụng mạng khác.
 
-## Sự cố với tường lửa hoặc phần mềm diệt virus:
-## Cách kiểm tra:
+## Sự cố với tường lửa hoặc phần mềm diệt virus: {#SoftwareIssues}
+### Cách kiểm tra:
  Thử kết nối với Outline bằng một thiết bị khác.
 
 Lưu ý: Hãy nhớ rằng bạn cần có khoá truy cập và ứng dụng Outline để sử dụng Outline trên một thiết bị khác.
 
-## Điểm cần khắc phục: {#SoftwareIssues}
+### Điểm cần khắc phục:
 Hãy kiểm tra các chế độ cài đặt tường lửa hay phần mềm diệt virus để đảm bảo rằng các chế độ đó cho phép lưu lượng VPN và Outline đi qua.
 
 ## Chế độ cài đặt thiết bị: {#DeviceSettings}
 
-## Điểm cần kiểm tra: {#DeviceSettings}
+## Điểm cần kiểm tra: {#ServerIssues}
 Đối với Android:
 
 1. Mở ứng dụng Cài đặt.
@@ -68,12 +68,12 @@ Hãy đảm bảo rằng bạn không cài đặt ứng dụng lớp phủ màn 
 
  Đối với iOS: Hãy đọc [bài viết trợ giúp này](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
-## Sự cố với máy chủ: {#ServerIssues}
+### Sự cố với máy chủ:
 
-## Cách kiểm tra: {#ServerIssues}
+### Cách kiểm tra:
 Nếu bạn có quyền truy cập vào nhiều máy chủ, hãy thử kết nối với một máy chủ khác.
 
-## Điểm cần khắc phục:
+### Điểm cần khắc phục:
 
 Hãy liên hệ với người quản lý dịch vụ của bạn để xem máy chủ đã bị huỷ bỏ hay chưa. Nếu đã bị huỷ bỏ, hãy yêu cầu họ cấp[khoá truy cập](/about/terminology) vào một máy chủ khác.
 

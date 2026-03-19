@@ -13,14 +13,14 @@ Der kan være nogle årsager til, at du muligvis ikke kan få forbindelse til Ou
 
 ## Problemer med internetforbindelsen: {#Internetissues}
 
-## Sådan tester du:
+### Sådan tester du:
 
 Slå Outline fra, og se om forbindelsen til internettet genoprettes.
 
 - Hvis forbindelsen genoprettes, kan du se flere muligheder for fejlfinding nedenfor.
 - Hvis forbindelsen ikke genoprettes, skal du vente et øjeblik for at se, om dine forbindelsesindstillinger opdateres af sig selv.
 
-## Ting, der skal ordnes:
+### Ting, der skal ordnes:
 
 Få din enhed på nettet igen:
 
@@ -32,7 +32,7 @@ Få din enhed på nettet igen:
 
 ## Problemer med netværksfirewall: {#FirewallIssues}
 
-## Sådan tester du:
+### Sådan tester du:
 
 1. Afbryd forbindelsen til dit nuværende Wi-Fi-netværk eller kabelnetværk.
 2. Opret forbindelse til et andet netværk, f.eks. et mobilnetværk.
@@ -40,22 +40,22 @@ Få din enhed på nettet igen:
 
 Hvis du kan oprette forbindelse, mens du er på det andet netværk, kan det være årsagen til problemet.
 
-## Ting, der skal ordnes:
+### Ting, der skal ordnes:
 
 Kontakt administratoren af tjenesten, og bed vedkommende om at tillade adgang til din Outline-server, eller fortsæt med at bruge det andet netværk i stedet.
 
-## Problemer med firewall eller antivirussoftware:
-## Sådan tester du:
+## Problemer med firewall eller antivirussoftware: {#SoftwareIssues}
+### Sådan tester du:
  Prøv at oprette forbindelse til Outline fra en anden enhed.
 
 Bemærk! Husk, at du skal have en adgangsnøgle og Outline-appen for at bruge Outline på en anden enhed.
 
-## Ting, der skal ordnes: {#SoftwareIssues}
+### Ting, der skal ordnes:
 Tjek indstillingerne for din firewall eller antivirussoftware for at sikre, at VPN- og Outline-trafik er tilladt.
 
 ## Enhedsindstillinger: {#DeviceSettings}
 
-## Ting, som du bør tjekke: {#DeviceSettings}
+## Ting, som du bør tjekke: {#ServerIssues}
 På Android:
 
 1. Åbn appen Indstillinger.
@@ -68,12 +68,12 @@ Sørg for, at du ikke har installeret en skærmoverlejret app på din Android-en
 
  Til iOS: Læs[denne supportartikel](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
-## Serverproblemer: {#ServerIssues}
+### Serverproblemer:
 
-## Sådan tester du: {#ServerIssues}
+### Sådan tester du:
 Hvis du har adgang til mere end én server, kan du prøve at oprette forbindelse til den anden.
 
-## Ting, der skal ordnes:
+### Ting, der skal ordnes:
 
 Kontakt din tjenesteadministrator for at se, om serveren er ødelagt. I så fald kan du bede vedkommende om en[adgangsnøgle](/about/terminology) til en anden server.
 

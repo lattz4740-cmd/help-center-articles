@@ -13,14 +13,14 @@ Jos et voi muodostaa yhteyttä Outline-palveluun, siihen voi olla useita syitä:
 
 ## Internetyhteysongelmat: {#Internetissues}
 
-## Testaaminen:
+### Testaaminen:
 
 Laita Outline pois päältä ja katso, alkaako internetyhteys toimia uudelleen.
 
 - Jos näin tapahtuu, katso lisää ohjeita ongelmatilanteisiin alta.
 - Jos näin ei tapahdu, odota hetki ja katso, päivittyvätkö yhteysasetukset itsestään.
 
-## Korjattavat asiat:
+### Korjattavat asiat:
 
 Palauta laitteen verkkoyhteys:
 
@@ -32,7 +32,7 @@ Palauta laitteen verkkoyhteys:
 
 ## Verkon palomuurin ongelmat: {#FirewallIssues}
 
-## Testaaminen:
+### Testaaminen:
 
 1. Katkaise yhteys nykyiseen Wi-Fi-verkkoon tai langalliseen verkkoon.
 2. Muodosta yhteys toiseen verkkoon, kuten mobiiliverkkoon.
@@ -40,22 +40,22 @@ Palauta laitteen verkkoyhteys:
 
 Jos yhteyden muodostaminen onnistuu toisessa verkossa, olet löytänyt ongelman syyn.
 
-## Korjattavat asiat:
+### Korjattavat asiat:
 
 Pyydä palvelun hallinnoijaa sallimaan yhteyden muodostaminen Outline-palvelimeen. Voit myös jatkaa toisen verkon käyttämistä.
 
-## Palomuurin tai virustorjuntaohjelman ongelmat:
-## Testaaminen:
+## Palomuurin tai virustorjuntaohjelman ongelmat: {#SoftwareIssues}
+### Testaaminen:
  Yritä muodostaa yhteys Outlineen toisella laitteella.
 
 Huom. Tarvitset pääsyavaimen ja Outline-sovelluksen, jotta voit käyttää Outlinea toisella laitteella.
 
-## Korjattavat asiat: {#SoftwareIssues}
+### Korjattavat asiat:
 Tarkista palomuurin tai virustorjuntaohjelman asetukset varmistaaksesi, että ne sallivat VPN- ja Outline-liikenteen.
 
 ## Laiteasetukset: {#DeviceSettings}
 
-## Tarkistettavat asiat: {#DeviceSettings}
+## Tarkistettavat asiat: {#ServerIssues}
 Android:
 
 1. Avaa Asetukset-sovellus.
@@ -68,12 +68,12 @@ Varmista, ettei Android-laitteeseen ole asennettu näyttöä peittäviä sovellu
 
  iOS: Lue [tämä tukiartikkeli](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
-## Palvelinongelmat: {#ServerIssues}
+### Palvelinongelmat:
 
-## Testaaminen: {#ServerIssues}
+### Testaaminen:
 Jos käytössäsi on useampia palvelimia, yritä muodostaa yhteys toiseen palvelimeen.
 
-## Korjattavat asiat:
+### Korjattavat asiat:
 
 Kysy palvelun hallinnoijalta, onko palvelin poistettu. Jos näin on, pyydä [pääsyavainta](/about/terminology) toiselle palvelimelle.
 

@@ -13,14 +13,14 @@ Když se vám nedaří připojit ke službě Outline, může to mít několik d�
 
 ## Problémy s připojením k internetu: {#Internetissues}
 
-## Jak problém otestujete:
+### Jak problém otestujete:
 
 Vypněte Outline a zkontrolujte, jestli se připojení k internetu obnovilo.
 
 - Pokud ano, podívejte se dál, jak je možné problém řešit.
 - Pokud ne, pár minut počkejte, jestli se nastavení připojení samo neaktualizuje.
 
-## Co můžete opravit:
+### Co můžete opravit:
 
 Obnovte připojení zařízení k internetu:
 
@@ -32,7 +32,7 @@ Obnovte připojení zařízení k internetu:
 
 ## Potíže se síťovým firewallem: {#FirewallIssues}
 
-## Jak problém otestujete:
+### Jak problém otestujete:
 
 1. Odpojte se od sítě, k níž jste momentálně připojeni.
 2. Připojte se k jiné síti, například k mobilní.
@@ -40,22 +40,22 @@ Obnovte připojení zařízení k internetu:
 
 Pokud se můžete připojit, když jste na jiné síti, jedná se o tento problém.
 
-## Co můžete opravit:
+### Co můžete opravit:
 
 Obraťte se na správce služeb a požádejte ho, aby vám povolil přístup k serveru Outline. Můžete taky dál používat alternativní síť.
 
-## Potíže s firewallem nebo antivirovým softwarem:
-## Jak problém otestujete:
+## Potíže s firewallem nebo antivirovým softwarem: {#SoftwareIssues}
+### Jak problém otestujete:
  Zkuste se k Outline připojit z jiného zařízení.
 
 Poznámka: Nezapomeňte, že k tomu potřebujete přístupový klíč a aplikaci Outline.
 
-## Co můžete opravit: {#SoftwareIssues}
+### Co můžete opravit:
 Zkontrolujte v nastavení svého firewallu nebo antivirového softwaru, zda umožňují používat VPN a povolují provoz Outline.
 
 ## Nastavení zařízení: {#DeviceSettings}
 
-## Co zkontrolovat: {#DeviceSettings}
+## Co zkontrolovat: {#ServerIssues}
 U zařízení s Androidem:
 
 1. Otevřete aplikaci Nastavení.
@@ -68,12 +68,12 @@ Zkontrolujte, že v zařízení s Androidem nemáte nainstalované žádné apli
 
  Na zařízeních s iOS: Přečtěte si [tento článek podpory](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
-## Potíže se serverem: {#ServerIssues}
+### Potíže se serverem:
 
-## Jak problém otestujete: {#ServerIssues}
+### Jak problém otestujete:
 Pokud máte přístup k více serverům, zkuste se připojit k jinému.
 
-## Co můžete opravit:
+### Co můžete opravit:
 
 Zeptejte se správce služeb, jestli server nebyl zničen. Pokud ano, požádejte o [přístupový klíč](/about/terminology) k jinému serveru.
 

@@ -13,14 +13,14 @@ Több oka is lehet annak, hogy nem tud csatlakozni az Outline szolgáltatáshoz:
 
 ## Internetkapcsolattal kapcsolatos problémák: {#Internetissues}
 
-## A tesztelés módja:
+### A tesztelés módja:
 
 Kapcsolja ki az Outline-t, és nézze meg, hogy helyreáll-e az internetkapcsolat.
 
 - Ha igen, hajtsa végre az alábbi hibaelhárítási lépéseket.
 - Ha nem, várjon néhány másodpercet, és ellenőrizze, hogy frissülnek-e a hálózati beállítások.
 
-## Javítási lehetőségek:
+### Javítási lehetőségek:
 
 Kapcsolódjon újra az internethez:
 
@@ -32,7 +32,7 @@ Kapcsolódjon újra az internethez:
 
 ## Hálózati tűzfallal kapcsolatos problémák: {#FirewallIssues}
 
-## A tesztelés módja:
+### A tesztelés módja:
 
 1. Csatlakozzon le a jelenlegi Wi-Fi- vagy vezetékes hálózatról.
 2. Csatlakozzon másik hálózathoz (például mobilhálózathoz).
@@ -40,22 +40,22 @@ Kapcsolódjon újra az internethez:
 
 Ha másik hálózatról sikerül csatlakozni, ez a probléma lépett fel.
 
-## Javítási lehetőségek:
+### Javítási lehetőségek:
 
 Kérje meg a hálózati adminisztrátort, hogy engedélyezze az Outline-szerverhez való hozzáférést, vagy használjon másik hálózatot.
 
-## Tűzfallal vagy vírusirtó szoftverrel kapcsolatos problémák:
-## A tesztelés módja:
+## Tűzfallal vagy vírusirtó szoftverrel kapcsolatos problémák: {#SoftwareIssues}
+### A tesztelés módja:
  Csatlakozzon az Outline-hoz egy másik eszközről.
 
 Megjegyzés: Ne feledje, hogy ha az Outline szolgáltatást egy másik eszközön szeretné használni, szüksége lesz egy hozzáférési kulcsra és az Outline alkalmazásra.
 
-## Javítási lehetőségek: {#SoftwareIssues}
+### Javítási lehetőségek:
 Ellenőrizze a tűzfal vagy a vírusirtó szoftver beállításait, és győződjön meg róla, hogy azok lehetővé teszik a VPN- és az Outline-forgalom áthaladását.
 
 ## Eszközbeállítások: {#DeviceSettings}
 
-## Amit érdemes ellenőrizni: {#DeviceSettings}
+## Amit érdemes ellenőrizni: {#ServerIssues}
 Android esetén:
 
 1. Nyissa meg a Beállítások alkalmazást.
@@ -68,12 +68,12 @@ Győződjön meg arról, hogy nincsenek képernyőfedvényt előidéző alkalmaz
 
  iOS esetén: Olvassa el [ezt a súgócikket](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
-## Szerverrel kapcsolatos problémák: {#ServerIssues}
+### Szerverrel kapcsolatos problémák:
 
-## A tesztelés módja: {#ServerIssues}
+### A tesztelés módja:
 Ha egynél több szerverhez fér hozzá, csatlakozzon egy másikhoz.
 
-## Javítási lehetőségek:
+### Javítási lehetőségek:
 
 Kérdezze meg a szolgáltatáskezelőjét, hogy nem semmisítette-e meg a szervert. Ha igen, kérjen tőle [hozzáférési kulcsot](/about/terminology) egy másik szerverhez.
 

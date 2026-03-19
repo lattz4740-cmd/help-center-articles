@@ -13,14 +13,14 @@ Outline xidmətinə qoşula bilməməyinizin bir neçə səbəbi ola bilər:
 
 ## İnternet bağlantısında problemlər: {#Internetissues}
 
-## Test etmək qaydası:
+### Test etmək qaydası:
 
 Outline-nı deaktiv edin və internet bağlantısının bərpa olunub-olunmadığını yoxlayın.
 
 - Elədirsə, aşağıda problemin həll edilməsi üçün daha çox varianta baxın.
 - Elə deyilsə, bağlantı ayarlarının öz-özünə yenilənib-yenilənmədiyinə baxmaq üçün bir neçə dəqiqə gözləyin.
 
-## Edilməli olan düzəlişlər:
+### Edilməli olan düzəlişlər:
 
 Cihazda yenidən onlayn rejimə keçin:
 
@@ -32,7 +32,7 @@ Cihazda yenidən onlayn rejimə keçin:
 
 ## Qoruyucu divarı olan şəbəkə ilə bağlı problemlər: {#FirewallIssues}
 
-## Test etmək qaydası:
+### Test etmək qaydası:
 
 1. Hazırda istifadə etdiyiniz Wi-Fi və simli şəbəkə ilə bağlantını kəsin.
 2. Başqa şəbəkəyə (məs., mobil) qoşulun
@@ -40,22 +40,22 @@ Cihazda yenidən onlayn rejimə keçin:
 
 Başqa şəbəkədə olarkən qoşula bilirsinizsə, o zaman bu sizinlə bağlı problemdir.
 
-## Edilməli olan düzəlişlər:
+### Edilməli olan düzəlişlər:
 
 Xidmət administratoru ilə əlaqə saxlayaraq Outline serverinizə giriş icazəsi verməsi üçün sorğu göndərin və ya əvəzində digər şəbəkədən istifadə etməyə davam edin.
 
-## Qoruyucu divar və ya antivirus proqram təminatı ilə bağlı problemlər:
-## Test etmək qaydası:
+## Qoruyucu divar və ya antivirus proqram təminatı ilə bağlı problemlər: {#SoftwareIssues}
+### Test etmək qaydası:
  Başqa cihazdan Outline serverinə qoşulmağı sınayın.
 
 Qeyd: Başqa cihazda Outline istifadə etmək üçün giriş açarı və Outline tətbiqiniz olmalıdır.
 
-## Edilməli olan düzəlişlər: {#SoftwareIssues}
+### Edilməli olan düzəlişlər:
 Qoruyucu divar və antivirus proqram təminatının ayarlarını yoxlayıb VPN və Outline trafiki icazəsinin aktiv olduğuna əmin olun.
 
 ## Cihaz ayarları: {#DeviceSettings}
 
-## Yoxlanılası məqamlar: {#DeviceSettings}
+## Yoxlanılası məqamlar: {#ServerIssues}
 Android üçün:
 
 1. Ayarlar tətbiqini açın.
@@ -68,12 +68,12 @@ Android cihazınızda quraşdırılmış ekran örtüyü tətbiqi olmadığına 
 
  iOS üçün: [bu dəstək məqaləsini](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web) oxuyun.
 
-## Serverlə bağlı problemlər: {#ServerIssues}
+### Serverlə bağlı problemlər:
 
-## Test etmək qaydası: {#ServerIssues}
+### Test etmək qaydası:
 Bir serverdən daha çoxuna giriş imkanınız varsa, başqa serverə qoşulun.
 
-## Edilməli olan düzəlişlər:
+### Edilməli olan düzəlişlər:
 
 Serverin silinib-silinmədiyini yoxlamaq üçün xidmət meneceriniz ilə əlaqə saxlayın. Elədirsə, ondan başqa serverə[giriş açarı](/about/terminology) tələb edin.
 

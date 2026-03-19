@@ -11,15 +11,15 @@ There are a few reasons why you may not be able to connect to the Outline servic
 - **Your**[**phone device settings**](#DeviceSettings)**may need to be changed.**
 - **Your service manager may have**[**destroyed the server or your ISP may be blocking your request**](#ServerIssues)**.**
 
-## Internet connection issues:
+## Internet connection issues: {#Internetissues}
 
-## How to test: {#Internetissues}
+### How to test:
 Turn off Outline and see if your connection to the Internet is restored.
 
 - If yes, see more troubleshooting options below.
 - If not, wait a few moments to see if your connection settings update themselves.
 
-## Things to fix:
+### Things to fix:
 
 Get your device back online:
 
@@ -31,7 +31,7 @@ Get your device back online:
 
 Network firewall issues:
 
-## How to test:
+### How to test:
 
 1. Disconnect from your current Wi-Fi or wired network.
 2. Connect to a different network, like a mobile one
@@ -39,22 +39,22 @@ Network firewall issues:
 
 If you're able to connect while on the other network, then this is your issue
 
-## Things to fix: {#FirewallIssues}
+### Things to fix:
 Contact the service manager and request them to allow access to your Outline server or continue using the other network instead.
 
 Firewall or antivirus software issues:
 
-## How to test:
+### How to test:
 
 Try connecting to Outline from another device.
 
 Note: Remember that you'll need an access key and the Outline app to use Outline on another device.
 
-## Things to fix:
+### Things to fix:
 
 Check your firewall or antivirus software settings to make sure that they're set to allow VPN and Outline traffic through.
 
-## Device settings:
+## Device settings: {#FirewallIssues}
 
 ## Things to check: {#SoftwareIssues}
 For Android:
@@ -69,13 +69,13 @@ On your Android device, go to Settings > Apps > Special app access. Then tap 'Di
 
 For iOS: Read [this support article](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
-## Server issues:
+## Server issues: {#DeviceSettings}
 
-## How to test:
+### How to test:
 
 ## If you have access to more than one server, try connecting to the other one. {#ServerIssues}
 
-## Things to fix: {#DeviceSettings}
+### Things to fix:
 Contact your service manager to see if the server has been destroyed. If so, ask them for an [access key](/about/terminology) to another server.
 
 If you set up the server, try connecting to it through the Outline Manager or another method such as [SSH](https://en.wikipedia.org/wiki/Secure_Shell). If that doesn't work, you can try checking the cloud provider console, if any, to see if the server is still online.

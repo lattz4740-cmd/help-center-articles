@@ -13,14 +13,14 @@ Ka disa arsye pse mund të mos arrish të lidhesh me shërbimin e Outline:
 
 ## Problemet me lidhjen e internetit: {#Internetissues}
 
-## Si ta testosh:
+### Si ta testosh:
 
 Çaktivizo Outline dhe shiko nëse lidhja me internetin është restauruar.
 
 - Nëse po, shiko më shumë opsione të zgjidhjes së problemeve më poshtë.
 - Nëse jo, atëherë prit pak për të parë nëse cilësimet e lidhjes përditësohen vetë.
 
-## Gjërat për t'u rregulluar:
+### Gjërat për t'u rregulluar:
 
 Lidhe pajisjen tënde përsëri online:
 
@@ -32,7 +32,7 @@ Lidhe pajisjen tënde përsëri online:
 
 ## Problemet me murin mbrojtës të rrjetit: {#FirewallIssues}
 
-## Si ta testosh:
+### Si ta testosh:
 
 1. Shkëputu nga rrjeti yt aktual me tel ose Wi-Fi.
 2. Lidhu me një rrjet tjetër, si p.sh. një rrjet celular
@@ -40,22 +40,22 @@ Lidhe pajisjen tënde përsëri online:
 
 Nëse mund të lidhesh ndërkohë që je në rrjetin tjetër, atëherë ky është problemi yt.
 
-## Gjërat për t'u rregulluar:
+### Gjërat për t'u rregulluar:
 
 Kontakto me menaxherin e shërbimit dhe kërkoji të lejojë qasjen në serverin tënd të Outline ose vazhdo të përdorësh rrjetin tjetër më mirë.
 
-## Problemet me murin mbrojtës ose softuerin antivirus:
-## Si ta testosh:
+## Problemet me murin mbrojtës ose softuerin antivirus: {#SoftwareIssues}
+### Si ta testosh:
  Provo të lidhesh me Outline nga një pajisje tjetër.
 
 Shënim. Mos harro se do të të duhet një çelës qasjeje dhe aplikacioni Outline për ta përdorur Outline në një pajisje tjetër.
 
-## Gjërat për t'u rregulluar: {#SoftwareIssues}
+### Gjërat për t'u rregulluar:
 Kontrollo cilësimet e murit mbrojtës ose të softuerit antivirus për t'u siguruar që janë caktuar të lejojnë kalimin e trafikut të rrjetit VPN dhe të Outline.
 
 ## Cilësimet e pajisjes: {#DeviceSettings}
 
-## Gjërat për t'u kontrolluar: {#DeviceSettings}
+## Gjërat për t'u kontrolluar: {#ServerIssues}
 Për Android:
 
 1. Hap aplikacionin "Cilësimet".
@@ -68,12 +68,12 @@ Sigurohu që të mos kesh ndonjë aplikacion të mbivendosjes së ekranit të in
 
  Për iOS: Lexo[këtë artikull të mbështetjes](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
-## Problemet me serverin: {#ServerIssues}
+### Problemet me serverin:
 
-## Si ta testosh: {#ServerIssues}
+### Si ta testosh:
 Nëse ke qasje në më shumë se një server, provo të lidhesh me serverin tjetër.
 
-## Gjërat për t'u rregulluar:
+### Gjërat për t'u rregulluar:
 
 Kontakto me menaxherin e shërbimit për të parë nëse serveri është shkatërruar. Nëse po, kërkoji një[çelës qasjeje](/about/terminology) për një server tjetër.
 

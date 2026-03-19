@@ -398,15 +398,18 @@ def verify_locale(locale: str, english_paths: set[str]) -> list[Issue]:
             ))
 
         # Heading level structure: translations should have the same
-        # sequence of heading levels as English
+        # section headings (##) as English. Sub-headings (###) may vary
+        # since translators may organize content differently.
         en_levels = extract_heading_levels(en_text)
         tr_levels = extract_heading_levels(tr_text)
-        if en_levels != tr_levels:
+        en_sections = [l for l in en_levels if l == 2]
+        tr_sections = [l for l in tr_levels if l == 2]
+        if en_sections != tr_sections:
             if (locale, doc_path) not in KNOWN_HEADING_DIFFS:
                 issues.append(Issue(
                     locale, doc_path, "HEADING_STRUCTURE",
-                    f"Heading levels differ: English={en_levels}, "
-                    f"translation={tr_levels}"
+                    f"Section headings (h2) differ: English has {len(en_sections)}, "
+                    f"translation has {len(tr_sections)}"
                 ))
 
         # Bold-only lines that should be headings: translations should not

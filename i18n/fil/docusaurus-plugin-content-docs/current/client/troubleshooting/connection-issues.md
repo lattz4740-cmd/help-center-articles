@@ -13,14 +13,14 @@ May ilang dahilan kung bakit hindi ka makakonekta sa serbisyo ng Outline:
 
 ## Mga isyu sa koneksyon sa internet: {#Internetissues}
 
-## Paano i-test:
+### Paano i-test:
 
 I-off ang Outline at tingnan kung na-restore ang koneksyon mo sa internet.
 
 - Kung oo, tumingin ng higit pang opsyon sa pag-troubleshoot sa ibaba.
 - Kung hindi, maghintay nang ilang sandali para makita kung mag-a-update nang kusa ang mga setting ng iyong koneksyon.
 
-## Mga aayusin:
+### Mga aayusin:
 
 Gawing online ulit ang iyong device:
 
@@ -32,7 +32,7 @@ Gawing online ulit ang iyong device:
 
 ## Mga isyu sa firewall ng network: {#FirewallIssues}
 
-## Paano i-test:
+### Paano i-test:
 
 1. Magdiskonekta sa iyong kasalukuyang WiFi o wired network.
 2. Kumonekta sa ibang network, tulad ng cellular na network.
@@ -40,22 +40,22 @@ Gawing online ulit ang iyong device:
 
 Kung nakakakonekta ka habang nasa ibang network, ito ang iyong isyu.
 
-## Mga aayusin:
+### Mga aayusin:
 
 Makipag-ugnayan sa manager ng serbisyo at hilingin sa kanya na payagan ang access sa Outline server mo o kaya ay ipagpatuloy na lang ang paggamit sa kabilang network.
 
-## Mga isyu sa firewall o antivirus software:
-## Paano i-test:
+## Mga isyu sa firewall o antivirus software: {#SoftwareIssues}
+### Paano i-test:
  Subukang kumonekta sa Outline mula sa ibang device.
 
 Paalala: Tandaang kailangan mo ng access key at Outline app para magamit ang Outline sa ibang device.
 
-## Mga aayusin: {#SoftwareIssues}
+### Mga aayusin:
 Suriin ang mga setting ng iyong firewall o antivirus software para siguraduhing nakatakda ang mga ito na payagang dumaan ang trapiko ng VPN at Outline.
 
 ## Mga setting ng device: {#DeviceSettings}
 
-## Mga titingnan: {#DeviceSettings}
+## Mga titingnan: {#ServerIssues}
 Para sa Android:
 
 1. Buksan ang App na Mga Setting.
@@ -68,12 +68,12 @@ Siguraduhing wala kang kahit anong naka-install na screen overlay application sa
 
  Para sa iOS: Basahin ang[suportang artikulong ito](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
-## Mga isyu sa server: {#ServerIssues}
+### Mga isyu sa server:
 
-## Paano i-test: {#ServerIssues}
+### Paano i-test:
 Kung mayroon kang access sa higit sa isang server, subukang kumonekta sa ibang server.
 
-## Mga aayusin:
+### Mga aayusin:
 
 Makipag-ugnayan sa iyong manager ng serbisyo para tanungin kung na-destroy na ang server. Kung oo, humingi sa kanya ng[access key](/about/terminology) sa ibang server.
 

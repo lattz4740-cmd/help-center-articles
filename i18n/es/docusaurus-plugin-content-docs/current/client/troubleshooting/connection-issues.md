@@ -5,21 +5,22 @@ sidebar_label: "¿Por qué no puedo conectarme al servicio de Outline?"
 
 Hay varios factores que pueden impedir que te conectes al servicio de Outline:
 
-- **Tu dispositivo**[**no tiene conexión a Internet**](#Internetissues)**.**En ocasiones, es posible que el dispositivo se desconecte momentáneamente de la red y tarde un poco en mostrar los iconos de red de nuevo. También es posible que el dispositivo esté conectado a la red local, pero que Internet esté caído.
-- **El**[**cortafuegos de la red está bloqueando el acceso**](#SoftwareIssues)**a tu servidor de Outline.**Esto suele ocurrir cuando se usa una red pública; por ejemplo, si estás en un centro educativo o en el trabajo, o si te conectas a una red inalámbrica gratuita.
-- **Tu dispositivo tiene**[**un cortafuegos o un software antivirus**](#SoftwareIssues)**que está bloqueando el acceso al servidor de Outline.**
-- **Es posible que tengas que cambiar los**[**ajustes de tu dispositivo**](#DeviceSettings)**.**
-- **Puede que el gestor del servicio haya**[**eliminado el servidor o que tu proveedor de Internet esté bloqueando tu solicitud**](#ServerIssues)**.**
+- **Tu dispositivo [no tiene conexión a Internet](#Internetissues).** En ocasiones, es posible que el dispositivo se desconecte momentáneamente de la red y tarde un poco en mostrar los iconos de red de nuevo. También es posible que el dispositivo esté conectado a la red local, pero que Internet esté caído.
+- **El [cortafuegos de la red está bloqueando el acceso](#FirewallIssues) a tu servidor de Outline.** Esto suele ocurrir cuando se usa una red pública; por ejemplo, si estás en un centro educativo o en el trabajo, o si te conectas a una red inalámbrica gratuita.
+- **Tu dispositivo tiene [un cortafuegos o un software antivirus](#SoftwareIssues) que está bloqueando el acceso al servidor de Outline.**
+- **Es posible que tengas que cambiar los [ajustes de tu dispositivo](#DeviceSettings).**
+- **Puede que el gestor del servicio haya [eliminado el servidor o que tu proveedor de Internet esté bloqueando tu solicitud](#ServerIssues).**
 
-Problemas con la conexión a Internet:
+## Problemas con la conexión a Internet: {#Internetissues}
 
-## Cómo probarlo: {#Internetissues}
+### Cómo probarlo:
+
 Desactiva Outline y comprueba si se ha restablecido la conexión a Internet.
 
 - En caso afirmativo, consulta otras posibles soluciones al problema que se describen a continuación.
 - En caso negativo, espera un poco para ver si los ajustes de conexión se actualizan automáticamente.
 
-## Qué hacer:
+### Qué hacer:
 
 Vuelve a conectar el dispositivo a Internet:
 
@@ -29,9 +30,9 @@ Vuelve a conectar el dispositivo a Internet:
    2. Reinicia el dispositivo.
    3. Apaga el dispositivo, espera dos minutos y vuelve a encenderlo.
 
-Problemas con el cortafuegos de la red:
+## Problemas con el cortafuegos de la red: {#FirewallIssues}
 
-## Cómo probarlo:
+### Cómo probarlo:
 
 1. Desconecta el dispositivo de la red Wi-Fi o de cable actual.
 2. Conéctate a otra red (por ejemplo, a la de un móvil).
@@ -39,24 +40,26 @@ Problemas con el cortafuegos de la red:
 
 Si puedes conectarte desde la otra red, este es tu problema.
 
-## Qué hacer: {#FirewallIssues}
+### Qué hacer:
+
 Ponte en contacto con el gestor del servicio y pídele que dé acceso a tu servidor de Outline, o sigue usando la otra red.
 
-Problemas con el cortafuegos o el software antivirus:
+## Problemas con el cortafuegos o el software antivirus: {#SoftwareIssues}
 
-## Cómo probarlo:
+### Cómo probarlo:
 
 Prueba a conectarte a Outline desde otro dispositivo.
 
 Nota: Necesitarás una clave de acceso y la aplicación Outline para usar el software en ese dispositivo.
 
-## Qué hacer:
+### Qué hacer:
 
 Comprueba los ajustes del cortafuegos y del software antivirus y confirma que estén configurados de modo que permitan el tráfico de VPN y Outline.
 
-## Ajustes del dispositivo:
+## Ajustes del dispositivo: {#DeviceSettings}
 
-## Qué comprobar: {#SoftwareIssues}
+### Qué comprobar:
+
 Android:
 
 1. Abre la aplicación Ajustes.
@@ -69,13 +72,14 @@ En tu dispositivo Android, ve a Ajustes > Aplicaciones > Aplicaciones con acceso
 
 iOS: lee [este artículo de asistencia](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
-Problemas con el servidor:
+## Problemas con el servidor: {#ServerIssues}
 
-## Cómo probarlo:
+### Cómo probarlo:
 
-## Si tienes acceso a más de un servidor, prueba a conectarte a otro. {#ServerIssues}
+Si tienes acceso a más de un servidor, prueba a conectarte a otro.
 
-## Qué hacer: {#DeviceSettings}
+### Qué hacer:
+
 Ponte en contacto con el gestor del servicio para ver si lo ha eliminado. En caso afirmativo, pídele una [clave de acceso](/about/terminology) para otro servidor.
 
 Si configuras el servidor por tu cuenta, prueba a conectarte a él mediante el Administrador de Outline u otro método, como [SSH](https://en.wikipedia.org/wiki/Secure_Shell). Si esta alternativa no funciona, consulta la consola del proveedor de servicios en la nube, si la hubiera, para ver si el servidor sigue conectado.

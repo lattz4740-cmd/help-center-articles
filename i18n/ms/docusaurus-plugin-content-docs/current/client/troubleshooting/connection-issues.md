@@ -13,14 +13,14 @@ Terdapat beberapa sebab anda mungkin tidak dapat menyambung kepada perkhidmatan 
 
 ## Masalah sambungan Internet: {#Internetissues}
 
-## Cara menguji:
+### Cara menguji:
 
 Matikan Outline dan lihat sama ada sambungan kepada Internet dipulihkan.
 
 - Jika ya, lihat lebih banyak pilihan penyelesaian masalah di bawah.
 - Jika tidak, tunggu sebentar untuk melihat sama ada tetapan sambungan anda dikemaskinikan dengan sendiri.
 
-## Perkara yang perlu dibetulkan:
+### Perkara yang perlu dibetulkan:
 
 Dapatkan sambungan Internet untuk peranti anda:
 
@@ -32,7 +32,7 @@ Dapatkan sambungan Internet untuk peranti anda:
 
 ## Masalah tembok api rangkaian: {#FirewallIssues}
 
-## Cara menguji:
+### Cara menguji:
 
 1. Putuskan sambungan daripada Wi-Fi atau rangkaian berwayar semasa anda.
 2. Buat sambungan kepada rangkaian yang berbeza, seperti rangkaian selular
@@ -40,22 +40,22 @@ Dapatkan sambungan Internet untuk peranti anda:
 
 Jika anda dapat membuat sambungan semasa berada pada rangkaian lain, maka akses anda bermasalah.
 
-## Perkara yang perlu dibetulkan:
+### Perkara yang perlu dibetulkan:
 
 Hubungi pentadbir perkhidmatan dan minta mereka membenarkan akses kepada pelayan Outline anda atau terus gunakan rangkaian yang lain itu.
 
-## Masalah tembok api atau perisian antivirus:
-## Cara menguji:
+## Masalah tembok api atau perisian antivirus: {#SoftwareIssues}
+### Cara menguji:
  Cuba menyambung kepada Outline daripada peranti yang lain.
 
 Nota: Ingat bahawa anda memerlukan kunci akses dan apl Outline untuk menggunakan Outline pada peranti yang lain.
 
-## Perkara yang perlu dibetulkan: {#SoftwareIssues}
+### Perkara yang perlu dibetulkan:
 Semak tetapan tembok api atau perisian antivirus untuk memastikan tembok api dan antivirus ditetapkan supaya membenarkan laluan trafik VPN dan Outline.
 
 ## Tetapan peranti: {#DeviceSettings}
 
-## Perkara yang perlu disemak: {#DeviceSettings}
+## Perkara yang perlu disemak: {#ServerIssues}
 Untuk Android:
 
 1. Buka Apl Tetapan.
@@ -68,12 +68,12 @@ Pastikan anda tiada apa-apa aplikasi tindanan skrin yang dipasang pada peranti A
 
  Untuk iOS: Baca[artikel sokongan ini](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
-## Masalah pelayan: {#ServerIssues}
+### Masalah pelayan:
 
-## Cara menguji: {#ServerIssues}
+### Cara menguji:
 Jika anda mempunyai akses kepada lebih daripada satu pelayan, cuba menyambung kepada pelayan yang lain.
 
-## Perkara yang perlu dibetulkan:
+### Perkara yang perlu dibetulkan:
 
 Hubungi pentadbir perkhidmatan anda untuk melihat sama ada pelayan telah dimusnahkan atau tidak. Jika demikian, minta[kunci akses](/about/terminology) kepada pelayan yang lain daripada mereka.
 

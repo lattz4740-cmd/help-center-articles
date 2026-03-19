@@ -13,14 +13,14 @@ Kuna sababu chache ambazo zinaweza kufanya ushindwe kuunganisha na huduma ya Out
 
 ## Hitilafu za muunganisho wa Intaneti: {#Internetissues}
 
-## Jinsi ya kujaribu:
+### Jinsi ya kujaribu:
 
 Zima Outline uone iwapo muunganisho wako kwenye intaneti utarejeshwa.
 
 - Kama ndivyo, angalia chaguo zaidi za utatuzi hapo chini.
 - Kama sivyo, basi subiri dakika kadhaa uone iwapo mipangilio ya muunganisho wako itajisasisha yenyewe.
 
-## Hitilafu za kurekebisha:
+### Hitilafu za kurekebisha:
 
 Rejesha kifaa chako mtandaoni:
 
@@ -32,7 +32,7 @@ Rejesha kifaa chako mtandaoni:
 
 ## Hitilafu za kinga mtandao: {#FirewallIssues}
 
-## Jinsi ya kujaribu:
+### Jinsi ya kujaribu:
 
 1. Tenganisha muunganisho wa WiFi au mtandao wenye waya unaotumia sasa.
 2. Unganisha kwenye mtandao tofauti, kama muunganisho wa mtandao wa simu
@@ -40,22 +40,22 @@ Rejesha kifaa chako mtandaoni:
 
 Iwapo utaweza kuunganisha kwa kutumia mtandao mwingine, basi tatizo lako ni mtandao.
 
-## Hitilafu za kurekebisha:
+### Hitilafu za kurekebisha:
 
 Wasiliana na msimamizi wako wa huduma na umwombe aruhusu ufikiaji wa seva yako ya Outline au endelea kutumia mtandao mwingine badala yake.
 
-## Matatizo ya programu ya kingavirusi au ya kinga mtandao:
-## Jinsi ya kujaribu:
+## Matatizo ya programu ya kingavirusi au ya kinga mtandao: {#SoftwareIssues}
+### Jinsi ya kujaribu:
  Jaribu kuunganisha na Outline kutoka kwenye kifaa kingine.
 
 Kumbuka: Utahitaji ufunguo na programu ya Outline ili utumie Outline kwenye kifaa kingine.
 
-## Hitilafu za kurekebisha: {#SoftwareIssues}
+### Hitilafu za kurekebisha:
 Angalia mipangilio ya programu yako ya kinga mtandao au kinga virusi ili uhakikishe kuwa inaruhusu VPN na shuguli za mtandaoni kwenye Outline.
 
 ## Mipangilio ya kifaa: {#DeviceSettings}
 
-## Mambo ya kukagua: {#DeviceSettings}
+## Mambo ya kukagua: {#ServerIssues}
 Kwenye Android:
 
 1. Fungua Programu ya Mipangilio.
@@ -68,12 +68,12 @@ Hakikisha huna programu yoyote inayowekelewa juu ya nyingine iliyowekwa kwenye k
 
  Kwenye iOS: Soma[makala haya ya usaidizi](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
-## Hitilafu za seva: {#ServerIssues}
+### Hitilafu za seva:
 
-## Jinsi ya kujaribu: {#ServerIssues}
+### Jinsi ya kujaribu:
 Iwapo unaweza kufikia zaidi ya seva moja, jaribu kuunganisha na hiyo nyingine.
 
-## Hitilafu za kurekebisha:
+### Hitilafu za kurekebisha:
 
 Wasiliana na msimamizi wako wa huduma ili ufahamu iwapo seva imeharibiwa. Iwapo imeharibiwa, mwombe[ufunguo](/about/terminology) wa seva nyingine.
 

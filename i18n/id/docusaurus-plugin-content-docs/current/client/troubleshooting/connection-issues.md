@@ -13,14 +13,14 @@ Ada beberapa kemungkinan alasan Anda tidak dapat terhubung ke layanan Outline:
 
 ## Masalah koneksi internet: {#Internetissues}
 
-## Cara mengujinya:
+### Cara mengujinya:
 
 Nonaktifkan Outline dan lihat apakah koneksi internet telah pulih.
 
 - Jika ya, lihat opsi pemecahan masalah lainnya di bawah.
 - Jika tidak, tunggu beberapa saat untuk melihat apakah setelan koneksi Anda diperbarui secara otomatis.
 
-## Cara memperbaikinya:
+### Cara memperbaikinya:
 
 Hubungkan kembali perangkat Anda ke internet:
 
@@ -32,7 +32,7 @@ Hubungkan kembali perangkat Anda ke internet:
 
 ## Masalah firewall jaringan: {#FirewallIssues}
 
-## Cara mengujinya:
+### Cara mengujinya:
 
 1. Putuskan koneksi dari jaringan kabel atau Wi-Fi saat ini.
 2. Hubungkan ke jaringan lain, seperti jaringan seluler
@@ -40,22 +40,22 @@ Hubungkan kembali perangkat Anda ke internet:
 
 Jika Anda dapat terhubung saat menggunakan jaringan lain, berarti masalahnya ada pada jaringan Anda.
 
-## Cara memperbaikinya:
+### Cara memperbaikinya:
 
 Hubungi pengelola layanan dan minta mereka untuk mengizinkan akses ke server Outline, atau tetap gunakan jaringan lain.
 
-## Masalah software antivirus atau firewall:
-## Cara mengujinya:
+## Masalah software antivirus atau firewall: {#SoftwareIssues}
+### Cara mengujinya:
  Coba hubungkan ke Outline dari perangkat lain.
 
 Catatan: Perlu diingat bahwa Anda memerlukan kunci akses dan aplikasi Outline untuk menggunakan Outline di perangkat lain.
 
-## Cara memperbaikinya: {#SoftwareIssues}
+### Cara memperbaikinya:
 Periksa setelan software antivirus atau firewall Anda untuk memastikan keduanya disetel untuk mengizinkan traffic VPN dan Outline.
 
 ## Setelan perangkat: {#DeviceSettings}
 
-## Cara memeriksanya: {#DeviceSettings}
+## Cara memeriksanya: {#ServerIssues}
 Untuk Android:
 
 1. Buka Aplikasi Setelan.
@@ -68,12 +68,12 @@ Pastikan Anda tidak memiliki aplikasi overlay layar yang diinstal di perangkat A
 
  Untuk iOS: Baca [artikel dukungan ini](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
-## Masalah server: {#ServerIssues}
+### Masalah server:
 
-## Cara mengujinya: {#ServerIssues}
+### Cara mengujinya:
 Jika Anda memiliki akses ke lebih dari satu server, coba hubungkan ke server lainnya.
 
-## Cara memperbaikinya:
+### Cara memperbaikinya:
 
 Hubungi pengelola layanan untuk mengetahui apakah server telah dihapus. Jika ya, minta mereka untuk memberikan [kunci akses](/about/terminology) ke server lain.
 

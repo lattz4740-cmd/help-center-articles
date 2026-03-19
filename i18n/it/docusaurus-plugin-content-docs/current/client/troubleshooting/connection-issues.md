@@ -3,7 +3,7 @@ title: "Wieso kann ich keine Verbindung zum Outline-Dienst herstellen?"
 sidebar_label: "Wieso kann ich keine Verbindung zum Outline-Dienst herstellen?"
 ---
 
-## Wenn sich die Verbindung zu Outline nicht aufbauen lässt, kann das verschiedene Gründe haben:
+## Wenn sich die Verbindung zu Outline nicht aufbauen lässt, kann das verschiedene Gründe haben: {#Internetissues}
 
 - [**Ihr Gerät ist nicht mit dem Internet verbunden**](#Internetissues)**.**Die Netzwerkverbindung Ihres Geräts kann unterbrochen sein. In diesem Fall dauert es möglicherweise einen Moment, bis die Netzwerksymbole aktualisiert werden. Es kann auch sein, dass Ihr Gerät zwar mit dem lokalen Netzwerk verbunden, das Internet aber ausgefallen ist.
 - **Die**[**Firewall Ihres Netzwerks blockiert den Zugriff**](#FirewallIssues)**auf den Outline-Server.**Das kommt häufig bei Verbindungen über ein öffentliches Netzwerk vor, z. B. wenn Sie das Netzwerk einer Bildungseinrichtung oder eines Unternehmens bzw. ein kostenloses WLAN nutzen.
@@ -13,15 +13,15 @@ sidebar_label: "Wieso kann ich keine Verbindung zum Outline-Dienst herstellen?"
 
 Probleme mit der Internetverbindung:
 
-## So können Sie testen, ob hier die Ursache liegt: {#Internetissues}
+### So können Sie testen, ob hier die Ursache liegt:
 Deaktivieren Sie Outline und überprüfen Sie, ob die Internetverbindung wiederhergestellt wird.
 
 - Falls ja, finden Sie unten weitere Optionen zur Fehlerbehebung.
 - Falls nein, warten Sie bitte einige Minuten, um zu sehen, ob die Verbindungseinstellungen automatisch aktualisiert werden.
 
-## So beheben Sie dieses Problem:
+### So beheben Sie dieses Problem:
 
-## Verbinden Sie Ihr Gerät wieder mit dem Internet:
+## Verbinden Sie Ihr Gerät wieder mit dem Internet: {#FirewallIssues}
 
 1. Versuchen Sie, ein anderes Gerät mit demselben Netzwerk zu verbinden. Wenn das nicht funktioniert, ist das Netzwerk möglicherweise ausgefallen. In diesem Fall müssen Sie warten, bis es wieder verfügbar ist, oder den Fehler beheben.
 2. Falls Sie ein anderes Gerät mit demselben Netzwerk verbinden können, probieren Sie mindestens einen der folgenden Schritte aus:
@@ -31,18 +31,18 @@ Deaktivieren Sie Outline und überprüfen Sie, ob die Internetverbindung wiederh
 
 Probleme mit der Firewall eines Netzwerks:
 
-## So können Sie testen, ob hier die Ursache liegt:
+### So können Sie testen, ob hier die Ursache liegt:
 
 1. Trennen Sie die aktuelle LAN- oder WLAN-Verbindung.
 2. Stellen Sie eine Verbindung zu einem anderen Netzwerk her, z. B. zu einem Mobilfunknetz.
 3. Versuchen Sie noch einmal, die Verbindung zum Outline-Server herzustellen.
 
-## Wenn der Versuch erfolgreich ist, liegt das Problem bei der Firewall. {#FirewallIssues}
-## So beheben Sie dieses Problem:
+## Wenn der Versuch erfolgreich ist, liegt das Problem bei der Firewall. {#SoftwareIssues}
+### So beheben Sie dieses Problem:
 
 Wenden Sie sich an den Netzwerkadministrator und bitten Sie ihn, den Zugriff auf den Outline-Server zu erlauben, oder verwenden Sie stattdessen weiterhin das andere Netzwerk.
 
-## Probleme mit der Firewall oder dem Antivirenprogramm: {#SoftwareIssues}
+## Probleme mit der Firewall oder dem Antivirenprogramm: {#DeviceSettings}
 
 So können Sie testen, ob hier die Ursache liegt:
 
@@ -50,13 +50,13 @@ Versuchen Sie, über ein anderes Gerät eine Verbindung zu Outline herzustellen.
 
 Hinweis: Dazu benötigen Sie auf dem anderen Gerät den Zugriffsschlüssel und die Outline App.
 
-## So beheben Sie dieses Problem:
+### So beheben Sie dieses Problem:
 
 Überprüfen Sie in den Einstellungen Ihrer Firewall oder Antivirussoftware, ob VPN- und Outline-Traffic zugelassen wird.
 
-## Geräteeinstellungen: {#DeviceSettings}
+## Geräteeinstellungen: {#ServerIssues}
 
-## Was Sie prüfen sollten:
+### Was Sie prüfen sollten:
 
 Bei Android:
 
@@ -70,12 +70,12 @@ Rufen Sie auf Ihrem Android-Gerät „Einstellungen“ > „Apps“ > „Speziel
 
 Bei iOS: Lesen Sie die Anleitung [in diesem Hilfeartikel](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
-## Probleme mit dem Server: {#ServerIssues}
+### Probleme mit dem Server:
 
-## So können Sie testen, ob hier die Ursache liegt:
+### So können Sie testen, ob hier die Ursache liegt:
 Wenn Sie auf mehrere Server Zugriff haben, versuchen Sie, eine Verbindung zu einem anderen Server herzustellen.
 
-## So beheben Sie dieses Problem:
+### So beheben Sie dieses Problem:
 
 Erkundigen Sie sich beim Serveradministrator, ob der Server noch läuft. Falls ja, bitten Sie ihn um den [Zugriffsschlüssel](/about/terminology) eines anderen Servers.
 

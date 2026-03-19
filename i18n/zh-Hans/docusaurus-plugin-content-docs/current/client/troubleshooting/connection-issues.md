@@ -13,14 +13,14 @@ sidebar_label: 为什么我无法连接到 Outline 服务？
 
 ## 互联网连接问题： {#Internetissues}
 
-## 测试方法： {#Internetissues}
+### 测试方法：
 
 关闭 Outline，然后看看您与互联网的连接是否可以恢复。
 
 - 如果是，请查看以下有关问题排查的更多操作。
 - 如果不是，请稍等片刻，然后看看连接设置是否会自行更新。
 
-## 修复事项：
+### 修复事项：
 
 让设备重新连接到网络：
 
@@ -32,7 +32,7 @@ sidebar_label: 为什么我无法连接到 Outline 服务？
 
 ## 网络防火墙问题： {#FirewallIssues}
 
-## 测试方法： {#FirewallIssues}
+### 测试方法：
 
 1. 断开与当前 Wi-Fi 或有线网络的连接。
 2. 连接到其他网络（例如移动网络）
@@ -40,24 +40,24 @@ sidebar_label: 为什么我无法连接到 Outline 服务？
 
 如果您在其他网络下连接成功，这就表明您原先的网络存在问题。
 
-## 修复事项：
+### 修复事项：
 
 请与服务管理员联系，请求其允许您访问 Outline 服务器，或者您也可以改为继续使用其他连接正常的网络。
 
-## 防火墙或杀毒软件软件问题：
+## 防火墙或杀毒软件软件问题： {#SoftwareIssues}
 
-## 测试方法：
+### 测试方法：
 
 尝试通过其他设备连接到 Outline。
 
 注意：如需在其他设备上使用 Outline，您需要访问密钥以及 Outline 应用。
 
-## 修复事项： {#SoftwareIssues}
+### 修复事项：
 检查您的防火墙或杀毒软件的设置，确保它们已设为允许 VPN 和 Outline 流量通过。
 
-## 设备设置：
+## 设备设置： {#DeviceSettings}
 
-## 检查事项：
+## 检查事项： {#ServerIssues}
 
 对于 Android 设备：
 
@@ -69,15 +69,15 @@ sidebar_label: 为什么我无法连接到 Outline 服务？
 
 在 Android 设备上，依次找到“设置”>“应用”>“特殊应用权限”。然后，点按“显示在其他应用的上层”。您可以移除任意允许此行为的应用的权限。
 
-## iOS：请参阅[这篇支持文章](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web)。 {#DeviceSettings}
+### iOS：请参阅[这篇支持文章](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web)。
 
-## 服务器问题：
+### 服务器问题：
 
-## 测试方法：
+### 测试方法：
 
-## 如果您可以访问多台服务器，请尝试连接到其他服务器。 {#ServerIssues}
+### 如果您可以访问多台服务器，请尝试连接到其他服务器。
 
-## 修复事项：
+### 修复事项：
 
 请与您的服务管理员联系，了解服务器是否已经被销毁。如果已经销毁，请他们提供其他服务器的[访问密钥](/about/terminology)。
 

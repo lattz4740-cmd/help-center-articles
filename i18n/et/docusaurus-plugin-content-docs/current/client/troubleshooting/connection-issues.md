@@ -13,14 +13,14 @@ Järgnevalt on toodud mõned põhjused, miks te ei pruugi saada Outline'i teenus
 
 ## Internetiühenduse probleemid {#Internetissues}
 
-## Testimine
+### Testimine
 
 Lülitage Outline välja ja vaadake, kas teie internetiühendus taastub.
 
 - Kui taastub, vaadake allpool muid veaotsingu valikuid.
 - Kui ei taastu, siis oodake mõni hetk ja vaadake, kas ühenduse seaded värskendavad end.
 
-## Parandamine
+### Parandamine
 
 Looge seadmes uuesti võrguühendus.
 
@@ -32,7 +32,7 @@ Looge seadmes uuesti võrguühendus.
 
 ## Võrgu tulemüüri probleemid {#FirewallIssues}
 
-## Testimine
+### Testimine
 
 1. Katkestage ühendus praeguse WiFi- või juhtmega võrguga.
 2. Looge ühendus muu võrguga, näiteks mobiilsidevõrguga.
@@ -40,22 +40,22 @@ Looge seadmes uuesti võrguühendus.
 
 Kui saate muus võrgus ühenduse luua, on probleem leitud.
 
-## Parandamine
+### Parandamine
 
 Võtke ühendust teenusehalduriga ja paluge, et ta lubaks juurdepääsu teie Outline'i serverile, või jätkake teise võrgu kasutamist.
 
-## Tulemüüri- või viirusetõrjetarkvara probleemid
-## Testimine
+## Tulemüüri- või viirusetõrjetarkvara probleemid {#SoftwareIssues}
+### Testimine
  Proovige luua ühendus Outline'iga muu seadme kaudu.
 
 Märkus. Pidage meeles, et teil on teises seadmes Outline'i kasutamiseks vaja pääsuvõtit ja Outline'i rakendust.
 
-## Parandamine {#SoftwareIssues}
+### Parandamine
 Kontrollige tulemüüri- või viirusetõrjetarkvara seadeid ja veenduge, et need laseksid läbi VPN-i ja Outline'i liikluse.
 
 ## Seadme seaded {#DeviceSettings}
 
-## Kontrollimine {#DeviceSettings}
+## Kontrollimine {#ServerIssues}
 Androidis
 
 1. Avage rakendus Seaded.
@@ -68,12 +68,12 @@ Veenduge, et teil poleks Androidi seadmessse installitud ekraani ülekatte raken
 
  iOS-is: lugege [seda toeartiklit](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
-## Serveriprobleemid {#ServerIssues}
+### Serveriprobleemid
 
-## Testimine {#ServerIssues}
+### Testimine
 Kui teil on juurdepääs mitmele serverile, proovige luua ühendus muu serveriga.
 
-## Parandamine
+### Parandamine
 
 Võtke ühendust oma teenusehalduriga ja uurige, kas server on hävitatud. Kui see on hävitatud, küsige temalt mõne muu serveri [pääsuvõtit](/about/terminology).
 

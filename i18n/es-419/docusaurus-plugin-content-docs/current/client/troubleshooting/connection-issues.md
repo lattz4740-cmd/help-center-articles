@@ -13,14 +13,14 @@ Existen algunos motivos por los que quizás no puedas conectarte al servicio de 
 
 ## Problemas con la conexión a Internet: {#Internetissues}
 
-## Cómo hacer la prueba:
+### Cómo hacer la prueba:
 
 Desactiva Outline y observa si se restablece tu conexión a Internet.
 
 - De ser así, consulta más opciones para solucionar problemas a continuación.
 - De no ser así, espera unos minutos para ver si se actualiza tu configuración de conexión.
 
-## Aspectos que se deben corregir:
+### Aspectos que se deben corregir:
 
 Logra que tu dispositivo vuelva a estar en línea:
 
@@ -32,7 +32,7 @@ Logra que tu dispositivo vuelva a estar en línea:
 
 ## Problemas con el firewall de la red: {#FirewallIssues}
 
-## Cómo hacer la prueba:
+### Cómo hacer la prueba:
 
 1. Desconéctate de la red con cable o Wi-Fi a la que esté conectado el dispositivo.
 2. Conéctate a otra red, por ejemplo, a una red móvil.
@@ -40,22 +40,22 @@ Logra que tu dispositivo vuelva a estar en línea:
 
 Si puedes conectarte desde la otra red, entonces aquí está el problema.
 
-## Aspectos que se deben corregir:
+### Aspectos que se deben corregir:
 
 Comunícate con el administrador del servicio y solicita que te permita acceder al servidor de Outline, o bien sigue usando la otra red.
 
-## Problemas con el firewall o software antivirus:
-## Cómo hacer la prueba:
+## Problemas con el firewall o software antivirus: {#SoftwareIssues}
+### Cómo hacer la prueba:
  Intenta conectarte a Outline desde otro dispositivo.
 
 Nota: Recuerda que necesitarás una clave de acceso y la app de Outline para usar este servicio en otro dispositivo.
 
-## Aspectos que se deben corregir: {#SoftwareIssues}
+### Aspectos que se deben corregir:
 Comprueba la configuración de tu firewall o software antivirus para asegurarte de que esta permita el tráfico entre la VPN y Outline.
 
 ## Configuración del dispositivo: {#DeviceSettings}
 
-## Aspectos que debes comprobar: {#DeviceSettings}
+## Aspectos que debes comprobar: {#ServerIssues}
 Para Android:
 
 1. Abre la app de Configuración.
@@ -68,12 +68,12 @@ Asegúrate de que no haya ninguna aplicación de pantalla superpuesta en tu disp
 
  Para iOS, consulta[este artículo de ayuda](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
-## Problemas con el servidor: {#ServerIssues}
+### Problemas con el servidor:
 
-## Cómo hacer la prueba: {#ServerIssues}
+### Cómo hacer la prueba:
 Si tienes acceso a más de un servidor, intenta conectarte a otro.
 
-## Aspectos que se deben corregir:
+### Aspectos que se deben corregir:
 
 Comunícate con el administrador del servicio para ver si se destruyó el servidor. Si es así, solicita una[clave de acceso](/about/terminology) para usar otro servidor.
 

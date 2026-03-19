@@ -13,14 +13,14 @@ Do nemogućnosti povezivanja s uslugom Outline može dovesti nekoliko razloga:
 
 ## Problemi s internetskom vezom: {#Internetissues}
 
-## Postupak testiranja:
+### Postupak testiranja:
 
 Isključite Outline i provjerite je li veza s internetom ponovno uspostavljena.
 
 - Ako jest, pogledajte još prijedloga za rješavanje problema u nastavku.
 - Ako nije, pričekajte nekoliko trenutaka da biste vidjeli hoće li se postavke veze same ažurirati.
 
-## Što treba popraviti:
+### Što treba popraviti:
 
 Ponovo povežite uređaj s internetom:
 
@@ -32,7 +32,7 @@ Ponovo povežite uređaj s internetom:
 
 ## Problemi s mrežnim vatrozidom: {#FirewallIssues}
 
-## Postupak testiranja:
+### Postupak testiranja:
 
 1. Prekinite vezu s trenutačnom Wi-Fi ili žičanom mrežom.
 2. Povežite se s drugom mrežom, na primjer mobilnom.
@@ -40,22 +40,22 @@ Ponovo povežite uređaj s internetom:
 
 Ako se uspijete povezati s poslužiteljem dok upotrebljavate drugu mrežu, pronašli ste problem.
 
-## Što treba popraviti:
+### Što treba popraviti:
 
 Zatražite od upravitelja usluge da omogući pristup vašem Outline poslužitelju ili nastavite upotrebljavati drugu mrežu.
 
-## Problemi s vatrozidom ili antivirusnim softverom:
-## Postupak testiranja:
+## Problemi s vatrozidom ili antivirusnim softverom: {#SoftwareIssues}
+### Postupak testiranja:
  Pokušajte ponovo uspostaviti vezu s Outlineom s drugog uređaja.
 
 Napomena: ne zaboravite da za upotrebu Outlinea na drugom uređaju trebate imati pristupni ključ i aplikaciju Outline.
 
-## Što treba popraviti: {#SoftwareIssues}
+### Što treba popraviti:
 Provjerite postavke vatrozida ili antivirusnog softvera i uredite ih tako da dopuštaju promet preko VPN-a i Outlinea.
 
 ## Postavke uređaja: {#DeviceSettings}
 
-## Što treba provjeriti: {#DeviceSettings}
+## Što treba provjeriti: {#ServerIssues}
 Android:
 
 1. Otvorite aplikaciju Postavke.
@@ -68,12 +68,12 @@ Na Android uređaju ne smije biti instalirana aplikacija za preklapanje na zaslo
 
  iOS: pročitajte [ovaj članak pomoći](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
-## Problemi s poslužiteljem: {#ServerIssues}
+### Problemi s poslužiteljem:
 
-## Postupak testiranja: {#ServerIssues}
+### Postupak testiranja:
 Ako možete pristupiti više poslužitelja, pokušajte se povezati s drugim poslužiteljem.
 
-## Što treba popraviti:
+### Što treba popraviti:
 
 Obratite se upravitelju usluge i provjerite nije li poslužitelj uništen. Ako jest, zatražite [pristupni ključ](/about/terminology) za drugi poslužitelj.
 

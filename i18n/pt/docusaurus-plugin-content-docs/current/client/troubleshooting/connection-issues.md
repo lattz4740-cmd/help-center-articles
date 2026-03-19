@@ -13,14 +13,14 @@ Existem alguns motivos pelos quais pode não conseguir estabelecer ligação ao 
 
 ## Problemas de ligação à Internet: {#Internetissues}
 
-## Como testar:
+### Como testar:
 
 Desative o Outline e verifique se a ligação à Internet é reposta.
 
 - Se for reposta, consulte abaixo mais opções de resolução de problemas.
 - Se não for reposta, aguarde alguns momentos para verificar se as definições de ligação são atualizadas automaticamente.
 
-## Aspetos a corrigir:
+### Aspetos a corrigir:
 
 Restabeleça a ligação do dispositivo:
 
@@ -32,7 +32,7 @@ Restabeleça a ligação do dispositivo:
 
 ## Problemas com a firewall de rede: {#FirewallIssues}
 
-## Como testar:
+### Como testar:
 
 1. Desligue a ligação atual à rede Wi-Fi ou com fios.
 2. Estabeleça ligação a uma rede diferente, como uma rede móvel.
@@ -40,22 +40,22 @@ Restabeleça a ligação do dispositivo:
 
 Se conseguir estabelecer ligação através de outra rede, então o seu problema é este.
 
-## Aspetos a corrigir:
+### Aspetos a corrigir:
 
 Contacte o gestor do serviço para lhe pedir que autorize o acesso ao seu servidor do Outline ou, em alternativa, continue a usar a outra rede.
 
-## Problemas com o software antivírus ou firewall:
-## Como testar:
+## Problemas com o software antivírus ou firewall: {#SoftwareIssues}
+### Como testar:
  Tente estabelecer ligação ao Outline noutro dispositivo.
 
 Nota: lembre-se de que precisa de uma chave de acesso e da app Outline para usar o Outline noutro dispositivo.
 
-## Aspetos a corrigir: {#SoftwareIssues}
+### Aspetos a corrigir:
 Verifique as definições do software antivírus ou firewall para garantir que permitem tráfego VPN e do Outline.
 
 ## Definições do dispositivo: {#DeviceSettings}
 
-## Aspetos a confirmar: {#DeviceSettings}
+## Aspetos a confirmar: {#ServerIssues}
 Android:
 
 1. Abra a app Definições.
@@ -68,12 +68,12 @@ Certifique-se de que não tem nenhuma aplicação de sobreposição de ecrã ins
 
  iOS: leia[este artigo do apoio técnico](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
-## Problemas com o servidor: {#ServerIssues}
+### Problemas com o servidor:
 
-## Como testar: {#ServerIssues}
+### Como testar:
 Se tiver acesso a mais de um servidor, tente estabelecer ligação a outro servidor.
 
-## Aspetos a corrigir:
+### Aspetos a corrigir:
 
 Contacte o gestor do serviço para verificar se o servidor foi destruído. Se for o caso, peça-lhe uma [chave de acesso](/about/terminology) a outro servidor.
 

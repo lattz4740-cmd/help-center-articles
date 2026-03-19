@@ -13,14 +13,14 @@ Postoji nekoliko mogućih razloga zašto se ne možete povezati s uslugom Outlin
 
 ## Problemi s internetskom vezom: {#Internetissues}
 
-## Kako testirati:
+### Kako testirati:
 
 Isključite Outline i provjerite je li vraćena veza s internetom.
 
 - Ako jeste, pogledajte više opcija rješavanja problema ispod.
 - Ako nije, pričekajte nekoliko trenutaka da vidite hoće li se postavke veze samostalno ažurirati.
 
-## Trebate riješiti sljedeće:
+### Trebate riješiti sljedeće:
 
 Vratite uređaj online:
 
@@ -32,7 +32,7 @@ Vratite uređaj online:
 
 ## Problemi sa zaštitnim zidom mreže: {#FirewallIssues}
 
-## Kako testirati:
+### Kako testirati:
 
 1. Prekinite vezu s trenutnim WiFi-jem ili žičanom mrežom.
 2. Povežite se s drugom mrežom, npr. mobilnom
@@ -40,22 +40,22 @@ Vratite uređaj online:
 
 Ako se možete povezati kada ste na drugoj mreži, onda je u tome problem.
 
-## Trebate riješiti sljedeće:
+### Trebate riješiti sljedeće:
 
 Obratite se upravitelju usluge i zatražite da vam dozvoli pristup Outline serveru ili nastavite koristiti drugu mrežu.
 
-## Problemi sa zaštitnim zidom ili antivirusnim softverom:
-## Kako testirati:
+## Problemi sa zaštitnim zidom ili antivirusnim softverom: {#SoftwareIssues}
+### Kako testirati:
  Pokušajte se povezati s Outlineom s drugog uređaja.
 
 Napomena: ne zaboravite da vam trebaju pristupni ključ i aplikacija Outline da koristite Outline na drugom uređaju.
 
-## Trebate riješiti sljedeće: {#SoftwareIssues}
+### Trebate riješiti sljedeće:
 Provjerite jesu li postavke zaštitnog zida ili antivirusnog softvera postavljene tako da dozvoljavaju protok VPN i Outline saobraćaja.
 
 ## Postavke uređaja: {#DeviceSettings}
 
-## Šta trebate provjeriti: {#DeviceSettings}
+## Šta trebate provjeriti: {#ServerIssues}
 Za Android:
 
 1. Otvorite aplikaciju Postavke.
@@ -68,12 +68,12 @@ Provjerite da na Android uređaju nemate neku aplikaciju za preklapanje ekrana j
 
  Za iOS: pročitajte[ovaj članak podrške](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
-## Problemi sa serverom: {#ServerIssues}
+### Problemi sa serverom:
 
-## Kako testirati: {#ServerIssues}
+### Kako testirati:
 Ako imate pristup većem broju servera, pokušajte se povezati s nekim od njih.
 
-## Trebate riješiti sljedeće:
+### Trebate riješiti sljedeće:
 
 Obratite se upravitelju usluge da provjerite je li server eliminiran. Ako jeste, zatražite[pristupni ključ](/about/terminology) za drugi server.
 

@@ -13,14 +13,14 @@ Det finnes flere grunner til at du kanskje ikke kan koble til Outline-tjenesten:
 
 ## Problemer med internettilkoblingen: {#Internetissues}
 
-## Slik tester du det:
+### Slik tester du det:
 
 Slå av Outline og se om internettilkoblingen er gjenopprettet.
 
 - Hvis den er det, kan du se flere alternativer for feilsøking nedenfor.
 - Hvis den ikke er det, kan du vente litt for å se om tilkoblingsinnstillingene oppdateres av seg selv.
 
-## Ting du bør fikse:
+### Ting du bør fikse:
 
 Få enheten din på nettet igjen:
 
@@ -32,7 +32,7 @@ Få enheten din på nettet igjen:
 
 ## Brannmurproblemer for nettverket: {#FirewallIssues}
 
-## Slik tester du det:
+### Slik tester du det:
 
 1. Koble fra det gjeldende wifi-nettverket eller nettverket med ledning.
 2. Koble til et annet nettverk, for eksempel et mobilnettverk.
@@ -40,22 +40,22 @@ Få enheten din på nettet igjen:
 
 Hvis du kan koble til mens du er på det andre nettverket, er det dette som er problemet ditt.
 
-## Ting du bør fikse:
+### Ting du bør fikse:
 
 Kontakt tjenesteadministratoren og be om at tilgang til Outline-tjeneren din tillates, eller fortsett å bruke det andre nettverket.
 
-## Problemer med brannmur eller antivirusprogramvare:
-## Slik tester du det:
+## Problemer med brannmur eller antivirusprogramvare: {#SoftwareIssues}
+### Slik tester du det:
  Prøv å koble til Outline fra en annen enhet.
 
 Merk: Husk at du trenger en tilgangsnøkkel og Outline-appen for å kunne bruke Outline på en annen enhet.
 
-## Ting du bør fikse: {#SoftwareIssues}
+### Ting du bør fikse:
 Sjekk innstillingene for brannmuren din eller antivirusprogrammet ditt for å forsikre deg om at de slipper gjennom VPN- og Outline-trafikk.
 
 ## Enhetsinnstillinger: {#DeviceSettings}
 
-## Ting du bør sjekke: {#DeviceSettings}
+## Ting du bør sjekke: {#ServerIssues}
 Android:
 
 1. Åpne Innstillinger-appen.
@@ -68,12 +68,12 @@ Sørg for at du ikke har en app for skjermoverlegg installert på Android-enhete
 
  iOS: Les [denne brukerstøtteartikkelen](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
-## Tjenerproblemer: {#ServerIssues}
+### Tjenerproblemer:
 
-## Slik tester du det: {#ServerIssues}
+### Slik tester du det:
 Hvis du har tilgang til mer enn én tjener, kan du prøve å koble til den andre.
 
-## Ting du bør fikse:
+### Ting du bør fikse:
 
 Kontakt tjenesteadministratoren for å sjekke om tjeneren er slettet. Hvis den er det, kan du be om å få en [tilgangsnøkkel](/about/terminology) til en annen tjener.
 

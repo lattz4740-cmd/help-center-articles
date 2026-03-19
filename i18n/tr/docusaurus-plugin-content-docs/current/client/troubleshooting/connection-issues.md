@@ -3,7 +3,7 @@ title: "Outline hizmetine neden bağlanamıyorum?"
 sidebar_label: "Outline hizmetine neden bağlanamıyorum?"
 ---
 
-## Outline hizmetine bağlanamıyorsanız bunun birkaç nedeni olabilir:
+## Outline hizmetine bağlanamıyorsanız bunun birkaç nedeni olabilir: {#Internetissues}
 
 - **Cihazınızın**[**internet bağlantısı kesilmiştir**](#Internetissues)**.**Bazen cihazınızın ağ bağlantısı kesilir ve ağ simgelerinin güncellenmesi biraz zaman alabilir. Cihazınız yerel ağa bağlı olduğu halde internet bağlantısının kesilmiş olması da mümkündür.
 - **Outline sunucunuza erişim,**[**ağınızdaki güvenlik duvarı tarafından engelleniyordur**](#FirewallIssues)**.**Okul ağı, iş ağı veya ücretsiz kablosuz ağ gibi herkese açık bir ağ kullanıldığı durumlarda buna sıkça rastlanır.
@@ -13,15 +13,15 @@ sidebar_label: "Outline hizmetine neden bağlanamıyorum?"
 
 İnternet bağlantısı sorunları:
 
-## Sorunları test etme: {#Internetissues}
+### Sorunları test etme:
 Outline'ı kapatın ve internet bağlantınızın geri gelip gelmediğine bakın.
 
 - Bağlantı varsa aşağıdaki diğer sorun giderme seçeneklerini inceleyin.
 - Bağlantı yoksa bağlantı ayarlarınızın kendi kendine güncellenip güncellenmediğini görmek için birkaç dakika bekleyin.
 
-## Sorunları düzeltme:
+### Sorunları düzeltme:
 
-## Cihazınızın tekrar internete bağlayın:
+## Cihazınızın tekrar internete bağlayın: {#FirewallIssues}
 
 1. Başka bir cihazın aynı ağa bağlanıp bağlanamadığını kontrol edin. Başka cihazlar da internete bağlanamıyorsa ağ bağlantısı kesilmiş olabilir. Bu durumda bağlantının geri gelmesini bekleyebilir veya sorunu gidermeye çalışabilirsiniz.
 2. Diğer cihazlar aynı ağa bağlanabiliyorsa internete tekrar bağlanmak için aşağıdakilerden birini veya birkaçını deneyebilirsiniz:
@@ -29,9 +29,9 @@ Outline'ı kapatın ve internet bağlantınızın geri gelip gelmediğine bakın
    2. Cihazı yeniden başlatın.
    3. Cihazı kapatıp 2 dakika bekleyin, ardından tekrar açın.
 
-## Ağ güvenlik duvarıyla ilgili sorunlar:
+## Ağ güvenlik duvarıyla ilgili sorunlar: {#SoftwareIssues}
 
-## Sorunları test etme:
+### Sorunları test etme:
 
 1. Mevcut kablosuz veya kablolu ağınızın bağlantısını kesin.
 2. Hücresel ağ gibi farklı bir ağa bağlanın.
@@ -39,23 +39,23 @@ Outline'ı kapatın ve internet bağlantınızın geri gelip gelmediğine bakın
 
 Diğer ağ üzerinden internete bağlanabiliyorsanız sizin bağlantınızdan kaynaklanan bir sorun var demektir.
 
-## Sorunları düzeltme: {#FirewallIssues}
+### Sorunları düzeltme:
 Hizmet yöneticinizden Outline sunucunuza erişim izni vermesini isteyin veya bu ağ yerine diğer ağı kullanmaya devam edin.
 
-## Güvenlik duvarı veya antivirüs yazılımıyla ilgili sorunlar:
-## Sorunları test etme:
+## Güvenlik duvarı veya antivirüs yazılımıyla ilgili sorunlar: {#DeviceSettings}
+### Sorunları test etme:
 
 Outline'a başka bir cihazdan bağlanmayı deneyin.
 
 Not: Outline'ı başka bir cihazda kullanabilmek için erişim anahtarına ve Outline uygulamasına ihtiyacınız olduğunu unutmayın.
 
-## Sorunları düzeltme:
+### Sorunları düzeltme:
 
 Güvenlik duvarı veya virüsten koruma yazılımınızın ayarlarını kontrol ederek VPN ve Outline trafiğine izin verildiğinden emin olun.
 
 Cihaz ayarları:
 
-## Sorunları kontrol etme: {#SoftwareIssues}
+## Sorunları kontrol etme: {#ServerIssues}
 Android için:
 
 1. Ayarlar uygulamasını açın.
@@ -70,11 +70,11 @@ iOS için: [Bu destek makalesine](https://support.apple.com/guide/deployment/vpn
 
 Sunucuyla ilgili sorunlar:
 
-## Sorunları test etme:
+### Sorunları test etme:
 
-## Birden fazla sunucuya erişiminiz varsa diğer sunucuya bağlanmayı deneyin. {#ServerIssues}
+### Birden fazla sunucuya erişiminiz varsa diğer sunucuya bağlanmayı deneyin.
 
-## Sorunları düzeltme: {#DeviceSettings}
+### Sorunları düzeltme:
 Sunucunun silinip silinmediğini öğrenmek için hizmet yöneticinizle iletişime geçin. Sunucu silindiyse hizmet yöneticinizden başka bir sunucunun [erişim anahtarını](/about/terminology) isteyin.
 
 Sunucuyu siz oluşturduysanız Outline Manager aracılığıyla veya [SSH](https://en.wikipedia.org/wiki/Secure_Shell) gibi başka bir yöntemle sunucuya bağlanmayı deneyin. Bu çözüm işe yaramazsa sunucunun hâlâ internete bağlı olup olmadığını görmek için bulut sağlayıcı konsolunu (varsa) kontrol etmeyi deneyebilirsiniz.

@@ -13,14 +13,14 @@ Obstaja več razlogov, zakaj morda ne morete vzpostaviti povezave s storitvijo O
 
 ## Težave z internetno povezavo: {#Internetissues}
 
-## Kako izvesti preizkus:
+### Kako izvesti preizkus:
 
 Izklopite Outline in preverite, ali je povezava z internetom znova vzpostavljena.
 
 - Če je, si spodaj oglejte več možnosti za odpravljanje težave.
 - Če ni, počakajte nekaj trenutkov in preverite, ali so se nastavitve povezave samodejno posodobile.
 
-## Kaj je treba popraviti:
+### Kaj je treba popraviti:
 
 Znova vzpostavite povezavo v napravi:
 
@@ -32,7 +32,7 @@ Znova vzpostavite povezavo v napravi:
 
 ## Težave s požarnim zidom omrežja: {#FirewallIssues}
 
-## Kako izvesti preizkus:
+### Kako izvesti preizkus:
 
 1. Prekinite povezavo s trenutnim omrežjem Wi-FI ali žičnim omrežjem.
 2. Vzpostavite povezavo z drugim omrežjem, na primer z mobilnim omrežjem
@@ -40,22 +40,22 @@ Znova vzpostavite povezavo v napravi:
 
 Če je mogoče povezavo vzpostaviti prek drugega omrežje, je razlog za težavo nedelujoče trenutno omrežje.
 
-## Kaj je treba popraviti:
+### Kaj je treba popraviti:
 
 Obrnite se na upravitelja storitve z zahtevo, da vam omogoči dostop do strežnika Outline, ali namesto tega še naprej uporabljajte drugo omrežje.
 
-## Težave s požarnim zidom ali protivirusno programsko opremo:
-## Kako izvesti preizkus:
+## Težave s požarnim zidom ali protivirusno programsko opremo: {#SoftwareIssues}
+### Kako izvesti preizkus:
  Povezavo s strežnikom Outline poskusite vzpostaviti v drugi napravi.
 
 Opomba: Če želite strežnik Outline uporabljati v drugi napravi, ne pozabite, da potrebujete ključ za dostop in aplikacijo Outline.
 
-## Kaj je treba popraviti: {#SoftwareIssues}
+### Kaj je treba popraviti:
 Preverite nastavitve požarnega zida ali protivirusne programske opreme in se prepričajte, da ne preprečujejo prometa za VPN in Outline.
 
 ## Nastavitve naprave: {#DeviceSettings}
 
-## Kaj je treba preveriti: {#DeviceSettings}
+## Kaj je treba preveriti: {#ServerIssues}
 V napravah Android:
 
 1. Odprite aplikacijo z nastavitvami.
@@ -68,12 +68,12 @@ Prepričajte se, da v napravi Android nimate nameščene nobene aplikacije za pr
 
  V napravah iOS: Preberite[ta članek s pomočjo](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
-## Težave s strežnikom: {#ServerIssues}
+### Težave s strežnikom:
 
-## Kako izvesti preizkus: {#ServerIssues}
+### Kako izvesti preizkus:
 Če imate dostop do več strežnikov, poskusite vzpostaviti povezavo z enim od drugih strežnikov.
 
-## Kaj je treba popraviti:
+### Kaj je treba popraviti:
 
 Obrnite se na upravitelja storitve in preverite, ali je bil strežnik uničen. V tem primeru ga prosite za[ključ za dostop](/about/terminology) do drugega strežnika.
 

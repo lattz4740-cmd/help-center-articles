@@ -11,15 +11,15 @@ Istnieje kilka powodów, dla których możesz nie być w stanie połączyć się
 - **Konieczna może być zmiana**[**ustawień telefonu**](#DeviceSettings)**.**
 - **Menedżer usługi**[**zlikwidował serwer lub dostawca internetu blokuje żądania**](#ServerIssues)**.**
 
-## Problemy z połączeniem z internetem:
+## Problemy z połączeniem z internetem: {#Internetissues}
 
-## Jak przeprowadzić test: {#Internetissues}
+### Jak przeprowadzić test:
 Wyłącz Outline i sprawdź, czy połączenie z internetem zostało przywrócone.
 
 - Jeśli tak, sprawdź inne sposoby rozwiązania tego problemu (opisane poniżej).
 - Jeśli nie, odczekaj chwilę, aby sprawdzić, czy ustawienia połączenia same się zaktualizują.
 
-## Do naprawienia:
+### Do naprawienia:
 
 Przywróć połączenie urządzenia z internetem:
 
@@ -31,7 +31,7 @@ Przywróć połączenie urządzenia z internetem:
 
 Problemy z zaporą sieciową:
 
-## Jak przeprowadzić test:
+### Jak przeprowadzić test:
 
 1. Odłącz się od bieżącej sieci Wi-Fi lub przewodowej.
 2. Połącz się z inną siecią, np. komórkową.
@@ -39,22 +39,22 @@ Problemy z zaporą sieciową:
 
 Jeśli możesz nawiązać połączenie w innej sieci, oznacza to, że problem jest po Twojej stronie.
 
-## Do naprawienia: {#FirewallIssues}
+### Do naprawienia:
 Skontaktuj się z menedżerem usługi i poproś o zezwolenie na dostęp do serwera Outline lub skorzystaj z innej sieci.
 
 Problemy z zaporą sieciową lub oprogramowaniem antywirusowym:
 
-## Jak przeprowadzić test:
+### Jak przeprowadzić test:
 
 Spróbuj połączyć się z Outline na innym urządzeniu.
 
 Uwaga: pamiętaj, że do korzystania z Outline na innym urządzeniu jest potrzebna aplikacja Outline i klucz dostępu.
 
-## Do naprawienia:
+### Do naprawienia:
 
 Sprawdź, czy ustawienia zapory sieciowej i oprogramowania antywirusowego zezwalają na ruch przez sieć VPN i Outline.
 
-## Ustawienia urządzenia:
+## Ustawienia urządzenia: {#FirewallIssues}
 
 ## Do sprawdzenia: {#SoftwareIssues}
 Na urządzeniu z Androidem:
@@ -69,13 +69,13 @@ Na urządzeniu z Androidem otwórz Ustawienia > Aplikacje > Specjalny dostęp do
 
 iOS: przeczytaj [ten artykuł pomocy](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
-## Problemy z serwerem:
+## Problemy z serwerem: {#DeviceSettings}
 
-## Jak przeprowadzić test:
+### Jak przeprowadzić test:
 
 ## Jeśli masz dostęp do większej liczby serwerów, spróbuj połączyć się z innym serwerem. {#ServerIssues}
 
-## Do naprawienia: {#DeviceSettings}
+### Do naprawienia:
 Skontaktuj się z menedżerem usługi, aby dowiedzieć się, czy serwer został usunięty. Jeśli tak, poproś o [klucz dostępu](/about/terminology) do innego serwera.
 
 Jeśli serwer był konfigurowany przez Ciebie, spróbuj połączyć się z nim przez Menedżera Outline lub w inny sposób, np. przez [SSH](https://en.wikipedia.org/wiki/Secure_Shell). Jeśli to nie pomoże, możesz sprawdzić w konsoli usług w chmurze, czy serwer jest nadal online.

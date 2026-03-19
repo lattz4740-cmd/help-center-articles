@@ -13,14 +13,14 @@ Daar is ’n paar redes hoekom jy dalk nie aan die Outline-diens kan koppel nie:
 
 ## Internetverbindingkwessies: {#Internetissues}
 
-## Toets dit só:
+### Toets dit só:
 
 Skakel Outline af en kyk of jou verbinding aan die internet dan herstel is.
 
 - Indien wel, kan jy hier onder nog foutsporingopsies sien.
 - Indien nie, moet jy ’n rukkie wag om te kyk of jou verbindinginstellings self opdateer.
 
-## Dinge om reg te maak:
+### Dinge om reg te maak:
 
 Kry jou toestel weer aanlyn:
 
@@ -32,7 +32,7 @@ Kry jou toestel weer aanlyn:
 
 ## Netwerkbrandmuurkwessies: {#FirewallIssues}
 
-## Toets dit só:
+### Toets dit só:
 
 1. Ontkoppel van jou huidige wi-fi of bedrade netwerk
 2. Koppel aan ’n ander netwerk, soos ’n selnetwerk
@@ -40,22 +40,22 @@ Kry jou toestel weer aanlyn:
 
 As jy kan koppel wanneer jy op die ander netwerk is, is dit die fout.
 
-## Dinge om reg te maak:
+### Dinge om reg te maak:
 
 Kontak die diensbestuurder en vra hulle om toegang tot jou Outline-bediener toe te laat, of hou aan om eerder die ander netwerk te gebruik.
 
-## Brandmuur- of antivirussagtewarekwessies:
-## Toets dit só:
+## Brandmuur- of antivirussagtewarekwessies: {#SoftwareIssues}
+### Toets dit só:
  Probeer om van ’n ander toestel af aan Outline te koppel.
 
 Let wel: Onthou dat jy ’n toegangsleutel en die Outline-app nodig het om Outline op ’n ander toestel te gebruik.
 
-## Dinge om reg te maak: {#SoftwareIssues}
+### Dinge om reg te maak:
 Gaan jou brandmuur of antivirussagteware se instellings na om seker te maak dat dit gestel is om VPN- en Outline-verkeer deur te laat.
 
 ## Toestelinstellings: {#DeviceSettings}
 
-## Dinge om na te gaan: {#DeviceSettings}
+## Dinge om na te gaan: {#ServerIssues}
 Vir Android:
 
 1. Maak die Instellings-app oop.
@@ -68,12 +68,12 @@ Maak seker dat daar nie ’n skermoorleggerapp op jou Android-toestel geïnstall
 
  Vir iOS: Lees[hierdie steundiensartikel](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
-## Bedienerkwessies: {#ServerIssues}
+### Bedienerkwessies:
 
-## Toets dit só: {#ServerIssues}
+### Toets dit só:
 Indien jy toegang tot meer as een bediener het, moet jy probeer om aan die ander een te koppel.
 
-## Dinge om reg te maak:
+### Dinge om reg te maak:
 
 Kontak jou diensbestuurder om te sien of die bediener vernietig is. Indien wel, kan jy hulle vir ’n [toegangsleutel](/about/terminology) tot ’n ander bediener vra.
 
