@@ -5,7 +5,7 @@ sidebar_label: "Hoeveel kost het om Outline uit te voeren?"
 
 De Outline-server is gratis voor iedereen, of je nu een serverbeheerder bent die de VPN beheert of Outline gebruikt om toegang te krijgen tot het open internet.
 
- Outline heeft wel toegang tot een cloudserver nodig. Serverbeheerders die al toegang hebben tot een server kunnen Outline kosteloos installeren op deze server. Mensen die nog geen toegang hebben tot een server kunnen toegang krijgen via een cloudservicesprovider, zoals [DigitalOcean](https://www.digitalocean.com) of Amazon Web Services. Voor ongeveer $ 5 per maand mag je 1 terabyte aan gegevens overzetten. Dat is genoeg voor honderden gebruikers op één server.
+ Outline heeft wel toegang tot een cloudserver nodig. Serverbeheerders die al toegang hebben tot een server kunnen Outline kosteloos installeren op deze server. Mensen die nog geen toegang hebben tot een server kunnen toegang krijgen via een cloudservicesprovider, zoals [DigitalOcean](https://www.digitalocean.com/) of Amazon Web Services. Voor ongeveer $ 5 per maand mag je 1 terabyte aan gegevens overzetten. Dat is genoeg voor honderden gebruikers op één server.
 
  Hier zie je een voorbeeldberekening voor hoeveel het kost om Outline te gebruiken met een cloudprovider naar keuze:
 

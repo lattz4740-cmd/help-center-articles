@@ -54,7 +54,7 @@ sidebar_label: الأمان والخصوصية أثناء استخدام Outline
 
 لتعزيز حمايتك على الإنترنت، يُرجى التفكير في إمكانية العمل مع خبير الأمان الإلكتروني في مؤسستك. يمكنك أيضًا استشارة كبار خبراء الأمان على موقع [Security Planner](https://securityplanner.org/) الإلكتروني، وهو موقع مصمَّم لتزويدك بتعليمات واضحة عن اختيار أدوات الأمن الإلكتروني المناسبة لاحتياجاتك.
 
-يمكنك أيضًا الاطّلاع على منتجات الأمن الإلكتروني الأخرى من [Jigsaw](https://jigsaw.google.com/)، مثل [Intra](https://getintra.org/) و[Project Shield](https://g.co/shield) و[تنبيه كلمة المرور](https://chrome.google.com/webstore/detail/passw؟ord-alert/noondiphcddnnabmjcihcjfbhfklnnep).
+يمكنك أيضًا الاطّلاع على منتجات الأمن الإلكتروني الأخرى من [Jigsaw](https://jigsaw.google.com/)، مثل [Intra](https://getintra.org/) و[Project Shield](https://g.co/shield) و[تنبيه كلمة المرور](https://chrome.google.com/webstore/detail/password-alert/noondiphcddnnabmjcihcjfbhfklnnep).
 
 ## هل يجوز من الناحية القانونية استخدام شبكة VPN؟
 
