@@ -7,7 +7,7 @@ Outline'ı kullanabilmek için ilk yapmanız gereken şey bir Outline sunucusu a
 
 Başlamadan önce
 
-Outline sunucunuzu ayarlamaya başlamadan önce birkaç şeye ihtiyacınız vardır:
+## Outline sunucunuzu ayarlamaya başlamadan önce birkaç şeye ihtiyacınız vardır:
 
 1. Kendi sunucularınıza veya DigitalOcean, Amazon Web Services (AWS) ya da Google Cloud Platform (GCP) gibi bir Bulut hizmetleri sağlayıcısına erişim.
 

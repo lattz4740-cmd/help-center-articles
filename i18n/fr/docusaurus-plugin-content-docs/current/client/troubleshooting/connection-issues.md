@@ -3,7 +3,7 @@ title: "Pourquoi ne puis-je pas me connecter au service Outline?"
 sidebar_label: "Pourquoi ne puis-je pas me connecter au service Outline?"
 ---
 
-Plusieurs raisons peuvent expliquer ce problème :
+## Plusieurs raisons peuvent expliquer ce problème :
 
 - **Votre appareil n'est**[**plus connecté à Internet**](#Internetissues)**.**L'appareil peut parfois perdre sa connexion, et il peut lui falloir un moment pour mettre à jour les icônes réseau. Il se peut aussi que votre appareil soit connecté au réseau local, mais qu'Internet soit en panne.
 - **Votre**[**pare-feu réseau bloque l'accès**](#FirewallIssues)**à votre serveur Outline.**Ce problème est courant sur les réseaux publics, comme celui d'un établissement scolaire ou d'une entreprise, ou un réseau sans fil gratuit.
@@ -21,7 +21,7 @@ Désactivez le serveur Outline et vérifiez si votre connexion Internet est rét
 
 ## À corriger :
 
-Reconnectez votre appareil à Internet :
+## Reconnectez votre appareil à Internet :
 
 1. Vérifiez si d'autres appareils peuvent se connecter au même réseau. Si ce n'est pas le cas, il est possible que le réseau soit en panne. Vous devrez alors patienter jusqu'à ce que la connexion soit rétablie ou bien résoudre le problème.
 2. Si d'autres appareils peuvent se connecter au même réseau, vous pouvez essayer une ou plusieurs des opérations suivantes pour rétablir la connexion :
@@ -57,7 +57,7 @@ Vérifiez que les paramètres de votre pare-feu ou de votre antivirus sont confi
 Paramètres de l'appareil :
 
 ## À vérifier : {#SoftwareIssues}
-Sur Android :
+## Sur Android :
 
 1. Ouvrez l'application Paramètres.
 2. Recherchez les **paramètres VPN** sur votre appareil. Vous y verrez toutes les applications VPN actuellement autorisées sur votre téléphone.

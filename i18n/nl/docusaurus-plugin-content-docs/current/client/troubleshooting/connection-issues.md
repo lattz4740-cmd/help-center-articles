@@ -3,7 +3,7 @@ title: "Waarom kan ik geen verbinding maken met de Outline-service?"
 sidebar_label: "Waarom kan ik geen verbinding maken met de Outline-service?"
 ---
 
-Er zijn verschillende redenen waarom je geen verbinding kunt maken met de Outline-service:
+## Er zijn verschillende redenen waarom je geen verbinding kunt maken met de Outline-service:
 
 - **Je apparaat heeft**[**geen verbinding met internet**](#Internetissues)[**.**](#Internetissues)Soms is er een onderbreking in de netwerkverbinding en kan het even duren voordat de netwerkiconen zijn geüpdatet. Of het apparaat heeft verbinding met het lokale netwerk, maar het internet werkt niet.
 - **Je**[**netwerkfirewall blokkeert de toegang**](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)tot de Outline-server.**Dit gebeurt vaak als je een openbaar netwerk gebruikt, zoals dat van je school of werk of een gratis draadloos netwerk.
@@ -21,7 +21,7 @@ Zet Outline uit en check of je weer verbinding krijgt met internet.
 
 ## Oplossingen:
 
-Zorgen dat je apparaat weer online komt:
+## Zorgen dat je apparaat weer online komt:
 
 1. Check op een ander apparaat of je verbinding kunt maken met hetzelfde netwerk. Als andere apparaten ook niet online kunnen komen, is het netwerk misschien niet beschikbaar en moet je wachten tot het weer beschikbaar is of probleemoplossing uitvoeren.
 2. Als andere apparaten wel verbinding kunnen maken met hetzelfde netwerk, kun je een of meer van de volgende acties uitvoeren om te zorgen dat het apparaat weer online gaat:
@@ -57,7 +57,7 @@ Zorg dat de firewall of antivirussoftware zo is ingesteld dat VPN- en Outline-ve
 Apparaatinstellingen:
 
 ## Check het volgende: {#SoftwareIssues}
-Voor Android:
+## Voor Android:
 
 1. Open de Instellingen-app.
 2. Zoek de **VPN-instellingen** op je apparaat (hier staan alle VPN-apps die momenteel toegang hebben op je telefoon).

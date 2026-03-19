@@ -7,7 +7,7 @@ sidebar_label: "Veelgestelde vragen over de installatie van de Outline-server"
 
 Helaas niet. De Outline-software moet toegang hebben tot een server, of deze nu door jou, je organisatie of een vertrouwde derde partij wordt beheerd.
 
-Hoelang duurt het om een Outline-server in te stellen?
+## Hoelang duurt het om een Outline-server in te stellen?
 
 In de meeste gevallen duurt dit niet meer dan vijf minuten. Je kunt Outline installeren op elke cloudserver, maar we hebben samen met DigitalOcean een gebruiksvriendelijke, begeleide installatie ontwikkeld. Zo kun je je server met enkele muisklikken instellen, zonder scripts te hoeven gebruiken.
 

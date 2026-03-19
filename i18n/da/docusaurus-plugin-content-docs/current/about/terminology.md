@@ -3,7 +3,7 @@ title: Terminologi
 sidebar_label: Terminologi
 ---
 
-Hvad er et VPN?
+## Hvad er et VPN?
 
  Et virtuelt privat netværk (VPN) er en privat forbindelse mellem dine enheder og en hostserver. Når du bruger et VPN, er din trafik skjult fra internetudbyderen. Du kan eventuelt vælge at bruge et VPN i følgende scenarier:
 

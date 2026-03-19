@@ -11,7 +11,7 @@ Istnieje kilka powodów, dla których możesz nie być w stanie połączyć się
 - **Konieczna może być zmiana**[**ustawień telefonu**](#DeviceSettings)**.**
 - **Menedżer usługi**[**zlikwidował serwer lub dostawca internetu blokuje żądania**](#ServerIssues)**.**
 
-Problemy z połączeniem z internetem:
+## Problemy z połączeniem z internetem:
 
 ## Jak przeprowadzić test: {#Internetissues}
 Wyłącz Outline i sprawdź, czy połączenie z internetem zostało przywrócone.
@@ -54,7 +54,7 @@ Uwaga: pamiętaj, że do korzystania z Outline na innym urządzeniu jest potrzeb
 
 Sprawdź, czy ustawienia zapory sieciowej i oprogramowania antywirusowego zezwalają na ruch przez sieć VPN i Outline.
 
-Ustawienia urządzenia:
+## Ustawienia urządzenia:
 
 ## Do sprawdzenia: {#SoftwareIssues}
 Na urządzeniu z Androidem:
@@ -69,7 +69,7 @@ Na urządzeniu z Androidem otwórz Ustawienia > Aplikacje > Specjalny dostęp do
 
 iOS: przeczytaj [ten artykuł pomocy](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
-Problemy z serwerem:
+## Problemy z serwerem:
 
 ## Jak przeprowadzić test:
 

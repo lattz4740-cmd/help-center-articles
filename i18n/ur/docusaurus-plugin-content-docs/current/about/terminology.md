@@ -33,8 +33,7 @@ sidebar_label: اصطلاح
 ## ‫Outline مینیجر کیا ہے؟
  ‫Outline مینیجر ایک ڈیسک ٹاپ ایپلیکیشن ہے جو سروس مینیجر کو Outline سرور سیٹ کرنے، [رسائی کی کلیدیں](#accesskey) تخلیق کرنے اور فی کلید کے استعمال پر ڈیٹا کی حدیں سیٹ کرنے کی اجازت دیتا ہے۔ آپ [یہاں](https://getoutline.org/get-started/#step-3) یا [یہاں](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/) Outline مینیجر کا تازہ ترین ورژن ڈاؤن لوڈ کر سکتے ہیں۔
 
-‫**Outline کلائنٹ کیا ہے؟**
-
+## Outline کلائنٹ کیا ہے؟
  ‫Outline کلائنٹ ایک ایپلیکیشن ہے جو ڈیسک ٹاپ اور موبائل کے لیے دستیاب ہے اور آپ کو Outline سرور سے منسلک ہونے اور رسائی کی کلید کا استعمال کرنے والے VPN تک رسائی کی اجازت دیتا ہے۔ آپ [یہاں](https://getoutline.org/get-started/#step-3) یا [یہاں](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/) Outline کلائنٹ کا تازہ ترین ورژن ڈاؤن لوڈ کر سکتے ہیں۔
 
 ## ڈیٹا کی حدیں کیا ہیں؟

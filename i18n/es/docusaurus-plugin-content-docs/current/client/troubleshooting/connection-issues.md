@@ -54,7 +54,7 @@ Nota: Necesitarás una clave de acceso y la aplicación Outline para usar el sof
 
 Comprueba los ajustes del cortafuegos y del software antivirus y confirma que estén configurados de modo que permitan el tráfico de VPN y Outline.
 
-Ajustes del dispositivo:
+## Ajustes del dispositivo:
 
 ## Qué comprobar: {#SoftwareIssues}
 Android:

@@ -3,7 +3,7 @@ title: "Wieso kann ich keine Verbindung zum Outline-Dienst herstellen?"
 sidebar_label: "Wieso kann ich keine Verbindung zum Outline-Dienst herstellen?"
 ---
 
-Wenn sich die Verbindung zu Outline nicht aufbauen lässt, kann das verschiedene Gründe haben:
+## Wenn sich die Verbindung zu Outline nicht aufbauen lässt, kann das verschiedene Gründe haben:
 
 - [**Ihr Gerät ist nicht mit dem Internet verbunden**](#Internetissues)**.**Die Netzwerkverbindung Ihres Geräts kann unterbrochen sein. In diesem Fall dauert es möglicherweise einen Moment, bis die Netzwerksymbole aktualisiert werden. Es kann auch sein, dass Ihr Gerät zwar mit dem lokalen Netzwerk verbunden, das Internet aber ausgefallen ist.
 - **Die**[**Firewall Ihres Netzwerks blockiert den Zugriff**](#FirewallIssues)**auf den Outline-Server.**Das kommt häufig bei Verbindungen über ein öffentliches Netzwerk vor, z. B. wenn Sie das Netzwerk einer Bildungseinrichtung oder eines Unternehmens bzw. ein kostenloses WLAN nutzen.
@@ -38,19 +38,19 @@ Probleme mit der Firewall eines Netzwerks:
 
 ## Wenn der Versuch erfolgreich ist, liegt das Problem bei der Firewall.
 
-So beheben Sie dieses Problem:
+## So beheben Sie dieses Problem:
 
 Wenden Sie sich an den Netzwerkadministrator und bitten Sie ihn, den Zugriff auf den Outline-Server zu erlauben, oder verwenden Sie stattdessen weiterhin das andere Netzwerk.
 
 ## Probleme mit der Firewall oder dem Antivirenprogramm: {#SoftwareIssues}
 
-So können Sie testen, ob hier die Ursache liegt:
+## So können Sie testen, ob hier die Ursache liegt:
 
 Versuchen Sie, über ein anderes Gerät eine Verbindung zu Outline herzustellen.
 
 Hinweis: Dazu benötigen Sie auf dem anderen Gerät den Zugriffsschlüssel und die Outline App.
 
-So beheben Sie dieses Problem:
+## So beheben Sie dieses Problem:
 
 Überprüfen Sie in den Einstellungen Ihrer Firewall oder Antivirussoftware, ob VPN- und Outline-Traffic zugelassen wird.
 

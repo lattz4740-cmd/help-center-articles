@@ -3,7 +3,7 @@ title: "Outline hizmetine neden bağlanamıyorum?"
 sidebar_label: "Outline hizmetine neden bağlanamıyorum?"
 ---
 
-Outline hizmetine bağlanamıyorsanız bunun birkaç nedeni olabilir:
+## Outline hizmetine bağlanamıyorsanız bunun birkaç nedeni olabilir:
 
 - **Cihazınızın**[**internet bağlantısı kesilmiştir**](#Internetissues)**.**Bazen cihazınızın ağ bağlantısı kesilir ve ağ simgelerinin güncellenmesi biraz zaman alabilir. Cihazınız yerel ağa bağlı olduğu halde internet bağlantısının kesilmiş olması da mümkündür.
 - **Outline sunucunuza erişim,**[**ağınızdaki güvenlik duvarı tarafından engelleniyordur**](#FirewallIssues)**.**Okul ağı, iş ağı veya ücretsiz kablosuz ağ gibi herkese açık bir ağ kullanıldığı durumlarda buna sıkça rastlanır.
@@ -21,7 +21,7 @@ Outline'ı kapatın ve internet bağlantınızın geri gelip gelmediğine bakın
 
 ## Sorunları düzeltme:
 
-Cihazınızın tekrar internete bağlayın:
+## Cihazınızın tekrar internete bağlayın:
 
 1. Başka bir cihazın aynı ağa bağlanıp bağlanamadığını kontrol edin. Başka cihazlar da internete bağlanamıyorsa ağ bağlantısı kesilmiş olabilir. Bu durumda bağlantının geri gelmesini bekleyebilir veya sorunu gidermeye çalışabilirsiniz.
 2. Diğer cihazlar aynı ağa bağlanabiliyorsa internete tekrar bağlanmak için aşağıdakilerden birini veya birkaçını deneyebilirsiniz:
@@ -29,7 +29,7 @@ Cihazınızın tekrar internete bağlayın:
    2. Cihazı yeniden başlatın.
    3. Cihazı kapatıp 2 dakika bekleyin, ardından tekrar açın.
 
-#### Ağ güvenlik duvarıyla ilgili sorunlar:
+## Ağ güvenlik duvarıyla ilgili sorunlar:
 
 ## Sorunları test etme:
 

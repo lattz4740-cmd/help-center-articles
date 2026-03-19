@@ -11,7 +11,7 @@ There are a few reasons why you may not be able to connect to the Outline servic
 - **Your**[**phone device settings**](#DeviceSettings)**may need to be changed.**
 - **Your service manager may have**[**destroyed the server or your ISP may be blocking your request**](#ServerIssues)**.**
 
-Internet connection issues:
+## Internet connection issues:
 
 ## How to test: {#Internetissues}
 Turn off Outline and see if your connection to the Internet is restored.
@@ -54,7 +54,7 @@ Note: Remember that you'll need an access key and the Outline app to use Outline
 
 Check your firewall or antivirus software settings to make sure that they're set to allow VPN and Outline traffic through.
 
-Device settings:
+## Device settings:
 
 ## Things to check: {#SoftwareIssues}
 For Android:
@@ -69,7 +69,7 @@ On your Android device, go to Settings > Apps > Special app access. Then tap 'Di
 
 For iOS: Read [this support article](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
-Server issues:
+## Server issues:
 
 ## How to test:
 

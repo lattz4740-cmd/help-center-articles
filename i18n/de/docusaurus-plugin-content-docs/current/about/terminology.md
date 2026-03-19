@@ -3,7 +3,7 @@ title: Terminologie
 sidebar_label: Terminologie
 ---
 
-Was ist ein VPN?
+## Was ist ein VPN?
 
 Ein virtuelles privates Netzwerk (VPN) ist eine private Verbindung zwischen Ihrem Gerät und einem Hostserver. Dadurch hat Ihr Internetanbieter keinerlei Einblick in den Traffic über Ihr Gerät.
 

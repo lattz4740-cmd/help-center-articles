@@ -3,7 +3,7 @@ title: "Wieso kann ich keine Verbindung zum Outline-Dienst herstellen?"
 sidebar_label: "Wieso kann ich keine Verbindung zum Outline-Dienst herstellen?"
 ---
 
-Wenn sich die Verbindung zu Outline nicht aufbauen lässt, kann das verschiedene Gründe haben:
+## Wenn sich die Verbindung zu Outline nicht aufbauen lässt, kann das verschiedene Gründe haben:
 
 - [**Ihr Gerät ist nicht mit dem Internet verbunden**](#Internetissues)**.**Die Netzwerkverbindung Ihres Geräts kann unterbrochen sein. In diesem Fall dauert es möglicherweise einen Moment, bis die Netzwerksymbole aktualisiert werden. Es kann auch sein, dass Ihr Gerät zwar mit dem lokalen Netzwerk verbunden, das Internet aber ausgefallen ist.
 - **Die**[**Firewall Ihres Netzwerks blockiert den Zugriff**](#FirewallIssues)**auf den Outline-Server.**Das kommt häufig bei Verbindungen über ein öffentliches Netzwerk vor, z. B. wenn Sie das Netzwerk einer Bildungseinrichtung oder eines Unternehmens bzw. ein kostenloses WLAN nutzen.
@@ -21,7 +21,7 @@ Deaktivieren Sie Outline und überprüfen Sie, ob die Internetverbindung wiederh
 
 ## So beheben Sie dieses Problem:
 
-Verbinden Sie Ihr Gerät wieder mit dem Internet:
+## Verbinden Sie Ihr Gerät wieder mit dem Internet:
 
 1. Versuchen Sie, ein anderes Gerät mit demselben Netzwerk zu verbinden. Wenn das nicht funktioniert, ist das Netzwerk möglicherweise ausgefallen. In diesem Fall müssen Sie warten, bis es wieder verfügbar ist, oder den Fehler beheben.
 2. Falls Sie ein anderes Gerät mit demselben Netzwerk verbinden können, probieren Sie mindestens einen der folgenden Schritte aus:
@@ -38,7 +38,7 @@ Probleme mit der Firewall eines Netzwerks:
 3. Versuchen Sie noch einmal, die Verbindung zum Outline-Server herzustellen.
 
 ## Wenn der Versuch erfolgreich ist, liegt das Problem bei der Firewall. {#FirewallIssues}
-So beheben Sie dieses Problem:
+## So beheben Sie dieses Problem:
 
 Wenden Sie sich an den Netzwerkadministrator und bitten Sie ihn, den Zugriff auf den Outline-Server zu erlauben, oder verwenden Sie stattdessen weiterhin das andere Netzwerk.
 

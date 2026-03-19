@@ -9,7 +9,7 @@ Outline Manager inclut une fonctionnalité qui vous permet de configurer automat
 
 Si vous ne souhaitez pas accorder ces autorisations, vous pouvez suivre les instructions de configuration avancées dans Outline Manager pour exécuter Outline sur Google Cloud Platform.
 
-Autorisations accordées
+## Autorisations accordées
 
 Pour automatiser la configuration, Outline Manager requiert les autorisations suivantes dans votre compte Google.
 

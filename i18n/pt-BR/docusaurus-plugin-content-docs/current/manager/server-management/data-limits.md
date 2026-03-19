@@ -31,7 +31,7 @@ Para remover o limite de dados de uma chave de acesso, abra a caixa de diálogo 
 ## O que é um limite de uso de dados de 30 dias?
  Esse limite soma o uso de cada chave nos últimos 30 dias e mantém o uso abaixo do limite nesse período. Assim, a chave nunca ultrapassa o limite, mesmo nos meses com mais ou menos de 30 dias. Ou seja, os dados disponíveis para cada usuário aumentam a cada dia de acordo com o valor usado nos 31 dias anteriores.
 
-Por que o Outline tem limites de uso?
+## Por que o Outline tem limites de uso?
 
  Esses limites oferecem garantias a cada período de 30 dias. Isso significa que são mais fáceis de configurar do que os limites recorrentes, como no caso de datas personalizadas, mas com garantias semelhantes. Eles também são usados na exibição atual do uso de dados do Outline e em ferramentas comuns, como estatísticas do servidor e serviços de análise de dados.
 
