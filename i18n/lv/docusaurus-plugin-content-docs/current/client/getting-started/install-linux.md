@@ -30,10 +30,6 @@ sudo apt install outline-client
 sudo apt purge outline-client
 ```
 
-```
-sudo apt purge outline-client
-```
-
 ## ຕົວເລືອກສຳຮອງ
 
 1. ດາວໂຫຼດແພັກເກດ Debian ຂອງລູກຂ່າຍ Outline ເວີຊັນຫຼ້າສຸດຈາກ [https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb](https://s3.amazonaws.com/outline-releases/client/linux/stable/outline-client_amd64.deb)
