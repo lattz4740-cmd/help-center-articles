@@ -26,15 +26,15 @@ Do të konfigurosh serverin tënd në Outline Manager.
  Një menaxher shërbimi është personi përgjegjës për konfigurimin e serverit të Outline dhe ndarjen e çelësave të qasjes me përdoruesit. Menaxheri i shërbimit është në përgjithësi përgjegjës për koston e përdorimit të serverit. 
 
 ## Çfarë është një çelës qasjeje? {#accesskey}
- Një çelës qasjeje përdoret për të pasur qasje te një server ekzistues i Outline dhe për t'u lidhur me VPN-në. Një [menaxher shërbimi](#servicemanager) do të të japë një çelës qasjeje ose mund[të konfigurosh vetë një server të Outline](/manager/server-setup/setup-server). Këtu është një shembull se si duket një çelës qasjeje (vetëm për shembull; nuk do të funksionojë): 
+ Një çelës qasjeje përdoret për të pasur qasje te një server ekzistues i Outline dhe për t'u lidhur me VPN-në. Një [menaxher shërbimi](#servicemanager) do të të japë një çelës qasjeje ose mund [të konfigurosh vetë një server të Outline](/manager/server-setup/setup-server). Këtu është një shembull se si duket një çelës qasjeje (vetëm për shembull; nuk do të funksionojë): 
 
  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1
 
 ## Çfarë është Outline Manager?
- Outline Manager është një aplikacion desktopi që e lejon një menaxher shërbimi që të konfigurojë një server të Outline, të gjenerojë [çelësat e qasjes](#accesskey) dhe të caktojë kufijtë e të dhënave për përdorimin për çelës. Mund të shkarkosh versionin më të fundit të Outline Manager[këtu](https://getoutline.org/get-started/#step-3) ose[këtu](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
+ Outline Manager është një aplikacion desktopi që e lejon një menaxher shërbimi që të konfigurojë një server të Outline, të gjenerojë [çelësat e qasjes](#accesskey) dhe të caktojë kufijtë e të dhënave për përdorimin për çelës. Mund të shkarkosh versionin më të fundit të Outline Manager [këtu](https://getoutline.org/get-started/#step-3) ose [këtu](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
 
 ## Çfarë është "Klienti i Outline"?
- "Klienti i Outline" është një aplikacion, i disponueshëm për desktop dhe për celular, i cili të lejon të lidhesh me një server të Outline dhe të qasesh te VPN-ja duke përdorur një çelës qasjeje. Mund të shkarkosh versionin më të fundit të "Klientit të Outline"[këtu](https://getoutline.org/get-started/#step-3) ose[këtu](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
+ "Klienti i Outline" është një aplikacion, i disponueshëm për desktop dhe për celular, i cili të lejon të lidhesh me një server të Outline dhe të qasesh te VPN-ja duke përdorur një çelës qasjeje. Mund të shkarkosh versionin më të fundit të "Klientit të Outline"[këtu](https://getoutline.org/get-started/#step-3) ose [këtu](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
 
 ## Çfarë janë kufijtë e të dhënave?
 Outline Manager i lejon menaxherët e shërbimit që të caktojnë një kufi gradual 30-ditor të të dhënave për çelësat e qasjes për të parandaluar përdorimin e tepërt dhe për të ndihmuar në parashikimin e kostove. Menaxherët e shërbimit mund të caktojnë një kufi të parazgjedhur që zbatohet për çdo çelës dhe mund të caktojnë po ashtu një kufi tjetër për secilin çelës për të zëvendësuar kufirin e parazgjedhur. Pasi të caktohet një kufi, ai hyn menjëherë në fuqi dhe zbatohet çdo orë.

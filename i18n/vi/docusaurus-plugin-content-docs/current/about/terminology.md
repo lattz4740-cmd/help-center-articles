@@ -31,12 +31,12 @@ Bạn có thể thiết lập máy chủ trong ứng dụng Quản lý Outline.
  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1
 
 ## Ứng dụng Quản lý Outline là gì?
- Quản lý Outline là một ứng dụng máy tính cho phép người quản lý dịch vụ thiết lập một máy chủ Outline, tạo [khoá truy cập](#accesskey) và thiết lập hạn mức dữ liệu được sử dụng cho từng khoá. Bạn có thể tải phiên bản mới nhất của ứng dụng Quản lý Outline[tại đây](https://getoutline.org/get-started/#step-3) hoặc[tại đây](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
+ Quản lý Outline là một ứng dụng máy tính cho phép người quản lý dịch vụ thiết lập một máy chủ Outline, tạo [khoá truy cập](#accesskey) và thiết lập hạn mức dữ liệu được sử dụng cho từng khoá. Bạn có thể tải phiên bản mới nhất của ứng dụng Quản lý Outline [tại đây](https://getoutline.org/get-started/#step-3) hoặc [tại đây](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
 
 ## Ứng dụng Outline là gì?
- Outline là một ứng dụng dành cho máy tính và thiết bị di động, cho phép bạn kết nối với một máy chủ Outline và truy cập vào VPN bằng khoá truy cập. Bạn có thể tải phiên bản mới nhất của ứng dụng Outline[tại đây](https://getoutline.org/get-started/#step-3) hoặc[tại đây](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
+ Outline là một ứng dụng dành cho máy tính và thiết bị di động, cho phép bạn kết nối với một máy chủ Outline và truy cập vào VPN bằng khoá truy cập. Bạn có thể tải phiên bản mới nhất của ứng dụng Outline [tại đây](https://getoutline.org/get-started/#step-3) hoặc [tại đây](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
 
 ## Hạn mức dữ liệu là gì?
  Ứng dụng Quản lý Outline cho phép người quản lý dịch vụ đặt hạn mức dữ liệu kéo dài trong 30 ngày cho khoá truy cập để tránh việc sử dụng quá mức và giúp duy trì chi phí trong phạm vi dự đoán. Người quản lý dịch vụ có thể đặt một hạn mức mặc định áp dụng cho mọi khoá và cũng có thể đặt hạn mức riêng cho một khoá bất kỳ để thay thế hạn mức mặc định. Sau khi được thiết lập, hạn mức dữ liệu sẽ có hiệu lực ngay lập tức và được thực thi mỗi giờ.
 
-Nếu người quản lý dịch vụ chọn chia sẻ các chỉ số với Jigsaw, họ cần phải đọc[chính sách về việc thu thập dữ liệu](/about/data-collection) để nắm cụ thể cách hoạt động sử dụng hạn mức dữ liệu sẽ được báo cáo.
+Nếu người quản lý dịch vụ chọn chia sẻ các chỉ số với Jigsaw, họ cần phải đọc [chính sách về việc thu thập dữ liệu](/about/data-collection) để nắm cụ thể cách hoạt động sử dụng hạn mức dữ liệu sẽ được báo cáo.

@@ -5,9 +5,9 @@ sidebar_label: "Kwa nini ninashindwa kuunganisha na huduma ya Outline?"
 
 Kuna sababu chache ambazo zinaweza kufanya ushindwe kuunganisha na huduma ya Outline:
 
-- **Kifaa chako**/client/troubleshooting/connection-issues#One[**kimetenganishwa na intaneti**](#Internetissues)[#Internetissues](#Internetissues)**.**Wakati mwingine kifaa chako kitakumbwa na hitilafu ya muunganisho wa mtandao na huenda kikachukua muda kusasisha aikoni za mtandao. Inawezekana pia kuwa kifaa chako kimeunganishwa na mtandao ulio karibu, lakini intaneti haifanyi kazi.
-- **Kinga mtandao yako**/client/troubleshooting/connection-issues#Two[**inazuia ufikiaji wa**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)seva yako ya Outline.**Kwa kawaida hali hii hutokea ukiwa unatumia mtandao wa umma, kama vile, wa shuleni, kazini au mtandao pasiwaya usiolipishwa.
-- **Kifaa chako kina**/client/troubleshooting/connection-issues#Three[**programu ya kingavirusi au kinga mtandao**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**ambayo inazuia usifikie seva yako ya Outline.**
+- **Kifaa chako**/client/troubleshooting/connection-issues#One [**kimetenganishwa na intaneti**](#Internetissues)[#Internetissues](#Internetissues)**.**Wakati mwingine kifaa chako kitakumbwa na hitilafu ya muunganisho wa mtandao na huenda kikachukua muda kusasisha aikoni za mtandao. Inawezekana pia kuwa kifaa chako kimeunganishwa na mtandao ulio karibu, lakini intaneti haifanyi kazi.
+- **Kinga mtandao yako**/client/troubleshooting/connection-issues#Two [**inazuia ufikiaji wa**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)seva yako ya Outline.**Kwa kawaida hali hii hutokea ukiwa unatumia mtandao wa umma, kama vile, wa shuleni, kazini au mtandao pasiwaya usiolipishwa.
+- **Kifaa chako kina**/client/troubleshooting/connection-issues#Three [**programu ya kingavirusi au kinga mtandao**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**ambayo inazuia usifikie seva yako ya Outline.**
 - **Huenda**[**mipangilio ya simu yako**](#DeviceSettings)**ikahitaji kubadilishwa.**
 - **Huenda msimamizi wako wa huduma**[**ameharibu seva au Mtoa Huduma za Intaneti anazuia ombi lako**](#ServerIssues) .
 
@@ -66,7 +66,7 @@ Hakikisha huna programu yoyote inayowekelewa juu ya nyingine iliyowekwa kwenye k
 
  Kwenye kifaa chako cha Android, nenda kwenye Mipangilio > Programu > Idhini maalum ya kufikia programu. Kisha gusa ‘Onyesha juu ya programu zingine’. Unaweza kuondoa ufikiaji wa programu zozote zinazoruhusu utendaji huu.
 
- Kwenye iOS: Soma[makala haya ya usaidizi](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
+ Kwenye iOS: Soma [makala haya ya usaidizi](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
 ### Hitilafu za seva:
 
@@ -75,6 +75,6 @@ Iwapo unaweza kufikia zaidi ya seva moja, jaribu kuunganisha na hiyo nyingine.
 
 ### Hitilafu za kurekebisha:
 
-Wasiliana na msimamizi wako wa huduma ili ufahamu iwapo seva imeharibiwa. Iwapo imeharibiwa, mwombe[ufunguo](/about/terminology) wa seva nyingine.
+Wasiliana na msimamizi wako wa huduma ili ufahamu iwapo seva imeharibiwa. Iwapo imeharibiwa, mwombe [ufunguo](/about/terminology) wa seva nyingine.
 
-Iwapo uliweka mipangilio ya seva mwenyewe, jaribu kuunganisha kupitia Kidhibiti cha Outline au mbinu nyingine kama vile[SSH](https://en.wikipedia.org/wiki/Secure_Shell). Iwapo hatua hii haitatatua tatizo, unaweza kujaribu kuangalia dashibodi ya mtoa huduma za wingu, ikiwa ipo, ili uone kama seva ipo mtandaoni bado.
+Iwapo uliweka mipangilio ya seva mwenyewe, jaribu kuunganisha kupitia Kidhibiti cha Outline au mbinu nyingine kama vile [SSH](https://en.wikipedia.org/wiki/Secure_Shell). Iwapo hatua hii haitatatua tatizo, unaweza kujaribu kuangalia dashibodi ya mtoa huduma za wingu, ikiwa ipo, ili uone kama seva ipo mtandaoni bado.

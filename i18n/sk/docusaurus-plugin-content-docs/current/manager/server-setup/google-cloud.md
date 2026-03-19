@@ -39,16 +39,16 @@ Vďaka týmto povoleniam môžeme poskytovať rozšírené funkcie na správu va
 
 ## Zrušenie povolení
 
-Prístup k službe Google Cloud Platform, ktorý ste udelili Správcovi Outline, môžete zrušiť na stránke[Môj účet](https://myaccount.google.com/permissions). Ak zrušíte prístup, všetky servery, ktoré ste vytvorili pomocou automatického nastavenia, zostanú spustené, no už sa nebudú zobrazovať v Správcovi Outline. Ak prístup k nim budete chcieť obnoviť, jednoducho sa znova pripojte k službe Google Cloud Platform spustením procesu automatického nastavenia.
+Prístup k službe Google Cloud Platform, ktorý ste udelili Správcovi Outline, môžete zrušiť na stránke [Môj účet](https://myaccount.google.com/permissions). Ak zrušíte prístup, všetky servery, ktoré ste vytvorili pomocou automatického nastavenia, zostanú spustené, no už sa nebudú zobrazovať v Správcovi Outline. Ak prístup k nim budete chcieť obnoviť, jednoducho sa znova pripojte k službe Google Cloud Platform spustením procesu automatického nastavenia.
 
 ## Usporiadanie projektov Outline
 
-Automatické nastavenie služby Google Cloud používa na usporiadanie serverov služby Outline jeden[projekt Google Cloud](https://cloud.google.com/resource-manager/docs/creating-managing-projects). Projekt sa vytvorí pri prvom použití automatického nastavenia. Bude označený navrhovaným identifikátorom projektu začínajúcim sa reťazcom Outline-, za ktorým nasleduje reťazec náhodných znakov. Ak chcete, pri vytváraní môžete vybrať iný identifikátor projektu. Projekt bude mať názov Outline servers (Servery služby Outline).
+Automatické nastavenie služby Google Cloud používa na usporiadanie serverov služby Outline jeden [projekt Google Cloud](https://cloud.google.com/resource-manager/docs/creating-managing-projects). Projekt sa vytvorí pri prvom použití automatického nastavenia. Bude označený navrhovaným identifikátorom projektu začínajúcim sa reťazcom Outline-, za ktorým nasleduje reťazec náhodných znakov. Ak chcete, pri vytváraní môžete vybrať iný identifikátor projektu. Projekt bude mať názov Outline servers (Servery služby Outline).
 
 ## Fakturačný účet
 
-Projekty Google Cloud si vyžadujú pripojený fakturačný účet, ktorý definuje platobné údaje. Pri prvom použití automatického nastavenia služby Google Cloud sa vám zobrazí výzva na zadanie fakturačného účtu, ktorý sa má spojiť s vašimi servermi služby Outline. Niekedy sa server zastaví pre problém s fakturačným účtom. V tom prípade by ste sa mali prihlásiť do služby[Google Cloud Console](https://console.cloud.google.com/getting-started), vyhľadať projekt Google Cloud spojený so službou Outline (s názvom Outline servers (Servery služby Outline)) a aktualizovať nastavenia fakturácie.
+Projekty Google Cloud si vyžadujú pripojený fakturačný účet, ktorý definuje platobné údaje. Pri prvom použití automatického nastavenia služby Google Cloud sa vám zobrazí výzva na zadanie fakturačného účtu, ktorý sa má spojiť s vašimi servermi služby Outline. Niekedy sa server zastaví pre problém s fakturačným účtom. V tom prípade by ste sa mali prihlásiť do služby [Google Cloud Console](https://console.cloud.google.com/getting-started), vyhľadať projekt Google Cloud spojený so službou Outline (s názvom Outline servers (Servery služby Outline)) a aktualizovať nastavenia fakturácie.
 
 ## Zničenie serverov
 
-Ak chcete zničiť servery vytvorené pomocou automatického nastavenia, najjednoduchšie je použiť Správcu Outline. Ak však chcete servery zničiť svojpomocne, môžete sa prihlásiť do služby[Google Cloud Console](https://console.cloud.google.com/getting-started), vyhľadať projekt vytvorený pri úvodnom nastavení (s názvom Outline servers (Servery služby Outline)) a buď odstrániť zdroje v rámci neho, alebo ho celý zastaviť.
+Ak chcete zničiť servery vytvorené pomocou automatického nastavenia, najjednoduchšie je použiť Správcu Outline. Ak však chcete servery zničiť svojpomocne, môžete sa prihlásiť do služby [Google Cloud Console](https://console.cloud.google.com/getting-started), vyhľadať projekt vytvorený pri úvodnom nastavení (s názvom Outline servers (Servery služby Outline)) a buď odstrániť zdroje v rámci neho, alebo ho celý zastaviť.

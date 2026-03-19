@@ -5,7 +5,7 @@ sidebar_label: Configurare automatizată pentru Google Cloud
 
 ## Prezentare generală
 
-Outline Manager include o funcție prin care puteți configura automat serverul Outline pe un server care rulează în Google Cloud. Dacă alegeți să folosiți această funcție, Outline Manager vă va solicita să vă conectați cu Contul Google. Astfel, se vor acorda anumite permisiuni[OAuth](https://developers.google.com/identity/protocols/oauth2) pentru instalarea locală a aplicației Outline Manager în scopul configurării Contului Google Cloud.
+Outline Manager include o funcție prin care puteți configura automat serverul Outline pe un server care rulează în Google Cloud. Dacă alegeți să folosiți această funcție, Outline Manager vă va solicita să vă conectați cu Contul Google. Astfel, se vor acorda anumite permisiuni [OAuth](https://developers.google.com/identity/protocols/oauth2) pentru instalarea locală a aplicației Outline Manager în scopul configurării Contului Google Cloud.
 
  Dacă nu doriți să acordați aceste permisiuni, puteți urma instrucțiunile avansate de configurare din Outline Manager pentru a rula Outline pe Google Cloud Platform.
 
@@ -43,11 +43,11 @@ Puteți revoca accesul la Google Cloud Platform pentru Outline Manager accesând
 
 ## Organizarea proiectului Outline
 
-Configurarea automatizată a serviciului Google Cloud folosește un singur[proiect Google Cloud](https://cloud.google.com/resource-manager/docs/creating-managing-projects) pentru organizarea serverelor Outline. Proiectul este creat în timpul primei utilizări a configurării automatizate, având un ID de proiect sugerat care începe cu „Outline-”, urmat de un șir de caractere aleatorii. Dacă doriți, puteți alege alt ID de proiect la momentul creării. Proiectul se va numi „Servere Outline”.
+Configurarea automatizată a serviciului Google Cloud folosește un singur [proiect Google Cloud](https://cloud.google.com/resource-manager/docs/creating-managing-projects) pentru organizarea serverelor Outline. Proiectul este creat în timpul primei utilizări a configurării automatizate, având un ID de proiect sugerat care începe cu „Outline-”, urmat de un șir de caractere aleatorii. Dacă doriți, puteți alege alt ID de proiect la momentul creării. Proiectul se va numi „Servere Outline”.
 
 ## Cont de facturare
 
-Proiectele Google Cloud necesită un „cont de facturare” conectat care să definească informațiile de plată. Când folosiți configurarea automatizată Google Cloud, vi se va solicita să adăugați un cont de facturare pentru asocierea cu serverele dvs. Outline. Uneori, serverul nu va mai funcționa deoarece există o problemă legată de contul de facturare. În acest caz, trebuie să vă conectați la[Google Cloud Console](https://console.cloud.google.com/getting-started), să găsiți proiectul Google Cloud asociat cu Outline (numit „Servere Outline”) și să actualizați setările de facturare.
+Proiectele Google Cloud necesită un „cont de facturare” conectat care să definească informațiile de plată. Când folosiți configurarea automatizată Google Cloud, vi se va solicita să adăugați un cont de facturare pentru asocierea cu serverele dvs. Outline. Uneori, serverul nu va mai funcționa deoarece există o problemă legată de contul de facturare. În acest caz, trebuie să vă conectați la [Google Cloud Console](https://console.cloud.google.com/getting-started), să găsiți proiectul Google Cloud asociat cu Outline (numit „Servere Outline”) și să actualizați setările de facturare.
 
 ## Distrugerea serverelor
 

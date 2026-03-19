@@ -5,9 +5,9 @@ sidebar_label: "Tại sao tôi không kết nối được với dịch vụ Out
 
 Có một vài lý do khiến bạn không thể kết nối với dịch vụ Outline:
 
-- **Thiết bị của bạn**/client/troubleshooting/connection-issues#One[**bị ngắt kết nối Internet**](#Internetissues)[#Internetissues](#Internetissues)**.**Đôi khi, thiết bị của bạn có thể bị ngắt kết nối mạng và có thể cần một chút thời gian để cập nhật biểu tượng mạng. Cũng có khả năng thiết bị của bạn có kết nối với mạng cục bộ, nhưng lại không có kết nối Internet.
-- /client/troubleshooting/connection-issues#Two[**Tường lửa mạng của bạn đang chặn quyền truy cập**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[vào](#FirewallIssues) máy chủ Outline.**Điều này thường xảy ra nếu bạn sử dụng mạng công cộng, chẳng hạn như mạng trường học, cơ quan hoặc mạng không dây miễn phí.
-- **Thiết bị của bạn có**/client/troubleshooting/connection-issues#Three[**tường lửa hoặc phần mềm diệt virus**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**đang chặn quyền truy cập vào máy chủ Outline.**
+- **Thiết bị của bạn**/client/troubleshooting/connection-issues#One [**bị ngắt kết nối Internet**](#Internetissues)[#Internetissues](#Internetissues)**.**Đôi khi, thiết bị của bạn có thể bị ngắt kết nối mạng và có thể cần một chút thời gian để cập nhật biểu tượng mạng. Cũng có khả năng thiết bị của bạn có kết nối với mạng cục bộ, nhưng lại không có kết nối Internet.
+- /client/troubleshooting/connection-issues#Two [**Tường lửa mạng của bạn đang chặn quyền truy cập**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[vào](#FirewallIssues) máy chủ Outline.**Điều này thường xảy ra nếu bạn sử dụng mạng công cộng, chẳng hạn như mạng trường học, cơ quan hoặc mạng không dây miễn phí.
+- **Thiết bị của bạn có**/client/troubleshooting/connection-issues#Three [**tường lửa hoặc phần mềm diệt virus**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**đang chặn quyền truy cập vào máy chủ Outline.**
 - **Bạn có thể phải thay đổi**[**chế độ cài đặt thiết bị điện thoại**](#DeviceSettings)**của bạn.**
 - **Người quản lý dịch vụ của bạn có thể đã**[**huỷ bỏ máy chủ hoặc Nhà cung cấp dịch vụ Internet (ISP) có thể đang chặn yêu cầu của bạn**](#ServerIssues) .
 
@@ -75,6 +75,6 @@ Nếu bạn có quyền truy cập vào nhiều máy chủ, hãy thử kết n�
 
 ### Điểm cần khắc phục:
 
-Hãy liên hệ với người quản lý dịch vụ của bạn để xem máy chủ đã bị huỷ bỏ hay chưa. Nếu đã bị huỷ bỏ, hãy yêu cầu họ cấp[khoá truy cập](/about/terminology) vào một máy chủ khác.
+Hãy liên hệ với người quản lý dịch vụ của bạn để xem máy chủ đã bị huỷ bỏ hay chưa. Nếu đã bị huỷ bỏ, hãy yêu cầu họ cấp [khoá truy cập](/about/terminology) vào một máy chủ khác.
 
 Nếu bạn thiết lập máy chủ đó, hãy thử kết nối bằng ứng dụng Quản lý Outline hoặc một phương thức khác như[SSH](https://en.wikipedia.org/wiki/Secure_Shell). Nếu cách này không hiệu quả, thì bạn có thể thử kiểm tra bảng điều khiển của nhà cung cấp dịch vụ đám mây (nếu có) để xem máy chủ đó có đang hoạt động hay không.

@@ -5,9 +5,9 @@ sidebar_label: "Mengapakah saya tidak dapat menyambung kepada perkhidmatan Outli
 
 Terdapat beberapa sebab anda mungkin tidak dapat menyambung kepada perkhidmatan Outline:
 
-- **Peranti anda**/client/troubleshooting/connection-issues#One[**terputus sambungan daripada Internet**](#Internetissues)[#MasalahInternet](#Internetissues)**.**Kadangkala peranti anda akan terputus sambungan rangkaian dan mungkin mengambil sedikit masa untuk peranti anda mengemaskinikan ikon rangkaian tersebut. Terdapat juga kemungkinan peranti anda disambungkan kepada rangkaian setempat tetapi Internet tergendala.
+- **Peranti anda**/client/troubleshooting/connection-issues#One [**terputus sambungan daripada Internet**](#Internetissues)[#MasalahInternet](#Internetissues)**.**Kadangkala peranti anda akan terputus sambungan rangkaian dan mungkin mengambil sedikit masa untuk peranti anda mengemaskinikan ikon rangkaian tersebut. Terdapat juga kemungkinan peranti anda disambungkan kepada rangkaian setempat tetapi Internet tergendala.
 - [**Tembok api rangkaian anda menyekat akses**](#FirewallIssues)[#MasalahTembokApi](#FirewallIssues)**[kepada](#FirewallIssues) pelayan Outline anda.**Perkara ini biasa terjadi jika anda menggunakan rangkaian awam, seperti sekolah, kerja atau rangkaian wayarles percuma.
-- **Peranti anda memiliki**/client/troubleshooting/connection-issues#Three[**tembok api atau perisian antivirus**](#SoftwareIssues)[#MasalahPerisian](#SoftwareIssues)**yang menyekat akses kepada pelayan Outline anda.**
+- **Peranti anda memiliki**/client/troubleshooting/connection-issues#Three [**tembok api atau perisian antivirus**](#SoftwareIssues)[#MasalahPerisian](#SoftwareIssues)**yang menyekat akses kepada pelayan Outline anda.**
 - **Your**[**Tetapan peranti telefon anda**](#DeviceSettings)**mungkin perlu ditukar.**
 - **Pengurus perkhidmatan anda mungkin telah**[**memusnahkan pelayan atau ISP anda mungkin menyekat permintaan anda**](#ServerIssues) .
 
@@ -66,7 +66,7 @@ Pastikan anda tiada apa-apa aplikasi tindanan skrin yang dipasang pada peranti A
 
  Pada peranti Android anda, akses Tetapan > Apl > Akses apl khas. Kemudian ketik ‘Paparkan di atas apl yang lain’. Anda boleh mengalih keluar akses kepada mana-mana apl yang membenarkan gelagat ini.
 
- Untuk iOS: Baca[artikel sokongan ini](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
+ Untuk iOS: Baca [artikel sokongan ini](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
 ### Masalah pelayan:
 
@@ -75,6 +75,6 @@ Jika anda mempunyai akses kepada lebih daripada satu pelayan, cuba menyambung ke
 
 ### Perkara yang perlu dibetulkan:
 
-Hubungi pentadbir perkhidmatan anda untuk melihat sama ada pelayan telah dimusnahkan atau tidak. Jika demikian, minta[kunci akses](/about/terminology) kepada pelayan yang lain daripada mereka.
+Hubungi pentadbir perkhidmatan anda untuk melihat sama ada pelayan telah dimusnahkan atau tidak. Jika demikian, minta [kunci akses](/about/terminology) kepada pelayan yang lain daripada mereka.
 
-Jika anda menyediakan pelayan, cuba menyambung kepada pelayan ini melalui Outline Manager atau gunakan kaedah lain seperti[SSH](https://en.wikipedia.org/wiki/Secure_Shell). Jika langkah tersebut tidak berfungsi, anda boleh cuba memeriksa konsol penyedia awan, jika ada, untuk melihat sama ada pelayan itu masih dalam talian.
+Jika anda menyediakan pelayan, cuba menyambung kepada pelayan ini melalui Outline Manager atau gunakan kaedah lain seperti [SSH](https://en.wikipedia.org/wiki/Secure_Shell). Jika langkah tersebut tidak berfungsi, anda boleh cuba memeriksa konsol penyedia awan, jika ada, untuk melihat sama ada pelayan itu masih dalam talian.

@@ -26,17 +26,17 @@ Anda akan menyediakan pelayan anda dalam Outline Manager.
  Pengurus perkhidmatan ialah orang yang bertanggungjawab untuk menyediakan pelayan Outline dan berkongsi kunci akses dengan pengguna. Pengurus perkhidmatan biasanya bertanggungjawab terhadap kos penggunaan pelayan. 
 
 ## Apakah itu kunci akses? {#accesskey}
- Kunci akses digunakan untuk mengakses pelayan Outline yang sedia ada dan membuat sambungan kepada VPN. [Pengurus perkhidmatan](#servicemanager) akan memberi anda kunci akses atau anda boleh[menyediakan pelayan Outline](/manager/server-setup/setup-server) sendiri. Yang berikut ialah contoh rupa kunci akses (sampel sahaja; kunci ini tidak akan berfungsi): 
+ Kunci akses digunakan untuk mengakses pelayan Outline yang sedia ada dan membuat sambungan kepada VPN. [Pengurus perkhidmatan](#servicemanager) akan memberi anda kunci akses atau anda boleh [menyediakan pelayan Outline](/manager/server-setup/setup-server) sendiri. Yang berikut ialah contoh rupa kunci akses (sampel sahaja; kunci ini tidak akan berfungsi): 
 
  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1
 
 ## Apakah itu Outline Manager?
- Outline Manager ialah aplikasi desktop yang membolehkan pengurus perkhidmatan menyediakan pelayan Outline, menjana [kunci akses](#accesskey) dan menetapkan had data untuk penggunaan setiap kunci. Anda boleh memuat turun versi terkini Outline Manager[di sini](https://getoutline.org/get-started/#step-3) atau[di sini](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
+ Outline Manager ialah aplikasi desktop yang membolehkan pengurus perkhidmatan menyediakan pelayan Outline, menjana [kunci akses](#accesskey) dan menetapkan had data untuk penggunaan setiap kunci. Anda boleh memuat turun versi terkini Outline Manager [di sini](https://getoutline.org/get-started/#step-3) atau [di sini](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
 
 ## Apakah itu Outline Client?
- Outline Client ialah aplikasi yang tersedia untuk desktop dan mudah alih, yang membolehkan anda membuat sambungan kepada pelayan Outline dan mengakses VPN menggunakan kunci akses. Anda boleh memuat turun versi terkini Outline Client[di sini](https://getoutline.org/get-started/#step-3) atau[di sini](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
+ Outline Client ialah aplikasi yang tersedia untuk desktop dan mudah alih, yang membolehkan anda membuat sambungan kepada pelayan Outline dan mengakses VPN menggunakan kunci akses. Anda boleh memuat turun versi terkini Outline Client [di sini](https://getoutline.org/get-started/#step-3) atau [di sini](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
 
 ## Apakah itu had data?
  Outline Manager membolehkan pengurus perkhidmatan menetapkan had data belakang 30 hari pada kunci akses untuk mengelakkan penggunaan berlebihan dan memastikan kos boleh diramalkan. Pengurus pelayan boleh menetapkan had lalai yang digunakan pada setiap kunci dan juga menetapkan had berlainan pada sebarang kunci untuk menggantikan had lalai. Setelah had ditetapkan, had tersebut akan berkuat kuasa dengan serta-merta dan dikuatkuasakan setiap jam.
 
-Jika pengurus perkhidmatan ikut serta untuk berkongsi metrik dengan Jigsaw, mereka perlu melihat[dasar pengumpulan data](/about/data-collection) untuk mendapatkan butiran tentang cara penggunaan had data akan dilaporkan.
+Jika pengurus perkhidmatan ikut serta untuk berkongsi metrik dengan Jigsaw, mereka perlu melihat [dasar pengumpulan data](/about/data-collection) untuk mendapatkan butiran tentang cara penggunaan had data akan dilaporkan.

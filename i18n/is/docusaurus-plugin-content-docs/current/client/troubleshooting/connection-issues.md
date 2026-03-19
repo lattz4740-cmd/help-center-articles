@@ -5,9 +5,9 @@ sidebar_label: "Hvers vegna get ég ekki tengst Outline-þjóni?"
 
 Nokkrar ástæður gætu valdið því að þú getur ekki tengst Outline-þjóni:
 
-- **Tækið þitt**/client/troubleshooting/connection-issues#One[**aftengdist netinu**](#Internetissues)[#Internetissues](#Internetissues)**.**Stundum rofnar nettenging tækisins og smástund getur liðið áður en netkerfistáknin uppfærast. Einnig er mögulegt að tækið þitt sé tengt staðarnetinu en að netið liggi niðri.
-- **Mögulega**/client/troubleshooting/connection-issues#Two[**lokar eldveggur netkerfisins á aðgang**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[a](#FirewallIssues)ð Outline-þjóninum.**Þetta er algengt ef þú tengist skóla- eða vinnuneti eða gjaldfrjálsu, þráðlausu neti.
-- **Tækið þitt er með**/client/troubleshooting/connection-issues#Three[**eldvegg eða vírusvarnarhugbúnað**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**sem loka á aðgang að Outline-þjóninum.**
+- **Tækið þitt**/client/troubleshooting/connection-issues#One [**aftengdist netinu**](#Internetissues)[#Internetissues](#Internetissues)**.**Stundum rofnar nettenging tækisins og smástund getur liðið áður en netkerfistáknin uppfærast. Einnig er mögulegt að tækið þitt sé tengt staðarnetinu en að netið liggi niðri.
+- **Mögulega**/client/troubleshooting/connection-issues#Two [**lokar eldveggur netkerfisins á aðgang**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[a](#FirewallIssues)ð Outline-þjóninum.**Þetta er algengt ef þú tengist skóla- eða vinnuneti eða gjaldfrjálsu, þráðlausu neti.
+- **Tækið þitt er með**/client/troubleshooting/connection-issues#Three [**eldvegg eða vírusvarnarhugbúnað**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**sem loka á aðgang að Outline-þjóninum.**
 - **Það gæti**[**þurft að breyta stillingum**](#DeviceSettings)**símtækisins þíns.**
 - **Þjónustustjórinn gæti hafa**[**eyðilagt þjóninn eða hugsanlega lokar netþjónustan þín á beiðnina**](#ServerIssues) .
 
@@ -66,7 +66,7 @@ Gakktu úr skugga um að engin forrit fyrir skjáyfirlögn séu uppsett í Andro
 
  Opnaðu „Stillingar > Forrit > Sérstakur aðgangur forrits“ í Android-tækinu. Ýttu síðan á „Sýna yfir öðrum forritum“. Þú getur fjarlægt aðgang að öllum forritum sem leyfa slíka virkni.
 
- Fyrir iOS: Lestu[þessa hjálpargrein](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
+ Fyrir iOS: Lestu [þessa hjálpargrein](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
 ### Vandamál varðandi þjón:
 

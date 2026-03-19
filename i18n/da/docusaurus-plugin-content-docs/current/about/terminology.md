@@ -35,9 +35,9 @@ Du konfigurerer din server i Outline Manager.
  Outline Manager er et computerprogram, som tillader, at en tjenesteadministrator konfigurerer en Outline-server, genererer [adgangsnøgler](#accesskey) og angiver datagrænser for brug pr. nøgle. Du kan downloade den seneste version af Outline Manager [her](https://getoutline.org/get-started/#step-3) eller [her](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
 
 ## Hvad er Outline Client?
- Outline Client er et program, der fås til computer og mobil, og som gør det muligt for dig at oprette forbindelse til en Outline-server og få adgang til VPN'et ved hjælp af en adgangsnøgle. Du kan downloade den seneste version af Outline Client[her](https://getoutline.org/get-started/#step-3) eller[her](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
+ Outline Client er et program, der fås til computer og mobil, og som gør det muligt for dig at oprette forbindelse til en Outline-server og få adgang til VPN'et ved hjælp af en adgangsnøgle. Du kan downloade den seneste version af Outline Client [her](https://getoutline.org/get-started/#step-3) eller [her](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
 
 ## Hvad er datagrænser?
  Outline Manager gør det muligt for tjenesteadministratorer at angive en løbende datagrænse på 30 dage for adgangsnøgler for at forhindre overforbrug og hjælpe med at holde omkostningerne forudsigelige. Tjenesteadministratorer kan angive en standardgrænse, som gælder for enhver nøgle, og de kan også angive en anden grænse for en hvilken som helst nøgle for at overskride standardgrænsen. Når grænsen er angivet, træder den øjeblikkeligt i kraft og håndhæves hver time.
 
-Hvis tjenesteadministratorer tilvælger at dele metrics med Jigsaw, skal de gå til[politikken for dataindsamling](/about/data-collection) for at få flere oplysninger om, hvordan brugen af datagrænser rapporteres.
+Hvis tjenesteadministratorer tilvælger at dele metrics med Jigsaw, skal de gå til [politikken for dataindsamling](/about/data-collection) for at få flere oplysninger om, hvordan brugen af datagrænser rapporteres.

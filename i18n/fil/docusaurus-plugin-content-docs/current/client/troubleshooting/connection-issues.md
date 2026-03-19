@@ -5,9 +5,9 @@ sidebar_label: "Bakit hindi ako makakonekta sa serbisyo ng Outline?"
 
 May ilang dahilan kung bakit hindi ka makakonekta sa serbisyo ng Outline:
 
-- **Ang iyong device ay**/client/troubleshooting/connection-issues#One[**nadiskonekta sa internet**](#Internetissues)[#Internetissues](#Internetissues)**.**Kung minsan, mapuputol ang koneksyon ng network ng iyong device at posibleng umabot nang ilang sandali bago nito ma-update ang mga icon ng network. Posible ring nakakonekta ang iyong device sa lokal na network, pero walang internet.
-- **Bina-block**/client/troubleshooting/connection-issues#Two[**ng firewall ng network mo ang access**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[s](#FirewallIssues)a Outline server mo.**Karaniwan ito kung gumagamit ka ng pampublikong network, gaya ng wireless na network sa paaralan, trabaho, o libreng wireless network.
-- **Ang iyong device ay may**/client/troubleshooting/connection-issues#Three[**firewall o antivirus software**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**na nagba-block ng access sa iyong Outline server.**
+- **Ang iyong device ay**/client/troubleshooting/connection-issues#One [**nadiskonekta sa internet**](#Internetissues)[#Internetissues](#Internetissues)**.**Kung minsan, mapuputol ang koneksyon ng network ng iyong device at posibleng umabot nang ilang sandali bago nito ma-update ang mga icon ng network. Posible ring nakakonekta ang iyong device sa lokal na network, pero walang internet.
+- **Bina-block**/client/troubleshooting/connection-issues#Two [**ng firewall ng network mo ang access**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[s](#FirewallIssues)a Outline server mo.**Karaniwan ito kung gumagamit ka ng pampublikong network, gaya ng wireless na network sa paaralan, trabaho, o libreng wireless network.
+- **Ang iyong device ay may**/client/troubleshooting/connection-issues#Three [**firewall o antivirus software**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**na nagba-block ng access sa iyong Outline server.**
 - **Posibleng kailangang baguhin ang**[**mga setting ng device ng telepono**](#DeviceSettings)**mo.**
 - **Posibleng na-destroy na ng iyong manager ng serbisyo**[**ang server o posibleng bina-block ng ISP mo ang iyong request**](#ServerIssues) .
 
@@ -66,7 +66,7 @@ Siguraduhing wala kang kahit anong naka-install na screen overlay application sa
 
  Sa iyong Android device, pumunta sa Mga Setting > Mga App > Espesyal na access sa app. Pagkatapos, i-tap ang ‘Ipakita sa ibabaw ng iba pang app.’ Puwede mong alisin ang access sa anumang app na nagpapahintulot sa ganitong gawi.
 
- Para sa iOS: Basahin ang[suportang artikulong ito](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
+ Para sa iOS: Basahin ang [suportang artikulong ito](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
 ### Mga isyu sa server:
 
@@ -75,6 +75,6 @@ Kung mayroon kang access sa higit sa isang server, subukang kumonekta sa ibang s
 
 ### Mga aayusin:
 
-Makipag-ugnayan sa iyong manager ng serbisyo para tanungin kung na-destroy na ang server. Kung oo, humingi sa kanya ng[access key](/about/terminology) sa ibang server.
+Makipag-ugnayan sa iyong manager ng serbisyo para tanungin kung na-destroy na ang server. Kung oo, humingi sa kanya ng [access key](/about/terminology) sa ibang server.
 
-Kung ikaw ang nag-set up ng server, subukang kumonekta rito sa pamamagitan ng Outline Manager o ibang paraan tulad ng[SSH](https://en.wikipedia.org/wiki/Secure_Shell). Kung hindi iyon gagana, puwede mong subukang tingnan ang cloud provider console, kung mayroon, para makita kung online pa rin ang server.
+Kung ikaw ang nag-set up ng server, subukang kumonekta rito sa pamamagitan ng Outline Manager o ibang paraan tulad ng [SSH](https://en.wikipedia.org/wiki/Secure_Shell). Kung hindi iyon gagana, puwede mong subukang tingnan ang cloud provider console, kung mayroon, para makita kung online pa rin ang server.

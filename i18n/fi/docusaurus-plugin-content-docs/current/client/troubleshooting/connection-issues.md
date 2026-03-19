@@ -5,9 +5,9 @@ sidebar_label: "Miksi en voi muodostaa yhteyttä Outline-palveluun?"
 
 Jos et voi muodostaa yhteyttä Outline-palveluun, siihen voi olla useita syitä:
 
-- **Laite**/client/troubleshooting/connection-issues#One[**ei ole yhteydessä internetiin**](#Internetissues)[#Internetissues](#Internetissues)**.**Joskus laitteen verkkoyhteys voi katketa ja voi mennä hetki, ennen kuin verkkokuvakkeet päivittyvät. On myös mahdollista, että laitteesi on yhdistetty lähiverkkoon, mutta internetyhteys ei toimi.
-- /client/troubleshooting/connection-issues#Two[**Verkon palomuuri estää yhteyden**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)Outline-palvelimeen.**Tämä on yleistä, jos käytät julkista verkkoa, kuten oppilaitoksen tai työpaikan verkkoa tai maksutonta langatonta verkkoa.
-- **Laitteessasi on**/client/troubleshooting/connection-issues#Three[**palomuuri tai virustorjuntaohjelma,**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**joka estää yhteyden Outline-palvelimeen.**
+- **Laite**/client/troubleshooting/connection-issues#One [**ei ole yhteydessä internetiin**](#Internetissues)[#Internetissues](#Internetissues)**.**Joskus laitteen verkkoyhteys voi katketa ja voi mennä hetki, ennen kuin verkkokuvakkeet päivittyvät. On myös mahdollista, että laitteesi on yhdistetty lähiverkkoon, mutta internetyhteys ei toimi.
+- /client/troubleshooting/connection-issues#Two [**Verkon palomuuri estää yhteyden**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)Outline-palvelimeen.**Tämä on yleistä, jos käytät julkista verkkoa, kuten oppilaitoksen tai työpaikan verkkoa tai maksutonta langatonta verkkoa.
+- **Laitteessasi on**/client/troubleshooting/connection-issues#Three [**palomuuri tai virustorjuntaohjelma,**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**joka estää yhteyden Outline-palvelimeen.**
 - **Puhelimesi**[**laiteasetuksia**](#DeviceSettings)**on ehkä muutettava.**
 - **Palvelun hallinnoija on saattanut**[**poistaa palvelimen, tai internetpalveluntarjoaja saattaa estää pyyntösi.**](#ServerIssues)
 

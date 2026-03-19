@@ -5,9 +5,9 @@ sidebar_label: "Zakaj ne morem vzpostaviti povezave s storitvijo Outline?"
 
 Obstaja več razlogov, zakaj morda ne morete vzpostaviti povezave s storitvijo Outline:
 
-- **Povezava naprave**/client/troubleshooting/connection-issues#One[**z internetom je prekinjena**](#Internetissues)[#Internetissues](#Internetissues)**.**V napravi bo omrežna povezava včasih prekinjena in v tem primeru je treba nekoliko počakati, da se posodobijo ikone za omrežje. Prav tako je mogoče, da je naprava povezana z lokalnim omrežjem, vendar internet ne deluje.
-- /client/troubleshooting/connection-issues#Two[**Požarni zid omrežja blokira dostop**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[do](#FirewallIssues) strežnika Outline.**To se pogosto zgodi, če uporabljate javno omrežje, na primer šolsko, službeno ali brezplačno brezžično omrežje.
-- **V napravi je**/client/troubleshooting/connection-issues#Three[**požarni zid ali protivirusna programska oprema**](#SoftwareIssues),[#SoftwareIssues](#SoftwareIssues)**ki blokira dostop do strežnika Outline.**
+- **Povezava naprave**/client/troubleshooting/connection-issues#One [**z internetom je prekinjena**](#Internetissues)[#Internetissues](#Internetissues)**.**V napravi bo omrežna povezava včasih prekinjena in v tem primeru je treba nekoliko počakati, da se posodobijo ikone za omrežje. Prav tako je mogoče, da je naprava povezana z lokalnim omrežjem, vendar internet ne deluje.
+- /client/troubleshooting/connection-issues#Two [**Požarni zid omrežja blokira dostop**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[do](#FirewallIssues) strežnika Outline.**To se pogosto zgodi, če uporabljate javno omrežje, na primer šolsko, službeno ali brezplačno brezžično omrežje.
+- **V napravi je**/client/troubleshooting/connection-issues#Three [**požarni zid ali protivirusna programska oprema**](#SoftwareIssues),[#SoftwareIssues](#SoftwareIssues)**ki blokira dostop do strežnika Outline.**
 - **Morda boste morali spremeniti**[**nastavitve telefona**](#DeviceSettings)**.**
 - **Upravitelj storitve je morda**[**uničil strežnik ali pa vašo zahtevo morda blokira ponudnik internetnih storitev**](#ServerIssues).
 
@@ -66,7 +66,7 @@ Prepričajte se, da v napravi Android nimate nameščene nobene aplikacije za pr
 
  V napravi Android odprite razdelek »Nastavitve« > »Aplikacije« > »Posebni dostop za aplikacije«. Nato se dotaknite možnosti »Prekrivanje drugih aplikacij«. Odstranite lahko dostop do vseh aplikacij, ki omogočajo takšno vedenje.
 
- V napravah iOS: Preberite[ta članek s pomočjo](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
+ V napravah iOS: Preberite [ta članek s pomočjo](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
 ### Težave s strežnikom:
 
@@ -75,6 +75,6 @@ Prepričajte se, da v napravi Android nimate nameščene nobene aplikacije za pr
 
 ### Kaj je treba popraviti:
 
-Obrnite se na upravitelja storitve in preverite, ali je bil strežnik uničen. V tem primeru ga prosite za[ključ za dostop](/about/terminology) do drugega strežnika.
+Obrnite se na upravitelja storitve in preverite, ali je bil strežnik uničen. V tem primeru ga prosite za [ključ za dostop](/about/terminology) do drugega strežnika.
 
-Če ste strežnik nastavili vi, poskusite povezavo z njim vzpostaviti prek Upravitelja za Outline ali drugega načina, kot je[protokol SSH](https://en.wikipedia.org/wiki/Secure_Shell). Če to ne deluje, lahko preverite konzolo morebitnega ponudnika storitev v oblaku in se prepričate, ali je povezava s strežnikom še vedno vzpostavljena.
+Če ste strežnik nastavili vi, poskusite povezavo z njim vzpostaviti prek Upravitelja za Outline ali drugega načina, kot je [protokol SSH](https://en.wikipedia.org/wiki/Secure_Shell). Če to ne deluje, lahko preverite konzolo morebitnega ponudnika storitev v oblaku in se prepričate, ali je povezava s strežnikom še vedno vzpostavljena.

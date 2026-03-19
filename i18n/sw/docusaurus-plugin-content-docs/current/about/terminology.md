@@ -26,17 +26,17 @@ Utaweka mipangilio ya seva yako kwenye Kidhibiti cha Outline.
  Msimamizi wa huduma ni mtu anayewajibika kuweka mipangilio ya seva ya Outline na kutuma funguo kwa watumiaji. Kwa ujumla msimamizi wa huduma anawajibikia gharama za matumizi ya seva. 
 
 ## Je, ufunguo ni nini? {#accesskey}
- Ufunguo unatumika kufikia seva iliyopo ya Outline na kuunganisha kwenye VPN. [Msimamizi wa huduma](#servicemanager) atakupatia ufunguo au unaweza[kuweka mipangilio ya seva ya Outline](/manager/server-setup/setup-server) mwenyewe. Huu ni mfano wa jinsi ufunguo unavyoonekana (sampuli pekee; hautafanya kazi): 
+ Ufunguo unatumika kufikia seva iliyopo ya Outline na kuunganisha kwenye VPN. [Msimamizi wa huduma](#servicemanager) atakupatia ufunguo au unaweza [kuweka mipangilio ya seva ya Outline](/manager/server-setup/setup-server) mwenyewe. Huu ni mfano wa jinsi ufunguo unavyoonekana (sampuli pekee; hautafanya kazi): 
 
  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1
 
 ## Kidhibiti cha Outline ni nini?
- Kidhibiti cha Outline ni programu ya kompyuta ya mezani inayomwezesha msimamizi wa huduma kuweka mipangilio ya seva ya Outline, kubuni [ufunguo](#accesskey) na kuweka vikomo vya data katika matumizi kwa kila ufunguo. Unaweza kupakua toleo jipya kabisa la Kidhibiti cha Outline[hapa](https://getoutline.org/get-started/#step-3) au[hapa](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
+ Kidhibiti cha Outline ni programu ya kompyuta ya mezani inayomwezesha msimamizi wa huduma kuweka mipangilio ya seva ya Outline, kubuni [ufunguo](#accesskey) na kuweka vikomo vya data katika matumizi kwa kila ufunguo. Unaweza kupakua toleo jipya kabisa la Kidhibiti cha Outline [hapa](https://getoutline.org/get-started/#step-3) au [hapa](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
 
 ## Programu ya Outline ni nini?
-Programu ya Outline ni programu, inayopatikana kwenye kompyuta ya mezani na simu, inayokuwezesha kuunganisha kwenye seva ya Outline na kufikia VPN ukitumia ufunguo. Unaweza kupakua toleo jipya kabisa la Programu ya Outline[hapa](https://getoutline.org/get-started/#step-3) au[hapa](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
+Programu ya Outline ni programu, inayopatikana kwenye kompyuta ya mezani na simu, inayokuwezesha kuunganisha kwenye seva ya Outline na kufikia VPN ukitumia ufunguo. Unaweza kupakua toleo jipya kabisa la Programu ya Outline [hapa](https://getoutline.org/get-started/#step-3) au [hapa](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
 
 ## Je, vikomo vya data ni nini?
  Kidhibiti cha Outline huwawezesha wasimamizi wa huduma kuweka kikomo cha data cha siku 30 zinazotangulia cha matumizi ya funguo ili kuzuia matumizi kupita kiasi na kusaidia kutabiri gharama zako. Wasimamizi wa huduma wanaweza kuweka kikomo chaguomsingi kinachotumika kwenye kila ufunguo na kuweka kikomo tofauti kwenye ufunguo wowote ili kubatilisha kikomo chaguomsingi. Baada ya kikomo kuwekwa, kikomo hicho huanza kutumika papo hapo na hutekelezwa kila saa.
 
-Ikiwa wasimamizi wa huduma watachagua kuruhusu Jigsaw ifikie vipimo, wanapaswa kuangalia[sera ya ukusanyaji data](/about/data-collection) ili wapate maelezo kuhusu jinsi matumizi ya vikomo vya data yatakavyoripotiwa.
+Ikiwa wasimamizi wa huduma watachagua kuruhusu Jigsaw ifikie vipimo, wanapaswa kuangalia [sera ya ukusanyaji data](/about/data-collection) ili wapate maelezo kuhusu jinsi matumizi ya vikomo vya data yatakavyoripotiwa.

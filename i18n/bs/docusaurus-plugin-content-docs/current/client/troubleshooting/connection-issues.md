@@ -5,9 +5,9 @@ sidebar_label: "Zašto se ne mogu povezati s uslugom Outline?"
 
 Postoji nekoliko mogućih razloga zašto se ne možete povezati s uslugom Outline:
 
-- **Prekinuta je**/client/troubleshooting/connection-issues#One[**veza uređaja s internetom**](#Internetissues)[#Internetissues](#Internetissues)**.**Ponekad će na vašem uređaju doći do prekida mrežne veze i može malo potrajati da se ažuriraju ikone mreže. Možda je i uređaj povezan s lokalnom mrežom, ali nema veze s internetom.
-- **Vaš**/client/troubleshooting/connection-issues#Two[**zaštitni zid mreže blokira pristup**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[O](#FirewallIssues)utline serveru.**Ovo se često događa kada ste na javnoj mreži, npr. školskoj, poslovnoj ili besplatnoj bežičnoj mreži.
-- **Uređaj ima**/client/troubleshooting/connection-issues#Three[**zaštitni zid ili antivirusni softver**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**koji blokira pristup Outline serveru.**
+- **Prekinuta je**/client/troubleshooting/connection-issues#One [**veza uređaja s internetom**](#Internetissues)[#Internetissues](#Internetissues)**.**Ponekad će na vašem uređaju doći do prekida mrežne veze i može malo potrajati da se ažuriraju ikone mreže. Možda je i uređaj povezan s lokalnom mrežom, ali nema veze s internetom.
+- **Vaš**/client/troubleshooting/connection-issues#Two [**zaštitni zid mreže blokira pristup**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[O](#FirewallIssues)utline serveru.**Ovo se često događa kada ste na javnoj mreži, npr. školskoj, poslovnoj ili besplatnoj bežičnoj mreži.
+- **Uređaj ima**/client/troubleshooting/connection-issues#Three [**zaštitni zid ili antivirusni softver**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**koji blokira pristup Outline serveru.**
 - **Vaše**[**postavke telefona**](#DeviceSettings)**se možda trebaju promijeniti.**
 - **Vaš upravitelj usluge je možda**[**eliminirao server ili ISP blokira vaš zahtjev**](#ServerIssues) .
 
@@ -66,7 +66,7 @@ Provjerite da na Android uređaju nemate neku aplikaciju za preklapanje ekrana j
 
  Na Android uređaju idite u Postavke > Aplikacije > Poseban pristup aplikaciji. Zatim dodirnite opciju Prikaži preko drugih aplikacija. Možete ukloniti pristup svim aplikacijama koje dozvoljavaju ovakvo ponašanje.
 
- Za iOS: pročitajte[ovaj članak podrške](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
+ Za iOS: pročitajte [ovaj članak podrške](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
 ### Problemi sa serverom:
 
@@ -75,6 +75,6 @@ Ako imate pristup većem broju servera, pokušajte se povezati s nekim od njih.
 
 ### Trebate riješiti sljedeće:
 
-Obratite se upravitelju usluge da provjerite je li server eliminiran. Ako jeste, zatražite[pristupni ključ](/about/terminology) za drugi server.
+Obratite se upravitelju usluge da provjerite je li server eliminiran. Ako jeste, zatražite [pristupni ključ](/about/terminology) za drugi server.
 
-Ako ste vi postavili server, pokušajte se povezati s njim putem Outline Managera ili na neki drugi način, kao što je[SSH](https://en.wikipedia.org/wiki/Secure_Shell). Ako to ne funkcionira, pokušajte provjeriti konzolu pružaoca usluge oblaka, ako postoji, da provjerite je li server i dalje online.
+Ako ste vi postavili server, pokušajte se povezati s njim putem Outline Managera ili na neki drugi način, kao što je [SSH](https://en.wikipedia.org/wiki/Secure_Shell). Ako to ne funkcionira, pokušajte provjeriti konzolu pružaoca usluge oblaka, ako postoji, da provjerite je li server i dalje online.

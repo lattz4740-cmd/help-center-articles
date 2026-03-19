@@ -47,7 +47,7 @@ Za automatsko postavljanje na Google Cloudu upotrebljava se jedan [projekt Googl
 
 ## Račun za naplatu
 
-Za projekte na Google Cloudu potreban je povezani račun za naplatu na kojem su definirani podaci o plaćanju. Kada prvi put upotrijebite automatsko postavljanje Google Clouda, morat ćete navesti račun za naplatu koji ćete povezati sa svojim poslužiteljima Outlinea. Ponekad će poslužitelj prestati raditi jer postoji problem s računom za naplatu. U tom se slučaju trebate prijaviti na[Google Cloud Console](https://console.cloud.google.com/getting-started), pronaći projekt Google Clouda povezan s Outlineom (naziva Poslužitelji Outlinea) i ažurirati postavke naplate.
+Za projekte na Google Cloudu potreban je povezani račun za naplatu na kojem su definirani podaci o plaćanju. Kada prvi put upotrijebite automatsko postavljanje Google Clouda, morat ćete navesti račun za naplatu koji ćete povezati sa svojim poslužiteljima Outlinea. Ponekad će poslužitelj prestati raditi jer postoji problem s računom za naplatu. U tom se slučaju trebate prijaviti na [Google Cloud Console](https://console.cloud.google.com/getting-started), pronaći projekt Google Clouda povezan s Outlineom (naziva Poslužitelji Outlinea) i ažurirati postavke naplate.
 
 ## Uništavanje poslužitelja
 

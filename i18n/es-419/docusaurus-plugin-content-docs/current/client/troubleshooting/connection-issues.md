@@ -5,9 +5,9 @@ sidebar_label: "¿Por qué no puedo conectarme al servicio de Outline?"
 
 Existen algunos motivos por los que quizás no puedas conectarte al servicio de Outline. Por ejemplo:
 
-- **Tu dispositivo**/client/troubleshooting/connection-issues#One[**no está conectado a Internet**](#Internetissues)[#Internetissues](#Internetissues)**.**En ocasiones, tu dispositivo puede experimentar problemas de conexión de red y es posible que los íconos de red demoren un poco en actualizarse. También es posible que tu dispositivo esté conectado a la red local, pero que Internet no funcione.
-- **El**/client/troubleshooting/connection-issues#Two[**firewall de la red bloquea el acceso**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[a](#FirewallIssues)l servidor de Outline.**Este es un problema común si usas una red pública, como la de una institución educativa, la del trabajo o una red inalámbrica gratuita.
-- **El**/client/troubleshooting/connection-issues#Three[**firewall o software antivirus**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**de tu dispositivo bloquea el acceso al servidor de Outline.**
+- **Tu dispositivo**/client/troubleshooting/connection-issues#One [**no está conectado a Internet**](#Internetissues)[#Internetissues](#Internetissues)**.**En ocasiones, tu dispositivo puede experimentar problemas de conexión de red y es posible que los íconos de red demoren un poco en actualizarse. También es posible que tu dispositivo esté conectado a la red local, pero que Internet no funcione.
+- **El**/client/troubleshooting/connection-issues#Two [**firewall de la red bloquea el acceso**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[a](#FirewallIssues)l servidor de Outline.**Este es un problema común si usas una red pública, como la de una institución educativa, la del trabajo o una red inalámbrica gratuita.
+- **El**/client/troubleshooting/connection-issues#Three [**firewall o software antivirus**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**de tu dispositivo bloquea el acceso al servidor de Outline.**
 - **Es posible que la**[**configuración de dispositivo de tu teléfono**](#DeviceSettings)**requiera cambios.**
 - **El administrador del servicio puede haber**[**destruido el servidor, o tu ISP puede estar bloqueando tu solicitud**](#ServerIssues) .
 
@@ -66,7 +66,7 @@ Asegúrate de que no haya ninguna aplicación de pantalla superpuesta en tu disp
 
  En tu dispositivo Android, ve a Configuración > Apps > Acceso especial de apps. Luego, presiona “Mostrar sobre otras apps”. Puedes quitar el acceso a cualquier app que permita este comportamiento.
 
- Para iOS, consulta[este artículo de ayuda](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
+ Para iOS, consulta [este artículo de ayuda](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
 ### Problemas con el servidor:
 
@@ -75,6 +75,6 @@ Si tienes acceso a más de un servidor, intenta conectarte a otro.
 
 ### Aspectos que se deben corregir:
 
-Comunícate con el administrador del servicio para ver si se destruyó el servidor. Si es así, solicita una[clave de acceso](/about/terminology) para usar otro servidor.
+Comunícate con el administrador del servicio para ver si se destruyó el servidor. Si es así, solicita una [clave de acceso](/about/terminology) para usar otro servidor.
 
-Si configuraste el servidor, intenta conectarte a él por medio de Outline Manager o algún otro método, como[SSH](https://en.wikipedia.org/wiki/Secure_Shell). Si no funciona esa opción, puedes verificar la consola del proveedor de servicios en la nube (si hay una) para saber si el servidor sigue en línea.
+Si configuraste el servidor, intenta conectarte a él por medio de Outline Manager o algún otro método, como [SSH](https://en.wikipedia.org/wiki/Secure_Shell). Si no funciona esa opción, puedes verificar la consola del proveedor de servicios en la nube (si hay una) para saber si el servidor sigue en línea.

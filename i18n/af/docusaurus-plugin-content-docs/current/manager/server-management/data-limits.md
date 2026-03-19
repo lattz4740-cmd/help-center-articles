@@ -41,7 +41,7 @@ Om die datalimiet van ’n toegangsleutel te verwyder, moet jy soos vantevore na
  Nie op die oomblik nie. Baie wolkdiensverskaffers sluit ’n limiet in soos 1 TB vir die volle maand, wat 10 gebruikers teen 100 GB of 100 gebruikers teen 10 GB kan steun. Dit is redelike hoë hoeveelhede en ons verwag nie dat baie gebruikers daarby sal uitkom nie. Ons hoop dat gebruikers hul bedienerbestuurders sal kontak wanneer hulle hul limiete bereik. Ons sal egter jou insig waardeer oor hoe kennisgewings vir jou gebruikgeval kan help en jy kan ons [hier](/about/feedback) kontak.
 
 ## Sal gebruikers in kennis gestel word as hulle hul datalimiet nader?
- Die hoeveelheid nuwe data wat ’n gebruiker sal ontvang soos hulle nader aan hul limiet kom, sal van dag tot dag verander omdat dit gegrond is op hul gebruik van 30 dae gelede. Ons meen dat ’n waarskuwing eindgebruikers eerder sal verwar as wat dit hulle sal help. Ons sal jou terugvoer oor hierdie gedrag[hier](/about/feedback) waardeer.
+ Die hoeveelheid nuwe data wat ’n gebruiker sal ontvang soos hulle nader aan hul limiet kom, sal van dag tot dag verander omdat dit gegrond is op hul gebruik van 30 dae gelede. Ons meen dat ’n waarskuwing eindgebruikers eerder sal verwar as wat dit hulle sal help. Ons sal jou terugvoer oor hierdie gedrag [hier](/about/feedback) waardeer.
 
 ## Kan ek ’n gebruiker se datagebruik terugstel?
  Nee, ’n gebruiker se limiet sluit altyd die afgelope 30 dae se gebruik in. Jy kan egter hul sleutel se datalimiet verhoog of vir hulle ’n nuwe sleutel skep.
@@ -50,7 +50,7 @@ Om die datalimiet van ’n toegangsleutel te verwyder, moet jy soos vantevore na
  Datalimiete is gegrond op gebruikers se dataoordrag van die afgelope 30 dae, wat aangeteken word ongeag of datalimiete geaktiveer is of nie. Dit is moontlik dat die betrokke gebruikers reeds die limiet oorskry het voordat dit opgestel is. Neem ook kennis dat alle datalimiete afgedwing word, selfs wanneer ’n enkele sleutel se datalimiet verander word.
 
 ## Kan ek ’n bedienerwye datalimiet stel, soos “1 TB vir 30 dae”?
- Nie op die oomblik nie. Ons wil graag[hier](/about/feedback) meer hoor oor jou gebruikgeval hoor.
+ Nie op die oomblik nie. Ons wil graag [hier](/about/feedback) meer hoor oor jou gebruikgeval hoor.
 
 ## Watter limiet word afgedwing as daar ’n verstekdatalimiet én ’n datalimiet op ’n spesifieke sleutel is?
  Die spesifieke sleutel se datalimiet sal enige verstekdatalimiet wat jy gestel het (indien enige) ter syde stel.

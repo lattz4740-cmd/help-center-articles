@@ -39,11 +39,11 @@ Outline Manager krefst eftirfarandi heimilda frá Google-reikningnum þínum til
 
 ## Afturköllun heimilda
 
-Þú getur afturkallað aðgang Outline Manager að Google Cloud Platform með því að opna[Reikningurinn minn](https://myaccount.google.com/permissions). Ef þú afturkallar aðgang halda þjónar sem þú bjóst til með sjálfvirkri uppsetningu áfram að keyra en munu hætta að birtast í Outline Manager. Til að endurheimta aðgang að þeim skaltu einfaldlega tengjast Google Cloud Platform á ný með því að hefja sjálfvirka uppsetningarferlið.
+Þú getur afturkallað aðgang Outline Manager að Google Cloud Platform með því að opna [Reikningurinn minn](https://myaccount.google.com/permissions). Ef þú afturkallar aðgang halda þjónar sem þú bjóst til með sjálfvirkri uppsetningu áfram að keyra en munu hætta að birtast í Outline Manager. Til að endurheimta aðgang að þeim skaltu einfaldlega tengjast Google Cloud Platform á ný með því að hefja sjálfvirka uppsetningarferlið.
 
 ## Verkefnaskipulag Outline
 
-Sjálfvirk uppsetning Google Cloud notar stakt[Google Cloud-verkefni](https://cloud.google.com/resource-manager/docs/creating-managing-projects) til að flokka Outline-þjónana þína. Verkefnið er búið til við fyrstu notkun sjálfvirku uppsetningarinnar með tillögu að auðkenni verkefnis sem byrjar á „Outline-“ og endar á handahófsvalinni stafarunu. Þú getur valið annað auðkenni verkefnis þegar það er búið til ef þú vilt. Verkefnið fær heitið „Outline-þjónar“.
+Sjálfvirk uppsetning Google Cloud notar stakt [Google Cloud-verkefni](https://cloud.google.com/resource-manager/docs/creating-managing-projects) til að flokka Outline-þjónana þína. Verkefnið er búið til við fyrstu notkun sjálfvirku uppsetningarinnar með tillögu að auðkenni verkefnis sem byrjar á „Outline-“ og endar á handahófsvalinni stafarunu. Þú getur valið annað auðkenni verkefnis þegar það er búið til ef þú vilt. Verkefnið fær heitið „Outline-þjónar“.
 
 ## Greiðslureikningur
 

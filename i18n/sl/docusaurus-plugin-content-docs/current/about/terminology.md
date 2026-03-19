@@ -26,17 +26,17 @@ Strežnik boste nastavili v Upravitelju za Outline.
  Upravitelj storitev je oseba, ki je odgovorna za nastavljanje strežnika Outline in deljenje ključev za dostop z uporabniki. Upravitelj storitev je na splošno odgovoren za stroške uporabe strežnika. 
 
 ## Kaj je ključ za dostop? {#accesskey}
- Ključ za dostop se uporablja za dostop do obstoječega strežnika Outline in povezavo z omrežjem VPN. [Upravitelj storitev](#servicemanager) vam bo dal ključ za dostop, lahko pa tudi sami[nastavite strežnik Outline](/manager/server-setup/setup-server). Ključ za dostop je videti na primer tako (samo vzorec; ta ključ ne bo deloval): 
+ Ključ za dostop se uporablja za dostop do obstoječega strežnika Outline in povezavo z omrežjem VPN. [Upravitelj storitev](#servicemanager) vam bo dal ključ za dostop, lahko pa tudi sami [nastavite strežnik Outline](/manager/server-setup/setup-server). Ključ za dostop je videti na primer tako (samo vzorec; ta ključ ne bo deloval): 
 
  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1
 
 ## Kaj je Upravitelj za Outline?
- Upravitelj za Outline je aplikacija za namizne računalnike, s katero lahko upravitelj storitev nastavi strežnik Outline, ustvari [ključe za dostop](#accesskey) ter nastavi omejitve podatkov za posamezen ključ. Najnovejšo različico Upravitelja za Outline lahko prenesete[tukaj](https://getoutline.org/get-started/#step-3) ali[tukaj](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
+ Upravitelj za Outline je aplikacija za namizne računalnike, s katero lahko upravitelj storitev nastavi strežnik Outline, ustvari [ključe za dostop](#accesskey) ter nastavi omejitve podatkov za posamezen ključ. Najnovejšo različico Upravitelja za Outline lahko prenesete [tukaj](https://getoutline.org/get-started/#step-3) ali [tukaj](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
 
 ## Kaj je odjemalec za Outline?
- Odjemalec za Outline je aplikacija, ki je na voljo za namizne in mobilne naprave ter s katero se lahko povežete s strežnikom Outline in s ključem za dostop dostopate do strežnika VPN. Najnovejšo različico aplikacije odjemalca za Outline lahko prenesete[tukaj](https://getoutline.org/get-started/#step-3) ali[tukaj](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
+ Odjemalec za Outline je aplikacija, ki je na voljo za namizne in mobilne naprave ter s katero se lahko povežete s strežnikom Outline in s ključem za dostop dostopate do strežnika VPN. Najnovejšo različico aplikacije odjemalca za Outline lahko prenesete [tukaj](https://getoutline.org/get-started/#step-3) ali [tukaj](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
 
 ## Kaj so omejitve podatkov?
  Upravitelji storitev lahko z Upraviteljem za Outline za ključe za dostop nastavijo omejitev podatkov na podlagi 30-dnevnega obdobja spremljanja, da preprečijo prekomerno uporabo in lažje zagotovijo predvidljivost stroškov. Upravitelji storitev lahko nastavijo privzeto omejitev, ki velja za vsak ključ, poleg tega pa lahko za poljubni ključ nastavijo drugačno omejitev, s katero preglasijo privzeto. Ko je omejitev nastavljena, začne veljati takoj in se uveljavlja vsako uro.
 
-Če upravitelji storitev omogočijo deljenje meritev s podjetjem Jigsaw, morajo prebrati[pravilnik o zbiranju podatkov](/about/data-collection), kjer najdejo podrobnosti o tem, kako bo sistem poročal o uporabi omejitev podatkov.
+Če upravitelji storitev omogočijo deljenje meritev s podjetjem Jigsaw, morajo prebrati [pravilnik o zbiranju podatkov](/about/data-collection), kjer najdejo podrobnosti o tem, kako bo sistem poročal o uporabi omejitev podatkov.

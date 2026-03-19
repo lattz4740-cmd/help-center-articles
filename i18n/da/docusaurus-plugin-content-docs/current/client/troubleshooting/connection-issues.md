@@ -5,9 +5,9 @@ sidebar_label: "Hvorfor kan jeg ikke få forbindelse til Outline-tjenesten?"
 
 Der kan være nogle årsager til, at du muligvis ikke kan få forbindelse til Outline-tjenesten:
 
-- **Din enhed har**/client/troubleshooting/connection-issues#One[**ikke forbindelse til internettet**](#Internetissues)[#Internetissues](#Internetissues)**.**Nogle gange kan der forekomme afbrydelser af din enheds netværksforbindelse, og det kan tage et øjeblik, før netværksikonerne opdateres. Det er også muligt, at din enhed har forbindelse til det lokale netværk, men at internettet er nede.
-- **Din**/client/troubleshooting/connection-issues#Two[**netværksfirewall blokerer adgang**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[t](#FirewallIssues)il din Outline-server.**Det er normalt, hvis du bruger et offentligt netværk, f.eks. en skole, en arbejdsplads eller et gratis trådløst netværk.
-- **Din enhed har en**/client/troubleshooting/connection-issues#Three[**firewall eller antivirussoftware**](#SoftwareIssues),[#SoftwareIssues](#SoftwareIssues)**der blokerer adgangen til din Outline-server.**
+- **Din enhed har**/client/troubleshooting/connection-issues#One [**ikke forbindelse til internettet**](#Internetissues)[#Internetissues](#Internetissues)**.**Nogle gange kan der forekomme afbrydelser af din enheds netværksforbindelse, og det kan tage et øjeblik, før netværksikonerne opdateres. Det er også muligt, at din enhed har forbindelse til det lokale netværk, men at internettet er nede.
+- **Din**/client/troubleshooting/connection-issues#Two [**netværksfirewall blokerer adgang**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[t](#FirewallIssues)il din Outline-server.**Det er normalt, hvis du bruger et offentligt netværk, f.eks. en skole, en arbejdsplads eller et gratis trådløst netværk.
+- **Din enhed har en**/client/troubleshooting/connection-issues#Three [**firewall eller antivirussoftware**](#SoftwareIssues),[#SoftwareIssues](#SoftwareIssues)**der blokerer adgangen til din Outline-server.**
 - **Dine**[**indstillinger for telefonenhed**](#DeviceSettings)**skal muligvis ændres.**
 - **Administratoren af din tjeneste har muligvis**[**ødelagt serveren, eller din internetudbyder blokerer din anmodning**](#ServerIssues).
 
@@ -66,7 +66,7 @@ Sørg for, at du ikke har installeret en skærmoverlejret app på din Android-en
 
  På din Android-enhed skal du gå til > Apps > Særlig appadgang. Tryk derefter på "Vis oven på andre apps". Du kan fjerne adgang til eventuelle apps, som tillader skærmoverlejring.
 
- Til iOS: Læs[denne supportartikel](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
+ Til iOS: Læs [denne supportartikel](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
 ### Serverproblemer:
 
@@ -75,6 +75,6 @@ Hvis du har adgang til mere end én server, kan du prøve at oprette forbindelse
 
 ### Ting, der skal ordnes:
 
-Kontakt din tjenesteadministrator for at se, om serveren er ødelagt. I så fald kan du bede vedkommende om en[adgangsnøgle](/about/terminology) til en anden server.
+Kontakt din tjenesteadministrator for at se, om serveren er ødelagt. I så fald kan du bede vedkommende om en [adgangsnøgle](/about/terminology) til en anden server.
 
 Hvis du selv har konfigureret serveren, kan du prøve at oprette forbindelse til den via Outline Manager eller en anden metode, f.eks.[SSH](https://en.wikipedia.org/wiki/Secure_Shell). Hvis det stadig ikke virker, kan du prøve at tjekke skyudbyderens konsol, hvis en sådan findes, for at se, om serveren stadig er online.

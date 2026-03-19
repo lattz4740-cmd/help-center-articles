@@ -38,10 +38,10 @@ Para alisin ang limitasyon sa data sa isang access key, mag-navigate papunta sa 
  Kasama sa tally ang paglabas mula sa server ng bawat access key. Sa istriktong pakahulugan, ito ay ang data na ipinapadala sa ngalan ng key na mula sa server, at pati pabalik sa client. Sa aktwal na sitwasyon, dapat itong tumugma nang malapit sa trapikong ipinadala mula sa key patungo sa server at pabalik, kaya umaasa kaming tutugma ito sa bilang ng iyong mga user. Pinipili namin ang paglabas dahil iyon ang sinisingil ng mga cloud provider na na-survey namin.
 
 ## Aabisuhan ba ang mga user kapag lumampas sila sa limitasyon sa data?
- Hindi sa ngayon. Maraming cloud provider ang nagsasama ng limitasyong 1TB para sa buong buwan, na puwedeng sumuporta sa 10 user sa 100 GB o 100 user sa 10 GB. Ito ay malalaking numero, at hindi namin inaasahan na maraming user ang makakaabot dito. Umaasa kaming makikipag-ugnayan ang mga user sa mga server manager kapag umabot sila sa kanilang limitasyon. Gayunpaman, pahahalagahan namin ang iyong opinyon tungkol sa kung paano puwedeng makatulong ang mga notification para sa iyong sitwasyon ng paggamit, at puwede kang makipag-ugnayan sa amin[dito](/about/feedback).
+ Hindi sa ngayon. Maraming cloud provider ang nagsasama ng limitasyong 1TB para sa buong buwan, na puwedeng sumuporta sa 10 user sa 100 GB o 100 user sa 10 GB. Ito ay malalaking numero, at hindi namin inaasahan na maraming user ang makakaabot dito. Umaasa kaming makikipag-ugnayan ang mga user sa mga server manager kapag umabot sila sa kanilang limitasyon. Gayunpaman, pahahalagahan namin ang iyong opinyon tungkol sa kung paano puwedeng makatulong ang mga notification para sa iyong sitwasyon ng paggamit, at puwede kang makipag-ugnayan sa amin [dito](/about/feedback).
 
 ## Aabisuhan ba ang mga user kung malapit na sila sa kanilang limitasyon sa data?
- Ang dami ng bagong data na matatanggap ng isang user na malapit na sa kanyang limitasyon ay magbabago-bago araw-araw dahil nakabatay ito sa paggamit niya 30 araw ang nakalipas. Sa palagay namin, kaysa makatulong, mas malamang na makalito ang isang babala sa mga end user. Pahahalagahan namin ang iyong feedback sa ganitong gawi[rito](/about/feedback).
+ Ang dami ng bagong data na matatanggap ng isang user na malapit na sa kanyang limitasyon ay magbabago-bago araw-araw dahil nakabatay ito sa paggamit niya 30 araw ang nakalipas. Sa palagay namin, kaysa makatulong, mas malamang na makalito ang isang babala sa mga end user. Pahahalagahan namin ang iyong feedback sa ganitong gawi [rito](/about/feedback).
 
 ## Puwede ko bang i-reset ang paggamit ng data ng isang user?
  Hindi, palaging kasama sa limitasyon ng user ang paggamit ng data sa loob ng nakalipas na 30 araw. Gayunpaman, puwede mong taasan ang limitasyon sa data ng kanyang key o puwede kang gumawa ng bagong key para sa kanya.
@@ -50,7 +50,7 @@ Para alisin ang limitasyon sa data sa isang access key, mag-navigate papunta sa 
  Ang mga limitasyon sa data ay nakabatay sa paglilipat ng data ng mga user sa loob ng nakalipas na 30 araw, na nire-record naka-enable man o hindi ang mga limitasyon sa data. Posibleng nalampasan na ng mga naturang user ang limitasyon bago pa man ito ilapat. Tandaan ding ipinapatupad ang lahat ng limitasyon sa data, kahit kapag nagpapalit ng limitasyon sa data ng iisang key.
 
 ## Puwede ba akong magtakda ng limitasyon sa buong server, gaya ng “1 TB kada 30 araw?”
- Hindi sa ngayon. Gusto pa naming malaman ang tungkol sa iyong sitwasyon ng paggamit[dito](/about/feedback).
+ Hindi sa ngayon. Gusto pa naming malaman ang tungkol sa iyong sitwasyon ng paggamit [dito](/about/feedback).
 
 ## Kung may default na limitasyon sa data at may limitasyon sa data sa isang partikular na key, aling limitasyon ang ipapatupad?
  Io-override ng limitasyon sa data ng partikular na key ang kahit na anong default na limitasyon sa data (kung mayroon) na itinakda mo.

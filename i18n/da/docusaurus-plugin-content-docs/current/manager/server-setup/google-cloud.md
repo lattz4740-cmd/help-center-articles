@@ -39,7 +39,7 @@ Disse tilladelser giver os mulighed for at understøtte avanceret funktionalitet
 
 ## Tilbagekaldelse af tilladelser
 
-Du kan tilbagekalde adgangen til Google Cloud Platform for Outline Manager ved at gå til[Min konto](https://myaccount.google.com/permissions). Hvis du tilbagekalder adgangen, kører alle servere, du har oprettet med den automatiske konfiguration, stadig, men de vises ikke længere i Outline Manager. Hvis du vil genoprette adgangen til dem, skal du blot genoprette forbindelsen til Google Cloud Platform ved at påbegynde den automatiske konfigurationsproces.
+Du kan tilbagekalde adgangen til Google Cloud Platform for Outline Manager ved at gå til [Min konto](https://myaccount.google.com/permissions). Hvis du tilbagekalder adgangen, kører alle servere, du har oprettet med den automatiske konfiguration, stadig, men de vises ikke længere i Outline Manager. Hvis du vil genoprette adgangen til dem, skal du blot genoprette forbindelsen til Google Cloud Platform ved at påbegynde den automatiske konfigurationsproces.
 
 ## Organisation af Outline-projekt
 

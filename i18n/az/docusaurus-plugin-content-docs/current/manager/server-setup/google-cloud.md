@@ -5,7 +5,7 @@ sidebar_label: Google Cloud Avtomatlaşdırılmış Quraşdırma
 
 ## İcmal
 
-Outline Manager Google Cloud-da işləyən serverdə Outline Serverini avtomatik konfiqurasiya etməyə imkan verən funksiyaya malikdir. Bu funksiyadan istifadə etməyi seçsəniz, Outline Manager Google Hesabı ilə daxil olmağınızı tələb edəcək, bu isə Google Cloud Hesabını konfiqurasiya etmək məqsədilə Outline Manager-in yerli quraşdırılması üçün müəyyən[OAuth](https://developers.google.com/identity/protocols/oauth2) icazələri verəcək.
+Outline Manager Google Cloud-da işləyən serverdə Outline Serverini avtomatik konfiqurasiya etməyə imkan verən funksiyaya malikdir. Bu funksiyadan istifadə etməyi seçsəniz, Outline Manager Google Hesabı ilə daxil olmağınızı tələb edəcək, bu isə Google Cloud Hesabını konfiqurasiya etmək məqsədilə Outline Manager-in yerli quraşdırılması üçün müəyyən [OAuth](https://developers.google.com/identity/protocols/oauth2) icazələri verəcək.
 
  Bu icazələri vermək istəmirsinizsə, Outline-ı Google Cloud Platform-da işə salmaq üçün Outline Manager-dəki təkmil quraşdırma təlimatlarına əməl edə bilərsiniz.
 

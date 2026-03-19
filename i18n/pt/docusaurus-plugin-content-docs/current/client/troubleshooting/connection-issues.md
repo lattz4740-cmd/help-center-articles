@@ -5,9 +5,9 @@ sidebar_label: "Porque não consigo estabelecer ligação ao serviço do Outline
 
 Existem alguns motivos pelos quais pode não conseguir estabelecer ligação ao serviço do Outline:
 
-- **O seu dispositivo**/client/troubleshooting/connection-issues#One[**não está ligado à Internet**](#Internetissues)[#Internetissues](#Internetissues)**.**Por vezes, o dispositivo sofre interrupções na ligação de rede e pode demorar algum tempo a atualizar os ícones de rede. Também é possível que o dispositivo esteja ligado à rede local, mas a Internet esteja indisponível.
-- **A sua**/client/troubleshooting/connection-issues#Two[**firewall de rede está a bloquear o acesso**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)ao servidor do Outline.**Isto é comum se estiver a usar uma rede pública, como a rede da escola ou do trabalho, ou uma rede sem fios gratuita.
-- **O seu dispositivo tem um**/client/troubleshooting/connection-issues#Three[**software antivírus ou firewall**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**que está a bloquear o acesso ao servidor do Outline.**
+- **O seu dispositivo**/client/troubleshooting/connection-issues#One [**não está ligado à Internet**](#Internetissues)[#Internetissues](#Internetissues)**.**Por vezes, o dispositivo sofre interrupções na ligação de rede e pode demorar algum tempo a atualizar os ícones de rede. Também é possível que o dispositivo esteja ligado à rede local, mas a Internet esteja indisponível.
+- **A sua**/client/troubleshooting/connection-issues#Two [**firewall de rede está a bloquear o acesso**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)ao servidor do Outline.**Isto é comum se estiver a usar uma rede pública, como a rede da escola ou do trabalho, ou uma rede sem fios gratuita.
+- **O seu dispositivo tem um**/client/troubleshooting/connection-issues#Three [**software antivírus ou firewall**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**que está a bloquear o acesso ao servidor do Outline.**
 - **As**[**definições do dispositivo do seu telemóvel**](#DeviceSettings)**podem ter de ser alteradas.**
 - **O gestor do serviço pode ter**[**destruído o servidor ou o seu ISP pode estar a bloquear o pedido**](#ServerIssues).
 
@@ -66,7 +66,7 @@ Certifique-se de que não tem nenhuma aplicação de sobreposição de ecrã ins
 
  No dispositivo Android, aceda a Definições > Apps > Acesso especial para apps. A seguir, toque em "Sobrepor a outras apps". Pode remover o acesso às apps que permitem este comportamento.
 
- iOS: leia[este artigo do apoio técnico](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
+ iOS: leia [este artigo do apoio técnico](https://support.apple.com/guide/deployment/vpn-settings-overview-dep2d2adb35d/web).
 
 ### Problemas com o servidor:
 

@@ -38,10 +38,10 @@ To remove the data limit from an access key, navigate to the key's Data Limit di
  Each access key’s egress from the server is included in the tally. Strictly speaking this means data sent on the key’s behalf out of the server, as well as back to the client. Practically, this should closely align to the traffic sent from the key to the server and back, so we hope it will match your users’ tallies. We chose egress since that is what the cloud providers we surveyed bill for.
 
 ## Will users be notified if they’ve run over their data limit?
- Not at the moment. Many cloud providers include a limit such as 1TB for the whole month, which can support 10 users at 100 GB or 100 users at 10 GB. These are pretty big numbers, and we don’t expect many users will hit them. We hope that users will reach out to server managers when they hit their limit. However, we’d appreciate your insight into how notifications might help for your use case, and you can contact us[here](/about/feedback).
+ Not at the moment. Many cloud providers include a limit such as 1TB for the whole month, which can support 10 users at 100 GB or 100 users at 10 GB. These are pretty big numbers, and we don’t expect many users will hit them. We hope that users will reach out to server managers when they hit their limit. However, we’d appreciate your insight into how notifications might help for your use case, and you can contact us [here](/about/feedback).
 
 ## Will users be notified if they approach their data limit?
- The amount of new data that a user approaching their limit will receive will vary from day to day because it’s based on their use 30 days ago. We think a warning is more likely to confuse end users than to help them. We’d appreciate your feedback on this behavior[here](/about/feedback).
+ The amount of new data that a user approaching their limit will receive will vary from day to day because it’s based on their use 30 days ago. We think a warning is more likely to confuse end users than to help them. We’d appreciate your feedback on this behavior [here](/about/feedback).
 
 ## Can I reset a user’s data usage?
  No, a user’s limit always includes the past 30 days of data use. However, you can raise their key's data limit or create a new key for them.
@@ -50,7 +50,7 @@ To remove the data limit from an access key, navigate to the key's Data Limit di
  Data limits are based on users’ prior 30 days of data transfer, which is recorded whether or not data limits have been enabled. It’s possible that the users in question had already exceeded the limit before it was put in place. Also note that all data limits are enforced, even when changing a single key’s data limit.
 
 ## Can I set a server-wide limit, such as “1 TB per 30 days”?
- Not at the moment. We’d love to hear more about your use case[here](/about/feedback).
+ Not at the moment. We’d love to hear more about your use case [here](/about/feedback).
 
 ## If there’s a default data limit and a data limit on a specific key, which one will be enforced?
  The specific key's data limit will override whatever default data limit (if any) you have set.

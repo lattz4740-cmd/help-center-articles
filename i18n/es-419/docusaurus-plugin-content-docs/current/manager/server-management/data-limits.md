@@ -38,10 +38,10 @@ Si quieres quitar el límite de datos de una clave de acceso, navega hacia el di
  El registro incluye la salida del servidor de cada clave de acceso. En sentido estricto, son los datos que salen del servidor de parte de cada clave, así como la información que vuelve al cliente. En la práctica, esto debería alinearse estrechamente con el tráfico enviado desde la clave al servidor y viceversa, por lo que esperamos que coincida con los conteos de tus usuarios. Elegimos la salida porque es lo que facturan los proveedores de servicios en la nube que encuestamos.
 
 ## ¿Los usuarios recibirán una notificación si exceden su límite de datos?
- No por el momento. Muchos proveedores de servicios en la nube incluyen un límite, por ejemplo, 1 TB para todo el mes, que puede admitir 10 usuarios con 100 GB o 100 usuarios con 10 GB. Estas cantidades son bastante significativas, por lo que no esperamos que muchos usuarios alcancen los límites. Esperamos que los usuarios se comuniquen con los administradores del servidor cuando alcancen el límite correspondiente. Sin embargo, nos gustaría que nos envíes comentarios sobre cómo las notificaciones podrían ser útiles en tu caso de uso específico. Puedes comunicarte con nosotros[aquí](/about/feedback).
+ No por el momento. Muchos proveedores de servicios en la nube incluyen un límite, por ejemplo, 1 TB para todo el mes, que puede admitir 10 usuarios con 100 GB o 100 usuarios con 10 GB. Estas cantidades son bastante significativas, por lo que no esperamos que muchos usuarios alcancen los límites. Esperamos que los usuarios se comuniquen con los administradores del servidor cuando alcancen el límite correspondiente. Sin embargo, nos gustaría que nos envíes comentarios sobre cómo las notificaciones podrían ser útiles en tu caso de uso específico. Puedes comunicarte con nosotros [aquí](/about/feedback).
 
 ## ¿Los usuarios recibirán una notificación si se acercan al límite de datos?
- La cantidad de datos nuevos que recibirá un usuario que se acerque al límite variará de un día a otro, ya que se basa en su uso de hace 30 días. Creemos que, lejos de ayudarlos, es más probable que una advertencia confunda a los usuarios finales. Agradeceríamos que nos envíes tus comentarios sobre este comportamiento[aquí](/about/feedback).
+ La cantidad de datos nuevos que recibirá un usuario que se acerque al límite variará de un día a otro, ya que se basa en su uso de hace 30 días. Creemos que, lejos de ayudarlos, es más probable que una advertencia confunda a los usuarios finales. Agradeceríamos que nos envíes tus comentarios sobre este comportamiento [aquí](/about/feedback).
 
 ## ¿Puedo restablecer el uso de datos de un usuario?
  No. El límite de un usuario siempre incluye los últimos 30 días de uso de datos. Sin embargo, puedes aumentar el límite de datos de su clave o crearle una nueva.
@@ -50,7 +50,7 @@ Si quieres quitar el límite de datos de una clave de acceso, navega hacia el di
  Los límites de datos se basan en los 30 días anteriores a la transferencia de datos de los usuarios, lo cual se registra sin importar si los límites de datos están habilitados o no. Es posible que los usuarios en cuestión ya hayan excedido el límite antes de que se haya establecido. Ten en cuenta que se aplicarán todos los límites de datos, incluso cuando se cambie el de una sola clave.
 
 ## ¿Puedo establecer un límite para todo el servidor, como “1 TB por 30 días”?
- Por el momento, no. Nos gustaría que nos brindes más detalles sobre tu caso de uso[aquí](/about/feedback).
+ Por el momento, no. Nos gustaría que nos brindes más detalles sobre tu caso de uso [aquí](/about/feedback).
 
 ## Si hay un límite de datos predeterminado y otro para una clave específica, ¿cuál se aplicará?
  El límite de datos de la clave específica anulará cualquier límite de datos predeterminado que hayas establecido (si corresponde).

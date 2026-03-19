@@ -5,9 +5,9 @@ sidebar_label: "Hvorfor kan jeg ikke koble til Outline-tjenesten?"
 
 Det finnes flere grunner til at du kanskje ikke kan koble til Outline-tjenesten:
 
-- **Enheten din er**/client/troubleshooting/connection-issues#One[**koblet fra internett**](#Internetissues)[#Internetissues](#Internetissues)**.**Noen ganger kan nettverkstilkoblingen for enheten din bli brutt, og da kan det ta litt tid før nettverksikonene blir oppdatert. Det er også mulig at enheten din er koblet til det lokale nettverket, men at internett er nede.
-- /client/troubleshooting/connection-issues#Two[**Brannmuren for nettverket ditt blokkerer tilgangen**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)til Outline-tjeneren.**Dette er vanlig når du bruker et offentlig nettverk, for eksempel et skole- eller jobbnettverk eller et kostnadsfritt trådløst nettverk.
-- **Enheten har**/client/troubleshooting/connection-issues#Three[**en brannmur eller antivirusprogramvare**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**som blokkerer tilgangen til Outline-tjeneren.**
+- **Enheten din er**/client/troubleshooting/connection-issues#One [**koblet fra internett**](#Internetissues)[#Internetissues](#Internetissues)**.**Noen ganger kan nettverkstilkoblingen for enheten din bli brutt, og da kan det ta litt tid før nettverksikonene blir oppdatert. Det er også mulig at enheten din er koblet til det lokale nettverket, men at internett er nede.
+- /client/troubleshooting/connection-issues#Two [**Brannmuren for nettverket ditt blokkerer tilgangen**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)til Outline-tjeneren.**Dette er vanlig når du bruker et offentlig nettverk, for eksempel et skole- eller jobbnettverk eller et kostnadsfritt trådløst nettverk.
+- **Enheten har**/client/troubleshooting/connection-issues#Three [**en brannmur eller antivirusprogramvare**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**som blokkerer tilgangen til Outline-tjeneren.**
 - **Det er mulig at**[**innstillingene for telefonen**](#DeviceSettings)**må endres.**
 - **Tjenesteadministratoren din kan ha**[**slettet tjeneren, eller nettleverandøren din blokkerer forespørselen**](#ServerIssues).
 

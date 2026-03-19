@@ -26,17 +26,17 @@ Ise-set up mo ang iyong server sa Outline Manager.
  Ang isang manager ng serbisyo ay ang taong may tungkuling i-set up ang Outline server at i-share ang mga access key sa mga user. Ang manager ng serbisyo ang may pangkalahatang responsibilidad sa pagbabayad sa gastusin sa paggamit ng server. 
 
 ## Ano ang access key? {#accesskey}
- Gumagamit ng access key para mag-access ng dati nang Outline server at makakonekta sa VPN. May [manager ng serbisyo](#servicemanager) na magbibigay sa iyo ng access key o puwede kang[mag-set up ng Outline server](/manager/server-setup/setup-server) nang mag-isa. Narito ang isang halimbawa ng hitsura ng access key (sample lang; hindi gagana): 
+ Gumagamit ng access key para mag-access ng dati nang Outline server at makakonekta sa VPN. May [manager ng serbisyo](#servicemanager) na magbibigay sa iyo ng access key o puwede kang [mag-set up ng Outline server](/manager/server-setup/setup-server) nang mag-isa. Narito ang isang halimbawa ng hitsura ng access key (sample lang; hindi gagana): 
 
  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1
 
 ## Ano ang Outline Manager?
- Ang Outline Manager ay isang application sa desktop na nagbibigay-daan sa isang manager ng serbisyo na mag-set up ng Outline server, bumuo ng [mga access key](#accesskey), at magtakda ng mga limitasyon sa data sa paggamit kada key. Puwede mong i-download ang pinakabagong bersyon ng Outline Manager[dito](https://getoutline.org/get-started/#step-3) o[rito](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
+ Ang Outline Manager ay isang application sa desktop na nagbibigay-daan sa isang manager ng serbisyo na mag-set up ng Outline server, bumuo ng [mga access key](#accesskey), at magtakda ng mga limitasyon sa data sa paggamit kada key. Puwede mong i-download ang pinakabagong bersyon ng Outline Manager [dito](https://getoutline.org/get-started/#step-3) o [rito](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
 
 ## Ano ang Outline Client?
- Ang Outline Client ay isang application na available para sa desktop at mobile, na nagbibigay-daan sa iyo na kumonekta sa isang Outline server at i-access ang VPN gamit ang isang access key. Puwede mong i-download ang pinakabagong bersyon ng Outline Client[dito](https://getoutline.org/get-started/#step-3) o[rito](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
+ Ang Outline Client ay isang application na available para sa desktop at mobile, na nagbibigay-daan sa iyo na kumonekta sa isang Outline server at i-access ang VPN gamit ang isang access key. Puwede mong i-download ang pinakabagong bersyon ng Outline Client [dito](https://getoutline.org/get-started/#step-3) o [rito](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
 
 ## Ano ang mga limitasyon sa data?
  Ang Outline Manager ay nagbibigay-daan sa mga manager ng serbisyo na magtakda ng trailing na 30 araw na limitasyon sa data sa mga access key para maiwasan ang labis na paggamit at makatulong na panatilihing nahuhulaan ang mga gastusin. Ang mga manager ng serbisyo ay puwedeng magtakda ng default na limitasyon na nalalapat sa bawat key, at puwede rin silang magtakda ng iba't ibang limitasyon sa anumang key para i-override ang default na limitasyon. Kapag nakatakda na ang isang limitasyon, magkakabisa ito kaagad at oras-oras itong ipinapatupad.
 
-Kung mag-o-opt in ang mga manager ng serbisyo na mag-share ng mga sukatan sa Jigsaw, dapat nilang tingnan ang[patakaran sa pangongolekta ng data](/about/data-collection) para sa mga detalye tungkol sa kung paano iuulat ang paggamit ng mga limitasyon sa data.
+Kung mag-o-opt in ang mga manager ng serbisyo na mag-share ng mga sukatan sa Jigsaw, dapat nilang tingnan ang [patakaran sa pangongolekta ng data](/about/data-collection) para sa mga detalye tungkol sa kung paano iuulat ang paggamit ng mga limitasyon sa data.

@@ -5,7 +5,7 @@ sidebar_label: Google Cloud automatizēta iestatīšana
 
 ## Kopsavilkums
 
-Lietotnē Outline pārvaldnieks ir funkcija, kas Outline serveri ļauj automātiski konfigurēt serverī, kurš darbojas mākonī Google Cloud. Ja izvēlēsieties izmantot šo funkciju, lietotnē Outline pārvaldnieks jums tiks lūgts pierakstīties, izmantojot Google kontu, kas piešķirs noteiktas[OAuth](https://developers.google.com/identity/protocols/oauth2) atļaujas Outline pārvaldnieka lokālajai instalācijai, lai varētu konfigurēt jūsu Google Cloud kontu.
+Lietotnē Outline pārvaldnieks ir funkcija, kas Outline serveri ļauj automātiski konfigurēt serverī, kurš darbojas mākonī Google Cloud. Ja izvēlēsieties izmantot šo funkciju, lietotnē Outline pārvaldnieks jums tiks lūgts pierakstīties, izmantojot Google kontu, kas piešķirs noteiktas [OAuth](https://developers.google.com/identity/protocols/oauth2) atļaujas Outline pārvaldnieka lokālajai instalācijai, lai varētu konfigurēt jūsu Google Cloud kontu.
 
  Ja nevēlaties piešķirt šīs atļaujas, varat izpildīt papildu iestatīšanas norādījumus lietotnē Outline pārvaldnieks, lai programmatūru Outline palaistu pakalpojumā Google Cloud Platform.
 

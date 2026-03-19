@@ -28,17 +28,17 @@ You’ll set up your server in Outline Manager.
 
 ## What is an access key? {#accesskey}
 
- An access key is used to access an existing Outline server and connect to the VPN. A [service manager](#servicemanager) will give you an access key, or you can[set up an Outline server](/manager/server-setup/setup-server) yourself. Here is an example of what an access key looks like (sample only; will not work): 
+ An access key is used to access an existing Outline server and connect to the VPN. A [service manager](#servicemanager) will give you an access key, or you can [set up an Outline server](/manager/server-setup/setup-server) yourself. Here is an example of what an access key looks like (sample only; will not work): 
 
  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1
 
 ## What is Outline Manager?
- Outline Manager is a desktop application that allows a service manager to set up an Outline server, generate [access keys](#accesskey), and set data limits on usage per key. You can download the latest version of Outline Manager[here](https://getoutline.org/get-started/#step-3) or[here](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
+ Outline Manager is a desktop application that allows a service manager to set up an Outline server, generate [access keys](#accesskey), and set data limits on usage per key. You can download the latest version of Outline Manager [here](https://getoutline.org/get-started/#step-3) or [here](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
 
 ## What is Outline Client?
- Outline Client is an application, available for desktop and mobile, that allows you to connect to an Outline server and access the VPN using an access key. You can download the latest version of the Outline Client[here](https://getoutline.org/get-started/#step-3) or[here](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
+ Outline Client is an application, available for desktop and mobile, that allows you to connect to an Outline server and access the VPN using an access key. You can download the latest version of the Outline Client [here](https://getoutline.org/get-started/#step-3) or [here](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
 
 ## What are data limits?
  Outline Manager allows service managers to set a trailing 30-day data limit on access keys to prevent overuse and help keep costs predictable. Service managers can set a default limit that applies to every key, and also set a different limit on any key to override the default limit. Once a limit is set, it goes into effect immediately and is enforced hourly.
 
-If service managers opt in to share metrics with Jigsaw, they should view the[data collection policy](/about/data-collection) for details on how the use of data limits will be reported.
+If service managers opt in to share metrics with Jigsaw, they should view the [data collection policy](/about/data-collection) for details on how the use of data limits will be reported.

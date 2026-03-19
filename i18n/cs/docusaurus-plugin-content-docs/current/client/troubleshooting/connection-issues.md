@@ -5,9 +5,9 @@ sidebar_label: "Proč se nemůžu připojit ke službě Outline?"
 
 Když se vám nedaří připojit ke službě Outline, může to mít několik důvodů:
 
-- **Vaše zařízení**/client/troubleshooting/connection-issues#One[**není připojené k internetu**](#Internetissues)[#Internetissues](#Internetissues)**.**Zařízení se někdy může krátkodobě odpojit od sítě a může chvíli trvat, než se síťové ikony aktualizují. Také je možné, že zařízení je připojené k místní síti, ale nefunguje internet.
-- **Přístup**/client/troubleshooting/connection-issues#Two[**k serveru Outline blokuje síťový firewall**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues).**To je časté, když používáte veřejnou síť (třeba ve škole nebo v práci), případně bezplatnou bezdrátovou síť.
-- **Vaše zařízení má**/client/troubleshooting/connection-issues#Three[**firewall nebo antivirový software**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**, který blokuje přístup k vašemu serveru Outline.**
+- **Vaše zařízení**/client/troubleshooting/connection-issues#One [**není připojené k internetu**](#Internetissues)[#Internetissues](#Internetissues)**.**Zařízení se někdy může krátkodobě odpojit od sítě a může chvíli trvat, než se síťové ikony aktualizují. Také je možné, že zařízení je připojené k místní síti, ale nefunguje internet.
+- **Přístup**/client/troubleshooting/connection-issues#Two [**k serveru Outline blokuje síťový firewall**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues).**To je časté, když používáte veřejnou síť (třeba ve škole nebo v práci), případně bezplatnou bezdrátovou síť.
+- **Vaše zařízení má**/client/troubleshooting/connection-issues#Three [**firewall nebo antivirový software**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**, který blokuje přístup k vašemu serveru Outline.**
 - **Vaše**[**nastavení telefonu**](#DeviceSettings)**je možná potřeba změnit.**
 - **Váš správce služeb mohl**[**server zničit, případně může váš požadavek blokovat poskytovatel internetu**](#ServerIssues).
 

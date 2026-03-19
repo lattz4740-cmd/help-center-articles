@@ -31,10 +31,10 @@ Voit ottaa palvelimen käyttöön Outline Managerin kautta.
  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1
 
 ## Mikä Outline Manager on?
- Outline Manager on työpöytäsovellus, jonka avulla palvelun ylläpitäjä voi ottaa Outline-palvelimen käyttöön, luoda [pääsyavaimia](#accesskey) ja asettaa avainkohtaisen datarajan. Voit ladata Outline Managerin uusimman version[tästä](https://getoutline.org/get-started/#step-3) tai[tästä](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
+ Outline Manager on työpöytäsovellus, jonka avulla palvelun ylläpitäjä voi ottaa Outline-palvelimen käyttöön, luoda [pääsyavaimia](#accesskey) ja asettaa avainkohtaisen datarajan. Voit ladata Outline Managerin uusimman version [tästä](https://getoutline.org/get-started/#step-3) tai [tästä](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
 
 ## Mikä Outline-asiakassovellus on?
- Outline-asiakassovellus on tietokoneille ja mobiililaitteille saatavilla oleva sovellus, jonka kautta voit yhdistää Outline-palvelimeen ja VPN:ään pääsyavaimen avulla. Voit ladata Outline-asiakassovelluksen uusimman version[tästä](https://getoutline.org/get-started/#step-3) tai[tästä](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
+ Outline-asiakassovellus on tietokoneille ja mobiililaitteille saatavilla oleva sovellus, jonka kautta voit yhdistää Outline-palvelimeen ja VPN:ään pääsyavaimen avulla. Voit ladata Outline-asiakassovelluksen uusimman version [tästä](https://getoutline.org/get-started/#step-3) tai [tästä](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
 
 ## Mitä datarajat ovat?
  Outline Managerin avulla palvelun ylläpitäjä voi asettaa pääsyavaimille 30 päivän palautuvan datarajan, jotta käyttö ja kustannukset pysyvät kurissa. Palvelun ylläpitäjä voi asettaa kaikkia avaimia koskevan oletusrajan tai oletusrajasta poikkeavan rajan yksittäisille avaimille. Rajan muutokset ovat voimassa heti. Datankäyttö tarkistetaan tunneittain.

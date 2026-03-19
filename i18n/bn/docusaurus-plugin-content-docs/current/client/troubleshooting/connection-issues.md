@@ -5,9 +5,9 @@ sidebar_label: "Outline পরিষেবার সাথে আমি কে�
 
 Outline পরিষেবার সাথে কানেক্ট না করতে পারার জন্য কয়েকটি কারণ থাকতে পারে:
 
-- **আপনার ডিভাইসের**/client/troubleshooting/connection-issues#One[**ইন্টারনেট কানেকশন কাজ করছে না**](#Internetissues)[#Internetissues](#Internetissues)**.**কখনও কখনও আপনার ডিভাইসের নেটওয়ার্ক কানেকশন কাজ করে না এবং 'নেটওয়ার্ক' আইকন আপডেট করতে কয়েক মুহূর্ত সময় লাগতে পারে। এছাড়া, এমনও হতে পারে যে আপনার ডিভাইস লোকাল নেটওয়ার্কের সাথে যুক্ত আছে, কিন্তু ইন্টারনেট কাজ করছে না।
-- **আপনার**/client/troubleshooting/connection-issues#Two[**নেটওয়ার্ক ফায়ারওয়াল Outline সার্ভারের**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[অ্যাক্সেস](#FirewallIssues) ব্লক করছে।**স্কুল, অফিস বা ফ্রি ওয়্যারলেস নেটওয়ার্কের মতো পাবলিক নেটওয়ার্ক ব্যবহার করলে, এমন ঘটনা প্রায়ই ঘটে থাকে।
-- **আপনার ডিভাইসে একটি**/client/troubleshooting/connection-issues#Three[**ফায়ারওয়াল বা অ্যান্টিভাইরাস সফ্টওয়্যার সংক্রান্ত সমস্যা**](#SoftwareIssues) আছে[#SoftwareIssues](#SoftwareIssues)**যেটি Outline সার্ভারে আপনার অ্যাক্সেস ব্লক করে।**
+- **আপনার ডিভাইসের**/client/troubleshooting/connection-issues#One [**ইন্টারনেট কানেকশন কাজ করছে না**](#Internetissues)[#Internetissues](#Internetissues)**.**কখনও কখনও আপনার ডিভাইসের নেটওয়ার্ক কানেকশন কাজ করে না এবং 'নেটওয়ার্ক' আইকন আপডেট করতে কয়েক মুহূর্ত সময় লাগতে পারে। এছাড়া, এমনও হতে পারে যে আপনার ডিভাইস লোকাল নেটওয়ার্কের সাথে যুক্ত আছে, কিন্তু ইন্টারনেট কাজ করছে না।
+- **আপনার**/client/troubleshooting/connection-issues#Two [**নেটওয়ার্ক ফায়ারওয়াল Outline সার্ভারের**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[অ্যাক্সেস](#FirewallIssues) ব্লক করছে।**স্কুল, অফিস বা ফ্রি ওয়্যারলেস নেটওয়ার্কের মতো পাবলিক নেটওয়ার্ক ব্যবহার করলে, এমন ঘটনা প্রায়ই ঘটে থাকে।
+- **আপনার ডিভাইসে একটি**/client/troubleshooting/connection-issues#Three [**ফায়ারওয়াল বা অ্যান্টিভাইরাস সফ্টওয়্যার সংক্রান্ত সমস্যা**](#SoftwareIssues) আছে[#SoftwareIssues](#SoftwareIssues)**যেটি Outline সার্ভারে আপনার অ্যাক্সেস ব্লক করে।**
 - **আপনার**[**ফোন ডিভাইসের সেটিংসে**](#DeviceSettings)**কোনও পরিবর্তন নাও করতে হতে পারে।**
 - **আপনার পরিষেবা ম্যানেজার**[**সার্ভার নষ্ট করে দিতে পারেন অথবা ISP আপনার অনুরোধ ব্লক করতে পারে**](#ServerIssues) ।
 

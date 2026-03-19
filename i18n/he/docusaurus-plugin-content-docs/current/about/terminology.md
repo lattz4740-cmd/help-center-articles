@@ -31,10 +31,10 @@ sidebar_label: הסבר על המונח
  ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1eXhUQ3MzemVEMTk=@XXX.XXX.4.1:39485/?outline=1
 
 ## מהו Outline Manager?
- ‫Outline Manager היא אפליקציה למחשב שמאפשרת למנהל השירות להגדיר שרת Outline, ליצור [מפתחות גישה](#accesskey) ולהגדיר מגבלות נתונים לשימוש בכל מפתח. אפשר להוריד את הגרסה העדכנית של Outline Manager[כאן](https://getoutline.org/get-started/#step-3) או[כאן](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
+ ‫Outline Manager היא אפליקציה למחשב שמאפשרת למנהל השירות להגדיר שרת Outline, ליצור [מפתחות גישה](#accesskey) ולהגדיר מגבלות נתונים לשימוש בכל מפתח. אפשר להוריד את הגרסה העדכנית של Outline Manager [כאן](https://getoutline.org/get-started/#step-3) או[כאן](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
 
 ## מהי אפליקציית הלקוח של Outline?
- אפליקציית הלקוח של Outline היא אפליקציה שזמינה למחשבים ולמכשירים ניידים ומאפשרת לכם להתחבר לשרת Outline ולקבל גישה ל-VPN באמצעות מפתח גישה. אפשר להוריד את הגרסה העדכנית של אפליקציית הלקוח של Outline[כאן](https://getoutline.org/get-started/#step-3) או[כאן](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
+ אפליקציית הלקוח של Outline היא אפליקציה שזמינה למחשבים ולמכשירים ניידים ומאפשרת לכם להתחבר לשרת Outline ולקבל גישה ל-VPN באמצעות מפתח גישה. אפשר להוריד את הגרסה העדכנית של אפליקציית הלקוח של Outline [כאן](https://getoutline.org/get-started/#step-3) או[כאן](https://www.reddit.com/r/outlinevpn/wiki/index/download_links/).
 
 ## מהן מגבלות נתונים?
  ‫Outline Manager מאפשר למנהלי שירות להגדיר מגבלה מתגלגלת ל-30 ימים למפתחות הגישה, כדי למנוע שימוש יתר וכדי שיהיה אפשר לתכנן את העלויות. מנהלי שירות יכולים להגדיר מגבלת ברירת מחדל שתחול על כל המפתחות, וגם להגדיר מגבלה שונה למפתח מסוים, במקום המגבלה שהוגדרה כברירת מחדל. אחרי שמגדירים את המגבלה, היא נכנסת לתוקף מיד, ומתעדכנת כל שעה.
