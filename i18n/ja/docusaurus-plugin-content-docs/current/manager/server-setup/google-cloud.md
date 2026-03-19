@@ -1,7 +1,9 @@
 ---
-title: 概要
-sidebar_label: 概要
+title: "Google Cloud 自動セットアップ"
+sidebar_label: "Google Cloud 自動セットアップ"
 ---
+
+## 概要
 
 Outline マネージャーには、Google Cloud で実行しているサーバー上に Outline サーバーを自動でセットアップする機能があります。この機能を使用する場合は、Google アカウントを使用してログインするよう Outline マネージャーから要求されます。Google アカウントでログインすると、ローカルの Outline マネージャーに特定の [OAuth](https://developers.google.com/identity/protocols/oauth2) 権限が付与され、お客様の Google Cloud アカウントを設定できるようになります。
 

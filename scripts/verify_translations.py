@@ -82,6 +82,16 @@ KNOWN_LINK_COUNT_DIFF_DOCS: set[str] = {
     "manager/server-management/data-limits",  # Extra link
 }
 
+# Known heading structure differences where translators intentionally
+# organized content differently. Format: (locale, doc_path)
+KNOWN_HEADING_DIFFS: set[tuple[str, str]] = {
+    # google-cloud: translators added extra heading splitting "Additional access"
+    ("es", "manager/server-setup/google-cloud"),
+    ("tr", "manager/server-setup/google-cloud"),
+    ("zh-Hans", "manager/server-setup/google-cloud"),
+    ("zh-Hant", "manager/server-setup/google-cloud"),
+}
+
 # Threshold for content parity warnings. If the translation's non-code
 # content is less than this fraction of the English content length, flag it.
 CONTENT_PARITY_THRESHOLD = 0.40
@@ -392,11 +402,12 @@ def verify_locale(locale: str, english_paths: set[str]) -> list[Issue]:
         en_levels = extract_heading_levels(en_text)
         tr_levels = extract_heading_levels(tr_text)
         if en_levels != tr_levels:
-            issues.append(Issue(
-                locale, doc_path, "HEADING_STRUCTURE",
-                f"Heading levels differ: English={en_levels}, "
-                f"translation={tr_levels}"
-            ))
+            if (locale, doc_path) not in KNOWN_HEADING_DIFFS:
+                issues.append(Issue(
+                    locale, doc_path, "HEADING_STRUCTURE",
+                    f"Heading levels differ: English={en_levels}, "
+                    f"translation={tr_levels}"
+                ))
 
         # Bold-only lines that should be headings: translations should not
         # have standalone **bold** lines if English doesn't

@@ -1,7 +1,9 @@
 ---
-title: Visão geral
-sidebar_label: Visão geral
+title: "Configuração automatizada do Google Cloud"
+sidebar_label: "Configuração automatizada do Google Cloud"
 ---
+
+## Visão geral
 
 O Outline Manager inclui um recurso que permite configurar automaticamente o servidor do Outline em um servidor em execução no Google Cloud. Se você usar esse recurso, o Outline Manager pedirá que faça login com sua Conta do Google, o que concederá determinadas permissões [OAuth](https://developers.google.com/identity/protocols/oauth2) à instalação local do Outline Manager para configurar sua conta do Google Cloud.
 
