@@ -5,9 +5,9 @@ sidebar_label: "Nəyə görə Outline xidmətinə qoşula bilmirəm?"
 
 Outline xidmətinə qoşula bilməməyinizin bir neçə səbəbi ola bilər:
 
-- **Cihazınızın**/client/troubleshooting/connection-issues#One [**internet bağlantısı kəsilib**](#Internetissues)[#Internetissues](#Internetissues)**.**Bəzən cihazın şəbəkə bağlantısında fasilə yarana bilər və şəbəkə ikonlarının yenilənməsi bir qədər vaxt apara bilər. Ola bilər ki, cihaz yerli şəbəkəyə qoşulub, lakin internet işləmir.
-- **Sizin**/client/troubleshooting/connection-issues#Two [**şəbəkənizin qoruyucu divarı girişi bloklayır**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[#FirewallIssues](#FirewallIssues)və Outline serverinə daxil ola bilmirsiniz.**Məktəb, iş kimi ümumi şəbəkə və ya ödənişsiz simsiz şəbəkədən istifadə edirsinizsə, bu geniş yayılmış haldır.
-- **Cihazınızda**/client/troubleshooting/connection-issues#Three [**qoruyucu və ya antivirus proqram təminatı**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**var və onlar Outline serverinizə girişi bloklayır.**
+- **Cihazınızın**[**internet bağlantısı kəsilib**](#Internetissues)**.**Bəzən cihazın şəbəkə bağlantısında fasilə yarana bilər və şəbəkə ikonlarının yenilənməsi bir qədər vaxt apara bilər. Ola bilər ki, cihaz yerli şəbəkəyə qoşulub, lakin internet işləmir.
+- **Sizin**[**şəbəkənizin qoruyucu divarı girişi bloklayır**](#FirewallIssues)**və Outline serverinə daxil ola bilmirsiniz.**Məktəb, iş kimi ümumi şəbəkə və ya ödənişsiz simsiz şəbəkədən istifadə edirsinizsə, bu geniş yayılmış haldır.
+- **Cihazınızda**[**qoruyucu və ya antivirus proqram təminatı**](#SoftwareIssues)**var və onlar Outline serverinizə girişi bloklayır.**
 - **Sizin**[**telefon cihazı ayarlarınız**](#DeviceSettings)**dəyişdirilməli ola bilər.**
 - **Xidmət meneceriniz**[**serverinizi yox etmiş və ya ISP sorğunuzu bloklamış ola bilər**](#ServerIssues) .
 

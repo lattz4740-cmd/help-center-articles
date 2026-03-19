@@ -5,9 +5,9 @@ sidebar_label: "Per què no em puc connectar al servei d'Outline?"
 
 Hi ha uns quants motius pels quals és possible que no puguis connectar-te al servei d'Outline:
 
-- **El dispositiu està**/client/troubleshooting/connection-issues#One [**desconnectat d'Internet**](#Internetissues)[#Internetissues](#Internetissues)**.**De vegades, el dispositiu experimenta una interrupció a la connexió de xarxa i pot ser que tardi un moment a actualitzar les icones de la xarxa. També pot ser que estigui connectat a la xarxa local, però no a Internet.
-- **El teu**/client/troubleshooting/connection-issues#Two [**tallafoc de xarxa està bloquejant l'accés**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[al](#FirewallIssues) servidor d'Outline.**Això és habitual si fas servir una xarxa pública, com ara la d'un centre educatiu, la de la feina o una xarxa sense fil gratuïta.
-- **El dispositiu té un**/client/troubleshooting/connection-issues#Three [**tallafoc o un programari antivirus**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**que està bloquejant l'accés al servidor d'Outline.**
+- **El dispositiu està**[**desconnectat d'Internet**](#Internetissues)**.**De vegades, el dispositiu experimenta una interrupció a la connexió de xarxa i pot ser que tardi un moment a actualitzar les icones de la xarxa. També pot ser que estigui connectat a la xarxa local, però no a Internet.
+- **El teu**[**tallafoc de xarxa està bloquejant l'accés**](#FirewallIssues)**al servidor d'Outline.**Això és habitual si fas servir una xarxa pública, com ara la d'un centre educatiu, la de la feina o una xarxa sense fil gratuïta.
+- **El dispositiu té un**[**tallafoc o un programari antivirus**](#SoftwareIssues)**que està bloquejant l'accés al servidor d'Outline.**
 - **És possible que hagis de canviar la**[**configuració del teu dispositiu de telèfon**](#DeviceSettings)**.**
 - **Pot ser que el gestor del servei hagi**[**destruït el servidor o que el proveïdor d'Internet estigui bloquejant la teva sol·licitud**](#ServerIssues).
 

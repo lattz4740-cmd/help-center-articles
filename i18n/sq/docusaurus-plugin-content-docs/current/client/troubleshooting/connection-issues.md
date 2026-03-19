@@ -5,9 +5,9 @@ sidebar_label: "Pse nuk mund të lidhem me shërbimin e Outline?"
 
 Ka disa arsye pse mund të mos arrish të lidhesh me shërbimin e Outline:
 
-- **Pajisja jote është**/client/troubleshooting/connection-issues#One [**shkëputur nga interneti**](#Internetissues)[#Internetissues](#Internetissues)**.**Ndonjëherë pajisja jote do të pësojë shkëputje të lidhjes së rrjetit dhe mund të duhet pak kohë që të përditësojë ikonat e rrjetit. Mund të ndodhë po ashtu që pajisja jote të jetë e lidhur me rrjetin lokal, por interneti nuk funksionon.
-- /client/troubleshooting/connection-issues#Two [**Muri mbrojtës i rrjetit po bllokon qasjen**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[n](#FirewallIssues)ë serverin tënd të Outline.**Kjo është diçka e zakonshme nëse po përdor një rrjet publik, si p.sh. rrjetin e shkollës, të punës ose një rrjet falas wireless.
-- **Pajisja jote ka një**/client/troubleshooting/connection-issues#Three [**mur mbrojtës ose softuer antivirus**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**që po bllokon qasjen në serverin tënd të Outline.**
+- **Pajisja jote është**[**shkëputur nga interneti**](#Internetissues)**.**Ndonjëherë pajisja jote do të pësojë shkëputje të lidhjes së rrjetit dhe mund të duhet pak kohë që të përditësojë ikonat e rrjetit. Mund të ndodhë po ashtu që pajisja jote të jetë e lidhur me rrjetin lokal, por interneti nuk funksionon.
+- [**Muri mbrojtës i rrjetit po bllokon qasjen**](#FirewallIssues)**në serverin tënd të Outline.**Kjo është diçka e zakonshme nëse po përdor një rrjet publik, si p.sh. rrjetin e shkollës, të punës ose një rrjet falas wireless.
+- **Pajisja jote ka një**[**mur mbrojtës ose softuer antivirus**](#SoftwareIssues)**që po bllokon qasjen në serverin tënd të Outline.**
 - **Mund të nevojitet që**[**cilësimet e pajisjes sate celulare**](#DeviceSettings)**të ndryshohen.**
 - **Menaxheri yt i shërbimit mund të ketë**[**shkatërruar serverin ose ofruesi i shërbimit të internetit mund të ketë bllokuar kërkesën tënde**](#ServerIssues) .
 

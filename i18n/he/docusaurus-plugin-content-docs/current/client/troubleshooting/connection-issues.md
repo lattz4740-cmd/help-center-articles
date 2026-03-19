@@ -5,9 +5,9 @@ sidebar_label: "למה לא הצלחתי להתחבר לשירות Outline?"
 
 ## אם לא הצלחתם להתחבר לשירות Outline, יכולות להיות לכך כמה סיבות: {#Internetissues}
 
-- **המכשיר שלכם**/client/troubleshooting/connection-issues#One [**לא מחובר לאינטרנט**](#Internetissues).[#Internetissues](#Internetissues)לפעמים המכשיר מתנתק באופן זמני מהרשת, אבל סמל החיבור לאינטרנט עדיין לא מראה את זה. יכול להיות גם שהמכשיר מחובר לרשת המקומית, אבל הרשת עצמה לא מחוברת לאינטרנט.
-- **חומת האש**/client/troubleshooting/connection-issues#Two [**בין רשתות חוסמת את הגישה**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[לשרת](#FirewallIssues) של Outline.**זה בדרך כלל קורה כשמשתמשים ברשת ציבורית, כמו הרשת של בית הספר או מקום העבודה, או רשת אלחוטית חינמית.
-- **במכשיר יש**/client/troubleshooting/connection-issues#Three [**חומת אש או תוכנת אנטי-וירוס**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**שחוסמות את הגישה לשרת של Outline.**
+- **המכשיר שלכם**[**לא מחובר לאינטרנט**](#Internetissues).#Internetissuesלפעמים המכשיר מתנתק באופן זמני מהרשת, אבל סמל החיבור לאינטרנט עדיין לא מראה את זה. יכול להיות גם שהמכשיר מחובר לרשת המקומית, אבל הרשת עצמה לא מחוברת לאינטרנט.
+- **חומת האש**[**בין רשתות חוסמת את הגישה**](#FirewallIssues)#FirewallIssues**לשרת של Outline.**זה בדרך כלל קורה כשמשתמשים ברשת ציבורית, כמו הרשת של בית הספר או מקום העבודה, או רשת אלחוטית חינמית.
+- **במכשיר יש**[**חומת אש או תוכנת אנטי-וירוס**](#SoftwareIssues)#SoftwareIssues**שחוסמות את הגישה לשרת של Outline.**
 - **ה**[**הגדרות של מכשיר הטלפון**](#DeviceSettings):**יכול להיות שצריך לשנות אותן.**
 - ‫**יכול להיות שמנהל השירות**[**הסיר את השרת או שספק האינטרנט (ISP) חוסם את הבקשה**](#ServerIssues).
 

@@ -5,9 +5,9 @@ sidebar_label: "Varför går det inte att ansluta till Outline-tjänsten?"
 
 Att du inte kan ansluta till Outline-tjänsten kan bero på några olika anledningar:
 
-- **Enheten är**/client/troubleshooting/connection-issues#One [**inte ansluten till internet**](#Internetissues)[#Internetissues](#Internetissues)**.**Ibland förlorar enheten kontakten med nätverket och det kan ta en stund innan den har uppdaterat nätverksikonerna. Det är också möjligt att enheten är ansluten till det lokala nätverket men att internetanslutningen är nere.
-- **Nätverkets**/client/troubleshooting/connection-issues#Two [**brandvägg blockerar åtkomsten**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[t](#FirewallIssues)ill Outline-servern.**Det händer ofta när man använder offentliga nätverk på till exempel skolor och arbetsplatser, eller kostnadsfria trådlösa nätverk.
-- **Enheten har en**/client/troubleshooting/connection-issues#Three [**brandvägg eller ett antivirusprogram**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**som blockerar åtkomsten till Outline-servern.**
+- **Enheten är**[**inte ansluten till internet**](#Internetissues)**.**Ibland förlorar enheten kontakten med nätverket och det kan ta en stund innan den har uppdaterat nätverksikonerna. Det är också möjligt att enheten är ansluten till det lokala nätverket men att internetanslutningen är nere.
+- **Nätverkets**[**brandvägg blockerar åtkomsten**](#FirewallIssues)**till Outline-servern.**Det händer ofta när man använder offentliga nätverk på till exempel skolor och arbetsplatser, eller kostnadsfria trådlösa nätverk.
+- **Enheten har en**[**brandvägg eller ett antivirusprogram**](#SoftwareIssues)**som blockerar åtkomsten till Outline-servern.**
 - **Dina**[**telefoninställningar**](#DeviceSettings)**kan behöva ändras.**
 - **Tjänstansvarig kan ha**[**förstört servern, eller så kanske din begäran blockeras av internetleverantören**](#ServerIssues).
 

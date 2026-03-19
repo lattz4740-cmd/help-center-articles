@@ -5,9 +5,9 @@ sidebar_label: "Mengapa saya tidak dapat terhubung ke layanan Outline?"
 
 Ada beberapa kemungkinan alasan Anda tidak dapat terhubung ke layanan Outline:
 
-- **Perangkat Anda**/client/troubleshooting/connection-issues#One [**terputus dari internet**](#Internetissues)[#Internetissues](#Internetissues)**.**Terkadang perangkat akan mengalami gangguan pada koneksi jaringan dan mungkin perlu beberapa saat untuk memperbarui ikon jaringan. Mungkin juga bahwa perangkat Anda terhubung ke jaringan lokal, tetapi internet sedang tidak aktif.
-- **Firewall**/client/troubleshooting/connection-issues#Two [**jaringan Anda memblokir akses**](#FirewallIssues)[#FirewallIssues](#FirewallIssues)**[ke](#FirewallIssues) server Outline.**Hal ini umum terjadi jika Anda menggunakan jaringan publik, seperti jaringan nirkabel gratis, kantor, atau sekolah.
-- **Perangkat Anda memiliki**/client/troubleshooting/connection-issues#Three [**software antivirus atau firewall**](#SoftwareIssues)[#SoftwareIssues](#SoftwareIssues)**yang memblokir akses ke server Outline Anda.**
+- **Perangkat Anda**[**terputus dari internet**](#Internetissues)**.**Terkadang perangkat akan mengalami gangguan pada koneksi jaringan dan mungkin perlu beberapa saat untuk memperbarui ikon jaringan. Mungkin juga bahwa perangkat Anda terhubung ke jaringan lokal, tetapi internet sedang tidak aktif.
+- **Firewall**[**jaringan Anda memblokir akses**](#FirewallIssues)**ke server Outline.**Hal ini umum terjadi jika Anda menggunakan jaringan publik, seperti jaringan nirkabel gratis, kantor, atau sekolah.
+- **Perangkat Anda memiliki**[**software antivirus atau firewall**](#SoftwareIssues)**yang memblokir akses ke server Outline Anda.**
 - **Your**[**Setelan perangkat ponsel**](#DeviceSettings) Anda**mungkin perlu diubah.**
 - **Pengelola layanan mungkin telah**[**menghapus server atau ISP Anda mungkin memblokir permintaan Anda**](#ServerIssues) .
 

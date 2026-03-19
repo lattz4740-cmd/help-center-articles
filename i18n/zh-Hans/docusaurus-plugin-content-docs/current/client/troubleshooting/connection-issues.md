@@ -6,7 +6,7 @@ sidebar_label: 为什么我无法连接到 Outline 服务？
 无法连接到 Outline 服务的原因可能有以下几种：
 
 - 您的设备[与互联网的连接断开了](#Internetissues)。有时，您的设备会出现网络连接中断的情况，这时可能要稍等一会，设备才能更新网络图标。也有可能您设备连接到的本地网络处于中断状态。
-- [网络防火墙阻止您访问](#FirewallIssues)[#FirewallIssues](#FirewallIssues)Outline 服务器。这种情况在您使用公共网络（学校、工作等网络）或免费无线网络时比较常见。
+- [网络防火墙阻止您访问](#FirewallIssues)Outline 服务器。这种情况在您使用公共网络（学校、工作等网络）或免费无线网络时比较常见。
 - 您设备上的[防火墙或杀毒软件](#SoftwareIssues)阻止您访问 Outline 服务器。
 - 您的[手机设备上的设置](#DeviceSettings)可能需要更改。
 - 您的服务管理员可能已经[销毁了相应服务器或您的互联网服务提供商可能屏蔽了您的请求](#ServerIssues)。
