@@ -11,7 +11,7 @@ Başlamadan önce
 
 1. Kendi sunucularınıza veya DigitalOcean, Amazon Web Services (AWS) ya da Google Cloud Platform (GCP) gibi bir Bulut hizmetleri sağlayıcısına erişim.
 
- Bir bulut hizmetine erişiminiz yoksa yukarıda listelenenler de dahil olmak üzere herhangi bir sağlayıcıda kolayca bir hesap ayarlayabilirsiniz. Kaydolmak için büyük ihtimalle kredi kartınız gerekecektir.
+    Bir bulut hizmetine erişiminiz yoksa yukarıda listelenenler de dahil olmak üzere herhangi bir sağlayıcıda kolayca bir hesap ayarlayabilirsiniz. Kaydolmak için büyük ihtimalle kredi kartınız gerekecektir.
 2. macOS 10.9+, Windows 7.0+ veya Linux çalıştıran bir masaüstü.
 3. Outline Manager uygulaması.
 

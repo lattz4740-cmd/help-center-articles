@@ -11,7 +11,7 @@ Je hebt het volgende nodig om de Outline-server in te stellen:
 
 1. Toegang tot je eigen servers of een provider van cloudservices, zoals DigitalOcean, Amazon Web Services (AWS) of Google Cloud Platform (GCP).
 
- Als je niet meteen toegang hebt tot een cloudserver, kun je eenvoudig een account instellen bij een provider, zoals de providers die hierboven zijn genoemd. Je hebt waarschijnlijk een creditcard nodig om je aan te melden.
+    Als je niet meteen toegang hebt tot een cloudserver, kun je eenvoudig een account instellen bij een provider, zoals de providers die hierboven zijn genoemd. Je hebt waarschijnlijk een creditcard nodig om je aan te melden.
 2. Een desktop met macOS 10.9+, Windows 7.0+ of Linux.
 3. De Outline Manager-app.
 

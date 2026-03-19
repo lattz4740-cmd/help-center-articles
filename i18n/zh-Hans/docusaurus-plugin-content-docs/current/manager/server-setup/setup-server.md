@@ -11,7 +11,7 @@ sidebar_label: 如何设置 Outline 服务器？
 
 1. 有权访问您自己的服务器或云服务提供商，例如 DigitalOcean、Amazon Web Services (AWS) 或 Google Cloud Platform (GCP)。
 
- 如果您没有访问云服务器的权限，可以轻松在任意提供商网站上设置一个帐号，包括上文所列的服务提供商。您在注册时可能需要使用信用卡。
+    如果您没有访问云服务器的权限，可以轻松在任意提供商网站上设置一个帐号，包括上文所列的服务提供商。您在注册时可能需要使用信用卡。
 2. 拥有运行 macOS 10.9 及以上版本、Windows 7.0 及以上版本或 Linux 的桌面设备。
 3. 已安装 Outline 管理器应用。
 

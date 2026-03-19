@@ -11,7 +11,7 @@ sidebar_label: 如何設定 Outline 伺服器？
 
 1. 您專屬伺服器的存取權或雲端服務供應商 (例如 DigitalOcean、Amazon Web Services (AWS) 或 Google Cloud Platform (GCP)) 的存取權。
 
- 如果您目前還無法存取任何雲端伺服器，可選擇任何供應商 (包括上述名單中的供應商)，輕鬆設定帳戶；不過您可能需要有信用卡才能完成註冊。
+    如果您目前還無法存取任何雲端伺服器，可選擇任何供應商 (包括上述名單中的供應商)，輕鬆設定帳戶；不過您可能需要有信用卡才能完成註冊。
 2. 執行 macOS 10.9 以上版本、Windows 7.0 以上版本或 Linux 的桌上型電腦。
 3. Outline Manager 應用程式。
 

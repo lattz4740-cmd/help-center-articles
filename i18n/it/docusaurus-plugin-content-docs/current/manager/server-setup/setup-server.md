@@ -11,7 +11,7 @@ Prima di iniziare a configurare il server Outline, avrai bisogno di alcune cose:
 
 1. L'accesso ai tuoi server o a un provider di server cloud, come DigitalOcean, Amazon Web Services (AWS) o Google Cloud Platform (GCP).
 
- Se al momento non hai accesso a un cloud server, puoi facilmente configurare un account con qualsiasi provider, inclusi quelli sopra elencati. Probabilmente avrai bisogno di una carta di credito per registrarti.
+    Se al momento non hai accesso a un cloud server, puoi facilmente configurare un account con qualsiasi provider, inclusi quelli sopra elencati. Probabilmente avrai bisogno di una carta di credito per registrarti.
 2. Un computer desktop con macOS 10.9 o versioni successive, Windows 7.0 o versioni successive o Linux.
 3. L'applicazione Outline Manager.
 

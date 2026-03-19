@@ -11,7 +11,7 @@ Pour installer votre serveur Outline, vous aurez besoin des éléments suivants 
 
 1. Accès à vos propres serveurs ou à un fournisseur de services cloud tel que DigitalOcean, Amazon Web Services (AWS) ou Google Cloud Platform (GCP)
 
- Si vous ne disposez pas encore d'un accès à un serveur cloud, vous pouvez facilement créer un compte auprès d'un fournisseur, y compris auprès de ceux répertoriés ci-dessus. Vous aurez probablement besoin d'une carte de crédit pour vous inscrire.
+    Si vous ne disposez pas encore d'un accès à un serveur cloud, vous pouvez facilement créer un compte auprès d'un fournisseur, y compris auprès de ceux répertoriés ci-dessus. Vous aurez probablement besoin d'une carte de crédit pour vous inscrire.
 2. Un ordinateur de bureau sous macOS 10.9 ou version ultérieure, Windows 7.0 ou version ultérieure, ou Linux
 3. L'application Outline Manager
 

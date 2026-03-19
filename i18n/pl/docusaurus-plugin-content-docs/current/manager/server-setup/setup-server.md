@@ -11,7 +11,7 @@ Do skonfigurowania serwera Outline będą Ci potrzebne:
 
 1. Dostęp do własnych serwerów lub do platformy usług w chmurze, takiej jak DigitalOcean, Amazon Web Services (AWS) lub Google Cloud Platform (GCP).
 
- Jeśli nie masz dostępu do serwera w chmurze, bez trudu skonfigurujesz konto u dowolnego dostawcy, np. jednego z wymienionych powyżej. Do rejestracji może Ci być potrzebna karta kredytowa.
+    Jeśli nie masz dostępu do serwera w chmurze, bez trudu skonfigurujesz konto u dowolnego dostawcy, np. jednego z wymienionych powyżej. Do rejestracji może Ci być potrzebna karta kredytowa.
 2. Komputer z systemem macOS (10.9 lub nowszym), Windows (7.0 lub nowszym) albo Linux.
 3. Aplikacja Menedżer Outline.
 

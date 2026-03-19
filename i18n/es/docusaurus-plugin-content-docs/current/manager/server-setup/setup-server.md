@@ -11,7 +11,7 @@ Antes de comenzar a configurar tu servidor de Outline, necesitarás algunas cosa
 
 1. Acceso a tus propios servidores o un proveedor de servicios en la nube, como DigitalOcean, Amazon Web Services (AWS) o Google Cloud Platform (GCP).
 
- Si no tienes acceso inmediato a un servidor en la nube, puedes configurar una cuenta fácilmente con cualquier proveedor, incluidos los que se mencionaron anteriormente. Es probable que necesites una tarjeta de crédito para poder registrarte.
+    Si no tienes acceso inmediato a un servidor en la nube, puedes configurar una cuenta fácilmente con cualquier proveedor, incluidos los que se mencionaron anteriormente. Es probable que necesites una tarjeta de crédito para poder registrarte.
 2. Una computadora de escritorio que ejecute macOS 10.9 o superior, Windows 7.0 o superior, o Linux.
 3. La app de Outline Manager.
 
