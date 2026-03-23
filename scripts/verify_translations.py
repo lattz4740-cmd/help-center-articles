@@ -98,18 +98,6 @@ CONTENT_PARITY_THRESHOLD = 0.40
 CONTENT_PARITY_THRESHOLD_CJK = 0.20
 CJK_LOCALES = {"ja", "ko", "zh-Hans", "zh-Hant", "zh-HK"}
 
-# Directories that should have _category_.json in translations.
-CATEGORY_DIRS = [
-    "about",
-    "client",
-    "client/getting-started",
-    "client/troubleshooting",
-    "developers",
-    "manager",
-    "manager/server-management",
-    "manager/server-setup",
-    "manager/troubleshooting",
-]
 
 
 def get_english_doc_paths() -> set[str]:
