@@ -116,8 +116,8 @@ const config: Config = {
               href: 'https://s3.amazonaws.com/outline-vpn/static_downloads/Outline-Terms-of-Service.html',
             },
             {
-              label: 'Data Collection Policy',
-              href: 'https://support.getoutline.org/about/data-collection',
+              label: 'Privacy Policy',
+              href: 'https://s3.amazonaws.com/outline-vpn/static_downloads/Outline-Privacy-Policy.html',
             },
           ],
         },
