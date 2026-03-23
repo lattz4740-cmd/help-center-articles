@@ -51,6 +51,12 @@ KNOWN_MISSING: set[tuple[str, str]] = {
     ("en-GB", "manager/server-setup/setup-faqs"),
     ("es", "about/access-resources-blocked"),
     ("es", "client/troubleshooting/firewall-errors"),
+    ("it", "client/getting-started/available-languages"),  # Was in Lithuanian (lt)
+    ("it", "client/troubleshooting/connection-issues"),  # Was in German (de)
+    ("it", "manager/server-management/reset-server-id"),  # Was in Lithuanian (lt)
+    ("it", "manager/server-setup/available-languages"),  # Was in Lithuanian (lt)
+    ("lv", "client/getting-started/install-linux"),  # Was in Lao (lo)
+    ("mn", "client/getting-started/system-requirements"),  # Was in Norwegian (nb)
     ("ms", "about/brand-usage"),
     ("ms", "about/getoutline-me-telegram"),
     ("ms", "about/how-outline-works"),
@@ -58,6 +64,9 @@ KNOWN_MISSING: set[tuple[str, str]] = {
     ("pt", "about/how-outline-works"),
     ("pt-BR", "client/troubleshooting/firewall-errors"),
     ("ru", "about/access-resources-blocked"),
+    ("ru", "client/getting-started/available-languages"),  # Was in Norwegian (nb)
+    ("ru", "manager/server-setup/available-languages"),  # Was in Norwegian (nb)
+    ("ur", "client/getting-started/system-requirements"),  # Was in Ukrainian (uk)
 }
 
 # Heading anchors that only exist in the English version (manually added
