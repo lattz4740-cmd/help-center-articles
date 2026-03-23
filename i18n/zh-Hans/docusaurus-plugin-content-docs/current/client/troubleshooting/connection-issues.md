@@ -50,7 +50,9 @@ sidebar_label: 为什么我无法连接到 Outline 服务？
 
 尝试通过其他设备连接到 Outline。
 
-注意：如需在其他设备上使用 Outline，您需要访问密钥以及 Outline 应用。
+:::note
+如需在其他设备上使用 Outline，您需要访问密钥以及 Outline 应用。
+:::
 
 ### 修复事项：
 检查您的防火墙或杀毒软件的设置，确保它们已设为允许 VPN 和 Outline 流量通过。

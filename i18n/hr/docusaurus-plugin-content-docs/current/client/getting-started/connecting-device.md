@@ -10,4 +10,6 @@ Da biste svoj uređaj povezali s Outline poslužiteljem, administrator poslužit
 
 Nakon što uspostavite vezu s poslužiteljem, možete kliknuti gumb za povezivanje ili za prekid veze da biste upotrijebili Outline.
 
-*Važno:* Outline ne funkcionira bez pristupnog ključa i Outline poslužitelja. Ako preuzmete i instalirate aplikaciju Outline bez ključa, nećete zaštititi svoj internetski promet.
+:::warning[Važno]
+Outline ne funkcionira bez pristupnog ključa i Outline poslužitelja. Ako preuzmete i instalirate aplikaciju Outline bez ključa, nećete zaštititi svoj internetski promet.
+:::

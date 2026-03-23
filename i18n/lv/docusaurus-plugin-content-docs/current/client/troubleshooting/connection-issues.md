@@ -48,7 +48,9 @@ Sazinieties ar pakalpojuma pārvaldnieku un lūdziet atļaut piekļuvi jūsu Out
 ### Testēšanas metode
  Mēģiniet izveidot savienojumu ar Outline citā ierīcē.
 
-Piezīme. Ņemiet vērā, ka jums ir vajadzīga piekļuves atslēga un lietotne Outline, lai citā ierīcē izmantotu programmatūru Outline.
+:::note
+Ņemiet vērā, ka jums ir vajadzīga piekļuves atslēga un lietotne Outline, lai citā ierīcē izmantotu programmatūru Outline.
+:::
 
 ### Problēmas novēršana
 Pārbaudiet, vai jūsu ugunsmūra vai antivīrusa programmatūras iestatījumi atļauj virtuālā privātā tīkla un Outline datplūsmu.

@@ -50,7 +50,9 @@ Ponte en contacto con el gestor del servicio y pídele que dé acceso a tu servi
 
 Prueba a conectarte a Outline desde otro dispositivo.
 
-Nota: Necesitarás una clave de acceso y la aplicación Outline para usar el software en ese dispositivo.
+:::note
+Necesitarás una clave de acceso y la aplicación Outline para usar el software en ese dispositivo.
+:::
 
 ### Qué hacer:
 

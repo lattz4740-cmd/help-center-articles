@@ -48,7 +48,9 @@ Võtke ühendust teenusehalduriga ja paluge, et ta lubaks juurdepääsu teie Out
 ### Testimine
  Proovige luua ühendus Outline'iga muu seadme kaudu.
 
-Märkus. Pidage meeles, et teil on teises seadmes Outline'i kasutamiseks vaja pääsuvõtit ja Outline'i rakendust.
+:::note
+Pidage meeles, et teil on teises seadmes Outline'i kasutamiseks vaja pääsuvõtit ja Outline'i rakendust.
+:::
 
 ### Parandamine
 Kontrollige tulemüüri- või viirusetõrjetarkvara seadeid ja veenduge, et need laseksid läbi VPN-i ja Outline'i liikluse.

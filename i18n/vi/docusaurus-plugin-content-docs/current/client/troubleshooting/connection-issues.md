@@ -48,7 +48,9 @@ Hãy liên hệ với người quản lý dịch vụ rồi yêu cầu họ cho 
 ### Cách kiểm tra:
  Thử kết nối với Outline bằng một thiết bị khác.
 
-Lưu ý: Hãy nhớ rằng bạn cần có khoá truy cập và ứng dụng Outline để sử dụng Outline trên một thiết bị khác.
+:::note
+Hãy nhớ rằng bạn cần có khoá truy cập và ứng dụng Outline để sử dụng Outline trên một thiết bị khác.
+:::
 
 ### Điểm cần khắc phục:
 Hãy kiểm tra các chế độ cài đặt tường lửa hay phần mềm diệt virus để đảm bảo rằng các chế độ đó cho phép lưu lượng VPN và Outline đi qua.

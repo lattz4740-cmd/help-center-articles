@@ -48,7 +48,9 @@ Wasiliana na msimamizi wako wa huduma na umwombe aruhusu ufikiaji wa seva yako y
 ### Jinsi ya kujaribu:
  Jaribu kuunganisha na Outline kutoka kwenye kifaa kingine.
 
-Kumbuka: Utahitaji ufunguo na programu ya Outline ili utumie Outline kwenye kifaa kingine.
+:::note
+Utahitaji ufunguo na programu ya Outline ili utumie Outline kwenye kifaa kingine.
+:::
 
 ### Hitilafu za kurekebisha:
 Angalia mipangilio ya programu yako ya kinga mtandao au kinga virusi ili uhakikishe kuwa inaruhusu VPN na shuguli za mtandaoni kwenye Outline.

@@ -48,7 +48,9 @@ Kontakt administratoren af tjenesten, og bed vedkommende om at tillade adgang ti
 ### Sådan tester du:
  Prøv at oprette forbindelse til Outline fra en anden enhed.
 
-Bemærk! Husk, at du skal have en adgangsnøgle og Outline-appen for at bruge Outline på en anden enhed.
+:::note
+Husk, at du skal have en adgangsnøgle og Outline-appen for at bruge Outline på en anden enhed.
+:::
 
 ### Ting, der skal ordnes:
 Tjek indstillingerne for din firewall eller antivirussoftware for at sikre, at VPN- og Outline-trafik er tilladt.

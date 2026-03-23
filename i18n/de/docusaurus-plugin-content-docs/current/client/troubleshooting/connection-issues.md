@@ -48,7 +48,9 @@ Wenden Sie sich an den Netzwerkadministrator und bitten Sie ihn, den Zugriff auf
 
 Versuchen Sie, über ein anderes Gerät eine Verbindung zu Outline herzustellen.
 
-Hinweis: Dazu benötigen Sie auf dem anderen Gerät den Zugriffsschlüssel und die Outline App.
+:::note
+Dazu benötigen Sie auf dem anderen Gerät den Zugriffsschlüssel und die Outline App.
+:::
 
 ### So beheben Sie dieses Problem:
 

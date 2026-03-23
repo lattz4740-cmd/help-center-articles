@@ -10,4 +10,6 @@ Jos haluat yhdistää laitteesi Outline-palvelimeen, palvelimen järjestelmänva
 
 Kun olet muodostanut yhteyden palvelimeen, voit käyttää Outlinea valitsemalla "Yhdistä" tai "Katkaise yhteys".
 
-*Tärkeää:* Outline ei toimi ilman pääsyavainta ja Outline-palvelinta. Outline-sovelluksen lataaminen ja asentaminen ilman avainta ei suojaa internetliikennettäsi.
+:::warning[Tärkeää]
+Outline ei toimi ilman pääsyavainta ja Outline-palvelinta. Outline-sovelluksen lataaminen ja asentaminen ilman avainta ei suojaa internetliikennettäsi.
+:::

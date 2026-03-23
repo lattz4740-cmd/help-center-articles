@@ -10,4 +10,6 @@ Til að geta tengt tækið þitt við Outline-þjón þarf stjórnandi þjóns a
 
 Þegar tenging við þjóninn er komin á geturðu smellt á „tengja“ eða „aftengja“ til að nota Outline.
 
-*Mikilvægt:* Outline virkar ekki án aðgangslykils og Outline-þjóns. Þegar Outline-forritið er sótt og sett upp án lykils er netumferðin þín ekki varin.
+:::warning[Mikilvægt]
+Outline virkar ekki án aðgangslykils og Outline-þjóns. Þegar Outline-forritið er sótt og sett upp án lykils er netumferðin þín ekki varin.
+:::

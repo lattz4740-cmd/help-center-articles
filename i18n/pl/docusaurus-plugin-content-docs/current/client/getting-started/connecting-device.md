@@ -10,4 +10,6 @@ Aby połączyć swoje urządzenie z serwerem Outline, musisz otrzymać od admin
 
 Po nawiązaniu połączenia z serwerem możesz korzystać z Outline, klikając „połącz” lub „rozłącz”.
 
-: Outline nie działa bez klucza dostępu i serwera Outline. Pobranie i zainstalowanie aplikacji Outline bez klucza nie zapewnia ochrony danych przesyłanych przez sieć.
+:::warning
+Outline nie działa bez klucza dostępu i serwera Outline. Pobranie i zainstalowanie aplikacji Outline bez klucza nie zapewnia ochrony danych przesyłanych przez sieć.
+:::

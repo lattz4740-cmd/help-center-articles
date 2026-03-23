@@ -10,4 +10,6 @@ Du kan bara ansluta en enhet till en Outline-server om du får en inbjudan att a
 
 När du har upprättat en anslutning till servern kan du klicka på Connect (anslut) eller Disconnect (koppla från) när du vill använda Outline.
 
-*Viktigt!* Det går inte att använda Outline utan en åtkomstnyckel och en Outline-server. Din internettrafik skyddas inte om du laddar ned och installerar Outline-appen utan att ha en nyckel.
+:::warning[Viktigt]
+Det går inte att använda Outline utan en åtkomstnyckel och en Outline-server. Din internettrafik skyddas inte om du laddar ned och installerar Outline-appen utan att ha en nyckel.
+:::

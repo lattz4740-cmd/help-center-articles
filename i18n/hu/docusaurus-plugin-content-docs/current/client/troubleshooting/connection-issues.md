@@ -48,7 +48,9 @@ Kérje meg a hálózati adminisztrátort, hogy engedélyezze az Outline-szerverh
 ### A tesztelés módja:
  Csatlakozzon az Outline-hoz egy másik eszközről.
 
-Megjegyzés: Ne feledje, hogy ha az Outline szolgáltatást egy másik eszközön szeretné használni, szüksége lesz egy hozzáférési kulcsra és az Outline alkalmazásra.
+:::note
+Ne feledje, hogy ha az Outline szolgáltatást egy másik eszközön szeretné használni, szüksége lesz egy hozzáférési kulcsra és az Outline alkalmazásra.
+:::
 
 ### Javítási lehetőségek:
 Ellenőrizze a tűzfal vagy a vírusirtó szoftver beállításait, és győződjön meg róla, hogy azok lehetővé teszik a VPN- és az Outline-forgalom áthaladását.

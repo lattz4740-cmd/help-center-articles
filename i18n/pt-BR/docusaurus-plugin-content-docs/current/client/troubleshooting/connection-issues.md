@@ -45,7 +45,9 @@ Entre em contato com o gerenciador de serviço e solicite acesso ao servidor do 
 
 Use outro dispositivo para acessar o Outline.
 
-Observação: você precisa de uma chave de acesso e do app Outline para usar esse software em outro dispositivo.
+:::note
+você precisa de uma chave de acesso e do app Outline para usar esse software em outro dispositivo.
+:::
 
 ### O que corrigir:
 

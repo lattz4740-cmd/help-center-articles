@@ -48,7 +48,9 @@ Pyydä palvelun hallinnoijaa sallimaan yhteyden muodostaminen Outline-palvelimee
 ### Testaaminen:
  Yritä muodostaa yhteys Outlineen toisella laitteella.
 
-Huom. Tarvitset pääsyavaimen ja Outline-sovelluksen, jotta voit käyttää Outlinea toisella laitteella.
+:::note
+Tarvitset pääsyavaimen ja Outline-sovelluksen, jotta voit käyttää Outlinea toisella laitteella.
+:::
 
 ### Korjattavat asiat:
 Tarkista palomuurin tai virustorjuntaohjelman asetukset varmistaaksesi, että ne sallivat VPN- ja Outline-liikenteen.

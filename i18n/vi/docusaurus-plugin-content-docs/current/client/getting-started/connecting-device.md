@@ -10,4 +10,6 @@ sidebar_label: Kết nối thiết bị với một máy chủ Outline
 
 Sau khi thiết lập kết nối với máy chủ, bạn có thể nhấp vào "kết nối" hoặc "ngắt kết nối" để sử dụng Outline.
 
-*Quan trọng:* Outline sẽ không hoạt động nếu không có khoá truy cập và một máy chủ Outline. Việc tải và cài đặt ứng dụng Outline mà không có khoá sẽ không giúp bảo vệ lưu lượng truy cập Internet của bạn.
+:::warning[Quan trọng]
+Outline sẽ không hoạt động nếu không có khoá truy cập và một máy chủ Outline. Việc tải và cài đặt ứng dụng Outline mà không có khoá sẽ không giúp bảo vệ lưu lượng truy cập Internet của bạn.
+:::

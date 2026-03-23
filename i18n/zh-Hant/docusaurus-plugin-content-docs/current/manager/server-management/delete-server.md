@@ -1,7 +1,9 @@
 ---
 title: 如何刪除我的 Outline 伺服器？
 sidebar_label: 如何刪除我的 Outline 伺服器？
---- [大部分雲端服務供應商都能讓你輕鬆移除目前使用的虛擬機器。](/manager/server-setup/setup-server)
+---
+
+[大部分雲端服務供應商都能讓你輕鬆移除目前使用的虛擬機器。](/manager/server-setup/setup-server)
 
 如果你的雲端服務供應商是 DigitalOcean，刪除現有機器的做法就是點選齒輪圖示並選取「刪除伺服器」。系統隨後會提示你在自己選擇的位置建立新的虛擬機器。
 

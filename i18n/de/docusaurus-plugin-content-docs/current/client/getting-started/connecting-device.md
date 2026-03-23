@@ -10,4 +10,6 @@ Sie können Ihr Gerät nur mit einem Outline-Server verbinden, wenn ein Administ
 
 Jetzt, da die Verbindung zum Server möglich ist, können Sie auf "Verbinden" oder "Verbindung trennen" klicken, um Outline zu verwenden bzw. die Sitzung zu beenden.
 
-: Outline funktioniert nur mit einem Zugriffsschlüssel und einem Outline-Server. Wenn Sie die Outline App herunterladen und ohne Schlüssel installieren, ist Ihr Internettraffic nicht geschützt.
+:::warning
+Outline funktioniert nur mit einem Zugriffsschlüssel und einem Outline-Server. Wenn Sie die Outline App herunterladen und ohne Schlüssel installieren, ist Ihr Internettraffic nicht geschützt.
+:::

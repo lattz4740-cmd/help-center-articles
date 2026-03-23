@@ -10,4 +10,6 @@ Lai izveidotu ierīces savienojumu ar Outline serveri, servera administratoram i
 
 Kad esat izveidojis ierīces savienojums ar serveri, varat noklikšķināt uz “izveidot savienojumu” vai “pārtraukt savienojumu”, lai izmantotu programmatūru Outline.
 
-*Svarīgi!* Outline nedarbojas bez piekļuves atslēgas un Outline servera. Lietotnes Outline lejupielāde un instalēšana bez atslēgas neaizsargās jūsu interneta datplūsmu.
+:::warning[Svarīgi]
+Outline nedarbojas bez piekļuves atslēgas un Outline servera. Lietotnes Outline lejupielāde un instalēšana bez atslēgas neaizsargās jūsu interneta datplūsmu.
+:::

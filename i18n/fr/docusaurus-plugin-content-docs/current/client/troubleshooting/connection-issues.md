@@ -34,7 +34,9 @@ Problèmes liés au pare-feu réseau :
 ### À tester :
 
 1. Déconnectez-vous de votre réseau Wi-Fi ou filaire actuel.
+:::note
 2. Connectez-vous à un autre réseau, par exemple un réseau cellulaire.
+:::
 3. Essayez de vous reconnecter au serveur Outline.
 
 Si vous parvenez à vous connecter au serveur à partir d'un autre réseau, vous avez trouvé l'origine du problème.

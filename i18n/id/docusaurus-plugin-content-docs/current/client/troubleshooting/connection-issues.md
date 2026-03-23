@@ -48,7 +48,9 @@ Hubungi pengelola layanan dan minta mereka untuk mengizinkan akses ke server Out
 ### Cara mengujinya:
  Coba hubungkan ke Outline dari perangkat lain.
 
-Catatan: Perlu diingat bahwa Anda memerlukan kunci akses dan aplikasi Outline untuk menggunakan Outline di perangkat lain.
+:::note
+Perlu diingat bahwa Anda memerlukan kunci akses dan aplikasi Outline untuk menggunakan Outline di perangkat lain.
+:::
 
 ### Cara memperbaikinya:
 Periksa setelan software antivirus atau firewall Anda untuk memastikan keduanya disetel untuk mengizinkan traffic VPN dan Outline.

@@ -48,7 +48,9 @@ So können Sie testen, ob hier die Ursache liegt:
 
 Versuchen Sie, über ein anderes Gerät eine Verbindung zu Outline herzustellen.
 
-Hinweis: Dazu benötigen Sie auf dem anderen Gerät den Zugriffsschlüssel und die Outline App.
+:::note
+Dazu benötigen Sie auf dem anderen Gerät den Zugriffsschlüssel und die Outline App.
+:::
 
 ### So beheben Sie dieses Problem:
 

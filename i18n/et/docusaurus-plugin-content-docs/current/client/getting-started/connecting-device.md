@@ -10,4 +10,6 @@ Selleks et ühendada teie seade Outline'i serveriga, peab serveri administraator
 
 Pärast serveriga ühenduse loomist võite Outline'i kasutamiseks klõpsata käsul „Loo ühendus“ või „Katkesta ühendus“.
 
-*Tähtis*. Outline ei tööta ilma pääsuvõtme ja Outline'i serverita. Ilma võtmeta Outline'i rakenduse allalaadimine ja installimine ei kaitse teie internetiliiklust.
+:::warning[Tähtis]
+Outline ei tööta ilma pääsuvõtme ja Outline'i serverita. Ilma võtmeta Outline'i rakenduse allalaadimine ja installimine ei kaitse teie internetiliiklust.
+:::

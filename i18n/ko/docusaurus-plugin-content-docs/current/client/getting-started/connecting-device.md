@@ -1,7 +1,9 @@
 ---
 title: Outline 서버에 기기 연결
 sidebar_label: Outline 서버에 기기 연결
---- [사용자의 기기를 Outline 서버에 연결하려면 서버 관리자가 사용자에게 고유](/about/terminology)
+---
+
+[사용자의 기기를 Outline 서버에 연결하려면 서버 관리자가 사용자에게 고유](/about/terminology)
 
 가 있는 서버 연결용 초대를 보내야 합니다. 이 초대는 다음을 실행합니다.
 
@@ -10,4 +12,6 @@ sidebar_label: Outline 서버에 기기 연결
 
 서버에 대한 연결을 설정하면 '연결' 또는 '연결 해제'를 클릭해 Outline을 사용할 수 있습니다.
 
-: 액세스 키 및 Outline 서버가 없으면 Outline이 작동하지 않습니다. 키 없이 Outline 앱을 다운로드하고 설치하면 인터넷 트래픽이 보호되지 않습니다.
+:::warning
+액세스 키 및 Outline 서버가 없으면 Outline이 작동하지 않습니다. 키 없이 Outline 앱을 다운로드하고 설치하면 인터넷 트래픽이 보호되지 않습니다.
+:::

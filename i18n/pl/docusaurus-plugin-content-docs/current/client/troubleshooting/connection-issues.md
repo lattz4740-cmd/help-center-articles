@@ -48,7 +48,9 @@ Problemy z zaporą sieciową lub oprogramowaniem antywirusowym:
 
 Spróbuj połączyć się z Outline na innym urządzeniu.
 
-Uwaga: pamiętaj, że do korzystania z Outline na innym urządzeniu jest potrzebna aplikacja Outline i klucz dostępu.
+:::note
+pamiętaj, że do korzystania z Outline na innym urządzeniu jest potrzebna aplikacja Outline i klucz dostępu.
+:::
 
 ### Do naprawienia:
 

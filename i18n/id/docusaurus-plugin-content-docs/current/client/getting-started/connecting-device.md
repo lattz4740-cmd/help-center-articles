@@ -10,4 +10,6 @@ Agar dapat menghubungkan perangkat Anda ke server Outline, administrator server 
 
 Setelah membuat koneksi ke server, Anda dapat mulai menggunakan Outline dengan mengklik "hubungkan" atau "berhenti hubungkan".
 
-*Penting:* Outline tidak dapat berfungsi tanpa kunci akses dan server Outline. Mendownload dan menginstal aplikasi Outline tanpa kunci tidak akan melindungi traffic internet Anda.
+:::warning[Penting]
+Outline tidak dapat berfungsi tanpa kunci akses dan server Outline. Mendownload dan menginstal aplikasi Outline tanpa kunci tidak akan melindungi traffic internet Anda.
+:::

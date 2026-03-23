@@ -48,7 +48,9 @@ Contacta amb el gestor del servei i demana-li que permeti l'accés al servidor d
 
  Prova de connectar-te a Outline des d'un altre dispositiu.
 
-Nota: recorda que necessitaràs una clau d'accés i l'aplicació Outline per fer servir Outline en un altre dispositiu.
+:::note
+recorda que necessitaràs una clau d'accés i l'aplicació Outline per fer servir Outline en un altre dispositiu.
+:::
 
 ### Coses que cal corregir:
 

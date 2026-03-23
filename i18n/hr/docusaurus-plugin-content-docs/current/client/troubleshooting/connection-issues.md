@@ -48,7 +48,9 @@ Zatražite od upravitelja usluge da omogući pristup vašem Outline poslužitelj
 ### Postupak testiranja:
  Pokušajte ponovo uspostaviti vezu s Outlineom s drugog uređaja.
 
-Napomena: ne zaboravite da za upotrebu Outlinea na drugom uređaju trebate imati pristupni ključ i aplikaciju Outline.
+:::note
+ne zaboravite da za upotrebu Outlinea na drugom uređaju trebate imati pristupni ključ i aplikaciju Outline.
+:::
 
 ### Što treba popraviti:
 Provjerite postavke vatrozida ili antivirusnog softvera i uredite ih tako da dopuštaju promet preko VPN-a i Outlinea.

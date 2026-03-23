@@ -48,7 +48,9 @@ sidebar_label: 為什麼我無法連接 Outline 服務？
 ### 測試方法：
  嘗試透過其他裝置連線至 Outline。
 
-注意：提提你，你需要有存取金鑰和 Outline 應用程式才能在其他裝置上使用 Outline。
+:::note
+提提你，你需要有存取金鑰和 Outline 應用程式才能在其他裝置上使用 Outline。
+:::
 
 ### 修正事項：
 檢查防火牆或防毒軟件設定，確保這些設定允許 VPN 和 Outline 的流量通過。

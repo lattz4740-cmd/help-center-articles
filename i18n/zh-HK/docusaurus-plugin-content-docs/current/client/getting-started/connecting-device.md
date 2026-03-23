@@ -10,4 +10,6 @@ sidebar_label: 將你的裝置連線至 Outline 伺服器
 
 當你與伺服器建立連線後，按一下 [連線] 或 [解除連線] 即可使用 Outline。
 
-*重要事項：*Outline 需要有存取金鑰和 Outline 伺服器才能運作。如下載和安裝 Outline 應用程式但未使用金鑰，你的互聯網流量仍不受保護。
+:::warning[重要事項]
+Outline 需要有存取金鑰和 Outline 伺服器才能運作。如下載和安裝 Outline 應用程式但未使用金鑰，你的互聯網流量仍不受保護。
+:::

@@ -48,7 +48,9 @@ Comunícate con el administrador del servicio y solicita que te permita acceder 
 ### Cómo hacer la prueba:
  Intenta conectarte a Outline desde otro dispositivo.
 
-Nota: Recuerda que necesitarás una clave de acceso y la app de Outline para usar este servicio en otro dispositivo.
+:::note
+Recuerda que necesitarás una clave de acceso y la app de Outline para usar este servicio en otro dispositivo.
+:::
 
 ### Aspectos que se deben corregir:
 Comprueba la configuración de tu firewall o software antivirus para asegurarte de que esta permita el tráfico entre la VPN y Outline.

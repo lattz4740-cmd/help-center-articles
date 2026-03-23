@@ -10,4 +10,6 @@ Per poder connectar un dispositiu a un servidor d'Outline, un administrador del 
 
 Quan hagis establert la connexió amb el servidor, pots fer clic a "Connecta" o "Desconnecta" per fer servir Outline.
 
-*Important*: Outline no funciona sense una clau d'accés i un servidor d'Outline. En baixar i instal·lar l'aplicació Outline sense cap clau, el trànsit d'Internet no queda protegit.
+:::warning[Important]
+Outline no funciona sense una clau d'accés i un servidor d'Outline. En baixar i instal·lar l'aplicació Outline sense cap clau, el trànsit d'Internet no queda protegit.
+:::

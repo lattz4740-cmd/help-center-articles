@@ -48,7 +48,9 @@ Obrnite se na upravitelja storitve z zahtevo, da vam omogoči dostop do strežni
 ### Kako izvesti preizkus:
  Povezavo s strežnikom Outline poskusite vzpostaviti v drugi napravi.
 
-Opomba: Če želite strežnik Outline uporabljati v drugi napravi, ne pozabite, da potrebujete ključ za dostop in aplikacijo Outline.
+:::note
+Če želite strežnik Outline uporabljati v drugi napravi, ne pozabite, da potrebujete ključ za dostop in aplikacijo Outline.
+:::
 
 ### Kaj je treba popraviti:
 Preverite nastavitve požarnega zida ali protivirusne programske opreme in se prepričajte, da ne preprečujejo prometa za VPN in Outline.

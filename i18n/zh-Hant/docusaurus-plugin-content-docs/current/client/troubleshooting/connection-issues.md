@@ -50,7 +50,9 @@ sidebar_label: 為何我無法連上 Outline 服務？
 
 嘗試透過其他裝置連線至 Outline。
 
-注意：提醒你，你需要有存取金鑰和 Outline 應用程式才能在其他裝置上使用 Outline。
+:::note
+提醒你，你需要有存取金鑰和 Outline 應用程式才能在其他裝置上使用 Outline。
+:::
 
 ### 修正事項：
 

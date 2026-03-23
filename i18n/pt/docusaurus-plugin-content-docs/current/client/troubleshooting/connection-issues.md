@@ -48,7 +48,9 @@ Contacte o gestor do serviço para lhe pedir que autorize o acesso ao seu servid
 ### Como testar:
  Tente estabelecer ligação ao Outline noutro dispositivo.
 
-Nota: lembre-se de que precisa de uma chave de acesso e da app Outline para usar o Outline noutro dispositivo.
+:::note
+lembre-se de que precisa de uma chave de acesso e da app Outline para usar o Outline noutro dispositivo.
+:::
 
 ### Aspetos a corrigir:
 Verifique as definições do software antivírus ou firewall para garantir que permitem tráfego VPN e do Outline.

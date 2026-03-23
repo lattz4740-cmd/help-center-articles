@@ -48,7 +48,9 @@ Firewall or antivirus software issues:
 
 Try connecting to Outline from another device.
 
-Note: Remember that you'll need an access key and the Outline app to use Outline on another device.
+:::note
+Remember that you'll need an access key and the Outline app to use Outline on another device.
+:::
 
 ### Things to fix:
 

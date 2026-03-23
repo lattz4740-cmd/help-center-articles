@@ -48,7 +48,9 @@ Obraťte se na správce služeb a požádejte ho, aby vám povolil přístup k s
 ### Jak problém otestujete:
  Zkuste se k Outline připojit z jiného zařízení.
 
-Poznámka: Nezapomeňte, že k tomu potřebujete přístupový klíč a aplikaci Outline.
+:::note
+Nezapomeňte, že k tomu potřebujete přístupový klíč a aplikaci Outline.
+:::
 
 ### Co můžete opravit:
 Zkontrolujte v nastavení svého firewallu nebo antivirového softwaru, zda umožňují používat VPN a povolují provoz Outline.

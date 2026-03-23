@@ -10,4 +10,6 @@ Ha össze szeretné kapcsolni az eszközét egy Outline-szerverrel, a szerveradm
 
 Ha létrejött a kapcsolat a szerverrel, kattintson a „connect” (csatlakozás) vagy a „disconnect” (leválasztás) elemre az Outline használatához.
 
-*Fontos:* Az Outline nem működik hozzáférési kulcs és Outline-szerver nélkül. Az Outline app letöltése és telepítése kulcs nélkül nem óvja meg az internetes forgalmat az illetéktelenektől.
+:::warning[Fontos]
+Az Outline nem működik hozzáférési kulcs és Outline-szerver nélkül. Az Outline app letöltése és telepítése kulcs nélkül nem óvja meg az internetes forgalmat az illetéktelenektől.
+:::

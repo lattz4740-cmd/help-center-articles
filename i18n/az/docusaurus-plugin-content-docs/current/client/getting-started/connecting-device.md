@@ -10,4 +10,6 @@ Cihazınızı Outline serverinə qoşmaq üçün server administratoru sizə öz
 
 Server ilə bağlantı yaratdıqdan sonra Outline-dan istifadə etmək üçün "qoşulun" və ya "bağlantını kəsin" seçiminə klikləyə bilərsiniz.
 
-*Diqqət:* Outline giriş açarı və Outline serveri olmadan işləmir. Açar olmadan Outline tətbiqini endirib quraşdırdıqda internet trafikiniz qorunmur.
+:::warning[Diqqət]
+Outline giriş açarı və Outline serveri olmadan işləmir. Açar olmadan Outline tətbiqini endirib quraşdırdıqda internet trafikiniz qorunmur.
+:::

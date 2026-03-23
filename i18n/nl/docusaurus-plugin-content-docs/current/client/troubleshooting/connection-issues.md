@@ -50,7 +50,9 @@ Vraag de servicemanager je toegang te geven tot de Outline-server of blijf het a
 
 Probeer verbinding te maken met Outline op een ander apparaat.
 
-Opmerking: Je hebt een toegangssleutel en de Outline-app nodig om Outline te kunnen gebruiken op een ander apparaat.
+:::note
+Je hebt een toegangssleutel en de Outline-app nodig om Outline te kunnen gebruiken op een ander apparaat.
+:::
 
 ### Oplossingen:
 

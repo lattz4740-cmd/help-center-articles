@@ -10,4 +10,6 @@ Për ta lidhur pajisjen tënde me një server të Outline, një administrator si
 
 Pasi ta kesh realizuar lidhjen tënde me serverin, mund të klikosh te "lidh" ose "shkëput" për të përdorur Outline.
 
-*E rëndësishme:* Outline nuk funksionon pa një çelës qasjeje dhe një server të Outline. Shkarkimi dhe instalimi i aplikacionit Outline pa një çelës nuk do ta mbrojë trafikun tënd të internetit.
+:::warning[E rëndësishme]
+Outline nuk funksionon pa një çelës qasjeje dhe një server të Outline. Shkarkimi dhe instalimi i aplikacionit Outline pa një çelës nuk do ta mbrojë trafikun tënd të internetit.
+:::

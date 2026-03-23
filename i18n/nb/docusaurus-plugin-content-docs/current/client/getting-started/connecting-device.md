@@ -10,4 +10,6 @@ Før du kan koble enheten din til en Outline-tjener, må en administrator for tj
 
 Så snart du har opprettet forbindelsen til tjeneren, kan du klikke på «connect» (koble til) eller «disconnect» (koble fra) for å bruke Outline.
 
-*Viktig:* Outline fungerer ikke uten en tilgangsnøkkel og en Outline-tjener. Du beskytter ikke internettrafikken din ved å laste ned og installere Outline-appen uten nøkkel.
+:::warning[Viktig]
+Outline fungerer ikke uten en tilgangsnøkkel og en Outline-tjener. Du beskytter ikke internettrafikken din ved å laste ned og installere Outline-appen uten nøkkel.
+:::

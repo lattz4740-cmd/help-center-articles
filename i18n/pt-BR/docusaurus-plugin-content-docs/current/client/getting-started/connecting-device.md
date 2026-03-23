@@ -10,4 +10,6 @@ Para conectar seu dispositivo a um servidor do Outline, o administrador do servi
 
 Depois, clique em "conectar" ou "desconectar" para usar o Outline.
 
-: o Outline não funciona sem uma chave de acesso e um servidor. Se você fizer o download e a instalação do app Outline sem a chave, o tráfego da Internet não será protegido.
+:::warning
+o Outline não funciona sem uma chave de acesso e um servidor. Se você fizer o download e a instalação do app Outline sem a chave, o tráfego da Internet não será protegido.
+:::

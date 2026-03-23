@@ -10,4 +10,6 @@ Ili uunganishe kifaa chako kwenye seva ya Outline, ni lazima msimamizi wa seva a
 
 Ukishaunganisha kwenye seva, unaweza kubofya "unganisha" au "tenganisha" ili utumie Outline.
 
-*Muhimu:* Outline haifanyi kazi bila ufunguo na seva ya Outline. Kupakua na kuweka programu ya Outline kwenye kifaa bila ufunguo hakutalinda shughuli zako kwenye intaneti.
+:::warning[Muhimu]
+Outline haifanyi kazi bila ufunguo na seva ya Outline. Kupakua na kuweka programu ya Outline kwenye kifaa bila ufunguo hakutalinda shughuli zako kwenye intaneti.
+:::

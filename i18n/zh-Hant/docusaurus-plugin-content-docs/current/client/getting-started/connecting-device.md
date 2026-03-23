@@ -1,7 +1,9 @@
 ---
 title: 將您的裝置連線至 Outline 伺服器
 sidebar_label: 將您的裝置連線至 Outline 伺服器
---- [如要將您的裝置連線至 Outline 伺服器，伺服器管理員必須先傳送邀請給您，您才能利用一組專屬的](/about/terminology)
+---
+
+[如要將您的裝置連線至 Outline 伺服器，伺服器管理員必須先傳送邀請給您，您才能利用一組專屬的](/about/terminology)
 
 連線至伺服器。這個邀請將會：
 
@@ -10,4 +12,6 @@ sidebar_label: 將您的裝置連線至 Outline 伺服器
 
 當您與伺服器建立連線之後，按一下 [連線] 或 [中斷連線] 即可使用 Outline。
 
-重要事項：Outline 需有存取金鑰和 Outline 伺服器才能運作。如果下載和安裝 Outline 應用程式，卻未使用金鑰的話，您的網際網路流量仍不會受到保護。
+:::warning[重要事項]
+Outline 需有存取金鑰和 Outline 伺服器才能運作。如果下載和安裝 Outline 應用程式，卻未使用金鑰的話，您的網際網路流量仍不會受到保護。
+:::

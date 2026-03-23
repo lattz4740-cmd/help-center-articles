@@ -10,4 +10,6 @@ Ak chcete svoje zariadenie pripojiť k serveru služby Outline, správca servera
 
 Po pripojení k serveru môžete Outline používať kliknutím na tlačidlo na pripojenie alebo odpojenie.
 
-*Dôležité:* Outline bez prístupového kľúča a servera služby Outline nefunguje. Keď si aplikáciu Outline stiahnete a inštalujete bez kľúča, internetovú premávku chránenú mať nebudete.
+:::warning[Dôležité]
+Outline bez prístupového kľúča a servera služby Outline nefunguje. Keď si aplikáciu Outline stiahnete a inštalujete bez kľúča, internetovú premávku chránenú mať nebudete.
+:::

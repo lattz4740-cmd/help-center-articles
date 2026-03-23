@@ -10,4 +10,6 @@ Pour pouvoir connecter votre appareil à un serveur Outline, vous devez recevoir
 
 Une fois votre connexion avec le serveur établie, vous pouvez cliquer sur "Connecter" ou "Déconnecter" pour utiliser et fermer Outline.
 
-: Pour fonctionner, Outline a besoin d'une clé d'accès et d'un serveur Outline. Si vous téléchargez et installez l'application Outline sans clé, votre trafic Internet ne sera pas protégé.
+:::warning
+Pour fonctionner, Outline a besoin d'une clé d'accès et d'un serveur Outline. Si vous téléchargez et installez l'application Outline sans clé, votre trafic Internet ne sera pas protégé.
+:::

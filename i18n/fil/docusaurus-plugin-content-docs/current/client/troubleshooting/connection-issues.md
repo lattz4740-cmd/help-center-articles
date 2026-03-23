@@ -48,7 +48,9 @@ Makipag-ugnayan sa manager ng serbisyo at hilingin sa kanya na payagan ang acces
 ### Paano i-test:
  Subukang kumonekta sa Outline mula sa ibang device.
 
-Paalala: Tandaang kailangan mo ng access key at Outline app para magamit ang Outline sa ibang device.
+:::note
+Tandaang kailangan mo ng access key at Outline app para magamit ang Outline sa ibang device.
+:::
 
 ### Mga aayusin:
 Suriin ang mga setting ng iyong firewall o antivirus software para siguraduhing nakatakda ang mga ito na payagang dumaan ang trapiko ng VPN at Outline.

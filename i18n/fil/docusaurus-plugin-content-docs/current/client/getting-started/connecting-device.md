@@ -10,4 +10,6 @@ Para maikonekta ang iyong device sa isang Outline server, kailangang padalhan ka
 
 Kapag nakakonekta ka na sa server, puwede mong i-click ang "kumonekta" o "magdiskonekta" para gamitin ang Outline.
 
-*Mahalaga:* Hindi gagana ang Outline kung walang access key at Outline server. Hindi mapoprotektahan ang internet traffic mo kapag na-download at na-install ang Outline app nang walang key.
+:::warning[Mahalaga]
+Hindi gagana ang Outline kung walang access key at Outline server. Hindi mapoprotektahan ang internet traffic mo kapag na-download at na-install ang Outline app nang walang key.
+:::

@@ -10,4 +10,6 @@ Para ligar o seu dispositivo a um servidor do Outline, um administrador do servi
 
 Depois de estabelecer a ligação ao servidor, pode clicar em "ligar" ou "desligar" para usar o Outline.
 
-*Importante:* o Outline não funciona sem uma chave de acesso nem um servidor do Outline. A transferência e a instalação da app Outline sem uma chave não protegem o seu tráfego da Internet.
+:::warning[Importante]
+o Outline não funciona sem uma chave de acesso nem um servidor do Outline. A transferência e a instalação da app Outline sem uma chave não protegem o seu tráfego da Internet.
+:::

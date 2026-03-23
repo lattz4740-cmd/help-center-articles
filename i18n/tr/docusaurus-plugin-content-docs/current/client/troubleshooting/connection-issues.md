@@ -47,7 +47,9 @@ Hizmet yöneticinizden Outline sunucunuza erişim izni vermesini isteyin veya bu
 
 Outline'a başka bir cihazdan bağlanmayı deneyin.
 
-Not: Outline'ı başka bir cihazda kullanabilmek için erişim anahtarına ve Outline uygulamasına ihtiyacınız olduğunu unutmayın.
+:::note
+Outline'ı başka bir cihazda kullanabilmek için erişim anahtarına ve Outline uygulamasına ihtiyacınız olduğunu unutmayın.
+:::
 
 ### Sorunları düzeltme:
 

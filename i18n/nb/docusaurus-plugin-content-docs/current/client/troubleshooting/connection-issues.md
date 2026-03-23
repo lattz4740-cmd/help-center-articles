@@ -48,7 +48,9 @@ Kontakt tjenesteadministratoren og be om at tilgang til Outline-tjeneren din til
 ### Slik tester du det:
  Prøv å koble til Outline fra en annen enhet.
 
-Merk: Husk at du trenger en tilgangsnøkkel og Outline-appen for å kunne bruke Outline på en annen enhet.
+:::note
+Husk at du trenger en tilgangsnøkkel og Outline-appen for å kunne bruke Outline på en annen enhet.
+:::
 
 ### Ting du bør fikse:
 Sjekk innstillingene for brannmuren din eller antivirusprogrammet ditt for å forsikre deg om at de slipper gjennom VPN- og Outline-trafikk.

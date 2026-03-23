@@ -10,4 +10,6 @@ In order to connect your device to an Outline server, a server administrator has
 
 Once you have established your connection to the server, you can click "connect" or "disconnect" to use Outline.
 
-*Important:* Outline does not work without an access key and an Outline server. Downloading and installing the Outline app without a key won't protect your internet traffic.
+:::warning[Important]
+Outline does not work without an access key and an Outline server. Downloading and installing the Outline app without a key won't protect your internet traffic.
+:::

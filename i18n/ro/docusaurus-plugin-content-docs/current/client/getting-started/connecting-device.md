@@ -10,4 +10,6 @@ Pentru a vă putea conecta dispozitivul la un server Outline, un administrator a
 
 După ce ați stabilit conexiunea la server, puteți da clic pe opțiunea de „conectare” sau „deconectare” pentru a folosi Outline.
 
-*Important:* Outline nu funcționează fără o cheie de acces și un server Outline. Dacă descărcați și instalați aplicația Outline fără o cheie de acces, traficul dvs. pe internet nu va fi protejat.
+:::warning[Important]
+Outline nu funcționează fără o cheie de acces și un server Outline. Dacă descărcați și instalați aplicația Outline fără o cheie de acces, traficul dvs. pe internet nu va fi protejat.
+:::

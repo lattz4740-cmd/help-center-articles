@@ -10,4 +10,6 @@ Per connettere il tuo dispositivo a un server Outline, un amministratore del ser
 
 Una volta stabilita la connessione al server, puoi fare clic su "Connettiti" o "Disconnettiti" per utilizzare Outline.
 
-: Outline non funziona senza una chiave di accesso e un server Outline. Scaricare e installare Outline senza disporre di una chiave non è sufficiente a proteggere il tuo traffico Internet.
+:::warning
+Outline non funziona senza una chiave di accesso e un server Outline. Scaricare e installare Outline senza disporre di una chiave non è sufficiente a proteggere il tuo traffico Internet.
+:::

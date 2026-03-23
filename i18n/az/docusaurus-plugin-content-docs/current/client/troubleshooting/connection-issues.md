@@ -48,7 +48,9 @@ Xidmət administratoru ilə əlaqə saxlayaraq Outline serverinizə giriş icaz�
 ### Test etmək qaydası:
  Başqa cihazdan Outline serverinə qoşulmağı sınayın.
 
-Qeyd: Başqa cihazda Outline istifadə etmək üçün giriş açarı və Outline tətbiqiniz olmalıdır.
+:::note
+Başqa cihazda Outline istifadə etmək üçün giriş açarı və Outline tətbiqiniz olmalıdır.
+:::
 
 ### Edilməli olan düzəlişlər:
 Qoruyucu divar və antivirus proqram təminatının ayarlarını yoxlayıb VPN və Outline trafiki icazəsinin aktiv olduğuna əmin olun.

@@ -48,7 +48,9 @@ Kontakta tjänsteansvarig och be hen att tillåta åtkomst till Outline-servern 
 ### Så här testar du:
  Testa att ansluta till Outline från en annan enhet.
 
-Obs! Tänk på att du behöver en åtkomstnyckel och Outline-appen för att använda Outline på en annan enhet.
+:::note
+Tänk på att du behöver en åtkomstnyckel och Outline-appen för att använda Outline på en annan enhet.
+:::
 
 ### Saker att åtgärda:
 Kontrollera inställningarna för brandväggen eller antivirusprogrammet och se till att de låter VPN- och Outline-trafik passera.

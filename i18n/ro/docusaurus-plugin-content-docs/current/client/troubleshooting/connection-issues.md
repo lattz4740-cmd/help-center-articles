@@ -48,7 +48,9 @@ Contactați administratorul serviciului și cereți-i să vă permită accesul l
 ### Cum să testați
  Încercați să vă conectați la Outline de pe alt dispozitiv.
 
-Rețineți: aveți nevoie de o cheie de acces și de aplicația Outline pentru a putea folosi Outline pe alt dispozitiv.
+:::note
+aveți nevoie de o cheie de acces și de aplicația Outline pentru a putea folosi Outline pe alt dispozitiv.
+:::
 
 ### De remediat
 Verificați firewallul sau software-ul antivirus ca să vă asigurați că sunt setate să permită traficul prin VPN și Outline.

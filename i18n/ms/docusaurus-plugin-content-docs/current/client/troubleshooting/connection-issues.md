@@ -48,7 +48,9 @@ Hubungi pentadbir perkhidmatan dan minta mereka membenarkan akses kepada pelayan
 ### Cara menguji:
  Cuba menyambung kepada Outline daripada peranti yang lain.
 
-Nota: Ingat bahawa anda memerlukan kunci akses dan apl Outline untuk menggunakan Outline pada peranti yang lain.
+:::note
+Ingat bahawa anda memerlukan kunci akses dan apl Outline untuk menggunakan Outline pada peranti yang lain.
+:::
 
 ### Perkara yang perlu dibetulkan:
 Semak tetapan tembok api atau perisian antivirus untuk memastikan tembok api dan antivirus ditetapkan supaya membenarkan laluan trafik VPN dan Outline.

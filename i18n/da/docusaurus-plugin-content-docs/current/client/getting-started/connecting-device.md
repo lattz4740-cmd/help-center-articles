@@ -10,4 +10,6 @@ Hvis du vil oprette forbindelse mellem din enhed og en Outline-server, skal en s
 
 Når du har oprettet forbindelse til serveren, kan du klikke på "Opret forbindelse" eller "Afbryd forbindelsen" for at bruge Outline.
 
-*Vigtigt!* Outline virker ikke uden en adgangsnøgle og en Outline-server. Din internettrafik beskyttes ikke, hvis du downloader og installerer Outline-appen uden en nøgle.
+:::warning[Vigtigt]
+Outline virker ikke uden en adgangsnøgle og en Outline-server. Din internettrafik beskyttes ikke, hvis du downloader og installerer Outline-appen uden en nøgle.
+:::

@@ -48,7 +48,9 @@ Kontak die diensbestuurder en vra hulle om toegang tot jou Outline-bediener toe 
 ### Toets dit só:
  Probeer om van ’n ander toestel af aan Outline te koppel.
 
-Let wel: Onthou dat jy ’n toegangsleutel en die Outline-app nodig het om Outline op ’n ander toestel te gebruik.
+:::note
+Onthou dat jy ’n toegangsleutel en die Outline-app nodig het om Outline op ’n ander toestel te gebruik.
+:::
 
 ### Dinge om reg te maak:
 Gaan jou brandmuur of antivirussagteware se instellings na om seker te maak dat dit gestel is om VPN- en Outline-verkeer deur te laat.

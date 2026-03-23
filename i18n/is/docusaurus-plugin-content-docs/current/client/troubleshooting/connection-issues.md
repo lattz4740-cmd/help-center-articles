@@ -48,7 +48,9 @@ Hafðu samband við þjónustustjórann og biddu hann um að leyfa aðgang að O
 ### Svona er prófun gerð:
  Prófaðu að tengjast Outline í öðru tæki.
 
-Athugaðu: Mundu að þú þarft aðgangslykil og Outline-forritið til að nota Outline í öðru tæki.
+:::note
+Mundu að þú þarft aðgangslykil og Outline-forritið til að nota Outline í öðru tæki.
+:::
 
 ### Atriði sem þarf að laga:
 Athugaðu stillingar eldveggsins eða vírusvarnarhugbúnaðarins til að ganga úr skugga að þær séu stilltar þannig að VPN- og Outline-umferð sé hleypt í gegn.

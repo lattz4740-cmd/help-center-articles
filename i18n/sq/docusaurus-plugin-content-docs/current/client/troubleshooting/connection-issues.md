@@ -48,7 +48,9 @@ Kontakto me menaxherin e shërbimit dhe kërkoji të lejojë qasjen në serverin
 ### Si ta testosh:
  Provo të lidhesh me Outline nga një pajisje tjetër.
 
-Shënim. Mos harro se do të të duhet një çelës qasjeje dhe aplikacioni Outline për ta përdorur Outline në një pajisje tjetër.
+:::note
+Mos harro se do të të duhet një çelës qasjeje dhe aplikacioni Outline për ta përdorur Outline në një pajisje tjetër.
+:::
 
 ### Gjërat për t'u rregulluar:
 Kontrollo cilësimet e murit mbrojtës ose të softuerit antivirus për t'u siguruar që janë caktuar të lejojnë kalimin e trafikut të rrjetit VPN dhe të Outline.

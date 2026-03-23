@@ -10,4 +10,6 @@ Untuk menyambungkan peranti anda kepada pelayan Outline, pentadbir pelayan perlu
 
 Setelah anda mewujudkan sambungan kepada pelayan itu, anda boleh mengklik "sambung" atau "putuskan sambungan" untuk menggunakan Outline.
 
-*Penting:* Outline tidak berfungsi tanpa kunci akses dan pelayan Outline. Tindakan memuat turun dan memasang apl Outline tanpa kunci tidak akan melindungi trafik Internet anda.
+:::warning[Penting]
+Outline tidak berfungsi tanpa kunci akses dan pelayan Outline. Tindakan memuat turun dan memasang apl Outline tanpa kunci tidak akan melindungi trafik Internet anda.
+:::

@@ -10,4 +10,6 @@ Pokud chcete připojit svoje zařízení k serveru Outline, musí vám administr
 
 Až navážete spojení se serverem, můžete používat Outline kliknutím na Připojit nebo Odpojit.
 
-*Důležité:* Outline nefunguje bez přístupového klíče a serveru Outline. Stažení a nainstalování aplikace Outline bez klíče váš internetový provoz neochrání.
+:::warning[Důležité]
+Outline nefunguje bez přístupového klíče a serveru Outline. Stažení a nainstalování aplikace Outline bez klíče váš internetový provoz neochrání.
+:::

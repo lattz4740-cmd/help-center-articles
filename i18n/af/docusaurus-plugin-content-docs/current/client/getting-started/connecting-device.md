@@ -10,4 +10,6 @@ Om jou toestel aan ’n Outline-bediener te kan koppel, moet ’n bedieneradmini
 
 Sodra jy jou verbinding met die bediener gevestig het, kan jy op “koppel” of “ontkoppel” klik om Outline te gebruik.
 
-*Belangrik:* Outline werk nie sonder ’n toegangsleutel en ’n Outline-bediener nie. Die aflaai en installering van die Outline-app sonder ’n sleutel sal nie jou internetverkeer beskerm nie.
+:::warning[Belangrik]
+Outline werk nie sonder ’n toegangsleutel en ’n Outline-bediener nie. Die aflaai en installering van die Outline-app sonder ’n sleutel sal nie jou internetverkeer beskerm nie.
+:::
