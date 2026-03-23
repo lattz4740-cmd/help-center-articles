@@ -1,9 +1,7 @@
 ---
 title: Outline 서버에 기기 연결
 sidebar_label: Outline 서버에 기기 연결
----
-
-사용자의 기기를 Outline 서버에 연결하려면 서버 관리자가 사용자에게 고유
+--- [사용자의 기기를 Outline 서버에 연결하려면 서버 관리자가 사용자에게 고유](/about/terminology)
 
 가 있는 서버 연결용 초대를 보내야 합니다. 이 초대는 다음을 실행합니다.
 

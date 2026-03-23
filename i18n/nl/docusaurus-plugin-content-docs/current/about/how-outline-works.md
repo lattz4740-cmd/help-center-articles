@@ -10,7 +10,7 @@ Hoewel de installatie van Outline eenvoudig lijkt, is de installatie van de serv
 Wanneer Outline wordt geïnstalleerd, voert een installatiescript de volgende stappen uit:
 
 - De stabiele versie van de Shadowbox-image wordt opgehaald en geïmporteerd met Docker. De image wordt gehost op Quay.io, op [https://quay.io/](https://quay.io/)repository/outline/shadowbox?tab=tags. Deze image bevat de Outline-server en Management API, die later wordt gebruikt door de Server Management-app van Outline om toegangssleutels te maken en verwijderen, aan of af te melden voor het verzenden van anonieme statistieken enzovoort.
-- Watchtower wordt geïnstalleerd en geconfigureerd om elk uur te controleren op image-updates, zodat elke Outline-server steeds de nieuwste functies en beveiligingsupdates bevat.
+- [Watchtower](https://github.com/v2tec/watchtower) wordt geïnstalleerd en geconfigureerd om elk uur te controleren op image-updates, zodat elke Outline-server steeds de nieuwste functies en beveiligingsupdates bevat.
 - Een webserver, die wordt gebruikt om toegang te krijgen tot de Management API, wordt gestart op een willekeurige poort met een geheim, willekeurig pad.
 - Er wordt een zelfondertekend SSL-certificaat gemaakt, zodat het beheer van de Outline-server kan worden versleuteld met TLS, ook al is er geen domeinnaam. Er wordt ook een unieke vingerafdruk van dit certificaat gemaakt en opgeslagen in de Outline Manager-app, zodat MITM-aanvallen worden voorkomen.
 
@@ -18,9 +18,7 @@ Na de installatie hoeft Outline niet meer te worden geconfigureerd.
 
 ## Serverbeveiliging
 
-De Outline-software is open source. Dit betekent dat iedereen de code kan zien en deze kan verbeteren als er kwetsbaarheden worden ontdekt. De code wordt gehost op
-
-.
+De Outline-software is open source. Dit betekent dat iedereen de code kan zien en deze kan verbeteren als er kwetsbaarheden worden ontdekt. De code wordt gehost op [.](https://en.wikipedia.org/wiki/Self-signed_certificate)
 
 Daarnaast worden alle geïnstalleerde Outline-servers automatisch geüpdatet wanneer er een nieuwe versie wordt vrijgegeven. Zo worden er nooit oude versies van de software gebruikt op Outline-servers.
 

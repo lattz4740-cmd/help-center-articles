@@ -1,9 +1,7 @@
 ---
 title: 将设备连接到 Outline 服务器
 sidebar_label: 将设备连接到 Outline 服务器
----
-
-为了将设备连接到 Outline 服务器，服务器管理员必须邀请您使用唯一的
+--- [为了将设备连接到 Outline 服务器，服务器管理员必须邀请您使用唯一的](/about/terminology)
 
 连接到他们的服务器。该邀请将：
 

@@ -65,21 +65,14 @@ KNOWN_MISSING: set[tuple[str, str]] = {
 KNOWN_ENGLISH_ONLY_ANCHORS: dict[str, set[str]] = {}
 
 # Known link count differences between English and translations.
-# Docs where link count differences are accepted because the GKMS source
-# translations had structurally different links than English.
+# Docs where link count differences are accepted because the GKMS converter
+# fully stripped link text that can't be reconstructed without original source.
 # The verify script will skip count-mismatch checks for these docs.
 KNOWN_LINK_COUNT_DIFF_DOCS: set[str] = {
-    "client/troubleshooting/connection-issues",  # EN has duplicate anchor links
-    "about/how-outline-works",  # Translations lost external URLs (were self-links)
-    "about/feedback",  # Translations have extra/missing links
-    "client/getting-started/connecting-device",  # Translations lost the link
-    "client/troubleshooting/windows-install",  # Missing a feedback link
-    "manager/server-management/delete-server",  # Extra link in translations
-    "manager/server-management/update-software",  # Extra link in translations
-    "about/terminology",  # en-GB missing a link
-    "manager/troubleshooting/manager-download",  # Extra link
-    "manager/server-setup/cost",  # Extra link
-    "manager/server-management/data-limits",  # Extra link
+    "about/how-outline-works",  # Many links stripped; proper nouns restored, rest unrecoverable
+    "about/feedback",  # Some translations use mailto: instead of https: for security email
+    "client/troubleshooting/windows-install",  # "contact support" link text fully stripped in de/es/fr/ru
+    "manager/server-management/delete-server",  # "set up a new server" link text fully stripped in ru
 }
 
 # Known heading structure differences where translators intentionally
@@ -216,6 +209,10 @@ def strip_non_content(md_text: str) -> str:
 
 def normalize_link_url(url: str) -> str:
     """Normalize a link URL for comparison."""
+    # Normalize mailto: links — treat security@getoutline.org mailto as
+    # equivalent to the getoutline.org website link
+    if url.startswith('mailto:') and 'getoutline.org' in url:
+        return 'https://getoutline.org/'
     if url.startswith(('http://', 'https://', 'mailto:', '#')):
         # Normalize http to https
         if url.startswith('http://'):

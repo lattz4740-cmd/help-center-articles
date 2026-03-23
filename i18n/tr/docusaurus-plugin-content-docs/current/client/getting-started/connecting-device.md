@@ -3,9 +3,7 @@ title: Cihazınızı bir Outline sunucusuna bağlama
 sidebar_label: Cihazınızı bir Outline sunucusuna bağlama
 ---
 
-Cihazınızı bir Outline sunucusuna bağlayabilmeniz için, bir sunucu yöneticisinin size benzersiz bir
-
-ile sunucusuna bağlanma davetiyesi göndermesi gerekir. Bu davetiyede:
+Cihazınızı bir Outline sunucusuna bağlayabilmeniz için, bir sunucu yöneticisinin size benzersiz bir [ile sunucusuna bağlanma davetiyesi göndermesi gerekir. Bu davetiyede](/about/terminology):
 
 - Henüz yüklemediyseniz cihazınıza Outline'ı indirip yüklemeniz istenir
 - Cihazınız ve Outline sunucusu arasında güvenli bağlantı oluşturmak için erişim anahtarını kullanmanız istenir

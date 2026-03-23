@@ -10,7 +10,7 @@ A instalação do Outline pode parecer simples, mas há um conjunto complexo de 
 Sempre que o Outline é instalado, um script de instalação executa as seguintes etapas:
 
 - A versão estável da imagem do Shadowbox é recuperada e importada com o Docker. A imagem é hospedada no Quay.io, em [https://quay.io/](https://quay.io/)repository/outline/shadowbox?tab=tags. Ela contém o servidor do Outline e a API Management, que depois é usada pelo aplicativo Outline Server Management para criar e remover as chaves de acesso, aceitar/recusar a geração de relatórios de métricas anônimas etc.
-- A Watchtower é instalada e configurada, verificando se há as atualizações de imagem a cada hora. Assim, os servidores do Outline são constantemente atualizados com os recursos e as melhorias de segurança mais recentes.
+- A [Watchtower](https://github.com/v2tec/watchtower) é instalada e configurada, verificando se há as atualizações de imagem a cada hora. Assim, os servidores do Outline são constantemente atualizados com os recursos e as melhorias de segurança mais recentes.
 - Um servidor da Web usado para acessar a API Management é iniciado em uma porta aleatória, em um caminho secreto e aleatório.
 - Um certificado SSL autoassinado é criado para o gerenciamento do servidor do Outline ser criptografado com TLS, mesmo que não haja um nome de domínio. Uma impressão digital exclusiva desse certificado também é gerada e armazenada no aplicativo Outline Manager, evitando ataques MITM.
 
@@ -18,9 +18,7 @@ Após a instalação do Outline, nenhuma configuração é necessária.
 
 ## Segurança do servidor
 
-Como o software Outline é de código aberto, qualquer pessoa pode vê-lo e melhorá-lo se vulnerabilidades forem descobertas. Nosso código está hospedado na plataforma
-
-.
+Como o software Outline é de código aberto, qualquer pessoa pode vê-lo e melhorá-lo se vulnerabilidades forem descobertas. Nosso código está hospedado na plataforma [.](https://en.wikipedia.org/wiki/Self-signed_certificate)
 
 Além disso, todos os servidores do Outline instalados são atualizados automaticamente sempre que uma nova versão é lançada, garantindo que nenhum deles use versões antigas do software.
 

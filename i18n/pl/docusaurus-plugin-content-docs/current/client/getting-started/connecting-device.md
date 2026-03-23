@@ -3,9 +3,7 @@ title: Łączenie urządzenia z serwerem Outline
 sidebar_label: Łączenie urządzenia z serwerem Outline
 ---
 
-Aby połączyć swoje urządzenie z serwerem Outline, musisz otrzymać od administratora zaproszenie z niepowtarzalnym
-
-. Zaproszenie:
+Aby połączyć swoje urządzenie z serwerem Outline, musisz otrzymać od administratora zaproszenie z niepowtarzalnym [. Zaproszenie](/about/terminology):
 
 - będzie zawierać prośbę o pobranie i zainstalowanie oprogramowania Outline na urządzeniu, jeśli jeszcze nie zostało zainstalowane;
 - użyje klucza dostępu, by nawiązać bezpieczne połączenie z serwerem Outline.
