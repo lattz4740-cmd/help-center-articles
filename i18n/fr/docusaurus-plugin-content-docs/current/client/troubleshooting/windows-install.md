@@ -18,6 +18,4 @@ La procédure peut varier selon la version de votre système d'exploitation Wind
    2. Recherchez l'application du client Outline et supprimez-la.
    3. [Téléchargez la dernière version du client Outline](https://getoutline.org/get-started/#step-3) et installez-la sur votre appareil Windows. Cela devrait installer automatiquement un nouvel adaptateur TAP.
 
-Si le problème persiste,
-
-.
+Si le problème persiste, [contactez l'assistance](/about/feedback).

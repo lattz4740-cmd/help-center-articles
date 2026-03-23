@@ -18,6 +18,4 @@ Los pasos pueden variar en función de la versión del sistema operativo Windows
    2. Busca la aplicación del cliente de Outline y desinstálala.
    3. [Descarga la última versión del cliente de Outline](https://getoutline.org/get-started/#step-3) y vuelve a instalarla en tu dispositivo Windows. El nuevo proceso de instalación debería instalar automáticamente un nuevo adaptador TAP.
 
-Si los problemas persisten,
-
-.
+Si los problemas persisten, [comuníquese con el equipo de asistencia](/about/feedback).

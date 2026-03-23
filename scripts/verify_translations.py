@@ -77,9 +77,6 @@ KNOWN_ENGLISH_ONLY_ANCHORS: dict[str, set[str]] = {}
 # The verify script will skip count-mismatch checks for these docs.
 KNOWN_LINK_COUNT_DIFF_DOCS: set[str] = {
     "about/how-outline-works",  # Many links stripped; proper nouns restored, rest unrecoverable
-    "about/feedback",  # Some translations use mailto: instead of https: for security email
-    "client/troubleshooting/windows-install",  # "contact support" link text fully stripped in de/es/fr/ru
-    "manager/server-management/delete-server",  # "set up a new server" link text fully stripped in ru
 }
 
 # Known heading structure differences where translators intentionally

@@ -18,6 +18,4 @@ Die genauen Schritte unterscheiden sich je nach Version Ihres Windows-Betriebssy
    2. Suchen Sie die Outline-Client-App und deinstallieren Sie sie.
    3. [Laden Sie](https://getoutline.org/get-started/#step-3)die aktuelle Version des Outline-Clients herunter und installieren Sie sie noch einmal auf Ihrem Windows-Gerät. Damit sollte automatisch ein neuer TAP-Adapter installiert werden.
 
-Falls weiterhin Probleme auftreten,
-
-.
+Falls weiterhin Probleme auftreten, [wenden Sie sich an den Support](/about/feedback).
