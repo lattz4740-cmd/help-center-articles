@@ -1,0 +1,10 @@
+{
+  "homepage.hero.title": {
+    "message": "ہم آپ کی کس طرح مدد کر سکتے ہیں؟",
+    "description": "The hero title on the homepage"
+  },
+  "homepage.hero.searchPlaceholder": {
+    "message": "مدد تلاش کریں...",
+    "description": "The search placeholder on the homepage"
+  }
+}

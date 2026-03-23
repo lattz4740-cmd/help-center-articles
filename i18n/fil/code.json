@@ -1,0 +1,10 @@
+{
+  "homepage.hero.title": {
+    "message": "Paano ka namin matutulungan?",
+    "description": "The hero title on the homepage"
+  },
+  "homepage.hero.searchPlaceholder": {
+    "message": "Maghanap ng tulong...",
+    "description": "The search placeholder on the homepage"
+  }
+}

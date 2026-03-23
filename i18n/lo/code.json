@@ -1,0 +1,10 @@
+{
+  "homepage.hero.title": {
+    "message": "ພວກເຮົາຊ່ວຍທ່ານໄດ້ແນວໃດ?",
+    "description": "The hero title on the homepage"
+  },
+  "homepage.hero.searchPlaceholder": {
+    "message": "ຊອກຫາຄວາມຊ່ວຍເຫຼືອ...",
+    "description": "The search placeholder on the homepage"
+  }
+}

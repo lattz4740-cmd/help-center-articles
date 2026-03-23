@@ -1,0 +1,10 @@
+{
+  "homepage.hero.title": {
+    "message": "我們可以為您提供什麼協助？",
+    "description": "The hero title on the homepage"
+  },
+  "homepage.hero.searchPlaceholder": {
+    "message": "搜尋說明...",
+    "description": "The search placeholder on the homepage"
+  }
+}

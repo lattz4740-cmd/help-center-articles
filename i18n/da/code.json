@@ -1,0 +1,10 @@
+{
+  "homepage.hero.title": {
+    "message": "Hvordan kan vi hjælpe dig?",
+    "description": "The hero title on the homepage"
+  },
+  "homepage.hero.searchPlaceholder": {
+    "message": "Søg efter hjælp...",
+    "description": "The search placeholder on the homepage"
+  }
+}

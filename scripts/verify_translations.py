@@ -36,9 +36,7 @@ LOCALES = [
 ]
 
 # Docs that only exist in English (no translation expected).
-ENGLISH_ONLY: set[str] = {
-    "index",  # Root redirect page
-}
+ENGLISH_ONLY: set[str] = set()
 
 # Known missing translations that don't exist on support.google.com.
 # These were never translated in the original system.

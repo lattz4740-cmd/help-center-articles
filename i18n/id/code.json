@@ -1,0 +1,10 @@
+{
+  "homepage.hero.title": {
+    "message": "Bagaimana kami dapat membantu Anda?",
+    "description": "The hero title on the homepage"
+  },
+  "homepage.hero.searchPlaceholder": {
+    "message": "Cari bantuan...",
+    "description": "The search placeholder on the homepage"
+  }
+}

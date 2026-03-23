@@ -86,12 +86,6 @@ const config: Config = {
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'helpSidebar',
-          label: 'Help',
-          position: 'left',
-        },
-        {
           type: 'search',
           position: 'right',
         },

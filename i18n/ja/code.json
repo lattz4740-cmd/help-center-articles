@@ -1,0 +1,10 @@
+{
+  "homepage.hero.title": {
+    "message": "お困りですか？",
+    "description": "The hero title on the homepage"
+  },
+  "homepage.hero.searchPlaceholder": {
+    "message": "ヘルプを検索...",
+    "description": "The search placeholder on the homepage"
+  }
+}
