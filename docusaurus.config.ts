@@ -92,11 +92,11 @@ const config: Config = {
           position: 'left',
         },
         {
-          type: 'localeDropdown',
+          type: 'search',
           position: 'right',
         },
         {
-          type: 'search',
+          type: 'localeDropdown',
           position: 'right',
         },
       ],
@@ -144,6 +144,12 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
       additionalLanguages: ['bash', 'json', 'yaml'],
+    },
+    algolia: {
+      appId: '4DHUNZCFZ6',
+      apiKey: '45e4dfce2ff1480756753e85f50fea2e',
+      indexName: 'Support Website',
+      contextualSearch: true,
     },
   } satisfies Preset.ThemeConfig,
 };
