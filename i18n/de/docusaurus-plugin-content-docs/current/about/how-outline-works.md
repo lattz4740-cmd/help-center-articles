@@ -9,32 +9,24 @@ Die Installation von Outline mag einfach aussehen, aber im Hintergrund laufen da
 
 Bei der Installation von Outline wird immer ein Installationsskript mit folgenden Schritten ausgeführt:
 
-- Die stabile Version des Shadowbox-Images wird mit Docker abgerufen und importiert. Das Image wird auf Quay.io unter [https://quay.io/](https://quay.io/)repository/outline/shadowbox?tab=tagsgehostet. Es enthält den Outline-Server und die Management API. Letztere wird später von der Anwendung "Outline Server Management" verwendet, um Zugriffsschlüssel zu erstellen und zu entfernen sowie die Meldung anonymer Messwerte zu aktivieren oder zu deaktivieren usw.
+- Die stabile Version des Shadowbox-Images wird mit Docker abgerufen und importiert. Das Image wird auf [Quay.io](https://quay.io/) unter [https://quay.io/repository/outline/shadowbox?tab=tags](https://quay.io/repository/outline/shadowbox?tab=tags)gehostet. Es enthält den Outline-Server und die Management API. Letztere wird später von der Anwendung "Outline Server Management" verwendet, um Zugriffsschlüssel zu erstellen und zu entfernen sowie die Meldung anonymer Messwerte zu aktivieren oder zu deaktivieren usw.
 - [Watchtower](https://github.com/v2tec/watchtower) wird installiert und so konfiguriert, dass stündlich nach Image-Updates gesucht wird. Das trägt dazu bei, dass jeder Outline-Server ständig die neuesten Funktionen und Sicherheitsverbesserungen erhält und auf dem neuesten Stand ist.
 - Ein Webserver für den Zugriff auf die Management API wird auf einem zufälligen Port unter einem geheimen und zufälligen Pfad gestartet.
-- Ein selbst signiertes SSL-Zertifikat wird erstellt, sodass die Verwaltung des Outline-Servers mit TLS verschlüsselt werden kann, obwohl der Server keinen Domainnamen hat. Zusätzlich wird ein eindeutiger Fingerabdruck dieses Zertifikats erzeugt und im Outline-Manager gespeichert. So lassen sich MITM-Angriffe verhindern.
+- Ein [selbst signiertes SSL-Zertifikat](https://en.wikipedia.org/wiki/Self-signed_certificate) wird erstellt, sodass die Verwaltung des Outline-Servers mit TLS verschlüsselt werden kann, obwohl der Server keinen Domainnamen hat. Zusätzlich wird ein eindeutiger Fingerabdruck dieses Zertifikats erzeugt und im Outline-Manager gespeichert. So lassen sich MITM-Angriffe verhindern.
 
 Die Outline-Installation muss nach der Installation nicht konfiguriert werden.
 
 ## Sicherheit des Servers
 
-Outline ist eine Open-Source-Software, das heißt, jeder kann sich den Quellcode bei [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline) ansehen und ihn verbessern, um eventuelle Schwachstellen zu beheben. Der Quellcode ist bei
-
-gehostet.
+Outline ist eine Open-Source-Software, das heißt, jeder kann sich den Quellcode bei [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline) ansehen und ihn verbessern, um eventuelle Schwachstellen zu beheben.
 
 Alle installierten Outline-Server werden automatisch aktualisiert, sobald eine neue Version verfügbar ist, damit keiner mit einer veralteten Version der Software betrieben wird.
 
-Die Verwaltung der Zugriffsschlüssel erfolgt durch das Zusammenspiel des Outline-Managers mit einem Verwaltungsdienst auf dem Outline-Server. Letzterer wird von einem geheimen, eindeutigen Pfad aus über einen nach dem Zufallsprinzip ausgewählten Port ausgeführt. Der Dienst kann nicht ausgeforscht werden, weil nur Abfragen beantwortet werden, die den entsprechenden geheimen Pfad enthalten. Zusätzlich ist sämtliche Kommunikation mit dem Verwaltungsdienst mithilfe eines
-
-verschlüsselt.
+Die Verwaltung der Zugriffsschlüssel erfolgt durch das Zusammenspiel des Outline-Managers mit einem Verwaltungsdienst auf dem Outline-Server. Letzterer wird von einem geheimen, eindeutigen Pfad aus über einen nach dem Zufallsprinzip ausgewählten Port ausgeführt. Der Dienst kann nicht ausgeforscht werden, weil nur Abfragen beantwortet werden, die den entsprechenden geheimen Pfad enthalten. Zusätzlich ist sämtliche Kommunikation mit dem Verwaltungsdienst mithilfe eines [selbst signierten SSL-Zertifikats](https://en.wikipedia.org/wiki/Self-signed_certificate) verschlüsselt.
 
 Selbst durch Manipulationen von Outline-Servern lassen sich keine Nutzerdaten offenlegen, da auf den Servern keine Protokolle gespeichert werden.
 
-Outline wurde im Jahr 2018 von
-
-und
-
-geprüft.
+Outline wurde im Jahr 2018 von [Radically Open Security](https://radicallyopensecurity.com/) und [Cure53](https://cure53.de/) geprüft. Die Berichte finden Sie [hier](/about/security-and-privacy). Die Berichte finden Sie [hier](/about/security-and-privacy).
 
 ## Handling von UPD-Traffic
 

@@ -75,9 +75,7 @@ KNOWN_ENGLISH_ONLY_ANCHORS: dict[str, set[str]] = {}
 # Docs where link count differences are accepted because the GKMS converter
 # fully stripped link text that can't be reconstructed without original source.
 # The verify script will skip count-mismatch checks for these docs.
-KNOWN_LINK_COUNT_DIFF_DOCS: set[str] = {
-    "about/how-outline-works",  # Many links stripped; proper nouns restored, rest unrecoverable
-}
+KNOWN_LINK_COUNT_DIFF_DOCS: set[str] = set()
 
 # Known heading structure differences where translators intentionally
 # organized content differently. Format: (locale, doc_path)

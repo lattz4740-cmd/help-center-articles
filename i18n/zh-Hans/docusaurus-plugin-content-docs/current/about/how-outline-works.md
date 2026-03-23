@@ -9,18 +9,16 @@ sidebar_label: Outline 的运作原理
 
 每次安装 Outline 时都会运行一个安装脚本，并执行以下步骤：
 
-- 使用 Docker 检索和导入稳定版 Shadowbox 映像。该映像托管在 Quay.io，网址为 [https://quay.io/](https://quay.io/)repository/outline/shadowbox?tab=tags。该映像包含 Outline 服务器和管理 API。Outline 服务器管理应用稍后会使用此 API 创建和移除访问密钥，选择/取消报告匿名指标等。
+- 使用 Docker 检索和导入稳定版 Shadowbox 映像。该映像托管在 [Quay.io](https://quay.io/)，网址为 [https://quay.io/repository/outline/shadowbox?tab=tags](https://quay.io/repository/outline/shadowbox?tab=tags)。该映像包含 Outline 服务器和管理 API。Outline 服务器管理应用稍后会使用此 API 创建和移除访问密钥，选择/取消报告匿名指标等。
 - 安装并配置 [Watchtower](https://github.com/v2tec/watchtower) 以每隔一小时检查映像更新，从而帮助确保每个 Outline 服务器均始终使用最新的功能和安全改进设置。
 - 通过非公开的随机路径，使用随机端口启动一个网络服务器，用于访问管理 API。
-- 创建自签名 SSL 证书，以便在没有域名的情况下通过 TLS 加密 Outline 服务器的管理。系统还会生成一个唯一的证书指纹，并将其存储在 Outline 管理器应用中，帮助防止 MITM 攻击。
+- 创建[自签名 SSL 证书](https://en.wikipedia.org/wiki/Self-signed_certificate)，以便在没有域名的情况下通过 TLS 加密 Outline 服务器的管理。系统还会生成一个唯一的证书指纹，并将其存储在 Outline 管理器应用中，帮助防止 MITM 攻击。
 
 Outline 安装完成后，无需进行任何配置。
 
 ## 服务器安全
 
-Outline 是一款开放源代码软件。也就是说，任何人都可以查看代码，并可在发现漏洞后改进代码。我们的代码托管在
-
-。
+Outline 是一款开放源代码软件。也就是说，任何人都可以查看代码，并可在发现漏洞后改进代码。我们的代码托管在 [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline) 。
 
 此外，软件一有新版本发布，所有已安装的 Outline 服务器都会自动更新，以确保所有 Outline 服务器均使用最新版本的软件。
 
@@ -28,17 +26,9 @@ Outline 是一款开放源代码软件。也就是说，任何人都可以查看
 
 加密。
 
-此外，Outline 服务器不存储任何日志，因此即使被破解，也不会泄漏用户数据。您可以在
+此外，Outline 服务器不存储任何日志，因此即使被破解，也不会泄漏用户数据。您可以在 [SSL](https://en.wikipedia.org/wiki/Self-signed_certificate) 了解详情。
 
-了解详情。
-
-Outline 在 2018 年通过了
-
-和
-
-的审核。请在
-
-查看相应报告。
+Outline 在 2018 年通过了 [here](/about/security-and-privacy) 和 [Radically Open Security](https://radicallyopensecurity.com/) 的审核。请在 [Cure53](https://cure53.de/) 查看相应报告。 [→](/about/security-and-privacy).
 
 ## 处理 UDP 流量
 
