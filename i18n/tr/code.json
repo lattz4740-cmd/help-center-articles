@@ -6,5 +6,41 @@
   "homepage.hero.searchPlaceholder": {
     "message": "Yardım arayın...",
     "description": "The search placeholder on the homepage"
+  },
+  "homepage.browseTopics": {
+    "message": "Yardım konularına göz atın",
+    "description": "The heading for the browse topics section on the homepage"
+  },
+  "homepage.about.description": {
+    "message": "Outline'ın nasıl çalıştığını, güvenlik modelini ve daha fazlasını öğrenin.",
+    "description": "Description for the About Outline card on the homepage"
+  },
+  "homepage.about.button": {
+    "message": "Daha fazla bilgi",
+    "description": "Button text for the About Outline card on the homepage"
+  },
+  "homepage.client.description": {
+    "message": "Cihazınızı bağlayın ve sorunları giderin.",
+    "description": "Description for the Outline Client card on the homepage"
+  },
+  "homepage.client.button": {
+    "message": "Başlayın",
+    "description": "Button text for the Outline Client card on the homepage"
+  },
+  "homepage.manager.description": {
+    "message": "Outline sunucunuzu kurun ve yönetin.",
+    "description": "Description for the Outline Manager card on the homepage"
+  },
+  "homepage.manager.button": {
+    "message": "Sunucu kurun",
+    "description": "Button text for the Outline Manager card on the homepage"
+  },
+  "homepage.developers.description": {
+    "message": "Outline SDK'yı uygulamanıza entegre edin.",
+    "description": "Description for the For Developers card on the homepage"
+  },
+  "homepage.developers.button": {
+    "message": "SDK'yı keşfedin",
+    "description": "Button text for the For Developers card on the homepage"
   }
 }

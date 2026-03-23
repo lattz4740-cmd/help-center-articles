@@ -469,6 +469,81 @@ def verify_locale(locale: str, english_paths: set[str]) -> list[Issue]:
     return issues
 
 
+# Required translation keys in code.json (homepage strings)
+REQUIRED_CODE_TRANSLATIONS: set[str] = {
+    "homepage.hero.title",
+    "homepage.hero.searchPlaceholder",
+    "homepage.browseTopics",
+    "homepage.about.description",
+    "homepage.about.button",
+    "homepage.client.description",
+    "homepage.client.button",
+    "homepage.manager.description",
+    "homepage.manager.button",
+    "homepage.developers.description",
+    "homepage.developers.button",
+}
+
+# Required translation keys in current.json (sidebar category labels)
+REQUIRED_CURRENT_TRANSLATIONS: set[str] = {
+    "sidebar.helpSidebar.category.About Outline",
+    "sidebar.helpSidebar.category.Outline Client",
+    "sidebar.helpSidebar.category.Getting Started",
+    "sidebar.helpSidebar.category.client-troubleshooting",
+    "sidebar.helpSidebar.category.Outline Manager",
+    "sidebar.helpSidebar.category.Server Setup",
+    "sidebar.helpSidebar.category.Server Management",
+    "sidebar.helpSidebar.category.manager-troubleshooting",
+    "sidebar.helpSidebar.category.For Developers",
+}
+
+
+def verify_i18n_json(locale: str) -> list[Issue]:
+    """Verify code.json and current.json have all required translation keys."""
+    issues = []
+    locale_dir = I18N_BASE / locale
+
+    # Check code.json
+    code_json = locale_dir / "code.json"
+    if code_json.exists():
+        try:
+            data = json.loads(code_json.read_text(encoding="utf-8"))
+            for key in REQUIRED_CODE_TRANSLATIONS:
+                if key not in data:
+                    issues.append(Issue(locale, "code.json", "TRANSLATION_KEY",
+                                       f"Missing key: {key}"))
+                elif not data[key].get("message"):
+                    issues.append(Issue(locale, "code.json", "TRANSLATION_KEY",
+                                       f"Empty message: {key}"))
+        except json.JSONDecodeError as e:
+            issues.append(Issue(locale, "code.json", "TRANSLATION_KEY",
+                               f"Invalid JSON: {e}"))
+    else:
+        issues.append(Issue(locale, "code.json", "TRANSLATION_KEY",
+                           "Missing code.json"))
+
+    # Check current.json
+    current_json = locale_dir / "docusaurus-plugin-content-docs" / "current.json"
+    if current_json.exists():
+        try:
+            data = json.loads(current_json.read_text(encoding="utf-8"))
+            for key in REQUIRED_CURRENT_TRANSLATIONS:
+                if key not in data:
+                    issues.append(Issue(locale, "current.json", "TRANSLATION_KEY",
+                                       f"Missing key: {key}"))
+                elif not data[key].get("message"):
+                    issues.append(Issue(locale, "current.json", "TRANSLATION_KEY",
+                                       f"Empty message: {key}"))
+        except json.JSONDecodeError as e:
+            issues.append(Issue(locale, "current.json", "TRANSLATION_KEY",
+                               f"Invalid JSON: {e}"))
+    else:
+        issues.append(Issue(locale, "current.json", "TRANSLATION_KEY",
+                           "Missing current.json"))
+
+    return issues
+
+
 def main():
     warn_only = "--warn" in sys.argv
 
@@ -484,6 +559,7 @@ def main():
 
     for locale in LOCALES:
         issues = verify_locale(locale, english_paths)
+        issues.extend(verify_i18n_json(locale))
 
         if issues:
             print(f"FAIL {locale}: {len(issues)} issue(s)")

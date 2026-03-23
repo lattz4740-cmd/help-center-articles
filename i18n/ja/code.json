@@ -6,5 +6,41 @@
   "homepage.hero.searchPlaceholder": {
     "message": "ヘルプを検索...",
     "description": "The search placeholder on the homepage"
+  },
+  "homepage.browseTopics": {
+    "message": "ヘルプトピックを見る",
+    "description": "The heading for the browse topics section on the homepage"
+  },
+  "homepage.about.description": {
+    "message": "Outline の仕組み、セキュリティ モデルなどについて説明します。",
+    "description": "Description for the About Outline card on the homepage"
+  },
+  "homepage.about.button": {
+    "message": "詳細",
+    "description": "Button text for the About Outline card on the homepage"
+  },
+  "homepage.client.description": {
+    "message": "デバイスの接続とトラブルシューティングを始めましょう。",
+    "description": "Description for the Outline Client card on the homepage"
+  },
+  "homepage.client.button": {
+    "message": "使ってみる",
+    "description": "Button text for the Outline Client card on the homepage"
+  },
+  "homepage.manager.description": {
+    "message": "Outline サーバーを設定して管理します。",
+    "description": "Description for the Outline Manager card on the homepage"
+  },
+  "homepage.manager.button": {
+    "message": "サーバーを設定",
+    "description": "Button text for the Outline Manager card on the homepage"
+  },
+  "homepage.developers.description": {
+    "message": "Outline SDK をアプリケーションに統合しましょう。",
+    "description": "Description for the For Developers card on the homepage"
+  },
+  "homepage.developers.button": {
+    "message": "SDKを見る",
+    "description": "Button text for the For Developers card on the homepage"
   }
 }

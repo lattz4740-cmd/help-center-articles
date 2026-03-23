@@ -6,5 +6,41 @@
   "homepage.hero.searchPlaceholder": {
     "message": "도움말 검색...",
     "description": "The search placeholder on the homepage"
+  },
+  "homepage.browseTopics": {
+    "message": "도움말 주제 찾아보기",
+    "description": "The heading for the browse topics section on the homepage"
+  },
+  "homepage.about.description": {
+    "message": "Outline의 작동 방식, 보안 모델 등을 알아보세요.",
+    "description": "Description for the About Outline card on the homepage"
+  },
+  "homepage.about.button": {
+    "message": "자세히 알아보기",
+    "description": "Button text for the About Outline card on the homepage"
+  },
+  "homepage.client.description": {
+    "message": "기기를 연결하고 문제를 해결하세요.",
+    "description": "Description for the Outline Client card on the homepage"
+  },
+  "homepage.client.button": {
+    "message": "시작하기",
+    "description": "Button text for the Outline Client card on the homepage"
+  },
+  "homepage.manager.description": {
+    "message": "Outline 서버를 설정하고 관리하세요.",
+    "description": "Description for the Outline Manager card on the homepage"
+  },
+  "homepage.manager.button": {
+    "message": "서버 설정",
+    "description": "Button text for the Outline Manager card on the homepage"
+  },
+  "homepage.developers.description": {
+    "message": "Outline SDK를 애플리케이션에 통합하세요.",
+    "description": "Description for the For Developers card on the homepage"
+  },
+  "homepage.developers.button": {
+    "message": "SDK 살펴보기",
+    "description": "Button text for the For Developers card on the homepage"
   }
 }

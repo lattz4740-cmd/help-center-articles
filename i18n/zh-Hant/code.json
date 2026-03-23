@@ -6,5 +6,41 @@
   "homepage.hero.searchPlaceholder": {
     "message": "搜尋說明...",
     "description": "The search placeholder on the homepage"
+  },
+  "homepage.browseTopics": {
+    "message": "瀏覽說明主題",
+    "description": "The heading for the browse topics section on the homepage"
+  },
+  "homepage.about.description": {
+    "message": "瞭解 Outline 的運作方式、安全模型等。",
+    "description": "Description for the About Outline card on the homepage"
+  },
+  "homepage.about.button": {
+    "message": "瞭解詳情",
+    "description": "Button text for the About Outline card on the homepage"
+  },
+  "homepage.client.description": {
+    "message": "連線裝置並排解問題。",
+    "description": "Description for the Outline Client card on the homepage"
+  },
+  "homepage.client.button": {
+    "message": "開始使用",
+    "description": "Button text for the Outline Client card on the homepage"
+  },
+  "homepage.manager.description": {
+    "message": "設定及管理您的 Outline 伺服器。",
+    "description": "Description for the Outline Manager card on the homepage"
+  },
+  "homepage.manager.button": {
+    "message": "設定伺服器",
+    "description": "Button text for the Outline Manager card on the homepage"
+  },
+  "homepage.developers.description": {
+    "message": "將 Outline SDK 整合到您的應用程式中。",
+    "description": "Description for the For Developers card on the homepage"
+  },
+  "homepage.developers.button": {
+    "message": "探索 SDK",
+    "description": "Button text for the For Developers card on the homepage"
   }
 }

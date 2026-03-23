@@ -6,5 +6,41 @@
   "homepage.hero.searchPlaceholder": {
     "message": "सहायता खोजें...",
     "description": "The search placeholder on the homepage"
+  },
+  "homepage.browseTopics": {
+    "message": "सहायता विषय ब्राउज़ करें",
+    "description": "The heading for the browse topics section on the homepage"
+  },
+  "homepage.about.description": {
+    "message": "जानें कि Outline कैसे काम करता है, इसका सुरक्षा मॉडल और बहुत कुछ।",
+    "description": "Description for the About Outline card on the homepage"
+  },
+  "homepage.about.button": {
+    "message": "और जानें",
+    "description": "Button text for the About Outline card on the homepage"
+  },
+  "homepage.client.description": {
+    "message": "Get started with connecting your device and troubleshooting.",
+    "description": "Description for the Outline Client card on the homepage"
+  },
+  "homepage.client.button": {
+    "message": "शुरू करें",
+    "description": "Button text for the Outline Client card on the homepage"
+  },
+  "homepage.manager.description": {
+    "message": "Set up and manage your Outline server.",
+    "description": "Description for the Outline Manager card on the homepage"
+  },
+  "homepage.manager.button": {
+    "message": "सर्वर सेट अप करें",
+    "description": "Button text for the Outline Manager card on the homepage"
+  },
+  "homepage.developers.description": {
+    "message": "Integrate the Outline SDK into your application.",
+    "description": "Description for the For Developers card on the homepage"
+  },
+  "homepage.developers.button": {
+    "message": "SDK का अन्वेषण करें",
+    "description": "Button text for the For Developers card on the homepage"
   }
 }

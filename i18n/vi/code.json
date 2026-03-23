@@ -6,5 +6,41 @@
   "homepage.hero.searchPlaceholder": {
     "message": "Tìm kiếm trợ giúp...",
     "description": "The search placeholder on the homepage"
+  },
+  "homepage.browseTopics": {
+    "message": "Duyệt các chủ đề trợ giúp",
+    "description": "The heading for the browse topics section on the homepage"
+  },
+  "homepage.about.description": {
+    "message": "Tìm hiểu cách Outline hoạt động, mô hình bảo mật và nhiều hơn nữa.",
+    "description": "Description for the About Outline card on the homepage"
+  },
+  "homepage.about.button": {
+    "message": "Tìm hiểu thêm",
+    "description": "Button text for the About Outline card on the homepage"
+  },
+  "homepage.client.description": {
+    "message": "Bắt đầu kết nối thiết bị và khắc phục sự cố.",
+    "description": "Description for the Outline Client card on the homepage"
+  },
+  "homepage.client.button": {
+    "message": "Bắt đầu",
+    "description": "Button text for the Outline Client card on the homepage"
+  },
+  "homepage.manager.description": {
+    "message": "Thiết lập và quản lý máy chủ Outline của bạn.",
+    "description": "Description for the Outline Manager card on the homepage"
+  },
+  "homepage.manager.button": {
+    "message": "Thiết lập máy chủ",
+    "description": "Button text for the Outline Manager card on the homepage"
+  },
+  "homepage.developers.description": {
+    "message": "Tích hợp Outline SDK vào ứng dụng của bạn.",
+    "description": "Description for the For Developers card on the homepage"
+  },
+  "homepage.developers.button": {
+    "message": "Khám phá SDK",
+    "description": "Button text for the For Developers card on the homepage"
   }
 }

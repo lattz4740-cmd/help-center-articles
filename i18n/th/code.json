@@ -6,5 +6,41 @@
   "homepage.hero.searchPlaceholder": {
     "message": "ค้นหาความช่วยเหลือ...",
     "description": "The search placeholder on the homepage"
+  },
+  "homepage.browseTopics": {
+    "message": "เรียกดูหัวข้อความช่วยเหลือ",
+    "description": "The heading for the browse topics section on the homepage"
+  },
+  "homepage.about.description": {
+    "message": "เรียนรู้วิธีการทำงานของ Outline รูปแบบความปลอดภัย และอื่นๆ",
+    "description": "Description for the About Outline card on the homepage"
+  },
+  "homepage.about.button": {
+    "message": "เรียนรู้เพิ่มเติม",
+    "description": "Button text for the About Outline card on the homepage"
+  },
+  "homepage.client.description": {
+    "message": "เริ่มต้นเชื่อมต่ออุปกรณ์และแก้ไขปัญหา",
+    "description": "Description for the Outline Client card on the homepage"
+  },
+  "homepage.client.button": {
+    "message": "เริ่มต้นใช้งาน",
+    "description": "Button text for the Outline Client card on the homepage"
+  },
+  "homepage.manager.description": {
+    "message": "ตั้งค่าและจัดการเซิร์ฟเวอร์ Outline ของคุณ",
+    "description": "Description for the Outline Manager card on the homepage"
+  },
+  "homepage.manager.button": {
+    "message": "ตั้งค่าเซิร์ฟเวอร์",
+    "description": "Button text for the Outline Manager card on the homepage"
+  },
+  "homepage.developers.description": {
+    "message": "รวม Outline SDK เข้ากับแอปพลิเคชันของคุณ",
+    "description": "Description for the For Developers card on the homepage"
+  },
+  "homepage.developers.button": {
+    "message": "สำรวจ SDK",
+    "description": "Button text for the For Developers card on the homepage"
   }
 }

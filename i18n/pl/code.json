@@ -6,5 +6,41 @@
   "homepage.hero.searchPlaceholder": {
     "message": "Szukaj pomocy...",
     "description": "The search placeholder on the homepage"
+  },
+  "homepage.browseTopics": {
+    "message": "Przeglądaj tematy pomocy",
+    "description": "The heading for the browse topics section on the homepage"
+  },
+  "homepage.about.description": {
+    "message": "Dowiedz się, jak działa Outline, poznaj model zabezpieczeń i nie tylko.",
+    "description": "Description for the About Outline card on the homepage"
+  },
+  "homepage.about.button": {
+    "message": "Dowiedz się więcej",
+    "description": "Button text for the About Outline card on the homepage"
+  },
+  "homepage.client.description": {
+    "message": "Połącz urządzenie i rozwiąż problemy.",
+    "description": "Description for the Outline Client card on the homepage"
+  },
+  "homepage.client.button": {
+    "message": "Rozpocznij",
+    "description": "Button text for the Outline Client card on the homepage"
+  },
+  "homepage.manager.description": {
+    "message": "Skonfiguruj serwer Outline i zarządzaj nim.",
+    "description": "Description for the Outline Manager card on the homepage"
+  },
+  "homepage.manager.button": {
+    "message": "Skonfiguruj serwer",
+    "description": "Button text for the Outline Manager card on the homepage"
+  },
+  "homepage.developers.description": {
+    "message": "Zintegruj Outline SDK ze swoją aplikacją.",
+    "description": "Description for the For Developers card on the homepage"
+  },
+  "homepage.developers.button": {
+    "message": "Poznaj SDK",
+    "description": "Button text for the For Developers card on the homepage"
   }
 }

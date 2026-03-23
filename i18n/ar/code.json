@@ -6,5 +6,41 @@
   "homepage.hero.searchPlaceholder": {
     "message": "ابحث عن مساعدة...",
     "description": "The search placeholder on the homepage"
+  },
+  "homepage.browseTopics": {
+    "message": "تصفّح مواضيع المساعدة",
+    "description": "The heading for the browse topics section on the homepage"
+  },
+  "homepage.about.description": {
+    "message": "تعرَّف على آلية عمل Outline ونموذج الأمان والمزيد.",
+    "description": "Description for the About Outline card on the homepage"
+  },
+  "homepage.about.button": {
+    "message": "مزيد من المعلومات",
+    "description": "Button text for the About Outline card on the homepage"
+  },
+  "homepage.client.description": {
+    "message": "ابدأ بتوصيل جهازك واستكشاف الأخطاء وإصلاحها.",
+    "description": "Description for the Outline Client card on the homepage"
+  },
+  "homepage.client.button": {
+    "message": "البدء",
+    "description": "Button text for the Outline Client card on the homepage"
+  },
+  "homepage.manager.description": {
+    "message": "قم بإعداد وإدارة خادم Outline الخاص بك.",
+    "description": "Description for the Outline Manager card on the homepage"
+  },
+  "homepage.manager.button": {
+    "message": "إعداد خادم",
+    "description": "Button text for the Outline Manager card on the homepage"
+  },
+  "homepage.developers.description": {
+    "message": "ادمج حزمة Outline SDK في تطبيقك.",
+    "description": "Description for the For Developers card on the homepage"
+  },
+  "homepage.developers.button": {
+    "message": "استكشاف SDK",
+    "description": "Button text for the For Developers card on the homepage"
   }
 }

@@ -6,5 +6,41 @@
   "homepage.hero.searchPlaceholder": {
     "message": "Пошук довідки...",
     "description": "The search placeholder on the homepage"
+  },
+  "homepage.browseTopics": {
+    "message": "Перегляд тем довідки",
+    "description": "The heading for the browse topics section on the homepage"
+  },
+  "homepage.about.description": {
+    "message": "Дізнайтеся, як працює Outline, його модель безпеки тощо.",
+    "description": "Description for the About Outline card on the homepage"
+  },
+  "homepage.about.button": {
+    "message": "Дізнатися більше",
+    "description": "Button text for the About Outline card on the homepage"
+  },
+  "homepage.client.description": {
+    "message": "Підключіть пристрій і усуньте несправності.",
+    "description": "Description for the Outline Client card on the homepage"
+  },
+  "homepage.client.button": {
+    "message": "Почати",
+    "description": "Button text for the Outline Client card on the homepage"
+  },
+  "homepage.manager.description": {
+    "message": "Налаштуйте сервер Outline і керуйте ним.",
+    "description": "Description for the Outline Manager card on the homepage"
+  },
+  "homepage.manager.button": {
+    "message": "Налаштувати сервер",
+    "description": "Button text for the Outline Manager card on the homepage"
+  },
+  "homepage.developers.description": {
+    "message": "Інтегруйте Outline SDK у свій додаток.",
+    "description": "Description for the For Developers card on the homepage"
+  },
+  "homepage.developers.button": {
+    "message": "Дослідити SDK",
+    "description": "Button text for the For Developers card on the homepage"
   }
 }

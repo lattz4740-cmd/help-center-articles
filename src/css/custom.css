@@ -65,3 +65,76 @@
   border-color: #bbb;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
+
+/* Browse help topics */
+.browse-topics {
+  padding: 2rem 3rem 4rem;
+}
+
+.browse-topics__heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.browse-topics__list {
+  display: flex;
+  gap: 2rem;
+}
+
+.browse-topics__card {
+  flex: 1;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.browse-topics__card-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+.browse-topics__card-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.browse-topics__card-description {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #5f6368;
+  margin-bottom: 1.5rem;
+}
+
+.browse-topics__card-button {
+  align-self: flex-start;
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  background-color: #183729;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.browse-topics__card-button:hover {
+  background-color: #1e4d38;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 960px) {
+  .browse-topics {
+    padding: 2rem 1.5rem;
+  }
+
+  .browse-topics__list {
+    flex-direction: column;
+  }
+}
