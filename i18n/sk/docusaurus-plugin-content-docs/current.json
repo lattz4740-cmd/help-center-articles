@@ -1,0 +1,42 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.helpSidebar.category.About Outline": {
+    "message": "O softvéri Outline",
+    "description": "The label for category 'About Outline' in sidebar 'helpSidebar'"
+  },
+  "sidebar.helpSidebar.category.Outline Client": {
+    "message": "Outline Client",
+    "description": "The label for category 'Outline Client' in sidebar 'helpSidebar'"
+  },
+  "sidebar.helpSidebar.category.Getting Started": {
+    "message": "Začíname",
+    "description": "The label for category 'Getting Started' in sidebar 'helpSidebar'"
+  },
+  "sidebar.helpSidebar.category.client-troubleshooting": {
+    "message": "Odstraňovanie problémov",
+    "description": "The label for category 'Troubleshooting' in sidebar 'helpSidebar'"
+  },
+  "sidebar.helpSidebar.category.Outline Manager": {
+    "message": "Správca Outline",
+    "description": "The label for category 'Outline Manager' in sidebar 'helpSidebar'"
+  },
+  "sidebar.helpSidebar.category.Server Setup": {
+    "message": "Nastavenie servera",
+    "description": "The label for category 'Server Setup' in sidebar 'helpSidebar'"
+  },
+  "sidebar.helpSidebar.category.Server Management": {
+    "message": "Správa servera",
+    "description": "The label for category 'Server Management' in sidebar 'helpSidebar'"
+  },
+  "sidebar.helpSidebar.category.manager-troubleshooting": {
+    "message": "Odstraňovanie problémov",
+    "description": "The label for category 'Troubleshooting' in sidebar 'helpSidebar'"
+  },
+  "sidebar.helpSidebar.category.For Developers": {
+    "message": "Pre vývojárov",
+    "description": "The label for category 'For Developers' in sidebar 'helpSidebar'"
+  }
+}

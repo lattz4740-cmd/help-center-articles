@@ -1,0 +1,42 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.helpSidebar.category.About Outline": {
+    "message": "Об Outline",
+    "description": "The label for category 'About Outline' in sidebar 'helpSidebar'"
+  },
+  "sidebar.helpSidebar.category.Outline Client": {
+    "message": "Клиент Outline",
+    "description": "The label for category 'Outline Client' in sidebar 'helpSidebar'"
+  },
+  "sidebar.helpSidebar.category.Getting Started": {
+    "message": "Начало работы",
+    "description": "The label for category 'Getting Started' in sidebar 'helpSidebar'"
+  },
+  "sidebar.helpSidebar.category.client-troubleshooting": {
+    "message": "Устранение неполадок",
+    "description": "The label for category 'Troubleshooting' in sidebar 'helpSidebar'"
+  },
+  "sidebar.helpSidebar.category.Outline Manager": {
+    "message": "Менеджер Outline",
+    "description": "The label for category 'Outline Manager' in sidebar 'helpSidebar'"
+  },
+  "sidebar.helpSidebar.category.Server Setup": {
+    "message": "Настройка сервера",
+    "description": "The label for category 'Server Setup' in sidebar 'helpSidebar'"
+  },
+  "sidebar.helpSidebar.category.Server Management": {
+    "message": "Управление сервером",
+    "description": "The label for category 'Server Management' in sidebar 'helpSidebar'"
+  },
+  "sidebar.helpSidebar.category.manager-troubleshooting": {
+    "message": "Устранение неполадок",
+    "description": "The label for category 'Troubleshooting' in sidebar 'helpSidebar'"
+  },
+  "sidebar.helpSidebar.category.For Developers": {
+    "message": "Для разработчиков",
+    "description": "The label for category 'For Developers' in sidebar 'helpSidebar'"
+  }
+}

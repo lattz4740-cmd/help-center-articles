@@ -1,0 +1,42 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.helpSidebar.category.About Outline": {
+    "message": "Informacje o Outline",
+    "description": "The label for category 'About Outline' in sidebar 'helpSidebar'"
+  },
+  "sidebar.helpSidebar.category.Outline Client": {
+    "message": "Klient Outline",
+    "description": "The label for category 'Outline Client' in sidebar 'helpSidebar'"
+  },
+  "sidebar.helpSidebar.category.Getting Started": {
+    "message": "Pierwsze kroki",
+    "description": "The label for category 'Getting Started' in sidebar 'helpSidebar'"
+  },
+  "sidebar.helpSidebar.category.client-troubleshooting": {
+    "message": "Rozwiązywanie problemów",
+    "description": "The label for category 'Troubleshooting' in sidebar 'helpSidebar'"
+  },
+  "sidebar.helpSidebar.category.Outline Manager": {
+    "message": "Menedżer Outline",
+    "description": "The label for category 'Outline Manager' in sidebar 'helpSidebar'"
+  },
+  "sidebar.helpSidebar.category.Server Setup": {
+    "message": "Konfiguracja serwera",
+    "description": "The label for category 'Server Setup' in sidebar 'helpSidebar'"
+  },
+  "sidebar.helpSidebar.category.Server Management": {
+    "message": "Zarządzanie serwerem",
+    "description": "The label for category 'Server Management' in sidebar 'helpSidebar'"
+  },
+  "sidebar.helpSidebar.category.manager-troubleshooting": {
+    "message": "Rozwiązywanie problemów",
+    "description": "The label for category 'Troubleshooting' in sidebar 'helpSidebar'"
+  },
+  "sidebar.helpSidebar.category.For Developers": {
+    "message": "Dla programistów",
+    "description": "The label for category 'For Developers' in sidebar 'helpSidebar'"
+  }
+}
