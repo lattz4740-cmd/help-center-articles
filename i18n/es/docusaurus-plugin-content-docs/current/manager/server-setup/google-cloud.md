@@ -29,7 +29,7 @@ Para proporcionar una configuración automática, Administrador de Outline neces
 - Ver y gestionar tus cuentas de facturación de Google Cloud Platform
 - Gestionar tu configuración de servicios de la API de Google
 
-## Con estos permisos podemos ofrecer funciones avanzadas para gestionar tus servidores de Outline como las mencionadas a continuación:
+Con estos permisos podemos ofrecer funciones avanzadas para gestionar tus servidores de Outline como las mencionadas a continuación:
 
 - Permitir que se seleccione la cuenta de facturación correcta
 - Crear un proyecto para organizar tus servidores de Outline

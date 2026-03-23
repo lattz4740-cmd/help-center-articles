@@ -29,7 +29,7 @@ Outline Manager'ın otomatik kurulum yapabilmesi için Google Hesabınızdan aş
 - Google Cloud Platform faturalandırma hesaplarınızı görüntüleme ve yönetme
 - Google API hizmet yapılandırmanızı yönetme
 
-## Bu izinler, Outline sunucularınızı yönetmek için gelişmiş işlevleri desteklememize olanak tanır. Örneğin:
+Bu izinler, Outline sunucularınızı yönetmek için gelişmiş işlevleri desteklememize olanak tanır. Örneğin:
 
 - Doğru faturalandırma hesabını seçmenize olanak tanıma
 - Outline sunucularınızı organize etmek için yeni bir proje oluşturma

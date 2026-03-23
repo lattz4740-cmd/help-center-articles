@@ -29,7 +29,7 @@ Outline Manager 有項功能可以在執行 Google Cloud 的伺服器上自動�
 - 查看及管理 Google Cloud Platform 帳單帳戶
 - 管理 Google API 服務設定
 
-## 有了這些權限，Outline Manager 即可針對 Outline 伺服器提供下列進階管理功能：
+有了這些權限，Outline Manager 即可針對 Outline 伺服器提供下列進階管理功能：
 
 - 讓你選取正確的帳單帳戶
 - 建立用於管理 Outline 伺服器的新專案

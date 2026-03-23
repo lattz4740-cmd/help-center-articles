@@ -81,13 +81,7 @@ KNOWN_LINK_COUNT_DIFF_DOCS: set[str] = {
 
 # Known heading structure differences where translators intentionally
 # organized content differently. Format: (locale, doc_path)
-KNOWN_HEADING_DIFFS: set[tuple[str, str]] = {
-    # google-cloud: translators added extra heading splitting "Additional access"
-    ("es", "manager/server-setup/google-cloud"),
-    ("tr", "manager/server-setup/google-cloud"),
-    ("zh-Hans", "manager/server-setup/google-cloud"),
-    ("zh-Hant", "manager/server-setup/google-cloud"),
-}
+KNOWN_HEADING_DIFFS: set[tuple[str, str]] = set()
 
 # Threshold for content parity warnings. If the translation's non-code
 # content is less than this fraction of the English content length, flag it.

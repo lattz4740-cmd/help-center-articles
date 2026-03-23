@@ -29,7 +29,7 @@ Outline 管理器包含一项功能，可让您在运行于 Google Cloud 的服�
 - 查看和管理您的 Google Cloud Platform 结算帐号
 - 管理您的 Google API 服务配置
 
-## 这些权限让我们能支持用于管理 Outline 服务器的高级功能，包括：
+这些权限让我们能支持用于管理 Outline 服务器的高级功能，包括：
 
 - 允许您选择正确的结算帐号
 - 创建新项目来整理 Outline 服务器
