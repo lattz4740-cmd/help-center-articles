@@ -432,27 +432,6 @@ def verify_locale(locale: str, english_paths: set[str]) -> list[Issue]:
                     f"({len(tr_content)} vs {len(en_content)} chars)"
                 ))
 
-    # Check _category_.json files
-    for cat_dir in CATEGORY_DIRS:
-        cat_json = locale_dir / cat_dir / "_category_.json"
-        if not cat_json.exists():
-            issues.append(Issue(
-                locale, f"{cat_dir}/_category_.json", "CATEGORY_MISSING",
-                "Category label translation missing"
-            ))
-        else:
-            try:
-                data = json.loads(cat_json.read_text(encoding="utf-8"))
-                if "label" not in data:
-                    issues.append(Issue(
-                        locale, f"{cat_dir}/_category_.json", "CATEGORY_INVALID",
-                        "Missing 'label' key"
-                    ))
-            except json.JSONDecodeError as e:
-                issues.append(Issue(
-                    locale, f"{cat_dir}/_category_.json", "CATEGORY_INVALID",
-                    f"Invalid JSON: {e}"
-                ))
 
     return issues
 

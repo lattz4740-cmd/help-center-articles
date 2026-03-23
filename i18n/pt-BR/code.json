@@ -11,6 +11,10 @@
     "message": "Explorar tópicos de ajuda",
     "description": "The heading for the browse topics section on the homepage"
   },
+  "homepage.about.title": {
+    "message": "Sobre o Outline",
+    "description": "Title for the About Outline card on the homepage"
+  },
   "homepage.about.description": {
     "message": "Saiba como o Outline funciona, o modelo de segurança e muito mais.",
     "description": "Description for the About Outline card on the homepage"
@@ -18,6 +22,10 @@
   "homepage.about.button": {
     "message": "Saiba mais",
     "description": "Button text for the About Outline card on the homepage"
+  },
+  "homepage.client.title": {
+    "message": "App cliente do Outline",
+    "description": "Title for the Outline Client card on the homepage"
   },
   "homepage.client.description": {
     "message": "Conecte seu dispositivo e resolva problemas.",
@@ -27,6 +35,10 @@
     "message": "Começar",
     "description": "Button text for the Outline Client card on the homepage"
   },
+  "homepage.manager.title": {
+    "message": "Outline Manager",
+    "description": "Title for the Outline Manager card on the homepage"
+  },
   "homepage.manager.description": {
     "message": "Configure e gerencie seu servidor Outline.",
     "description": "Description for the Outline Manager card on the homepage"
@@ -34,6 +46,10 @@
   "homepage.manager.button": {
     "message": "Configurar servidor",
     "description": "Button text for the Outline Manager card on the homepage"
+  },
+  "homepage.developers.title": {
+    "message": "Para desenvolvedores",
+    "description": "Title for the For Developers card on the homepage"
   },
   "homepage.developers.description": {
     "message": "Integre o SDK do Outline ao seu aplicativo.",

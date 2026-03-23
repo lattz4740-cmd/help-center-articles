@@ -7,7 +7,7 @@ function BrowseTopics() {
   const cards = [
     {
       image: '/images/landing-guides.png',
-      titleId: 'sidebar.helpSidebar.category.About Outline',
+      titleId: 'homepage.about.title',
       title: 'About Outline',
       descriptionId: 'homepage.about.description',
       description: 'Learn how Outline works, its security model, and more.',
@@ -17,7 +17,7 @@ function BrowseTopics() {
     },
     {
       image: '/images/outline-client.svg',
-      titleId: 'sidebar.helpSidebar.category.Outline Client',
+      titleId: 'homepage.client.title',
       title: 'Outline Client',
       descriptionId: 'homepage.client.description',
       description: 'Get started with connecting your device and troubleshooting.',
@@ -27,7 +27,7 @@ function BrowseTopics() {
     },
     {
       image: '/images/outline-manager.svg',
-      titleId: 'sidebar.helpSidebar.category.Outline Manager',
+      titleId: 'homepage.manager.title',
       title: 'Outline Manager',
       descriptionId: 'homepage.manager.description',
       description: 'Set up and manage your Outline server.',
@@ -37,7 +37,7 @@ function BrowseTopics() {
     },
     {
       image: '/images/landing-reference.png',
-      titleId: 'sidebar.helpSidebar.category.For Developers',
+      titleId: 'homepage.developers.title',
       title: 'For Developers',
       descriptionId: 'homepage.developers.description',
       description: 'Integrate the Outline SDK into your application.',

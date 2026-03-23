@@ -11,6 +11,10 @@
     "message": "Duyệt các chủ đề trợ giúp",
     "description": "The heading for the browse topics section on the homepage"
   },
+  "homepage.about.title": {
+    "message": "Giới thiệu về Outline",
+    "description": "Title for the About Outline card on the homepage"
+  },
   "homepage.about.description": {
     "message": "Tìm hiểu cách Outline hoạt động, mô hình bảo mật và nhiều hơn nữa.",
     "description": "Description for the About Outline card on the homepage"
@@ -18,6 +22,10 @@
   "homepage.about.button": {
     "message": "Tìm hiểu thêm",
     "description": "Button text for the About Outline card on the homepage"
+  },
+  "homepage.client.title": {
+    "message": "Ứng dụng Outline",
+    "description": "Title for the Outline Client card on the homepage"
   },
   "homepage.client.description": {
     "message": "Bắt đầu kết nối thiết bị và khắc phục sự cố.",
@@ -27,6 +35,10 @@
     "message": "Bắt đầu",
     "description": "Button text for the Outline Client card on the homepage"
   },
+  "homepage.manager.title": {
+    "message": "Quản lý Outline",
+    "description": "Title for the Outline Manager card on the homepage"
+  },
   "homepage.manager.description": {
     "message": "Thiết lập và quản lý máy chủ Outline của bạn.",
     "description": "Description for the Outline Manager card on the homepage"
@@ -34,6 +46,10 @@
   "homepage.manager.button": {
     "message": "Thiết lập máy chủ",
     "description": "Button text for the Outline Manager card on the homepage"
+  },
+  "homepage.developers.title": {
+    "message": "Dành cho nhà phát triển",
+    "description": "Title for the For Developers card on the homepage"
   },
   "homepage.developers.description": {
     "message": "Tích hợp Outline SDK vào ứng dụng của bạn.",
