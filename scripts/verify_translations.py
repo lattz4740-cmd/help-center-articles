@@ -67,19 +67,6 @@ KNOWN_MISSING: set[tuple[str, str]] = {
     ("ur", "client/getting-started/system-requirements"),  # Was in Ukrainian (uk)
 }
 
-# Heading anchors that only exist in the English version (manually added
-# post-conversion). Translations won't have these.
-KNOWN_ENGLISH_ONLY_ANCHORS: dict[str, set[str]] = {}
-
-# Known link count differences between English and translations.
-# Docs where link count differences are accepted because the GKMS converter
-# fully stripped link text that can't be reconstructed without original source.
-# The verify script will skip count-mismatch checks for these docs.
-KNOWN_LINK_COUNT_DIFF_DOCS: set[str] = set()
-
-# Known heading structure differences where translators intentionally
-# organized content differently. Format: (locale, doc_path)
-KNOWN_HEADING_DIFFS: set[tuple[str, str]] = set()
 
 # Threshold for content parity warnings. If the translation's non-code
 # content is less than this fraction of the English content length, flag it.
@@ -339,14 +326,11 @@ def verify_locale(locale: str, english_paths: set[str]) -> list[Issue]:
         en_links = [normalize_link_url(u) for u in extract_link_urls(en_text)]
         tr_links = [normalize_link_url(u) for u in extract_link_urls(tr_text)]
         if len(en_links) != len(tr_links):
-            if doc_path in KNOWN_LINK_COUNT_DIFF_DOCS:
-                pass
-            else:
-                issues.append(Issue(
-                    locale, doc_path, "LINKS",
-                    f"Count mismatch: English has {len(en_links)}, "
-                    f"translation has {len(tr_links)}"
-                ))
+            issues.append(Issue(
+                locale, doc_path, "LINKS",
+                f"Count mismatch: English has {len(en_links)}, "
+                f"translation has {len(tr_links)}"
+            ))
         else:
             # Check if links differ only in order (valid for RTL/different word order)
             if sorted(en_links) == sorted(tr_links):
@@ -363,8 +347,6 @@ def verify_locale(locale: str, english_paths: set[str]) -> list[Issue]:
         # Heading anchors
         en_anchors = set(extract_heading_anchors(en_text))
         tr_anchors = set(extract_heading_anchors(tr_text))
-        known_en_only = KNOWN_ENGLISH_ONLY_ANCHORS.get(doc_path, set())
-        en_anchors -= known_en_only
         missing_anchors = en_anchors - tr_anchors
         extra_anchors = tr_anchors - en_anchors
         if missing_anchors:
@@ -386,12 +368,11 @@ def verify_locale(locale: str, english_paths: set[str]) -> list[Issue]:
         en_sections = [l for l in en_levels if l == 2]
         tr_sections = [l for l in tr_levels if l == 2]
         if en_sections != tr_sections:
-            if (locale, doc_path) not in KNOWN_HEADING_DIFFS:
-                issues.append(Issue(
-                    locale, doc_path, "HEADING_STRUCTURE",
-                    f"Section headings (h2) differ: English has {len(en_sections)}, "
-                    f"translation has {len(tr_sections)}"
-                ))
+            issues.append(Issue(
+                locale, doc_path, "HEADING_STRUCTURE",
+                f"Section headings (h2) differ: English has {len(en_sections)}, "
+                f"translation has {len(tr_sections)}"
+            ))
 
         # Bold-only lines that should be headings: translations should not
         # have standalone **bold** lines if English doesn't
