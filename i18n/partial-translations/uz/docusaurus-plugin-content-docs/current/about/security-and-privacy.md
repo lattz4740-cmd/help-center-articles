@@ -21,10 +21,10 @@ Outline qurilmangiz tomonidan Outline serveriga uzatiladigan maʼlumotlarni AEAD
 
 2018-yilda Outline xizmati dasturlarni eng yangi xavfsizlik standartlariga muvofiqligini tekshiradigan ikkita mustaqil tashkilot – Radically Open Security va Cure53 tomonidan tekshirilgan. Radically Open Security 2022-yilda qoʻshimcha tekshiruv oʻtkazdi va Cure53 2024-yilda Outline SDK tekshiruvini oʻtkazdi. Hisobotlarni bu yerda oʻqishingiz mumkin:
 
-- [Singish testiga doir Radically Open Security hisoboti (2018-yil mart)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Jigsaw Outline xizmatini singish testi va tekshiruviga oid Cure53 hisoboti (December 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Singish testiga doir Radically Open Security hisoboti (2022-yil, dekabr)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Jigsaw Outline VPN SDK xizmatini singish testiga oid Cure53 hisoboti (2024-yil, yanvar)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Singish testiga doir Radically Open Security hisoboti (2018-yil mart)](https://getoutline.org/reports/ros-report.pdf)
+- [Jigsaw Outline xizmatini singish testi va tekshiruviga oid Cure53 hisoboti (December 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [Singish testiga doir Radically Open Security hisoboti (2022-yil, dekabr)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Jigsaw Outline VPN SDK xizmatini singish testiga oid Cure53 hisoboti (2024-yil, yanvar)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Anonim koʻrsatkichlar va jurnallar
 

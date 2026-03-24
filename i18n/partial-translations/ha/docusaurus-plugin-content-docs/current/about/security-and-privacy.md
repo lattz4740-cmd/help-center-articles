@@ -21,10 +21,10 @@ Outline na ɓoye sadarwa tsakanin na'urarka da Sabar Outline ta amfani da makull
 
 A shekarar 2018, Radically Open Security da Cure53, kamfanonin ba da tsaro na dijital masu zaman kansu da ke tantance manhaja bisa sabbin mizanin tsaro, sun gudanar da bincike kan Outline. Radically Open Security sun sake gudanar da wani binciken a shekarar 2022, yayin da Cure53 suka gudanar da bincike kan Outline SDK a 2024. Za ka iya karanta rahoton a nan:
 
-- [Rahoton Gwajin Tsaron Radically Open Security (Maris 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Rahoton Gwajin Tsaro da Bincike na Cure53 Jigsaw Outline (Disamba 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Rahoton Gwajin Tsaro na Radically Open Security (Disamba 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Rahoton Gwajin Tsaro na Cure53 Jigsaw Outline VPN SDK (Janairu 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Rahoton Gwajin Tsaron Radically Open Security (Maris 2018)](https://getoutline.org/reports/ros-report.pdf)
+- [Rahoton Gwajin Tsaro da Bincike na Cure53 Jigsaw Outline (Disamba 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [Rahoton Gwajin Tsaro na Radically Open Security (Disamba 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Rahoton Gwajin Tsaro na Cure53 Jigsaw Outline VPN SDK (Janairu 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Sakayayyun ma'aunai da bayanai
 

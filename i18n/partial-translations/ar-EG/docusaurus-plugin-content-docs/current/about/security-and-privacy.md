@@ -21,10 +21,10 @@ sidebar_label: الأمان والخصوصية أثناء استخدام برن�
 
 في عام 2018، خضع برنامج Outline لعمليتي تدقيق من قِبل شركتي الأمن الرقمي Radically Open Security وCure53 المستقلّتين والمتخصصتين في مراجعة البرامج للتأكد من مطابقتها لأحدث معايير الأمان. وأجرت Radically Open Security تدقيقًا إضافيًا في 2022، وخضعت حزمة Outline SDK للتدقيق في 2024 من Cure53. وفي ما يلي روابط التقارير:
 
-- ‫[Radically Open Security Penetration Test Report (مارس 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- ‫[Cure53 Pentest & Audit Report Jigsaw Outline (ديسمبر 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- ‫[Radically Open Security Penetration Test Report (ديسمبر 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- ‫[Cure53 Pentest Report Jigsaw Outline VPN SDK (يناير 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- ‫[Radically Open Security Penetration Test Report (مارس 2018)](https://getoutline.org/reports/ros-report.pdf)
+- ‫[Cure53 Pentest & Audit Report Jigsaw Outline (ديسمبر 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- ‫[Radically Open Security Penetration Test Report (ديسمبر 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- ‫[Cure53 Pentest Report Jigsaw Outline VPN SDK (يناير 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## المقاييس والسجلات المجهولة الهوية
 

@@ -21,10 +21,10 @@ Outline, ২৫৬-বিট সম্পন্ন Chacha2020 IETF Poly 1305 অ
 
 ২০১৮ সালে, Radically Open Security ও Cure53 নামের দুটি নিরপেক্ষ ডিজিটাল সুরক্ষা সংস্থা, Outline অডিট করেছিল যেখানে লেটেস্ট নিরাপত্তা স্ট্যান্ডার্ডের নিরিখে সফ্টওয়্যার পর্যালোচনা করে দেখা হয়েছিল। ২০২২ সালে Radically Open Security একটি অতিরিক্ত অডিট এবং ২০২৪ সালে Cure53 Outline SDK-এর অডিট পরিচালনা করেছিল। আপনি এখান থেকে রিপোর্টগুলি পড়তে পারবেন:
 
-- [Radically Open Security-এর পেনিট্রেশন টেস্ট রিপোর্ট (মার্চ ২০১৮)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53 পেন্টেস্ট ও অডিট রিপোর্ট, Jigsaw Outline (ডিসেম্বর ২০১৮)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Radically Open Security পেনিট্রেশন টেস্ট রিপোর্ট (ডিসেম্বর ২০২২)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Cure53 পেন্টেস্ট রিপোর্ট Jigsaw Outline VPN SDK (জানুয়ারি, ২০২৪)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Radically Open Security-এর পেনিট্রেশন টেস্ট রিপোর্ট (মার্চ ২০১৮)](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53 পেন্টেস্ট ও অডিট রিপোর্ট, Jigsaw Outline (ডিসেম্বর ২০১৮)](https://getoutline.org/reports/cure53-report.pdf)
+- [Radically Open Security পেনিট্রেশন টেস্ট রিপোর্ট (ডিসেম্বর ২০২২)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Cure53 পেন্টেস্ট রিপোর্ট Jigsaw Outline VPN SDK (জানুয়ারি, ২০২৪)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## পরিচয় গোপন করা মেট্রিক ও লগ
 

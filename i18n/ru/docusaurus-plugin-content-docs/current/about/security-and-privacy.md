@@ -21,10 +21,10 @@ Outline шифрует данные, передаваемые вашим уст�
 
 В 2018 году сервис Outline прошел проверку Radically Open Security и Cure53 – двух независимых организаций, которые проверяют соответствие программного обеспечения новейшим стандартам безопасности. В 2022 году компания Radically Open Security провела дополнительное тестирование, а в 2024 году компания Cure53 протестировала Outline SDK. Вы можете ознакомиться с отчетами по результатам этих проверок.
 
-- [Отчет Radically Open Security о тестировании на проникновение (март 2018 г.)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Отчет Cure53 о тестировании на проникновение и результатах проверки сервиса Jigsaw Outline (декабрь 2018 г.)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Отчет Radically Open Security о тестировании на проникновение (декабрь 2022 г.)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Отчет Cure53 о тестировании на проникновение Jigsaw Outline VPN SDK (январь 2024 г.)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Отчет Radically Open Security о тестировании на проникновение (март 2018 г.)](https://getoutline.org/reports/ros-report.pdf)
+- [Отчет Cure53 о тестировании на проникновение и результатах проверки сервиса Jigsaw Outline (декабрь 2018 г.)](https://getoutline.org/reports/cure53-report.pdf)
+- [Отчет Radically Open Security о тестировании на проникновение (декабрь 2022 г.)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Отчет Cure53 о тестировании на проникновение Jigsaw Outline VPN SDK (январь 2024 г.)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Анонимные показатели и журналы
 

@@ -21,10 +21,10 @@ Outline szyfruje komunikację między Twoim urządzeniem a serwerem Outline za p
 
 W 2018 r. Radically Open Security i Cure53 – dwie niezależne organizacje ds. bezpieczeństwa cyfrowego, które sprawdzają oprogramowanie pod kątem najnowszych standardów bezpieczeństwa – przeprowadziły audyt Outline. W 2022 r. organizacja Radically Open Security przeprowadziła dodatkową kontrolę, a w 2024 r. organizacja Cure53 przeprowadziła kontrolę Outline SDK. Ze sprawozdaniami można zapoznać się tutaj:
 
-- [Raport z testu penetracyjnego przeprowadzonego przez Radically Open Security (marzec 2018 r.)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Raport z testu penetracyjnego i audytu Jigsaw Outline przeprowadzonego przez Cure53 (grudzień 2018 r.)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Raport z testu penetracyjnego przeprowadzonego przez Radically Open Security (grudzień 2022 r.)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Raport z przeprowadzonego przez Cure53 testu penetracyjnego pakietu SDK usługi Jigsaw Outline VPN (styczeń 2024 r.)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Raport z testu penetracyjnego przeprowadzonego przez Radically Open Security (marzec 2018 r.)](https://getoutline.org/reports/ros-report.pdf)
+- [Raport z testu penetracyjnego i audytu Jigsaw Outline przeprowadzonego przez Cure53 (grudzień 2018 r.)](https://getoutline.org/reports/cure53-report.pdf)
+- [Raport z testu penetracyjnego przeprowadzonego przez Radically Open Security (grudzień 2022 r.)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Raport z przeprowadzonego przez Cure53 testu penetracyjnego pakietu SDK usługi Jigsaw Outline VPN (styczeń 2024 r.)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Anonimowe dane i dzienniki
 

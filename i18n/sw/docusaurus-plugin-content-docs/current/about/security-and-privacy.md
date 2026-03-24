@@ -21,10 +21,10 @@ Outline husimba kwa njia fiche mawasiliano kati ya kifaa chako na Seva ya Outlin
 
 Mwaka 2018, Outline ilikaguliwa na Radically Open Security na Cure53, mashirika mawili huru ya usalama dijitali yanayokagua programu kulingana na viwango vipya vya usalama. Radically Open Security ilifanya ukaguzi wa ziada mwaka 2022 na Cure53 ilifanya ukaguzi wa Outline SDK mwaka 2024. Unaweza kusoma ripoti hapa:
 
-- [Ripoti ya Radically Open Security kuhusu Jaribio la Uwezekano wa Kuhujumika (Machi 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Ripoti ya Cure53 kuhusu Jaribio la Uwezekano wa Kuhujumika na Ukaguzi wa Jigsaw Outline (Desemba 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Ripoti ya Radically Open Security kuhusu Jaribio la Uwezekano wa Kuhujumika (Desemba 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Ripoti ya Cure53 kuhusu Jaribio la Uwezekano wa Kuhujumika la Outline VPN SDK kutoka Jigsaw (Januari 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Ripoti ya Radically Open Security kuhusu Jaribio la Uwezekano wa Kuhujumika (Machi 2018)](https://getoutline.org/reports/ros-report.pdf)
+- [Ripoti ya Cure53 kuhusu Jaribio la Uwezekano wa Kuhujumika na Ukaguzi wa Jigsaw Outline (Desemba 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [Ripoti ya Radically Open Security kuhusu Jaribio la Uwezekano wa Kuhujumika (Desemba 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Ripoti ya Cure53 kuhusu Jaribio la Uwezekano wa Kuhujumika la Outline VPN SDK kutoka Jigsaw (Januari 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Vipimo na kumbukumbu zinazoficha utambulisho wa data
 

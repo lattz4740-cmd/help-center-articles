@@ -21,10 +21,10 @@ AEAD 256-bit Chacha2020 IETF Poly 1305 மறைகுறியீட்டை�
 
 2018ல், சமீபத்திய பாதுகாப்புத் தரநிலைகளுக்கு ஏற்ப மென்பொருளை மதிப்பாய்வு செய்யும் இரண்டு சுயாதீன டிஜிட்டல் பாதுகாப்பு நிறுவனங்களான Radically Open Security, Cure53 ஆகியவற்றால் Outline தணிக்கை செய்யப்பட்டது. 2022ல் Radically Open Security கூடுதல் தணிக்கையை நடத்தியது, மேலும் 2024ல் Cure53, Outline SDKவைத் தணிக்கை செய்தது. அவற்றின் அறிக்கைகளை இங்கே படிக்கலாம்:
 
-- [Radically Open Security பெனட்ரேட்டிங் டெஸ்ட் அறிக்கை (மார்ச் 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53 பெனட்ரேட்டிங் டெஸ்ட் மற்றும் தணிக்கை அறிக்கை Jigsaw Outline (டிசம்பர் 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Radically Open Security பெனட்ரேட்டிங் டெஸ்ட் அறிக்கை (டிசம்பர் 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Cure53 பெனட்ரேட்டிங் டெஸ்ட் அறிக்கை Jigsaw Outline VPN SDK (ஜனவரி 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Radically Open Security பெனட்ரேட்டிங் டெஸ்ட் அறிக்கை (மார்ச் 2018)](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53 பெனட்ரேட்டிங் டெஸ்ட் மற்றும் தணிக்கை அறிக்கை Jigsaw Outline (டிசம்பர் 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [Radically Open Security பெனட்ரேட்டிங் டெஸ்ட் அறிக்கை (டிசம்பர் 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Cure53 பெனட்ரேட்டிங் டெஸ்ட் அறிக்கை Jigsaw Outline VPN SDK (ஜனவரி 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## அடையாளம் நீக்கப்பட்ட அளவீடுகளும் பதிவுகளும்
 

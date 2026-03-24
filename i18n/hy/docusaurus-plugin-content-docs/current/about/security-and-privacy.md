@@ -21,10 +21,10 @@ Outline-ը գաղտնագրում է ձեր սարքից Outline-ի սերվեր
 
 2018-ին Outline-ը աուդիտի է ենթարկվել Radically Open Security և Cure53 կազմակերպությունների կողմից։ Սրանք թվային անվտանգության ոլորտի երկու անկախ կազմակերպություններ են, որոնք ստուգում են ծրագրակազմերը՝ համոզվելու, որ դրանք համապատասխանում են անվտանգության վերջին ստանդարտներին։ Radically Open Security ընկերությունը լրացուցիչ աուդիտ է անցկացրել 2022 թվականին, իսկ Cure53-ը Outline SDK-ը աուդիտ է իրականացրել 2024 թվականին։ Հաշվետվություններին կարող եք ծանոթանալ այստեղ՝
 
-- [Radically Open Security Penetration Test Report (2018 թ․ մարտ)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53 Pentest & Audit Report Jigsaw Outline (2018 թ․ դեկտեմբեր)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Radically Open Security Penetration Test Report (2022 թ․ դեկտեմբեր)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Cure53 Pentest Report Jigsaw Outline VPN SDK (2024 թ․ հունվար)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Radically Open Security Penetration Test Report (2018 թ․ մարտ)](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53 Pentest & Audit Report Jigsaw Outline (2018 թ․ դեկտեմբեր)](https://getoutline.org/reports/cure53-report.pdf)
+- [Radically Open Security Penetration Test Report (2022 թ․ դեկտեմբեր)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Cure53 Pentest Report Jigsaw Outline VPN SDK (2024 թ․ հունվար)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Անանուն ցուցանիշներ և մատյաններ
 

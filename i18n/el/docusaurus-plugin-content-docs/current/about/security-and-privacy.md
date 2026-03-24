@@ -21,10 +21,10 @@ sidebar_label: Ασφάλεια και απόρρητο κατά τη χρήση
 
 Το 2018, το Outline ελέγχθηκε από το Radically Open Security και το Cure53, δύο ανεξάρτητους οργανισμούς ψηφιακής ασφάλειας που αξιολόγησαν το λογισμικό σε σχέση με τα τελευταία πρότυπα ασφαλείας. Το Radically Open Security διεξήγαγε έναν πρόσθετο έλεγχο το 2022 και η Cure53 διεξήγαγε έναν έλεγχο του Outline SDK το 2024. Μπορείτε να διαβάσετε τις αναφορές εδώ:
 
-- [Radically Open Security Penetration Test Report (Μάρτιος 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53 Pentest & Audit Report Jigsaw Outline (Δεκέμβριος 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Radically Open Security Penetration Test Report (Δεκέμβριος 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Cure53 Pentest Report Jigsaw Outline VPN SDK (Ιανουάριος 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Radically Open Security Penetration Test Report (Μάρτιος 2018)](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53 Pentest & Audit Report Jigsaw Outline (Δεκέμβριος 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [Radically Open Security Penetration Test Report (Δεκέμβριος 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Cure53 Pentest Report Jigsaw Outline VPN SDK (Ιανουάριος 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Ανώνυμες μετρήσεις και αρχεία καταγραφής
 

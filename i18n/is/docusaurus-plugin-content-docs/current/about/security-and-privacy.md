@@ -21,10 +21,10 @@ Outline dulkóðar samskipti á milli tækisins þíns og Outline-þjónsins me�
 
 Árið 2018 gekkst Outline undir endurskoðanir Radically Open Security og Cure53, tveggja óháðra fyrirtækja á sviði stafræns öryggis sem fara yfir hugbúnað til að athuga hvort hann standist nýjustu öryggisstaðla. Radically Open Security framkvæmdi viðbótarendurskoðun árið 2022 og Cure53 framkvæmdi endurskoðun á forritunarverkfærum Outline árið 2024. Hér geturðu lesið skýrslurnar:
 
-- [Smokurprófunarskýrsla Radically Open Security (mars 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Smokurprófunar- og endurskoðunarskýrsla Cure53 á Jigsaw Outline (desember 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Smokurprófunarskýrsla Radically Open Security (desember 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Smokurprófunarskýrsla Cure53 á VPN-forritunarverkfærum Jigsaw Outline (janúar 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Smokurprófunarskýrsla Radically Open Security (mars 2018)](https://getoutline.org/reports/ros-report.pdf)
+- [Smokurprófunar- og endurskoðunarskýrsla Cure53 á Jigsaw Outline (desember 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [Smokurprófunarskýrsla Radically Open Security (desember 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Smokurprófunarskýrsla Cure53 á VPN-forritunarverkfærum Jigsaw Outline (janúar 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Nafnlaus mæligildi og annálar
 

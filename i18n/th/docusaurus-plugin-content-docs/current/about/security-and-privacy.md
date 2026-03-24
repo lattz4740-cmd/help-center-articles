@@ -21,10 +21,10 @@ Outline จะเข้ารหัสการสื่อสารระหว
 
 Outline ได้รับการตรวจสอบโดย Radically Open Security และ Cure53 ในปี 2018 ซึ่งเป็นองค์กรด้านความปลอดภัยดิจิทัลอิสระทั้ง 2 แห่งที่ตรวจสอบซอฟต์แวร์กับมาตรฐานความปลอดภัยล่าสุด โดย Radically Open Security ได้ทำการตรวจสอบเพิ่มเติมในปี 2022 และ Cure53 ได้ทำการตรวจสอบ Outline SDK ในปี 2024 อ่านข้อมูลเพิ่มเติมได้ในรายงานต่อไปนี้
 
-- [Radically Open Security Penetration Test Report (มีนาคม 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53 Pentest & Audit Report Jigsaw Outline (ธันวาคม 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Radically Open Security Penetration Test Report (ธันวาคม 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Cure53 Pentest Report Jigsaw Outline VPN SDK (มกราคม 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Radically Open Security Penetration Test Report (มีนาคม 2018)](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53 Pentest & Audit Report Jigsaw Outline (ธันวาคม 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [Radically Open Security Penetration Test Report (ธันวาคม 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Cure53 Pentest Report Jigsaw Outline VPN SDK (มกราคม 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## เมตริกและบันทึกที่ไม่ระบุตัวตน
 

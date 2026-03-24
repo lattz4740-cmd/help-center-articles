@@ -21,10 +21,10 @@ Outline krypterar kommunikation mellan enheten och Outline-servern med hjälp av
 
 Under 2018 granskades Outline av Radically Open Security och Cure53, två oberoende organisationer inom digital säkerhet som granskar mjukvara mot den senaste säkerhetsstandarden. Radically Open Security gjorde ytterligare en granskning 2022 och Cure53 gjorde en granskning av Outline SDK 2024. Rapporterna finns att läsa här:
 
-- [Radically Open Security Penetration Test Report (March 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53 Pentest & Audit Report Jigsaw Outline (December 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Radically Open Security Penetration Test Report (december 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Cure53 Pentest Report Jigsaw Outline VPN SDK (januari 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Radically Open Security Penetration Test Report (March 2018)](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53 Pentest & Audit Report Jigsaw Outline (December 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [Radically Open Security Penetration Test Report (december 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Cure53 Pentest Report Jigsaw Outline VPN SDK (januari 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Anonyma mätvärden och loggar
 

@@ -21,10 +21,10 @@ Outline дазваляе таксама атрымаць доступ да бя�
 
 У 2018 годзе Radically Open Security і Cure53 – дзве незалежныя арганізацыя па пытаннях лічбавай бяспекі, якія займаюцца праверкай праграмнага забеспячэння на адпаведнасць апошнім стандартам бяспекі, – выканалі аўдыты Outline. У 2022 годзе арганізацыя Radically Open Security правяла дадатковы аўдыт, а ў 2024 годзе Cure53 праверыла бяспеку Outline SDK. Вы можаце азнаёміцца са справаздачамі па спасылках ніжэй:
 
-- [Справаздача пра тэст на пранікненне Radically Open Security (сакавік 2018 года)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Справаздача пра аўдыт і тэст на пранікненне Jigsaw Outline ад Cure53 (снежань 2018 года)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Справаздача пра тэст на пранікненне Radically Open Security (снежань 2022 года)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Справаздача пра тэст на пранікненне Jigsaw Outline VPN SDK ад Cure53 (студзень 2024 года)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Справаздача пра тэст на пранікненне Radically Open Security (сакавік 2018 года)](https://getoutline.org/reports/ros-report.pdf)
+- [Справаздача пра аўдыт і тэст на пранікненне Jigsaw Outline ад Cure53 (снежань 2018 года)](https://getoutline.org/reports/cure53-report.pdf)
+- [Справаздача пра тэст на пранікненне Radically Open Security (снежань 2022 года)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Справаздача пра тэст на пранікненне Jigsaw Outline VPN SDK ад Cure53 (студзень 2024 года)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Ананімныя паказчыкі і журналы
 

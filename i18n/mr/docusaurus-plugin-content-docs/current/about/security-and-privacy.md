@@ -21,10 +21,10 @@ Outline हे AEAD 256-bit Chacha2020 IETF Poly 1305 cipher वापरून 
 
 २०१८ मध्ये, Radically Open Security आणि Cure53 द्वारे Outline चे ऑडिट करण्यात आले होते. या दोन स्वतंत्र डिजिटल सुरक्षा संस्था आहेत ज्या नवीनतम सुरक्षा मानकांसाठी सॉफ्टवेअरचे पुनरावलोकन करतात. Radically Open Security ने २०२२ मध्ये अतिरिक्त ऑडिट केले होते आणि Cure53 ने २०२४ मध्ये Outline SDK चे ऑडिट केले होते. तुम्ही इथे अहवाल वाचू शकता:
 
-- [Radically Open Security पेनिट्रेशन चाचणी अहवाल (मार्च २०१८)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53 पेंटेस्ट आणि ऑडिट अहवाल Jigsaw Outline (डिसेंबर २०१८)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Radically Open Security पेनिट्रेशन चाचणी अहवाल (डिसेंबर २०२२)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Cure53 पेंटेस्ट अहवाल Jigsaw आउटलाइन VPN SDK (जानेवारी २०२४)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Radically Open Security पेनिट्रेशन चाचणी अहवाल (मार्च २०१८)](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53 पेंटेस्ट आणि ऑडिट अहवाल Jigsaw Outline (डिसेंबर २०१८)](https://getoutline.org/reports/cure53-report.pdf)
+- [Radically Open Security पेनिट्रेशन चाचणी अहवाल (डिसेंबर २०२२)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Cure53 पेंटेस्ट अहवाल Jigsaw आउटलाइन VPN SDK (जानेवारी २०२४)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## निनावी मेट्रिक आणि लॉग
 

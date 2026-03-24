@@ -21,10 +21,10 @@ Outline criptează comunicațiile dintre dispozitiv și serverul Outline utiliz�
 
 În 2018, Outline a fost auditat de Radically Open Security și Cure53, două organizații pentru securitate digitală independente care examinează programele software în conformitate cu cele mai recente standarde de securitate. Radically Open Security a desfășurat un audit suplimentar în 2022, iar Cure53 a desfășurat un audit al Outline SDK în 2024. Puteți citi rapoartele aici:
 
-- [Raportul testului de penetrare elaborat de Radically Open Security (martie 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Raport de audit și test de penetrare Cure53 privind Jigsaw Outline (decembrie 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Raportul testului de penetrare elaborat de Radically Open Security (decembrie 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Raportul testului de penetrare elaborat de Cure53 privind Jigsaw Outline VPN SDK (ianuarie 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Raportul testului de penetrare elaborat de Radically Open Security (martie 2018)](https://getoutline.org/reports/ros-report.pdf)
+- [Raport de audit și test de penetrare Cure53 privind Jigsaw Outline (decembrie 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [Raportul testului de penetrare elaborat de Radically Open Security (decembrie 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Raportul testului de penetrare elaborat de Cure53 privind Jigsaw Outline VPN SDK (ianuarie 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Valori și jurnale anonime
 

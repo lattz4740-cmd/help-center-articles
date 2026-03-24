@@ -21,10 +21,10 @@ Outline šifruje komunikáciu medzi vaším zariadením a serverom Outline pomoc
 
 V roku 2018 prešla služba Outline auditom dvoch nezávislých organizácií Radically Open Security a Cure53 zameraných na digitálnu bezpečnosť, ktoré kontrolujú, či softvér spĺňa najnovšie bezpečnostné normy. Organizácia Radically Open Security vykonala ďalší audit v roku 2022 a firma Cure53 vykonala audit súpravy Outline SDK v roku 2024. Reporty si môžete pozrieť v týchto zdrojoch:
 
-- [Radically Open Security Penetration Test Report (Správa o prienikovom teste zostavená firmou Radically Open Security), marec 2018](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53 Pentest & Audit Report Jigsaw Outline (Správa o prienikovom teste a audite softvéru Jigsaw Outline zostavená firmou Cure53), december 2018](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Radically Open Security Penetration Test Report (Report o penetračnom teste od firmy Radically Open Security) (december 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Cure53 Pentest Report Jigsaw Outline VPN SDK (Správa firmy Cure53 o prienikovom teste softvéru Jigsaw Outline VPN SDK, január 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Radically Open Security Penetration Test Report (Správa o prienikovom teste zostavená firmou Radically Open Security), marec 2018](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53 Pentest & Audit Report Jigsaw Outline (Správa o prienikovom teste a audite softvéru Jigsaw Outline zostavená firmou Cure53), december 2018](https://getoutline.org/reports/cure53-report.pdf)
+- [Radically Open Security Penetration Test Report (Report o penetračnom teste od firmy Radically Open Security) (december 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Cure53 Pentest Report Jigsaw Outline VPN SDK (Správa firmy Cure53 o prienikovom teste softvéru Jigsaw Outline VPN SDK, január 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Anonymné metriky a denníky
 

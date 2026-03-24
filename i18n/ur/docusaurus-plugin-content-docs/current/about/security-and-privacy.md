@@ -21,10 +21,10 @@ sidebar_label: ‫Outline کا استعمال کرتے وقت سیکیورٹی �
 
 ‫2018 میں، Outline کا Radically Open Security اور Cure53 نے آڈٹ کیا تھا، یہ دونوں خود مختار ڈیجیٹل سیکیورٹی کی تنظیمیں ہیں جو حالیہ ترین سیکیورٹی کے معیارات کے مقابلے سافٹ ویئر کا جائزہ لیتی ہیں۔ ‫Radically Open Security نے 2022 میں ایک اضافی آڈٹ کیا اور Cure53 نے 2024 میں Outline SDK کا آڈٹ کیا۔ آپ یہاں رپورٹس پڑھ سکتے ہیں:
 
-- ‫[Radically Open Security کے نفوذ کی ٹیسٹ رپورٹ (مارچ 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- ‫[Cure53 Pentest اور آڈٹ رپورٹس Jigsaw Outline (دسمبر 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- ‫[Radically Open Security پینیٹریشن ٹیسٹ رپورٹ (دسمبر 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- ‫[Cure53 Pentest رپورٹ Jigsaw Outline VPN SDK (جنوری 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- ‫[Radically Open Security کے نفوذ کی ٹیسٹ رپورٹ (مارچ 2018)](https://getoutline.org/reports/ros-report.pdf)
+- ‫[Cure53 Pentest اور آڈٹ رپورٹس Jigsaw Outline (دسمبر 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- ‫[Radically Open Security پینیٹریشن ٹیسٹ رپورٹ (دسمبر 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- ‫[Cure53 Pentest رپورٹ Jigsaw Outline VPN SDK (جنوری 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## گمنام میٹرکس اور لاگز
 

@@ -21,10 +21,10 @@ Outline enkripteer kommunikasie tussen jou toestel en die Outline-bediener met g
 
 Outline is in 2018 geouditeer deur Radically Open Security en Cure53, twee onafhanklike digitalesekuriteitorganisasies wat sagteware nagaan teenoor die jongste sekuriteitstandaarde. Radically Open Security het in 2022 ’n bykomende oudit uitgevoer en Cure53 het in 2024 ’n oudit van die Outline SDK uitgevoer. Jy kan die verslae hier lees:
 
-- [Radically Open Security Penetration Test Report (Maart 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53 Pentest & Audit Report Jigsaw Outline (Desember 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Radically Open Security Penetration Test Report (Desember 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Cure53 Pentest Report Jigsaw Outline VPN SDK (Januarie 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Radically Open Security Penetration Test Report (Maart 2018)](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53 Pentest & Audit Report Jigsaw Outline (Desember 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [Radically Open Security Penetration Test Report (Desember 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Cure53 Pentest Report Jigsaw Outline VPN SDK (Januarie 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Anonieme maatstawwe en loglêers
 

@@ -21,10 +21,10 @@ Outline អ៊ីនគ្រីបទំនាក់ទំនងរវាងឧ
 
 នៅឆ្នាំ 2018 Outline ត្រូវបានត្រួតពិនិត្យដោយស្ថាប័នសន្តិសុខឌីជីថលឯករាជ្យចំនួនពីរ ពោលគឺ Radically Open Security និង Cure53 ដែលត្រួតពិនិត្យកម្មវិធីធៀបនឹងស្តង់ដាសន្តិសុខចុងក្រោយបំផុត។ Radically Open Security បានធ្វើ​ការត្រួតពិនិត្យ​បន្ថែម​នៅឆ្នាំ 2022 ហើយ Cure53 បាន​ត្រួតពិនិត្យ Outline SDK នៅឆ្នាំ 2024។ អ្នកអាច​អាន​របាយការណ៍​នៅទីនេះ៖
 
-- [របាយការណ៍​ស្ដីពីការធ្វើតេស្តបំបែកចូល​របស់ Radically Open Security (ខែមីនា ឆ្នាំ 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [របាយការណ៍ស្ដីពីការធ្វើតេស្តបំបែកចូល និងការត្រួតពិនិត្យរបស់ Cure53 ដោយផ្ដោតលើ Jigsaw Outline (ខែធ្នូ ឆ្នាំ 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [របាយការណ៍ស្ដីពីការធ្វើតេស្តបំបែកចូលរបស់ Radically Open Security (ខែធ្នូ ឆ្នាំ 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [របាយការណ៍​ស្ដីពី​ការធ្វើតេស្តបំបែកចូល​របស់ Cure53 ដោយផ្ដោតលើ Jigsaw Outline VPN SDK (ខែមករា ឆ្នាំ 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [របាយការណ៍​ស្ដីពីការធ្វើតេស្តបំបែកចូល​របស់ Radically Open Security (ខែមីនា ឆ្នាំ 2018)](https://getoutline.org/reports/ros-report.pdf)
+- [របាយការណ៍ស្ដីពីការធ្វើតេស្តបំបែកចូល និងការត្រួតពិនិត្យរបស់ Cure53 ដោយផ្ដោតលើ Jigsaw Outline (ខែធ្នូ ឆ្នាំ 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [របាយការណ៍ស្ដីពីការធ្វើតេស្តបំបែកចូលរបស់ Radically Open Security (ខែធ្នូ ឆ្នាំ 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [របាយការណ៍​ស្ដីពី​ការធ្វើតេស្តបំបែកចូល​របស់ Cure53 ដោយផ្ដោតលើ Jigsaw Outline VPN SDK (ខែមករា ឆ្នាំ 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## មេទ្រិក និង​កំណត់ហេតុ​ដែលមាន​លក្ខណៈអនាមិក
 

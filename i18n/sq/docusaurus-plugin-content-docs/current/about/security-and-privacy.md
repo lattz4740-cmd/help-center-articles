@@ -21,10 +21,10 @@ Outline i enkripton komunikimet mes pajisjes sate dhe serverit të Outline duke 
 
 Në vitin 2018, Outline është audituar nga Radically Open Security dhe Cure53, dy organizata të pavarura të sigurisë dixhitale që i rishikojnë softuerët sipas standardeve të tyre më të fundit të sigurisë. Radically Open Security kreu një audit tjetër në vitin 2022 dhe Cure53 kreu një auditim të Outline SDK në vitin 2024. Raportet mund t'i lexosh këtu:
 
-- [Raporti i testit të depërtimit i Radically Open Security (mars 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Testi i depërtimit dhe raporti i auditimit i Cure53 për Jigsaw Outline (dhjetor 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Raporti i testit të depërtimit i Radically Open Security (dhjetor 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Raporti i testit të depërtimit i Cure53 për Jigsaw Outline VPN SDK (janar 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Raporti i testit të depërtimit i Radically Open Security (mars 2018)](https://getoutline.org/reports/ros-report.pdf)
+- [Testi i depërtimit dhe raporti i auditimit i Cure53 për Jigsaw Outline (dhjetor 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [Raporti i testit të depërtimit i Radically Open Security (dhjetor 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Raporti i testit të depërtimit i Cure53 për Jigsaw Outline VPN SDK (janar 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Metrika anonime dhe evidencat
 

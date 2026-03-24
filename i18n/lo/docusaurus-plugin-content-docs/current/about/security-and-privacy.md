@@ -21,10 +21,10 @@ Outline ຈະເຂົ້າລະຫັດການສື່ສານລະຫ
 
 Outline ໄດ້ຮັບການກວດສອບໂດຍ Radically Open Security ແລະ Cure53 ໃນປີ 2018, ເຊິ່ງເປັນອົງກອນດ້ານຄວາມປອດໄພດິຈິຕອນອິດສະຫຼະທັງ 2 ແຫ່ງທີ່ກວດສອບຊອບແວກັບມາດຕະຖານຄວາມປອດໄພຫຼ້າສຸດ. Radically Open Security ໄດ້ດຳເນີນການກວດສອບເພີ່ມເຕີມໃນປີ 2022 ແລະ Cure53 ໄດ້ດຳເນີນການກວດສອບ Outline SDK ໃນປີ 2024. ທ່ານສາມາດອ່ານລາຍງານໄດ້ບ່ອນນີ້:
 
-- [Radically Open Security Penetration Test Report (ມີນາ 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53 Pentest & Audit Report Jigsaw Outline (ທັນວາ 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Radically Open Security Penetration Test Report (ທັນວາ 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Cure53 Pentest Report Jigsaw Outline VPN SDK (ມັງກອນ 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Radically Open Security Penetration Test Report (ມີນາ 2018)](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53 Pentest & Audit Report Jigsaw Outline (ທັນວາ 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [Radically Open Security Penetration Test Report (ທັນວາ 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Cure53 Pentest Report Jigsaw Outline VPN SDK (ມັງກອນ 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## ການວັດແທກ ແລະ ບັນທຶກທີ່ບໍ່ລະບຸຕົວຕົນ
 

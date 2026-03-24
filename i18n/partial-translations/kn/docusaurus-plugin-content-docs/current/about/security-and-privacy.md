@@ -21,10 +21,10 @@ AEAD 256-ಬಿಟ್ Chacha2020 IETF ಪಾಲಿ 1305 ಸಿಫರ್ ಬಳ�
 
 2018 ರಲ್ಲಿ, ಔಟ್‌ಲೈನ್ ಹೊಸ ಭದ್ರತಾ ಪ್ರಮಾಣಿತಗಳ ಸಾಫ್ಟ್‌‍ವೇರ್ ಅನ್ನು ಪರಿಶೀಲನೆ ಮಾಡುವ ಎರಡು ಸ್ವತಂತ್ರ್ಯ ಡಿಜಿಟಲ್ ಭದ್ರತಾ ಸಂಸ್ಥೆಗಳಾದ ರಾಡಿಕಲಿ ಓಪನ್ ಸೆಕ್ಯುರಿಟಿ ಮತ್ತು Cure53 ಇವುಗಳು ಆಡಿಟ್ ಮಾಡಿದವು. 2022 ರಲ್ಲಿ ಹೆಚ್ಚುವರಿ ಆಡಿಟ್ ಅನ್ನು ರಾಡಿಕಲಿ ಓಪನ್ ಸೆಕ್ಯುರಿಟಿ ಮಾಡಿದರೆ 2024 ರಲ್ಲಿ ಔಟ್‌ಲೈನ್ SDX ನ ಆಡಿಟ್ ಅನ್ನು Cure53 ಕೈಗೊಂಡಿತು. ನೀವು ಇಲ್ಲಿ ವರದಿಗಳನ್ನು ಓದಬಹುದು:
 
-- [ರಾಡಿಕಲಿ ಓಪನ್ ಸೆಕ್ಯುರಿಟಿ ಪೆನೆಟ್ರೇಶನ್ ಟೆಸ್ಟ್ ವರದಿ (ಮಾರ್ಚ್ 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53 ಪೆಂಟೆಸ್ಟ್ & ಆಡಿಟ್ ರಿಪೋರ್ಟ್ Jigsaw ಔಟ್‌ಲೈನ್ (ಡಿಸೆಂಬರ್ 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [ರಾಡಿಕಲಿ ಓಪನ್ ಸೆಕ್ಯುರಿಟಿ ಪೆನೆಟ್ರೇಶನ್ ಟೆಸ್ಟ್ ವರದಿ (ಡಿಸೆಂಬರ್ 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Cure53 ಪೆಂಟೆಸ್ಟ್ ರಿಪೋರ್ಟ್ Jigsaw ಔಟ್‌ಲೈನ್ VPN SDK (ಜನವರಿ 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [ರಾಡಿಕಲಿ ಓಪನ್ ಸೆಕ್ಯುರಿಟಿ ಪೆನೆಟ್ರೇಶನ್ ಟೆಸ್ಟ್ ವರದಿ (ಮಾರ್ಚ್ 2018)](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53 ಪೆಂಟೆಸ್ಟ್ & ಆಡಿಟ್ ರಿಪೋರ್ಟ್ Jigsaw ಔಟ್‌ಲೈನ್ (ಡಿಸೆಂಬರ್ 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [ರಾಡಿಕಲಿ ಓಪನ್ ಸೆಕ್ಯುರಿಟಿ ಪೆನೆಟ್ರೇಶನ್ ಟೆಸ್ಟ್ ವರದಿ (ಡಿಸೆಂಬರ್ 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Cure53 ಪೆಂಟೆಸ್ಟ್ ರಿಪೋರ್ಟ್ Jigsaw ಔಟ್‌ಲೈನ್ VPN SDK (ಜನವರಿ 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## ಅನಾಮಧೇಯ ಮೆಟ್ರಿಕ್ಸ್ ಮತ್ತು ಲಾಗ್‌ಗಳು
 

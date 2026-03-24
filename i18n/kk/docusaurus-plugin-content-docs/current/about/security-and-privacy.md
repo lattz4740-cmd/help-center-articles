@@ -21,10 +21,10 @@ Outline қолданбасы AEAD 256 биттік Chacha2020 IETF Poly 1305 ш�
 
 2018 жылы Outline қолданбасын Radically Open Security және Cure53 компаниялары қауіпсіздік аудитінен өткізген. Бұл екі тәуелсіз цифрлық қауіпсіздік ұйымы бағдарламалық құралдың соңғы қауіпсіздік стандарттарына сәйкестігін тексереді. Radically Open Security компаниясы 2022 жылы қосымша аудит жүргізді, ал Cure53 компаниясы Outline SDK бағдарламалық құралын 2024 жылы аудиттен өткізді. Есептерді осы жерден оқуға болады:
 
-- [Radically Open Security өткізген бұзып кіру сынағының есебі (2018 жылдың наурызы)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53 өткізген Jigsaw Outline қызметінің бұзып кіру сынағы және аудит есебі (2018 жылдың желтоқсаны)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Radically Open Security өткізген бұзып кіру сынағының есебі (2022 жылдың желтоқсаны)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Cure53 өткізген Jigsaw Outline VPN SDK бұзып кіру сынағының есебі (2024 жылдың қаңтары)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Radically Open Security өткізген бұзып кіру сынағының есебі (2018 жылдың наурызы)](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53 өткізген Jigsaw Outline қызметінің бұзып кіру сынағы және аудит есебі (2018 жылдың желтоқсаны)](https://getoutline.org/reports/cure53-report.pdf)
+- [Radically Open Security өткізген бұзып кіру сынағының есебі (2022 жылдың желтоқсаны)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Cure53 өткізген Jigsaw Outline VPN SDK бұзып кіру сынағының есебі (2024 жылдың қаңтары)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Анонимді көрсеткіштер мен журналдар
 

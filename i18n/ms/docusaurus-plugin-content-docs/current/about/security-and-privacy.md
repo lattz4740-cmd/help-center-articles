@@ -21,10 +21,10 @@ Outline menyulitkan komunikasi antara peranti anda dengan Pelayan Outline menggu
 
 Pada tahun 2018, Outline telah diaudit oleh Radically Open Security dan Cure53, dua organisasi keselamatan digital bebas yang menyemak perisian berbanding dengan standard keselamatan yang terkini. Radically Open Security menjalankan audit tambahan pada tahun 2022 dan Cure53 menjalankan audit Outline SDK pada tahun 2024. Anda boleh membaca laporan di sini:
 
-- [Laporan Ujian Penyusupan Radically Open Security (Mac 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53 Pentest & Laporan Audit Jigsaw Outline (Disember 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Laporan Ujian Penyusupan Radically Open Security (Disember 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [SDK VPN Outline Jigsaw Laporan Ujian Penembusan Cure53 (Januari 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Laporan Ujian Penyusupan Radically Open Security (Mac 2018)](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53 Pentest & Laporan Audit Jigsaw Outline (Disember 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [Laporan Ujian Penyusupan Radically Open Security (Disember 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [SDK VPN Outline Jigsaw Laporan Ujian Penembusan Cure53 (Januari 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Metrik dan log awanama
 

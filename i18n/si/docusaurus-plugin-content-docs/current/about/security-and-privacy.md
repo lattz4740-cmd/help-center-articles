@@ -21,10 +21,10 @@ AEAD 256-bit Chacha2020 IETF Poly 1305 කේතාංකය භාවිතය�
 
 2018 දී, නවතම ආරක්ෂක ප්‍රමිතීන්ට එරෙහිව මෘදුකාංග සමාලෝචනය කරන ස්වාධීන ඩිජිටල් ආරක්ෂක සංවිධාන දෙකක් වන Radically Open Security සහ Cure53 විසින් Outline විගණනය කර ඇත. රැඩිකල් විවෘත ආරක්ෂාව 2022 දී අතිරේක විගණනයක් සිදු කරන ලද අතර Cure53 2024 දී Outline SDK හි විගණනයක් සිදු කරන ලදි. ඔබට මෙහි වාර්තා කියවිය හැක:
 
-- [Radically Open Security අවබෝධ පරීක්ෂණ වාර්තාව (2018 මාර්තු)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53 අවබෝධ සහ විගණන වාර්තාව Jigsaw Outline (2018 දෙසැම්බර්)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Radically Open Security අවබෝධ පරීක්ෂණ වාර්තාව (2022 දෙසැම්බර්)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Cure53 Pentest වාර්තාව Jigsaw Outline VPN SDK (2024 ජනවාරි)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Radically Open Security අවබෝධ පරීක්ෂණ වාර්තාව (2018 මාර්තු)](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53 අවබෝධ සහ විගණන වාර්තාව Jigsaw Outline (2018 දෙසැම්බර්)](https://getoutline.org/reports/cure53-report.pdf)
+- [Radically Open Security අවබෝධ පරීක්ෂණ වාර්තාව (2022 දෙසැම්බර්)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Cure53 Pentest වාර්තාව Jigsaw Outline VPN SDK (2024 ජනවාරි)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## නිර්නාමික මිනුම් සහ ලොග
 

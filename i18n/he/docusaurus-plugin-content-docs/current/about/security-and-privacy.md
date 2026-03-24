@@ -21,10 +21,10 @@ sidebar_label: "אבטחה ופרטיות במהלך השימוש ב-Outline"
 
 בשנת 2018, שני ארגונים עצמאיים שמתמחים באבטחה דיגיטלית – Radically Open Security ו-Cure53 – בדקו את Outline בהתאם לתקני האבטחה החדשים ביותר. ב-2022 הארגון Radically Open Security ערך ביקורת נוספת, וב-2024 הארגון Cure53 ערך ביקורת ל-Outline SDK. הדוחות זמינים כאן:
 
-- [דוח בדיקת החדירה של Radically Open Security (מרץ 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [דוח בדיקת החדירה והביקורת של Cure53 ל-Jigsaw Outline (דצמבר 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [דוח בדיקת החדירה של Radically Open Security (דצמבר 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [דוח בדיקת החדירה של Cure53 ל-Jigsaw Outline VPN SDK (ינואר 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [דוח בדיקת החדירה של Radically Open Security (מרץ 2018)](https://getoutline.org/reports/ros-report.pdf)
+- [דוח בדיקת החדירה והביקורת של Cure53 ל-Jigsaw Outline (דצמבר 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [דוח בדיקת החדירה של Radically Open Security (דצמבר 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [דוח בדיקת החדירה של Cure53 ל-Jigsaw Outline VPN SDK (ינואר 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## יומנים ומדדים אנונימיים
 

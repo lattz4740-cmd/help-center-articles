@@ -21,10 +21,10 @@ Outline šifruje komunikaci mezi vaším zařízením a serverem Outline pomocí
 
 V roce 2018 prošla služba Outline audity společností Radically Open Security a Cure53. Tyto nezávislé organizace se zaměřují na digitální bezpečnost a kontrolují, že software splňuje nejnovější bezpečnostní standardy. Společnost Radically Open Security navíc v roce 2022 provedla další audit služby a společnost Cure53 v roce 2024 provedla audit sady Outline SDK. Zprávy z auditů najdete tady:
 
-- [Zpráva z penetračního testu od společnosti Radically Open Security (březen 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Zpráva společnosti Cure53 o penetračním testu a auditu služby Jigsaw Outline (prosinec 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Zpráva z penetračního testu od společnosti Radically Open Security (prosinec 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Zpráva společnosti Cure53 o penetračním testu sady Jigsaw Outline VPN SDK (leden 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Zpráva z penetračního testu od společnosti Radically Open Security (březen 2018)](https://getoutline.org/reports/ros-report.pdf)
+- [Zpráva společnosti Cure53 o penetračním testu a auditu služby Jigsaw Outline (prosinec 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [Zpráva z penetračního testu od společnosti Radically Open Security (prosinec 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Zpráva společnosti Cure53 o penetračním testu sady Jigsaw Outline VPN SDK (leden 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Anonymní metriky a protokoly
 

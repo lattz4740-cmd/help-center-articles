@@ -13,11 +13,11 @@
   },
   "link.item.label.Terms of Service": {
     "message": "Terms of Service",
-    "description": "The label of footer link with label=Terms of Service linking to https://s3.amazonaws.com/outline-vpn/static_downloads/Outline-Terms-of-Service.html"
+    "description": "The label of footer link with label=Terms of Service linking to https://getoutline.org/policies/terms-of-service"
   },
   "link.item.label.Privacy Policy": {
     "message": "Құпиялылық саясаты",
-    "description": "The label of footer link with label=Privacy Policy linking to https://s3.amazonaws.com/outline-vpn/static_downloads/Outline-Privacy-Policy.html"
+    "description": "The label of footer link with label=Privacy Policy linking to https://getoutline.org/policies/privacy"
   },
   "link.item.label.GitHub": {
     "message": "GitHub",

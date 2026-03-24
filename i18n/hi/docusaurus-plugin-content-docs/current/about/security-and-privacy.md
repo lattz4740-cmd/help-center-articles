@@ -21,10 +21,10 @@ Outline, AEAD 256-बिट Chacha2020 आईईटीएफ़ Poly 1305 साइ
 
 2018 में, Radically Open Security और Cure53 ने Outline का ऑडिट किया था. ये दोनों ऐसे स्वतंत्र डिजिटल सुरक्षा संगठन हैं जो नए सुरक्षा मानकों पर सॉफ़्टवेयर की जांच करते हैं. Radically Open Security ने 2022 में एक और ऑडिट किया. इसके अलावा, Cure53 ने 2024 में Outline SDK का ऑडिट किया. ये सभी रिपोर्ट यहां देखी जा सकती हैं:
 
-- [Radically Open Security की पेनेट्रेशन टेस्ट रिपोर्ट (मार्च 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53 की पेनेट्रेशन टेस्ट और ऑडिट रिपोर्ट Jigsaw Outline (दिसंबर 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Radically Open Security की पेनेट्रेशन टेस्ट रिपोर्ट (दिसंबर 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Jigsaw Outline VPN SDK के बारे में Cure53 की पेनेट्रेशन टेस्ट रिपोर्ट (जनवरी 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Radically Open Security की पेनेट्रेशन टेस्ट रिपोर्ट (मार्च 2018)](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53 की पेनेट्रेशन टेस्ट और ऑडिट रिपोर्ट Jigsaw Outline (दिसंबर 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [Radically Open Security की पेनेट्रेशन टेस्ट रिपोर्ट (दिसंबर 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Jigsaw Outline VPN SDK के बारे में Cure53 की पेनेट्रेशन टेस्ट रिपोर्ट (जनवरी 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## पहचान ज़ाहिर न करने वाली मेट्रिक और लॉग
 

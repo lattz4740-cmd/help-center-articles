@@ -21,10 +21,10 @@ Outline შიფრავს კომუნიკაციას თქვე�
 
 2018 წელს Outline-ს აუდიტორული მომსახურება ჩაუტარა Radically Open Security-მ და Cure53-მა, ციფრული უსაფრთხოების ორმა დამოუკიდებელმა ორგანიზაციამ, რომლებიც განიხილავენ პროგრამულ უზრუნველყოფას უსაფრთხოების უახლეს სტანდარტებთან მიმართებაში. Radically Open Security-მა დამატებითი აუდიტი ჩაატარა 2022 წელს, ხოლო Cure53-მა Outline-ის SDK-ს აუდიტი ჩაატარა 2024 წელს. ანგარიშებს შეგიძლიათ, გაეცნოთ აქ:
 
-- [Radically Open Security-ს ანგარიში შეღწევის ტესტირების შესახებ (2018 წლის იანვარი)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53 Pentest & Audit Report Jigsaw Outline (2018 წლის დეკემბერი)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Radically Open Security-ს ანგარიში შეღწევის ტესტირების შესახებ (2022 წლის დეკემბერი)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Cure53 Pentest Report Jigsaw Outline VPN SDK (2024 წლის იანვარი)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Radically Open Security-ს ანგარიში შეღწევის ტესტირების შესახებ (2018 წლის იანვარი)](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53 Pentest & Audit Report Jigsaw Outline (2018 წლის დეკემბერი)](https://getoutline.org/reports/cure53-report.pdf)
+- [Radically Open Security-ს ანგარიში შეღწევის ტესტირების შესახებ (2022 წლის დეკემბერი)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Cure53 Pentest Report Jigsaw Outline VPN SDK (2024 წლის იანვარი)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## ანონიმური მეტრიკა და ჟურნალები
 

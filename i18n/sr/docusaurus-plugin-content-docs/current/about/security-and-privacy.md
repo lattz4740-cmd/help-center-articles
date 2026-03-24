@@ -21,10 +21,10 @@ Outline шифрује комуникацију између уређаја и O
 
 Ревизију Outline-а су 2018. извршиле две независне организације за дигиталну безбедност, Radically Open Security и Cure53, које прегледају софтвер у односу на најновије безбедносне стандарде. Radically Open Security је спровео додатну ревизију 2022, а Cure53 је спровео ревизију Outline SDK-а 2024. Извештаје можете да прочитате овде:
 
-- [Radically Open Security извештај о пенетрацијском тестирању (март 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53 извештај о пенетрацијском тестирању и ревизији Jigsaw Outline-а (децембар 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Извештај о пенетрацијском тестирању које спроводи Radically Open Security (децембар 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Извештај организације Cure53 о пенетрацијском тестирању за Outline VPN SDK (јануар 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Radically Open Security извештај о пенетрацијском тестирању (март 2018)](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53 извештај о пенетрацијском тестирању и ревизији Jigsaw Outline-а (децембар 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [Извештај о пенетрацијском тестирању које спроводи Radically Open Security (децембар 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Извештај организације Cure53 о пенетрацијском тестирању за Outline VPN SDK (јануар 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Анонимни показатељи и евиденције
 

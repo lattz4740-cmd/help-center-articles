@@ -21,10 +21,10 @@ Outline با رمز کردن ترافیک اینترنت شما هنگامی ک�
 
 در سال ۲۰۱۸، ‏Outline توسط Radically Open Security و Cure53 که دو سازمان مستقل در زمینه امنیت دیجیتال هستند و نرم‌افزارها را باتوجه‌به جدیدترین استانداردهای امنیتی مرور می‌کنند، ممیزی شد. ‫Radically Open Security در سال ۲۰۲۲ بررسی دیگری هم انجام داد و Cure53 در سال ۲۰۲۴‏ Outline SDK را بررسی کرد. گزارش را می‌توانید در اینجا بخوانید:
 
-- [گزارش تست نفوذ انجام‌شده توسط Radically Open Security (مارس ۲۰۱۸)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [گزارش ممیزی و تست نفوذ Jigsaw Outline انجام‌شده توسط Cure53 (دسامبر ۲۰۱۸)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [گزارش تست نفوذ انجام‌شده توسط Radically Open Security (دسامبر ۲۰۲۲)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [گزارش تست نفوذ Jigsaw Outline VPN SDK انجام‌شده توسط Cure53 (ژانویه ۲۰۲۴)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [گزارش تست نفوذ انجام‌شده توسط Radically Open Security (مارس ۲۰۱۸)](https://getoutline.org/reports/ros-report.pdf)
+- [گزارش ممیزی و تست نفوذ Jigsaw Outline انجام‌شده توسط Cure53 (دسامبر ۲۰۱۸)](https://getoutline.org/reports/cure53-report.pdf)
+- [گزارش تست نفوذ انجام‌شده توسط Radically Open Security (دسامبر ۲۰۲۲)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [گزارش تست نفوذ Jigsaw Outline VPN SDK انجام‌شده توسط Cure53 (ژانویه ۲۰۲۴)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## معیارها و گزارش‌های ناشناس
 

@@ -21,10 +21,10 @@ sidebar_label: Безпека й конфіденційність під час 
 
 У 2018 році програмне забезпечення Outline пройшло аудит у двох незалежних організаціях із кібербезпеки – Radically Open Security й Cure53, які перевіряли його на відповідність новітнім стандартам безпеки. У 2022 році організація Radically Open Security провела додатковий аудит, а в 2024 році команда Cure53 провела аудит Outline SDK. Звіти організацій можна переглянути за наведеними нижче посиланнями.
 
-- [Radically Open Security Penetration Test Report (Звіт організації Radically Open Security про тест на проникнення й системи безпеки) (березень 2018 р.)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53 Pentest & Audit Report Jigsaw Outline (Звіт компанії Cure53 про тест на проникнення й аудит додатка Outline від компанії Jigsaw) (грудень 2018 р.)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Radically Open Security Penetration Test Report (Звіт організації Radically Open Security про тест на проникнення) (грудень 2022 року)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Cure53 Pentest Report Jigsaw Outline VPN SDK (Звіт організації Cure53 про тест на проникнення в Outline VPN SDK від компанії Jigsaw) (січень 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Radically Open Security Penetration Test Report (Звіт організації Radically Open Security про тест на проникнення й системи безпеки) (березень 2018 р.)](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53 Pentest & Audit Report Jigsaw Outline (Звіт компанії Cure53 про тест на проникнення й аудит додатка Outline від компанії Jigsaw) (грудень 2018 р.)](https://getoutline.org/reports/cure53-report.pdf)
+- [Radically Open Security Penetration Test Report (Звіт організації Radically Open Security про тест на проникнення) (грудень 2022 року)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Cure53 Pentest Report Jigsaw Outline VPN SDK (Звіт організації Cure53 про тест на проникнення в Outline VPN SDK від компанії Jigsaw) (січень 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Анонімні показники й журнали
 

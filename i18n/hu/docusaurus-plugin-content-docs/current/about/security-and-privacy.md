@@ -21,10 +21,10 @@ Az Outline az AEAD (256 bites) Chacha2020 IETF Poly 1305 rejtjelezéssel titkos�
 
 2018-ban az Outline-t két független, digitális biztonsággal foglalkozó szervezet, a Radically Open Security és a Cure53 is auditálta. A szervezetek a legújabb biztonsági szabványoknak való megfelelőséget vizsgálják. A Radically Open Security még egy további auditálást is elvégzett 2022-ben, a Cure53 pedig 2024-ben végezte el az Outline SDK auditálását. A jelentéseket itt találja:
 
-- [A Radically Open Security behatolási tesztjéről készült jelentés (2018. március)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [A Cure53 behatolási tesztjéről és auditálásáról készült jelentés – Jigsaw Outline (2018. december)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [A Radically Open Security behatolási tesztjéről készült jelentés (2022. december)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [A Cure53 behatolási tesztjéről készült jelentés – Jigsaw Outline VPN SDK (2024. január)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [A Radically Open Security behatolási tesztjéről készült jelentés (2018. március)](https://getoutline.org/reports/ros-report.pdf)
+- [A Cure53 behatolási tesztjéről és auditálásáról készült jelentés – Jigsaw Outline (2018. december)](https://getoutline.org/reports/cure53-report.pdf)
+- [A Radically Open Security behatolási tesztjéről készült jelentés (2022. december)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [A Cure53 behatolási tesztjéről készült jelentés – Jigsaw Outline VPN SDK (2024. január)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Anonimizált mérőszámok és naplók
 

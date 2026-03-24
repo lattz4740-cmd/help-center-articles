@@ -21,10 +21,10 @@ Outline krüpteerib side teie seadme ja Outline'i serveri vahel AEAD 256-bitise 
 
 Aastal 2018 auditeerisid Outline'i Radically Open Security ja Cure53 – kaks sõltumatut digiturbeorganisatsiooni, mis kontrollivad tarkvara uusimate turbestandardite alusel. Radically Open Security viis 2022. aastal läbi lisaauditi ja Cure53 viis 2024. aastal läbi Outline’i SDK auditi. Aruandeid saate lugeda siin.
 
-- [Radically Open Security läbistuse testi aruanne (märts 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53 läbistuse testi ja auditi aruanne Jigsaw' Outline'i jaoks (detsember 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Radically Open Security läbistuse testi aruanne (detsember 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Cure53 läbistuse testi aruanne: Jigsaw’ Outline’i VPN-i SDK (jaanuar 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Radically Open Security läbistuse testi aruanne (märts 2018)](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53 läbistuse testi ja auditi aruanne Jigsaw' Outline'i jaoks (detsember 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [Radically Open Security läbistuse testi aruanne (detsember 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Cure53 läbistuse testi aruanne: Jigsaw’ Outline’i VPN-i SDK (jaanuar 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Anonüümsed mõõdikud ja logid
 

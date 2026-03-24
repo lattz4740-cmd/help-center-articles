@@ -21,10 +21,10 @@ Outline ले AEAD 256-बिट Chacha2020 IETF Poly 1305 साइफर प�
 
 २०१८ मा नवीनतम सुरक्षा मापदण्डहरूका आधारमा सफ्टवेयरको समीक्षा गर्ने दुई स्वतन्त्र डिजिटल सुरक्षा सङ्गठन Radically Open Security र Cure53 ले Outline को अडिट गरेका थिए। Radically Open Security ले २०२२ मा एउटा थप अडिट गर्‍यो भने Cure53 ले २०२४ मा Outline SDK को अडिट गरेको छ। तपाईं यहाँ गई रिपोर्टहरू पढ्न सक्नुहुन्छ:
 
-- [Radically Open Security Penetration Test Report (मार्च २०१८)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53 Pentest & Audit Report Jigsaw Outline (डिसेम्बर २०१८)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Radically Open Security Penetration Test Report (डिसेम्बर २०२२)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Cure53 Pentest Report Jigsaw Outline VPN SDK (जनवरी २०२४)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Radically Open Security Penetration Test Report (मार्च २०१८)](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53 Pentest & Audit Report Jigsaw Outline (डिसेम्बर २०१८)](https://getoutline.org/reports/cure53-report.pdf)
+- [Radically Open Security Penetration Test Report (डिसेम्बर २०२२)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Cure53 Pentest Report Jigsaw Outline VPN SDK (जनवरी २०२४)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## अज्ञात मेट्रिक र लगहरू
 

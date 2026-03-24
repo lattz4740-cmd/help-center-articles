@@ -21,10 +21,10 @@ Outline šifrira komunikacijo med napravo in strežnikom Outline z 256-bitno ši
 
 Leta 2018 sta Outline pregledali Radically Open Security in Cure53, neodvisni organizaciji za digitalno varnost, ki pregledujeta skladnost programske opreme z najnovejšimi varnostnimi standardi. Organizacija Radically Open Security je leta 2022 opravila dodatno revizijo in Cure53 je leta 2024 izvedel revizijo kompleta Outline SDK. Poročila lahko preberete tukaj:
 
-- [Radically Open Security Penetration Test Report (marec 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53 Pentest & Audit Report Jigsaw Outline (december 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Radically Open Security Penetration Test Report (december 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Cure53 Pentest Report Jigsaw Outline VPN SDK (januar 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Radically Open Security Penetration Test Report (marec 2018)](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53 Pentest & Audit Report Jigsaw Outline (december 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [Radically Open Security Penetration Test Report (december 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Cure53 Pentest Report Jigsaw Outline VPN SDK (januar 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Anonimne meritve in dnevniki
 

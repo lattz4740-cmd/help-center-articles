@@ -21,10 +21,10 @@ Ine-encrypt ng Outline ang mga pakikipag-ugnayan sa pagitan ng iyong device at n
 
 Noong 2018, ang Outline ay na-audit ng Radically Open Security at Cure53, dalawang independent na organisasyon sa digital na seguridad na nagsusuri ng software batay sa mga pinakabagong pamantayan ng seguridad. Nagsagawa ng karagdagang pag-audit ang Radically Open Security noong 2022 at nagsagawa ang Cure53 ng pag-audit sa Outline SDK noong 2024. Mababasa mo ang mga ulat dito:
 
-- [Radically Open Security Penetration Test Report (Marso 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53 Pentest & Audit Report Jigsaw Outline (Disyembre 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Radically Open Security Penetration Test Report (Disyembre 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Cure53 Pentest Report Jigsaw Outline VPN SDK (Enero 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Radically Open Security Penetration Test Report (Marso 2018)](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53 Pentest & Audit Report Jigsaw Outline (Disyembre 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [Radically Open Security Penetration Test Report (Disyembre 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Cure53 Pentest Report Jigsaw Outline VPN SDK (Enero 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Mga anonymous na sukatan at log
 

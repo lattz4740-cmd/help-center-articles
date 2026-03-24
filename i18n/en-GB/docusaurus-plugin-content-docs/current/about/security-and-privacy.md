@@ -21,10 +21,10 @@ Outline encrypts communications between your device and the Outline server using
 
 In 2018, Outline was audited by Radically Open Security and Cure53, two independent digital security organisations that review software against the latest security standards. Radically Open Security conducted an additional audit in 2022 and Cure53 conducted an audit of the Outline SDK in 2024. You can read the reports here:
 
-- [Radically Open Security Penetration Test Report (March 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53 Pentest and Audit Report Jigsaw Outline (December 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Radically Open Security Penetration Test Report (December 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Cure53 Pentest Report Jigsaw Outline VPN SDK (January 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Radically Open Security Penetration Test Report (March 2018)](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53 Pentest and Audit Report Jigsaw Outline (December 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [Radically Open Security Penetration Test Report (December 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Cure53 Pentest Report Jigsaw Outline VPN SDK (January 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Anonymous metrics and logs
 

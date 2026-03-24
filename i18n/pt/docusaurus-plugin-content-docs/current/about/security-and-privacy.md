@@ -21,10 +21,10 @@ O Outline encripta as comunicações entre o seu dispositivo e o servidor do Out
 
 Em 2018, o Outline foi auditado pela Radically Open Security e a Cure53, duas organizações independentes de segurança digital que fazem revisão ao software de acordo com as mais recentes normas de segurança. A Radically Open Security fez uma auditoria adicional em 2022, e a Cure53 fez uma auditoria ao Outline SDK em 2024. Pode ler os relatórios aqui:
 
-- [Relatório de teste de intrusão da Radically Open Security (março de 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Relatório de auditoria e teste de intrusão da Cure53 sobre o Jigsaw Outline (dezembro de 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Relatório de teste de intrusão da Radically Open Security (dezembro de 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Relatório de teste de intrusão da Cure53 sobre o Jigsaw Outline VPN SDK (janeiro de 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Relatório de teste de intrusão da Radically Open Security (março de 2018)](https://getoutline.org/reports/ros-report.pdf)
+- [Relatório de auditoria e teste de intrusão da Cure53 sobre o Jigsaw Outline (dezembro de 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [Relatório de teste de intrusão da Radically Open Security (dezembro de 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Relatório de teste de intrusão da Cure53 sobre o Jigsaw Outline VPN SDK (janeiro de 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Métricas e registos anónimos
 

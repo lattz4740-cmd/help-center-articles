@@ -21,10 +21,10 @@ Outline はユーザーのデバイスと Outline サーバー間の通信を、
 
 2018 年、Outline は Radically Open Security 社と Cure53 社による監査を受けました。この 2 社は、最新のセキュリティ標準に照らしてソフトウェアを審査する、独立したデジタル セキュリティ組織です。Radically Open Security 社は、2022 年に追加監査を実施しました。また、Cure53 社は 2024 年に Outline SDK の監査を実施しました。以下のレポートをご確認ください。
 
-- [Radically Open Security Penetration Test Report（2018 年 3 月）](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53 Pentest & Audit Report Jigsaw Outline（2018 年 12 月）](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Radically Open Security Penetration Test Report（2022 年 12 月）](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Cure53 Pentest Report Jigsaw Outline VPN SDK（2024 年 1 月）](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Radically Open Security Penetration Test Report（2018 年 3 月）](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53 Pentest & Audit Report Jigsaw Outline（2018 年 12 月）](https://getoutline.org/reports/cure53-report.pdf)
+- [Radically Open Security Penetration Test Report（2022 年 12 月）](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Cure53 Pentest Report Jigsaw Outline VPN SDK（2024 年 1 月）](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## 匿名化された指標とログ
 

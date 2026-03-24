@@ -21,10 +21,10 @@ Outline သည် သင့်စက်နှင့် ‘Outline ဆာဗာ�
 
 ၂၀၁၈ ခုနှစ်တွင် သီးခြား ဒစ်ဂျစ်တယ်လုံခြုံရေး အဖွဲ့အစည်းနှစ်ခုဖြစ်သော Radically Open Security နှင့် Cure53 တို့က Outline ကို စစ်ဆေးထားပြီး ၎င်းတို့သည် နောက်ဆုံးပေါ် လုံခြုံရေးစံနှုန်းများနှင့်ယှဉ်၍ ဆော့ဖ်ဝဲကို သုံးသပ်သည်။ Radically Open Security က ၂၀၂၂ ခုနှစ်တွင် နောက်ထပ်စစ်ဆေးခဲ့ပြီး Cure53 က ၂၀၂၄ ခုနှစ်တွင် Outline SDK ကို စစ်ဆေးခဲ့သည်။ အစီရင်ခံစာများကို ဤနေရာတွင် ဖတ်ရှုနိုင်ပါသည်-
 
-- [Radically Open Security ၏ ထိုးဖောက်နိုင်မှု စမ်းသပ်ချက် အစီရင်ခံစာ (၂၀၁၈ မတ်လ)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53 ၏ Jigsaw Outline ကို ထိုးဖောက်နိုင်မှုနှင့် စစ်ဆေးမှု အစီရင်ခံစာ (၂၀၁၈ ဒီဇင်ဘာ)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Radically Open Security ၏ ထိုးဖောက်နိုင်မှု စမ်းသပ်ချက် အစီရင်ခံစာ (၂၀၂၂ ဒီဇင်ဘာ)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Cure53 ၏ Jigsaw Outline VPN SDK ကို ထိုးဖောက်နိုင်မှုနှင့် စစ်ဆေးမှု အစီရင်ခံစာ (၂၀၂၄ ဇန်နဝါရီ)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Radically Open Security ၏ ထိုးဖောက်နိုင်မှု စမ်းသပ်ချက် အစီရင်ခံစာ (၂၀၁၈ မတ်လ)](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53 ၏ Jigsaw Outline ကို ထိုးဖောက်နိုင်မှုနှင့် စစ်ဆေးမှု အစီရင်ခံစာ (၂၀၁၈ ဒီဇင်ဘာ)](https://getoutline.org/reports/cure53-report.pdf)
+- [Radically Open Security ၏ ထိုးဖောက်နိုင်မှု စမ်းသပ်ချက် အစီရင်ခံစာ (၂၀၂၂ ဒီဇင်ဘာ)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Cure53 ၏ Jigsaw Outline VPN SDK ကို ထိုးဖောက်နိုင်မှုနှင့် စစ်ဆေးမှု အစီရင်ခံစာ (၂၀၂၄ ဇန်နဝါရီ)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## အမည်မသိ မက်ထရစ်နှင့် မှတ်တမ်းများ
 

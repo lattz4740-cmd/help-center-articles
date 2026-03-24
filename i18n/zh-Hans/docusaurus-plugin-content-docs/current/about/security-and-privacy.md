@@ -21,10 +21,10 @@ Outline 使用 256 位 AEAD Chacha2020 IETF Poly 1305 加密算法来加密您�
 
 2018 年，Outline 通过了 Radically Open Security 和 Cure53 的审核。这是两家独立的数字安全机构，采用最新的安全标准审核软件。2022 年，Radically Open Security 又进行了一次额外的审核，Cure53 在 2024 年对 Outline SDK 进行了审核。您可点击下方链接查看这些报告：
 
-- [Radically Open Security 渗透测试报告（2018 年 3 月）](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53 渗透测试和审核报告 - Jigsaw Outline（2018 年 12 月）](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Radically Open Security 渗透测试报告（2022 年 12 月）](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Cure53 渗透测试报告 Jigsaw Outline VPN SDK（2024 年 1 月）](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Radically Open Security 渗透测试报告（2018 年 3 月）](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53 渗透测试和审核报告 - Jigsaw Outline（2018 年 12 月）](https://getoutline.org/reports/cure53-report.pdf)
+- [Radically Open Security 渗透测试报告（2022 年 12 月）](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Cure53 渗透测试报告 Jigsaw Outline VPN SDK（2024 年 1 月）](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## 匿名指标和日志
 

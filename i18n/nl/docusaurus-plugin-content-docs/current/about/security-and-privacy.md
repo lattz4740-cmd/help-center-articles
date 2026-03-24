@@ -21,10 +21,10 @@ Outline versleutelt de communicatie tussen je apparaat en de Outline-server met 
 
 In 2018 is Outline gecontroleerd door Radically Open Security en Cure53, 2 onafhankelijke beveiligingsorganisaties die beoordelen of software voldoet aan de nieuwste beveiligingsstandaarden. Radically Open Security heeft in 2022 nog een controle uitgevoerd en Cure53 heeft in 2024 een controle uitgevoerd van de Outline SDK. Hier vind je de rapporten:
 
-- [Radically Open Security Penetration Test Report (Penetratietestrapport van Radically Open Security, maart 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53 Pentest & Audit Report Jigsaw Outline (Pentest en controlerapport voor Jigsaw Outline, december 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Radically Open Security Penetration Test Report (Penetratietestrapport van Radically Open Security, december 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Cure53 Pentest Report Jigsaw Outline VPN SDK (Januari 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Radically Open Security Penetration Test Report (Penetratietestrapport van Radically Open Security, maart 2018)](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53 Pentest & Audit Report Jigsaw Outline (Pentest en controlerapport voor Jigsaw Outline, december 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [Radically Open Security Penetration Test Report (Penetratietestrapport van Radically Open Security, december 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Cure53 Pentest Report Jigsaw Outline VPN SDK (Januari 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Anonieme statistieken en logboeken
 

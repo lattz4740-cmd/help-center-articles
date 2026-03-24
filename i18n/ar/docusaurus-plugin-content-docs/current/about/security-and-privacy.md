@@ -21,10 +21,10 @@ sidebar_label: الأمان والخصوصية أثناء استخدام Outline
 
 في 2018، خضع Outline للتدقيق من قِبل Radically Open Security وCure53، وهما مؤسستان مستقلتان في مجال الأمان الرقمي تراجعان البرامج وفقًا لأحدث المعايير في المجال. أجرت Radically Open Security عملية تدقيق إضافية في 2022، وأجرت Cure53 عملية تدقيق لبرنامج Outline SDK في 2024. يمكنك قراءة التقارير هنا:
 
-- [تقرير اختبار الاختراق من Radically Open Security (مارس 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [تقرير Cure53 حول التدقيق واختبار الاختراق في Jigsaw Outline من (ديسمبر 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [تقرير اختبار الاختراق من Radically Open Security (ديسمبر 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [تقرير Cure53 حول اختبار الاختراق في Jigsaw Outline VPN SDK (يناير 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [تقرير اختبار الاختراق من Radically Open Security (مارس 2018)](https://getoutline.org/reports/ros-report.pdf)
+- [تقرير Cure53 حول التدقيق واختبار الاختراق في Jigsaw Outline من (ديسمبر 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [تقرير اختبار الاختراق من Radically Open Security (ديسمبر 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [تقرير Cure53 حول اختبار الاختراق في Jigsaw Outline VPN SDK (يناير 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## المقاييس والسجلات المخفية الهوية
 

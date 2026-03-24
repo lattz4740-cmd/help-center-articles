@@ -21,10 +21,10 @@ Criptíonn Outline cumarsáid idir do ghléas agus an Freastalaí Outline ag ús
 
 In 2018, rinne Radically Open Security and Cure53, dhá eagraíocht neamhspleácha slándála digiteacha a dhéanann athbhreithniú ar bhogearraí i gcoinne na gcaighdeán slándála is déanaí, iniúchadh ar Outline. Rinne Radically Open Security iniúchadh breise in 2022 agus rinne Cure53 iniúchadh ar Outline SDK in 2024. Is féidir leat na tuairiscí a léamh anseo:
 
-- [Radically Open Security Penetration Test Report (Márta 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53 Pentest & Audit Report Jigsaw Outline (Nollaig 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Radically Open Security Penetration Test Report (Nollaig 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Cure53 Pentest Report Jigsaw Outline VPN SDK (Eanáir 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Radically Open Security Penetration Test Report (Márta 2018)](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53 Pentest & Audit Report Jigsaw Outline (Nollaig 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [Radically Open Security Penetration Test Report (Nollaig 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Cure53 Pentest Report Jigsaw Outline VPN SDK (Eanáir 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Méadracht agus logaí anaithnide
 

@@ -21,10 +21,10 @@ Outline ń fi ìbánisọ̀rọ̀ láàrin ẹ̀rọ rẹ àti Olùpèsè Outl
 
 Ní ọdún 2018, àwọn àjọ Radically Open Security àti Cure53, àwọn àjọ elétò ààbò díjítà olómìnira méjì tí wọ́n ń ṣe àgbéyẹ̀wò ohun èlò ẹ̀rọ ní ìbámu pẹ̀lú àwọn ìlànà ààbò tuntun, ni wọ́n ṣe àyẹ̀wò Outline. Radically Open Security ṣe àyẹ̀wò àfikún kan ní ọdún 2022 tí Cure53 sì ṣe àyẹ̀wò Outline SDK ní ọdún 2024. O lè ka àwọn ìjábọ̀ náà níbí:
 
-- [Ìjábọ̀ àyẹ̀wò Radically Open Security Penetration (Oṣù kẹẹ̀ta ọdún 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Ìjábọ̀ Pentest àti àyẹ̀wò Cure53 ti Jigsaw Outline (Oṣù kejìlá ọdún 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Ìjábọ̀ àyẹ̀wò Radically Open Security Penetration (Oṣù kejìlá ọdún 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Ìjábọ̀ Cure53 Pentest ti Jigsaw Outline VPN SDK (Oṣù kínní ọdún 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Ìjábọ̀ àyẹ̀wò Radically Open Security Penetration (Oṣù kẹẹ̀ta ọdún 2018)](https://getoutline.org/reports/ros-report.pdf)
+- [Ìjábọ̀ Pentest àti àyẹ̀wò Cure53 ti Jigsaw Outline (Oṣù kejìlá ọdún 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [Ìjábọ̀ àyẹ̀wò Radically Open Security Penetration (Oṣù kejìlá ọdún 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Ìjábọ̀ Cure53 Pentest ti Jigsaw Outline VPN SDK (Oṣù kínní ọdún 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Àwọn ìṣirò àti àwọn àkọsílẹ̀ ẹni tí a kò mọ̀
 

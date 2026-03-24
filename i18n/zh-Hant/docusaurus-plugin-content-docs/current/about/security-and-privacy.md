@@ -21,10 +21,10 @@ Outline 採用 AEAD 256 位元的 Chacha2020 IETF Poly 1305 編碼器，加密�
 
 Outline 於 2018 年接受 Radically Open Security 與 Cure53 稽核，這兩家獨立數位安全機構皆依據最新安全性標準審查軟體。Radically Open Security 於 2022 年再次進行稽核，Cure53 則在 2024 年完成對 Outline SDK 的稽核。歡迎參閱下列報告：
 
-- [Radically Open Security 滲透測試報告 (2018 年 3 月)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53 的 Jigsaw Outline 滲透測試與稽核報告 (2018 年 12 月)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Radically Open Security 滲透測試報告 (2022 年 12 月)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Cure53 的 Jigsaw Outline VPN SDK 滲透測試報告 (2024 年 1 月)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Radically Open Security 滲透測試報告 (2018 年 3 月)](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53 的 Jigsaw Outline 滲透測試與稽核報告 (2018 年 12 月)](https://getoutline.org/reports/cure53-report.pdf)
+- [Radically Open Security 滲透測試報告 (2022 年 12 月)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Cure53 的 Jigsaw Outline VPN SDK 滲透測試報告 (2024 年 1 月)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## 匿名指標和記錄
 

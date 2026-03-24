@@ -21,10 +21,10 @@ Outline በእርስዎ መሣሪያ እና የOutline አገልጋይ መካከ
 
 2018 ላይ Outline ሶፍትዌርን ከቅርብ ጊዜ የደኅንነት መስፈርቶች አንጻር የሚገመግሙ ሁለት ገለልተኛ የዲጂታል ደኅንነት ድርጅቶች በሆኑት Radically Open Security እና Cure53 ኦዲት ተደርጓል። Radically Open Security በ2022 ተጨማሪ ኦዲት ያደረገ ሲሆን Cure53 ደግሞ በ2024 የOutline SDK ኦዲት አድርጓል። ሪፖርቶቹን እዚህ ማንበብ ይችላሉ፦
 
-- [የRadically Open Security ዘልቆ የመግባት ሙከራ ሪፖርት (ማርች 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [የCure53 ዘልቆ የመግቢያ እና የኦዲት ሪፖርት Jigsaw Outline (ዲሴምበር 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [የRadically Open Security ዘልቆ የመግባት ሙከራ ሪፖርት (December 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Cure53 ዘልቆ የመግቢያ ሪፖርት Jigsaw Outline VPN ኤስዲኬ(ጃንዋሪ 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [የRadically Open Security ዘልቆ የመግባት ሙከራ ሪፖርት (ማርች 2018)](https://getoutline.org/reports/ros-report.pdf)
+- [የCure53 ዘልቆ የመግቢያ እና የኦዲት ሪፖርት Jigsaw Outline (ዲሴምበር 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [የRadically Open Security ዘልቆ የመግባት ሙከራ ሪፖርት (December 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Cure53 ዘልቆ የመግቢያ ሪፖርት Jigsaw Outline VPN ኤስዲኬ(ጃንዋሪ 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## ማንነት የማያሳውቁ መለኪያዎች እና ምዝግብ ማስታወሻዎች
 

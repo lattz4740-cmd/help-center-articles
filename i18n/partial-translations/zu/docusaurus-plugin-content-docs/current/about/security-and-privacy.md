@@ -21,10 +21,10 @@ Isendlalela sibethela ukuxhumana phakathi kwedivayisi yakho neSeva Yesendlalela 
 
 Ngo-2018, Isendlalela sahlolwa iRadically Open Security neCure53, okuyizinhlangano ezimbili ezizimele zezokuphepha kwedijithali ezibuyekeza isofthiwe ziyiqhathanise nokuvikeleka kwamuva okujwayelekile. IRadically Open Security yenza okunye ukuhlola amabhuku kwango-2022 kwathi iCure53 yahlola i-SDK Yesendlalela ngo-2024. Ungawufunda lapha umbiko:
 
-- [Umbiko Wokuhlola Kokubholayo WeRadically Open Security (Mashi 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Umbiko WeCure53 Wokuhlola Kokubholayo Nokuhlola Amabhuku Isendlalela SeJigsaw (Disemba 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Umbiko Wokuhlola Kokubholayo WeRadically Open Security (Disemba 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Umbiko WeCure53 Wokuhlola Kokubholayo Isendlalela SeJigsaw VPN SDK (Januwari 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Umbiko Wokuhlola Kokubholayo WeRadically Open Security (Mashi 2018)](https://getoutline.org/reports/ros-report.pdf)
+- [Umbiko WeCure53 Wokuhlola Kokubholayo Nokuhlola Amabhuku Isendlalela SeJigsaw (Disemba 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [Umbiko Wokuhlola Kokubholayo WeRadically Open Security (Disemba 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Umbiko WeCure53 Wokuhlola Kokubholayo Isendlalela SeJigsaw VPN SDK (Januwari 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Amametric namalogu enziwe angaziwa
 

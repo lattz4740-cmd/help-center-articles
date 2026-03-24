@@ -111,11 +111,11 @@ const config: Config = {
             },
             {
               label: 'Terms of Service',
-              href: 'https://s3.amazonaws.com/outline-vpn/static_downloads/Outline-Terms-of-Service.html',
+              href: 'https://getoutline.org/policies/terms-of-service',
             },
             {
               label: 'Privacy Policy',
-              href: 'https://s3.amazonaws.com/outline-vpn/static_downloads/Outline-Privacy-Policy.html',
+              href: 'https://getoutline.org/policies/privacy',
             },
           ],
         },

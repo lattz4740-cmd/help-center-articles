@@ -21,10 +21,10 @@ Outline кызматы түзмөгүңүздүн жана Outline сервер�
 
 2018-жылы Outline кызматы Radically Open Security жана Cure53 тарабынан текшерилиген. Бул эки көз карандысыз санариптик коопсуздук уюмударды программалык камсыздоону акыркы коопсуздук стандарттарынын шайкештигине текшерет. Radically Open Security уюму 2022-жылы кошумча аудит жүргүзгөн, ал эми Cure53 2024-жылы Outline кызматынын иштеп чыгуучу топтомун текшерген. Отчётторду төмөнкү даректен окуп чыксаңыз болот:
 
-- [Radically Open Security тарабынан даярдалган Тармак коопсуздугун тестирлөө отчёту (2018-жылдын марты)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53 тарабынан даярдалган Jigsaw Outline'дын Тармак коопсуздугун тестирлөө жана аудит боюнча отчёту (2018-жылдын декабры)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Radically Open Security тарабынан даярдалган Тармак коопсуздугун тестирлөө отчёту (2022-жылдын декабры)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Cure53 тарабынан даярдалган Jigsaw Outline'дын VPN жана SDK боюнча Тармак коопсуздугун тестирлөө отчёту (2024-жылдын январы)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Radically Open Security тарабынан даярдалган Тармак коопсуздугун тестирлөө отчёту (2018-жылдын марты)](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53 тарабынан даярдалган Jigsaw Outline'дын Тармак коопсуздугун тестирлөө жана аудит боюнча отчёту (2018-жылдын декабры)](https://getoutline.org/reports/cure53-report.pdf)
+- [Radically Open Security тарабынан даярдалган Тармак коопсуздугун тестирлөө отчёту (2022-жылдын декабры)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Cure53 тарабынан даярдалган Jigsaw Outline'дын VPN жана SDK боюнча Тармак коопсуздугун тестирлөө отчёту (2024-жылдын январы)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Жашыруун көрсөткүчтөр жана таржымалдар
 

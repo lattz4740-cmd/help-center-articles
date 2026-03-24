@@ -21,10 +21,10 @@ Outline-k AEAD-en 256 biteko Chacha2020 IETF Poly 1305 enkriptatze-katea erabilt
 
 2018an, Outline-ri auditoretza bat egin zioten Radically Open Security-k eta Cure53-k. Segurtasun digitaleko bi erakunde independente horiek azken segurtasun-arauen arabera berrikusten dute softwarea. Radically Open Security-k beste auditoretza bat egin zuen 2022an, eta Cure53-k Outline-ren SDKren auditoretza egin zuen 2024an. Hemen irakur ditzakezu txostenak:
 
-- [Radically Open Security Penetration Test Report (2018ko martxoa)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53 Pentest & Audit Report Jigsaw Outline (2018ko abendua)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Radically Open Security Penetration Test Report (2022ko abendua)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Cure53 Pentest Report Jigsaw Outline VPN SDK (2024ko abendua)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Radically Open Security Penetration Test Report (2018ko martxoa)](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53 Pentest & Audit Report Jigsaw Outline (2018ko abendua)](https://getoutline.org/reports/cure53-report.pdf)
+- [Radically Open Security Penetration Test Report (2022ko abendua)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Cure53 Pentest Report Jigsaw Outline VPN SDK (2024ko abendua)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Neurketa eta erregistro anonimoak
 

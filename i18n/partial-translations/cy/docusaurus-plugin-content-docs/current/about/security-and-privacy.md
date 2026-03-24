@@ -21,10 +21,10 @@ Mae Outline yn amgryptio cyfathrebiadau rhwng eich dyfais a'r Gweinydd Outline g
 
 Yn 2018, archwiliwyd Outline gan Radically Open Security a Cure53, dau sefydliad diogelwch digidol annibynnol sy'n adolygu meddalwedd yn erbyn y safonau diogelwch diweddaraf. Cynhaliodd Radically Open Security archwiliad ychwanegol yn 2022 a chynhaliodd Cure53 archwiliad o Outline SDK yn 2024. Gallwch ddarllen yr adroddiadau yma:
 
-- [Adroddiad Prawf Treiddiad Radically Open Security (Mawrth 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Adroddiad Prawf Treiddiad ac Archwilio Cure53 Jigsaw Outline (Rhagfyr 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Adroddiad Prawf Treiddiad Radically Open Security (Rhagfyr 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Adroddiad Prawf Treiddiad ac Archwilio Cure53 Jigsaw Outline VPN SDK (Ionawr 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Adroddiad Prawf Treiddiad Radically Open Security (Mawrth 2018)](https://getoutline.org/reports/ros-report.pdf)
+- [Adroddiad Prawf Treiddiad ac Archwilio Cure53 Jigsaw Outline (Rhagfyr 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [Adroddiad Prawf Treiddiad Radically Open Security (Rhagfyr 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Adroddiad Prawf Treiddiad ac Archwilio Cure53 Jigsaw Outline VPN SDK (Ionawr 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Metrigau a logiau dienw
 

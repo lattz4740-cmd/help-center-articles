@@ -21,10 +21,10 @@ Be to, „Outline“ gali padėti atgauti prieigą prie saugių tiesioginių pra
 
 2018 m. „Outline“ tikrino dvi nepriklausomos skaitmeninės saugos organizacijos: „Radically Open Security“ ir „Cure53“, kurios peržiūrėjo programinę įrangą pagal naujausius saugos standartus. „Radically Open Security“ atliko papildomą patikrinimą 2022 m., o „Cure53“ atliko „Outline SDK“ patikrinimą 2024 m. Ataskaitas galite perskaityti čia:
 
-- [„Radically Open Security Penetration Test Report“ (2018 m. kovo mėn.)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [„Cure53 Pentest & Audit Report Jigsaw Outline“ (2018 m. gruodžio mėn.)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [„Radically Open Security Penetration Test Report“ (2022 m. gruodžio mėn.)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [„Cure53 Pentest Report Jigsaw Outline VPN SDK“ (2024 m. sausio mėn.)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [„Radically Open Security Penetration Test Report“ (2018 m. kovo mėn.)](https://getoutline.org/reports/ros-report.pdf)
+- [„Cure53 Pentest & Audit Report Jigsaw Outline“ (2018 m. gruodžio mėn.)](https://getoutline.org/reports/cure53-report.pdf)
+- [„Radically Open Security Penetration Test Report“ (2022 m. gruodžio mėn.)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [„Cure53 Pentest Report Jigsaw Outline VPN SDK“ (2024 m. sausio mėn.)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Anoniminė metrika ir žurnalai
 

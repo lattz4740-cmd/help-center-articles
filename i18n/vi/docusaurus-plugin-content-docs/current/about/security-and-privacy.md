@@ -21,10 +21,10 @@ Outline mã hoá thông tin giao tiếp giữa thiết bị của bạn và máy
 
 Vào năm 2018, Outline đã được Radically Open Security và Cure53 kiểm nghiệm. Đây là hai tổ chức đánh giá khả năng bảo mật kỹ thuật số độc lập, đánh giá phần mềm theo các tiêu chuẩn bảo mật mới nhất. Radically Open Security đã kiểm nghiệm Outline một lần nữa vào năm 2022 và Cure53 đã kiểm nghiệm Outline SDK vào năm 2024. Bạn có thể đọc các báo cáo liên quan dưới đây:
 
-- [Báo cáo kiểm tra thâm nhập của Radically Open Security (tháng 3 năm 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Báo cáo của Cure53 về việc kiểm nghiệm và kiểm tra thâm nhập Outline của Jigsaw (tháng 12 năm 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Báo cáo kiểm tra thâm nhập của Radically Open Security (tháng 12 năm 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Báo cáo kiểm tra thâm nhập của Cure53 đối với SDK của Outline VPN thuộc Jigsaw (tháng 1 năm 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Báo cáo kiểm tra thâm nhập của Radically Open Security (tháng 3 năm 2018)](https://getoutline.org/reports/ros-report.pdf)
+- [Báo cáo của Cure53 về việc kiểm nghiệm và kiểm tra thâm nhập Outline của Jigsaw (tháng 12 năm 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [Báo cáo kiểm tra thâm nhập của Radically Open Security (tháng 12 năm 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Báo cáo kiểm tra thâm nhập của Cure53 đối với SDK của Outline VPN thuộc Jigsaw (tháng 1 năm 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Chỉ số và nhật ký ẩn danh
 

@@ -21,10 +21,10 @@ Outline, AEAD 256 bit Chacha2020 IETF Poly 1305 şifresini kullanarak cihazını
 
 Outline, 2018'de yazılımların en son güvenlik standartlarına uygunluğunu inceleyen iki bağımsız dijital güvenlik kuruluşu olan Radically Open Security ve Cure53 tarafından denetlenmiştir. Radically Open Security, 2022'de başka bir denetim daha gerçekleştirmiştir. Cure53 ise 2024'te Outline SDK'yı denetlemiştir. İlgili raporları aşağıda bulabilirsiniz:
 
-- [Radically Open Security Penetration Test Report (Mart 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53 Pentest & Audit Report Jigsaw Outline (Aralık 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Radically Open Security Penetration Test Report (Aralık 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Cure53 Pentest Report Jigsaw Outline VPN SDK (Ocak 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Radically Open Security Penetration Test Report (Mart 2018)](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53 Pentest & Audit Report Jigsaw Outline (Aralık 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [Radically Open Security Penetration Test Report (Aralık 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Cure53 Pentest Report Jigsaw Outline VPN SDK (Ocak 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Anonim metrikler ve günlükler
 

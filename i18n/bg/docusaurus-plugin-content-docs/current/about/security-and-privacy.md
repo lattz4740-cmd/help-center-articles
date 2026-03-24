@@ -21,10 +21,10 @@ Outline шифрова комуникацията между клиентски�
 
 През 2018 г. на Outline бе извършен одит от Radically Open Security и Cure53, две независими организации за дигитална сигурност, които проверяват софтуера за съответствие с най-новите стандарти за сигурност. Radically Open Security проведе допълнителен одит през 2022 г., а Cure53 проведе одит на Outline SDK през 2024 г. Можете да прочетете отчетите тук:
 
-- [Отчет за теста за проникване от Radically Open Security (март 2018 г.)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Отчет за теста за проникване и одита на Outline на Jigsaw от Cure53 (декември 2018 г.)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Отчет за теста за проникване от Radically Open Security (декември 2022 г.)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Отчет за теста за проникване за Outline VPN SDK от Cure53 (януари 2024 г.)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf).
+- [Отчет за теста за проникване от Radically Open Security (март 2018 г.)](https://getoutline.org/reports/ros-report.pdf)
+- [Отчет за теста за проникване и одита на Outline на Jigsaw от Cure53 (декември 2018 г.)](https://getoutline.org/reports/cure53-report.pdf)
+- [Отчет за теста за проникване от Radically Open Security (декември 2022 г.)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Отчет за теста за проникване за Outline VPN SDK от Cure53 (януари 2024 г.)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf).
 
 ## Анонимни показатели и регистрационни файлове
 

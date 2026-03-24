@@ -21,10 +21,10 @@ Outline은 AEAD 256비트 Chacha2020 IETF Poly 1305 암호화를 사용해 기�
 
 소프트웨어가 최신 보안 표준에 맞는지 검토하는 두 곳의 독립 디지털 보안 조직인 Radically Open Security 및 Cure53에서 2018년에 Outline의 감사를 실시했습니다. Radically Open Security에서 2022년에 추가 감사를 실시했으며 Cure53에서 Outline SDK에 대한 감사를 2024년에 실시했습니다. 여기에서 보고서를 확인해 보세요.
 
-- [Radically Open Security의 침투 시험 보고서(2018년 3월)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53의 Jigsaw Outline에 대한 침투 시험 및 감사 보고서(2018년 12월)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Radically Open Security의 침투 시험 보고서(2022년 12월)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Cure53 침투 시험 보고서 Jigsaw Outline VPN SDK(2024년 1월)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Radically Open Security의 침투 시험 보고서(2018년 3월)](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53의 Jigsaw Outline에 대한 침투 시험 및 감사 보고서(2018년 12월)](https://getoutline.org/reports/cure53-report.pdf)
+- [Radically Open Security의 침투 시험 보고서(2022년 12월)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Cure53 침투 시험 보고서 Jigsaw Outline VPN SDK(2024년 1월)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## 익명 처리된 측정항목 및 로그
 

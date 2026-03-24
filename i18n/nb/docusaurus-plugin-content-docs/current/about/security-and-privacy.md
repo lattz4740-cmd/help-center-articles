@@ -21,10 +21,10 @@ Outline krypterer kommunikasjon mellom enheten din og Outline-tjeneren med chiff
 
 I 2018 ble Outline revidert av Radically Open Security og Cure53, to uavhengige leverandører av cybersikkerhet som reviderer programvare i henhold til de nyeste sikkerhetsstandardene. Radically Open Security utførte enda en revisjon i 2022, og Cure53 utførte en revisjon av Outline SDK i 2024. Du kan lese rapportene her:
 
-- [Radically Open Security Penetration Test Report (mars 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53 Pentest & Audit Report Jigsaw Outline (desember 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Radically Open Security Penetration Test Report (desember 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Cure53 Pentest Report Jigsaw Outline VPN SDK (januar 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Radically Open Security Penetration Test Report (mars 2018)](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53 Pentest & Audit Report Jigsaw Outline (desember 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [Radically Open Security Penetration Test Report (desember 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Cure53 Pentest Report Jigsaw Outline VPN SDK (januar 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Anonyme verdier og logger
 

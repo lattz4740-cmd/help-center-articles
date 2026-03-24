@@ -21,10 +21,10 @@ Outline mengenkripsi komunikasi antara perangkat Anda dan server Outline menggun
 
 Pada tahun 2018, Outline diaudit oleh Radically Open Security dan Cure53, dua organisasi keamanan digital independen yang meninjau software terhadap standar keamanan terbaru. Radically Open Security melakukan audit tambahan pada tahun 2022 dan Cure53 melakukan audit terhadap Outline SDK pada tahun 2024. Anda dapat membaca laporannya di sini:
 
-- [Laporan Hasil Uji Penetrasi oleh Radically Open Security (Maret 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Laporan Uji Penetrasi & Audit Jigsaw Outline oleh Cure53 (Desember 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Laporan Hasil Uji Penetrasi oleh Radically Open Security (Desember 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Laporan Hasil Uji Penetrasi oleh Cure53 Jigsaw Outline VPN SDK (Januari 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Laporan Hasil Uji Penetrasi oleh Radically Open Security (Maret 2018)](https://getoutline.org/reports/ros-report.pdf)
+- [Laporan Uji Penetrasi & Audit Jigsaw Outline oleh Cure53 (Desember 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [Laporan Hasil Uji Penetrasi oleh Radically Open Security (Desember 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Laporan Hasil Uji Penetrasi oleh Cure53 Jigsaw Outline VPN SDK (Januari 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Metrik dan log anonim
 

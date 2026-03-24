@@ -21,10 +21,10 @@ Outline šifrē sakarus starp jūsu ierīci un Outline serveri, izmantojot AEAD 
 
 2018. gadā programmatūras Outline auditu veica divas neatkarīgas digitālās drošības organizācijas, Radically Open Security un Cure53, kas pārskata programmatūru atbilstību jaunākajiem drošības standartiem. Radically Open Security veica papildu auditu 2022. gadā, un Cure53 veica Outline SDK auditu 2024. gadā. Šo organizāciju pārskati ir pieejami šeit:
 
-- [Radically Open Security Penetration Test Report (2018. gada marts)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53 Pentest & Audit Report Jigsaw Outline (2018. gada decembris)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Redically Open Security Penetration Test Report (2022. gada decembris)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Cure53 Pentest Report Jigsaw Outline VPN SDK (2024. gada janvāris)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Radically Open Security Penetration Test Report (2018. gada marts)](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53 Pentest & Audit Report Jigsaw Outline (2018. gada decembris)](https://getoutline.org/reports/cure53-report.pdf)
+- [Redically Open Security Penetration Test Report (2022. gada decembris)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Cure53 Pentest Report Jigsaw Outline VPN SDK (2024. gada janvāris)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Anonīmie rādītāji un žurnāli
 

@@ -21,10 +21,10 @@ Outline таны төхөөрөмж, Outline серверийн хоорондо
 
 2018 онд Outline-д Radically Open Security болон Cure53 гэх программ хангамжийг хамгийн сүүлийн үеийн аюулгүй байдлын стандартын дагуу шалгадаг дижитал аюулгүй байдлын бие даасан хоёр байгууллага аудит хийсэн. 2022 онд Radically Open Security нэмэлт аудит хийсэн бол 2024 онд Outline SDK-н аудитыг Cure53 хийсэн. Та тайлангуудыг эндээс унших боломжтой:
 
-- [Radically Open Security-н нэвтрэх шалгалтын тайлан (2018 оны 3-р сар)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53-н Jigsaw Outline-д хийсэн нэвтрэх шалгалт, аудитын тайлан (2018 оны 12-р сар)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Radically Open Security-н нэвтрэх шалгалтын тайлан (2022 оны 12-р сар)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Jigsaw Outline VPN SDK-н Cure53-н нэвтрэлтийн тайлан (2024 оны 1-р сар)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Radically Open Security-н нэвтрэх шалгалтын тайлан (2018 оны 3-р сар)](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53-н Jigsaw Outline-д хийсэн нэвтрэх шалгалт, аудитын тайлан (2018 оны 12-р сар)](https://getoutline.org/reports/cure53-report.pdf)
+- [Radically Open Security-н нэвтрэх шалгалтын тайлан (2022 оны 12-р сар)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Jigsaw Outline VPN SDK-н Cure53-н нэвтрэлтийн тайлан (2024 оны 1-р сар)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Нэргүй хэмжигдэхүүн, лог
 

@@ -21,10 +21,10 @@ Outline šifrira komunikacije između uređaja i Outline servera pomoću AEAD 25
 
 Reviziju Outlinea su 2018. godine izvršili Radically Open Security i Cure53, dvije neovisne organizacije iz oblasti digitalne sigurnosti, koje su provjeravale najnovije sigurnosne standarde u softveru. Radically Open Security je izvršio dodatnu reviziju 2022, a Cure53 je izvršio reviziju Outline SDK-a 2024. Izvještaje možete pročitati ovdje:
 
-- [Radically Open Security Penetration Test Report (mart 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report.pdf)
-- [Cure53 Pentest & Audit Report Jigsaw Outline (decembar 2018)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report.pdf)
-- [Radically Open Security Penetration Test Report (decembar 2022)](https://s3.amazonaws.com/outline-vpn/static_downloads/ros-report-2022.pdf)
-- [Cure53 Pentest Report Jigsaw Outline VPN SDK (januar 2024)](https://s3.amazonaws.com/outline-vpn/static_downloads/cure53-report-SDK-2024.pdf)
+- [Radically Open Security Penetration Test Report (mart 2018)](https://getoutline.org/reports/ros-report.pdf)
+- [Cure53 Pentest & Audit Report Jigsaw Outline (decembar 2018)](https://getoutline.org/reports/cure53-report.pdf)
+- [Radically Open Security Penetration Test Report (decembar 2022)](https://getoutline.org/reports/ros-report-2022.pdf)
+- [Cure53 Pentest Report Jigsaw Outline VPN SDK (januar 2024)](https://getoutline.org/reports/cure53-report-SDK-2024.pdf)
 
 ## Anonimni pokazatelji i zapisnici
 
