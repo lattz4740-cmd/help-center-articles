@@ -90,13 +90,22 @@ FOOTER_UNTRANSLATED_LOCALES: set[str] = {
     "my", "ne", "si", "sq", "ur",
 }
 
+# Locales where Google had no translation for the navbar title ("Outline Help").
+# The key is omitted from navbar.json; Docusaurus falls back to English.
+NAVBAR_TITLE_UNTRANSLATED_LOCALES: set[str] = {
+    "am", "az", "bs", "da", "en-GB", "ka", "kk", "km", "lo", "mk", "mn",
+    "my", "ne", "nl", "si", "sq", "ur",
+}
+
 def _build_known_missing_keys(locale: str) -> set[str]:
-    """Return the set of known-missing code.json keys for a given locale."""
+    """Return the set of known-missing translation keys for a given locale."""
     missing: set[str] = set()
     if locale in SECONDARY_LOCALES:
         missing |= _MISSING_DESCRIPTION_KEYS
     elif locale in EMERGING_LOCALES:
         missing |= _MISSING_DESCRIPTION_KEYS | _MISSING_BUTTON_KEYS
+    if locale in NAVBAR_TITLE_UNTRANSLATED_LOCALES:
+        missing.add("title")  # navbar.json title key
     return missing
 
 # Known missing translations that don't exist on support.google.com.
