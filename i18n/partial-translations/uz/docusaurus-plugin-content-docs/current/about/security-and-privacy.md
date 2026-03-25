@@ -30,7 +30,7 @@ Outline qurilmangiz tomonidan Outline serveriga uzatiladigan maʼlumotlarni AEAD
 
 Outline har bir kirish kaliti uchun “uzatilgan baytlar” sifatida foydalanilgan o‘tkazuvchanlik qobiliyatini kuzatadi. Bu axborot server administratorlariga zarur hollarda oʻzlarini bulutli server provayderlaridagi oʻtkazuvchanlik qobiliyati obunalarini oʻzgartirish imkonini beradi, lekin Outline serveri orqali oʻtgan mavjud axborotni koʻrish imkonini bermaydi.
 
-[Outline xizmatining maʼlumotlar va axborotni jamlash](/about/data-collection) haqida batafsil.
+[Outline xizmatining maʼlumotlar va axborotni jamlash](https://getoutline.org/policies/data-collection) haqida batafsil.
 
 ---
 

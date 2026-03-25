@@ -30,7 +30,7 @@ A shekarar 2018, Radically Open Security da Cure53, kamfanonin ba da tsaro na di
 
 Outline na bin diddigin maƙurar yawan bayanan da aka yi amfani da su, ta hanyar “bytes da aka tura” ga kowane makullin shiga. Wannan bayanai na ba wa masu gudanar da sabar damar daidaita rijistar maƙurar yawan bayanai tare da kamfanoninsu na sabar intanet gwargwadon buƙata, amma ba ya ba su damar ganin ainihin bayanan da suka wuce ta sabar Outline.
 
-Ƙara sani game da [tattara bayanai](/about/data-collection) na Outline.
+Ƙara sani game da [tattara bayanai](https://getoutline.org/policies/data-collection) na Outline.
 
 ---
 

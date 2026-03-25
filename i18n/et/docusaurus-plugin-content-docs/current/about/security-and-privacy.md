@@ -30,7 +30,7 @@ Aastal 2018 auditeerisid Outline'i Radically Open Security ja Cure53 – kaks s�
 
 Outline jälgib iga pääsuvõtme puhul kasutatud ribalaiust ehk edastatud baitide hulka. See teave aitab serveriadministraatoritel kohandada vajaduse järgi oma ribalaiuse tellimusi pilveteenuste pakkuja juures, ent see ei võimalda neil näha teavet, mis Outline'i serverist läbi käis.
 
-Vaadake lisateavet Outline'i [andmete ja teabe kogumise kohta](/about/data-collection).
+Vaadake lisateavet Outline'i [andmete ja teabe kogumise kohta](https://getoutline.org/policies/data-collection).
 
 ---
 

@@ -30,7 +30,7 @@ Outline은 AEAD 256비트 Chacha2020 IETF Poly 1305 암호화를 사용해 기�
 
 Outline에서는 각 액세스 키에 '전송된 바이트 수', 즉 사용된 대역폭 추적이 이뤄집니다. 서버 관리자는 이 정보를 사용해 필요에 따라 클라우드 서버 제공업체의 대역폭 사용을 조정할 수 있지만, Outline 서버를 통과한 실제 정보를 볼 수는 없습니다.
 
-Outline의 [데이터 및 정보 수집](/about/data-collection)에 관해 자세히 알아보세요.
+Outline의 [데이터 및 정보 수집](https://getoutline.org/policies/data-collection)에 관해 자세히 알아보세요.
 
 ---
 

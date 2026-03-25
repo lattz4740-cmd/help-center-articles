@@ -39,4 +39,4 @@ Voit ottaa palvelimen käyttöön Outline Managerin kautta.
 ## Mitä datarajat ovat?
  Outline Managerin avulla palvelun ylläpitäjä voi asettaa pääsyavaimille 30 päivän palautuvan datarajan, jotta käyttö ja kustannukset pysyvät kurissa. Palvelun ylläpitäjä voi asettaa kaikkia avaimia koskevan oletusrajan tai oletusrajasta poikkeavan rajan yksittäisille avaimille. Rajan muutokset ovat voimassa heti. Datankäyttö tarkistetaan tunneittain.
 
-Jos palvelun ylläpitäjä päättää jakaa mittarit Jigsaw'lle, hänen kannattaa katsoa [datankeruun käytännöstä](/about/data-collection), miten datarajojen käytöstä raportoidaan.
+Jos palvelun ylläpitäjä päättää jakaa mittarit Jigsaw'lle, hänen kannattaa katsoa [datankeruun käytännöstä](https://getoutline.org/policies/data-collection), miten datarajojen käytöstä raportoidaan.

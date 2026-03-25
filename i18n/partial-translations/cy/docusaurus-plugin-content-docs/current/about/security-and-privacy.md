@@ -30,7 +30,7 @@ Yn 2018, archwiliwyd Outline gan Radically Open Security a Cure53, dau sefydliad
 
 Mae Outline yn olrhain y lled band a ddefnyddiwyd, fel "beit wedi'i drosglwyddo" ar gyfer pob allwedd mynediad. Mae'r wybodaeth hon yn caniatáu i weinyddwyr gweinyddion addasu eu tanysgrifiadau lled band gyda'u darparwyr gweinydd cwmwl yn ôl yr angen, ond nid yw'n caniatáu iddynt weld yr wybodaeth wirioneddol a aeth trwy'r gweinydd Outline.
 
-Dysgu rhagor am [gasglu data a gwybodaeth](/about/data-collection) Outline.
+Dysgu rhagor am [gasglu data a gwybodaeth](https://getoutline.org/policies/data-collection) Outline.
 
 ---
 

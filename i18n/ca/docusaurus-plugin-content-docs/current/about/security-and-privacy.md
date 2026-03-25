@@ -30,7 +30,7 @@ El 2018, Outline es va sotmetre a l'auditoria de Radically Open Security i Cure5
 
 Outline fa el seguiment de l'amplada de banda que s'utilitza, com a "bytes transferits" per cada clau d'accés. Aquesta informació permet als administradors del servidor ajustar les subscripcions de l'amplada de banda als seus proveïdors de servidor en núvol en funció de les necessitats, però no els permet veure la informació real que passa pel servidor d'Outline.
 
-Obtén més informació sobre la [recollida de dades i d'informació](/about/data-collection) d'Outline.
+Obtén més informació sobre la [recollida de dades i d'informació](https://getoutline.org/policies/data-collection) d'Outline.
 
 ---
 

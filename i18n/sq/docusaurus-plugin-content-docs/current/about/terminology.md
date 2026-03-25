@@ -39,4 +39,4 @@ Do të konfigurosh serverin tënd në Outline Manager.
 ## Çfarë janë kufijtë e të dhënave?
 Outline Manager i lejon menaxherët e shërbimit që të caktojnë një kufi gradual 30-ditor të të dhënave për çelësat e qasjes për të parandaluar përdorimin e tepërt dhe për të ndihmuar në parashikimin e kostove. Menaxherët e shërbimit mund të caktojnë një kufi të parazgjedhur që zbatohet për çdo çelës dhe mund të caktojnë po ashtu një kufi tjetër për secilin çelës për të zëvendësuar kufirin e parazgjedhur. Pasi të caktohet një kufi, ai hyn menjëherë në fuqi dhe zbatohet çdo orë.
 
-Nëse menaxherët e shërbimit zgjedhin që të ndajnë metrikat me Jigsaw, ata duhet të shikojnë[politikën për mbledhjen e të dhënave](/about/data-collection) për detaje se si do të raportohet përdorimi i kufijve të të dhënave.
+Nëse menaxherët e shërbimit zgjedhin që të ndajnë metrikat me Jigsaw, ata duhet të shikojnë[politikën për mbledhjen e të dhënave](https://getoutline.org/policies/data-collection) për detaje se si do të raportohet përdorimi i kufijve të të dhënave.

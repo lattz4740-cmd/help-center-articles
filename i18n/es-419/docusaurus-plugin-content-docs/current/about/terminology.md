@@ -53,4 +53,4 @@ El cliente de Outline es una aplicación para computadoras y dispositivos móvil
 
 Con Outline Manager, los administradores de servicios pueden establecer un límite de datos retrospectivo de 30 días que se aplicará a las claves de acceso para evitar el uso excesivo y predecir los costos. Los administradores de servicios pueden establecer un límite predeterminado que se aplique a todas las claves y un límite diferente en cualquiera de ellas para anular el predeterminado. Una vez que establezcas el límite, entrará en vigencia inmediatamente y se aplicará por hora.
 
-Si los administradores de servicios aceptan compartir métricas con Jigsaw, deberían consultar la [política de recopilación de datos](/about/data-collection) para saber cómo se informará el uso de los límites de datos.
+Si los administradores de servicios aceptan compartir métricas con Jigsaw, deberían consultar la [política de recopilación de datos](https://getoutline.org/policies/data-collection) para saber cómo se informará el uso de los límites de datos.

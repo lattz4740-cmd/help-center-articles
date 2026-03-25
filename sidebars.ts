@@ -5,7 +5,6 @@ const sidebars: SidebarsConfig = {
     'about/how-outline-works',
     'about/terminology',
     'about/security-and-privacy',
-    'about/data-collection',
     'about/feedback',
     'about/brand-usage',
     'about/access-resources-blocked',

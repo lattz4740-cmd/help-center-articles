@@ -30,7 +30,7 @@ Outline-k AEAD-en 256 biteko Chacha2020 IETF Poly 1305 enkriptatze-katea erabilt
 
 Outline-k sarbide-gako bakoitzarekin erabilitako banda-zabalera neurtzen du, "transferitutako byte" gisa. Informazio horri esker, zerbitzariaren administratzaileek beharren arabera doi ditzakete hodeiko zerbitzari-hornitzaileekin dituzten banda-zabaleraren harpidetzak. Hala eta guztiz ere, ezin dute ikusi Outline-ren zerbitzariaren bidez bidalitako informazioa.
 
-Lortu Outline-k [datuak eta informazioa biltzeko duen moduari](/about/data-collection) buruzko informazio gehiago.
+Lortu Outline-k [datuak eta informazioa biltzeko duen moduari](https://getoutline.org/policies/data-collection) buruzko informazio gehiago.
 
 ---
 

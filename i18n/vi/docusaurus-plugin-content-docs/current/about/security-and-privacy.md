@@ -30,7 +30,7 @@ Vào năm 2018, Outline đã được Radically Open Security và Cure53 kiểm 
 
 Outline chỉ theo dõi băng thông đã dùng dưới dạng "số byte đã truyền" đối với mỗi khoá truy cập. Thông tin này cho phép quản trị viên máy chủ điều chỉnh gói thuê bao băng thông với các nhà cung cấp máy chủ đám mây khi cần, nhưng không cho phép họ xem thông tin thực tế được truyền qua máy chủ Outline.
 
-Tìm hiểu thêm về hoạt động [thu thập dữ liệu và thông tin](/about/data-collection) của Outline.
+Tìm hiểu thêm về hoạt động [thu thập dữ liệu và thông tin](https://getoutline.org/policies/data-collection) của Outline.
 
 ---
 

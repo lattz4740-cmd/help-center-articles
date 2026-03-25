@@ -39,4 +39,4 @@ Il server dovrà essere configurato in Outline Manager.
 ## Che cosa sono i limiti dati?
  Outline Manager consente ai gestori del servizio di impostare un limite dati massimo di 30 giorni per le chiavi di accesso, in modo da prevenire casi di utilizzo eccessivo e mantenere i costi prevedibili. I gestori del servizio possono impostare un limite predefinito che verrà applicato a ogni chiave. In aggiunta, possono anche impostare un limite differente su una qualsiasi chiave per sovrascrivere il limite predefinito. Una volta impostato un limite, questo verrà applicato immediatamente e su base oraria.
 
-Nel caso in cui autorizzino la condivisione di metriche con Jigsaw, i gestori del servizio devono consultare le [norme sulla raccolta dei dati](/about/data-collection) per informazioni dettagliate su come verrà riportato l'utilizzo dei limiti dati.
+Nel caso in cui autorizzino la condivisione di metriche con Jigsaw, i gestori del servizio devono consultare le [norme sulla raccolta dei dati](https://getoutline.org/policies/data-collection) per informazioni dettagliate su come verrà riportato l'utilizzo dei limiti dati.

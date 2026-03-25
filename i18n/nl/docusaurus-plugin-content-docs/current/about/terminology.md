@@ -53,4 +53,4 @@ Outline-client is een app voor desktop en mobiel waarmee je verbinding kunt make
 
 In Outline Manager kunnen servicemanagers een verzamellimiet van 30 dagen instellen voor toegangssleutels om overmatig gebruik te voorkomen en de kosten voorspelbaar te houden. Servicemanagers kunnen een standaardlimiet instellen die geldt voor elke sleutel en een andere limiet instellen voor individuele sleutels om de standaardlimiet te overschrijven. Nadat je een limiet instelt, wordt die meteen van kracht en wordt die uurlijks afgedwongen.
 
-Als servicemanagers toestemming geven om statistieken te delen met Jigsaw, moeten ze het [Beleid voor gegevens verzamelen](/about/data-collection) bekijken. Hierin staat hoe het gebruik van datalimieten wordt gemeld.
+Als servicemanagers toestemming geven om statistieken te delen met Jigsaw, moeten ze het [Beleid voor gegevens verzamelen](https://getoutline.org/policies/data-collection) bekijken. Hierin staat hoe het gebruik van datalimieten wordt gemeld.

@@ -53,4 +53,4 @@ El cliente de Outline es una aplicación, disponible para ordenadores y móviles
 
 Administrador de Outline permite a los gestores de servicio establecer un límite de datos para las claves de acceso que se ciña a los últimos 30 días. Así, se evita un uso excesivo y se consigue que los costes sigan siendo predecibles. Los gestores de servicio pueden definir un límite predeterminado que se aplique a todas las claves, o bien establecer límites distintos en cualquier clave para reemplazar el límite predeterminado. Cuando se establece un límite, empieza a aplicarse de inmediato y su cumplimiento se revisa cada hora.
 
-Si los gestores de servicio deciden compartir las métricas con Jigsaw, deben revisar la [política sobre recogida de datos](/about/data-collection) para saber cómo se registrará el uso de límites de datos.
+Si los gestores de servicio deciden compartir las métricas con Jigsaw, deben revisar la [política sobre recogida de datos](https://getoutline.org/policies/data-collection) para saber cómo se registrará el uso de límites de datos.

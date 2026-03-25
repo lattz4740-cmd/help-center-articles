@@ -30,7 +30,7 @@ Em 2018, o Outline foi auditado pela Radically Open Security e a Cure53, duas or
 
 O Outline monitoriza a largura de banda usada, avaliando-a em "bytes transferidos" para cada chave de acesso. Estas informações permitem aos administradores do servidor ajustar as respetivas subscrições de largura de banda junto dos fornecedores de servidores na nuvem, conforme necessário, mas não lhes permitem ver as informações reais que passaram pelo servidor do Outline.
 
-Saiba mais sobre a [recolha de dados e informações](/about/data-collection) do Outline.
+Saiba mais sobre a [recolha de dados e informações](https://getoutline.org/policies/data-collection) do Outline.
 
 ---
 

@@ -53,4 +53,4 @@ Klient Outline to aplikacja na komputery i komórki pozwalająca na połączenie
 
 Menedżer Outline daje menedżerom usługi możliwość ustawienia 30-dniowego limitu okresowego dla kluczy dostępu, co pozwala zapobiec użyciu zbyt dużych ilości danych i pomaga utrzymać koszty w przewidywalnych granicach. Menedżerowie usługi mogą ustawić domyślny limit obowiązujący w przypadku każdego klucza lub ustawić różne limity dla poszczególnych kluczy, zastępujące limit domyślny. Po ustawieniu limitu wchodzi on od razu w życie i jest egzekwowany co godzinę.
 
-Jeżeli menedżerowie usługi chcą udostępniać dane usłudze Jigsaw, powinni zapoznać się z [zasadami gromadzenia danych](/about/data-collection), aby dowiedzieć się, jak raportowane będzie korzystanie z limitów danych.
+Jeżeli menedżerowie usługi chcą udostępniać dane usłudze Jigsaw, powinni zapoznać się z [zasadami gromadzenia danych](https://getoutline.org/policies/data-collection), aby dowiedzieć się, jak raportowane będzie korzystanie z limitów danych.

@@ -53,4 +53,4 @@ Esse aplicativo está disponível para computadores e dispositivos móveis e per
 
 Com o Outline Manager, os administradores do serviço podem configurar limites de dados de 30 dias para evitar o uso em excesso e manter os custos previsíveis. Os administradores podem definir um limite padrão que se aplique a todas as chaves, mas também é possível configurar um limite diferente em qualquer chave para substituir o padrão. Quando essa informação é definida, a configuração entra em vigor imediatamente e é aplicada a cada hora.
 
-Se o administrador do serviço ativar o compartilhamento de métricas com o Jigsaw, deve ler a [política de coleta de dados](/about/data-collection) para entender como o uso dos limites de dados é relatado.
+Se o administrador do serviço ativar o compartilhamento de métricas com o Jigsaw, deve ler a [política de coleta de dados](https://getoutline.org/policies/data-collection) para entender como o uso dos limites de dados é relatado.

@@ -30,7 +30,7 @@ Im Jahr 2018 wurde Outline von Radically Open Security und Cure53 geprüft, zwei
 
 Outline verfolgt die genutzte Bandbreite als «übertragene Bytes» für jeden Zugriffsschlüssel. Mithilfe dieser Informationen können Serveradministratoren ihre Bandbreitenabonnements bei ihren Cloud-Server-Anbietern nach Bedarf anpassen, können jedoch nicht die tatsächlichen Informationen sehen, die über den Outline-Server gelaufen sind.
 
-Erfahren Sie mehr über die [Daten- und Informationssammlung](/about/data-collection) von Outline.
+Erfahren Sie mehr über die [Daten- und Informationssammlung](https://getoutline.org/policies/data-collection) von Outline.
 
 ---
 

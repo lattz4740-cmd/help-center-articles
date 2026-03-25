@@ -30,7 +30,7 @@ Pada tahun 2018, Outline telah diaudit oleh Radically Open Security dan Cure53, 
 
 Outline menjejaki lebar jalur yang digunakan, sebagai "bait yang dipindahkan" bagi setiap kunci akses. Maklumat ini membolehkan pentadbir pelayan untuk melaraskan langganan lebar jalur mereka dengan penyedia pelayan mereka mengikut keperluan tetapi tidak membolehkan mereka melihat maklumat sebenar yang melalui pelayan Outline tersebut.
 
-Ketahui [pengumpulan data dan maklumat Outline](/about/data-collection) dengan lebih lanjut.
+Ketahui [pengumpulan data dan maklumat Outline](https://getoutline.org/policies/data-collection) dengan lebih lanjut.
 
 ---
 

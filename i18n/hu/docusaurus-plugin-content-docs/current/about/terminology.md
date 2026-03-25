@@ -39,4 +39,4 @@ A szervert az Outline Manager segítségével telepítheti.
 ## Mik azok az adatforgalmi korlátozások?
  Az Outline Manager segítségével a szolgáltatáskezelők az elmúlt 30 napra összesítve mért adatforgalmi korlátot állíthatnak be, megakadályozva ezzel a túlzott mértékű használatot, és kiszámítható keretek között tartva a költségeket. A szolgáltatáskezelők beállíthatják az alapértelmezett korlátozást, amely minden kulcsra érvényes, de az alapértelmezett korlátozást felülbírálva bármelyik kulcsra eltérő korlátozást is beállíthatnak. A korlátozás a beállításakor azonnal életbe lép, és óránként vizsgálja a rendszer a túllépését.
 
-Ha a szolgáltatáskezelő azt választja, hogy megosztja a mutatókat a Jigsaw-val, akkor az [adatgyűjtési irányelvekből](/about/data-collection) részletesen tájékozódhat az adatforgalmi korlátozásról beküldött jelentésekről.
+Ha a szolgáltatáskezelő azt választja, hogy megosztja a mutatókat a Jigsaw-val, akkor az [adatgyűjtési irányelvekből](https://getoutline.org/policies/data-collection) részletesen tájékozódhat az adatforgalmi korlátozásról beküldött jelentésekről.

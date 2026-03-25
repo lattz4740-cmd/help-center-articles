@@ -39,4 +39,4 @@ Strežnik boste nastavili v Upravitelju za Outline.
 ## Kaj so omejitve podatkov?
  Upravitelji storitev lahko z Upraviteljem za Outline za ključe za dostop nastavijo omejitev podatkov na podlagi 30-dnevnega obdobja spremljanja, da preprečijo prekomerno uporabo in lažje zagotovijo predvidljivost stroškov. Upravitelji storitev lahko nastavijo privzeto omejitev, ki velja za vsak ključ, poleg tega pa lahko za poljubni ključ nastavijo drugačno omejitev, s katero preglasijo privzeto. Ko je omejitev nastavljena, začne veljati takoj in se uveljavlja vsako uro.
 
-Če upravitelji storitev omogočijo deljenje meritev s podjetjem Jigsaw, morajo prebrati [pravilnik o zbiranju podatkov](/about/data-collection), kjer najdejo podrobnosti o tem, kako bo sistem poročal o uporabi omejitev podatkov.
+Če upravitelji storitev omogočijo deljenje meritev s podjetjem Jigsaw, morajo prebrati [pravilnik o zbiranju podatkov](https://getoutline.org/policies/data-collection), kjer najdejo podrobnosti o tem, kako bo sistem poročal o uporabi omejitev podatkov.

@@ -30,7 +30,7 @@ I 2018 ble Outline revidert av Radically Open Security og Cure53, to uavhengige 
 
 Outline sporer båndbredden som brukes, som «bytes transferred» (overførte byter) for hver tilgangsnøkkel. Med denne informasjonen kan administratorer av Outline-tjenere bestemme om de trenger å skaffe mer båndbredde fra nettskyleverandøren sin. De kan imidlertid ikke se den faktiske informasjonen som er sendt via Outline-tjeneren.
 
-Finn ut mer om [innsamling av data og informasjon](/about/data-collection) i Outline.
+Finn ut mer om [innsamling av data og informasjon](https://getoutline.org/policies/data-collection) i Outline.
 
 ---
 

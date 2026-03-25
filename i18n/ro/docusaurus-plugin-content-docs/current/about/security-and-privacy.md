@@ -30,7 +30,7 @@ Outline criptează comunicațiile dintre dispozitiv și serverul Outline utiliz�
 
 Outline monitorizează lățimea de bandă utilizată, sub formă de „byți transferați” pentru fiecare cheie de acces. Administratorii de servere pot folosi aceste informații pentru a ajusta abonamentele de lățime de bandă la furnizorii de servere cloud după cum este necesar, însă nu le pot folosi pentru a vedea informațiile reale transferate prin serverul Outline.
 
-Aflați mai multe despre [colectarea datelor și a informațiilor](/about/data-collection) în Outline.
+Aflați mai multe despre [colectarea datelor și a informațiilor](https://getoutline.org/policies/data-collection) în Outline.
 
 ---
 

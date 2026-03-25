@@ -53,4 +53,4 @@ Le client Outline est une application disponible sur ordinateur et mobile qui pe
 
 Outline Manager permet aux gestionnaires de service de définir une limite de données sur 30 jours glissants pour les clés d'accès afin d'éviter toute utilisation abusive et tout imprévu au niveau du budget. Les gestionnaires de service peuvent définir une limite par défaut s'appliquant à chaque clé ou une limite spécifique à chaque clé qui remplace la limite par défaut. Une fois la limite définie, elle entre en vigueur immédiatement et elle est appliquée à l'heure.
 
-Si les gestionnaires de service acceptent de partager les métriques avec Jigsaw, nous leur recommandons de consulter les [Règles relatives à la collecte des données](/about/data-collection) pour savoir comment les limites de données seront journalisées.
+Si les gestionnaires de service acceptent de partager les métriques avec Jigsaw, nous leur recommandons de consulter les [Règles relatives à la collecte des données](https://getoutline.org/policies/data-collection) pour savoir comment les limites de données seront journalisées.

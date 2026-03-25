@@ -30,7 +30,7 @@ V roku 2018 prešla služba Outline auditom dvoch nezávislých organizácií Ra
 
 Outline sleduje použitú rýchlosť pripojenia, a to vo forme prenesených bajtov pre jednotlivé prístupové kľúče. Tieto informácie umožňujú správcom servera upraviť u poskytovateľov cloudového servera odoberanú rýchlosť pripojenia podľa potreby, no neumožňujú im zobraziť si konkrétne informácie, ktoré prešli cez server služby Outline.
 
-Prečítajte si viac o tom, ako Outline [zhromažďuje údaje a informácie](/about/data-collection).
+Prečítajte si viac o tom, ako Outline [zhromažďuje údaje a informácie](https://getoutline.org/policies/data-collection).
 
 ---
 

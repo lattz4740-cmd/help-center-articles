@@ -39,4 +39,4 @@ Du konfigurerar servern i Outline Manager.
 ## Vad är datagränser?
  Med Outline Manager kan tjänsteansvariga ställa in en löpande datagräns på 30 dagar för åtkomstnycklar för att förhindra överanvändning och hålla koll på kostnaderna. Tjänsteansvariga kan ställa in en standardgräns som gäller för alla nycklar samt andra gränser för enskilda nycklar som åsidosätter standardgränsen. När en gräns har ställts in börjar den gälla omedelbart och tillämpas varje timme.
 
-Om tjänsteansvariga väljer att dela mätvärden med Jigsaw kan de läsa om hur användningen av datagränser rapporteras i [policyn för datainsamling](/about/data-collection).
+Om tjänsteansvariga väljer att dela mätvärden med Jigsaw kan de läsa om hur användningen av datagränser rapporteras i [policyn för datainsamling](https://getoutline.org/policies/data-collection).

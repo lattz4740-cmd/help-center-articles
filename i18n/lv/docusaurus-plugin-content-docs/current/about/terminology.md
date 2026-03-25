@@ -39,4 +39,4 @@ Iestatiet savu serveri lietotnē Outline pārvaldnieks.
 ## Kas ir datu ierobežojumi?
  Izmantojot Outline pārvaldnieku, pakalpojuma sniedzēji var piekļuves atslēgām iestatīt iepriekšējo 30 dienu datu lietojumam atbilstošu ierobežojumu, lai novērstu pārmērīgu lietojumu un palīdzētu prognozēt izmaksas. Pakalpojuma pārvaldnieki var iestatīt noklusējuma ierobežojumu, kas attieksies uz visām atslēgām, kā arī iestatīt atšķirīgu ierobežojumu kādai konkrētai atslēgai — šādā gadījumā noklusējuma ierobežojums tiks ignorēts. Tiklīdz ierobežojums tiek iestatīts, tas nekavējoties stājas spēkā un tiek piemērots katrai stundai.
 
-Ja pakalpojuma pārvaldnieki vēlas kopīgot rādītājus ar Jigsaw komandu, viņiem ir jāskata [datu vākšanas politika](/about/data-collection), kurā ir informācija par to, kā tiks veidoti pārskati par datu ierobežojumu lietošanu.
+Ja pakalpojuma pārvaldnieki vēlas kopīgot rādītājus ar Jigsaw komandu, viņiem ir jāskata [datu vākšanas politika](https://getoutline.org/policies/data-collection), kurā ir informācija par to, kā tiks veidoti pārskati par datu ierobežojumu lietošanu.

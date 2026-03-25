@@ -30,7 +30,7 @@ Outline is in 2018 geouditeer deur Radically Open Security en Cure53, twee onafh
 
 Outline spoor die bandwydte wat gebruik word na as “grepe oorgedra” vir elke toegangsleutel. Met hierdie inligting kan bedieneradminstrateurs hul bandwydte-intekeninge aanpas by hul wolkdiensverskaffer soos nodig, maar dit laat hulle nie toe om die werklike inligting te sien wat deur die Outline-bediener beweeg het nie.
 
-Kry meer inligting oor Outline se [data- en inligtinginsameling](/about/data-collection).
+Kry meer inligting oor Outline se [data- en inligtinginsameling](https://getoutline.org/policies/data-collection).
 
 ---
 

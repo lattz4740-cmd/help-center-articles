@@ -39,4 +39,4 @@ Anda dapat menyiapkan server Anda di Outline Manager.
 ## Apa itu batas data?
  Outline Manager memungkinkan pengelola layanan menetapkan pemantauan batas data 30 hari pada kunci akses untuk mencegah penggunaan yang berlebihan dan membantu menjaga agar biaya tetap dapat diprediksi. Pengelola layanan dapat menetapkan batas default yang berlaku untuk setiap kunci, dan juga menetapkan batas yang berbeda pada setiap kunci untuk menggantikan batas default. Setelah ditetapkan, batas tersebut langsung berlaku dan diterapkan setiap jam.
 
-Jika pengelola layanan memilih untuk membagikan metrik kepada Jigsaw, mereka harus membaca [kebijakan pengumpulan data](/about/data-collection) untuk mengetahui detail tentang bagaimana penggunaan batas data akan dilaporkan.
+Jika pengelola layanan memilih untuk membagikan metrik kepada Jigsaw, mereka harus membaca [kebijakan pengumpulan data](https://getoutline.org/policies/data-collection) untuk mengetahui detail tentang bagaimana penggunaan batas data akan dilaporkan.

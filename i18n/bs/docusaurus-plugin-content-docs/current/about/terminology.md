@@ -39,4 +39,4 @@ Postavit ćete svoj server u Outline Manageru.
 ## Šta su ograničenja prenosa podataka?
  Outline Manager omogućava upraviteljima usluge da na pristupne ključeve postave 30-dnevno ograničenje prenosa podataka radi sprečavanja prekomjernog korištenja i osiguranja predvidivosti troškova. Upravitelji usluge mogu postaviti zadano ograničenje koje će se primjenjivati na sve ključeve, a mogu i postaviti različito ograničenje za svaki ključ kako bi se nadjačalo zadano ograničenje. Kada se ograničenje postavi, odmah stupa na snagu i sprovodi se svaki sat.
 
-Ako upravitelji usluge pristanu da dijele pokazatelje s Jigsawom, trebaju pregledati [pravila za prikupljanje podataka](/about/data-collection) da saznaju detalje o tome kako će se prijavljivati korištenje ograničenja prenosa podataka.
+Ako upravitelji usluge pristanu da dijele pokazatelje s Jigsawom, trebaju pregledati [pravila za prikupljanje podataka](https://getoutline.org/policies/data-collection) da saznaju detalje o tome kako će se prijavljivati korištenje ograničenja prenosa podataka.

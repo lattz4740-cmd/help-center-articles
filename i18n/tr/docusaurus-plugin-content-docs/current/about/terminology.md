@@ -39,4 +39,4 @@ Sunucunuzu Outline Manager'da ayarlarsınız.
 ## Veri sınırları nedir?
  Outline Manager, aşırı kullanımın önüne geçmek ve maliyetleri öngörmenize yardımcı olmak için hizmet yöneticilerinin erişim anahtarları için 30 günlük hareketli veri sınırı belirlemesine olanak tanır. Hizmet yöneticileri, her anahtarda geçerli olacak varsayılan sınırı belirleyebilir ya da varsayılan sınırı geçersiz kılacak farklı bir sınır ayarlayabilir. Belirlenen sınırlar anında geçerli olur ve saatte bir uygulanır.
 
-Metriklerin Jigsaw ile paylaşılmasına izin veren hizmet yöneticileri, veri sınırı kullanımının nasıl raporlanacağıyla ilgili ayrıntılı bilgi edinmek için [veri toplama politikasını](/about/data-collection) inceleyebilir.
+Metriklerin Jigsaw ile paylaşılmasına izin veren hizmet yöneticileri, veri sınırı kullanımının nasıl raporlanacağıyla ilgili ayrıntılı bilgi edinmek için [veri toplama politikasını](https://getoutline.org/policies/data-collection) inceleyebilir.

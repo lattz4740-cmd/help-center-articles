@@ -39,4 +39,4 @@ Bạn có thể thiết lập máy chủ trong ứng dụng Quản lý Outline.
 ## Hạn mức dữ liệu là gì?
  Ứng dụng Quản lý Outline cho phép người quản lý dịch vụ đặt hạn mức dữ liệu kéo dài trong 30 ngày cho khoá truy cập để tránh việc sử dụng quá mức và giúp duy trì chi phí trong phạm vi dự đoán. Người quản lý dịch vụ có thể đặt một hạn mức mặc định áp dụng cho mọi khoá và cũng có thể đặt hạn mức riêng cho một khoá bất kỳ để thay thế hạn mức mặc định. Sau khi được thiết lập, hạn mức dữ liệu sẽ có hiệu lực ngay lập tức và được thực thi mỗi giờ.
 
-Nếu người quản lý dịch vụ chọn chia sẻ các chỉ số với Jigsaw, họ cần phải đọc [chính sách về việc thu thập dữ liệu](/about/data-collection) để nắm cụ thể cách hoạt động sử dụng hạn mức dữ liệu sẽ được báo cáo.
+Nếu người quản lý dịch vụ chọn chia sẻ các chỉ số với Jigsaw, họ cần phải đọc [chính sách về việc thu thập dữ liệu](https://getoutline.org/policies/data-collection) để nắm cụ thể cách hoạt động sử dụng hạn mức dữ liệu sẽ được báo cáo.

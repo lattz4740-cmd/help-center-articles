@@ -30,7 +30,7 @@ Nel 2018 Outline è stato valutato da Radically Open Security e Cure53, due orga
 
 Outline traccia la larghezza di banda utilizzata come "byte trasferiti" per ciascuna chiave di accesso. Questa informazione permette agli amministratori del server di regolare secondo necessità i loro abbonamenti alla larghezza di banda con i provider di soluzioni cloud, ma non di vedere le informazioni che sono passate attraverso il server Outline.
 
-Scopri di più sulla [raccolta di dati e informazioni](/about/data-collection) di Outline.
+Scopri di più sulla [raccolta di dati e informazioni](https://getoutline.org/policies/data-collection) di Outline.
 
 ---
 

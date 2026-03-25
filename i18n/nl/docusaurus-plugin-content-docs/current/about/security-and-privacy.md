@@ -30,7 +30,7 @@ In 2018 is Outline gecontroleerd door Radically Open Security en Cure53, 2 onafh
 
 Outline houdt voor elke toegangssleutel de gebruikte bandbreedte bij in 'overgebrachte bytes'. Met deze gegevens kunnen serverbeheerders hun bandbreedteabonnement bij hun cloudserverprovider zo nodig aanpassen. Ze kunnen niet zien welke gegevens er door de Outline-server zijn verzonden.
 
-Meer informatie over de [verzameling van gegevens en informatie](/about/data-collection) door Outline.
+Meer informatie over de [verzameling van gegevens en informatie](https://getoutline.org/policies/data-collection) door Outline.
 
 ---
 

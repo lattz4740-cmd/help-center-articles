@@ -39,4 +39,4 @@ Vă veți configura serverul în Outline Manager.
 ## Ce sunt limitele de date?
  Outline Manager le permite managerilor de servicii să seteze o limită de transfer de date timp de 30 de zile pentru cheile de acces, pentru a preveni folosirea excesivă și a menține costurile în limite previzibile. Managerii de servicii pot seta o limită prestabilită pentru fiecare cheie și pot să seteze o limită diferită pentru orice cheie pentru a modifica limita prestabilită. După ce este setată o limită, aceasta devine aplicabilă imediat și este implementată la fiecare oră.
 
-Dacă managerii de servicii optează să trimită valorile către Jigsaw, trebuie să consulte [politica privind colectarea datelor](/about/data-collection) pentru detalii despre raportarea folosirii limitelor de date.
+Dacă managerii de servicii optează să trimită valorile către Jigsaw, trebuie să consulte [politica privind colectarea datelor](https://getoutline.org/policies/data-collection) pentru detalii despre raportarea folosirii limitelor de date.

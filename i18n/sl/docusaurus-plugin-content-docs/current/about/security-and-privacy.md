@@ -30,7 +30,7 @@ Leta 2018 sta Outline pregledali Radically Open Security in Cure53, neodvisni or
 
 Outline beleži porabo pasovne širine v obliki števila prenesenih bajtov za posamezen ključ za dostop. Na podlagi teh podatkov lahko skrbniki strežnikov v skladu s potrebami prilagodijo naročnino za pasovno širino pri ponudnikih strežnikov v oblaku, ne morejo pa si ogledati dejanskih podatkov, ki so se prenesli prek strežnika Outline.
 
-Preberite več o tem, kako Outline [zbira podatke](/about/data-collection).
+Preberite več o tem, kako Outline [zbira podatke](https://getoutline.org/policies/data-collection).
 
 ---
 

@@ -39,4 +39,4 @@ Poslužitelj možete postaviti u Upravitelju Outlinea.
 ## Što su ograničenja podatkovnog prometa?
  Upravitelj Outlinea omogućuje upraviteljima usluga da postave promjenjivo 30-dnevno ograničenje podatkovnog prometa za pristupne ključeve kako bi spriječili prekomjernu upotrebu i povećali predvidljivost troškova. Upravitelji usluga mogu postaviti zadano ograničenje koje se primjenjuje na svaki ključ ili drukčije ograničenje za pojedine ključeve koje nadjačava zadano ograničenje. Postavljeno ograničenje stupa na snagu odmah i primjenjuje se svakih sat vremena.
 
-Ako upravitelji usluga uključe dijeljenje mjernih podataka s Jigsawom, trebaju u [pravilima o prikupljanju podataka](/about/data-collection) potražiti pojedinosti o tome kako se prijavljuje upotreba ograničenja podatkovnog prometa.
+Ako upravitelji usluga uključe dijeljenje mjernih podataka s Jigsawom, trebaju u [pravilima o prikupljanju podataka](https://getoutline.org/policies/data-collection) potražiti pojedinosti o tome kako se prijavljuje upotreba ograničenja podatkovnog prometa.

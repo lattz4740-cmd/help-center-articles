@@ -41,4 +41,4 @@ You’ll set up your server in Outline Manager.
 ## What are data limits?
  Outline Manager allows service managers to set a trailing 30-day data limit on access keys to prevent overuse and help keep costs predictable. Service managers can set a default limit that applies to every key, and also set a different limit on any key to override the default limit. Once a limit is set, it goes into effect immediately and is enforced hourly.
 
-If service managers opt in to share metrics with Jigsaw, they should view the [data collection policy](/about/data-collection) for details on how the use of data limits will be reported.
+If service managers opt in to share metrics with Jigsaw, they should view the [data collection policy](https://getoutline.org/policies/data-collection) for details on how the use of data limits will be reported.

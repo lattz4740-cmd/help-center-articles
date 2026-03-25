@@ -30,7 +30,7 @@ Mwaka 2018, Outline ilikaguliwa na Radically Open Security na Cure53, mashirika 
 
 Outline hufuatilia kipimo data kilichotumika, kama "baiti zilizotumwa" kwa kila ufunguo. Maelezo haya huwaruhusu wasimamizi wa seva kurekebisha inavyohitajika usajili wao wa kipimo data kwenye watoa huduma za seva za wingu wanazozitumia, lakini hayawaruhusu kuona taarifa halisi zilizopitia kwenye seva ya Outline.
 
-Pata maelezo zaidi kuhusu [ukusanyaji wa data na taarifa](/about/data-collection) kwenye Outline.
+Pata maelezo zaidi kuhusu [ukusanyaji wa data na taarifa](https://getoutline.org/policies/data-collection) kwenye Outline.
 
 ---
 

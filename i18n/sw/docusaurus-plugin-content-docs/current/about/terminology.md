@@ -39,4 +39,4 @@ Programu ya Outline ni programu, inayopatikana kwenye kompyuta ya mezani na simu
 ## Je, vikomo vya data ni nini?
  Kidhibiti cha Outline huwawezesha wasimamizi wa huduma kuweka kikomo cha data cha siku 30 zinazotangulia cha matumizi ya funguo ili kuzuia matumizi kupita kiasi na kusaidia kutabiri gharama zako. Wasimamizi wa huduma wanaweza kuweka kikomo chaguomsingi kinachotumika kwenye kila ufunguo na kuweka kikomo tofauti kwenye ufunguo wowote ili kubatilisha kikomo chaguomsingi. Baada ya kikomo kuwekwa, kikomo hicho huanza kutumika papo hapo na hutekelezwa kila saa.
 
-Ikiwa wasimamizi wa huduma watachagua kuruhusu Jigsaw ifikie vipimo, wanapaswa kuangalia [sera ya ukusanyaji data](/about/data-collection) ili wapate maelezo kuhusu jinsi matumizi ya vikomo vya data yatakavyoripotiwa.
+Ikiwa wasimamizi wa huduma watachagua kuruhusu Jigsaw ifikie vipimo, wanapaswa kuangalia [sera ya ukusanyaji data](https://getoutline.org/policies/data-collection) ili wapate maelezo kuhusu jinsi matumizi ya vikomo vya data yatakavyoripotiwa.

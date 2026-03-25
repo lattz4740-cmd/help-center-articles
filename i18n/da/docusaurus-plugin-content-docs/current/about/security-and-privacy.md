@@ -30,7 +30,7 @@ Outline blev auditeret i 2018 af Radically Open Security og Cure53, to uafhængi
 
 Outline sporer den anvendte båndbredde som "overførte bytes" for hver adgangsnøgle. Disse oplysninger gør det muligt for serveradministratorer at tilpasse deres abonnementer på båndbredde til deres cloudserverudbydere efter behov, men det giver dem ikke mulighed for at se de faktiske oplysninger, der går gennem Outline-serveren.
 
-Få flere oplysninger om Outlines [indsamling af data og oplysninger](/about/data-collection).
+Få flere oplysninger om Outlines [indsamling af data og oplysninger](https://getoutline.org/policies/data-collection).
 
 ---
 

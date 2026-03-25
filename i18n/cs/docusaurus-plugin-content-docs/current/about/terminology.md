@@ -39,4 +39,4 @@ Server nastavíte v aplikaci Správce Outline.
 ## Co jsou datové limity?
  Správce Outline umožňuje správcům služeb nastavit pro přístupové klíče 30denní klouzavý datový limit, který pomáhá předcházet nadměrnému používání sítě a zajistit tak předvídatelnost nákladů. Správci služeb můžou nastavit výchozí limit platný pro všechny klíče a navíc odlišné limity pro konkrétní klíče, které výchozí limit přepíšou. Jakmile je limit nastavený, začne se okamžitě uplatňovat a vynucuje se každou hodinu.
 
-Pokud se správci služeb rozhodnou sdílet svoje metriky s týmem Jigsaw, měli by se seznámit se [zásadami shromažďování dat](/about/data-collection), kde najdou podrobnosti o tom, jak se využití datových limitů bude vykazovat.
+Pokud se správci služeb rozhodnou sdílet svoje metriky s týmem Jigsaw, měli by se seznámit se [zásadami shromažďování dat](https://getoutline.org/policies/data-collection), kde najdou podrobnosti o tom, jak se využití datových limitů bude vykazovat.

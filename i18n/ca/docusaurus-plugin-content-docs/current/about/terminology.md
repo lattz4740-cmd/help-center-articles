@@ -39,4 +39,4 @@ Configuraràs el servidor al Gestor d'Outline.
 ## Què són els límits de dades?
  El Gestor d'Outline permet als gestors de serveis establir un límit de dades a les claus d'accés que se cenyeixi als 30 darrers dies per evitar-ne un ús excessiu i fer que els costos siguin previsibles. Els gestors de serveis poden establir un límit predeterminat que s'apliqui a cada clau i un límit diferent de qualsevol clau per anul·lar-ne el predeterminat. Un cop establert, el límit tindrà efecte de manera immediata i s'aplicarà cada hora.
 
-Si els gestors de serveis accepten compartir mètriques amb Jigsaw, és important que consultin la [política de recollida de dades](/about/data-collection) per saber com s'informarà dels límits de dades.
+Si els gestors de serveis accepten compartir mètriques amb Jigsaw, és important que consultin la [política de recollida de dades](https://getoutline.org/policies/data-collection) per saber com s'informarà dels límits de dades.

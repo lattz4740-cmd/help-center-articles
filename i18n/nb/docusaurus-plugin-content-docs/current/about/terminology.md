@@ -39,4 +39,4 @@ Du konfigurerer tjeneren i Outline-administratoren.
 ## Hva er datagrenser?
  I Outline-administratoren kan tjenesteadministratorer angi en 30-dagers datagrense med sporing for tilgangsnøkler, noe som gjør det enklere å hindre overforbruk og forutse kostnader. Tjenesteadministratorer kan angi en standardgrense som gjelder for alle nøklene. Det er også mulig å angi en annen grense som overstyrer standardgrensen, for enkelte nøkler. Grensen trer i kraft så snart den er angitt, og den gjelder hver time.
 
-Tjenesteadministratorer som velger å dele beregninger med Jigsaw, bør lese [retningslinjene for datainnsamling](/about/data-collection) for å finne ut mer om hvordan bruken av datagrenser rapporteres.
+Tjenesteadministratorer som velger å dele beregninger med Jigsaw, bør lese [retningslinjene for datainnsamling](https://getoutline.org/policies/data-collection) for å finne ut mer om hvordan bruken av datagrenser rapporteres.

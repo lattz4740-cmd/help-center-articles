@@ -39,4 +39,4 @@ sidebar_label: Hugtök
 ## Hvað eru gagnamörk?
  Outline Manager gerir þjónustustjórum kleift að stilla gagnamarkaferil fyrir aðgangslykla í 30 daga til að koma í veg fyrir ofnotkun og halda kostnaði innan marka. Þjónustustjórar geta stillt sjálfgefin mörk sem gilda fyrir alla lykla, en einnig er hægt að stilla mismunandi mörk fyrir staka lykla sem hnekkja sjálfgefnu mörkunum. Gagnamörk taka gildi um leið og þau eru stillt og er framfylgt á klukkutíma fresti.
 
-Ef þjónustustjórar samþykkja að deila mæligildum með Jigsaw ættu þeir að skoða [reglur um gagnasöfnun](/about/data-collection) til að fá upplýsingar um hvernig notkun gagnamarka verður skráð.
+Ef þjónustustjórar samþykkja að deila mæligildum með Jigsaw ættu þeir að skoða [reglur um gagnasöfnun](https://getoutline.org/policies/data-collection) til að fá upplýsingar um hvernig notkun gagnamarka verður skráð.

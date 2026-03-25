@@ -30,7 +30,7 @@ Radically Open Security ja Cure53 ovat riippumattomia tietoturvajärjestöjä, j
 
 Outline valvoo kunkin pääsyavaimen osalta käytettyä kaistanleveyttä siirrettyinä tavuina. Tämän tiedon avulla palvelinten järjestelmänvalvojat voivat vaihtaa pilvipalveluntarjoajalta tilattua kaistanleveyttä tarpeen mukaan, mutta he eivät voi nähdä Outline-palvelimen kautta siirrettyjä tietoja.
 
-Lue lisää Outlinen [datan ja tietojen keruusta](/about/data-collection).
+Lue lisää Outlinen [datan ja tietojen keruusta](https://getoutline.org/policies/data-collection).
 
 ---
 

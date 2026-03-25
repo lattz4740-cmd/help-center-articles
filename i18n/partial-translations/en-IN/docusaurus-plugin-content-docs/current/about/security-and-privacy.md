@@ -30,7 +30,7 @@ In 2018, Outline was audited by Radically Open Security and Cure53, 2 independen
 
 Outline tracks the bandwidth used, as "bytes transferred" for each access key. This information allows server administrators to adjust their bandwidth subscriptions with their cloud server providers as needed, but does not allow them to see the actual information that went through the Outline server.
 
-Learn more about Outline's [data and information collection](/about/data-collection).
+Learn more about Outline's [data and information collection](https://getoutline.org/policies/data-collection).
 
 ---
 

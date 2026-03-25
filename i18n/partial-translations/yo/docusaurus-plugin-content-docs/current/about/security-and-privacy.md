@@ -30,7 +30,7 @@ Ní ọdún 2018, àwọn àjọ Radically Open Security àti Cure53, àwọn à
 
 Outline ń tọpinpin ìwọ̀n dátà tí a lò, gẹ́gẹ́ bíi "àwọn ìwọ̀n báìtì tí a fi ránṣẹ́" fún kọ́kọ́rọ́ ìráyè sí kọ̀ọ̀kan. Àlàyé yìí ń gba àwọn alákòóso olùpèsè láàyè láti ṣàtúnṣe àwọn ìforúkọsílẹ̀ ìwọ̀n dátà wọn pẹ̀lú àwọn olùpèsè ìpèsè ibùdó ìpamọ́ dátà, ṣùgbọ́n kò kí ń gbà wọ́n láàyè láti wo àlàyé gangan tó gba olùpèsè Outline kọjá.
 
-Mọ̀ síi nípa dátà Outline [àti àkójọ ìsọfúnni](/about/data-collection).
+Mọ̀ síi nípa dátà Outline [àti àkójọ ìsọfúnni](https://getoutline.org/policies/data-collection).
 
 ---
 

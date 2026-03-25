@@ -30,7 +30,7 @@ W 2018 r. Radically Open Security i Cure53 – dwie niezależne organizacje ds. 
 
 Outline śledzi wykorzystaną przepustowość, czyli bajty przesłane za pomocą poszczególnych kluczy dostępu. Dzięki temu administratorzy serwerów mogą dostosować przepustowość objętą subskrypcją u dostawców usług chmurowych do własnych potrzeb. Nie widzą oni jednak samych informacji, które przechodzą przez serwer Outline.
 
-Dowiedz się więcej o [zbieraniu danych i informacji](/about/data-collection) przez Outline.
+Dowiedz się więcej o [zbieraniu danych i informacji](https://getoutline.org/policies/data-collection) przez Outline.
 
 ---
 

@@ -30,7 +30,7 @@ Under 2018 granskades Outline av Radically Open Security och Cure53, två oberoe
 
 Outline registrerar vilken bandbredd som används i form av antalet överförda byte för varje åtkomstnyckel. Med hjälp av dessa uppgifter kan serveradministratörerna justera prenumerationerna på bandbredd när det behövs, men de kan inte se den faktiska informationen som överfördes via Outline-servern.
 
-Läs mer om [insamling av data och information](/about/data-collection) i Outline.
+Läs mer om [insamling av data och information](https://getoutline.org/policies/data-collection) i Outline.
 
 ---
 

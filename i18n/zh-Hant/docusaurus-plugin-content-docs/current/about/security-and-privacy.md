@@ -30,7 +30,7 @@ Outline 於 2018 年接受 Radically Open Security 與 Cure53 稽核，這兩家
 
 Outline 會追蹤每組存取金鑰使用的頻寬，並記錄為「已傳輸的位元組數」。伺服器管理員可以根據這些資訊，視需要向雲端伺服器供應商調整頻寬租用量，但他們無法看到實際透過 Outline 伺服器傳送的資訊內容。
 
-進一步瞭解 Outline 採取的[資料和資訊收集做法](/about/data-collection)。
+進一步瞭解 Outline 採取的[資料和資訊收集做法](https://getoutline.org/policies/data-collection)。
 
 ---
 

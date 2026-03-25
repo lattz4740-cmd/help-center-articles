@@ -30,7 +30,7 @@ Outline šifrē sakarus starp jūsu ierīci un Outline serveri, izmantojot AEAD 
 
 Outline izseko izmantoto joslas platumu kā “pārsūtītos baitus” katrai piekļuves atslēgai. Šī informācija ļauj serveru administratoriem atbilstoši pielāgot joslas platuma abonementus ar mākoņpakalpojumu sniedzējiem, taču neļauj tiem skatīt faktisko informāciju, kas tika pārraidīta caur Outline serveri.
 
-Uzziniet vairāk par Outline [datu un informācijas vākšanu](/about/data-collection).
+Uzziniet vairāk par Outline [datu un informācijas vākšanu](https://getoutline.org/policies/data-collection).
 
 ---
 

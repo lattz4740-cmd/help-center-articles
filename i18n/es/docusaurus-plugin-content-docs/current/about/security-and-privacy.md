@@ -30,7 +30,7 @@ En el 2018, Outline se sometió a una auditoría de la mano de Radically Open Se
 
 Outline hace un seguimiento del ancho de banda utilizado, como "bytes transferidos", para cada clave de acceso. Esta información permite a los administradores de servidores ajustar sus suscripciones de ancho de banda con sus proveedores de servidores en la nube según sea necesario, pero no les permite ver la información real que ha pasado por el servidor de Outline.
 
-Consulta más información sobre la [recogida de datos e información](/about/data-collection) de Outline.
+Consulta más información sobre la [recogida de datos e información](https://getoutline.org/policies/data-collection) de Outline.
 
 ---
 

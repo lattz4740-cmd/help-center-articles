@@ -30,7 +30,7 @@ Be to, „Outline“ gali padėti atgauti prieigą prie saugių tiesioginių pra
 
 „Outline“ stebi naudojamą pralaidumą, pvz., kiekvieno prieigos rakto perduotų baitų skaičių. Pagal šią informaciją serverių administratoriai gali atitinkamai derinti pralaidumo prenumeratas su debesies serverio teikėjais, bet negali peržiūrėti faktinės informacijos, kuri buvo perduota per „Outline“ serverį.
 
-Sužinokite daugiau apie „Outline“ [duomenų ir informacijos rinkimą](/about/data-collection).
+Sužinokite daugiau apie „Outline“ [duomenų ir informacijos rinkimą](https://getoutline.org/policies/data-collection).
 
 ---
 

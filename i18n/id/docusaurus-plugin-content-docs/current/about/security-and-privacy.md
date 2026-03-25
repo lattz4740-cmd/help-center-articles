@@ -30,7 +30,7 @@ Pada tahun 2018, Outline diaudit oleh Radically Open Security dan Cure53, dua or
 
 Outline melacak bandwidth yang digunakan, sebagai "byte yang ditransfer" untuk setiap kunci akses. Dengan informasi ini, administrator server dapat menyesuaikan langganan bandwidth-nya dengan penyedia server cloud sesuai kebutuhan, tetapi tidak memungkinkan administrator server melihat informasi aktual yang melewati server Outline.
 
-Pelajari lebih lanjut [pengumpulan data dan informasi](/about/data-collection) oleh Outline.
+Pelajari lebih lanjut [pengumpulan data dan informasi](https://getoutline.org/policies/data-collection) oleh Outline.
 
 ---
 

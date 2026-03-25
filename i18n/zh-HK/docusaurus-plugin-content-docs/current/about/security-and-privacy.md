@@ -30,7 +30,7 @@ Outline 採用 AEAD 256 位元的 Chacha2020 IETF Poly 1305 編碼器來為你�
 
 針對每組存取金鑰，Outline 會追蹤使用的頻寬，並將其視為「已傳輸的字節」。此資料允許伺服器管理員按需要向雲端伺服器供應商調整頻寬租用量，但伺服器管理員無法看到實際上透過 Outline 伺服器傳送的資料。
 
-進一步瞭解 Outline 的[資料和資訊收集方式](/about/data-collection)。
+進一步瞭解 Outline 的[資料和資訊收集方式](https://getoutline.org/policies/data-collection)。
 
 ---
 

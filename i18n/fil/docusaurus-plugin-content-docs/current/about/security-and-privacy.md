@@ -30,7 +30,7 @@ Noong 2018, ang Outline ay na-audit ng Radically Open Security at Cure53, dalawa
 
 Sinusubaybayan ng Outline ang nagamit na bandwidth bilang "bytes transferred" para sa bawat access key. Nagbibigay-daan ang impormasyong ito sa mga administrator ng server na i-adjust ang kanilang mga subscription sa bandwidth sa kanilang mga cloud server provider kung kinakailangan pero hindi ito nagbibigay-daan sa kanila na makita ang aktwal na impormasyong dumaan sa Outline server.
 
-Matuto pa tungkol sa [pangongolekta ng data at impormasyon](/about/data-collection) ng Outline.
+Matuto pa tungkol sa [pangongolekta ng data at impormasyon](https://getoutline.org/policies/data-collection) ng Outline.
 
 ---
 

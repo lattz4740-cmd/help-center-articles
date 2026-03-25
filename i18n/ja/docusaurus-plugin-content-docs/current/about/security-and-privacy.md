@@ -30,7 +30,7 @@ Outline はユーザーのデバイスと Outline サーバー間の通信を、
 
 Outline は使用された帯域幅を、各アクセスキーの「転送済みバイト数」として追跡します。この情報により、サーバー管理者は必要に応じて、クラウド サーバー プロバイダとの帯域幅サブスクリプションを調整できます。ただし、Outline サーバーを経由した実際の情報を見ることはできません。
 
-詳しくは、Outline の[データと情報の収集](/about/data-collection)をご確認ください。
+詳しくは、Outline の[データと情報の収集](https://getoutline.org/policies/data-collection)をご確認ください。
 
 ---
 

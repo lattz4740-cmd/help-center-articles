@@ -30,7 +30,7 @@ Reviziju Outlinea su 2018. godine izvršili Radically Open Security i Cure53, dv
 
 Outline prati iskorištenu propusnost i to u obliku "prenesenih bajtova" za svaki pristupni ključ. Pomoću tih informacija administratori servera mogu po potrebi podesiti svoje pretplate na propusnost kod pružalaca usluge oblaka, ali ne mogu vidjeti stvarne informacije koje prolaze kroz Outline server.
 
-Saznajte više o [prikupljanju podataka i informacija u Outlineu](/about/data-collection).
+Saznajte više o [prikupljanju podataka i informacija u Outlineu](https://getoutline.org/policies/data-collection).
 
 ---
 

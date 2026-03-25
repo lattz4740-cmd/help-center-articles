@@ -53,4 +53,4 @@ Outline-Client ist die Anwendung, über die Sie mit Ihrem Zugriffsschlüssel ein
 
 In Outline-Manager können Dienstmanager für Zugriffsschlüssel ein abhängiges Datenlimit konfigurieren, bei dem jeweils die letzten 30 Tage zugrunde gelegt werden. So lassen sich Nutzung und Kosten besser in Grenzen halten. Ein Dienstmanager kann ein Standardlimit festlegen, das für alle Schlüssel gilt, sowie ein individuelles Limit für einzelne Schlüssel, das dann Vorrang vor dem Standardwert hat. Konfigurierte Limits treten sofort in Kraft und werden stundengenau durchgesetzt.
 
-Wenn Dienstmanager der Weitergabe von Messwerten an Jigsaw zustimmen, lesen sie am besten in unseren [Richtlinien zur Datenerhebung](/about/data-collection) nach, welche Informationen zur Nutzung von Datenlimits in den Berichten enthalten sind.
+Wenn Dienstmanager der Weitergabe von Messwerten an Jigsaw zustimmen, lesen sie am besten in unseren [Richtlinien zur Datenerhebung](https://getoutline.org/policies/data-collection) nach, welche Informationen zur Nutzung von Datenlimits in den Berichten enthalten sind.

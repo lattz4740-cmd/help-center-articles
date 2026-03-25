@@ -30,7 +30,7 @@ Në vitin 2018, Outline është audituar nga Radically Open Security dhe Cure53,
 
 Outline monitoron gjerësinë e bandës që është përdorur, si "bajtë të transferuar" për çdo çelës qasjeje. Këto informacione i lejojnë administratorët e serverëve të rregullojnë abonimet e tyre të gjerësisë së bandës me ofruesit e serverëve të resë kompjuterike sipas nevojës, por nuk i lejojnë ata të shikojnë informacionet aktuale që kanë kaluar nëpër serverin e Outline.
 
-Mëso më shumë për [mbledhjen e të dhënave dhe informacioneve](/about/data-collection) nga Outline.
+Mëso më shumë për [mbledhjen e të dhënave dhe informacioneve](https://getoutline.org/policies/data-collection) nga Outline.
 
 ---
 

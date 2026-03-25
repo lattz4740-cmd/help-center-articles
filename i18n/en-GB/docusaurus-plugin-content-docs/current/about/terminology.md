@@ -53,5 +53,5 @@ Outline Client is an application available for desktop and mobile that allows yo
 
 Outline Manager allows service managers to set a trailing 30-day data limit on access keys to prevent overuse and help keep costs predictable. Service managers can set a default limit that applies to every key and also set a different limit on any key to override the default limit. Once a limit is set, it goes into effect immediately and is enforced hourly.
 
-If service managers opt in to sharing metrics with Jigsaw, they should view the [for details on how the use of data limits will be reported.](/about/data-collection)
+If service managers opt in to sharing metrics with Jigsaw, they should view the [for details on how the use of data limits will be reported.](https://getoutline.org/policies/data-collection)
 

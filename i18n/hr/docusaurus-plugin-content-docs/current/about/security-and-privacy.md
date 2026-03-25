@@ -30,7 +30,7 @@ Dvije neovisne sigurnosne organizacije, Radically Open Security i Cure53, koje o
 
 Outline prati upotrijebljenu propusnost kao "prenesene bajtove" za svaki pristupni ključ. Te informacije omogućuju administratorima poslužitelja da prema potrebi prilagode pretplate na propusnost kod davatelja usluga oblaka, no ne omogućuju im da vide stvarne podatke koji su prošli kroz Outline poslužitelj.
 
-Saznajte više o tome kako Outline [prikuplja podatke i informacije](/about/data-collection).
+Saznajte više o tome kako Outline [prikuplja podatke i informacije](https://getoutline.org/policies/data-collection).
 
 ---
 

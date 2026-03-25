@@ -30,7 +30,7 @@ Az Outline az AEAD (256 bites) Chacha2020 IETF Poly 1305 rejtjelezéssel titkos�
 
 Az Outline az egyes hozzáférési kulcsokhoz tartozó „átvitt bájtokként” követi nyomon a felhasznált sávszélességet. Ezen információ birtokában a szerveradminisztrátorok az igényeknek megfelelően állíthatják be a felhőszerver-szolgáltatóval kötött sávszélesség-előfizetéseiket, de nem férhetnek hozzá az Outline-szerveren ténylegesen áthaladó információkhoz.
 
-További információ az Outline által végzett [adat- és információgyűjtésről](/about/data-collection).
+További információ az Outline által végzett [adat- és információgyűjtésről](https://getoutline.org/policies/data-collection).
 
 ---
 

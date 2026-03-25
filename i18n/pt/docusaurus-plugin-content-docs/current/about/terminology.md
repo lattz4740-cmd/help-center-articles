@@ -39,4 +39,4 @@ Pode configurar o seu servidor no Gestor Outline.
 ## O que são limites de dados?
  O Gestor Outline permite aos gestores de serviço definir um limite de dados adaptável de 30 dias nas chaves de acesso para evitar uma utilização excessiva e ajudar a manter os custos previsíveis. Os gestores de serviço podem predefinir um limite que se aplica a todas as chaves. Além disso, também podem definir um limite diferente numa chave para substituir o limite predefinido. Depois de definidos, os limites entram imediatamente em vigor e são aplicados de hora em hora.
 
-Os gestores de serviço que optarem por aceitar a partilha de métricas com a Jigsaw devem consultar a [Política de Recolha de Dados](/about/data-collection) para acederem a detalhes sobre a forma como a utilização de limites de dados é comunicada.
+Os gestores de serviço que optarem por aceitar a partilha de métricas com a Jigsaw devem consultar a [Política de Recolha de Dados](https://getoutline.org/policies/data-collection) para acederem a detalhes sobre a forma como a utilização de limites de dados é comunicada.

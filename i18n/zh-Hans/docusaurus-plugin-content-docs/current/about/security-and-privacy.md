@@ -30,7 +30,7 @@ Outline 使用 256 位 AEAD Chacha2020 IETF Poly 1305 加密算法来加密您�
 
 Outline 会跟踪所占用的带宽，将其记录为针对每个访问密钥“传输的字节数”。此信息可帮助服务器管理员根据需要调整从云服务器提供商处订阅的带宽，但不允许管理员查看经过 Outline 服务器的实际信息。
 
-详细了解 Outline 的[数据和信息收集过程](/about/data-collection)。
+详细了解 Outline 的[数据和信息收集过程](https://getoutline.org/policies/data-collection)。
 
 ---
 

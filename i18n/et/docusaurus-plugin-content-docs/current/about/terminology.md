@@ -39,4 +39,4 @@ Serveri seadistamine toimub Outline Manageris.
 ## Mis on andmepiirangud?
  Outline Manager võimaldab teenusehalduritel määrata pääsuvõtmetele jooksva 30-päevase andmepiirangu, et vältida liigset kasutamist ja tagada kulude prognoositavus. Teenusehaldurid saavad määrata vaikepiirangu, mis kehtib kõigi võtmete puhul, ning määrata mis tahes võtmele muu piirangu, mis alistab vaikepiirangu. Pärast piirangu määramist jõustub see kohe ja seda jõustatakse kord tunnis.
 
-Kui teenusehaldurid lubavad mõõdikute jagamise Jigsaw'ga, peaksid nad vaatama [andmete kogumise eeskirjadest](/about/data-collection) üksikasjalikku teavet selle kohta, kuidas andmepiirangute kasutamisest teatatakse.
+Kui teenusehaldurid lubavad mõõdikute jagamise Jigsaw'ga, peaksid nad vaatama [andmete kogumise eeskirjadest](https://getoutline.org/policies/data-collection) üksikasjalikku teavet selle kohta, kuidas andmepiirangute kasutamisest teatatakse.

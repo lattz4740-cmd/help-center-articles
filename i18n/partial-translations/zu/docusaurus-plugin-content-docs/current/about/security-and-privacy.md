@@ -30,7 +30,7 @@ Ngo-2018, Isendlalela sahlolwa iRadically Open Security neCure53, okuyizinhlanga
 
 Isendlalela sithrekha umkhawulo-kudonsa osetshenzisiwe, "njengamabhayithi adlulisiwe" ngokhiye ngamunye wokufinyelela. Le mininingwane ivumela abalawuli bamaseva ukuba balungise imikhawulo-kudonsa yababhalise kubo ukuze ivumelane neyabahlinzeki beseva yabo yecloud uma kudingeka, kodwa ayibavumeli ukuba babone imininigwane engokoqobo edlule kuseva yeSendlalela.
 
-Funda kabanzi [ngokuqoqwa kwedatha nemininingwane](/about/data-collection) yeSendlalela.
+Funda kabanzi [ngokuqoqwa kwedatha nemininingwane](https://getoutline.org/policies/data-collection) yeSendlalela.
 
 ---
 

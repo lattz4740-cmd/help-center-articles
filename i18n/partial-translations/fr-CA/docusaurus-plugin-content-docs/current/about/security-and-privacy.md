@@ -30,7 +30,7 @@ En 2018, Outline a été audité par Radically Open Security et Cure53, deux org
 
 Outline suit la quantité de bande passante utilisée en enregistrant les « octets transférés » pour chaque clé d'accès. Ces informations permettent aux administrateurs de serveur d'ajuster leur abonnement de bande passante auprès de leur fournisseur de nuage si nécessaire, sans toutefois leur donner accès aux données transitant par le serveur Outline.
 
-Apprenez-en plus sur la [collecte des données et des informations](/about/data-collection) de Outline.
+Apprenez-en plus sur la [collecte des données et des informations](https://getoutline.org/policies/data-collection) de Outline.
 
 ---
 

@@ -39,4 +39,4 @@ Jy sal jou bediener in Outline Manager opstel.
 ## Wat is datalimiete?
  Outline Manager maak dit vir diensbestuurders moontlik om ’n aanskuiwende datalimiet vir 30 dae op toegangsleutels te stel om oormatige gebruik te voorkom en te help om koste voorspelbaar te hou. Diensbestuurders kan ’n versteklimiet stel wat vir elke sleutel geld, en ook vir enige sleutel ’n ander limiet stel wat die versteklimiet sal vervang. Sodra ’n limiet gestel is, tree dit onmiddellik in werking en word dit elke uur afgedwing.
 
-As diensbestuurders intekening aanvaar om maatstawwe met Jigsaw te deel, moet hulle die [dataversamelingbeleid](/about/data-collection) lees vir besonderhede oor hoe die gebruik van datalimiete gerapporteer sal word.
+As diensbestuurders intekening aanvaar om maatstawwe met Jigsaw te deel, moet hulle die [dataversamelingbeleid](https://getoutline.org/policies/data-collection) lees vir besonderhede oor hoe die gebruik van datalimiete gerapporteer sal word.

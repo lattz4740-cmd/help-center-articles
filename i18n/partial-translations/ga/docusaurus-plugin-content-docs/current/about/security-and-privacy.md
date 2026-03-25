@@ -30,7 +30,7 @@ In 2018, rinne Radically Open Security and Cure53, dhá eagraíocht neamhspleác
 
 Rianaíonn Outline an leithead banda a úsáidtear mar "bearta arna aistríodh" le haghaidh gach eochair rochtana. Ligeann an fhaisnéis sin do riarthóirí freastalaí a gcuid síntiúis leithid bhanda a choigeartú lena bhfreastalaí néil mar is gá, ach ní thugann sí cead dóibh féachaint ar an bhfaisnéis iarbhír a chuaigh tríd an bhfreastalaí Outline.
 
-Faigh tuilleadh faisnéise maidir le [bailiúchán sonraí agus faisnéise](/about/data-collection) de chuid Outline
+Faigh tuilleadh faisnéise maidir le [bailiúchán sonraí agus faisnéise](https://getoutline.org/policies/data-collection) de chuid Outline
 
 ---
 

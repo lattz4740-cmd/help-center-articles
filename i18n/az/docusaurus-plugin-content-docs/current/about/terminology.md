@@ -39,4 +39,4 @@ Serverinizi Outline Manager tətbiqində quraşdırırsınız.
 ## Data limitləri nədir?
  Outline Manager xidmət menecerlərinə həddindən çox istifadənin qarşısını almaq və xərcləri təxmin etmək üçün giriş açarı üzrə 30 günlük ardıcıl data limiti təyin etməyə imkan verir. Hər bir açara tətbiq olunan defolt limit təyin edə, həmçinin defolt limiti əvəzləmək üçün istənilən açara fərqli limit təyin edə bilərsiniz. Limit təyin edildikdən sonra dərhal aktiv edilir və hər saat tətbiq olunur.
 
-Xidmət menecerləri göstəricələri Jigsaw ilə paylaşmağı aktiv edərsə, data limitlərindən istifadənin necə təqdim olunacağı ilə bağlı ətraflı məlumat üçün [datanın toplanması üzrə siyasətə](/about/data-collection) baxa bilər.
+Xidmət menecerləri göstəricələri Jigsaw ilə paylaşmağı aktiv edərsə, data limitlərindən istifadənin necə təqdim olunacağı ilə bağlı ətraflı məlumat üçün [datanın toplanması üzrə siyasətə](https://getoutline.org/policies/data-collection) baxa bilər.

@@ -30,7 +30,7 @@ Outline dulkóðar samskipti á milli tækisins þíns og Outline-þjónsins me�
 
 Outline skráir bandvíddarnotkun sem „flutt bæti“ fyrir hvern aðgangslykil. Þessar upplýsingar gera stjórnendum þjóna kleift að breyta bandvíddaráskriftum hjá skýjaþjónustum eftir þörfum en gerir þeim ekki kleift að sjá upplýsingarnar sjálfar sem fóru í gegnum Outline-þjóninn.
 
-Nánar um [gagna- og upplýsingasöfnun](/about/data-collection) Outline.
+Nánar um [gagna- og upplýsingasöfnun](https://getoutline.org/policies/data-collection) Outline.
 
 ---
 

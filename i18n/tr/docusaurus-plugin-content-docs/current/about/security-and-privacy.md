@@ -30,7 +30,7 @@ Outline, 2018'de yazılımların en son güvenlik standartlarına uygunluğunu i
 
 Outline her erişim anahtarı için kullanılan bant genişliğini ("aktarılan bayt sayısı" olarak) izler. Bu bilgiler, sunucu yöneticilerinin kendi bant genişliklerini bulut sunucusu sağlayıcılara göre gereken şekilde ayarlamasına olanak sağlar ancak Outline sunucusundan geçen gerçek bilgileri görmelerine izin vermez.
 
-Outline'ın [veri ve bilgi toplama şekli](/about/data-collection) hakkında daha fazla bilgi edinin.
+Outline'ın [veri ve bilgi toplama şekli](https://getoutline.org/policies/data-collection) hakkında daha fazla bilgi edinin.
 
 ---
 

@@ -30,7 +30,7 @@ V roce 2018 prošla služba Outline audity společností Radically Open Security
 
 Outline sleduje využití připojení, a to jako množství přenesených bajtů pro každý přístupový klíč. Tento údaj umožňuje správcům serverů podle potřeby přizpůsobit připojení zakoupené od poskytovatelů cloudových serverů. Nemůžou ale zobrazit informace, které prošly serverem Outline.
 
-Přečtěte si další podrobnosti o [shromažďování dat a informací](/about/data-collection) ve službě Outline.
+Přečtěte si další podrobnosti o [shromažďování dat a informací](https://getoutline.org/policies/data-collection) ve službě Outline.
 
 ---
 

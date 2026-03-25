@@ -39,4 +39,4 @@ Anda akan menyediakan pelayan anda dalam Outline Manager.
 ## Apakah itu had data?
  Outline Manager membolehkan pengurus perkhidmatan menetapkan had data belakang 30 hari pada kunci akses untuk mengelakkan penggunaan berlebihan dan memastikan kos boleh diramalkan. Pengurus pelayan boleh menetapkan had lalai yang digunakan pada setiap kunci dan juga menetapkan had berlainan pada sebarang kunci untuk menggantikan had lalai. Setelah had ditetapkan, had tersebut akan berkuat kuasa dengan serta-merta dan dikuatkuasakan setiap jam.
 
-Jika pengurus perkhidmatan ikut serta untuk berkongsi metrik dengan Jigsaw, mereka perlu melihat [dasar pengumpulan data](/about/data-collection) untuk mendapatkan butiran tentang cara penggunaan had data akan dilaporkan.
+Jika pengurus perkhidmatan ikut serta untuk berkongsi metrik dengan Jigsaw, mereka perlu melihat [dasar pengumpulan data](https://getoutline.org/policies/data-collection) untuk mendapatkan butiran tentang cara penggunaan had data akan dilaporkan.

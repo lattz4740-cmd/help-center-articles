@@ -30,7 +30,7 @@ En 2018, Outline someteuse ás auditorías de Radically Open Security e Cure53, 
 
 Outline fai un seguimento da largura de banda utilizada, como "bytes transferidos" para cada clave de acceso. Esta información permítelle a quen administre o servidor axustar as subscricións de largura de banda cos provedores do seu servidor na nube segundo sexa necesario, pero non ver a información real que pasou polo servidor de Outline.
 
-Obtén máis información sobre a [recompilación de datos e información](/about/data-collection) de Outline.
+Obtén máis información sobre a [recompilación de datos e información](https://getoutline.org/policies/data-collection) de Outline.
 
 ---
 

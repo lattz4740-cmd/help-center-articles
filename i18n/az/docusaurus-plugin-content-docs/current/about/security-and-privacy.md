@@ -30,7 +30,7 @@ Outline 2018-ci ildə proqram təminatlarını ən son təhlükəsizlik standart
 
 Outline hər bir giriş açarı üçün "ötürülmüş baytlar" kimi istifadə olunan zolaq genişliyini izləyir. Bu məlumat server administratorlarına öz bulud server provayderləri ilə zolaq genişliyi üzrə abunəliklərini lazım olduqda tənzimləməyə imkan verir, lakin onlara Outline serveri vasitəsilə ötürülən faktiki məlumatı görməyə imkan vermir.
 
-Outline-da [data və məlumatların toplanması](/about/data-collection) haqqında ətraflı məlumat əldə edin.
+Outline-da [data və məlumatların toplanması](https://getoutline.org/policies/data-collection) haqqında ətraflı məlumat əldə edin.
 
 ---
 

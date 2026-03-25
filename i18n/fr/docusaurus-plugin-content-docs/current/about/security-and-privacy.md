@@ -30,7 +30,7 @@ En 2018, Outline a été contrôlé par Radically Open Security et Cure53, deux 
 
 Outline analyse la bande passante utilisée, qu'il évalue en "octets transférés" par clé d'accès. Grâce à cette information, les administrateurs de serveur peuvent ajuster la bande passante souscrite auprès de leur fournisseur de serveurs cloud en fonction de leurs besoins, mais ils n'ont pas accès aux données qui transitent par le serveur Outline.
 
-Découvrez quelles sont les [données et informations collectées](/about/data-collection) par Outline.
+Découvrez quelles sont les [données et informations collectées](https://getoutline.org/policies/data-collection) par Outline.
 
 ---
 

@@ -53,4 +53,4 @@ Pasiekiamos darbalaukiui ir mobiliesiems įrenginiams skirtos „Outline“ klie
 
 Naudodami „Outline Manager“ paslaugos valdytojai prieigos raktams gali nustatyti pastarųjų 30 dienų duomenų apribojimą, kad išvengtų per didelio naudojimo ir lengviau numatytų mokesčius. Paslaugos valdytojai gali nustatyti numatytąjį apribojimą, taikomą kiekvienam raktui, arba bet kokiam raktui nustatyti kitokį apribojimą, pakeičiantį numatytąjį. Nustatytas apribojimas įsigalioja iš karto, jis vykdomas kas valandą.
 
-Paslaugos valdytojai, kurie pasirenka bendrinti metriką su „Jigsaw“, turėtų peržiūrėti [duomenų rinkimo politiką](/about/data-collection), kad daugiau sužinotų apie tai, kaip pranešama apie duomenų apribojimų naudojimą.
+Paslaugos valdytojai, kurie pasirenka bendrinti metriką su „Jigsaw“, turėtų peržiūrėti [duomenų rinkimo politiką](https://getoutline.org/policies/data-collection), kad daugiau sužinotų apie tai, kaip pranešama apie duomenų apribojimų naudojimą.
