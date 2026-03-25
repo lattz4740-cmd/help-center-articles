@@ -21,6 +21,7 @@ from pathlib import Path
 SCRIPT_DIR = Path(__file__).parent
 PROJECT_ROOT = SCRIPT_DIR.parent
 ENGLISH_DOCS_DIR = PROJECT_ROOT / "docs"
+ENGLISH_PAGES_DIR = PROJECT_ROOT / "src" / "pages"
 I18N_BASE = PROJECT_ROOT / "i18n"
 
 LOCALES = [
@@ -35,8 +36,10 @@ LOCALES = [
     "zh-Hant", "zh-HK",
 ]
 
-# Docs that only exist in English (no translation expected).
-ENGLISH_ONLY: set[str] = set()
+# Docs/pages that only exist in English (no translation expected).
+ENGLISH_ONLY: set[str] = {
+    "s/contactsupport",
+}
 
 # --- Homepage translation tiers (by language reach) ---
 # Widely spoken languages — all homepage strings translated.
@@ -126,6 +129,21 @@ def get_english_doc_paths() -> set[str]:
     for f in ENGLISH_DOCS_DIR.rglob("*.md"):
         rel = f.relative_to(ENGLISH_DOCS_DIR).with_suffix("")
         paths.add(str(rel))
+    return paths
+
+
+def get_english_page_paths() -> set[str]:
+    """Get all markdown page paths relative to src/pages/, without extension.
+
+    These are pages (not docs) that need translation via
+    i18n/{locale}/docusaurus-plugin-content-pages/.
+    Only includes .md/.mdx files (TSX pages use code.json for translations).
+    """
+    paths = set()
+    for ext in ("*.md", "*.mdx"):
+        for f in ENGLISH_PAGES_DIR.rglob(ext):
+            rel = f.relative_to(ENGLISH_PAGES_DIR).with_suffix("")
+            paths.add(str(rel))
     return paths
 
 
@@ -654,12 +672,33 @@ def verify_i18n_json(locale: str) -> list[Issue]:
     return issues
 
 
+def verify_pages(locale: str, english_page_paths: set[str]) -> list[Issue]:
+    """Check that markdown pages under src/pages/ have translations."""
+    issues = []
+    pages_dir = I18N_BASE / locale / "docusaurus-plugin-content-pages"
+    for page_path in sorted(english_page_paths - ENGLISH_ONLY):
+        # Check for .md or .mdx translation
+        found = False
+        for ext in (".md", ".mdx"):
+            if (pages_dir / (page_path + ext)).exists():
+                found = True
+                break
+        if not found:
+            issues.append(Issue(
+                locale, f"pages/{page_path}", "PAGE_MISSING",
+                "Page translation missing"
+            ))
+    return issues
+
+
 def main():
     warn_only = "--warn" in sys.argv
 
     english_paths = get_english_doc_paths()
+    english_page_paths = get_english_page_paths()
 
     print(f"English docs: {len(english_paths)} files")
+    print(f"English pages: {len(english_page_paths)} files")
     print(f"English-only (no translation expected): {len(ENGLISH_ONLY)} files")
     print(f"Locales to verify: {len(LOCALES)}")
     print()
@@ -681,6 +720,7 @@ def main():
     for locale in LOCALES:
         issues = verify_locale(locale, english_paths)
         issues.extend(verify_i18n_json(locale))
+        issues.extend(verify_pages(locale, english_page_paths))
 
         if issues:
             print(f"FAIL {locale}: {len(issues)} issue(s)")
