@@ -13,4 +13,4 @@ sidebar_label: "Outline සේවාලාභියා ධාවනය කිර
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Outline සේවාලාභීයා තවත් මෙහෙයුම් පද්ධති මත වැඩ කිරීමට උදවු කිරීමට අවශ්‍ය ද? GitHub මත [අපගේ කේත පදනමට දායක වන්න](https://github.com/Outline-Foundation/outline-client#platform-specific-development)!
+Outline සේවාලාභීයා තවත් මෙහෙයුම් පද්ධති මත වැඩ කිරීමට උදවු කිරීමට අවශ්‍ය ද? GitHub මත [අපගේ කේත පදනමට දායක වන්න](https://github.com/OutlineFoundation/outline-client#platform-specific-development)!

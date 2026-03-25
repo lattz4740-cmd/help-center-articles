@@ -10,7 +10,7 @@ Même si l'installation d'un server Outline semble simple, elle consiste en une 
 Lors de l'installation d'Outline, le script effectue les opérations suivantes :
 
 - L'image correspondant à la version stable de Shadowbox est récupérée et importée via Docker. Cette image est hébergée sur [Quay.io](https://quay.io/), à l'adresse [https://quay.io/repository/outline/shadowbox?tab=tags](https://quay.io/repository/outline/shadowbox?tab=tags). Elle contient le serveur Outline, ainsi que l'API Management qui permettra ensuite à l'application Outline Server Management de créer et de supprimer des clés d'accès, d'accepter/de refuser l'envoi de statistiques anonymes, etc.
-- [Watchtower](https://github.com/v2tec/watchtower) est installé et configuré de manière à rechercher des mises à jour de l'image toutes les heures et à garantir que tous les serveurs Outline disposent en permanence des dernières fonctionnalités et améliorations en matière de sécurité.
+- [Watchtower](https://github.com/containrrr/watchtower) est installé et configuré de manière à rechercher des mises à jour de l'image toutes les heures et à garantir que tous les serveurs Outline disposent en permanence des dernières fonctionnalités et améliorations en matière de sécurité.
 - Un serveur Web permettant d'accéder à l'API Management est démarré sur un port aléatoire avec un chemin d'accès aléatoire et secret.
 - Un [certificat SSL autosigné](https://en.wikipedia.org/wiki/Self-signed_certificate) est créé de manière à chiffrer la gestion du serveur Outline avec le protocole TLS, malgré l'absence de nom de domaine. Une empreinte unique de ce certificat est également générée et stockée dans l'application Outline Manager, afin de protéger le serveur des attaques de type MITM (man-in-the-middle, attaque de l'homme du milieu).
 
@@ -18,7 +18,7 @@ Une fois Outline installé, aucune autre configuration n'est requise.
 
 ## Sécurité du serveur
 
-Outline est un logiciel Open Source. En d'autres termes, tout le monde peut accéder à son code et l'améliorer si des failles sont découvertes. Notre code est hébergé sur [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline).
+Outline est un logiciel Open Source. En d'autres termes, tout le monde peut accéder à son code et l'améliorer si des failles sont découvertes. Notre code est hébergé sur [GitHub](https://github.com/search?q=org%3AOutlineFoundation+outline&unscoped_q=outline).
 
 De plus, tous les serveurs Outline installés étant automatiquement mis à jour dès qu'une nouvelle version est disponible, aucun serveur ne peut exécuter une version obsolète du logiciel.
 

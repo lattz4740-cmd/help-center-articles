@@ -13,4 +13,4 @@ sidebar_label: ข้อกำหนดของระบบสำหรับ�
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-ต้องการช่วยให้ไคลเอ็นต์ Outline ใช้งานในระบบปฏิบัติการอื่นๆ หรือไม่ [ร่วมสร้างฐานของโค้ดกับเรา](https://github.com/Outline-Foundation/outline-client#platform-specific-development)ที่ GitHub
+ต้องการช่วยให้ไคลเอ็นต์ Outline ใช้งานในระบบปฏิบัติการอื่นๆ หรือไม่ [ร่วมสร้างฐานของโค้ดกับเรา](https://github.com/OutlineFoundation/outline-client#platform-specific-development)ที่ GitHub

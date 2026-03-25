@@ -7,14 +7,14 @@ sidebar_label: Outline እንዴት እንደሚሠራ
  ​የOutline ጭነት ቀላል ቢመስልም፣ አገልጋይዎ እንዲጫን ለማድረግ በእርግጥ በስተጀርባ እየተከሰተ ያለ ውስብስብ የደረጃዎች ስብስብ አለ። Outline በሚጫንበት ማንኛውም ጊዜ፣ የጭነት ስክሪፕት የሚከተሉትን ደረጃዎች ያሄዳል፦
 
 - የShadowbox ምስሉ የተረጋጋ ሥሪት Docker በመጠቀም ተሰርስሮ ይወጣል እና ይመጣል። ምስሉ የሚስተናገደው [Quay.io](https://quay.io/) ላይ [https://quay.io/repository/outline/shadowbox?tab=tags](https://quay.io/repository/outline/shadowbox?tab=tags) ውስጥ ነው። ይህ ምስል የመዳረሻ ቁልፎችን ለመፍጠር እና ለማስወገድ፣ ማንነታቸው የተሰወረ መለኪያዎችን ሪፖርት ከማድረግ መርጦ ለመግባት ወይም መርጦ ለመውጣት ወዘተ፣ በOutline አገልጋይ አስተዳደር መተግበሪያ በኋላ ላይ ጥቅም ላይ የሚውለውን የOutline አገልጋይ እና የአስተዳደር ኤፒአይ ይይዛል።
-- [Watchtower](https://github.com/v2tec/watchtower) የምስል ዝማኔዎችን በየጊዜው ለመፈተሽ ይጫናል እና ይዋቀራል፣ ይህም እያንዳንዱ የOutline አገልጋይ በቅርብ ጊዜ ባህሪያት እና የደህንነት ማሻሻያዎች ያለማቋረጥ ወቅታዊ እንዲሆን መደረጉን ለማረጋገጥ ያግዛል።
+- [Watchtower](https://github.com/containrrr/watchtower) የምስል ዝማኔዎችን በየጊዜው ለመፈተሽ ይጫናል እና ይዋቀራል፣ ይህም እያንዳንዱ የOutline አገልጋይ በቅርብ ጊዜ ባህሪያት እና የደህንነት ማሻሻያዎች ያለማቋረጥ ወቅታዊ እንዲሆን መደረጉን ለማረጋገጥ ያግዛል።
 - የድር አገልጋይ፣ የአስተዳደር ኤፒአይ ለማድረስ የሚጠቅም፣ የዘፈቀደ ወደብ ላይ በሚስጥራዊ እና የዘፈቀደ ዱካ ላይ ይጀመራል።
 - [በራስ-ሰር በመለያ ገቢ የኤስኤስኤል የእውቅና ማረጋገጫ](https://en.wikipedia.org/wiki/Self-signed_certificate) የተፈጠረው የOutline አገልጋይ አስተዳደር የጎራ ስም ሳይኖረው TLSን በመጠቀም መመስጠር እንዲችል ነው። እንዲሁም የዚህ የዕውቅና ማረጋገጫ ልዩ የጣት አሻራ የOutline አስተዳዳሪ መተግበሪያ ላይ ይመነጫል እና ይከማቻል፣ ይህም የMITM ጥቃቶችን ለመከላከል ያግዛል።
 
 የOutline ጭነት ከጭነት በኋላ ማንኛውንም ውቅረት አያስፈልገውም።
 
 ## የአገልጋይ ደህንነት
- Outline ሶፍትዌር ክፍት ምንጭ ነው፣ ይህ ማለት ማናቸውም ተጋላጭነቶች ከተገኙ ማንኛውም ሰው ኮዱን መመልከት እና ማሻሻል ይችላል። [የእኛ ኮድ የሚስተናገደው](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline)GitHub ላይ ነው።
+ Outline ሶፍትዌር ክፍት ምንጭ ነው፣ ይህ ማለት ማናቸውም ተጋላጭነቶች ከተገኙ ማንኛውም ሰው ኮዱን መመልከት እና ማሻሻል ይችላል። [የእኛ ኮድ የሚስተናገደው](https://github.com/search?q=org%3AOutlineFoundation+outline&unscoped_q=outline)GitHub ላይ ነው።
 
  በተጨማሪም፣ ሁሉም የተጫኑ የOutline አገልጋዮች አዲስ ሥሪት በሚለቀቅበት ማንኛውም ጊዜ በራስ-ሰር ይዘመናሉ፣ ይህም ምንም የOutline አገልጋይ የሶፍትዌሩን የቆዩ ስሪቶች እንያሄደ እንዳይቀር ያረጋግጣል።
 

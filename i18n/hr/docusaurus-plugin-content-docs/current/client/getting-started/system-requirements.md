@@ -13,4 +13,4 @@ Outline možete isprobati na bilo kojem operativnom sustavu. U nastavku su naved
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Želite li nam pomoći da Outline Klijent omogućimo za više operativnih sustava? [Uključite se u popunjavanje naše baze koda](https://github.com/Outline-Foundation/outline-client#platform-specific-development) na GitHubu!
+Želite li nam pomoći da Outline Klijent omogućimo za više operativnih sustava? [Uključite se u popunjavanje naše baze koda](https://github.com/OutlineFoundation/outline-client#platform-specific-development) na GitHubu!

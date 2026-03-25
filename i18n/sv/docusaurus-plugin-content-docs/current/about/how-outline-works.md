@@ -7,14 +7,14 @@ sidebar_label: Så här fungerar Outline
  ​Även om det kan verka enkelt att installera Outline sker flera komplexa steg bakom kulisserna när servern installeras. När Outline installeras kör ett installationsskript följande steg:
 
 - Den stabila versionen av Shadowbox-avbildningen hämtas och importeras med hjälp av Docker. Bilden finns på [Quay.io](https://quay.io/), i [https://quay.io/repository/outline/shadowbox?tab=tags](https://quay.io/repository/outline/shadowbox?tab=tags). Bilden innehåller Outline-servern och Management API som senare används av Outline Server Management-appen för att skapa och ta bort åtkomstnycklar, välja att rapportera anonyma mätvärden eller inte osv.
-- [Watchtower](https://github.com/v2tec/watchtower) installeras och konfigureras för att söka efter uppdateringar av avbildningen varje timme. På så sätt är alla Outline-servrar alltid uppdaterade med de senaste funktionerna och säkerhetsförbättringarna.
+- [Watchtower](https://github.com/containrrr/watchtower) installeras och konfigureras för att söka efter uppdateringar av avbildningen varje timme. På så sätt är alla Outline-servrar alltid uppdaterade med de senaste funktionerna och säkerhetsförbättringarna.
 - En webbserver som används för åtkomst till Management-API:et startas på en slumpmässig port på en hemlig och slumpmässig sökväg.
 - Ett [självsignerat SSL-certifikat](https://en.wikipedia.org/wiki/Self-signed_certificate) skapas så att hanteringen av Outline-servern kan krypteras med hjälp av TLS även om det inte finns ett domännamn. En unik signatur för det här certifikatet skapas också och lagras i Outline Manager-appen för att förhindra man-i-mitten-attacker.
 
 Installationen av Outline behöver inte konfigureras efter installationen
 
 ## Serversäkerhet
- Outline-mjukvaran har öppen källkod, vilket innebär att alla kan se koden och förbättra den om de upptäcker brister. Vår kod lagras på [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline).
+ Outline-mjukvaran har öppen källkod, vilket innebär att alla kan se koden och förbättra den om de upptäcker brister. Vår kod lagras på [GitHub](https://github.com/search?q=org%3AOutlineFoundation+outline&unscoped_q=outline).
 
  Dessutom uppdateras alla Outline-servrar automatiskt när en ny version lanseras, så att ingen Outline-server körs med tidigare programvaruversioner.
 

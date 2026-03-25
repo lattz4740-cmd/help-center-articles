@@ -13,4 +13,4 @@ Outline můžete vyzkoušet v jakémkoli operačním systému. Následující ta
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Chcete nám pomoct rozšířit Klienta Outline na další operační systémy? [Přispějte do naší základny kódu](https://github.com/Outline-Foundation/outline-client#platform-specific-development) na GitHubu.
+Chcete nám pomoct rozšířit Klienta Outline na další operační systémy? [Přispějte do naší základny kódu](https://github.com/OutlineFoundation/outline-client#platform-specific-development) na GitHubu.

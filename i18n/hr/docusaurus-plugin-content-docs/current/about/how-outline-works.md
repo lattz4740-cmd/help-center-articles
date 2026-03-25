@@ -7,14 +7,14 @@ sidebar_label: Kako funkcionira Outline
  Iako se instalacija Outlinea može činiti jednostavnom, za instalaciju poslužitelja zapravo je potrebno slijediti niz složenih uputa. Svaki put kada se Outline instalira, pokreće se skripta za instalaciju i poduzima sljedeće korake:
 
 - Stabilna verzija slike Shadowbox dohvaća se i uvozi putem Dockera. Slika se hosta na web-lokaciji [Quay.io](https://quay.io/), na adresi [https://quay.io/repository/outline/shadowbox?tab=tags](https://quay.io/repository/outline/shadowbox?tab=tags). Ta slika sadrži Outline poslužitelj i Management API koji aplikacija Outline Server Management kasnije upotrebljava za izradu i uklanjanje pristupnih ključeva, uključivanje/isključivanje izvješćivanja o anonimnim mjernim podacima itd.
-- [Watchtower](https://github.com/v2tec/watchtower) se instalira i konfigurira radi traženja ažuriranja slike svakih sat vremena, čime se osigurava da je svaki Outline poslužitelj kontinuirano ažuran te da ima najnovije značajke i sigurnosna poboljšanja.
+- [Watchtower](https://github.com/containrrr/watchtower) se instalira i konfigurira radi traženja ažuriranja slike svakih sat vremena, čime se osigurava da je svaki Outline poslužitelj kontinuirano ažuran te da ima najnovije značajke i sigurnosna poboljšanja.
 - Web-poslužitelj koji se upotrebljava za pristupanje Managament API-ju pokreće se na nasumičnom priključku na tajnoj i nasumičnoj putanji.
 - Izrađuje se [samopotpisani SSL certifikat](https://en.wikipedia.org/wiki/Self-signed_certificate) tako da se upravljanje Outline poslužiteljem može šifrirati pomoću TLS-a bez naziva domene. U aplikaciji Upravitelj Outlinea generira se i sprema jedinstveni otisak prsta tog certifikata. To pomaže u sprječavanju MITM napada.
 
 Instalacija aplikacije Outline ne zahtijeva naknadnu instalaciju konfiguracije.
 
 ## Sigurnost poslužitelja
- Outline je softver otvorenog izvornog koda. To znači da bilo tko može vidjeti kôd i poboljšati ga ako se otkriju nedostaci. Naš se kôd hostira na [GitHubu](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline).
+ Outline je softver otvorenog izvornog koda. To znači da bilo tko može vidjeti kôd i poboljšati ga ako se otkriju nedostaci. Naš se kôd hostira na [GitHubu](https://github.com/search?q=org%3AOutlineFoundation+outline&unscoped_q=outline).
 
  Nadalje, svi instalirani Outline poslužitelji automatski se ažuriraju nakon svake objave nove verzije tako da nijedan Outline poslužitelj nema zastarjelu verziju softvera.
 

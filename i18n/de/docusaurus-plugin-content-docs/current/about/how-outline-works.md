@@ -10,7 +10,7 @@ Die Installation von Outline mag einfach aussehen, aber im Hintergrund laufen da
 Bei der Installation von Outline wird immer ein Installationsskript mit folgenden Schritten ausgeführt:
 
 - Die stabile Version des Shadowbox-Images wird mit Docker abgerufen und importiert. Das Image wird auf [Quay.io](https://quay.io/) unter [https://quay.io/repository/outline/shadowbox?tab=tags](https://quay.io/repository/outline/shadowbox?tab=tags)gehostet. Es enthält den Outline-Server und die Management API. Letztere wird später von der Anwendung "Outline Server Management" verwendet, um Zugriffsschlüssel zu erstellen und zu entfernen sowie die Meldung anonymer Messwerte zu aktivieren oder zu deaktivieren usw.
-- [Watchtower](https://github.com/v2tec/watchtower) wird installiert und so konfiguriert, dass stündlich nach Image-Updates gesucht wird. Das trägt dazu bei, dass jeder Outline-Server ständig die neuesten Funktionen und Sicherheitsverbesserungen erhält und auf dem neuesten Stand ist.
+- [Watchtower](https://github.com/containrrr/watchtower) wird installiert und so konfiguriert, dass stündlich nach Image-Updates gesucht wird. Das trägt dazu bei, dass jeder Outline-Server ständig die neuesten Funktionen und Sicherheitsverbesserungen erhält und auf dem neuesten Stand ist.
 - Ein Webserver für den Zugriff auf die Management API wird auf einem zufälligen Port unter einem geheimen und zufälligen Pfad gestartet.
 - Ein [selbst signiertes SSL-Zertifikat](https://en.wikipedia.org/wiki/Self-signed_certificate) wird erstellt, sodass die Verwaltung des Outline-Servers mit TLS verschlüsselt werden kann, obwohl der Server keinen Domainnamen hat. Zusätzlich wird ein eindeutiger Fingerabdruck dieses Zertifikats erzeugt und im Outline-Manager gespeichert. So lassen sich MITM-Angriffe verhindern.
 
@@ -18,7 +18,7 @@ Die Outline-Installation muss nach der Installation nicht konfiguriert werden.
 
 ## Sicherheit des Servers
 
-Outline ist eine Open-Source-Software, das heißt, jeder kann sich den Quellcode bei [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline) ansehen und ihn verbessern, um eventuelle Schwachstellen zu beheben.
+Outline ist eine Open-Source-Software, das heißt, jeder kann sich den Quellcode bei [GitHub](https://github.com/search?q=org%3AOutlineFoundation+outline&unscoped_q=outline) ansehen und ihn verbessern, um eventuelle Schwachstellen zu beheben.
 
 Alle installierten Outline-Server werden automatisch aktualisiert, sobald eine neue Version verfügbar ist, damit keiner mit einer veralteten Version der Software betrieben wird.
 

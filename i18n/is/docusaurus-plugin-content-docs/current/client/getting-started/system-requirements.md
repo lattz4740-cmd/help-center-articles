@@ -13,4 +13,4 @@ sidebar_label: "Hverjar eru kerfiskröfurnar til að keyra Outline Client?"
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Viltu hjálpa okkur að fá Outline Client til að virka í fleiri stýrikerfum? [Leggðu þitt af mörkum til kóðagrunnsins](https://github.com/Outline-Foundation/outline-client#platform-specific-development) á GitHub!
+Viltu hjálpa okkur að fá Outline Client til að virka í fleiri stýrikerfum? [Leggðu þitt af mörkum til kóðagrunnsins](https://github.com/OutlineFoundation/outline-client#platform-specific-development) á GitHub!

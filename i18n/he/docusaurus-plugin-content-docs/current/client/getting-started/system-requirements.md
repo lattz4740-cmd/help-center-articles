@@ -13,4 +13,4 @@ sidebar_label: "מהן דרישות המערכת להפעלת אפליקציית
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-רוצים לעזור להפעיל את אפליקציית הלקוח של Outline במערכות הפעלה נוספות? [השתתפו בכתיבה של ה-code base שלנו](https://github.com/Outline-Foundation/outline-client#platform-specific-development) ב-GitHub!
+רוצים לעזור להפעיל את אפליקציית הלקוח של Outline במערכות הפעלה נוספות? [השתתפו בכתיבה של ה-code base שלנו](https://github.com/OutlineFoundation/outline-client#platform-specific-development) ב-GitHub!

@@ -13,4 +13,4 @@ Outline'ı tüm işletim sistemlerinde deneyebilirsiniz. Minimum işletim sistem
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Outline istemcisinin daha fazla işletim sisteminde çalışmasına yardımcı olmak ister misiniz? GitHub'da [kod tabanımıza katkıda bulunun](https://github.com/Outline-Foundation/outline-client#platform-specific-development)!
+Outline istemcisinin daha fazla işletim sisteminde çalışmasına yardımcı olmak ister misiniz? GitHub'da [kod tabanımıza katkıda bulunun](https://github.com/OutlineFoundation/outline-client#platform-specific-development)!

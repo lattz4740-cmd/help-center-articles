@@ -13,4 +13,4 @@ Anda boleh cuba menggunakan Outline pada mana-mana sistem pengendalian. Yang ber
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Mahu membantu Klien Outline berfungsi pada lebih banyak sistem pengendalian? [Berikan sumbangan kepada asas kod kami](https://github.com/Outline-Foundation/outline-client#platform-specific-development) pada GitHub!
+Mahu membantu Klien Outline berfungsi pada lebih banyak sistem pengendalian? [Berikan sumbangan kepada asas kod kami](https://github.com/OutlineFoundation/outline-client#platform-specific-development) pada GitHub!

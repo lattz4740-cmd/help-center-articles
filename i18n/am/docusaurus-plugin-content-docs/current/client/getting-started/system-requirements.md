@@ -13,4 +13,4 @@ Outlineን በማንኛውም ሥርዓተ ክወና ላይ መሞከር ይች�
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-የOutline ደንበኛ በተጨማሪ ሥርዓተ ክወናዎች ላይ እንዲሠራ ማገዝ ይፈልጋሉ? GitHub ላይ [በኮድ መሠረታችን ላይ አስተዋጽዖ ያበርክቱ](https://github.com/Outline-Foundation/outline-client#platform-specific-development) !
+የOutline ደንበኛ በተጨማሪ ሥርዓተ ክወናዎች ላይ እንዲሠራ ማገዝ ይፈልጋሉ? GitHub ላይ [በኮድ መሠረታችን ላይ አስተዋጽዖ ያበርክቱ](https://github.com/OutlineFoundation/outline-client#platform-specific-development) !

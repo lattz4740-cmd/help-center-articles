@@ -7,14 +7,14 @@ sidebar_label: "Outline'ın çalışma şekli"
  ​Outline'ın yüklenmesi basit gibi görünse de sunucunuzun yüklenmesi için perde arkasında gerçekleşen bazı karmaşık adımlar vardır. Her Outline yüklemesinde bir komut dosyası aşağıdaki adımları çalıştırır:
 
 - Shadowbox görüntüsünün kararlı sürümü Docker kullanılarak alınır ve içe aktarılır. Görüntü, [Quay.io](https://quay.io/)'daki [https://quay.io/repository/outline/shadowbox?tab=tags](https://quay.io/repository/outline/shadowbox?tab=tags) adresinde barındırılır. Bu görüntüde Outline sunucusu ve Management API yer alır. Bu bilgiler daha sonra Outline Server Management uygulaması tarafından erişim anahtarlarını oluşturup kaldırmak, anonim metrikleri raporlamayı etkinleştirmek/devre dışı bırakmak vb. için kullanılır.
-- [Watchtower](https://github.com/v2tec/watchtower) yüklenir ve saat başı görüntü güncellemesi olup olmadığını kontrol edecek şekilde yapılandırılır. Bu işlem, her Outline sunucusunu en son özellik ve güvenlik iyileştirmeleriyle sürekli olarak güncel tutar.
+- [Watchtower](https://github.com/containrrr/watchtower) yüklenir ve saat başı görüntü güncellemesi olup olmadığını kontrol edecek şekilde yapılandırılır. Bu işlem, her Outline sunucusunu en son özellik ve güvenlik iyileştirmeleriyle sürekli olarak güncel tutar.
 - Rastgele bir bağlantı noktasında ve rastgele oluşturulmuş gizli bir yolda, Management API'ye erişmek için kullanılan bir web sunucusu başlatılır.
 - Bir alan adına sahip olmamasına rağmen, Outline sunucusu yönetiminin TLS kullanılarak şifrelenebilmesi için [kendinden imzalı bir SSL sertifikası](https://en.wikipedia.org/wiki/Self-signed_certificate) oluşturulur. MITM saldırılarının engellenmesine yardımcı olması için bu sertifikanın benzersiz bir parmak izi de Outline Manager uygulamasında oluşturulur ve depolanır.
 
 Outline yüklendikten sonra herhangi bir yapılandırma işlemi gerekmez.
 
 ## Sunucu güvenliği
- Outline yazılımı açık kaynaktır. Bu, herkesin kodu görebileceği ve keşfedilen güvenlik açıkları varsa iyileştirebileceği anlamına gelir. Kodumuz [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline)'da barındırılır.
+ Outline yazılımı açık kaynaktır. Bu, herkesin kodu görebileceği ve keşfedilen güvenlik açıkları varsa iyileştirebileceği anlamına gelir. Kodumuz [GitHub](https://github.com/search?q=org%3AOutlineFoundation+outline&unscoped_q=outline)'da barındırılır.
 
  Ayrıca hiçbir Outline sunucusunun, yazılımın eski sürümlerini çalıştırmaması için yeni bir sürüm yayınlandığında tüm yüklü Outline sunucuları otomatik olarak güncellenir.
 

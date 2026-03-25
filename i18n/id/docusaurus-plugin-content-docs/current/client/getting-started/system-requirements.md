@@ -13,4 +13,4 @@ Anda dapat mencoba Outline di sistem operasi apa pun. Berikut ini adalah sistem 
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Ingin membantu Aplikasi Outline agar berfungsi di lebih banyak sistem operasi? [Berkontribusilah pada code base kami](https://github.com/Outline-Foundation/outline-client#platform-specific-development) di GitHub.
+Ingin membantu Aplikasi Outline agar berfungsi di lebih banyak sistem operasi? [Berkontribusilah pada code base kami](https://github.com/OutlineFoundation/outline-client#platform-specific-development) di GitHub.

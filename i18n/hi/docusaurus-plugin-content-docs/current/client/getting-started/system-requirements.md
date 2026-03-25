@@ -13,4 +13,4 @@ Outline को किसी भी ऑपरेटिंग सिस्टम �
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Outline Client अन्य ऑपरेटिंग सिस्टम पर भी काम करे, क्या इसमें आपको हमारी मदद करनी है? GitHub पर [हमारे कोड बेस में योगदान दें](https://github.com/Outline-Foundation/outline-client#platform-specific-development)!
+Outline Client अन्य ऑपरेटिंग सिस्टम पर भी काम करे, क्या इसमें आपको हमारी मदद करनी है? GitHub पर [हमारे कोड बेस में योगदान दें](https://github.com/OutlineFoundation/outline-client#platform-specific-development)!

@@ -13,4 +13,4 @@ Możesz spróbować uruchomić Outline w dowolnym systemie operacyjnym. Oto list
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Chcesz mieć swój udział w tym, aby klient Outline działał w innych systemach operacyjnych? [Opublikuj coś w naszej bazie kodu](https://github.com/Outline-Foundation/outline-client#platform-specific-development) na GitHubie!
+Chcesz mieć swój udział w tym, aby klient Outline działał w innych systemach operacyjnych? [Opublikuj coś w naszej bazie kodu](https://github.com/OutlineFoundation/outline-client#platform-specific-development) na GitHubie!

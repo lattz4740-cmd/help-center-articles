@@ -7,14 +7,14 @@ sidebar_label: Slik fungerer Outline
  ​Selv om det ser lett ut å installere Outline, skjer det en rekke teknisk kompliserte trinn bak kulissene for å installere tjeneren. Når Outline installeres, kjøres et installeringsskript som utfører følgende trinn:
 
 - Den stabile versjonen av Shadowbox-bildet blir hentet og importert ved hjelp av Docker. Avbildningen ligger på [Quay.io](https://quay.io/): [https://quay.io/repository/outline/shadowbox?tab=tags](https://quay.io/repository/outline/shadowbox?tab=tags). Denne avbildningen inneholder Outline-tjeneren og Management API, som senere brukes av Outline Server Management-programmet til å opprette og fjerne tilgangsnøkler, velge eller velge bort rapportering av anonyme verdier osv.
-- [Watchtower](https://github.com/v2tec/watchtower) blir installert og konfigurert til å se etter avbildningsoppdateringer hver time, noe som bidrar til å sikre at hver eneste Outline-tjener til enhver tid er oppdatert med de nyeste funksjonene og sikkerhetsforbedringene.
+- [Watchtower](https://github.com/containrrr/watchtower) blir installert og konfigurert til å se etter avbildningsoppdateringer hver time, noe som bidrar til å sikre at hver eneste Outline-tjener til enhver tid er oppdatert med de nyeste funksjonene og sikkerhetsforbedringene.
 - En nettjener som brukes til å få tilgang til Management API, startes på en tilfeldig port i en hemmelig og tilfeldig bane.
 - Det opprettes et [selvsignert SSL-sertifikat](https://en.wikipedia.org/wiki/Self-signed_certificate), slik at administreringen av Outline-tjeneren kan krypteres med TLS selv om den ikke har noe domenenavn. Et unikt fingeravtrykk for dette sertifikatet blir også generert og lagret i appen Outline-administrator, noe som bidrar til å forhindre MITM-angrep.
 
 Outline-installasjonen krever ingen konfigurering når den er installert.
 
 ## Tjenersikkerhet
- Outline-programvaren har åpen kildekode, noe som betyr at alle kan se koden og forbedre den hvis eventuelle sårbarheter blir oppdaget. [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline) er vert for koden vår.
+ Outline-programvaren har åpen kildekode, noe som betyr at alle kan se koden og forbedre den hvis eventuelle sårbarheter blir oppdaget. [GitHub](https://github.com/search?q=org%3AOutlineFoundation+outline&unscoped_q=outline) er vert for koden vår.
 
  I tillegg blir alle installerte Outline-tjenere automatisk oppdatert når en ny versjon blir utgitt, slik at ingen Outline-tjenere kjører gamle versjoner av programvaren.
 

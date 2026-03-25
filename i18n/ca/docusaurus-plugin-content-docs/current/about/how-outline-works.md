@@ -7,14 +7,14 @@ sidebar_label: Com funciona Outline
  ​Tot i que Outline pot semblar una aplicació senzilla, hi ha un conjunt de passos complexos que es duen a terme en segon pla per poder instal·lar el servidor. Quan s'instal·la Outline, un script d'instal·lació executa els passos següents:
 
 - La versió estable de la imatge de Shadowbox es recupera i s'importa mitjançant Docker. La imatge, que s'allotja a [Quay.io](https://quay.io/) ([https://quay.io/repository/outline/shadowbox?tab=tags](https://quay.io/repository/outline/shadowbox?tab=tags)), conté el servidor d'Outline i l'API de gestió que l'aplicació Gestor de servidors d'Outline utilitzarà més endavant per crear i suprimir les claus d'accés, optar per informar o no informar de mètriques de manera anònima, etc.
-- [Watchtower](https://github.com/v2tec/watchtower) s'instal·la i es configura per cercar actualitzacions d'imatges cada hora. Així es garanteix que cada servidor d'Outline estigui sempre actualitzat amb les millores de seguretat i funcions més recents.
+- [Watchtower](https://github.com/containrrr/watchtower) s'instal·la i es configura per cercar actualitzacions d'imatges cada hora. Així es garanteix que cada servidor d'Outline estigui sempre actualitzat amb les millores de seguretat i funcions més recents.
 - Un servidor web, utilitzat per accedir a l'API de gestió, s'inicia en un port aleatori en un camí secret i aleatori.
 - Es crea un [certificat SSL amb firma automàtica](https://en.wikipedia.org/wiki/Self-signed_certificate) perquè la gestió del servidor d'Outline es pugui encriptar utilitzant TLS malgrat no tenir cap nom de domini. També es genera una empremta digital única d'aquest certificat i s'emmagatzema a l'aplicació Gestor d'Outline, cosa que permet evitar atacs d'intermediari (MITM).
 
 Per instal·lar Outline, no cal dur a terme cap configuració després de la instal·lació.
 
 ## Seguretat del servidor
- El programari d'Outline és de codi obert, la qual cosa significa que tothom pot veure'n el codi i millorar-lo si s'hi troben vulnerabilitats. El nostre codi s'allotja a [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline).
+ El programari d'Outline és de codi obert, la qual cosa significa que tothom pot veure'n el codi i millorar-lo si s'hi troben vulnerabilitats. El nostre codi s'allotja a [GitHub](https://github.com/search?q=org%3AOutlineFoundation+outline&unscoped_q=outline).
 
  A més, tots els servidors d'Outline instal·lats s'actualitzen automàticament sempre que es publica una versió nova; per tant, es garanteix que cap servidor d'Outline no faci servir versions antigues del programari.
 

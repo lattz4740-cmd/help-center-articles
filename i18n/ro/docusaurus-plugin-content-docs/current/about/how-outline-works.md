@@ -7,14 +7,14 @@ sidebar_label: Cum funcționează Outline
  ​Deși instalarea Outline poate părea simplă, există, însă, un set complex de pași care au loc în fundal pentru a vă instala serverul. La instalarea Outline se rulează un script care execută următorii pași.
 
 - Se preia și se importă versiunea stabilă a imaginii Shadowbox, prin Docker. Imaginea este găzduită pe [Quay.io](https://quay.io/), la [https://quay.io/repository/outline/shadowbox?tab=tags](https://quay.io/repository/outline/shadowbox?tab=tags). Această imagine conține serverul Outline și API-ul Management, care este folosit ulterior de aplicația Outline Server Management pentru a crea și a elimina chei de acces, a activa / dezactiva raportarea valorilor anonime etc.
-- [Watchtower](https://github.com/v2tec/watchtower) este instalat și configurat pentru a verifica dacă există actualizări de imagini în fiecare oră, ajutând să vă asigurați că fiecare server Outline este actualizat în mod constant cu cele mai recente funcții și îmbunătățiri de securitate.
+- [Watchtower](https://github.com/containrrr/watchtower) este instalat și configurat pentru a verifica dacă există actualizări de imagini în fiecare oră, ajutând să vă asigurați că fiecare server Outline este actualizat în mod constant cu cele mai recente funcții și îmbunătățiri de securitate.
 - Este pornit un server web, folosit pentru accesarea API-ului Management, pe un port aleatoriu pe o cale aleatorie și secretă.
 - Se creează un [certificat SSL autosemnat](https://en.wikipedia.org/wiki/Self-signed_certificate), astfel încât gestionarea serverului Outline să poată fi criptată folosindu-se TLS chiar dacă nu există un nume de domeniu. Se generează și o amprentă digitală unică a certificatului, care este generată și stocată în aplicația Outline Manager, contribuind astfel la prevenirea atacurilor MITM.
 
 Aplicația Outline nu necesită o configurare după instalare.
 
 ## Securitatea serverului
- Software-ul Outline este open source, ceea ce înseamnă că oricine poate vedea codul și îl poate îmbunătăți dacă sunt descoperite vulnerabilități. Codul nostru este găzduit pe [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline).
+ Software-ul Outline este open source, ceea ce înseamnă că oricine poate vedea codul și îl poate îmbunătăți dacă sunt descoperite vulnerabilități. Codul nostru este găzduit pe [GitHub](https://github.com/search?q=org%3AOutlineFoundation+outline&unscoped_q=outline).
 
  În plus, toate serverele Outline instalate sunt actualizate automat când este lansată o versiune nouă, astfel încât niciun server Outline nu mai rulează versiunile vechi de software.
 

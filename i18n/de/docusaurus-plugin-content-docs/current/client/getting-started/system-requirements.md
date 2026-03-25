@@ -13,4 +13,4 @@ Sie können Outline auf jedem Betriebssystem ausführen. Im Folgenden finden Sie
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Möchten Sie dazu beitragen, dass Outline-Client auf noch mehr Betriebssystemen verfügbar ist? [Dann teilen Sie uns Ihre Codebasis auf GitHub mit](https://github.com/Outline-Foundation/outline-client#platform-specific-development).
+Möchten Sie dazu beitragen, dass Outline-Client auf noch mehr Betriebssystemen verfügbar ist? [Dann teilen Sie uns Ihre Codebasis auf GitHub mit](https://github.com/OutlineFoundation/outline-client#platform-specific-development).

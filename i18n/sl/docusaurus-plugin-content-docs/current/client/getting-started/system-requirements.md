@@ -13,4 +13,4 @@ Vabimo vas, da preizkusite Outline v katerem koli operacijskem sistemu. Tukaj si
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Želite prispevati k temu, da bo odjemalska aplikacija za Outline delovala v več operacijskih sistemih? [Prispevajte k naši zbirki kode](https://github.com/Outline-Foundation/outline-client#platform-specific-development) v storitvi GitHub.
+Želite prispevati k temu, da bo odjemalska aplikacija za Outline delovala v več operacijskih sistemih? [Prispevajte k naši zbirki kode](https://github.com/OutlineFoundation/outline-client#platform-specific-development) v storitvi GitHub.

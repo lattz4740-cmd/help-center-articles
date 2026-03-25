@@ -13,4 +13,4 @@ Outline поддерживается большинством операцион
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Хотите помочь нам расширить список ОС, которые поддерживают клиент Outline? [Примите участие в разработке проекта](https://github.com/Outline-Foundation/outline-client#platform-specific-development) на GitHub.
+Хотите помочь нам расширить список ОС, которые поддерживают клиент Outline? [Примите участие в разработке проекта](https://github.com/OutlineFoundation/outline-client#platform-specific-development) на GitHub.

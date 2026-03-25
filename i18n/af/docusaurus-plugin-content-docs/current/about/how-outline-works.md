@@ -7,14 +7,14 @@ sidebar_label: Hoe Outline werk
  ​Hoewel Outline-installering eenvoudig lyk, is daar ’n komplekse stel stappe wat agter die skerms plaasvind om jou bediener te installeer. Wanneer Outline geïnstalleer word, loop ’n installeringskrip deur die volgende stappe:
 
 - Die stabiele weergawe van die Shadowbox-stelselkopie word verkry en deur Docker ingevoer. Die stelselkopie word gehuisves op [Quay.io](https://quay.io/) in [https://quay.io/repository/outline/shadowbox?tab=tags](https://quay.io/repository/outline/shadowbox?tab=tags). Hierdie stelselkopie bevat die Outline-bediener en Management API wat later deur die Outline-bedienerbestuur-app gebruik gaan word om toegangsleutels te skep en te verwyder, intekening te aanvaar vir of te onttrek aan die rapportering van anonieme maatstawwe, ens.
-- [Watchtower](https://github.com/v2tec/watchtower) is geïnstalleer en opgestel om uurliks vir stelselkopie-opdaterings te kyk om te help verseker dat elke Outline-bediener deurlopend op datum gehou word met die nuutste kenmerke en sekuriteitverbeterings.
+- [Watchtower](https://github.com/containrrr/watchtower) is geïnstalleer en opgestel om uurliks vir stelselkopie-opdaterings te kyk om te help verseker dat elke Outline-bediener deurlopend op datum gehou word met die nuutste kenmerke en sekuriteitverbeterings.
 - ’n Webbediener wat gebruik word om toegang tot die Management API te kry, word op ’n lukrake poort op ’n geheime en lukrake pad begin.
 - ’n [Selfondertekende SSL-sertifikaat](https://en.wikipedia.org/wiki/Self-signed_certificate) word geskep sodat die bestuur van die Outline-bediener geënkripteer kan word deur TLS te gebruik al het dit nie ’n domeinnaam nie. ’n Unieke vingerafdruk van hierdie sertifikaat word ook gegenereer en gestoor in die Outline Manager-app en dit help om MITM-aanvalle te keer.
 
 Die Outline-installering hoef nie ná installering opgestel te word nie.
 
 ## Bedienersekuriteit
- Outline-sagteware is oopbron, wat beteken dat enigiemand die kode kan sien en dit kan verbeter as daar enige kwesbaarhede ontdek word. Ons kode word gehuisves op [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline).
+ Outline-sagteware is oopbron, wat beteken dat enigiemand die kode kan sien en dit kan verbeter as daar enige kwesbaarhede ontdek word. Ons kode word gehuisves op [GitHub](https://github.com/search?q=org%3AOutlineFoundation+outline&unscoped_q=outline).
 
  Verder word alle geïnstalleerde Outline-bedieners outomaties opgedateer wanneer ’n nuwe weergawe vrygestel word om te verseker dat geen Outline-bediener ou weergawes van die sagteware gebruik nie.
 

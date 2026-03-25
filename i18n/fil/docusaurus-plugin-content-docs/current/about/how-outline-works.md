@@ -7,14 +7,14 @@ sidebar_label: Paano Gumagana ang Outline
  ​Bagama't mukhang simple ang pag-install ng Outline, may aktwal na kumplikadong hanay ng mga hakbang na nangyayari sa likod nito para ma-install ang iyong server. Sa tuwing ini-install ang Outline, pinapatakbo ng script sa pag-install ang mga sumusunod na hakbang:
 
 - Kinukuha ang stable na bersyon ng image ng Shadowbox at ini-import ito gamit ang Docker. Naka-host ang image sa [Quay.io](https://quay.io/), sa [https://quay.io/repository/outline/shadowbox?tab=tags](https://quay.io/repository/outline/shadowbox?tab=tags). Nasa image na ito ang Outline server at Management API na gagamitin ng Outline Server Management application para gumawa at mag-alis ng mga access key, mag-opt in/mag-opt out sa mga anonymous na sukatan ng pag-uulat, atbp.
-- Ini-install at kino-configure ang [Watchtower](https://github.com/v2tec/watchtower) para tingnan kung may mga update sa image kada oras, na nakakatulong na masiguradong palaging up-to-date ang bawat Outline server at makuha ng mga ito ang mga pinakabagong feature at pagpapahusay sa seguridad.
+- Ini-install at kino-configure ang [Watchtower](https://github.com/containrrr/watchtower) para tingnan kung may mga update sa image kada oras, na nakakatulong na masiguradong palaging up-to-date ang bawat Outline server at makuha ng mga ito ang mga pinakabagong feature at pagpapahusay sa seguridad.
 - May web server, na ginagamit para sa pag-access ng Management API, na sinisimulan sa isang random na port sa isang lihim at random na path.
 - May ginagawang [self-signed na SSL certificate](https://en.wikipedia.org/wiki/Self-signed_certificate) para ma-encrypt ang pamamahala ng Outline server gamit ang TLS kahit na wala itong domain name. May binubuo ring natatanging fingerprint ng certificate na ito at sino-store ito sa Outline Manager application na nakakatulong sa pagpigil sa mga MITM na pag-atake.
 
 Walang kailangang kahit anong pag-configure sa pag-install ng Outline pagkatapos ng pag-install
 
 ## Seguridad ng server
- Ang Outline software ay open source, na nangangahulugang puwedeng makita ng sinuman ang code at pahusayin ito kung may matuklasan mang kahinaan. Naka-host sa [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline) ang aming code.
+ Ang Outline software ay open source, na nangangahulugang puwedeng makita ng sinuman ang code at pahusayin ito kung may matuklasan mang kahinaan. Naka-host sa [GitHub](https://github.com/search?q=org%3AOutlineFoundation+outline&unscoped_q=outline) ang aming code.
 
  Bukod pa rito, awtomatikong ina-update ang lahat ng naka-install na Outline server sa tuwing may inilalabas na bagong bersyon, na nagsisiguradong walang Outline server na nagpapatakbo ng mga lumang bersyon ng software.
 

@@ -13,4 +13,4 @@ sidebar_label: "Quais são os requisitos do sistema para executar o app cliente 
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Quer ajudar na expansão do app cliente do Outline para mais sistemas operacionais? [Contribua com nossa base de código](https://github.com/Outline-Foundation/outline-client#platform-specific-development) no GitHub.
+Quer ajudar na expansão do app cliente do Outline para mais sistemas operacionais? [Contribua com nossa base de código](https://github.com/OutlineFoundation/outline-client#platform-specific-development) no GitHub.

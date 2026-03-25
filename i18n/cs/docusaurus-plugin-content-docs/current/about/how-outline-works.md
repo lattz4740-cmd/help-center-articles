@@ -7,14 +7,14 @@ sidebar_label: Jak Outline funguje
  ​Instalace Outline možná vypadá jednoduše, ale ve skutečnosti při instalaci serveru na pozadí probíhá docela složitý postup. Při instalaci Outline provede instalační skript tyto kroky:
 
 - Získá stabilní verzi obrazu Shadowbox a importuje ji pomocí Dockeru. Obraz je hostován na webu [Quay.io](https://quay.io/) na adrese [https://quay.io/repository/outline/shadowbox?tab=tags](https://quay.io/repository/outline/shadowbox?tab=tags). Obsahuje server Outline a rozhraní Management API, které bude aplikace pro správu serveru Outline později používat k vytváření a odstraňování přístupových klíčů, přihlašování a odhlašování z anonymních metrik v přehledech apod.
-- Nainstaluje aplikaci [Watchtower](https://github.com/v2tec/watchtower) a nastaví ji tak, aby každou hodinu kontrolovala aktualizace obrazu. Tak je zajištěno, že je každý server Outline stále aktuální a využívá nejnovější funkce a vylepšení zabezpečení.
+- Nainstaluje aplikaci [Watchtower](https://github.com/containrrr/watchtower) a nastaví ji tak, aby každou hodinu kontrolovala aktualizace obrazu. Tak je zajištěno, že je každý server Outline stále aktuální a využívá nejnovější funkce a vylepšení zabezpečení.
 - Webový server používaný k přístupu k rozhraní Management API je spuštěn na náhodném portu v tajné a náhodné cestě.
 - Vytvoří [certifikát SSL podepsaný sám sebou](https://cs.wikipedia.org/wiki/Certifik%C3%A1t_podepsan%C3%BD_s%C3%A1m_sebou), aby bylo možné správu serveru Outline šifrovat pomocí zabezpečení TLS, i když server nemá název domény. Také vygeneruje unikátní otisk tohoto certifikátu a uloží ho v aplikaci Správce Outline, kde brání útokům MITM.
 
 Po instalaci už není Outline potřeba nijak nastavovat.
 
 ## Zabezpečení serveru
- Software Outline je opensourcový, což znamená, že si kdokoli může zobrazit jeho kód a vylepšovat ho, pokud se objeví nějaké slabiny. Náš kód hostujeme na [GitHubu](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline).
+ Software Outline je opensourcový, což znamená, že si kdokoli může zobrazit jeho kód a vylepšovat ho, pokud se objeví nějaké slabiny. Náš kód hostujeme na [GitHubu](https://github.com/search?q=org%3AOutlineFoundation+outline&unscoped_q=outline).
 
  Všechny nainstalované servery Outline se navíc automaticky aktualizují, kdykoli je uvedena nová verze, takže na žádném serveru Outline neběží staré verze softwaru.
 

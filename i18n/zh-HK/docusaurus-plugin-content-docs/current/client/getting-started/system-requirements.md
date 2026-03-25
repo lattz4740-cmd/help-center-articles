@@ -13,4 +13,4 @@ Outline 適用於任何作業系統。以下是作業系統最低要求：
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-想協助 Outline 用戶端在更多作業系統中運作嗎？歡迎在 GitHub [對程式碼集作出貢獻](https://github.com/Outline-Foundation/outline-client#platform-specific-development)！
+想協助 Outline 用戶端在更多作業系統中運作嗎？歡迎在 GitHub [對程式碼集作出貢獻](https://github.com/OutlineFoundation/outline-client#platform-specific-development)！

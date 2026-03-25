@@ -13,4 +13,4 @@ Du kan testa Outline i alla operativsystem. Minimikraven för operativsystem är
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Vill du hjälpa till att få Outline Client att fungera i fler operativsystem? [Bidra till vår kodbas](https://github.com/Outline-Foundation/outline-client#platform-specific-development) på GitHub!
+Vill du hjälpa till att få Outline Client att fungera i fler operativsystem? [Bidra till vår kodbas](https://github.com/OutlineFoundation/outline-client#platform-specific-development) på GitHub!

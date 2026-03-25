@@ -13,4 +13,4 @@ Outlinen käyttöä voi kokeilla millä tahansa käyttöjärjestelmällä. Käyt
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Haluatko, että Outline-asiakassovellus olisi käytettävissä useammilla käyttöjärjestelmillä? [Lisää sisältöä koodikantaan](https://github.com/Outline-Foundation/outline-client#platform-specific-development) GitHubissa.
+Haluatko, että Outline-asiakassovellus olisi käytettävissä useammilla käyttöjärjestelmillä? [Lisää sisältöä koodikantaan](https://github.com/OutlineFoundation/outline-client#platform-specific-development) GitHubissa.

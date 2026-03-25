@@ -13,4 +13,4 @@ Outline はあらゆるオペレーティング システムでお試しいた�
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Outline クライアントを実行できるオペレーティング システムを拡充するため、GitHub 上の[コードベースへの貢献](https://github.com/Outline-Foundation/outline-client#platform-specific-development)という形でのご協力をお待ちしています。
+Outline クライアントを実行できるオペレーティング システムを拡充するため、GitHub 上の[コードベースへの貢献](https://github.com/OutlineFoundation/outline-client#platform-specific-development)という形でのご協力をお待ちしています。

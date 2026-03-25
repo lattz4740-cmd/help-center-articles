@@ -13,4 +13,4 @@ Nous vous invitons à essayer Outline sur n'importe quel système d'exploitation
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Vous voulez nous aider à faire fonctionner le client Outline sur d'autres systèmes d'exploitation ? [Contribuez à notre code base](https://github.com/Outline-Foundation/outline-client#platform-specific-development) sur GitHub !
+Vous voulez nous aider à faire fonctionner le client Outline sur d'autres systèmes d'exploitation ? [Contribuez à notre code base](https://github.com/OutlineFoundation/outline-client#platform-specific-development) sur GitHub !

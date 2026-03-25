@@ -7,14 +7,14 @@ sidebar_label: איך שירות Outline פועל
  ​התקנת Outline היא תהליך פשוט מבחינת המשתמשים, אבל ברקע מתבצעות כמה וכמה פעולות מורכבות להתקנת השרת. כשמתקינים את Outline, סקריפט ההתקנה מבצע את הפעולות הבאות:
 
 - הגרסה היציבה של קובץ האימג' של Shadowbox מאוחזרת ומיובאת באמצעות Docker. קובץ האימג' מתארח ב-[Quay.io](https://quay.io/) בכתובת [https://quay.io/repository/outline/shadowbox?tab=tags](https://quay.io/repository/outline/shadowbox?tab=tags). קובץ האימג' מכיל את שרת Outline ואת ה-Management API, שמשמש מאוחר יותר את אפליקציית ניהול השרת של Outline ליצירה ולהסרה של מפתחות גישה, להצטרפות או לביטול ההצטרפות לדיווח על מדדים אנונימיים וכו'.
-- ‫[Watchtower](https://github.com/v2tec/watchtower) מותקנת ומוגדרת. התוכנה הזאת בודקת כל שעה אם יש עדכון לקובץ האימג', כדי שהשרת של Outline תמיד יהיה עדכני ויכלול את התכונות החדשות ושיפורי האבטחה.
+- ‫[Watchtower](https://github.com/containrrr/watchtower) מותקנת ומוגדרת. התוכנה הזאת בודקת כל שעה אם יש עדכון לקובץ האימג', כדי שהשרת של Outline תמיד יהיה עדכני ויכלול את התכונות החדשות ושיפורי האבטחה.
 - שרת אינטרנט, שמאפשר גישה לממשק ה-Management API, מופעל ביציאה אקראית ובנתיב אקראי וסודי.
 - נוצר [אישור SSL בחתימה עצמית](https://en.wikipedia.org/wiki/Self-signed_certificate) כדי שיהיה אפשר להצפין את ניהול השרת של Outline באמצעות TLS למרות שאין לו שם דומיין. בנוסף, טביעת אצבע של האישור הזה נוצרת ואז מאוחסנת באפליקציית Outline Manager, כדי לעזור במניעת התקפות MITM ("אדם בתווך").
 
 לא צריך להגדיר את Outline לאחר ההתקנה.
 
 ## אבטחת השרת
- אפליקציית Outline כתובה בקוד פתוח. כלומר, כל אחד יכול לקרוא את הקוד ולשפר אותו אם מתגלות נקודות חולשה. הקוד שלנו מתארח ב-[GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline).
+ אפליקציית Outline כתובה בקוד פתוח. כלומר, כל אחד יכול לקרוא את הקוד ולשפר אותו אם מתגלות נקודות חולשה. הקוד שלנו מתארח ב-[GitHub](https://github.com/search?q=org%3AOutlineFoundation+outline&unscoped_q=outline).
 
  בנוסף, כל השרתים המותקנים של Outline מתעדכנים אוטומטית כשמשוחררת גרסת תוכנה חדשה, כדי שלא יהיה אף שרת עם גרסה ישנה.
 

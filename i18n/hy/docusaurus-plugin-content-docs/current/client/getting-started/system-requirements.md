@@ -13,4 +13,4 @@ Outline-ը աջակցվում է օպերացիոն համակարգերի մե�
 | Windows | 10 |
 | Լինուքս | Ubuntu 20.04 |
 
-Ուզո՞ւմ եք օգնել մեզ ընդլայնել Outline-ի սպասառուն աջակցող օպերացիոն համակարգերի ցանկը։ [Մասնակցեք նախագծի մշակմանը](https://github.com/Outline-Foundation/outline-client#platform-specific-development) GitHub-ում
+Ուզո՞ւմ եք օգնել մեզ ընդլայնել Outline-ի սպասառուն աջակցող օպերացիոն համակարգերի ցանկը։ [Մասնակցեք նախագծի մշակմանը](https://github.com/OutlineFoundation/outline-client#platform-specific-development) GitHub-ում

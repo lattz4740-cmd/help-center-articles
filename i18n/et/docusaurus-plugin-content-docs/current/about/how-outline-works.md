@@ -7,14 +7,14 @@ sidebar_label: "Outline'i tööpõhimõte"
  ​Kuigi Outline'i installimine võib tunduda lihtne, leiavad kulisside taga aset keerukad protseduurid teie serveri installimiseks. Outline'i installimisel käitab installiskript järgmisi toiminguid.
 
 - Shadowboxi kujutise stabiilne versioon tuuakse ja imporditakse Dockeri abil. Kujutist hostitakse teenuses [Quay.io](https://quay.io/) aadressil [https://quay.io/repository/outline/shadowbox?tab=tags](https://quay.io/repository/outline/shadowbox?tab=tags). Kujutis sisaldab Outline'i serverit ja Management API-d, mille abil Outline'i serveri haldusrakendus saab hiljem pääsuvõtmeid luua ja eemaldada, anonüümsete mõõdikute esitamise lubada/keelata jms.
-- [Watchtower](https://github.com/v2tec/watchtower) installitakse ja seadistatakse nii, et see kontrolliks kujutise värskendusi kord tunnis. See aitab tagada, et kõik Outline'i serverid oleksid alati asjakohased ning hõlmaksid uusimaid funktsioone ja turbetäiustusi.
+- [Watchtower](https://github.com/containrrr/watchtower) installitakse ja seadistatakse nii, et see kontrolliks kujutise värskendusi kord tunnis. See aitab tagada, et kõik Outline'i serverid oleksid alati asjakohased ning hõlmaksid uusimaid funktsioone ja turbetäiustusi.
 - Veebiserver, mida kasutatakse Management API-le juurdepääsemiseks, käivitatakse salajasel ja juhuslikul teel juhuslikus pordis.
 - [Iseallkirjastatud SSL-sertifikaat](https://en.wikipedia.org/wiki/Self-signed_certificate), et Outline'i serveri haldust saaks TLS-iga krüpteerida vaatamata sellele, et domeeninimi puudub. Samuti luuakse selle sertifikaadi unikaalne sõrmejälg, mis talletatakse Outline Manageri rakenduses ja mis aitab takistada vahendusründeid.
 
 Installitud Outline'i ei ole vaja pärast installimist seadistada.
 
 ## Serveri turvalisus
- Outline'i tarkvara on avatud lähtekoodiga, mis tähendab, et igaüks saab koodi vaadata ja haavatavuste leidmisel täiustada. Meie koodi hostib [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline).
+ Outline'i tarkvara on avatud lähtekoodiga, mis tähendab, et igaüks saab koodi vaadata ja haavatavuste leidmisel täiustada. Meie koodi hostib [GitHub](https://github.com/search?q=org%3AOutlineFoundation+outline&unscoped_q=outline).
 
  Lisaks värskendatakse uue versiooni väljalaskmisel kõiki installitud Outline'i servereid automaatselt, et ükski Outline'i server ei käitaks tarkvara vana versiooni.
 

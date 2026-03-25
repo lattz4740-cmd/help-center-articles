@@ -13,4 +13,4 @@ Varat izmēģināt programmatūru Outline jebkurā operētājsistēmā. Tālāk 
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Vai vēlaties palīdzēt nodrošināt Outline klienta darbību arī citās operētājsistēmās? [Sniedziet ieguldījumu mūsu kodu bāzē](https://github.com/Outline-Foundation/outline-client#platform-specific-development) platformā GitHub!
+Vai vēlaties palīdzēt nodrošināt Outline klienta darbību arī citās operētājsistēmās? [Sniedziet ieguldījumu mūsu kodu bāzē](https://github.com/OutlineFoundation/outline-client#platform-specific-development) platformā GitHub!

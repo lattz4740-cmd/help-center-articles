@@ -13,4 +13,4 @@ sidebar_label: Outline ကလိုင်းယင့် လုပ်ဆော�
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-နောက်ထပ် လည်ပတ်သည့်စနစ်များတွင် Outline ကလိုင်းယင့် အလုပ်လုပ်စေရန် ကူညီလိုသလား။ GitHub ရှိ [ကျွန်ုပ်တို့၏ ကုဒ်အခြေခံတွင် ပံ့ပိုးပါဝင်နိုင်သည်။](https://github.com/Outline-Foundation/outline-client#platform-specific-development)
+နောက်ထပ် လည်ပတ်သည့်စနစ်များတွင် Outline ကလိုင်းယင့် အလုပ်လုပ်စေရန် ကူညီလိုသလား။ GitHub ရှိ [ကျွန်ုပ်တို့၏ ကုဒ်အခြေခံတွင် ပံ့ပိုးပါဝင်နိုင်သည်။](https://github.com/OutlineFoundation/outline-client#platform-specific-development)

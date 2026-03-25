@@ -10,7 +10,7 @@ sidebar_label: Outline 的運作原理
 安裝 Outline 之後，安裝指令碼將會執行以下步驟：
 
 - 使用 Docker 擷取及匯入 Shadowbox 映像檔穩定版，這個映像檔將由 [Quay.io](https://quay.io/) 代管於 [https://quay.io/repository/outline/shadowbox?tab=tags](https://quay.io/repository/outline/shadowbox?tab=tags)。此映像檔包含 Outline 伺服器和 Management API；Outline Server Management 應用程式稍後會使用這個 API 來建立及移除存取金鑰、選擇回報/不回報匿名指標等。
-- 安裝及設定 [Watchtower](https://github.com/v2tec/watchtower)，以便每小時檢查映像檔更新，並確認每台 Outline 伺服器隨時具備最新的功能和安全性改良設定。
+- 安裝及設定 [Watchtower](https://github.com/containrrr/watchtower)，以便每小時檢查映像檔更新，並確認每台 Outline 伺服器隨時具備最新的功能和安全性改良設定。
 - 用於存取 Management API 的網路伺服器開始在私密隨機路徑的隨機通訊埠上執行。
 - 建立[自行簽署安全資料傳輸層 (SSL) 憑證](https://en.wikipedia.org/wiki/Self-signed_certificate)，這樣一來，即使沒有網域名稱，也能使用傳輸層安全標準 (TLS) 為 Outline 伺服器加密。系統也會產生這個憑證的專屬指紋，並儲存在 Outline Manager 應用程式中，以用於防範中間人 (MITM) 攻擊。
 
@@ -18,7 +18,7 @@ Outline 安裝完成後不需要再進行任何設定。
 
 ## 伺服器安全性
 
-Outline 是開放原始碼軟體，代表任何人都可以查看程式碼，並在發現任何漏洞時予以改善。我們將程式碼交由 [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline) 代管。
+Outline 是開放原始碼軟體，代表任何人都可以查看程式碼，並在發現任何漏洞時予以改善。我們將程式碼交由 [GitHub](https://github.com/search?q=org%3AOutlineFoundation+outline&unscoped_q=outline) 代管。
 
 此外，只要有新版發布，所有已安裝的 Outline 伺服器都會自動更新，這樣就不會有任何 Outline 伺服器執行舊版軟體。
 

@@ -13,4 +13,4 @@ Az Outline-t bármilyen operációs rendszeren kipróbálhatja. Az operációs r
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Szeretne segíteni abban, hogy az Outline ügyfélalkalmazás más operációs rendszereken is működjön? [Vegyen részt programkódunk fejlesztésében](https://github.com/Outline-Foundation/outline-client#platform-specific-development) a GitHubon!
+Szeretne segíteni abban, hogy az Outline ügyfélalkalmazás más operációs rendszereken is működjön? [Vegyen részt programkódunk fejlesztésében](https://github.com/OutlineFoundation/outline-client#platform-specific-development) a GitHubon!

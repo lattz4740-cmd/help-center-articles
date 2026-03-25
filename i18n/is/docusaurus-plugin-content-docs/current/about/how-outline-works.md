@@ -7,14 +7,14 @@ sidebar_label: Svona virkar Outline
  ​Jafnvel þótt uppsetning Outline virðist einföld fer flókið ferli fram bakvið tjöldin til að ljúka uppsetningu þjónsins. Þegar Outline er sett upp keyrir uppsetningarskrifta eftirfarandi skref:
 
 - Stöðug útgáfa Shadowbox-myndar er sótt og flutt inn með Docker. Myndin er hýst á [Quay.io](https://quay.io/), á [https://quay.io/repository/outline/shadowbox?tab=tags](https://quay.io/repository/outline/shadowbox?tab=tags). Þessi mynd inniheldur Outline-þjóninn og forritaskil stjórnunar sem þjónsstjórnunarforrit Outline notar síðan til að búa til og fjarlægja aðgangslykla, samþykkja/hafna skráningu nafnlausra mæligilda o.s.frv.
-- [Watchtower](https://github.com/v2tec/watchtower) er sett upp og stillt á að athuga með myndauppfærslur á klukkustundarfresti í því skyni að tryggja að hver einasti Outline-þjónn sé alltaf uppfærður með nýjustu eiginleikunum og öryggisúrbótunum.
+- [Watchtower](https://github.com/containrrr/watchtower) er sett upp og stillt á að athuga með myndauppfærslur á klukkustundarfresti í því skyni að tryggja að hver einasti Outline-þjónn sé alltaf uppfærður með nýjustu eiginleikunum og öryggisúrbótunum.
 - Vefþjónn, sem er notaður til að fá aðgang að forritaskilum stjórnunar, er ræstur á handahófsvalinni gátt á leynilegri og handahófsvalinni slóð.
 - [Sjálfundirritað SSL-vottorð](https://en.wikipedia.org/wiki/Self-signed_certificate) er búið til svo að hægt sé að dulkóða stjórnun Outline-þjónsins með TLS þrátt fyrir að ekkert lénsheiti sé fyrir hendi. Einkvæmt fingrafar þessa vottorðs er einnig búið til og vistað í Outline Manager-forritinu í því skyni að koma í veg fyrir MITM-árásir.
 
 Uppsetning Outline krefst engra grunnstillinga eftir uppsetningu.
 
 ## Öryggi þjóns
- Hugbúnaður Outline er með opinn kóða. Það þýðir að hver sem er getur skoðað kóðann og gert endurbætur á honum ef veikleikar uppgötvast. Kóðinn okkar er hýstur á [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline).
+ Hugbúnaður Outline er með opinn kóða. Það þýðir að hver sem er getur skoðað kóðann og gert endurbætur á honum ef veikleikar uppgötvast. Kóðinn okkar er hýstur á [GitHub](https://github.com/search?q=org%3AOutlineFoundation+outline&unscoped_q=outline).
 
  Enn fremur skal þess getið að allir uppsettir Outline-þjónar eru uppfærðir um leið og ný útgáfa býðst. Þannig er tryggt að enginn Outline-þjónn keyri gamlar útgáfur hugbúnaðarins.
 

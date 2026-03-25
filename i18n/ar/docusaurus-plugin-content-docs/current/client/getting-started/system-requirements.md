@@ -13,4 +13,4 @@ sidebar_label: "ما هي متطلبات النظام لتشغيل تطبيق \"
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-هل تهمّك المساعدة في توسيع نطاق عمل تطبيق "عميل Outline" ليشمل مزيدًا من أنظمة التشغيل؟ [يمكنك المساهمة في قاعدة الرموز](https://github.com/Outline-Foundation/outline-client#platform-specific-development) على GitHub.
+هل تهمّك المساعدة في توسيع نطاق عمل تطبيق "عميل Outline" ليشمل مزيدًا من أنظمة التشغيل؟ [يمكنك المساهمة في قاعدة الرموز](https://github.com/OutlineFoundation/outline-client#platform-specific-development) على GitHub.

@@ -7,14 +7,14 @@ sidebar_label: Outlinen toiminta
  ​Vaikka Outlinen asentaminen saattaa vaikuttaa yksinkertaiselta, palvelimen asennuksen taustalla on erilaisia monimutkaisia vaiheita. Aina kun Outline asennetaan, asennusskripti suorittaa seuraavat vaiheet:
 
 - Shadowbox-näköistiedoston vakaa versio noudetaan ja tuodaan Dockerin avulla. Näköistiedosto sijaitsee [Quay.io](https://quay.io/)-palvelussa osoitteessa [https://quay.io/repository/outline/shadowbox?tab=tags](https://quay.io/repository/outline/shadowbox?tab=tags). Näköistiedosto sisältää Outline-palvelimen ja Management APIn, jolla Outline-palvelimen hallintasovelluksen käyttäjä voi myöhemmin luoda ja poistaa pääsyavaimia, sallia tai kieltää anonyymien tietojen lähettämisen jne.
-- [Watchtower](https://github.com/v2tec/watchtower) asennetaan ja määritetään niin, että se tarkistaa näköistiedoston päivitykset tunnin välein. Tämä auttaa varmistamaan, että Outline-palvelimelle on aina asennettu uusimmat ominaisuudet ja tietoturvaparannukset.
+- [Watchtower](https://github.com/containrrr/watchtower) asennetaan ja määritetään niin, että se tarkistaa näköistiedoston päivitykset tunnin välein. Tämä auttaa varmistamaan, että Outline-palvelimelle on aina asennettu uusimmat ominaisuudet ja tietoturvaparannukset.
 - Verkkopalvelin käynnistyy Management APIin pääsyä varten. Palvelin käyttää salaista ja satunnaista porttia sekä satunnaista polkua.
 - [Itse allekirjoitettu SSL-varmenne](https://en.wikipedia.org/wiki/Self-signed_certificate) luodaan, jotta Outline-palvelimen hallinta voidaan salata TLS-standardin mukaisesti, vaikka sillä ei ole verkkotunnusta. Tälle varmenteelle luodaan myös yksilöllinen tunnistetiedosto, joka tallennetaan Outline Manager ‑sovellukseen, mikä auttaa ehkäisemään MITM-hyökkäyksiä.
 
 Outlinea ei tarvitse määrittää sen jälkeen, kun se on asennettu.
 
 ## Palvelimen tietoturva
- Outline-ohjelmisto käyttää avointa lähdekoodia, mikä tarkoittaa, että kuka tahansa voi nähdä koodin ja parantaa sitä haavoittuvuuksia havaitessaan. Koodimme on saatavilla [GitHubissa](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline).
+ Outline-ohjelmisto käyttää avointa lähdekoodia, mikä tarkoittaa, että kuka tahansa voi nähdä koodin ja parantaa sitä haavoittuvuuksia havaitessaan. Koodimme on saatavilla [GitHubissa](https://github.com/search?q=org%3AOutlineFoundation+outline&unscoped_q=outline).
 
  Lisäksi kaikki asennetut Outline-palvelimet päivittyvät automaattisesti heti, kun uusi versio julkaistaan. Näin varmistetaan, että yksikään Outline-palvelin ei käytä ohjelmiston vanhoja versioita.
 

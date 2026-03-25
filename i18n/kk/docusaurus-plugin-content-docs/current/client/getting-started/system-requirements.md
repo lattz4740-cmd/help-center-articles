@@ -13,4 +13,4 @@ Outline клиентін кез келген операциялық жүйеде
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Outline клиентінің басқа да операциялық жүйелерде істеуіне көмектескіңіз келе ме? [Кодтар дерекқорына үлес қосыңыз](https://github.com/Outline-Foundation/outline-client#platform-specific-development): GitHub сайтына өтіңіз!
+Outline клиентінің басқа да операциялық жүйелерде істеуіне көмектескіңіз келе ме? [Кодтар дерекқорына үлес қосыңыз](https://github.com/OutlineFoundation/outline-client#platform-specific-development): GitHub сайтына өтіңіз!

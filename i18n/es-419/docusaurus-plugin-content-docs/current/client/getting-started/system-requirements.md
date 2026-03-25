@@ -13,4 +13,4 @@ Puedes probar Outline en cualquier sistema operativo. Estas son las versiones re
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-¿Quieres ayudar a que el cliente de Outline funcione en más sistemas operativos? [Contribuye a nuestra base de código](https://github.com/Outline-Foundation/outline-client#platform-specific-development) en GitHub.
+¿Quieres ayudar a que el cliente de Outline funcione en más sistemas operativos? [Contribuye a nuestra base de código](https://github.com/OutlineFoundation/outline-client#platform-specific-development) en GitHub.

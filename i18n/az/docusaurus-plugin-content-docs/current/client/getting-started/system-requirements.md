@@ -13,4 +13,4 @@ Outline-ı istənilən əməliyyat sistemində sınaya bilərsiniz. Aşağıda �
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Outline Client tətbiqinin daha çox əməliyyat sistemində işləməsinə kömək etmək istəyirsiniz? GitHub-da [kod bazamıza töhfə verin](https://github.com/Outline-Foundation/outline-client#platform-specific-development)!
+Outline Client tətbiqinin daha çox əməliyyat sistemində işləməsinə kömək etmək istəyirsiniz? GitHub-da [kod bazamıza töhfə verin](https://github.com/OutlineFoundation/outline-client#platform-specific-development)!

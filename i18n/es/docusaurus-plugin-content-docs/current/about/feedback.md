@@ -5,7 +5,7 @@ sidebar_label: Cómo enviar comentarios o sugerencias
 
 Gracias por ayudar a mejorar Outline. Hay distintas maneras de enviarnos comentarios, ya sea de forma anónima o con tu dirección de correo electrónico, si es que necesitas recibir una respuesta:
 
-- **Para los desarrolladores**: Outline es un software de código abierto y alojamos todo nuestro código en [GitHub](https://github.com/Outline-Foundation/?q=outline). Puedes compartir tus ideas en GitHub o en nuestra comunidad de [Reddit](https://www.reddit.com/r/outlinevpn/).
+- **Para los desarrolladores**: Outline es un software de código abierto y alojamos todo nuestro código en [GitHub](https://github.com/OutlineFoundation/?q=outline). Puedes compartir tus ideas en GitHub o en nuestra comunidad de [Reddit](https://www.reddit.com/r/outlinevpn/).
 
 - **Para los usuarios**: Puedes enviarnos comentarios por medio de las apps de Outline o Outline Manager. Cuéntanos de qué se tratan tus comentarios y, si lo deseas, agrega una dirección de correo electrónico para que podamos responderte. También recopilamos algunos metadatos sobre tu entorno a fin de poder ayudarte a solucionar los problemas, como tu navegador, tu sistema operativo y la versión del software que utilizas.
 
