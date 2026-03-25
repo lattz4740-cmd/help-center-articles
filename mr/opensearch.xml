@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
                        xmlns:moz="http://www.mozilla.org/2006/browser/search/">
-  <ShortName>Outline Help Center</ShortName>
-  <Description>Search Outline Help Center</Description>
+  <ShortName>Outline Help</ShortName>
+  <Description>Search Outline Help</Description>
   <InputEncoding>UTF-8</InputEncoding>
   <Image width="16" height="16" type="image/x-icon">https://support.getoutline.org/mr/images/outline-favicon.png</Image>
   <Url type="text/html" method="get" template="https://support.getoutline.org/mr/search?q={searchTerms}"/>
