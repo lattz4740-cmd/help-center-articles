@@ -13,7 +13,7 @@ Setelah anda menetapkan had, anda boleh melihat setakat mana hampirnya pengguna 
 
 Selain dapat menetapkan had pada semua kunci akses, anda boleh menetapkan had data tersendiri pada setiap kunci. Tetapan ini akan menggantikan sebarang had data lalai yang anda tetapkan. Akan tetapi, jika anda tidak menetapkan had data lalai, anda masih boleh menetapkan had data untuk sebarang kunci. 
 
- Untuk menetapkan had pemindahan data kunci, buka Outline Manager, navigasi kepada tab Sambungan yang mengandungi kunci yang mahu anda tetapkan dan klik menu pada sebelah kanan baris kunci. Dari sana, klik Had Data. Untuk menukar had data pada "Kunci akses saya", klik ikon Had Data ![Imej ini tidak tersedia kerana: Anda tiada keistimewaan untuk melihat imej ini atau imej ini telah dialih keluar daripada sistem](https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw).
+ Untuk menetapkan had pemindahan data kunci, buka Outline Manager, navigasi kepada tab Sambungan yang mengandungi kunci yang mahu anda tetapkan dan klik menu pada sebelah kanan baris kunci. Dari sana, klik Had Data. Untuk menukar had data pada "Kunci akses saya", klik ikon Had Data ![Imej ini tidak tersedia kerana: Anda tiada keistimewaan untuk melihat imej ini atau imej ini telah dialih keluar daripada sistem](/images/data-limits-icon.png).
 
 ![Selecting the data limit setting icon for an individual access key](/images/snippet-15787423.png)
 

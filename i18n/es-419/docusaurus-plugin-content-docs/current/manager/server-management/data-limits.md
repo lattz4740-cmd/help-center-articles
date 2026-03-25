@@ -13,7 +13,7 @@ Una vez que lo hagas, podrás ver qué tan cerca está cada usuario de alcanzar 
 
 Además de poder establecer un límite para todas tus claves de acceso, puedes asignarle un límite de datos diferente a cada una. Este parámetro de configuración anulará los límites de datos predeterminados que estableciste. Si aún no lo has hecho, podrás establecer un límite de datos para cualquier clave de cualquier manera. 
 
- Para establecer un límite de transferencia de datos para una clave, abre Outline Manager, navega a la pestaña Conexiones que contiene la clave que quieres establecer. Luego, haz clic en el menú del lado derecho de la fila de claves. Allí, haz clic en Límites de datos (Data Limit). Para cambiar el límite de datos de "Mi clave de acceso", haz clic en el ícono Límites de datos (Data Limit) ![Ícono de límites de datos](https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw).
+ Para establecer un límite de transferencia de datos para una clave, abre Outline Manager, navega a la pestaña Conexiones que contiene la clave que quieres establecer. Luego, haz clic en el menú del lado derecho de la fila de claves. Allí, haz clic en Límites de datos (Data Limit). Para cambiar el límite de datos de "Mi clave de acceso", haz clic en el ícono Límites de datos (Data Limit) ![Ícono de límites de datos](/images/data-limits-icon.png).
 
 ![Selecting the data limit setting icon for an individual access key](/images/snippet-15787423.png)
 

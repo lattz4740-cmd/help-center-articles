@@ -13,7 +13,7 @@ sidebar_label: "액세스 키에 데이터 한도는 어떻게 설정하나요?"
 
 모든 액세스 키에 한도를 설정할 수 있을 뿐 아니라 각각의 키에 자체 데이터 한도를 부여할 수도 있습니다. 이 설정은 사용자가 설정한 모든 기본 데이터 한도를 재정의하지만 기본 데이터 한도를 설정하지 않은 경우에도 어떤 키에든 데이터 한도를 설정할 수 있습니다. 
 
- 키의 데이터 전송 한도를 설정하려면 Outline Manager를 열고 설정하려는 키가 포함된 'Connections(연결)' 탭으로 이동한 다음 키 행의 오른쪽에서 메뉴를 클릭합니다. 메뉴에서 'Data Limit(데이터 한도)'를 클릭합니다. 'My access key(내 액세스 키)'에서 데이터 한도를 변경하려면 데이터 한도 아이콘 ![데이터 한도 아이콘](https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw)을 클릭합니다.
+ 키의 데이터 전송 한도를 설정하려면 Outline Manager를 열고 설정하려는 키가 포함된 'Connections(연결)' 탭으로 이동한 다음 키 행의 오른쪽에서 메뉴를 클릭합니다. 메뉴에서 'Data Limit(데이터 한도)'를 클릭합니다. 'My access key(내 액세스 키)'에서 데이터 한도를 변경하려면 데이터 한도 아이콘 ![데이터 한도 아이콘](/images/data-limits-icon.png)을 클릭합니다.
 
 ![Selecting the data limit setting icon for an individual access key](/images/snippet-15787423.png)
 

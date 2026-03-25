@@ -13,7 +13,7 @@ Når du har angivet en grænse, kan du gå til siden med adgangsnøgler for at s
 
 Foruden muligheden for at angive en grænse for alle dine adgangsnøgler, kan du tildele hver nøgle sin egen datagrænse. Denne indstilling tilsidesætter eventuelle standarddatagrænser, som du har angivet. Hvis du ikke har angivet en standarddatagrænse, kan du stadig angive en datagrænse for en hvilken som helst nøgle. 
 
- Hvis du vil angive en nøgles dataoverførselsgrænse, skal du åbne Outline Manager, navigere til fanen Forbindelser, som har den nøgle, du vil angive. Klik derefter på menuen til højre for nøglens række. Derfra skal du klikke på Datagrænse. Hvis du vil ændre datagrænsen under "Min adgangsnøgle", skal du klikke på ikonet for Datagrænse ![Ikon for datagrænser](https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw).
+ Hvis du vil angive en nøgles dataoverførselsgrænse, skal du åbne Outline Manager, navigere til fanen Forbindelser, som har den nøgle, du vil angive. Klik derefter på menuen til højre for nøglens række. Derfra skal du klikke på Datagrænse. Hvis du vil ændre datagrænsen under "Min adgangsnøgle", skal du klikke på ikonet for Datagrænse ![Ikon for datagrænser](/images/data-limits-icon.png).
 
 ![Selecting the data limit setting icon for an individual access key](/images/snippet-15787423.png)
 

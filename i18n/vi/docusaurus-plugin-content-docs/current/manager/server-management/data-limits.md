@@ -13,7 +13,7 @@ Sau khi đặt hạn mức, bạn có thể xem dung lượng còn lại của m
 
 Ngoài việc có thể đặt hạn mức cho tất cả các khoá truy cập, bạn cũng có thể cấp hạn mức dữ liệu riêng cho từng khoá. Chế độ cài đặt này sẽ thay thế hạn mức dữ liệu mặc định mà bạn đặt. Nhưng nếu chưa đặt hạn mức dữ liệu mặc định thì bạn vẫn có thể đặt hạn mức dữ liệu cho bất kỳ khoá nào. 
 
- Để đặt hạn mức chuyển dữ liệu của khoá, hãy mở ứng dụng Quản lý Outline, chuyển đến thẻ Kết nối có khoá mà bạn muốn thiết lập, rồi nhấp vào trình đơn bên phải của hàng có khoá đó. Tại đó, hãy nhấp vào Hạn mức dữ liệu. Để thay đổi hạn mức dữ liệu trên trang "Khoá truy cập của tôi", hãy nhấp vào biểu tượng Hạn mức dữ liệu ![Biểu tượng hạn mức dữ liệu](https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw).
+ Để đặt hạn mức chuyển dữ liệu của khoá, hãy mở ứng dụng Quản lý Outline, chuyển đến thẻ Kết nối có khoá mà bạn muốn thiết lập, rồi nhấp vào trình đơn bên phải của hàng có khoá đó. Tại đó, hãy nhấp vào Hạn mức dữ liệu. Để thay đổi hạn mức dữ liệu trên trang "Khoá truy cập của tôi", hãy nhấp vào biểu tượng Hạn mức dữ liệu ![Biểu tượng hạn mức dữ liệu](/images/data-limits-icon.png).
 
 ![Selecting the data limit setting icon for an individual access key](/images/snippet-15787423.png)
 

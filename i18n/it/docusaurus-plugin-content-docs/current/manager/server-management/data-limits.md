@@ -13,7 +13,7 @@ Una volta impostato un limite, puoi vedere quanto ogni utente ci si avvicina nel
 
 Oltre a poter impostare un limite per tutte le chiavi di accesso, puoi assegnare a ogni chiave il proprio limite dati. Questa impostazione sovrascriverà qualsiasi limite dati predefinito che hai impostato. Se non l'hai fatto, puoi comunque impostare un limite dati per qualsiasi chiave. 
 
- Per impostare un limite di trasferimento di dati di una chiave, apri Outline Manager, vai alla scheda Connessioni che contiene la chiave che vuoi impostare e fai clic sul menu sul lato destro della riga della chiave. Da qui, fai clic su Limite dati. Per modificare il limite dati su "La mia chiave di accesso", fai clic sull'icona Limiti dati ![Questa immagine non è disponibile perché non disponi dei privilegi per visualizzarla oppure perché è stata rimossa dal sistema](https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw).
+ Per impostare un limite di trasferimento di dati di una chiave, apri Outline Manager, vai alla scheda Connessioni che contiene la chiave che vuoi impostare e fai clic sul menu sul lato destro della riga della chiave. Da qui, fai clic su Limite dati. Per modificare il limite dati su "La mia chiave di accesso", fai clic sull'icona Limiti dati ![Questa immagine non è disponibile perché non disponi dei privilegi per visualizzarla oppure perché è stata rimossa dal sistema](/images/data-limits-icon.png).
 
 ![Selecting the data limit setting icon for an individual access key](/images/snippet-15787423.png)
 

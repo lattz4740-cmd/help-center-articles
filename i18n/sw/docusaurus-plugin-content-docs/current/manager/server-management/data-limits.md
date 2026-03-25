@@ -13,7 +13,7 @@ Ukiweka kikomo, unaweza kuona jinsi kila mtumiaji anavyokaribia kikomo kwenye uk
 
 Pamoja na uwezo wa kuweka kikomo cha funguo zako zote, unaweza kuupa kila ufunguo kikomo chake cha data. Mipangilio hii itabatilisha kikomo chochote chaguomsingi cha data ulichoweka, lakini ikiwa hujaweka kikomo chaguomsingi cha data, bado unaweza kuweka kikomo cha data cha ufunguo wowote. 
 
- Ili uwekee ufunguo kikomo cha uhamishaji wa data, fungua Kidhibiti cha Outline, nenda kwenye kichupo cha Miunganisho chenye ufunguo unaotaka kuwekea kikomo, kisha ubofye menyu iliyo upande wa kulia wa safu mlalo ya ufunguo huo. Ukiwa hapo, bofya Kikomo cha Data. Ili ubadilishe kikomo cha data kwenye "Ufunguo wangu", bofya aikoni ya Vikomo vya Data ![Aikoni ya Vikomo vya Data](https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw).
+ Ili uwekee ufunguo kikomo cha uhamishaji wa data, fungua Kidhibiti cha Outline, nenda kwenye kichupo cha Miunganisho chenye ufunguo unaotaka kuwekea kikomo, kisha ubofye menyu iliyo upande wa kulia wa safu mlalo ya ufunguo huo. Ukiwa hapo, bofya Kikomo cha Data. Ili ubadilishe kikomo cha data kwenye "Ufunguo wangu", bofya aikoni ya Vikomo vya Data ![Aikoni ya Vikomo vya Data](/images/data-limits-icon.png).
 
 ![Selecting the data limit setting icon for an individual access key](/images/snippet-15787423.png)
 

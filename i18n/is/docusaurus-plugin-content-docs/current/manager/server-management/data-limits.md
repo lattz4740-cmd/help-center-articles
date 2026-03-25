@@ -13,7 +13,7 @@ Hægt er að stilla gagnamörk sem gilda um alla aðgangslykla. Til að stilla g
 
 Hægt er að stilla gagnamörk sem gilda um alla aðgangslykla eða stilla mörk fyrir hvern lykil fyrir sig. Ef það er gert verður fyrirliggjandi sjálfgefnum gagnamörkum hnekkt en þó er hægt að stilla gagnamörk fyrir staka lykla þrátt fyrir að sjálfgefin gagnamörk hafi ekki verið stillt. 
 
- Til að stilla gagnaflutningsmörk fyrir lykil skaltu opna Outline Manager, fara á flipann „Tengingar“, finna lykilinn sem þú vilt stilla mörk fyrir og smella á valmyndina hægra megin við línu lykilsins. Smelltu á „Gagnamörk“ á valmyndinni. Smelltu á tákn gagnamarka ![Þessi mynd er ekki tiltæk vegna þess að þú ert ekki með heimild til að sjá hana eða vegna þess að hún var fjarlægð úr kerfinu](https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw) til að breyta gagnamörkum sem gilda um aðgangslykilinn þinn.
+ Til að stilla gagnaflutningsmörk fyrir lykil skaltu opna Outline Manager, fara á flipann „Tengingar“, finna lykilinn sem þú vilt stilla mörk fyrir og smella á valmyndina hægra megin við línu lykilsins. Smelltu á „Gagnamörk“ á valmyndinni. Smelltu á tákn gagnamarka ![Þessi mynd er ekki tiltæk vegna þess að þú ert ekki með heimild til að sjá hana eða vegna þess að hún var fjarlægð úr kerfinu](/images/data-limits-icon.png) til að breyta gagnamörkum sem gilda um aðgangslykilinn þinn.
 
 ![Selecting the data limit setting icon for an individual access key](/images/snippet-15787423.png)
 

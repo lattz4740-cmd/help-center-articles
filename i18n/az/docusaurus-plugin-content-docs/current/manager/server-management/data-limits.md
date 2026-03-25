@@ -13,7 +13,7 @@ Limit təyin edildikdən sonra son 30 gün ərzində data istifadəsini göstər
 
 Bütün giriş açarlarınız üçün limit təyin etməkdən əlavə, hər bir açar üzrə ayrıca data limiti təyin edə bilərsiniz. Bu ayar təyin etdiyiniz bütün defolt data limitlərini əvəzləyəcək, lakin defolt data limiti təyin etməmisinizsə, hələ də istənilən açar üçün data limiti təyin edə bilərsiniz. 
 
- Açar üzrə datanın ötürülməsi limitini təyin etmək üçün Outline Manager-i açaraq təyin etmək istədiyiniz açarın olduğu Bağlantılar tabına keçin və açar sətrinin sağ tərəfindəki menyuya klikləyin. Oradan Data Limiti seçiminə klikləyin. "Giriş açarım" üzrə data limitini dəyişmək üçün Data Limitləri ikonuna ![Bu şəkil əlçatan deyil: Ona baxmaq icazəniz yoxdur və ya sistemdən silinib.](https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw) klikləyin.
+ Açar üzrə datanın ötürülməsi limitini təyin etmək üçün Outline Manager-i açaraq təyin etmək istədiyiniz açarın olduğu Bağlantılar tabına keçin və açar sətrinin sağ tərəfindəki menyuya klikləyin. Oradan Data Limiti seçiminə klikləyin. "Giriş açarım" üzrə data limitini dəyişmək üçün Data Limitləri ikonuna ![Bu şəkil əlçatan deyil: Ona baxmaq icazəniz yoxdur və ya sistemdən silinib.](/images/data-limits-icon.png) klikləyin.
 
 ![Selecting the data limit setting icon for an individual access key](/images/snippet-15787423.png)
 

@@ -13,7 +13,7 @@ Anschließend können Sie auf der Übersichtsseite zu den Zugriffsschlüsseln an
 
 Sie können aber nicht nur ein für alle Zugriffsschlüssel geltendes Limit festlegen, sondern auch spezielle Datenlimits für einzelne Schlüssel. Das über diese Einstellung konfigurierte Limit überschreibt das von Ihnen festgesetzte Standardlimit. Selbst wenn Sie kein allgemeines Limit festgelegt haben, können Sie für einzelne Schlüssel jeweils eine eigene Beschränkung angeben. 
 
- Wenn Sie für einen Schlüssel ein Datenlimit festlegen möchten, öffnen Sie Outline-Manager, gehen Sie zum Tab „Verbindungen“ und klicken Sie rechts neben dem entsprechenden Schlüssel auf das Menü. Klicken Sie auf „Datenlimit“. Um das Datenlimit für „Mein Zugriffsschlüssel“ zu ändern, klicken Sie auf das Symbol „Datenlimits“ ![Data limits icon](https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw).
+ Wenn Sie für einen Schlüssel ein Datenlimit festlegen möchten, öffnen Sie Outline-Manager, gehen Sie zum Tab „Verbindungen“ und klicken Sie rechts neben dem entsprechenden Schlüssel auf das Menü. Klicken Sie auf „Datenlimit“. Um das Datenlimit für „Mein Zugriffsschlüssel“ zu ändern, klicken Sie auf das Symbol „Datenlimits“ ![Data limits icon](/images/data-limits-icon.png).
 
 ![Selecting the data limit setting icon for an individual access key](/images/snippet-15787423.png)
 

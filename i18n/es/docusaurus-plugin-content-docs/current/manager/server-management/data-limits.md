@@ -13,7 +13,7 @@ Cuando hayas establecido el límite, podrás ver cuánto le queda a cada usuario
 
 También puedes fijar un límite de datos concreto para cada una de tus claves de acceso, que prevalecerá sobre el límite predeterminado que tengas configurado. Aunque no tengas uno predeterminado, puedes fijar límites de datos para cualquier clave. 
 
- Para aplicar un límite de transferencia de datos a una clave, abre Administrador de Outline, accede a la pestaña Conexiones y dirígete a la clave en cuestión. Luego, haz clic en el menú que aparece a la derecha de la fila de esa clave y haz clic en Límite de datos. Para cambiar el límite de datos de "Mi clave de acceso", haz clic en el icono de la opción Límite de datos ![Icono de Límites de datos](https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw).
+ Para aplicar un límite de transferencia de datos a una clave, abre Administrador de Outline, accede a la pestaña Conexiones y dirígete a la clave en cuestión. Luego, haz clic en el menú que aparece a la derecha de la fila de esa clave y haz clic en Límite de datos. Para cambiar el límite de datos de "Mi clave de acceso", haz clic en el icono de la opción Límite de datos ![Icono de Límites de datos](/images/data-limits-icon.png).
 
 ![Selecting the data limit setting icon for an individual access key](/images/snippet-15787423.png)
 

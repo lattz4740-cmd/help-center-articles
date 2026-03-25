@@ -13,7 +13,7 @@ När du har ställt in en gräns kan du se hur nära gränsen varje användare �
 
 Du kan antingen ställa in en gräns för alla åtkomstnycklar eller ge varje nyckel en egen datagräns. Den här inställningen åsidosätter datagränser som är angivna som standard. Om du inte har ställt in någon datagräns som standard kan du fortfarande ställa in en datagräns för en nyckel. 
 
- Du ställer in en dataöverföringsgräns för en nyckel genom att öppna Outline Manager, klicka på den Anslutningar-flik där den nyckel som du vill ställa in finns och sedan klicka på menyn till höger om nyckelns rad. Klicka sedan på Datagräns. Klicka på datagränsikonen ![Ikon för datagränser](https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw) om du vill ändra datagränsen på Min åtkomstnyckel.
+ Du ställer in en dataöverföringsgräns för en nyckel genom att öppna Outline Manager, klicka på den Anslutningar-flik där den nyckel som du vill ställa in finns och sedan klicka på menyn till höger om nyckelns rad. Klicka sedan på Datagräns. Klicka på datagränsikonen ![Ikon för datagränser](/images/data-limits-icon.png) om du vill ändra datagränsen på Min åtkomstnyckel.
 
 ![Selecting the data limit setting icon for an individual access key](/images/snippet-15787423.png)
 

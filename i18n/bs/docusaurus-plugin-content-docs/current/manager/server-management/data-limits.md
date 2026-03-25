@@ -13,7 +13,7 @@ Kada postavite ograničenje, možete vidjeti koliko je svaki korisnik blizu ogra
 
 Osim što možete postaviti ograničenje za sve pristupne ključeve, možete svakom ključu odobriti i pojedinačno ograničenje prenosa podataka. Ova postavka će nadjačati zadano ograničenje prenosa podataka koje ste postavili. Ako ga niste postavili, i dalje možete postaviti ograničenje prenosa podataka za bilo koji ključ. 
 
- Da postavite ograničenje prenosa podataka za neki ključ, otvorite Outline Manager, idite na karticu Veze na kojoj se nalazi ključ koji želite postaviti i kliknite na meni koji se nalazi desno od reda ključa. Tu kliknite na Ograničenje prenosa podataka. Da promijenite ograničenje prenosa podataka za "Moj pristupni ključ", kliknite na ikonu ograničenja prenosa podataka ![Ova slika nije dostupna jer nemate prava da je vidite ili je uklonjena iz sistema](https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw).
+ Da postavite ograničenje prenosa podataka za neki ključ, otvorite Outline Manager, idite na karticu Veze na kojoj se nalazi ključ koji želite postaviti i kliknite na meni koji se nalazi desno od reda ključa. Tu kliknite na Ograničenje prenosa podataka. Da promijenite ograničenje prenosa podataka za "Moj pristupni ključ", kliknite na ikonu ograničenja prenosa podataka ![Ova slika nije dostupna jer nemate prava da je vidite ili je uklonjena iz sistema](/images/data-limits-icon.png).
 
 ![Selecting the data limit setting icon for an individual access key](/images/snippet-15787423.png)
 

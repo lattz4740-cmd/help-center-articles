@@ -13,7 +13,7 @@ Sodra jy ’n limiet stel, kan jy op die toegangsleutelbladsy sien hoe naby elke
 
 Bykomend tot die vermoë om ’n datalimiet vir al jou toegangsleutels te stel, kan jy ook vir elke sleutel sy eie datalimiet gee. Hierdie instelling sal enige verstekdatalimiet ter syde stel. As jy egter nie ’n verstekdatalimiet gestel het nie, kan jy nog steeds ’n datalimiet vir enige sleutel stel. 
 
- Om ’n sleutel se dataoordraglimiet te stel, moet jy Outline Manager oopmaak en navigeer na die Verbindings-oortjie waar die sleutel is wat jy wil stel. Dan moet jy klik op die kieslys aan die regterkant van die sleutel se ry. Klik van hier af op Datalimiet. Klik die Datalimiet-ikoon ![Hierdie prent is nie beskikbaar nie omdat jy nie die voorregte het om dit te sien nie, of dit is van die stelsel af verwyder](https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw) om die datalimiet op “My toegangsleutel” te verander.
+ Om ’n sleutel se dataoordraglimiet te stel, moet jy Outline Manager oopmaak en navigeer na die Verbindings-oortjie waar die sleutel is wat jy wil stel. Dan moet jy klik op die kieslys aan die regterkant van die sleutel se ry. Klik van hier af op Datalimiet. Klik die Datalimiet-ikoon ![Hierdie prent is nie beskikbaar nie omdat jy nie die voorregte het om dit te sien nie, of dit is van die stelsel af verwyder](/images/data-limits-icon.png) om die datalimiet op “My toegangsleutel” te verander.
 
 ![Selecting the data limit setting icon for an individual access key](/images/snippet-15787423.png)
 

@@ -13,7 +13,7 @@ Ko nastavite omejitev, si lahko na strani s ključi za dostop na paličnem grafi
 
 Poleg tega, da lahko nastavite omejitev za vse ključe za dostop, lahko omejitev podatkov določite tudi za posamezen ključ. Ta nastavitev bo preglasila katero koli privzeto omejitev podatkov, ki ste jo nastavili, če pa privzete omejitve podatkov niste nastavili, lahko še vedno nastavite omejitev podatkov za kateri koli ključ. 
 
- Če želite nastaviti omejitev prenosa podatkov za ključ, odprite Upravitelja za Outline, pomaknite se na zavihek Povezave, na katerem je ključ, ki ga želite nastaviti, in kliknite meni na desni strani vrstice ključa. Tam kliknite »Omejitev podatkov«. Če želite spremeniti omejitev podatkov za »Moj ključ za dostop«, kliknite ikono omejitve podatkov ![Slika ni na voljo: Ker nimate pravic, da bi si jo lahko ogledali, ali ker je bila odstranjena iz sistema](https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw).
+ Če želite nastaviti omejitev prenosa podatkov za ključ, odprite Upravitelja za Outline, pomaknite se na zavihek Povezave, na katerem je ključ, ki ga želite nastaviti, in kliknite meni na desni strani vrstice ključa. Tam kliknite »Omejitev podatkov«. Če želite spremeniti omejitev podatkov za »Moj ključ za dostop«, kliknite ikono omejitve podatkov ![Slika ni na voljo: Ker nimate pravic, da bi si jo lahko ogledali, ali ker je bila odstranjena iz sistema](/images/data-limits-icon.png).
 
 ![Selecting the data limit setting icon for an individual access key](/images/snippet-15787423.png)
 

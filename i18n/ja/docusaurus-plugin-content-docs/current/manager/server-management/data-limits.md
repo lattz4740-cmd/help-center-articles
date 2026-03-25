@@ -13,7 +13,7 @@ sidebar_label: アクセスキーにデータの上限を設定する方法
 
 すべてのアクセスキーに上限を設定できるほか、各キーに独自のデータの上限を設定できます。この設定は、設定したどのデフォルトのデータの上限よりも優先されます。ただし、デフォルトのデータの上限を設定していない場合は、任意のキーにデータの上限を設定できます。 
 
- キーのデータ転送の上限を設定するには、Outline マネージャーを開いて、設定するキーが含まれている [接続] タブに移動し、キーの行の右側にあるメニューをクリックします。[データの上限] をクリックします。[アクセスキー] のデータの上限を変更するには、「データの上限」アイコン ![「データの上限」アイコン](https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw) をクリックします。
+ キーのデータ転送の上限を設定するには、Outline マネージャーを開いて、設定するキーが含まれている [接続] タブに移動し、キーの行の右側にあるメニューをクリックします。[データの上限] をクリックします。[アクセスキー] のデータの上限を変更するには、「データの上限」アイコン ![「データの上限」アイコン](/images/data-limits-icon.png) をクリックします。
 
 ![Selecting the data limit setting icon for an individual access key](/images/snippet-15787423.png)
 

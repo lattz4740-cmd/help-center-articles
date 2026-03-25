@@ -13,7 +13,7 @@ Jakmile limit nastavíte, uvidíte, nakolik se mu jednotliví uživatelé přibl
 
 Vedle možnosti nastavit limit pro všechny přístupové klíče můžete taky každému klíči přidělit vlastní datový limit. Toto nastavení přepíše výchozí datový limit, který jste případně určili. Pokud jste výchozí limit nenastavili, můžete pořád nastavit datový limit pro kterýkoli z klíčů. 
 
- Pokud chcete nastavit limit klíče pro přenos dat, otevřete Správce Outline, přejděte na kartu Připojení, která obsahuje požadovaný klíč, a klikněte na nabídku v pravé části řádky klíče. Z nabídky vyberte možnost Datový limit. Datový limit pro daný přístupový klíč změníte po kliknutí na ikonu Datové limity ![Tento obrázek není k dispozici, protože nemáte oprávnění ho zobrazit nebo byl ze systému odstraněn](https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw).
+ Pokud chcete nastavit limit klíče pro přenos dat, otevřete Správce Outline, přejděte na kartu Připojení, která obsahuje požadovaný klíč, a klikněte na nabídku v pravé části řádky klíče. Z nabídky vyberte možnost Datový limit. Datový limit pro daný přístupový klíč změníte po kliknutí na ikonu Datové limity ![Tento obrázek není k dispozici, protože nemáte oprávnění ho zobrazit nebo byl ze systému odstraněn](/images/data-limits-icon.png).
 
 ![Selecting the data limit setting icon for an individual access key](/images/snippet-15787423.png)
 

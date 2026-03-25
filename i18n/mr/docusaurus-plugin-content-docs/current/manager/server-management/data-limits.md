@@ -13,7 +13,7 @@ sidebar_label: "मी अ‍ॅक्सेस कीवर डेटा मर
 
 तुमच्या सर्व अ‍ॅक्सेस कीसाठी मर्यादा सेट करता येण्यासोबतच, तुम्ही प्रत्येक कीला तिची स्वतःची डेटा मर्यादा देऊ शकता. हे सेटिंग तुम्ही सेट केलेली कोणतीही डीफॉल्ट डेटा मर्यादा ओव्हरराइड करेल, पण तुम्ही डीफॉल्ट डेटा मर्यादा सेट केली नसल्यास, तुम्ही तरीही कोणत्याही कीसाठी डेटा मर्यादा सेट करू शकता. 
 
- एखाद्या कीची डेटा ट्रान्सफर मर्यादा सेट करण्यासाठी, Outline Manager उघडा, तुम्हाला सेट करायची की असलेल्या कनेक्शन टॅबवर नेव्हिगेट करा आणि कीच्या पंक्तीच्या उजवीकडील मेनूवर क्लिक करा. तिथून, डेटा मर्यादा वर क्लिक करा. "माझी ॲक्सेस की" वर डेटा मर्यादा बदलण्यासाठी, डेटा मर्यादा आयकन ![Data limits icon](https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw) वर क्लिक करा.
+ एखाद्या कीची डेटा ट्रान्सफर मर्यादा सेट करण्यासाठी, Outline Manager उघडा, तुम्हाला सेट करायची की असलेल्या कनेक्शन टॅबवर नेव्हिगेट करा आणि कीच्या पंक्तीच्या उजवीकडील मेनूवर क्लिक करा. तिथून, डेटा मर्यादा वर क्लिक करा. "माझी ॲक्सेस की" वर डेटा मर्यादा बदलण्यासाठी, डेटा मर्यादा आयकन ![Data limits icon](/images/data-limits-icon.png) वर क्लिक करा.
 
 ![Selecting the data limit setting icon for an individual access key](/images/snippet-15787423.png)
 

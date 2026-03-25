@@ -13,7 +13,7 @@ sidebar_label: 如何設定存取金鑰的數據用量上限？
 
 除了能設定所有存取金鑰的數據用量上限外，亦可為個別金鑰設定專屬上限。此設定將覆寫先前所設定的預設數據用量上限，但即使你尚未設定預設上限，仍可為個別金鑰設定。 
 
- 如想設定某個金鑰的資料傳輸上限，請開啟 Outline Manager、前往該金鑰所在的「連線」分頁，然後按一下金鑰列右側的選單。然後，按一下 [數據用量上限]。如要變更「我的存取金鑰」的數據用量上限，請按一下「數據用量上限」圖示 ![此圖片無法使用，原因是：你沒有圖片檢視權限，或該圖片已從系統中移除](https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw)。
+ 如想設定某個金鑰的資料傳輸上限，請開啟 Outline Manager、前往該金鑰所在的「連線」分頁，然後按一下金鑰列右側的選單。然後，按一下 [數據用量上限]。如要變更「我的存取金鑰」的數據用量上限，請按一下「數據用量上限」圖示 ![此圖片無法使用，原因是：你沒有圖片檢視權限，或該圖片已從系統中移除](/images/data-limits-icon.png)。
 
 ![Selecting the data limit setting icon for an individual access key](/images/snippet-15787423.png)
 

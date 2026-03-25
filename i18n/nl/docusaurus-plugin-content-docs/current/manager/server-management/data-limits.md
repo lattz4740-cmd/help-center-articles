@@ -13,7 +13,7 @@ Nadat je een limiet hebt ingesteld, kun je op de pagina met toegangssleutels con
 
 Je kunt niet alleen een datalimiet instellen voor al je toegangssleutels, maar ook voor elke sleutel apart. Deze instelling overschrijft de standaard datalimiet die je hebt ingesteld. Ook als je geen standaardlimiet hebt ingesteld, kun je een datalimiet instellen voor afzonderlijke sleutels. 
 
- Als je een datalimiet wilt instellen, open je Outline Manager. Ga naar het tabblad Verbindingen met de sleutel waarvoor je de limiet wilt instellen en klik rechts van de rij met de sleutel op het menu. Klik dan op Datalimiet. Als je de datalimiet voor Mijn toegangssleutel wilt wijzigen, klik je op het icoon Datalimieten ![icoon voor datalimieten](https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw).
+ Als je een datalimiet wilt instellen, open je Outline Manager. Ga naar het tabblad Verbindingen met de sleutel waarvoor je de limiet wilt instellen en klik rechts van de rij met de sleutel op het menu. Klik dan op Datalimiet. Als je de datalimiet voor Mijn toegangssleutel wilt wijzigen, klik je op het icoon Datalimieten ![icoon voor datalimieten](/images/data-limits-icon.png).
 
 ![Selecting the data limit setting icon for an individual access key](/images/snippet-15787423.png)
 

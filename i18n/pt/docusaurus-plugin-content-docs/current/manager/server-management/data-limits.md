@@ -13,7 +13,7 @@ Depois de definir o limite, pode ver a proximidade de cada utilizador em relaç�
 
 Além de poder definir um limite para todas as suas chaves de acesso, também pode conceder a cada chave o seu próprio limite de dados. Esta definição substitui qualquer limite de dados que tenha predefinido. No entanto, se não tiver predefinido nenhum limite de dados, continua a poder definir um limite de dados para qualquer chave. 
 
- Para definir o limite de transferência de dados de uma chave, abra o Gestor Outline, navegue para o separador Ligações que contém a chave que quer definir e clique no menu no lado direito da linha da chave. A seguir, clique em Limite de dados. Para alterar o limite de dados em "A minha chave de acesso", clique no ícone Limite de dados ![Ícone de limites de dados](https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw).
+ Para definir o limite de transferência de dados de uma chave, abra o Gestor Outline, navegue para o separador Ligações que contém a chave que quer definir e clique no menu no lado direito da linha da chave. A seguir, clique em Limite de dados. Para alterar o limite de dados em "A minha chave de acesso", clique no ícone Limite de dados ![Ícone de limites de dados](/images/data-limits-icon.png).
 
 ![Selecting the data limit setting icon for an individual access key](/images/snippet-15787423.png)
 

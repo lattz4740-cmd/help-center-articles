@@ -13,7 +13,7 @@ Une fois la limite fixée, vous pouvez suivre la consommation de chaque utilisat
 
 Outre la possibilité de fixer une limite pour l'ensemble de vos clés d'accès, vous pouvez doter chaque clé de sa propre limite. Ce paramètre prime sur toute limite de données définie par défaut. Il convient de noter qu'il est possible d'appliquer une limite de données à une clé en particulier même si aucune limite par défaut n'a été définie.
 
- Pour fixer la limite de transfert de données d'une clé, ouvrez Outline Manager, accédez à l'onglet "Connexions" qui contient la clé que vous souhaitez configurer, puis cliquez sur le menu situé à droite de la ligne correspondant à la clé. Ensuite, cliquez sur "Limite de données". Pour changer la limite de données dans "Ma clé d'accès", cliquez sur l'icône correspondante ![Icône Limites des données](https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw).
+ Pour fixer la limite de transfert de données d'une clé, ouvrez Outline Manager, accédez à l'onglet "Connexions" qui contient la clé que vous souhaitez configurer, puis cliquez sur le menu situé à droite de la ligne correspondant à la clé. Ensuite, cliquez sur "Limite de données". Pour changer la limite de données dans "Ma clé d'accès", cliquez sur l'icône correspondante ![Icône Limites des données](/images/data-limits-icon.png).
 
 ![Selecting the data limit setting icon for an individual access key](/images/snippet-15787423.png)
 

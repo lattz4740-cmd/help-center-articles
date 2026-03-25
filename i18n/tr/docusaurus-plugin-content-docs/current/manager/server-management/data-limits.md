@@ -13,7 +13,7 @@ Sınırı belirledikten sonra, erişim anahtarı sayfasında her kullanıcının
 
 Tüm erişim anahtarlarınız için sınır belirlemenin yanı sıra her anahtarın kendi veri sınırını da belirleyebilirsiniz. Bu ayar diğer tüm varsayılan veri sınırlarınızı geçersiz kılar. Ancak varsayılan veri sınırınız yoksa bile herhangi bir anahtar için veri sınırı belirleyebilirsiniz. 
 
- Bir anahtarın veri aktarımı sınırını belirlemek için Outline Manager'ı açın, ayarlamak istediğiniz anahtarın yer aldığı Bağlantılar sekmesine gidin ve anahtarın bulunduğu satırın sağ tarafındaki menüyü tıklayın. Daha sonra Veri Sınırı'nı tıklayın. "Erişim anahtarım" bölümündeki veri sınırını değiştirmek için Veri Sınırları simgesini ![Veri Sınırları simgesi](https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw) tıklayın.
+ Bir anahtarın veri aktarımı sınırını belirlemek için Outline Manager'ı açın, ayarlamak istediğiniz anahtarın yer aldığı Bağlantılar sekmesine gidin ve anahtarın bulunduğu satırın sağ tarafındaki menüyü tıklayın. Daha sonra Veri Sınırı'nı tıklayın. "Erişim anahtarım" bölümündeki veri sınırını değiştirmek için Veri Sınırları simgesini ![Veri Sınırları simgesi](/images/data-limits-icon.png) tıklayın.
 
 ![Selecting the data limit setting icon for an individual access key](/images/snippet-15787423.png)
 

@@ -13,7 +13,7 @@ Setelah menetapkan batas, Anda dapat melihat seberapa dekat pengguna mencapai ba
 
 Selain menetapkan batas untuk semua kunci akses, Anda dapat memberi setiap kunci batas datanya masing-masing. Setelan ini akan mengganti batas data default apa pun yang pernah Anda tetapkan. Namun, jika belum menetapkan batas data default, Anda masih bisa menetapkan batas data untuk kunci mana pun. 
 
- Untuk menetapkan batas transfer data kunci, buka Outline Manager, lalu pilih tab Koneksi berisi kunci yang ingin Anda tetapkan, lalu klik menu di sebelah kanan baris kunci. Dari sana, klik Batas Data. Untuk mengubah batas data di "Kunci akses saya", klik ikon Batas Data ![Ikon batas data](https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw).
+ Untuk menetapkan batas transfer data kunci, buka Outline Manager, lalu pilih tab Koneksi berisi kunci yang ingin Anda tetapkan, lalu klik menu di sebelah kanan baris kunci. Dari sana, klik Batas Data. Untuk mengubah batas data di "Kunci akses saya", klik ikon Batas Data ![Ikon batas data](/images/data-limits-icon.png).
 
 ![Selecting the data limit setting icon for an individual access key](/images/snippet-15787423.png)
 

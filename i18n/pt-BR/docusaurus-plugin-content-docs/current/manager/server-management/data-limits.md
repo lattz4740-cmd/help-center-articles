@@ -13,7 +13,7 @@ Após definir um limite, você pode consultar a situação de cada usuário na p
 
 Além de definir um limite de dados padrão para todas as chaves de acesso, é possível configurar um limite próprio para cada chave. Essa configuração substitui qualquer limite padrão definido. Se você não tiver estabelecido um, ainda pode definir limites específicos para chaves individuais. 
 
- Para definir o limite de transferência de dados de uma chave, abra o Outline Manager, vá até a guia "Conexões" e clique no menu à direita da linha da chave. Em seguida, clique em "Limite de dados". Para alterar o limite de dados em "Minha chave de acesso", clique no ícone Limites de Dados ![Ícone de limites de dados](https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw).
+ Para definir o limite de transferência de dados de uma chave, abra o Outline Manager, vá até a guia "Conexões" e clique no menu à direita da linha da chave. Em seguida, clique em "Limite de dados". Para alterar o limite de dados em "Minha chave de acesso", clique no ícone Limites de Dados ![Ícone de limites de dados](/images/data-limits-icon.png).
 
 ![Selecting the data limit setting icon for an individual access key](/images/snippet-15787423.png)
 

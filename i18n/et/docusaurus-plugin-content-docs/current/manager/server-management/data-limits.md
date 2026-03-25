@@ -13,7 +13,7 @@ Pärast piirangu määramist näete pääsuvõtme lehel, kus tulpdiagrammid näi
 
 Lisaks kõigile pääsuvõtmetele piirangu määramisele saate igale võtmele eraldi andmepiirangu määrata. See seade alistab kõik teie määratud andmete vaikepiirangud, kuid kui te pole andmete vaikepiirangut määranud, saate siiski mis tahes võtmele andmepiirangu määrata. 
 
- Võtme andmeedastuse piirangu määramiseks avage Outline Manager, navigeerige vahekaardile Ühendused, mis sisaldab määrata soovitud võtit, ja klõpsake võtme real paremal oleval menüül. Seejärel klõpsake valikul Andmepiirang. Võtme „Minu pääsuvõti“ andmepiirangu muutmiseks klõpsake andmepiirangute ikoonil ![See pilt pole saadaval järgmisel põhjusel: teil pole luba seda näha või see on süsteemist eemaldatud.](https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw).
+ Võtme andmeedastuse piirangu määramiseks avage Outline Manager, navigeerige vahekaardile Ühendused, mis sisaldab määrata soovitud võtit, ja klõpsake võtme real paremal oleval menüül. Seejärel klõpsake valikul Andmepiirang. Võtme „Minu pääsuvõti“ andmepiirangu muutmiseks klõpsake andmepiirangute ikoonil ![See pilt pole saadaval järgmisel põhjusel: teil pole luba seda näha või see on süsteemist eemaldatud.](/images/data-limits-icon.png).
 
 ![Selecting the data limit setting icon for an individual access key](/images/snippet-15787423.png)
 

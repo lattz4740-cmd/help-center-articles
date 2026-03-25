@@ -13,7 +13,7 @@ Po ustawieniu limitu możesz sprawdzić, na ile zbliżają się do niego poszcze
 
 Oprócz ustawienia jednego limitu dla wszystkich kluczy dostępu możesz przyznać każdemu kluczowi jego własny limit danych. To ustawienie zawsze zastąpi domyślny limit danych, ale jeśli nie określono domyślnego limitu danych, nadal można ustawić limit danych dla każdego klucza. 
 
- Aby ustawić limit transferu danych dla danego klucza, otwórz Menedżera Outline, przejdź do karty Połączenia, która zawiera ten klucz, i kliknij menu po prawej stronie wiersza klucza. Tam wybierz Limit danych. Aby zmienić limit danych dla „Mój klucz dostępu”, kliknij ikonę Limity danych ![Ten obraz jest niedostępny, ponieważ: nie masz uprawnień do jego wyświetlenia lub został on usunięty z systemu.](https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw).
+ Aby ustawić limit transferu danych dla danego klucza, otwórz Menedżera Outline, przejdź do karty Połączenia, która zawiera ten klucz, i kliknij menu po prawej stronie wiersza klucza. Tam wybierz Limit danych. Aby zmienić limit danych dla „Mój klucz dostępu”, kliknij ikonę Limity danych ![Ten obraz jest niedostępny, ponieważ: nie masz uprawnień do jego wyświetlenia lub został on usunięty z systemu.](/images/data-limits-icon.png).
 
 ![Selecting the data limit setting icon for an individual access key](/images/snippet-15787423.png)
 

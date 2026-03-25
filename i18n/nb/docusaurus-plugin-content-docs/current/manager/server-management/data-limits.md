@@ -13,7 +13,7 @@ Når du har angitt en grense, kan du se hvor nær grensen hver bruker er, på Ti
 
 Du kan angi en grense for alle tilgangsnøklene dine og en egen datagrense for hver tilgangsnøkkel. Denne innstillingen overstyrer eventuelle standard datagrenser du har angitt, men hvis du ikke har angitt noen standardgrense, kan du likevel angi en datagrense for en hvilken som helst nøkkel. 
 
- For å angi en grense for dataoverføring for en nøkkel må du åpne Outline-administrator, gå til Tilkoblinger-fanen med den aktuelle nøkkelen og klikke på menyen til høyre for nøkkelraden. Der klikker du på Datagrense. For å endre datagrensen for «Min tilgangsnøkkel» må du klikke på datagrenseikonet ![Ikon for datagrenser](https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw).
+ For å angi en grense for dataoverføring for en nøkkel må du åpne Outline-administrator, gå til Tilkoblinger-fanen med den aktuelle nøkkelen og klikke på menyen til høyre for nøkkelraden. Der klikker du på Datagrense. For å endre datagrensen for «Min tilgangsnøkkel» må du klikke på datagrenseikonet ![Ikon for datagrenser](/images/data-limits-icon.png).
 
 ![Selecting the data limit setting icon for an individual access key](/images/snippet-15787423.png)
 

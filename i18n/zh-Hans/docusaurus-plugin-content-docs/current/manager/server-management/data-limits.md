@@ -13,7 +13,7 @@ sidebar_label: 如何为访问密钥设置流量上限？
 
 除了为所有访问密钥设置统一流量上限外，您还可以为每个密钥单独设置流量上限。单独上限将覆盖您设置的任何默认流量上限，但即使没有设置默认上限，您也可以为任一密钥单独设置流量上限。 
 
- 如需为密钥设置数据传输流量上限，请打开 Outline 管理器，前往“连接”标签页，找到要设置的密钥并点击其右侧的菜单，然后点击“流量上限”。如需更改“我的访问密钥”的流量上限，请点击“流量上限”图标 ![此图像无法显示，因为您无权查看它，或者它已从系统中移除](https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw)。
+ 如需为密钥设置数据传输流量上限，请打开 Outline 管理器，前往“连接”标签页，找到要设置的密钥并点击其右侧的菜单，然后点击“流量上限”。如需更改“我的访问密钥”的流量上限，请点击“流量上限”图标 ![此图像无法显示，因为您无权查看它，或者它已从系统中移除](/images/data-limits-icon.png)。
 
 ![Selecting the data limit setting icon for an individual access key](/images/snippet-15787423.png)
 

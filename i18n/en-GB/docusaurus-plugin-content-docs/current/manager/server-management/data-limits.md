@@ -13,7 +13,7 @@ Once you set a limit, you can see how close each user is to the limit on the acc
 
 In addition to being able to set a limit for all of your access keys, you can grant each key its own data limit. This setting will override any default data limit that you have set, but if you have not set a default data limit, you can still set a data limit for any key. 
 
- To set a key's data transfer limit, open the Outline Manager, navigate to the Connections tab that contains the key that you want to set and click on the menu on the right side of the key's row. From there, click on Data limit. To change the data limit on 'My access key', click the data limits icon ![This image is not available because: You don't have the privileges to see it or it has been removed from the system](https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw).
+ To set a key's data transfer limit, open the Outline Manager, navigate to the Connections tab that contains the key that you want to set and click on the menu on the right side of the key's row. From there, click on Data limit. To change the data limit on 'My access key', click the data limits icon ![This image is not available because: You don't have the privileges to see it or it has been removed from the system](/images/data-limits-icon.png).
 
 ![Selecting the data limit setting icon for an individual access key](/images/snippet-15787423.png)
 

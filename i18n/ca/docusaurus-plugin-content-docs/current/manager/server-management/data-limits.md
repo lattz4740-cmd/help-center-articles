@@ -13,7 +13,7 @@ Un cop estableixis un límit, podràs veure quant li queda a cada usuari per ass
 
 A més de poder establir un límit per a totes les teves claus d'accés, pots concedir a cada clau el seu propi límit de dades. Aquesta opció de configuració anul·larà qualsevol límit de dades predeterminat que hagis establert, però si no n'has definit cap, podràs configurar un límit de dades per a qualsevol clau. 
 
- Per establir el límit de transferència de dades d'una clau, obre el Gestor d'Outline, navega fins a la pestanya Connexions que conté la clau en qüestió i fes clic al menú que hi ha a la part dreta de la fila de la clau. Des d'aquí, fes clic a Límit de dades. Per canviar el límit de dades a "La meva clau d'accés", fes clic a la icona Límit de dades ![Aquesta imatge no està disponible perquè o bé no tens els privilegis per veure-la o bé s'ha suprimit del sistema.](https://lh7-us.googleusercontent.com/docsz/AD_4nXc2jByBppEN1yHPjbK2BxNuYxwmfW98eYRyJGiDmg4lSLNLxf5aav2971IntWOfqF8oJ1zhW7RVdaxJVxkdZkpsDeSgnBbJfNisidjKbcRh3FheoVjQNSZHHEgUz155B1_wRjlB2mAIa6Qfs5k7Mg_i6YJhYle80EPoZVkdl09uvBbSxUgfLvPserKL8dSCElVSLcuo7uF232qnTKFKM4gt_f0iDQ?key=oLpwwvDVb_5YbZSyjC9Agw).
+ Per establir el límit de transferència de dades d'una clau, obre el Gestor d'Outline, navega fins a la pestanya Connexions que conté la clau en qüestió i fes clic al menú que hi ha a la part dreta de la fila de la clau. Des d'aquí, fes clic a Límit de dades. Per canviar el límit de dades a "La meva clau d'accés", fes clic a la icona Límit de dades ![Aquesta imatge no està disponible perquè o bé no tens els privilegis per veure-la o bé s'ha suprimit del sistema.](/images/data-limits-icon.png).
 
 ![Selecting the data limit setting icon for an individual access key](/images/snippet-15787423.png)
 
