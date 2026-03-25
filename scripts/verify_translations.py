@@ -291,6 +291,24 @@ def extract_bold_only_lines(md_text: str) -> list[str]:
     return results
 
 
+def find_bare_urls(md_text: str) -> list[str]:
+    """Find bare URLs in markdown that aren't inside links or code blocks.
+
+    A proper markdown doc should wrap URLs in [text](url) or <url> syntax.
+    Bare URLs are likely conversion artifacts.
+    """
+    text = strip_code_blocks(md_text)
+    # Remove frontmatter
+    text = re.sub(r'^---\n.*?\n---\n', '', text, flags=re.DOTALL)
+    # Remove entire markdown links [text](url) including text
+    text = re.sub(r'\[([^\]]*)\]\([^)]+\)', '', text)
+    # Remove angle-bracket URLs <url>
+    text = re.sub(r'<https?://[^>]+>', '', text)
+    # Now find any remaining bare URLs
+    bare = re.findall(r'https?://[^\s)\]>]+', text)
+    return bare
+
+
 class Issue:
     """A verification issue."""
     def __init__(self, locale: str, doc_path: str, category: str, message: str):
@@ -427,6 +445,14 @@ def verify_locale(locale: str, english_paths: set[str]) -> list[Issue]:
                 locale, doc_path, "BOLD_AS_HEADING",
                 f"Translation has {len(tr_bolds)} bold-only line(s) that "
                 f"may be misformatted headings: {[b[:40] for b in tr_bolds[:3]]}"
+            ))
+
+        # Bare URLs (not inside markdown links or code blocks)
+        bare_urls = find_bare_urls(tr_text)
+        if bare_urls:
+            issues.append(Issue(
+                locale, doc_path, "BARE_URL",
+                f"Found {len(bare_urls)} bare URL(s): {bare_urls[:3]}"
             ))
 
         # Content parity
@@ -640,6 +666,17 @@ def main():
 
     total_issues = 0
     issues_by_category: dict[str, int] = {}
+
+    # Check English docs for bare URLs
+    for doc_path in sorted(english_paths):
+        en_text = read_doc(ENGLISH_DOCS_DIR, doc_path)
+        bare = find_bare_urls(en_text)
+        if bare:
+            issue = Issue("en", doc_path, "BARE_URL",
+                          f"Found {len(bare)} bare URL(s): {bare[:3]}")
+            print(issue)
+            issues_by_category["BARE_URL"] = issues_by_category.get("BARE_URL", 0) + 1
+            total_issues += 1
 
     for locale in LOCALES:
         issues = verify_locale(locale, english_paths)

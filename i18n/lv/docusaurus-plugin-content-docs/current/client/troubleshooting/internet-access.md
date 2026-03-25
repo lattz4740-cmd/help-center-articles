@@ -5,4 +5,4 @@ sidebar_label: "Kāpēc nevar piekļūt internetam, pat ja ir izveidots savienoj
 
 Ja izmantojat mobilo tālruni, mēģiniet mainīt mobilo datu savienojumu pret Wi-Fi savienojumu vai pretēji. Dažreiz viens savienojuma veids darbojas, bet cits ne. Ja izmantojat datoru, mēģiniet pārtraukt platjoslas savienojumu un atkārtoti izveidot savienojumu.
 
-Ja problēmu tomēr neizdodas novērst, iespējams, ir radusies ar Outline serveri saistīta problēma. Sazinieties ar [pakalpojuma pārvaldnieku](/about/terminology) un lūdziet jaunu piekļuves atslēgu citam serverim. Pārvaldnieks, iespējams, varēs arī samazināt jūsuhttps://google-jigsaw--jigsawuat.sandbox.my.site.com/outline/s/article/Terminology [piekļuves atslēgas](/about/terminology) datu ierobežojumu, ja atslēgas kvota būs pārsniegta.
+Ja problēmu tomēr neizdodas novērst, iespējams, ir radusies ar Outline serveri saistīta problēma. Sazinieties ar [pakalpojuma pārvaldnieku](/about/terminology) un lūdziet jaunu piekļuves atslēgu citam serverim. Pārvaldnieks, iespējams, varēs arī samazināt jūsu[piekļuves atslēgas](/about/terminology) datu ierobežojumu, ja atslēgas kvota būs pārsniegta.
