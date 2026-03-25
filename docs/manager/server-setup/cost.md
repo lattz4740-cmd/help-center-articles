@@ -5,7 +5,7 @@ sidebar_label: Cost
 
 The Outline software is free for anyone, whether you are a server administrator managing the VPN or someone using Outline to access the open internet.
 
- Outline does require access to a cloud server in order to run, though. Server administrators who already have access to a server can install Outline on it for no additional cost. Those without access to a server can get access from a cloud services provider, like [DigitalOcean](http://www.digitalocean.com/) or Amazon Web Services, for about $5 USD per month for 1 terabyte of data transfer allowance — that’s enough to support hundreds of users on a single server.
+ Outline does require access to a cloud server in order to run, though. Server administrators who already have access to a server can install Outline on it for no additional cost. Those without access to a server can get access from a cloud services provider, like [DigitalOcean](https://www.digitalocean.com/) or Amazon Web Services, for about $5 USD per month for 1 terabyte of data transfer allowance — that’s enough to support hundreds of users on a single server.
 
  An example of how you can do the math to determine how much it'd cost to run Outline with your choice cloud provider:
 
