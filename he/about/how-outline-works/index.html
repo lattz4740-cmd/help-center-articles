@@ -11,8 +11,8 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Outline Help Center" href="/he/opensearch.xml"><link rel="stylesheet" href="/he/assets/css/styles.46bfbfd8.css">
-<script src="/he/assets/js/runtime~main.e5536333.js" defer="defer"></script>
-<script src="/he/assets/js/main.43fb68cd.js" defer="defer"></script>
+<script src="/he/assets/js/runtime~main.15123f19.js" defer="defer"></script>
+<script src="/he/assets/js/main.aaf6944b.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -22,13 +22,13 @@
 <p>​התקנת Outline היא תהליך פשוט מבחינת המשתמשים, אבל ברקע מתבצעות כמה וכמה פעולות מורכבות להתקנת השרת. כשמתקינים את Outline, סקריפט ההתקנה מבצע את הפעולות הבאות:</p>
 <ul>
 <li class="">הגרסה היציבה של קובץ האימג&#x27; של Shadowbox מאוחזרת ומיובאת באמצעות Docker. קובץ האימג&#x27; מתארח ב-<a href="https://quay.io/" target="_blank" rel="noopener noreferrer" class="">Quay.io</a> בכתובת <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank" rel="noopener noreferrer" class="">https://quay.io/repository/outline/shadowbox?tab=tags</a>. קובץ האימג&#x27; מכיל את שרת Outline ואת ה-Management API, שמשמש מאוחר יותר את אפליקציית ניהול השרת של Outline ליצירה ולהסרה של מפתחות גישה, להצטרפות או לביטול ההצטרפות לדיווח על מדדים אנונימיים וכו&#x27;.</li>
-<li class="">‫<a href="https://github.com/v2tec/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> מותקנת ומוגדרת. התוכנה הזאת בודקת כל שעה אם יש עדכון לקובץ האימג&#x27;, כדי שהשרת של Outline תמיד יהיה עדכני ויכלול את התכונות החדשות ושיפורי האבטחה.</li>
+<li class="">‫<a href="https://github.com/containrrr/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> מותקנת ומוגדרת. התוכנה הזאת בודקת כל שעה אם יש עדכון לקובץ האימג&#x27;, כדי שהשרת של Outline תמיד יהיה עדכני ויכלול את התכונות החדשות ושיפורי האבטחה.</li>
 <li class="">שרת אינטרנט, שמאפשר גישה לממשק ה-Management API, מופעל ביציאה אקראית ובנתיב אקראי וסודי.</li>
 <li class="">נוצר <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">אישור SSL בחתימה עצמית</a> כדי שיהיה אפשר להצפין את ניהול השרת של Outline באמצעות TLS למרות שאין לו שם דומיין. בנוסף, טביעת אצבע של האישור הזה נוצרת ואז מאוחסנת באפליקציית Outline Manager, כדי לעזור במניעת התקפות MITM (&quot;אדם בתווך&quot;).</li>
 </ul>
 <p>לא צריך להגדיר את Outline לאחר ההתקנה.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="אבטחת-השרת">אבטחת השרת<a href="#אבטחת-השרת" class="hash-link" aria-label="קישור ישיר אל אבטחת השרת" title="קישור ישיר אל אבטחת השרת" translate="no">​</a></h2>
-<p>אפליקציית Outline כתובה בקוד פתוח. כלומר, כל אחד יכול לקרוא את הקוד ולשפר אותו אם מתגלות נקודות חולשה. הקוד שלנו מתארח ב-<a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a>.</p>
+<p>אפליקציית Outline כתובה בקוד פתוח. כלומר, כל אחד יכול לקרוא את הקוד ולשפר אותו אם מתגלות נקודות חולשה. הקוד שלנו מתארח ב-<a href="https://github.com/search?q=org%3AOutlineFoundation+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a>.</p>
 <p>בנוסף, כל השרתים המותקנים של Outline מתעדכנים אוטומטית כשמשוחררת גרסת תוכנה חדשה, כדי שלא יהיה אף שרת עם גרסה ישנה.</p>
 <p>כדי לנהל את מפתחות הגישה בשרת, אפליקציית Outline Manager מתקשרת עם שירות הניהול בשרת של Outline. שירות הניהול פועל ביציאה אקראית ובנתיב אקראי וסודי. בנוסף, שירות הניהול מוגן מפני גישושים (probe), כי הוא לא עונה לשאילתות בלי שמציינים את הנתיב הסודי הנכון. לסיום, כל התקשורת עם שירות הניהול מוצפנת באמצעות <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">אישור SSL בחתימה עצמית</a>.</p>
 <p>מעבר לכל זה, השרת של Outline לא מאחסן יומנים, כך שגם אם הוא נפרץ, נתוני המשתמש לא נחשפים. אפשר לקרוא מידע נוסף <a class="" href="/he/about/security-and-privacy">כאן</a>. ‫Outline נבדקה על ידי <a href="https://radicallyopensecurity.com/" target="_blank" rel="noopener noreferrer" class="">Radically Open Security</a> ו-<a href="https://cure53.de/" target="_blank" rel="noopener noreferrer" class="">Cure53</a> ב-2018. <a class="" href="/he/about/security-and-privacy">כאן</a> אפשר לקרוא את הדוחות.</p>

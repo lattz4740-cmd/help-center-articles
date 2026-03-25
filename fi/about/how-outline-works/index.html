@@ -11,8 +11,8 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Outline Help Center" href="/fi/opensearch.xml"><link rel="stylesheet" href="/fi/assets/css/styles.109763bc.css">
-<script src="/fi/assets/js/runtime~main.a0c814bb.js" defer="defer"></script>
-<script src="/fi/assets/js/main.7f2709ac.js" defer="defer"></script>
+<script src="/fi/assets/js/runtime~main.7d58df86.js" defer="defer"></script>
+<script src="/fi/assets/js/main.0a8b6e52.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -22,13 +22,13 @@
 <p>​Vaikka Outlinen asentaminen saattaa vaikuttaa yksinkertaiselta, palvelimen asennuksen taustalla on erilaisia monimutkaisia vaiheita. Aina kun Outline asennetaan, asennusskripti suorittaa seuraavat vaiheet:</p>
 <ul>
 <li class="">Shadowbox-näköistiedoston vakaa versio noudetaan ja tuodaan Dockerin avulla. Näköistiedosto sijaitsee <a href="https://quay.io/" target="_blank" rel="noopener noreferrer" class="">Quay.io</a>-palvelussa osoitteessa <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank" rel="noopener noreferrer" class="">https://quay.io/repository/outline/shadowbox?tab=tags</a>. Näköistiedosto sisältää Outline-palvelimen ja Management APIn, jolla Outline-palvelimen hallintasovelluksen käyttäjä voi myöhemmin luoda ja poistaa pääsyavaimia, sallia tai kieltää anonyymien tietojen lähettämisen jne.</li>
-<li class=""><a href="https://github.com/v2tec/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> asennetaan ja määritetään niin, että se tarkistaa näköistiedoston päivitykset tunnin välein. Tämä auttaa varmistamaan, että Outline-palvelimelle on aina asennettu uusimmat ominaisuudet ja tietoturvaparannukset.</li>
+<li class=""><a href="https://github.com/containrrr/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> asennetaan ja määritetään niin, että se tarkistaa näköistiedoston päivitykset tunnin välein. Tämä auttaa varmistamaan, että Outline-palvelimelle on aina asennettu uusimmat ominaisuudet ja tietoturvaparannukset.</li>
 <li class="">Verkkopalvelin käynnistyy Management APIin pääsyä varten. Palvelin käyttää salaista ja satunnaista porttia sekä satunnaista polkua.</li>
 <li class=""><a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">Itse allekirjoitettu SSL-varmenne</a> luodaan, jotta Outline-palvelimen hallinta voidaan salata TLS-standardin mukaisesti, vaikka sillä ei ole verkkotunnusta. Tälle varmenteelle luodaan myös yksilöllinen tunnistetiedosto, joka tallennetaan Outline Manager ‑sovellukseen, mikä auttaa ehkäisemään MITM-hyökkäyksiä.</li>
 </ul>
 <p>Outlinea ei tarvitse määrittää sen jälkeen, kun se on asennettu.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="palvelimen-tietoturva">Palvelimen tietoturva<a href="#palvelimen-tietoturva" class="hash-link" aria-label="Direct link to Palvelimen tietoturva" title="Direct link to Palvelimen tietoturva" translate="no">​</a></h2>
-<p>Outline-ohjelmisto käyttää avointa lähdekoodia, mikä tarkoittaa, että kuka tahansa voi nähdä koodin ja parantaa sitä haavoittuvuuksia havaitessaan. Koodimme on saatavilla <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHubissa</a>.</p>
+<p>Outline-ohjelmisto käyttää avointa lähdekoodia, mikä tarkoittaa, että kuka tahansa voi nähdä koodin ja parantaa sitä haavoittuvuuksia havaitessaan. Koodimme on saatavilla <a href="https://github.com/search?q=org%3AOutlineFoundation+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHubissa</a>.</p>
 <p>Lisäksi kaikki asennetut Outline-palvelimet päivittyvät automaattisesti heti, kun uusi versio julkaistaan. Näin varmistetaan, että yksikään Outline-palvelin ei käytä ohjelmiston vanhoja versioita.</p>
 <p>Outline Manager ‑sovellus on yhteydessä Outline-palvelimen hallintapalveluun palvelimen pääsyavainten hallintaa varten. Hallintapalvelu käyttää sattumanvaraista porttia ja yksilöllistä, salaista polkua. Hallintapalveluun kohdistuvia urkintayrityksiä on vaikeutettu siten, että palvelu ei vastaa kyselyihin, ellei oikeaa salaista polkua ole määritetty. Lisäksi kaikki yhteydenpito hallintapalveluun on salattu <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">itse allekirjoitetulla SSL-varmenteella</a>.</p>
 <p>Outline-palvelin ei tallenna lokeja, joten mahdollisesti vaarantunut käyttäjädata ei paljastu. Lue lisää <a class="" href="/fi/about/security-and-privacy">täältä</a>. <a href="https://radicallyopensecurity.com/" target="_blank" rel="noopener noreferrer" class="">Radically Open Security</a> ja <a href="https://cure53.de/" target="_blank" rel="noopener noreferrer" class="">Cure53</a> auditoivat Outlinen vuonna 2018. Lue niiden raportit <a class="" href="/fi/about/security-and-privacy">täältä</a>.</p>

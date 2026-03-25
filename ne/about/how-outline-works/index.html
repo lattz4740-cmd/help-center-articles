@@ -11,8 +11,8 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Outline Help Center" href="/ne/opensearch.xml"><link rel="stylesheet" href="/ne/assets/css/styles.291a72b9.css">
-<script src="/ne/assets/js/runtime~main.3662a7e8.js" defer="defer"></script>
-<script src="/ne/assets/js/main.c8b7d32a.js" defer="defer"></script>
+<script src="/ne/assets/js/runtime~main.a2144b26.js" defer="defer"></script>
+<script src="/ne/assets/js/main.95d99448.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -22,13 +22,13 @@
 <p>​Outline इन्स्टल गर्ने कार्य सरल जस्तो लाग्न सक्छ तर वास्तवमा तपाईंको सर्भर इन्स्टल गर्दा ब्याकग्राउन्डमा विभिन्न प्रकारका जटिल प्रक्रियाहरू चलिरहेका हुन्छन्। Outline इन्स्टल गरिँदा इन्स्टलेसन स्क्रिप्टले निम्न चरणहरू पूरा गर्छ:</p>
 <ul>
 <li class="">डकर प्रयोग गरी Shadowbox इमेजको स्थिर संस्करण प्राप्त र इम्पोर्ट गरिन्छ। यो इमेज <a href="https://quay.io/" target="_blank" rel="noopener noreferrer" class="">Quay.io</a> मा होस्ट गरिन्छ र यसको URL <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank" rel="noopener noreferrer" class="">https://quay.io/repository/outline/shadowbox?tab=tags</a> हो। यो इमेजमा Outline सर्भर र Management API समावेश हुन्छन्। Outline सर्भर व्यवस्थापन गर्ने एपले पछि तिनलाई एक्सेस कीहरू बनाउने तथा हटाउने र अज्ञात मेट्रिक्सका बारेमा रिपोर्ट गर्ने सुविधामा अप्ट इन/आउट गर्नेलगायतका प्रयोजनका लागि प्रयोग गर्छ।</li>
-<li class="">घण्टैपिच्छे इमेजसम्बन्धी अपडेटहरू उपलब्ध छन् कि छैनन् भन्ने कुरा हेर्नका निम्ति <a href="https://github.com/v2tec/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> इन्स्टल र कन्फिगर गरिन्छ। यसले हरेक Outline सर्भर नवीनतम सुविधा र सुरक्षासम्बन्धी सुधारहरू समावेश गर्ने गरी निरन्तर रूपमा अपडेट भइरहन्छ भन्ने कुरा सुनिश्चित गर्न सघाउँछ।</li>
+<li class="">घण्टैपिच्छे इमेजसम्बन्धी अपडेटहरू उपलब्ध छन् कि छैनन् भन्ने कुरा हेर्नका निम्ति <a href="https://github.com/containrrr/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> इन्स्टल र कन्फिगर गरिन्छ। यसले हरेक Outline सर्भर नवीनतम सुविधा र सुरक्षासम्बन्धी सुधारहरू समावेश गर्ने गरी निरन्तर रूपमा अपडेट भइरहन्छ भन्ने कुरा सुनिश्चित गर्न सघाउँछ।</li>
 <li class="">Management API एक्सेस गर्न प्रयोग गरिने वेब सर्भर कुनै गोप्य र र्‍यान्डम पाथमा भएको कुनै र्‍यान्डम पोर्टमा सुरु गरिन्छ।</li>
 <li class="">डोमेनको नाम नभए तापनि TLS प्रयोग गरी Outline सर्भरको व्यवस्थापन इन्क्रिप्ट गर्न सकियोस् भन्नाका लागि <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">आफैले हस्ताक्षर गरेको SSL प्रमाणपत्र</a> बनाइन्छ। यो प्रमाणपत्रको अद्वितीय फिंगरप्रिन्ट पनि जेनेरेट गरिन्छ र उक्त फिंगरप्रिन्ट Outline म्यानेजर एपमा भण्डारण गरिन्छ। यसले MITM आक्रमणहरू रोक्न मद्दत गर्छ।</li>
 </ul>
 <p>Outline इन्स्टल गरेपछि यसलाई कन्फिगर गर्नु पर्दैन।</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="सर्भरको-सुरक्षा">सर्भरको सुरक्षा<a href="#सर्भरको-सुरक्षा" class="hash-link" aria-label="Direct link to सर्भरको सुरक्षा" title="Direct link to सर्भरको सुरक्षा" translate="no">​</a></h2>
-<p>Outline खुला स्रोतको सफ्टवेयर हो। अर्थात् जोकोही पनि यसको कोड हेर्न सक्छ र कुनै जोखिम पत्ता लागेका खण्डमा सो कोड सच्याउन सक्छ। हाम्रो कोड <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a> मा होस्ट गरिन्छ।</p>
+<p>Outline खुला स्रोतको सफ्टवेयर हो। अर्थात् जोकोही पनि यसको कोड हेर्न सक्छ र कुनै जोखिम पत्ता लागेका खण्डमा सो कोड सच्याउन सक्छ। हाम्रो कोड <a href="https://github.com/search?q=org%3AOutlineFoundation+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a> मा होस्ट गरिन्छ।</p>
 <p>यसका अतिरिक्त, नयाँ संस्करण रिलिज भएपछि इन्स्टल गरिएका सबै Outline सर्भरहरू स्वतः अपडेट गरिन्छन्। यसले कुनै पनि Outline सर्भरमा पुरानो सफ्टवेयर प्रयोग भइरहेको छैन भन्ने कुरा सुनिश्चित गर्छ।</p>
 <p>सर्भरमा रहेका एक्सेस कीहरू व्यवस्थापन गर्न Outline म्यानेजर एपले Outline सर्भरमा व्यवस्थापन सेवासँग अन्तर्क्रिया गर्छ। यो व्यवस्थापन सेवा र्‍यान्डम पोर्टमा र गोप्य तथा अद्वितीय पाथमा चल्छ। उपयुक्त गोप्य पाथ नतोकिँदासम्म यो व्यवसथापन सेवाले क्वेरीरूको जवाफ नदिने हुनाले यसले स्वतः अनधिकृत एक्सेस वा आक्रमण रोक्ने गर्छ। अन्त्यमा, व्यवस्थापन सेवासँग गरिने सबै सञ्चार <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">आफैले हस्ताक्षर गरेको SSL प्रमाणपत्र</a>मार्फत इन्क्रिप्ट गरिन्छ।</p>
 <p>साथै, Outline सर्भरले कुनै पनि लग भण्डारण नगर्ने भएकाले यो सर्भरमा छेडखानी भए तापनि प्रयोगकर्तासम्बन्धी कुनै पनि जानकारी खुलासा हुँदैन। थप जान्न <a class="" href="/ne/about/security-and-privacy">यहाँ</a> जानुहोस्। <a href="https://radicallyopensecurity.com/" target="_blank" rel="noopener noreferrer" class="">Radically Open Security</a> र <a href="https://cure53.de/" target="_blank" rel="noopener noreferrer" class="">Cure53</a> ले २०१८ मा Outline को अडिट गरेका थिए। रिपोर्टहरू हेर्न <a class="" href="/ne/about/security-and-privacy">यहाँ</a> जानुहोस्।</p>

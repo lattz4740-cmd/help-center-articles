@@ -11,8 +11,8 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Outline Help Center" href="/hu/opensearch.xml"><link rel="stylesheet" href="/hu/assets/css/styles.361f18c5.css">
-<script src="/hu/assets/js/runtime~main.ac2108c4.js" defer="defer"></script>
-<script src="/hu/assets/js/main.2cb6796a.js" defer="defer"></script>
+<script src="/hu/assets/js/runtime~main.814f068a.js" defer="defer"></script>
+<script src="/hu/assets/js/main.48471337.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -22,13 +22,13 @@
 <p>​Noha az Outline telepítése egyszerűnek tűnhet, a szerver telepítéséhez a háttérben bonyolult folyamatok zajlanak. Az Outline telepítésekor a telepítési szkript a következő lépéseken halad végig:</p>
 <ul>
 <li class="">A Docker szolgáltatással lekéri és importálja a Shadowbox kép stabil verzióját. A képet a <a href="https://quay.io/" target="_blank" rel="noopener noreferrer" class="">Quay.io</a> tárolja a <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank" rel="noopener noreferrer" class="">https://quay.io/repository/outline/shadowbox?tab=tags</a> webhelyen. A kép tartalmazza az Outline-szervert és a Management API-t, mellyel később az Outline Server Management alkalmazás létrehozza és eltávolítja a hozzáférési kulcsokat, engedélyezi és letiltja az anonim mérőszámok elküldését, stb.</li>
-<li class="">Telepíti és konfigurálja a <a href="https://github.com/v2tec/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> alkalmazást, amely óránként ellenőrzi, hogy rendelkezésre áll-e új képverzió, így biztosítva, hogy az Outline-szerver mindig naprakész legyen, és rendelkezzen a legújabb funkciókkal és biztonsági javításokkal.</li>
+<li class="">Telepíti és konfigurálja a <a href="https://github.com/containrrr/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> alkalmazást, amely óránként ellenőrzi, hogy rendelkezésre áll-e új képverzió, így biztosítva, hogy az Outline-szerver mindig naprakész legyen, és rendelkezzen a legújabb funkciókkal és biztonsági javításokkal.</li>
 <li class="">A rendszer elindít egy webszervert egy véletlenszerűen kiválasztott porton, egy titkos és véletlenszerű elérési úton, mely a Management API-hoz való hozzáféréshez szükséges.</li>
 <li class="">Létrehoz egy <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">saját aláírású SSL-tanúsítványt</a>, hogy domainnév hiányában is lehessen a TLS protokollal titkosítani az Outline-szerver kezelését. Emellett létrejön a tanúsítvány egyedi ujjlenyomata, melyet a rendszer az Outline Manager alkalmazásban tárol, így megakadályozva a közbeékelődéses támadásokat.</li>
 </ul>
 <p>A telepítést követően nem kell konfigurálni az Outline szolgáltatást.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="szerverbiztonság">Szerverbiztonság<a href="#szerverbiztonság" class="hash-link" aria-label="Közvetlen hivatkozás erre: Szerverbiztonság" title="Közvetlen hivatkozás erre: Szerverbiztonság" translate="no">​</a></h2>
-<p>Az Outline szoftver nyílt forráskódú, ami azt jelenti, hogy bárki hozzáférhet a programkódhoz, és ha biztonsági rést talál, tovább is fejlesztheti. A programkód a <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a> webhelyén található.</p>
+<p>Az Outline szoftver nyílt forráskódú, ami azt jelenti, hogy bárki hozzáférhet a programkódhoz, és ha biztonsági rést talál, tovább is fejlesztheti. A programkód a <a href="https://github.com/search?q=org%3AOutlineFoundation+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a> webhelyén található.</p>
 <p>Emellett a telepített Outline-szerverek automatikusan frissülnek minden alkalommal, amikor új verzió jelenik meg, így egy Outline-szerver sem fogja a szoftver régebbi verzióját futtatni.</p>
 <p>A szerveren lévő hozzáférési kulcsok kezeléséhez az Outline Manager alkalmazás az Outline-szerveren lévő felügyeleti szolgáltatással kommunikál. A felügyeleti szolgáltatás egy véletlenszerűen kiválasztott porton és egy titkos és egyedi elérési úton fut. A felügyeleti szolgáltatás ellenáll a lekérdezéses támadásoknak, mivel csak abban az esetben reagál a lekérdezésekre, ha a megfelelő titkos elérési út van megadva. Végül pedig a felügyeleti szolgáltatással folytatott kommunikáció teljes mértékben titkosítva van egy <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">saját aláírású SSL-tanúsítvánnyal</a>.</p>
 <p>Az Outline-szerver nem naplózza a forgalmat, így ha illetéktelenek fel is törnék, nem férhetnének hozzá a felhasználói adatokhoz. További információ <a class="" href="/hu/about/security-and-privacy">itt</a> található. 2018-ban az Outline-t két szervezet, a <a href="https://radicallyopensecurity.com/" target="_blank" rel="noopener noreferrer" class="">Radically Open Security</a> és a <a href="https://cure53.de/" target="_blank" rel="noopener noreferrer" class="">Cure53</a> auditálta. Az erről szóló jelentéseket <a class="" href="/hu/about/security-and-privacy">itt</a> találja.</p>

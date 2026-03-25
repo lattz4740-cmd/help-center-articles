@@ -11,8 +11,8 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Outline Help Center" href="/tr/opensearch.xml"><link rel="stylesheet" href="/tr/assets/css/styles.0d050f46.css">
-<script src="/tr/assets/js/runtime~main.0cb31155.js" defer="defer"></script>
-<script src="/tr/assets/js/main.836b43c0.js" defer="defer"></script>
+<script src="/tr/assets/js/runtime~main.bfbc8c24.js" defer="defer"></script>
+<script src="/tr/assets/js/main.140e3732.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -22,13 +22,13 @@
 <p>​Outline&#x27;ın yüklenmesi basit gibi görünse de sunucunuzun yüklenmesi için perde arkasında gerçekleşen bazı karmaşık adımlar vardır. Her Outline yüklemesinde bir komut dosyası aşağıdaki adımları çalıştırır:</p>
 <ul>
 <li class="">Shadowbox görüntüsünün kararlı sürümü Docker kullanılarak alınır ve içe aktarılır. Görüntü, <a href="https://quay.io/" target="_blank" rel="noopener noreferrer" class="">Quay.io</a>&#x27;daki <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank" rel="noopener noreferrer" class="">https://quay.io/repository/outline/shadowbox?tab=tags</a> adresinde barındırılır. Bu görüntüde Outline sunucusu ve Management API yer alır. Bu bilgiler daha sonra Outline Server Management uygulaması tarafından erişim anahtarlarını oluşturup kaldırmak, anonim metrikleri raporlamayı etkinleştirmek/devre dışı bırakmak vb. için kullanılır.</li>
-<li class=""><a href="https://github.com/v2tec/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> yüklenir ve saat başı görüntü güncellemesi olup olmadığını kontrol edecek şekilde yapılandırılır. Bu işlem, her Outline sunucusunu en son özellik ve güvenlik iyileştirmeleriyle sürekli olarak güncel tutar.</li>
+<li class=""><a href="https://github.com/containrrr/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> yüklenir ve saat başı görüntü güncellemesi olup olmadığını kontrol edecek şekilde yapılandırılır. Bu işlem, her Outline sunucusunu en son özellik ve güvenlik iyileştirmeleriyle sürekli olarak güncel tutar.</li>
 <li class="">Rastgele bir bağlantı noktasında ve rastgele oluşturulmuş gizli bir yolda, Management API&#x27;ye erişmek için kullanılan bir web sunucusu başlatılır.</li>
 <li class="">Bir alan adına sahip olmamasına rağmen, Outline sunucusu yönetiminin TLS kullanılarak şifrelenebilmesi için <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">kendinden imzalı bir SSL sertifikası</a> oluşturulur. MITM saldırılarının engellenmesine yardımcı olması için bu sertifikanın benzersiz bir parmak izi de Outline Manager uygulamasında oluşturulur ve depolanır.</li>
 </ul>
 <p>Outline yüklendikten sonra herhangi bir yapılandırma işlemi gerekmez.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="sunucu-güvenliği">Sunucu güvenliği<a href="#sunucu-güvenliği" class="hash-link" aria-label="Sunucu güvenliği doğrudan bağlantı" title="Sunucu güvenliği doğrudan bağlantı" translate="no">​</a></h2>
-<p>Outline yazılımı açık kaynaktır. Bu, herkesin kodu görebileceği ve keşfedilen güvenlik açıkları varsa iyileştirebileceği anlamına gelir. Kodumuz <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a>&#x27;da barındırılır.</p>
+<p>Outline yazılımı açık kaynaktır. Bu, herkesin kodu görebileceği ve keşfedilen güvenlik açıkları varsa iyileştirebileceği anlamına gelir. Kodumuz <a href="https://github.com/search?q=org%3AOutlineFoundation+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a>&#x27;da barındırılır.</p>
 <p>Ayrıca hiçbir Outline sunucusunun, yazılımın eski sürümlerini çalıştırmaması için yeni bir sürüm yayınlandığında tüm yüklü Outline sunucuları otomatik olarak güncellenir.</p>
 <p>Sunucudaki erişim anahtarlarının yönetilmesi için Outline Manager uygulaması Outline sunucusunda bir yönetim hizmeti ile etkileşimde bulunur. Yönetim hizmeti rastgele bir bağlantı noktasında ve gizli, benzersiz bir yolda çalışır. Yönetim Hizmeti, uygun gizli yol belirtilmediği sürece sorgulara yanıt vermediği için yoklamaya dayanıklıdır. Son olarak, yönetim hizmetine yönelik tüm iletişim <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">kendinden imzalı bir SSL sertifikasıyla</a> şifrelenir.</p>
 <p>Ayrıca Outline sunucusu herhangi bir günlük kaydı depolamadığından, güvenlik ihlali olsa bile kullanıcı verileri paylaşılmaz. <a class="" href="/tr/about/security-and-privacy">Daha fazla bilgi edinin.</a> Outline, 2018&#x27;de <a href="https://radicallyopensecurity.com/" target="_blank" rel="noopener noreferrer" class="">Radically Open Security</a> ve <a href="https://cure53.de/" target="_blank" rel="noopener noreferrer" class="">Cure53</a> tarafından denetlenmiştir. Raporları <a class="" href="/tr/about/security-and-privacy">burada</a> bulabilirsiniz.</p>

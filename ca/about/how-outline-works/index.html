@@ -11,8 +11,8 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Outline Help Center" href="/ca/opensearch.xml"><link rel="stylesheet" href="/ca/assets/css/styles.5a28f41d.css">
-<script src="/ca/assets/js/runtime~main.fd49bf90.js" defer="defer"></script>
-<script src="/ca/assets/js/main.2d2a5c4a.js" defer="defer"></script>
+<script src="/ca/assets/js/runtime~main.557f74cf.js" defer="defer"></script>
+<script src="/ca/assets/js/main.1dd30781.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -22,13 +22,13 @@
 <p>​Tot i que Outline pot semblar una aplicació senzilla, hi ha un conjunt de passos complexos que es duen a terme en segon pla per poder instal·lar el servidor. Quan s&#x27;instal·la Outline, un script d&#x27;instal·lació executa els passos següents:</p>
 <ul>
 <li class="">La versió estable de la imatge de Shadowbox es recupera i s&#x27;importa mitjançant Docker. La imatge, que s&#x27;allotja a <a href="https://quay.io/" target="_blank" rel="noopener noreferrer" class="">Quay.io</a> (<a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank" rel="noopener noreferrer" class="">https://quay.io/repository/outline/shadowbox?tab=tags</a>), conté el servidor d&#x27;Outline i l&#x27;API de gestió que l&#x27;aplicació Gestor de servidors d&#x27;Outline utilitzarà més endavant per crear i suprimir les claus d&#x27;accés, optar per informar o no informar de mètriques de manera anònima, etc.</li>
-<li class=""><a href="https://github.com/v2tec/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> s&#x27;instal·la i es configura per cercar actualitzacions d&#x27;imatges cada hora. Així es garanteix que cada servidor d&#x27;Outline estigui sempre actualitzat amb les millores de seguretat i funcions més recents.</li>
+<li class=""><a href="https://github.com/containrrr/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> s&#x27;instal·la i es configura per cercar actualitzacions d&#x27;imatges cada hora. Així es garanteix que cada servidor d&#x27;Outline estigui sempre actualitzat amb les millores de seguretat i funcions més recents.</li>
 <li class="">Un servidor web, utilitzat per accedir a l&#x27;API de gestió, s&#x27;inicia en un port aleatori en un camí secret i aleatori.</li>
 <li class="">Es crea un <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">certificat SSL amb firma automàtica</a> perquè la gestió del servidor d&#x27;Outline es pugui encriptar utilitzant TLS malgrat no tenir cap nom de domini. També es genera una empremta digital única d&#x27;aquest certificat i s&#x27;emmagatzema a l&#x27;aplicació Gestor d&#x27;Outline, cosa que permet evitar atacs d&#x27;intermediari (MITM).</li>
 </ul>
 <p>Per instal·lar Outline, no cal dur a terme cap configuració després de la instal·lació.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="seguretat-del-servidor">Seguretat del servidor<a href="#seguretat-del-servidor" class="hash-link" aria-label="Direct link to Seguretat del servidor" title="Direct link to Seguretat del servidor" translate="no">​</a></h2>
-<p>El programari d&#x27;Outline és de codi obert, la qual cosa significa que tothom pot veure&#x27;n el codi i millorar-lo si s&#x27;hi troben vulnerabilitats. El nostre codi s&#x27;allotja a <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a>.</p>
+<p>El programari d&#x27;Outline és de codi obert, la qual cosa significa que tothom pot veure&#x27;n el codi i millorar-lo si s&#x27;hi troben vulnerabilitats. El nostre codi s&#x27;allotja a <a href="https://github.com/search?q=org%3AOutlineFoundation+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a>.</p>
 <p>A més, tots els servidors d&#x27;Outline instal·lats s&#x27;actualitzen automàticament sempre que es publica una versió nova; per tant, es garanteix que cap servidor d&#x27;Outline no faci servir versions antigues del programari.</p>
 <p>Per gestionar les claus d&#x27;accés al servidor, l&#x27;aplicació Gestor d&#x27;Outline interacciona amb un servei de gestió del servidor d&#x27;Outline. Aquest servei s&#x27;executa en un port aleatori i en un camí únic i secret. També s&#x27;ha demostrat que és resistent, ja que no respon a consultes si no s&#x27;especifica el camí secret adequat. Per últim, totes les comunicacions mantingudes amb el servei de gestió s&#x27;encripten amb un <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">certificat SSL amb firma automàtica</a>.</p>
 <p>A més, el servidor d&#x27;Outline no emmagatzema cap registre i, per tant, encara que es posi en perill, no es revelarà cap dada de l&#x27;usuari. <a class="" href="/ca/about/security-and-privacy">Obtén més informació</a>. El 2018, Outline es va sotmetre a l&#x27;auditoria de <a href="https://radicallyopensecurity.com/" target="_blank" rel="noopener noreferrer" class="">Radically Open Security</a> i <a href="https://cure53.de/" target="_blank" rel="noopener noreferrer" class="">Cure53</a>. En pots consultar els informes <a class="" href="/ca/about/security-and-privacy">aquí</a>.</p>

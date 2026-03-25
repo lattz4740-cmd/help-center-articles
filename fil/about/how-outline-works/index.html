@@ -11,8 +11,8 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Outline Help Center" href="/fil/opensearch.xml"><link rel="stylesheet" href="/fil/assets/css/styles.f9094527.css">
-<script src="/fil/assets/js/runtime~main.a7b25e0a.js" defer="defer"></script>
-<script src="/fil/assets/js/main.9399a0d9.js" defer="defer"></script>
+<script src="/fil/assets/js/runtime~main.30771dbb.js" defer="defer"></script>
+<script src="/fil/assets/js/main.b1614895.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -22,13 +22,13 @@
 <p>​Bagama&#x27;t mukhang simple ang pag-install ng Outline, may aktwal na kumplikadong hanay ng mga hakbang na nangyayari sa likod nito para ma-install ang iyong server. Sa tuwing ini-install ang Outline, pinapatakbo ng script sa pag-install ang mga sumusunod na hakbang:</p>
 <ul>
 <li class="">Kinukuha ang stable na bersyon ng image ng Shadowbox at ini-import ito gamit ang Docker. Naka-host ang image sa <a href="https://quay.io/" target="_blank" rel="noopener noreferrer" class="">Quay.io</a>, sa <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank" rel="noopener noreferrer" class="">https://quay.io/repository/outline/shadowbox?tab=tags</a>. Nasa image na ito ang Outline server at Management API na gagamitin ng Outline Server Management application para gumawa at mag-alis ng mga access key, mag-opt in/mag-opt out sa mga anonymous na sukatan ng pag-uulat, atbp.</li>
-<li class="">Ini-install at kino-configure ang <a href="https://github.com/v2tec/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> para tingnan kung may mga update sa image kada oras, na nakakatulong na masiguradong palaging up-to-date ang bawat Outline server at makuha ng mga ito ang mga pinakabagong feature at pagpapahusay sa seguridad.</li>
+<li class="">Ini-install at kino-configure ang <a href="https://github.com/containrrr/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> para tingnan kung may mga update sa image kada oras, na nakakatulong na masiguradong palaging up-to-date ang bawat Outline server at makuha ng mga ito ang mga pinakabagong feature at pagpapahusay sa seguridad.</li>
 <li class="">May web server, na ginagamit para sa pag-access ng Management API, na sinisimulan sa isang random na port sa isang lihim at random na path.</li>
 <li class="">May ginagawang <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">self-signed na SSL certificate</a> para ma-encrypt ang pamamahala ng Outline server gamit ang TLS kahit na wala itong domain name. May binubuo ring natatanging fingerprint ng certificate na ito at sino-store ito sa Outline Manager application na nakakatulong sa pagpigil sa mga MITM na pag-atake.</li>
 </ul>
 <p>Walang kailangang kahit anong pag-configure sa pag-install ng Outline pagkatapos ng pag-install</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="seguridad-ng-server">Seguridad ng server<a href="#seguridad-ng-server" class="hash-link" aria-label="Direktang link patungo sa Seguridad ng server" title="Direktang link patungo sa Seguridad ng server" translate="no">​</a></h2>
-<p>Ang Outline software ay open source, na nangangahulugang puwedeng makita ng sinuman ang code at pahusayin ito kung may matuklasan mang kahinaan. Naka-host sa <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a> ang aming code.</p>
+<p>Ang Outline software ay open source, na nangangahulugang puwedeng makita ng sinuman ang code at pahusayin ito kung may matuklasan mang kahinaan. Naka-host sa <a href="https://github.com/search?q=org%3AOutlineFoundation+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a> ang aming code.</p>
 <p>Bukod pa rito, awtomatikong ina-update ang lahat ng naka-install na Outline server sa tuwing may inilalabas na bagong bersyon, na nagsisiguradong walang Outline server na nagpapatakbo ng mga lumang bersyon ng software.</p>
 <p>Para pamahalaan ang mga access key sa server, nakikipag-interact ang Outline Manager application sa isang Management Service sa Outline server. Tumatakbo ang Management Service sa isang random na port at sa isang lihim at natatanging path. Ang Management Service mismo ay hindi puwedeng masuri dahil hindi ito tumutugon sa mga query maliban na lang kung tutukuyin ang naaangkop na lihim na path. Panghuli, naka-encrypt sa pamamagitan ng <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">self-signed na SSL certificate</a> ang lahat ng pakikipag-ugnayan sa Management Service.</p>
 <p>Gayundin, hindi nagso-store ng mga log ang Outline server, kaya kahit na makompromiso ito, walang maihahayag na data ng user. Matuto pa <a class="" href="/fil/about/security-and-privacy">rito</a>. Na-audit ng <a href="https://radicallyopensecurity.com/" target="_blank" rel="noopener noreferrer" class="">Radically Open Security</a> at <a href="https://cure53.de/" target="_blank" rel="noopener noreferrer" class="">Cure53</a> ang Outline noong 2018. Tingnan <a class="" href="/fil/about/security-and-privacy">dito</a> ang mga ulat.</p>

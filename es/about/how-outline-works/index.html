@@ -11,8 +11,8 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Outline Help Center" href="/es/opensearch.xml"><link rel="stylesheet" href="/es/assets/css/styles.44897dbc.css">
-<script src="/es/assets/js/runtime~main.4140f5ef.js" defer="defer"></script>
-<script src="/es/assets/js/main.4714e222.js" defer="defer"></script>
+<script src="/es/assets/js/runtime~main.65874526.js" defer="defer"></script>
+<script src="/es/assets/js/main.d1afb551.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -23,13 +23,13 @@
 <p>Cada vez que se instala Outline, se ejecuta una secuencia de comandos de instalación que sigue estos pasos:</p>
 <ul>
 <li class="">La versión estable de la imagen de Shadowbox se recupera y se importa por medio de Docker. La imagen se aloja en <a href="https://quay.io/" target="_blank" rel="noopener noreferrer" class="">Quay.io</a>, en <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank" rel="noopener noreferrer" class="">https://quay.io/repository/outline/shadowbox?tab=tags</a>. Esta imagen contiene el servidor de Outline y la API de Administración que más adelante la app de Outline Server Management utiliza para crear y quitar claves de acceso, habilitar o inhabilitar el informe de métricas anónimas, etcétera.</li>
-<li class="">Se instala <a href="https://github.com/v2tec/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> y se lo configura para que busque actualizaciones de imágenes cada hora, lo que ayuda a garantizar que todos los servidores de Outline estén siempre actualizados con las funciones y las mejoras de seguridad más recientes.</li>
+<li class="">Se instala <a href="https://github.com/containrrr/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> y se lo configura para que busque actualizaciones de imágenes cada hora, lo que ayuda a garantizar que todos los servidores de Outline estén siempre actualizados con las funciones y las mejoras de seguridad más recientes.</li>
 <li class="">Se inicia un servidor web en un puerto aleatorio en una ruta de acceso secreta y aleatoria. Este servidor web se utiliza para acceder a la API de Administración.</li>
 <li class="">Se crea un <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">certificado de SSL autofirmado</a> para que la administración del servidor de Outline se pueda encriptar con TLS a pesar de no tener un nombre de dominio. También se genera una huella digital única de este certificado y se la almacena en la app de Outline Manager, lo que ayuda a prevenir los ataques de MITM.</li>
 </ul>
 <p>La instalación de Outline no necesita ninguna configuración posterior.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="seguridad-del-servidor">Seguridad del servidor<a href="#seguridad-del-servidor" class="hash-link" aria-label="Enlace directo al Seguridad del servidor" title="Enlace directo al Seguridad del servidor" translate="no">​</a></h2>
-<p>Outline es un software de código abierto, lo que significa que cualquiera puede ver el código y mejorarlo si se detectan vulnerabilidades. Nuestro código se aloja en <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a> .</p>
+<p>Outline es un software de código abierto, lo que significa que cualquiera puede ver el código y mejorarlo si se detectan vulnerabilidades. Nuestro código se aloja en <a href="https://github.com/search?q=org%3AOutlineFoundation+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a> .</p>
 <p>Además, todos los servidores instalados de Outline se actualizan automáticamente cada vez que se lanza una nueva versión, lo que garantiza que no haya ningún servidor de Outline que ejecute versiones anteriores del software.</p>
 <p>Para administrar las claves de acceso en el servidor, la app de Outline Manager interactúa con un servicio de administrador del servidor de Outline. Este servicio de administración se ejecuta en un puerto aleatorio y en una ruta de acceso única y secreta. El servicio de administración resulta ser resistente, ya que no responde consultas a menos que se especifique la ruta de acceso secreta adecuada. Por último, todas las comunicaciones que se mantienen con el servicio de administración se encriptan con un <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">SSL</a> .</p>
 <p>Asimismo, el servidor de Outline no almacena ningún registro, por lo que no se divulga ningún dato del usuario incluso aunque el servidor se vea vulnerado. Obtén más información <a class="" href="/es/about/security-and-privacy">here</a> .</p>

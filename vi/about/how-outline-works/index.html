@@ -11,8 +11,8 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Outline Help Center" href="/vi/opensearch.xml"><link rel="stylesheet" href="/vi/assets/css/styles.22f0b0d6.css">
-<script src="/vi/assets/js/runtime~main.c6168050.js" defer="defer"></script>
-<script src="/vi/assets/js/main.8663d067.js" defer="defer"></script>
+<script src="/vi/assets/js/runtime~main.ee10333d.js" defer="defer"></script>
+<script src="/vi/assets/js/main.8514b514.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -22,13 +22,13 @@
 <p>​Mặc dù việc cài đặt Outline có vẻ đơn giản, nhưng thực ra có một tổ hợp phức tạp các bước diễn ra mà bạn không nhìn thấy để giúp cài đặt máy chủ của bạn. Mỗi khi cài đặt Outline, một tập lệnh cài đặt sẽ thực hiện các bước sau đây:</p>
 <ul>
 <li class="">Truy xuất và nhập phiên bản ổn định của hình ảnh Shadowbox bằng Docker. Ảnh này được lưu trữ tại địa chỉ <a href="https://quay.io/" target="_blank" rel="noopener noreferrer" class="">https://quay.io/</a> trên <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank" rel="noopener noreferrer" class="">Quay.io</a>. Ảnh này chứa máy chủ Outline và API Quản lý. Ứng dụng Quản lý máy chủ Outline sẽ sử dụng API này về sau để tạo và xoá khoá truy cập, chọn bật/tắt tính năng báo cáo chỉ số ẩn danh, v.v.</li>
-<li class=""><a href="https://github.com/v2tec/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> được cài đặt và định cấu hình để giúp kiểm tra nhằm tìm bản cập nhật hình ảnh mỗi giờ, qua đó giúp đảm bảo mọi máy chủ Outline đều chạy phiên bản mới nhất, được cải tiến bảo mật và sử dụng các tính năng mới nhất.</li>
+<li class=""><a href="https://github.com/containrrr/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> được cài đặt và định cấu hình để giúp kiểm tra nhằm tìm bản cập nhật hình ảnh mỗi giờ, qua đó giúp đảm bảo mọi máy chủ Outline đều chạy phiên bản mới nhất, được cải tiến bảo mật và sử dụng các tính năng mới nhất.</li>
 <li class="">Một máy chủ web dùng để truy cập vào API Quản lý sẽ được khởi động tại một cổng ngẫu nhiên trên một đường dẫn ngẫu nhiên, bí mật.</li>
 <li class=""><a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">Chứng chỉ SSL tự ký</a> được tạo để có thể mã hoá hoạt động quản lý máy chủ Outline bằng giao thức TLS (Bảo mật tầng truyền tải), dù không có tên miền. Vân tay số duy nhất của chứng chỉ này cũng được tạo và lưu trữ trong ứng dụng Quản lý Outline để giúp ngăn chặn các cuộc tấn công MITM (Man in the Middle – Tấn công xen giữa).</li>
 </ul>
 <p>Bạn không cần định cấu hình sau khi cài đặt Outline.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="bảo-mật-máy-chủ">Bảo mật máy chủ<a href="#bảo-mật-máy-chủ" class="hash-link" aria-label="Đường dẫn trực tiếp đến Bảo mật máy chủ" title="Đường dẫn trực tiếp đến Bảo mật máy chủ" translate="no">​</a></h2>
-<p>Outline là phần mềm nguồn mở, nghĩa là bất cứ ai cũng có thể xem mã nguồn và cải thiện nếu phát hiện ra lỗ hổng. Chúng tôi lưu trữ mã nguồn trên <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a>.</p>
+<p>Outline là phần mềm nguồn mở, nghĩa là bất cứ ai cũng có thể xem mã nguồn và cải thiện nếu phát hiện ra lỗ hổng. Chúng tôi lưu trữ mã nguồn trên <a href="https://github.com/search?q=org%3AOutlineFoundation+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a>.</p>
 <p>Ngoài ra, tất cả máy chủ Outline đã cài đặt đều sẽ cập nhật tự động mỗi khi có một phiên bản mới được phát hành, để đảm bảo rằng không có máy chủ Outline nào chạy phiên bản phần mềm cũ.</p>
 <p>Để quản lý khoá truy cập trên máy chủ, ứng dụng Quản lý Outline sẽ tương tác với một Dịch vụ quản lý trên máy chủ Outline. Dịch vụ quản lý này chạy tại một cổng ngẫu nhiên và sử dụng một đường dẫn bí mật, duy nhất. Bản thân Dịch vụ quản lý miễn nhiễm với hành vi dò lỗ hổng vì nó không đáp lại truy vấn trừ khi đường dẫn bí mật được xác định. Cuối cùng, mọi thông tin giao tiếp với Dịch vụ quản lý đều được mã hoá bằng một <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">chứng chỉ SSL tự ký</a>.</p>
 <p>Ngoài ra, máy chủ Outline không lưu trữ nhật ký, nên kể cả khi bị xâm phạm, dữ liệu của người dùng cũng không bị lộ. Tìm hiểu thêm <a class="" href="/vi/about/security-and-privacy">tại đây</a>. Outline đã được <a href="https://radicallyopensecurity.com/" target="_blank" rel="noopener noreferrer" class="">Radically Open Security</a> và <a href="https://cure53.de/" target="_blank" rel="noopener noreferrer" class="">Cure53</a> kiểm tra vào năm 2018. Xem các báo cáo đó <a class="" href="/vi/about/security-and-privacy">tại đây</a>.</p>

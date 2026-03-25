@@ -11,8 +11,8 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Outline Help Center" href="/cs/opensearch.xml"><link rel="stylesheet" href="/cs/assets/css/styles.3bb5111a.css">
-<script src="/cs/assets/js/runtime~main.5d10a3a0.js" defer="defer"></script>
-<script src="/cs/assets/js/main.641b5f99.js" defer="defer"></script>
+<script src="/cs/assets/js/runtime~main.3629b53c.js" defer="defer"></script>
+<script src="/cs/assets/js/main.257adc9e.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -22,13 +22,13 @@
 <p>​Instalace Outline možná vypadá jednoduše, ale ve skutečnosti při instalaci serveru na pozadí probíhá docela složitý postup. Při instalaci Outline provede instalační skript tyto kroky:</p>
 <ul>
 <li class="">Získá stabilní verzi obrazu Shadowbox a importuje ji pomocí Dockeru. Obraz je hostován na webu <a href="https://quay.io/" target="_blank" rel="noopener noreferrer" class="">Quay.io</a> na adrese <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank" rel="noopener noreferrer" class="">https://quay.io/repository/outline/shadowbox?tab=tags</a>. Obsahuje server Outline a rozhraní Management API, které bude aplikace pro správu serveru Outline později používat k vytváření a odstraňování přístupových klíčů, přihlašování a odhlašování z anonymních metrik v přehledech apod.</li>
-<li class="">Nainstaluje aplikaci <a href="https://github.com/v2tec/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> a nastaví ji tak, aby každou hodinu kontrolovala aktualizace obrazu. Tak je zajištěno, že je každý server Outline stále aktuální a využívá nejnovější funkce a vylepšení zabezpečení.</li>
+<li class="">Nainstaluje aplikaci <a href="https://github.com/containrrr/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> a nastaví ji tak, aby každou hodinu kontrolovala aktualizace obrazu. Tak je zajištěno, že je každý server Outline stále aktuální a využívá nejnovější funkce a vylepšení zabezpečení.</li>
 <li class="">Webový server používaný k přístupu k rozhraní Management API je spuštěn na náhodném portu v tajné a náhodné cestě.</li>
 <li class="">Vytvoří <a href="https://cs.wikipedia.org/wiki/Certifik%C3%A1t_podepsan%C3%BD_s%C3%A1m_sebou" target="_blank" rel="noopener noreferrer" class="">certifikát SSL podepsaný sám sebou</a>, aby bylo možné správu serveru Outline šifrovat pomocí zabezpečení TLS, i když server nemá název domény. Také vygeneruje unikátní otisk tohoto certifikátu a uloží ho v aplikaci Správce Outline, kde brání útokům MITM.</li>
 </ul>
 <p>Po instalaci už není Outline potřeba nijak nastavovat.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="zabezpečení-serveru">Zabezpečení serveru<a href="#zabezpečení-serveru" class="hash-link" aria-label="Přímý odkaz na Zabezpečení serveru" title="Přímý odkaz na Zabezpečení serveru" translate="no">​</a></h2>
-<p>Software Outline je opensourcový, což znamená, že si kdokoli může zobrazit jeho kód a vylepšovat ho, pokud se objeví nějaké slabiny. Náš kód hostujeme na <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHubu</a>.</p>
+<p>Software Outline je opensourcový, což znamená, že si kdokoli může zobrazit jeho kód a vylepšovat ho, pokud se objeví nějaké slabiny. Náš kód hostujeme na <a href="https://github.com/search?q=org%3AOutlineFoundation+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHubu</a>.</p>
 <p>Všechny nainstalované servery Outline se navíc automaticky aktualizují, kdykoli je uvedena nová verze, takže na žádném serveru Outline neběží staré verze softwaru.</p>
 <p>Při správě přístupových klíčů na serveru komunikuje aplikace Správce Outline se spravující službou na serveru Outline. Spravující služba běží na tajném portu a po tajné a unikátní cestě. Samotná spravující služba je odolná vůči vniknutí, protože nereaguje na dotazy, pokud není specifikovaná správná unikátní trasa. Veškerá komunikace se spravující službou je navíc zašifrovaná pomocí <a href="https://cs.wikipedia.org/wiki/Certifik%C3%A1t_podepsan%C3%BD_s%C3%A1m_sebou" target="_blank" rel="noopener noreferrer" class="">certifikátu SSL podepsaného sebou samým</a>.</p>
 <p>Server Outline si taky neukládá žádné protokoly, takže by žádná uživatelská data neunikla ani při jeho napadení. <a class="" href="/cs/about/security-and-privacy">Další informace</a>. V roce 2018 prošla služba Outline audity společností <a href="https://radicallyopensecurity.com/" target="_blank" rel="noopener noreferrer" class="">Radically Open Security</a> a <a href="https://cure53.de/" target="_blank" rel="noopener noreferrer" class="">Cure53</a>. Jejich zprávy si můžete přečíst <a class="" href="/cs/about/security-and-privacy">tady</a>.</p>

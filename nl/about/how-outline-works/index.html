@@ -11,8 +11,8 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Outline Help Center" href="/nl/opensearch.xml"><link rel="stylesheet" href="/nl/assets/css/styles.4e4ab578.css">
-<script src="/nl/assets/js/runtime~main.ef4d5c8f.js" defer="defer"></script>
-<script src="/nl/assets/js/main.9296d409.js" defer="defer"></script>
+<script src="/nl/assets/js/runtime~main.5eda3b31.js" defer="defer"></script>
+<script src="/nl/assets/js/main.0bde7df7.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -23,13 +23,13 @@
 <p>Wanneer Outline wordt geïnstalleerd, voert een installatiescript de volgende stappen uit:</p>
 <ul>
 <li class="">De stabiele versie van de Shadowbox-image wordt opgehaald en geïmporteerd met Docker. De image wordt gehost op <a href="https://quay.io/" target="_blank" rel="noopener noreferrer" class="">Quay.io</a>, op <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank" rel="noopener noreferrer" class="">https://quay.io/repository/outline/shadowbox?tab=tags</a>. Deze image bevat de Outline-server en Management API, die later wordt gebruikt door de Server Management-app van Outline om toegangssleutels te maken en verwijderen, aan of af te melden voor het verzenden van anonieme statistieken enzovoort.</li>
-<li class=""><a href="https://github.com/v2tec/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> wordt geïnstalleerd en geconfigureerd om elk uur te controleren op image-updates, zodat elke Outline-server steeds de nieuwste functies en beveiligingsupdates bevat.</li>
+<li class=""><a href="https://github.com/containrrr/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> wordt geïnstalleerd en geconfigureerd om elk uur te controleren op image-updates, zodat elke Outline-server steeds de nieuwste functies en beveiligingsupdates bevat.</li>
 <li class="">Een webserver, die wordt gebruikt om toegang te krijgen tot de Management API, wordt gestart op een willekeurige poort met een geheim, willekeurig pad.</li>
 <li class="">Er wordt een <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">zelfondertekend SSL-certificaat</a> gemaakt, zodat het beheer van de Outline-server kan worden versleuteld met TLS, ook al is er geen domeinnaam. Er wordt ook een unieke vingerafdruk van dit certificaat gemaakt en opgeslagen in de Outline Manager-app, zodat MITM-aanvallen worden voorkomen.</li>
 </ul>
 <p>Na de installatie hoeft Outline niet meer te worden geconfigureerd.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="serverbeveiliging">Serverbeveiliging<a href="#serverbeveiliging" class="hash-link" aria-label="Direct link naar Serverbeveiliging" title="Direct link naar Serverbeveiliging" translate="no">​</a></h2>
-<p>De Outline-software is open source. Dit betekent dat iedereen de code kan zien en deze kan verbeteren als er kwetsbaarheden worden ontdekt. De code wordt gehost op <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a>.</p>
+<p>De Outline-software is open source. Dit betekent dat iedereen de code kan zien en deze kan verbeteren als er kwetsbaarheden worden ontdekt. De code wordt gehost op <a href="https://github.com/search?q=org%3AOutlineFoundation+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a>.</p>
 <p>Daarnaast worden alle geïnstalleerde Outline-servers automatisch geüpdatet wanneer er een nieuwe versie wordt vrijgegeven. Zo worden er nooit oude versies van de software gebruikt op Outline-servers.</p>
 <p>De Outline Manager-app communiceert met een beheerservice op de Outline-server om de toegangssleutels op de server te beheren. De beheerservice wordt uitgevoerd op een willekeurige poort, via een uniek, geheim pad. De beheerservice zelf is niet gevoelig voor probes, omdat deze alleen reageert op zoekopdrachten als het juiste geheime pad wordt opgegeven. Als laatste wordt alle communicatie met de beheerservice versleuteld via een <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">SSL</a> .</p>
 <p>De Outline-server slaat geen logboeken op. Zelfs als de server wordt gehackt, worden er dus geen gebruikersgegevens vrijgegeven. Kijk <a class="" href="/nl/about/security-and-privacy">here</a> voor meer informatie.</p>

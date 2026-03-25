@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkoutline_help_center=globalThis.webpackChunkoutline_help_center||[]).push([[1733],{3476(e,t,n){n.r(t),n.d(t,{default:()=>r});var l=n(6347),c=n(4848);function r(){return(0,c.jsx)(l.rd,{to:"/client/getting-started/get-access-key"})}}}]);

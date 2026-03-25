@@ -11,8 +11,8 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Outline Help Center" href="/et/opensearch.xml"><link rel="stylesheet" href="/et/assets/css/styles.f6ec6366.css">
-<script src="/et/assets/js/runtime~main.312f962b.js" defer="defer"></script>
-<script src="/et/assets/js/main.c8f07067.js" defer="defer"></script>
+<script src="/et/assets/js/runtime~main.835fc932.js" defer="defer"></script>
+<script src="/et/assets/js/main.80a16866.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -22,13 +22,13 @@
 <p>​Kuigi Outline&#x27;i installimine võib tunduda lihtne, leiavad kulisside taga aset keerukad protseduurid teie serveri installimiseks. Outline&#x27;i installimisel käitab installiskript järgmisi toiminguid.</p>
 <ul>
 <li class="">Shadowboxi kujutise stabiilne versioon tuuakse ja imporditakse Dockeri abil. Kujutist hostitakse teenuses <a href="https://quay.io/" target="_blank" rel="noopener noreferrer" class="">Quay.io</a> aadressil <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank" rel="noopener noreferrer" class="">https://quay.io/repository/outline/shadowbox?tab=tags</a>. Kujutis sisaldab Outline&#x27;i serverit ja Management API-d, mille abil Outline&#x27;i serveri haldusrakendus saab hiljem pääsuvõtmeid luua ja eemaldada, anonüümsete mõõdikute esitamise lubada/keelata jms.</li>
-<li class=""><a href="https://github.com/v2tec/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> installitakse ja seadistatakse nii, et see kontrolliks kujutise värskendusi kord tunnis. See aitab tagada, et kõik Outline&#x27;i serverid oleksid alati asjakohased ning hõlmaksid uusimaid funktsioone ja turbetäiustusi.</li>
+<li class=""><a href="https://github.com/containrrr/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> installitakse ja seadistatakse nii, et see kontrolliks kujutise värskendusi kord tunnis. See aitab tagada, et kõik Outline&#x27;i serverid oleksid alati asjakohased ning hõlmaksid uusimaid funktsioone ja turbetäiustusi.</li>
 <li class="">Veebiserver, mida kasutatakse Management API-le juurdepääsemiseks, käivitatakse salajasel ja juhuslikul teel juhuslikus pordis.</li>
 <li class=""><a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">Iseallkirjastatud SSL-sertifikaat</a>, et Outline&#x27;i serveri haldust saaks TLS-iga krüpteerida vaatamata sellele, et domeeninimi puudub. Samuti luuakse selle sertifikaadi unikaalne sõrmejälg, mis talletatakse Outline Manageri rakenduses ja mis aitab takistada vahendusründeid.</li>
 </ul>
 <p>Installitud Outline&#x27;i ei ole vaja pärast installimist seadistada.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="serveri-turvalisus">Serveri turvalisus<a href="#serveri-turvalisus" class="hash-link" aria-label="Link Serveri turvalisus" title="Link Serveri turvalisus" translate="no">​</a></h2>
-<p>Outline&#x27;i tarkvara on avatud lähtekoodiga, mis tähendab, et igaüks saab koodi vaadata ja haavatavuste leidmisel täiustada. Meie koodi hostib <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a>.</p>
+<p>Outline&#x27;i tarkvara on avatud lähtekoodiga, mis tähendab, et igaüks saab koodi vaadata ja haavatavuste leidmisel täiustada. Meie koodi hostib <a href="https://github.com/search?q=org%3AOutlineFoundation+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a>.</p>
 <p>Lisaks värskendatakse uue versiooni väljalaskmisel kõiki installitud Outline&#x27;i servereid automaatselt, et ükski Outline&#x27;i server ei käitaks tarkvara vana versiooni.</p>
 <p>Selleks et hallata serveris pääsuvõtmeid, suhtleb Outline Manageri rakendus Outline&#x27;i serveris oleva haldusteenusega. Haldusteenus töötab juhuslikus pordis ning salajasel ja unikaalsel teel. Haldusteenus ise on sondeerimiskindel, kuna see reageerib päringutele ainult juhul, kui määratud on sobiv salajane tee. Viimaks krüpteeritakse kogu side haldusteenusega <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">iseallkirjastatud SSL-sertifikaadi</a> abil.</p>
 <p>Lisaks ei talleta Outline&#x27;i server ühtki logi, seega isegi kui selle turvalisust rikutakse, ei avalikustata kasutajaandmeid. Vaadake lisateavet <a class="" href="/et/about/security-and-privacy">siit</a>. Outline&#x27;i auditeerisid <a href="https://radicallyopensecurity.com/" target="_blank" rel="noopener noreferrer" class="">Radically Open Security</a> ja <a href="https://cure53.de/" target="_blank" rel="noopener noreferrer" class="">Cure53</a> aastal 2018. Vaadake aruandeid <a class="" href="/et/about/security-and-privacy">siin</a>.</p>

@@ -11,8 +11,8 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Outline Help Center" href="/kk/opensearch.xml"><link rel="stylesheet" href="/kk/assets/css/styles.6fbcda7d.css">
-<script src="/kk/assets/js/runtime~main.512a1d35.js" defer="defer"></script>
-<script src="/kk/assets/js/main.2abbdac4.js" defer="defer"></script>
+<script src="/kk/assets/js/runtime~main.639e7ba9.js" defer="defer"></script>
+<script src="/kk/assets/js/main.fb8635d8.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -22,13 +22,13 @@
 <p>​Outline-ды орнату оңай көрінгенімен, шындығында серверіңізді орнату үшін көпшілікке көріне бермейтін күрделі қадамдар орындалып жатады. Outline-ды орнату скриптісі келесі қадамдардан тұрады:</p>
 <ul>
 <li class="">Shadowbox образының көпшілікке арналған нұсқасы Docker арқылы алынады және импортталады. Бұл образ <a href="https://quay.io/" target="_blank" rel="noopener noreferrer" class="">https://quay.io/</a> бетіндегі <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank" rel="noopener noreferrer" class="">Quay.io</a> сақтау орнында орналастырылған. Бұл образда Outline сервері және Management API бар, оны кейінірек Outline Server Management қолданбасы рұқсат кілттерін жасау және жою, анонимді көрсеткіштер туралы есептерді қосу/өшіру және т.б. үшін пайдаланады.</li>
-<li class=""><a href="https://github.com/v2tec/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> сағат сайын кескін жаңартуларын тексеріп отыру үшін орнатылады және конфигурацияланады. Осылай Outline серверлері соңғы функциялармен және қауіпсіздік жақсартуларымен үнемі жаңартылып отырады.</li>
+<li class=""><a href="https://github.com/containrrr/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> сағат сайын кескін жаңартуларын тексеріп отыру үшін орнатылады және конфигурацияланады. Осылай Outline серверлері соңғы функциялармен және қауіпсіздік жақсартуларымен үнемі жаңартылып отырады.</li>
 <li class="">Management API интерфейсіне кіру үшін пайдаланылатын веб-сервер құпия әрі кездейсоқ жолдағы кездейсоқ портта іске қосылады.</li>
 <li class=""><a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">Өздігінен қол қойылатын SSL сертификаты</a> домен атауы болмаса да, Outline серверін басқару TLS арқылы шифрланатындай етіп жасалады. Бұл сертификаттың бірегей саусақ ізі Outline Manager қолданбасында жасалады және сақталады, осылайша MITM шабуылдарының алдын алуға көмектеседі.</li>
 </ul>
 <p>Outline орнатылғаннан кейін, ешқандай конфигурациялар қажет болмайды.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="сервер-қауіпсіздігі">Сервер қауіпсіздігі<a href="#сервер-қауіпсіздігі" class="hash-link" aria-label="Direct link to Сервер қауіпсіздігі" title="Direct link to Сервер қауіпсіздігі" translate="no">​</a></h2>
-<p>Outline бағдарламалық құралы ашық кодты бағдарлама болып саналады, яғни оның кодын кез келген адам көре алады және кемшіліктер табылып жатса, жақсарта алады. Кодымыз <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a> сайтында орналастырылған.</p>
+<p>Outline бағдарламалық құралы ашық кодты бағдарлама болып саналады, яғни оның кодын кез келген адам көре алады және кемшіліктер табылып жатса, жақсарта алады. Кодымыз <a href="https://github.com/search?q=org%3AOutlineFoundation+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a> сайтында орналастырылған.</p>
 <p>Сондай-ақ жаңа нұсқа шыққан сайын, барлық орнатылған Outline сервері автоматты түрде жаңартылып отырады. Осылайша Outline серверлері бағдарламалық құралдың ескі нұсқаларында жұмыс істемейді.</p>
 <p>Серверде рұқсат кілттерін басқару үшін Outline Manager қолданбасы Outline серверіндегі Management Service қызметімен өзара әрекеттесіп жұмыс істейді. Management Service құпия әрі айрықша жол арылы кездейсоқ портта іске қосылады. Management Service тыңшылық әрекеттерге өз бетінше төтеп береді, өйткені тиісті құпия жол көрсетілмесе, сұрауларға жауап бермейді. Management Service қызметімен болатын барлық коммуникация <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">өздігінен қол қойылатын SSL сертификатымен</a> шифрланды.</p>
 <p>Сондай-ақ Outline сервері ешқандай журналдарды сақтамайды, сондықтан ол қолды болса да, пайдаланушы деректері жария болмайды. Толық ақпаратты <a class="" href="/kk/about/security-and-privacy">мына жерден</a> оқыңыз. Outline бағдарламалық құралына <a href="https://radicallyopensecurity.com/" target="_blank" rel="noopener noreferrer" class="">Radically Open Security</a> және <a href="https://cure53.de/" target="_blank" rel="noopener noreferrer" class="">Cure53</a> 2018 жылы аудит өткізген. Есептерді <a class="" href="/kk/about/security-and-privacy">мына жерден</a> көре аласыз.</p>

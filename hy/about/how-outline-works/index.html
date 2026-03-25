@@ -11,8 +11,8 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Outline Help Center" href="/hy/opensearch.xml"><link rel="stylesheet" href="/hy/assets/css/styles.b5269145.css">
-<script src="/hy/assets/js/runtime~main.3f25c5a9.js" defer="defer"></script>
-<script src="/hy/assets/js/main.944eda88.js" defer="defer"></script>
+<script src="/hy/assets/js/runtime~main.45b72194.js" defer="defer"></script>
+<script src="/hy/assets/js/main.e9852fd8.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -22,13 +22,13 @@
 <p>​Չնայած Outline-ի տեղադրումը կարող է պարզ թվալ, սակայն իրականում սերվերի տեղադրման հետևում բարդ քայլերի մի ամբողջ հավաքածու է թաքնված։ Outline-ի տեղադրման սկրիպտ կատարում է հետևյալ գործողությունները.</p>
 <ul>
 <li class="">Docker հարթակի օգնությամբ Shadowbox պատկերի կայուն տարբերակի բեռնում և ներմուծում։ Պատկերը տեղակայվում է <a href="https://quay.io/" target="_blank" rel="noopener noreferrer" class="">Quay.io</a> ռեգիստրում՝ <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank" rel="noopener noreferrer" class="">https://quay.io/repository/outline/shadowbox?tab=tags</a> էջում։ Այս պատկերը պարունակում է Outline-ի սերվերը, ինչպես նաև Management API-ը, որը հետագայում կօգտագործվի Outline-ի սերվերի կառավարման հավելվածի կողմից՝ մուտքի բանալիներ ստեղծելու/հեռացնելու, անանուն վիճակագրություն ուղարկելու և այլ գործողություններ կատարելու համար։</li>
-<li class=""><a href="https://github.com/v2tec/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower-ի</a> տեղադրում և կարգավորում։ Ընդ որում կարգավորումը կատարվում է այնպես, որ ժամը մեկ ստուգվի պատկերի թարմացումների առկայությունը, որպեսզի ձեզ մոտ միշտ տեղադրված լինի Outline-ի սերվերի վերջին տարբերակը՝ իր բոլոր գործառույթներով և անվտանգության հետ կապված բարելավումներով։</li>
+<li class=""><a href="https://github.com/containrrr/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower-ի</a> տեղադրում և կարգավորում։ Ընդ որում կարգավորումը կատարվում է այնպես, որ ժամը մեկ ստուգվի պատկերի թարմացումների առկայությունը, որպեսզի ձեզ մոտ միշտ տեղադրված լինի Outline-ի սերվերի վերջին տարբերակը՝ իր բոլոր գործառույթներով և անվտանգության հետ կապված բարելավումներով։</li>
 <li class="">Վեբ սերվերի գործարկում պատահական միացքում և գաղտնի ու պատահական ուղիով։ Այս սերվերն անհրաժեշտ է Management API-ից օգտվելու համար։</li>
 <li class=""><a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">Ինքնաստորագրվող SSL հավաստագրի</a> ստեղծում։ Սա անհրաժեշտ է՝ Outline-ի սերվերում գործողությունները TLS-ի օգնությամբ գաղտնագրելու համար՝ առանց տիրույթի անվանում ունենալու անհրաժեշտության։ Բացի այդ՝ այս փուլում ստեղծվում է հավաստագրի եզակի թվային մատնահետք, որն այնուհետև կպահվի Outline Manager հավելվածում՝ կանխելու միջնորդի հնարավոր հարձակումները։</li>
 </ul>
 <p>Տեղադրման ավարտից հետո Outline-ի լրացուցիչ կարգավորում չի պահանջվում։</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="սերվերի-անվտանգությունը">Սերվերի անվտանգությունը<a href="#սերվերի-անվտանգությունը" class="hash-link" aria-label="Direct link to Սերվերի անվտանգությունը" title="Direct link to Սերվերի անվտանգությունը" translate="no">​</a></h2>
-<p>Outline-ի ծրագրակազմը բաց կոդով է, որում յուրաքանչյուր ոք կարող է փոփոխություններ կատարել։ Մեր կոդը տեղակայված է <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub-ում</a>։</p>
+<p>Outline-ի ծրագրակազմը բաց կոդով է, որում յուրաքանչյուր ոք կարող է փոփոխություններ կատարել։ Մեր կոդը տեղակայված է <a href="https://github.com/search?q=org%3AOutlineFoundation+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub-ում</a>։</p>
 <p>Բացի այդ՝ հենց որ ծրագրակազմի նոր տարբերակ է թողարկվում, Outline-ի բոլոր տեղադրված սերվերներն ավտոմատ թարմացվում են։</p>
 <p>Սերվերի մուտքի բանալիները կառավարելու համար Outline Manager հավելվածը փոխգործակցում է Outline-ի սերվերի կառավարման ծառայության հետ։ Այս ծառայությունն աշխատում է պատահական միացքում և կարող է հայտնաբերվել միայն այն դեպքում, եթե հարցման մեջ նշվի եզակի գաղտնի ուղին։ Բացի այդ՝ ծառայությունում տվյալների փոխանակումը գաղտնագրված է <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">ինքնաստորագրվող SSL հավաստագրի</a> միջոցով։</p>
 <p>Հարկ է նշել, որ Outline-ի սերվերը չի պահում առցանց գործողությունների պատմությունը, հետևաբար, նույնիսկ եթե այն կոտրեն, նենգորդներին որևէ անձնական տվյալ հասանելի չի լինի։ Մանրամասներին կարող եք ծանոթանալ <a class="" href="/hy/about/security-and-privacy">այստեղ</a>։ 2018-ին Outline-ը <a href="https://radicallyopensecurity.com/" target="_blank" rel="noopener noreferrer" class="">Radically Open Security</a> և <a href="https://cure53.de/" target="_blank" rel="noopener noreferrer" class="">Cure53</a> կազմակերպությունների կողմից աուդիտի է ենթարկվել։ Հաշվետվություններին կարող եք ծանոթանալ <a class="" href="/hy/about/security-and-privacy">այստեղ</a>։</p>

@@ -11,8 +11,8 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Outline Help Center" href="/sq/opensearch.xml"><link rel="stylesheet" href="/sq/assets/css/styles.4e1bcb53.css">
-<script src="/sq/assets/js/runtime~main.2f42a84d.js" defer="defer"></script>
-<script src="/sq/assets/js/main.07d4f2e2.js" defer="defer"></script>
+<script src="/sq/assets/js/runtime~main.5ea41df4.js" defer="defer"></script>
+<script src="/sq/assets/js/main.c286eb73.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -22,13 +22,13 @@
 <p>​Megjithëse instalimi i Outline mund të duket i thjeshtë, në fakt janë një grup hapash të ndërlikuar që kryhen në prapaskenë për instalimin e serverit tënd. Sa herë që instalohet Outline, një skript instalimi ekzekuton hapat e mëposhtëm:</p>
 <ul>
 <li class="">Versioni i qëndrueshëm i imazhit të Shadowbox merret dhe importohet duke përdorur Docker. Imazhi strehohet në <a href="https://quay.io/" target="_blank" rel="noopener noreferrer" class="">Quay.io</a>, në <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank" rel="noopener noreferrer" class="">https://quay.io/repository/outline/shadowbox?tab=tags</a>. Ky imazh përfshin serverin e Outline dhe API-në e menaxhimit, të cilat përdoren më vonë nga aplikacioni Outline Server Management për të krijuar dhe për të hequr çelësat e qasjes, për të zgjedhur ose për t&#x27;u tërhequr nga raportimi i metrikave anonime etj.</li>
-<li class=""><a href="https://github.com/v2tec/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> instalohet dhe konfigurohet për të kontrolluar çdo orë për përditësime të imazhit, çka ndihmon për të siguruar që çdo server i Outline të jetë vazhdimisht i përditësuar me përmirësimet më të fundit të veçorive dhe të sigurisë.</li>
+<li class=""><a href="https://github.com/containrrr/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> instalohet dhe konfigurohet për të kontrolluar çdo orë për përditësime të imazhit, çka ndihmon për të siguruar që çdo server i Outline të jetë vazhdimisht i përditësuar me përmirësimet më të fundit të veçorive dhe të sigurisë.</li>
 <li class="">Një server uebi, i cili përdoret për qasjen tek API-ja e menaxhimit, niset në një portë të rastësishme në një shteg sekret dhe të rastësishëm.</li>
 <li class="">Krijohet një <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">certifikatë SSL me nënshkrim automatik</a>, në mënyrë që menaxhimi i serverit të Outline të mund të enkriptohet duke përdorur protokollin TLS, pavarësisht se nuk ka një emër domeni. Një gjurmë gishti unike për këtë certifikatë krijohet dhe ruhet po ashtu në aplikacionin Outline Manager, duke ndihmuar në parandalimin e sulmeve MITM.</li>
 </ul>
 <p>Instalimi i Outline nuk ka nevojë për konfigurim pas instalimit.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="siguria-e-serverit">Siguria e serverit<a href="#siguria-e-serverit" class="hash-link" aria-label="Direct link to Siguria e serverit" title="Direct link to Siguria e serverit" translate="no">​</a></h2>
-<p>Softueri i Outline është me burim të hapur, që do të thotë se çdo person mund ta shikojë kodin dhe ta përmirësojë atë nëse ka dobësi të zbuluara. Kodi ynë strehohet në <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a>.</p>
+<p>Softueri i Outline është me burim të hapur, që do të thotë se çdo person mund ta shikojë kodin dhe ta përmirësojë atë nëse ka dobësi të zbuluara. Kodi ynë strehohet në <a href="https://github.com/search?q=org%3AOutlineFoundation+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a>.</p>
 <p>Për më tepër, të gjithë serverët e instaluar të Outline përditësohen automatikisht sa herë që publikohet një version i ri, duke siguruar që asnjë server i Outline të mos lihet të ekzekutojë versionet e vjetra të softuerit.</p>
 <p>Për të menaxhuar çelësat e qasjes në server, aplikacioni Outline Manager ndërvepron me një shërbim menaxhimi në serverin e Outline. Shërbimi i menaxhimit ekzekutohet në një portë të rastësishme dhe në një shteg sekret dhe unik. Shërbimi i menaxhimit në vetvete është rezistent ndaj kontrolleve pasi nuk i përgjigjet kërkesave, përveçse nëse specifikohet shtegu përkatës sekret. Si përfundim, të gjitha komunikimet me shërbimin e menaxhimit janë të enkriptuara me një <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">certifikatë SSL me nënshkrim automatik</a>.</p>
 <p>Gjithashtu, serveri i Outline nuk ruan asnjë evidencë, kështu që nuk do të zbulohen të dhëna të përdoruesve edhe nëse ai komprometohet. Mëso më shumë <a class="" href="/sq/about/security-and-privacy">këtu</a>. Outline është audituar nga <a href="https://radicallyopensecurity.com/" target="_blank" rel="noopener noreferrer" class="">Radically Open Security</a> dhe <a href="https://cure53.de/" target="_blank" rel="noopener noreferrer" class="">Cure53</a> në vitin 2018. Shiko raportet <a class="" href="/sq/about/security-and-privacy">këtu</a>.</p>

@@ -11,8 +11,8 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Outline Help Center" href="/mk/opensearch.xml"><link rel="stylesheet" href="/mk/assets/css/styles.70de2ec0.css">
-<script src="/mk/assets/js/runtime~main.2266123e.js" defer="defer"></script>
-<script src="/mk/assets/js/main.600a078b.js" defer="defer"></script>
+<script src="/mk/assets/js/runtime~main.0ac2c3ef.js" defer="defer"></script>
+<script src="/mk/assets/js/main.7d2d1104.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -22,13 +22,13 @@
 <p>​Иако инсталирањето на Outline може да се чини едноставно, всушност има сложена група чекори што се извршуваат во заднина за да се инсталира вашиот сервер. Секогаш кога се инсталира Outline, скрипта за инсталирање ги извршува следниве чекори:</p>
 <ul>
 <li class="">Стабилната верзија на сликата на Shadowbox се повлекува и се увезува со Docker. Сликата се хостира на <a href="https://quay.io/" target="_blank" rel="noopener noreferrer" class="">Quay.io</a>, во <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank" rel="noopener noreferrer" class="">https://quay.io/repository/outline/shadowbox?tab=tags</a>. Сликава ги содржи серверот на Outline и Management API што подоцна го користи апликацијата за управување со серверот на Outline за создавање и отстранување клучеви за пристап, пријавување/отпишување од пријавувањето анонимна метрика итн.</li>
-<li class=""><a href="https://github.com/v2tec/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> се инсталира и конфигурира за да проверува за ажурирања за сликата на секој час, што помага секој сервер на Outline да се ажурира редовно со најновите подобрувања на функциите и безбедноста.</li>
+<li class=""><a href="https://github.com/containrrr/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> се инсталира и конфигурира за да проверува за ажурирања за сликата на секој час, што помага секој сервер на Outline да се ажурира редовно со најновите подобрувања на функциите и безбедноста.</li>
 <li class="">Веб-сервер што се користи за пристап до Management API, се стартува на порта по случаен избор на тајна и случајна патека.</li>
 <li class=""><a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">Самопотпишан SSL-сертификат</a> се создава за да може управувањето со серверот на Outline да се шифрира со TLS иако нема име на домен. Се генерира и единствен отпечаток на сертификатов што се складира во апликацијата Outline Manager, а помага да се спречат MITM-напади.</li>
 </ul>
 <p>Outline не треба да се конфигурира по инсталирањето.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="безбедност-на-сервер">Безбедност на сервер<a href="#безбедност-на-сервер" class="hash-link" aria-label="Direct link to Безбедност на сервер" title="Direct link to Безбедност на сервер" translate="no">​</a></h2>
-<p>Софтверот на Outline е софтвер со отворен код, што значи секој може да го гледа кодот и да го подобрува ако се откријат пропусти. Нашиот код се хостира на <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a>.</p>
+<p>Софтверот на Outline е софтвер со отворен код, што значи секој може да го гледа кодот и да го подобрува ако се откријат пропусти. Нашиот код се хостира на <a href="https://github.com/search?q=org%3AOutlineFoundation+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a>.</p>
 <p>Покрај тоа, сите инсталирани сервери на Outline се ажурираат автоматски секогаш кога ќе се објави нова верзија, што помага да се спречи серверите на Outline да извршуваат стари верзии на софтверот.</p>
 <p>За да управува со клучевите за пристап на серверот, апликацијата Outline Manager комуницира со услуга за управување на серверот на Outline. Услугата за управување се извршува на порта по случаен избор на тајна и единствена патека. Самата услуга за управување е отпорна на испитување бидејќи не одговара на барања освен ако е назначена соодветната тајна патека. Конечно, целата комуникација на услугата за управување е шифрирана со <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">самопотпишан SSL-сертификат</a>.</p>
 <p>Исто така, серверот на Outline не складира никаква евиденција, па дури и ако е компромитиран, нема да се откријат никакви податоци за корисниците. Дознајте повеќе <a class="" href="/mk/about/security-and-privacy">тука</a>. Проверка на Outline извршија <a href="https://radicallyopensecurity.com/" target="_blank" rel="noopener noreferrer" class="">Radically Open Security</a> и <a href="https://cure53.de/" target="_blank" rel="noopener noreferrer" class="">Cure53</a> во 2018 година. Погледнете ги извештаите <a class="" href="/mk/about/security-and-privacy">тука</a>.</p>

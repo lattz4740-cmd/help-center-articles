@@ -11,8 +11,8 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Outline Help Center" href="/ar/opensearch.xml"><link rel="stylesheet" href="/ar/assets/css/styles.a4813d61.css">
-<script src="/ar/assets/js/runtime~main.0a94b9d4.js" defer="defer"></script>
-<script src="/ar/assets/js/main.59e7abbe.js" defer="defer"></script>
+<script src="/ar/assets/js/runtime~main.57694316.js" defer="defer"></script>
+<script src="/ar/assets/js/main.942fa8c4.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -23,13 +23,13 @@
 <p>عند تثبيت تطبيق Outline، يبدأ برنامج النص البرمجي للتثبيت في تنفيذ الخطوات التالية:</p>
 <ul>
 <li class="">يتم استرداد الإصدار الثابت لصورة Shadowbox ويتم استيراده باستخدام Docker. وبعد ذلك، تتم استضافة الصورة على <a href="https://quay.io/" target="_blank" rel="noopener noreferrer" class="">Quay.io</a>، وذلك في <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank" rel="noopener noreferrer" class="">https://quay.io/repository/outline/shadowbox?tab=tags</a>. تحتوي هذه الصورة على خادم Outline وواجهة برمجة تطبيقات الإدارة التي يستخدمها لاحقًا تطبيق &quot;إدارة خوادم Outline&quot; لإنشاء مفاتيح الوصول وإزالتها وتفعيل ميزة الإبلاغ عن المقاييس مجهولة المصدر وإيقافها وغير ذلك.</li>
-<li class="">يتم تثبيت <a href="https://github.com/v2tec/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> وضبطه للتحقّق من تحديثات الصورة كل ساعة، مما يساعد على ضمان تحديث كل خادم من خوادم Outline بآخر تحسينات الميزات والأمان باستمرار.</li>
+<li class="">يتم تثبيت <a href="https://github.com/containrrr/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> وضبطه للتحقّق من تحديثات الصورة كل ساعة، مما يساعد على ضمان تحديث كل خادم من خوادم Outline بآخر تحسينات الميزات والأمان باستمرار.</li>
 <li class="">يتم بدء تشغيل أحد الخوادم الموجودة على الويب للاتصال بواجهة برمجة تطبيقات الإدارة، وذلك من خلال منفذ عشوائي موجود في مسار سري وعشوائي.</li>
 <li class="">يتم إنشاء <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">شهادة SSL موقَّعة ذاتيًا</a>، بحيث يمكن تشفير إدارة خادم Outline باستخدام طبقة النقل الآمنة على الرغم من عدم وجود اسم نطاق. ويتم أيضًا إنشاء بصمة فريدة لهذه الشهادة وتخزينها في تطبيق &quot;مدير Outline&quot;، مما يساعد على منع هجمات MITM.</li>
 </ul>
 <p>لا يحتاج تثبيت Outline إلى أي ضبط بعد التثبيت.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="أمان-الخادم">أمان الخادم<a href="#أمان-الخادم" class="hash-link" aria-label="إرتباط مُبـاشر بالعنوان أمان الخادم" title="إرتباط مُبـاشر بالعنوان أمان الخادم" translate="no">​</a></h2>
-<p>إنّ Outline برنامج مفتوح المصدر، مما يعني أنّ أي مستخدم يمكنه مشاهدة الترميز وتحسينه في حال وجود أي ثغرات أمنية مُكتشَفة. تتم استضافة الترميز على موقع <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a>.</p>
+<p>إنّ Outline برنامج مفتوح المصدر، مما يعني أنّ أي مستخدم يمكنه مشاهدة الترميز وتحسينه في حال وجود أي ثغرات أمنية مُكتشَفة. تتم استضافة الترميز على موقع <a href="https://github.com/search?q=org%3AOutlineFoundation+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a>.</p>
 <p>بالإضافة إلى ذلك، يتم تحديث جميع خوادم Outline المثبَّتة تلقائيًا كلما تم طرح إصدار جديد، مما يضمن عدم عمل أي خادم لتطبيق Outline باستخدام الإصدارات القديمة من البرنامج.</p>
 <p>من أجل إدارة مفاتيح الوصول على الخادم، يتفاعل تطبيق &quot;مدير Outline&quot; مع إحدى &quot;خدمات الإدارة&quot; على خادم Outline. وتعمل هذه الخدمة على منفذ عشوائي وعلى مسار سري وفريد. تُعد &quot;خدمة الإدارة&quot; هذه مقاوِمة للاختراق لأنها لا تستجيب لطلبات البحث ما لم يتم تحديد المسار السري المناسب. وأخيرًا، يتم تشفير جميع الاتصالات الصادرة إلى &quot;خدمة الإدارة&quot; باستخدام <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">شهادة SSL موقَّعة ذاتيًا</a>.</p>
 <p>بالإضافة إلى ذلك، لا يخزّن خادم Outline أي سجلّات، وبالتالي حتى في حال اختراقه، لن يتم الإفصاح عن أي بيانات للمستخدمين. تعرّف على مزيد من المعلومات <a class="" href="/ar/about/security-and-privacy">هنا</a>.</p>

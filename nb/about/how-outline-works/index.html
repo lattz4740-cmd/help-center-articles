@@ -11,8 +11,8 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Outline Help Center" href="/nb/opensearch.xml"><link rel="stylesheet" href="/nb/assets/css/styles.a35d0c30.css">
-<script src="/nb/assets/js/runtime~main.3fcf3d9d.js" defer="defer"></script>
-<script src="/nb/assets/js/main.6b79d56f.js" defer="defer"></script>
+<script src="/nb/assets/js/runtime~main.d23ebe0f.js" defer="defer"></script>
+<script src="/nb/assets/js/main.b170b4f5.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -22,13 +22,13 @@
 <p>​Selv om det ser lett ut å installere Outline, skjer det en rekke teknisk kompliserte trinn bak kulissene for å installere tjeneren. Når Outline installeres, kjøres et installeringsskript som utfører følgende trinn:</p>
 <ul>
 <li class="">Den stabile versjonen av Shadowbox-bildet blir hentet og importert ved hjelp av Docker. Avbildningen ligger på <a href="https://quay.io/" target="_blank" rel="noopener noreferrer" class="">Quay.io</a>: <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank" rel="noopener noreferrer" class="">https://quay.io/repository/outline/shadowbox?tab=tags</a>. Denne avbildningen inneholder Outline-tjeneren og Management API, som senere brukes av Outline Server Management-programmet til å opprette og fjerne tilgangsnøkler, velge eller velge bort rapportering av anonyme verdier osv.</li>
-<li class=""><a href="https://github.com/v2tec/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> blir installert og konfigurert til å se etter avbildningsoppdateringer hver time, noe som bidrar til å sikre at hver eneste Outline-tjener til enhver tid er oppdatert med de nyeste funksjonene og sikkerhetsforbedringene.</li>
+<li class=""><a href="https://github.com/containrrr/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> blir installert og konfigurert til å se etter avbildningsoppdateringer hver time, noe som bidrar til å sikre at hver eneste Outline-tjener til enhver tid er oppdatert med de nyeste funksjonene og sikkerhetsforbedringene.</li>
 <li class="">En nettjener som brukes til å få tilgang til Management API, startes på en tilfeldig port i en hemmelig og tilfeldig bane.</li>
 <li class="">Det opprettes et <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">selvsignert SSL-sertifikat</a>, slik at administreringen av Outline-tjeneren kan krypteres med TLS selv om den ikke har noe domenenavn. Et unikt fingeravtrykk for dette sertifikatet blir også generert og lagret i appen Outline-administrator, noe som bidrar til å forhindre MITM-angrep.</li>
 </ul>
 <p>Outline-installasjonen krever ingen konfigurering når den er installert.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tjenersikkerhet">Tjenersikkerhet<a href="#tjenersikkerhet" class="hash-link" aria-label="Direkte lenke til Tjenersikkerhet" title="Direkte lenke til Tjenersikkerhet" translate="no">​</a></h2>
-<p>Outline-programvaren har åpen kildekode, noe som betyr at alle kan se koden og forbedre den hvis eventuelle sårbarheter blir oppdaget. <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a> er vert for koden vår.</p>
+<p>Outline-programvaren har åpen kildekode, noe som betyr at alle kan se koden og forbedre den hvis eventuelle sårbarheter blir oppdaget. <a href="https://github.com/search?q=org%3AOutlineFoundation+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a> er vert for koden vår.</p>
 <p>I tillegg blir alle installerte Outline-tjenere automatisk oppdatert når en ny versjon blir utgitt, slik at ingen Outline-tjenere kjører gamle versjoner av programvaren.</p>
 <p>For å kunne administrere tilgangsnøklene på tjeneren samhandler appen Outline-administrator med en administrasjonstjeneste på Outline-tjeneren. Administrasjonstjenesten kjører på en tilfeldig port og i en hemmelig og unik bane. Selve administrasjonstjenesten er beskyttet mot innsyn, da den ikke responderer på søk med mindre den riktige hemmelige banen oppgis. All kommunikasjon til administrasjonstjenesten blir dessuten kryptert med et <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">selvsignert SSL-sertifikat</a>.</p>
 <p>Vær oppmerksom på at Outline-tjeneren ikke lagrer noen logger, så selv om den skulle bli utsatt for sikkerhetsbrudd, blir ingen brukerdata avslørt. Finn ut mer <a class="" href="/nb/about/security-and-privacy">her</a>. Outline ble revidert av <a href="https://radicallyopensecurity.com/" target="_blank" rel="noopener noreferrer" class="">Radically Open Security</a> og <a href="https://cure53.de/" target="_blank" rel="noopener noreferrer" class="">Cure53</a> i 2018. Du kan lese rapportene <a class="" href="/nb/about/security-and-privacy">her</a>.</p>

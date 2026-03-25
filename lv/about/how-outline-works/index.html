@@ -11,8 +11,8 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Outline Help Center" href="/lv/opensearch.xml"><link rel="stylesheet" href="/lv/assets/css/styles.1ca06421.css">
-<script src="/lv/assets/js/runtime~main.a3fe05bc.js" defer="defer"></script>
-<script src="/lv/assets/js/main.e9b3c738.js" defer="defer"></script>
+<script src="/lv/assets/js/runtime~main.1d773f37.js" defer="defer"></script>
+<script src="/lv/assets/js/main.a8948ea9.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -22,13 +22,13 @@
 <p>​Lai gan Outline servera instalēšana var šķist vienkārša, fonā tiek veikts sarežģītu darbību kopums, kas nodrošina servera instalēšanu. Kad tiek instalēta programmatūra Outline, instalēšanas skripts izpilda tālāk minētās darbības.</p>
 <ul>
 <li class="">Tiek izgūta Shadowbox attēla stabilā versija, kas tiek importēta, izmantojot Docker. Attēls tiek mitināts vietnes <a href="https://quay.io/" target="_blank" rel="noopener noreferrer" class="">Quay.io</a> sadaļā <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank" rel="noopener noreferrer" class="">https://quay.io/repository/outline/shadowbox?tab=tags</a>. Šajā attēlā ir ietverts Outline serveris un Pārvaldības API, ko vēlāk Outline servera pārvaldības lietojumprogramma izmanto, lai izveidotu un noņemtu piekļuves atslēgas, izvēlētos/atceltu anonīmas metrikas iekļaušanu pārskatos utt.</li>
-<li class=""><a href="https://github.com/v2tec/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> tiek instalēts un konfigurēts, lai katru stundu pārbaudītu attēla atjauninājumus, tādējādi palīdzot nodrošināt, ka katrs Outline serveris tiek nepārtraukti atjaunināts ar jaunākajām funkcijām un drošības uzlabojumiem.</li>
+<li class=""><a href="https://github.com/containrrr/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> tiek instalēts un konfigurēts, lai katru stundu pārbaudītu attēla atjauninājumus, tādējādi palīdzot nodrošināt, ka katrs Outline serveris tiek nepārtraukti atjaunināts ar jaunākajām funkcijām un drošības uzlabojumiem.</li>
 <li class="">Tīmekļa serveris, kas tiek izmantots, lai piekļūtu Pārvaldības API, tiek palaists slepena un nejauša ceļa nejaušā portā.</li>
 <li class="">Tiek izveidots <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">pašparakstīts SSL sertifikāts</a>, lai Outline servera pārvaldība tiktu šifrēta, izmantojot TLS, kaut arī nav domēna nosaukuma. Lietojumprogrammā Outline pārvaldnieks tiek ģenerēts un glabāts arī unikāls šī sertifikāta ciparnospiedums, palīdzot novērst pārtvērējuzbrukumus.</li>
 </ul>
 <p>Outline instalācijai nav nepieciešama nekāda konfigurācija pēc instalēšanas.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="servera-drošība">Servera drošība<a href="#servera-drošība" class="hash-link" aria-label="Direct link to Servera drošība" title="Direct link to Servera drošība" translate="no">​</a></h2>
-<p>Outline ir atvērtā pirmkoda programmatūra, tādējādi ikviens var skatīt kodu un uzlabot to, ja tiek atklātas kādas ievainojamības. Mūsu kods tiek mitināts vietnē <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a>.</p>
+<p>Outline ir atvērtā pirmkoda programmatūra, tādējādi ikviens var skatīt kodu un uzlabot to, ja tiek atklātas kādas ievainojamības. Mūsu kods tiek mitināts vietnē <a href="https://github.com/search?q=org%3AOutlineFoundation+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a>.</p>
 <p>Turklāt visi instalētie Outline serveri tiek automātiski atjaunināti ikreiz, kad tiek izlaista jauna versija, nodrošinot, ka neviens serveris nav atstāts darbojoties ar programmatūras vecām versijām.</p>
 <p>Lai pārvaldītu piekļuves atslēgas serverī, lietojumprogramma Outline pārvaldnieks mijiedarbojas ar pārvaldības pakalpojumu Outline serverī. Pārvaldības pakalpojums darbojas nejaušā slepena un unikāla ceļa portā. Pārvaldības pakalpojums pats ir izturīgs attiecībā uz zondēšanu, jo tas neatbild uz vaicājumiem, ja nav norādīts atbilstošs slepenais ceļš. Visbeidzot, visi sakari ar pārvaldības pakalpojumu tiek šifrēti, izmantojot <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">pašparakstītu SSL sertifikātu</a>.</p>
 <p>Turklāt Outline serverī netiek glabāti nekādi žurnāli, tādēļ, pat ja tas tiek apdraudēts, netiktu izpausti nekādi lietotāja dati. Uzziniet vairāk <a class="" href="/lv/about/security-and-privacy">šeit</a>. 2018. gadā programmatūras Outline auditu veica organizācija <a href="https://radicallyopensecurity.com/" target="_blank" rel="noopener noreferrer" class="">Radically Open Security</a> un <a href="https://cure53.de/" target="_blank" rel="noopener noreferrer" class="">Cure53</a>. Pārskati ir pieejami <a class="" href="/lv/about/security-and-privacy">šeit</a>.</p>

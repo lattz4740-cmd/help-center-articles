@@ -11,8 +11,8 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Outline Help Center" href="/ko/opensearch.xml"><link rel="stylesheet" href="/ko/assets/css/styles.12a82992.css">
-<script src="/ko/assets/js/runtime~main.997a8d1d.js" defer="defer"></script>
-<script src="/ko/assets/js/main.a4230730.js" defer="defer"></script>
+<script src="/ko/assets/js/runtime~main.49931338.js" defer="defer"></script>
+<script src="/ko/assets/js/main.b9c4a773.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -23,13 +23,13 @@
 <p>Outline이 설치될 때마다 설치 스크립트는 다음 단계를 실행합니다.</p>
 <ul>
 <li class="">Docker를 통해 안정적인 버전의 Shadowbox 이미지를 검색해 가져옵니다. 이미지는 <a href="https://quay.io/" target="_blank" rel="noopener noreferrer" class="">Quay.io</a>(<a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank" rel="noopener noreferrer" class="">https://quay.io/repository/outline/shadowbox?tab=tags</a>)에 호스팅되어 있습니다. 이 이미지에는 Outline 서버 및 Management API가 포함되어 있으며, 이 API는 나중에 Outline Server Management 애플리케이션에서 액세스 키를 생성 및 삭제하고, 익명처리된 측정항목 보고서를 선택 또는 선택 해제할 때 사용됩니다.</li>
-<li class="">매시간 이미지 업데이트를 확인하도록 <a href="https://github.com/v2tec/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a>가 설치 및 구성되므로 모든 Outline 서버는 지속적으로 최신 기능 및 보안 개선 사항을 받아 최신 상태를 유지할 수 있습니다.</li>
+<li class="">매시간 이미지 업데이트를 확인하도록 <a href="https://github.com/containrrr/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a>가 설치 및 구성되므로 모든 Outline 서버는 지속적으로 최신 기능 및 보안 개선 사항을 받아 최신 상태를 유지할 수 있습니다.</li>
 <li class="">Management API에 액세스하는 데 사용되는 웹 서버가 비공개 고유 경로를 통해 랜덤 포트에서 시작됩니다.</li>
 <li class="">도메인 이름 없이도 TLS를 사용해 Outline 서버 관리 내역을 암호화할 수 있도록 <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">자체 서명된 SSL 인증서</a>가 생성됩니다. 이 인증서에 사용할 고유 디지털 지문이 생성되고 Outline Manager 애플리케이션에 저장되기 때문에 MITM 공격을 방지하는 데 도움이 됩니다.</li>
 </ul>
 <p>Outline은 설치가 완료된 후 따로 구성할 필요가 없습니다.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="서버-보안">서버 보안<a href="#서버-보안" class="hash-link" aria-label="서버 보안에 대한 직접 링크" title="서버 보안에 대한 직접 링크" translate="no">​</a></h2>
-<p>Outline 소프트웨어는 오픈소스이므로 누구나 코드를 보고 취약점이 발견되는 경우 이를 개선할 수 있습니다. Outline의 코드는 <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a> 에 호스팅되어 있습니다.</p>
+<p>Outline 소프트웨어는 오픈소스이므로 누구나 코드를 보고 취약점이 발견되는 경우 이를 개선할 수 있습니다. Outline의 코드는 <a href="https://github.com/search?q=org%3AOutlineFoundation+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a> 에 호스팅되어 있습니다.</p>
 <p>또한 설치된 모든 Outline 서버는 새 버전이 출시될 때마다 자동으로 업데이트되므로 이전 버전의 소프트웨어를 실행 중인 Outline 서버가 남아 있지 않도록 보장합니다.</p>
 <p>Outline Manager 애플리케이션은 서버에서 액세스 키를 관리하기 위해 Outline 서버의 관리 서비스와 상호작용합니다. 관리 서비스는 랜덤 포트와 비공개 고유 경로에서 실행됩니다. 적절한 비공개 경로가 지정되지 않으면 쿼리에 응답하지 않기 때문에 관리 서비스는 자체적으로 탐색에 강합니다. 마지막으로 관리 서비스로의 모든 통신은 <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">자체 서명된 SSL 인증서</a> 로 암호화됩니다.</p>
 <p>Outline 서버는 어떤 로그도 저장하지 않으므로 서버가 해킹되는 경우에도 사용자 데이터는 공개되지 않습니다. <a class="" href="/ko/about/security-and-privacy">여기</a>에서 자세히 알아보세요.</p>

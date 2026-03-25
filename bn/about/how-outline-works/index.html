@@ -11,8 +11,8 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Outline Help Center" href="/bn/opensearch.xml"><link rel="stylesheet" href="/bn/assets/css/styles.d9ac2a2c.css">
-<script src="/bn/assets/js/runtime~main.defc417a.js" defer="defer"></script>
-<script src="/bn/assets/js/main.b614242d.js" defer="defer"></script>
+<script src="/bn/assets/js/runtime~main.c97b9ddc.js" defer="defer"></script>
+<script src="/bn/assets/js/main.43872d9d.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -22,13 +22,13 @@
 <p>​Outline ইনস্টল করার কাজ সহজ বলে মনে হলেও আসলে সার্ভার ইনস্টল করার জন্য ব্যাকগ্রাউন্ডে জটিল কয়েকটি ধাপ চলতে থাকে। Outline যখনই ইনস্টল করা হয়, ইনস্টলেশন স্ক্রিপ্ট নিচে উল্লেখ করা ধাপ অনুযায়ী রান করানো হয়:</p>
 <ul>
 <li class="">ডকার ব্যবহার করে শ্যাডোবক্স ইমেজের স্টেবল ভার্সন রিট্রিভ ও ইমপোর্ট করা হয়। ইমেজটি <a href="https://quay.io/" target="_blank" rel="noopener noreferrer" class="">Quay.io</a>-এ হোস্ট করা হয় এবং এর লিঙ্ক হল <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank" rel="noopener noreferrer" class="">https://quay.io/repository/outline/shadowbox?tab=tags</a>। এই ইমেজে Outline সার্ভার এবং ম্যানেজমেন্ট API রয়েছে যা পরে Outline Server Management অ্যাপ্লিকেশনের মাধ্যমে অ্যাক্সেস কী তৈরি করা এবং সরানো, বেনামী মেট্রিক্স রিপোর্ট করার সুবিধা চালু করা/বন্ধ করা ইত্যাদি কাজে ব্যবহার করা যেতে পারে।</li>
-<li class="">প্রতি ঘণ্টায় ইমেজ আপডেট চেক করার জন্য <a href="https://github.com/v2tec/watchtower" target="_blank" rel="noopener noreferrer" class="">ওয়াচটাওয়ার</a> ইনস্টল এবং কনফিগার করা হয় এবং এর মাধ্যমে প্রতিটি Outline সার্ভার লেটেস্ট ফিচার এবং নিরাপত্তা সংক্রান্ত উন্নতির সাথে প্রতিনিয়ত আপ-টু-ডেট আছে কিনা তা নিশ্চিত করা যায়।</li>
+<li class="">প্রতি ঘণ্টায় ইমেজ আপডেট চেক করার জন্য <a href="https://github.com/containrrr/watchtower" target="_blank" rel="noopener noreferrer" class="">ওয়াচটাওয়ার</a> ইনস্টল এবং কনফিগার করা হয় এবং এর মাধ্যমে প্রতিটি Outline সার্ভার লেটেস্ট ফিচার এবং নিরাপত্তা সংক্রান্ত উন্নতির সাথে প্রতিনিয়ত আপ-টু-ডেট আছে কিনা তা নিশ্চিত করা যায়।</li>
 <li class="">Management API অ্যাক্সেস করার জন্য ওয়েব সার্ভার ব্যবহৃত হয় যা একটি গোপনীয় এবং র‍্যান্ডম পাথে র‍্যান্ডম পোর্ট ব্যবহার করে শুরু হয়।</li>
 <li class="">একটি <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">স্ব-স্বাক্ষরিত SSL সার্টিফিকেট</a> তৈরি করা হয় যাতে ডোমেনের নাম না থাকা সত্ত্বেও TLS ব্যবহার করে Outline সার্ভারের ম্যানেজমেন্ট এনক্রিপটেড করা যেতে পারে। এছাড়াও, Outline Manager অ্যাপ্লিকেশনে এই সার্টিফিকেটের একটি স্বতন্ত্র ফিঙ্গারপ্রিন্ট জেনারেট ও স্টোর করে রাখা হয় যা MITM অ্যাটাক আটকাতে সাহায্য করে থাকে।</li>
 </ul>
 <p>একবার ইনস্টল করা হয়ে গেলে, Outline ইনস্টলেশনের আর কোনও কনফিগারেশনের দরকার হয় না।</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="সার্ভার-সুরক্ষা">সার্ভার সুরক্ষা<a href="#সার্ভার-সুরক্ষা" class="hash-link" aria-label="সার্ভার সুরক্ষা এর সঙ্গে সরাসরি লিংকড" title="সার্ভার সুরক্ষা এর সঙ্গে সরাসরি লিংকড" translate="no">​</a></h2>
-<p>Outline সফ্টওয়্যার হল ওপেন-সোর্স, এর অর্থ হল, যেকোনও ব্যক্তি এর কোড দেখতে পারেন এবং কোড উন্নত করতে পারেন যদি সফ্টওয়্যারে কোনও অ্যাটাক বা ক্ষতি করার সম্ভাবনা খুঁজে পাওয়া যায়। আমাদের কোড <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a>-এ হোস্ট করা হয়েছে।</p>
+<p>Outline সফ্টওয়্যার হল ওপেন-সোর্স, এর অর্থ হল, যেকোনও ব্যক্তি এর কোড দেখতে পারেন এবং কোড উন্নত করতে পারেন যদি সফ্টওয়্যারে কোনও অ্যাটাক বা ক্ষতি করার সম্ভাবনা খুঁজে পাওয়া যায়। আমাদের কোড <a href="https://github.com/search?q=org%3AOutlineFoundation+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a>-এ হোস্ট করা হয়েছে।</p>
 <p>এছাড়াও, কোনও নতুন ভার্সন প্রকাশ হলেই সমস্ত ইনস্টল করা Outline সার্ভার অটোমেটিক আপডেট করা হয় এবং কোনও Outline সার্ভার সফ্টওয়্যারের পুরনো ভার্সনে রান করছে না তা নিশ্চিত করা হয়।</p>
 <p>সার্ভারে অ্যাক্সেস কী ম্যানেজ করার জন্য, Outline Manager অ্যাপ্লিকেশনটি Outline সার্ভারে ম্যানেজমেন্ট পরিষেবার সাথে ইন্টার‍্যাক্ট করে। ম্যানেজমেন্ট পরিষেবাটি র‍্যান্ডম পোর্টে গোপনীয় ও অনন্য পাথে রান করা হয়। ম্যানেজমেন্ট পরিষেবা নিজের থেকেই সার্চকে প্রতিরোধ করে কারণ এটি শুধুমাত্র যথাযথ গোপন পাথ নির্দিষ্ট থাকা কোয়ারির উত্তর দেয়। অবশেষে, ম্যানেজমেন্ট পরিষেবায় করা সব কমিউনিকেশন <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">স্ব-স্বাক্ষরিত SSL সার্টিফিকেট</a> সহ এনক্রিপটেড করা থাকে।</p>
 <p>এছাড়াও, Outline সার্ভার কোনও লগ স্টোর করে রাখে না, তাই কোনওভাবে এটির গোপনীয়তা লঙ্ঘন করা হলেও ব্যবহারকারীর কোনও ডেটা প্রকাশিত হয় না। <a class="" href="/bn/about/security-and-privacy">এখান</a> থেকে আরও জানুন। ২০১৮ সালে <a href="https://radicallyopensecurity.com/" target="_blank" rel="noopener noreferrer" class="">Radically Open Security</a> ও <a href="https://cure53.de/" target="_blank" rel="noopener noreferrer" class="">Cure53</a>-এর মাধ্যমে Outline অডিট করা হয়। <a class="" href="/bn/about/security-and-privacy">এখানে</a> রিপোর্টগুলি দেখুন।</p>

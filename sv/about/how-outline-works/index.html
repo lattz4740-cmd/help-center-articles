@@ -11,8 +11,8 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Outline Help Center" href="/sv/opensearch.xml"><link rel="stylesheet" href="/sv/assets/css/styles.e6b483a8.css">
-<script src="/sv/assets/js/runtime~main.41c2255b.js" defer="defer"></script>
-<script src="/sv/assets/js/main.3c6c7d23.js" defer="defer"></script>
+<script src="/sv/assets/js/runtime~main.9a89449a.js" defer="defer"></script>
+<script src="/sv/assets/js/main.14cbf40e.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -22,13 +22,13 @@
 <p>​Även om det kan verka enkelt att installera Outline sker flera komplexa steg bakom kulisserna när servern installeras. När Outline installeras kör ett installationsskript följande steg:</p>
 <ul>
 <li class="">Den stabila versionen av Shadowbox-avbildningen hämtas och importeras med hjälp av Docker. Bilden finns på <a href="https://quay.io/" target="_blank" rel="noopener noreferrer" class="">Quay.io</a>, i <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank" rel="noopener noreferrer" class="">https://quay.io/repository/outline/shadowbox?tab=tags</a>. Bilden innehåller Outline-servern och Management API som senare används av Outline Server Management-appen för att skapa och ta bort åtkomstnycklar, välja att rapportera anonyma mätvärden eller inte osv.</li>
-<li class=""><a href="https://github.com/v2tec/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> installeras och konfigureras för att söka efter uppdateringar av avbildningen varje timme. På så sätt är alla Outline-servrar alltid uppdaterade med de senaste funktionerna och säkerhetsförbättringarna.</li>
+<li class=""><a href="https://github.com/containrrr/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> installeras och konfigureras för att söka efter uppdateringar av avbildningen varje timme. På så sätt är alla Outline-servrar alltid uppdaterade med de senaste funktionerna och säkerhetsförbättringarna.</li>
 <li class="">En webbserver som används för åtkomst till Management-API:et startas på en slumpmässig port på en hemlig och slumpmässig sökväg.</li>
 <li class="">Ett <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">självsignerat SSL-certifikat</a> skapas så att hanteringen av Outline-servern kan krypteras med hjälp av TLS även om det inte finns ett domännamn. En unik signatur för det här certifikatet skapas också och lagras i Outline Manager-appen för att förhindra man-i-mitten-attacker.</li>
 </ul>
 <p>Installationen av Outline behöver inte konfigureras efter installationen</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="serversäkerhet">Serversäkerhet<a href="#serversäkerhet" class="hash-link" aria-label="Direktlänk till Serversäkerhet" title="Direktlänk till Serversäkerhet" translate="no">​</a></h2>
-<p>Outline-mjukvaran har öppen källkod, vilket innebär att alla kan se koden och förbättra den om de upptäcker brister. Vår kod lagras på <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a>.</p>
+<p>Outline-mjukvaran har öppen källkod, vilket innebär att alla kan se koden och förbättra den om de upptäcker brister. Vår kod lagras på <a href="https://github.com/search?q=org%3AOutlineFoundation+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a>.</p>
 <p>Dessutom uppdateras alla Outline-servrar automatiskt när en ny version lanseras, så att ingen Outline-server körs med tidigare programvaruversioner.</p>
 <p>I syfte att hantera åtkomstnycklar på servern interagerar Outline Manager-appen med en hanteringstjänst på Outline-servern. Hanteringstjänsten körs via en slumpmässig port och en hemlig och unik sökväg. Själva hanteringstjänsten är avläsningsskyddad eftersom den inte svarar på förfrågningar om inte den hemliga sökvägen anges. Slutligen krypteras all kommunikation med hanteringstjänsten med ett <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">självsignerat SSL-certifikat</a>.</p>
 <p>Dessutom lagras inga loggar på Outline-servern, så även om vi skulle utsättas för intrång skulle ingen data avslöjas. Läs mer <a class="" href="/sv/about/security-and-privacy">här</a>. Outline granskades av <a href="https://radicallyopensecurity.com/" target="_blank" rel="noopener noreferrer" class="">Radically Open Security</a> och <a href="https://cure53.de/" target="_blank" rel="noopener noreferrer" class="">Cure53</a> under 2018. Läs rapporterna <a class="" href="/sv/about/security-and-privacy">här</a>.</p>

@@ -11,8 +11,8 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Outline Help Center" href="/bs/opensearch.xml"><link rel="stylesheet" href="/bs/assets/css/styles.0dc68476.css">
-<script src="/bs/assets/js/runtime~main.91ecdec4.js" defer="defer"></script>
-<script src="/bs/assets/js/main.c6e2ea42.js" defer="defer"></script>
+<script src="/bs/assets/js/runtime~main.9d80956e.js" defer="defer"></script>
+<script src="/bs/assets/js/main.c45d8b35.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -22,13 +22,13 @@
 <p>​Iako se instalacija Outlinea čini jednostavnom, zapravo postoji složen skup koraka koji se izvršavaju u pozadini i omogućavaju instalaciju servera. Prilikom svake instalacije Outlinea instalacijska skripta izvršava sljedeće korake:</p>
 <ul>
 <li class="">Stabilna verzija slike Shadowboxa se preuzima i uvozi pomoću Dockera. Slika se hostira na <a href="https://quay.io/" target="_blank" rel="noopener noreferrer" class="">Quay.io</a>, na <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank" rel="noopener noreferrer" class="">https://quay.io/repository/outline/shadowbox?tab=tags</a>. Ta slika sadržava Outline server i Management API koje će kasnije koristiti aplikacija Outline Server Management za kreiranje i uklanjanje pristupnih ključeva, uključivanje/isključivanje izvještavanja o anonimnim pokazateljima itd.</li>
-<li class=""><a href="https://github.com/v2tec/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> se instalira i konfigurira. On svaki sat provjerava postoje li ažuriranja slika, čime se osigurava da svaki Outline server bude uvijek ažuran i ima najnovija poboljšanja funkcija i sigurnosti.</li>
+<li class=""><a href="https://github.com/containrrr/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> se instalira i konfigurira. On svaki sat provjerava postoje li ažuriranja slika, čime se osigurava da svaki Outline server bude uvijek ažuran i ima najnovija poboljšanja funkcija i sigurnosti.</li>
 <li class="">Web server koji se koristi za pristupanje Management API-ju se pokreće na nasumično odabranom priključku, na tajnoj i nasumično odabranoj putanji.</li>
 <li class="">Kreira se <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">samostalno potpisani SSL certifikat</a> da se upravljanje Outline serverom može šifrirati pomoću TLS-a, iako ne postoji naziv domene. Generira se i jedinstveni digitalni otisak ovog certifikata i pohranjuje u aplikaciji Outline Manager, što pomaže u sprečavanju MITM napada.</li>
 </ul>
 <p>Prilikom instalacije Outlinea nije potrebna nikakva konfiguracija nakon instalacije.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="sigurnost-servera">Sigurnost servera<a href="#sigurnost-servera" class="hash-link" aria-label="Direct link to Sigurnost servera" title="Direct link to Sigurnost servera" translate="no">​</a></h2>
-<p>Outline je softver otvorenog koda, što znači da svako može vidjeti kôd i poboljšati ga ako uoči neke propuste. Naš kôd se hostira na <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHubu</a>.</p>
+<p>Outline je softver otvorenog koda, što znači da svako može vidjeti kôd i poboljšati ga ako uoči neke propuste. Naš kôd se hostira na <a href="https://github.com/search?q=org%3AOutlineFoundation+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHubu</a>.</p>
 <p>Osim toga, svi instalirani Outline serveri se automatski ažuriraju kad god se objavi nova verzija, čime se osigurava da nijedan Outline server ne ostane sa starim verzijama softvera.</p>
 <p>Radi upravljanja pristupnim ključevima na serveru, aplikacija Outline Manager stupa u interakciju s Management Serviceom na Outline serveru. Management Service se pokreće na nasumično odabranom priključku i tajnoj, jedinstvenoj putanji. Management Service je i sam otporan na sondiranje, pošto ne reagira na upite ukoliko se ne navede tajna putanja. Konačno, sva komunikacija s Management Serviceom se šifrira pomoću <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">samostalno potpisanog SSL certifikata</a>.</p>
 <p>Osim toga, Outline server ne pohranjuje nikakve zapisnike, tako da se podaci korisnika neće otkriti ni u slučaju da bude ugrožen. Saznajte više <a class="" href="/bs/about/security-and-privacy">ovdje</a>. Reviziju Outlinea su izvršili <a href="https://radicallyopensecurity.com/" target="_blank" rel="noopener noreferrer" class="">Radically Open Security</a> i <a href="https://cure53.de/" target="_blank" rel="noopener noreferrer" class="">Cure53</a> 2018. godine. Pogledajte izvještaje <a class="" href="/bs/about/security-and-privacy">ovdje</a>.</p>

@@ -11,8 +11,8 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Outline Help Center" href="/ur/opensearch.xml"><link rel="stylesheet" href="/ur/assets/css/styles.7fe89dd1.css">
-<script src="/ur/assets/js/runtime~main.4c2fe389.js" defer="defer"></script>
-<script src="/ur/assets/js/main.2e4ab2ed.js" defer="defer"></script>
+<script src="/ur/assets/js/runtime~main.d2823a27.js" defer="defer"></script>
+<script src="/ur/assets/js/main.133dab47.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -22,13 +22,13 @@
 <p>​اگرچہ Outline انسٹالیشن آسان لگ سکتا ہے، در حقیقت آپ کے سرور کو انسٹال کرنے کے لیے پس منظر میں کئی پیچیدہ مراحل پیش آ رہے ہوتے ہیں۔ جب بھی Outline انسٹال ہوتا ہے تو ایک انسٹالیشن اسکرپٹ مندرجہ ذیل مراحل کو چلاتی ہے:</p>
 <ul>
 <li class="">‫Shadowbox تصویر کا ایک مستحکم ورژن بازیاب کیا جاتا ہے اور Docker کے ذریعے اسے درآمد کیا جاتا ہے۔ تصویر کی میزبانی <a href="https://quay.io/" target="_blank" rel="noopener noreferrer" class="">Quay.io</a> پر <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank" rel="noopener noreferrer" class="">https://quay.io/repository/outline/shadowbox?tab=tags</a> میں کی گئی ہے۔ یہ تصویر Outline سرور اور مینجمنٹ API پر مشتمل ہے جسے بعد میں Outline سرور مینجمنٹ ایپلیکیشن رسائی کیز بنانے اور ہٹانے، گمنام میٹرکس وغیرہ کی رپورٹنگ سے آپٹ ان/آؤٹ کرنے کے لیے استعمال کیا جاتا ہے۔</li>
-<li class="">‫<a href="https://github.com/v2tec/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> کو ہر گھنٹے تصویری اپ ڈیٹس کو چیک کرنے کے لیے انسٹال اور کنفیگر کیا جاتا ہے، اس بات کو یقینی بنانے میں مدد کرتا ہے کہ ہر Outline سرور تازہ ترین خصوصیات اور سیکیورٹی میں بہتریوں کے ساتھ مسلسل اپ ٹو ڈیٹ ہے۔</li>
+<li class="">‫<a href="https://github.com/containrrr/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> کو ہر گھنٹے تصویری اپ ڈیٹس کو چیک کرنے کے لیے انسٹال اور کنفیگر کیا جاتا ہے، اس بات کو یقینی بنانے میں مدد کرتا ہے کہ ہر Outline سرور تازہ ترین خصوصیات اور سیکیورٹی میں بہتریوں کے ساتھ مسلسل اپ ٹو ڈیٹ ہے۔</li>
 <li class="">ویب سرور، مینیجمنٹ API تک رسائی کے لیے استعمال ہونے والے، کو ایک خفیہ اور بے ترتیب راستے پر ایک بے ترتیب پورٹ پر شروع کیا جاتا ہے۔</li>
 <li class="">ایک <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">خود دستخظ کردہ SSL سرٹیفکیٹ</a> تخلیق کیا گیا ہے تاکہ ڈومین کا نام نہ ہونے کے باوجود Outline سرور کے مینیجمنٹ کو TLS کا استعمال کرتے ہوئے مرموز کیا جا سکے۔ اس سرٹیفکیٹ کا ایک منفرد فنگر پرنٹ Outline مینیجر ایپلیکیشن میں بھی تخلیق اور اسٹور کیا جاتا ہے جس سے MITM حملوں سے بچنے میں مدد ملتی ہے۔</li>
 </ul>
 <p>‫Outline انسٹالیشن کو انسٹالیشن کے بعد کسی کنفیگریشن کی ضرورت نہیں ہوتی ہے۔</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="سرور-سیکیورٹی">سرور سیکیورٹی<a href="#سرور-سیکیورٹی" class="hash-link" aria-label="Direct link to سرور سیکیورٹی" title="Direct link to سرور سیکیورٹی" translate="no">​</a></h2>
-<p>Outline سافٹ ویئر اوپن سورس ہے، اس کا مطلب ہے کہ کوئی بھی شخص کوڈ دیکھ سکتا ہے اور اگر کوئی دریافت شدہ کمزوری ہے تو اسے بہتر بنا سکتا ہے۔ ہمارے کوڈ کی میزبانی <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a> پر کی جاتی ہے۔</p>
+<p>Outline سافٹ ویئر اوپن سورس ہے، اس کا مطلب ہے کہ کوئی بھی شخص کوڈ دیکھ سکتا ہے اور اگر کوئی دریافت شدہ کمزوری ہے تو اسے بہتر بنا سکتا ہے۔ ہمارے کوڈ کی میزبانی <a href="https://github.com/search?q=org%3AOutlineFoundation+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a> پر کی جاتی ہے۔</p>
 <p>مزید برآں، جب بھی کوئی نیا ورژن ریلیز ہوتا ہے تو انسٹال کردہ Outline کے تمام سرورز خودکار طور پر اپ ڈیٹ ہو جاتے ہیں، اس بات کو یقینی بناتے ہوئے کہ Outline کے کسی بھی سرور پر سافٹ ویئر کا پرانا ورژن نہیں چل رہا ہے۔</p>
 <p>سرور پر موجود رسائی والی کلیدوں کا نظم کرنے کے لیے، Outline مینیجر ایپلیکیشن Outline سرور پر ایک مینیجمنٹ سروس سے تعامل کرتی ہے۔ مینیجمنٹ سروس بے ترتیب پورٹ اور ایک خفیہ اور منفرد راستہ پر چلتی ہے۔ مینیجمنٹ سروس خود تفتیش مزاحم ہے کیونکہ یہ ایک مناسب خفیہ راستے کے تعین تک استفساروں کا جواب نہیں دیتی ہے۔ آخر میں، مینجمنٹ سروس سے تمام مواصلات <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">خود دستخظ کردہ SSL سرٹیفکیٹ</a> کے ساتھ مرموز کردہ ہیں۔</p>
 <p>نیز، Outline سرور کوئی لاگ اسٹور نہیں کرتا ہے، لہذا اگر کوئی اس تک رسائی حاصل کر بھی لے تو صارف کا کوئی ڈیٹا افشاء نہیں ہوگا۔ <a class="" href="/ur/about/security-and-privacy">یہاں</a> مزید جانیں۔ ‫Outline کا آڈٹ 2018 میں <a href="https://radicallyopensecurity.com/" target="_blank" rel="noopener noreferrer" class="">Radically Open Security</a> اور <a href="https://cure53.de/" target="_blank" rel="noopener noreferrer" class="">Cure53</a> کے ذریعے کیا گیا تھا۔ رپورٹس <a class="" href="/ur/about/security-and-privacy">یہاں</a> دیکھیں۔</p>

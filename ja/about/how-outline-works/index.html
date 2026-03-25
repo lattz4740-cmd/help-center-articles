@@ -11,8 +11,8 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Outline Help Center" href="/ja/opensearch.xml"><link rel="stylesheet" href="/ja/assets/css/styles.eef9fb91.css">
-<script src="/ja/assets/js/runtime~main.97177e75.js" defer="defer"></script>
-<script src="/ja/assets/js/main.c3d64eb0.js" defer="defer"></script>
+<script src="/ja/assets/js/runtime~main.81d521b3.js" defer="defer"></script>
+<script src="/ja/assets/js/main.35b20bc5.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -23,13 +23,13 @@
 <p>Outline サーバーのインストール時には必ず、インストール スクリプトによって以下の手順が実行されます。</p>
 <ul>
 <li class="">Docker を使用して、安定バージョンの Shadowbox イメージが取得され、読み込まれます。イメージは <a href="https://quay.io/" target="_blank" rel="noopener noreferrer" class="">Quay.io</a> の <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank" rel="noopener noreferrer" class="">https://quay.io/repository/outline/shadowbox?tab=tags</a> でホストされています。このイメージには、Outline サーバーと Management API が含まれています。後に、Outline サーバー管理アプリケーションがこの API を使用して、アクセスキーの作成と削除、匿名化された指標の報告のオプトイン、オプトアウトなどを行います。</li>
-<li class=""><a href="https://github.com/v2tec/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> がインストールされ、1 時間ごとにイメージの更新をチェックするよう設定されます。この設定により、すべての Outline サーバーが常に最新の機能とセキュリティ修正が適用された状態になります。</li>
+<li class=""><a href="https://github.com/containrrr/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> がインストールされ、1 時間ごとにイメージの更新をチェックするよう設定されます。この設定により、すべての Outline サーバーが常に最新の機能とセキュリティ修正が適用された状態になります。</li>
 <li class="">Management API にアクセスするために使用するウェブサーバーが、ランダムなポート上で秘密のランダムなパスを使用して起動されます。</li>
 <li class=""><a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">自己署名 SSL 証明書</a>が作成されます。この証明書は、Outline サーバーの管理を、ドメイン名を使用せずに TLS を使用して暗号化できるようにするためのものです。この証明書に固有のフィンガープリントも生成されて、Outline マネージャー アプリケーションに保管されます。このフィンガープリントは、MITM 攻撃の防止に役立ちます。</li>
 </ul>
 <p>Outline サーバーのインストール後に必要な設定はありません。</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="サーバーのセキュリティ">サーバーのセキュリティ<a href="#サーバーのセキュリティ" class="hash-link" aria-label="サーバーのセキュリティ への直接リンク" title="サーバーのセキュリティ への直接リンク" translate="no">​</a></h2>
-<p>Outline ソフトウェアはオープンソースです。つまり、誰でもコードを確認して、脆弱性が見つかった場合には修正できます。Outline のコードは <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a> でホストされています。</p>
+<p>Outline ソフトウェアはオープンソースです。つまり、誰でもコードを確認して、脆弱性が見つかった場合には修正できます。Outline のコードは <a href="https://github.com/search?q=org%3AOutlineFoundation+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a> でホストされています。</p>
 <p>さらに、インストールした Outline サーバーはすべて、新しいバージョンがリリースされると自動的に更新されます。したがって、Outline サーバーで古いバージョンのソフトウェアが実行されたままになることはありません。</p>
 <p>サーバー上のアクセスキーを管理するために、Outline マネージャー アプリケーションは Outline サーバー上の管理サービスとやり取りします。管理サービスはランダムなポート上で秘密の固有パスを使用して実行されます。管理サービスは該当する秘密のパスが指定されない限りクエリに応答しないことから、サービス自体にプローブへの耐性が備わっています。さらに、管理サービスへの通信はすべて、 <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">自己署名 SSL 証明書</a> を使用して暗号化されます。</p>
 <p>また、Outline サーバーはログを一切保管しないため、セキュリティが侵害されたとしても、ユーザーのデータが開示されることはありません。詳しくは<a class="" href="/ja/about/security-and-privacy">こちら</a>をご覧ください。</p>

@@ -11,8 +11,8 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Outline Help Center" href="/az/opensearch.xml"><link rel="stylesheet" href="/az/assets/css/styles.8fe9522f.css">
-<script src="/az/assets/js/runtime~main.539fd003.js" defer="defer"></script>
-<script src="/az/assets/js/main.ad1d4272.js" defer="defer"></script>
+<script src="/az/assets/js/runtime~main.1d475e6a.js" defer="defer"></script>
+<script src="/az/assets/js/main.342d1214.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -22,13 +22,13 @@
 <p>​Outline-nın quraşdırılması sadə görünə bilər, lakin əslində serverinizi quraşdırmaq üçün bir sıra mürəkkəb addımlar mövcuddur. Outline quraşdırıldıqda quraşdırma skripti aşağıdakı addımları yerinə yetirir:</p>
 <ul>
 <li class="">Shadowbox təsvirinin stabil versiyası Docker istifadə edərək əldə olunur və import edilir. Təsvir <a href="https://quay.io/" target="_blank" rel="noopener noreferrer" class="">Quay.io</a> serverində, <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank" rel="noopener noreferrer" class="">https://quay.io/repository/outline/shadowbox?tab=tags</a> ünvanında yerləşdirilib. Bu təsvirdə Outline serveri və Management API mövcuddur. O, daha sonra Outline Server Management tətbiqi tərəfindən giriş açarlarını yaratmaq və silmək, anonim göstəriciləri təqdim etməyi aktiv/deaktiv etmək və s. üçün istifadə edilir.</li>
-<li class=""><a href="https://github.com/v2tec/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> hər bir Outline serverinin ən son funksiyalar və təhlükəsizlik təkmilləşdirmələri ilə daim yenilənməsini təmin etmək, hər saat təsvir yeniləmələrini yoxlamaq üçün quraşdırılıb və konfiqurasiya edilib.</li>
+<li class=""><a href="https://github.com/containrrr/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> hər bir Outline serverinin ən son funksiyalar və təhlükəsizlik təkmilləşdirmələri ilə daim yenilənməsini təmin etmək, hər saat təsvir yeniləmələrini yoxlamaq üçün quraşdırılıb və konfiqurasiya edilib.</li>
 <li class="">Management API interfeysinə daxil olmaq üçün istifadə edilən veb-server ixtiyari portda quraşdırılır, eləcə də məxfi və ixtiyari yaradılmış ünvana sahib olur.</li>
 <li class="">Domen adı olmasa da, Outline serverinin idarə edilməsi TLS protokolundan istifadə etməklə şifrlənməsi üçün <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">öz-özünə imzalanan SSL sertifikatı</a> yaradılır. Bu sertifikatın unikal şifrləmə dəyəri də MITM hücumlarının qarşısını almaq üçün Outline Manager tətbiqində yaradılır və saxlanılır.</li>
 </ul>
 <p>Outline-ı quraşdırdıqdan sonra konfiqurasiya etməyə ehtiyac yoxdur.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="server-təhlükəsizliyi">Server təhlükəsizliyi<a href="#server-təhlükəsizliyi" class="hash-link" aria-label="Direct link to Server təhlükəsizliyi" title="Direct link to Server təhlükəsizliyi" translate="no">​</a></h2>
-<p>Outline proqram təminatı açıq mənbədir, yəni hər kəs koda baxa və hər hansı qüsur aşkar edilərsə, onu təkmilləşdirə bilər. Kodumuz <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a> platformasında əlçatandır.</p>
+<p>Outline proqram təminatı açıq mənbədir, yəni hər kəs koda baxa və hər hansı qüsur aşkar edilərsə, onu təkmilləşdirə bilər. Kodumuz <a href="https://github.com/search?q=org%3AOutlineFoundation+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a> platformasında əlçatandır.</p>
 <p>Bundan əlavə, bütün quraşdırılmış Outline serverləri yeni versiya təqdim olunduqda avtomatik olaraq yenilənir və proqram təminatının köhnə versiyaları ilə işləyən heç bir Outline serverinin qalmaması təmin edilir.</p>
 <p>Serverdə giriş açarlarını idarə etmək üçün Outline Manager tətbiqi Outline serverindəki İdarəetmə Xidməti ilə qarşılıqlı əlaqə yaradır. İdarəetmə Xidməti ixtiyari portda, eləcə də məxfi və ixtiyari olaraq yaradılmış ünvanda işləyir. İdarəetmə Xidməti müvafiq məxfi ünvan göstərilmədiyi təqdirdə sorğuları nəzərə almadığı üçün yoxlanışa qarşı davamlıdır. Son olaraq, Management Service ilə bütün data mübadiləsi <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">öz-özünə imzalanan SSL sertifikatı</a> ilə şifrlənir.</p>
 <p>Həmçinin Outline serveri heç bir qeydi saxlamır, ona görə də təhlükəli vəziyyət yaransa belə, heç bir istifadəçi datası açıqlanmır. Ətraflı məlumatı <a class="" href="/az/about/security-and-privacy">burada</a> əldə edin. Outline 2018-ci ildə <a href="https://radicallyopensecurity.com/" target="_blank" rel="noopener noreferrer" class="">Radically Open Security</a> və <a href="https://cure53.de/" target="_blank" rel="noopener noreferrer" class="">Cure53</a> tərəfindən yoxlanılmışdır. Hesabatlara <a class="" href="/az/about/security-and-privacy">burada</a> baxın.</p>

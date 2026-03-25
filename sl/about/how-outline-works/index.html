@@ -11,8 +11,8 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Outline Help Center" href="/sl/opensearch.xml"><link rel="stylesheet" href="/sl/assets/css/styles.49f31c2f.css">
-<script src="/sl/assets/js/runtime~main.1438dbf2.js" defer="defer"></script>
-<script src="/sl/assets/js/main.4a6f8cfd.js" defer="defer"></script>
+<script src="/sl/assets/js/runtime~main.b5c6e47e.js" defer="defer"></script>
+<script src="/sl/assets/js/main.f30efc3a.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -22,13 +22,13 @@
 <p>​Čeprav se namestitev strežnika Outline morda zdi preprosta, se v ozadju izvede zapleteno zaporedje korakov za njegovo namestitev. Pri nameščanju strežnika Outline skript za namestitev izvede naslednje korake:</p>
 <ul>
 <li class="">Pridobi in uvozi se stabilna različica slike Shadowbox, pri čemer se uporabi Docker. Sliko gosti <a href="https://quay.io/" target="_blank" rel="noopener noreferrer" class="">Quay.io</a> v shrambi <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank" rel="noopener noreferrer" class="">https://quay.io/repository/outline/shadowbox?tab=tags</a>. Slika vsebuje strežnik Outline in API za upravljanje, ki ga pozneje uporabi aplikacija za upravljanje strežnika Outline, da ustvari in odstrani ključe za dostop, omogoči/onemogoči sporočanje anonimnih meritev itd.</li>
-<li class="">Namesti in konfigurira se knjižnica <a href="https://github.com/v2tec/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a>, ki vsako uro preveri, ali so na voljo posodobitve slike, ter tako pomaga zagotavljati, da so vsi strežniki Outline stalno posodobljeni z najnovejšimi funkcijami in varnostnimi izboljšavami.</li>
+<li class="">Namesti in konfigurira se knjižnica <a href="https://github.com/containrrr/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a>, ki vsako uro preveri, ali so na voljo posodobitve slike, ter tako pomaga zagotavljati, da so vsi strežniki Outline stalno posodobljeni z najnovejšimi funkcijami in varnostnimi izboljšavami.</li>
 <li class="">Prek naključnih vrat ter skrivne in naključne poti se zažene spletni strežnik, ki se uporablja za dostop do API-ja za upravljanje.</li>
 <li class="">Ustvari se <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">samopodpisano potrdilo SSL</a>, tako da je mogoče upravljanje strežnika Outline šifrirati s standardom TLS, kljub temu da ni na voljo imena domene. Ustvari se tudi edinstveni prstni odtis tega potrdila, ki se shrani v aplikaciji Upravitelj za Outline in pomaga preprečevati napade s posrednikom.</li>
 </ul>
 <p>Po namestitvi strežnika Outline ni potrebna konfiguracija.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="varnost-strežnika">Varnost strežnika<a href="#varnost-strežnika" class="hash-link" aria-label="Direktna povezava na Varnost strežnika" title="Direktna povezava na Varnost strežnika" translate="no">​</a></h2>
-<p>Programska oprema Outline je odprtokodna, kar pomeni, da si lahko kdor koli ogleda kodo in jo izboljša, če so odkrite ranljivosti. Našo kodo gosti storitev <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a>.</p>
+<p>Programska oprema Outline je odprtokodna, kar pomeni, da si lahko kdor koli ogleda kodo in jo izboljša, če so odkrite ranljivosti. Našo kodo gosti storitev <a href="https://github.com/search?q=org%3AOutlineFoundation+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a>.</p>
 <p>Poleg tega se nameščeni strežniki Outline samodejno posodobijo ob vsaki izdaji nove različice, kar zagotavlja, da se v nobenem strežniku Outline ne izvajajo stare različice programske opreme.</p>
 <p>Za upravljanje ključev za dostop v strežniku aplikacija Upravitelj za Outline komunicira s storitvijo za upravljanje v strežniku Outline. Storitev za upravljanje se izvaja prek naključnih vrat ter skrivne in enolične poti. Storitev za upravljanje sama zmanjšuje tveganje, saj se ne odzove na poizvedbe, razen če je navedena ustrezna skrivna pot. Prav tako je vsa komunikacija s storitvijo za upravljanje šifrirana s <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">samopodpisanim potrdilom SSL</a>.</p>
 <p>Poleg tega strežnik Outline ne shranjuje nobenih dnevnikov, zato se tudi v primeru ogroženega strežnika uporabniški podatki ne razkrijejo. Več o tem preberite <a class="" href="/sl/about/security-and-privacy">tukaj</a>. Outline sta leta 2018 pregledali podjetji <a href="https://radicallyopensecurity.com/" target="_blank" rel="noopener noreferrer" class="">Radically Open Security</a> in <a href="https://cure53.de/" target="_blank" rel="noopener noreferrer" class="">Cure53</a>. Poročila lahko preberete <a class="" href="/sl/about/security-and-privacy">tukaj</a>.</p>

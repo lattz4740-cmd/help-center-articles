@@ -11,8 +11,8 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Outline Help Center" href="/ro/opensearch.xml"><link rel="stylesheet" href="/ro/assets/css/styles.09104d08.css">
-<script src="/ro/assets/js/runtime~main.45eaaeac.js" defer="defer"></script>
-<script src="/ro/assets/js/main.f0a4b740.js" defer="defer"></script>
+<script src="/ro/assets/js/runtime~main.635021ab.js" defer="defer"></script>
+<script src="/ro/assets/js/main.748b8131.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -22,13 +22,13 @@
 <p>​Deși instalarea Outline poate părea simplă, există, însă, un set complex de pași care au loc în fundal pentru a vă instala serverul. La instalarea Outline se rulează un script care execută următorii pași.</p>
 <ul>
 <li class="">Se preia și se importă versiunea stabilă a imaginii Shadowbox, prin Docker. Imaginea este găzduită pe <a href="https://quay.io/" target="_blank" rel="noopener noreferrer" class="">Quay.io</a>, la <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank" rel="noopener noreferrer" class="">https://quay.io/repository/outline/shadowbox?tab=tags</a>. Această imagine conține serverul Outline și API-ul Management, care este folosit ulterior de aplicația Outline Server Management pentru a crea și a elimina chei de acces, a activa / dezactiva raportarea valorilor anonime etc.</li>
-<li class=""><a href="https://github.com/v2tec/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> este instalat și configurat pentru a verifica dacă există actualizări de imagini în fiecare oră, ajutând să vă asigurați că fiecare server Outline este actualizat în mod constant cu cele mai recente funcții și îmbunătățiri de securitate.</li>
+<li class=""><a href="https://github.com/containrrr/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> este instalat și configurat pentru a verifica dacă există actualizări de imagini în fiecare oră, ajutând să vă asigurați că fiecare server Outline este actualizat în mod constant cu cele mai recente funcții și îmbunătățiri de securitate.</li>
 <li class="">Este pornit un server web, folosit pentru accesarea API-ului Management, pe un port aleatoriu pe o cale aleatorie și secretă.</li>
 <li class="">Se creează un <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">certificat SSL autosemnat</a>, astfel încât gestionarea serverului Outline să poată fi criptată folosindu-se TLS chiar dacă nu există un nume de domeniu. Se generează și o amprentă digitală unică a certificatului, care este generată și stocată în aplicația Outline Manager, contribuind astfel la prevenirea atacurilor MITM.</li>
 </ul>
 <p>Aplicația Outline nu necesită o configurare după instalare.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="securitatea-serverului">Securitatea serverului<a href="#securitatea-serverului" class="hash-link" aria-label="Direct link to Securitatea serverului" title="Direct link to Securitatea serverului" translate="no">​</a></h2>
-<p>Software-ul Outline este open source, ceea ce înseamnă că oricine poate vedea codul și îl poate îmbunătăți dacă sunt descoperite vulnerabilități. Codul nostru este găzduit pe <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a>.</p>
+<p>Software-ul Outline este open source, ceea ce înseamnă că oricine poate vedea codul și îl poate îmbunătăți dacă sunt descoperite vulnerabilități. Codul nostru este găzduit pe <a href="https://github.com/search?q=org%3AOutlineFoundation+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a>.</p>
 <p>În plus, toate serverele Outline instalate sunt actualizate automat când este lansată o versiune nouă, astfel încât niciun server Outline nu mai rulează versiunile vechi de software.</p>
 <p>Pentru gestionarea cheilor de acces la server, aplicația Outline Manager interacționează cu un serviciu de gestionare pe serverul Outline. Serviciul de gestionare rulează pe un port aleatoriu și pe o cale unică și secretă. Serviciul de gestionare nu poate fi scanat deoarece nu răspunde la interogări decât dacă este specificată calea secretă corespunzătoare. Toată comunicarea cu serviciul de gestionare este criptată cu un <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">certificat SSL autosemnat</a>.</p>
 <p>În plus, serverul Outline nu stochează niciun jurnal, prin urmare, chiar dacă este compromis, nu sunt dezvăluite datele utilizatorilor. Aflați mai multe <a class="" href="/ro/about/security-and-privacy">aici</a>. Outline a fost auditat de <a href="https://radicallyopensecurity.com/" target="_blank" rel="noopener noreferrer" class="">Radically Open Security</a> și <a href="https://cure53.de/" target="_blank" rel="noopener noreferrer" class="">Cure53</a> în 2018. Consultați rapoartele <a class="" href="/ro/about/security-and-privacy">aici</a>.</p>

@@ -11,8 +11,8 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Outline Help Center" href="/sk/opensearch.xml"><link rel="stylesheet" href="/sk/assets/css/styles.5b12bab6.css">
-<script src="/sk/assets/js/runtime~main.1957254b.js" defer="defer"></script>
-<script src="/sk/assets/js/main.339cd9e6.js" defer="defer"></script>
+<script src="/sk/assets/js/runtime~main.23557462.js" defer="defer"></script>
+<script src="/sk/assets/js/main.2f2ba212.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -22,13 +22,13 @@
 <p>Aj keď inštalácia servera Outline môže pôsobiť jednoducho, spočíva v komplexnej skupine krokov, pomocou ktorých sa server inštaluje. Keď sa Outline inštaluje, inštalačný skript spustí tieto kroky:</p>
 <ul>
 <li class="">Pomocou služby Docker sa načíta a importuje stabilná verzia obrazu služby Shadowbox. Obraz je hostený na <a href="https://quay.io/" target="_blank" rel="noopener noreferrer" class="">Quay.io</a> (<a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank" rel="noopener noreferrer" class="">https://quay.io/repository/outline/shadowbox?tab=tags</a>). Tento obraz obsahuje server Outline a rozhranie Management API, ktoré neskôr používa aplikácia na správu servera Outline na vytváranie a odstraňovanie prístupových kľúčov, prihlasovanie a odhlasovanie sa z reportovania anonymných metrík atď.</li>
-<li class="">Nainštaluje sa nástroj <a href="https://github.com/v2tec/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> a nakonfiguruje sa tak, aby každú hodinu kontroloval dostupnosť aktualizácií obrazu, čo pomáha zabezpečiť, že každý server Outline je vždy aktuálny a má najnovšie funkcie a zlepšenia zabezpečenia.</li>
+<li class="">Nainštaluje sa nástroj <a href="https://github.com/containrrr/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> a nakonfiguruje sa tak, aby každú hodinu kontroloval dostupnosť aktualizácií obrazu, čo pomáha zabezpečiť, že každý server Outline je vždy aktuálny a má najnovšie funkcie a zlepšenia zabezpečenia.</li>
 <li class="">Webový server používaný na prístup k rozhraniu Management API sa spustí na náhodnom porte na tajnej a náhodnej ceste.</li>
 <li class="">Vytvorí sa <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">certifikát SSL s vlastným podpisom</a>, aby bolo možné správu servera Outline šifrovať pomocou protokolu TLS, hoci nemá názov domény. Vygeneruje sa aj jedinečný digitálny odtlačok tohto certifikátu, ktorý sa uloží v aplikácii Správca Outline, čo pomáha brániť útokom MITM.</li>
 </ul>
 <p>Outline po inštalácii netreba konfigurovať.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="zabezpečenie-servera">Zabezpečenie servera<a href="#zabezpečenie-servera" class="hash-link" aria-label="Direct link to Zabezpečenie servera" title="Direct link to Zabezpečenie servera" translate="no">​</a></h2>
-<p>Softvér Outline má licenciu open source. Znamená to, že ktokoľvek si môže pozrieť jeho kód a zlepšiť ho, ak objaví akékoľvek nedostatky zabezpečenia. Náš kód je hostený na <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a>.</p>
+<p>Softvér Outline má licenciu open source. Znamená to, že ktokoľvek si môže pozrieť jeho kód a zlepšiť ho, ak objaví akékoľvek nedostatky zabezpečenia. Náš kód je hostený na <a href="https://github.com/search?q=org%3AOutlineFoundation+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a>.</p>
 <p>Všetky nainštalované servery Outline sú navyše automaticky aktualizované vždy, keď je vydaná nová verzia, čím sa zabezpečuje, že žiadny server Outline ďalej nepoužíva staré verzie softvéru.</p>
 <p>Aplikácia Správca Outline interaguje so službou správy na serveri Outline, čo umožňuje spravovať prístupové kľúče na serveri. Služba správy sa prevádzkuje na náhodnom porte na tajnej a jedinečnej ceste Samotná služba správy je odolná proti preskúmaniu, keďže neodpovedá na dopyty, pokiaľ nie je uvedená príslušná tajná cesta. Všetka komunikácia so službou správy je navyše šifrovaná <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">certifikátom SSL s vlastným podpisom</a>.</p>
 <p>Server Outline neukladá žiadne denníky, takže ani v prípade jeho napadnutia nedôjde k zverejneniu žiadnych údajov používateľov. <a class="" href="/sk/about/security-and-privacy">Ďalšie informácie</a> V roku 2018 prešiel Outline auditom organizácií <a href="https://radicallyopensecurity.com/" target="_blank" rel="noopener noreferrer" class="">Radically Open Security</a> a <a href="https://cure53.de/" target="_blank" rel="noopener noreferrer" class="">Cure53</a>. Reporty <a class="" href="/sk/about/security-and-privacy">nájdete tu</a>.</p>

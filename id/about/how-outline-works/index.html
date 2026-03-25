@@ -11,8 +11,8 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Outline Help Center" href="/id/opensearch.xml"><link rel="stylesheet" href="/id/assets/css/styles.33eea791.css">
-<script src="/id/assets/js/runtime~main.6044a195.js" defer="defer"></script>
-<script src="/id/assets/js/main.c87cc2ba.js" defer="defer"></script>
+<script src="/id/assets/js/runtime~main.be05ac64.js" defer="defer"></script>
+<script src="/id/assets/js/main.d31b33a2.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -22,13 +22,13 @@
 <p>Meskipun penginstalan Outline mungkin tampak sederhana, ada serangkaian langkah rumit yang perlu dilakukan untuk menginstal server Anda. Setiap kali Outline diinstal, skrip penginstalan akan berjalan melalui langkah-langkah berikut:</p>
 <ul>
 <li class="">Image Shadowbox versi stabil diambil dan diimpor menggunakan Docker. Image dihosting di <a href="https://quay.io/" target="_blank" rel="noopener noreferrer" class="">Quay.io</a>, di <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank" rel="noopener noreferrer" class="">https://quay.io/repository/outline/shadowbox?tab=tags</a>. Image ini berisi server Outline dan Management API yang nantinya digunakan oleh aplikasi Outline Server Management untuk membuat dan menghapus kunci akses, melaporkan/tidak melaporkan metrik anonim, dan sebagainya.</li>
-<li class=""><a href="https://github.com/v2tec/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> diinstal dan dikonfigurasi untuk memeriksa update image setiap jam, yang membantu memastikan bahwa setiap server Outline selalu diupdate dengan peningkatan fitur dan keamanan terbaru.</li>
+<li class=""><a href="https://github.com/containrrr/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> diinstal dan dikonfigurasi untuk memeriksa update image setiap jam, yang membantu memastikan bahwa setiap server Outline selalu diupdate dengan peningkatan fitur dan keamanan terbaru.</li>
 <li class="">Server web, yang digunakan untuk mengakses Management API, akan dimulai di port acak pada jalur rahasia yang diacak.</li>
 <li class=""><a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">Sertifikat SSL yang ditandatangani sendiri</a> dibuat agar pengelolaan server Outline dapat dienkripsi menggunakan TLS meskipun tidak memiliki nama domain. Sidik jari unik untuk sertifikat ini juga akan dibuat dan disimpan di aplikasi Outline Manager sehingga serangan MITM dapat dicegah.</li>
 </ul>
 <p>Setelah diinstal, Outline tidak memerlukan konfigurasi lain.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="keamanan-server">Keamanan server<a href="#keamanan-server" class="hash-link" aria-label="Taut langsung ke Keamanan server" title="Taut langsung ke Keamanan server" translate="no">​</a></h2>
-<p>Software Outline adalah open source, yang berarti siapa saja dapat melihat kodenya dan meningkatkannya jika ada kerentanan yang ditemukan. Kode kami dihosting di <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a>.</p>
+<p>Software Outline adalah open source, yang berarti siapa saja dapat melihat kodenya dan meningkatkannya jika ada kerentanan yang ditemukan. Kode kami dihosting di <a href="https://github.com/search?q=org%3AOutlineFoundation+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a>.</p>
 <p>Selain itu, semua server Outline yang terinstal akan otomatis diupdate ketika versi baru telah dirilis untuk memastikan tidak ada server Outline yang menjalankan software versi lama.</p>
 <p>Untuk mengelola kunci akses di server, aplikasi Outline Manager berinteraksi dengan Layanan Pengelolaan di server Outline. Layanan Pengelolaan ini beroperasi pada port acak serta jalur rahasia yang unik. Layanan Pengelolaan sendiri tahan terhadap serangan karena tidak merespons kueri kecuali diberikan jalur rahasia yang sesuai. Terakhir, semua komunikasi ke Layanan Pengelolaan dienkripsi dengan <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">sertifikat SSL yang ditandatangani sendiri</a>.</p>
 <p>Perlu diketahui bahwa server Outline tidak menyimpan log apa pun sehingga tidak akan ada data pengguna yang terungkap meskipun disusupi. Pelajari lebih lanjut <a class="" href="/id/about/security-and-privacy">di sini</a>. Outline diaudit oleh <a href="https://radicallyopensecurity.com/" target="_blank" rel="noopener noreferrer" class="">Radically Open Security</a> dan <a href="https://cure53.de/" target="_blank" rel="noopener noreferrer" class="">Cure53</a> pada tahun 2018. Lihat laporannya <a class="" href="/id/about/security-and-privacy">di sini</a>.</p>

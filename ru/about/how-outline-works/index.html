@@ -11,8 +11,8 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Outline Help Center" href="/ru/opensearch.xml"><link rel="stylesheet" href="/ru/assets/css/styles.7a779ca9.css">
-<script src="/ru/assets/js/runtime~main.865a9b05.js" defer="defer"></script>
-<script src="/ru/assets/js/main.e2c2b729.js" defer="defer"></script>
+<script src="/ru/assets/js/runtime~main.df2de99b.js" defer="defer"></script>
+<script src="/ru/assets/js/main.a5a11892.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -23,13 +23,13 @@
 <p>Скрипт установки Outline выполняет следующие действия:</p>
 <ul>
 <li class="">Загрузка и импорт стабильной версии образа Shadowbox с помощью платформы Docker. Образ размещается на <a href="https://quay.io/" target="_blank" rel="noopener noreferrer" class="">Quay.io</a> по адресу <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank" rel="noopener noreferrer" class="">https://quay.io/repository/outline/shadowbox?tab=tags</a> и содержит сервер Outline, а также интерфейс Management API, который в дальнейшем будет использоваться приложением для управления сервером Outline при создании и удалении ключей доступа, отправке анонимной статистики и т. д.</li>
-<li class="">Установка и настройка <a href="https://github.com/v2tec/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> для проверки обновлений образа каждый час, чтобы у вас всегда была установлена последняя версия сервера Outline со всеми функциями и обновлениями безопасности.</li>
+<li class="">Установка и настройка <a href="https://github.com/containrrr/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> для проверки обновлений образа каждый час, чтобы у вас всегда была установлена последняя версия сервера Outline со всеми функциями и обновлениями безопасности.</li>
 <li class="">Запуск веб-сервера для доступа к Management API на случайном порте с секретным путем к нему.</li>
 <li class="">Создание <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">самозаверяющего сертификата SSL</a>. Это нужно для того, чтобы шифровать действия на сервере Outline с помощью TLS без доменного имени. Также на этом этапе создается уникальный цифровой отпечаток сертификата, который затем будет храниться в Менеджере Outline для предотвращения возможных атак посредника.</li>
 </ul>
 <p>После завершения установки дополнительная настройка Outline не требуется.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="безопасность-сервера">Безопасность сервера<a href="#безопасность-сервера" class="hash-link" aria-label="Прямая ссылка на Безопасность сервера" title="Прямая ссылка на Безопасность сервера" translate="no">​</a></h2>
-<p>Outline – это ПО с открытым исходным кодом, в который каждый может внести исправления. Наш код размещен на <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a> .</p>
+<p>Outline – это ПО с открытым исходным кодом, в который каждый может внести исправления. Наш код размещен на <a href="https://github.com/search?q=org%3AOutlineFoundation+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a> .</p>
 <p>Кроме того, все установленные серверы Outline обновляются автоматически, как только появляется новая версия программного обеспечения.</p>
 <p>Для управления ключами доступа на сервере Менеджер Outline взаимодействует с сервисом управления на сервере Outline. Этот сервис работает на случайном порте, и его можно обнаружить только в том случае, если указать в запросе уникальный секретный путь. Кроме того, передача данных в сервис управления зашифрована <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">SSL</a> .</p>
 <p>Стоит отметить, что сервер Outline не сохраняет историю действий в сети, поэтому, даже взломав его, злоумышленники не смогут получить никаких персональных данных. Подробнее <a class="" href="/ru/about/security-and-privacy">здесь</a>.</p>

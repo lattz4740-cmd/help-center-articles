@@ -11,8 +11,8 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Outline Help Center" href="/de/opensearch.xml"><link rel="stylesheet" href="/de/assets/css/styles.6cc88919.css">
-<script src="/de/assets/js/runtime~main.25329193.js" defer="defer"></script>
-<script src="/de/assets/js/main.db410dcf.js" defer="defer"></script>
+<script src="/de/assets/js/runtime~main.ccb4655c.js" defer="defer"></script>
+<script src="/de/assets/js/main.757f3860.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -23,13 +23,13 @@
 <p>Bei der Installation von Outline wird immer ein Installationsskript mit folgenden Schritten ausgeführt:</p>
 <ul>
 <li class="">Die stabile Version des Shadowbox-Images wird mit Docker abgerufen und importiert. Das Image wird auf <a href="https://quay.io/" target="_blank" rel="noopener noreferrer" class="">Quay.io</a> unter <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank" rel="noopener noreferrer" class="">https://quay.io/repository/outline/shadowbox?tab=tags</a>gehostet. Es enthält den Outline-Server und die Management API. Letztere wird später von der Anwendung &quot;Outline Server Management&quot; verwendet, um Zugriffsschlüssel zu erstellen und zu entfernen sowie die Meldung anonymer Messwerte zu aktivieren oder zu deaktivieren usw.</li>
-<li class=""><a href="https://github.com/v2tec/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> wird installiert und so konfiguriert, dass stündlich nach Image-Updates gesucht wird. Das trägt dazu bei, dass jeder Outline-Server ständig die neuesten Funktionen und Sicherheitsverbesserungen erhält und auf dem neuesten Stand ist.</li>
+<li class=""><a href="https://github.com/containrrr/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a> wird installiert und so konfiguriert, dass stündlich nach Image-Updates gesucht wird. Das trägt dazu bei, dass jeder Outline-Server ständig die neuesten Funktionen und Sicherheitsverbesserungen erhält und auf dem neuesten Stand ist.</li>
 <li class="">Ein Webserver für den Zugriff auf die Management API wird auf einem zufälligen Port unter einem geheimen und zufälligen Pfad gestartet.</li>
 <li class="">Ein <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">selbst signiertes SSL-Zertifikat</a> wird erstellt, sodass die Verwaltung des Outline-Servers mit TLS verschlüsselt werden kann, obwohl der Server keinen Domainnamen hat. Zusätzlich wird ein eindeutiger Fingerabdruck dieses Zertifikats erzeugt und im Outline-Manager gespeichert. So lassen sich MITM-Angriffe verhindern.</li>
 </ul>
 <p>Die Outline-Installation muss nach der Installation nicht konfiguriert werden.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="sicherheit-des-servers">Sicherheit des Servers<a href="#sicherheit-des-servers" class="hash-link" aria-label="Direkter Link zur Sicherheit des Servers" title="Direkter Link zur Sicherheit des Servers" translate="no">​</a></h2>
-<p>Outline ist eine Open-Source-Software, das heißt, jeder kann sich den Quellcode bei <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a> ansehen und ihn verbessern, um eventuelle Schwachstellen zu beheben.</p>
+<p>Outline ist eine Open-Source-Software, das heißt, jeder kann sich den Quellcode bei <a href="https://github.com/search?q=org%3AOutlineFoundation+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a> ansehen und ihn verbessern, um eventuelle Schwachstellen zu beheben.</p>
 <p>Alle installierten Outline-Server werden automatisch aktualisiert, sobald eine neue Version verfügbar ist, damit keiner mit einer veralteten Version der Software betrieben wird.</p>
 <p>Die Verwaltung der Zugriffsschlüssel erfolgt durch das Zusammenspiel des Outline-Managers mit einem Verwaltungsdienst auf dem Outline-Server. Letzterer wird von einem geheimen, eindeutigen Pfad aus über einen nach dem Zufallsprinzip ausgewählten Port ausgeführt. Der Dienst kann nicht ausgeforscht werden, weil nur Abfragen beantwortet werden, die den entsprechenden geheimen Pfad enthalten. Zusätzlich ist sämtliche Kommunikation mit dem Verwaltungsdienst mithilfe eines <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">selbst signierten SSL-Zertifikats</a> verschlüsselt.</p>
 <p>Selbst durch Manipulationen von Outline-Servern lassen sich keine Nutzerdaten offenlegen, da auf den Servern keine Protokolle gespeichert werden.</p>

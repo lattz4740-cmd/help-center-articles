@@ -11,8 +11,8 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Outline Help Center" href="/uk/opensearch.xml"><link rel="stylesheet" href="/uk/assets/css/styles.f427c26b.css">
-<script src="/uk/assets/js/runtime~main.d41ad121.js" defer="defer"></script>
-<script src="/uk/assets/js/main.2be9eecd.js" defer="defer"></script>
+<script src="/uk/assets/js/runtime~main.b3279d54.js" defer="defer"></script>
+<script src="/uk/assets/js/main.0b72493d.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -22,13 +22,13 @@
 <p>​Хоча встановлення Outline може здаватися простим, насправді це досить складна процедура, яка включає цілий ряд кроків і відбувається непомітно. Під час встановлення сервера Outline сценарій встановлення виконує перелічені нижче дії.</p>
 <ul>
 <li class="">Отримується стабільна версія образу Shadowbox, яка імпортується за допомогою інфраструктури Docker. Зображення розміщено на сайті <a href="https://quay.io/" target="_blank" rel="noopener noreferrer" class="">Quay.io</a> за адресою <a href="https://quay.io/repository/outline/shadowbox?tab=tags" target="_blank" rel="noopener noreferrer" class="">https://quay.io/repository/outline/shadowbox?tab=tags</a>. Це зображення містить сервер Outline і Management API, які пізніше використовуються додатком Outline Server Management для створення й вилучення ключів доступу, увімкнення та вимкнення надсилання анонімних показників тощо.</li>
-<li class="">Встановлюється додаток <a href="https://github.com/v2tec/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a>, який налаштовується щогодини перевіряти оновлення образу, щоб забезпечити постійне встановлення останніх функцій і покращень безпеки на всіх серверах Outline.</li>
+<li class="">Встановлюється додаток <a href="https://github.com/containrrr/watchtower" target="_blank" rel="noopener noreferrer" class="">Watchtower</a>, який налаштовується щогодини перевіряти оновлення образу, щоб забезпечити постійне встановлення останніх функцій і покращень безпеки на всіх серверах Outline.</li>
 <li class="">На випадково вибраному порту із секретним і довільним шляхом запускається вебсервер, який використовувався для доступу до Management API.</li>
 <li class="">Створюється <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">самопідписаний сертифікат SSL</a>, щоб керування сервером Outline можна було шифрувати за допомогою протоколу TLS, незважаючи на відсутність доменного імені. Також створюється унікальний цифровий відбиток цього сертифіката, який зберігається в додатку Диспетчер Outline, допомагаючи уникнути атак посередника (MITM).</li>
 </ul>
 <p>Встановлений сервер Outline не потребує додаткового налаштування.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="безпека-сервера">Безпека сервера<a href="#безпека-сервера" class="hash-link" aria-label="Пряме посилання на Безпека сервера" title="Пряме посилання на Безпека сервера" translate="no">​</a></h2>
-<p>Outline – це програмне забезпечення з відкритим кодом, тобто будь-хто може бачити цей код і виправляти виявлені вразливі місця. Наш код розміщено на платформі <a href="https://github.com/search?q=org%3AJigsaw-Code+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a>.</p>
+<p>Outline – це програмне забезпечення з відкритим кодом, тобто будь-хто може бачити цей код і виправляти виявлені вразливі місця. Наш код розміщено на платформі <a href="https://github.com/search?q=org%3AOutlineFoundation+outline&amp;unscoped_q=outline" target="_blank" rel="noopener noreferrer" class="">GitHub</a>.</p>
 <p>Крім того, усі встановлені сервери Outline автоматично оновлюються після появи нової версії, тому жоден із них не може використовувати старі версії програмного забезпечення.</p>
 <p>Щоб керувати ключами доступу на сервері, додаток Диспетчер Outline взаємодіє із сервісом Management Service на сервері Outline. Management Service використовує випадково вибраний порт і має унікальний секретний шлях. Сам сервіс Management Service стійкий до зондування, оскільки не відповідає на запити, якщо не вказано відповідний секретний шлях. Також усі звернення до Management Service шифруються за допомогою <a href="https://en.wikipedia.org/wiki/Self-signed_certificate" target="_blank" rel="noopener noreferrer" class="">самопідписаного сертифіката SSL</a>.</p>
 <p>Зверніть увагу, що сервер Outline не зберігає жодних журналів, тому навіть у разі зламу дані користувачів не буде розголошено. <a class="" href="/uk/about/security-and-privacy">Докладніше.</a> У 2018 році програмне забезпечення Outline пройшло аудит у двох організаціях із кібербезпеки – <a href="https://radicallyopensecurity.com/" target="_blank" rel="noopener noreferrer" class="">Radically Open Security</a> і <a href="https://cure53.de/" target="_blank" rel="noopener noreferrer" class="">Cure53</a>. Звіти можна переглянути <a class="" href="/uk/about/security-and-privacy">тут</a>.</p>
