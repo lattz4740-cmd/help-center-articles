@@ -10,7 +10,9 @@ Checks:
 5. Link URLs in translations are identical to the English source.
 6. Heading structure (anchor IDs) matches between English and translations.
 7. Content parity: translations aren't significantly shorter than English.
-8. Category metadata (_category_.json) exists for translated directories.
+8. Translation JSON files (code.json, current.json, navbar.json, footer.json)
+   have all required keys derived from source files.
+9. No bare URLs outside of markdown links or code blocks.
 """
 
 import json
@@ -81,17 +83,21 @@ _MISSING_BUTTON_KEYS: set[str] = {
     "homepage.developers.button",
     "homepage.manager.button",
 }
-
+# Locales where Google had no footer translations (Privacy Policy / Terms of Service).
+# These locales have no footer.json at all; Docusaurus falls back to English.
+FOOTER_UNTRANSLATED_LOCALES: set[str] = {
+    "am", "az", "bs", "da", "ka", "kk", "km", "lo", "mk", "mn",
+    "my", "ne", "si", "sq", "ur",
+}
 
 def _build_known_missing_keys(locale: str) -> set[str]:
-    """Return the set of known-missing keys for a given locale."""
-    if locale in MAJOR_LOCALES:
-        return set()
+    """Return the set of known-missing code.json keys for a given locale."""
+    missing: set[str] = set()
     if locale in SECONDARY_LOCALES:
-        return _MISSING_DESCRIPTION_KEYS
-    if locale in EMERGING_LOCALES:
-        return _MISSING_DESCRIPTION_KEYS | _MISSING_BUTTON_KEYS
-    return set()
+        missing |= _MISSING_DESCRIPTION_KEYS
+    elif locale in EMERGING_LOCALES:
+        missing |= _MISSING_DESCRIPTION_KEYS | _MISSING_BUTTON_KEYS
+    return missing
 
 # Known missing translations that don't exist on support.google.com.
 # These were never translated in the original system.
@@ -602,6 +608,33 @@ def _extract_navbar_json_keys() -> dict[str, str]:
     return keys
 
 
+def _extract_footer_json_keys() -> dict[str, str]:
+    """Extract required footer.json keys from docusaurus.config.ts.
+
+    Parses footer links to find titles and labels that need translation.
+    Returns {key: english_label}.
+    """
+    keys: dict[str, str] = {}
+    config_path = PROJECT_ROOT / "docusaurus.config.ts"
+    text = config_path.read_text("utf-8")
+
+    footer_match = re.search(r'footer:\s*\{.*?links:\s*\[(.*?)\],', text, re.DOTALL)
+    if footer_match:
+        links_text = footer_match.group(1)
+        # Extract column titles
+        title_pattern = re.compile(r"title:\s*'([^']+)'")
+        for m in title_pattern.finditer(links_text):
+            title = m.group(1)
+            keys[f"link.title.{title}"] = title
+        # Extract item labels
+        label_pattern = re.compile(r"label:\s*'([^']+)'")
+        for m in label_pattern.finditer(links_text):
+            label = m.group(1)
+            keys[f"link.item.label.{label}"] = label
+
+    return keys
+
+
 # Lazily loaded on first use
 _required_keys_cache: dict[str, dict[str, str]] = {}
 
@@ -615,6 +648,8 @@ def _get_required_keys(kind: str) -> dict[str, str]:
             _required_keys_cache[kind] = _extract_current_json_keys()
         elif kind == "navbar.json":
             _required_keys_cache[kind] = _extract_navbar_json_keys()
+        elif kind == "footer.json":
+            _required_keys_cache[kind] = _extract_footer_json_keys()
     return _required_keys_cache[kind]
 
 
@@ -660,7 +695,7 @@ def _check_json_keys(
 
 
 def verify_i18n_json(locale: str) -> list[Issue]:
-    """Verify code.json, current.json, and navbar.json have all required translation keys."""
+    """Verify code.json, current.json, navbar.json, and footer.json have all required keys."""
     issues = []
     locale_dir = I18N_BASE / locale
 
@@ -681,6 +716,14 @@ def verify_i18n_json(locale: str) -> list[Issue]:
         locale_dir / "docusaurus-theme-classic" / "navbar.json",
         _get_required_keys("navbar.json"),
     ))
+
+    # Footer is optional for locales where Google had no translations.
+    if locale not in FOOTER_UNTRANSLATED_LOCALES:
+        issues.extend(_check_json_keys(
+            locale, "footer.json",
+            locale_dir / "docusaurus-theme-classic" / "footer.json",
+            _get_required_keys("footer.json"),
+        ))
 
     return issues
 

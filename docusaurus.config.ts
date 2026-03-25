@@ -127,38 +127,12 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Product Info',
-          items: [
-            {
-              label: 'Download Outline',
-              href: 'https://getoutline.org/',
-            },
-            {
-              label: 'Terms of Service',
-              href: 'https://getoutline.org/policies/terms-of-service',
-            },
-            {
-              label: 'Privacy Policy',
-              href: 'https://getoutline.org/policies/privacy',
-            },
-          ],
+          label: 'Privacy Policy',
+          href: 'https://getoutline.org/policies/privacy',
         },
         {
-          title: 'Get Help',
-          items: [
-            {
-              label: 'GitHub',
-              href: 'https://github.com/OutlineFoundation/?q=outline',
-            },
-            {
-              label: 'Reddit',
-              href: 'https://www.reddit.com/r/outlinevpn/',
-            },
-            {
-              label: 'Developer Docs',
-              href: 'https://developer.getoutline.org/',
-            },
-          ],
+          label: 'Terms of Service',
+          href: 'https://getoutline.org/policies/terms-of-service',
         },
       ],
     },
