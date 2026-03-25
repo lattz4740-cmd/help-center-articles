@@ -6,7 +6,7 @@ import Link from '@docusaurus/Link';
 function BrowseTopics() {
   const cards = [
     {
-      image: '/images/landing-guides.png',
+      image: '/images/landing-reference.png',
       titleId: 'homepage.about.title',
       title: 'About Outline',
       descriptionId: 'homepage.about.description',
@@ -34,16 +34,6 @@ function BrowseTopics() {
       buttonId: 'homepage.manager.button',
       button: 'Set up a server',
       to: '/manager/server-setup/setup-server',
-    },
-    {
-      image: '/images/landing-reference.png',
-      titleId: 'homepage.developers.title',
-      title: 'For Developers',
-      descriptionId: 'homepage.developers.description',
-      description: 'Integrate the Outline SDK into your application.',
-      buttonId: 'homepage.developers.button',
-      button: 'Explore the SDK',
-      to: 'https://developer.getoutline.org/',
     },
   ];
 
