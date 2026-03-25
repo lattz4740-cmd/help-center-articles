@@ -18,7 +18,7 @@ Die Outline-Installation muss nach der Installation nicht konfiguriert werden.
 
 ## Sicherheit des Servers
 
-Outline ist eine Open-Source-Software, das heißt, jeder kann sich den Quellcode bei [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline) ansehen und ihn verbessern, um eventuelle Schwachstellen zu beheben.
+Outline ist eine Open-Source-Software, das heißt, jeder kann sich den Quellcode bei [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline) ansehen und ihn verbessern, um eventuelle Schwachstellen zu beheben.
 
 Alle installierten Outline-Server werden automatisch aktualisiert, sobald eine neue Version verfügbar ist, damit keiner mit einer veralteten Version der Software betrieben wird.
 

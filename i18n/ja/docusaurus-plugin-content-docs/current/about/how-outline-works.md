@@ -18,7 +18,7 @@ Outline サーバーのインストール後に必要な設定はありません
 
 ## サーバーのセキュリティ
 
-Outline ソフトウェアはオープンソースです。つまり、誰でもコードを確認して、脆弱性が見つかった場合には修正できます。Outline のコードは [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline) でホストされています。
+Outline ソフトウェアはオープンソースです。つまり、誰でもコードを確認して、脆弱性が見つかった場合には修正できます。Outline のコードは [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline) でホストされています。
 
 さらに、インストールした Outline サーバーはすべて、新しいバージョンがリリースされると自動的に更新されます。したがって、Outline サーバーで古いバージョンのソフトウェアが実行されたままになることはありません。
 

@@ -14,7 +14,7 @@ sidebar_label: Ako Outline funguje
 Outline po inštalácii netreba konfigurovať.
 
 ## Zabezpečenie servera
- Softvér Outline má licenciu open source. Znamená to, že ktokoľvek si môže pozrieť jeho kód a zlepšiť ho, ak objaví akékoľvek nedostatky zabezpečenia. Náš kód je hostený na [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline).
+ Softvér Outline má licenciu open source. Znamená to, že ktokoľvek si môže pozrieť jeho kód a zlepšiť ho, ak objaví akékoľvek nedostatky zabezpečenia. Náš kód je hostený na [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline).
 
  Všetky nainštalované servery Outline sú navyše automaticky aktualizované vždy, keď je vydaná nová verzia, čím sa zabezpečuje, že žiadny server Outline ďalej nepoužíva staré verzie softvéru.
 

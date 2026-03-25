@@ -13,4 +13,4 @@ sidebar_label: "Какви са системните изисквания за �
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Искате ли да помогнете клиентът за Outline да работи на повече операционни системи? [Дайте приноса си към кода](https://github.com/Jigsaw-Code/outline-client#platform-specific-development) ни в GitHub!
+Искате ли да помогнете клиентът за Outline да работи на повече операционни системи? [Дайте приноса си към кода](https://github.com/Outline-Foundation/outline-client#platform-specific-development) ни в GitHub!

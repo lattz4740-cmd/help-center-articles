@@ -13,4 +13,4 @@ Puteți încerca Outline pe orice sistem de operare. Următoarele sunt versiunil
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Doriți să ajutați aplicația Outline Client să funcționeze pe mai multe sisteme de operare? [Contribuiți la baza de cod](https://github.com/Jigsaw-Code/outline-client#platform-specific-development) de pe GitHub!
+Doriți să ajutați aplicația Outline Client să funcționeze pe mai multe sisteme de operare? [Contribuiți la baza de cod](https://github.com/Outline-Foundation/outline-client#platform-specific-development) de pe GitHub!

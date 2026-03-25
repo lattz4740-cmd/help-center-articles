@@ -13,4 +13,4 @@ sidebar_label: "ຄວາມຕ້ອງການຂອງລະບົບເພ�
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-ຕ້ອງການຊ່ວຍໃຫ້ລູກຂ່າຍ Outline ນຳໃຊ້ໄດ້ໃນລະບົບປະຕິບັດການອື່ນໆບໍ? [ປະກອບສ່ວນໃນການສ້າງຖານຂອງໂຄດກັບພວກເຮົາ](https://github.com/Jigsaw-Code/outline-client#platform-specific-development) ຢູ່ GitHub!
+ຕ້ອງການຊ່ວຍໃຫ້ລູກຂ່າຍ Outline ນຳໃຊ້ໄດ້ໃນລະບົບປະຕິບັດການອື່ນໆບໍ? [ປະກອບສ່ວນໃນການສ້າງຖານຂອງໂຄດກັບພວກເຮົາ](https://github.com/Outline-Foundation/outline-client#platform-specific-development) ຢູ່ GitHub!

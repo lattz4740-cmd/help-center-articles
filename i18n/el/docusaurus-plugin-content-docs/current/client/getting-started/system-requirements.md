@@ -13,4 +13,4 @@ sidebar_label: Ποιες είναι οι απαιτήσεις συστήματ�
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Θέλετε να μας βοηθήσετε να διαθέσουμε την εφαρμογή Outline Client σε περισσότερα λειτουργικά συστήματα; [Συνεισφέρετε στη βάση κωδίκων μας](https://github.com/Jigsaw-Code/outline-client#platform-specific-development) στο GitHub!
+Θέλετε να μας βοηθήσετε να διαθέσουμε την εφαρμογή Outline Client σε περισσότερα λειτουργικά συστήματα; [Συνεισφέρετε στη βάση κωδίκων μας](https://github.com/Outline-Foundation/outline-client#platform-specific-development) στο GitHub!

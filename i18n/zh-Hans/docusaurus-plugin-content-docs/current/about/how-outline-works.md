@@ -18,7 +18,7 @@ Outline 安装完成后，无需进行任何配置。
 
 ## 服务器安全
 
-Outline 是一款开放源代码软件。也就是说，任何人都可以查看代码，并可在发现漏洞后改进代码。我们的代码托管在 [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline) 。
+Outline 是一款开放源代码软件。也就是说，任何人都可以查看代码，并可在发现漏洞后改进代码。我们的代码托管在 [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline) 。
 
 此外，软件一有新版本发布，所有已安装的 Outline 服务器都会自动更新，以确保所有 Outline 服务器均使用最新版本的软件。
 

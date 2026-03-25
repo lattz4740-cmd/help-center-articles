@@ -14,7 +14,7 @@ sidebar_label: Jak Outline funguje
 Po instalaci už není Outline potřeba nijak nastavovat.
 
 ## Zabezpečení serveru
- Software Outline je opensourcový, což znamená, že si kdokoli může zobrazit jeho kód a vylepšovat ho, pokud se objeví nějaké slabiny. Náš kód hostujeme na [GitHubu](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline).
+ Software Outline je opensourcový, což znamená, že si kdokoli může zobrazit jeho kód a vylepšovat ho, pokud se objeví nějaké slabiny. Náš kód hostujeme na [GitHubu](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline).
 
  Všechny nainstalované servery Outline se navíc automaticky aktualizují, kdykoli je uvedena nová verze, takže na žádném serveru Outline neběží staré verze softwaru.
 

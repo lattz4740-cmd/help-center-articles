@@ -14,7 +14,7 @@ sidebar_label: Come funziona Outline
 L'installazione di Outline non richiede nessuna configurazione successiva all'installazione.
 
 ## Sicurezza del server
- Il software Outline è open source, il che significa che chiunque può vedere il codice e migliorarlo se vengono scoperte delle vulnerabilità. Il nostro codice è ospitato su [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline).
+ Il software Outline è open source, il che significa che chiunque può vedere il codice e migliorarlo se vengono scoperte delle vulnerabilità. Il nostro codice è ospitato su [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline).
 
  Inoltre, tutti i server Outline installati vengono aggiornati automaticamente ogni volta che viene rilasciata una nuova versione; in questo modo, nessun server Outline esegue versioni obsolete del software.
 

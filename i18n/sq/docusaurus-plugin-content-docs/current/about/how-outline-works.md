@@ -14,7 +14,7 @@ sidebar_label: Si funksionon Outline
 Instalimi i Outline nuk ka nevojë për konfigurim pas instalimit.
 
 ## Siguria e serverit
- Softueri i Outline është me burim të hapur, që do të thotë se çdo person mund ta shikojë kodin dhe ta përmirësojë atë nëse ka dobësi të zbuluara. Kodi ynë strehohet në [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline).
+ Softueri i Outline është me burim të hapur, që do të thotë se çdo person mund ta shikojë kodin dhe ta përmirësojë atë nëse ka dobësi të zbuluara. Kodi ynë strehohet në [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline).
 
  Për më tepër, të gjithë serverët e instaluar të Outline përditësohen automatikisht sa herë që publikohet një version i ri, duke siguruar që asnjë server i Outline të mos lihet të ekzekutojë versionet e vjetra të softuerit.
 

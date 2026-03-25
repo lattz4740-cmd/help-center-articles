@@ -13,4 +13,4 @@ sidebar_label: "Outline क्लाइन्ट प्रयोग गर्न
 | Windows | १० |
 | Linux | Ubuntu २०.०४ |
 
-Outline क्लाइन्ट अझ धेरै अपरेटिङ सिस्टममा चल्ने बनाउन मद्दत गर्न चाहनुहुन्छ? GitHub प्रयोग गरी [हाम्रो कोड बेसमा योगदान गर्नुहोस्](https://github.com/Jigsaw-Code/outline-client#platform-specific-development) !
+Outline क्लाइन्ट अझ धेरै अपरेटिङ सिस्टममा चल्ने बनाउन मद्दत गर्न चाहनुहुन्छ? GitHub प्रयोग गरी [हाम्रो कोड बेसमा योगदान गर्नुहोस्](https://github.com/Outline-Foundation/outline-client#platform-specific-development) !

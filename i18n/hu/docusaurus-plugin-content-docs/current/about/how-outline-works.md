@@ -14,7 +14,7 @@ sidebar_label: Az Outline működése
 A telepítést követően nem kell konfigurálni az Outline szolgáltatást.
 
 ## Szerverbiztonság
- Az Outline szoftver nyílt forráskódú, ami azt jelenti, hogy bárki hozzáférhet a programkódhoz, és ha biztonsági rést talál, tovább is fejlesztheti. A programkód a [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline) webhelyén található.
+ Az Outline szoftver nyílt forráskódú, ami azt jelenti, hogy bárki hozzáférhet a programkódhoz, és ha biztonsági rést talál, tovább is fejlesztheti. A programkód a [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline) webhelyén található.
 
  Emellett a telepített Outline-szerverek automatikusan frissülnek minden alkalommal, amikor új verzió jelenik meg, így egy Outline-szerver sem fogja a szoftver régebbi verzióját futtatni.
 

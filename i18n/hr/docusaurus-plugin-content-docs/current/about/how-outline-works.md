@@ -14,7 +14,7 @@ sidebar_label: Kako funkcionira Outline
 Instalacija aplikacije Outline ne zahtijeva naknadnu instalaciju konfiguracije.
 
 ## Sigurnost poslužitelja
- Outline je softver otvorenog izvornog koda. To znači da bilo tko može vidjeti kôd i poboljšati ga ako se otkriju nedostaci. Naš se kôd hostira na [GitHubu](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline).
+ Outline je softver otvorenog izvornog koda. To znači da bilo tko može vidjeti kôd i poboljšati ga ako se otkriju nedostaci. Naš se kôd hostira na [GitHubu](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline).
 
  Nadalje, svi instalirani Outline poslužitelji automatski se ažuriraju nakon svake objave nove verzije tako da nijedan Outline poslužitelj nema zastarjelu verziju softvera.
 

@@ -13,4 +13,4 @@ Teil on võimalik proovida Outline'i mis tahes operatsioonisüsteemis. Operatsio
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Kas soovite anda oma panuse, et Outline’i klienti saaks kasutada rohkemates operatsioonisüsteemides? [Panustage meie koodibaasi](https://github.com/Jigsaw-Code/outline-client#platform-specific-development) GitHubis!
+Kas soovite anda oma panuse, et Outline’i klienti saaks kasutada rohkemates operatsioonisüsteemides? [Panustage meie koodibaasi](https://github.com/Outline-Foundation/outline-client#platform-specific-development) GitHubis!

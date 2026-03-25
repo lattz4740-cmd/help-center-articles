@@ -5,7 +5,7 @@ sidebar_label: Geri bildirim ve öneri gönderme
 
 Outline'ı iyileştirmemize yardımcı olduğunuz için teşekkür ederiz! Anonim olarak veya yanıt almanız gerekiyorsa e-postayla birkaç şekilde geri bildirim gönderebilirsiniz:
 
-- **Geliştiriciler için**: Outline açık kaynak bir yazılımdır ve tüm kodumuzu [GitHub](https://github.com/jigsaw-Code/?q=outline)'da barındırırız. GitHub'da veya [Reddit](https://www.reddit.com/r/outlinevpn/) topluluğumuzda düşüncelerinizi paylaşabilirsiniz.
+- **Geliştiriciler için**: Outline açık kaynak bir yazılımdır ve tüm kodumuzu [GitHub](https://github.com/Outline-Foundation/?q=outline)'da barındırırız. GitHub'da veya [Reddit](https://www.reddit.com/r/outlinevpn/) topluluğumuzda düşüncelerinizi paylaşabilirsiniz.
 
 - **Kullanıcılar için**: Outline veya Outline Manager uygulaması üzerinden geri bildirim gönderebilirsiniz. Geri bildirimin hangi konuyla ilgili olduğunu yazın ve size yanıt vermemizi istiyorsanız e-posta adresinizi de ekleyin. Ayrıca, sorunu gidermenize yardımcı olabilmek için tarayıcı, işletim sistemi ve yazılımın hangi sürümünü kullandığınız gibi ortamınızla ilgili bazı meta verileri de toplarız.
 

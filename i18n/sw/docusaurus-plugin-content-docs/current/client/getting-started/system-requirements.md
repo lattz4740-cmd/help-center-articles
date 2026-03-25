@@ -13,4 +13,4 @@ Unakaribishwa kujaribu programu ya Outline kwenye mfumo wowote wa uendeshaji. If
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Je, ungependa kusaidia Programu ya Outline ifanye kazi kwenye mifumo mingi ya uendeshaji? [Changia mkusanyiko wetu wa chanzo cha misimbo](https://github.com/Jigsaw-Code/outline-client#platform-specific-development) kwenye GitHub!
+Je, ungependa kusaidia Programu ya Outline ifanye kazi kwenye mifumo mingi ya uendeshaji? [Changia mkusanyiko wetu wa chanzo cha misimbo](https://github.com/Outline-Foundation/outline-client#platform-specific-development) kwenye GitHub!

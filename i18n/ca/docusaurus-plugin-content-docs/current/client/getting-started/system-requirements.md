@@ -13,4 +13,4 @@ Et convidem a provar Outline amb qualsevol sistema operatiu. Aquests són els si
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Vols ajudar perquè el client d'Outline funcioni en més sistemes operatius? [Contribueix a la nostra base de codi](https://github.com/Jigsaw-Code/outline-client#platform-specific-development) a GitHub!
+Vols ajudar perquè el client d'Outline funcioni en més sistemes operatius? [Contribueix a la nostra base de codi](https://github.com/Outline-Foundation/outline-client#platform-specific-development) a GitHub!

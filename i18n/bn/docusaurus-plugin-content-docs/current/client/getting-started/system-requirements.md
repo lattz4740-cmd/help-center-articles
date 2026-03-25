@@ -13,4 +13,4 @@ sidebar_label: "Outline Client চালানোর জন্য সিস্�
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-আরও নানান অপারেটিং সিস্টেমে কি Outline Client ইনস্টল করাতে সাহায্য করতে চান? GitHub-এ [আমাদের কোড বেসে কন্ট্রিবিউট করুন](https://github.com/Jigsaw-Code/outline-client#platform-specific-development)!
+আরও নানান অপারেটিং সিস্টেমে কি Outline Client ইনস্টল করাতে সাহায্য করতে চান? GitHub-এ [আমাদের কোড বেসে কন্ট্রিবিউট করুন](https://github.com/Outline-Foundation/outline-client#platform-specific-development)!

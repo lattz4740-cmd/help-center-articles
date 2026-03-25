@@ -18,7 +18,7 @@ sidebar_label: Принципы работы Outline
 
 ## Безопасность сервера
 
-Outline – это ПО с открытым исходным кодом, в который каждый может внести исправления. Наш код размещен на [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline) .
+Outline – это ПО с открытым исходным кодом, в который каждый может внести исправления. Наш код размещен на [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline) .
 
 Кроме того, все установленные серверы Outline обновляются автоматически, как только появляется новая версия программного обеспечения.
 

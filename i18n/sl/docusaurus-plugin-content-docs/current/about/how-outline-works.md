@@ -14,7 +14,7 @@ sidebar_label: Kako deluje Outline
 Po namestitvi strežnika Outline ni potrebna konfiguracija.
 
 ## Varnost strežnika
- Programska oprema Outline je odprtokodna, kar pomeni, da si lahko kdor koli ogleda kodo in jo izboljša, če so odkrite ranljivosti. Našo kodo gosti storitev [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline).
+ Programska oprema Outline je odprtokodna, kar pomeni, da si lahko kdor koli ogleda kodo in jo izboljša, če so odkrite ranljivosti. Našo kodo gosti storitev [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline).
 
  Poleg tega se nameščeni strežniki Outline samodejno posodobijo ob vsaki izdaji nove različice, kar zagotavlja, da se v nobenem strežniku Outline ne izvajajo stare različice programske opreme.
 

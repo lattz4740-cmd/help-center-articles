@@ -13,4 +13,4 @@ sidebar_label: 运行 Outline 客户端对系统有何要求？
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-想协助 Outline 客户端在更多操作系统上运行？请访问 GitHub [帮助我们扩充代码库](https://github.com/Jigsaw-Code/outline-client#platform-specific-development)！
+想协助 Outline 客户端在更多操作系统上运行？请访问 GitHub [帮助我们扩充代码库](https://github.com/Outline-Foundation/outline-client#platform-specific-development)！

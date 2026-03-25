@@ -14,7 +14,7 @@ sidebar_label: איך שירות Outline פועל
 לא צריך להגדיר את Outline לאחר ההתקנה.
 
 ## אבטחת השרת
- אפליקציית Outline כתובה בקוד פתוח. כלומר, כל אחד יכול לקרוא את הקוד ולשפר אותו אם מתגלות נקודות חולשה. הקוד שלנו מתארח ב-[GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline).
+ אפליקציית Outline כתובה בקוד פתוח. כלומר, כל אחד יכול לקרוא את הקוד ולשפר אותו אם מתגלות נקודות חולשה. הקוד שלנו מתארח ב-[GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline).
 
  בנוסף, כל השרתים המותקנים של Outline מתעדכנים אוטומטית כשמשוחררת גרסת תוכנה חדשה, כדי שלא יהיה אף שרת עם גרסה ישנה.
 

@@ -14,7 +14,7 @@ sidebar_label: "Outline-ın işləmə qaydası"
 Outline-ı quraşdırdıqdan sonra konfiqurasiya etməyə ehtiyac yoxdur.
 
 ## Server təhlükəsizliyi
- Outline proqram təminatı açıq mənbədir, yəni hər kəs koda baxa və hər hansı qüsur aşkar edilərsə, onu təkmilləşdirə bilər. Kodumuz [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline) platformasında əlçatandır.
+ Outline proqram təminatı açıq mənbədir, yəni hər kəs koda baxa və hər hansı qüsur aşkar edilərsə, onu təkmilləşdirə bilər. Kodumuz [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline) platformasında əlçatandır.
 
  Bundan əlavə, bütün quraşdırılmış Outline serverləri yeni versiya təqdim olunduqda avtomatik olaraq yenilənir və proqram təminatının köhnə versiyaları ilə işləyən heç bir Outline serverinin qalmaması təmin edilir.
 

@@ -13,4 +13,4 @@ Bạn có thể dùng thử Outline trên bất cứ hệ điều hành nào. D�
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Bạn muốn giúp ứng dụng Outline hoạt động trên nhiều hệ điều hành hơn? [Hãy đóng góp cho kho mã nguồn của chúng tôi](https://github.com/Jigsaw-Code/outline-client#platform-specific-development) trên GitHub!
+Bạn muốn giúp ứng dụng Outline hoạt động trên nhiều hệ điều hành hơn? [Hãy đóng góp cho kho mã nguồn của chúng tôi](https://github.com/Outline-Foundation/outline-client#platform-specific-development) trên GitHub!

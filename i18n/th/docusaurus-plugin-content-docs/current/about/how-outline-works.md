@@ -32,5 +32,5 @@ Outline ใช้งานได้ในรูปแบบ VPN ทั่วท�
 
 ## การรับส่งข้อมูล DNS
 
-Outline ดำเนินการค้นหา DNS ทั้งหมดผ่านเซิร์ฟเวอร์ Outline และปกป้องการค้นหาเหล่านั้นด้วยการเข้ารหัสแบบเดียวกับที่ใช้ในกิจกรรมเครือข่ายอื่นๆ ทั้งหมด ระบบจะส่งคำขอ DNS ไปยัง Dyn Internet Guide หรือ OpenDNS โดยผ่านเซิร์ฟเวอร์ Outline [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline) Outline จะไม่บันทึกการค้นหา DNS ของคุณ
+Outline ดำเนินการค้นหา DNS ทั้งหมดผ่านเซิร์ฟเวอร์ Outline และปกป้องการค้นหาเหล่านั้นด้วยการเข้ารหัสแบบเดียวกับที่ใช้ในกิจกรรมเครือข่ายอื่นๆ ทั้งหมด ระบบจะส่งคำขอ DNS ไปยัง Dyn Internet Guide หรือ OpenDNS โดยผ่านเซิร์ฟเวอร์ Outline [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline) Outline จะไม่บันทึกการค้นหา DNS ของคุณ
 

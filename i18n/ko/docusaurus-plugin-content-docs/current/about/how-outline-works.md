@@ -18,7 +18,7 @@ Outline은 설치가 완료된 후 따로 구성할 필요가 없습니다.
 
 ## 서버 보안
 
-Outline 소프트웨어는 오픈소스이므로 누구나 코드를 보고 취약점이 발견되는 경우 이를 개선할 수 있습니다. Outline의 코드는 [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline) 에 호스팅되어 있습니다.
+Outline 소프트웨어는 오픈소스이므로 누구나 코드를 보고 취약점이 발견되는 경우 이를 개선할 수 있습니다. Outline의 코드는 [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline) 에 호스팅되어 있습니다.
 
 또한 설치된 모든 Outline 서버는 새 버전이 출시될 때마다 자동으로 업데이트되므로 이전 버전의 소프트웨어를 실행 중인 Outline 서버가 남아 있지 않도록 보장합니다.
 

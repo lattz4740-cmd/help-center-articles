@@ -14,7 +14,7 @@ sidebar_label: Outlinen toiminta
 Outlinea ei tarvitse määrittää sen jälkeen, kun se on asennettu.
 
 ## Palvelimen tietoturva
- Outline-ohjelmisto käyttää avointa lähdekoodia, mikä tarkoittaa, että kuka tahansa voi nähdä koodin ja parantaa sitä haavoittuvuuksia havaitessaan. Koodimme on saatavilla [GitHubissa](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline).
+ Outline-ohjelmisto käyttää avointa lähdekoodia, mikä tarkoittaa, että kuka tahansa voi nähdä koodin ja parantaa sitä haavoittuvuuksia havaitessaan. Koodimme on saatavilla [GitHubissa](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline).
 
  Lisäksi kaikki asennetut Outline-palvelimet päivittyvät automaattisesti heti, kun uusi versio julkaistaan. Näin varmistetaan, että yksikään Outline-palvelin ei käytä ohjelmiston vanhoja versioita.
 

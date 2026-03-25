@@ -13,4 +13,4 @@ Puwede mong subukan ang Outline sa anumang operating system. Ang mga sumusunod a
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Gusto mo bang tumulong na mapagana ang Outline Client sa higit pang operating system? [Mag-ambag sa aming code base](https://github.com/Jigsaw-Code/outline-client#platform-specific-development) sa GitHub!
+Gusto mo bang tumulong na mapagana ang Outline Client sa higit pang operating system? [Mag-ambag sa aming code base](https://github.com/Outline-Foundation/outline-client#platform-specific-development) sa GitHub!

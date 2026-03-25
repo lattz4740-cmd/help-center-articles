@@ -14,7 +14,7 @@ sidebar_label: Programmatūras Outline darbības principi
 Outline instalācijai nav nepieciešama nekāda konfigurācija pēc instalēšanas.
 
 ## Servera drošība
- Outline ir atvērtā pirmkoda programmatūra, tādējādi ikviens var skatīt kodu un uzlabot to, ja tiek atklātas kādas ievainojamības. Mūsu kods tiek mitināts vietnē [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline).
+ Outline ir atvērtā pirmkoda programmatūra, tādējādi ikviens var skatīt kodu un uzlabot to, ja tiek atklātas kādas ievainojamības. Mūsu kods tiek mitināts vietnē [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline).
 
  Turklāt visi instalētie Outline serveri tiek automātiski atjaunināti ikreiz, kad tiek izlaista jauna versija, nodrošinot, ka neviens serveris nav atstāts darbojoties ar programmatūras vecām versijām.
 

@@ -13,4 +13,4 @@ sidebar_label: "តើមានលក្ខខណ្ឌតម្រូវប្�
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-ចង់ជួយកម្មវិធីភ្ញៀវសម្រាប់ Outline ឱ្យដំណើរការលើប្រព័ន្ធ​ប្រតិបត្តិការកាន់តែច្រើនទៀតទេ? [ចូលរួមចំណែកក្នុងមូលដ្ឋានកូដរបស់យើង](https://github.com/Jigsaw-Code/outline-client#platform-specific-development)នៅលើ GitHub!
+ចង់ជួយកម្មវិធីភ្ញៀវសម្រាប់ Outline ឱ្យដំណើរការលើប្រព័ន្ធ​ប្រតិបត្តិការកាន់តែច្រើនទៀតទេ? [ចូលរួមចំណែកក្នុងមូលដ្ឋានកូដរបស់យើង](https://github.com/Outline-Foundation/outline-client#platform-specific-development)នៅលើ GitHub!

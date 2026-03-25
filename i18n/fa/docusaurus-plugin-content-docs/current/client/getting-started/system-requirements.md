@@ -13,4 +13,4 @@ sidebar_label: الزامات سیستم برای اجرای Outline Client چی
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-آیا می‌خواهید Outline Client روی سیستم‌عامل‌های بیشتری کار کند؟ در GitHub، [پایه کد ما مشارکت کنید!](https://github.com/Jigsaw-Code/outline-client#platform-specific-development)
+آیا می‌خواهید Outline Client روی سیستم‌عامل‌های بیشتری کار کند؟ در GitHub، [پایه کد ما مشارکت کنید!](https://github.com/Outline-Foundation/outline-client#platform-specific-development)

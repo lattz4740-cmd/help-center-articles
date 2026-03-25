@@ -14,7 +14,7 @@ sidebar_label: Cum funcționează Outline
 Aplicația Outline nu necesită o configurare după instalare.
 
 ## Securitatea serverului
- Software-ul Outline este open source, ceea ce înseamnă că oricine poate vedea codul și îl poate îmbunătăți dacă sunt descoperite vulnerabilități. Codul nostru este găzduit pe [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline).
+ Software-ul Outline este open source, ceea ce înseamnă că oricine poate vedea codul și îl poate îmbunătăți dacă sunt descoperite vulnerabilități. Codul nostru este găzduit pe [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline).
 
  În plus, toate serverele Outline instalate sunt actualizate automat când este lansată o versiune nouă, astfel încât niciun server Outline nu mai rulează versiunile vechi de software.
 

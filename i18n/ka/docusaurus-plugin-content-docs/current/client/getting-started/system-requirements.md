@@ -13,4 +13,4 @@ sidebar_label: "რა მოთხოვნები აქვს სისტ�
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-გსურთ, დაეხმაროთ Outline-ის კლიენტს მეტ ოპერაციულ სისტემაზე მუშაობაში? [შეიტანეთ წვლილი ჩვენი კოდების ბაზაში](https://github.com/Jigsaw-Code/outline-client#platform-specific-development) GitHub-ზე!
+გსურთ, დაეხმაროთ Outline-ის კლიენტს მეტ ოპერაციულ სისტემაზე მუშაობაში? [შეიტანეთ წვლილი ჩვენი კოდების ბაზაში](https://github.com/Outline-Foundation/outline-client#platform-specific-development) GitHub-ზე!

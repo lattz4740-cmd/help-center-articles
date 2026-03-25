@@ -18,7 +18,7 @@ Outline 安裝完成後不需要再進行任何設定。
 
 ## 伺服器安全性
 
-Outline 是開放原始碼軟體，代表任何人都可以查看程式碼，並在發現任何漏洞時予以改善。我們將程式碼交由 [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline) 代管。
+Outline 是開放原始碼軟體，代表任何人都可以查看程式碼，並在發現任何漏洞時予以改善。我們將程式碼交由 [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline) 代管。
 
 此外，只要有新版發布，所有已安裝的 Outline 伺服器都會自動更新，這樣就不會有任何 Outline 伺服器執行舊版軟體。
 

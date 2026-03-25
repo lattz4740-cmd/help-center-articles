@@ -13,4 +13,4 @@ sidebar_label: "Кои се минималните спецификации на
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Сакате да помогнете клиентот Outline да функционира на повеќе оперативни системи? [Придонесете кон нашата база на кодови](https://github.com/Jigsaw-Code/outline-client#platform-specific-development) на GitHub!
+Сакате да помогнете клиентот Outline да функционира на повеќе оперативни системи? [Придонесете кон нашата база на кодови](https://github.com/Outline-Foundation/outline-client#platform-specific-development) на GitHub!

@@ -14,7 +14,7 @@ sidebar_label: Hoe Outline werk
 Die Outline-installering hoef nie ná installering opgestel te word nie.
 
 ## Bedienersekuriteit
- Outline-sagteware is oopbron, wat beteken dat enigiemand die kode kan sien en dit kan verbeter as daar enige kwesbaarhede ontdek word. Ons kode word gehuisves op [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline).
+ Outline-sagteware is oopbron, wat beteken dat enigiemand die kode kan sien en dit kan verbeter as daar enige kwesbaarhede ontdek word. Ons kode word gehuisves op [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline).
 
  Verder word alle geïnstalleerde Outline-bedieners outomaties opgedateer wanneer ’n nuwe weergawe vrygestel word om te verseker dat geen Outline-bediener ou weergawes van die sagteware gebruik nie.
 

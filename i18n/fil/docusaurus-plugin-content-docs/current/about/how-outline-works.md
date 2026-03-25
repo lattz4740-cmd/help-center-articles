@@ -14,7 +14,7 @@ sidebar_label: Paano Gumagana ang Outline
 Walang kailangang kahit anong pag-configure sa pag-install ng Outline pagkatapos ng pag-install
 
 ## Seguridad ng server
- Ang Outline software ay open source, na nangangahulugang puwedeng makita ng sinuman ang code at pahusayin ito kung may matuklasan mang kahinaan. Naka-host sa [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline) ang aming code.
+ Ang Outline software ay open source, na nangangahulugang puwedeng makita ng sinuman ang code at pahusayin ito kung may matuklasan mang kahinaan. Naka-host sa [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline) ang aming code.
 
  Bukod pa rito, awtomatikong ina-update ang lahat ng naka-install na Outline server sa tuwing may inilalabas na bagong bersyon, na nagsisiguradong walang Outline server na nagpapatakbo ng mga lumang bersyon ng software.
 

@@ -14,7 +14,7 @@ sidebar_label: Outline እንዴት እንደሚሠራ
 የOutline ጭነት ከጭነት በኋላ ማንኛውንም ውቅረት አያስፈልገውም።
 
 ## የአገልጋይ ደህንነት
- Outline ሶፍትዌር ክፍት ምንጭ ነው፣ ይህ ማለት ማናቸውም ተጋላጭነቶች ከተገኙ ማንኛውም ሰው ኮዱን መመልከት እና ማሻሻል ይችላል። [የእኛ ኮድ የሚስተናገደው](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline)GitHub ላይ ነው።
+ Outline ሶፍትዌር ክፍት ምንጭ ነው፣ ይህ ማለት ማናቸውም ተጋላጭነቶች ከተገኙ ማንኛውም ሰው ኮዱን መመልከት እና ማሻሻል ይችላል። [የእኛ ኮድ የሚስተናገደው](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline)GitHub ላይ ነው።
 
  በተጨማሪም፣ ሁሉም የተጫኑ የOutline አገልጋዮች አዲስ ሥሪት በሚለቀቅበት ማንኛውም ጊዜ በራስ-ሰር ይዘመናሉ፣ ይህም ምንም የOutline አገልጋይ የሶፍትዌሩን የቆዩ ስሪቶች እንያሄደ እንዳይቀር ያረጋግጣል።
 

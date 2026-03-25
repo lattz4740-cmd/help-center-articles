@@ -13,4 +13,4 @@ sidebar_label: "Outline क्लायंट रन करण्यासाठ
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Outline क्लायंट ला आणखी ऑपरेटिंग सिस्टीमवर काम करण्यात मदत करायची आहे का? GitHub वर [आमच्या कोड बेसमध्ये योगदान देणे](https://github.com/Jigsaw-Code/outline-client#platform-specific-development) हे करा!
+Outline क्लायंट ला आणखी ऑपरेटिंग सिस्टीमवर काम करण्यात मदत करायची आहे का? GitHub वर [आमच्या कोड बेसमध्ये योगदान देणे](https://github.com/Outline-Foundation/outline-client#platform-specific-development) हे करा!

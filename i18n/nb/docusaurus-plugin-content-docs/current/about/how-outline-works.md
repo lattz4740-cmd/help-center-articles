@@ -14,7 +14,7 @@ sidebar_label: Slik fungerer Outline
 Outline-installasjonen krever ingen konfigurering når den er installert.
 
 ## Tjenersikkerhet
- Outline-programvaren har åpen kildekode, noe som betyr at alle kan se koden og forbedre den hvis eventuelle sårbarheter blir oppdaget. [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline) er vert for koden vår.
+ Outline-programvaren har åpen kildekode, noe som betyr at alle kan se koden og forbedre den hvis eventuelle sårbarheter blir oppdaget. [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline) er vert for koden vår.
 
  I tillegg blir alle installerte Outline-tjenere automatisk oppdatert når en ny versjon blir utgitt, slik at ingen Outline-tjenere kjører gamle versjoner av programvaren.
 

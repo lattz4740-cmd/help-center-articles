@@ -18,7 +18,7 @@ Após a instalação do Outline, nenhuma configuração é necessária.
 
 ## Segurança do servidor
 
-Como o software Outline é de código aberto, qualquer pessoa pode vê-lo e melhorá-lo se vulnerabilidades forem descobertas. Nosso código está hospedado na plataforma [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline).
+Como o software Outline é de código aberto, qualquer pessoa pode vê-lo e melhorá-lo se vulnerabilidades forem descobertas. Nosso código está hospedado na plataforma [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline).
 
 Além disso, todos os servidores do Outline instalados são atualizados automaticamente sempre que uma nova versão é lançada, garantindo que nenhum deles use versões antigas do software.
 

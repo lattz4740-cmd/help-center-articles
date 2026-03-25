@@ -14,7 +14,7 @@ sidebar_label: Sådan fungerer Outline
 Outline-installationen skal ikke konfigureres, efter den er udført.
 
 ## Serversikkerhed
- Outline-softwaren er open source, hvilket betyder, at alle kan se koden og forbedre den, hvis der findes sikkerhedsbrister. Vores kode hostes på [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline).
+ Outline-softwaren er open source, hvilket betyder, at alle kan se koden og forbedre den, hvis der findes sikkerhedsbrister. Vores kode hostes på [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline).
 
  Desuden opdateres alle installerede Outline-servere automatisk, når der udgives en ny version, hvilket sikrer, at ingen Outline-servere kører med gamle versioner af softwaren.
 

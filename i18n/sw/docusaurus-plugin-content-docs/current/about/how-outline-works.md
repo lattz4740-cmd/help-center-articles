@@ -14,7 +14,7 @@ sidebar_label: Jinsi Outline Inavyofanya Kazi
 Outline ikishawekwa kwenye kifaa, haihitaji kuwekewa mipangilio yoyote.
 
 ## Usalama wa seva
- Outline ni programu huria, hivyo basi mtu yeyote anaweza kuona na kuboresha msimbo iwapo atagundua uwezekano wa kuathirika. Msimbo wetu hupangishwa kwenye [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline).
+ Outline ni programu huria, hivyo basi mtu yeyote anaweza kuona na kuboresha msimbo iwapo atagundua uwezekano wa kuathirika. Msimbo wetu hupangishwa kwenye [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline).
 
  Zaidi ya hayo, seva zote za Outline zilizowekwa husasishwa kiotomatiki wakati wowote toleo jipya linapochapishwa. Hali hii huhakikisha kuwa hakuna seva yoyote ya Outline inayotumia matoleo ya zamani ya programu.
 

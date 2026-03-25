@@ -13,4 +13,4 @@ Outline môžete vyskúšať v akomkoľvek operačnom systéme. Tu sú minimáln
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Chcete pomôcť, aby aplikácia Outline Client fungovala v ďalších operačných systémoch? [Prispejte do našej základne kódov](https://github.com/Jigsaw-Code/outline-client#platform-specific-development) v službe GitHub.
+Chcete pomôcť, aby aplikácia Outline Client fungovala v ďalších operačných systémoch? [Prispejte do našej základne kódov](https://github.com/Outline-Foundation/outline-client#platform-specific-development) v službe GitHub.

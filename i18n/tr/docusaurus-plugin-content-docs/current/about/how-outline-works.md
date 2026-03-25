@@ -14,7 +14,7 @@ sidebar_label: "Outline'ın çalışma şekli"
 Outline yüklendikten sonra herhangi bir yapılandırma işlemi gerekmez.
 
 ## Sunucu güvenliği
- Outline yazılımı açık kaynaktır. Bu, herkesin kodu görebileceği ve keşfedilen güvenlik açıkları varsa iyileştirebileceği anlamına gelir. Kodumuz [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline)'da barındırılır.
+ Outline yazılımı açık kaynaktır. Bu, herkesin kodu görebileceği ve keşfedilen güvenlik açıkları varsa iyileştirebileceği anlamına gelir. Kodumuz [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline)'da barındırılır.
 
  Ayrıca hiçbir Outline sunucusunun, yazılımın eski sürümlerini çalıştırmaması için yeni bir sürüm yayınlandığında tüm yüklü Outline sunucuları otomatik olarak güncellenir.
 

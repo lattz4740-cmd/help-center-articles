@@ -14,7 +14,7 @@ sidebar_label: Outline 的運作原理
 Outline 安裝完成後不需要再進行任何設定。
 
 ## 伺服器安全性
- Outline 是開放原始碼軟件，因此所有人都可查看其程式碼，並在發現安全漏洞時作出改良。我們將程式碼寄存在 [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline)。
+ Outline 是開放原始碼軟件，因此所有人都可查看其程式碼，並在發現安全漏洞時作出改良。我們將程式碼寄存在 [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline)。
 
  此外，所有已安裝的 Outline 伺服器都會在新版本發佈時自動更新，確保所有 Outline 伺服器不會執行舊版本軟件。
 

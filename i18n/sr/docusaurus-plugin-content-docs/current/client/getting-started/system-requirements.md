@@ -13,4 +13,4 @@ Outline можете да испробате у било ком оператив
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Желите да нам помогнете да омогућимо Outline клијент за више оперативних система? [Дајте свој допринос нашој бази кодова](https://github.com/Jigsaw-Code/outline-client#platform-specific-development) на GitHub-у!
+Желите да нам помогнете да омогућимо Outline клијент за више оперативних система? [Дајте свој допринос нашој бази кодова](https://github.com/Outline-Foundation/outline-client#platform-specific-development) на GitHub-у!

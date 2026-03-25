@@ -13,4 +13,4 @@ sidebar_label: "Які операційні системи підтримує д
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Хочете, щоб додаток Клієнт Outline працював в інших операційних системах? [Долучайтесь до роботи над кодовою базою](https://github.com/Jigsaw-Code/outline-client#platform-specific-development) в сервісі GitHub!
+Хочете, щоб додаток Клієнт Outline працював в інших операційних системах? [Долучайтесь до роботи над кодовою базою](https://github.com/Outline-Foundation/outline-client#platform-specific-development) в сервісі GitHub!

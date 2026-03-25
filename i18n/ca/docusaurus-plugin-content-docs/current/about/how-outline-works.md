@@ -14,7 +14,7 @@ sidebar_label: Com funciona Outline
 Per instal·lar Outline, no cal dur a terme cap configuració després de la instal·lació.
 
 ## Seguretat del servidor
- El programari d'Outline és de codi obert, la qual cosa significa que tothom pot veure'n el codi i millorar-lo si s'hi troben vulnerabilitats. El nostre codi s'allotja a [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline).
+ El programari d'Outline és de codi obert, la qual cosa significa que tothom pot veure'n el codi i millorar-lo si s'hi troben vulnerabilitats. El nostre codi s'allotja a [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline).
 
  A més, tots els servidors d'Outline instal·lats s'actualitzen automàticament sempre que es publica una versió nova; per tant, es garanteix que cap servidor d'Outline no faci servir versions antigues del programari.
 

@@ -13,4 +13,4 @@ Je kunt Outline proberen op elk besturingssysteem. De volgende besturingssysteme
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Wil je de Outline-client op meer besturingssystemen laten werken? [Draag dan bij aan onze codebase](https://github.com/Jigsaw-Code/outline-client#platform-specific-development) op GitHub!
+Wil je de Outline-client op meer besturingssystemen laten werken? [Draag dan bij aan onze codebase](https://github.com/Outline-Foundation/outline-client#platform-specific-development) op GitHub!

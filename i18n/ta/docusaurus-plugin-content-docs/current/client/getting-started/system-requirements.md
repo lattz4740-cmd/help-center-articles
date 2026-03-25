@@ -13,4 +13,4 @@ sidebar_label: "Outline கிளையண்ட்டை இயக்குவ�
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Outline கிளையண்ட்டை இன்னும் பல ஆப்ரேட்டிங் சிஸ்டங்களில் இயங்க வைப்பதற்கு உதவ விரும்புகிறீர்களா? [GitHubல்](https://github.com/Jigsaw-Code/outline-client#platform-specific-development) எங்கள் குறியீட்டுத் தொகுப்பிற்குப் பங்களியுங்கள்!
+Outline கிளையண்ட்டை இன்னும் பல ஆப்ரேட்டிங் சிஸ்டங்களில் இயங்க வைப்பதற்கு உதவ விரும்புகிறீர்களா? [GitHubல்](https://github.com/Outline-Foundation/outline-client#platform-specific-development) எங்கள் குறியீட்டுத் தொகுப்பிற்குப் பங்களியுங்கள்!

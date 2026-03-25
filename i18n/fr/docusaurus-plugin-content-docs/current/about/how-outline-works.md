@@ -18,7 +18,7 @@ Une fois Outline installé, aucune autre configuration n'est requise.
 
 ## Sécurité du serveur
 
-Outline est un logiciel Open Source. En d'autres termes, tout le monde peut accéder à son code et l'améliorer si des failles sont découvertes. Notre code est hébergé sur [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline).
+Outline est un logiciel Open Source. En d'autres termes, tout le monde peut accéder à son code et l'améliorer si des failles sont découvertes. Notre code est hébergé sur [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline).
 
 De plus, tous les serveurs Outline installés étant automatiquement mis à jour dès qu'une nouvelle version est disponible, aucun serveur ne peut exécuter une version obsolète du logiciel.
 

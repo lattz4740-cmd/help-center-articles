@@ -13,4 +13,4 @@ Probeer gerus Outline op enige bedryfstelsel. Die volgende is die minimum vereis
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Wil jy Outline Client help om op meer bedryfstelsels te werk? [Dra by tot ons kodebasis](https://github.com/Jigsaw-Code/outline-client#platform-specific-development) op GitHub!
+Wil jy Outline Client help om op meer bedryfstelsels te werk? [Dra by tot ons kodebasis](https://github.com/Outline-Foundation/outline-client#platform-specific-development) op GitHub!

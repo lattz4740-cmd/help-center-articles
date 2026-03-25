@@ -14,7 +14,7 @@ sidebar_label: Cách hoạt động của Outline
 Bạn không cần định cấu hình sau khi cài đặt Outline.
 
 ## Bảo mật máy chủ
- Outline là phần mềm nguồn mở, nghĩa là bất cứ ai cũng có thể xem mã nguồn và cải thiện nếu phát hiện ra lỗ hổng. Chúng tôi lưu trữ mã nguồn trên [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline).
+ Outline là phần mềm nguồn mở, nghĩa là bất cứ ai cũng có thể xem mã nguồn và cải thiện nếu phát hiện ra lỗ hổng. Chúng tôi lưu trữ mã nguồn trên [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline).
 
  Ngoài ra, tất cả máy chủ Outline đã cài đặt đều sẽ cập nhật tự động mỗi khi có một phiên bản mới được phát hành, để đảm bảo rằng không có máy chủ Outline nào chạy phiên bản phần mềm cũ.
 

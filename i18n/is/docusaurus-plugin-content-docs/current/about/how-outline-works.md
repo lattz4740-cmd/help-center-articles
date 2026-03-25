@@ -14,7 +14,7 @@ sidebar_label: Svona virkar Outline
 Uppsetning Outline krefst engra grunnstillinga eftir uppsetningu.
 
 ## Öryggi þjóns
- Hugbúnaður Outline er með opinn kóða. Það þýðir að hver sem er getur skoðað kóðann og gert endurbætur á honum ef veikleikar uppgötvast. Kóðinn okkar er hýstur á [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline).
+ Hugbúnaður Outline er með opinn kóða. Það þýðir að hver sem er getur skoðað kóðann og gert endurbætur á honum ef veikleikar uppgötvast. Kóðinn okkar er hýstur á [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline).
 
  Enn fremur skal þess getið að allir uppsettir Outline-þjónar eru uppfærðir um leið og ný útgáfa býðst. Þannig er tryggt að enginn Outline-þjónn keyri gamlar útgáfur hugbúnaðarins.
 

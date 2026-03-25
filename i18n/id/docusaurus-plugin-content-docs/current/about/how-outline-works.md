@@ -14,7 +14,7 @@ sidebar_label: Cara Kerja Outline
 Setelah diinstal, Outline tidak memerlukan konfigurasi lain.
 
 ## Keamanan server
- Software Outline adalah open source, yang berarti siapa saja dapat melihat kodenya dan meningkatkannya jika ada kerentanan yang ditemukan. Kode kami dihosting di [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline).
+ Software Outline adalah open source, yang berarti siapa saja dapat melihat kodenya dan meningkatkannya jika ada kerentanan yang ditemukan. Kode kami dihosting di [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline).
 
  Selain itu, semua server Outline yang terinstal akan otomatis diupdate ketika versi baru telah dirilis untuk memastikan tidak ada server Outline yang menjalankan software versi lama.
 

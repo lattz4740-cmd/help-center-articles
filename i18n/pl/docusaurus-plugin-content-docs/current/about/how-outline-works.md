@@ -18,7 +18,7 @@ Po zainstalowaniu Outline nie jest wymagana żadna konfiguracja.
 
 ## Bezpieczeństwo serwera
 
-Outline to oprogramowanie typu open source. Oznacza to, że każdy może zobaczyć jego kod i go ulepszyć, jeśli wykryje luki w zabezpieczeniach. Kod jest hostowany w serwisie [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline).
+Outline to oprogramowanie typu open source. Oznacza to, że każdy może zobaczyć jego kod i go ulepszyć, jeśli wykryje luki w zabezpieczeniach. Kod jest hostowany w serwisie [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline).
 
 Wszystkie zainstalowane serwery Outline aktualizują się automatycznie, gdy jest dostępna nowa wersja oprogramowania. Dzięki temu mamy pewność, że żaden z nich nie używa starszej wersji Outline.
 

@@ -13,4 +13,4 @@ Pode experimentar o Outline em qualquer sistema operativo. As versões mínimas 
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Quer que a aplicação cliente Outline funcione em mais sistemas operativos? [Contribua para a nossa base de código](https://github.com/Jigsaw-Code/outline-client#platform-specific-development) no GitHub!
+Quer que a aplicação cliente Outline funcione em mais sistemas operativos? [Contribua para a nossa base de código](https://github.com/Outline-Foundation/outline-client#platform-specific-development) no GitHub!

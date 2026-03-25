@@ -13,4 +13,4 @@ Du er velkommen til at afprøve Outline på ethvert operativsystem. Her kan du s
 | Windows | 10 |
 | Linux | Ubuntu 20.04 |
 
-Vil du hjælpe med gøre Outline-klienten kompatibel med flere operativsystemer? [Bidrag til vores kodebase](https://github.com/Jigsaw-Code/outline-client#platform-specific-development) på GitHub!
+Vil du hjælpe med gøre Outline-klienten kompatibel med flere operativsystemer? [Bidrag til vores kodebase](https://github.com/Outline-Foundation/outline-client#platform-specific-development) på GitHub!

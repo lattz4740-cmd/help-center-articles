@@ -14,7 +14,7 @@ sidebar_label: "Outline-ის მუშაობის წესი"
 Outline-ს არ სჭირდება კონფიგურაცია ინსტალაციის შემდეგ.
 
 ## სერვერის უსაფრთხოება
- Outline-ის პროგრამული უზრუნველყოფა წარმოადგენს ღია კოდს, რაც იმას ნიშნავს, რომ ყველას შეუძლია მისი კოდის ნახვა და გაუმჯობესება, თუ რაიმე საფრთხეებს აღმოაჩენს. ჩვენი კოდის ჰოსტინგს უზრუნველყოფს [https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline)GitHub.
+ Outline-ის პროგრამული უზრუნველყოფა წარმოადგენს ღია კოდს, რაც იმას ნიშნავს, რომ ყველას შეუძლია მისი კოდის ნახვა და გაუმჯობესება, თუ რაიმე საფრთხეებს აღმოაჩენს. ჩვენი კოდის ჰოსტინგს უზრუნველყოფს [https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline)GitHub.
 
  გარდა ამისა, ყველა ინსტალირებული Outline-ის სერვერი ავტომატურად გაახლდება ყოველთვის, როდესაც გამოდის ახალი ვერსია, რაც უზრუნველყოფს იმას, რომ Outline-ის არცერთ სერვერზე აღარ დარჩება გაშვებული პროგრამული უზრუნველყოფის ძველი ვერსია.
 

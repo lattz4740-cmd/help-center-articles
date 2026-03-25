@@ -14,7 +14,7 @@ sidebar_label: "Outline'i tööpõhimõte"
 Installitud Outline'i ei ole vaja pärast installimist seadistada.
 
 ## Serveri turvalisus
- Outline'i tarkvara on avatud lähtekoodiga, mis tähendab, et igaüks saab koodi vaadata ja haavatavuste leidmisel täiustada. Meie koodi hostib [GitHub](https://github.com/search?q=org%3AJigsaw-Code+outline&unscoped_q=outline).
+ Outline'i tarkvara on avatud lähtekoodiga, mis tähendab, et igaüks saab koodi vaadata ja haavatavuste leidmisel täiustada. Meie koodi hostib [GitHub](https://github.com/search?q=org%3AOutline-Foundation+outline&unscoped_q=outline).
 
  Lisaks värskendatakse uue versiooni väljalaskmisel kõiki installitud Outline'i servereid automaatselt, et ükski Outline'i server ei käitaks tarkvara vana versiooni.
 
