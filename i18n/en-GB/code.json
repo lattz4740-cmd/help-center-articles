@@ -27,10 +27,6 @@
     "message": "Outline Client",
     "description": "Title for the Outline Client card on the homepage"
   },
-  "homepage.client.description": {
-    "message": "Get started with connecting your device and troubleshooting.",
-    "description": "Description for the Outline Client card on the homepage"
-  },
   "homepage.client.button": {
     "message": "Get started",
     "description": "Button text for the Outline Client card on the homepage"
@@ -38,10 +34,6 @@
   "homepage.manager.title": {
     "message": "Outline Manager",
     "description": "Title for the Outline Manager card on the homepage"
-  },
-  "homepage.manager.description": {
-    "message": "Set up and manage your Outline server.",
-    "description": "Description for the Outline Manager card on the homepage"
   },
   "homepage.manager.button": {
     "message": "Set up a server",

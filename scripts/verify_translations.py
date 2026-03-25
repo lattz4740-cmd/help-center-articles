@@ -38,6 +38,50 @@ LOCALES = [
 # Docs that only exist in English (no translation expected).
 ENGLISH_ONLY: set[str] = set()
 
+# --- Homepage translation tiers (by language reach) ---
+# Widely spoken languages — all homepage strings translated.
+MAJOR_LOCALES: set[str] = {
+    "ar", "de", "es", "es-419", "fr", "it", "ja", "ko", "nl", "pl",
+    "pt", "pt-BR", "ru", "th", "tr", "uk", "vi", "zh-Hans", "zh-Hant", "zh-HK",
+}
+
+# Mid-reach languages — buttons translated, descriptions missing.
+SECONDARY_LOCALES: set[str] = {
+    "bg", "cs", "da", "el", "en-GB", "fa", "fi",
+    "he", "hi", "hr", "hu", "id", "ms", "nb", "ro", "sk", "sl", "sv",
+}
+
+# Smaller-reach languages — descriptions and buttons missing.
+EMERGING_LOCALES: set[str] = {
+    "af", "am", "az", "bn", "bs", "ca", "et", "fil", "hy", "is",
+    "ka", "kk", "km", "lo", "lv", "mk", "mn", "mr", "my", "ne",
+    "si", "sq", "sr", "sw", "ta", "ur",
+}
+
+# Keys missing per tier.
+_MISSING_DESCRIPTION_KEYS: set[str] = {
+    "homepage.client.description",
+    "homepage.developers.description",
+    "homepage.manager.description",
+}
+_MISSING_BUTTON_KEYS: set[str] = {
+    "homepage.about.button",
+    "homepage.client.button",
+    "homepage.developers.button",
+    "homepage.manager.button",
+}
+
+
+def _build_known_missing_keys(locale: str) -> set[str]:
+    """Return the set of known-missing keys for a given locale."""
+    if locale in MAJOR_LOCALES:
+        return set()
+    if locale in SECONDARY_LOCALES:
+        return _MISSING_DESCRIPTION_KEYS
+    if locale in EMERGING_LOCALES:
+        return _MISSING_DESCRIPTION_KEYS | _MISSING_BUTTON_KEYS
+    return set()
+
 # Known missing translations that don't exist on support.google.com.
 # These were never translated in the original system.
 # Format: (locale, doc_path)
@@ -406,73 +450,180 @@ def verify_locale(locale: str, english_paths: set[str]) -> list[Issue]:
     return issues
 
 
-# Required translation keys in code.json (homepage strings)
-REQUIRED_CODE_TRANSLATIONS: set[str] = {
-    "homepage.hero.title",
-    "homepage.hero.searchPlaceholder",
-    "homepage.browseTopics",
-    "homepage.about.description",
-    "homepage.about.button",
-    "homepage.client.description",
-    "homepage.client.button",
-    "homepage.manager.description",
-    "homepage.manager.button",
-    "homepage.developers.description",
-    "homepage.developers.button",
-}
+def _extract_code_json_keys() -> dict[str, str]:
+    """Extract required code.json keys and English defaults from source files.
 
-# Required translation keys in current.json (sidebar category labels)
-REQUIRED_CURRENT_TRANSLATIONS: set[str] = {
-    "sidebar.clientSidebar.category.Getting Started",
-    "sidebar.clientSidebar.category.client-troubleshooting",
-    "sidebar.managerSidebar.category.Server Setup",
-    "sidebar.managerSidebar.category.Server Management",
-    "sidebar.managerSidebar.category.manager-troubleshooting",
-}
+    Finds both static <Translate id="...">Default text</Translate> and
+    dynamic IDs assigned to variables like titleId: 'homepage.about.title'.
+    Returns {key: english_default}.
+    """
+    keys: dict[str, str] = {}
+    src_dir = PROJECT_ROOT / "src"
+
+    for f in src_dir.rglob("*.tsx"):
+        text = f.read_text("utf-8")
+
+        # Static: <Translate id="some.id">Default text</Translate>
+        for m in re.finditer(
+            r'<Translate\s+id=["\']([^"\']+)["\']>\s*\n?\s*(.+?)\s*\n?\s*</Translate>',
+            text, re.DOTALL,
+        ):
+            keys[m.group(1)] = m.group(2).strip()
+
+        # Dynamic: card definitions with paired Id/default values
+        # e.g. titleId: 'homepage.about.title', title: 'About Outline',
+        for m in re.finditer(
+            r"(\w+)Id:\s*'(homepage\.[^']+)'.*?\1:\s*'([^']+)'",
+            text, re.DOTALL,
+        ):
+            keys[m.group(2)] = m.group(3)
+
+    return keys
+
+
+def _extract_current_json_keys() -> dict[str, str]:
+    """Extract required current.json keys from sidebars.ts.
+
+    Parses category labels and keys to build the Docusaurus translation
+    key format: sidebar.<sidebarId>.category.<label|key>
+    Returns {key: english_label}.
+    """
+    keys: dict[str, str] = {}
+    sidebars_path = PROJECT_ROOT / "sidebars.ts"
+    text = sidebars_path.read_text("utf-8")
+
+    # Find sidebar names and their ranges
+    sidebar_pattern = re.compile(r'(\w+Sidebar)\s*:\s*\[')
+    sidebar_ranges: list[tuple[str, int, int]] = []
+    for m in sidebar_pattern.finditer(text):
+        sidebar_ranges.append((m.group(1), m.start(), 0))
+    for i in range(len(sidebar_ranges)):
+        name, start, _ = sidebar_ranges[i]
+        end = sidebar_ranges[i + 1][1] if i + 1 < len(sidebar_ranges) else len(text)
+        sidebar_ranges[i] = (name, start, end)
+
+    # For each sidebar section, find categories with label and optional key
+    label_pattern = re.compile(r"label:\s*'([^']+)'")
+    key_pattern = re.compile(r"key:\s*'([^']+)'")
+
+    for sidebar_name, start, end in sidebar_ranges:
+        section = text[start:end]
+        cat_blocks = re.finditer(
+            r"type:\s*'category'(.*?)items:\s*\[",
+            section, re.DOTALL,
+        )
+        for block in cat_blocks:
+            block_text = block.group(1)
+            label_m = label_pattern.search(block_text)
+            key_m = key_pattern.search(block_text)
+            if label_m:
+                label = label_m.group(1)
+                cat_id = key_m.group(1) if key_m else label
+                keys[f"sidebar.{sidebar_name}.category.{cat_id}"] = label
+
+    return keys
+
+
+def _extract_navbar_json_keys() -> dict[str, str]:
+    """Extract required navbar.json keys from docusaurus.config.ts.
+
+    Parses navbar items to find labels that need translation.
+    Returns {key: english_label}.
+    """
+    keys: dict[str, str] = {}
+    config_path = PROJECT_ROOT / "docusaurus.config.ts"
+    text = config_path.read_text("utf-8")
+
+    navbar_match = re.search(r'navbar:\s*\{.*?items:\s*\[(.*?)\]', text, re.DOTALL)
+    if navbar_match:
+        items_text = navbar_match.group(1)
+        label_pattern = re.compile(r"label:\s*'([^']+)'")
+        for m in label_pattern.finditer(items_text):
+            label = m.group(1)
+            keys[f"item.label.{label}"] = label
+
+    return keys
+
+
+# Lazily loaded on first use
+_required_keys_cache: dict[str, dict[str, str]] = {}
+
+
+def _get_required_keys(kind: str) -> dict[str, str]:
+    """Returns {translation_key: english_default} for the given file type."""
+    if kind not in _required_keys_cache:
+        if kind == "code.json":
+            _required_keys_cache[kind] = _extract_code_json_keys()
+        elif kind == "current.json":
+            _required_keys_cache[kind] = _extract_current_json_keys()
+        elif kind == "navbar.json":
+            _required_keys_cache[kind] = _extract_navbar_json_keys()
+    return _required_keys_cache[kind]
+
+
+def _check_json_keys(
+    locale: str,
+    filename: str,
+    json_path: Path,
+    required: dict[str, str],
+) -> list[Issue]:
+    """Check a translation JSON file has all required keys and they're translated.
+
+    Args:
+        locale: The locale being checked.
+        filename: Display name for the file (e.g. "code.json").
+        json_path: Path to the JSON file.
+        required: {key: english_default} from source extraction.
+    """
+    issues: list[Issue] = []
+
+    if not json_path.exists():
+        issues.append(Issue(locale, filename, "TRANSLATION_KEY",
+                           f"Missing {filename}"))
+        return issues
+
+    try:
+        data = json.loads(json_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as e:
+        issues.append(Issue(locale, filename, "TRANSLATION_KEY",
+                           f"Invalid JSON: {e}"))
+        return issues
+
+    known_missing = _build_known_missing_keys(locale)
+    for key in required:
+        if key not in data:
+            if key not in known_missing:
+                issues.append(Issue(locale, filename, "TRANSLATION_KEY",
+                                   f"Missing key: {key}"))
+        elif not data[key].get("message"):
+            issues.append(Issue(locale, filename, "TRANSLATION_KEY",
+                               f"Empty message: {key}"))
+
+    return issues
 
 
 def verify_i18n_json(locale: str) -> list[Issue]:
-    """Verify code.json and current.json have all required translation keys."""
+    """Verify code.json, current.json, and navbar.json have all required translation keys."""
     issues = []
     locale_dir = I18N_BASE / locale
 
-    # Check code.json
-    code_json = locale_dir / "code.json"
-    if code_json.exists():
-        try:
-            data = json.loads(code_json.read_text(encoding="utf-8"))
-            for key in REQUIRED_CODE_TRANSLATIONS:
-                if key not in data:
-                    issues.append(Issue(locale, "code.json", "TRANSLATION_KEY",
-                                       f"Missing key: {key}"))
-                elif not data[key].get("message"):
-                    issues.append(Issue(locale, "code.json", "TRANSLATION_KEY",
-                                       f"Empty message: {key}"))
-        except json.JSONDecodeError as e:
-            issues.append(Issue(locale, "code.json", "TRANSLATION_KEY",
-                               f"Invalid JSON: {e}"))
-    else:
-        issues.append(Issue(locale, "code.json", "TRANSLATION_KEY",
-                           "Missing code.json"))
+    issues.extend(_check_json_keys(
+        locale, "code.json",
+        locale_dir / "code.json",
+        _get_required_keys("code.json"),
+    ))
 
-    # Check current.json
-    current_json = locale_dir / "docusaurus-plugin-content-docs" / "current.json"
-    if current_json.exists():
-        try:
-            data = json.loads(current_json.read_text(encoding="utf-8"))
-            for key in REQUIRED_CURRENT_TRANSLATIONS:
-                if key not in data:
-                    issues.append(Issue(locale, "current.json", "TRANSLATION_KEY",
-                                       f"Missing key: {key}"))
-                elif not data[key].get("message"):
-                    issues.append(Issue(locale, "current.json", "TRANSLATION_KEY",
-                                       f"Empty message: {key}"))
-        except json.JSONDecodeError as e:
-            issues.append(Issue(locale, "current.json", "TRANSLATION_KEY",
-                               f"Invalid JSON: {e}"))
-    else:
-        issues.append(Issue(locale, "current.json", "TRANSLATION_KEY",
-                           "Missing current.json"))
+    issues.extend(_check_json_keys(
+        locale, "current.json",
+        locale_dir / "docusaurus-plugin-content-docs" / "current.json",
+        _get_required_keys("current.json"),
+    ))
+
+    issues.extend(_check_json_keys(
+        locale, "navbar.json",
+        locale_dir / "docusaurus-theme-classic" / "navbar.json",
+        _get_required_keys("navbar.json"),
+    ))
 
     return issues
 

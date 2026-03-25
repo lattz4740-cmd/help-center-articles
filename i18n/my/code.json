@@ -19,44 +19,16 @@
     "message": "Outline အလုပ်လုပ်ပုံ၊ လုံခြုံရေးပုံစံနှင့် အခြားအရာများကို လေ့လာပါ။",
     "description": "Description for the About Outline card on the homepage"
   },
-  "homepage.about.button": {
-    "message": "Learn more",
-    "description": "Button text for the About Outline card on the homepage"
-  },
   "homepage.client.title": {
     "message": "Outline ကလိုင်းယင့်",
     "description": "Title for the Outline Client card on the homepage"
-  },
-  "homepage.client.description": {
-    "message": "Get started with connecting your device and troubleshooting.",
-    "description": "Description for the Outline Client card on the homepage"
-  },
-  "homepage.client.button": {
-    "message": "Get started",
-    "description": "Button text for the Outline Client card on the homepage"
   },
   "homepage.manager.title": {
     "message": "Outline မန်နေဂျာ",
     "description": "Title for the Outline Manager card on the homepage"
   },
-  "homepage.manager.description": {
-    "message": "Set up and manage your Outline server.",
-    "description": "Description for the Outline Manager card on the homepage"
-  },
-  "homepage.manager.button": {
-    "message": "Set up a server",
-    "description": "Button text for the Outline Manager card on the homepage"
-  },
   "homepage.developers.title": {
     "message": "ဆော့ဖ်ဝဲရေးသူများအတွက်",
     "description": "Title for the For Developers card on the homepage"
-  },
-  "homepage.developers.description": {
-    "message": "Integrate the Outline SDK into your application.",
-    "description": "Description for the For Developers card on the homepage"
-  },
-  "homepage.developers.button": {
-    "message": "Explore the SDK",
-    "description": "Button text for the For Developers card on the homepage"
   }
 }
