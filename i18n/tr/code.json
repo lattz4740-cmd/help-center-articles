@@ -58,5 +58,9 @@
   "homepage.developers.button": {
     "message": "SDK'yı keşfedin",
     "description": "Button text for the For Developers card on the homepage"
+  },
+  "homepage.title": {
+    "message": "Outline Yardım",
+    "description": "The page title for the homepage"
   }
 }

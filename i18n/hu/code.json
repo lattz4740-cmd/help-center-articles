@@ -46,5 +46,9 @@
   "homepage.developers.button": {
     "message": "SDK felfedezése",
     "description": "Button text for the For Developers card on the homepage"
+  },
+  "homepage.title": {
+    "message": "Outline Súgó",
+    "description": "The page title for the homepage"
   }
 }

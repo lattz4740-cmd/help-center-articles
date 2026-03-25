@@ -1,6 +1,6 @@
 import React, {useCallback} from 'react';
 import Layout from '@theme/Layout';
-import Translate from '@docusaurus/Translate';
+import Translate, {translate} from '@docusaurus/Translate';
 import Link from '@docusaurus/Link';
 
 function BrowseTopics() {
@@ -69,7 +69,7 @@ export default function Home(): React.ReactElement {
   }, []);
 
   return (
-    <Layout>
+    <Layout title={translate({id: 'homepage.title', message: 'Outline Help'})}>
       <div className="hero-search">
         <div className="hero-search__content">
           <h1 className="hero-search__title">

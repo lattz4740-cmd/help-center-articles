@@ -58,5 +58,9 @@
   "homepage.developers.button": {
     "message": "SDKを見る",
     "description": "Button text for the For Developers card on the homepage"
+  },
+  "homepage.title": {
+    "message": "Outline ヘルプ",
+    "description": "The page title for the homepage"
   }
 }

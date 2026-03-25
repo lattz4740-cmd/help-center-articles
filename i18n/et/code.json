@@ -30,5 +30,9 @@
   "homepage.developers.title": {
     "message": "Arendajatele",
     "description": "Title for the For Developers card on the homepage"
+  },
+  "homepage.title": {
+    "message": "Outline Abi",
+    "description": "The page title for the homepage"
   }
 }

@@ -46,5 +46,9 @@
   "homepage.developers.button": {
     "message": "Jelajahi SDK",
     "description": "Button text for the For Developers card on the homepage"
+  },
+  "homepage.title": {
+    "message": "Bantuan Outline",
+    "description": "The page title for the homepage"
   }
 }

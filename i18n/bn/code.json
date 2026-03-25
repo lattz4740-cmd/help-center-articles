@@ -30,5 +30,9 @@
   "homepage.developers.title": {
     "message": "ডেভেলপারদের জন্য",
     "description": "Title for the For Developers card on the homepage"
+  },
+  "homepage.title": {
+    "message": "Outline সহায়তা",
+    "description": "The page title for the homepage"
   }
 }
