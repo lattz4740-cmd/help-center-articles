@@ -586,6 +586,11 @@ def _extract_navbar_json_keys() -> dict[str, str]:
     config_path = PROJECT_ROOT / "docusaurus.config.ts"
     text = config_path.read_text("utf-8")
 
+    # Extract navbar title
+    title_match = re.search(r"navbar:\s*\{[^}]*?title:\s*'([^']+)'", text, re.DOTALL)
+    if title_match:
+        keys["title"] = title_match.group(1)
+
     navbar_match = re.search(r'navbar:\s*\{.*?items:\s*\[(.*?)\]', text, re.DOTALL)
     if navbar_match:
         items_text = navbar_match.group(1)

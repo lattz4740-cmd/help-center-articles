@@ -1,4 +1,8 @@
 {
+  "title": {
+    "message": "Outline說明",
+    "description": "The title in the navbar"
+  },
   "item.label.About Outline": {
     "message": "關於 Outline",
     "description": "Navbar item with label 'About Outline'"

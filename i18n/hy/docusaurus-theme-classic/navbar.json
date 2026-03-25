@@ -1,4 +1,8 @@
 {
+  "title": {
+    "message": "Outline Օգնություն",
+    "description": "The title in the navbar"
+  },
   "item.label.About Outline": {
     "message": "Outline-ի մասին",
     "description": "Navbar item with label 'About Outline'"

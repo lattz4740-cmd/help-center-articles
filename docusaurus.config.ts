@@ -25,7 +25,7 @@ function buildLocaleConfigs(): Record<string, {label: string; direction: 'ltr' |
 }
 
 const config: Config = {
-  title: 'Outline Help Center',
+  title: 'Outline Help',
   tagline: 'Get help with Outline VPN',
   favicon: 'images/outline-favicon.png',
 
@@ -83,7 +83,7 @@ const config: Config = {
       respectPrefersColorScheme: false,
     },
     navbar: {
-      title: 'Outline Help Center',
+      title: 'Outline Help',
       logo: {
         alt: 'Outline Logo',
         src: 'images/outline-logo.png',

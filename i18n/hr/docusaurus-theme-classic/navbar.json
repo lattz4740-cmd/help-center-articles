@@ -1,4 +1,8 @@
 {
+  "title": {
+    "message": "Outline Pomoć",
+    "description": "The title in the navbar"
+  },
   "item.label.About Outline": {
     "message": "Više o Outlineu",
     "description": "Navbar item with label 'About Outline'"

@@ -69,7 +69,7 @@ export default function Home(): React.ReactElement {
   }, []);
 
   return (
-    <Layout title="Outline Help Center">
+    <Layout title="Outline Help">
       <div className="hero-search">
         <div className="hero-search__content">
           <h1 className="hero-search__title">

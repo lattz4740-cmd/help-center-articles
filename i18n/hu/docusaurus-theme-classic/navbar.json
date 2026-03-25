@@ -1,4 +1,8 @@
 {
+  "title": {
+    "message": "Outline Súgó",
+    "description": "The title in the navbar"
+  },
   "item.label.About Outline": {
     "message": "Információk az Outline-ról",
     "description": "Navbar item with label 'About Outline'"

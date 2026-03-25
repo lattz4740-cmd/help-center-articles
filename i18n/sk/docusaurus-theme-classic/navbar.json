@@ -1,4 +1,8 @@
 {
+  "title": {
+    "message": "Outline Pomocník",
+    "description": "The title in the navbar"
+  },
   "item.label.About Outline": {
     "message": "O softvéri Outline",
     "description": "Navbar item with label 'About Outline'"
