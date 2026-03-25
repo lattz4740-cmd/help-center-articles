@@ -1,0 +1,13 @@
+# Legacy Salesforce Redirects
+
+The pages in this directory handle redirects from the old Salesforce-hosted
+version of the Outline Help Center (support.getoutline.org/s/…).
+
+The previous site used Salesforce Community URLs like:
+
+- `/s/contactsupport`
+- `/s/article/How-do-I-get-an-access-key`
+- `/s/topic/…`
+
+These redirects ensure that old bookmarks and external links still work after
+the migration to Docusaurus.

@@ -37,8 +37,16 @@ LOCALES = [
 ]
 
 # Docs/pages that only exist in English (no translation expected).
+# Includes redirect pages under s/ and the contactsupport page.
 ENGLISH_ONLY: set[str] = {
     "s/contactsupport",
+    "s/index",
+    "s/article/index",
+    "s/article/Data-collection",
+    "s/article/How-do-I-get-an-access-key",
+    "s/article/What-if-my-access-key-doesn-t-work",
+    "s/article/Why-can-t-I-connect-to-the-Outline-service",
+    "s/topic/index",
 }
 
 # --- Homepage translation tiers (by language reach) ---
