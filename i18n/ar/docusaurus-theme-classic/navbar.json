@@ -1,0 +1,18 @@
+{
+  "item.label.About Outline": {
+    "message": "نبذة عن Outline",
+    "description": "Navbar item with label 'About Outline'"
+  },
+  "item.label.Outline Client": {
+    "message": "عميل Outline",
+    "description": "Navbar item with label 'Outline Client'"
+  },
+  "item.label.Outline Manager": {
+    "message": "مدير Outline",
+    "description": "Navbar item with label 'Outline Manager'"
+  },
+  "item.label.For Developers": {
+    "message": "للمطوّرين",
+    "description": "Navbar item with label 'For Developers'"
+  }
+}

@@ -90,6 +90,30 @@ const config: Config = {
       },
       items: [
         {
+          type: 'docSidebar',
+          sidebarId: 'aboutSidebar',
+          label: 'About Outline',
+          position: 'left',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'clientSidebar',
+          label: 'Outline Client',
+          position: 'left',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'managerSidebar',
+          label: 'Outline Manager',
+          position: 'left',
+        },
+        {
+          label: 'For Developers',
+          href: 'https://developer.getoutline.org/',
+          position: 'left',
+          target: '_self',
+        },
+        {
           type: 'search',
           position: 'right',
         },

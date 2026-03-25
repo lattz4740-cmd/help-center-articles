@@ -1,0 +1,18 @@
+{
+  "item.label.About Outline": {
+    "message": "ข้อมูลเกี่ยวกับ Outline",
+    "description": "Navbar item with label 'About Outline'"
+  },
+  "item.label.Outline Client": {
+    "message": "ไคลเอ็นต์ Outline",
+    "description": "Navbar item with label 'Outline Client'"
+  },
+  "item.label.Outline Manager": {
+    "message": "Outline Manager",
+    "description": "Navbar item with label 'Outline Manager'"
+  },
+  "item.label.For Developers": {
+    "message": "สำหรับนักพัฒนาซอฟต์แวร์",
+    "description": "Navbar item with label 'For Developers'"
+  }
+}

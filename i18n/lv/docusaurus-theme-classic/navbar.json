@@ -1,0 +1,18 @@
+{
+  "item.label.About Outline": {
+    "message": "Par Outline",
+    "description": "Navbar item with label 'About Outline'"
+  },
+  "item.label.Outline Client": {
+    "message": "Outline klients",
+    "description": "Navbar item with label 'Outline Client'"
+  },
+  "item.label.Outline Manager": {
+    "message": "Outline pārvaldnieks",
+    "description": "Navbar item with label 'Outline Manager'"
+  },
+  "item.label.For Developers": {
+    "message": "Izstrādātājiem",
+    "description": "Navbar item with label 'For Developers'"
+  }
+}

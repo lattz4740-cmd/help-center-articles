@@ -3,40 +3,24 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.helpSidebar.category.About Outline": {
-    "message": "O storitvi Outline",
-    "description": "The label for category 'About Outline' in sidebar 'helpSidebar'"
-  },
-  "sidebar.helpSidebar.category.Outline Client": {
-    "message": "Odjemalec Outline",
-    "description": "The label for category 'Outline Client' in sidebar 'helpSidebar'"
-  },
-  "sidebar.helpSidebar.category.Getting Started": {
+  "sidebar.clientSidebar.category.Getting Started": {
     "message": "Začetek",
-    "description": "The label for category 'Getting Started' in sidebar 'helpSidebar'"
+    "description": "The label for category 'Getting Started' in sidebar 'clientSidebar'"
   },
-  "sidebar.helpSidebar.category.client-troubleshooting": {
+  "sidebar.clientSidebar.category.client-troubleshooting": {
     "message": "Odpravljanje težav",
-    "description": "The label for category 'Troubleshooting' in sidebar 'helpSidebar'"
+    "description": "The label for category 'Troubleshooting' in sidebar 'clientSidebar'"
   },
-  "sidebar.helpSidebar.category.Outline Manager": {
-    "message": "Upravitelj za Outline",
-    "description": "The label for category 'Outline Manager' in sidebar 'helpSidebar'"
-  },
-  "sidebar.helpSidebar.category.Server Setup": {
+  "sidebar.managerSidebar.category.Server Setup": {
     "message": "Nastavitev strežnika",
-    "description": "The label for category 'Server Setup' in sidebar 'helpSidebar'"
+    "description": "The label for category 'Server Setup' in sidebar 'managerSidebar'"
   },
-  "sidebar.helpSidebar.category.Server Management": {
+  "sidebar.managerSidebar.category.Server Management": {
     "message": "Upravljanje strežnikov",
-    "description": "The label for category 'Server Management' in sidebar 'helpSidebar'"
+    "description": "The label for category 'Server Management' in sidebar 'managerSidebar'"
   },
-  "sidebar.helpSidebar.category.manager-troubleshooting": {
+  "sidebar.managerSidebar.category.manager-troubleshooting": {
     "message": "Odpravljanje težav",
-    "description": "The label for category 'Troubleshooting' in sidebar 'helpSidebar'"
-  },
-  "sidebar.helpSidebar.category.For Developers": {
-    "message": "Za razvijalce",
-    "description": "The label for category 'For Developers' in sidebar 'helpSidebar'"
+    "description": "The label for category 'Troubleshooting' in sidebar 'managerSidebar'"
   }
 }

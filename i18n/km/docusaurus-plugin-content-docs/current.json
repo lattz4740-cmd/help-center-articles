@@ -3,40 +3,24 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.helpSidebar.category.About Outline": {
-    "message": "អំពី Outline",
-    "description": "The label for category 'About Outline' in sidebar 'helpSidebar'"
-  },
-  "sidebar.helpSidebar.category.Outline Client": {
-    "message": "កម្មវិធីភ្ញៀវសម្រាប់ Outline",
-    "description": "The label for category 'Outline Client' in sidebar 'helpSidebar'"
-  },
-  "sidebar.helpSidebar.category.Getting Started": {
+  "sidebar.clientSidebar.category.Getting Started": {
     "message": "ការចាប់ផ្ដើម",
-    "description": "The label for category 'Getting Started' in sidebar 'helpSidebar'"
+    "description": "The label for category 'Getting Started' in sidebar 'clientSidebar'"
   },
-  "sidebar.helpSidebar.category.client-troubleshooting": {
+  "sidebar.clientSidebar.category.client-troubleshooting": {
     "message": "ការដោះស្រាយបញ្ហា",
-    "description": "The label for category 'Troubleshooting' in sidebar 'helpSidebar'"
+    "description": "The label for category 'Troubleshooting' in sidebar 'clientSidebar'"
   },
-  "sidebar.helpSidebar.category.Outline Manager": {
-    "message": "Outline Manager",
-    "description": "The label for category 'Outline Manager' in sidebar 'helpSidebar'"
-  },
-  "sidebar.helpSidebar.category.Server Setup": {
+  "sidebar.managerSidebar.category.Server Setup": {
     "message": "ការរៀបចំ​ម៉ាស៊ីនមេ",
-    "description": "The label for category 'Server Setup' in sidebar 'helpSidebar'"
+    "description": "The label for category 'Server Setup' in sidebar 'managerSidebar'"
   },
-  "sidebar.helpSidebar.category.Server Management": {
+  "sidebar.managerSidebar.category.Server Management": {
     "message": "ការគ្រប់គ្រង​ម៉ាស៊ីនមេ",
-    "description": "The label for category 'Server Management' in sidebar 'helpSidebar'"
+    "description": "The label for category 'Server Management' in sidebar 'managerSidebar'"
   },
-  "sidebar.helpSidebar.category.manager-troubleshooting": {
+  "sidebar.managerSidebar.category.manager-troubleshooting": {
     "message": "ការដោះស្រាយបញ្ហា",
-    "description": "The label for category 'Troubleshooting' in sidebar 'helpSidebar'"
-  },
-  "sidebar.helpSidebar.category.For Developers": {
-    "message": "សម្រាប់​អ្នក​អភិវឌ្ឍន៍",
-    "description": "The label for category 'For Developers' in sidebar 'helpSidebar'"
+    "description": "The label for category 'Troubleshooting' in sidebar 'managerSidebar'"
   }
 }

@@ -1,0 +1,18 @@
+{
+  "item.label.About Outline": {
+    "message": "Giới thiệu về Outline",
+    "description": "Navbar item with label 'About Outline'"
+  },
+  "item.label.Outline Client": {
+    "message": "Ứng dụng Outline",
+    "description": "Navbar item with label 'Outline Client'"
+  },
+  "item.label.Outline Manager": {
+    "message": "Quản lý Outline",
+    "description": "Navbar item with label 'Outline Manager'"
+  },
+  "item.label.For Developers": {
+    "message": "Dành cho nhà phát triển",
+    "description": "Navbar item with label 'For Developers'"
+  }
+}

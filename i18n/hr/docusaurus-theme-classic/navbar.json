@@ -1,0 +1,18 @@
+{
+  "item.label.About Outline": {
+    "message": "Više o Outlineu",
+    "description": "Navbar item with label 'About Outline'"
+  },
+  "item.label.Outline Client": {
+    "message": "Outline Klijent",
+    "description": "Navbar item with label 'Outline Client'"
+  },
+  "item.label.Outline Manager": {
+    "message": "Upravitelj Outlinea",
+    "description": "Navbar item with label 'Outline Manager'"
+  },
+  "item.label.For Developers": {
+    "message": "Za razvojne programere",
+    "description": "Navbar item with label 'For Developers'"
+  }
+}

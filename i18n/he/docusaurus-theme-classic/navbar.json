@@ -1,0 +1,18 @@
+{
+  "item.label.About Outline": {
+    "message": "מידע כללי על Outline",
+    "description": "Navbar item with label 'About Outline'"
+  },
+  "item.label.Outline Client": {
+    "message": "אפליקציית הלקוח של Outline",
+    "description": "Navbar item with label 'Outline Client'"
+  },
+  "item.label.Outline Manager": {
+    "message": "Outline Manager",
+    "description": "Navbar item with label 'Outline Manager'"
+  },
+  "item.label.For Developers": {
+    "message": "למפתחים",
+    "description": "Navbar item with label 'For Developers'"
+  }
+}

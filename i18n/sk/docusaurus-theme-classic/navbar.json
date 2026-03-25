@@ -1,0 +1,18 @@
+{
+  "item.label.About Outline": {
+    "message": "O softvéri Outline",
+    "description": "Navbar item with label 'About Outline'"
+  },
+  "item.label.Outline Client": {
+    "message": "Outline Client",
+    "description": "Navbar item with label 'Outline Client'"
+  },
+  "item.label.Outline Manager": {
+    "message": "Správca Outline",
+    "description": "Navbar item with label 'Outline Manager'"
+  },
+  "item.label.For Developers": {
+    "message": "Pre vývojárov",
+    "description": "Navbar item with label 'For Developers'"
+  }
+}

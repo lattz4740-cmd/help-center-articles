@@ -1,0 +1,18 @@
+{
+  "item.label.About Outline": {
+    "message": "Outline সম্পর্কে",
+    "description": "Navbar item with label 'About Outline'"
+  },
+  "item.label.Outline Client": {
+    "message": "Outline ক্লায়েন্ট",
+    "description": "Navbar item with label 'Outline Client'"
+  },
+  "item.label.Outline Manager": {
+    "message": "Outline Manager",
+    "description": "Navbar item with label 'Outline Manager'"
+  },
+  "item.label.For Developers": {
+    "message": "ডেভেলপারদের জন্য",
+    "description": "Navbar item with label 'For Developers'"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "item.label.About Outline": {
+    "message": "Outline အကြောင်း",
+    "description": "Navbar item with label 'About Outline'"
+  },
+  "item.label.Outline Client": {
+    "message": "Outline ကလိုင်းယင့်",
+    "description": "Navbar item with label 'Outline Client'"
+  },
+  "item.label.Outline Manager": {
+    "message": "Outline မန်နေဂျာ",
+    "description": "Navbar item with label 'Outline Manager'"
+  },
+  "item.label.For Developers": {
+    "message": "ဆော့ဖ်ဝဲရေးသူများအတွက်",
+    "description": "Navbar item with label 'For Developers'"
+  }
+}

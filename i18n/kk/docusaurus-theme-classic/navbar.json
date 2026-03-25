@@ -1,0 +1,18 @@
+{
+  "item.label.About Outline": {
+    "message": "Outline туралы",
+    "description": "Navbar item with label 'About Outline'"
+  },
+  "item.label.Outline Client": {
+    "message": "Outline клиенті",
+    "description": "Navbar item with label 'Outline Client'"
+  },
+  "item.label.Outline Manager": {
+    "message": "Outline Manager",
+    "description": "Navbar item with label 'Outline Manager'"
+  },
+  "item.label.For Developers": {
+    "message": "Әзірлеушілер үшін",
+    "description": "Navbar item with label 'For Developers'"
+  }
+}

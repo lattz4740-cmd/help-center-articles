@@ -43,7 +43,7 @@ function BrowseTopics() {
       description: 'Integrate the Outline SDK into your application.',
       buttonId: 'homepage.developers.button',
       button: 'Explore the SDK',
-      to: '/developers/sdk-support',
+      to: 'https://developer.getoutline.org/',
     },
   ];
 

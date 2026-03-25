@@ -1,0 +1,18 @@
+{
+  "item.label.About Outline": {
+    "message": "អំពី Outline",
+    "description": "Navbar item with label 'About Outline'"
+  },
+  "item.label.Outline Client": {
+    "message": "កម្មវិធីភ្ញៀវសម្រាប់ Outline",
+    "description": "Navbar item with label 'Outline Client'"
+  },
+  "item.label.Outline Manager": {
+    "message": "Outline Manager",
+    "description": "Navbar item with label 'Outline Manager'"
+  },
+  "item.label.For Developers": {
+    "message": "សម្រាប់​អ្នក​អភិវឌ្ឍន៍",
+    "description": "Navbar item with label 'For Developers'"
+  }
+}

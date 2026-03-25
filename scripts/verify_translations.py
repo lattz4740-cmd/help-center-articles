@@ -423,15 +423,11 @@ REQUIRED_CODE_TRANSLATIONS: set[str] = {
 
 # Required translation keys in current.json (sidebar category labels)
 REQUIRED_CURRENT_TRANSLATIONS: set[str] = {
-    "sidebar.helpSidebar.category.About Outline",
-    "sidebar.helpSidebar.category.Outline Client",
-    "sidebar.helpSidebar.category.Getting Started",
-    "sidebar.helpSidebar.category.client-troubleshooting",
-    "sidebar.helpSidebar.category.Outline Manager",
-    "sidebar.helpSidebar.category.Server Setup",
-    "sidebar.helpSidebar.category.Server Management",
-    "sidebar.helpSidebar.category.manager-troubleshooting",
-    "sidebar.helpSidebar.category.For Developers",
+    "sidebar.clientSidebar.category.Getting Started",
+    "sidebar.clientSidebar.category.client-troubleshooting",
+    "sidebar.managerSidebar.category.Server Setup",
+    "sidebar.managerSidebar.category.Server Management",
+    "sidebar.managerSidebar.category.manager-troubleshooting",
 }
 
 

@@ -1,0 +1,18 @@
+{
+  "item.label.About Outline": {
+    "message": "Informacje o Outline",
+    "description": "Navbar item with label 'About Outline'"
+  },
+  "item.label.Outline Client": {
+    "message": "Klient Outline",
+    "description": "Navbar item with label 'Outline Client'"
+  },
+  "item.label.Outline Manager": {
+    "message": "Menedżer Outline",
+    "description": "Navbar item with label 'Outline Manager'"
+  },
+  "item.label.For Developers": {
+    "message": "Dla programistów",
+    "description": "Navbar item with label 'For Developers'"
+  }
+}
