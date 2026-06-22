@@ -36,10 +36,6 @@ const config: Config = {
   url: 'https://support.getoutline.org',
   baseUrl: '/',
 
-  organizationName: 'OutlineFoundation',
-  projectName: 'help-center-articles',
-  deploymentBranch: 'gh-pages',
-
   onBrokenLinks: 'throw',
   onBrokenAnchors: 'warn',
 
