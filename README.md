@@ -52,10 +52,18 @@ npm run serve
 
 ## Deployment
 
-Deploy to GitHub Pages:
+The site is hosted on [Cloudflare Pages](https://pages.cloudflare.com/) with the
+Git integration enabled. Deployment is automatic:
+
+- Merging to `main` triggers a production deploy to https://support.getoutline.org.
+- Opening a pull request creates a preview deployment with its own URL.
+
+Cloudflare Pages builds with `npm run build` (output in `build/`) on the Node
+version pinned in `.nvmrc`. There is no manual deploy step.
+
+Translations are verified in CI on every pull request. To run the same check
+locally:
 
 ```sh
-npm run deploy
+npm run verify
 ```
-
-This verifies translations, builds all 65 locales, and pushes to the `gh-pages` branch, which is served at https://support.getoutline.org.
