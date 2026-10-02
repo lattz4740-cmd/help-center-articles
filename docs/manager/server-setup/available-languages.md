@@ -1,4 +1,4 @@
----
+Japan 
 title: Available languages
 sidebar_label: Available languages
 ---
